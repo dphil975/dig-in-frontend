@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dig In - Pixel Ingredient UI System Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="frontend/css/pixel-ingredient-system.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #1a1a1a;
+      font-family: 'Press Start 2P', monospace;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .demo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .page-header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      animation: pulse 2s infinite;
+    }
+
+    .page-header p {
+      font-size: 12px;
+      opacity: 0.9;
+      letter-spacing: 1px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    .demo-section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .section-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 18px;
+      color: #667eea;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #667eea;
+      letter-spacing: 1px;
+    }
+
+    .recipe-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 30px;
+      border-radius: 12px;
+      color: white;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .recipe-header h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    .recipe-header p {
+      font-size: 11px;
+      opacity: 0.9;
+    }
+
+    .recipe-meta {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+      font-size: 10px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #ingredients-container,
+    #steps-container,
+    #item-modification-container,
+    #profile-container {
+      min-height: 250px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: 3px solid #667eea;
+      border-radius: 8px;
+      background: white;
+      color: #667eea;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn:hover {
+      background: #667eea;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn.primary {
+      background: #667eea;
+      color: white;
+    }
+
+    .btn.primary:hover {
+      background: #764ba2;
+      border-color: #764ba2;
+    }
+
+    .info-box {
+      background: #f0f7ff;
+      border-left: 4px solid #667eea;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 11px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .info-box strong {
+      color: #667eea;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 24px;
+      }
+
+      .demo-section {
+        padding: 20px;
+      }
+
+      .recipe-meta {
+        gap: 15px;
+      }
+
+      .controls {
+        gap: 8px;
+      }
+
+      .btn {
+        padding: 10px 16px;
+        font-size: 8px;
+      }
+    }
+
+    .recipe-grid {
+      display: grid;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .recipe-card {
+      background: #f9f9f9;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .tab-navigation {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 10px 20px;
+      border: 2px solid #ddd;
+      background: white;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: #667eea;
+      color: white;
+      border-color: #667eea;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-container">
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1>🎮 DIG IN</h1>
+      <p>Pixel Ingredient UI System Demo</p>
+    </div>
+
+    <!-- Demo 1: Ingredient Grid -->
+    <div class="demo-section">
+      <div class="section-title">🥘 Ingredient Grid System</div>
+
+      <div class="recipe-header">
+        <h2>Mapo Tofu</h2>
+        <p>Silky tofu in spicy Sichuan sauce</p>
+        <div class="recipe-meta">
+          <div class="meta-item">⏰ 30 min</div>
+          <div class="meta-item">🍽️ 4 servings</div>
+          <div class="meta-item">⭐ Medium</div>
+        </div>
+      </div>
+
+      <div id="ingredients-container"></div>
+
+      <div class="controls">
+        <button class="btn primary" onclick="populateIngredients()">Reset Ingredients</button>
+        <button class="btn" onclick="toggleRandomIngredient()">Toggle Random</button>
+      </div>
+
+      <div class="info-box">
+        <strong>💡 Interactive:</strong> Click the ✓ or ✗ button on any ingredient to toggle between "have" and "don't have".
+        The ingredient box will update its appearance and show as faded when missing. Items marked as missing will be removed
+        from your shopping needs!
+      </div>
+    </div>
+
+    <!-- Demo 2: Recipe Steps Slider -->
+    <div class="demo-section">
+      <div class="section-title">📖 Recipe Steps Slider</div>
+
+      <div id="steps-container"></div>
+
+      <div class="info-box">
+        <strong>💡 Interactive:</strong> Click the arrow buttons to navigate between steps, or click the dots at the bottom
+        to jump to a specific step. The step card will smoothly transition, and you can see your progress with the
+        numbered indicator and counter.
+      </div>
+    </div>
+
+    <!-- Demo 3: Item Modification Card -->
+    <div class="demo-section">
+      <div class="section-title">💖 Item Modification Card (Love Shot Style)</div>
+
+      <div id="item-modification-container"></div>
+
+      <div class="controls">
+        <button class="btn primary" onclick="showNewItem()">Load New Item</button>
+      </div>
+
+      <div class="info-box">
+        <strong>💡 Features:</strong> Adjust quantity with +/− buttons, select options from the dropdown, and see the
+        💲 price modifier update automatically. Add items to your recipe with custom modifications!
+      </div>
+    </div>
+
+    <!-- Demo 4: Profile History Reel -->
+    <div class="demo-section">
+      <div class="section-title">🎬 Profile History Reel</div>
+
+      <div id="profile-container"></div>
+
+      <div class="info-box">
+        <strong>💡 Feature:</strong> Scroll horizontally through your saved recipes. Each card shows the recipe name,
+        type, ingredient preview (4 key items as pixel emojis), cooking time, servings, and quick-view button.
+        This reel displays your complete cooking history!
+      </div>
+    </div>
+
+    <!-- Feature Overview -->
+    <div class="demo-section">
+      <div class="section-title">✨ Complete Feature Set</div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #FF1493;">
+          <h3 style="color: #FF1493; margin-bottom: 10px; font-size: 12px;">🟥 Pixel Boxes</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Color-coded ingredient containers with emoji representations, visual states for missing/added items, and price modifiers.</p>
+        </div>
+
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #4A90E2;">
+          <h3 style="color: #4A90E2; margin-bottom: 10px; font-size: 12px;">📖 Step Carousel</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Smooth transitions between recipe steps with navigation buttons, progress dots, step counter, and visual hints.</p>
+        </div>
+
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #FFD700;">
+          <h3 style="color: #FFD700; margin-bottom: 10px; font-size: 12px;">💲 Price Tags</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Highlight add-ons and modifications with price indicators. Track cost changes as you customize your recipe.</p>
+        </div>
+
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #228B22;">
+          <h3 style="color: #228B22; margin-bottom: 10px; font-size: 12px;">🎬 History Reel</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Horizontal scrollable cards showing your cooking history with ingredient previews and quick access.</p>
+        </div>
+
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #667eea;">
+          <h3 style="color: #667eea; margin-bottom: 10px; font-size: 12px;">📱 Responsive</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Fully responsive design optimized for desktop, tablet, and mobile devices with touch-friendly controls.</p>
+        </div>
+
+        <div style="padding: 20px; background: #f9f9f9; border-radius: 8px; border-left: 4px solid #C71585;">
+          <h3 style="color: #C71585; margin-bottom: 10px; font-size: 12px;">✨ Interactive</h3>
+          <p style="font-size: 10px; color: #666; line-height: 1.6;">Full interactivity with toggle buttons, quantity adjustments, smooth animations, and state management.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="frontend/js/pixel-ingredient-system.js"></script>
+  <script>
+    // Demo data
+    const mapoTofuRecipe = {
+      id: 'mapo-tofu',
+      name: 'Mapo Tofu',
+      ingredients: ['tofu', 'ground pork', 'doubanjiang', 'sichuan peppercorns', 'garlic', 'ginger', 'soy sauce', 'sesame oil', 'green onions', 'cornstarch'],
+      instructions: [
+        'Cube tofu and set aside. Crush Sichuan peppercorns lightly.',
+        'Heat 2 tbsp oil in wok, stir-fry pork until cooked through.',
+        'Add doubanjiang and garlic, fry until fragrant (30 seconds).',
+        'Add 1/2 cup chicken stock and soy sauce, bring to simmer.',
+        'Gently add tofu cubes and simmer for 10 minutes without stirring.',
+        'Mix cornstarch with water, add to sauce to thicken slightly.',
+        'Drizzle with sesame oil and garnish with green onions.',
+        'Serve immediately over steamed rice while hot.'
+      ]
+    };
+
+    const addOnItems = [
+      {
+        id: 'spinach',
+        name: 'Add Fresh Spinach',
+        description: 'Organic fresh baby spinach',
+        emoji: '🌱',
+        priceModifier: 0.50,
+        options: ['Fresh', 'Frozen', 'Cooked']
+      },
+      {
+        id: 'mushrooms',
+        name: 'Add Shiitake Mushrooms',
+        description: 'Premium dried shiitake',
+        emoji: '🍄',
+        priceModifier: 1.50,
+        options: ['Fresh', 'Dried', 'Powdered']
+      },
+      {
+        id: 'premium-oil',
+        name: 'Premium Sesame Oil',
+        description: 'Cold-pressed artisan blend',
+        emoji: '🫒',
+        priceModifier: 2.00,
+        options: ['Regular', 'Roasted', 'Infused']
+      },
+      {
+        id: 'extra-ginger',
+        name: 'Extra Ginger',
+        description: 'Fresh young ginger root',
+        emoji: '🟨',
+        priceModifier: 0.75,
+        options: ['Mild', 'Medium', 'Hot']
+      }
+    ];
+
+    const savedRecipes = [
+      {
+        id: 1,
+        name: 'Mapo Tofu',
+        type: 'Chinese',
+        ingredients: ['tofu', 'ground pork', 'garlic', 'ginger'],
+        date: 'Today',
+        totalTime: 30,
+        servings: 4
+      },
+      {
+        id: 2,
+        name: 'Bulgogi',
+        type: 'Korean',
+        ingredients: ['beef', 'soy sauce', 'garlic', 'sesame oil'],
+        date: 'Yesterday',
+        totalTime: 40,
+        servings: 4
+      },
+      {
+        id: 3,
+        name: 'Miso Ramen',
+        type: 'Japanese',
+        ingredients: ['miso paste', 'ramen noodles', 'eggs', 'mushrooms'],
+        date: '2 days ago',
+        totalTime: 75,
+        servings: 2
+      },
+      {
+        id: 4,
+        name: 'Kung Pao Chicken',
+        type: 'Chinese',
+        ingredients: ['chicken breast', 'cashews', 'garlic', 'dried red chilies'],
+        date: '3 days ago',
+        totalTime: 30,
+        servings: 4
+      },
+      {
+        id: 5,
+        name: 'Japchae',
+        type: 'Korean',
+        ingredients: ['sweet potato noodles', 'beef', 'spinach', 'carrot'],
+        date: '1 week ago',
+        totalTime: 35,
+        servings: 4
+      }
+    ];
+
+    // Initialize system
+    let pixelSystem = initPixelIngredientSystem('ingredients-container', mapoTofuRecipe.id);
+
+    // Populate ingredients
+    function populateIngredients() {
+      const container = document.getElementById('ingredients-container');
+      const grid = pixelSystem.renderIngredientGrid(mapoTofuRecipe.ingredients);
+      container.innerHTML = '';
+      container.appendChild(grid);
+    }
+
+    // Toggle random ingredient
+    function toggleRandomIngredient() {
+      const randomIng = mapoTofuRecipe.ingredients[
+        Math.floor(Math.random() * mapoTofuRecipe.ingredients.length)
+      ];
+      pixelSystem.toggleIngredient(randomIng);
+    }
+
+    // Populate steps
+    function populateSteps() {
+      const container = document.getElementById('steps-container');
+      const slider = pixelSystem.renderRecipeStepsSlider(mapoTofuRecipe.instructions);
+      container.innerHTML = '';
+      container.appendChild(slider);
+    }
+
+    // Show item modification
+    function showItemModification(item) {
+      const container = document.getElementById('item-modification-container');
+      const card = pixelSystem.renderItemModification(item);
+      container.innerHTML = '';
+      container.appendChild(card);
+    }
+
+    function showNewItem() {
+      const randomItem = addOnItems[Math.floor(Math.random() * addOnItems.length)];
+      showItemModification(randomItem);
+    }
+
+    // Populate history reel
+    function populateHistoryReel() {
+      const container = document.getElementById('profile-container');
+      const reel = pixelSystem.renderProfileHistoryReel(savedRecipes);
+      container.innerHTML = '';
+      container.appendChild(reel);
+    }
+
+    // Initialize all demos on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      populateIngredients();
+      populateSteps();
+      showNewItem();
+      populateHistoryReel();
+    });
+  </script>
+</body>
+</html>
