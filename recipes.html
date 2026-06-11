@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIG-IN · Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="catalog.css" />
+  <link rel="stylesheet" href="frontend/css/styles.css" />
+  <style>
+    /* ── Category color system ─────────────────────────────────── */
+    :root {
+      /* Meal categories — matcha/crimson/burnt-orange/cream palette */
+      --c-breakfast: #E8C870;  --c-breakfast-dk: #8A6820;
+      --c-dinner:    #E84060;  --c-dinner-dk:    #8A0020;
+      --c-dessert:   #F0D8A0;  --c-dessert-dk:   #8A6020;
+      --c-snack:     #7FB069;  --c-snack-dk:     #1E4028;
+      --c-drink:     #60B890;  --c-drink-dk:     #1E4030;
+      --c-soup:      #E07030;  --c-soup-dk:      #803800;
+      --c-default:   #4A7C59;  --c-default-dk:   #1E3A28;
+      --c-lunch:     #A8D090;  --c-lunch-dk:     #2A5030;
+      --c-vegan:     #7FB069;  --c-vegan-dk:     #1E4028;
+      --c-veggie:    #A8D090;  --c-veggie-dk:    #2A5030;
+      --c-gluten:    #E8C870;  --c-gluten-dk:    #8A6820;
+      --c-nutfree:   #E07030;  --c-nutfree-dk:   #803800;
+
+      /* Cuisine regions */
+      --region-east-asia:     #4A7C59;  --region-east-asia-lt:   #C2D9A8;
+      --region-se-asia:       #C95000;  --region-se-asia-lt:     #EAA870;
+      --region-europe:        #DCC99A;  --region-europe-lt:      #F5EDD0;
+      --region-americas:      #C0173B;  --region-americas-lt:    #E87090;
+      --region-africa-me:     #B8760B;  --region-africa-me-lt:   #D4A830;
+    }
+
+    body { background: #0d0d0d; color: #eee; }
+
+    /* ── Recipe hero ───────────────────────────────────────────── */
+    .recipe-hero {
+      background: #1a1a1a; padding: 22px 20px 16px; text-align: center;
+      border-bottom: 3px solid #4A7C59;
+    }
+    .recipe-hero-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 20px; color: #4A7C59; letter-spacing: 2px; margin: 0 0 4px;
+    }
+    .recipe-hero-sub {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px; color: #888; letter-spacing: 1px; margin-bottom: 12px;
+    }
+    .recipe-hero-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; flex-wrap: wrap;
+    }
+    .recipe-hero-count {
+      display: inline-block; background: #4A7C59; color: #F5EDD0;
+      font-family: 'Press Start 2P', monospace; font-size: 8px;
+      border-radius: 4px; padding: 4px 10px; letter-spacing: .5px;
+    }
+    .recipe-live-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px; padding: 4px 10px; font-size: 10px; color: #888;
+    }
+    .recipe-live-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #7ae0b0;
+      animation: live-pulse 2s ease-in-out infinite;
+    }
+    @keyframes live-pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.4; transform:scale(.7); }
+    }
+
+    /* ── Sticky filter bar ─────────────────────────────────────── */
+    .recipe-filter-bar {
+      position: sticky; top: 0; z-index: 20;
+      background: #111; border-bottom: 2px solid #2a2a2a;
+      padding: 10px 14px; display: flex; flex-wrap: wrap;
+      gap: 6px; align-items: center;
+    }
+    .rfbtn {
+      border: 2px solid #2a2a2a; border-radius: 5px;
+      padding: 0 12px; height: 34px;
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      cursor: pointer; background: #1a1a1a; color: #888;
+      transition: all .12s; white-space: nowrap; letter-spacing: .5px;
+    }
+    .rfbtn:hover:not(.active) { border-color: #4A7C59; color: #4A7C59; }
+    .rfbtn.active             { background: #1a1a1a; color: #fff; border-color: #4A7C59; }
+    .rfbtn.breakfast.active { background: var(--c-breakfast); border-color: var(--c-breakfast-dk); color: #1a1a1a; }
+    .rfbtn.dinner.active    { background: var(--c-dinner);    border-color: var(--c-dinner-dk);    color: #1a1a1a; }
+    .rfbtn.dessert.active   { background: var(--c-dessert);   border-color: var(--c-dessert-dk);   color: #1a1a1a; }
+    .rfbtn.snack.active     { background: var(--c-snack);     border-color: var(--c-snack-dk);     color: #1a1a1a; }
+    .rfbtn.drink.active     { background: var(--c-drink);     border-color: var(--c-drink-dk);     color: #1a1a1a; }
+    .rfbtn.soup.active      { background: var(--c-soup);      border-color: var(--c-soup-dk);      color: #1a1a1a; }
+    .rfbtn.lunch.active     { background: var(--c-lunch);     border-color: var(--c-lunch-dk);     color: #1a1a1a; }
+    .rfbtn.vegan.active     { background: var(--c-vegan);    border-color: var(--c-vegan-dk);    color: #1a1a1a; }
+    .rfbtn.veggie.active    { background: var(--c-veggie);   border-color: var(--c-veggie-dk);   color: #1a1a1a; }
+    .rfbtn.gluten.active    { background: var(--c-gluten);   border-color: var(--c-gluten-dk);   color: #1a1a1a; }
+    .rfbtn.nutfree.active   { background: var(--c-nutfree);  border-color: var(--c-nutfree-dk);  color: #1a1a1a; }
+    .filter-sep { width: 1px; background: #2a2a2a; align-self: stretch; flex-shrink: 0; }
+
+    /* ── Cuisine dropdown ─────────────────────────────────────── */
+    .cuisine-wrap { position: relative; }
+    .rfbtn.cuisine-btn { display: flex; align-items: center; gap: 5px; }
+    .rfbtn.cuisine-btn.has-selection { border-color: #C95000; color: #C95000; }
+    .rfbtn.cuisine-btn.has-selection.active { background: #C95000; border-color: #7A3000; color: #1a1a1a; }
+    .cuisine-caret { font-size: 8px; transition: transform .15s; }
+    .cuisine-wrap.open .cuisine-caret { transform: rotate(180deg); }
+    .cuisine-dropdown {
+      display: none; position: absolute; top: calc(100% + 6px); left: 0; z-index: 200;
+      background: #1a1a1a; border: 2px solid #2a2a2a; border-radius: 12px;
+      padding: 12px 0; min-width: 220px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.7);
+      animation: cuisine-drop-in .16s cubic-bezier(.4,0,.2,1);
+    }
+    .cuisine-wrap.open .cuisine-dropdown { display: block; }
+    @keyframes cuisine-drop-in {
+      from { opacity: 0; transform: translateY(-6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .cuisine-dropdown-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 14px 10px; border-bottom: 1px solid #2a2a2a; margin-bottom: 6px;
+    }
+    .cuisine-dropdown-title {
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      color: #4A7C59; letter-spacing: 1px;
+    }
+    .cuisine-clear-btn {
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      background: none; border: 1px solid #333; border-radius: 4px;
+      color: #666; padding: 3px 7px; cursor: pointer; transition: all .1s;
+    }
+    .cuisine-clear-btn:hover { border-color: #4A7C59; color: #4A7C59; }
+    .cuisine-region-group { padding: 4px 0; }
+    .cuisine-region-label {
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      color: #555; letter-spacing: .5px; padding: 6px 14px 4px;
+      display: block; text-transform: uppercase;
+    }
+    .cuisine-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 14px; cursor: pointer;
+      transition: background .1s;
+    }
+    .cuisine-item:hover { background: rgba(255,255,255,.05); }
+    .cuisine-item input[type="checkbox"] {
+      width: 14px; height: 14px; accent-color: #4A7C59;
+      cursor: pointer; flex-shrink: 0;
+    }
+    .cuisine-item-label {
+      font-size: 11px; color: #aaa; cursor: pointer;
+      user-select: none; transition: color .1s; flex: 1;
+    }
+    .cuisine-item:hover .cuisine-item-label { color: #eee; }
+    .cuisine-item input:checked + .cuisine-item-label { color: #4A7C59; font-weight: 700; }
+
+    /* ── Allergies dropdown (same structure as cuisine) ────────── */
+    .allergy-wrap { position: relative; }
+    .rfbtn.allergy-btn { display: flex; align-items: center; gap: 5px; }
+    .rfbtn.allergy-btn.has-selection { border-color: #ff9eb5; color: #ff9eb5; }
+    .allergy-caret { font-size: 8px; transition: transform .15s; }
+    .allergy-wrap.open .allergy-caret { transform: rotate(180deg); }
+    .allergy-dropdown {
+      display: none; position: absolute; top: calc(100% + 6px); left: 0; z-index: 200;
+      background: #1a1a1a; border: 2px solid #2a2a2a; border-radius: 12px;
+      padding: 12px 0; min-width: 200px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.7);
+      animation: cuisine-drop-in .16s cubic-bezier(.4,0,.2,1);
+    }
+    .allergy-wrap.open .allergy-dropdown { display: block; }
+    .allergy-dropdown-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 14px 10px; border-bottom: 1px solid #2a2a2a; margin-bottom: 6px;
+    }
+    .allergy-dropdown-title {
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      color: #ff9eb5; letter-spacing: 1px;
+    }
+    .allergy-clear-btn {
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      background: none; border: 1px solid #333; border-radius: 4px;
+      color: #666; padding: 3px 7px; cursor: pointer; transition: all .1s;
+    }
+    .allergy-clear-btn:hover { border-color: #ff9eb5; color: #ff9eb5; }
+    .allergy-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 14px; cursor: pointer; transition: background .1s;
+    }
+    .allergy-item:hover { background: rgba(255,255,255,.05); }
+    .allergy-item input[type="checkbox"] {
+      width: 14px; height: 14px; accent-color: #ff9eb5;
+      cursor: pointer; flex-shrink: 0;
+    }
+    .allergy-item-label {
+      font-size: 11px; color: #aaa; cursor: pointer;
+      user-select: none; transition: color .1s; flex: 1;
+    }
+    .allergy-item:hover .allergy-item-label { color: #eee; }
+    .allergy-item input:checked + .allergy-item-label { color: #ff9eb5; font-weight: 700; }
+
+    .recipe-search-input {
+      border: 2px solid #2a2a2a; border-radius: 5px;
+      padding: 0 12px; height: 34px; font-size: 12px;
+      background: #1a1a1a; color: #eee; outline: none;
+      min-width: 130px; flex: 1;
+    }
+    .recipe-search-input:focus { border-color: #4A7C59; }
+    .recipe-search-input::placeholder { color: #555; }
+    .time-select {
+      border: 2px solid #2a2a2a; border-radius: 5px;
+      padding: 0 8px; height: 34px;
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      background: #1a1a1a; color: #888; cursor: pointer; outline: none;
+    }
+
+    /* ── Recipe grid section ───────────────────────────────────── */
+    .recipe-section {
+      background: #111; padding: 18px 0 24px;
+      border-bottom: 3px solid #4A7C59;
+    }
+    .recipe-section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 18px; margin-bottom: 14px;
+    }
+    .recipe-section-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px; color: #4A7C59; letter-spacing: 1.5px;
+    }
+    .recipe-count-badge {
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      color: #555; letter-spacing: .5px;
+    }
+
+    /* ── Recipe card grid ──────────────────────────────────────── */
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px; padding: 0 18px;
+    }
+
+    /* ── Recipe card (deals lc style) ──────────────────────────── */
+    .rc {
+      border: 2px solid rgba(255,255,255,.12); border-radius: 14px;
+      background: #222; position: relative; cursor: pointer;
+      transition: border-color .22s, box-shadow .22s, transform .18s;
+      padding-bottom: 52px; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .rc:hover {
+      border-color: rgba(255,255,255,.35); transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,.55);
+    }
+
+    /* Colored top stripe per category */
+    .rc-stripe { height: 6px; width: 100%; flex-shrink: 0; }
+    .rc-stripe.breakfast { background: var(--c-breakfast); }
+    .rc-stripe.dinner    { background: var(--c-dinner);    }
+    .rc-stripe.dessert   { background: var(--c-dessert);   }
+    .rc-stripe.snack     { background: var(--c-snack);     }
+    .rc-stripe.drink     { background: var(--c-drink);     }
+    .rc-stripe.soup      { background: var(--c-soup);      }
+    .rc-stripe.lunch     { background: var(--c-lunch);     }
+    .rc-stripe.default   { background: var(--c-default);   }
+    /* Region-based stripe overrides */
+    .rc-stripe.region-east-asia  { background: var(--region-east-asia);  }
+    .rc-stripe.region-se-asia    { background: var(--region-se-asia);    }
+    .rc-stripe.region-europe     { background: var(--region-europe);     }
+    .rc-stripe.region-americas   { background: var(--region-americas);   }
+    .rc-stripe.region-africa-me  { background: var(--region-africa-me);  }
+
+    .rc-head { padding: 10px 12px 8px; }
+    .rc-top-row {
+      display: flex; align-items: center;
+      justify-content: flex-end; margin-bottom: 6px;
+    }
+    .rc-time {
+      font-size: 9px; font-weight: 700; color: #666;
+      font-family: monospace;
+    }
+    .rc-name {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px; color: #fff; line-height: 1.7;
+      margin-bottom: 7px;
+    }
+    .rc-badge {
+      display: inline-block; border-radius: 4px; padding: 2px 7px;
+      font-size: 9px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px;
+    }
+    .rc-badge.breakfast { background: var(--c-breakfast); }
+    .rc-badge.dinner    { background: var(--c-dinner);    }
+    .rc-badge.dessert   { background: var(--c-dessert);   }
+    .rc-badge.snack     { background: var(--c-snack);     }
+    .rc-badge.drink     { background: var(--c-drink);     }
+    .rc-badge.soup      { background: var(--c-soup);      }
+    .rc-badge.lunch     { background: var(--c-lunch);     }
+    .rc-badge.default   { background: var(--c-default);   }
+
+    /* Region badges */
+    .rc-region {
+      display: inline-block; border-radius: 4px; padding: 2px 6px;
+      font-size: 7px; font-weight: 700; color: #1a1a1a;
+      margin-left: 4px; letter-spacing: .3px; opacity: .85;
+    }
+    .rc-region.region-east-asia  { background: var(--region-east-asia-lt);  color: #1E3A28; }
+    .rc-region.region-se-asia    { background: var(--region-se-asia-lt);    color: #5A2000; }
+    .rc-region.region-europe     { background: var(--region-europe-lt);     color: #5A4010; }
+    .rc-region.region-americas   { background: var(--region-americas-lt);   color: #5A0018; }
+    .rc-region.region-africa-me  { background: var(--region-africa-me-lt);  color: #5A3800; }
+
+    /* Expandable body */
+    .rc-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height .28s cubic-bezier(.4,0,.2,1);
+      padding: 0 12px;
+    }
+    .rc:hover .rc-body { max-height: 120px; }
+    .rc-ingr-preview {
+      font-size: 9px; color: #888; line-height: 1.7;
+      padding-top: 4px; margin-bottom: 8px;
+    }
+    .rc-ingr-preview strong { color: #aaa; }
+
+    /* HIT badge */
+    .rc-hit {
+      position: absolute; top: 10px; right: 10px;
+      background: #e02030; color: #fff;
+      font-family: 'Press Start 2P', monospace; font-size: 5px;
+      padding: 3px 5px; border-radius: 3px; letter-spacing: .5px;
+    }
+
+    /* Fav heart */
+    .rc-fav {
+      position: absolute; bottom: 14px; left: 12px;
+      background: none; border: none; font-size: 15px;
+      color: #444; cursor: pointer; line-height: 1; padding: 0;
+      transition: color .1s;
+    }
+    .rc-fav:hover { color: #e02030; }
+    .rc-fav.on    { color: #e02030; }
+
+    /* Shop circle button */
+    .rc-plus {
+      position: absolute; bottom: 10px; right: 10px;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: #4A7C59; border: 2px solid rgba(0,0,0,.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; font-weight: 300; color: #1a1a1a; line-height: 1;
+      cursor: pointer; z-index: 2;
+      box-shadow: 0 2px 8px rgba(0,0,0,.5);
+      transition: background .15s, transform .15s;
+    }
+    .rc-plus:hover  { background: #1E3A28; transform: scale(1.1); }
+    .rc-plus.saved  { background: #4caf50; color: #fff; font-size: 14px; }
+    .rc-plus.saved:hover { background: #e53935; }
+
+    /* Loading skeleton */
+    .rc-skeleton {
+      border: 2px solid rgba(255,255,255,.08); border-radius: 14px;
+      height: 200px;
+      background: linear-gradient(90deg, #1e1e1e 25%, #2a2a2a 50%, #1e1e1e 75%);
+      background-size: 200% 100%;
+      animation: skeleton-shimmer 1.4s infinite;
+    }
+    @keyframes skeleton-shimmer {
+      from { background-position: 200% 0; }
+      to   { background-position: -200% 0; }
+    }
+
+    /* Empty state */
+    .recipe-empty {
+      font-family: 'Press Start 2P', monospace; font-size: 9px;
+      color: #555; text-align: center; padding: 48px 20px;
+      grid-column: 1 / -1; line-height: 2;
+    }
+
+    /* ── Page body wrapper ─────────────────────────────────────── */
+    .recipe-page-body { padding: 0 0 60px; max-width: 1100px; margin: 0 auto; }
+
+    /* ── Shop drawer ────────────────────────────────────────────── */
+    .shop-drawer {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 1800;
+      background: #111; border-top: 3px solid #4A7C59;
+      border-radius: 22px 22px 0 0;
+      padding: 0 0 env(safe-area-inset-bottom, 0);
+      max-height: 88vh; transform: translateY(100%);
+      transition: transform .32s cubic-bezier(.4,0,.2,1);
+      display: flex; flex-direction: column;
+    }
+    .shop-drawer.open { transform: translateY(0); }
+    .drawer-handle {
+      display: flex; justify-content: center;
+      padding: 10px 0 4px; flex-shrink: 0; cursor: grab;
+    }
+    .drawer-handle-pill { width: 40px; height: 4px; border-radius: 2px; background: #333; }
+    .drawer-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 8px 20px 12px; flex-shrink: 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .drawer-recipe-emoji { font-size: 32px; line-height: 1; }
+    .drawer-recipe-info  { flex: 1; min-width: 0; }
+    .drawer-recipe-name {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px; color: #eee; line-height: 1.5;
+    }
+    .drawer-recipe-meta { font-size: 11px; color: #888; margin-top: 4px; }
+    .drawer-close {
+      background: none; border: none; color: #555; font-size: 22px;
+      cursor: pointer; padding: 4px 8px; line-height: 1;
+      transition: color .12s;
+    }
+    .drawer-close:hover { color: #eee; }
+    .drawer-body {
+      overflow-y: auto; flex: 1; padding: 16px 20px 24px;
+      scrollbar-width: thin; scrollbar-color: #333 transparent;
+    }
+    .drawer-section-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px; color: #4A7C59; letter-spacing: 1.2px; margin: 0 0 10px;
+    }
+    .ingr-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .ingr-chip {
+      padding: 7px 12px; border-radius: 20px;
+      border: 2px solid #2a2a2a; background: #1a1a1a;
+      color: #ccc; font-size: 11px; cursor: pointer;
+      transition: all .1s; user-select: none;
+    }
+    .ingr-chip:hover   { border-color: #7ae0b0; }
+    .ingr-chip.have    { background: #1a1a1a; border-color: #2a2a2a; color: #ccc; }
+    .ingr-chip.missing { background: #2a1a1e; border-color: #e02030; color: #ff9eb5; text-decoration: line-through; }
+
+    /* Substitution cards */
+    .subs-section { margin-bottom: 20px; }
+    .sub-missing-label {
+      font-size: 10px; color: #ff9eb5; font-weight: 700;
+      margin-bottom: 8px; display: block;
+    }
+    .sub-options { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .sub-option {
+      padding: 9px 12px; border-radius: 10px;
+      border: 1.5px solid #2a2a2a; background: #161616;
+      color: #bbb; font-size: 11px; cursor: pointer;
+      transition: all .12s; line-height: 1.5; text-align: left;
+    }
+    .sub-option:hover    { border-color: #4A7C59; color: #eee; }
+    .sub-option.selected { background: #122a18; border-color: #4A7C59; color: #4A7C59; }
+    .sub-option-tag {
+      display: inline-block; font-size: 9px;
+      background: rgba(244,169,36,.2); color: #4A7C59;
+      border-radius: 4px; padding: 1px 5px; margin-left: 6px;
+    }
+
+    /* Adapted recipe result */
+    .adapted-result {
+      background: #0d1a10; border: 2px solid #1a3a20;
+      border-radius: 14px; padding: 14px 16px;
+      margin-top: 16px; display: none;
+    }
+    .adapted-result.visible { display: block; }
+    .adapted-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 7px; color: #7ae0b0; margin-bottom: 10px; letter-spacing: 1px;
+    }
+    .adapted-note { font-size: 11px; color: #aaa; line-height: 1.7; white-space: pre-line; }
+    .adapted-fusion-tag {
+      display: inline-block; margin-top: 10px;
+      background: rgba(122,224,176,.15); color: #7ae0b0;
+      border: 1px solid #7ae0b0; border-radius: 20px;
+      font-size: 9px; padding: 4px 10px; font-style: italic;
+    }
+
+    /* Drawer footer */
+    .drawer-footer {
+      padding: 12px 20px; flex-shrink: 0;
+      border-top: 1px solid #2a2a2a; display: flex; gap: 10px;
+    }
+    .btn-cook-adapted {
+      flex: 1; padding: 13px; border-radius: 12px;
+      background: #7ae0b0; border: 3px solid #1a7045; color: #1a1a1a;
+      font-family: 'Press Start 2P', monospace; font-size: 8px;
+      cursor: pointer; box-shadow: 0 4px 0 #1a7045;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-cook-adapted:hover  { transform: translateY(2px); box-shadow: 0 2px 0 #1a7045; }
+    .btn-cook-adapted:active { transform: translateY(4px); box-shadow: none; }
+    .btn-find-stores {
+      padding: 13px 16px; border-radius: 12px; text-decoration: none;
+      background: #4A7C59; border: 3px solid #1E3A28; color: #1a1a1a;
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      cursor: pointer; box-shadow: 0 4px 0 #1E3A28; white-space: nowrap;
+      display: inline-flex; align-items: center;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-find-stores:hover  { transform: translateY(2px); box-shadow: 0 2px 0 #1E3A28; }
+    .btn-find-stores:active { transform: translateY(4px); box-shadow: none; }
+
+    /* Backdrop */
+    .shop-backdrop {
+      position: fixed; inset: 0; z-index: 1799;
+      background: rgba(0,0,0,.6); display: none;
+    }
+    .shop-backdrop.open { display: block; }
+
+    /* ── Shopping list ─────────────────────────────────────────── */
+    .shop-list { margin-bottom: 20px; }
+    .shop-list-intro {
+      font-size: 10px; color: #888; margin-bottom: 10px; line-height: 1.6;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .shop-total-badge {
+      display: inline-block; background: #4A7C59; color: #1a1a1a;
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      border-radius: 4px; padding: 3px 8px;
+    }
+    .shop-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 10px; border-radius: 10px;
+      border: 1.5px solid #2a2a2a; background: #161616;
+      margin-bottom: 6px; cursor: pointer; transition: all .1s;
+    }
+    .shop-item:hover { border-color: #4A7C59; }
+    .shop-item.checked { background: #0d1a0d; border-color: #1a7045; }
+    .shop-item-cb {
+      width: 18px; height: 18px; border-radius: 4px; border: 2px solid #333;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; background: #111; transition: all .1s; font-size: 11px;
+      color: transparent;
+    }
+    .shop-item.checked .shop-item-cb { background: #1a7045; border-color: #7ae0b0; color: #7ae0b0; }
+    .shop-item-name { flex: 1; font-size: 12px; color: #ccc; text-transform: capitalize; }
+    .shop-item.checked .shop-item-name { text-decoration: line-through; color: #555; }
+    .shop-price-col { text-align: right; flex-shrink: 0; }
+    .shop-price { font-family: 'Press Start 2P', monospace; font-size: 7px; color: #7ae0b0; }
+    .shop-where { font-size: 9px; color: #555; margin-top: 2px; }
+    .shop-all-done {
+      text-align: center; padding: 14px; border-radius: 12px;
+      border: 2px solid #1a7045; background: #0d1a10;
+      font-family: 'Press Start 2P', monospace; font-size: 7px; color: #7ae0b0;
+      letter-spacing: 1px; display: none; margin-top: 8px;
+    }
+    .shop-all-done.visible { display: block; }
+
+    /* ── Veggie boost ───────────────────────────────────────────── */
+    .veggie-boost-section { margin-bottom: 24px; }
+    .veggie-boost-intro { font-size: 10px; color: #888; margin-bottom: 10px; line-height: 1.6; }
+    .veggie-boost-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; }
+    .veggie-boost-row::-webkit-scrollbar { height: 3px; }
+    .veggie-boost-row::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+    .veggie-card {
+      min-width: 150px; max-width: 150px; border-radius: 12px;
+      border: 2px solid #2a2a2a; background: #1a1a1a; padding: 10px 12px;
+      cursor: pointer; transition: all .15s; flex-shrink: 0;
+    }
+    .veggie-card:hover { border-color: #7ae0b0; transform: translateY(-2px); }
+    .veggie-card.added { border-color: #7ae0b0; background: #0d2a1a; }
+    .veggie-card-name {
+      font-family: 'Press Start 2P', monospace; font-size: 6px;
+      color: #7ae0b0; margin-bottom: 5px;
+    }
+    .veggie-card.added .veggie-card-name::after { content: ' ✓'; }
+    .veggie-card-how { font-size: 9px; color: #aaa; line-height: 1.5; margin-bottom: 5px; }
+    .veggie-card-benefit { font-size: 8px; color: #555; line-height: 1.5; font-style: italic; }
+
+    /* ── Dietary goals ──────────────────────────────────────────── */
+    .diet-goals-section { margin-bottom: 24px; }
+    .diet-goals-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .diet-goal-btn {
+      border: 2px solid #2a2a2a; border-radius: 20px;
+      padding: 5px 12px; font-family: 'Press Start 2P', monospace;
+      font-size: 6px; cursor: pointer; background: #1a1a1a; color: #888;
+      transition: all .12s; white-space: nowrap;
+    }
+    .diet-goal-btn:hover:not(.active) { border-color: #C95000; color: #C95000; }
+    .diet-goal-btn.active { background: #C95000; border-color: #7A3000; color: #1a1a1a; }
+    .diet-goal-content { display: none; }
+    .diet-goal-content.visible { display: block; }
+    .diet-goal-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 9px 12px; border-radius: 10px;
+      border: 1.5px solid #2a2a2a; background: #161616;
+      margin-bottom: 6px; transition: border-color .1s;
+    }
+    .diet-goal-item:hover { border-color: #C95000; }
+    .diet-goal-icon { font-size: 16px; flex-shrink: 0; line-height: 1.3; }
+    .diet-goal-text { font-size: 11px; color: #bbb; line-height: 1.6; }
+    .diet-goal-text strong { color: #eee; display: block; margin-bottom: 2px; font-size: 11px; }
+
+    @media (max-width: 640px) {
+      .recipe-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; padding: 0 12px; }
+      .recipe-filter-bar { gap: 5px; }
+      .rfbtn { font-size: 6px; padding: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+
+    <!-- ===== TOP NAV ===== -->
+    <div class="site-nav-wrap">
+      <div class="app-nav">
+        <div class="coin-counter" id="coinCounter">
+          <span class="coin-icon">COINS</span>
+          <span id="coinCount">0</span>
+        </div>
+        <a href="index.html" class="nav-title">DIG-IN</a>
+        <nav class="nav-links">
+          <a href="recipes.html" style="color:var(--pink-deep);">Recipes</a>
+          <a href="index.html">Food Map</a>
+          <a href="deals.html">Deals</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ===== BANNER ===== -->
+    <div class="game-header" style="position:relative">
+      <div class="title-screen">
+        <span class="pixel-heart">♥</span>
+        <a href="index.html" class="title-link"><h1>DIG-IN</h1></a>
+        <span class="pixel-heart">♥</span>
+      </div>
+      <p class="tagline">PIXEL RECIPE GENERATOR</p>
+    </div>
+
+    <!-- ===== TICKER ===== -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </div>
+
+    <!-- ===== RECIPE HERO ===== -->
+    <div class="recipe-hero">
+      <div class="recipe-hero-title">RECIPES</div>
+      <div class="recipe-hero-sub">NYC BODEGA · CORNER · GROCERY</div>
+      <div class="recipe-hero-row">
+        <div class="recipe-hero-count" id="heroRecipeCount">Loading…</div>
+        <div class="recipe-live-badge">
+          <div class="recipe-live-dot"></div>
+          <span>Dishes loaded from your pantry</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STICKY FILTER BAR ===== -->
+    <div class="recipe-filter-bar" id="recipeFilterBar">
+      <button class="rfbtn active" data-cat="" id="rfAll">ALL</button>
+      <button class="rfbtn breakfast" data-cat="breakfast">BREAKFAST</button>
+      <button class="rfbtn dinner"    data-cat="dinner">DINNER</button>
+      <button class="rfbtn dessert"   data-cat="dessert">DESSERT</button>
+      <button class="rfbtn snack"     data-cat="snack">SNACKS</button>
+      <button class="rfbtn drink"     data-cat="drink">DRINKS</button>
+      <button class="rfbtn soup"      data-cat="soup">SOUP</button>
+      <button class="rfbtn lunch"     data-cat="lunch">LUNCH</button>
+      <div class="filter-sep"></div>
+      <!-- Allergies dropdown -->
+      <div class="allergy-wrap" id="allergyWrap">
+        <button class="rfbtn allergy-btn" id="allergyBtn">
+          ALLERGIES <span class="allergy-caret">▾</span>
+        </button>
+        <div class="allergy-dropdown" id="allergyDropdown">
+          <div class="allergy-dropdown-header">
+            <span class="allergy-dropdown-title">DIETARY &amp; ALLERGIES</span>
+            <button class="allergy-clear-btn" id="allergyClearBtn">CLEAR</button>
+          </div>
+          <label class="allergy-item"><input type="checkbox" value="vegan"><span class="allergy-item-label">Vegan</span></label>
+          <label class="allergy-item"><input type="checkbox" value="vegetarian"><span class="allergy-item-label">Vegetarian</span></label>
+          <label class="allergy-item"><input type="checkbox" value="gluten-free"><span class="allergy-item-label">Gluten Free</span></label>
+          <label class="allergy-item"><input type="checkbox" value="nut-free"><span class="allergy-item-label">Nut Free</span></label>
+        </div>
+      </div>
+      <div class="filter-sep"></div>
+      <!-- Cuisine dropdown trigger -->
+      <div class="cuisine-wrap" id="cuisineWrap">
+        <button class="rfbtn cuisine-btn" id="cuisineBtn">
+          CUISINE <span class="cuisine-caret">▾</span>
+        </button>
+        <div class="cuisine-dropdown" id="cuisineDropdown">
+          <div class="cuisine-dropdown-header">
+            <span class="cuisine-dropdown-title">CUISINE</span>
+            <button class="cuisine-clear-btn" id="cuisineClearBtn">CLEAR</button>
+          </div>
+
+          <div class="cuisine-region-group">
+            <span class="cuisine-region-label">East Asia</span>
+            <label class="cuisine-item"><input type="checkbox" value="japanese"><span class="cuisine-item-label">Japanese</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="chinese"><span class="cuisine-item-label">Chinese</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="korean"><span class="cuisine-item-label">Korean</span></label>
+          </div>
+
+          <div class="cuisine-region-group">
+            <span class="cuisine-region-label">Southeast &amp; South Asia</span>
+            <label class="cuisine-item"><input type="checkbox" value="thai"><span class="cuisine-item-label">Thai</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="vietnamese"><span class="cuisine-item-label">Vietnamese</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="indian"><span class="cuisine-item-label">Indian</span></label>
+          </div>
+
+          <div class="cuisine-region-group">
+            <span class="cuisine-region-label">Europe</span>
+            <label class="cuisine-item"><input type="checkbox" value="italian"><span class="cuisine-item-label">Italian</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="french"><span class="cuisine-item-label">French</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="greek"><span class="cuisine-item-label">Greek</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="spanish"><span class="cuisine-item-label">Spanish</span></label>
+          </div>
+
+          <div class="cuisine-region-group">
+            <span class="cuisine-region-label">Americas &amp; Caribbean</span>
+            <label class="cuisine-item"><input type="checkbox" value="mexican"><span class="cuisine-item-label">Mexican</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="american"><span class="cuisine-item-label">American</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="caribbean"><span class="cuisine-item-label">Caribbean</span></label>
+          </div>
+
+          <div class="cuisine-region-group">
+            <span class="cuisine-region-label">Africa &amp; Middle East</span>
+            <label class="cuisine-item"><input type="checkbox" value="west-african"><span class="cuisine-item-label">West African</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="mediterranean"><span class="cuisine-item-label">Mediterranean</span></label>
+            <label class="cuisine-item"><input type="checkbox" value="middle-eastern"><span class="cuisine-item-label">Middle Eastern</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="filter-sep"></div>
+      <select class="time-select" id="timeSelect">
+        <option value="">Any time</option>
+        <option value="15">≤ 15 min</option>
+        <option value="30">≤ 30 min</option>
+        <option value="60">≤ 60 min</option>
+      </select>
+      <input class="recipe-search-input" id="recipeSearch" type="text" placeholder="Search a dish…" />
+    </div>
+
+    <!-- ===== RECIPE GRID SECTION ===== -->
+    <div class="recipe-page-body">
+      <div class="recipe-section">
+        <div class="recipe-section-header">
+          <span class="recipe-section-title">ALL DISHES</span>
+          <span class="recipe-count-badge" id="visibleCount"></span>
+        </div>
+        <div class="recipe-grid" id="dishGrid">
+          <!-- skeletons until JS loads -->
+          <div class="rc-skeleton"></div>
+          <div class="rc-skeleton"></div>
+          <div class="rc-skeleton"></div>
+          <div class="rc-skeleton"></div>
+          <div class="rc-skeleton"></div>
+          <div class="rc-skeleton"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">DIG-IN</div>
+      <p class="footer-fine">© 2026 DIG-IN Kitchen · pixels, transit &amp; snacks</p>
+    </footer>
+
+  </div><!-- /screen -->
+
+  <!-- ===== SHOP BACKDROP ===== -->
+  <div class="shop-backdrop" id="shopBackdrop"></div>
+
+  <!-- ===== SHOP / INGREDIENT DRAWER ===== -->
+  <div class="shop-drawer" id="shopDrawer">
+    <div class="drawer-handle"><div class="drawer-handle-pill"></div></div>
+
+    <div class="drawer-head">
+      <div class="drawer-recipe-info">
+        <div class="drawer-recipe-name" id="drawerName">Recipe</div>
+        <div class="drawer-recipe-meta" id="drawerMeta">0 min</div>
+      </div>
+      <button class="drawer-close" id="drawerClose">✕</button>
+    </div>
+
+    <div class="drawer-body" id="drawerBody">
+      <p class="drawer-section-title">WHAT ARE YOU MISSING?</p>
+      <p style="font-size:11px;color:#888;margin-bottom:12px;">
+        Tap any ingredient you <strong style="color:#ff9eb5">don't have</strong>. We'll build your shopping list with the cheapest options nearby.
+      </p>
+      <div class="ingr-grid" id="ingrGrid"></div>
+      <div class="subs-section" id="subsSection"></div>
+
+      <!-- Shopping list (shown when items are missing) -->
+      <div class="shop-list" id="shopListSection" style="display:none">
+        <p class="drawer-section-title">SHOPPING LIST</p>
+        <div class="shop-list-intro">
+          <span>Estimated total:</span>
+          <span class="shop-total-badge" id="shopTotalBadge">—</span>
+          <span style="font-size:9px;color:#555;">· check off as you shop</span>
+        </div>
+        <div id="shopListItems"></div>
+        <div class="shop-all-done" id="shopAllDone">ALL ITEMS FOUND — READY TO COOK!</div>
+      </div>
+
+      <div class="adapted-result" id="adaptedResult">
+        <div class="adapted-title">YOUR FUSION VERSION</div>
+        <div class="adapted-note" id="adaptedNote"></div>
+        <span class="adapted-fusion-tag" id="adaptedTag"></span>
+      </div>
+
+      <!-- Veggie boost -->
+      <div class="veggie-boost-section" id="veggieBoostSection">
+        <p class="drawer-section-title">BOOST WITH VEGGIES</p>
+        <p class="veggie-boost-intro">Most people don't eat enough vegetables. Tap to add any of these — most cost under $1 at any corner store.</p>
+        <div class="veggie-boost-row" id="veggieBoostRow"></div>
+      </div>
+
+      <!-- Dietary goals -->
+      <div class="diet-goals-section" id="dietGoalsSection">
+        <p class="drawer-section-title">ADAPT THIS RECIPE</p>
+        <div class="diet-goals-row" id="dietGoalsRow">
+          <button class="diet-goal-btn" data-goal="protein">+ PROTEIN</button>
+          <button class="diet-goal-btn" data-goal="fiber">+ FIBER</button>
+          <button class="diet-goal-btn" data-goal="lowcarb">LOWER CARBS</button>
+        </div>
+        <div class="diet-goal-content" id="dietGoalContent"></div>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <button class="btn-cook-adapted" id="btnCookAdapted">Cook with what I have →</button>
+      <a href="index.html" class="btn-find-stores">Find stores 🗺</a>
+    </div>
+  </div>
+
+  <script>
+    /* ── Ticker ──────────────────────────────────────────────────── */
+    (function buildTicker() {
+      const staticItems = [
+        'Omurice','Cacio e Pepe','Tacos al Pastor','Ramen','Chicken Biryani',
+        'Paella','Tiramisu','Buddha Bowl','Salmon Teriyaki','Green Curry',
+        'Croissants','Falafel','Beef Stew','Korean BBQ','Shawarma',
+      ];
+      let items = [...staticItems];
+      try {
+        const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+        items = [...cached.slice(0, 10).map(r => r.name), ...staticItems];
+      } catch(_) {}
+      const text = items.map(i =>
+        `<span class="ticker-item">${i}</span><span class="ticker-sep">·</span>`
+      ).join('');
+      const track = document.getElementById('tickerTrack');
+      track.innerHTML = text + text;
+    })();
+
+    /* ── Recipe data ─────────────────────────────────────────────── */
+    const CAT_KEY = {
+      breakfast: 'breakfast', dinner: 'dinner', dessert: 'dessert',
+      snack: 'snack', drink: 'drink', soup: 'soup', lunch: 'lunch',
+    };
+    const EMOJI = {
+      japanese:'🍜', italian:'🍝', mexican:'🌮', indian:'🍛',
+      thai:'🫕', chinese:'🥢', french:'🥐', greek:'🫒',
+      korean:'🥩', vietnamese:'🍃', spanish:'🥘', american:'🍔', default:'🍳',
+    };
+    const STORES  = ['Bodega · 2 min 🚇','Corner · 1 min 🚇','Grocery · 4 min 🚇',
+                     'Bodega · 3 min 🚇','Corner · 2 min 🚇','Grocery · 5 min 🚇'];
+    const STATIC = [
+      { id:1,  name:'Matcha Daifuku Mochi',    pixelEmoji:'🍵', time:20, recipe_type:'dessert'   },
+      { id:2,  name:'Cacio e Pepe',             pixelEmoji:'🍝', time:15, recipe_type:'dinner'    },
+      { id:3,  name:'Tacos al Pastor',          pixelEmoji:'🌮', time:45, recipe_type:'dinner'    },
+      { id:4,  name:'Toxic Sour Slush',         pixelEmoji:'🥤', time:5,  recipe_type:'drink'     },
+      { id:5,  name:'Lychee Love Jelly',        pixelEmoji:'🍓', time:10, recipe_type:'dessert'   },
+      { id:6,  name:'Nougat Gold Bar',          pixelEmoji:'🍫', time:5,  recipe_type:'snack'     },
+      { id:7,  name:'Rainbow Yogurt Chews',     pixelEmoji:'🌈', time:5,  recipe_type:'snack'     },
+      { id:8,  name:'Teaser Choco Spread',      pixelEmoji:'🍮', time:15, recipe_type:'dessert'   },
+      { id:9,  name:'Strawberry Mochi Pancake', pixelEmoji:'🍡', time:25, recipe_type:'breakfast' },
+      { id:10, name:'Matcha Roll Wafers',       pixelEmoji:'🍪', time:10, recipe_type:'snack'     },
+      { id:11, name:'Bouncy Rice Onigiri',      pixelEmoji:'🍙', time:15, recipe_type:'breakfast' },
+      { id:12, name:'Bueno Mini Wafers',        pixelEmoji:'🍫', time:5,  recipe_type:'snack'     },
+      { id:13, name:'Original Chocolate Chip Cookie', pixelEmoji:'🍪', time:27, recipe_type:'snack' },
+      { id:14, name:'Double Fudge Brownie',     pixelEmoji:'🍫', time:35, recipe_type:'dessert'   },
+      { id:15, name:'Pecan Pie Cookie',         pixelEmoji:'🥜', time:33, recipe_type:'snack'     },
+      { id:16, name:'Cinnamon Sugar Cookie',    pixelEmoji:'✨', time:25, recipe_type:'snack'     },
+      { id:17, name:'White Chocolate Macadamia',pixelEmoji:'🥥', time:27, recipe_type:'snack'     },
+      { id:18, name:'Raspberry White Chocolate',pixelEmoji:'🫐', time:32, recipe_type:'dessert'   },
+      { id:19, name:'Oatmeal Raisin Cookie',    pixelEmoji:'🌾', time:26, recipe_type:'snack'     },
+      { id:20, name:'Peanut Butter Chocolate Cup', pixelEmoji:'🥜', time:31, recipe_type:'dessert' },
+      { id:21, name:'Triple Chocolate Chunk',   pixelEmoji:'🍫', time:33, recipe_type:'dessert'   },
+      { id:22, name:'Toffee Almond Cookie',     pixelEmoji:'🧀', time:26, recipe_type:'snack'     },
+    ];
+
+    /* ── Ingredients + substitutions ─────────────────────────────── */
+    const RECIPE_INGREDIENTS = {
+      1:  ['mochiko rice flour','sugar','matcha powder','milk','butter','red bean paste'],
+      2:  ['spaghetti','pecorino romano','black pepper','pasta water','salt'],
+      3:  ['pork shoulder','guajillo chiles','pineapple','corn tortillas','onion','cilantro','lime'],
+      4:  ['sour candy','lime juice','sugar syrup','sparkling water','ice'],
+      5:  ['lychee','agar agar','coconut milk','sugar','vanilla'],
+      6:  ['almonds','honey','egg whites','sugar','vanilla'],
+      7:  ['gelatin','sugar','food coloring','powdered sugar','cream'],
+      8:  ['chocolate','cream','butter','sugar','vanilla','cocoa powder'],
+      9:  ['rice flour','strawberries','cream cheese','eggs','milk','butter','syrup'],
+      10: ['matcha powder','flour','butter','sugar','cream','wafer sheets'],
+      11: ['sushi rice','nori','soy sauce','sesame seeds','rice vinegar','salt'],
+      12: ['chocolate','wafer sheets','hazelnuts','cream','sugar','butter'],
+      13: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','chocolate chips','walnuts'],
+      14: ['butter','granulated sugar','eggs','cocoa powder','flour','salt','baking powder','vanilla extract','semi-sweet chocolate','chocolate chips'],
+      15: ['butter','granulated sugar','brown sugar','eggs','vanilla extract','flour','baking soda','salt','pecan pieces','toffee chips'],
+      16: ['flour','baking soda','salt','butter','granulated sugar','eggs','vanilla extract','cinnamon'],
+      17: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','white chocolate chips','macadamia nuts'],
+      18: ['flour','baking powder','salt','butter','granulated sugar','powdered sugar','eggs','vanilla extract','lemon zest','white chocolate chips','raspberries'],
+      19: ['flour','baking soda','cinnamon','nutmeg','cloves','salt','butter','brown sugar','eggs','vanilla extract','oats','raisins'],
+      20: ['flour','baking soda','salt','peanut butter','butter','granulated sugar','brown sugar','eggs','vanilla extract','chocolate peanut butter cups'],
+      21: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','semi-sweet chocolate chunks','dark chocolate chunks','white chocolate chunks'],
+      22: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','toffee bits','almonds'],
+    };
+
+    const SUBS_MAP = {
+      'eggs':           ['flax egg (1 tbsp flax + 3 tbsp water) — earthy depth','silken tofu (¼ cup) — creamier','aquafaba (3 tbsp) — neutral & airy'],
+      'butter':         ['brown butter + white miso — deep umami','tahini — rich and nutty','coconut oil — adds tropical note'],
+      'milk':           ['oat milk — slightly sweet','coconut milk — richer, tropical','cashew cream — very neutral'],
+      'cream':          ['coconut cream — tropical richness','oat milk + 1 tsp cornstarch — thickens great','cashew cream — velvety'],
+      'sugar':          ['maple syrup (use ¾ amount) — adds complexity','coconut sugar — caramel notes','ripe mashed banana — natural sweetness'],
+      'flour':          ['oat flour (blend oats) — heartier texture','almond flour — nutty, moist','rice flour — light and crispy'],
+      'cheese':         ['nutritional yeast + cashews — nutty umami','firm tofu + lemon + salt','miso paste (small amount) — fermented depth'],
+      'pecorino romano':['parmigiano reggiano — milder, nuttier','nutritional yeast — dairy-free umami','aged manchego — sharper'],
+      'pork shoulder':  ['tempeh — hearty, absorbs flavor well','jackfruit (young, canned) — pulls apart like meat','lion\'s mane mushrooms — meaty texture'],
+      'chicken':        ['tempeh — firm and earthy','king oyster mushrooms — meaty','tofu (extra firm) — neutral canvas'],
+      'beef':           ['lentil + walnut mince — rich and hearty','jackfruit — great for braises','shiitake + black bean paste'],
+      'spaghetti':      ['zucchini noodles (spiralized) — fresh, lighter','rice noodles — gluten-free','soba noodles — earthy, nutty'],
+      'pasta':          ['zucchini noodles — fresh, low-carb','farro — nutty and chewy','lentil pasta — high protein'],
+      'soy sauce':      ['coconut aminos — sweeter, gluten-free','miso + a little water','fish sauce (if not vegan) — more intense'],
+      'nori':           ['rice paper — lighter wrap','collard green leaves — hearty','cucumber strips — fresh, crunchy'],
+      'corn tortillas': ['lettuce wraps — light and crispy','cassava flour tortillas — neutral','naan — softer, doughier'],
+      'lime':           ['yuzu juice — floral and complex','lemon — sharper citrus','tamarind paste + water — tangy depth'],
+      'lemon':          ['yuzu — complex, floral','lime — tropical punch','white wine vinegar (half the amount)'],
+      'onion':          ['leeks — milder, sweeter','shallots — more elegant','scallions — lighter flavor'],
+      'garlic':         ['shallots — subtler aromatics','roasted garlic paste — sweeter','fermented black garlic — deep & sweet'],
+      'coconut milk':   ['oat cream — neutral, creamy','cashew milk — rich','almond milk + 1 tbsp tahini'],
+      'agar agar':      ['gelatin — same ratio','cornstarch (to thicken, not set)','psyllium husk (1 tsp per cup)'],
+      'matcha powder':  ['spirulina — earthy green (not sweet)','hojicha powder — toasty, smoky','pandan extract — sweet, grassy'],
+      'red bean paste': ['tahini + honey — nutty sweetness','mashed sweet potato + cinnamon','chocolate hazelnut spread'],
+      'chocolate':      ['carob powder — naturally sweet, caffeine-free','cacao + white miso — deeper flavor','dark tahini — rich and earthy'],
+      'honey':          ['agave nectar — lighter flavor','date syrup — more complex','maple syrup — earthy sweetness'],
+      'vinegar':        ['citrus juice — brighter','tamarind water — complex and tangy','pickle brine — funky and briny'],
+      'vanilla':        ['cardamom — warmly spiced','rosewater (half the amount) — floral','almond extract — sweeter, nutty'],
+      'rice':           ['farro — nutty, chewy','cauliflower rice — lighter','millet — fluffy, slightly sweet'],
+      'sushi rice':     ['short-grain brown rice — nuttier','cauliflower rice — grain-free','farro — chewy, modern twist'],
+      'guajillo chiles':['ancho chiles — smokier','chipotle in adobo — more heat','dried mulato chiles — earthier'],
+      'pineapple':      ['mango — sweeter, tropical','fresh tomatillo — tangy twist','peach + lime — fruity brightness'],
+    };
+
+    const FUSION_TAGS = [
+      'Korean-Mexican fusion', 'Japanese-Italian twist', 'Caribbean-spiced remix',
+      'West African fusion', 'Indo-Chinese fusion', 'NYC street food remix',
+      'Vegan reimagining', 'Pantry-raid special', 'Bodega fusion edition',
+      'Zero-waste kitchen', 'Plant-based upgrade', 'Corner store creation',
+    ];
+
+    /* ── Dietary tags per recipe ─────────────────────────────────── */
+    const DIETARY_MAP = {
+      1:  ['vegan','gluten-free','nut-free'],
+      2:  ['vegetarian'],
+      3:  [],
+      4:  ['vegan','gluten-free','nut-free'],
+      5:  ['vegan','gluten-free','nut-free'],
+      6:  ['gluten-free'],
+      7:  ['gluten-free'],
+      8:  ['vegetarian','gluten-free','nut-free'],
+      9:  ['vegetarian'],
+      10: ['vegetarian'],
+      11: ['vegan','gluten-free','nut-free'],
+      12: ['vegetarian'],
+      13: ['vegetarian'],
+      14: ['vegetarian','gluten-free','nut-free'],
+      15: ['vegetarian'],
+      16: ['vegetarian'],
+      17: ['vegetarian'],
+      18: ['vegetarian'],
+      19: ['vegetarian'],
+      20: ['vegetarian'],
+      21: ['vegetarian'],
+      22: ['vegetarian'],
+    };
+
+    /* ── Ingredient prices (budget-focused) ──────────────────────── */
+    const INGREDIENT_PRICES = {
+      'eggs':             { est: '$0.25 ea', where: 'Any bodega' },
+      'butter':           { est: '~$1.00',   where: 'Any bodega' },
+      'milk':             { est: '~$0.50',   where: 'Corner store' },
+      'cream':            { est: '~$1.50',   where: 'Any grocery' },
+      'cream cheese':     { est: '~$2.50',   where: 'Any grocery' },
+      'flour':            { est: '~$0.50',   where: 'Any grocery' },
+      'sugar':            { est: '~$0.30',   where: 'Any bodega' },
+      'powdered sugar':   { est: '~$1.00',   where: 'Any grocery' },
+      'salt':             { est: '~$0.25',   where: 'Any bodega' },
+      'black pepper':     { est: '~$0.50',   where: 'Any bodega' },
+      'vanilla':          { est: '~$1.50',   where: 'Any grocery' },
+      'honey':            { est: '~$2.00',   where: 'Any bodega' },
+      'chocolate':        { est: '~$2.00',   where: 'Any bodega' },
+      'cocoa powder':     { est: '~$1.50',   where: 'Any grocery' },
+      'onion':            { est: '~$0.50',   where: 'Any bodega' },
+      'garlic':           { est: '~$0.50',   where: 'Any bodega' },
+      'lime':             { est: '~$0.30 ea',where: 'Any bodega' },
+      'cilantro':         { est: '~$0.75',   where: 'Any bodega' },
+      'spaghetti':        { est: '~$1.50',   where: 'Any grocery' },
+      'pasta water':      { est: 'Free',     where: 'Your kitchen' },
+      'pecorino romano':  { est: '~$4.00',   where: 'Grocery' },
+      'soy sauce':        { est: '~$1.00',   where: 'Any bodega' },
+      'sesame seeds':     { est: '~$1.00',   where: 'Any grocery' },
+      'rice vinegar':     { est: '~$1.50',   where: 'Asian grocery' },
+      'nori':             { est: '~$2.50',   where: 'Asian grocery' },
+      'sushi rice':       { est: '~$2.00',   where: 'Asian grocery' },
+      'mochiko rice flour':{ est:'~$2.50',   where: 'Asian grocery' },
+      'matcha powder':    { est: '~$3.00',   where: 'Asian grocery' },
+      'red bean paste':   { est: '~$2.00',   where: 'Asian grocery' },
+      'wafer sheets':     { est: '~$2.00',   where: 'Asian grocery' },
+      'hazelnuts':        { est: '~$3.00',   where: 'Grocery' },
+      'lychee':           { est: '~$2.50',   where: 'Asian grocery' },
+      'agar agar':        { est: '~$2.00',   where: 'Asian grocery' },
+      'coconut milk':     { est: '~$1.50',   where: 'Any grocery' },
+      'pineapple':        { est: '~$2.50',   where: 'Bodega / grocery' },
+      'pork shoulder':    { est: '~$5.00',   where: 'Grocery / butcher' },
+      'guajillo chiles':  { est: '~$2.00',   where: 'Latin grocery' },
+      'corn tortillas':   { est: '~$1.50',   where: 'Latin grocery / bodega' },
+      'almonds':          { est: '~$3.00',   where: 'Grocery / bodega' },
+      'egg whites':       { est: '~$0.50',   where: 'Any bodega' },
+      'gelatin':          { est: '~$1.50',   where: 'Any grocery' },
+      'food coloring':    { est: '~$1.00',   where: 'Grocery' },
+      'strawberries':     { est: '~$2.50',   where: 'Grocery / corner' },
+      'rice flour':       { est: '~$1.50',   where: 'Asian grocery / grocery' },
+      'syrup':            { est: '~$2.00',   where: 'Any grocery' },
+      'sour candy':       { est: '~$1.00',   where: 'Bodega' },
+      'lime juice':       { est: '~$0.50',   where: 'Any bodega' },
+      'sugar syrup':      { est: 'Free',     where: 'Make it (2 min, sugar + water)' },
+      'sparkling water':  { est: '~$1.00',   where: 'Bodega' },
+      'ice':              { est: 'Free',     where: 'Your freezer' },
+      'chocolate chips':   { est: '~$2.00',   where: 'Any grocery' },
+      'walnuts':          { est: '~$3.50',   where: 'Grocery / bulk' },
+      'brown sugar':      { est: '~$0.50',   where: 'Any bodega' },
+      'cocoa powder':     { est: '~$1.50',   where: 'Any grocery' },
+      'semi-sweet chocolate': { est: '~$2.00', where: 'Any grocery' },
+      'toffee chips':     { est: '~$2.00',   where: 'Any grocery' },
+      'pecan pieces':     { est: '~$4.00',   where: 'Grocery / bulk' },
+      'cinnamon':         { est: '~$1.50',   where: 'Any grocery' },
+      'nutmeg':           { est: '~$2.00',   where: 'Any grocery' },
+      'cloves':           { est: '~$3.00',   where: 'Any grocery' },
+      'white chocolate chips': { est: '~$2.50', where: 'Any grocery' },
+      'macadamia nuts':   { est: '~$6.00',   where: 'Grocery / bulk' },
+      'lemon zest':       { est: '~$0.50',   where: 'Fresh lemon' },
+      'raspberries':      { est: '~$3.00',   where: 'Grocery (frozen ok)' },
+      'oats':             { est: '~$2.00',   where: 'Any grocery' },
+      'raisins':          { est: '~$2.00',   where: 'Any grocery' },
+      'peanut butter':    { est: '~$2.50',   where: 'Any bodega' },
+      'chocolate peanut butter cups': { est: '~$2.00', where: 'Any grocery' },
+      'dark chocolate chunks': { est: '~$2.50', where: 'Any grocery' },
+      'toffee bits':      { est: '~$2.00',   where: 'Any grocery' },
+    };
+
+    /* ── Veggie boosts ───────────────────────────────────────────── */
+    const VEGGIE_BOOSTS = [
+      { name: 'Spinach',      how: 'Toss a handful in the last 2 min',       benefit: 'Iron + folate — supports blood health & energy' },
+      { name: 'Kale',         how: 'Massage with a drop of oil first',        benefit: 'Vitamin C + calcium — bone & immune support' },
+      { name: 'Broccoli',     how: 'Steam or stir-fry 3–4 min',              benefit: 'Sulforaphane — one of the most studied anti-inflammatories' },
+      { name: 'Zucchini',     how: 'Slice thin, add at the very end',         benefit: 'Low calorie + high water — fills you up without heaviness' },
+      { name: 'Carrots',      how: 'Thin slices cook fast in any dish',       benefit: 'Beta-carotene → Vitamin A — eye & skin health' },
+      { name: 'Sweet Potato', how: 'Cube small so it cooks in 10 min',        benefit: 'Complex carbs + Vitamin A — sustained energy, no crash' },
+      { name: 'Chickpeas',    how: 'Rinse a can, add for bulk & protein',     benefit: '7g protein + 6g fiber per ½ cup — filling & cheap' },
+      { name: 'Black Beans',  how: 'Stir in from a can, heat 2 min',          benefit: 'Highest fiber legume — regulates blood sugar all day' },
+      { name: 'Lentils',      how: 'Red lentils dissolve right into sauces',  benefit: '18g protein per cup — the cheapest complete meal booster' },
+      { name: 'Edamame',      how: 'Frozen bag thaws in 2 min of boiling',    benefit: 'Complete plant protein + Vitamin K — rare in plant foods' },
+    ];
+
+    /* ── Dietary goal substitutions ──────────────────────────────── */
+    const DIET_GOAL_SUBS = {
+      protein: [
+        { icon: '🫘', name: 'Chickpeas',  note: 'Add ½ can rinsed — 7g protein per ½ cup. Dirt cheap at any corner store.' },
+        { icon: '🥚', name: 'Egg',        note: 'Stir one in at the end — complete protein, no extra cost if you have them.' },
+        { icon: '🌿', name: 'Edamame',    note: 'Frozen bag from any grocery — 17g per cup, complete amino acid profile.' },
+        { icon: '🟫', name: 'Tempeh',     note: 'Cube and pan-fry 3 min — fermented soy, 31g per cup, good for your gut too.' },
+        { icon: '🌾', name: 'Red Lentils',note: 'They dissolve into any sauce — 18g protein per cup, under $2 a bag.' },
+      ],
+      fiber: [
+        { icon: '🫘', name: 'Black Beans',    note: '½ can = 8g fiber. Slow-digesting, keeps blood sugar steady for hours.' },
+        { icon: '🥦', name: 'Broccoli',       note: '1 cup = 5g fiber + Vitamin C. Throw florets into any stir-fry or pasta.' },
+        { icon: '🥕', name: 'Carrots',        note: 'Soluble fiber feeds beneficial gut bacteria. Slice thin, cooks fast.' },
+        { icon: '🍠', name: 'Sweet Potato',   note: '4g fiber + antioxidants. Sub for regular potato — way more filling.' },
+        { icon: '🌾', name: 'Farro over rice',note: 'Chewy, nutty — 8g fiber per cup vs 2g in white rice. Bodega has it.' },
+      ],
+      lowcarb: [
+        { icon: '🥦', name: 'Cauliflower Rice',  note: 'Pulse cauliflower in a blender — replaces rice at ~5g carbs vs 45g.' },
+        { icon: '🥒', name: 'Zucchini Noodles',  note: 'Peel into ribbons or spiralize — works with any sauce, 4g carbs per cup.' },
+        { icon: '🥬', name: 'Lettuce Wraps',      note: 'Swap tortillas or buns — iceberg or romaine hold up well, zero carbs.' },
+        { icon: '🍳', name: 'Egg Wrap',           note: 'A thin omelette makes a perfect taco shell. Adds protein too.' },
+        { icon: '🌿', name: 'Double the Veg',     note: 'Skip the starch entirely and double whatever vegetable is already in the dish.' },
+      ],
+    };
+
+    /* ── State ───────────────────────────────────────────────────── */
+    let allRecipes    = [];
+    let activeRecipe  = null;
+    let ingrState     = {};
+    let subChoices    = {};
+    let shopChecked   = {};
+    let veggieAdded   = new Set();
+    let activeDietGoal = '';
+    let fCat          = '';
+    let fTime         = '';
+    let fAllergies    = new Set();
+    let fCuisines     = new Set();
+
+    /* ── Allergen → ingredient keywords ─────────────────────────── */
+    const ALLERGEN_INGR = {
+      'vegan':       ['butter','milk','cream','cream cheese','eggs','egg whites','honey',
+                      'gelatin','pecorino','parmesan','cheese','pork','chicken','beef',
+                      'fish','lamb','turkey','lard','meat','tuna','salmon','shrimp'],
+      'vegetarian':  ['pork','chicken','beef','fish','lamb','turkey','gelatin','lard',
+                      'meat','tuna','salmon','shrimp','anchovy','bacon','ham'],
+      'gluten-free': ['flour','spaghetti','pasta','wheat','barley','rye','wafer sheets',
+                      'breadcrumbs','couscous','noodles','udon','ramen','orzo'],
+      'nut-free':    ['almonds','hazelnuts','peanuts','peanut','cashews','walnuts',
+                      'pecans','macadamia','pistachios','pine nuts','almond flour',
+                      'almond extract','almond milk','nut butter','praline','marzipan'],
+    };
+
+    function removeAllergens(ingredients) {
+      if (fAllergies.size === 0) return ingredients;
+      return ingredients.filter(ingr => {
+        const lower = ingr.toLowerCase();
+        for (const allergy of fAllergies) {
+          const keywords = ALLERGEN_INGR[allergy] || [];
+          if (keywords.some(k => lower.includes(k))) return false;
+        }
+        return true;
+      });
+    }
+
+    /* ── Helpers ─────────────────────────────────────────────────── */
+    function catKey(r) {
+      return CAT_KEY[(r.recipe_type||'').toLowerCase()] || 'default';
+    }
+
+    function catLabel(r) {
+      const k = catKey(r);
+      return k === 'default' ? 'Other' : k.charAt(0).toUpperCase() + k.slice(1);
+    }
+
+    const CUISINE_REGIONS = {
+      japanese: 'east-asia', chinese: 'east-asia', korean: 'east-asia',
+      thai: 'se-asia', vietnamese: 'se-asia', indian: 'se-asia',
+      italian: 'europe', french: 'europe', greek: 'europe',
+      spanish: 'europe', mediterranean: 'europe',
+      mexican: 'americas', american: 'americas', caribbean: 'americas', latin: 'americas',
+      'west african': 'africa-me', 'middle eastern': 'africa-me', african: 'africa-me',
+    };
+
+    const REGION_LABELS = {
+      'east-asia': 'East Asia',
+      'se-asia':   'S/SE Asia',
+      'europe':    'Europe',
+      'americas':  'Americas',
+      'africa-me': 'Africa/ME',
+    };
+
+    function regionFor(r) {
+      const c = (r.cuisine || r.cuisine_type || r.region || '').toLowerCase();
+      for (const key of Object.keys(CUISINE_REGIONS)) {
+        if (c.includes(key)) return CUISINE_REGIONS[key];
+      }
+      return null;
+    }
+
+    function getDietTags(r) {
+      if (r.id && DIETARY_MAP[r.id]) return DIETARY_MAP[r.id];
+      return r.dietary_tags || r.diet_tags || [];
+    }
+
+    function getIngredients(recipe) {
+      if (recipe.ingredients && recipe.ingredients.length) return recipe.ingredients;
+      if (recipe.id && RECIPE_INGREDIENTS[recipe.id]) return RECIPE_INGREDIENTS[recipe.id];
+      const generic = ['eggs','flour','butter','sugar','milk','onion','garlic','salt'];
+      return generic.slice(0, 5 + (recipe.name.length % 4));
+    }
+
+    /* ── Load recipes ────────────────────────────────────────────── */
+    function loadRecipes() {
+      try {
+        const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+        allRecipes = cached.length ? cached : STATIC;
+      } catch(_) { allRecipes = STATIC; }
+      const countEl = document.getElementById('heroRecipeCount');
+      if (countEl) countEl.textContent = `${allRecipes.length} DISHES`;
+      renderGrid(allRecipes);
+    }
+
+    /* ── Render grid ─────────────────────────────────────────────── */
+    function renderGrid(list) {
+      const grid    = document.getElementById('dishGrid');
+      const countEl = document.getElementById('visibleCount');
+      if (countEl) countEl.textContent = `${list.length} DISH${list.length !== 1 ? 'ES' : ''}`;
+
+      if (!list.length) {
+        grid.innerHTML = `<div class="recipe-empty">NO RECIPES FOUND<br><span style="color:#444;font-size:7px;">TRY A DIFFERENT FILTER</span></div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map((r, i) => {
+        const cat    = catKey(r);
+        const label  = catLabel(r);
+        const region = regionFor(r);
+        const mins   = r.totalTime || r.total_time || r.time || '?';
+        const isHit  = i % 5 === 0 || (r.rating >= 5);
+        const ingrs  = getIngredients(r);
+        const preview = ingrs.slice(0, 3).join(', ') + (ingrs.length > 3 ? '…' : '');
+        const store  = STORES[i % STORES.length];
+        const stripeClass = region ? `region-${region}` : cat;
+        const regionBadge = region
+          ? `<span class="rc-region region-${region}">${REGION_LABELS[region]}</span>`
+          : '';
+
+        return `
+        <article class="rc" data-idx="${i}">
+          <div class="rc-stripe ${stripeClass}"></div>
+          ${isHit ? '<span class="rc-hit">HIT</span>' : ''}
+          <div class="rc-head">
+            <div class="rc-top-row">
+              <span class="rc-time">${mins} min</span>
+            </div>
+            <div class="rc-name">${r.name}</div>
+            <span class="rc-badge ${cat}">${label}</span>${regionBadge}
+          </div>
+          <div class="rc-body">
+            <div class="rc-ingr-preview"><strong>Needs:</strong> ${preview}</div>
+            <div style="font-size:9px;color:#555;">${store}</div>
+          </div>
+          <button class="rc-fav" aria-label="save">♡</button>
+          <button class="rc-plus" title="Shop for this dish">+</button>
+        </article>`;
+      }).join('');
+
+      /* Events */
+      grid.querySelectorAll('.rc').forEach((card, i) => {
+        card.addEventListener('click', e => {
+          if (e.target.closest('.rc-fav') || e.target.closest('.rc-plus')) return;
+          openShopDrawer(list[i]);
+        });
+        card.querySelector('.rc-plus').addEventListener('click', e => {
+          e.stopPropagation();
+          openShopDrawer(list[i]);
+        });
+        card.querySelector('.rc-fav').addEventListener('click', e => {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+          btn.classList.toggle('on');
+          btn.textContent = btn.classList.contains('on') ? '♥' : '♡';
+        });
+      });
+    }
+
+    /* ── Shop drawer ─────────────────────────────────────────────── */
+    function openShopDrawer(recipe) {
+      activeRecipe   = recipe;
+      ingrState      = {};
+      subChoices     = {};
+      shopChecked    = {};
+      veggieAdded    = new Set();
+      activeDietGoal = '';
+
+      document.getElementById('drawerName').textContent = recipe.name;
+      const mins = recipe.totalTime || recipe.total_time || recipe.time || '?';
+      document.getElementById('drawerMeta').textContent = `${mins} min · tap what you're missing`;
+
+      const ingrs = removeAllergens(getIngredients(recipe));
+      ingrs.forEach(i => { ingrState[i] = 'have'; });
+
+      renderIngrGrid(ingrs);
+      renderSubs(ingrs);
+      renderVeggieBoost();
+      renderDietGoalContent('');
+
+      document.getElementById('dietGoalsRow').querySelectorAll('.diet-goal-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('adaptedResult').classList.remove('visible');
+      document.getElementById('shopDrawer').classList.add('open');
+      document.getElementById('shopBackdrop').classList.add('open');
+    }
+
+    function closeDrawer() {
+      document.getElementById('shopDrawer').classList.remove('open');
+      document.getElementById('shopBackdrop').classList.remove('open');
+    }
+
+    document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+    document.getElementById('shopBackdrop').addEventListener('click', closeDrawer);
+
+    function renderIngrGrid(ingrs) {
+      const grid = document.getElementById('ingrGrid');
+      grid.innerHTML = ingrs.map(ingr => {
+        const cls = ingrState[ingr] === 'have' ? 'have' : 'missing';
+        return `<button class="ingr-chip ${cls}" data-ingr="${ingr}">${ingr}</button>`;
+      }).join('');
+      grid.querySelectorAll('.ingr-chip').forEach(chip =>
+        chip.addEventListener('click', () => toggleIngr(chip.dataset.ingr, ingrs)));
+    }
+
+    function toggleIngr(name, ingrs) {
+      ingrState[name] = ingrState[name] === 'have' ? 'missing' : 'have';
+      renderIngrGrid(ingrs);
+      renderSubs(ingrs);
+      document.getElementById('adaptedResult').classList.remove('visible');
+    }
+
+    function renderSubs(ingrs) {
+      const missing = ingrs.filter(i => ingrState[i] === 'missing');
+      const section = document.getElementById('subsSection');
+
+      if (!missing.length) {
+        section.innerHTML = '<p style="font-size:11px;color:#7ae0b0;margin-bottom:12px;">You have everything — ready to cook!</p>';
+        document.getElementById('shopListSection').style.display = 'none';
+        return;
+      }
+
+      section.innerHTML = `<p class="drawer-section-title">CREATIVE SWAPS</p>` +
+        missing.map(ingr => {
+          const opts = SUBS_MAP[ingr.toLowerCase()] || SUBS_MAP[ingr] ||
+            [`${ingr} — use what you enjoy most`,
+             'skip it + add a pinch of umami (miso or soy)',
+             'ask your bodega — they always have something'];
+          const chosen = subChoices[ingr];
+          return `<span class="sub-missing-label">Missing: <strong>${ingr}</strong></span>
+            <div class="sub-options">
+              ${opts.map(opt => `
+                <button class="sub-option${chosen === opt ? ' selected' : ''}"
+                        data-ingr="${ingr}" data-opt="${opt.replace(/"/g,'&quot;')}">
+                  ${opt}
+                  ${opt.includes('fusion') || opt.includes('twist') || opt.includes('remix')
+                    ? '<span class="sub-option-tag">fusion</span>' : ''}
+                </button>`).join('')}
+            </div>`;
+        }).join('');
+
+      section.querySelectorAll('.sub-option').forEach(btn =>
+        btn.addEventListener('click', () => {
+          subChoices[btn.dataset.ingr] = subChoices[btn.dataset.ingr] === btn.dataset.opt ? null : btn.dataset.opt;
+          renderSubs(ingrs);
+        }));
+
+      renderShoppingList(missing);
+    }
+
+    /* ── Shopping list ───────────────────────────────────────────── */
+    function renderShoppingList(missing) {
+      const section = document.getElementById('shopListSection');
+      section.style.display = 'block';
+
+      // Initialize unchecked items
+      missing.forEach(i => { if (shopChecked[i] === undefined) shopChecked[i] = false; });
+
+      const itemsEl = document.getElementById('shopListItems');
+      itemsEl.innerHTML = missing.map(ingr => {
+        const info  = INGREDIENT_PRICES[ingr.toLowerCase()] || { est: '~$1–3', where: 'Any grocery' };
+        const done  = shopChecked[ingr];
+        return `<div class="shop-item${done ? ' checked' : ''}" data-item="${ingr}">
+          <div class="shop-item-cb">${done ? '✓' : ''}</div>
+          <span class="shop-item-name">${ingr}</span>
+          <div class="shop-price-col">
+            <div class="shop-price">${info.est}</div>
+            <div class="shop-where">${info.where}</div>
+          </div>
+        </div>`;
+      }).join('');
+
+      // Estimate total (parse numeric values only)
+      let total = 0;
+      missing.forEach(ingr => {
+        const est = (INGREDIENT_PRICES[ingr.toLowerCase()] || {}).est || '';
+        const num = parseFloat(est.replace(/[^0-9.]/g,''));
+        if (!isNaN(num)) total += num;
+      });
+      document.getElementById('shopTotalBadge').textContent = total > 0 ? `~$${total.toFixed(2)}` : 'Budget-friendly';
+
+      itemsEl.querySelectorAll('.shop-item').forEach(el =>
+        el.addEventListener('click', () => {
+          const name = el.dataset.item;
+          shopChecked[name] = !shopChecked[name];
+          renderShoppingList(missing);
+          const allDone = missing.every(i => shopChecked[i]);
+          document.getElementById('shopAllDone').classList.toggle('visible', allDone);
+        }));
+    }
+
+    document.getElementById('btnCookAdapted').addEventListener('click', () => {
+      if (!activeRecipe) return;
+      const ingrs   = getIngredients(activeRecipe);
+      const missing = ingrs.filter(i => ingrState[i] === 'missing');
+      const have    = ingrs.filter(i => ingrState[i] === 'have');
+      const chosen  = Object.entries(subChoices).filter(([,v]) => v);
+
+      let note = `You have: ${have.join(', ')}.\n\n`;
+      if (missing.length === 0) {
+        note += `You've got everything — make ${activeRecipe.name} exactly as written. `;
+        note += `The original calls for ${ingrs.join(', ')}.`;
+      } else {
+        note += `You're missing ${missing.join(', ')}.`;
+        if (chosen.length) {
+          note += `\n\nYour swaps:\n` + chosen.map(([k,v]) => `• ${k} → ${v}`).join('\n');
+          note += `\n\nWith these swaps, the dish takes on a new character. `;
+          const flavors = chosen.flatMap(([,v]) => {
+            if (v.includes('miso') || v.includes('soy'))      return ['umami-rich'];
+            if (v.includes('coconut') || v.includes('mango')) return ['tropical'];
+            if (v.includes('tahini') || v.includes('almond')) return ['nutty'];
+            if (v.includes('lemon') || v.includes('lime'))    return ['bright & citrusy'];
+            if (v.includes('cardamom') || v.includes('rose')) return ['aromatic'];
+            if (v.includes('smoked') || v.includes('chipotle'))return ['smoky'];
+            return [];
+          });
+          if (flavors.length) note += `Expect a ${[...new Set(flavors)].join(', ')} profile.`;
+        } else {
+          note += ` Try picking a creative swap above — or just skip them and improvise. `;
+          note += `The best fusion dishes come from working with what you have.`;
+        }
+      }
+
+      document.getElementById('adaptedNote').textContent = note;
+      const tagIdx = (activeRecipe.name.length + missing.length) % FUSION_TAGS.length;
+      document.getElementById('adaptedTag').textContent  = FUSION_TAGS[tagIdx];
+      document.getElementById('adaptedResult').classList.add('visible');
+      document.getElementById('drawerBody').scrollTo({ top: 9999, behavior: 'smooth' });
+    });
+
+    /* ── Veggie boost ────────────────────────────────────────────── */
+    function renderVeggieBoost() {
+      const row = document.getElementById('veggieBoostRow');
+      // Pick 6 random veggie cards
+      const picks = [...VEGGIE_BOOSTS].sort(() => Math.random() - .5).slice(0, 6);
+      row.innerHTML = picks.map(v => `
+        <div class="veggie-card${veggieAdded.has(v.name) ? ' added' : ''}" data-veggie="${v.name}">
+          <div class="veggie-card-name">${v.name}</div>
+          <div class="veggie-card-how">${v.how}</div>
+          <div class="veggie-card-benefit">${v.benefit}</div>
+        </div>`).join('');
+      row.querySelectorAll('.veggie-card').forEach(card =>
+        card.addEventListener('click', () => {
+          const name = card.dataset.veggie;
+          veggieAdded.has(name) ? veggieAdded.delete(name) : veggieAdded.add(name);
+          card.classList.toggle('added', veggieAdded.has(name));
+          const nameEl = card.querySelector('.veggie-card-name');
+          nameEl.textContent = name + (veggieAdded.has(name) ? ' ✓' : '');
+        }));
+    }
+
+    /* ── Dietary goals ────────────────────────────────────────────── */
+    function renderDietGoalContent(goal) {
+      const el = document.getElementById('dietGoalContent');
+      if (!goal) { el.classList.remove('visible'); el.innerHTML = ''; return; }
+      const items = DIET_GOAL_SUBS[goal] || [];
+      el.innerHTML = items.map(it => `
+        <div class="diet-goal-item">
+          <span class="diet-goal-icon">${it.icon}</span>
+          <div class="diet-goal-text"><strong>${it.name}</strong>${it.note}</div>
+        </div>`).join('');
+      el.classList.add('visible');
+    }
+
+    document.getElementById('dietGoalsRow').addEventListener('click', e => {
+      const btn = e.target.closest('.diet-goal-btn');
+      if (!btn) return;
+      const goal = btn.dataset.goal;
+      const alreadyActive = btn.classList.contains('active');
+      document.querySelectorAll('.diet-goal-btn').forEach(b => b.classList.remove('active'));
+      if (!alreadyActive) {
+        btn.classList.add('active');
+        activeDietGoal = goal;
+        renderDietGoalContent(goal);
+      } else {
+        activeDietGoal = '';
+        renderDietGoalContent('');
+      }
+    });
+
+    /* ── Touch swipe to close drawer ─────────────────────────────── */
+    (function() {
+      const drawer = document.getElementById('shopDrawer');
+      let startY = 0, dragging = false;
+      drawer.addEventListener('touchstart', e => { startY = e.touches[0].clientY; dragging = false; }, { passive: true });
+      drawer.addEventListener('touchmove', e => {
+        const dy = e.touches[0].clientY - startY;
+        if (!dragging && dy > 8) dragging = true;
+        if (dragging && dy > 0) {
+          drawer.style.transform = `translateY(${dy}px)`;
+          drawer.classList.add('panel-dragging');
+        }
+      }, { passive: true });
+      drawer.addEventListener('touchend', e => {
+        drawer.classList.remove('panel-dragging');
+        const dy = e.changedTouches[0].clientY - startY;
+        drawer.style.transform = '';
+        if (dy > 100) closeDrawer();
+      });
+    })();
+
+    /* ── Filter bar ───────────────────────────────────────────────── */
+    function applyFilters() {
+      const q = document.getElementById('recipeSearch').value.toLowerCase().trim();
+      const filtered = allRecipes.filter(r => {
+        const catOk     = !fCat || (r.recipe_type||'').toLowerCase().includes(fCat);
+        const t         = r.totalTime || r.total_time || r.time || 99;
+        const timeOk    = !fTime || t <= parseInt(fTime);
+        const rCuisine  = (r.cuisine || r.cuisine_type || '').toLowerCase().replace(/\s+/g,'-');
+        const cuisineOk = fCuisines.size === 0 || fCuisines.has(rCuisine);
+        const qOk       = !q || r.name.toLowerCase().includes(q) ||
+                          (r.cuisine||r.cuisine_type||'').toLowerCase().includes(q);
+        const tags      = getDietTags(r);
+        const allergyOk = fAllergies.size === 0 || [...fAllergies].every(a =>
+          a === 'vegetarian' ? (tags.includes('vegetarian') || tags.includes('vegan')) : tags.includes(a));
+        return catOk && timeOk && cuisineOk && qOk && allergyOk;
+      });
+      renderGrid(filtered);
+    }
+
+    // Category buttons
+    document.getElementById('recipeFilterBar').addEventListener('click', e => {
+      const catBtn = e.target.closest('[data-cat]');
+      if (catBtn && !catBtn.classList.contains('cuisine-btn') && !catBtn.classList.contains('allergy-btn')) {
+        document.querySelectorAll('[data-cat]').forEach(b => b.classList.remove('active'));
+        catBtn.classList.add('active');
+        fCat = catBtn.dataset.cat || '';
+        applyFilters();
+      }
+    });
+
+    document.getElementById('timeSelect').addEventListener('change', e => {
+      fTime = e.target.value;
+      applyFilters();
+    });
+
+    document.getElementById('recipeSearch').addEventListener('input', applyFilters);
+
+    /* ── Cuisine dropdown ─────────────────────────────────────────── */
+    const cuisineWrap = document.getElementById('cuisineWrap');
+    const cuisineBtn  = document.getElementById('cuisineBtn');
+
+    // Toggle open/close
+    cuisineBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      cuisineWrap.classList.toggle('open');
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', e => {
+      if (!cuisineWrap.contains(e.target)) cuisineWrap.classList.remove('open');
+    });
+
+    // Checkbox changes → filter immediately
+    document.getElementById('cuisineDropdown').addEventListener('change', e => {
+      const cb = e.target;
+      if (cb.type !== 'checkbox') return;
+      if (cb.checked) {
+        fCuisines.add(cb.value);
+      } else {
+        fCuisines.delete(cb.value);
+      }
+      updateCuisineBtn();
+      applyFilters();
+    });
+
+    // Clear all checkboxes
+    document.getElementById('cuisineClearBtn').addEventListener('click', e => {
+      e.stopPropagation();
+      fCuisines.clear();
+      document.querySelectorAll('#cuisineDropdown input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+      updateCuisineBtn();
+      applyFilters();
+    });
+
+    function updateCuisineBtn() {
+      const hasAny = fCuisines.size > 0;
+      cuisineBtn.classList.toggle('has-selection', hasAny);
+      const label = hasAny ? `CUISINE (${fCuisines.size})` : 'CUISINE';
+      cuisineBtn.childNodes[0].textContent = label + ' ';
+    }
+
+    /* ── Allergies dropdown ───────────────────────────────────────── */
+    const allergyWrap = document.getElementById('allergyWrap');
+    const allergyBtn  = document.getElementById('allergyBtn');
+
+    allergyBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      allergyWrap.classList.toggle('open');
+    });
+
+    document.addEventListener('click', e => {
+      if (!allergyWrap.contains(e.target)) allergyWrap.classList.remove('open');
+    });
+
+    document.getElementById('allergyDropdown').addEventListener('change', e => {
+      const cb = e.target;
+      if (cb.type !== 'checkbox') return;
+      cb.checked ? fAllergies.add(cb.value) : fAllergies.delete(cb.value);
+      updateAllergyBtn();
+      applyFilters();
+    });
+
+    document.getElementById('allergyClearBtn').addEventListener('click', e => {
+      e.stopPropagation();
+      fAllergies.clear();
+      document.querySelectorAll('#allergyDropdown input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+      updateAllergyBtn();
+      applyFilters();
+    });
+
+    function updateAllergyBtn() {
+      const hasAny = fAllergies.size > 0;
+      allergyBtn.classList.toggle('has-selection', hasAny);
+      const label = hasAny ? `ALLERGIES (${fAllergies.size})` : 'ALLERGIES';
+      allergyBtn.childNodes[0].textContent = label + ' ';
+    }
+
+    /* ── Boot ────────────────────────────────────────────────────── */
+    loadRecipes();
+  </script>
+</body>
+</html>

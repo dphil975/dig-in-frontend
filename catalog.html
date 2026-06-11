@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG-IN · Catalog — Find Dishes Near You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <div class="bg-pixels" aria-hidden="true">
+        <span class="px-cloud" style="--x:7%;--y:6%">☁</span>
+        <span class="px-cloud" style="--x:82%;--y:12%">☁</span>
+        <span class="px-star"  style="--x:45%;--y:4%">✦</span>
+        <span class="px-star"  style="--x:94%;--y:38%">✦</span>
+    </div>
+
+    <!-- ── Topbar ──────────────────────────────────────────────── -->
+    <header class="topbar">
+        <a class="logo" href="index.html">
+            <span class="logo-dig">DIG</span><span class="logo-in">-IN</span>
+            <span>🍴</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#tabCenter">Recipes</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="index.html#tabCenter">Kitchen</a>
+        </nav>
+        <div class="topbar-actions">
+            <a href="javascript:history.back()" class="back-btn">← BACK</a>
+        </div>
+        <button style="display:none;font-size:22px;color:#fff;background:none;border:none;margin-left:auto;cursor:pointer" aria-label="menu">≡</button>
+    </header>
+
+    <div class="screen">
+        <p class="breadcrumb">
+            <a href="index.html">Home</a> ›
+            <a href="catalog.html">Catalog</a> ›
+            <span>Find Dishes Near You</span>
+        </p>
+        <h1 class="page-title">Catalog</h1>
+
+        <!-- ══ GEO MAP ═════════════════════════════════════════════ -->
+        <section class="geo">
+            <div class="geo-head">
+                <h2 class="geo-title">📍 Where to Dig In — New York City</h2>
+                <p class="geo-sub">Live map of ingredient stores near NYC transit. Click a store pin to see walk time to the nearest subway.</p>
+            </div>
+
+            <!-- Borough selector tabs -->
+            <div class="borough-tabs" id="boroughTabs">
+                <button class="btab active" data-borough="manhattan" data-lat="40.7580" data-lng="-73.9855" data-zoom="14">Manhattan</button>
+                <button class="btab" data-borough="brooklyn"  data-lat="40.7050" data-lng="-73.9500" data-zoom="14">Brooklyn</button>
+                <button class="btab" data-borough="queens"    data-lat="40.7480" data-lng="-73.8900" data-zoom="13">Queens</button>
+                <button class="btab" data-borough="bronx"     data-lat="40.8448" data-lng="-73.8648" data-zoom="13">The Bronx</button>
+                <button class="btab" data-borough="staten"    data-lat="40.5795" data-lng="-74.1502" data-zoom="13">Staten Island</button>
+            </div>
+
+            <div class="geo-window">
+                <div id="cityMap"></div>
+                <div class="geo-readout">
+                    <span class="ping">●</span>
+                    <span id="hoodLabel">Manhattan · 📍 40.758, -73.985</span>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="legend">
+                <div class="legend-group">
+                    <span class="legend-title">Stores</span>
+                    <span class="lg"><i class="swatch bodega"></i> Bodega</span>
+                    <span class="lg"><i class="swatch corner"></i> Corner Store</span>
+                    <span class="lg"><i class="swatch grocery"></i> Grocery</span>
+                </div>
+                <div class="legend-group">
+                    <span class="legend-title">MTA Lines</span>
+                    <span class="lg"><i class="swatch l1"></i> 1/2/3</span>
+                    <span class="lg"><i class="swatch lACE"></i> A/C/E</span>
+                    <span class="lg"><i class="swatch l46"></i> 4/5/6</span>
+                    <span class="lg"><i class="swatch lEFM"></i> E/F/M</span>
+                    <span class="lg"><i class="swatch lG"></i> G</span>
+                    <span class="lg"><i class="swatch lL"></i> L</span>
+                    <span class="lg"><i class="swatch l7"></i> 7</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ CATALOG BODY ════════════════════════════════════════ -->
+        <div class="catalog-body">
+
+            <!-- Sidebar filters -->
+            <aside class="sidebar">
+                <div class="filter-block">
+                    <button class="filter-head">Categories ▾</button>
+                    <ul class="filter-list" id="categoryFilters">
+                        <li class="active" data-cat="">All</li>
+                        <li data-cat="breakfast">Breakfast</li>
+                        <li data-cat="dinner">Dinner</li>
+                        <li data-cat="dessert">Dessert</li>
+                        <li data-cat="soup">Soup</li>
+                        <li data-cat="snack">Snacks</li>
+                        <li data-cat="drink">Drinks</li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <button class="filter-head">Cook Time ▾</button>
+                    <ul class="filter-list" id="timeFilters">
+                        <li class="active" data-time="">Any</li>
+                        <li data-time="15">≤ 15 min</li>
+                        <li data-time="30">≤ 30 min</li>
+                        <li data-time="60">≤ 60 min</li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <button class="filter-head">Diet ▾</button>
+                    <ul class="filter-list" id="dietFilters">
+                        <li class="active" data-diet="">Any</li>
+                        <li data-diet="vegan">🌱 Vegan</li>
+                        <li data-diet="vegetarian">🥦 Vegetarian</li>
+                        <li data-diet="gluten-free">GF</li>
+                        <li data-diet="healthy">🥗 Healthy</li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <p class="filter-label">Store Type</p>
+                    <ul class="check-list">
+                        <li><input type="checkbox" checked id="c1"><label for="c1">Bodega</label></li>
+                        <li><input type="checkbox" checked id="c2"><label for="c2">Corner Store</label></li>
+                        <li><input type="checkbox" checked id="c3"><label for="c3">Grocery</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-block">
+                    <p class="filter-label">Near Transit</p>
+                    <ul class="check-list">
+                        <li><input type="checkbox" checked id="t1"><label for="t1">≤ 2 min walk</label></li>
+                        <li><input type="checkbox" id="t2"><label for="t2">≤ 5 min walk</label></li>
+                        <li><input type="checkbox" id="t3"><label for="t3">Any</label></li>
+                    </ul>
+                </div>
+
+                <button class="btn-reset" id="resetBtn">Reset</button>
+                <button class="btn-apply" id="applyBtn">Apply</button>
+            </aside>
+
+            <!-- Main column -->
+            <section class="catalog-main">
+                <div class="search-row">
+                    <div class="chip-tabs">
+                        <button class="chip active" id="chipAll">All</button>
+                        <button class="chip" id="chipNear">Near Me</button>
+                        <button class="chip" id="chipSaved">Saved</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="catalogSearch" placeholder="Search a dish…">
+                        <button class="search-btn" id="catalogSearchBtn">Find</button>
+                    </div>
+                </div>
+
+                <div class="dish-grid" id="dishGrid">
+                    <!-- populated by JS -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logo">DIG-IN</div>
+            <p class="footer-fine">© 2026 DIG-IN Kitchen · pixels, transit &amp; snacks</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    /* ═══════════════════════════════════════════════════════════════
+       STORE + TRANSIT DATA — all 5 NYC boroughs
+    ═══════════════════════════════════════════════════════════════ */
+    const STORES = [
+        // Manhattan
+        { name:'Sunrise Bodega',        type:'bodega',  lat:40.7218, lng:-73.9897, walk:'2 min → L/A/C/E',   borough:'manhattan', ingredients:['eggs','bread','hot sauce','milk'] },
+        { name:'Delancey Market',        type:'corner',  lat:40.7180, lng:-73.9852, walk:'1 min → J/M/Z',     borough:'manhattan', ingredients:['rice','soy sauce','noodles','scallions'] },
+        { name:'Chinatown Grocery',      type:'grocery', lat:40.7155, lng:-73.9979, walk:'3 min → 6/N/Q/R',   borough:'manhattan', ingredients:['tofu','bok choy','ginger','mirin','sesame oil'] },
+        { name:'Hell Kitchen Deli',      type:'bodega',  lat:40.7621, lng:-73.9901, walk:'2 min → A/C/E',     borough:'manhattan', ingredients:['chicken','olive oil','garlic','herbs'] },
+        { name:'Union Square Foods',     type:'grocery', lat:40.7359, lng:-73.9906, walk:'1 min → L/N/Q/R',   borough:'manhattan', ingredients:['quinoa','kale','avocado','lemon'] },
+        { name:'East Village Corner',    type:'corner',  lat:40.7265, lng:-73.9824, walk:'2 min → L/6',       borough:'manhattan', ingredients:['sriracha','ramen','miso','sake'] },
+        { name:'Harlem Fresh Market',    type:'grocery', lat:40.8116, lng:-73.9465, walk:'4 min → 2/3',       borough:'manhattan', ingredients:['collard greens','black eyed peas','cornmeal'] },
+        // Brooklyn
+        { name:'Bedford Bodega',         type:'bodega',  lat:40.7171, lng:-73.9564, walk:'1 min → L',         borough:'brooklyn',  ingredients:['jalapeño','tortillas','black beans','lime'] },
+        { name:'Williamsburg Grocery',   type:'grocery', lat:40.7119, lng:-73.9531, walk:'3 min → J/M',       borough:'brooklyn',  ingredients:['sourdough flour','yeast','butter','cream'] },
+        { name:'Flatbush Corner Mart',   type:'corner',  lat:40.6501, lng:-73.9496, walk:'2 min → 2/5',       borough:'brooklyn',  ingredients:['jerk seasoning','plantain','coconut milk','scotch bonnet'] },
+        { name:'Park Slope Provisions',  type:'grocery', lat:40.6710, lng:-73.9788, walk:'5 min → F/G',       borough:'brooklyn',  ingredients:['parmesan','pancetta','pasta','black pepper'] },
+        { name:'Bushwick Esquina',       type:'bodega',  lat:40.6987, lng:-73.9199, walk:'1 min → L',         borough:'brooklyn',  ingredients:['chipotle','achiote','chorizo','epazote'] },
+        // Queens
+        { name:'Patel Bros Jackson Hts', type:'grocery', lat:40.7476, lng:-73.8927, walk:'2 min → E/F/M/R',  borough:'queens',    ingredients:['ghee','garam masala','basmati','turmeric','cardamom'] },
+        { name:'Calle Bodega',           type:'bodega',  lat:40.7497, lng:-73.8984, walk:'1 min → 7',         borough:'queens',    ingredients:['plantain','sazon','sofrito','cumin'] },
+        { name:'Flushing Supermarket',   type:'grocery', lat:40.7590, lng:-73.8330, walk:'3 min → 7',         borough:'queens',    ingredients:['dumpling wrappers','hoisin','five spice','rice wine'] },
+        { name:'Astoria Corner Store',   type:'corner',  lat:40.7723, lng:-73.9303, walk:'2 min → N/W',       borough:'queens',    ingredients:['feta','olive oil','oregano','lemon','kalamata'] },
+        // Bronx
+        { name:'Grand Concourse Deli',   type:'bodega',  lat:40.8261, lng:-73.9227, walk:'2 min → 4/D',       borough:'bronx',     ingredients:['bacalao','sofrito','beans','sazon'] },
+        { name:'Fordham Grocery',        type:'grocery', lat:40.8617, lng:-73.8967, walk:'4 min → 4/B/D',     borough:'bronx',     ingredients:['chicken','sazón','olives','capers','tomato'] },
+        { name:'Mott Haven Corner',      type:'corner',  lat:40.8062, lng:-73.9250, walk:'1 min → 6',         borough:'bronx',     ingredients:['eggs','plantains','rice','black beans'] },
+        // Staten Island
+        { name:'St George Market',       type:'grocery', lat:40.6437, lng:-74.0727, walk:'5 min → Ferry',     borough:'staten',    ingredients:['mozzarella','prosciutto','basil','tomato'] },
+        { name:'Bay Ridge Bodega',       type:'bodega',  lat:40.6200, lng:-74.0260, walk:'3 min → R',         borough:'staten',    ingredients:['olive oil','garlic','bread','sausage'] },
+    ];
+
+    /* MTA line approximate polyline paths */
+    const MTA_LINES = [
+        { name:'1/2/3', color:'#ee352e', coords:[[40.8122,-73.9623],[40.7956,-73.9727],[40.7549,-73.9904],[40.7362,-74.0022],[40.7032,-74.0130]] },
+        { name:'A/C/E', color:'#2850ad', coords:[[40.8483,-73.9393],[40.7928,-73.9727],[40.7544,-73.9928],[40.7197,-74.0055],[40.6744,-73.9875]] },
+        { name:'4/5/6', color:'#00933c', coords:[[40.8648,-73.9280],[40.8116,-73.9465],[40.7634,-73.9677],[40.7218,-73.9882],[40.6935,-73.9853]] },
+        { name:'E/F/M', color:'#ff6319', coords:[[40.7553,-73.9893],[40.7476,-73.8927],[40.7477,-73.8469],[40.7473,-73.7955]] },
+        { name:'L',     color:'#a7a9ac', coords:[[40.7407,-74.0079],[40.7376,-73.9998],[40.7147,-73.9572],[40.7060,-73.9299]] },
+        { name:'G',     color:'#6cbe45', coords:[[40.7260,-73.9466],[40.7118,-73.9531],[40.6980,-73.9596],[40.6761,-73.9831]] },
+        { name:'7',     color:'#b933ad', coords:[[40.7553,-73.9893],[40.7500,-73.9427],[40.7476,-73.8927],[40.7450,-73.7953]] },
+        { name:'J/M/Z', color:'#996633', coords:[[40.7151,-74.0085],[40.7150,-73.9852],[40.6985,-73.8716]] },
+    ];
+
+    /* ═══════════════════════════════════════════════════════════════
+       LEAFLET MAP SETUP
+    ═══════════════════════════════════════════════════════════════ */
+    const map = L.map('cityMap', {
+        center: [40.7580, -73.9855],
+        zoom: 14,
+        zoomControl: true,
+    });
+
+    // CartoDB Positron — clean, light, open-source compatible
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19,
+    }).addTo(map);
+
+    /* Draw MTA lines */
+    MTA_LINES.forEach(line => {
+        L.polyline(line.coords, {
+            color: line.color,
+            weight: 4,
+            opacity: 0.75,
+        }).addTo(map).bindTooltip(`<span style="font-family:'Press Start 2P',monospace;font-size:9px;">${line.name} line</span>`, { sticky: true });
+    });
+
+    /* Custom pixel-art divIcon factory */
+    function makeIcon(type) {
+        const bg = { bodega:'#ff9eb5', corner:'#ffe07a', grocery:'#7ae0b0' }[type] || '#fff';
+        const emoji = { bodega:'🏪', corner:'🛒', grocery:'🛍️' }[type] || '📍';
+        return L.divIcon({
+            className: '',
+            html: `<div class="pix-marker ${type}">${emoji}</div>`,
+            iconSize: [26, 26],
+            iconAnchor: [13, 13],
+            popupAnchor: [0, -16],
+        });
+    }
+
+    /* Add store markers */
+    STORES.forEach(s => {
+        const marker = L.marker([s.lat, s.lng], { icon: makeIcon(s.type) }).addTo(map);
+        marker.bindPopup(`
+            <span class="popup-name">${s.name}</span>
+            <span class="popup-type">${s.type.charAt(0).toUpperCase() + s.type.slice(1)}</span>
+            <span class="popup-walk">🚶 ${s.walk}</span>
+            <div style="margin-top:6px;font-size:10px;color:#5a3a2a;">
+                ${s.ingredients.slice(0,3).map(i => `<span style="background:#fff0e0;border:1px solid #d8c0b0;border-radius:4px;padding:1px 5px;margin:2px 1px;display:inline-block;">${i}</span>`).join('')}
+            </div>
+        `);
+        marker._storeData = s;
+    });
+
+    /* Update readout on map move */
+    map.on('moveend', () => {
+        const c = map.getCenter();
+        document.getElementById('hoodLabel').textContent =
+            `📍 ${c.lat.toFixed(4)}, ${c.lng.toFixed(4)}`;
+    });
+
+    /* Borough tab navigation */
+    document.getElementById('boroughTabs').addEventListener('click', e => {
+        const btn = e.target.closest('.btab');
+        if (!btn) return;
+        document.querySelectorAll('.btab').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        map.flyTo([parseFloat(btn.dataset.lat), parseFloat(btn.dataset.lng)],
+                  parseInt(btn.dataset.zoom), { duration: 1.2 });
+        document.getElementById('hoodLabel').textContent =
+            `${btn.textContent} · 📍 ${btn.dataset.lat}, ${btn.dataset.lng}`;
+    });
+
+    /* ═══════════════════════════════════════════════════════════════
+       DISH GRID
+    ═══════════════════════════════════════════════════════════════ */
+    const CARD_COLORS = ['c-mint','c-pink','c-yellow','c-blue','c-orange','c-lavender'];
+    const STORE_TYPES = ['bodega','corner','grocery'];
+    const STORE_NAMES = [
+        'Bodega · 2 min 🚇', 'Corner · 1 min 🚇', 'Grocery · 4 min 🚇',
+        'Bodega · 3 min 🚇', 'Corner · 2 min 🚇', 'Grocery · 5 min 🚇',
+    ];
+    const CUISINE_EMOJI = {
+        japanese:'🍜', italian:'🍝', mexican:'🌮', indian:'🍛',
+        thai:'🫕', chinese:'🥢', french:'🥐', greek:'🫒',
+        korean:'🥩', vietnamese:'🍃', spanish:'🥘', american:'🍔',
+        caribbean:'🌴', moroccan:'🫙', german:'🥨', british:'🫖',
+        mediterranean:'🫒', default:'🍳',
+    };
+
+    function cuisineEmoji(c) {
+        return CUISINE_EMOJI[(c||'').toLowerCase()] || CUISINE_EMOJI.default;
+    }
+
+    let allRecipes = [];
+
+    function loadRecipes() {
+        // From localStorage
+        try {
+            const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+            if (cached.length) allRecipes = cached;
+        } catch(_) {}
+
+        // Fallback static set
+        if (!allRecipes.length) {
+            allRecipes = [
+                { id:1, name:'Omurice',         cuisine:'Japanese',     time:25, pixelEmoji:'🍳', difficulty:'Medium', recipe_type:'dinner'    },
+                { id:2, name:'Cacio e Pepe',     cuisine:'Italian',      time:15, pixelEmoji:'🍝', difficulty:'Medium', recipe_type:'dinner'    },
+                { id:3, name:'Tacos al Pastor',  cuisine:'Mexican',      time:45, pixelEmoji:'🌮', difficulty:'Hard',   recipe_type:'dinner'    },
+                { id:4, name:'Chicken Biryani',  cuisine:'Indian',       time:60, pixelEmoji:'🍛', difficulty:'Hard',   recipe_type:'dinner'    },
+                { id:5, name:'Pad Thai',         cuisine:'Thai',         time:25, pixelEmoji:'🫕', difficulty:'Easy',   recipe_type:'dinner'    },
+                { id:6, name:'Green Curry',      cuisine:'Thai',         time:30, pixelEmoji:'🍲', difficulty:'Medium', recipe_type:'dinner'    },
+                { id:7, name:'Croissant',        cuisine:'French',       time:90, pixelEmoji:'🥐', difficulty:'Hard',   recipe_type:'breakfast' },
+                { id:8, name:'Tiramisu',         cuisine:'Italian',      time:40, pixelEmoji:'🍰', difficulty:'Medium', recipe_type:'dessert'   },
+                { id:9, name:'Miso Soup',        cuisine:'Japanese',     time:15, pixelEmoji:'🍵', difficulty:'Easy',   recipe_type:'soup'      },
+                { id:10,name:'Pancakes',         cuisine:'American',     time:20, pixelEmoji:'🥞', difficulty:'Easy',   recipe_type:'breakfast' },
+                { id:11,name:'Shakshuka',        cuisine:'Middle Eastern',time:25,pixelEmoji:'🍳', difficulty:'Easy',   recipe_type:'breakfast' },
+                { id:12,name:'Bibimbap',         cuisine:'Korean',       time:35, pixelEmoji:'🥩', difficulty:'Medium', recipe_type:'dinner'    },
+            ];
+        }
+
+        renderGrid(allRecipes);
+    }
+
+    function renderGrid(recipes) {
+        const grid = document.getElementById('dishGrid');
+        if (!recipes.length) {
+            grid.innerHTML = `<p style="font-family:'Press Start 2P',monospace;font-size:10px;color:#a08070;padding:24px;">No recipes found. Upload a cookbook to add more!</p>`;
+            return;
+        }
+        grid.innerHTML = recipes.map((r, i) => {
+            const color    = CARD_COLORS[i % CARD_COLORS.length];
+            const stType   = STORE_TYPES[i % STORE_TYPES.length];
+            const stLabel  = STORE_NAMES[i % STORE_NAMES.length];
+            const emoji    = r.pixelEmoji || cuisineEmoji(r.cuisine || r.cuisine_type);
+            const isHit    = (r.rating >= 5 || i % 5 === 0);
+            return `
+            <article class="dcard ${color}" data-recipe='${JSON.stringify(r).replace(/'/g,"&#39;")}'>
+                ${isHit ? '<span class="hit">HIT</span>' : ''}
+                <button class="fav" aria-label="save">♡</button>
+                <div class="dimg">${emoji}</div>
+                <div class="dfoot">
+                    <button class="add">Add</button>
+                    <span class="dprice">${r.totalTime || r.total_time || r.time || '?'} min</span>
+                </div>
+                <p class="dname">${r.name}</p>
+                <span class="dstore ${stType}">${stLabel}</span>
+            </article>`;
+        }).join('');
+
+        /* Card click → recipe.html */
+        grid.querySelectorAll('.dcard').forEach(card => {
+            card.addEventListener('click', e => {
+                if (e.target.closest('.fav') || e.target.closest('.add')) return;
+                const recipe = JSON.parse(card.dataset.recipe);
+                try { sessionStorage.setItem('dig_in_current_recipe', JSON.stringify(recipe)); } catch(_) {}
+                window.location.href = `recipe.html?name=${encodeURIComponent(recipe.name)}`;
+            });
+        });
+
+        /* Fav toggles */
+        grid.querySelectorAll('.fav').forEach(b =>
+            b.addEventListener('click', () => {
+                b.classList.toggle('on');
+                b.textContent = b.classList.contains('on') ? '♥' : '♡';
+            }));
+
+        /* Add button */
+        grid.querySelectorAll('.add').forEach(b =>
+            b.addEventListener('click', () => {
+                b.textContent = '✓ Added'; b.classList.add('added');
+                setTimeout(() => { b.textContent = 'Add'; b.classList.remove('added'); }, 1400);
+            }));
+    }
+
+    /* ── Filtering ─────────────────────────────────────────────── */
+    let activeCat = '', activeTime = '', activeDiet = '';
+
+    function applyFilters() {
+        const q = document.getElementById('catalogSearch').value.toLowerCase();
+        const filtered = allRecipes.filter(r => {
+            const catMatch   = !activeCat  || (r.recipe_type || '').toLowerCase().includes(activeCat);
+            const timeVal    = r.totalTime || r.total_time || r.time || 99;
+            const timeMatch  = !activeTime || timeVal <= parseInt(activeTime);
+            const tags       = (r.diet_tags || r.dietary_tags || []).join(' ').toLowerCase();
+            const dietMatch  = !activeDiet || tags.includes(activeDiet);
+            const qMatch     = !q || r.name.toLowerCase().includes(q) || (r.cuisine||r.cuisine_type||'').toLowerCase().includes(q);
+            return catMatch && timeMatch && dietMatch && qMatch;
+        });
+        renderGrid(filtered);
+    }
+
+    document.getElementById('catalogSearch').addEventListener('input', applyFilters);
+    document.getElementById('catalogSearchBtn').addEventListener('click', applyFilters);
+
+    document.getElementById('categoryFilters').addEventListener('click', e => {
+        const li = e.target.closest('li');
+        if (!li) return;
+        document.querySelectorAll('#categoryFilters li').forEach(l => l.classList.remove('active'));
+        li.classList.add('active');
+        activeCat = li.dataset.cat;
+        applyFilters();
+    });
+
+    document.getElementById('timeFilters').addEventListener('click', e => {
+        const li = e.target.closest('li');
+        if (!li) return;
+        document.querySelectorAll('#timeFilters li').forEach(l => l.classList.remove('active'));
+        li.classList.add('active');
+        activeTime = li.dataset.time;
+        applyFilters();
+    });
+
+    document.getElementById('dietFilters').addEventListener('click', e => {
+        const li = e.target.closest('li');
+        if (!li) return;
+        document.querySelectorAll('#dietFilters li').forEach(l => l.classList.remove('active'));
+        li.classList.add('active');
+        activeDiet = li.dataset.diet;
+        applyFilters();
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+        activeCat = ''; activeTime = ''; activeDiet = '';
+        document.getElementById('catalogSearch').value = '';
+        document.querySelectorAll('.filter-list li').forEach(l => {
+            l.classList.toggle('active', l.dataset.cat === '' || l.dataset.time === '' || l.dataset.diet === '');
+        });
+        renderGrid(allRecipes);
+    });
+
+    document.getElementById('applyBtn').addEventListener('click', applyFilters);
+
+    /* ── Chip tabs ─────────────────────────────────────────────── */
+    document.getElementById('chipAll').addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        document.getElementById('chipAll').classList.add('active');
+        renderGrid(allRecipes);
+    });
+    document.getElementById('chipSaved').addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        document.getElementById('chipSaved').classList.add('active');
+        // Show only recipes that have been fav'd — simple localStorage stub
+        renderGrid(allRecipes.slice(0, 4));
+    });
+    document.getElementById('chipNear').addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        document.getElementById('chipNear').classList.add('active');
+        // Try to use geolocation to sort by "near" proxy
+        navigator.geolocation?.getCurrentPosition(pos => {
+            document.getElementById('hoodLabel').textContent =
+                `📍 Your location · ${pos.coords.latitude.toFixed(4)}, ${pos.coords.longitude.toFixed(4)}`;
+            map.flyTo([pos.coords.latitude, pos.coords.longitude], 14, { duration: 1.5 });
+        });
+        renderGrid(allRecipes);
+    });
+
+    /* ── Boot ──────────────────────────────────────────────────── */
+    loadRecipes();
+    </script>
+</body>
+</html>

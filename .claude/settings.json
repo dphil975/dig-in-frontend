@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv app.js auth-system.js brand-scanner.js carousel.js geolocation-service.js pixel-converter.js pixel-flashcard.js price-tracker.js receipt-scanner.js recipe-card.js save-system.js store-mapper.js todo-integration.js world-map.js frontend/js/)",
+      "Bash(mv styles.css frontend/css/)",
+      "Bash(mv data_monetization.py grocery_locator.py pantry_ai.py recipe_rolodex.py substitution_engine.py time_manager.py backend/)",
+      "Bash(mv recipes.json recipes_full.json data/)",
+      "Bash(find /Users/olivephillips -maxdepth 3 -type d -name \"*DIGIN*\" -o -maxdepth 3 -type d -name \"*digin*\" -o -maxdepth 3 -type d -name \"*backend*\" 2>/dev/null | sort)",
+      "Read(//Users/olivephillips/**)",
+      "Bash(chmod +x \"/Users/olivephillips/Dig In/start.sh\")",
+      "Bash(xargs ls -la)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes_full.json'\\)\\)\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes.json'\\)\\)\")",
+      "Bash(python3 -c \"import json; d = json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes.json'\\)\\); print\\('OK —', len\\(d['recipes']\\), 'recipes,', len\\(d['smoothie_bowls']\\), 'smoothie bowls'\\)\")"
+    ],
+    "additionalDirectories": [
+      "/Users/olivephillips/Dig In-backend/node/routes",
+      "/Users/olivephillips/Dig In-backend"
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In — Profile</title>
+    <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="frontend/css/styles.css">
+</head>
+<body>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links">
+                <a href="recipes.html">Recipes</a>
+                <a href="index.html">Food Map</a>
+                <a href="profile.html" class="active">Profile</a>
+            </nav>
+        </div>
+    </div>
+
+<div class="app-container">
+
+    <!-- ══ HERO HEADER ══════════════════════════════════════════ -->
+    <div class="game-header">
+        <div class="title-screen">
+            <span class="pixel-heart">♥</span>
+            <a href="index.html" class="title-link"><h1>DIG-IN</h1></a>
+            <span class="pixel-heart">♥</span>
+        </div>
+        <p class="tagline">PIXEL RECIPE GENERATOR</p>
+    </div>
+
+    <div class="profile-page">
+
+        <!-- ── Stats row ─────────────────────────────────────── -->
+        <section class="profile-stats">
+            <div class="stat-card">
+                <span class="stat-value" id="statCoins">0</span>
+                <span class="stat-label">Coins</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="statCheckins">0</span>
+                <span class="stat-label">Check-ins</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="statStores">0</span>
+                <span class="stat-label">Stores Visited</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="statBadges">0</span>
+                <span class="stat-label">Badges</span>
+            </div>
+        </section>
+
+        <!-- ── Home borough ───────────────────────────────────── -->
+        <section class="profile-section">
+            <h3 class="section-title">HOME BOROUGH</h3>
+            <p class="profile-hint">Set your home borough to earn bonus coins when you explore other neighborhoods.</p>
+            <div class="borough-picker">
+                <button class="borough-btn" data-borough="manhattan">Manhattan</button>
+                <button class="borough-btn" data-borough="brooklyn">Brooklyn</button>
+                <button class="borough-btn" data-borough="queens">Queens</button>
+                <button class="borough-btn" data-borough="bronx">The Bronx</button>
+                <button class="borough-btn" data-borough="staten-island">Staten Island</button>
+            </div>
+            <p class="borough-current" id="boroughCurrent"></p>
+        </section>
+
+        <!-- ── Daily Quests ──────────────────────────────────── -->
+        <section class="quest-panel profile-section" id="profileQuestPanel">
+            <h3 class="section-title">DAILY QUESTS</h3>
+            <div class="quest-list" id="profileQuestList"></div>
+        </section>
+
+        <!-- ── Badges ─────────────────────────────────────────── -->
+        <section class="profile-section">
+            <h3 class="section-title">BADGES</h3>
+            <div class="badge-grid" id="badgeGrid">
+                <!-- populated by JS -->
+            </div>
+            <div class="badge-locked-grid" id="badgeLockedGrid">
+                <!-- locked previews -->
+            </div>
+        </section>
+
+    </div><!-- /profile-page -->
+</div><!-- /app-container -->
+
+<script>
+(function() {
+    const BOROUGH_LABELS = {
+        'manhattan':    'Manhattan',
+        'brooklyn':     'Brooklyn',
+        'queens':       'Queens',
+        'bronx':        'The Bronx',
+        'staten-island':'Staten Island',
+    };
+
+    const ALL_BADGES = [
+        { id:'first-checkin', label:'First Check-In', icon:'1ST', hint:'Check in to your first store' },
+        { id:'explorer',      label:'Explorer',       icon:'EXP', hint:'Visit 3 unique stores' },
+        { id:'city-crawler',  label:'City Crawler',   icon:'PRO', hint:'Visit 10 unique stores' },
+    ];
+
+    // Read localStorage
+    const coins    = parseInt(localStorage.getItem('dig_in_coins')   || '0', 10);
+    const checkins = JSON.parse(localStorage.getItem('dig_in_checkins') || '{}');
+    const badges   = JSON.parse(localStorage.getItem('dig_in_badges')   || '[]');
+    const homeBorough = localStorage.getItem('dig_in_home_borough') || '';
+
+    const uniqueStores  = Object.keys(checkins).length;
+    const totalCheckins = Object.values(checkins).reduce((sum, n) => sum + n, 0);
+    const badgeIds      = badges.map(b => b.id);
+
+    // Stats
+    document.getElementById('coinCount').textContent    = coins;
+    document.getElementById('statCoins').textContent    = coins;
+    document.getElementById('statCheckins').textContent = totalCheckins;
+    document.getElementById('statStores').textContent   = uniqueStores;
+    document.getElementById('statBadges').textContent   = badges.length;
+
+    // Home borough picker
+    const boroughBtns = document.querySelectorAll('.borough-btn');
+    const boroughCurrent = document.getElementById('boroughCurrent');
+
+    function updateBoroughUI(val) {
+        boroughBtns.forEach(b => b.classList.toggle('active', b.dataset.borough === val));
+        boroughCurrent.textContent = val
+            ? `Currently set to: ${BOROUGH_LABELS[val] || val}`
+            : 'Not set yet — pick yours above.';
+    }
+    updateBoroughUI(homeBorough);
+
+    boroughBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            localStorage.setItem('dig_in_home_borough', btn.dataset.borough);
+            updateBoroughUI(btn.dataset.borough);
+        });
+    });
+
+    // Earned badges
+    const badgeGrid = document.getElementById('badgeGrid');
+    const earned = badges.length
+        ? badges.map(b => `
+            <div class="badge-card earned">
+                <span class="badge-card-icon">${b.icon}</span>
+                <span class="badge-card-label">${b.label}</span>
+            </div>`).join('')
+        : '<p class="profile-hint">No badges yet — start checking in!</p>';
+    badgeGrid.innerHTML = earned;
+
+    // Locked badge previews
+    const lockedGrid = document.getElementById('badgeLockedGrid');
+    const locked = ALL_BADGES.filter(b => !badgeIds.includes(b.id));
+    lockedGrid.innerHTML = locked.map(b => `
+        <div class="badge-card locked">
+            <span class="badge-card-icon">${b.icon}</span>
+            <span class="badge-card-label">${b.label}</span>
+            <span class="badge-card-hint">${b.hint}</span>
+        </div>`).join('');
+
+    // Daily quests
+    function getQuests() {
+        const today  = new Date().toISOString().slice(0, 10);
+        const stored = JSON.parse(localStorage.getItem('dig_in_quests') || 'null');
+        if (!stored || stored.date !== today) {
+            return {
+                date: today,
+                tasks: {
+                    'visit-store':     { label:'Visit 1 store today',              reward:75,  progress:0, goal:1, completed:false },
+                    'explore-borough': { label:'Explore outside your home borough', reward:100, progress:0, goal:1, completed:false },
+                }
+            };
+        }
+        return stored;
+    }
+
+    const questList = document.getElementById('profileQuestList');
+    const quests    = getQuests();
+    questList.innerHTML = Object.entries(quests.tasks).map(([id, task]) => {
+        if (id === 'explore-borough' && !homeBorough) return `
+            <div class="quest-card quest-locked">
+                <div class="quest-top">
+                    <span class="quest-label">${task.label}</span>
+                    <span class="quest-reward">+${task.reward} coins</span>
+                </div>
+                <span class="quest-progress">Set home borough below to unlock</span>
+            </div>`;
+        const pct = Math.round((task.progress / task.goal) * 100);
+        return `
+            <div class="quest-card${task.completed ? ' quest-done' : ''}">
+                <div class="quest-top">
+                    <span class="quest-label">${task.label}</span>
+                    <span class="quest-reward">${task.completed ? 'Done' : `+${task.reward} coins`}</span>
+                </div>
+                <div class="quest-bar"><div class="quest-fill" style="width:${pct}%"></div></div>
+                <span class="quest-progress">${task.completed ? 'Complete!' : `${task.progress} / ${task.goal}`}</span>
+            </div>`;
+    }).join('');
+})();
+</script>
+</body>
+</html>

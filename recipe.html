@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG-IN · Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset & base ────────────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DotGothic16', monospace;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
+            color: #3a2a30;
+            min-height: 100vh;
+        }
+
+        /* ── Sky decorations ─────────────────────────────────────── */
+        .bg-pixels { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+        .px-cloud, .px-star {
+            position: absolute;
+            left: var(--x); top: var(--y);
+            font-size: 18px; opacity: .18;
+            animation: float 6s ease-in-out infinite;
+        }
+        .px-star { animation-delay: 1.5s; font-size: 13px; }
+        @keyframes float {
+            0%,100% { transform: translateY(0); }
+            50%      { transform: translateY(-8px); }
+        }
+
+        /* ── Topbar ──────────────────────────────────────────────── */
+        .topbar {
+            position: sticky; top: 0; z-index: 100;
+            background: #c8455f;
+            border-bottom: 4px solid #1c1c1c;
+            padding: 0 28px;
+            height: 58px;
+            display: flex; align-items: center; gap: 24px;
+        }
+        .logo {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            display: flex; align-items: center; gap: 8px;
+            flex-shrink: 0;
+        }
+        .logo-in { color: #ffe4ec; }
+        .logo-spoon { font-size: 18px; }
+        .nav {
+            display: flex; gap: 24px;
+            margin-left: auto;
+        }
+        .nav a {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: rgba(255,255,255,.85);
+            text-decoration: none;
+            letter-spacing: .5px;
+        }
+        .nav a:hover { color: #fff; }
+        .topbar-actions { display: flex; gap: 10px; margin-left: 20px; }
+
+        /* ── Pixel buttons — all borders full perimeter ──────────── */
+        .pill-icon, .pill-btn, .cook-btn, .save-btn,
+        .mini-cook, .tab, .back-btn {
+            font-family: 'Press Start 2P', monospace;
+            cursor: pointer;
+            border: 3px solid #1c1c1c;       /* full perimeter, all 4 sides */
+            outline: none;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .pill-icon {
+            background: rgba(255,255,255,.25);
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .pill-btn {
+            background: #fff;
+            color: #c8455f;
+            font-size: 7px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .back-btn {
+            background: rgba(255,255,255,.2);
+            color: #fff;
+            font-size: 9px;
+            padding: 7px 14px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+            text-decoration: none;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .pill-icon:hover, .pill-btn:hover, .back-btn:hover {
+            transform: translate(1px,1px);
+            box-shadow: 1px 1px 0 #1c1c1c;
+        }
+        .hamburger {
+            display: none;
+            font-size: 22px; color: #fff;
+            background: none;
+            border: none; cursor: pointer;
+            margin-left: auto;
+        }
+
+        /* ── Screen wrapper ──────────────────────────────────────── */
+        .screen {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+            position: relative; z-index: 1;
+        }
+
+        /* ── Breadcrumb ──────────────────────────────────────────── */
+        .breadcrumb {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: #a07060;
+            padding: 18px 0 14px;
+            letter-spacing: .5px;
+            line-height: 1.8;
+        }
+        .breadcrumb a { color: #c8455f; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        /* ── Main recipe grid ────────────────────────────────────── */
+        .recipe {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 36px;
+            align-items: start;
+            margin-bottom: 56px;
+        }
+        @media (max-width: 720px) {
+            .recipe { grid-template-columns: 1fr; }
+            .nav, .topbar-actions { display: none; }
+            .hamburger { display: block; }
+        }
+
+        /* ── Dish pane ───────────────────────────────────────────── */
+        .dish-pane {
+            background: #fdf5f0;
+            border: 4px solid #1c1c1c;
+            border-radius: 16px;
+            box-shadow: 5px 5px 0 #1c1c1c;
+            padding: 24px 20px 16px;
+            text-align: center;
+            position: relative;
+        }
+        .badge-hot {
+            position: absolute; top: 12px; right: 12px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            background: #ff6b6b; color: #fff;
+            border: 3px solid #1c1c1c;
+            border-radius: 20px;
+            padding: 4px 9px;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            letter-spacing: .5px;
+        }
+        .dish-frame {
+            position: relative;
+            width: 180px; height: 180px;
+            margin: 12px auto;
+            background: #ffe4ec;
+            border: 4px solid #1c1c1c;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            overflow: visible;
+        }
+        .dish-emoji { font-size: 80px; line-height: 1; }
+        .floaty {
+            position: absolute;
+            font-size: 24px;
+            animation: floaty 3s ease-in-out infinite;
+        }
+        .f1 { top: 0;   right: -8px;  animation-delay: 0s; }
+        .f2 { bottom: 4px; left: -10px; animation-delay: .8s; }
+        .f3 { top: 12px; left: -14px; animation-delay: 1.6s; }
+        @keyframes floaty {
+            0%,100% { transform: translateY(0) rotate(0deg); }
+            50%      { transform: translateY(-10px) rotate(8deg); }
+        }
+        .dish-dots {
+            display: flex; justify-content: center; gap: 8px;
+            margin-top: 16px;
+        }
+        .dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: #e0c8c0;
+            border: 2px solid #1c1c1c;
+            cursor: pointer;
+            transition: background .15s;
+        }
+        .dot.active { background: #c8455f; }
+
+        /* ── Info pane ───────────────────────────────────────────── */
+        .info-pane {
+            background: #fff;
+            border: 4px solid #1c1c1c;
+            border-radius: 16px;
+            box-shadow: 5px 5px 0 #1c1c1c;
+            padding: 28px 32px 24px;
+        }
+        .stars {
+            font-size: 17px; color: #ffb800;
+            margin-bottom: 12px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .stars small {
+            font-family: 'DotGothic16', monospace;
+            font-size: 14px; color: #a08070;
+        }
+        .dish-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 16px;
+            color: #3a2a30;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .price-row {
+            display: flex; align-items: center; gap: 14px;
+            margin-bottom: 20px;
+        }
+        .kcal {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            background: #fff0e0;
+            border: 3px solid #1c1c1c;
+            padding: 8px 14px;
+            border-radius: 20px;
+            color: #8b5e3c;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .time-chip {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            background: #e8f4ff;
+            border: 3px solid #1c1c1c;
+            padding: 8px 14px;
+            border-radius: 20px;
+            color: #2255aa;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .cta-row {
+            display: flex; gap: 12px; align-items: center;
+            margin-bottom: 28px;
+        }
+        .cook-btn {
+            background: #c8455f; color: #fff;
+            font-size: 11px;
+            padding: 14px 22px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            flex: 1;
+        }
+        .cook-btn:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .cook-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: none;
+        }
+        .save-btn {
+            background: #fff0f4; color: #c8455f;
+            font-size: 14px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            flex-shrink: 0;
+        }
+        .save-btn.on { background: #c8455f; color: #fff; }
+        .save-btn:hover { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+
+        /* ── Recipe info specs — dotted leader lines ─────────────── */
+        .section-head {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 12px;
+            color: #8b5e3c;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #f0d0b8;
+        }
+        .specs { margin-bottom: 24px; }
+        .specs > div {
+            display: flex;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px dotted #d8bfb0;
+        }
+        .specs > div:last-child { border-bottom: none; }
+        .specs dt {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            color: #8b5e3c;
+            flex-shrink: 0;
+            width: 120px;
+        }
+        /* dotted leader fill */
+        .specs .leader {
+            flex: 1;
+            border-bottom: 2px dotted #d8bfb0;
+            margin: 0 12px 2px;
+            min-width: 16px;
+        }
+        .specs dd {
+            font-family: 'DotGothic16', monospace;
+            font-size: 16px;
+            color: #3a2a30;
+            flex-shrink: 0;
+            text-align: right;
+        }
+
+        /* ── Tabs ────────────────────────────────────────────────── */
+        .tabs {
+            display: flex; gap: 0;
+            border-bottom: 3px solid #1c1c1c;
+            margin-bottom: 20px;
+        }
+        .tab {
+            background: #f5e8e0;
+            color: #8b5e3c;
+            font-size: 10px;
+            padding: 12px 18px;
+            border: 3px solid #1c1c1c;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            margin-right: 4px;
+            box-shadow: none;
+        }
+        .tab:hover { background: #ffe0d0; }
+        .tab.active {
+            background: #c8455f; color: #fff;
+            border-color: #1c1c1c;
+            transform: none;
+            position: relative; top: 3px;
+            z-index: 1;
+        }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+
+        /* ── Checkbox list (ingredients & steps) ────────────────── */
+        .check-list { list-style: none; }
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid #f0e0d8;
+            cursor: pointer;
+            user-select: none;
+            transition: opacity .15s;
+        }
+        .check-item:last-child { border-bottom: none; }
+        .check-box {
+            flex-shrink: 0;
+            width: 20px; height: 20px;
+            border: 3px solid #1c1c1c;
+            border-radius: 3px;
+            background: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 12px;
+            margin-top: 1px;
+            transition: background .1s;
+        }
+        .check-item.checked .check-box {
+            background: #c8455f;
+            color: #fff;
+        }
+        .check-item.checked .check-text {
+            text-decoration: line-through;
+            color: #b09090;
+        }
+        .check-text {
+            font-family: 'DotGothic16', monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #3a2a30;
+        }
+        .check-text .ing-icon { margin-right: 6px; }
+        /* Step number badge */
+        .step-num {
+            flex-shrink: 0;
+            width: 22px; height: 22px;
+            background: #8b5e3c;
+            color: #fff;
+            border-radius: 50%;
+            border: 2px solid #1c1c1c;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            margin-top: 2px;
+        }
+
+        /* ── Notes tab ───────────────────────────────────────────── */
+        .notes-box {
+            background: #fffef0;
+            border: 3px solid #f0c040;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 3px 3px 0 #f0c040;
+        }
+        .notes-box p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #5a4a20;
+        }
+        .notes-tip {
+            display: flex; gap: 10px; align-items: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px dotted #e8d080;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #5a4a20;
+        }
+        .notes-tip:last-child { border-bottom: none; }
+        .notes-tip::before { content: '💡'; flex-shrink: 0; font-size: 16px; }
+
+        /* ── Similar recipes ─────────────────────────────────────── */
+        .similar { margin-top: 0; }
+        .similar-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 12px;
+            color: #8b5e3c;
+            margin-bottom: 16px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .rcard {
+            background: #fff;
+            border: 4px solid #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform .1s, box-shadow .1s;
+        }
+        .rcard:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .rcard-fav {
+            position: absolute; top: 8px; right: 8px;
+            background: rgba(255,255,255,.8);
+            color: #c8455f;
+            font-size: 13px;
+            border: 3px solid #1c1c1c;
+            border-radius: 50%;
+            width: 28px; height: 28px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .rcard-fav.on { background: #c8455f; color: #fff; }
+        .rcard-img {
+            background: #fbe5ec;
+            height: 100px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 52px;
+            border-bottom: 3px solid #1c1c1c;
+        }
+        .rcard-body { padding: 12px; }
+        .rcard-foot {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 6px;
+        }
+        .mini-cook {
+            background: #c8455f; color: #fff;
+            font-size: 7px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .mini-cook:hover { transform: translate(1px,1px); box-shadow: 1px 1px 0 #1c1c1c; }
+        .mini-time {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px; color: #a08070;
+        }
+        .rcard-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            line-height: 1.7;
+            color: #3a2a30;
+        }
+
+        /* ── Footer ──────────────────────────────────────────────── */
+        .footer {
+            background: #1c1c1c;
+            color: #e0d0c8;
+            padding: 32px 24px 20px;
+            margin: 40px -20px -60px;
+            border-top: 4px solid #c8455f;
+        }
+        .footer-top {
+            display: flex; justify-content: space-between;
+            flex-wrap: wrap; gap: 24px;
+            margin-bottom: 24px;
+        }
+        .footer-nav { display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-nav a {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; color: #c0a898;
+            text-decoration: none;
+        }
+        .footer-nav a:hover { color: #fff; }
+        .footer-contact .fc-head {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px; color: #c8455f;
+            margin-bottom: 8px;
+        }
+        .footer-contact p { font-size: 12px; margin-bottom: 4px; }
+        .socials { display: flex; gap: 14px; margin-top: 10px; font-size: 18px; color: #c8455f; }
+        .footer-logo {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 22px; color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .footer-fine {
+            text-align: center;
+            font-size: 11px; color: #706060;
+        }
+    </style>
+</head>
+<body>
+    <!-- sky decorations -->
+    <div class="bg-pixels" aria-hidden="true">
+        <span class="px-cloud" style="--x:6%;--y:8%">☁</span>
+        <span class="px-cloud" style="--x:80%;--y:14%">☁</span>
+        <span class="px-star"  style="--x:40%;--y:5%">✦</span>
+        <span class="px-star"  style="--x:92%;--y:38%">✦</span>
+        <span class="px-star"  style="--x:3%;--y:55%">✦</span>
+    </div>
+
+    <!-- ── Topbar ──────────────────────────────────────────────── -->
+    <header class="topbar">
+        <a class="logo" href="index.html">
+            <span class="logo-dig">DIG</span><span class="logo-in">-IN</span>
+            <span class="logo-spoon">🍴</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#tabCenter">Recipes</a>
+            <a href="index.html#tabCenter">Kitchen</a>
+        </nav>
+        <div class="topbar-actions">
+            <a href="index.html" class="back-btn">← BACK</a>
+            <button class="pill-icon" id="topFavBtn" aria-label="save recipe">♡</button>
+        </div>
+        <button class="hamburger" aria-label="menu">≡</button>
+    </header>
+
+    <div class="screen">
+
+        <!-- breadcrumb (filled dynamically) -->
+        <p class="breadcrumb" id="breadcrumb">
+            <a href="index.html">Home</a> ›
+            <a href="index.html#tabCenter">Recipes</a> ›
+            <span id="bcCuisine">World</span> ›
+            <span id="bcName">Loading…</span>
+        </p>
+
+        <!-- ── Main recipe ──────────────────────────────────────── -->
+        <main class="recipe" id="recipeMain">
+            <!-- DISH PANE -->
+            <section class="dish-pane">
+                <span class="badge-hot" id="badgeHot">YUM!</span>
+                <div class="dish-frame">
+                    <div class="dish-emoji" id="dishEmoji">🍳</div>
+                    <span class="floaty f1" id="floaty1">✨</span>
+                    <span class="floaty f2" id="floaty2">🌿</span>
+                    <span class="floaty f3" id="floaty3">⭐</span>
+                </div>
+                <div class="dish-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
+
+            <!-- INFO PANE -->
+            <section class="info-pane">
+                <div class="stars" id="starsRow">★★★★★ <small>(Dig In Pick)</small></div>
+                <h1 class="dish-title" id="dishTitle">Loading…</h1>
+
+                <div class="price-row">
+                    <span class="time-chip" id="timeChip">⏱ — min</span>
+                    <span class="kcal" id="diffChip">●●○ Easy</span>
+                </div>
+
+                <div class="cta-row">
+                    <button class="cook-btn" id="startCookingBtn">▶ START COOKING</button>
+                    <button class="save-btn" id="saveFavBtn" aria-label="save">♡</button>
+                </div>
+
+                <!-- Recipe info with dotted leaders -->
+                <h3 class="section-head">Recipe Info</h3>
+                <dl class="specs" id="specs">
+                    <!-- filled dynamically -->
+                </dl>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab active" data-tab="ingredients">Ingredients</button>
+                    <button class="tab"        data-tab="steps">Steps</button>
+                    <button class="tab"        data-tab="notes">Notes</button>
+                </div>
+
+                <!-- Ingredients checklist -->
+                <div class="tab-panel active" id="ingredients">
+                    <ul class="check-list" id="ingredientList"></ul>
+                </div>
+
+                <!-- Steps checklist -->
+                <div class="tab-panel" id="steps">
+                    <ul class="check-list" id="stepList"></ul>
+                </div>
+
+                <!-- Notes / tips -->
+                <div class="tab-panel" id="notes">
+                    <div class="notes-box" id="notesList"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ── Find Ingredients CTA ───────────────────────────────── -->
+        <div style="text-align:center;margin:0 0 36px;">
+            <a href="recipes.html" style="
+                font-family:'Press Start 2P',monospace; font-size:10px;
+                display:inline-block; background:#c8455f; color:#fff;
+                border:4px solid #1c1c1c; border-radius:10px;
+                padding:14px 28px; text-decoration:none;
+                box-shadow:5px 5px 0 #1c1c1c;
+                transition:transform .1s,box-shadow .1s;"
+                onmouseover="this.style.transform='translate(2px,2px)';this.style.boxShadow='3px 3px 0 #1c1c1c'"
+                onmouseout="this.style.transform='';this.style.boxShadow='5px 5px 0 #1c1c1c'">
+                📍 FIND INGREDIENTS NEAR YOU →
+            </a>
+        </div>
+
+        <!-- ── Similar recipes ─────────────────────────────────── -->
+        <section class="similar">
+            <h2 class="similar-title">More Tasty Recipes</h2>
+            <div class="card-grid" id="similarGrid"></div>
+        </section>
+
+        <!-- ── Footer ──────────────────────────────────────────── -->
+        <footer class="footer">
+            <div class="footer-top">
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#tabCenter">Recipes</a>
+                    <a href="index.html#tabCenter">Kitchen</a>
+                </nav>
+                <div class="footer-contact">
+                    <p class="fc-head">Kitchen Line</p>
+                    <p>hello@dig-in.fun</p>
+                    <div class="socials"><span>◆</span><span>♥</span><span>★</span><span>✿</span></div>
+                </div>
+            </div>
+            <div class="footer-logo">DIG-IN</div>
+            <p class="footer-fine">© 2026 DIG-IN Kitchen · made with pixels &amp; love</p>
+        </footer>
+    </div>
+
+    <script>
+        /* ── Helpers ───────────────────────────────────────────── */
+        const CUISINE_EMOJI = {
+            japanese:'🍜', italian:'🍝', mexican:'🌮', indian:'🍛',
+            thai:'🫕', chinese:'🥢', french:'🥐', greek:'🫒',
+            korean:'🥩', vietnamese:'🍃', spanish:'🥘', moroccan:'🫙',
+            middle_eastern:'🧆', american:'🍔', caribbean:'🌴',
+            german:'🥨', british:'🫖', brazilian:'🥩', mediterranean:'🫒',
+        };
+        const FLOATIES = {
+            japanese:['🍣','🌸','🍵'], italian:['🍅','🌿','🧄'],
+            mexican:['🌶️','🥑','🌽'], indian:['🫚','🌿','🫛'],
+            french:['🥐','🍷','🌹'], american:['🍟','🧀','🌽'],
+        };
+        const DIFF_STARS = { easy:'★☆☆ Easy', medium:'★★☆ Medium', hard:'★★★ Hard' };
+
+        function cuisineEmoji(c) { return CUISINE_EMOJI[(c||'').toLowerCase()] || '🍳'; }
+        function diffLabel(d)    { return DIFF_STARS[(d||'easy').toLowerCase()] || d || 'Easy'; }
+
+        /* ── Load recipe data ──────────────────────────────────── */
+        const params     = new URLSearchParams(location.search);
+        const recipeId   = params.get('id');
+        const recipeName = params.get('name');
+
+        async function loadRecipe() {
+            let recipe = null;
+
+            // 1. sessionStorage (set by app.js on click)
+            try {
+                const stored = sessionStorage.getItem('dig_in_current_recipe');
+                if (stored) {
+                    const r = JSON.parse(stored);
+                    const idMatch   = recipeId   && String(r.id) === String(recipeId);
+                    const nameMatch = recipeName && r.name?.toLowerCase() === recipeName.toLowerCase();
+                    if (!recipeId && !recipeName || idMatch || nameMatch) recipe = r;
+                }
+            } catch(_) {}
+
+            // 2. localStorage (all uploaded/cached recipes)
+            if (!recipe) {
+                try {
+                    const all = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+                    if (recipeId)   recipe = all.find(r => String(r.id) === String(recipeId));
+                    if (!recipe && recipeName)
+                        recipe = all.find(r => r.name?.toLowerCase() === recipeName.toLowerCase());
+                } catch(_) {}
+            }
+
+            // 3. API fallback
+            if (!recipe && recipeId) {
+                try {
+                    const res = await fetch(`http://localhost:5000/api/recipes/${recipeId}`);
+                    if (res.ok) recipe = await res.json();
+                } catch(_) {}
+            }
+
+            if (recipe) render(recipe);
+            else renderEmpty();
+        }
+
+        /* ── Render ─────────────────────────────────────────────── */
+        function render(r) {
+            const cuisine    = r.cuisine || r.cuisine_type || '';
+            const difficulty = (r.difficulty || r.difficulty_level || 'easy').toLowerCase();
+            const totalTime  = r.totalTime || r.total_time || r.time;
+            const dietTags   = r.dietary_tags || r.diet_tags || [];
+            const tips       = Array.isArray(r.tips)
+                ? r.tips
+                : (r.tips ? [r.tips] : []);
+
+            const ingredients = (r.ingredients || []).map(ing => {
+                if (typeof ing === 'string') return { icon: '•', text: ing };
+                const qty  = ing.quantity != null ? ing.quantity : (ing.amount || '');
+                const unit = ing.unit || '';
+                const name = ing.name || '';
+                return { icon: '•', text: `${qty} ${unit} ${name}`.replace(/\s+/g,' ').trim() };
+            }).filter(i => i.text);
+
+            const steps = (r.instructions || []).map(s => {
+                if (typeof s === 'string') return s;
+                return s.instruction || s.text || '';
+            }).filter(Boolean);
+
+            // Page title
+            document.title = `DIG-IN · ${r.name}`;
+
+            // Breadcrumb
+            document.getElementById('bcName').textContent    = r.name;
+            document.getElementById('bcCuisine').textContent = cuisine
+                ? cuisine.charAt(0).toUpperCase() + cuisine.slice(1) : 'World';
+
+            // Dish pane
+            document.getElementById('dishEmoji').textContent = cuisineEmoji(cuisine);
+            const fl = FLOATIES[(cuisine||'').toLowerCase()] || ['✨','🌿','⭐'];
+            document.getElementById('floaty1').textContent = fl[0] || '✨';
+            document.getElementById('floaty2').textContent = fl[1] || '🌿';
+            document.getElementById('floaty3').textContent = fl[2] || '⭐';
+
+            if (difficulty === 'hard') document.getElementById('badgeHot').textContent = 'CHALLENGE!';
+            else if (difficulty === 'medium') document.getElementById('badgeHot').textContent = 'TASTY!';
+
+            // Info pane header
+            document.getElementById('dishTitle').textContent = r.name;
+            document.getElementById('timeChip').textContent  = totalTime ? `⏱ ${totalTime} min` : '⏱ Quick';
+            document.getElementById('diffChip').textContent  = diffLabel(difficulty);
+
+            // Diet tag in stars row if present
+            if (dietTags.length) {
+                document.getElementById('starsRow').innerHTML =
+                    `★★★★★ <small>(${dietTags.slice(0,2).join(' · ')})</small>`;
+            }
+
+            // Specs with dotted leaders
+            const specsEl = document.getElementById('specs');
+            const specRows = [
+                ['Cuisine',   cuisine ? cuisine.charAt(0).toUpperCase() + cuisine.slice(1) : '—'],
+                ['Prep',      r.prepTime || r.prep_time ? `${r.prepTime || r.prep_time} min` : '—'],
+                ['Cook',      r.cookTime || r.cook_time ? `${r.cookTime || r.cook_time} min` : '—'],
+                ['Servings',  r.servings ? `${r.servings}` : '—'],
+                ['Difficulty',diffLabel(difficulty)],
+                ['Source',    r.source_book || r.cuisine || '—'],
+            ];
+            specsEl.innerHTML = specRows.map(([dt, dd]) => `
+                <div>
+                    <dt>${dt}</dt>
+                    <span class="leader"></span>
+                    <dd>${dd}</dd>
+                </div>`).join('');
+
+            // Ingredient checklist
+            const ingList = document.getElementById('ingredientList');
+            ingList.innerHTML = ingredients.map(({ text }) => `
+                <li class="check-item" role="checkbox" aria-checked="false">
+                    <span class="check-box"></span>
+                    <span class="check-text">${text}</span>
+                </li>`).join('');
+
+            // Steps checklist
+            const stepList = document.getElementById('stepList');
+            stepList.innerHTML = steps.map((s, i) => `
+                <li class="check-item" role="checkbox" aria-checked="false">
+                    <span class="check-box"></span>
+                    <span class="step-num">${i + 1}</span>
+                    <span class="check-text">${s}</span>
+                </li>`).join('');
+
+            // Notes / tips
+            const notesEl = document.getElementById('notesList');
+            if (tips.length) {
+                notesEl.innerHTML = tips.map(t => {
+                    const text = typeof t === 'string' ? t
+                        : (t.title ? `<strong>${t.title}</strong>${t.description ? ': ' + t.description : ''}` : '');
+                    return `<div class="notes-tip">${text}</div>`;
+                }).join('');
+            } else {
+                notesEl.innerHTML = `<p>No special notes for this recipe yet. Cook it and see what you discover! 🍳</p>`;
+            }
+
+            // Similar recipes
+            buildSimilarGrid(r);
+        }
+
+        function renderEmpty() {
+            document.getElementById('dishTitle').textContent = 'Recipe not found';
+            document.getElementById('ingredientList').innerHTML =
+                '<li style="padding:16px;font-size:13px;color:#aaa;">No data available. <a href="index.html">← Go back</a></li>';
+        }
+
+        /* ── Similar recipes from localStorage ──────────────────── */
+        function buildSimilarGrid(current) {
+            const grid = document.getElementById('similarGrid');
+            let pool = [];
+            try {
+                pool = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]')
+                    .filter(r => r.name !== current.name);
+            } catch(_) {}
+
+            // Shuffle and take 4
+            for (let i = pool.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [pool[i], pool[j]] = [pool[j], pool[i]];
+            }
+            const picks = pool.slice(0, 4);
+            if (!picks.length) { grid.closest('.similar').style.display = 'none'; return; }
+
+            grid.innerHTML = picks.map(r => `
+                <article class="rcard" data-recipe='${JSON.stringify(r).replace(/'/g,"&#39;")}'>
+                    <button class="rcard-fav" aria-label="save">♡</button>
+                    <div class="rcard-img">${cuisineEmoji(r.cuisine || r.cuisine_type)}</div>
+                    <div class="rcard-body">
+                        <div class="rcard-foot">
+                            <button class="mini-cook">Cook</button>
+                            <span class="mini-time">${r.totalTime || r.total_time || r.time || '?'} min</span>
+                        </div>
+                        <p class="rcard-name">${r.name}</p>
+                    </div>
+                </article>`).join('');
+
+            // Navigate on card click
+            grid.querySelectorAll('.rcard').forEach(card => {
+                card.addEventListener('click', e => {
+                    if (e.target.closest('.rcard-fav')) return;
+                    const recipe = JSON.parse(card.dataset.recipe);
+                    try { sessionStorage.setItem('dig_in_current_recipe', JSON.stringify(recipe)); } catch(_) {}
+                    location.href = `recipe.html?name=${encodeURIComponent(recipe.name)}`;
+                });
+            });
+
+            // Fav toggles on cards
+            grid.querySelectorAll('.rcard-fav').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.classList.toggle('on');
+                    btn.textContent = btn.classList.contains('on') ? '♥' : '♡';
+                });
+            });
+        }
+
+        /* ── Tab switching ──────────────────────────────────────── */
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab)?.classList.add('active');
+            });
+        });
+
+        /* ── Checkbox toggling ──────────────────────────────────── */
+        document.addEventListener('click', e => {
+            const item = e.target.closest('.check-item');
+            if (!item) return;
+            const checked = item.classList.toggle('checked');
+            item.setAttribute('aria-checked', checked);
+            item.querySelector('.check-box').textContent = checked ? '✓' : '';
+        });
+
+        /* ── Favourite button ───────────────────────────────────── */
+        [document.getElementById('saveFavBtn'), document.getElementById('topFavBtn')].forEach(btn => {
+            btn?.addEventListener('click', () => {
+                btn.classList.toggle('on');
+                btn.textContent = btn.classList.contains('on') ? '♥' : '♡';
+            });
+        });
+
+        /* ── Start cooking scrolls to steps ────────────────────── */
+        document.getElementById('startCookingBtn')?.addEventListener('click', () => {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            const stepsTab = document.querySelector('.tab[data-tab="steps"]');
+            if (stepsTab) stepsTab.classList.add('active');
+            document.getElementById('steps')?.classList.add('active');
+            document.getElementById('steps')?.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        /* ── Boot ───────────────────────────────────────────────── */
+        loadRecipe();
+    </script>
+</body>
+</html>
