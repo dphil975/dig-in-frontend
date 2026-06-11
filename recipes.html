@@ -850,6 +850,16 @@
       { id:20, name:'Peanut Butter Chocolate Cup', pixelEmoji:'🥜', time:31, recipe_type:'dessert' },
       { id:21, name:'Triple Chocolate Chunk',   pixelEmoji:'🍫', time:33, recipe_type:'dessert'   },
       { id:22, name:'Toffee Almond Cookie',     pixelEmoji:'🧀', time:26, recipe_type:'snack'     },
+      { id:201, name:'Mapo Tofu',                 pixelEmoji:'🌶️', time:30, recipe_type:'dinner'    },
+      { id:202, name:"Lion's Head Meatballs",    pixelEmoji:'🍡', time:45, recipe_type:'dinner'    },
+      { id:203, name:'Kung Pao Chicken',         pixelEmoji:'🥜', time:30, recipe_type:'dinner'    },
+      { id:204, name:'Kimchi Jjigae',            pixelEmoji:'🌶️', time:40, recipe_type:'dinner'    },
+      { id:205, name:'Bulgogi',                   pixelEmoji:'🥩', time:40, recipe_type:'dinner'    },
+      { id:206, name:'Japchae',                   pixelEmoji:'🍜', time:35, recipe_type:'dinner'    },
+      { id:207, name:'Miso Ramen',                pixelEmoji:'🍜', time:75, recipe_type:'dinner'    },
+      { id:208, name:'Chicken Katsu',             pixelEmoji:'🍗', time:30, recipe_type:'dinner'    },
+      { id:209, name:'Sushi Rice Balls',          pixelEmoji:'🍙', time:50, recipe_type:'snack'     },
+      { id:210, name:'Okonomiyaki',               pixelEmoji:'🥞', time:40, recipe_type:'dinner'    },
     ];
 
     /* ── Ingredients + substitutions ─────────────────────────────── */
@@ -876,6 +886,16 @@
       20: ['flour','baking soda','salt','peanut butter','butter','granulated sugar','brown sugar','eggs','vanilla extract','chocolate peanut butter cups'],
       21: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','semi-sweet chocolate chunks','dark chocolate chunks','white chocolate chunks'],
       22: ['flour','baking soda','salt','butter','granulated sugar','brown sugar','eggs','vanilla extract','toffee bits','almonds'],
+      201: ['tofu','ground pork','doubanjiang','sichuan peppercorns','garlic','soy sauce','sesame oil','chicken stock','green onions','cornstarch'],
+      202: ['ground pork','water chestnuts','green onions','soy sauce','rice wine','sesame oil','napa cabbage','cornstarch','chicken stock','oyster sauce'],
+      203: ['chicken breast','roasted cashews','dried red chilies','garlic','ginger','soy sauce','rice vinegar','sugar','sesame oil','oil'],
+      204: ['kimchi','pork belly','tofu','anchovy stock','gochugaru','gochujang','garlic','sugar','soy sauce','green onion'],
+      205: ['beef ribeye','soy sauce','brown sugar','sesame oil','garlic','rice vinegar','ginger','green onions','sesame seeds','pear'],
+      206: ['sweet potato noodles','beef','spinach','carrot','onion','shiitake mushrooms','garlic','soy sauce','sesame oil','sugar','sesame seeds','oil'],
+      207: ['chicken stock','miso paste','soy sauce','mirin','garlic','ginger','ramen noodles','eggs','mushrooms','green onions','nori','bean sprouts'],
+      208: ['chicken breast','all-purpose flour','egg','panko breadcrumbs','oil','tonkatsu sauce','mayonnaise','lemon','cabbage'],
+      209: ['sushi rice','water','rice vinegar','sugar','salt','mirin'],
+      210: ['all-purpose flour','water','egg','vegetable oil','cabbage','pork belly','okonomiyaki sauce','mayonnaise','bonito flakes','aonori','green onions'],
     };
 
     const SUBS_MAP = {
@@ -944,6 +964,16 @@
       20: ['vegetarian'],
       21: ['vegetarian'],
       22: ['vegetarian'],
+      201: ['gluten-free possible'],
+      202: ['gluten-free possible'],
+      203: [],
+      204: ['gluten-free possible'],
+      205: ['gluten-free possible'],
+      206: ['gluten-free possible'],
+      207: [],
+      208: [],
+      209: ['vegan','gluten-free'],
+      210: [],
     };
 
     /* ── Ingredient prices (budget-focused) ──────────────────────── */
@@ -1018,6 +1048,27 @@
       'chocolate peanut butter cups': { est: '~$2.00', where: 'Any grocery' },
       'dark chocolate chunks': { est: '~$2.50', where: 'Any grocery' },
       'toffee bits':      { est: '~$2.00',   where: 'Any grocery' },
+      'tofu':             { est: '~$2.00',   where: 'Any grocery / Asian market' },
+      'doubanjiang':      { est: '~$3.00',   where: 'Asian market' },
+      'sichuan peppercorns': { est: '~$2.50', where: 'Asian market / specialty' },
+      'kimchi':           { est: '~$4.00',   where: 'Asian market / specialty' },
+      'gochugaru':        { est: '~$2.50',   where: 'Asian market' },
+      'gochujang':        { est: '~$3.50',   where: 'Asian market' },
+      'pork belly':       { est: '~$5.00',   where: 'Butcher / grocery' },
+      'water chestnuts':  { est: '~$1.50',   where: 'Asian market / canned' },
+      'panko breadcrumbs': { est: '~$2.00',  where: 'Any grocery' },
+      'tonkatsu sauce':   { est: '~$3.00',   where: 'Asian market / specialty' },
+      'ramen noodles':    { est: '~$1.50',   where: 'Any grocery / Asian market' },
+      'miso paste':       { est: '~$4.00',   where: 'Any grocery / Asian market' },
+      'mirin':            { est: '~$3.00',   where: 'Any grocery / Asian market' },
+      'sweet potato noodles': { est: '~$3.00', where: 'Asian market' },
+      'shiitake mushrooms': { est: '~$3.50', where: 'Grocery / specialty' },
+      'nori':             { est: '~$2.50',   where: 'Any grocery / Asian market' },
+      'bonito flakes':    { est: '~$3.00',   where: 'Asian market' },
+      'aonori':           { est: '~$4.00',   where: 'Asian market' },
+      'oyster sauce':     { est: '~$2.00',   where: 'Any grocery / Asian market' },
+      'rice wine':        { est: '~$6.00',   where: 'Any grocery / liquor store' },
+      'okonomiyaki sauce': { est: '~$3.00',  where: 'Asian market' },
     };
 
     /* ── Veggie boosts ───────────────────────────────────────────── */
