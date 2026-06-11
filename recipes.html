@@ -12,26 +12,18 @@
   <style>
     /* ── Category color system ─────────────────────────────────── */
     :root {
-      /* Meal categories — matcha/crimson/burnt-orange/cream palette */
-      --c-breakfast: #E8C870;  --c-breakfast-dk: #8A6820;
-      --c-dinner:    #E84060;  --c-dinner-dk:    #8A0020;
-      --c-dessert:   #F0D8A0;  --c-dessert-dk:   #8A6020;
-      --c-snack:     #7FB069;  --c-snack-dk:     #1E4028;
-      --c-drink:     #60B890;  --c-drink-dk:     #1E4030;
-      --c-soup:      #E07030;  --c-soup-dk:      #803800;
-      --c-default:   #4A7C59;  --c-default-dk:   #1E3A28;
-      --c-lunch:     #A8D090;  --c-lunch-dk:     #2A5030;
-      --c-vegan:     #7FB069;  --c-vegan-dk:     #1E4028;
-      --c-veggie:    #A8D090;  --c-veggie-dk:    #2A5030;
-      --c-gluten:    #E8C870;  --c-gluten-dk:    #8A6820;
-      --c-nutfree:   #E07030;  --c-nutfree-dk:   #803800;
-
-      /* Cuisine regions */
-      --region-east-asia:     #4A7C59;  --region-east-asia-lt:   #C2D9A8;
-      --region-se-asia:       #C95000;  --region-se-asia-lt:     #EAA870;
-      --region-europe:        #DCC99A;  --region-europe-lt:      #F5EDD0;
-      --region-americas:      #C0173B;  --region-americas-lt:    #E87090;
-      --region-africa-me:     #B8760B;  --region-africa-me-lt:   #D4A830;
+      --c-breakfast: #f4e04a;  --c-breakfast-dk: #a07000;
+      --c-dinner:    #ff9eb5;  --c-dinner-dk:    #b02040;
+      --c-dessert:   #c9a0f0;  --c-dessert-dk:   #6a2090;
+      --c-snack:     #7ae0b0;  --c-snack-dk:     #1a7045;
+      --c-drink:     #60c8f4;  --c-drink-dk:     #0a5a7a;
+      --c-soup:      #ffd3a8;  --c-soup-dk:      #8a4a00;
+      --c-default:   #f4a924;  --c-default-dk:   #8b5a00;
+      --c-lunch:     #a8d8ea;  --c-lunch-dk:     #1a5a7a;
+      --c-vegan:     #7ae0b0;  --c-vegan-dk:     #1a7045;
+      --c-veggie:    #a8e6a3;  --c-veggie-dk:    #2a5a20;
+      --c-gluten:    #f4e04a;  --c-gluten-dk:    #8b6a00;
+      --c-nutfree:   #ffd3a8;  --c-nutfree-dk:   #8a4a00;
     }
 
     body { background: #0d0d0d; color: #eee; }
@@ -39,11 +31,11 @@
     /* ── Recipe hero ───────────────────────────────────────────── */
     .recipe-hero {
       background: #1a1a1a; padding: 22px 20px 16px; text-align: center;
-      border-bottom: 3px solid #4A7C59;
+      border-bottom: 3px solid #f4a924;
     }
     .recipe-hero-title {
       font-family: 'Press Start 2P', monospace;
-      font-size: 20px; color: #4A7C59; letter-spacing: 2px; margin: 0 0 4px;
+      font-size: 20px; color: #f4a924; letter-spacing: 2px; margin: 0 0 4px;
     }
     .recipe-hero-sub {
       font-family: 'Press Start 2P', monospace;
@@ -54,7 +46,7 @@
       gap: 12px; flex-wrap: wrap;
     }
     .recipe-hero-count {
-      display: inline-block; background: #4A7C59; color: #F5EDD0;
+      display: inline-block; background: #f4a924; color: #1a1a1a;
       font-family: 'Press Start 2P', monospace; font-size: 8px;
       border-radius: 4px; padding: 4px 10px; letter-spacing: .5px;
     }
@@ -86,8 +78,8 @@
       cursor: pointer; background: #1a1a1a; color: #888;
       transition: all .12s; white-space: nowrap; letter-spacing: .5px;
     }
-    .rfbtn:hover:not(.active) { border-color: #4A7C59; color: #4A7C59; }
-    .rfbtn.active             { background: #1a1a1a; color: #fff; border-color: #4A7C59; }
+    .rfbtn:hover:not(.active) { border-color: #f4a924; color: #f4a924; }
+    .rfbtn.active             { background: #1a1a1a; color: #fff; border-color: #f4a924; }
     .rfbtn.breakfast.active { background: var(--c-breakfast); border-color: var(--c-breakfast-dk); color: #1a1a1a; }
     .rfbtn.dinner.active    { background: var(--c-dinner);    border-color: var(--c-dinner-dk);    color: #1a1a1a; }
     .rfbtn.dessert.active   { background: var(--c-dessert);   border-color: var(--c-dessert-dk);   color: #1a1a1a; }
@@ -104,8 +96,8 @@
     /* ── Cuisine dropdown ─────────────────────────────────────── */
     .cuisine-wrap { position: relative; }
     .rfbtn.cuisine-btn { display: flex; align-items: center; gap: 5px; }
-    .rfbtn.cuisine-btn.has-selection { border-color: #C95000; color: #C95000; }
-    .rfbtn.cuisine-btn.has-selection.active { background: #C95000; border-color: #7A3000; color: #1a1a1a; }
+    .rfbtn.cuisine-btn.has-selection { border-color: #c9a0f0; color: #c9a0f0; }
+    .rfbtn.cuisine-btn.has-selection.active { background: #c9a0f0; border-color: #6a2090; color: #1a1a1a; }
     .cuisine-caret { font-size: 8px; transition: transform .15s; }
     .cuisine-wrap.open .cuisine-caret { transform: rotate(180deg); }
     .cuisine-dropdown {
@@ -126,14 +118,14 @@
     }
     .cuisine-dropdown-title {
       font-family: 'Press Start 2P', monospace; font-size: 7px;
-      color: #4A7C59; letter-spacing: 1px;
+      color: #f4a924; letter-spacing: 1px;
     }
     .cuisine-clear-btn {
       font-family: 'Press Start 2P', monospace; font-size: 6px;
       background: none; border: 1px solid #333; border-radius: 4px;
       color: #666; padding: 3px 7px; cursor: pointer; transition: all .1s;
     }
-    .cuisine-clear-btn:hover { border-color: #4A7C59; color: #4A7C59; }
+    .cuisine-clear-btn:hover { border-color: #f4a924; color: #f4a924; }
     .cuisine-region-group { padding: 4px 0; }
     .cuisine-region-label {
       font-family: 'Press Start 2P', monospace; font-size: 6px;
@@ -147,7 +139,7 @@
     }
     .cuisine-item:hover { background: rgba(255,255,255,.05); }
     .cuisine-item input[type="checkbox"] {
-      width: 14px; height: 14px; accent-color: #4A7C59;
+      width: 14px; height: 14px; accent-color: #f4a924;
       cursor: pointer; flex-shrink: 0;
     }
     .cuisine-item-label {
@@ -155,7 +147,7 @@
       user-select: none; transition: color .1s; flex: 1;
     }
     .cuisine-item:hover .cuisine-item-label { color: #eee; }
-    .cuisine-item input:checked + .cuisine-item-label { color: #4A7C59; font-weight: 700; }
+    .cuisine-item input:checked + .cuisine-item-label { color: #f4a924; font-weight: 700; }
 
     /* ── Allergies dropdown (same structure as cuisine) ────────── */
     .allergy-wrap { position: relative; }
@@ -207,7 +199,7 @@
       background: #1a1a1a; color: #eee; outline: none;
       min-width: 130px; flex: 1;
     }
-    .recipe-search-input:focus { border-color: #4A7C59; }
+    .recipe-search-input:focus { border-color: #f4a924; }
     .recipe-search-input::placeholder { color: #555; }
     .time-select {
       border: 2px solid #2a2a2a; border-radius: 5px;
@@ -219,7 +211,7 @@
     /* ── Recipe grid section ───────────────────────────────────── */
     .recipe-section {
       background: #111; padding: 18px 0 24px;
-      border-bottom: 3px solid #4A7C59;
+      border-bottom: 3px solid #f4a924;
     }
     .recipe-section-header {
       display: flex; align-items: center; justify-content: space-between;
@@ -227,7 +219,7 @@
     }
     .recipe-section-title {
       font-family: 'Press Start 2P', monospace;
-      font-size: 9px; color: #4A7C59; letter-spacing: 1.5px;
+      font-size: 9px; color: #f4a924; letter-spacing: 1.5px;
     }
     .recipe-count-badge {
       font-family: 'Press Start 2P', monospace; font-size: 7px;
@@ -255,7 +247,7 @@
     }
 
     /* Colored top stripe per category */
-    .rc-stripe { height: 6px; width: 100%; flex-shrink: 0; }
+    .rc-stripe { height: 4px; width: 100%; flex-shrink: 0; }
     .rc-stripe.breakfast { background: var(--c-breakfast); }
     .rc-stripe.dinner    { background: var(--c-dinner);    }
     .rc-stripe.dessert   { background: var(--c-dessert);   }
@@ -264,12 +256,6 @@
     .rc-stripe.soup      { background: var(--c-soup);      }
     .rc-stripe.lunch     { background: var(--c-lunch);     }
     .rc-stripe.default   { background: var(--c-default);   }
-    /* Region-based stripe overrides */
-    .rc-stripe.region-east-asia  { background: var(--region-east-asia);  }
-    .rc-stripe.region-se-asia    { background: var(--region-se-asia);    }
-    .rc-stripe.region-europe     { background: var(--region-europe);     }
-    .rc-stripe.region-americas   { background: var(--region-americas);   }
-    .rc-stripe.region-africa-me  { background: var(--region-africa-me);  }
 
     .rc-head { padding: 10px 12px 8px; }
     .rc-top-row {
@@ -297,18 +283,6 @@
     .rc-badge.soup      { background: var(--c-soup);      }
     .rc-badge.lunch     { background: var(--c-lunch);     }
     .rc-badge.default   { background: var(--c-default);   }
-
-    /* Region badges */
-    .rc-region {
-      display: inline-block; border-radius: 4px; padding: 2px 6px;
-      font-size: 7px; font-weight: 700; color: #1a1a1a;
-      margin-left: 4px; letter-spacing: .3px; opacity: .85;
-    }
-    .rc-region.region-east-asia  { background: var(--region-east-asia-lt);  color: #1E3A28; }
-    .rc-region.region-se-asia    { background: var(--region-se-asia-lt);    color: #5A2000; }
-    .rc-region.region-europe     { background: var(--region-europe-lt);     color: #5A4010; }
-    .rc-region.region-americas   { background: var(--region-americas-lt);   color: #5A0018; }
-    .rc-region.region-africa-me  { background: var(--region-africa-me-lt);  color: #5A3800; }
 
     /* Expandable body */
     .rc-body {
@@ -345,14 +319,14 @@
     .rc-plus {
       position: absolute; bottom: 10px; right: 10px;
       width: 34px; height: 34px; border-radius: 50%;
-      background: #4A7C59; border: 2px solid rgba(0,0,0,.3);
+      background: #f4a924; border: 2px solid rgba(0,0,0,.3);
       display: flex; align-items: center; justify-content: center;
       font-size: 20px; font-weight: 300; color: #1a1a1a; line-height: 1;
       cursor: pointer; z-index: 2;
       box-shadow: 0 2px 8px rgba(0,0,0,.5);
       transition: background .15s, transform .15s;
     }
-    .rc-plus:hover  { background: #1E3A28; transform: scale(1.1); }
+    .rc-plus:hover  { background: #e09900; transform: scale(1.1); }
     .rc-plus.saved  { background: #4caf50; color: #fff; font-size: 14px; }
     .rc-plus.saved:hover { background: #e53935; }
 
@@ -382,7 +356,7 @@
     /* ── Shop drawer ────────────────────────────────────────────── */
     .shop-drawer {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 1800;
-      background: #111; border-top: 3px solid #4A7C59;
+      background: #111; border-top: 3px solid #f4a924;
       border-radius: 22px 22px 0 0;
       padding: 0 0 env(safe-area-inset-bottom, 0);
       max-height: 88vh; transform: translateY(100%);
@@ -419,7 +393,7 @@
     }
     .drawer-section-title {
       font-family: 'Press Start 2P', monospace;
-      font-size: 7px; color: #4A7C59; letter-spacing: 1.2px; margin: 0 0 10px;
+      font-size: 7px; color: #f4a924; letter-spacing: 1.2px; margin: 0 0 10px;
     }
     .ingr-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
     .ingr-chip {
@@ -445,11 +419,11 @@
       color: #bbb; font-size: 11px; cursor: pointer;
       transition: all .12s; line-height: 1.5; text-align: left;
     }
-    .sub-option:hover    { border-color: #4A7C59; color: #eee; }
-    .sub-option.selected { background: #122a18; border-color: #4A7C59; color: #4A7C59; }
+    .sub-option:hover    { border-color: #f4a924; color: #eee; }
+    .sub-option.selected { background: #2a1e00; border-color: #f4a924; color: #f4a924; }
     .sub-option-tag {
       display: inline-block; font-size: 9px;
-      background: rgba(244,169,36,.2); color: #4A7C59;
+      background: rgba(244,169,36,.2); color: #f4a924;
       border-radius: 4px; padding: 1px 5px; margin-left: 6px;
     }
 
@@ -488,13 +462,13 @@
     .btn-cook-adapted:active { transform: translateY(4px); box-shadow: none; }
     .btn-find-stores {
       padding: 13px 16px; border-radius: 12px; text-decoration: none;
-      background: #4A7C59; border: 3px solid #1E3A28; color: #1a1a1a;
+      background: #f4a924; border: 3px solid #8b5a00; color: #1a1a1a;
       font-family: 'Press Start 2P', monospace; font-size: 7px;
-      cursor: pointer; box-shadow: 0 4px 0 #1E3A28; white-space: nowrap;
+      cursor: pointer; box-shadow: 0 4px 0 #8b5a00; white-space: nowrap;
       display: inline-flex; align-items: center;
       transition: transform .1s, box-shadow .1s;
     }
-    .btn-find-stores:hover  { transform: translateY(2px); box-shadow: 0 2px 0 #1E3A28; }
+    .btn-find-stores:hover  { transform: translateY(2px); box-shadow: 0 2px 0 #8b5a00; }
     .btn-find-stores:active { transform: translateY(4px); box-shadow: none; }
 
     /* Backdrop */
@@ -511,7 +485,7 @@
       display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     }
     .shop-total-badge {
-      display: inline-block; background: #4A7C59; color: #1a1a1a;
+      display: inline-block; background: #f4a924; color: #1a1a1a;
       font-family: 'Press Start 2P', monospace; font-size: 6px;
       border-radius: 4px; padding: 3px 8px;
     }
@@ -521,7 +495,7 @@
       border: 1.5px solid #2a2a2a; background: #161616;
       margin-bottom: 6px; cursor: pointer; transition: all .1s;
     }
-    .shop-item:hover { border-color: #4A7C59; }
+    .shop-item:hover { border-color: #f4a924; }
     .shop-item.checked { background: #0d1a0d; border-color: #1a7045; }
     .shop-item-cb {
       width: 18px; height: 18px; border-radius: 4px; border: 2px solid #333;
@@ -573,8 +547,8 @@
       font-size: 6px; cursor: pointer; background: #1a1a1a; color: #888;
       transition: all .12s; white-space: nowrap;
     }
-    .diet-goal-btn:hover:not(.active) { border-color: #C95000; color: #C95000; }
-    .diet-goal-btn.active { background: #C95000; border-color: #7A3000; color: #1a1a1a; }
+    .diet-goal-btn:hover:not(.active) { border-color: #c9a0f0; color: #c9a0f0; }
+    .diet-goal-btn.active { background: #c9a0f0; border-color: #6a2090; color: #1a1a1a; }
     .diet-goal-content { display: none; }
     .diet-goal-content.visible { display: block; }
     .diet-goal-item {
@@ -583,7 +557,7 @@
       border: 1.5px solid #2a2a2a; background: #161616;
       margin-bottom: 6px; transition: border-color .1s;
     }
-    .diet-goal-item:hover { border-color: #C95000; }
+    .diet-goal-item:hover { border-color: #c9a0f0; }
     .diet-goal-icon { font-size: 16px; flex-shrink: 0; line-height: 1.3; }
     .diet-goal-text { font-size: 11px; color: #bbb; line-height: 1.6; }
     .diet-goal-text strong { color: #eee; display: block; margin-bottom: 2px; font-size: 11px; }
