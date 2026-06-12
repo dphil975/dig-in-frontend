@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="catalog.css" />
   <link rel="stylesheet" href="frontend/css/styles.css" />
+  <link rel="stylesheet" href="frontend/css/pixel-ingredient-system.css" />
   <style>
     /* ── Category color system ─────────────────────────────────── */
     :root {
@@ -1439,7 +1440,36 @@
       document.getElementById('adaptedTag').textContent  = FUSION_TAGS[tagIdx];
       document.getElementById('adaptedResult').classList.add('visible');
       document.getElementById('drawerBody').scrollTo({ top: 9999, behavior: 'smooth' });
+
+      // recipe-start: launch the Cooking Mama popup with pantry state carried over
+      openRecipeStart(activeRecipe, ingrs, missing, chosen);
     });
+
+    /* ── recipe-start popup (Cooking Mama mode) ─────────────────── */
+    function findFullRecipe(recipe) {
+      // recipes here may be slim — pull full steps from cached recipes if available
+      try {
+        const all = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+        return all.find(r =>
+          (recipe.id && String(r.id) === String(recipe.id)) ||
+          (r.name && recipe.name && r.name.toLowerCase() === recipe.name.toLowerCase())
+        ) || null;
+      } catch (_) { return null; }
+    }
+
+    function openRecipeStart(recipe, ingrs, missing, swaps) {
+      if (!window.CookingMode) return;
+      const full = findFullRecipe(recipe);
+      CookingMode.launch({
+        id:        recipe.id ?? recipe.name,
+        name:      recipe.name,
+        cuisine:   recipe.cuisine || recipe.cuisine_type || full?.cuisine || '',
+        servings:  recipe.servings || full?.servings || 4,
+        totalTime: recipe.totalTime || recipe.time || full?.totalTime || 30,
+        ingredients: ingrs,
+        instructions: recipe.instructions || full?.instructions || [],
+      }, { missing, swaps });
+    }
 
     /* ── Veggie boost ────────────────────────────────────────────── */
     function renderVeggieBoost() {
@@ -1632,5 +1662,6 @@
     /* ── Boot ────────────────────────────────────────────────────── */
     loadRecipes();
   </script>
+  <script src="frontend/js/pixel-ingredient-system.js"></script>
 </body>
 </html>

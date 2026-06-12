@@ -355,17 +355,48 @@ class CookingMode {
   static HISTORY_KEY = 'dig_in_cook_history';
   static COUNT_KEY   = 'dig_in_made_count';
 
-  constructor(recipe) {
+  /**
+   * opts.missing — ingredient names already known to be missing (pre-marks ✗)
+   * opts.swaps   — [[from, to], ...] substitutions chosen by the user;
+   *                `from` is marked missing, `to` joins the tray with a NEW badge
+   */
+  constructor(recipe, opts = {}) {
     this.recipe = this.normalize(recipe);
     this.system = new PixelIngredientSystem(null, this.recipe.id);
     this.phase = 'intro';
     this.overlay = null;
+    this.opts = opts;
+    this.applyPantryState(opts);
   }
 
-  static launch(recipe) {
-    const mode = new CookingMode(recipe);
+  static launch(recipe, opts) {
+    const mode = new CookingMode(recipe, opts);
     mode.open();
     return mode;
+  }
+
+  applyPantryState({ missing = [], swaps = [] } = {}) {
+    const findMatch = name => this.recipe.ingredients.find(i =>
+      i.toLowerCase().includes(String(name).toLowerCase()) ||
+      String(name).toLowerCase().includes(i.toLowerCase())
+    );
+
+    this.swappedFrom = new Set();
+    [...missing, ...swaps.map(([from]) => from)].forEach(name => {
+      const match = findMatch(name);
+      if (match) this.system.selectedIngredients.set(match, { hasIt: false, addedPrice: 0 });
+    });
+    swaps.forEach(([from]) => {
+      const match = findMatch(from);
+      if (match) this.swappedFrom.add(match);
+    });
+
+    swaps.forEach(([, to]) => {
+      if (!to) return;
+      this.recipe.ingredients.push(to);
+      this.system.userAddedIngredients.add(to);
+      this.system.selectedIngredients.set(to, { hasIt: true, addedPrice: 0 });
+    });
   }
 
   normalize(r) {
@@ -424,9 +455,13 @@ class CookingMode {
   /* ── Phase 1: pantry check ──────────────────────────────────── */
   renderIntro() {
     this.phase = 'intro';
+    const swaps = this.opts.swaps || [];
+    const greeting = swaps.length
+      ? `Let's make <b>${this.recipe.name}</b> with what you have!<br>Your swaps are in the tray with a NEW tag. ♥`
+      : `Welcome back from the store!<br>Time to make <b>${this.recipe.name}</b>.<br>Check your ingredients!`;
     const stage = this.stage(`
       <div class="cm-ribbon"><div class="cm-ribbon-plate">Let's cook</div></div>
-      ${this.bubble(`Welcome back from the store!<br>Time to make <b>${this.recipe.name}</b>.<br>Check your ingredients!`)}
+      ${this.bubble(greeting)}
       <div id="cmGrid"></div>
       <div class="cm-confirm-bar">
         <button class="cm-btn cm-btn-cancel" data-cm="quit"><span class="btn-dot"></span>Cancel</button>
@@ -443,7 +478,9 @@ class CookingMode {
       if (!btn) return;
       if (btn.dataset.cm === 'quit') this.close();
       if (btn.dataset.cm === 'start') {
-        const missing = [...this.system.selectedIngredients.values()].filter(v => !v.hasIt).length;
+        // swapped-out ingredients are covered by their substitutes — don't warn
+        const missing = [...this.system.selectedIngredients.entries()]
+          .filter(([name, v]) => !v.hasIt && !this.swappedFrom?.has(name)).length;
         missing > 0 ? this.renderMissingWarning(missing) : this.renderSteps();
       }
     });
