@@ -1,122 +1,1445 @@
 {
   "argentinaRecipes": {
-    "title": "Authentic Argentine Cuisine",
-    "description": "Traditional recipes from Argentina featuring asado, empanadas, chimichurri, and the country's renowned beef culture",
-    "country": "Argentina",
-    "region": "South America",
+    "title": "Authentic ARGENTINA Cuisine",
+    "country": "ARGENTINA",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "arg_breakfast_001", "name": "Medialuna", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Flour", "Butter", "Sugar", "Yeast", "Salt"]},
-      {"id": "arg_breakfast_002", "name": "Churros with Chocolate", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Flour", "Water", "Oil", "Salt", "Chocolate"]},
-      {"id": "arg_breakfast_003", "name": "Facturas", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "60 minutes", "cookTime": "25 minutes", "ingredients": ["Puff pastry", "Sugar", "Egg", "Jam"]},
-      {"id": "arg_breakfast_004", "name": "Tostadas with Dulce de Leche", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Dulce de leche", "Butter"]},
-      {"id": "arg_breakfast_005", "name": "Café con Leche", "difficulty": "Easy", "servings": 2, "prepTime": "5 minutes", "cookTime": "5 minutes", "ingredients": ["Coffee", "Milk"]},
-      {"id": "arg_breakfast_006", "name": "Avocado Toast", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Avocado", "Lemon", "Salt"]},
-      {"id": "arg_breakfast_007", "name": "Empanada Breakfast", "difficulty": "Medium", "servings": "6 pieces", "prepTime": "20 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Meat", "Onion", "Spices"]},
-      {"id": "arg_breakfast_008", "name": "Medialunas Dulces", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Sugar", "Butter", "Yeast"]},
-      {"id": "arg_breakfast_009", "name": "Pan Dulce", "difficulty": "Medium", "servings": "1 loaf", "prepTime": "120 minutes", "cookTime": "40 minutes", "ingredients": ["Flour", "Sugar", "Butter", "Eggs", "Yeast"]},
-      {"id": "arg_breakfast_010", "name": "Alfajores", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "30 minutes", "cookTime": "15 minutes", "ingredients": ["Flour", "Butter", "Egg yolks", "Dulce de leche"]},
-      {"id": "arg_breakfast_011", "name": "Medialunas de Queso", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Cheese", "Butter", "Yeast"]},
-      {"id": "arg_breakfast_012", "name": "Tostadas with Queso y Jamón", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Cheese", "Ham", "Butter"]},
-      {"id": "arg_breakfast_013", "name": "Omelette Española", "difficulty": "Easy", "servings": 2, "prepTime": "15 minutes", "cookTime": "10 minutes", "ingredients": ["Eggs", "Potatoes", "Onion", "Salt"]},
-      {"id": "arg_breakfast_014", "name": "Yogurt with Granola", "difficulty": "Easy", "servings": 2, "prepTime": "5 minutes", "cookTime": "0 minutes", "ingredients": ["Yogurt", "Granola", "Honey"]},
-      {"id": "arg_breakfast_015", "name": "Tostadas with Mantequilla y Mermelada", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Butter", "Jam"]},
-      {"id": "arg_breakfast_016", "name": "Medialunas Rellenas", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Filling", "Butter", "Yeast"]},
-      {"id": "arg_breakfast_017", "name": "Huevos Rancheros", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "10 minutes", "ingredients": ["Eggs", "Tortillas", "Salsa", "Cheese"]},
-      {"id": "arg_breakfast_018", "name": "Ensalada de Frutas", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "0 minutes", "ingredients": ["Mixed fruits", "Honey", "Lemon juice"]},
-      {"id": "arg_breakfast_019", "name": "Facturas de Hojaldre", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "60 minutes", "cookTime": "25 minutes", "ingredients": ["Puff pastry", "Cream", "Sugar"]},
-      {"id": "arg_breakfast_020", "name": "Budín de Pan", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Bread", "Milk", "Eggs", "Sugar"]}
+      {
+        "id": "ar-b1",
+        "name": "Medialunas",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "flour",
+          "butter",
+          "sugar",
+          "yeast"
+        ],
+        "instructions": [
+          "Argentine croissants with dulce de leche"
+        ]
+      },
+      {
+        "id": "ar-b2",
+        "name": "Caf\u00e9 con Leche y Tostadas",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "coffee",
+          "milk",
+          "bread",
+          "butter"
+        ],
+        "instructions": [
+          "Coffee with milk and toast",
+          "National breakfast"
+        ]
+      },
+      {
+        "id": "ar-b3",
+        "name": "Facturas",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "pastry",
+          "filling",
+          "sugar"
+        ],
+        "instructions": [
+          "Argentine pastries"
+        ]
+      },
+      {
+        "id": "ar-b4",
+        "name": "Argentine Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b5",
+        "name": "Argentine Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b6",
+        "name": "Argentine Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b7",
+        "name": "Argentine Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b8",
+        "name": "Argentine Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b9",
+        "name": "Argentine Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b10",
+        "name": "Argentine Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b11",
+        "name": "Argentine Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b12",
+        "name": "Argentine Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b13",
+        "name": "Argentine Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b14",
+        "name": "Argentine Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b15",
+        "name": "Argentine Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b16",
+        "name": "Argentine Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b17",
+        "name": "Argentine Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b18",
+        "name": "Argentine Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b19",
+        "name": "Argentine Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-b20",
+        "name": "Argentine Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "arg_lunch_001", "name": "Asado Argentino", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Beef ribs", "Salt", "Chimichurri", "Vegetables"]},
-      {"id": "arg_lunch_002", "name": "Milanesa", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Beef", "Flour", "Eggs", "Breadcrumbs", "Oil"]},
-      {"id": "arg_lunch_003", "name": "Empanadas Tucumanas", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "25 minutes", "cookTime": "25 minutes", "ingredients": ["Pastry", "Beef", "Onion", "Cumin", "Spices"]},
-      {"id": "arg_lunch_004", "name": "Chimichurri Steak", "difficulty": "Medium", "servings": 4, "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Steak", "Chimichurri", "Garlic", "Parsley"]},
-      {"id": "arg_lunch_005", "name": "Milanesa Napolitana", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Milanesa", "Mozzarella", "Tomato", "Ham"]},
-      {"id": "arg_lunch_006", "name": "Empanadas de Queso", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Cheese", "Onion", "Spices"]},
-      {"id": "arg_lunch_007", "name": "Bife de Lomo", "difficulty": "Medium", "servings": 2, "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Beef tenderloin", "Chimichurri", "Salt", "Pepper"]},
-      {"id": "arg_lunch_008", "name": "Choripán", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "15 minutes", "ingredients": ["Chorizo", "Bread", "Chimichurri"]},
-      {"id": "arg_lunch_009", "name": "Matambre", "difficulty": "Hard", "servings": 8, "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Flank steak", "Vegetables", "Eggs", "Spices"]},
-      {"id": "arg_lunch_010", "name": "Tallarín a la Bolognesa", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "25 minutes", "ingredients": ["Pasta", "Beef", "Tomato sauce", "Garlic"]},
-      {"id": "arg_lunch_011", "name": "Carbonada", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "60 minutes", "ingredients": ["Beef", "Vegetables", "Spices", "Broth"]},
-      {"id": "arg_lunch_012", "name": "Polenta", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "25 minutes", "ingredients": ["Cornmeal", "Water", "Cheese", "Butter"]},
-      {"id": "arg_lunch_013", "name": "Locro", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Corn", "Beans", "Spices"]},
-      {"id": "arg_lunch_014", "name": "Guiso de Lentejas", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "45 minutes", "ingredients": ["Lentils", "Vegetables", "Spices", "Broth"]},
-      {"id": "arg_lunch_015", "name": "Tira de Asado", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "45 minutes", "ingredients": ["Beef short ribs", "Salt", "Chimichurri"]},
-      {"id": "arg_lunch_016", "name": "Filete Rebozado", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Beef", "Flour", "Eggs", "Spices"]},
-      {"id": "arg_lunch_017", "name": "Chiles Rellenos", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "25 minutes", "ingredients": ["Peppers", "Cheese", "Tomato", "Spices"]},
-      {"id": "arg_lunch_018", "name": "Rissotto de Setas", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Rice", "Mushrooms", "Wine", "Cheese"]},
-      {"id": "arg_lunch_019", "name": "Suprema a la Milanesa", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Chicken breast", "Flour", "Eggs", "Oil"]},
-      {"id": "arg_lunch_020", "name": "Fideos Secos", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Noodles", "Tomato sauce", "Meat", "Spices"]}
+      {
+        "id": "ar-l1",
+        "name": "Asado",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "beef",
+          "chorizo",
+          "offal",
+          "seasoning"
+        ],
+        "instructions": [
+          "Traditional barbecue",
+          "National dish"
+        ]
+      },
+      {
+        "id": "ar-l2",
+        "name": "Milanesa",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "beef",
+          "breading",
+          "oil",
+          "lemon"
+        ],
+        "instructions": [
+          "Breaded and fried meat cutlet"
+        ]
+      },
+      {
+        "id": "ar-l3",
+        "name": "Empanadas",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "pastry",
+          "meat",
+          "onions",
+          "spices"
+        ],
+        "instructions": [
+          "Filled pastry pockets"
+        ]
+      },
+      {
+        "id": "ar-l4",
+        "name": "Argentine Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l5",
+        "name": "Argentine Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l6",
+        "name": "Argentine Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l7",
+        "name": "Argentine Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l8",
+        "name": "Argentine Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l9",
+        "name": "Argentine Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l10",
+        "name": "Argentine Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l11",
+        "name": "Argentine Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l12",
+        "name": "Argentine Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l13",
+        "name": "Argentine Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l14",
+        "name": "Argentine Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l15",
+        "name": "Argentine Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l16",
+        "name": "Argentine Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l17",
+        "name": "Argentine Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l18",
+        "name": "Argentine Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l19",
+        "name": "Argentine Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-l20",
+        "name": "Argentine Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "arg_dinner_001", "name": "Asado Completo", "difficulty": "Hard", "servings": 12, "prepTime": "40 minutes", "cookTime": "120 minutes", "ingredients": ["Multiple beef cuts", "Chimichurri", "Vegetables", "Salt"]},
-      {"id": "arg_dinner_002", "name": "Costillas de Ternera", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "60 minutes", "ingredients": ["Veal ribs", "Wine", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_003", "name": "Bife de Chorizo", "difficulty": "Medium", "servings": 4, "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Sirloin steak", "Chimichurri", "Salt", "Pepper"]},
-      {"id": "arg_dinner_004", "name": "Carne a la Criolla", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "50 minutes", "ingredients": ["Beef", "Wine", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_005", "name": "Empanada Grande", "difficulty": "Hard", "servings": 8, "prepTime": "30 minutes", "cookTime": "35 minutes", "ingredients": ["Pastry", "Beef", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_006", "name": "Lomo a la Pimienta", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Beef tenderloin", "Peppercorn sauce", "Cream"]},
-      {"id": "arg_dinner_007", "name": "Milonga Stew", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "75 minutes", "ingredients": ["Beef", "Vegetables", "Wine", "Spices"]},
-      {"id": "arg_dinner_008", "name": "Pollo al Horno", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "60 minutes", "ingredients": ["Chicken", "Lemon", "Garlic", "Herbs"]},
-      {"id": "arg_dinner_009", "name": "Churrasco con Salsa", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Beef", "Creole sauce", "Vegetables"]},
-      {"id": "arg_dinner_010", "name": "Pampas Steak Dinner", "difficulty": "Hard", "servings": 8, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Varied beef cuts", "Chimichurri", "Vegetables"]},
-      {"id": "arg_dinner_011", "name": "Lengua a la Criolla", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "120 minutes", "ingredients": ["Beef tongue", "Wine", "Vegetables"]},
-      {"id": "arg_dinner_012", "name": "Cazuela de Carnes", "difficulty": "Hard", "servings": 8, "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Mixed meats", "Vegetables", "Wine", "Spices"]},
-      {"id": "arg_dinner_013", "name": "Ternera Guisada", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "75 minutes", "ingredients": ["Veal", "Wine", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_014", "name": "Carne Asada with Papas", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "50 minutes", "ingredients": ["Beef", "Potatoes", "Chimichurri", "Vegetables"]},
-      {"id": "arg_dinner_015", "name": "Picadillo Argentino", "difficulty": "Easy", "servings": 6, "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Ground beef", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_016", "name": "Rabo Guisado", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "120 minutes", "ingredients": ["Oxtail", "Wine", "Vegetables", "Spices"]},
-      {"id": "arg_dinner_017", "name": "Bife de Costilla", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "30 minutes", "ingredients": ["Rib steak", "Chimichurri", "Salt"]},
-      {"id": "arg_dinner_018", "name": "Salmón a la Parrilla", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "20 minutes", "ingredients": ["Salmon", "Lemon", "Herbs", "Oil"]},
-      {"id": "arg_dinner_019", "name": "Pastel de Papa", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "50 minutes", "ingredients": ["Potatoes", "Beef", "Cheese", "Vegetables"]},
-      {"id": "arg_dinner_020", "name": "Carne Rellena", "difficulty": "Hard", "servings": 6, "prepTime": "35 minutes", "cookTime": "60 minutes", "ingredients": ["Beef", "Stuffing", "Vegetables", "Wine"]}
+      {
+        "id": "ar-d1",
+        "name": "Argentine Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d2",
+        "name": "Argentine Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d3",
+        "name": "Argentine Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d4",
+        "name": "Argentine Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d5",
+        "name": "Argentine Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d6",
+        "name": "Argentine Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d7",
+        "name": "Argentine Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d8",
+        "name": "Argentine Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d9",
+        "name": "Argentine Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d10",
+        "name": "Argentine Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d11",
+        "name": "Argentine Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d12",
+        "name": "Argentine Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d13",
+        "name": "Argentine Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d14",
+        "name": "Argentine Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d15",
+        "name": "Argentine Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d16",
+        "name": "Argentine Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d17",
+        "name": "Argentine Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d18",
+        "name": "Argentine Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d19",
+        "name": "Argentine Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-d20",
+        "name": "Argentine Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "arg_dessert_001", "name": "Alfajores de Dulce de Leche", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "30 minutes", "cookTime": "15 minutes"},
-      {"id": "arg_dessert_002", "name": "Flan Argentino", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "45 minutes"},
-      {"id": "arg_dessert_003", "name": "Dulce de Leche", "difficulty": "Medium", "servings": "1 jar", "prepTime": "10 minutes", "cookTime": "120 minutes"},
-      {"id": "arg_dessert_004", "name": "Chocotorta", "difficulty": "Easy", "servings": 8, "prepTime": "30 minutes", "cookTime": "0 minutes"},
-      {"id": "arg_dessert_005", "name": "Milanesa de Dulce", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "30 minutes", "cookTime": "15 minutes"},
-      {"id": "arg_dessert_006", "name": "Pie de Manzana", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "45 minutes"},
-      {"id": "arg_dessert_007", "name": "Helado de Dulce de Leche", "difficulty": "Hard", "servings": 6, "prepTime": "30 minutes", "cookTime": "0 minutes"},
-      {"id": "arg_dessert_008", "name": "Postre Chaja", "difficulty": "Hard", "servings": 8, "prepTime": "40 minutes", "cookTime": "0 minutes"},
-      {"id": "arg_dessert_009", "name": "Brownies de Chocolate", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "30 minutes"},
-      {"id": "arg_dessert_010", "name": "Torta de Chocolate", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "arg_dessert_011", "name": "Torta Negra", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "50 minutes"},
-      {"id": "arg_dessert_012", "name": "Fruta Confitada", "difficulty": "Hard", "servings": "1 jar", "prepTime": "20 minutes", "cookTime": "60 minutes"},
-      {"id": "arg_dessert_013", "name": "Mousse de Chocolate", "difficulty": "Easy", "servings": 4, "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "arg_dessert_014", "name": "Tarta de Fresas", "difficulty": "Hard", "servings": 8, "prepTime": "30 minutes", "cookTime": "35 minutes"},
-      {"id": "arg_dessert_015", "name": "Crema Volteada", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "arg_dessert_016", "name": "Budín de Ciruela", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "50 minutes"},
-      {"id": "arg_dessert_017", "name": "Rigó Jancsi", "difficulty": "Hard", "servings": 8, "prepTime": "40 minutes", "cookTime": "20 minutes"},
-      {"id": "arg_dessert_018", "name": "Panqueques con Dulce", "difficulty": "Easy", "servings": "8 pieces", "prepTime": "15 minutes", "cookTime": "15 minutes"},
-      {"id": "arg_dessert_019", "name": "Fruta Bomba Confitada", "difficulty": "Hard", "servings": "1 jar", "prepTime": "25 minutes", "cookTime": "75 minutes"},
-      {"id": "arg_dessert_020", "name": "Tiramisú Argentino", "difficulty": "Medium", "servings": 8, "prepTime": "40 minutes", "cookTime": "0 minutes"}
+      {
+        "id": "ar-des1",
+        "name": "Dulce de Leche",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 120,
+        "ingredients": [
+          "milk",
+          "sugar"
+        ],
+        "instructions": [
+          "Slow-cooked caramel",
+          "National sweet"
+        ]
+      },
+      {
+        "id": "ar-des2",
+        "name": "Alfajores",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "flour",
+          "butter",
+          "dulce de leche",
+          "chocolate"
+        ],
+        "instructions": [
+          "Dulce de leche sandwich cookies"
+        ]
+      },
+      {
+        "id": "ar-des3",
+        "name": "Argentine Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des4",
+        "name": "Argentine Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des5",
+        "name": "Argentine Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des6",
+        "name": "Argentine Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des7",
+        "name": "Argentine Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des8",
+        "name": "Argentine Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des9",
+        "name": "Argentine Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des10",
+        "name": "Argentine Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des11",
+        "name": "Argentine Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des12",
+        "name": "Argentine Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des13",
+        "name": "Argentine Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des14",
+        "name": "Argentine Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des15",
+        "name": "Argentine Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des16",
+        "name": "Argentine Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des17",
+        "name": "Argentine Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des18",
+        "name": "Argentine Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des19",
+        "name": "Argentine Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-des20",
+        "name": "Argentine Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "arg_drink_na_001", "name": "Mate", "servings": 1, "prepTime": "10 minutes"},
-      {"id": "arg_drink_na_002", "name": "Café Argentino", "servings": 2, "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "arg_drink_na_003", "name": "Chocolate Caliente", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "arg_drink_na_004", "name": "Agua Fresca", "servings": 4, "prepTime": "10 minutes"},
-      {"id": "arg_drink_na_005", "name": "Limonada Casera", "servings": 4, "prepTime": "10 minutes"},
-      {"id": "arg_drink_na_006", "name": "Jugo de Naranja Fresco", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "arg_drink_na_007", "name": "Té de Jengibre", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "arg_drink_na_008", "name": "Batido de Frutas", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "arg_drink_na_009", "name": "Agua de Coco", "servings": 1, "prepTime": "5 minutes"},
-      {"id": "arg_drink_na_010", "name": "Té Helado", "servings": 4, "prepTime": "15 minutes"}
+      {
+        "id": "ar-na1",
+        "name": "Argentine Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na2",
+        "name": "Argentine Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na3",
+        "name": "Argentine Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na4",
+        "name": "Argentine Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na5",
+        "name": "Argentine Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na6",
+        "name": "Argentine Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na7",
+        "name": "Argentine Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na8",
+        "name": "Argentine Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na9",
+        "name": "Argentine Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "ar-na10",
+        "name": "Argentine Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "arg_drink_a_001", "name": "Vino Tinto Malbec", "servings": 1},
-      {"id": "arg_drink_a_002", "name": "Vino Blanco Suvignon Blanc", "servings": 1},
-      {"id": "arg_drink_a_003", "name": "Cerveza Artesanal", "servings": 1},
-      {"id": "arg_drink_a_004", "name": "Fernet con Cola", "servings": 1, "prepTime": "5 minutes"},
-      {"id": "arg_drink_a_005", "name": "Cocktail Argentino", "servings": 1, "prepTime": "5 minutes"},
-      {"id": "arg_drink_a_006", "name": "Champagne Argentino", "servings": 1},
-      {"id": "arg_drink_a_007", "name": "Sidra Espumante", "servings": 1},
-      {"id": "arg_drink_a_008", "name": "Pisco Sour", "servings": 1, "prepTime": "5 minutes"},
-      {"id": "arg_drink_a_009", "name": "Grapa", "servings": 1},
-      {"id": "arg_drink_a_010", "name": "Vermut Argentino", "servings": 1}
+      {
+        "id": "ar-a1",
+        "name": "Argentine Wine 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a2",
+        "name": "Argentine Wine 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a3",
+        "name": "Argentine Wine 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a4",
+        "name": "Argentine Wine 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a5",
+        "name": "Argentine Wine 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a6",
+        "name": "Argentine Wine 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a7",
+        "name": "Argentine Wine 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a8",
+        "name": "Argentine Wine 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a9",
+        "name": "Argentine Wine 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "ar-a10",
+        "name": "Argentine Wine 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      }
     ]
   }
 }

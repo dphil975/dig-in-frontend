@@ -1,109 +1,1440 @@
 {
   "egyptRecipes": {
-    "title": "Authentic Egypt Cuisine",
-    "country": "Egypt",
-    "region": "Africa",
+    "title": "Authentic EGYPT Cuisine",
+    "country": "EGYPT",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"eg-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"eg-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"eg-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"eg-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"eg-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"eg-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"eg-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"eg-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"eg-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"eg-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "eg-b1",
+        "name": "Ful Medames",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "fava beans",
+          "garlic",
+          "lemon",
+          "oil"
+        ],
+        "instructions": [
+          "Mashed fava beans",
+          "National breakfast"
+        ]
+      },
+      {
+        "id": "eg-b2",
+        "name": "Medames",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 60,
+        "ingredients": [
+          "dried fava beans",
+          "spices"
+        ],
+        "instructions": [
+          "Slow-cooked bean stew"
+        ]
+      },
+      {
+        "id": "eg-b3",
+        "name": "Aish Baladi",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "flour",
+          "water",
+          "salt"
+        ],
+        "instructions": [
+          "Egyptian flatbread"
+        ]
+      },
+      {
+        "id": "eg-b4",
+        "name": "Egyptian Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b5",
+        "name": "Egyptian Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b6",
+        "name": "Egyptian Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b7",
+        "name": "Egyptian Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b8",
+        "name": "Egyptian Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b9",
+        "name": "Egyptian Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b10",
+        "name": "Egyptian Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b11",
+        "name": "Egyptian Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b12",
+        "name": "Egyptian Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b13",
+        "name": "Egyptian Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b14",
+        "name": "Egyptian Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b15",
+        "name": "Egyptian Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b16",
+        "name": "Egyptian Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b17",
+        "name": "Egyptian Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b18",
+        "name": "Egyptian Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b19",
+        "name": "Egyptian Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-b20",
+        "name": "Egyptian Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "eg-l1",
+        "name": "Koshari",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "lentils",
+          "pasta",
+          "sauce"
+        ],
+        "instructions": [
+          "Mixed rice, lentils, and pasta"
+        ]
+      },
+      {
+        "id": "eg-l2",
+        "name": "Molokhia",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "molokhia leaves",
+          "garlic",
+          "coriander",
+          "broth"
+        ],
+        "instructions": [
+          "Green leafy stew"
+        ]
+      },
+      {
+        "id": "eg-l3",
+        "name": "Falafel",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "fava beans",
+          "herbs",
+          "spices"
+        ],
+        "instructions": [
+          "Deep-fried bean patties"
+        ]
+      },
+      {
+        "id": "eg-l4",
+        "name": "Egyptian Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l5",
+        "name": "Egyptian Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l6",
+        "name": "Egyptian Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l7",
+        "name": "Egyptian Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l8",
+        "name": "Egyptian Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l9",
+        "name": "Egyptian Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l10",
+        "name": "Egyptian Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l11",
+        "name": "Egyptian Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l12",
+        "name": "Egyptian Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l13",
+        "name": "Egyptian Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l14",
+        "name": "Egyptian Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l15",
+        "name": "Egyptian Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l16",
+        "name": "Egyptian Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l17",
+        "name": "Egyptian Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l18",
+        "name": "Egyptian Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l19",
+        "name": "Egyptian Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-l20",
+        "name": "Egyptian Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "eg-d1",
+        "name": "Egyptian Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d2",
+        "name": "Egyptian Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d3",
+        "name": "Egyptian Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d4",
+        "name": "Egyptian Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d5",
+        "name": "Egyptian Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d6",
+        "name": "Egyptian Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d7",
+        "name": "Egyptian Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d8",
+        "name": "Egyptian Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d9",
+        "name": "Egyptian Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d10",
+        "name": "Egyptian Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d11",
+        "name": "Egyptian Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d12",
+        "name": "Egyptian Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d13",
+        "name": "Egyptian Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d14",
+        "name": "Egyptian Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d15",
+        "name": "Egyptian Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d16",
+        "name": "Egyptian Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d17",
+        "name": "Egyptian Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d18",
+        "name": "Egyptian Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d19",
+        "name": "Egyptian Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-d20",
+        "name": "Egyptian Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "eg-des1",
+        "name": "Basbousa",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "semolina",
+          "coconut",
+          "sugar"
+        ],
+        "instructions": [
+          "Coconut semolina cake"
+        ]
+      },
+      {
+        "id": "eg-des2",
+        "name": "Konafa",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "shredded pastry",
+          "nuts",
+          "syrup"
+        ],
+        "instructions": [
+          "Shredded pastry dessert"
+        ]
+      },
+      {
+        "id": "eg-des3",
+        "name": "Egyptian Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des4",
+        "name": "Egyptian Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des5",
+        "name": "Egyptian Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des6",
+        "name": "Egyptian Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des7",
+        "name": "Egyptian Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des8",
+        "name": "Egyptian Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des9",
+        "name": "Egyptian Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des10",
+        "name": "Egyptian Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des11",
+        "name": "Egyptian Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des12",
+        "name": "Egyptian Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des13",
+        "name": "Egyptian Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des14",
+        "name": "Egyptian Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des15",
+        "name": "Egyptian Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des16",
+        "name": "Egyptian Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des17",
+        "name": "Egyptian Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des18",
+        "name": "Egyptian Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des19",
+        "name": "Egyptian Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-des20",
+        "name": "Egyptian Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "eg-na1",
+        "name": "Egyptian Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na2",
+        "name": "Egyptian Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na3",
+        "name": "Egyptian Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na4",
+        "name": "Egyptian Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na5",
+        "name": "Egyptian Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na6",
+        "name": "Egyptian Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na7",
+        "name": "Egyptian Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na8",
+        "name": "Egyptian Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na9",
+        "name": "Egyptian Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "eg-na10",
+        "name": "Egyptian Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "eg-a1",
+        "name": "Egyptian Drink 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a2",
+        "name": "Egyptian Drink 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a3",
+        "name": "Egyptian Drink 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a4",
+        "name": "Egyptian Drink 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a5",
+        "name": "Egyptian Drink 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a6",
+        "name": "Egyptian Drink 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a7",
+        "name": "Egyptian Drink 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a8",
+        "name": "Egyptian Drink 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a9",
+        "name": "Egyptian Drink 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "eg-a10",
+        "name": "Egyptian Drink 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      }
+    ]
   }
 }

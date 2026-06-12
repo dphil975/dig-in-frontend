@@ -1,121 +1,1443 @@
 {
   "chinaRecipes": {
-    "title": "Authentic Chinese Cuisine - Regional & Trending",
-    "country": "China",
-    "region": "Asia",
+    "title": "Authentic CHINA Cuisine",
+    "country": "CHINA",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "cn-b1", "name": "Jianbing (Chinese Crepes)", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["wheat flour", "cornstarch", "eggs", "scallions", "sesame seeds", "soy sauce", "chili sauce"], "instructions": ["Mix flour and cornstarch with water", "Heat griddle", "Spread batter thin", "Add egg and scallions", "Roll and serve"]},
-      {"id": "cn-b2", "name": "Congee (Rice Porridge)", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 45, "ingredients": ["rice", "chicken broth", "ginger", "century egg", "pork", "scallions"], "instructions": ["Boil rice with broth", "Simmer until creamy", "Add toppings", "Serve hot"]},
-      {"id": "cn-b3", "name": "Youtiao (Fried Dough Sticks)", "difficulty": "Hard", "servings": 4, "prepTime": 120, "cookTime": 15, "ingredients": ["flour", "yeast", "salt", "baking soda", "water", "oil"], "instructions": ["Prepare dough overnight", "Roll and cut strips", "Fry until golden", "Serve with soy milk"]},
-      {"id": "cn-b4", "name": "Baozi (Steamed Buns)", "difficulty": "Hard", "servings": 8, "prepTime": 90, "cookTime": 20, "ingredients": ["flour", "yeast", "sugar", "pork", "soy sauce", "scallions", "ginger"], "instructions": ["Make dough", "Let rise", "Fill with pork mixture", "Steam 15-20 min"]},
-      {"id": "cn-b5", "name": "Scallion Pancake", "difficulty": "Medium", "servings": 2, "prepTime": 30, "cookTime": 10, "ingredients": ["flour", "hot water", "scallions", "salt", "oil"], "instructions": ["Make dough", "Roll thin", "Add scallions", "Pan-fry until crispy"]},
-      {"id": "cn-b6", "name": "Steamed Sponge Cake (Ma Lai Go)", "difficulty": "Medium", "servings": 8, "prepTime": 20, "cookTime": 30, "ingredients": ["flour", "eggs", "sugar", "brown sugar", "baking powder", "oil"], "instructions": ["Beat eggs and sugar", "Add flour and brown sugar", "Steam 25-30 min"]},
-      {"id": "cn-b7", "name": "Egg Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 20, "ingredients": ["pastry sheet", "eggs", "condensed milk", "evaporated milk", "sugar"], "instructions": ["Line pastry", "Fill with custard", "Bake 15-20 min"]},
-      {"id": "cn-b8", "name": "Zongzi (Sticky Rice Dumpling)", "difficulty": "Hard", "servings": 10, "prepTime": 60, "cookTime": 120, "ingredients": ["glutinous rice", "bamboo leaves", "red bean", "salted egg yolk", "pork"], "instructions": ["Soak leaves", "Fill rice mixture", "Wrap pyramid shape", "Boil 2-3 hours"]},
-      {"id": "cn-b9", "name": "Soy Milk with Fried Crullers", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["soy milk", "youtiao", "sugar", "ginger"], "instructions": ["Heat soy milk", "Serve with fried cruller", "Add sugar to taste"]},
-      {"id": "cn-b10", "name": "Pidan Zhou (Century Egg Congee)", "difficulty": "Easy", "servings": 3, "prepTime": 10, "cookTime": 40, "ingredients": ["rice", "broth", "century eggs", "pork", "ginger", "scallions"], "instructions": ["Cook rice in broth", "Add century egg pieces", "Simmer until creamy", "Top with pork"]},
-      {"id": "cn-b11", "name": "Mahua (Twisted Dough)", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 15, "ingredients": ["flour", "eggs", "sugar", "oil", "sesame"], "instructions": ["Make dough", "Twist into shapes", "Deep fry", "Coat with sugar"]},
-      {"id": "cn-b12", "name": "Shaobing (Flatbread with Sesame)", "difficulty": "Medium", "servings": 4, "prepTime": 45, "cookTime": 15, "ingredients": ["flour", "water", "sesame seeds", "salt", "oil"], "instructions": ["Make dough", "Roll flat", "Sprinkle sesame", "Bake until crispy"]},
-      {"id": "cn-b13", "name": "Tangyuan (Glutinous Rice Balls)", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 10, "ingredients": ["glutinous rice flour", "water", "brown sugar", "ginger"], "instructions": ["Make dough balls", "Boil until float", "Serve in brown sugar syrup"]},
-      {"id": "cn-b14", "name": "Dali Baba (Big Fried Pancake)", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["flour", "yeast", "sugar", "oil", "sesame"], "instructions": ["Ferment dough", "Flatten and fry", "Brush with seasoning"]},
-      {"id": "cn-b15", "name": "Chive and Egg Crepe", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["flour", "eggs", "chives", "salt", "oil"], "instructions": ["Make thin crepe", "Fill with scrambled egg and chives", "Roll and serve"]},
-      {"id": "cn-b16", "name": "Pandan Sponge Cake", "difficulty": "Medium", "servings": 8, "prepTime": 20, "cookTime": 30, "ingredients": ["eggs", "pandan extract", "flour", "sugar", "oil"], "instructions": ["Beat eggs with sugar", "Add pandan and flour", "Steam until set"]},
-      {"id": "cn-b17", "name": "Bing (Chinese Pancake)", "difficulty": "Easy", "servings": 3, "prepTime": 20, "cookTime": 15, "ingredients": ["flour", "water", "salt", "oil", "fillings"], "instructions": ["Make dough", "Roll thin", "Pan-fry", "Add fillings of choice"]},
-      {"id": "cn-b18", "name": "Mooncake", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 20, "ingredients": ["golden syrup", "peanut oil", "flour", "egg yolk", "red bean paste", "salted duck egg"], "instructions": ["Make dough", "Fill with paste and egg", "Mold in mooncake press", "Bake 15-20 min"]},
-      {"id": "cn-b19", "name": "Sticky Rice with Lap Cheong", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["glutinous rice", "lap cheong", "mushroom", "scallions", "soy sauce"], "instructions": ["Soak rice", "Cook with sausage", "Serve in lotus leaf"]},
-      {"id": "cn-b20", "name": "Crispy Wonton Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["wonton wrapper", "shrimp", "pork", "soy sauce", "oil"], "instructions": ["Fill wonton wrappers", "Pan-fry until crispy", "Serve with chili sauce"]}
+      {
+        "id": "cn-b1",
+        "name": "Congee (Zhou)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "rice",
+          "water",
+          "vegetables",
+          "meat"
+        ],
+        "instructions": [
+          "Rice porridge",
+          "National breakfast"
+        ]
+      },
+      {
+        "id": "cn-b2",
+        "name": "Xiaolongbao",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 40,
+        "cookTime": 15,
+        "ingredients": [
+          "flour",
+          "pork",
+          "broth"
+        ],
+        "instructions": [
+          "Soup dumplings",
+          "Shanghai specialty"
+        ]
+      },
+      {
+        "id": "cn-b3",
+        "name": "You Tiao",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "flour",
+          "oil",
+          "salt"
+        ],
+        "instructions": [
+          "Fried dough sticks",
+          "Street food"
+        ]
+      },
+      {
+        "id": "cn-b4",
+        "name": "Chinese Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b5",
+        "name": "Chinese Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b6",
+        "name": "Chinese Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b7",
+        "name": "Chinese Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b8",
+        "name": "Chinese Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b9",
+        "name": "Chinese Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b10",
+        "name": "Chinese Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b11",
+        "name": "Chinese Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b12",
+        "name": "Chinese Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b13",
+        "name": "Chinese Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b14",
+        "name": "Chinese Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b15",
+        "name": "Chinese Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b16",
+        "name": "Chinese Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b17",
+        "name": "Chinese Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b18",
+        "name": "Chinese Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b19",
+        "name": "Chinese Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-b20",
+        "name": "Chinese Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "cn-l1", "name": "Mapo Tofu", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["silken tofu", "ground pork", "Sichuan peppercorn", "chili oil", "garlic", "ginger"], "instructions": ["Cube tofu", "Brown pork", "Add sauce", "Simmer with tofu"]},
-      {"id": "cn-l2", "name": "Kung Pao Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["chicken breast", "peanuts", "dried chili", "soy sauce", "vinegar"], "instructions": ["Dice chicken", "Stir-fry with peanuts", "Add sauce", "Toss and serve"]},
-      {"id": "cn-l3", "name": "Chow Mein", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["egg noodles", "vegetables", "soy sauce", "sesame oil", "chicken or shrimp"], "instructions": ["Cook noodles", "Stir-fry with vegetables and protein", "Add sauce"]},
-      {"id": "cn-l4", "name": "Fried Rice", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 10, "ingredients": ["cooked rice", "eggs", "vegetables", "soy sauce", "sesame oil"], "instructions": ["Heat wok", "Scramble eggs", "Add rice and vegetables", "Season with sauce"]},
-      {"id": "cn-l5", "name": "Sweet and Sour Pork", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["pork belly", "ketchup", "vinegar", "sugar", "pineapple", "bell pepper"], "instructions": ["Cube and fry pork", "Make sauce", "Toss with vegetables", "Serve with rice"]},
-      {"id": "cn-l6", "name": "General Tso's Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["chicken thigh", "soy sauce", "vinegar", "sugar", "chili", "garlic"], "instructions": ["Cube and fry chicken", "Make sauce", "Toss together", "Serve hot"]},
-      {"id": "cn-l7", "name": "Peking Duck", "difficulty": "Hard", "servings": 6, "prepTime": 120, "cookTime": 120, "ingredients": ["whole duck", "honey", "soy sauce", "vinegar", "flour wraps", "cucumber", "scallions"], "instructions": ["Prepare duck", "Hang and dry", "Roast until crispy", "Slice and serve with wraps"]},
-      {"id": "cn-l8", "name": "Lion's Head Meatball", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["ground pork", "water chestnut", "ginger", "soy sauce", "napa cabbage"], "instructions": ["Mix meatball", "Brown in wok", "Simmer with cabbage", "Serve in sauce"]},
-      {"id": "cn-l9", "name": "Lobster Cantonese", "difficulty": "Hard", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["live lobster", "ginger", "scallions", "black bean paste", "soy sauce", "egg"], "instructions": ["Split lobster", "Stir-fry with aromatics", "Add black bean sauce", "Simmer until cooked"]},
-      {"id": "cn-l10", "name": "Dan Dan Noodles", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["wheat noodles", "sesame paste", "chili oil", "Sichuan pepper", "ground pork", "scallions"], "instructions": ["Cook noodles", "Make sauce", "Top with meat and sesame paste"]},
-      {"id": "cn-l11", "name": "Chongqing Chicken (La Zi Ji)", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["chicken thigh", "dried chili", "Sichuan pepper", "garlic", "ginger", "scallions"], "instructions": ["Cube chicken", "Stir-fry with aromatics and chilies", "Add spice blend", "Serve hot"]},
-      {"id": "cn-l12", "name": "Buddha Jumps Over Wall (Fo Tiao Qiang)", "difficulty": "Hard", "servings": 6, "prepTime": 30, "cookTime": 120, "ingredients": ["abalone", "shiitake mushroom", "ginseng", "bamboo shoots", "chicken", "broth"], "instructions": ["Layer ingredients", "Seal and braise", "Cook slowly", "Serve as one dish"]},
-      {"id": "cn-l13", "name": "Beggar's Chicken (Jiao Hua Ji)", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["whole chicken", "lotus leaf", "clay", "herbs", "mushroom", "ginger"], "instructions": ["Stuff chicken", "Wrap in lotus leaf", "Seal in clay", "Bake until cooked"]},
-      {"id": "cn-l14", "name": "Shrimp and Broccoli", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 10, "ingredients": ["large shrimp", "broccoli", "garlic", "soy sauce", "sesame oil", "ginger"], "instructions": ["Blanch broccoli", "Stir-fry shrimp", "Add broccoli", "Toss with sauce"]},
-      {"id": "cn-l15", "name": "Fish with Black Bean Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["whole fish", "black beans", "garlic", "ginger", "soy sauce", "scallions"], "instructions": ["Steam or fry fish", "Make sauce", "Pour over fish", "Serve immediately"]},
-      {"id": "cn-l16", "name": "Twice-Cooked Pork", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["pork belly", "bean paste", "chili", "garlic", "scallions", "bell pepper"], "instructions": ["Boil pork", "Slice", "Stir-fry with vegetables", "Add bean paste sauce"]},
-      {"id": "cn-l17", "name": "Hainanese Chicken Rice", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 40, "ingredients": ["whole chicken", "rice", "ginger", "scallions", "soy sauce", "ginger-chili paste"], "instructions": ["Poach chicken", "Cook rice in broth", "Slice chicken", "Serve with rice"]},
-      {"id": "cn-l18", "name": "Ant Climbing Tree (Ants on a Tree)", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["glass noodles", "ground pork", "chili oil", "soy sauce", "garlic", "ginger"], "instructions": ["Soften noodles", "Stir-fry ground pork", "Add noodles and sauce", "Serve hot"]},
-      {"id": "cn-l19", "name": "Spring Rolls", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 15, "ingredients": ["spring roll wrapper", "cabbage", "carrot", "mushroom", "shrimp", "soy sauce"], "instructions": ["Prepare filling", "Roll wrappers", "Deep fry", "Serve with sauce"]},
-      {"id": "cn-l20", "name": "Chow Shrimp", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["large shrimp", "garlic", "ginger", "scallions", "soy sauce", "sesame oil"], "instructions": ["Shell shrimp", "High-heat stir-fry", "Add aromatics", "Toss with sauce"]}
+      {
+        "id": "cn-l1",
+        "name": "Kung Pao Chicken",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "chicken",
+          "peanuts",
+          "chili",
+          "soy sauce"
+        ],
+        "instructions": [
+          "Spicy chicken with peanuts"
+        ]
+      },
+      {
+        "id": "cn-l2",
+        "name": "Mapo Tofu",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "tofu",
+          "pork",
+          "chili",
+          "sichuan pepper"
+        ],
+        "instructions": [
+          "Numbing spicy tofu"
+        ]
+      },
+      {
+        "id": "cn-l3",
+        "name": "Peking Duck",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "duck",
+          "spices",
+          "hoisin sauce"
+        ],
+        "instructions": [
+          "Roasted duck with sauce"
+        ]
+      },
+      {
+        "id": "cn-l4",
+        "name": "Chinese Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l5",
+        "name": "Chinese Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l6",
+        "name": "Chinese Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l7",
+        "name": "Chinese Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l8",
+        "name": "Chinese Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l9",
+        "name": "Chinese Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l10",
+        "name": "Chinese Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l11",
+        "name": "Chinese Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l12",
+        "name": "Chinese Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l13",
+        "name": "Chinese Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l14",
+        "name": "Chinese Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l15",
+        "name": "Chinese Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l16",
+        "name": "Chinese Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l17",
+        "name": "Chinese Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l18",
+        "name": "Chinese Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l19",
+        "name": "Chinese Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-l20",
+        "name": "Chinese Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "cn-d1", "name": "Whole Fish Steamed", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["whole fish", "ginger", "scallions", "soy sauce", "sesame oil", "cilantro"], "instructions": ["Prepare fish", "Add aromatics", "Steam 18-20 min", "Serve with sauce"]},
-      {"id": "cn-d2", "name": "Hot Pot (Huoguo)", "difficulty": "Medium", "servings": 6, "prepTime": 45, "cookTime": 30, "ingredients": ["broth", "thinly sliced meat", "tofu", "vegetables", "mushroom", "dipping sauces"], "instructions": ["Heat broth", "Cook ingredients at table", "Dip in sauce", "Serve hot"]},
-      {"id": "cn-d3", "name": "Braised Pork Belly (Hong Shao Rou)", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 90, "ingredients": ["pork belly", "soy sauce", "sugar", "ginger", "scallions", "star anise"], "instructions": ["Cut and blanch pork", "Braise with sauce", "Cook low and slow", "Serve over rice"]},
-      {"id": "cn-d4", "name": "Mu Shu Pork", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["pork loin", "wood ear mushroom", "eggs", "scallions", "flour wraps", "hoisin sauce"], "instructions": ["Stir-fry pork", "Add mushroom and eggs", "Serve in wraps with sauce"]},
-      {"id": "cn-d5", "name": "Szechuan Beef Noodles", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["beef brisket", "sichuan pepper", "star anise", "chili oil", "noodles", "scallions"], "instructions": ["Braise beef", "Make spicy sauce", "Serve with noodles"]},
-      {"id": "cn-d6", "name": "Steamed Whole Chicken", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["whole chicken", "ginger", "scallions", "soy sauce", "sesame oil"], "instructions": ["Place chicken on aromatics", "Steam 30-35 min", "Shred", "Serve with sauce"]},
-      {"id": "cn-d7", "name": "Turnip Cake (Luo Bo Gao)", "difficulty": "Hard", "servings": 8, "prepTime": 40, "cookTime": 60, "ingredients": ["daikon radish", "rice flour", "water", "lap cheong", "shrimp", "scallions"], "instructions": ["Shred radish", "Mix with flour", "Steam in pan", "Cut and pan-fry"]},
-      {"id": "cn-d8", "name": "Black Chicken Soup (Wu Ji Tang)", "difficulty": "Hard", "servings": 6, "prepTime": 30, "cookTime": 120, "ingredients": ["silkie chicken", "ginseng", "goji berry", "cordyceps", "mushroom", "ginger"], "instructions": ["Blanch chicken", "Simmer with medicinal herbs", "Cook 2+ hours", "Serve as soup"]},
-      {"id": "cn-d9", "name": "Eggplant with Garlic Sauce", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["eggplant", "garlic", "soy sauce", "vinegar", "sugar", "chili oil"], "instructions": ["Cut eggplant", "Steam or boil", "Make sauce", "Mix together"]},
-      {"id": "cn-d10", "name": "Mongolian Beef", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 15, "ingredients": ["beef flank", "soy sauce", "brown sugar", "garlic", "ginger", "scallions"], "instructions": ["Slice beef thin", "High-heat stir-fry", "Add aromatics", "Toss with sauce"]},
-      {"id": "cn-d11", "name": "Smoked Fish (Xun Yu)", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 60, "ingredients": ["whole fish", "soy sauce", "sugar", "star anise", "ginger", "scallions"], "instructions": ["Cure fish", "Smoke over tea leaves", "Serve cold or warm"]},
-      {"id": "cn-d12", "name": "Shark's Fin Soup", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 180, "ingredients": ["shark fin", "chicken broth", "ham", "mushroom", "ginger"], "instructions": ["Soak fin", "Simmer in broth", "Cook slowly", "Serve as soup"]},
-      {"id": "cn-d13", "name": "Three Cup Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["chicken thigh", "soy sauce", "sesame oil", "sugar", "basil", "garlic", "ginger"], "instructions": ["Brown chicken", "Add sauce 1:1:1 ratio", "Simmer", "Toss with basil"]},
-      {"id": "cn-d14", "name": "Shredded Beef with Peppers", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["beef flank", "bell pepper", "garlic", "soy sauce", "sesame oil", "ginger"], "instructions": ["Slice beef thin", "High-heat stir-fry", "Add peppers", "Toss with sauce"]},
-      {"id": "cn-d15", "name": "Soy Sauce Braised Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 45, "ingredients": ["whole chicken", "soy sauce", "sugar", "ginger", "scallions", "star anise"], "instructions": ["Brown chicken", "Add sauce and spices", "Braise", "Serve with rice"]},
-      {"id": "cn-d16", "name": "Stir-Fried Sea Cucumber", "difficulty": "Hard", "servings": 4, "prepTime": 120, "cookTime": 15, "ingredients": ["sea cucumber", "vegetables", "garlic", "soy sauce", "sesame oil"], "instructions": ["Soak and clean sea cucumber", "Stir-fry quickly", "Add aromatics and sauce", "Serve hot"]},
-      {"id": "cn-d17", "name": "Cabbage Rolls", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["napa cabbage", "pork", "shrimp", "soy sauce", "ginger", "broth"], "instructions": ["Blanch cabbage", "Fill with mixture", "Roll", "Braise in sauce"]},
-      {"id": "cn-d18", "name": "Spicy Oil Noodles (Chili Oil La You Mian)", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["noodles", "chili oil", "sichuan pepper", "garlic", "scallions", "soy sauce"], "instructions": ["Cook noodles", "Toss with oil and spices", "Top with aromatics"]},
-      {"id": "cn-d19", "name": "Steamed Pork Ribs with Black Beans", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["pork ribs", "black beans", "garlic", "ginger", "soy sauce", "sesame oil"], "instructions": ["Marinate ribs", "Steam with beans", "Serve hot"]},
-      {"id": "cn-d20", "name": "Crispy Rice Cakes with Vegetable", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["rice cakes", "vegetables", "soy sauce", "garlic", "ginger", "sesame oil"], "instructions": ["Fry rice cakes", "Stir-fry vegetables", "Combine", "Serve hot"]}
+      {
+        "id": "cn-d1",
+        "name": "Chinese Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d2",
+        "name": "Chinese Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d3",
+        "name": "Chinese Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d4",
+        "name": "Chinese Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d5",
+        "name": "Chinese Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d6",
+        "name": "Chinese Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d7",
+        "name": "Chinese Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d8",
+        "name": "Chinese Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d9",
+        "name": "Chinese Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d10",
+        "name": "Chinese Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d11",
+        "name": "Chinese Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d12",
+        "name": "Chinese Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d13",
+        "name": "Chinese Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d14",
+        "name": "Chinese Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d15",
+        "name": "Chinese Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d16",
+        "name": "Chinese Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d17",
+        "name": "Chinese Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d18",
+        "name": "Chinese Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d19",
+        "name": "Chinese Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-d20",
+        "name": "Chinese Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "cn-des1", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["fresh mango", "gelatin", "condensed milk", "evaporated milk"], "instructions": ["Puree mango", "Add gelatin", "Mix with milk", "Chill and set"]},
-      {"id": "cn-des2", "name": "Red Bean Paste Bun", "difficulty": "Medium", "servings": 8, "prepTime": 45, "cookTime": 20, "ingredients": ["flour", "yeast", "red bean paste", "sugar", "oil"], "instructions": ["Make dough", "Fill with paste", "Let rise", "Steam 15-20 min"]},
-      {"id": "cn-des3", "name": "Sesame Ball (Jian Dui)", "difficulty": "Medium", "servings": 12, "prepTime": 30, "cookTime": 15, "ingredients": ["glutinous rice flour", "sesame seeds", "red bean paste", "sugar", "oil"], "instructions": ["Make dough", "Fill with paste", "Coat with sesame", "Deep fry until crispy"]},
-      {"id": "cn-des4", "name": "Almond Tofu Dessert", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["almond milk", "gelatin", "sugar", "evaporated milk"], "instructions": ["Heat milk with sugar", "Add gelatin", "Chill and set", "Serve cold"]},
-      {"id": "cn-des5", "name": "Black Sesame Paste Dessert", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 5, "ingredients": ["black sesame paste", "rice flour", "sugar", "water"], "instructions": ["Toast sesame flour", "Mix with hot water", "Add sugar", "Serve hot"]},
-      {"id": "cn-des6", "name": "Egg Custard Tart", "difficulty": "Medium", "servings": 12, "prepTime": 40, "cookTime": 20, "ingredients": ["pastry", "eggs", "condensed milk", "evaporated milk", "sugar"], "instructions": ["Line tart pan", "Fill with custard", "Bake 15-20 min"]},
-      {"id": "cn-des7", "name": "Peanut Brittle", "difficulty": "Medium", "servings": 8, "prepTime": 10, "cookTime": 20, "ingredients": ["sugar", "glucose syrup", "peanuts", "oil", "baking soda"], "instructions": ["Boil sugar to hard crack stage", "Add peanuts", "Pour onto oiled pan", "Break into pieces"]},
-      {"id": "cn-des8", "name": "Eight Treasure Rice Pudding", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["glutinous rice", "red dates", "lotus seed", "chestnut", "mushroom", "red bean paste"], "instructions": ["Cook rice with sugar", "Layer in mold with fruits", "Steam", "Invert onto plate"]},
-      {"id": "cn-des9", "name": "Matcha Green Tea Mousse", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["matcha powder", "whipped cream", "gelatin", "sugar", "milk"], "instructions": ["Whisk matcha", "Fold with cream", "Add gelatin", "Chill until set"]},
-      {"id": "cn-des10", "name": "Taro Pudding", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["taro root", "sugar", "coconut milk", "gelatin"], "instructions": ["Steam and puree taro", "Add sugar and coconut milk", "Set with gelatin", "Chill and serve"]},
-      {"id": "cn-des11", "name": "Lychee Jelly", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["fresh lychee", "gelatin", "sugar", "lychee syrup"], "instructions": ["Combine syrup with gelatin", "Heat until dissolved", "Chill until set", "Serve cold"]},
-      {"id": "cn-des12", "name": "Chestnut Dessert Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["dried chestnut", "sugar", "ginkgo nut", "goji berry"], "instructions": ["Simmer chestnuts", "Add sugar and nuts", "Cook slowly", "Serve warm"]},
-      {"id": "cn-des13", "name": "Osmanthus Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 30, "ingredients": ["flour", "butter", "eggs", "osmanthus flower", "sugar"], "instructions": ["Cream butter and sugar", "Add eggs and flour", "Add osmanthus", "Bake 25-30 min"]},
-      {"id": "cn-des14", "name": "Winter Melon Candy", "difficulty": "Medium", "servings": 12, "prepTime": 30, "cookTime": 120, "ingredients": ["winter melon", "sugar", "honey", "rock sugar"], "instructions": ["Cut melon", "Candy in sugar syrup", "Dry", "Coat with rock sugar"]},
-      {"id": "cn-des15", "name": "Pandan Sponge Layer Cake", "difficulty": "Hard", "servings": 8, "prepTime": 45, "cookTime": 60, "ingredients": ["eggs", "pandan juice", "flour", "sugar", "oil", "butter"], "instructions": ["Make sponge layers", "Make custard filling", "Assemble and frost"]},
-      {"id": "cn-des16", "name": "Green Tea Panna Cotta", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["green tea", "heavy cream", "gelatin", "sugar", "milk"], "instructions": ["Infuse tea in cream", "Dissolve gelatin", "Layer with milk", "Chill until set"]},
-      {"id": "cn-des17", "name": "Red Date Paste Cake", "difficulty": "Medium", "servings": 8, "prepTime": 45, "cookTime": 35, "ingredients": ["red date", "flour", "sugar", "eggs", "oil"], "instructions": ["Make date paste", "Create cake batter", "Layer in pan", "Bake until done"]},
-      {"id": "cn-des18", "name": "Black Sesame Dumplings", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 15, "ingredients": ["glutinous rice flour", "black sesame", "sugar", "brown sugar syrup"], "instructions": ["Make dough", "Fill with sesame filling", "Boil until float", "Serve in syrup"]},
-      {"id": "cn-des19", "name": "Mango Sticky Rice", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["sticky rice", "mango", "coconut milk", "sugar"], "instructions": ["Cook rice in coconut milk", "Cool slightly", "Serve with fresh mango"]},
-      {"id": "cn-des20", "name": "Fortune Cookie", "difficulty": "Hard", "servings": 24, "prepTime": 30, "cookTime": 20, "ingredients": ["flour", "butter", "egg white", "sugar", "vanilla"], "instructions": ["Make thin wafer", "Bake briefly", "Fold while warm", "Insert message"]}
+      {
+        "id": "cn-des1",
+        "name": "Mooncake",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "flour",
+          "lotus paste",
+          "egg yolk"
+        ],
+        "instructions": [
+          "Mid-Autumn festival cake"
+        ]
+      },
+      {
+        "id": "cn-des2",
+        "name": "Sesame Balls",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "flour",
+          "sesame",
+          "filling"
+        ],
+        "instructions": [
+          "Fried glutinous rice balls"
+        ]
+      },
+      {
+        "id": "cn-des3",
+        "name": "Chinese Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des4",
+        "name": "Chinese Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des5",
+        "name": "Chinese Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des6",
+        "name": "Chinese Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des7",
+        "name": "Chinese Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des8",
+        "name": "Chinese Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des9",
+        "name": "Chinese Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des10",
+        "name": "Chinese Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des11",
+        "name": "Chinese Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des12",
+        "name": "Chinese Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des13",
+        "name": "Chinese Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des14",
+        "name": "Chinese Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des15",
+        "name": "Chinese Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des16",
+        "name": "Chinese Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des17",
+        "name": "Chinese Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des18",
+        "name": "Chinese Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des19",
+        "name": "Chinese Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-des20",
+        "name": "Chinese Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "cn-na1", "name": "Chinese Tea (Green, Black, Oolong)", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 5, "ingredients": ["tea leaves", "hot water"], "instructions": ["Steep tea", "Brew 3-5 minutes", "Serve hot or cold"]},
-      {"id": "cn-na2", "name": "Chrysanthemum Tea", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 5, "ingredients": ["dried chrysanthemum", "hot water", "rock sugar"], "instructions": ["Add flowers to water", "Steep 5-7 min", "Add sugar to taste"]},
-      {"id": "cn-na3", "name": "Ginger Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["fresh ginger", "hot water", "honey", "lemon"], "instructions": ["Slice ginger", "Simmer in water", "Add honey and lemon"]},
-      {"id": "cn-na4", "name": "Sour Plum Drink (Suan Mei Tang)", "difficulty": "Easy", "servings": 4, "prepTime": 5, "cookTime": 10, "ingredients": ["dried sour plum", "sugar", "water"], "instructions": ["Boil water with plum", "Add sugar", "Chill and serve"]},
-      {"id": "cn-na5", "name": "Pearl Milk Tea (Bubble Tea)", "difficulty": "Medium", "servings": 2, "prepTime": 20, "cookTime": 30, "ingredients": ["tapioca pearls", "strong tea", "milk", "sugar"], "instructions": ["Cook pearls", "Brew tea", "Mix with milk and sugar", "Add pearls and ice"]},
-      {"id": "cn-na6", "name": "Lychee Rose Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["dried lychee", "rose petals", "hot water", "sugar"], "instructions": ["Combine dried fruits and petals", "Steep in hot water", "Add sugar"]},
-      {"id": "cn-na7", "name": "Tangerine Peel Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["aged tangerine peel", "hot water"], "instructions": ["Add peel to water", "Steep 5-10 min", "Strain and serve"]},
-      {"id": "cn-na8", "name": "Rice Milk", "difficulty": "Easy", "servings": 3, "prepTime": 15, "cookTime": 30, "ingredients": ["rice", "water", "sugar"], "instructions": ["Cook rice", "Blend with water", "Strain", "Add sugar and serve"]},
-      {"id": "cn-na9", "name": "Herbal Cooling Tea", "difficulty": "Medium", "servings": 4, "prepTime": 10, "cookTime": 60, "ingredients": ["honeysuckle", "licorice root", "dried fruit", "water"], "instructions": ["Boil water with herbs", "Simmer 45-60 min", "Strain and cool"]},
-      {"id": "cn-na10", "name": "Red Date Tea", "difficulty": "Easy", "servings": 3, "prepTime": 10, "cookTime": 15, "ingredients": ["red date", "goji berry", "hot water"], "instructions": ["Add dates and goji to water", "Simmer 10-15 min", "Serve hot"]}
+      {
+        "id": "cn-na1",
+        "name": "Chinese Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na2",
+        "name": "Chinese Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na3",
+        "name": "Chinese Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na4",
+        "name": "Chinese Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na5",
+        "name": "Chinese Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na6",
+        "name": "Chinese Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na7",
+        "name": "Chinese Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na8",
+        "name": "Chinese Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na9",
+        "name": "Chinese Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      },
+      {
+        "id": "cn-na10",
+        "name": "Chinese Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "cn-a1", "name": "Baijiu (White Spirit)", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["baijiu"], "instructions": ["Pour into small glass", "Drink neat or with food"]},
-      {"id": "cn-a2", "name": "Rice Wine (Huangjiu)", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 5, "ingredients": ["rice wine", "warming herbs"], "instructions": ["Heat gently", "Serve warm in small cups"]},
-      {"id": "cn-a3", "name": "Plum Wine (Umeshu style)", "difficulty": "Hard", "servings": 8, "prepTime": 20, "cookTime": 0, "ingredients": ["fresh plum", "rice wine", "rock sugar"], "instructions": ["Layer plums and sugar", "Pour wine over", "Steep 3-6 months"]},
-      {"id": "cn-a4", "name": "Osmanthus Wine", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["osmanthus flower", "rice wine", "rock sugar"], "instructions": ["Combine flowers and sugar", "Add wine", "Infuse 2-3 months"]},
-      {"id": "cn-a5", "name": "Medicinal Wine (Ginseng Wine)", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["ginseng", "goji berry", "cordyceps", "rice wine"], "instructions": ["Layer herbs in jar", "Pour wine over", "Steep 1-2 months"]},
-      {"id": "cn-a6", "name": "Lychee Wine", "difficulty": "Hard", "servings": 8, "prepTime": 30, "cookTime": 0, "ingredients": ["fresh lychee", "sugar", "rice wine"], "instructions": ["Clean lychee", "Mix with sugar", "Add wine", "Ferment and age"]},
-      {"id": "cn-a7", "name": "Chrysanthemum Wine", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["dried chrysanthemum", "rice wine", "honey"], "instructions": ["Steep flowers in wine", "Add honey", "Let infuse 2-3 weeks"]},
-      {"id": "cn-a8", "name": "Chinese Beer (Tsingtao)", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour into glass", "Serve cold"]},
-      {"id": "cn-a9", "name": "Snake Wine", "difficulty": "Hard", "servings": 1, "prepTime": 30, "cookTime": 0, "ingredients": ["rice wine", "snake", "medicinal herbs"], "instructions": ["Preserve snake in wine", "Add herbs", "Steep several months"]},
-      {"id": "cn-a10", "name": "Longan Wine", "difficulty": "Hard", "servings": 8, "prepTime": 30, "cookTime": 0, "ingredients": ["dried longan", "sugar", "rice wine"], "instructions": ["Layer longan and sugar", "Pour wine", "Age 3-6 months"]}
+      {
+        "id": "cn-a1",
+        "name": "Chinese Drink 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a2",
+        "name": "Chinese Drink 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a3",
+        "name": "Chinese Drink 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a4",
+        "name": "Chinese Drink 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a5",
+        "name": "Chinese Drink 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a6",
+        "name": "Chinese Drink 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a7",
+        "name": "Chinese Drink 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a8",
+        "name": "Chinese Drink 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a9",
+        "name": "Chinese Drink 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "cn-a10",
+        "name": "Chinese Drink 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      }
     ]
   }
 }
