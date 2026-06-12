@@ -375,6 +375,13 @@
       padding: 8px 20px 12px; flex-shrink: 0;
       border-bottom: 1px solid #2a2a2a;
     }
+    .drawer-full-link {
+      margin-left: auto; margin-right: 8px;
+      font-family: 'Press Start 2P', monospace; font-size: 7px;
+      color: #f4a924; text-decoration: none; letter-spacing: .3px;
+      white-space: nowrap;
+    }
+    .drawer-full-link:hover { color: #fff; }
     .drawer-recipe-emoji { font-size: 32px; line-height: 1; }
     .drawer-recipe-info  { flex: 1; min-width: 0; }
     .drawer-recipe-name {
@@ -742,6 +749,7 @@
         <div class="drawer-recipe-name" id="drawerName">Recipe</div>
         <div class="drawer-recipe-meta" id="drawerMeta">0 min</div>
       </div>
+      <a class="drawer-full-link" id="drawerFullLink" href="recipe.html">FULL RECIPE →</a>
       <button class="drawer-close" id="drawerClose">✕</button>
     </div>
 
@@ -1197,12 +1205,50 @@
       return generic.slice(0, 5 + (recipe.name.length % 4));
     }
 
-    /* ── Load recipes ────────────────────────────────────────────── */
-    function loadRecipes() {
+    /* ── Junk guard: rejects OCR/chemistry fragments from bad PDF imports ── */
+    function isRealRecipe(r) {
+      const n = (r && (r.name || '')).trim();
+      if (!n || n.length < 3) return false;
+      if (/^[\d\s]/.test(n)) return false;                 // starts with a number
+      if (!/[a-zA-Z]/.test(n)) return false;               // no letters at all
+      if (n.split(/\s+/).length > 6) return false;         // sentence-like, not a dish name
+      if (/http|www|\.com/i.test(n)) return false;         // stray URLs
+      if (/[a-z]\d|\d[a-z]/i.test(n)) return false;        // formula digit-letter adjacency
+      if (/(.)\1\1/i.test(n)) return false;                // 3+ repeated chars (Ooooh)
+      if (!/\s/.test(n) && n.length > 14) return false;    // long single token = chemistry name
+      if (/ch3|h3c|och\b|cooh|μg|terpineol|eugenol|vanill|linalool|caryophyll|distillation|hydroxy|\bdiene\b|isovitexin|chavicine|furfural|koenigine|bisabol|safrole|fenchyl|dillapiole|curcumin|turmeronol|\bacid\b|\bextract\b|\bpage\b/i.test(n)) return false;
+      return true;
+    }
+
+    /* ── Load recipes: clean file → filtered cache → STATIC ──────── */
+    async function loadRecipes() {
+      let list = null;
+
+      // 1. Canonical clean file (also heals a poisoned cache)
       try {
-        const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
-        allRecipes = cached.length ? cached : STATIC;
-      } catch(_) { allRecipes = STATIC; }
+        const res = await fetch('data/recipes_full.json');
+        if (res.ok) {
+          const json = await res.json();
+          const fromFile = (json.recipes || []).filter(isRealRecipe);
+          if (fromFile.length) {
+            list = fromFile;
+            try { localStorage.setItem('dig_in_recipes', JSON.stringify(fromFile)); } catch(_) {}
+          }
+        }
+      } catch(_) { /* offline / file:// — fall through */ }
+
+      // 2. Filtered cache
+      if (!list) {
+        try {
+          const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]').filter(isRealRecipe);
+          if (cached.length) list = cached;
+        } catch(_) {}
+      }
+
+      // 3. Built-in fallback
+      if (!list || !list.length) list = STATIC;
+
+      allRecipes = list;
       const countEl = document.getElementById('heroRecipeCount');
       if (countEl) countEl.textContent = `${allRecipes.length} DISHES`;
       renderGrid(allRecipes);
@@ -1281,9 +1327,14 @@
       veggieAdded    = new Set();
       activeDietGoal = '';
 
+      // Store for recipe.html full-page view
+      try { sessionStorage.setItem('dig_in_current_recipe', JSON.stringify(recipe)); } catch(_) {}
+
       document.getElementById('drawerName').textContent = recipe.name;
       const mins = recipe.totalTime || recipe.total_time || recipe.time || '?';
       document.getElementById('drawerMeta').textContent = `${mins} min · tap what you're missing`;
+      const fullLink = document.getElementById('drawerFullLink');
+      if (fullLink) fullLink.href = `recipe.html?name=${encodeURIComponent(recipe.name)}`;
 
       const ingrs = removeAllergens(getIngredients(recipe));
       ingrs.forEach(i => { ingrState[i] = 'have'; });

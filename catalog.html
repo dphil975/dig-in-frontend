@@ -315,12 +315,42 @@
 
     let allRecipes = [];
 
-    function loadRecipes() {
-        // From localStorage
+    // Junk guard: rejects OCR/chemistry fragments from bad PDF imports
+    function isRealRecipe(r) {
+        const n = (r && (r.name || '')).trim();
+        if (!n || n.length < 3) return false;
+        if (/^[\d\s]/.test(n)) return false;
+        if (!/[a-zA-Z]/.test(n)) return false;
+        if (n.split(/\s+/).length > 6) return false;
+        if (/http|www|\.com/i.test(n)) return false;
+        if (/[a-z]\d|\d[a-z]/i.test(n)) return false;
+        if (/(.)\1\1/i.test(n)) return false;
+        if (!/\s/.test(n) && n.length > 14) return false;
+        if (/ch3|h3c|och\b|cooh|μg|terpineol|eugenol|vanill|linalool|caryophyll|distillation|hydroxy|\bdiene\b|isovitexin|chavicine|furfural|koenigine|bisabol|safrole|fenchyl|dillapiole|curcumin|turmeronol|\bacid\b|\bextract\b|\bpage\b/i.test(n)) return false;
+        return true;
+    }
+
+    async function loadRecipes() {
+        // Canonical clean file first (heals a poisoned cache)
         try {
-            const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
-            if (cached.length) allRecipes = cached;
+            const res = await fetch('data/recipes_full.json');
+            if (res.ok) {
+                const json = await res.json();
+                const fromFile = (json.recipes || []).filter(isRealRecipe);
+                if (fromFile.length) {
+                    allRecipes = fromFile;
+                    try { localStorage.setItem('dig_in_recipes', JSON.stringify(fromFile)); } catch(_) {}
+                }
+            }
         } catch(_) {}
+
+        // Filtered cache
+        if (!allRecipes.length) {
+            try {
+                const cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]').filter(isRealRecipe);
+                if (cached.length) allRecipes = cached;
+            } catch(_) {}
+        }
 
         // Fallback static set
         if (!allRecipes.length) {

@@ -214,11 +214,26 @@ const GENRE_LABELS = {
  * Load recipes: localStorage → recipes_full.json → hardcoded RECIPES fallback.
  * Merges all sources by name (no duplicates).
  */
+// Junk guard: rejects OCR/chemistry fragments from bad PDF imports
+function isRealRecipe(r) {
+    const n = (r && (r.name || '')).trim();
+    if (!n || n.length < 3) return false;
+    if (/^[\d\s]/.test(n)) return false;
+    if (!/[a-zA-Z]/.test(n)) return false;
+    if (n.split(/\s+/).length > 6) return false;
+    if (/http|www|\.com/i.test(n)) return false;
+    if (/[a-z]\d|\d[a-z]/i.test(n)) return false;
+    if (/(.)\1\1/i.test(n)) return false;
+    if (!/\s/.test(n) && n.length > 14) return false;
+    if (/ch3|h3c|och\b|cooh|μg|terpineol|eugenol|vanill|linalool|caryophyll|distillation|hydroxy|\bdiene\b|isovitexin|chavicine|furfural|koenigine|bisabol|safrole|fenchyl|dillapiole|curcumin|turmeronol|\bacid\b|\bextract\b|\bpage\b/i.test(n)) return false;
+    return true;
+}
+
 async function loadAllRecipes() {
-    // 1. Start with localStorage cache
+    // 1. Start with localStorage cache (filtered)
     let cached = [];
     try {
-        cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+        cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]').filter(isRealRecipe);
     } catch (_) {
         cached = [];
     }
@@ -229,7 +244,7 @@ async function loadAllRecipes() {
         const res = await fetch('data/recipes_full.json');
         if (res.ok) {
             const json = await res.json();
-            fromFile = json.recipes || [];
+            fromFile = (json.recipes || []).filter(isRealRecipe);
         }
     } catch (_) {
         // File may not exist yet — that's fine
@@ -251,7 +266,11 @@ async function loadAllRecipes() {
         if (r.name) byName.set(r.name.toLowerCase(), r);
     }
 
-    const merged = Array.from(byName.values());
+    const merged = Array.from(byName.values()).filter(isRealRecipe);
+
+    // Heal a previously poisoned cache so other pages get clean data too
+    try { localStorage.setItem('dig_in_recipes', JSON.stringify(merged)); } catch (_) {}
+
     return merged.length > 0 ? merged : [...RECIPES];
 }
 
@@ -492,7 +511,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             `;
 
             // Save newly extracted recipes to localStorage for persistence
-            const normalized = (result.recipes || []).map(r => DigInAPI.normalizeRecipe(r));
+            const normalized = (result.recipes || []).map(r => DigInAPI.normalizeRecipe(r)).filter(isRealRecipe);
             if (normalized.length > 0) {
                 let cached = [];
                 try { cached = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]'); } catch (_) {}
