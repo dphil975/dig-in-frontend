@@ -1,15 +1,1183 @@
 {
   "italyRecipes": {
-    "title": "Authentic Italy Cuisine",
-    "country": "Italy",
-    "region": "REGION_Italy",
+    "title": "Authentic ITALY Cuisine",
+    "country": "ITALY",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"it-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"it-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"it-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]},{"id":"it-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"it-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"it-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},{"id":"it-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"it-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]},{"id":"it-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit1"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "it-b1",
+        "name": "Espresso e Cornetto",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "coffee",
+          "pastry"
+        ],
+        "instructions": [
+          "Coffee with pastry"
+        ]
+      },
+      {
+        "id": "it-b2",
+        "name": "Panettone",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "flour",
+          "raisins",
+          "candied fruit"
+        ],
+        "instructions": [
+          "Christmas bread"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "it-l1",
+        "name": "Pasta Carbonara",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "pasta",
+          "guanciale",
+          "eggs",
+          "pecorino"
+        ],
+        "instructions": [
+          "Creamy pasta"
+        ]
+      },
+      {
+        "id": "it-l2",
+        "name": "Risotto",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "broth",
+          "butter"
+        ],
+        "instructions": [
+          "Creamy rice dish"
+        ]
+      },
+      {
+        "id": "it-l3",
+        "name": "Osso Buco",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "veal",
+          "tomatoes",
+          "wine"
+        ],
+        "instructions": [
+          "Braised veal shanks"
+        ]
+      },
+      {
+        "id": "it-l4",
+        "name": "Italian L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l5",
+        "name": "Italian L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l6",
+        "name": "Italian L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l7",
+        "name": "Italian L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l8",
+        "name": "Italian L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l9",
+        "name": "Italian L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l10",
+        "name": "Italian L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l11",
+        "name": "Italian L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l12",
+        "name": "Italian L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l13",
+        "name": "Italian L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l14",
+        "name": "Italian L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l15",
+        "name": "Italian L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l16",
+        "name": "Italian L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l17",
+        "name": "Italian L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l18",
+        "name": "Italian L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l19",
+        "name": "Italian L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-l20",
+        "name": "Italian L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "it-d1",
+        "name": "Italian D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d2",
+        "name": "Italian D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d3",
+        "name": "Italian D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d4",
+        "name": "Italian D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d5",
+        "name": "Italian D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d6",
+        "name": "Italian D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d7",
+        "name": "Italian D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d8",
+        "name": "Italian D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d9",
+        "name": "Italian D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d10",
+        "name": "Italian D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d11",
+        "name": "Italian D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d12",
+        "name": "Italian D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d13",
+        "name": "Italian D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d14",
+        "name": "Italian D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d15",
+        "name": "Italian D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d16",
+        "name": "Italian D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d17",
+        "name": "Italian D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d18",
+        "name": "Italian D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d19",
+        "name": "Italian D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-d20",
+        "name": "Italian D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "it-des1",
+        "name": "Tiramisu",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "mascarpone",
+          "coffee",
+          "cocoa"
+        ],
+        "instructions": [
+          "Coffee-soaked dessert"
+        ]
+      },
+      {
+        "id": "it-des2",
+        "name": "Panna Cotta",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 240,
+        "ingredients": [
+          "cream",
+          "gelatin",
+          "vanilla"
+        ],
+        "instructions": [
+          "Silky cream dessert"
+        ]
+      },
+      {
+        "id": "it-des3",
+        "name": "Italian Des3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des4",
+        "name": "Italian Des4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des5",
+        "name": "Italian Des5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des6",
+        "name": "Italian Des6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des7",
+        "name": "Italian Des7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des8",
+        "name": "Italian Des8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des9",
+        "name": "Italian Des9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des10",
+        "name": "Italian Des10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des11",
+        "name": "Italian Des11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des12",
+        "name": "Italian Des12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des13",
+        "name": "Italian Des13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des14",
+        "name": "Italian Des14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des15",
+        "name": "Italian Des15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des16",
+        "name": "Italian Des16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des17",
+        "name": "Italian Des17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des18",
+        "name": "Italian Des18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des19",
+        "name": "Italian Des19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-des20",
+        "name": "Italian Des20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "it-na1",
+        "name": "Italian NA1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na2",
+        "name": "Italian NA2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na3",
+        "name": "Italian NA3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na4",
+        "name": "Italian NA4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na5",
+        "name": "Italian NA5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na6",
+        "name": "Italian NA6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na7",
+        "name": "Italian NA7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na8",
+        "name": "Italian NA8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na9",
+        "name": "Italian NA9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      },
+      {
+        "id": "it-na10",
+        "name": "Italian NA10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "prep"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "it-a1",
+        "name": "Italian Wine1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a2",
+        "name": "Italian Wine2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a3",
+        "name": "Italian Wine3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a4",
+        "name": "Italian Wine4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a5",
+        "name": "Italian Wine5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a6",
+        "name": "Italian Wine6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a7",
+        "name": "Italian Wine7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a8",
+        "name": "Italian Wine8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a9",
+        "name": "Italian Wine9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      },
+      {
+        "id": "it-a10",
+        "name": "Italian Wine10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "ing"
+        ],
+        "instructions": [
+          "serve"
+        ]
+      }
+    ]
   }
 }
