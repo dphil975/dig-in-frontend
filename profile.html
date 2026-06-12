@@ -6,6 +6,7 @@
     <title>Dig In — Profile</title>
     <link rel="stylesheet" href="catalog.css" />
     <link rel="stylesheet" href="frontend/css/styles.css">
+    <link rel="stylesheet" href="frontend/css/pixel-ingredient-system.css">
 </head>
 <body>
     <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
@@ -56,6 +57,10 @@
                 <span class="stat-value" id="statBadges">0</span>
                 <span class="stat-label">Badges</span>
             </div>
+            <div class="stat-card">
+                <span class="stat-value" id="statDishes">0</span>
+                <span class="stat-label">Dishes Made</span>
+            </div>
         </section>
 
         <!-- ── Home borough ───────────────────────────────────── -->
@@ -86,6 +91,14 @@
             </div>
             <div class="badge-locked-grid" id="badgeLockedGrid">
                 <!-- locked previews -->
+            </div>
+        </section>
+
+        <!-- ── Cooked recipe history reel ─────────────────────── -->
+        <section class="profile-section">
+            <h3 class="section-title">COOKED RECIPES</h3>
+            <div id="historyReel">
+                <!-- populated by pixel-ingredient-system.js -->
             </div>
         </section>
 
@@ -203,6 +216,30 @@
                 <span class="quest-progress">${task.completed ? 'Complete!' : `${task.progress} / ${task.goal}`}</span>
             </div>`;
     }).join('');
+})();
+</script>
+<script src="frontend/js/pixel-ingredient-system.js"></script>
+<script>
+(function() {
+    // Dishes-made stat from CookingMode
+    const made = parseInt(localStorage.getItem('dig_in_made_count') || '0', 10);
+    document.getElementById('statDishes').textContent = made;
+
+    // Cooked recipe history reel
+    const container = document.getElementById('historyReel');
+    const history = window.CookingMode ? CookingMode.getHistory() : [];
+
+    if (!history.length) {
+        container.innerHTML = `
+            <p class="profile-hint">
+                No dishes cooked yet — open a recipe and hit START COOKING,
+                or use "Cook with what I have" to get going! 🍳
+            </p>`;
+        return;
+    }
+
+    const sys = new PixelIngredientSystem(null, null);
+    container.appendChild(sys.renderProfileHistoryReel(history));
 })();
 </script>
 </body>
