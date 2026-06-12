@@ -2,7 +2,7 @@
   "nepalRecipes": {
     "title": "Authentic Nepal Cuisine",
     "country": "Nepal",
-    "region": "Middle East/Asia",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -11,12 +11,11 @@
         "name": "Momos",
         "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 40,
-        "cookTime": 25,
+        "prepTime": 45,
+        "cookTime": 20,
         "ingredients": [
           "dough",
-          "meat",
-          "vegetables"
+          "filling"
         ],
         "instructions": [
           "Steamed dumplings"
@@ -24,31 +23,33 @@
       },
       {
         "id": "np-b2",
-        "name": "Roti",
-        "difficulty": "Easy",
+        "name": "Juju Dhau",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
-          "flour",
-          "water"
+          "milk",
+          "nuts",
+          "dough"
         ],
         "instructions": [
-          "Flatbread"
+          "Sweet pastry"
         ]
       },
       {
         "id": "np-b3",
-        "name": "Nepali B3",
-        "difficulty": "Easy",
+        "name": "Puri",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 20,
+        "cookTime": 15,
         "ingredients": [
-          "ingredient"
+          "flour",
+          "oil"
         ],
         "instructions": [
-          "preparation"
+          "Fried bread"
         ]
       },
       {
@@ -297,42 +298,43 @@
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 45,
+        "cookTime": 40,
         "ingredients": [
           "lentils",
           "rice"
         ],
         "instructions": [
-          "Lentils and rice"
+          "Lentils with rice - National dish"
         ]
       },
       {
         "id": "np-l2",
-        "name": "Sukuti",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 30,
-        "cookTime": 60,
-        "ingredients": [
-          "meat",
-          "spices"
-        ],
-        "instructions": [
-          "Dried meat curry"
-        ]
-      },
-      {
-        "id": "np-l3",
-        "name": "Nepali L3",
+        "name": "Chow Mein",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ingredient"
+          "noodles",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Stir-fried noodles"
+        ]
+      },
+      {
+        "id": "np-l3",
+        "name": "Gundruk Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "fermented greens",
+          "beans"
+        ],
+        "instructions": [
+          "Sour soup"
         ]
       },
       {
@@ -859,30 +861,33 @@
     "desserts": [
       {
         "id": "np-des1",
-        "name": "Nepali Des1",
-        "difficulty": "Medium",
+        "name": "Kheer",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 15,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "rice",
+          "milk",
+          "sugar"
         ],
         "instructions": [
-          "preparation"
+          "Rice pudding"
         ]
       },
       {
         "id": "np-des2",
-        "name": "Nepali Des2",
+        "name": "Barfi",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 30,
         "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "milk powder",
+          "sugar"
         ],
         "instructions": [
-          "preparation"
+          "Milk fudge"
         ]
       },
       {
@@ -1141,7 +1146,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "np-na1",
-        "name": "Nepali NA1",
+        "name": "Nepali Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1155,7 +1160,7 @@
       },
       {
         "id": "np-na2",
-        "name": "Nepali NA2",
+        "name": "Nepali Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1169,7 +1174,7 @@
       },
       {
         "id": "np-na3",
-        "name": "Nepali NA3",
+        "name": "Nepali Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1183,7 +1188,7 @@
       },
       {
         "id": "np-na4",
-        "name": "Nepali NA4",
+        "name": "Nepali Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1197,7 +1202,7 @@
       },
       {
         "id": "np-na5",
-        "name": "Nepali NA5",
+        "name": "Nepali Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1211,7 +1216,7 @@
       },
       {
         "id": "np-na6",
-        "name": "Nepali NA6",
+        "name": "Nepali Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1225,7 +1230,7 @@
       },
       {
         "id": "np-na7",
-        "name": "Nepali NA7",
+        "name": "Nepali Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1239,7 +1244,7 @@
       },
       {
         "id": "np-na8",
-        "name": "Nepali NA8",
+        "name": "Nepali Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1253,7 +1258,7 @@
       },
       {
         "id": "np-na9",
-        "name": "Nepali NA9",
+        "name": "Nepali Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1267,7 +1272,7 @@
       },
       {
         "id": "np-na10",
-        "name": "Nepali NA10",
+        "name": "Nepali Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

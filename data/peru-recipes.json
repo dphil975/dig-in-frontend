@@ -2,7 +2,7 @@
   "peruRecipes": {
     "title": "Authentic Peru Cuisine",
     "country": "Peru",
-    "region": "Americas",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -11,43 +11,45 @@
         "name": "Ceviche",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 10,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
           "fish",
-          "lime juice"
+          "lime",
+          "chili"
         ],
         "instructions": [
-          "Citrus fish dish"
+          "Raw fish dish - Famous worldwide"
         ]
       },
       {
         "id": "pe-b2",
-        "name": "Papa a la Huanca\u00edna",
+        "name": "Causa",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
+        "prepTime": 30,
         "cookTime": 25,
         "ingredients": [
           "potatoes",
-          "cheese sauce"
+          "fillings"
         ],
         "instructions": [
-          "Potatoes with sauce"
+          "Potato cake"
         ]
       },
       {
         "id": "pe-b3",
-        "name": "Peruvian B3",
-        "difficulty": "Easy",
+        "name": "Tamales",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 45,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "masa",
+          "fillings"
         ],
         "instructions": [
-          "preparation"
+          "Corn dough packets"
         ]
       },
       {
@@ -295,45 +297,46 @@
         "name": "Lomo Saltado",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
           "beef",
           "peppers",
-          "soy sauce"
+          "onions"
         ],
         "instructions": [
-          "Stir-fried beef"
+          "Stir-fried beef - Most popular"
         ]
       },
       {
         "id": "pe-l2",
-        "name": "Causa Limena",
+        "name": "Aji de Gallina",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 20,
+        "cookTime": 45,
         "ingredients": [
-          "potatoes",
-          "lime",
-          "filling"
+          "chicken",
+          "nuts",
+          "peppers"
         ],
         "instructions": [
-          "Layered potato dish"
+          "Creamy chicken"
         ]
       },
       {
         "id": "pe-l3",
-        "name": "Peruvian L3",
+        "name": "Chupe de Camarones",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 30,
+        "cookTime": 35,
         "ingredients": [
-          "ingredient"
+          "shrimp",
+          "potatoes"
         ],
         "instructions": [
-          "preparation"
+          "Shrimp stew"
         ]
       },
       {
@@ -860,30 +863,32 @@
     "desserts": [
       {
         "id": "pe-des1",
-        "name": "Peruvian Des1",
+        "name": "Suspiro Lime\u00f1o",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 35,
         "ingredients": [
-          "ingredient"
+          "dulce de leche",
+          "meringue"
         ],
         "instructions": [
-          "preparation"
+          "Dessert Lime\u00f1o"
         ]
       },
       {
         "id": "pe-des2",
-        "name": "Peruvian Des2",
+        "name": "Picarones",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "pumpkin dough",
+          "syrup"
         ],
         "instructions": [
-          "preparation"
+          "Pumpkin fritters"
         ]
       },
       {
@@ -1142,7 +1147,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "pe-na1",
-        "name": "Peruvian NA1",
+        "name": "Peruvian Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1156,7 +1161,7 @@
       },
       {
         "id": "pe-na2",
-        "name": "Peruvian NA2",
+        "name": "Peruvian Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1170,7 +1175,7 @@
       },
       {
         "id": "pe-na3",
-        "name": "Peruvian NA3",
+        "name": "Peruvian Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1184,7 +1189,7 @@
       },
       {
         "id": "pe-na4",
-        "name": "Peruvian NA4",
+        "name": "Peruvian Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1198,7 +1203,7 @@
       },
       {
         "id": "pe-na5",
-        "name": "Peruvian NA5",
+        "name": "Peruvian Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1212,7 +1217,7 @@
       },
       {
         "id": "pe-na6",
-        "name": "Peruvian NA6",
+        "name": "Peruvian Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1226,7 +1231,7 @@
       },
       {
         "id": "pe-na7",
-        "name": "Peruvian NA7",
+        "name": "Peruvian Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1240,7 +1245,7 @@
       },
       {
         "id": "pe-na8",
-        "name": "Peruvian NA8",
+        "name": "Peruvian Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1254,7 +1259,7 @@
       },
       {
         "id": "pe-na9",
-        "name": "Peruvian NA9",
+        "name": "Peruvian Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1268,7 +1273,7 @@
       },
       {
         "id": "pe-na10",
-        "name": "Peruvian NA10",
+        "name": "Peruvian Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

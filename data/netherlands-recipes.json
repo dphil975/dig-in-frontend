@@ -2,55 +2,55 @@
   "netherlandsRecipes": {
     "title": "Authentic Netherlands Cuisine",
     "country": "Netherlands",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "nl-b1",
-        "name": "Stroopwafels",
+        "name": "Stroopwafel",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
         "cookTime": 20,
         "ingredients": [
           "flour",
-          "caramel",
-          "butter"
+          "caramel"
         ],
         "instructions": [
-          "Caramel waffle cookies"
+          "Caramel waffle"
         ]
       },
       {
         "id": "nl-b2",
-        "name": "Broodnodig",
+        "name": "Pannenkoeken",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 15,
+        "cookTime": 20,
         "ingredients": [
-          "bread",
-          "butter",
-          "cheese",
-          "ham"
+          "flour",
+          "eggs",
+          "milk"
         ],
         "instructions": [
-          "Bread with toppings"
+          "Dutch pancake"
         ]
       },
       {
         "id": "nl-b3",
-        "name": "Dutch B3",
+        "name": "Hagelslag",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
-        "cookTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "ingredient"
+          "bread",
+          "butter",
+          "sprinkles"
         ],
         "instructions": [
-          "preparation"
+          "Chocolate sprinkles"
         ]
       },
       {
@@ -295,47 +295,48 @@
     "lunch": [
       {
         "id": "nl-l1",
-        "name": "Croquette",
-        "difficulty": "Medium",
+        "name": "Stamppot",
+        "difficulty": "Easy",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "meat",
-          "breadcrumbs"
+          "potatoes",
+          "vegetables"
         ],
         "instructions": [
-          "Fried meat croquette"
+          "Mashed vegetables"
         ]
       },
       {
         "id": "nl-l2",
-        "name": "Pea Soup",
-        "difficulty": "Easy",
+        "name": "Croquettes",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 60,
+        "prepTime": 30,
+        "cookTime": 25,
         "ingredients": [
-          "peas",
-          "ham",
-          "vegetables"
+          "potato",
+          "filling"
         ],
         "instructions": [
-          "Traditional pea soup"
+          "Fried croquettes - Famous snack"
         ]
       },
       {
         "id": "nl-l3",
-        "name": "Dutch L3",
+        "name": "Pea Soup",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "peas",
+          "sausage",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Dutch pea soup"
         ]
       },
       {
@@ -863,14 +864,13 @@
       {
         "id": "nl-des1",
         "name": "Appeltaart",
-        "difficulty": "Medium",
+        "difficulty": "Hard",
         "servings": 4,
         "prepTime": 40,
-        "cookTime": 50,
+        "cookTime": 40,
         "ingredients": [
           "apples",
-          "pastry",
-          "cinnamon"
+          "pastry"
         ],
         "instructions": [
           "Apple pie"
@@ -878,18 +878,17 @@
       },
       {
         "id": "nl-des2",
-        "name": "Poffertjes",
-        "difficulty": "Easy",
+        "name": "Stroopwafel",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 20,
         "ingredients": [
-          "flour",
-          "milk",
-          "powdered sugar"
+          "caramel",
+          "dough"
         ],
         "instructions": [
-          "Fluffy pancakes"
+          "Caramel waffle"
         ]
       },
       {
@@ -1148,7 +1147,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "nl-na1",
-        "name": "Dutch NA1",
+        "name": "Dutch Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1162,7 +1161,7 @@
       },
       {
         "id": "nl-na2",
-        "name": "Dutch NA2",
+        "name": "Dutch Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1176,7 +1175,7 @@
       },
       {
         "id": "nl-na3",
-        "name": "Dutch NA3",
+        "name": "Dutch Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1190,7 +1189,7 @@
       },
       {
         "id": "nl-na4",
-        "name": "Dutch NA4",
+        "name": "Dutch Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1204,7 +1203,7 @@
       },
       {
         "id": "nl-na5",
-        "name": "Dutch NA5",
+        "name": "Dutch Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1218,7 +1217,7 @@
       },
       {
         "id": "nl-na6",
-        "name": "Dutch NA6",
+        "name": "Dutch Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1232,7 +1231,7 @@
       },
       {
         "id": "nl-na7",
-        "name": "Dutch NA7",
+        "name": "Dutch Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1246,7 +1245,7 @@
       },
       {
         "id": "nl-na8",
-        "name": "Dutch NA8",
+        "name": "Dutch Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1260,7 +1259,7 @@
       },
       {
         "id": "nl-na9",
-        "name": "Dutch NA9",
+        "name": "Dutch Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1274,7 +1273,7 @@
       },
       {
         "id": "nl-na10",
-        "name": "Dutch NA10",
+        "name": "Dutch Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

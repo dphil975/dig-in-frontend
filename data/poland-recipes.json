@@ -2,54 +2,53 @@
   "polandRecipes": {
     "title": "Authentic Poland Cuisine",
     "country": "Poland",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "pl-b1",
-        "name": "\u017burek",
-        "difficulty": "Medium",
+        "name": "Pierogi",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 45,
+        "prepTime": 45,
+        "cookTime": 30,
         "ingredients": [
-          "rye bread",
-          "pork",
-          "sauerkraut"
+          "dough",
+          "filling"
         ],
         "instructions": [
-          "Sour rye soup"
+          "Stuffed dumplings - National classic"
         ]
       },
       {
         "id": "pl-b2",
-        "name": "Placki Ziemniaczane",
+        "name": "Bigos",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 60,
         "ingredients": [
-          "potatoes",
-          "onions",
-          "eggs"
+          "sauerkraut",
+          "meat"
         ],
         "instructions": [
-          "Potato pancakes"
+          "Hunter's stew"
         ]
       },
       {
         "id": "pl-b3",
-        "name": "Polish B3",
-        "difficulty": "Easy",
+        "name": "Zurek",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "rye",
+          "sausage"
         ],
         "instructions": [
-          "preparation"
+          "Rye soup"
         ]
       },
       {
@@ -294,50 +293,47 @@
     "lunch": [
       {
         "id": "pl-l1",
-        "name": "Pierogi",
-        "difficulty": "Hard",
+        "name": "Kielbasa",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 40,
-        "cookTime": 25,
+        "prepTime": 15,
+        "cookTime": 30,
         "ingredients": [
-          "dough",
-          "potato",
-          "cheese",
-          "meat"
+          "sausage"
         ],
         "instructions": [
-          "Stuffed dumplings"
+          "Smoked sausage"
         ]
       },
       {
         "id": "pl-l2",
-        "name": "Bigos",
+        "name": "Golabki",
         "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 120,
+        "prepTime": 40,
+        "cookTime": 60,
         "ingredients": [
-          "meat",
-          "sauerkraut",
-          "spices"
+          "cabbage",
+          "meat"
         ],
         "instructions": [
-          "Hunter's stew"
+          "Stuffed cabbage"
         ]
       },
       {
         "id": "pl-l3",
-        "name": "Barszcz",
+        "name": "\u017burek",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 30,
         "cookTime": 45,
         "ingredients": [
-          "beets",
-          "stock"
+          "rye bread",
+          "sauerkraut",
+          "meat"
         ],
         "instructions": [
-          "Beet soup"
+          "Sour rye soup"
         ]
       },
       {
@@ -868,7 +864,7 @@
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 20,
+        "cookTime": 25,
         "ingredients": [
           "dough",
           "jam"
@@ -879,18 +875,17 @@
       },
       {
         "id": "pl-des2",
-        "name": "Sernik",
+        "name": "Makowiec",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 40,
-        "cookTime": 45,
+        "cookTime": 50,
         "ingredients": [
-          "cheese",
-          "eggs",
-          "sugar"
+          "poppy seeds",
+          "dough"
         ],
         "instructions": [
-          "Cheesecake"
+          "Poppy seed roll"
         ]
       },
       {
@@ -1149,7 +1144,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "pl-na1",
-        "name": "Polish NA1",
+        "name": "Polish Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1163,7 +1158,7 @@
       },
       {
         "id": "pl-na2",
-        "name": "Polish NA2",
+        "name": "Polish Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1177,7 +1172,7 @@
       },
       {
         "id": "pl-na3",
-        "name": "Polish NA3",
+        "name": "Polish Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1191,7 +1186,7 @@
       },
       {
         "id": "pl-na4",
-        "name": "Polish NA4",
+        "name": "Polish Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1205,7 +1200,7 @@
       },
       {
         "id": "pl-na5",
-        "name": "Polish NA5",
+        "name": "Polish Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1219,7 +1214,7 @@
       },
       {
         "id": "pl-na6",
-        "name": "Polish NA6",
+        "name": "Polish Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1233,7 +1228,7 @@
       },
       {
         "id": "pl-na7",
-        "name": "Polish NA7",
+        "name": "Polish Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1247,7 +1242,7 @@
       },
       {
         "id": "pl-na8",
-        "name": "Polish NA8",
+        "name": "Polish Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1261,7 +1256,7 @@
       },
       {
         "id": "pl-na9",
-        "name": "Polish NA9",
+        "name": "Polish Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1275,7 +1270,7 @@
       },
       {
         "id": "pl-na10",
-        "name": "Polish NA10",
+        "name": "Polish Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
