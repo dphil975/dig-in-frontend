@@ -8,24 +8,23 @@
     "breakfast": [
       {
         "id": "ic-b1",
-        "name": "Icelandic Full Breakfast with Smoked Fish",
+        "name": "Icelandic Full Breakfast (Fisk og Bacon)",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "eggs",
           "smoked trout",
-          "rye bread",
           "bacon",
-          "butter",
-          "salt"
+          "eggs",
+          "rye bread",
+          "butter"
         ],
         "instructions": [
-          "Fry smoked fish gently",
-          "Scramble eggs in butter",
-          "Toast rye bread",
-          "Serve with bacon"
+          "Fry bacon until crispy",
+          "Scramble eggs",
+          "Toast dark rye bread",
+          "Serve with smoked fish"
         ]
       },
       {
@@ -36,13 +35,13 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "Icelandic skyr",
+          "skyr",
           "cloudberries",
           "granola",
           "honey"
         ],
         "instructions": [
-          "Layer skyr in bowls",
+          "Layer skyr",
           "Top with cloudberries",
           "Add granola",
           "Drizzle honey"
@@ -50,43 +49,40 @@
       },
       {
         "id": "ic-b3",
-        "name": "Rye Bread Sourdough Toast",
-        "difficulty": "Easy",
+        "name": "R\u00fagbrau\u00f0 (Traditional Dark Rye Bread)",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 5,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 480,
         "ingredients": [
-          "rye bread",
-          "butter",
-          "smoked salmon",
-          "dill",
-          "capers"
+          "rye flour",
+          "sugar",
+          "salt",
+          "water",
+          "baking soda"
         ],
         "instructions": [
-          "Toast rye bread until golden",
-          "Spread with butter",
-          "Top with smoked salmon",
-          "Garnish with fresh dill and capers"
+          "Mix dough",
+          "Bake in hot water bath",
+          "Slow-baked traditional bread"
         ]
       },
       {
         "id": "ic-b4",
-        "name": "Hangikj\u00f6t Breakfast",
+        "name": "Hangikj\u00f6t with Potatoes",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 10,
-        "cookTime": 20,
+        "cookTime": 15,
         "ingredients": [
           "smoked lamb",
           "new potatoes",
-          "butter",
           "fresh dill",
-          "salt"
+          "butter"
         ],
         "instructions": [
-          "Boil new potatoes",
-          "Gently warm smoked lamb",
-          "Toss with butter",
+          "Boil potatoes",
+          "Warm smoked lamb gently",
           "Serve with dill"
         ]
       },
@@ -96,7 +92,7 @@
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
           "pickled herring",
           "rye bread",
@@ -105,57 +101,68 @@
           "dill"
         ],
         "instructions": [
-          "Toast dark bread",
-          "Layer herring and onion",
-          "Top with sour cream",
-          "Finish with fresh dill"
+          "Toast rye bread",
+          "Layer herring",
+          "Top with sour cream"
         ]
       },
       {
         "id": "ic-b6",
-        "name": "Icelandic Pancakes with Jam",
+        "name": "Plokkfiskur (Breakfast)",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "flour",
-          "eggs",
-          "milk",
-          "baking powder",
-          "jam",
-          "whipped cream"
+          "white fish",
+          "potatoes",
+          "onions",
+          "fish stock"
         ],
         "instructions": [
-          "Make pancake batter",
-          "Cook on griddle",
-          "Top with cloudberry jam",
-          "Add whipped cream"
+          "Layer and simmer",
+          "Traditional morning stew"
         ]
       },
       {
         "id": "ic-b7",
-        "name": "Barley and Milk Porridge",
-        "difficulty": "Easy",
+        "name": "Omelette with Arctic Char",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 5,
-        "cookTime": 20,
+        "prepTime": 10,
+        "cookTime": 12,
         "ingredients": [
-          "barley",
-          "milk",
-          "honey",
-          "cinnamon",
-          "berries"
+          "eggs",
+          "arctic char",
+          "butter",
+          "dill"
         ],
         "instructions": [
-          "Cook barley in milk",
-          "Sweeten with honey",
-          "Add cinnamon",
-          "Top with berries"
+          "Pan-fry char",
+          "Cook omelette",
+          "Fold with fish"
         ]
       },
       {
         "id": "ic-b8",
+        "name": "Barley Porridge (Gr\u00ed\u00f3nn)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "pearl barley",
+          "milk",
+          "sugar",
+          "cinnamon"
+        ],
+        "instructions": [
+          "Cook barley in milk",
+          "Traditional breakfast"
+        ]
+      },
+      {
+        "id": "ic-b9",
         "name": "Smoked Puffin Breakfast",
         "difficulty": "Hard",
         "servings": 4,
@@ -163,83 +170,199 @@
         "cookTime": 15,
         "ingredients": [
           "smoked puffin",
-          "new potatoes",
-          "butter",
-          "dill",
-          "sea salt"
-        ],
-        "instructions": [
-          "Warm smoked puffin gently",
-          "Boil new potatoes",
-          "Season with dill",
-          "Unique Icelandic delicacy"
-        ]
-      },
-      {
-        "id": "ic-b9",
-        "name": "Omelette with Mushrooms",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 15,
-        "ingredients": [
           "eggs",
-          "mushrooms",
-          "butter",
-          "cheese",
-          "fresh herbs"
+          "potatoes",
+          "dill"
         ],
         "instructions": [
-          "Saut\u00e9 mushrooms in butter",
-          "Beat eggs",
-          "Cook omelette",
-          "Fill with mushrooms and cheese"
+          "Warm puffin gently",
+          "Authentic delicacy"
         ]
       },
       {
         "id": "ic-b10",
-        "name": "Yogurt and Berries",
+        "name": "Sourdough with Lumpfish Roe",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "sourdough",
+          "lumpfish roe",
+          "butter",
+          "lemon"
+        ],
+        "instructions": [
+          "Toast bread",
+          "Top with roe",
+          "Squeeze lemon"
+        ]
+      },
+      {
+        "id": "ic-b11",
+        "name": "K\u00f6gurey (Liver Sausage)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "lamb liver",
+          "oatmeal",
+          "spices"
+        ],
+        "instructions": [
+          "Mix and stuff",
+          "Boil 30 minutes",
+          "Slice and fry"
+        ]
+      },
+      {
+        "id": "ic-b12",
+        "name": "Milk and Dark Bread",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "Icelandic skyr",
-          "mixed berries",
-          "honey",
-          "granola"
+          "dark bread",
+          "milk",
+          "butter",
+          "honey"
         ],
         "instructions": [
-          "Spoon skyr into bowls",
-          "Add fresh berries",
-          "Drizzle with honey",
-          "Sprinkle granola"
+          "Break bread into bowl",
+          "Pour warm milk",
+          "Add honey"
         ]
       },
       {
-        "id": "ic-b11",
-        "name": "Lamb Sausage Breakfast",
+        "id": "ic-b13",
+        "name": "Fried Catfish Breakfast",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
+        "prepTime": 15,
         "cookTime": 15,
         "ingredients": [
-          "Icelandic lamb sausage",
-          "eggs",
+          "catfish fillets",
+          "flour",
+          "butter",
+          "lemon"
+        ],
+        "instructions": [
+          "Dredge in flour",
+          "Pan-fry",
+          "Serve with lemon"
+        ]
+      },
+      {
+        "id": "ic-b14",
+        "name": "Brown Cheese Toast",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Icelandic brown cheese",
+          "rye bread",
+          "honey"
+        ],
+        "instructions": [
+          "Toast bread",
+          "Top with brown cheese",
+          "Drizzle honey"
+        ]
+      },
+      {
+        "id": "ic-b15",
+        "name": "Fish Soup Breakfast",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "white fish",
           "potatoes",
-          "onions",
+          "stock",
+          "cream"
+        ],
+        "instructions": [
+          "Make fish broth",
+          "Finish with cream"
+        ]
+      },
+      {
+        "id": "ic-b16",
+        "name": "V\u00ednarterta (Small Piece)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "flour",
+          "jam",
+          "butter",
+          "eggs"
+        ],
+        "instructions": [
+          "Traditional layer cake"
+        ]
+      },
+      {
+        "id": "ic-b17",
+        "name": "Smoked Salmon Breakfast",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "smoked salmon",
+          "dark bread",
+          "capers",
           "butter"
         ],
         "instructions": [
-          "Fry sausage until browned",
-          "Cook potatoes and onions",
-          "Scramble eggs",
-          "Serve together"
+          "Toast bread",
+          "Layer salmon",
+          "Garnish with capers"
         ]
       },
       {
-        "id": "ic-b12",
-        "name": "Blueberry Pancakes",
+        "id": "ic-b18",
+        "name": "Spiced Lamb Sausage Breakfast",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "lamb sausage",
+          "potatoes",
+          "onions"
+        ],
+        "instructions": [
+          "Grill sausage",
+          "Serve with potatoes"
+        ]
+      },
+      {
+        "id": "ic-b19",
+        "name": "Bl\u00f3\u00f0m\u00f6r (Blood Pancakes)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "sheep blood",
+          "flour",
+          "fat",
+          "onions"
+        ],
+        "instructions": [
+          "Historic Icelandic dish"
+        ]
+      },
+      {
+        "id": "ic-b20",
+        "name": "Pancakes with Jam",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
@@ -248,179 +371,11 @@
           "flour",
           "eggs",
           "milk",
-          "blueberries",
-          "butter",
-          "syrup"
+          "jam"
         ],
         "instructions": [
-          "Make blueberry batter",
-          "Cook pancakes",
-          "Serve with maple syrup"
-        ]
-      },
-      {
-        "id": "ic-b13",
-        "name": "Hot Chocolate with Waffles",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "chocolate",
-          "milk",
-          "waffles",
-          "whipped cream",
-          "berries"
-        ],
-        "instructions": [
-          "Make waffle batter",
-          "Brew hot chocolate",
-          "Cook waffles",
-          "Top with cream and berries"
-        ]
-      },
-      {
-        "id": "ic-b14",
-        "name": "Smoked Fish Sandwich",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 5,
-        "ingredients": [
-          "rye bread",
-          "smoked fish",
-          "butter",
-          "lettuce",
-          "lemon"
-        ],
-        "instructions": [
-          "Toast bread lightly",
-          "Spread with butter",
-          "Layer smoked fish",
-          "Add lettuce and lemon"
-        ]
-      },
-      {
-        "id": "ic-b15",
-        "name": "Egg and Tomato Scramble",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "eggs",
-          "tomatoes",
-          "onions",
-          "butter",
-          "fresh parsley"
-        ],
-        "instructions": [
-          "Saut\u00e9 onions and tomatoes",
-          "Scramble eggs",
-          "Season with parsley"
-        ]
-      },
-      {
-        "id": "ic-b16",
-        "name": "Rhubarb Compote Toast",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
-        "ingredients": [
-          "rhubarb",
-          "sugar",
-          "rye bread",
-          "cream cheese",
-          "nuts"
-        ],
-        "instructions": [
-          "Stew rhubarb with sugar",
-          "Toast bread",
-          "Spread cream cheese",
-          "Top with compote"
-        ]
-      },
-      {
-        "id": "ic-b17",
-        "name": "Spelt Porridge",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 25,
-        "ingredients": [
-          "spelt",
-          "milk",
-          "honey",
-          "almonds",
-          "berries"
-        ],
-        "instructions": [
-          "Cook spelt in milk",
-          "Sweeten with honey",
-          "Top with almonds",
-          "Add fresh berries"
-        ]
-      },
-      {
-        "id": "ic-b18",
-        "name": "Smoked Trout Breakfast Bowl",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 10,
-        "ingredients": [
-          "smoked trout",
-          "potatoes",
-          "spinach",
-          "eggs",
-          "dill"
-        ],
-        "instructions": [
-          "Arrange smoked trout",
-          "Serve with boiled potatoes",
-          "Saut\u00e9ed spinach",
-          "Poached egg on top"
-        ]
-      },
-      {
-        "id": "ic-b19",
-        "name": "Seeded Bread and Butter",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 5,
-        "cookTime": 5,
-        "ingredients": [
-          "seed bread",
-          "butter",
-          "honey",
-          "salt"
-        ],
-        "instructions": [
-          "Toast seed bread",
-          "Spread with butter",
-          "Drizzle honey",
-          "Sprinkle sea salt"
-        ]
-      },
-      {
-        "id": "ic-b20",
-        "name": "Icelandic Granola Bowl",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 5,
-        "cookTime": 0,
-        "ingredients": [
-          "homemade granola",
-          "skyr",
-          "mixed berries",
-          "honey"
-        ],
-        "instructions": [
-          "Layer granola in bowl",
-          "Add skyr",
-          "Top with berries",
-          "Drizzle with honey"
+          "Make pancakes",
+          "Top with jam"
         ]
       }
     ],
@@ -436,63 +391,50 @@
           "white fish",
           "potatoes",
           "onions",
-          "fish stock",
-          "butter",
-          "salt"
+          "stock"
         ],
         "instructions": [
-          "Dice fish and vegetables",
-          "Layer in pot",
-          "Pour stock over",
-          "Simmer gently until tender"
+          "Most iconic Icelandic stew"
         ]
       },
       {
         "id": "ic-l2",
-        "name": "Kj\u00f6ts\u00fapa (Icelandic Lamb Soup)",
+        "name": "Kj\u00f6ts\u00fapa (Lamb Soup)",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 45,
+        "cookTime": 50,
         "ingredients": [
           "lamb",
           "potatoes",
           "turnips",
-          "onions",
-          "thyme",
           "stock"
         ],
         "instructions": [
-          "Brown lamb pieces",
-          "Add diced vegetables",
-          "Cover with stock",
-          "Simmer for 45 minutes"
+          "National dish - brown lamb, add vegetables, long simmer"
         ]
       },
       {
         "id": "ic-l3",
-        "name": "Arctic Char with Herbs",
+        "name": "Arctic Char with Dill",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
-        "cookTime": 20,
+        "cookTime": 18,
         "ingredients": [
-          "arctic char fillets",
+          "arctic char",
+          "dill",
           "butter",
-          "fresh dill",
-          "lemon",
-          "salt"
+          "lemon"
         ],
         "instructions": [
-          "Season fish with salt",
-          "Melt butter with dill",
-          "Pan-fry fish",
-          "Serve with lemon wedge"
+          "Pan-fry char",
+          "Top with herb butter"
         ]
       },
       {
         "id": "ic-l4",
-        "name": "Lamb Meatballs with Gravy",
+        "name": "Lamb Meatballs (K\u00f6ttbulur)",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -501,36 +443,30 @@
           "ground lamb",
           "breadcrumbs",
           "eggs",
-          "onions",
           "stock"
         ],
         "instructions": [
-          "Mix meatball ingredients",
-          "Brown in skillet",
-          "Make gravy with stock",
-          "Simmer until cooked"
+          "Brown meatballs",
+          "Finish with sauce"
         ]
       },
       {
         "id": "ic-l5",
-        "name": "Icelandic Fish Cakes",
+        "name": "Fish and Root Vegetables",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "white fish",
-          "potatoes",
-          "onions",
-          "eggs",
-          "flour",
+          "fish",
+          "parsnips",
+          "turnips",
           "butter"
         ],
         "instructions": [
-          "Mash potatoes",
-          "Mix with flaked fish",
-          "Form cakes",
-          "Pan-fry until golden"
+          "Roast vegetables",
+          "Add fish",
+          "Bake together"
         ]
       },
       {
@@ -538,358 +474,308 @@
         "name": "Lamb and Barley Soup",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 50,
+        "prepTime": 25,
+        "cookTime": 60,
         "ingredients": [
-          "lamb chunks",
+          "lamb",
           "pearl barley",
           "carrots",
-          "turnips",
           "stock"
         ],
         "instructions": [
           "Brown lamb",
-          "Add barley and vegetables",
-          "Long simmer",
-          "Season to taste"
+          "Add barley",
+          "Long simmer"
         ]
       },
       {
         "id": "ic-l7",
-        "name": "Grilled Salmon",
+        "name": "Grilled Salmon with Dill",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 15,
         "ingredients": [
-          "salmon fillets",
+          "salmon",
+          "dill",
           "butter",
-          "lemon",
-          "fresh thyme",
-          "salt"
+          "lemon"
         ],
         "instructions": [
-          "Season salmon well",
-          "Grill on hot pan",
-          "Top with herb butter",
-          "Serve with lemon"
+          "Season and grill",
+          "Top with dill butter"
         ]
       },
       {
         "id": "ic-l8",
-        "name": "Smoked Trout Salad",
+        "name": "Smoked Fish Salad",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 0,
         "ingredients": [
-          "smoked trout",
-          "mixed greens",
-          "cucumber",
-          "tomato",
-          "lemon vinaigrette"
+          "smoked fish",
+          "potatoes",
+          "vegetables",
+          "lemon"
         ],
         "instructions": [
-          "Arrange greens",
-          "Break smoked trout",
-          "Add vegetables",
-          "Dress with vinaigrette"
+          "Flake fish",
+          "Toss vegetables",
+          "Dress with lemon oil"
         ]
       },
       {
         "id": "ic-l9",
-        "name": "Fish and Root Vegetables",
+        "name": "Icelandic Fish Cakes",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "white fish fillets",
-          "parsnips",
-          "turnips",
-          "onions",
-          "butter"
+          "fish",
+          "potatoes",
+          "flour",
+          "eggs"
         ],
         "instructions": [
-          "Roast root vegetables",
-          "Add fish on top",
-          "Finish roasting",
-          "Season with herbs"
+          "Pan-fry until golden"
         ]
       },
       {
         "id": "ic-l10",
-        "name": "Lamb Meatball Soup",
+        "name": "Lamb Stew",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
+        "prepTime": 25,
+        "cookTime": 60,
         "ingredients": [
-          "ground lamb",
-          "breadcrumbs",
-          "mushrooms",
-          "onions",
-          "stock"
+          "lamb",
+          "potatoes",
+          "carrots",
+          "rosemary"
         ],
         "instructions": [
-          "Form meatballs",
-          "Brown in soup pot",
-          "Add vegetables and stock",
-          "Simmer until done"
+          "Brown lamb",
+          "Add vegetables",
+          "Slow cook"
         ]
       },
       {
         "id": "ic-l11",
-        "name": "Cod with Hollandaise",
-        "difficulty": "Hard",
+        "name": "Bacalao (Salt Fish)",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
-          "fresh cod",
-          "butter",
-          "eggs",
-          "lemon",
-          "asparagus"
+          "salt cod",
+          "potatoes",
+          "onions",
+          "garlic"
         ],
         "instructions": [
-          "Make hollandaise sauce",
-          "Poach or bake cod",
-          "Grill asparagus",
-          "Top with sauce"
+          "Soak and cook",
+          "Spanish-Icelandic dish"
         ]
       },
       {
         "id": "ic-l12",
-        "name": "Lamb Chops with Root Vegetables",
+        "name": "Halibut Steaks",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "halibut",
+          "butter",
+          "capers",
+          "lemon"
+        ],
+        "instructions": [
+          "Pan-fry steaks",
+          "Top with caper sauce"
+        ]
+      },
+      {
+        "id": "ic-l13",
+        "name": "Lamb and Mushroom Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 50,
+        "ingredients": [
+          "lamb",
+          "mushrooms",
+          "stock"
+        ],
+        "instructions": [
+          "Brown meat",
+          "Saut\u00e9 mushrooms",
+          "Long simmer"
+        ]
+      },
+      {
+        "id": "ic-l14",
+        "name": "Fish Soup with Cream",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "fish",
+          "potatoes",
+          "stock",
+          "cream"
+        ],
+        "instructions": [
+          "Make stock",
+          "Add fish",
+          "Finish with cream"
+        ]
+      },
+      {
+        "id": "ic-l15",
+        "name": "Icelandic Meatloaf",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "ground lamb",
+          "breadcrumbs",
+          "eggs",
+          "stock"
+        ],
+        "instructions": [
+          "Bake with gravy"
+        ]
+      },
+      {
+        "id": "ic-l16",
+        "name": "Lamb Chops with Herbs",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
           "lamb chops",
-          "potatoes",
-          "carrots",
-          "onions",
-          "rosemary"
-        ],
-        "instructions": [
-          "Season chops",
-          "Sear in pan",
-          "Add vegetables",
-          "Roast together"
-        ]
-      },
-      {
-        "id": "ic-l13",
-        "name": "Icelandic Fish Soup",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
-        "ingredients": [
-          "mixed white fish",
-          "salmon",
-          "potatoes",
-          "onions",
-          "cream"
-        ],
-        "instructions": [
-          "Make fish stock",
-          "Cook potatoes",
-          "Add fish",
-          "Finish with cream"
-        ]
-      },
-      {
-        "id": "ic-l14",
-        "name": "Pan-Seared Halibut",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "halibut steaks",
+          "rosemary",
           "butter",
-          "dill",
-          "lemon",
-          "capers"
+          "garlic"
         ],
         "instructions": [
-          "Season halibut",
-          "Sear in hot butter",
-          "Finish in oven",
-          "Top with caper butter"
-        ]
-      },
-      {
-        "id": "ic-l15",
-        "name": "Lamb and Mushroom Stew",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 50,
-        "ingredients": [
-          "lamb",
-          "mushrooms",
-          "onions",
-          "stock",
-          "thyme"
-        ],
-        "instructions": [
-          "Brown lamb",
-          "Saut\u00e9 mushrooms",
-          "Add stock",
-          "Long simmer"
-        ]
-      },
-      {
-        "id": "ic-l16",
-        "name": "Icelandic Meatloaf",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 40,
-        "ingredients": [
-          "ground lamb",
-          "onions",
-          "eggs",
-          "breadcrumbs",
-          "stock"
-        ],
-        "instructions": [
-          "Mix meat mixture",
-          "Shape loaf",
-          "Bake at 350F",
-          "Serve with mushroom sauce"
+          "Sear chops",
+          "Finish with herb butter"
         ]
       },
       {
         "id": "ic-l17",
-        "name": "Smoked Fish Platter",
-        "difficulty": "Easy",
+        "name": "Cod with Hollandaise",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 0,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "assorted smoked fish",
-          "rye bread",
+          "cod",
+          "eggs",
           "butter",
-          "lemon",
-          "fresh herbs"
+          "lemon"
         ],
         "instructions": [
-          "Arrange smoked fish",
-          "Toast bread",
-          "Serve with butter",
-          "Garnish with herbs"
+          "Poach cod",
+          "Make hollandaise"
         ]
       },
       {
         "id": "ic-l18",
-        "name": "Fish Gratin",
+        "name": "Fish and Potato Gratin",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 35,
         "ingredients": [
-          "fish fillets",
+          "fish",
           "potatoes",
           "cream",
-          "cheese",
-          "butter"
+          "cheese"
         ],
         "instructions": [
-          "Layer potatoes and fish",
-          "Pour cream",
-          "Top with cheese",
+          "Layer",
           "Bake until golden"
         ]
       },
       {
         "id": "ic-l19",
-        "name": "Lamb Ragout",
+        "name": "Lamb Sausage Lunch",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 45,
+        "prepTime": 15,
+        "cookTime": 20,
         "ingredients": [
-          "lamb",
-          "tomatoes",
-          "onions",
-          "garlic",
-          "herbs"
+          "lamb sausage",
+          "potatoes",
+          "onions"
         ],
         "instructions": [
-          "Brown lamb",
-          "Add vegetables",
-          "Simmer long",
-          "Serve with bread"
+          "Grill sausages",
+          "Serve with potatoes"
         ]
       },
       {
         "id": "ic-l20",
-        "name": "Icelandic Seafood Mix",
+        "name": "Seafood Medley",
         "difficulty": "Hard",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 20,
+        "cookTime": 30,
         "ingredients": [
           "fish",
-          "scallops",
           "shrimp",
-          "butter",
-          "garlic"
+          "mussels",
+          "butter"
         ],
         "instructions": [
           "Prepare seafood",
-          "Saut\u00e9 in garlic butter",
-          "Cook until tender",
-          "Serve over rice"
+          "Cook in butter"
         ]
       }
     ],
     "dinner": [
       {
         "id": "ic-d1",
-        "name": "Roasted Lamb with Vegetables",
+        "name": "Roasted Lamb with Root Vegetables",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 60,
+        "cookTime": 75,
         "ingredients": [
-          "lamb roast",
+          "lamb leg",
           "potatoes",
-          "carrots",
           "turnips",
           "rosemary"
         ],
         "instructions": [
-          "Season lamb",
-          "Roast with vegetables",
-          "Rest before serving",
-          "Carve and plate"
+          "Rub with herbs",
+          "Roast long",
+          "Traditional Sunday dinner"
         ]
       },
       {
         "id": "ic-d2",
-        "name": "Plokkfiskur (Fish Stew)",
+        "name": "Plokkfiskur",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 30,
         "ingredients": [
-          "white fish",
+          "fish",
           "potatoes",
-          "onions",
-          "stock",
-          "butter"
+          "stock"
         ],
         "instructions": [
-          "Layer ingredients",
-          "Pour stock",
-          "Simmer gently",
-          "Season with salt and pepper"
+          "Layer and simmer",
+          "Most iconic dish"
         ]
       },
       {
@@ -900,43 +786,34 @@
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "arctic char fillets",
-          "lemon",
+          "arctic char",
           "dill",
-          "butter",
-          "salt"
+          "butter"
         ],
         "instructions": [
-          "Season fish",
-          "Grill or pan-fry",
-          "Top with herb butter",
-          "Serve with vegetables"
+          "Grill and top with butter"
         ]
       },
       {
         "id": "ic-d4",
-        "name": "Icelandic Lamb Soup",
+        "name": "Kj\u00f6ts\u00fapa Dinner",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 60,
         "ingredients": [
-          "lamb chunks",
+          "lamb",
           "potatoes",
-          "turnips",
-          "onions",
-          "thyme"
+          "stock"
         ],
         "instructions": [
           "Brown lamb",
-          "Add vegetables",
-          "Long simmer",
-          "Season well"
+          "Long simmer"
         ]
       },
       {
         "id": "ic-d5",
-        "name": "Fish Cakes with Mustard Sauce",
+        "name": "Fish Cakes with Sauce",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -944,57 +821,42 @@
         "ingredients": [
           "fish",
           "potatoes",
-          "eggs",
-          "flour",
-          "mustard"
+          "flour"
         ],
         "instructions": [
-          "Make fish cakes",
-          "Pan-fry until golden",
-          "Make mustard sauce",
-          "Serve hot"
+          "Pan-fry cakes"
         ]
       },
       {
         "id": "ic-d6",
-        "name": "Lamb Chops with Herbs",
+        "name": "Lamb Chops Dinner",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
-        "cookTime": 20,
+        "cookTime": 25,
         "ingredients": [
           "lamb chops",
-          "rosemary",
-          "thyme",
-          "butter",
-          "garlic"
+          "vegetables",
+          "herbs"
         ],
         "instructions": [
-          "Season chops",
-          "Sear in hot pan",
-          "Finish in oven",
-          "Serve with herb butter"
+          "Sear and roast"
         ]
       },
       {
         "id": "ic-d7",
-        "name": "Baked Salmon with Potatoes",
+        "name": "Baked Salmon Fillet",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 30,
+        "cookTime": 25,
         "ingredients": [
-          "salmon fillet",
-          "new potatoes",
-          "dill",
-          "lemon",
-          "butter"
+          "salmon",
+          "potatoes",
+          "dill"
         ],
         "instructions": [
-          "Layer potatoes and salmon",
-          "Drizzle with butter",
-          "Bake at 400F",
-          "Garnish with dill"
+          "Layer and bake"
         ]
       },
       {
@@ -1003,19 +865,15 @@
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 50,
+        "cookTime": 65,
         "ingredients": [
           "lamb",
           "barley",
-          "vegetables",
-          "stock",
-          "herbs"
+          "vegetables"
         ],
         "instructions": [
           "Brown meat",
-          "Layer with barley",
-          "Add vegetables",
-          "Bake covered"
+          "Layer and bake"
         ]
       },
       {
@@ -1024,19 +882,15 @@
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 15,
-        "cookTime": 15,
+        "cookTime": 10,
         "ingredients": [
           "smoked fish",
           "potatoes",
-          "peas",
-          "butter",
-          "dill"
+          "peas"
         ],
         "instructions": [
-          "Warm smoked fish",
-          "Boil potatoes",
-          "Heat peas",
-          "Serve with dill sauce"
+          "Warm fish",
+          "Serve with vegetables"
         ]
       },
       {
@@ -1044,41 +898,31 @@
         "name": "Seafood Soup",
         "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 35,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
-          "mixed fish",
+          "fish",
           "shrimp",
-          "mussels",
-          "potatoes",
-          "cream"
+          "mussels"
         ],
         "instructions": [
-          "Make fish stock",
-          "Cook potatoes",
-          "Add seafood",
-          "Finish with cream"
+          "Make seafood stock"
         ]
       },
       {
         "id": "ic-d11",
-        "name": "Lamb Stew with Root Vegetables",
+        "name": "Lamb Stew",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 60,
+        "cookTime": 75,
         "ingredients": [
-          "lamb cubes",
+          "lamb",
           "potatoes",
-          "carrots",
-          "onions",
-          "rosemary"
+          "carrots"
         ],
         "instructions": [
-          "Brown lamb",
-          "Add vegetables",
-          "Slow cook",
-          "Season and serve"
+          "Slow cook long"
         ]
       },
       {
@@ -1089,38 +933,28 @@
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "halibut steaks",
-          "lemon",
-          "capers",
+          "halibut",
           "butter",
           "asparagus"
         ],
         "instructions": [
-          "Season halibut",
-          "Sear until cooked",
-          "Top with caper sauce",
-          "Serve with asparagus"
+          "Sear and serve"
         ]
       },
       {
         "id": "ic-d13",
-        "name": "Fish with Mustard Cream",
+        "name": "Fish with Mustard Cream Sauce",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "white fish fillets",
+          "fish",
           "cream",
-          "mustard",
-          "dill",
-          "lemon"
+          "mustard"
         ],
         "instructions": [
-          "Cook fish",
-          "Make cream sauce",
-          "Pour over fish",
-          "Garnish with dill"
+          "Pan-fry and sauce"
         ]
       },
       {
@@ -1129,19 +963,14 @@
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 40,
+        "cookTime": 50,
         "ingredients": [
           "ground lamb",
           "potatoes",
-          "carrots",
-          "onions",
           "stock"
         ],
         "instructions": [
-          "Layer ingredients in casserole",
-          "Add stock",
-          "Bake covered",
-          "Finish uncovered"
+          "Layer and bake"
         ]
       },
       {
@@ -1149,20 +978,15 @@
         "name": "Whole Fish Baked",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 35,
         "ingredients": [
           "whole fish",
-          "lemon",
           "herbs",
-          "butter",
-          "salt"
+          "butter"
         ],
         "instructions": [
-          "Clean and season fish",
-          "Bake with aromatics",
-          "Serve with lemon",
-          "Flake at table"
+          "Bake with aromatics"
         ]
       },
       {
@@ -1170,19 +994,14 @@
         "name": "Lamb and Mushroom Ragout",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 60,
         "ingredients": [
           "lamb",
           "mushrooms",
-          "onions",
-          "stock",
-          "thyme"
+          "stock"
         ],
         "instructions": [
-          "Brown lamb",
-          "Saut\u00e9 mushrooms",
-          "Add stock",
           "Long simmer"
         ]
       },
@@ -1194,16 +1013,12 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "fish fillets",
-          "flour",
+          "fish",
           "vegetables",
-          "butter",
-          "lemon"
+          "flour"
         ],
         "instructions": [
-          "Dredge fish in flour",
-          "Pan-fry until crispy",
-          "Serve with roasted vegetables"
+          "Dredge and fry"
         ]
       },
       {
@@ -1211,85 +1026,69 @@
         "name": "Herb-Roasted Lamb",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 60,
         "ingredients": [
-          "lamb leg",
+          "lamb",
           "rosemary",
-          "garlic",
-          "potatoes",
-          "root vegetables"
+          "potatoes"
         ],
         "instructions": [
-          "Rub with herbs and garlic",
-          "Roast with vegetables",
-          "Rest and carve",
-          "Serve hot"
+          "Roast long"
         ]
       },
       {
         "id": "ic-d19",
-        "name": "Fish Fillets Amandine",
+        "name": "Fish with Almond Butter",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "fish fillets",
+          "fish",
           "almonds",
-          "butter",
-          "lemon",
-          "parsley"
+          "butter"
         ],
         "instructions": [
-          "Toast almonds in butter",
-          "Pan-fry fish",
-          "Top with almond butter",
-          "Finish with lemon"
+          "Toast almonds",
+          "Pan-fry fish"
         ]
       },
       {
         "id": "ic-d20",
-        "name": "Icelandic Feast",
+        "name": "Traditional Icelandic Feast",
         "difficulty": "Hard",
         "servings": 4,
         "prepTime": 40,
-        "cookTime": 60,
+        "cookTime": 90,
         "ingredients": [
           "lamb roast",
-          "fresh fish",
-          "potatoes",
-          "vegetables",
-          "mushrooms"
+          "fish",
+          "potatoes"
         ],
         "instructions": [
-          "Prepare multiple proteins",
-          "Roast vegetables",
-          "Season well",
-          "Serve as grand dinner"
+          "Grand dinner"
         ]
       }
     ],
     "desserts": [
       {
         "id": "ic-des1",
-        "name": "Chocolate Mousse",
-        "difficulty": "Easy",
+        "name": "V\u00ednarterta (Layer Cake)",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 10,
+        "prepTime": 40,
+        "cookTime": 50,
         "ingredients": [
-          "dark chocolate",
-          "cream",
+          "flour",
+          "jam",
           "butter",
-          "sugar",
           "eggs"
         ],
         "instructions": [
-          "Melt chocolate",
-          "Whip cream",
-          "Fold together",
-          "Chill before serving"
+          "Make layers",
+          "Stack with jam",
+          "Iconic Icelandic cake"
         ]
       },
       {
@@ -1303,14 +1102,12 @@
           "skyr",
           "cream cheese",
           "eggs",
-          "sugar",
-          "graham cracker crust"
+          "sugar"
         ],
         "instructions": [
           "Make crust",
           "Prepare filling",
-          "Bake",
-          "Cool completely"
+          "Bake"
         ]
       },
       {
@@ -1319,86 +1116,39 @@
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 35,
+        "cookTime": 30,
         "ingredients": [
-          "pastry",
           "rhubarb",
-          "sugar",
+          "pastry",
           "eggs",
           "cream"
         ],
         "instructions": [
-          "Line tart pan",
+          "Line pan",
           "Add rhubarb",
-          "Pour custard",
-          "Bake until set"
+          "Bake"
         ]
       },
       {
         "id": "ic-des4",
-        "name": "Dark Chocolate Cake",
-        "difficulty": "Medium",
+        "name": "Dark Chocolate Mousse",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 40,
+        "prepTime": 15,
+        "cookTime": 10,
         "ingredients": [
-          "flour",
           "chocolate",
-          "eggs",
-          "butter",
-          "sugar"
+          "cream",
+          "butter"
         ],
         "instructions": [
-          "Mix dry ingredients",
-          "Make chocolate batter",
-          "Bake",
-          "Cool and frost"
+          "Melt chocolate",
+          "Whip cream",
+          "Fold together"
         ]
       },
       {
         "id": "ic-des5",
-        "name": "Berry Compote",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 15,
-        "ingredients": [
-          "mixed berries",
-          "sugar",
-          "water",
-          "lemon juice"
-        ],
-        "instructions": [
-          "Combine berries and sugar",
-          "Cook down",
-          "Strain if desired",
-          "Chill"
-        ]
-      },
-      {
-        "id": "ic-des6",
-        "name": "Icelandic Waffles",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "flour",
-          "eggs",
-          "milk",
-          "butter",
-          "jam",
-          "cream"
-        ],
-        "instructions": [
-          "Make waffle batter",
-          "Cook in waffle iron",
-          "Top with jam",
-          "Add whipped cream"
-        ]
-      },
-      {
-        "id": "ic-des7",
         "name": "Cloudberry Mousse",
         "difficulty": "Medium",
         "servings": 4,
@@ -1411,73 +1161,104 @@
           "gelatin"
         ],
         "instructions": [
-          "Whip cream with sugar",
-          "Fold in berries",
-          "Set with gelatin",
-          "Serve chilled"
+          "Whip cream",
+          "Fold berries",
+          "Set with gelatin"
         ]
       },
       {
-        "id": "ic-des8",
-        "name": "Lemon Tart",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
-        "ingredients": [
-          "pastry",
-          "lemons",
-          "eggs",
-          "butter",
-          "sugar"
-        ],
-        "instructions": [
-          "Make crust",
-          "Prepare lemon filling",
-          "Bake",
-          "Cool before serving"
-        ]
-      },
-      {
-        "id": "ic-des9",
+        "id": "ic-des6",
         "name": "Blueberry Cake",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 40,
         "ingredients": [
-          "flour",
           "blueberries",
+          "flour",
           "eggs",
-          "butter",
           "sugar"
         ],
         "instructions": [
-          "Prepare batter",
+          "Mix batter",
           "Fold in berries",
-          "Bake",
-          "Dust with powdered sugar"
+          "Bake"
         ]
       },
       {
-        "id": "ic-des10",
-        "name": "Berry Tart",
+        "id": "ic-des7",
+        "name": "Lemon Tart",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
+          "lemon",
           "pastry",
-          "berries",
-          "cream",
-          "sugar",
-          "eggs"
+          "eggs",
+          "butter"
+        ],
+        "instructions": [
+          "Make crust",
+          "Prepare filling",
+          "Bake"
+        ]
+      },
+      {
+        "id": "ic-des8",
+        "name": "Icelandic Waffles",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "flour",
+          "eggs",
+          "milk",
+          "butter",
+          "jam"
+        ],
+        "instructions": [
+          "Make batter",
+          "Cook in iron",
+          "Top with jam"
+        ]
+      },
+      {
+        "id": "ic-des9",
+        "name": "Raspberry Tart",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "raspberries",
+          "pastry",
+          "cream"
         ],
         "instructions": [
           "Line pan",
           "Add berries",
-          "Pour custard",
-          "Bake until golden"
+          "Bake"
+        ]
+      },
+      {
+        "id": "ic-des10",
+        "name": "Chocolate Cake",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "chocolate",
+          "flour",
+          "eggs",
+          "sugar"
+        ],
+        "instructions": [
+          "Mix batter",
+          "Bake",
+          "Frost"
         ]
       },
       {
@@ -1486,16 +1267,13 @@
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 5,
+        "cookTime": 10,
         "ingredients": [
           "chocolate",
           "cream",
-          "cocoa powder",
-          "butter"
+          "cocoa"
         ],
         "instructions": [
-          "Melt chocolate",
-          "Mix with cream",
           "Form balls",
           "Dust with cocoa"
         ]
@@ -1505,40 +1283,36 @@
         "name": "Bread Pudding",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 35,
         "ingredients": [
           "rye bread",
           "eggs",
           "milk",
-          "sugar",
-          "cinnamon"
+          "sugar"
         ],
         "instructions": [
           "Cube bread",
           "Mix custard",
-          "Bake",
-          "Serve warm"
+          "Bake"
         ]
       },
       {
         "id": "ic-des13",
-        "name": "Raspberry Mousse",
+        "name": "Strawberry Compote",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 5,
+        "prepTime": 10,
+        "cookTime": 15,
         "ingredients": [
-          "raspberries",
-          "cream",
+          "strawberries",
           "sugar",
-          "gelatin"
+          "water"
         ],
         "instructions": [
-          "Whip cream",
-          "Fold in berries",
-          "Set with gelatin",
-          "Chill"
+          "Cook berries",
+          "Add sugar",
+          "Cool"
         ]
       },
       {
@@ -1549,125 +1323,109 @@
         "prepTime": 20,
         "cookTime": 45,
         "ingredients": [
-          "flour",
           "honey",
+          "flour",
           "eggs",
-          "butter",
-          "spices"
+          "sugar"
         ],
         "instructions": [
           "Mix batter",
           "Bake",
-          "Cool",
-          "Frost with honey icing"
+          "Traditional"
         ]
       },
       {
         "id": "ic-des15",
-        "name": "Strawberry Compote",
-        "difficulty": "Easy",
+        "name": "Vanilla Layer Cake",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 25,
+        "cookTime": 40,
         "ingredients": [
-          "strawberries",
+          "flour",
+          "eggs",
           "sugar",
-          "water",
-          "lemon"
+          "vanilla"
         ],
         "instructions": [
-          "Hull strawberries",
-          "Cook with sugar",
-          "Simmer briefly",
-          "Cool"
+          "Make layers",
+          "Frost and assemble"
         ]
       },
       {
         "id": "ic-des16",
-        "name": "Iced Skyr Parfait",
-        "difficulty": "Easy",
+        "name": "Caramel Tart",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 0,
+        "prepTime": 25,
+        "cookTime": 35,
         "ingredients": [
-          "skyr",
-          "honey",
-          "granola",
-          "berries"
+          "caramel",
+          "pastry",
+          "cream"
         ],
         "instructions": [
-          "Layer skyr in glasses",
-          "Add granola",
-          "Top with berries",
-          "Drizzle honey"
+          "Make crust",
+          "Prepare caramel",
+          "Pour in"
         ]
       },
       {
         "id": "ic-des17",
-        "name": "Vanilla Layer Cake",
+        "name": "Pear Tart",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "pears",
+          "pastry",
+          "cream"
+        ],
+        "instructions": [
+          "Line pan",
+          "Add pears",
+          "Bake"
+        ]
+      },
+      {
+        "id": "ic-des18",
+        "name": "Almond Cake",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 40,
         "ingredients": [
+          "almonds",
           "flour",
           "eggs",
-          "butter",
-          "sugar",
-          "vanilla"
+          "sugar"
         ],
         "instructions": [
-          "Make cake layers",
-          "Bake",
-          "Cool",
-          "Frost and assemble"
-        ]
-      },
-      {
-        "id": "ic-des18",
-        "name": "Caramel Tart",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
-        "ingredients": [
-          "pastry",
-          "butter",
-          "sugar",
-          "cream",
-          "salt"
-        ],
-        "instructions": [
-          "Make crust",
-          "Prepare caramel",
-          "Pour in",
-          "Cool and chill"
+          "Grind almonds",
+          "Bake"
         ]
       },
       {
         "id": "ic-des19",
-        "name": "Apple Cake",
+        "name": "Berry Tart",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "apples",
-          "flour",
-          "eggs",
-          "butter",
-          "sugar"
+          "berries",
+          "pastry",
+          "cream"
         ],
         "instructions": [
-          "Prepare apples",
-          "Mix batter",
-          "Add apples",
-          "Bake until done"
+          "Make crust",
+          "Add berries"
         ]
       },
       {
         "id": "ic-des20",
-        "name": "Icelandic Custard",
+        "name": "Custard",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 15,
@@ -1676,14 +1434,12 @@
           "eggs",
           "milk",
           "sugar",
-          "vanilla",
-          "cornstarch"
+          "vanilla"
         ],
         "instructions": [
           "Heat milk",
           "Temper eggs",
-          "Cook custard",
-          "Strain and chill"
+          "Cook"
         ]
       }
     ],
@@ -1698,14 +1454,12 @@
         "ingredients": [
           "chocolate",
           "milk",
-          "sugar",
-          "cinnamon"
+          "sugar"
         ],
         "instructions": [
           "Heat milk",
           "Add chocolate",
-          "Whisk well",
-          "Serve hot"
+          "Whisk well"
         ]
       },
       {
@@ -1716,15 +1470,14 @@
         "prepTime": 10,
         "cookTime": 0,
         "ingredients": [
-          "mixed berries",
+          "berries",
           "water",
           "sugar"
         ],
         "instructions": [
           "Blend berries",
-          "Strain through sieve",
-          "Sweeten to taste",
-          "Serve cold"
+          "Strain",
+          "Chill"
         ]
       },
       {
@@ -1741,10 +1494,9 @@
           "lemon"
         ],
         "instructions": [
-          "Steep tea well",
+          "Steep tea",
           "Add honey",
-          "Squeeze lemon juice",
-          "Serve hot"
+          "Add lemon"
         ]
       },
       {
@@ -1758,8 +1510,7 @@
           "whole milk"
         ],
         "instructions": [
-          "Pour fresh milk",
-          "Serve cold"
+          "Serve fresh cold"
         ]
       },
       {
@@ -1772,14 +1523,12 @@
         "ingredients": [
           "cloudberries",
           "water",
-          "sugar",
-          "lemon"
+          "sugar"
         ],
         "instructions": [
           "Blend berries",
-          "Strain juice",
-          "Add sugar and lemon",
-          "Chill well"
+          "Strain",
+          "Chill"
         ]
       },
       {
@@ -1792,14 +1541,12 @@
         "ingredients": [
           "coffee",
           "water",
-          "milk",
-          "sugar"
+          "milk"
         ],
         "instructions": [
-          "Brew strong coffee",
-          "Heat milk",
-          "Combine",
-          "Serve hot"
+          "Brew coffee",
+          "Add milk",
+          "Serve"
         ]
       },
       {
@@ -1816,27 +1563,25 @@
         ],
         "instructions": [
           "Blend apples",
-          "Strain juice",
-          "Sweeten",
-          "Serve cold"
+          "Strain",
+          "Chill"
         ]
       },
       {
         "id": "ic-na8",
-        "name": "Icelandic Smoothie",
+        "name": "Smoothie with Skyr",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 0,
         "ingredients": [
-          "berries",
           "skyr",
+          "berries",
           "honey",
           "milk"
         ],
         "instructions": [
-          "Blend all ingredients",
-          "Sweeten as needed",
+          "Blend all",
           "Serve cold"
         ]
       },
@@ -1850,13 +1595,11 @@
         "ingredients": [
           "lemon juice",
           "water",
-          "honey",
-          "ice"
+          "honey"
         ],
         "instructions": [
           "Mix juice and water",
-          "Add honey",
-          "Serve with ice"
+          "Chill"
         ]
       },
       {
@@ -1873,87 +1616,78 @@
         ],
         "instructions": [
           "Cook rhubarb",
-          "Strain juice",
-          "Sweeten",
-          "Chill before serving"
+          "Strain",
+          "Chill"
         ]
       }
     ],
     "alcoholicDrinks": [
       {
         "id": "ic-a1",
-        "name": "Brenniv\u00edn Shot",
+        "name": "Brenniv\u00edn",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
           "Brenniv\u00edn",
-          "caraway"
+          "ice"
         ],
         "instructions": [
-          "Pour Brenniv\u00edn",
+          "Pour spirit",
           "Serve ice-cold",
-          "Traditional Icelandic spirit"
+          "Iconic Icelandic spirit"
         ]
       },
       {
         "id": "ic-a2",
-        "name": "Iceland Lager",
+        "name": "Iceland Beer",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 0,
         "cookTime": 0,
         "ingredients": [
-          "Iceland beer",
-          "ice"
+          "beer"
         ],
         "instructions": [
-          "Pour beer",
-          "Add ice",
           "Serve cold"
         ]
       },
       {
         "id": "ic-a3",
-        "name": "Arctic Wine",
+        "name": "Icelandic Wine",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ice wine",
-          "chilled glass"
+          "wine",
+          "ice"
         ],
         "instructions": [
-          "Serve ice wine",
-          "Keep cold",
-          "Sip slowly"
+          "Serve chilled"
         ]
       },
       {
         "id": "ic-a4",
-        "name": "Icelandic Cocktail",
+        "name": "Brenniv\u00edn Cocktail",
         "difficulty": "Medium",
         "servings": 1,
         "prepTime": 10,
         "cookTime": 0,
         "ingredients": [
           "Brenniv\u00edn",
-          "cranberry juice",
+          "juice",
           "lime",
           "ice"
         ],
         "instructions": [
-          "Mix Brenniv\u00edn and juice",
-          "Add lime",
-          "Shake with ice",
-          "Strain and serve"
+          "Mix and shake"
         ]
       },
       {
         "id": "ic-a5",
-        "name": "Black Death",
+        "name": "Black Death Shot",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1963,8 +1697,6 @@
           "ice"
         ],
         "instructions": [
-          "Pour Brenniv\u00edn",
-          "Add ice",
           "Traditional shot"
         ]
       },
@@ -1978,31 +1710,24 @@
         "ingredients": [
           "red wine",
           "berries",
-          "sugar",
-          "water",
-          "brandy"
+          "sugar"
         ],
         "instructions": [
-          "Combine ingredients",
-          "Chill thoroughly",
-          "Serve cold"
+          "Mix and chill"
         ]
       },
       {
         "id": "ic-a7",
-        "name": "Glacier Water Vodka",
+        "name": "Glacier Vodka",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
           "vodka",
-          "glacier water",
           "ice"
         ],
         "instructions": [
-          "Pour vodka",
-          "Add glacier water",
           "Serve cold"
         ]
       },
@@ -2019,10 +1744,7 @@
           "lime"
         ],
         "instructions": [
-          "Chill glass well",
-          "Pour Brenniv\u00edn",
-          "Add lime",
-          "Serve immediately"
+          "Pour and serve"
         ]
       },
       {
@@ -2034,12 +1756,9 @@
         "cookTime": 0,
         "ingredients": [
           "berry wine",
-          "ice",
-          "glass"
+          "ice"
         ],
         "instructions": [
-          "Pour wine",
-          "Add ice",
           "Serve cold"
         ]
       },
@@ -2052,15 +1771,12 @@
         "cookTime": 0,
         "ingredients": [
           "gin",
-          "cloudberry juice",
+          "juice",
           "tonic",
           "ice"
         ],
         "instructions": [
-          "Mix gin and juice",
-          "Top with tonic",
-          "Add ice",
-          "Garnish with berries"
+          "Mix and serve"
         ]
       }
     ]
