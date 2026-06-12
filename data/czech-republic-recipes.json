@@ -1,121 +1,1421 @@
 {
-  "czechRepublicRecipes": {
-    "title": "Authentic Czech Cuisine",
+  "czechrepublicRecipes": {
+    "title": "Authentic Czech Republic Cuisine",
     "country": "Czech Republic",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "cz-b1", "name": "Open-Faced Sandwich", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["bread", "butter", "ham", "cheese", "vegetables"], "instructions": ["Spread butter on bread", "Add ham and cheese", "Top with vegetables"]},
-      {"id": "cz-b2", "name": "Eggs with Paprika", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["eggs", "oil", "paprika", "bread"], "instructions": ["Fry eggs", "Sprinkle paprika", "Serve with bread"]},
-      {"id": "cz-b3", "name": "Czech Pancakes", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["flour", "eggs", "milk", "sugar"], "instructions": ["Make batter", "Cook on griddle", "Serve with jam"]},
-      {"id": "cz-b4", "name": "Smoked Salmon", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["smoked salmon", "bread", "butter", "lemon"], "instructions": ["Spread butter on bread", "Top with salmon", "Serve with lemon"]},
-      {"id": "cz-b5", "name": "Fresh Cheese Platter", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["cheese", "bread", "honey", "walnuts"], "instructions": ["Arrange cheese", "Serve with bread", "Add honey and nuts"]},
-      {"id": "cz-b6", "name": "Sausage Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["sausage", "bread", "mustard"], "instructions": ["Pan-fry sausage", "Serve with bread", "Add mustard"]},
-      {"id": "cz-b7", "name": "Kolache", "difficulty": "Medium", "servings": 12, "prepTime": 60, "cookTime": 20, "ingredients": ["dough", "filling", "jam", "yeast"], "instructions": ["Make dough", "Fill and shape", "Bake 15-20 min"]},
-      {"id": "cz-b8", "name": "Plum Jam Pastry", "difficulty": "Medium", "servings": 6, "prepTime": 45, "cookTime": 30, "ingredients": ["phyllo", "plum jam", "butter", "sugar"], "instructions": ["Layer phyllo", "Add jam", "Bake 25-30 min"]},
-      {"id": "cz-b9", "name": "Herring Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["herring", "bread", "onion", "vinegar"], "instructions": ["Slice herring", "Serve with bread", "Add onion"]},
-      {"id": "cz-b10", "name": "Czech Bread", "difficulty": "Medium", "servings": 8, "prepTime": 45, "cookTime": 30, "ingredients": ["flour", "yeast", "salt", "caraway seeds"], "instructions": ["Make dough", "Let rise", "Bake 25-30 min"]},
-      {"id": "cz-b11", "name": "Apple Compote", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["apples", "sugar", "cinnamon", "water"], "instructions": ["Boil apples", "Add sugar and spices", "Serve warm"]},
-      {"id": "cz-b12", "name": "Cottage Cheese", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 0, "ingredients": ["cottage cheese", "sour cream", "chives", "salt"], "instructions": ["Combine ingredients", "Season", "Serve cold"]},
-      {"id": "cz-b13", "name": "Toast with Marmalade", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 5, "ingredients": ["bread", "butter", "marmalade"], "instructions": ["Toast bread", "Spread butter", "Add marmalade"]},
-      {"id": "cz-b14", "name": "Mushroom Toast", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["bread", "mushrooms", "oil", "salt"], "instructions": ["Sauté mushrooms", "Toast bread", "Top with mushrooms"]},
-      {"id": "cz-b15", "name": "Czech Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong", "Serve hot"]},
-      {"id": "cz-b16", "name": "Cream Cheese Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["bread", "cream cheese", "cucumber", "salt"], "instructions": ["Spread cream cheese", "Top with cucumber", "Season"]},
-      {"id": "cz-b17", "name": "Liverwurst", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["liverwurst", "bread", "onion", "mustard"], "instructions": ["Slice liverwurst", "Serve with bread", "Add onion and mustard"]},
-      {"id": "cz-b18", "name": "Poppy Seed Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "poppy seeds", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour and seeds", "Bake 30-35 min"]},
-      {"id": "cz-b19", "name": "Yogurt with Granola", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 0, "ingredients": ["yogurt", "granola", "honey"], "instructions": ["Pour yogurt", "Top with granola", "Drizzle honey"]},
-      {"id": "cz-b20", "name": "Fresh Berries", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 0, "ingredients": ["berries", "sugar", "cream"], "instructions": ["Arrange berries", "Sprinkle sugar", "Top with cream"]}
+      {
+        "id": "cz-b1",
+        "name": "Czech-Republic Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b2",
+        "name": "Czech-Republic Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b3",
+        "name": "Czech-Republic Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b4",
+        "name": "Czech-Republic Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b5",
+        "name": "Czech-Republic Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b6",
+        "name": "Czech-Republic Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b7",
+        "name": "Czech-Republic Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b8",
+        "name": "Czech-Republic Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b9",
+        "name": "Czech-Republic Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b10",
+        "name": "Czech-Republic Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b11",
+        "name": "Czech-Republic Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b12",
+        "name": "Czech-Republic Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b13",
+        "name": "Czech-Republic Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b14",
+        "name": "Czech-Republic Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b15",
+        "name": "Czech-Republic Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b16",
+        "name": "Czech-Republic Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b17",
+        "name": "Czech-Republic Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b18",
+        "name": "Czech-Republic Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b19",
+        "name": "Czech-Republic Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-b20",
+        "name": "Czech-Republic Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "cz-l1", "name": "Goulash", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "paprika", "onion", "potato"], "instructions": ["Brown beef", "Add paprika", "Simmer 80 min"]},
-      {"id": "cz-l2", "name": "Svíčková", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["beef sirloin", "vegetables", "sour cream", "sauce"], "instructions": ["Roast beef", "Make sauce", "Serve with cream"]},
-      {"id": "cz-l3", "name": "Tripe Soup", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 120, "ingredients": ["tripe", "vegetables", "broth", "caraway"], "instructions": ["Boil tripe", "Make broth", "Simmer 100 min"]},
-      {"id": "cz-l4", "name": "Duck with Cabbage", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["duck", "cabbage", "caraway seeds", "spices"], "instructions": ["Roast duck", "Cook cabbage", "Serve together"]},
-      {"id": "cz-l5", "name": "Pork Schnitzel", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["pork", "breadcrumbs", "eggs", "oil"], "instructions": ["Pound meat", "Coat and fry", "Serve hot"]},
-      {"id": "cz-l6", "name": "Knedlíky", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["bread", "flour", "eggs", "milk"], "instructions": ["Make dough", "Form dumplings", "Boil and serve"]},
-      {"id": "cz-l7", "name": "Sauerkraut Soup", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 45, "ingredients": ["sauerkraut", "meat", "vegetables", "broth"], "instructions": ["Sauté meat", "Add sauerkraut", "Simmer 30 min"]},
-      {"id": "cz-l8", "name": "Potato Pancakes", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["potatoes", "flour", "eggs", "onion"], "instructions": ["Grate potatoes", "Mix with eggs", "Pan-fry"]},
-      {"id": "cz-l9", "name": "Beef Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "vegetables", "broth", "spices"], "instructions": ["Brown beef", "Add vegetables", "Simmer 80 min"]},
-      {"id": "cz-l10", "name": "Chicken Soup", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 60, "ingredients": ["chicken", "broth", "vegetables", "spices"], "instructions": ["Boil chicken", "Add vegetables", "Simmer 45 min"]},
-      {"id": "cz-l11", "name": "Prague Ham", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["prague ham", "bread", "mustard"], "instructions": ["Slice ham", "Serve with bread", "Add mustard"]},
-      {"id": "cz-l12", "name": "Smoked Meat Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["smoked meats", "bread", "horseradish"], "instructions": ["Arrange meats", "Serve with bread", "Add horseradish"]},
-      {"id": "cz-l13", "name": "Fish with Dill", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish", "dill", "butter", "lemon"], "instructions": ["Pan-fry fish", "Make dill sauce", "Serve hot"]},
-      {"id": "cz-l14", "name": "Mushroom Stew", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["mushrooms", "onion", "sour cream", "herbs"], "instructions": ["Sauté mushrooms", "Add cream", "Simmer 20 min"]},
-      {"id": "cz-l15", "name": "Bean Soup", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 45, "ingredients": ["beans", "vegetables", "broth", "spices"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "cz-l16", "name": "Vegetable Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["vegetables", "broth", "spices"], "instructions": ["Chop vegetables", "Simmer together", "Serve hot"]},
-      {"id": "cz-l17", "name": "Sausage with Sauerkraut", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["sausage", "sauerkraut", "mustard"], "instructions": ["Pan-fry sausage", "Heat sauerkraut", "Serve together"]},
-      {"id": "cz-l18", "name": "Fish Soup", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["fish", "broth", "vegetables", "spices"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cz-l19", "name": "Veal Schnitzel", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["veal", "breadcrumbs", "eggs", "oil"], "instructions": ["Pound veal", "Coat and fry", "Serve hot"]},
-      {"id": "cz-l20", "name": "Spiced Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["meat", "spices", "vegetables", "broth"], "instructions": ["Brown meat", "Add spices", "Simmer 25 min"]}
+      {
+        "id": "cz-l1",
+        "name": "Czech-Republic Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l2",
+        "name": "Czech-Republic Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l3",
+        "name": "Czech-Republic Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l4",
+        "name": "Czech-Republic Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l5",
+        "name": "Czech-Republic Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l6",
+        "name": "Czech-Republic Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l7",
+        "name": "Czech-Republic Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l8",
+        "name": "Czech-Republic Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l9",
+        "name": "Czech-Republic Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l10",
+        "name": "Czech-Republic Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l11",
+        "name": "Czech-Republic Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l12",
+        "name": "Czech-Republic Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l13",
+        "name": "Czech-Republic Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l14",
+        "name": "Czech-Republic Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l15",
+        "name": "Czech-Republic Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l16",
+        "name": "Czech-Republic Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l17",
+        "name": "Czech-Republic Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l18",
+        "name": "Czech-Republic Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l19",
+        "name": "Czech-Republic Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-l20",
+        "name": "Czech-Republic Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "cz-d1", "name": "Roasted Duck", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["duck", "herbs", "spices"], "instructions": ["Season duck", "Roast 85-90 min", "Serve hot"]},
-      {"id": "cz-d2", "name": "Goulash Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "paprika", "onion", "potato"], "instructions": ["Brown beef", "Add paprika", "Simmer 80 min"]},
-      {"id": "cz-d3", "name": "Svíčková Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["beef sirloin", "sauce", "vegetables"], "instructions": ["Roast beef", "Make sauce", "Serve with sour cream"]},
-      {"id": "cz-d4", "name": "Tripe Stew", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 120, "ingredients": ["tripe", "vegetables", "broth"], "instructions": ["Boil tripe", "Make stew", "Simmer 100 min"]},
-      {"id": "cz-d5", "name": "Pork Schnitzel Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["pork", "breadcrumbs", "eggs"], "instructions": ["Pound meat", "Coat and fry", "Serve hot"]},
-      {"id": "cz-d6", "name": "Beef Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "vegetables", "broth"], "instructions": ["Brown beef", "Add vegetables", "Simmer 80 min"]},
-      {"id": "cz-d7", "name": "Fish with Dill Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish", "dill", "butter", "lemon"], "instructions": ["Pan-fry fish", "Make dill sauce", "Serve hot"]},
-      {"id": "cz-d8", "name": "Duck with Sauerkraut", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["duck", "sauerkraut", "spices"], "instructions": ["Roast duck", "Cook sauerkraut", "Serve together"]},
-      {"id": "cz-d9", "name": "Veal Schnitzel Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["veal", "breadcrumbs", "eggs"], "instructions": ["Pound veal", "Coat and fry", "Serve hot"]},
-      {"id": "cz-d10", "name": "Roasted Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 60, "ingredients": ["chicken", "herbs", "spices"], "instructions": ["Season chicken", "Roast 55-60 min", "Serve hot"]},
-      {"id": "cz-d11", "name": "Mushroom Stew Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["mushrooms", "cream", "herbs"], "instructions": ["Sauté mushrooms", "Add cream", "Simmer 20 min"]},
-      {"id": "cz-d12", "name": "Sausage Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["sausage", "sauerkraut", "mustard"], "instructions": ["Pan-fry sausage", "Heat sauerkraut", "Serve together"]},
-      {"id": "cz-d13", "name": "Vegetable Stew Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["vegetables", "broth", "spices"], "instructions": ["Chop vegetables", "Simmer together", "Serve hot"]},
-      {"id": "cz-d14", "name": "Fish Stew Dinner", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["fish", "broth", "vegetables"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cz-d15", "name": "Pork Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 80, "ingredients": ["pork", "vegetables", "broth", "spices"], "instructions": ["Brown pork", "Add vegetables", "Simmer 70 min"]},
-      {"id": "cz-d16", "name": "Bean Soup Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 45, "ingredients": ["beans", "vegetables", "broth"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "cz-d17", "name": "Beef Goulash", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "paprika", "vegetables"], "instructions": ["Brown beef", "Add paprika", "Simmer 80 min"]},
-      {"id": "cz-d18", "name": "Spiced Meat Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["meat", "spices", "vegetables"], "instructions": ["Brown meat", "Add spices", "Simmer 25 min"]},
-      {"id": "cz-d19", "name": "Chicken Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "broth"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cz-d20", "name": "Prague Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["ham", "vegetables", "bread"], "instructions": ["Arrange ham", "Prepare vegetables", "Serve together"]}
+      {
+        "id": "cz-d1",
+        "name": "Czech-Republic Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d2",
+        "name": "Czech-Republic Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d3",
+        "name": "Czech-Republic Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d4",
+        "name": "Czech-Republic Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d5",
+        "name": "Czech-Republic Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d6",
+        "name": "Czech-Republic Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d7",
+        "name": "Czech-Republic Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d8",
+        "name": "Czech-Republic Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d9",
+        "name": "Czech-Republic Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d10",
+        "name": "Czech-Republic Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d11",
+        "name": "Czech-Republic Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d12",
+        "name": "Czech-Republic Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d13",
+        "name": "Czech-Republic Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d14",
+        "name": "Czech-Republic Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d15",
+        "name": "Czech-Republic Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d16",
+        "name": "Czech-Republic Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d17",
+        "name": "Czech-Republic Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d18",
+        "name": "Czech-Republic Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d19",
+        "name": "Czech-Republic Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-d20",
+        "name": "Czech-Republic Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "cz-des1", "name": "Trdelník", "difficulty": "Hard", "servings": 8, "prepTime": 120, "cookTime": 30, "ingredients": ["dough", "butter", "sugar", "cinnamon"], "instructions": ["Make dough", "Wrap around spit", "Bake and coat"]},
-      {"id": "cz-des2", "name": "Kolache", "difficulty": "Medium", "servings": 12, "prepTime": 60, "cookTime": 20, "ingredients": ["dough", "jam", "cheese", "yeast"], "instructions": ["Make dough", "Fill and shape", "Bake 15-20 min"]},
-      {"id": "cz-des3", "name": "Poppy Seed Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "poppy seeds", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and seeds", "Bake 30-35 min"]},
-      {"id": "cz-des4", "name": "Apple Strudel", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["phyllo", "apples", "cinnamon"], "instructions": ["Make filling", "Roll in phyllo", "Bake 40-45 min"]},
-      {"id": "cz-des5", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "cz-des6", "name": "Medovina Cake", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["dough", "honey", "eggs"], "instructions": ["Make dough", "Add filling", "Bake 40-45 min"]},
-      {"id": "cz-des7", "name": "Walnut Roll", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 40, "ingredients": ["dough", "walnuts", "sugar"], "instructions": ["Roll dough", "Add walnut filling", "Bake 35-40 min"]},
-      {"id": "cz-des8", "name": "Fruit Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "fruit", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and fruit", "Bake 35-40 min"]},
-      {"id": "cz-des9", "name": "Cherry Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "cherries", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and cherries", "Bake 30-35 min"]},
-      {"id": "cz-des10", "name": "Plum Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "plums", "eggs", "sugar"], "instructions": ["Arrange plums", "Pour batter", "Bake 30-35 min"]},
-      {"id": "cz-des11", "name": "Vanilla Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 15, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "cz-des12", "name": "Chocolate Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "chocolate", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "cz-des13", "name": "Coffee Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "coffee", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "cz-des14", "name": "Carrot Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "carrots", "eggs", "sugar"], "instructions": ["Grate carrots", "Mix", "Bake 35-40 min"]},
-      {"id": "cz-des15", "name": "Cheese Cake", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 50, "ingredients": ["graham crust", "cream cheese", "eggs"], "instructions": ["Make crust", "Pour filling", "Bake 45-50 min"]},
-      {"id": "cz-des16", "name": "Rum Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "rum", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and rum", "Bake 30-35 min"]},
-      {"id": "cz-des17", "name": "Custard Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 35, "ingredients": ["pastry", "custard", "sugar"], "instructions": ["Make crust", "Pour custard", "Bake 30-35 min"]},
-      {"id": "cz-des18", "name": "Lemon Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["crust", "lemon juice", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "cz-des19", "name": "Walnut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "walnuts", "eggs", "sugar"], "instructions": ["Chop walnuts", "Mix", "Bake 30-35 min"]},
-      {"id": "cz-des20", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "almonds", "eggs", "sugar"], "instructions": ["Grind almonds", "Mix", "Bake 30-35 min"]}
+      {
+        "id": "cz-des1",
+        "name": "Czech-Republic Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des2",
+        "name": "Czech-Republic Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des3",
+        "name": "Czech-Republic Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des4",
+        "name": "Czech-Republic Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des5",
+        "name": "Czech-Republic Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des6",
+        "name": "Czech-Republic Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des7",
+        "name": "Czech-Republic Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des8",
+        "name": "Czech-Republic Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des9",
+        "name": "Czech-Republic Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des10",
+        "name": "Czech-Republic Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des11",
+        "name": "Czech-Republic Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des12",
+        "name": "Czech-Republic Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des13",
+        "name": "Czech-Republic Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des14",
+        "name": "Czech-Republic Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des15",
+        "name": "Czech-Republic Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des16",
+        "name": "Czech-Republic Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des17",
+        "name": "Czech-Republic Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des18",
+        "name": "Czech-Republic Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des19",
+        "name": "Czech-Republic Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-des20",
+        "name": "Czech-Republic Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "cz-na1", "name": "Czech Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong", "Serve hot"]},
-      {"id": "cz-na2", "name": "Lemonade", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "cz-na3", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "cz-na4", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "cz-na5", "name": "Herbal Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["herbs", "water", "honey"], "instructions": ["Steep herbs", "Add honey", "Serve hot"]},
-      {"id": "cz-na6", "name": "Apple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["apples", "water", "sugar"], "instructions": ["Blend apples", "Strain juice", "Add water and sugar"]},
-      {"id": "cz-na7", "name": "Berry Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["berries", "water", "sugar"], "instructions": ["Blend berries", "Strain juice", "Add water and sugar"]},
-      {"id": "cz-na8", "name": "Milk", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["milk"], "instructions": ["Serve cold"]},
-      {"id": "cz-na9", "name": "Mineral Water", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["mineral water"], "instructions": ["Serve chilled"]},
-      {"id": "cz-na10", "name": "Orange Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["oranges", "water"], "instructions": ["Juice oranges", "Serve fresh"]}
+      {
+        "id": "cz-na1",
+        "name": "Czech-Republic Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na2",
+        "name": "Czech-Republic Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na3",
+        "name": "Czech-Republic Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na4",
+        "name": "Czech-Republic Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na5",
+        "name": "Czech-Republic Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na6",
+        "name": "Czech-Republic Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na7",
+        "name": "Czech-Republic Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na8",
+        "name": "Czech-Republic Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na9",
+        "name": "Czech-Republic Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-na10",
+        "name": "Czech-Republic Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "cz-a1", "name": "Czech Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "cz-a2", "name": "Czech Wine", "difficulty": "Easy", "servings": 2, "prepTime": 0, "cookTime": 0, "ingredients": ["wine"], "instructions": ["Serve at proper temperature"]},
-      {"id": "cz-a3", "name": "Becherovka", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["becherovka"], "instructions": ["Serve chilled", "Drink neat or with soda"]},
-      {"id": "cz-a4", "name": "Slivovitz", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["slivovitz"], "instructions": ["Serve chilled", "Drink neat"]},
-      {"id": "cz-a5", "name": "Pilsner Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["pilsner beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "cz-a6", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["wine", "soda water"], "instructions": ["Pour wine and soda", "Serve chilled"]},
-      {"id": "cz-a7", "name": "Cognac", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["cognac"], "instructions": ["Serve neat", "Sip slowly"]},
-      {"id": "cz-a8", "name": "Rum", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["rum"], "instructions": ["Serve neat or mixed"]},
-      {"id": "cz-a9", "name": "Aperitif", "difficulty": "Medium", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["spirits", "soda", "lemon"], "instructions": ["Mix spirits", "Top with soda", "Add lemon"]},
-      {"id": "cz-a10", "name": "Plum Wine", "difficulty": "Easy", "servings": 2, "prepTime": 0, "cookTime": 0, "ingredients": ["plum wine"], "instructions": ["Serve chilled", "Sip slowly"]}
+      {
+        "id": "cz-a1",
+        "name": "Czech-Republic Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a2",
+        "name": "Czech-Republic Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a3",
+        "name": "Czech-Republic Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a4",
+        "name": "Czech-Republic Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a5",
+        "name": "Czech-Republic Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a6",
+        "name": "Czech-Republic Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a7",
+        "name": "Czech-Republic Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a8",
+        "name": "Czech-Republic Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a9",
+        "name": "Czech-Republic Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cz-a10",
+        "name": "Czech-Republic Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

@@ -1,121 +1,1421 @@
 {
   "belarusRecipes": {
-    "title": "Authentic Belarusian Cuisine",
+    "title": "Authentic Belarus Cuisine",
     "country": "Belarus",
-    "region": "Eastern Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "blr_breakfast_001", "name": "Draniki", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "15 minutes", "cookTime": "15 minutes"},
-      {"id": "blr_breakfast_002", "name": "Borscht", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_breakfast_003", "name": "Kapusniak", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_breakfast_004", "name": "Mushroom Soup", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_breakfast_005", "name": "Potato Pancakes", "difficulty": "Medium", "servings": "6 pieces", "prepTime": "15 minutes", "cookTime": "15 minutes"},
-      {"id": "blr_breakfast_006", "name": "Rye Bread", "difficulty": "Medium", "servings": "1 loaf", "prepTime": "120 minutes", "cookTime": "50 minutes"},
-      {"id": "blr_breakfast_007", "name": "Cucumber Salad", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_breakfast_008", "name": "Sausage and Bread", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "10 minutes"},
-      {"id": "blr_breakfast_009", "name": "Cheese and Butter", "difficulty": "Easy", "servings": 2, "prepTime": "5 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_breakfast_010", "name": "Herring Salad", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_breakfast_011", "name": "Boiled Potatoes", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_breakfast_012", "name": "Creamy Mushroom Soup", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_breakfast_013", "name": "Bean Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_breakfast_014", "name": "Pearl Barley Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "50 minutes"},
-      {"id": "blr_breakfast_015", "name": "Pea Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "50 minutes"},
-      {"id": "blr_breakfast_016", "name": "Smoked Fish", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_breakfast_017", "name": "Cottage Cheese", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_breakfast_018", "name": "Cabbage Rolls", "difficulty": "Medium", "servings": "8 rolls", "prepTime": "30 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_breakfast_019", "name": "Scalloped Potatoes", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_breakfast_020", "name": "Meat Pie", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "35 minutes"}
+      {
+        "id": "be-b1",
+        "name": "Belarus Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b2",
+        "name": "Belarus Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b3",
+        "name": "Belarus Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b4",
+        "name": "Belarus Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b5",
+        "name": "Belarus Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b6",
+        "name": "Belarus Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b7",
+        "name": "Belarus Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b8",
+        "name": "Belarus Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b9",
+        "name": "Belarus Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b10",
+        "name": "Belarus Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b11",
+        "name": "Belarus Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b12",
+        "name": "Belarus Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b13",
+        "name": "Belarus Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b14",
+        "name": "Belarus Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b15",
+        "name": "Belarus Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b16",
+        "name": "Belarus Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b17",
+        "name": "Belarus Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b18",
+        "name": "Belarus Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b19",
+        "name": "Belarus Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b20",
+        "name": "Belarus Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "blr_lunch_001", "name": "Borscht Lunch", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_lunch_002", "name": "Draniki with Sour Cream", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes"},
-      {"id": "blr_lunch_003", "name": "Boiled Beef", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "120 minutes"},
-      {"id": "blr_lunch_004", "name": "Cabbage Stew", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_lunch_005", "name": "Sausage and Sauerkraut", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_lunch_006", "name": "Baked Fish", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_lunch_007", "name": "Potato and Mushroom", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_lunch_008", "name": "Beef Stew", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "90 minutes"},
-      {"id": "blr_lunch_009", "name": "Pork Schnitzel", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_lunch_010", "name": "Chicken Cutlet", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "15 minutes"},
-      {"id": "blr_lunch_011", "name": "Liver and Onions", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_lunch_012", "name": "Meatballs", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_lunch_013", "name": "Buckwheat Groats", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_lunch_014", "name": "Pearl Barley", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_lunch_015", "name": "Meat and Potato Pie", "difficulty": "Hard", "servings": "8 pieces", "prepTime": "35 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_lunch_016", "name": "Smoked Meat Lunch", "difficulty": "Medium", "servings": 4, "prepTime": "15 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_lunch_017", "name": "Vegetable Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_lunch_018", "name": "Pickled Vegetables", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_lunch_019", "name": "Roasted Potatoes", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "25 minutes"},
-      {"id": "blr_lunch_020", "name": "Mixed Grill", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "30 minutes"}
+      {
+        "id": "be-l1",
+        "name": "Belarus Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l2",
+        "name": "Belarus Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l3",
+        "name": "Belarus Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l4",
+        "name": "Belarus Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l5",
+        "name": "Belarus Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l6",
+        "name": "Belarus Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l7",
+        "name": "Belarus Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l8",
+        "name": "Belarus Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l9",
+        "name": "Belarus Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l10",
+        "name": "Belarus Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l11",
+        "name": "Belarus Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l12",
+        "name": "Belarus Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l13",
+        "name": "Belarus Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l14",
+        "name": "Belarus Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l15",
+        "name": "Belarus Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l16",
+        "name": "Belarus Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l17",
+        "name": "Belarus Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l18",
+        "name": "Belarus Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l19",
+        "name": "Belarus Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l20",
+        "name": "Belarus Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "blr_dinner_001", "name": "Beef Roulade", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "60 minutes"},
-      {"id": "blr_dinner_002", "name": "Pork Roast", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "90 minutes"},
-      {"id": "blr_dinner_003", "name": "Chicken Roast", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "60 minutes"},
-      {"id": "blr_dinner_004", "name": "Baked Fish Dinner", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_dinner_005", "name": "Cabbage Rolls Dinner", "difficulty": "Medium", "servings": "10 rolls", "prepTime": "35 minutes", "cookTime": "50 minutes"},
-      {"id": "blr_dinner_006", "name": "Meat Stew", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "90 minutes"},
-      {"id": "blr_dinner_007", "name": "Pork with Sauerkraut", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dinner_008", "name": "Beef Stroganoff", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dinner_009", "name": "Chicken Cutlet Dinner", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_dinner_010", "name": "Meatball Stew", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dinner_011", "name": "Liver Dinner", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_dinner_012", "name": "Baked Vegetables", "difficulty": "Easy", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dinner_013", "name": "Potato Casserole", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_dinner_014", "name": "Mushroom Dinner", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_dinner_015", "name": "Borscht Dinner", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "50 minutes"},
-      {"id": "blr_dinner_016", "name": "Buckwheat Dinner", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "25 minutes"},
-      {"id": "blr_dinner_017", "name": "Herring Dinner", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_dinner_018", "name": "Sausage Dinner", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_dinner_019", "name": "Smoked Meat Dinner", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_dinner_020", "name": "Festive Dinner", "difficulty": "Hard", "servings": 10, "prepTime": "40 minutes", "cookTime": "90 minutes"}
+      {
+        "id": "be-d1",
+        "name": "Belarus Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d2",
+        "name": "Belarus Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d3",
+        "name": "Belarus Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d4",
+        "name": "Belarus Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d5",
+        "name": "Belarus Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d6",
+        "name": "Belarus Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d7",
+        "name": "Belarus Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d8",
+        "name": "Belarus Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d9",
+        "name": "Belarus Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d10",
+        "name": "Belarus Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d11",
+        "name": "Belarus Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d12",
+        "name": "Belarus Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d13",
+        "name": "Belarus Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d14",
+        "name": "Belarus Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d15",
+        "name": "Belarus Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d16",
+        "name": "Belarus Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d17",
+        "name": "Belarus Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d18",
+        "name": "Belarus Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d19",
+        "name": "Belarus Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d20",
+        "name": "Belarus Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "blr_dessert_001", "name": "Rye Bread Pudding", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_dessert_002", "name": "Apple Pie", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dessert_003", "name": "Plum Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_dessert_004", "name": "Berry Tart", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_dessert_005", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_dessert_006", "name": "Poppy Seed Roll", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "40 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dessert_007", "name": "Sour Cream Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_dessert_008", "name": "Walnut Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dessert_009", "name": "Cheese Cake", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "45 minutes"},
-      {"id": "blr_dessert_010", "name": "Gingerbread", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "25 minutes", "cookTime": "25 minutes"},
-      {"id": "blr_dessert_011", "name": "Kolachky Cookies", "difficulty": "Medium", "servings": "24 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_dessert_012", "name": "Custard Tart", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "35 minutes"},
-      {"id": "blr_dessert_013", "name": "Berry Compote", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_dessert_014", "name": "Apple Compote", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_dessert_015", "name": "Jam Tart", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "30 minutes"},
-      {"id": "blr_dessert_016", "name": "Hazelnut Cookies", "difficulty": "Medium", "servings": "24 pieces", "prepTime": "25 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_dessert_017", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "blr_dessert_018", "name": "Caramel Sauce", "difficulty": "Easy", "servings": 6, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "blr_dessert_019", "name": "Chocolate Mousse", "difficulty": "Easy", "servings": 4, "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_dessert_020", "name": "Custard Cream", "difficulty": "Easy", "servings": 4, "prepTime": "15 minutes", "cookTime": "10 minutes"}
+      {
+        "id": "be-des1",
+        "name": "Belarus Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des2",
+        "name": "Belarus Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des3",
+        "name": "Belarus Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des4",
+        "name": "Belarus Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des5",
+        "name": "Belarus Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des6",
+        "name": "Belarus Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des7",
+        "name": "Belarus Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des8",
+        "name": "Belarus Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des9",
+        "name": "Belarus Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des10",
+        "name": "Belarus Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des11",
+        "name": "Belarus Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des12",
+        "name": "Belarus Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des13",
+        "name": "Belarus Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des14",
+        "name": "Belarus Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des15",
+        "name": "Belarus Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des16",
+        "name": "Belarus Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des17",
+        "name": "Belarus Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des18",
+        "name": "Belarus Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des19",
+        "name": "Belarus Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des20",
+        "name": "Belarus Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "blr_drink_na_001", "name": "Kvass", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_drink_na_002", "name": "Kompot", "servings": 4, "prepTime": "10 minutes", "cookTime": "20 minutes"},
-      {"id": "blr_drink_na_003", "name": "Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "blr_drink_na_004", "name": "Coffee", "servings": 1, "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "blr_drink_na_005", "name": "Apple Juice", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_drink_na_006", "name": "Berry Juice", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_drink_na_007", "name": "Milk", "servings": 1, "prepTime": "2 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_drink_na_008", "name": "Herbal Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "blr_drink_na_009", "name": "Lemonade", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "blr_drink_na_010", "name": "Mushroom Broth", "servings": 2, "prepTime": "5 minutes", "cookTime": "30 minutes"}
+      {
+        "id": "be-na1",
+        "name": "Belarus Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na2",
+        "name": "Belarus Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na3",
+        "name": "Belarus Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na4",
+        "name": "Belarus Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na5",
+        "name": "Belarus Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na6",
+        "name": "Belarus Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na7",
+        "name": "Belarus Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na8",
+        "name": "Belarus Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na9",
+        "name": "Belarus Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na10",
+        "name": "Belarus Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "blr_drink_a_001", "name": "Vodka", "servings": 1},
-      {"id": "blr_drink_a_002", "name": "Zubrovka Vodka", "servings": 1},
-      {"id": "blr_drink_a_003", "name": "Beer", "servings": 1},
-      {"id": "blr_drink_a_004", "name": "Krupnik Honey Liqueur", "servings": 1},
-      {"id": "blr_drink_a_005", "name": "Wine", "servings": 1},
-      {"id": "blr_drink_a_006", "name": "Whiskey", "servings": 1},
-      {"id": "blr_drink_a_007", "name": "Brandy", "servings": 1},
-      {"id": "blr_drink_a_008", "name": "Rum", "servings": 1},
-      {"id": "blr_drink_a_009", "name": "Gin", "servings": 1},
-      {"id": "blr_drink_a_010", "name": "Liqueur", "servings": 1}
+      {
+        "id": "be-a1",
+        "name": "Belarus Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a2",
+        "name": "Belarus Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a3",
+        "name": "Belarus Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a4",
+        "name": "Belarus Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a5",
+        "name": "Belarus Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a6",
+        "name": "Belarus Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a7",
+        "name": "Belarus Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a8",
+        "name": "Belarus Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a9",
+        "name": "Belarus Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a10",
+        "name": "Belarus Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

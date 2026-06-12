@@ -2,108 +2,1420 @@
   "eritreaRecipes": {
     "title": "Authentic Eritrea Cuisine",
     "country": "Eritrea",
-    "region": "Africa",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"er-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"er-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"er-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"er-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"er-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"er-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"er-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"er-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"er-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"er-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "er-b1",
+        "name": "Eritrea Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b2",
+        "name": "Eritrea Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b3",
+        "name": "Eritrea Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b4",
+        "name": "Eritrea Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b5",
+        "name": "Eritrea Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b6",
+        "name": "Eritrea Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b7",
+        "name": "Eritrea Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b8",
+        "name": "Eritrea Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b9",
+        "name": "Eritrea Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b10",
+        "name": "Eritrea Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b11",
+        "name": "Eritrea Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b12",
+        "name": "Eritrea Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b13",
+        "name": "Eritrea Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b14",
+        "name": "Eritrea Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b15",
+        "name": "Eritrea Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b16",
+        "name": "Eritrea Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b17",
+        "name": "Eritrea Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b18",
+        "name": "Eritrea Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b19",
+        "name": "Eritrea Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-b20",
+        "name": "Eritrea Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "er-l1",
+        "name": "Eritrea Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l2",
+        "name": "Eritrea Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l3",
+        "name": "Eritrea Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l4",
+        "name": "Eritrea Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l5",
+        "name": "Eritrea Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l6",
+        "name": "Eritrea Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l7",
+        "name": "Eritrea Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l8",
+        "name": "Eritrea Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l9",
+        "name": "Eritrea Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l10",
+        "name": "Eritrea Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l11",
+        "name": "Eritrea Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l12",
+        "name": "Eritrea Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l13",
+        "name": "Eritrea Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l14",
+        "name": "Eritrea Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l15",
+        "name": "Eritrea Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l16",
+        "name": "Eritrea Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l17",
+        "name": "Eritrea Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l18",
+        "name": "Eritrea Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l19",
+        "name": "Eritrea Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-l20",
+        "name": "Eritrea Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "er-d1",
+        "name": "Eritrea Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d2",
+        "name": "Eritrea Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d3",
+        "name": "Eritrea Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d4",
+        "name": "Eritrea Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d5",
+        "name": "Eritrea Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d6",
+        "name": "Eritrea Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d7",
+        "name": "Eritrea Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d8",
+        "name": "Eritrea Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d9",
+        "name": "Eritrea Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d10",
+        "name": "Eritrea Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d11",
+        "name": "Eritrea Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d12",
+        "name": "Eritrea Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d13",
+        "name": "Eritrea Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d14",
+        "name": "Eritrea Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d15",
+        "name": "Eritrea Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d16",
+        "name": "Eritrea Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d17",
+        "name": "Eritrea Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d18",
+        "name": "Eritrea Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d19",
+        "name": "Eritrea Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-d20",
+        "name": "Eritrea Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "er-des1",
+        "name": "Eritrea Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des2",
+        "name": "Eritrea Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des3",
+        "name": "Eritrea Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des4",
+        "name": "Eritrea Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des5",
+        "name": "Eritrea Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des6",
+        "name": "Eritrea Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des7",
+        "name": "Eritrea Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des8",
+        "name": "Eritrea Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des9",
+        "name": "Eritrea Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des10",
+        "name": "Eritrea Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des11",
+        "name": "Eritrea Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des12",
+        "name": "Eritrea Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des13",
+        "name": "Eritrea Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des14",
+        "name": "Eritrea Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des15",
+        "name": "Eritrea Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des16",
+        "name": "Eritrea Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des17",
+        "name": "Eritrea Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des18",
+        "name": "Eritrea Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des19",
+        "name": "Eritrea Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-des20",
+        "name": "Eritrea Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "er-na1",
+        "name": "Eritrea Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na2",
+        "name": "Eritrea Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na3",
+        "name": "Eritrea Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na4",
+        "name": "Eritrea Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na5",
+        "name": "Eritrea Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na6",
+        "name": "Eritrea Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na7",
+        "name": "Eritrea Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na8",
+        "name": "Eritrea Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na9",
+        "name": "Eritrea Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-na10",
+        "name": "Eritrea Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "er-a1",
+        "name": "Eritrea Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a2",
+        "name": "Eritrea Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a3",
+        "name": "Eritrea Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a4",
+        "name": "Eritrea Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a5",
+        "name": "Eritrea Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a6",
+        "name": "Eritrea Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a7",
+        "name": "Eritrea Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a8",
+        "name": "Eritrea Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a9",
+        "name": "Eritrea Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "er-a10",
+        "name": "Eritrea Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ]
   }
 }

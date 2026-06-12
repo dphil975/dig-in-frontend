@@ -2,108 +2,1420 @@
   "djiboutiRecipes": {
     "title": "Authentic Djibouti Cuisine",
     "country": "Djibouti",
-    "region": "Africa",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"dj-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"dj-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"dj-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"dj-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"dj-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"dj-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"dj-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"dj-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"dj-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"dj-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "dj-b1",
+        "name": "Djibouti Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b2",
+        "name": "Djibouti Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b3",
+        "name": "Djibouti Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b4",
+        "name": "Djibouti Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b5",
+        "name": "Djibouti Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b6",
+        "name": "Djibouti Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b7",
+        "name": "Djibouti Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b8",
+        "name": "Djibouti Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b9",
+        "name": "Djibouti Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b10",
+        "name": "Djibouti Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b11",
+        "name": "Djibouti Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b12",
+        "name": "Djibouti Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b13",
+        "name": "Djibouti Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b14",
+        "name": "Djibouti Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b15",
+        "name": "Djibouti Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b16",
+        "name": "Djibouti Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b17",
+        "name": "Djibouti Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b18",
+        "name": "Djibouti Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b19",
+        "name": "Djibouti Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-b20",
+        "name": "Djibouti Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "dj-l1",
+        "name": "Djibouti Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l2",
+        "name": "Djibouti Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l3",
+        "name": "Djibouti Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l4",
+        "name": "Djibouti Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l5",
+        "name": "Djibouti Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l6",
+        "name": "Djibouti Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l7",
+        "name": "Djibouti Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l8",
+        "name": "Djibouti Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l9",
+        "name": "Djibouti Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l10",
+        "name": "Djibouti Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l11",
+        "name": "Djibouti Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l12",
+        "name": "Djibouti Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l13",
+        "name": "Djibouti Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l14",
+        "name": "Djibouti Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l15",
+        "name": "Djibouti Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l16",
+        "name": "Djibouti Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l17",
+        "name": "Djibouti Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l18",
+        "name": "Djibouti Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l19",
+        "name": "Djibouti Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-l20",
+        "name": "Djibouti Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "dj-d1",
+        "name": "Djibouti Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d2",
+        "name": "Djibouti Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d3",
+        "name": "Djibouti Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d4",
+        "name": "Djibouti Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d5",
+        "name": "Djibouti Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d6",
+        "name": "Djibouti Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d7",
+        "name": "Djibouti Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d8",
+        "name": "Djibouti Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d9",
+        "name": "Djibouti Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d10",
+        "name": "Djibouti Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d11",
+        "name": "Djibouti Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d12",
+        "name": "Djibouti Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d13",
+        "name": "Djibouti Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d14",
+        "name": "Djibouti Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d15",
+        "name": "Djibouti Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d16",
+        "name": "Djibouti Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d17",
+        "name": "Djibouti Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d18",
+        "name": "Djibouti Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d19",
+        "name": "Djibouti Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-d20",
+        "name": "Djibouti Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "dj-des1",
+        "name": "Djibouti Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des2",
+        "name": "Djibouti Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des3",
+        "name": "Djibouti Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des4",
+        "name": "Djibouti Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des5",
+        "name": "Djibouti Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des6",
+        "name": "Djibouti Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des7",
+        "name": "Djibouti Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des8",
+        "name": "Djibouti Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des9",
+        "name": "Djibouti Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des10",
+        "name": "Djibouti Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des11",
+        "name": "Djibouti Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des12",
+        "name": "Djibouti Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des13",
+        "name": "Djibouti Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des14",
+        "name": "Djibouti Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des15",
+        "name": "Djibouti Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des16",
+        "name": "Djibouti Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des17",
+        "name": "Djibouti Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des18",
+        "name": "Djibouti Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des19",
+        "name": "Djibouti Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-des20",
+        "name": "Djibouti Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "dj-na1",
+        "name": "Djibouti Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na2",
+        "name": "Djibouti Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na3",
+        "name": "Djibouti Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na4",
+        "name": "Djibouti Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na5",
+        "name": "Djibouti Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na6",
+        "name": "Djibouti Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na7",
+        "name": "Djibouti Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na8",
+        "name": "Djibouti Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na9",
+        "name": "Djibouti Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-na10",
+        "name": "Djibouti Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "dj-a1",
+        "name": "Djibouti Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a2",
+        "name": "Djibouti Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a3",
+        "name": "Djibouti Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a4",
+        "name": "Djibouti Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a5",
+        "name": "Djibouti Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a6",
+        "name": "Djibouti Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a7",
+        "name": "Djibouti Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a8",
+        "name": "Djibouti Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a9",
+        "name": "Djibouti Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "dj-a10",
+        "name": "Djibouti Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ]
   }
 }

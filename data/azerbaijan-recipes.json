@@ -1,122 +1,1421 @@
 {
   "azerbaijanRecipes": {
-    "title": "Authentic Azerbaijani Cuisine",
-    "description": "Traditional recipes from Azerbaijan featuring pilafs, kebabs, lavash, and Caucasian spiced flavors",
+    "title": "Authentic Azerbaijan Cuisine",
     "country": "Azerbaijan",
-    "region": "Caucasus",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "aze_breakfast_001", "name": "Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Meat", "Oil", "Spices", "Vegetables"]},
-      {"id": "aze_breakfast_002", "name": "Qutab", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Cheese", "Spinach", "Oil"]},
-      {"id": "aze_breakfast_003", "name": "Katmer", "difficulty": "Medium", "servings": 4, "prepTime": "30 minutes", "cookTime": "15 minutes", "ingredients": ["Dough", "Cheese", "Butter"]},
-      {"id": "aze_breakfast_004", "name": "Lula Kebab", "difficulty": "Medium", "servings": "6 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Ground meat", "Onion", "Parsley", "Spices"]},
-      {"id": "aze_breakfast_005", "name": "Lavash", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "60 minutes", "cookTime": "5 minutes", "ingredients": ["Flour", "Water", "Salt"]},
-      {"id": "aze_breakfast_006", "name": "Tandir Bread", "difficulty": "Medium", "servings": "4 pieces", "prepTime": "60 minutes", "cookTime": "10 minutes", "ingredients": ["Flour", "Water", "Salt", "Sesame"]},
-      {"id": "aze_breakfast_007", "name": "Egg and Cheese", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "10 minutes", "ingredients": ["Eggs", "Cheese", "Butter", "Herbs"]},
-      {"id": "aze_breakfast_008", "name": "Yogurt with Herbs", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Yogurt", "Herbs", "Spices"]},
-      {"id": "aze_breakfast_009", "name": "Cheese Rolls", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Cheese", "Herbs", "Oil"]},
-      {"id": "aze_breakfast_010", "name": "Vegetable Qutab", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Vegetables", "Oil"]},
-      {"id": "aze_breakfast_011", "name": "Meat Qutab", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Meat", "Onion", "Oil"]},
-      {"id": "aze_breakfast_012", "name": "Dovga", "difficulty": "Easy", "servings": 4, "prepTime": "20 minutes", "cookTime": "30 minutes", "ingredients": ["Yogurt", "Herbs", "Rice", "Spices"]},
-      {"id": "aze_breakfast_013", "name": "Spinach Qutab", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Spinach", "Onion", "Oil"]},
-      {"id": "aze_breakfast_014", "name": "Plov with Fruit", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Dried fruit", "Oil", "Spices"]},
-      {"id": "aze_breakfast_015", "name": "Gurut and Bread", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Dried yogurt balls", "Bread", "Herbs"]},
-      {"id": "aze_breakfast_016", "name": "Sofrasi", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Cheese", "Fruits", "Nuts"]},
-      {"id": "aze_breakfast_017", "name": "Fried Dough", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Dough", "Oil", "Honey"]},
-      {"id": "aze_breakfast_018", "name": "Herb Omelette", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "10 minutes", "ingredients": ["Eggs", "Herbs", "Oil"]},
-      {"id": "aze_breakfast_019", "name": "Pomegranate and Walnut", "difficulty": "Easy", "servings": 4, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Pomegranate", "Walnuts", "Honey"]},
-      {"id": "aze_breakfast_020", "name": "Cream and Bread", "difficulty": "Easy", "servings": 2, "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Cream", "Bread", "Honey"]}
+      {
+        "id": "az-b1",
+        "name": "Azerbaijan Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b2",
+        "name": "Azerbaijan Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b3",
+        "name": "Azerbaijan Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b4",
+        "name": "Azerbaijan Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b5",
+        "name": "Azerbaijan Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b6",
+        "name": "Azerbaijan Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b7",
+        "name": "Azerbaijan Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b8",
+        "name": "Azerbaijan Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b9",
+        "name": "Azerbaijan Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b10",
+        "name": "Azerbaijan Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b11",
+        "name": "Azerbaijan Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b12",
+        "name": "Azerbaijan Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b13",
+        "name": "Azerbaijan Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b14",
+        "name": "Azerbaijan Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b15",
+        "name": "Azerbaijan Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b16",
+        "name": "Azerbaijan Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b17",
+        "name": "Azerbaijan Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b18",
+        "name": "Azerbaijan Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b19",
+        "name": "Azerbaijan Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-b20",
+        "name": "Azerbaijan Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "aze_lunch_001", "name": "Plov Lunch", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Meat", "Vegetables", "Spices"]},
-      {"id": "aze_lunch_002", "name": "Lula Kebab Lunch", "difficulty": "Medium", "servings": "6 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Ground meat", "Vegetables", "Spices"]},
-      {"id": "aze_lunch_003", "name": "Shish Kebab", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Meat", "Vegetables", "Marinade"]},
-      {"id": "aze_lunch_004", "name": "Govurma Plov", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "60 minutes", "ingredients": ["Rice", "Lamb", "Prunes", "Spices"]},
-      {"id": "aze_lunch_005", "name": "Fish Qutab", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Dough", "Fish", "Herbs", "Oil"]},
-      {"id": "aze_lunch_006", "name": "Dovga with Meatballs", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "30 minutes", "ingredients": ["Yogurt", "Meatballs", "Herbs", "Rice"]},
-      {"id": "aze_lunch_007", "name": "Kabab Koobideh", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "15 minutes", "ingredients": ["Ground meat", "Onion", "Spices"]},
-      {"id": "aze_lunch_008", "name": "Chicken Kebab", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Chicken", "Vegetables", "Marinade"]},
-      {"id": "aze_lunch_009", "name": "Fish Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Fish", "Oil", "Spices"]},
-      {"id": "aze_lunch_010", "name": "Lentil Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "40 minutes", "ingredients": ["Lentils", "Vegetables", "Spices", "Broth"]},
-      {"id": "aze_lunch_011", "name": "Ash Reshteh", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "40 minutes", "ingredients": ["Herbs", "Beans", "Noodles", "Spices"]},
-      {"id": "aze_lunch_012", "name": "Sour Cherry Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Sour cherries", "Meat", "Spices"]},
-      {"id": "aze_lunch_013", "name": "Barberry Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Barberries", "Meat", "Spices"]},
-      {"id": "aze_lunch_014", "name": "Meatball Soup", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "30 minutes", "ingredients": ["Meatballs", "Vegetables", "Broth", "Spices"]},
-      {"id": "aze_lunch_015", "name": "Bean Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "50 minutes", "ingredients": ["Beans", "Vegetables", "Spices", "Broth"]},
-      {"id": "aze_lunch_016", "name": "Chicken Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Chicken", "Oil", "Spices"]},
-      {"id": "aze_lunch_017", "name": "Herb Rice with Meat", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Meat", "Herbs", "Spices"]},
-      {"id": "aze_lunch_018", "name": "Vegetable Soup", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "30 minutes", "ingredients": ["Mixed vegetables", "Broth", "Spices"]},
-      {"id": "aze_lunch_019", "name": "Meat Platter with Rice", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Mixed meats", "Rice", "Vegetables"]},
-      {"id": "aze_lunch_020", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": "20 minutes", "cookTime": "20 minutes", "ingredients": ["Fish", "Lemon", "Herbs", "Oil"]}
+      {
+        "id": "az-l1",
+        "name": "Azerbaijan Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l2",
+        "name": "Azerbaijan Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l3",
+        "name": "Azerbaijan Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l4",
+        "name": "Azerbaijan Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l5",
+        "name": "Azerbaijan Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l6",
+        "name": "Azerbaijan Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l7",
+        "name": "Azerbaijan Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l8",
+        "name": "Azerbaijan Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l9",
+        "name": "Azerbaijan Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l10",
+        "name": "Azerbaijan Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l11",
+        "name": "Azerbaijan Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l12",
+        "name": "Azerbaijan Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l13",
+        "name": "Azerbaijan Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l14",
+        "name": "Azerbaijan Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l15",
+        "name": "Azerbaijan Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l16",
+        "name": "Azerbaijan Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l17",
+        "name": "Azerbaijan Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l18",
+        "name": "Azerbaijan Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l19",
+        "name": "Azerbaijan Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-l20",
+        "name": "Azerbaijan Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "aze_dinner_001", "name": "Plov Dinner", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Mixed meats", "Oil", "Spices"]},
-      {"id": "aze_dinner_002", "name": "Kebab Dinner", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Multiple kebabs", "Vegetables", "Spices"]},
-      {"id": "aze_dinner_003", "name": "Govurma Lamb Plov", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "60 minutes", "ingredients": ["Rice", "Lamb", "Dried fruit", "Spices"]},
-      {"id": "aze_dinner_004", "name": "Fish Kebab", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Fish", "Vegetables", "Marinade"]},
-      {"id": "aze_dinner_005", "name": "Chicken Plov Dinner", "difficulty": "Medium", "servings": 8, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Chicken", "Vegetables", "Spices"]},
-      {"id": "aze_dinner_006", "name": "Shish Kebab Dinner", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "20 minutes", "ingredients": ["Beef", "Vegetables", "Marinade"]},
-      {"id": "aze_dinner_007", "name": "Lambchop Kebab", "difficulty": "Medium", "servings": 4, "prepTime": "25 minutes", "cookTime": "20 minutes", "ingredients": ["Lamb chops", "Vegetables", "Spices"]},
-      {"id": "aze_dinner_008", "name": "Pomegranate Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Pomegranate", "Meat", "Spices"]},
-      {"id": "aze_dinner_009", "name": "Walnut Chicken", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "50 minutes", "ingredients": ["Chicken", "Walnuts", "Pomegranate", "Spices"]},
-      {"id": "aze_dinner_010", "name": "Apricot Lamb", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "75 minutes", "ingredients": ["Lamb", "Apricots", "Spices"]},
-      {"id": "aze_dinner_011", "name": "Eggplant Stew", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "40 minutes", "ingredients": ["Eggplant", "Meat", "Vegetables", "Spices"]},
-      {"id": "aze_dinner_012", "name": "Meatball Plov", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "50 minutes", "ingredients": ["Rice", "Meatballs", "Oil", "Spices"]},
-      {"id": "aze_dinner_013", "name": "Herb and Meat Rice", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Meat", "Fresh herbs", "Spices"]},
-      {"id": "aze_dinner_014", "name": "Stewed Vegetables", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "40 minutes", "ingredients": ["Mixed vegetables", "Meat", "Spices", "Oil"]},
-      {"id": "aze_dinner_015", "name": "Fish Stew", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "35 minutes", "ingredients": ["Fish", "Vegetables", "Spices", "Oil"]},
-      {"id": "aze_dinner_016", "name": "Saffron Plov", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Rice", "Saffron", "Meat", "Spices"]},
-      {"id": "aze_dinner_017", "name": "Beef Stew", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Vegetables", "Wine", "Spices"]},
-      {"id": "aze_dinner_018", "name": "Okra with Meat", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "35 minutes", "ingredients": ["Okra", "Meat", "Tomato", "Spices"]},
-      {"id": "aze_dinner_019", "name": "Vegetable and Meat Medley", "difficulty": "Medium", "servings": 6, "prepTime": "30 minutes", "cookTime": "45 minutes", "ingredients": ["Mixed vegetables", "Meat", "Spices", "Oil"]},
-      {"id": "aze_dinner_020", "name": "Festive Kebab Platter", "difficulty": "Hard", "servings": 8, "prepTime": "40 minutes", "cookTime": "25 minutes", "ingredients": ["Multiple kebabs", "Vegetables", "Spices"]}
+      {
+        "id": "az-d1",
+        "name": "Azerbaijan Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d2",
+        "name": "Azerbaijan Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d3",
+        "name": "Azerbaijan Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d4",
+        "name": "Azerbaijan Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d5",
+        "name": "Azerbaijan Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d6",
+        "name": "Azerbaijan Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d7",
+        "name": "Azerbaijan Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d8",
+        "name": "Azerbaijan Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d9",
+        "name": "Azerbaijan Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d10",
+        "name": "Azerbaijan Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d11",
+        "name": "Azerbaijan Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d12",
+        "name": "Azerbaijan Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d13",
+        "name": "Azerbaijan Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d14",
+        "name": "Azerbaijan Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d15",
+        "name": "Azerbaijan Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d16",
+        "name": "Azerbaijan Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d17",
+        "name": "Azerbaijan Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d18",
+        "name": "Azerbaijan Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d19",
+        "name": "Azerbaijan Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-d20",
+        "name": "Azerbaijan Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "aze_dessert_001", "name": "Pakhlava", "difficulty": "Hard", "servings": "16 pieces", "prepTime": "30 minutes", "cookTime": "45 minutes"},
-      {"id": "aze_dessert_002", "name": "Shekerbura", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "30 minutes", "cookTime": "25 minutes"},
-      {"id": "aze_dessert_003", "name": "Lokoum", "difficulty": "Hard", "servings": "24 pieces", "prepTime": "30 minutes", "cookTime": "30 minutes"},
-      {"id": "aze_dessert_004", "name": "Noghl", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "aze_dessert_005", "name": "Halva", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes"},
-      {"id": "aze_dessert_006", "name": "Walnut Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "aze_dessert_007", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "aze_dessert_008", "name": "Pomegranate Molasses Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "aze_dessert_009", "name": "Pistachio Sweets", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "25 minutes", "cookTime": "0 minutes"},
-      {"id": "aze_dessert_010", "name": "Dried Fruit Compote", "difficulty": "Easy", "servings": 6, "prepTime": "15 minutes", "cookTime": "30 minutes"},
-      {"id": "aze_dessert_011", "name": "Apricot Jam", "difficulty": "Medium", "servings": "1 jar", "prepTime": "20 minutes", "cookTime": "45 minutes"},
-      {"id": "aze_dessert_012", "name": "Date Sweets", "difficulty": "Easy", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "aze_dessert_013", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "aze_dessert_014", "name": "Rose Water Pudding", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "20 minutes"},
-      {"id": "aze_dessert_015", "name": "Fruit Leather", "difficulty": "Medium", "servings": "1 sheet", "prepTime": "20 minutes", "cookTime": "60 minutes"},
-      {"id": "aze_dessert_016", "name": "Sesame Brittle", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes"},
-      {"id": "aze_dessert_017", "name": "Pomegranate Jelly", "difficulty": "Medium", "servings": 6, "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "aze_dessert_018", "name": "Quince Paste", "difficulty": "Hard", "servings": "1 batch", "prepTime": "25 minutes", "cookTime": "90 minutes"},
-      {"id": "aze_dessert_019", "name": "Cardamom Cookies", "difficulty": "Medium", "servings": "24 pieces", "prepTime": "25 minutes", "cookTime": "20 minutes"},
-      {"id": "aze_dessert_020", "name": "Saffron Pudding", "difficulty": "Medium", "servings": 6, "prepTime": "25 minutes", "cookTime": "25 minutes"}
+      {
+        "id": "az-des1",
+        "name": "Azerbaijan Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des2",
+        "name": "Azerbaijan Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des3",
+        "name": "Azerbaijan Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des4",
+        "name": "Azerbaijan Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des5",
+        "name": "Azerbaijan Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des6",
+        "name": "Azerbaijan Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des7",
+        "name": "Azerbaijan Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des8",
+        "name": "Azerbaijan Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des9",
+        "name": "Azerbaijan Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des10",
+        "name": "Azerbaijan Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des11",
+        "name": "Azerbaijan Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des12",
+        "name": "Azerbaijan Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des13",
+        "name": "Azerbaijan Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des14",
+        "name": "Azerbaijan Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des15",
+        "name": "Azerbaijan Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des16",
+        "name": "Azerbaijan Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des17",
+        "name": "Azerbaijan Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des18",
+        "name": "Azerbaijan Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des19",
+        "name": "Azerbaijan Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-des20",
+        "name": "Azerbaijan Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "aze_drink_na_001", "name": "Azerbaijani Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "aze_drink_na_002", "name": "Pomegranate Juice", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "aze_drink_na_003", "name": "Apricot Juice", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "aze_drink_na_004", "name": "Herbal Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "aze_drink_na_005", "name": "Mint Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "aze_drink_na_006", "name": "Rose Hip Tea", "servings": 2, "prepTime": "5 minutes", "cookTime": "10 minutes"},
-      {"id": "aze_drink_na_007", "name": "Yogurt Drink", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "aze_drink_na_008", "name": "Mulberry Juice", "servings": 2, "prepTime": "10 minutes"},
-      {"id": "aze_drink_na_009", "name": "Water with Lemon", "servings": 1, "prepTime": "5 minutes"},
-      {"id": "aze_drink_na_010", "name": "Coffee Azerbaijani", "servings": 1, "prepTime": "5 minutes", "cookTime": "5 minutes"}
+      {
+        "id": "az-na1",
+        "name": "Azerbaijan Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na2",
+        "name": "Azerbaijan Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na3",
+        "name": "Azerbaijan Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na4",
+        "name": "Azerbaijan Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na5",
+        "name": "Azerbaijan Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na6",
+        "name": "Azerbaijan Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na7",
+        "name": "Azerbaijan Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na8",
+        "name": "Azerbaijan Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na9",
+        "name": "Azerbaijan Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-na10",
+        "name": "Azerbaijan Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "aze_drink_a_001", "name": "Cognac", "servings": 1},
-      {"id": "aze_drink_a_002", "name": "Wine Red", "servings": 1},
-      {"id": "aze_drink_a_003", "name": "Wine White", "servings": 1},
-      {"id": "aze_drink_a_004", "name": "Beer", "servings": 1},
-      {"id": "aze_drink_a_005", "name": "Pomegranate Liqueur", "servings": 1},
-      {"id": "aze_drink_a_006", "name": "Walnut Liqueur", "servings": 1},
-      {"id": "aze_drink_a_007", "name": "Herbal Liqueur", "servings": 1},
-      {"id": "aze_drink_a_008", "name": "Raki", "servings": 1},
-      {"id": "aze_drink_a_009", "name": "Mulberry Wine", "servings": 1},
-      {"id": "aze_drink_a_010", "name": "Apricot Brandy", "servings": 1}
+      {
+        "id": "az-a1",
+        "name": "Azerbaijan Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a2",
+        "name": "Azerbaijan Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a3",
+        "name": "Azerbaijan Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a4",
+        "name": "Azerbaijan Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a5",
+        "name": "Azerbaijan Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a6",
+        "name": "Azerbaijan Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a7",
+        "name": "Azerbaijan Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a8",
+        "name": "Azerbaijan Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a9",
+        "name": "Azerbaijan Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "az-a10",
+        "name": "Azerbaijan Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

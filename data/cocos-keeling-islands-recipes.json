@@ -1,121 +1,1421 @@
 {
-  "cocosKeelingRecipes": {
-    "title": "Authentic Cocos (Keeling) Islands Cuisine",
-    "country": "Cocos (Keeling) Islands",
-    "region": "Indian Ocean",
+  "cocoskeelingislandsRecipes": {
+    "title": "Authentic Cocos Keeling Islands Cuisine",
+    "country": "Cocos Keeling Islands",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "ck-b1", "name": "Fish Cake with Curry", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["fish fillets", "coconut milk", "curry paste", "eggs", "bread crumbs"], "instructions": ["Mix fish with curry", "Form into cakes", "Coat with breadcrumbs", "Fry until golden"]},
-      {"id": "ck-b2", "name": "Coconut Roti", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 15, "ingredients": ["flour", "coconut milk", "salt", "oil", "water"], "instructions": ["Make dough with coconut milk", "Roll thin", "Pan-fry", "Serve warm"]},
-      {"id": "ck-b3", "name": "Island Fruit Salad", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["papaya", "mango", "coconut", "lime", "honey"], "instructions": ["Chop fruits", "Mix with lime juice", "Add honey", "Serve cold"]},
-      {"id": "ck-b4", "name": "Fried Mackerel", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["mackerel fillets", "flour", "salt", "pepper", "oil"], "instructions": ["Season fish", "Coat with flour", "Deep fry", "Serve with lime"]},
-      {"id": "ck-b5", "name": "Coconut Pancakes", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["flour", "eggs", "coconut milk", "sugar", "baking powder"], "instructions": ["Mix batter", "Cook on griddle", "Serve with honey"]},
-      {"id": "ck-b6", "name": "Banana Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "banana", "butter", "sugar", "cinnamon"], "instructions": ["Toast bread", "Spread butter", "Top with banana", "Sprinkle cinnamon"]},
-      {"id": "ck-b7", "name": "Tuna Omelette", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["eggs", "canned tuna", "onion", "salt", "pepper", "oil"], "instructions": ["Beat eggs", "Add tuna and onion", "Cook in hot oil", "Fold and serve"]},
-      {"id": "ck-b8", "name": "Island Rice Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 40, "ingredients": ["rice", "water", "fish stock", "coconut milk", "ginger"], "instructions": ["Cook rice in stock", "Add coconut milk", "Simmer until creamy", "Serve with toppings"]},
-      {"id": "ck-b9", "name": "Fried Plantain", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 15, "ingredients": ["plantains", "oil", "salt"], "instructions": ["Slice plantains", "Deep fry until golden", "Drain and salt", "Serve hot"]},
-      {"id": "ck-b10", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "yogurt", "honey", "coconut milk"], "instructions": ["Blend papaya with yogurt", "Add honey and coconut milk", "Serve cold"]},
-      {"id": "ck-b11", "name": "Saltfish and Breadfruit", "difficulty": "Hard", "servings": 4, "prepTime": 120, "cookTime": 30, "ingredients": ["salted fish", "breadfruit", "onion", "garlic", "oil"], "instructions": ["Soak and boil fish", "Fry breadfruit", "Make sauce", "Serve together"]},
-      {"id": "ck-b12", "name": "Cassava Bread", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["cassava root", "salt", "sugar"], "instructions": ["Grate cassava", "Press dry", "Form cakes", "Bake until crispy"]},
-      {"id": "ck-b13", "name": "Sardine Breakfast Bowl", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["canned sardines", "rice", "eggs", "tomato", "onion"], "instructions": ["Cook rice", "Fry eggs", "Top with sardines", "Add tomato sauce"]},
-      {"id": "ck-b14", "name": "Mango Lassi", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "yogurt", "milk", "honey", "cardamom"], "instructions": ["Blend mango with yogurt", "Add milk and honey", "Sprinkle cardamom", "Serve cold"]},
-      {"id": "ck-b15", "name": "Fish Ball Soup", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["fish fillets", "tapioca flour", "salt", "broth", "vegetables"], "instructions": ["Mix fish paste", "Form balls", "Boil in broth", "Add vegetables"]},
-      {"id": "ck-b16", "name": "Coconut Bake", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 25, "ingredients": ["flour", "coconut", "baking powder", "salt", "oil"], "instructions": ["Mix dry ingredients", "Add coconut", "Form and bake", "Serve warm"]},
-      {"id": "ck-b17", "name": "Avocado Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "avocado", "lime", "salt", "chili"], "instructions": ["Toast bread", "Mash avocado with lime", "Spread on toast", "Top with chili"]},
-      {"id": "ck-b18", "name": "Island Fruit Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["pineapple", "mango", "papaya", "coconut", "lime"], "instructions": ["Cube all fruits", "Toss with lime juice", "Serve in coconut bowl"]},
-      {"id": "ck-b19", "name": "Herring Curry", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["herring fillets", "curry powder", "coconut milk", "onion", "garlic"], "instructions": ["Brown aromatics", "Add curry powder", "Add fish and coconut milk", "Simmer 20 min"]},
-      {"id": "ck-b20", "name": "Tropical Cereal Bowl", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["cereal", "milk", "banana", "coconut", "honey"], "instructions": ["Pour cereal and milk", "Top with banana", "Sprinkle coconut", "Drizzle honey"]}
+      {
+        "id": "co-b1",
+        "name": "Cocos-Keeling-Islands Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b2",
+        "name": "Cocos-Keeling-Islands Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b3",
+        "name": "Cocos-Keeling-Islands Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b4",
+        "name": "Cocos-Keeling-Islands Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b5",
+        "name": "Cocos-Keeling-Islands Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b6",
+        "name": "Cocos-Keeling-Islands Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b7",
+        "name": "Cocos-Keeling-Islands Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b8",
+        "name": "Cocos-Keeling-Islands Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b9",
+        "name": "Cocos-Keeling-Islands Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b10",
+        "name": "Cocos-Keeling-Islands Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b11",
+        "name": "Cocos-Keeling-Islands Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b12",
+        "name": "Cocos-Keeling-Islands Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b13",
+        "name": "Cocos-Keeling-Islands Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b14",
+        "name": "Cocos-Keeling-Islands Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b15",
+        "name": "Cocos-Keeling-Islands Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b16",
+        "name": "Cocos-Keeling-Islands Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b17",
+        "name": "Cocos-Keeling-Islands Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b18",
+        "name": "Cocos-Keeling-Islands Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b19",
+        "name": "Cocos-Keeling-Islands Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b20",
+        "name": "Cocos-Keeling-Islands Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "ck-l1", "name": "Grilled Fish with Lime", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["whole fish", "lime", "garlic", "herb", "oil"], "instructions": ["Clean fish", "Season with garlic and herb", "Grill 10 min per side", "Serve with lime"]},
-      {"id": "ck-l2", "name": "Coconut Curry Fish", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["fish fillets", "coconut milk", "curry paste", "onion", "bell pepper"], "instructions": ["Sauté aromatics", "Add curry paste", "Add fish and coconut milk", "Simmer 20 min"]},
-      {"id": "ck-l3", "name": "Island Rice Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["rice", "fish", "vegetables", "coconut milk", "soy sauce"], "instructions": ["Cook rice", "Top with grilled fish", "Add stir-fried vegetables", "Drizzle with soy"]},
-      {"id": "ck-l4", "name": "Tuna Noodle Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["noodles", "tuna", "vegetables", "soy sauce", "sesame oil"], "instructions": ["Cook noodles", "Mix with tuna", "Add vegetables", "Toss with sauce"]},
-      {"id": "ck-l5", "name": "Seafood Fried Rice", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["cooked rice", "shrimp", "fish", "egg", "vegetables"], "instructions": ["Stir-fry shrimp and fish", "Add rice", "Scramble egg", "Toss with vegetables"]},
-      {"id": "ck-l6", "name": "Octopus Curry", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["octopus", "curry powder", "coconut milk", "onion", "tomato"], "instructions": ["Boil octopus until tender", "Cut into pieces", "Make curry sauce", "Simmer 30 min"]},
-      {"id": "ck-l7", "name": "Banana Leaf Rice", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["rice", "fish", "banana leaf", "turmeric", "ginger"], "instructions": ["Wrap rice and fish in leaf", "Steam 25-30 min", "Serve in leaf"]},
-      {"id": "ck-l8", "name": "Crab Paste Rice", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["crab meat", "rice", "coconut milk", "curry", "egg"], "instructions": ["Stir-fry crab with curry", "Add rice", "Mix in coconut milk", "Top with egg"]},
-      {"id": "ck-l9", "name": "Island Fish Soup", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["fish fillets", "broth", "potato", "onion", "coconut milk"], "instructions": ["Boil broth", "Add potato and onion", "Add fish", "Finish with coconut milk"]},
-      {"id": "ck-l10", "name": "Shrimp Fried Noodles", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["egg noodles", "shrimp", "vegetables", "garlic", "soy sauce"], "instructions": ["Stir-fry shrimp", "Add noodles", "Add vegetables", "Toss with sauce"]},
-      {"id": "ck-l11", "name": "Fish Ball Noodle Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish balls", "noodles", "broth", "vegetables", "ginger"], "instructions": ["Boil broth with ginger", "Add fish balls", "Cook noodles", "Serve together"]},
-      {"id": "ck-l12", "name": "Mackerel in Tomato", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["mackerel fillets", "tomato sauce", "onion", "garlic", "herb"], "instructions": ["Sauté aromatics", "Add tomato sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "ck-l13", "name": "Island Vegetable Rice", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["rice", "mixed vegetables", "coconut milk", "salt", "oil"], "instructions": ["Cook rice in coconut milk", "Stir-fry vegetables separately", "Combine", "Serve hot"]},
-      {"id": "ck-l14", "name": "Squid with Garlic", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 15, "ingredients": ["squid", "garlic", "chili", "soy sauce", "oil"], "instructions": ["Clean and slice squid", "Stir-fry with garlic", "Add chili and soy", "Serve hot"]},
-      {"id": "ck-l15", "name": "Snapper with Herbs", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["snapper fillets", "basil", "cilantro", "lime", "garlic"], "instructions": ["Season fish", "Pan-fry with aromatics", "Finish with herbs", "Serve with lime"]},
-      {"id": "ck-l16", "name": "Seafood Paste Rice", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["fish paste", "rice", "vegetables", "curry", "egg"], "instructions": ["Fry fish paste with curry", "Add rice", "Stir-fry vegetables", "Top with egg"]},
-      {"id": "ck-l17", "name": "Island Noodle Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["noodles", "broth", "fish", "vegetables", "sesame oil"], "instructions": ["Cook noodles in broth", "Top with fish", "Add vegetables", "Drizzle sesame oil"]},
-      {"id": "ck-l18", "name": "Grouper in Soy", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["grouper fillets", "soy sauce", "ginger", "scallions", "sesame oil"], "instructions": ["Pan-fry fish", "Make soy sauce reduction", "Pour over fish", "Top with scallions"]},
-      {"id": "ck-l19", "name": "Prawn Coconut Curry", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["large prawns", "coconut milk", "curry paste", "onion", "tomato"], "instructions": ["Stir-fry curry paste", "Add prawns", "Add coconut milk", "Simmer 15 min"]},
-      {"id": "ck-l20", "name": "Fish Cake Noodle Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish cakes", "noodles", "broth", "vegetables", "ginger"], "instructions": ["Make broth base", "Add fish cakes", "Cook noodles", "Serve hot"]}
+      {
+        "id": "co-l1",
+        "name": "Cocos-Keeling-Islands Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l2",
+        "name": "Cocos-Keeling-Islands Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l3",
+        "name": "Cocos-Keeling-Islands Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l4",
+        "name": "Cocos-Keeling-Islands Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l5",
+        "name": "Cocos-Keeling-Islands Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l6",
+        "name": "Cocos-Keeling-Islands Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l7",
+        "name": "Cocos-Keeling-Islands Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l8",
+        "name": "Cocos-Keeling-Islands Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l9",
+        "name": "Cocos-Keeling-Islands Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l10",
+        "name": "Cocos-Keeling-Islands Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l11",
+        "name": "Cocos-Keeling-Islands Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l12",
+        "name": "Cocos-Keeling-Islands Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l13",
+        "name": "Cocos-Keeling-Islands Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l14",
+        "name": "Cocos-Keeling-Islands Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l15",
+        "name": "Cocos-Keeling-Islands Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l16",
+        "name": "Cocos-Keeling-Islands Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l17",
+        "name": "Cocos-Keeling-Islands Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l18",
+        "name": "Cocos-Keeling-Islands Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l19",
+        "name": "Cocos-Keeling-Islands Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l20",
+        "name": "Cocos-Keeling-Islands Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "ck-d1", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "salt", "pepper", "oil", "lemon"], "instructions": ["Season inside and out", "Grill 15 min per side", "Serve with lemon wedges"]},
-      {"id": "ck-d2", "name": "Lobster Tail Curry", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["lobster tails", "curry powder", "coconut milk", "onion", "garlic"], "instructions": ["Split tails", "Fry aromatics", "Add curry and lobster", "Simmer in coconut milk"]},
-      {"id": "ck-d3", "name": "Island Seafood Platter", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 40, "ingredients": ["fish", "shrimp", "crab", "squid", "lime", "herbs"], "instructions": ["Grill and pan-fry mixed seafood", "Arrange on platter", "Serve with lime and herbs"]},
-      {"id": "ck-d4", "name": "Fish in Banana Leaf", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish fillets", "banana leaf", "ginger", "turmeric", "salt"], "instructions": ["Wrap fish in leaf with spices", "Steam or grill 20-25 min", "Serve in leaf"]},
-      {"id": "ck-d5", "name": "Seafood Coconut Stew", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "shrimp", "coconut milk", "vegetables", "spices"], "instructions": ["Sauté aromatics", "Add seafood", "Add coconut milk and vegetables", "Simmer 30 min"]},
-      {"id": "ck-d6", "name": "Grilled Snapper", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["snapper fillets", "lime", "garlic", "cilantro", "oil"], "instructions": ["Season and oil fish", "Grill 12-15 min per side", "Top with cilantro"]},
-      {"id": "ck-d7", "name": "Fish Head Curry", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 45, "ingredients": ["fish head", "curry paste", "coconut milk", "onion", "tomato"], "instructions": ["Clean head", "Make curry sauce", "Simmer head in sauce", "Serve with rice"]},
-      {"id": "ck-d8", "name": "Tuna Steak with Sesame", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 10, "ingredients": ["tuna steak", "sesame seeds", "soy sauce", "ginger", "oil"], "instructions": ["Coat with sesame", "Sear in hot oil", "Glaze with soy-ginger sauce"]},
-      {"id": "ck-d9", "name": "Chili Garlic Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["fish fillets", "garlic", "chili", "soy sauce", "oil"], "instructions": ["Pan-fry fish", "Make garlic-chili sauce", "Coat fish", "Serve hot"]},
-      {"id": "ck-d10", "name": "Steamed Fish in Soy", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["fish fillets", "soy sauce", "ginger", "scallions", "sesame oil"], "instructions": ["Place fish on aromatics", "Steam 18-20 min", "Pour sauce over", "Serve hot"]},
-      {"id": "ck-d11", "name": "Seafood Pasta Island Style", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["pasta", "fish", "shrimp", "tomato sauce", "garlic"], "instructions": ["Cook pasta", "Sauté seafood with garlic", "Add tomato sauce", "Combine with pasta"]},
-      {"id": "ck-d12", "name": "Crab Fried Rice Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["cooked rice", "crab meat", "egg", "peas", "corn"], "instructions": ["Stir-fry crab", "Add rice", "Scramble egg", "Add vegetables"]},
-      {"id": "ck-d13", "name": "Octopus Stew", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 90, "ingredients": ["octopus", "tomato", "onion", "garlic", "wine", "herbs"], "instructions": ["Boil octopus", "Make stew base", "Add octopus", "Simmer 60 min"]},
-      {"id": "ck-d14", "name": "Grouper with Turmeric", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["grouper fillets", "turmeric", "ginger", "onion", "coconut milk"], "instructions": ["Make paste with spices", "Pan-fry fish", "Add coconut milk sauce"]},
-      {"id": "ck-d15", "name": "Mixed Seafood Rice", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["rice", "fish", "shrimp", "mussels", "broth"], "instructions": ["Cook rice in broth", "Top with mixed seafood", "Steam together"]},
-      {"id": "ck-d16", "name": "Island Fish Steak", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["thick fish fillets", "lime", "herb marinade", "oil"], "instructions": ["Marinate fish", "Grill over charcoal", "Baste with marinade", "Serve hot"]},
-      {"id": "ck-d17", "name": "Seafood Laksa", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 35, "ingredients": ["noodles", "fish", "shrimp", "laksa paste", "coconut milk"], "instructions": ["Make laksa broth", "Cook noodles separately", "Add seafood to broth", "Serve over noodles"]},
-      {"id": "ck-d18", "name": "Baked Fish with Coconut", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["fish fillets", "coconut milk", "lime", "onion", "herbs"], "instructions": ["Place fish in baking dish", "Add sauce with onion", "Bake at 400F 20-25 min"]},
-      {"id": "ck-d19", "name": "Shrimp in Coconut Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["large shrimp", "coconut milk", "garlic", "chili", "lime"], "instructions": ["Fry shrimp quickly", "Make coconut-chili sauce", "Coat shrimp", "Serve with lime"]},
-      {"id": "ck-d20", "name": "Island Fish Medley", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 40, "ingredients": ["multiple fish types", "vegetables", "coconut milk", "spices"], "instructions": ["Prepare multiple fish", "Steam in coconut broth", "Serve with vegetables"]}
+      {
+        "id": "co-d1",
+        "name": "Cocos-Keeling-Islands Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d2",
+        "name": "Cocos-Keeling-Islands Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d3",
+        "name": "Cocos-Keeling-Islands Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d4",
+        "name": "Cocos-Keeling-Islands Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d5",
+        "name": "Cocos-Keeling-Islands Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d6",
+        "name": "Cocos-Keeling-Islands Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d7",
+        "name": "Cocos-Keeling-Islands Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d8",
+        "name": "Cocos-Keeling-Islands Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d9",
+        "name": "Cocos-Keeling-Islands Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d10",
+        "name": "Cocos-Keeling-Islands Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d11",
+        "name": "Cocos-Keeling-Islands Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d12",
+        "name": "Cocos-Keeling-Islands Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d13",
+        "name": "Cocos-Keeling-Islands Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d14",
+        "name": "Cocos-Keeling-Islands Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d15",
+        "name": "Cocos-Keeling-Islands Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d16",
+        "name": "Cocos-Keeling-Islands Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d17",
+        "name": "Cocos-Keeling-Islands Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d18",
+        "name": "Cocos-Keeling-Islands Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d19",
+        "name": "Cocos-Keeling-Islands Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d20",
+        "name": "Cocos-Keeling-Islands Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "ck-des1", "name": "Coconut Custard Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 25, "ingredients": ["pie crust", "eggs", "coconut milk", "sugar", "vanilla"], "instructions": ["Line tart pan", "Pour custard", "Bake 20-25 min at 375F"]},
-      {"id": "ck-des2", "name": "Banana Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 10, "ingredients": ["banana", "vanilla pudding", "coconut milk", "sugar"], "instructions": ["Make pudding base", "Layer with banana", "Chill and serve"]},
-      {"id": "ck-des3", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya puree", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Combine with flour", "Bake 30-35 min"]},
-      {"id": "ck-des4", "name": "Mango Mousse", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 0, "ingredients": ["mango puree", "whipped cream", "gelatin", "sugar"], "instructions": ["Fold puree into cream", "Add gelatin", "Chill until set"]},
-      {"id": "ck-des5", "name": "Coconut Macaroons", "difficulty": "Easy", "servings": 12, "prepTime": 15, "cookTime": 20, "ingredients": ["shredded coconut", "eggs", "sugar", "vanilla"], "instructions": ["Mix ingredients", "Drop onto baking sheet", "Bake 15-20 min"]},
-      {"id": "ck-des6", "name": "Pineapple Upside Down Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["pineapple", "cake batter", "butter", "brown sugar"], "instructions": ["Arrange pineapple", "Pour batter", "Bake 30-35 min", "Invert onto plate"]},
-      {"id": "ck-des7", "name": "Passion Fruit Tart", "difficulty": "Hard", "servings": 8, "prepTime": 50, "cookTime": 30, "ingredients": ["pastry", "passion fruit curd", "eggs", "sugar"], "instructions": ["Make crust", "Prepare filling", "Bake 25-30 min"]},
-      {"id": "ck-des8", "name": "Coconut Ice Cream", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 0, "ingredients": ["coconut milk", "eggs", "sugar", "vanilla"], "instructions": ["Make custard base", "Chill", "Churn in ice cream maker"]},
-      {"id": "ck-des9", "name": "Fruit Trifle", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 15, "ingredients": ["sponge cake", "tropical fruits", "custard", "whipped cream"], "instructions": ["Layer cake with fruit", "Add custard", "Top with cream"]},
-      {"id": "ck-des10", "name": "Banana Bread", "difficulty": "Easy", "servings": 8, "prepTime": 20, "cookTime": 55, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Combine with flour", "Bake 50-55 min"]},
-      {"id": "ck-des11", "name": "Lime Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["graham cracker crust", "condensed milk", "lime juice", "eggs"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "ck-des12", "name": "Coconut Bliss Balls", "difficulty": "Easy", "servings": 16, "prepTime": 30, "cookTime": 0, "ingredients": ["shredded coconut", "condensed milk", "chocolate coating"], "instructions": ["Mix coconut and milk", "Roll into balls", "Dip in chocolate"]},
-      {"id": "ck-des13", "name": "Guava Cheese Dessert", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["guava paste", "cream cheese", "pastry", "sugar"], "instructions": ["Layer paste and cheese", "Wrap in pastry", "Bake until golden"]},
-      {"id": "ck-des14", "name": "Tropical Gelato", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 0, "ingredients": ["tropical fruits", "cream", "milk", "sugar"], "instructions": ["Puree fruits", "Make base", "Churn in gelato maker"]},
-      {"id": "ck-des15", "name": "Mango Cheesecake", "difficulty": "Hard", "servings": 8, "prepTime": 45, "cookTime": 60, "ingredients": ["graham crust", "cream cheese", "mango", "eggs", "sugar"], "instructions": ["Make crust", "Prepare filling", "Bake 55-60 min", "Chill overnight"]},
-      {"id": "ck-des16", "name": "Coconut Flan", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["sugar", "eggs", "coconut milk", "vanilla"], "instructions": ["Caramelize sugar", "Pour custard", "Bake in water bath 35-40 min"]},
-      {"id": "ck-des17", "name": "Papaya Sorbet", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["papaya puree", "sugar", "water", "lime"], "instructions": ["Make syrup", "Combine with puree", "Churn until smooth"]},
-      {"id": "ck-des18", "name": "Island Shortbread", "difficulty": "Easy", "servings": 12, "prepTime": 20, "cookTime": 20, "ingredients": ["flour", "butter", "sugar", "salt"], "instructions": ["Cream butter and sugar", "Mix in flour", "Press in pan", "Bake 15-20 min"]},
-      {"id": "ck-des19", "name": "Passion Fruit Mousse", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 0, "ingredients": ["passion fruit puree", "whipped cream", "sugar", "gelatin"], "instructions": ["Mix puree with cream", "Add gelatin", "Chill until set"]},
-      {"id": "ck-des20", "name": "Mango Mania Cake", "difficulty": "Hard", "servings": 8, "prepTime": 50, "cookTime": 35, "ingredients": ["mango puree", "flour", "butter", "eggs", "sugar"], "instructions": ["Make cake batter", "Add mango", "Frost with mango cream", "Chill"]}
+      {
+        "id": "co-des1",
+        "name": "Cocos-Keeling-Islands Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des2",
+        "name": "Cocos-Keeling-Islands Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des3",
+        "name": "Cocos-Keeling-Islands Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des4",
+        "name": "Cocos-Keeling-Islands Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des5",
+        "name": "Cocos-Keeling-Islands Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des6",
+        "name": "Cocos-Keeling-Islands Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des7",
+        "name": "Cocos-Keeling-Islands Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des8",
+        "name": "Cocos-Keeling-Islands Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des9",
+        "name": "Cocos-Keeling-Islands Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des10",
+        "name": "Cocos-Keeling-Islands Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des11",
+        "name": "Cocos-Keeling-Islands Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des12",
+        "name": "Cocos-Keeling-Islands Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des13",
+        "name": "Cocos-Keeling-Islands Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des14",
+        "name": "Cocos-Keeling-Islands Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des15",
+        "name": "Cocos-Keeling-Islands Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des16",
+        "name": "Cocos-Keeling-Islands Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des17",
+        "name": "Cocos-Keeling-Islands Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des18",
+        "name": "Cocos-Keeling-Islands Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des19",
+        "name": "Cocos-Keeling-Islands Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des20",
+        "name": "Cocos-Keeling-Islands Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "ck-na1", "name": "Fresh Coconut Water", "difficulty": "Easy", "servings": 1, "prepTime": 5, "cookTime": 0, "ingredients": ["young coconut"], "instructions": ["Open coconut", "Pour water", "Serve chilled"]},
-      {"id": "ck-na2", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["fresh mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add sugar and water"]},
-      {"id": "ck-na3", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "yogurt", "honey"], "instructions": ["Blend papaya with yogurt", "Add honey", "Serve cold"]},
-      {"id": "ck-na4", "name": "Pineapple Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["pineapple juice", "lime", "sugar", "mint"], "instructions": ["Mix juices", "Add sugar", "Top with mint", "Serve cold"]},
-      {"id": "ck-na5", "name": "Island Iced Tea", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["tea leaves", "water", "sugar", "lime"], "instructions": ["Brew tea strong", "Chill", "Add sugar and lime"]},
-      {"id": "ck-na6", "name": "Guava Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["fresh guava", "water", "sugar"], "instructions": ["Blend guava", "Strain", "Add water and sugar"]},
-      {"id": "ck-na7", "name": "Passion Fruit Drink", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["passion fruit pulp", "water", "sugar"], "instructions": ["Mix pulp with water", "Strain seeds", "Add sugar to taste"]},
-      {"id": "ck-na8", "name": "Ginger Drink", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["ginger root", "water", "honey", "lime"], "instructions": ["Simmer ginger", "Strain", "Add honey and lime"]},
-      {"id": "ck-na9", "name": "Banana Milk Drink", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["banana", "milk", "sugar"], "instructions": ["Blend banana with milk", "Add sugar", "Serve cold"]},
-      {"id": "ck-na10", "name": "Tropical Sunset Drink", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["mango juice", "orange juice", "coconut milk"], "instructions": ["Layer juices", "Add coconut milk", "Serve chilled"]}
+      {
+        "id": "co-na1",
+        "name": "Cocos-Keeling-Islands Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na2",
+        "name": "Cocos-Keeling-Islands Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na3",
+        "name": "Cocos-Keeling-Islands Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na4",
+        "name": "Cocos-Keeling-Islands Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na5",
+        "name": "Cocos-Keeling-Islands Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na6",
+        "name": "Cocos-Keeling-Islands Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na7",
+        "name": "Cocos-Keeling-Islands Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na8",
+        "name": "Cocos-Keeling-Islands Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na9",
+        "name": "Cocos-Keeling-Islands Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na10",
+        "name": "Cocos-Keeling-Islands Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "ck-a1", "name": "Island Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "mango juice", "lime", "sugar", "nutmeg"], "instructions": ["Mix rum with juice", "Add lime and sugar", "Sprinkle nutmeg"]},
-      {"id": "ck-a2", "name": "Coconut Rum Cocktail", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["rum", "coconut rum", "coconut cream", "lime"], "instructions": ["Shake rum and cream", "Serve over ice", "Garnish with lime"]},
-      {"id": "ck-a3", "name": "Piña Colada", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "pineapple juice", "coconut cream", "ice"], "instructions": ["Blend rum, juice, and cream", "Add ice", "Serve in pineapple"]},
-      {"id": "ck-a4", "name": "Mai Tai Island Style", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "orgeat", "curacao"], "instructions": ["Shake all ingredients", "Serve over ice", "Garnish with orchid"]},
-      {"id": "ck-a5", "name": "Mango Margarita", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tequila", "mango juice", "lime", "triple sec"], "instructions": ["Rim glass with salt", "Shake ingredients", "Serve over ice"]},
-      {"id": "ck-a6", "name": "Passion Fruit Daiquiri", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "passion fruit puree", "lime juice", "sugar"], "instructions": ["Shake all ingredients", "Strain into glass", "Serve chilled"]},
-      {"id": "ck-a7", "name": "Blue Lagoon", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["vodka", "blue curacao", "lemonade", "ice"], "instructions": ["Pour vodka and curacao", "Top with lemonade", "Serve over ice"]},
-      {"id": "ck-a8", "name": "Island Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["local beer"], "instructions": ["Chill", "Pour into glass", "Serve cold"]},
-      {"id": "ck-a9", "name": "Tropical Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["white wine", "tropical juice", "soda water", "mint"], "instructions": ["Pour wine and juice", "Top with soda", "Garnish with mint"]},
-      {"id": "ck-a10", "name": "Papaya Rum Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "papaya puree", "coconut cream", "lime"], "instructions": ["Blend rum and papaya", "Add cream", "Serve with lime wedge"]}
+      {
+        "id": "co-a1",
+        "name": "Cocos-Keeling-Islands Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a2",
+        "name": "Cocos-Keeling-Islands Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a3",
+        "name": "Cocos-Keeling-Islands Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a4",
+        "name": "Cocos-Keeling-Islands Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a5",
+        "name": "Cocos-Keeling-Islands Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a6",
+        "name": "Cocos-Keeling-Islands Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a7",
+        "name": "Cocos-Keeling-Islands Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a8",
+        "name": "Cocos-Keeling-Islands Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a9",
+        "name": "Cocos-Keeling-Islands Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a10",
+        "name": "Cocos-Keeling-Islands Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

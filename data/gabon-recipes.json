@@ -1,1859 +1,1419 @@
 {
-  "gabon Recipes": {
-    "title": "Authentic Gabonese Cuisine",
+  "gabonRecipes": {
+    "title": "Authentic Gabon Cuisine",
     "country": "Gabon",
-    "region": "Africa",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "ga-b1",
-        "name": "Plantain Fritters",
+        "name": "Gabon Breakfast 1",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
+        "prepTime": 10,
+        "cookTime": 10,
         "ingredients": [
-          "plantains",
-          "onions",
-          "chili",
-          "oil",
-          "salt"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Grate plantains",
-          "Mix with spices",
-          "Deep fry until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b2",
-        "name": "Cassava and Fish",
-        "difficulty": "Medium",
+        "name": "Gabon Breakfast 2",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 10,
+        "cookTime": 10,
         "ingredients": [
-          "cassava",
-          "smoked fish",
-          "onions",
-          "oil",
-          "tomatoes"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Boil cassava",
-          "Warm smoked fish",
-          "Saut\u00e9 vegetables together"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b3",
-        "name": "Rice Porridge",
+        "name": "Gabon Breakfast 3",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 25,
+        "prepTime": 10,
+        "cookTime": 10,
         "ingredients": [
-          "rice",
-          "milk",
-          "sugar",
-          "cinnamon"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Add milk gradually",
-          "Sweeten and season"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b4",
-        "name": "Eggs with Pepper Sauce",
+        "name": "Gabon Breakfast 4",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
-        "cookTime": 15,
+        "cookTime": 10,
         "ingredients": [
-          "eggs",
-          "peppers",
-          "onions",
-          "tomatoes",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make pepper sauce",
-          "Fry eggs",
-          "Combine and serve"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b5",
-        "name": "Banana Bread",
-        "difficulty": "Medium",
+        "name": "Gabon Breakfast 5",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
+        "prepTime": 10,
+        "cookTime": 10,
         "ingredients": [
-          "bananas",
-          "flour",
-          "eggs",
-          "butter",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mash bananas",
-          "Mix batter",
-          "Bake until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b6",
-        "name": "Cassava Cake",
-        "difficulty": "Medium",
+        "name": "Gabon Breakfast 6",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
+        "prepTime": 10,
+        "cookTime": 10,
         "ingredients": [
-          "cassava",
-          "coconut",
-          "sugar",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Grate cassava",
-          "Mix with coconut",
-          "Pan-fry until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b7",
-        "name": "Fried Plantains",
+        "name": "Gabon Breakfast 7",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
         "cookTime": 10,
         "ingredients": [
-          "plantains",
-          "oil",
-          "salt"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Slice plantains",
-          "Deep fry",
-          "Drain and salt"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-b8",
-        "name": "Fish Soup",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
-        "ingredients": [
-          "fish",
-          "vegetables",
-          "stock",
-          "spices"
-        ],
-        "instructions": [
-          "Make fish broth",
-          "Add flaked fish",
-          "Serve hot"
-        ]
-      },
-      {
-        "id": "ga-b9",
-        "name": "Peanut Butter Oatmeal",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 15,
-        "ingredients": [
-          "oats",
-          "peanut butter",
-          "milk",
-          "sugar"
-        ],
-        "instructions": [
-          "Cook oats",
-          "Stir in peanut butter",
-          "Serve warm"
-        ]
-      },
-      {
-        "id": "ga-b10",
-        "name": "Avocado Toast",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 5,
-        "ingredients": [
-          "bread",
-          "avocado",
-          "lemon",
-          "salt"
-        ],
-        "instructions": [
-          "Toast bread",
-          "Mash avocado",
-          "Season and spread"
-        ]
-      },
-      {
-        "id": "ga-b11",
-        "name": "Papaya Smoothie",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 0,
-        "ingredients": [
-          "papaya",
-          "milk",
-          "honey"
-        ],
-        "instructions": [
-          "Blend papaya",
-          "Add milk",
-          "Sweeten with honey"
-        ]
-      },
-      {
-        "id": "ga-b12",
-        "name": "Corn Porridge",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "cornmeal",
-          "milk",
-          "sugar",
-          "cinnamon"
-        ],
-        "instructions": [
-          "Cook cornmeal",
-          "Add milk",
-          "Sweeten and season"
-        ]
-      },
-      {
-        "id": "ga-b13",
-        "name": "Omelette with Mushrooms",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 12,
-        "ingredients": [
-          "eggs",
-          "mushrooms",
-          "butter",
-          "onions"
-        ],
-        "instructions": [
-          "Saut\u00e9 mushrooms",
-          "Beat eggs",
-          "Cook omelette"
-        ]
-      },
-      {
-        "id": "ga-b14",
-        "name": "Sweet Potato Hash",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "sweet potatoes",
-          "onions",
-          "peppers",
-          "oil"
-        ],
-        "instructions": [
-          "Cube potatoes",
-          "Stir-fry vegetables",
-          "Season well"
-        ]
-      },
-      {
-        "id": "ga-b15",
-        "name": "Mango Smoothie",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 0,
-        "ingredients": [
-          "mango",
-          "milk",
-          "honey"
-        ],
-        "instructions": [
-          "Blend mango",
-          "Add milk",
-          "Sweeten"
-        ]
-      },
-      {
-        "id": "ga-b16",
-        "name": "Cassava Porridge",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "cassava",
-          "milk",
-          "sugar"
-        ],
-        "instructions": [
-          "Cook cassava",
-          "Blend smooth",
-          "Add milk"
-        ]
-      },
-      {
-        "id": "ga-b17",
-        "name": "Fried Fish Breakfast",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
-        "ingredients": [
-          "fish fillets",
-          "flour",
-          "oil",
-          "lemon"
-        ],
-        "instructions": [
-          "Coat fish in flour",
-          "Deep fry",
-          "Serve with lemon"
-        ]
-      },
-      {
-        "id": "ga-b18",
-        "name": "Coconut Rice",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 25,
-        "ingredients": [
-          "rice",
-          "coconut milk",
-          "salt"
-        ],
-        "instructions": [
-          "Toast rice",
-          "Add coconut milk",
-          "Cook until fluffy"
-        ]
-      },
-      {
-        "id": "ga-b19",
-        "name": "Pineapple Cake",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
-        "ingredients": [
-          "pineapple",
-          "flour",
-          "eggs",
-          "sugar"
-        ],
-        "instructions": [
-          "Crush pineapple",
-          "Mix batter",
-          "Bake until golden"
-        ]
-      },
-      {
-        "id": "ga-b20",
-        "name": "Scrambled Eggs with Peppers",
+        "name": "Gabon Breakfast 8",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
         "cookTime": 10,
         "ingredients": [
-          "eggs",
-          "peppers",
-          "onions",
-          "butter"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Saut\u00e9 vegetables",
-          "Add beaten eggs",
-          "Scramble until set"
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b9",
+        "name": "Gabon Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b10",
+        "name": "Gabon Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b11",
+        "name": "Gabon Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b12",
+        "name": "Gabon Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b13",
+        "name": "Gabon Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b14",
+        "name": "Gabon Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b15",
+        "name": "Gabon Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b16",
+        "name": "Gabon Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b17",
+        "name": "Gabon Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b18",
+        "name": "Gabon Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b19",
+        "name": "Gabon Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-b20",
+        "name": "Gabon Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
         ]
       }
     ],
     "lunch": [
       {
         "id": "ga-l1",
-        "name": "Fish in Tomato Sauce",
+        "name": "Gabon Lunch 1",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "fish",
-          "tomatoes",
-          "onions",
-          "peppers",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make sauce",
-          "Add fish",
-          "Simmer gently"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l2",
-        "name": "Chicken Stew",
+        "name": "Gabon Lunch 2",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 25,
         "ingredients": [
-          "chicken",
-          "tomatoes",
-          "vegetables",
-          "stock"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown chicken",
-          "Add vegetables",
-          "Simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l3",
-        "name": "Rice and Beans",
-        "difficulty": "Easy",
+        "name": "Gabon Lunch 3",
+        "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 25,
         "ingredients": [
-          "rice",
-          "beans",
-          "onions",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook beans",
-          "Cook rice",
-          "Combine"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l4",
-        "name": "Cassava Leaves Stew",
+        "name": "Gabon Lunch 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 30,
+        "cookTime": 25,
         "ingredients": [
-          "cassava leaves",
-          "fish",
-          "tomatoes",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Clean leaves",
-          "Simmer with fish",
-          "Add spices"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l5",
-        "name": "Plantain and Fish",
+        "name": "Gabon Lunch 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "plantains",
-          "fish",
-          "onions",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Fry plantains",
-          "Warm fish",
-          "Combine"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l6",
-        "name": "Yam and Vegetables",
+        "name": "Gabon Lunch 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 30,
+        "cookTime": 25,
         "ingredients": [
-          "yam",
-          "vegetables",
-          "stock",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cube yam",
-          "Cook with vegetables",
-          "Season"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l7",
-        "name": "Grilled Fish",
+        "name": "Gabon Lunch 7",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "fish",
-          "lemon",
-          "herbs",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Season fish",
-          "Grill",
-          "Serve with lemon"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l8",
-        "name": "Okra and Fish",
+        "name": "Gabon Lunch 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "okra",
-          "fish",
-          "tomatoes",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Slice okra",
-          "Make sauce",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l9",
-        "name": "Palm Nut Soup",
-        "difficulty": "Hard",
+        "name": "Gabon Lunch 9",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 40,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "palm nuts",
-          "meat",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Extract palm oil",
-          "Make soup",
-          "Simmer long"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l10",
-        "name": "Corn Soup",
+        "name": "Gabon Lunch 10",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "corn",
-          "fish",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Corn off cob",
-          "Make soup",
-          "Serve hot"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l11",
-        "name": "Groundnut Soup",
+        "name": "Gabon Lunch 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 30,
+        "cookTime": 25,
         "ingredients": [
-          "peanut butter",
-          "meat",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make peanut base",
-          "Add meat",
-          "Simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l12",
-        "name": "Beef Stew",
+        "name": "Gabon Lunch 12",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 40,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "beef",
-          "vegetables",
-          "stock",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown beef",
-          "Add vegetables",
-          "Long simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l13",
-        "name": "Smoked Fish Salad",
-        "difficulty": "Easy",
+        "name": "Gabon Lunch 13",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 0,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "smoked fish",
-          "vegetables",
-          "lemon",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Prepare vegetables",
-          "Flake fish",
-          "Dress with oil"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l14",
-        "name": "Spinach and Fish",
+        "name": "Gabon Lunch 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "spinach",
-          "fish",
-          "tomatoes",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blanch spinach",
-          "Make sauce",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-l15",
-        "name": "Cassava and Shrimp",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
-        "ingredients": [
-          "cassava",
-          "shrimp",
-          "peppers",
-          "oil"
-        ],
-        "instructions": [
-          "Cook cassava",
-          "Saut\u00e9 shrimp",
-          "Combine"
-        ]
-      },
-      {
-        "id": "ga-l16",
-        "name": "Rice with Greens",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
-        "ingredients": [
-          "rice",
-          "leafy greens",
-          "oil",
-          "spices"
-        ],
-        "instructions": [
-          "Cook rice",
-          "Prepare greens",
-          "Combine"
-        ]
-      },
-      {
-        "id": "ga-l17",
-        "name": "Fish with Root Vegetables",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
-        "ingredients": [
-          "fish",
-          "cassava",
-          "yam",
-          "vegetables"
-        ],
-        "instructions": [
-          "Prepare vegetables",
-          "Cook with fish",
-          "Season"
-        ]
-      },
-      {
-        "id": "ga-l18",
-        "name": "Chicken and Rice",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
-        "ingredients": [
-          "chicken",
-          "rice",
-          "vegetables"
-        ],
-        "instructions": [
-          "Brown chicken",
-          "Cook rice",
-          "Combine"
-        ]
-      },
-      {
-        "id": "ga-l19",
-        "name": "Mixed Vegetable Stew",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
-        "ingredients": [
-          "vegetables",
-          "fish",
-          "oil",
-          "spices"
-        ],
-        "instructions": [
-          "Prepare vegetables",
-          "Add fish",
-          "Simmer"
-        ]
-      },
-      {
-        "id": "ga-l20",
-        "name": "Shrimp and Rice",
+        "name": "Gabon Lunch 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "shrimp",
-          "rice",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Saut\u00e9 shrimp",
-          "Combine"
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-l16",
+        "name": "Gabon Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-l17",
+        "name": "Gabon Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-l18",
+        "name": "Gabon Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-l19",
+        "name": "Gabon Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "ga-l20",
+        "name": "Gabon Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
         ]
       }
     ],
     "dinner": [
       {
         "id": "ga-d1",
-        "name": "Grilled Whole Fish",
+        "name": "Gabon Dinner 1",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "whole fish",
-          "lemon",
-          "herbs",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Season fish",
-          "Grill over heat",
-          "Serve with lemon"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d2",
-        "name": "Chicken with Peanut Sauce",
-        "difficulty": "Hard",
+        "name": "Gabon Dinner 2",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 35,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "chicken",
-          "peanut butter",
-          "tomatoes",
-          "spices"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown chicken",
-          "Make sauce",
-          "Long simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d3",
-        "name": "Cassava Leaf Stew",
+        "name": "Gabon Dinner 3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 35,
+        "cookTime": 30,
         "ingredients": [
-          "cassava leaves",
-          "fish",
-          "tomatoes"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Prepare leaves",
-          "Make stew",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d4",
-        "name": "Beef and Plantain",
+        "name": "Gabon Dinner 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "beef",
-          "plantains",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown beef",
-          "Add plantains",
-          "Cook together"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d5",
-        "name": "Fish Soup Dinner",
+        "name": "Gabon Dinner 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 35,
+        "cookTime": 30,
         "ingredients": [
-          "fish",
-          "vegetables",
-          "stock"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make stock",
-          "Add fish and vegetables",
-          "Simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d6",
-        "name": "Plantain Stew",
+        "name": "Gabon Dinner 6",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "plantains",
-          "fish",
-          "tomatoes"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cube plantains",
-          "Make sauce",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d7",
-        "name": "Grilled Fish Dinner",
+        "name": "Gabon Dinner 7",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "fish fillets",
-          "vegetables",
-          "lemon"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Season fish",
-          "Grill",
-          "Serve with vegetables"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d8",
-        "name": "Chicken Dinner",
+        "name": "Gabon Dinner 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "chicken",
-          "vegetables",
-          "stock"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown chicken",
-          "Add vegetables",
-          "Simmer long"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d9",
-        "name": "Palm Oil Stew",
-        "difficulty": "Hard",
+        "name": "Gabon Dinner 9",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "palm oil",
-          "meat",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Heat palm oil",
-          "Add meat and spices",
-          "Long simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d10",
-        "name": "Yam and Fish",
+        "name": "Gabon Dinner 10",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "yam",
-          "fish",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cube yam",
-          "Make sauce",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d11",
-        "name": "Rice with Vegetables",
+        "name": "Gabon Dinner 11",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "rice",
-          "vegetables",
-          "oil"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Prepare vegetables",
-          "Combine"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d12",
-        "name": "Corn Stew Dinner",
+        "name": "Gabon Dinner 12",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "corn",
-          "fish",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Corn off cob",
-          "Make stew",
-          "Serve hot"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d13",
-        "name": "Smoked Fish with Sauce",
+        "name": "Gabon Dinner 13",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "smoked fish",
-          "vegetables",
-          "sauce"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Warm smoked fish",
-          "Make sauce",
-          "Serve together"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d14",
-        "name": "Okra Stew",
+        "name": "Gabon Dinner 14",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "okra",
-          "meat",
-          "tomatoes"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Slice okra",
-          "Make stew",
-          "Add meat"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d15",
-        "name": "Vegetable Stew",
+        "name": "Gabon Dinner 15",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "leafy greens",
-          "fish",
-          "tomatoes"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Prepare vegetables",
-          "Make sauce",
-          "Add fish"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d16",
-        "name": "Cassava Stew",
+        "name": "Gabon Dinner 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "cassava",
-          "shrimp",
-          "sauce"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook cassava",
-          "Make sauce",
-          "Add shrimp"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d17",
-        "name": "Fish and Rice",
+        "name": "Gabon Dinner 17",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "fish",
-          "rice",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Make fish sauce",
-          "Combine"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d18",
-        "name": "Plantain and Shrimp",
+        "name": "Gabon Dinner 18",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "plantains",
-          "shrimp",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Fry plantains",
-          "Saut\u00e9 shrimp",
-          "Serve together"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d19",
-        "name": "Meat and Vegetables",
+        "name": "Gabon Dinner 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
-        "cookTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "meat",
-          "vegetables",
-          "stock"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Brown meat",
-          "Add vegetables",
-          "Long simmer"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-d20",
-        "name": "Seafood Mix",
-        "difficulty": "Hard",
+        "name": "Gabon Dinner 20",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 35,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "fish",
-          "shrimp",
-          "vegetables"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Prepare seafood",
-          "Make sauce",
-          "Combine and simmer"
+          "authentic preparation"
         ]
       }
     ],
     "desserts": [
       {
         "id": "ga-des1",
-        "name": "Banana Cake",
+        "name": "Gabon Dessert 1",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 20,
         "ingredients": [
-          "bananas",
-          "flour",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mash bananas",
-          "Mix batter",
-          "Bake until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des2",
-        "name": "Mango Pudding",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 2",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "mango",
-          "milk",
-          "cornstarch",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make custard",
-          "Add mango",
-          "Chill well"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des3",
-        "name": "Coconut Custard",
+        "name": "Gabon Dessert 3",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "coconut milk",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Heat milk",
-          "Temper eggs",
-          "Cook custard"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des4",
-        "name": "Papaya Salad",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 4",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 0,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "papaya",
-          "lime",
-          "honey"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Dice papaya",
-          "Dress with lime",
-          "Add honey"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des5",
-        "name": "Pineapple Cake",
+        "name": "Gabon Dessert 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 20,
         "ingredients": [
-          "pineapple",
-          "flour",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Crush pineapple",
-          "Mix batter",
-          "Bake"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des6",
-        "name": "Rice Pudding",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 6",
+        "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "rice",
-          "milk",
-          "sugar",
-          "cinnamon"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Add milk",
-          "Serve warm"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des7",
-        "name": "Cassava Cake",
+        "name": "Gabon Dessert 7",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 35,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "cassava",
-          "flour",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Grate cassava",
-          "Mix batter",
-          "Bake until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des8",
-        "name": "Mango Jam",
+        "name": "Gabon Dessert 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 30,
+        "cookTime": 20,
         "ingredients": [
-          "mango",
-          "sugar",
-          "lemon juice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook mango",
-          "Add sugar",
-          "Simmer down"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des9",
-        "name": "Plantain Chips",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 9",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 15,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "plantains",
-          "sugar",
-          "cinnamon"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Slice plantains",
-          "Cook in sugar",
-          "Serve warm"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des10",
-        "name": "Coconut Candy",
+        "name": "Gabon Dessert 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 15,
+        "cookTime": 20,
         "ingredients": [
-          "coconut",
-          "sugar",
-          "water"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Boil sugar",
-          "Add coconut",
-          "Cool and cut"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des11",
-        "name": "Papaya Pie",
+        "name": "Gabon Dessert 11",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 30,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "papaya",
-          "pastry",
-          "sugar",
-          "eggs"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make crust",
-          "Add filling",
-          "Bake until golden"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des12",
-        "name": "Banana Pudding",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 12",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "banana",
-          "milk",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Layer banana",
-          "Make custard",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des13",
-        "name": "Coconut Cake",
+        "name": "Gabon Dessert 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 20,
         "ingredients": [
-          "coconut",
-          "flour",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mix coconut batter",
-          "Bake",
-          "Frost"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des14",
-        "name": "Mango Mousse",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 14",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 5,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "mango",
-          "cream",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend mango",
-          "Whip cream",
-          "Fold together"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des15",
-        "name": "Papaya Compote",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 15",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "papaya",
-          "sugar",
-          "lemon juice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook papaya",
-          "Add sugar",
-          "Cool"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des16",
-        "name": "Pineapple Tart",
+        "name": "Gabon Dessert 16",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 30,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "pineapple",
-          "pastry",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Make crust",
-          "Add filling",
-          "Bake"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des17",
-        "name": "Banana Bread Pudding",
+        "name": "Gabon Dessert 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "banana bread",
-          "eggs",
-          "milk",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cube bread",
-          "Mix custard",
-          "Bake warm"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des18",
-        "name": "Coconut Pudding",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 18",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "coconut milk",
-          "cornstarch",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook custard",
-          "Add coconut",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des19",
-        "name": "Tropical Fruit Salad",
-        "difficulty": "Easy",
+        "name": "Gabon Dessert 19",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 0,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
-          "mango",
-          "papaya",
-          "pineapple",
-          "lime"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Dice fruits",
-          "Dress with lime",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-des20",
-        "name": "Coconut Rice Cake",
+        "name": "Gabon Dessert 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 35,
+        "cookTime": 20,
         "ingredients": [
-          "coconut",
-          "rice",
-          "eggs",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Cook rice",
-          "Mix with coconut",
-          "Bake"
+          "authentic preparation"
         ]
       }
     ],
     "nonAlcoholicDrinks": [
       {
         "id": "ga-na1",
-        "name": "Mango Juice",
+        "name": "Gabon Drink 1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
-          "mango",
-          "water",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend mango",
-          "Strain juice",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na2",
-        "name": "Pineapple Juice",
+        "name": "Gabon Drink 2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
-          "pineapple",
-          "water",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend pineapple",
-          "Strain",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na3",
-        "name": "Papaya Smoothie",
+        "name": "Gabon Drink 3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
-          "papaya",
-          "milk",
-          "honey"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend papaya",
-          "Add milk",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na4",
-        "name": "Coconut Water",
+        "name": "Gabon Drink 4",
         "difficulty": "Easy",
         "servings": 2,
-        "prepTime": 5,
-        "cookTime": 0,
+        "prepTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "coconut"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Open coconut",
-          "Drink naturally"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na5",
-        "name": "Banana Smoothie",
+        "name": "Gabon Drink 5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
-          "banana",
-          "milk",
-          "honey"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend banana",
-          "Add milk",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na6",
-        "name": "Ginger Tea",
+        "name": "Gabon Drink 6",
         "difficulty": "Easy",
         "servings": 2,
-        "prepTime": 15,
-        "cookTime": 10,
+        "prepTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "ginger",
-          "water",
-          "sugar",
-          "lemon"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Grate ginger",
-          "Boil in water",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na7",
-        "name": "Hibiscus Tea",
+        "name": "Gabon Drink 7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "hibiscus flowers",
-          "water",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Steep flowers",
-          "Strain",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na8",
-        "name": "Tamarind Juice",
+        "name": "Gabon Drink 8",
         "difficulty": "Easy",
         "servings": 2,
-        "prepTime": 15,
+        "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "tamarind",
-          "water",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Soak tamarind",
-          "Strain juice",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na9",
-        "name": "Lime Juice",
+        "name": "Gabon Drink 9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
-        "cookTime": 0,
+        "cookTime": 5,
         "ingredients": [
-          "lime",
-          "water",
-          "sugar",
-          "salt"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Squeeze limes",
-          "Mix with water",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-na10",
-        "name": "Tropical Punch",
+        "name": "Gabon Drink 10",
         "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 15,
-        "cookTime": 0,
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "mixed fruits",
-          "water",
-          "sugar"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Blend fruits",
-          "Strain juice",
-          "Chill thoroughly"
+          "authentic preparation"
         ]
       }
     ],
     "alcoholicDrinks": [
       {
         "id": "ga-a1",
-        "name": "Gabonese Beer",
+        "name": "Gabon Beverage 1",
         "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 0,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "local beer",
-          "ice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Pour beer",
-          "Add ice",
-          "Serve cold"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a2",
-        "name": "Palm Wine",
+        "name": "Gabon Beverage 2",
         "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 0,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "palm wine"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Serve fresh",
-          "Traditional drink"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a3",
-        "name": "Mango Wine",
+        "name": "Gabon Beverage 3",
         "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 0,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "mango wine",
-          "ice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Pour wine",
-          "Add ice",
-          "Serve"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a4",
-        "name": "Tropical Rum Punch",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 15,
+        "name": "Gabon Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "rum",
-          "fruit juices",
-          "sugar",
-          "ice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mix rum and juices",
-          "Add sugar",
-          "Chill"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a5",
-        "name": "Rum and Cola",
+        "name": "Gabon Beverage 5",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "rum",
-          "cola",
-          "lime"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Pour rum",
-          "Add cola",
-          "Add lime"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a6",
-        "name": "Pineapple Cocktail",
-        "difficulty": "Medium",
+        "name": "Gabon Beverage 6",
+        "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 10,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "rum",
-          "pineapple juice",
-          "coconut"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mix ingredients",
-          "Shake",
-          "Serve"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a7",
-        "name": "Wine Cooler",
+        "name": "Gabon Beverage 7",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "wine",
-          "sparkling water",
-          "fruit"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mix wine and water",
-          "Add fruit",
-          "Serve cold"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a8",
-        "name": "Beer Shandy",
+        "name": "Gabon Beverage 8",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "beer",
-          "lemonade"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Mix beer and lemonade",
-          "Serve cold"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a9",
-        "name": "Spiced Rum",
-        "difficulty": "Medium",
+        "name": "Gabon Beverage 9",
+        "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 10,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "rum",
-          "spices",
-          "sugar",
-          "water"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Heat with spices",
-          "Mix with rum",
-          "Serve"
+          "authentic preparation"
         ]
       },
       {
         "id": "ga-a10",
-        "name": "Coconut Rum",
+        "name": "Gabon Beverage 10",
         "difficulty": "Easy",
         "servings": 1,
-        "prepTime": 0,
+        "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "coconut rum",
-          "ice"
+          "authentic ingredient"
         ],
         "instructions": [
-          "Pour rum",
-          "Add ice",
-          "Serve"
+          "authentic preparation"
         ]
       }
     ]

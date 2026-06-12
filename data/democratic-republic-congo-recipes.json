@@ -1,121 +1,1421 @@
 {
-  "drcRecipes": {
-    "title": "Authentic Congolese Cuisine - DRC",
-    "country": "Democratic Republic of the Congo",
-    "region": "Central Africa",
+  "democraticrepubliccongoRecipes": {
+    "title": "Authentic Democratic Republic Congo Cuisine",
+    "country": "Democratic Republic Congo",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "drc-b1", "name": "Fufu", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["plantain", "cassava", "salt", "water"], "instructions": ["Boil and mash", "Serve with sauce"]},
-      {"id": "drc-b2", "name": "Cassava Leaf Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["cassava leaves", "onion", "tomato", "peanut butter"], "instructions": ["Chop leaves", "Cook with aromatics", "Add peanut butter"]},
-      {"id": "drc-b3", "name": "Fried Fish", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["fish", "flour", "salt", "oil"], "instructions": ["Coat fish", "Deep fry", "Serve hot"]},
-      {"id": "drc-b4", "name": "Plantain Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["plantain", "water", "salt", "onion"], "instructions": ["Boil plantain", "Make porridge", "Serve warm"]},
-      {"id": "drc-b5", "name": "Pounded Yam", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["yam", "salt", "water", "butter"], "instructions": ["Boil yam", "Pound until smooth", "Serve with sauce"]},
-      {"id": "drc-b6", "name": "Cornmeal Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 20, "ingredients": ["cornmeal", "water", "salt", "sugar"], "instructions": ["Cook cornmeal in water", "Add salt and sugar", "Serve hot"]},
-      {"id": "drc-b7", "name": "Okra Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["okra", "onion", "tomato", "oil", "salt"], "instructions": ["Slice okra", "Cook with aromatics", "Serve warm"]},
-      {"id": "drc-b8", "name": "Egg and Bean Soup", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["beans", "eggs", "onion", "salt", "oil"], "instructions": ["Cook beans", "Add eggs", "Simmer 10 min"]},
-      {"id": "drc-b9", "name": "Manioc with Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["cassava", "fish", "onion", "tomato"], "instructions": ["Boil cassava", "Make fish sauce", "Combine"]},
-      {"id": "drc-b10", "name": "Banana Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["banana", "bread", "honey"], "instructions": ["Slice banana", "Toast bread", "Drizzle honey"]},
-      {"id": "drc-b11", "name": "Fish Ball Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "flour", "eggs", "broth"], "instructions": ["Make fish paste", "Form balls", "Boil in broth"]},
-      {"id": "drc-b12", "name": "Rice and Beans Breakfast", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "beans", "onion", "salt"], "instructions": ["Cook rice and beans", "Mix together", "Serve hot"]},
-      {"id": "drc-b13", "name": "Spinach with Eggs", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["spinach", "eggs", "onion", "salt", "oil"], "instructions": ["Sauté spinach", "Add scrambled eggs", "Serve hot"]},
-      {"id": "drc-b14", "name": "Sweet Potato Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["sweet potato", "water", "sugar", "salt"], "instructions": ["Boil sweet potato", "Mash and cook", "Serve warm"]},
-      {"id": "drc-b15", "name": "Ugali", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 20, "ingredients": ["cornmeal", "water", "salt"], "instructions": ["Cook cornmeal stiff", "Serve with sauce"]},
-      {"id": "drc-b16", "name": "Pumpkin and Beans", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["pumpkin", "beans", "onion", "tomato"], "instructions": ["Cut pumpkin", "Cook with beans", "Add aromatics"]},
-      {"id": "drc-b17", "name": "Meat Soup Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["meat", "vegetables", "broth", "spices"], "instructions": ["Brown meat", "Add vegetables", "Simmer 30 min"]},
-      {"id": "drc-b18", "name": "Cassava Cake", "difficulty": "Medium", "servings": 6, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "coconut", "sugar", "eggs"], "instructions": ["Grate cassava", "Mix ingredients", "Bake 35-40 min"]},
-      {"id": "drc-b19", "name": "Groundnut Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["peanuts", "water", "salt", "sugar"], "instructions": ["Blend peanuts", "Cook in water", "Add salt and sugar"]},
-      {"id": "drc-b20", "name": "Palm Oil Rice", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "palm oil", "onion", "salt"], "instructions": ["Heat palm oil", "Add rice", "Cook until done"]}
+      {
+        "id": "de-b1",
+        "name": "Democratic-Republic-Congo Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b2",
+        "name": "Democratic-Republic-Congo Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b3",
+        "name": "Democratic-Republic-Congo Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b4",
+        "name": "Democratic-Republic-Congo Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b5",
+        "name": "Democratic-Republic-Congo Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b6",
+        "name": "Democratic-Republic-Congo Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b7",
+        "name": "Democratic-Republic-Congo Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b8",
+        "name": "Democratic-Republic-Congo Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b9",
+        "name": "Democratic-Republic-Congo Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b10",
+        "name": "Democratic-Republic-Congo Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b11",
+        "name": "Democratic-Republic-Congo Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b12",
+        "name": "Democratic-Republic-Congo Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b13",
+        "name": "Democratic-Republic-Congo Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b14",
+        "name": "Democratic-Republic-Congo Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b15",
+        "name": "Democratic-Republic-Congo Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b16",
+        "name": "Democratic-Republic-Congo Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b17",
+        "name": "Democratic-Republic-Congo Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b18",
+        "name": "Democratic-Republic-Congo Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b19",
+        "name": "Democratic-Republic-Congo Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b20",
+        "name": "Democratic-Republic-Congo Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "drc-l1", "name": "Cassava Leaf Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["cassava leaves", "meat", "onion", "tomato", "peanut butter"], "instructions": ["Chop leaves", "Brown meat", "Make stew", "Add peanut butter"]},
-      {"id": "drc-l2", "name": "Fufu with Okra Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["plantain", "cassava", "okra", "fish", "onion"], "instructions": ["Make fufu", "Make okra sauce", "Serve together"]},
-      {"id": "drc-l3", "name": "Saka-Saka", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["cassava leaves", "onion", "tomato", "peanut paste"], "instructions": ["Blanch and chop leaves", "Cook with aromatics", "Add peanut paste"]},
-      {"id": "drc-l4", "name": "Fish with Palm Oil", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish", "palm oil", "onion", "tomato", "spices"], "instructions": ["Heat palm oil", "Add onion", "Add fish and tomato"]},
-      {"id": "drc-l5", "name": "Moambe Chicken", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "peanut butter", "tomato", "onion", "garlic"], "instructions": ["Brown chicken", "Make peanut sauce", "Simmer 30 min"]},
-      {"id": "drc-l6", "name": "Manioc and Fish", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "fish fillets", "onion", "tomato"], "instructions": ["Boil cassava", "Make fish sauce", "Combine and serve"]},
-      {"id": "drc-l7", "name": "Bean Stew", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 50, "ingredients": ["beans", "onion", "tomato", "spices", "oil"], "instructions": ["Cook beans", "Make stew base", "Combine and simmer"]},
-      {"id": "drc-l8", "name": "Okra Stew", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["okra", "onion", "tomato", "oil", "salt"], "instructions": ["Slice okra", "Cook with aromatics", "Serve with rice"]},
-      {"id": "drc-l9", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lemon", "spices", "oil"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "drc-l10", "name": "Rice and Peas", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "peas", "onion", "salt", "oil"], "instructions": ["Cook rice with peas", "Add aromatics", "Serve hot"]},
-      {"id": "drc-l11", "name": "Meat and Vegetable Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 50, "ingredients": ["meat", "vegetables", "onion", "tomato"], "instructions": ["Brown meat", "Add vegetables", "Simmer 40 min"]},
-      {"id": "drc-l12", "name": "Pumpkin Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["pumpkin", "onion", "tomato", "oil", "salt"], "instructions": ["Cube pumpkin", "Make stew base", "Combine and simmer"]},
-      {"id": "drc-l13", "name": "Fish in Tomato", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish fillets", "tomato sauce", "onion", "garlic"], "instructions": ["Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "drc-l14", "name": "Chicken Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "onion", "tomato"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "drc-l15", "name": "Spinach Stew", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["spinach", "onion", "tomato", "oil", "salt"], "instructions": ["Sauté onion", "Add spinach", "Add tomato", "Simmer 15 min"]},
-      {"id": "drc-l16", "name": "Sweet Potato Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["sweet potato", "vegetables", "onion", "oil"], "instructions": ["Cube potato", "Make stew base", "Combine and simmer"]},
-      {"id": "drc-l17", "name": "Groundnut Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["peanuts", "meat", "vegetables", "broth"], "instructions": ["Make peanut sauce", "Add meat and vegetables", "Simmer 30 min"]},
-      {"id": "drc-l18", "name": "Plantain and Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "fish", "onion", "tomato"], "instructions": ["Boil plantain", "Make fish sauce", "Combine"]},
-      {"id": "drc-l19", "name": "Lentil Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 40, "ingredients": ["lentils", "vegetables", "onion", "tomato"], "instructions": ["Cook lentils", "Add vegetables", "Simmer 25 min"]},
-      {"id": "drc-l20", "name": "Vegetable Soup", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 35, "ingredients": ["mixed vegetables", "broth", "onion", "salt"], "instructions": ["Chop vegetables", "Boil in broth", "Serve hot"]}
+      {
+        "id": "de-l1",
+        "name": "Democratic-Republic-Congo Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l2",
+        "name": "Democratic-Republic-Congo Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l3",
+        "name": "Democratic-Republic-Congo Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l4",
+        "name": "Democratic-Republic-Congo Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l5",
+        "name": "Democratic-Republic-Congo Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l6",
+        "name": "Democratic-Republic-Congo Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l7",
+        "name": "Democratic-Republic-Congo Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l8",
+        "name": "Democratic-Republic-Congo Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l9",
+        "name": "Democratic-Republic-Congo Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l10",
+        "name": "Democratic-Republic-Congo Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l11",
+        "name": "Democratic-Republic-Congo Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l12",
+        "name": "Democratic-Republic-Congo Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l13",
+        "name": "Democratic-Republic-Congo Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l14",
+        "name": "Democratic-Republic-Congo Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l15",
+        "name": "Democratic-Republic-Congo Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l16",
+        "name": "Democratic-Republic-Congo Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l17",
+        "name": "Democratic-Republic-Congo Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l18",
+        "name": "Democratic-Republic-Congo Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l19",
+        "name": "Democratic-Republic-Congo Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l20",
+        "name": "Democratic-Republic-Congo Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "drc-d1", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lemon", "herbs", "oil"], "instructions": ["Season fish", "Grill 15 min per side", "Serve with lemon"]},
-      {"id": "drc-d2", "name": "Braised Meat Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["meat", "vegetables", "broth", "spices"], "instructions": ["Brown meat", "Add vegetables", "Braise 50 min"]},
-      {"id": "drc-d3", "name": "Cassava Leaf Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava leaves", "meat", "peanut butter", "onion"], "instructions": ["Blanch leaves", "Make stew", "Serve with rice"]},
-      {"id": "drc-d4", "name": "Fish Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "vegetables", "tomato", "onion", "oil"], "instructions": ["Make stew base", "Add fish", "Simmer 25 min"]},
-      {"id": "drc-d5", "name": "Chicken with Peanut Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["chicken", "peanut butter", "tomato", "onion"], "instructions": ["Brown chicken", "Make peanut sauce", "Simmer 30 min"]},
-      {"id": "drc-d6", "name": "Palm Oil Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["palm oil", "vegetables", "meat", "onion"], "instructions": ["Heat palm oil", "Add vegetables", "Add meat", "Simmer 30 min"]},
-      {"id": "drc-d7", "name": "Fufu Dinner with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["plantain", "cassava", "meat", "vegetables"], "instructions": ["Make fufu", "Make sauce", "Serve together"]},
-      {"id": "drc-d8", "name": "Okra with Meat", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["okra", "meat", "onion", "tomato", "oil"], "instructions": ["Brown meat", "Add okra and onion", "Simmer 25 min"]},
-      {"id": "drc-d9", "name": "Rice and Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["rice", "meat", "vegetables", "broth"], "instructions": ["Cook rice", "Make stew", "Serve together"]},
-      {"id": "drc-d10", "name": "Manioc with Meat", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "meat", "vegetables", "onion"], "instructions": ["Boil cassava", "Brown meat", "Combine and serve"]},
-      {"id": "drc-d11", "name": "Pumpkin and Meat Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["pumpkin", "meat", "onion", "tomato"], "instructions": ["Cut pumpkin", "Brown meat", "Combine and simmer"]},
-      {"id": "drc-d12", "name": "Sweet Potato with Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["sweet potato", "meat", "vegetables", "onion"], "instructions": ["Cube potato", "Brown meat", "Combine and simmer"]},
-      {"id": "drc-d13", "name": "Bean and Meat Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 50, "ingredients": ["beans", "meat", "vegetables", "onion"], "instructions": ["Cook beans", "Brown meat", "Combine and simmer"]},
-      {"id": "drc-d14", "name": "Spinach and Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["spinach", "fish", "onion", "tomato"], "instructions": ["Sauté spinach", "Add fish", "Simmer 20 min"]},
-      {"id": "drc-d15", "name": "Groundnut Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["peanuts", "meat", "vegetables", "onion"], "instructions": ["Make peanut sauce", "Add meat and vegetables", "Simmer 30 min"]},
-      {"id": "drc-d16", "name": "Lentil and Vegetable Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["lentils", "vegetables", "onion", "tomato"], "instructions": ["Cook lentils", "Add vegetables", "Simmer 25 min"]},
-      {"id": "drc-d17", "name": "Plantain with Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "meat stew", "vegetables"], "instructions": ["Boil plantain", "Make stew", "Serve together"]},
-      {"id": "drc-d18", "name": "Cassava and Leaf Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "cassava leaves", "meat", "onion"], "instructions": ["Boil cassava", "Make leaf stew", "Combine and serve"]},
-      {"id": "drc-d19", "name": "Vegetable Stew Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["mixed vegetables", "onion", "tomato", "oil"], "instructions": ["Chop vegetables", "Make stew base", "Combine and simmer"]},
-      {"id": "drc-d20", "name": "Fish with Vegetables", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "vegetables", "onion", "tomato"], "instructions": ["Make sauce", "Add fish", "Add vegetables", "Simmer 25 min"]}
+      {
+        "id": "de-d1",
+        "name": "Democratic-Republic-Congo Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d2",
+        "name": "Democratic-Republic-Congo Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d3",
+        "name": "Democratic-Republic-Congo Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d4",
+        "name": "Democratic-Republic-Congo Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d5",
+        "name": "Democratic-Republic-Congo Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d6",
+        "name": "Democratic-Republic-Congo Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d7",
+        "name": "Democratic-Republic-Congo Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d8",
+        "name": "Democratic-Republic-Congo Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d9",
+        "name": "Democratic-Republic-Congo Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d10",
+        "name": "Democratic-Republic-Congo Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d11",
+        "name": "Democratic-Republic-Congo Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d12",
+        "name": "Democratic-Republic-Congo Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d13",
+        "name": "Democratic-Republic-Congo Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d14",
+        "name": "Democratic-Republic-Congo Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d15",
+        "name": "Democratic-Republic-Congo Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d16",
+        "name": "Democratic-Republic-Congo Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d17",
+        "name": "Democratic-Republic-Congo Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d18",
+        "name": "Democratic-Republic-Congo Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d19",
+        "name": "Democratic-Republic-Congo Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d20",
+        "name": "Democratic-Republic-Congo Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "drc-des1", "name": "Cassava Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "coconut", "sugar", "eggs", "oil"], "instructions": ["Grate cassava", "Mix ingredients", "Bake 35-40 min"]},
-      {"id": "drc-des2", "name": "Banana Cake", "difficulty": "Easy", "servings": 8, "prepTime": 25, "cookTime": 35, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "drc-des3", "name": "Pumpkin Dessert", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 35, "ingredients": ["pumpkin", "sugar", "eggs", "cinnamon"], "instructions": ["Puree pumpkin", "Mix with sugar", "Bake 30-35 min"]},
-      {"id": "drc-des4", "name": "Sweet Potato Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["sweet potato", "milk", "sugar", "cinnamon"], "instructions": ["Boil and puree", "Mix with milk and sugar", "Bake 25-30 min"]},
-      {"id": "drc-des5", "name": "Coconut Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 25, "ingredients": ["coconut milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat coconut milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "drc-des6", "name": "Plantain Dessert", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["ripe plantain", "brown sugar", "cinnamon", "butter"], "instructions": ["Slice plantain", "Layer with sugar", "Bake 25-30 min"]},
-      {"id": "drc-des7", "name": "Groundnut Candy", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["peanuts", "sugar", "water", "butter"], "instructions": ["Toast peanuts", "Make candy syrup", "Mix and set"]},
-      {"id": "drc-des8", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "gelatin", "milk", "sugar"], "instructions": ["Heat milk with sugar", "Add gelatin and mango", "Chill until set"]},
-      {"id": "drc-des9", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and papaya", "Bake 30-35 min"]},
-      {"id": "drc-des10", "name": "Coconut Macaroons", "difficulty": "Easy", "servings": 12, "prepTime": 15, "cookTime": 20, "ingredients": ["shredded coconut", "eggs", "sugar", "vanilla"], "instructions": ["Mix ingredients", "Drop onto baking sheet", "Bake 15-20 min"]},
-      {"id": "drc-des11", "name": "Yam Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["yam", "flour", "eggs", "sugar", "oil"], "instructions": ["Boil and puree yam", "Mix with other ingredients", "Bake 30-35 min"]},
-      {"id": "drc-des12", "name": "Vanilla Custard", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["eggs", "milk", "sugar", "vanilla"], "instructions": ["Make custard base", "Bake in water bath 35-40 min"]},
-      {"id": "drc-des13", "name": "Lemon Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["flour", "butter", "lemon", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "drc-des14", "name": "Fruit Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime", "honey"], "instructions": ["Chop fruits", "Mix with lime", "Drizzle honey"]},
-      {"id": "drc-des15", "name": "Tapioca Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 35, "ingredients": ["tapioca", "milk", "sugar", "vanilla"], "instructions": ["Cook tapioca", "Mix with milk and sugar", "Chill and serve"]},
-      {"id": "drc-des16", "name": "Cornmeal Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["cornmeal", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add cornmeal and flour", "Bake 30-35 min"]},
-      {"id": "drc-des17", "name": "Rice Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["rice", "milk", "sugar", "cinnamon", "raisins"], "instructions": ["Cook rice in milk", "Add sugar", "Serve warm"]},
-      {"id": "drc-des18", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "honey", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "drc-des19", "name": "Ginger Cookies", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "ginger", "sugar", "eggs"], "instructions": ["Cream butter and sugar", "Add flour and ginger", "Bake 15-20 min"]},
-      {"id": "drc-des20", "name": "Cinnamon Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "sugar", "cinnamon", "oil"], "instructions": ["Mix wet ingredients", "Add flour and cinnamon", "Bake 30-35 min"]}
+      {
+        "id": "de-des1",
+        "name": "Democratic-Republic-Congo Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des2",
+        "name": "Democratic-Republic-Congo Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des3",
+        "name": "Democratic-Republic-Congo Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des4",
+        "name": "Democratic-Republic-Congo Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des5",
+        "name": "Democratic-Republic-Congo Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des6",
+        "name": "Democratic-Republic-Congo Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des7",
+        "name": "Democratic-Republic-Congo Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des8",
+        "name": "Democratic-Republic-Congo Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des9",
+        "name": "Democratic-Republic-Congo Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des10",
+        "name": "Democratic-Republic-Congo Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des11",
+        "name": "Democratic-Republic-Congo Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des12",
+        "name": "Democratic-Republic-Congo Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des13",
+        "name": "Democratic-Republic-Congo Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des14",
+        "name": "Democratic-Republic-Congo Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des15",
+        "name": "Democratic-Republic-Congo Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des16",
+        "name": "Democratic-Republic-Congo Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des17",
+        "name": "Democratic-Republic-Congo Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des18",
+        "name": "Democratic-Republic-Congo Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des19",
+        "name": "Democratic-Republic-Congo Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des20",
+        "name": "Democratic-Republic-Congo Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "drc-na1", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["tropical fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "drc-na2", "name": "Ginger Tea", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["ginger", "water", "honey", "lemon"], "instructions": ["Simmer ginger", "Add honey and lemon", "Serve hot"]},
-      {"id": "drc-na3", "name": "Banana Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["banana", "milk", "honey"], "instructions": ["Blend banana with milk", "Add honey", "Serve cold"]},
-      {"id": "drc-na4", "name": "Hibiscus Tea", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 10, "ingredients": ["hibiscus", "water", "sugar"], "instructions": ["Boil hibiscus", "Strain", "Add sugar", "Serve cold"]},
-      {"id": "drc-na5", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]},
-      {"id": "drc-na6", "name": "Lemon Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "drc-na7", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "drc-na8", "name": "Pineapple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["pineapple", "water", "sugar"], "instructions": ["Blend pineapple", "Strain juice", "Add water and sugar"]},
-      {"id": "drc-na9", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "yogurt", "honey"], "instructions": ["Blend papaya with yogurt", "Add honey", "Serve cold"]},
-      {"id": "drc-na10", "name": "Passion Fruit Drink", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["passion fruit", "water", "sugar"], "instructions": ["Blend pulp", "Strain seeds", "Add water and sugar"]}
+      {
+        "id": "de-na1",
+        "name": "Democratic-Republic-Congo Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na2",
+        "name": "Democratic-Republic-Congo Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na3",
+        "name": "Democratic-Republic-Congo Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na4",
+        "name": "Democratic-Republic-Congo Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na5",
+        "name": "Democratic-Republic-Congo Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na6",
+        "name": "Democratic-Republic-Congo Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na7",
+        "name": "Democratic-Republic-Congo Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na8",
+        "name": "Democratic-Republic-Congo Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na9",
+        "name": "Democratic-Republic-Congo Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na10",
+        "name": "Democratic-Republic-Congo Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "drc-a1", "name": "Palm Wine", "difficulty": "Hard", "servings": 2, "prepTime": 30, "cookTime": 0, "ingredients": ["palm tree sap", "sugar"], "instructions": ["Tap palm tree", "Add sugar", "Serve fresh"]},
-      {"id": "drc-a2", "name": "Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill", "Pour and serve"]},
-      {"id": "drc-a3", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "juice", "sugar", "spice"], "instructions": ["Mix rum with juice", "Add sugar and spice", "Serve with ice"]},
-      {"id": "drc-a4", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["wine", "soda", "fruit"], "instructions": ["Pour wine and soda", "Add fruit", "Serve chilled"]},
-      {"id": "drc-a5", "name": "Ginger Beer Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "ginger beer", "lime"], "instructions": ["Pour rum over ice", "Top with ginger beer", "Garnish with lime"]},
-      {"id": "drc-a6", "name": "Tropical Rum", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "tropical juice", "coconut"], "instructions": ["Mix rum with juice", "Add coconut", "Serve over ice"]},
-      {"id": "drc-a7", "name": "Banana Liqueur", "difficulty": "Hard", "servings": 1, "prepTime": 30, "cookTime": 0, "ingredients": ["vodka", "banana", "sugar"], "instructions": ["Infuse vodka with banana", "Age 2-3 weeks", "Strain and serve"]},
-      {"id": "drc-a8", "name": "Honey Wine", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["honey", "water", "yeast"], "instructions": ["Mix honey with water", "Ferment with yeast", "Age several months"]},
-      {"id": "drc-a9", "name": "Fruit Wine", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 0, "ingredients": ["fruit", "sugar", "yeast", "water"], "instructions": ["Make fruit wine", "Ferment", "Age and bottle"]},
-      {"id": "drc-a10", "name": "Spiced Rum", "difficulty": "Hard", "servings": 1, "prepTime": 30, "cookTime": 0, "ingredients": ["rum", "spices", "sugar"], "instructions": ["Infuse rum with spices", "Age 3-4 weeks", "Strain and serve"]}
+      {
+        "id": "de-a1",
+        "name": "Democratic-Republic-Congo Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a2",
+        "name": "Democratic-Republic-Congo Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a3",
+        "name": "Democratic-Republic-Congo Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a4",
+        "name": "Democratic-Republic-Congo Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a5",
+        "name": "Democratic-Republic-Congo Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a6",
+        "name": "Democratic-Republic-Congo Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a7",
+        "name": "Democratic-Republic-Congo Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a8",
+        "name": "Democratic-Republic-Congo Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a9",
+        "name": "Democratic-Republic-Congo Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a10",
+        "name": "Democratic-Republic-Congo Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

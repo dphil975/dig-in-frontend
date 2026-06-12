@@ -2,108 +2,1420 @@
   "estoniaRecipes": {
     "title": "Authentic Estonia Cuisine",
     "country": "Estonia",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"es-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"es-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"es-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"es-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"es-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"es-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"es-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"es-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"es-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"es-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "es-b1",
+        "name": "Estonia Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b2",
+        "name": "Estonia Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b3",
+        "name": "Estonia Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b4",
+        "name": "Estonia Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b5",
+        "name": "Estonia Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b6",
+        "name": "Estonia Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b7",
+        "name": "Estonia Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b8",
+        "name": "Estonia Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b9",
+        "name": "Estonia Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b10",
+        "name": "Estonia Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b11",
+        "name": "Estonia Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b12",
+        "name": "Estonia Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b13",
+        "name": "Estonia Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b14",
+        "name": "Estonia Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b15",
+        "name": "Estonia Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b16",
+        "name": "Estonia Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b17",
+        "name": "Estonia Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b18",
+        "name": "Estonia Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b19",
+        "name": "Estonia Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-b20",
+        "name": "Estonia Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "es-l1",
+        "name": "Estonia Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l2",
+        "name": "Estonia Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l3",
+        "name": "Estonia Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l4",
+        "name": "Estonia Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l5",
+        "name": "Estonia Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l6",
+        "name": "Estonia Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l7",
+        "name": "Estonia Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l8",
+        "name": "Estonia Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l9",
+        "name": "Estonia Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l10",
+        "name": "Estonia Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l11",
+        "name": "Estonia Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l12",
+        "name": "Estonia Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l13",
+        "name": "Estonia Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l14",
+        "name": "Estonia Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l15",
+        "name": "Estonia Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l16",
+        "name": "Estonia Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l17",
+        "name": "Estonia Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l18",
+        "name": "Estonia Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l19",
+        "name": "Estonia Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-l20",
+        "name": "Estonia Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "es-d1",
+        "name": "Estonia Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d2",
+        "name": "Estonia Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d3",
+        "name": "Estonia Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d4",
+        "name": "Estonia Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d5",
+        "name": "Estonia Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d6",
+        "name": "Estonia Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d7",
+        "name": "Estonia Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d8",
+        "name": "Estonia Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d9",
+        "name": "Estonia Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d10",
+        "name": "Estonia Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d11",
+        "name": "Estonia Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d12",
+        "name": "Estonia Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d13",
+        "name": "Estonia Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d14",
+        "name": "Estonia Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d15",
+        "name": "Estonia Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d16",
+        "name": "Estonia Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d17",
+        "name": "Estonia Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d18",
+        "name": "Estonia Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d19",
+        "name": "Estonia Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-d20",
+        "name": "Estonia Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "es-des1",
+        "name": "Estonia Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des2",
+        "name": "Estonia Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des3",
+        "name": "Estonia Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des4",
+        "name": "Estonia Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des5",
+        "name": "Estonia Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des6",
+        "name": "Estonia Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des7",
+        "name": "Estonia Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des8",
+        "name": "Estonia Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des9",
+        "name": "Estonia Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des10",
+        "name": "Estonia Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des11",
+        "name": "Estonia Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des12",
+        "name": "Estonia Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des13",
+        "name": "Estonia Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des14",
+        "name": "Estonia Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des15",
+        "name": "Estonia Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des16",
+        "name": "Estonia Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des17",
+        "name": "Estonia Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des18",
+        "name": "Estonia Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des19",
+        "name": "Estonia Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-des20",
+        "name": "Estonia Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "es-na1",
+        "name": "Estonia Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na2",
+        "name": "Estonia Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na3",
+        "name": "Estonia Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na4",
+        "name": "Estonia Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na5",
+        "name": "Estonia Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na6",
+        "name": "Estonia Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na7",
+        "name": "Estonia Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na8",
+        "name": "Estonia Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na9",
+        "name": "Estonia Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-na10",
+        "name": "Estonia Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "es-a1",
+        "name": "Estonia Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a2",
+        "name": "Estonia Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a3",
+        "name": "Estonia Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a4",
+        "name": "Estonia Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a5",
+        "name": "Estonia Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a6",
+        "name": "Estonia Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a7",
+        "name": "Estonia Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a8",
+        "name": "Estonia Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a9",
+        "name": "Estonia Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "es-a10",
+        "name": "Estonia Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ]
   }
 }

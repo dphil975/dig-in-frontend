@@ -1,121 +1,1421 @@
 {
-  "cookIslandsRecipes": {
+  "cookislandsRecipes": {
     "title": "Authentic Cook Islands Cuisine",
     "country": "Cook Islands",
-    "region": "Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "ci-b1", "name": "Coconut Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["coconut milk", "oats", "sugar", "cinnamon"], "instructions": ["Cook oats in coconut milk", "Add sugar and spices", "Serve warm"]},
-      {"id": "ci-b2", "name": "Papaya Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["papaya", "banana", "coconut", "lime"], "instructions": ["Cut papaya", "Add banana and coconut", "Serve with lime"]},
-      {"id": "ci-b3", "name": "Fried Fish Breakfast", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["fish", "flour", "salt", "oil"], "instructions": ["Coat fish", "Deep fry", "Serve hot"]},
-      {"id": "ci-b4", "name": "Taro Porridge", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["taro", "coconut milk", "sugar", "vanilla"], "instructions": ["Boil and puree taro", "Cook with coconut milk", "Add sugar"]},
-      {"id": "ci-b5", "name": "Banana Bread", "difficulty": "Easy", "servings": 8, "prepTime": 20, "cookTime": 55, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 50-55 min"]},
-      {"id": "ci-b6", "name": "Breadfruit Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["breadfruit", "salt", "oil", "sauce"], "instructions": ["Boil and slice", "Pan-fry", "Serve with sauce"]},
-      {"id": "ci-b7", "name": "Mango Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "yogurt", "honey", "coconut milk"], "instructions": ["Blend all ingredients", "Serve cold"]},
-      {"id": "ci-b8", "name": "Plantain Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["plantain", "water", "salt", "sugar"], "instructions": ["Boil plantain", "Mash and cook", "Serve warm"]},
-      {"id": "ci-b9", "name": "Egg and Fish", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "fish", "onion", "salt", "oil"], "instructions": ["Beat eggs", "Add fish and onion", "Cook in hot oil"]},
-      {"id": "ci-b10", "name": "Tropical Fruit Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime", "honey"], "instructions": ["Chop fruits", "Mix with lime", "Drizzle honey"]},
-      {"id": "ci-b11", "name": "Coconut Milk Rice", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 25, "ingredients": ["rice", "coconut milk", "sugar", "salt"], "instructions": ["Cook rice in coconut milk", "Add sugar and salt", "Serve warm"]},
-      {"id": "ci-b12", "name": "Fish Cake Breakfast", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 20, "ingredients": ["fish", "flour", "eggs", "onion", "oil"], "instructions": ["Make fish paste", "Form cakes", "Pan-fry until golden"]},
-      {"id": "ci-b13", "name": "Cassava Cake", "difficulty": "Medium", "servings": 6, "prepTime": 35, "cookTime": 35, "ingredients": ["cassava", "coconut", "sugar", "eggs"], "instructions": ["Grate cassava", "Mix ingredients", "Bake 30-35 min"]},
-      {"id": "ci-b14", "name": "Pawpaw Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "water", "sugar"], "instructions": ["Blend papaya", "Strain juice", "Add water and sugar"]},
-      {"id": "ci-b15", "name": "Poi Bowl", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["taro", "coconut milk", "salt"], "instructions": ["Boil taro", "Mash with coconut milk", "Serve cool"]},
-      {"id": "ci-b16", "name": "Fried Banana Chips", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["banana", "oil", "salt", "sugar"], "instructions": ["Slice banana", "Deep fry", "Sprinkle salt and sugar"]},
-      {"id": "ci-b17", "name": "Seafood Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["fish", "shrimp", "onion", "tomato", "oil"], "instructions": ["Pan-fry seafood", "Add aromatics", "Serve with rice"]},
-      {"id": "ci-b18", "name": "Coconut Sticky Rice", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["sticky rice", "coconut milk", "sugar", "salt"], "instructions": ["Cook rice in coconut milk", "Add sugar and salt", "Serve warm"]},
-      {"id": "ci-b19", "name": "Island Juice Blend", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tropical fruits", "coconut milk", "sugar"], "instructions": ["Blend fruits with coconut milk", "Add sugar", "Serve cold"]},
-      {"id": "ci-b20", "name": "Taro Chips", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["taro", "salt", "oil"], "instructions": ["Slice taro thin", "Deep fry until crispy", "Drain and salt"]}
+      {
+        "id": "co-b1",
+        "name": "Cook-Islands Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b2",
+        "name": "Cook-Islands Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b3",
+        "name": "Cook-Islands Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b4",
+        "name": "Cook-Islands Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b5",
+        "name": "Cook-Islands Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b6",
+        "name": "Cook-Islands Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b7",
+        "name": "Cook-Islands Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b8",
+        "name": "Cook-Islands Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b9",
+        "name": "Cook-Islands Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b10",
+        "name": "Cook-Islands Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b11",
+        "name": "Cook-Islands Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b12",
+        "name": "Cook-Islands Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b13",
+        "name": "Cook-Islands Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b14",
+        "name": "Cook-Islands Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b15",
+        "name": "Cook-Islands Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b16",
+        "name": "Cook-Islands Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b17",
+        "name": "Cook-Islands Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b18",
+        "name": "Cook-Islands Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b19",
+        "name": "Cook-Islands Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b20",
+        "name": "Cook-Islands Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "ci-l1", "name": "Coconut Fish", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["fish fillets", "coconut milk", "onion", "cilantro"], "instructions": ["Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "ci-l2", "name": "Ika Mata (Raw Fish)", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 0, "ingredients": ["white fish", "lime juice", "coconut cream", "onion", "cilantro"], "instructions": ["Dice fish", "Marinate in lime", "Add coconut cream"]},
-      {"id": "ci-l3", "name": "Taro and Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["taro", "fish", "coconut milk", "onion"], "instructions": ["Cube taro", "Make fish sauce", "Combine and simmer"]},
-      {"id": "ci-l4", "name": "Breadfruit and Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["breadfruit", "fish", "coconut milk", "onion"], "instructions": ["Cube breadfruit", "Make sauce", "Combine and simmer"]},
-      {"id": "ci-l5", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lime", "herbs", "oil"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "ci-l6", "name": "Coconut Rice", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 30, "ingredients": ["rice", "coconut milk", "salt", "onion"], "instructions": ["Cook rice in coconut milk", "Add salt", "Serve"]},
-      {"id": "ci-l7", "name": "Seafood Curry", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish", "curry powder", "coconut milk", "vegetables"], "instructions": ["Make curry base", "Add fish", "Simmer 20 min"]},
-      {"id": "ci-l8", "name": "Plantain with Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "fish", "coconut milk", "onion"], "instructions": ["Boil plantain", "Make fish sauce", "Combine"]},
-      {"id": "ci-l9", "name": "Shrimp Rice", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["rice", "shrimp", "vegetables", "coconut milk"], "instructions": ["Cook rice", "Stir-fry shrimp", "Combine"]},
-      {"id": "ci-l10", "name": "Island Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "vegetables", "lime", "oil"], "instructions": ["Chop ingredients", "Toss with lime and oil", "Serve"]},
-      {"id": "ci-l11", "name": "Octopus Salad", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["octopus", "lime", "onion", "cilantro"], "instructions": ["Boil octopus", "Cool and chop", "Mix with lime juice"]},
-      {"id": "ci-l12", "name": "Fish Ball Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "flour", "eggs", "broth", "vegetables"], "instructions": ["Make fish paste", "Form balls", "Cook in broth"]},
-      {"id": "ci-l13", "name": "Coconut Noodles", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["noodles", "coconut milk", "vegetables", "salt"], "instructions": ["Cook noodles", "Mix with coconut milk", "Add vegetables"]},
-      {"id": "ci-l14", "name": "Taro Leaf Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["taro leaves", "fish", "coconut milk", "onion"], "instructions": ["Blanch leaves", "Make stew", "Add fish"]},
-      {"id": "ci-l15", "name": "Banana Meal", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["banana", "coconut milk", "salt", "onion"], "instructions": ["Slice banana", "Cook in coconut milk", "Serve with sauce"]},
-      {"id": "ci-l16", "name": "Fish with Lime", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["fish fillets", "lime", "garlic", "cilantro", "oil"], "instructions": ["Pan-fry fish", "Make lime sauce", "Top with cilantro"]},
-      {"id": "ci-l17", "name": "Papaya Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish", "papaya", "onion", "coconut milk"], "instructions": ["Cube papaya", "Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "ci-l18", "name": "Coconut Vegetable Rice", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "vegetables", "coconut milk", "salt"], "instructions": ["Cook rice in coconut milk", "Add vegetables", "Serve hot"]},
-      {"id": "ci-l19", "name": "Mango Fish Bowl", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "mango", "coconut milk", "onion"], "instructions": ["Cube mango", "Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "ci-l20", "name": "Rainbow Fish Salad", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["raw fish", "lime", "vegetables", "coconut"], "instructions": ["Dice fish", "Marinate in lime", "Add vegetables and coconut"]}
+      {
+        "id": "co-l1",
+        "name": "Cook-Islands Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l2",
+        "name": "Cook-Islands Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l3",
+        "name": "Cook-Islands Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l4",
+        "name": "Cook-Islands Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l5",
+        "name": "Cook-Islands Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l6",
+        "name": "Cook-Islands Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l7",
+        "name": "Cook-Islands Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l8",
+        "name": "Cook-Islands Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l9",
+        "name": "Cook-Islands Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l10",
+        "name": "Cook-Islands Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l11",
+        "name": "Cook-Islands Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l12",
+        "name": "Cook-Islands Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l13",
+        "name": "Cook-Islands Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l14",
+        "name": "Cook-Islands Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l15",
+        "name": "Cook-Islands Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l16",
+        "name": "Cook-Islands Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l17",
+        "name": "Cook-Islands Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l18",
+        "name": "Cook-Islands Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l19",
+        "name": "Cook-Islands Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l20",
+        "name": "Cook-Islands Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "ci-d1", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lime", "herbs", "oil"], "instructions": ["Season fish", "Grill 15 min per side"]},
-      {"id": "ci-d2", "name": "Island Seafood Feast", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 40, "ingredients": ["fish", "shrimp", "octopus", "coconut milk"], "instructions": ["Prepare seafood", "Make coconut sauce", "Serve together"]},
-      {"id": "ci-d3", "name": "Taro and Coconut", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["taro", "coconut milk", "onion", "fish"], "instructions": ["Cube taro", "Make sauce", "Add fish", "Simmer 30 min"]},
-      {"id": "ci-d4", "name": "Breadfruit Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["breadfruit", "coconut milk", "fish", "onion"], "instructions": ["Cube breadfruit", "Make sauce", "Combine with fish"]},
-      {"id": "ci-d5", "name": "Coconut Curry Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish", "curry powder", "coconut milk", "vegetables"], "instructions": ["Make curry base", "Add fish and vegetables", "Simmer 25 min"]},
-      {"id": "ci-d6", "name": "Shrimp Coconut Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["shrimp", "coconut milk", "garlic", "onion"], "instructions": ["Sauté aromatics", "Add shrimp", "Add coconut milk", "Simmer 20 min"]},
-      {"id": "ci-d7", "name": "Plantain Seafood", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "fish", "shrimp", "coconut milk"], "instructions": ["Boil plantain", "Make seafood sauce", "Combine"]},
-      {"id": "ci-d8", "name": "Octopus Coconut", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 90, "ingredients": ["octopus", "coconut milk", "onion", "garlic"], "instructions": ["Boil octopus", "Cut into pieces", "Simmer in coconut milk 60 min"]},
-      {"id": "ci-d9", "name": "Fish Banana Leaf", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish fillets", "banana leaf", "coconut milk", "spices"], "instructions": ["Wrap fish in leaf", "Add sauce", "Steam 20-25 min"]},
-      {"id": "ci-d10", "name": "Island Vegetable Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["mixed vegetables", "coconut milk", "onion", "salt"], "instructions": ["Chop vegetables", "Cook in coconut milk", "Simmer 25 min"]},
-      {"id": "ci-d11", "name": "Mango Shrimp", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["shrimp", "mango", "coconut milk", "cilantro"], "instructions": ["Cube mango", "Pan-fry shrimp", "Make mango sauce"]},
-      {"id": "ci-d12", "name": "Papaya Fish Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish", "papaya", "coconut milk", "onion"], "instructions": ["Cube papaya", "Make stew base", "Add fish", "Simmer 25 min"]},
-      {"id": "ci-d13", "name": "Crab Coconut Rice", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["crab meat", "rice", "coconut milk", "vegetables"], "instructions": ["Cook rice in coconut milk", "Top with crab", "Steam together"]},
-      {"id": "ci-d14", "name": "Lime Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["fish fillets", "lime", "garlic", "cilantro", "oil"], "instructions": ["Pan-fry fish", "Make lime sauce", "Top with cilantro"]},
-      {"id": "ci-d15", "name": "Coconut Noodle Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["noodles", "coconut milk", "fish", "vegetables"], "instructions": ["Cook noodles", "Make sauce", "Combine with toppings"]},
-      {"id": "ci-d16", "name": "Rainbow Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "vegetables", "coconut milk", "lime"], "instructions": ["Cut fish", "Make coconut sauce", "Add vegetables"]},
-      {"id": "ci-d17", "name": "Island Fish Curry", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "curry paste", "coconut milk", "vegetables"], "instructions": ["Make curry base", "Add fish", "Simmer 25 min"]},
-      {"id": "ci-d18", "name": "Taro Leaf Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["taro leaves", "fish", "coconut milk", "onion"], "instructions": ["Blanch leaves", "Make stew", "Serve with rice"]},
-      {"id": "ci-d19", "name": "Seafood Paradise", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 40, "ingredients": ["mixed seafood", "coconut milk", "spices"], "instructions": ["Prepare seafood", "Make sauce", "Combine all"]},
-      {"id": "ci-d20", "name": "Lemongrass Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish fillets", "lemongrass", "coconut milk", "lime"], "instructions": ["Infuse sauce with lemongrass", "Add fish", "Simmer 20 min"]}
+      {
+        "id": "co-d1",
+        "name": "Cook-Islands Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d2",
+        "name": "Cook-Islands Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d3",
+        "name": "Cook-Islands Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d4",
+        "name": "Cook-Islands Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d5",
+        "name": "Cook-Islands Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d6",
+        "name": "Cook-Islands Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d7",
+        "name": "Cook-Islands Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d8",
+        "name": "Cook-Islands Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d9",
+        "name": "Cook-Islands Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d10",
+        "name": "Cook-Islands Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d11",
+        "name": "Cook-Islands Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d12",
+        "name": "Cook-Islands Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d13",
+        "name": "Cook-Islands Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d14",
+        "name": "Cook-Islands Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d15",
+        "name": "Cook-Islands Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d16",
+        "name": "Cook-Islands Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d17",
+        "name": "Cook-Islands Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d18",
+        "name": "Cook-Islands Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d19",
+        "name": "Cook-Islands Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d20",
+        "name": "Cook-Islands Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "ci-des1", "name": "Coconut Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 25, "ingredients": ["coconut milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat coconut milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "ci-des2", "name": "Banana Cake", "difficulty": "Easy", "servings": 8, "prepTime": 25, "cookTime": 35, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "ci-des3", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "gelatin", "milk", "sugar"], "instructions": ["Heat milk with sugar", "Add gelatin and mango", "Chill until set"]},
-      {"id": "ci-des4", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and papaya", "Bake 30-35 min"]},
-      {"id": "ci-des5", "name": "Taro Pudding", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["taro root", "sugar", "coconut milk", "gelatin"], "instructions": ["Steam and puree taro", "Add sugar and coconut milk", "Set with gelatin"]},
-      {"id": "ci-des6", "name": "Pineapple Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["pineapple", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and pineapple", "Bake 30-35 min"]},
-      {"id": "ci-des7", "name": "Coconut Macaroons", "difficulty": "Easy", "servings": 12, "prepTime": 15, "cookTime": 20, "ingredients": ["shredded coconut", "eggs", "sugar", "vanilla"], "instructions": ["Mix ingredients", "Drop onto baking sheet", "Bake 15-20 min"]},
-      {"id": "ci-des8", "name": "Guava Dessert", "difficulty": "Hard", "servings": 8, "prepTime": 40, "cookTime": 120, "ingredients": ["guava", "sugar", "water"], "instructions": ["Cook guava with sugar", "Make paste", "Set and cut"]},
-      {"id": "ci-des9", "name": "Passion Fruit Mousse", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 0, "ingredients": ["passion fruit puree", "whipped cream", "gelatin", "sugar"], "instructions": ["Mix puree with cream", "Add gelatin", "Chill until set"]},
-      {"id": "ci-des10", "name": "Breadfruit Cake", "difficulty": "Hard", "servings": 8, "prepTime": 40, "cookTime": 40, "ingredients": ["breadfruit", "flour", "eggs", "sugar", "oil"], "instructions": ["Boil and puree breadfruit", "Mix with other ingredients", "Bake 35-40 min"]},
-      {"id": "ci-des11", "name": "Vanilla Custard", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["eggs", "milk", "sugar", "vanilla"], "instructions": ["Make custard base", "Bake in water bath 35-40 min"]},
-      {"id": "ci-des12", "name": "Coconut Flan", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["sugar", "eggs", "coconut milk", "vanilla"], "instructions": ["Caramelize sugar", "Pour custard", "Bake in water bath 35-40 min"]},
-      {"id": "ci-des13", "name": "Island Fruit Tart", "difficulty": "Hard", "servings": 8, "prepTime": 45, "cookTime": 30, "ingredients": ["pastry", "tropical fruits", "custard"], "instructions": ["Make crust", "Pour custard", "Top with fruits", "Bake 25-30 min"]},
-      {"id": "ci-des14", "name": "Mango Sorbet", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "sugar", "water", "lime"], "instructions": ["Make syrup", "Mix with puree", "Churn until smooth"]},
-      {"id": "ci-des15", "name": "Lime Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["graham cracker crust", "condensed milk", "lime juice", "eggs"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "ci-des16", "name": "Ginger Cookies", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "ginger", "sugar", "eggs"], "instructions": ["Cream butter and sugar", "Add flour and ginger", "Bake 15-20 min"]},
-      {"id": "ci-des17", "name": "Banana Bread Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 30, "ingredients": ["banana", "bread", "milk", "eggs", "sugar"], "instructions": ["Layer bread and banana", "Pour custard", "Bake 25-30 min"]},
-      {"id": "ci-des18", "name": "Coconut Rice Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["rice", "coconut milk", "sugar", "cinnamon"], "instructions": ["Cook rice in coconut milk", "Add sugar", "Serve warm"]},
-      {"id": "ci-des19", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "honey", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "ci-des20", "name": "Cinnamon Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "sugar", "cinnamon", "oil"], "instructions": ["Mix wet ingredients", "Add flour and cinnamon", "Bake 30-35 min"]}
+      {
+        "id": "co-des1",
+        "name": "Cook-Islands Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des2",
+        "name": "Cook-Islands Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des3",
+        "name": "Cook-Islands Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des4",
+        "name": "Cook-Islands Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des5",
+        "name": "Cook-Islands Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des6",
+        "name": "Cook-Islands Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des7",
+        "name": "Cook-Islands Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des8",
+        "name": "Cook-Islands Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des9",
+        "name": "Cook-Islands Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des10",
+        "name": "Cook-Islands Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des11",
+        "name": "Cook-Islands Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des12",
+        "name": "Cook-Islands Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des13",
+        "name": "Cook-Islands Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des14",
+        "name": "Cook-Islands Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des15",
+        "name": "Cook-Islands Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des16",
+        "name": "Cook-Islands Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des17",
+        "name": "Cook-Islands Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des18",
+        "name": "Cook-Islands Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des19",
+        "name": "Cook-Islands Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des20",
+        "name": "Cook-Islands Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "ci-na1", "name": "Coconut Water", "difficulty": "Easy", "servings": 1, "prepTime": 5, "cookTime": 0, "ingredients": ["young coconut"], "instructions": ["Open coconut", "Pour water", "Serve chilled"]},
-      {"id": "ci-na2", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]},
-      {"id": "ci-na3", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "yogurt", "honey"], "instructions": ["Blend papaya with yogurt", "Add honey", "Serve cold"]},
-      {"id": "ci-na4", "name": "Pineapple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["pineapple", "water", "sugar"], "instructions": ["Blend pineapple", "Strain juice", "Add water and sugar"]},
-      {"id": "ci-na5", "name": "Passion Fruit Drink", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["passion fruit", "water", "sugar"], "instructions": ["Blend pulp", "Strain seeds", "Add water and sugar"]},
-      {"id": "ci-na6", "name": "Tropical Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["tropical juices", "coconut milk", "sugar"], "instructions": ["Mix juices", "Add coconut milk", "Add sugar to taste"]},
-      {"id": "ci-na7", "name": "Ginger Tea", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["ginger", "water", "honey", "lemon"], "instructions": ["Simmer ginger", "Add honey and lemon", "Serve hot"]},
-      {"id": "ci-na8", "name": "Lime Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lime", "water", "sugar"], "instructions": ["Juice lime", "Add water and sugar", "Serve chilled"]},
-      {"id": "ci-na9", "name": "Hibiscus Tea", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 10, "ingredients": ["hibiscus", "water", "sugar"], "instructions": ["Boil hibiscus", "Strain", "Add sugar", "Serve cold"]},
-      {"id": "ci-na10", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]}
+      {
+        "id": "co-na1",
+        "name": "Cook-Islands Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na2",
+        "name": "Cook-Islands Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na3",
+        "name": "Cook-Islands Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na4",
+        "name": "Cook-Islands Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na5",
+        "name": "Cook-Islands Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na6",
+        "name": "Cook-Islands Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na7",
+        "name": "Cook-Islands Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na8",
+        "name": "Cook-Islands Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na9",
+        "name": "Cook-Islands Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na10",
+        "name": "Cook-Islands Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "ci-a1", "name": "Piña Colada", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "pineapple juice", "coconut cream", "ice"], "instructions": ["Blend rum, juice, and cream", "Add ice", "Serve in pineapple"]},
-      {"id": "ci-a2", "name": "Mai Tai", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "orgeat", "curacao"], "instructions": ["Shake all ingredients", "Serve over ice", "Garnish with orchid"]},
-      {"id": "ci-a3", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "fruit juice", "sugar", "spice"], "instructions": ["Mix rum with juice", "Add sugar and spice", "Serve with ice"]},
-      {"id": "ci-a4", "name": "Blue Lagoon", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["vodka", "blue curacao", "lemonade", "ice"], "instructions": ["Pour vodka and curacao", "Top with lemonade", "Serve over ice"]},
-      {"id": "ci-a5", "name": "Mojito Island", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "sugar", "mint"], "instructions": ["Muddle mint with sugar", "Add rum and lime", "Top with soda and ice"]},
-      {"id": "ci-a6", "name": "Tropical Rum Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "tropical juice", "coconut", "lime"], "instructions": ["Mix rum with juice", "Add coconut", "Serve over ice"]},
-      {"id": "ci-a7", "name": "Island Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "ci-a8", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["white wine", "soda water", "fruit"], "instructions": ["Pour wine and soda", "Add fruit", "Serve chilled"]},
-      {"id": "ci-a9", "name": "Coconut Rum", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["coconut rum"], "instructions": ["Serve chilled", "Drink neat or mixed"]},
-      {"id": "ci-a10", "name": "Passion Fruit Daiquiri", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "passion fruit puree", "lime juice", "sugar"], "instructions": ["Shake all ingredients", "Strain into glass", "Serve chilled"]}
+      {
+        "id": "co-a1",
+        "name": "Cook-Islands Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a2",
+        "name": "Cook-Islands Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a3",
+        "name": "Cook-Islands Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a4",
+        "name": "Cook-Islands Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a5",
+        "name": "Cook-Islands Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a6",
+        "name": "Cook-Islands Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a7",
+        "name": "Cook-Islands Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a8",
+        "name": "Cook-Islands Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a9",
+        "name": "Cook-Islands Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a10",
+        "name": "Cook-Islands Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

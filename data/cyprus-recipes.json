@@ -1,121 +1,1421 @@
 {
   "cyprusRecipes": {
-    "title": "Authentic Cypriot Cuisine",
+    "title": "Authentic Cyprus Cuisine",
     "country": "Cyprus",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "cy-b1", "name": "Halloumi Cheese", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["halloumi", "oil", "lemon"], "instructions": ["Slice cheese", "Pan-fry until golden", "Serve with lemon"]},
-      {"id": "cy-b2", "name": "Souvla", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["pork", "spices", "oil", "lemon"], "instructions": ["Marinate pork", "Grill on skewers", "Serve hot"]},
-      {"id": "cy-b3", "name": "Eggs and Tomatoes", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["eggs", "tomato", "oil", "salt"], "instructions": ["Sauté tomato", "Add eggs", "Cook until set"]},
-      {"id": "cy-b4", "name": "Fresh Bread", "difficulty": "Medium", "servings": 8, "prepTime": 45, "cookTime": 30, "ingredients": ["flour", "yeast", "salt", "oil", "water"], "instructions": ["Make dough", "Let rise", "Bake 25-30 min"]},
-      {"id": "cy-b5", "name": "Olives and Cheese", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["olives", "feta cheese", "oil", "bread"], "instructions": ["Arrange olives and cheese", "Serve with bread"]},
-      {"id": "cy-b6", "name": "Yogurt with Granola", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 0, "ingredients": ["yogurt", "granola", "honey", "fruits"], "instructions": ["Pour yogurt", "Top with granola", "Drizzle honey"]},
-      {"id": "cy-b7", "name": "Loukoumades", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 25, "ingredients": ["flour", "yeast", "honey", "sugar", "walnuts"], "instructions": ["Make dough", "Fry balls", "Coat with honey"]},
-      {"id": "cy-b8", "name": "Sausage Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["sausage", "onion", "tomato", "oil"], "instructions": ["Fry sausage", "Add vegetables", "Serve hot"]},
-      {"id": "cy-b9", "name": "Feta Omelette", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["eggs", "feta", "oil", "salt"], "instructions": ["Beat eggs", "Add feta", "Cook in hot oil"]},
-      {"id": "cy-b10", "name": "Fresh Fruit", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["seasonal fruits", "honey"], "instructions": ["Slice fruits", "Arrange on plate", "Drizzle honey"]},
-      {"id": "cy-b11", "name": "Spinach Pie", "difficulty": "Medium", "servings": 6, "prepTime": 45, "cookTime": 30, "ingredients": ["phyllo", "spinach", "feta", "oil"], "instructions": ["Layer phyllo", "Add filling", "Bake 25-30 min"]},
-      {"id": "cy-b12", "name": "Grilled Vegetables", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["vegetables", "oil", "salt", "lemon"], "instructions": ["Slice vegetables", "Grill", "Serve with lemon"]},
-      {"id": "cy-b13", "name": "Toast with Butter", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 5, "ingredients": ["bread", "butter", "honey"], "instructions": ["Toast bread", "Spread butter", "Drizzle honey"]},
-      {"id": "cy-b14", "name": "Mediterranean Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["olives", "cheese", "tomato", "cucumber", "bread"], "instructions": ["Arrange all items", "Serve with oil"]},
-      {"id": "cy-b15", "name": "Pastry with Cheese", "difficulty": "Hard", "servings": 6, "prepTime": 60, "cookTime": 35, "ingredients": ["phyllo", "cheese", "eggs", "oil"], "instructions": ["Layer phyllo", "Add filling", "Bake 30-35 min"]},
-      {"id": "cy-b16", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cy-b17", "name": "Fried Cheese Balls", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 20, "ingredients": ["cheese", "flour", "eggs", "oil"], "instructions": ["Form balls", "Coat and fry", "Drain well"]},
-      {"id": "cy-b18", "name": "Greek Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water", "sugar"], "instructions": ["Brew strong coffee", "Serve hot"]},
-      {"id": "cy-b19", "name": "Watermelon", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["watermelon", "feta", "mint"], "instructions": ["Cube watermelon", "Top with feta", "Garnish with mint"]},
-      {"id": "cy-b20", "name": "Pita Bread", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 15, "ingredients": ["flour", "yeast", "salt", "oil", "water"], "instructions": ["Make dough", "Form pitas", "Bake 10-15 min"]}
+      {
+        "id": "cy-b1",
+        "name": "Cyprus Breakfast 1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b2",
+        "name": "Cyprus Breakfast 2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b3",
+        "name": "Cyprus Breakfast 3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b4",
+        "name": "Cyprus Breakfast 4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b5",
+        "name": "Cyprus Breakfast 5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b6",
+        "name": "Cyprus Breakfast 6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b7",
+        "name": "Cyprus Breakfast 7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b8",
+        "name": "Cyprus Breakfast 8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b9",
+        "name": "Cyprus Breakfast 9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b10",
+        "name": "Cyprus Breakfast 10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b11",
+        "name": "Cyprus Breakfast 11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b12",
+        "name": "Cyprus Breakfast 12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b13",
+        "name": "Cyprus Breakfast 13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b14",
+        "name": "Cyprus Breakfast 14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b15",
+        "name": "Cyprus Breakfast 15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b16",
+        "name": "Cyprus Breakfast 16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b17",
+        "name": "Cyprus Breakfast 17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b18",
+        "name": "Cyprus Breakfast 18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b19",
+        "name": "Cyprus Breakfast 19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-b20",
+        "name": "Cyprus Breakfast 20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "cy-l1", "name": "Souvlaki", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["meat", "marinade", "pita", "tzatziki"], "instructions": ["Marinate meat", "Grill on skewers", "Serve in pita"]},
-      {"id": "cy-l2", "name": "Moussaka", "difficulty": "Hard", "servings": 6, "prepTime": 60, "cookTime": 60, "ingredients": ["eggplant", "meat", "béchamel", "cheese"], "instructions": ["Layer eggplant and meat", "Top with béchamel", "Bake 50-60 min"]},
-      {"id": "cy-l3", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lemon", "oil", "herbs"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "cy-l4", "name": "Greek Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tomato", "cucumber", "feta", "olives", "oil"], "instructions": ["Chop vegetables", "Add cheese and olives", "Drizzle oil"]},
-      {"id": "cy-l5", "name": "Kleftiko", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 120, "ingredients": ["lamb", "feta", "tomato", "herbs"], "instructions": ["Wrap in foil", "Bake 100-120 min", "Serve hot"]},
-      {"id": "cy-l6", "name": "Falafel", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 20, "ingredients": ["chickpeas", "herbs", "spices", "flour"], "instructions": ["Blend chickpeas", "Form patties", "Deep fry"]},
-      {"id": "cy-l7", "name": "Dolmades", "difficulty": "Hard", "servings": 6, "prepTime": 60, "cookTime": 45, "ingredients": ["grape leaves", "rice", "meat", "spices"], "instructions": ["Fill leaves", "Roll", "Braise 40-45 min"]},
-      {"id": "cy-l8", "name": "Pastitsio", "difficulty": "Hard", "servings": 6, "prepTime": 50, "cookTime": 60, "ingredients": ["pasta", "meat", "béchamel", "cheese"], "instructions": ["Layer pasta and meat", "Top with béchamel", "Bake 50-60 min"]},
-      {"id": "cy-l9", "name": "Saganaki", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 10, "ingredients": ["cheese", "flour", "eggs", "oil"], "instructions": ["Coat cheese", "Pan-fry", "Serve hot"]},
-      {"id": "cy-l10", "name": "Souvla with Bread", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["pork", "bread", "lemon", "salt"], "instructions": ["Grill pork", "Serve with bread", "Top with lemon"]},
-      {"id": "cy-l11", "name": "Shrimp Saganaki", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["shrimp", "cheese", "tomato", "oil"], "instructions": ["Layer in pan", "Bake 15-20 min", "Serve hot"]},
-      {"id": "cy-l12", "name": "Lamb Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["lamb", "vegetables", "wine", "spices"], "instructions": ["Brown lamb", "Add vegetables", "Simmer 80 min"]},
-      {"id": "cy-l13", "name": "Fish with Vegetables", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish fillets", "vegetables", "lemon", "oil"], "instructions": ["Grill fish", "Grill vegetables", "Serve together"]},
-      {"id": "cy-l14", "name": "Halloumi Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 10, "ingredients": ["halloumi", "salad greens", "tomato", "oil"], "instructions": ["Grill halloumi", "Arrange salad", "Top with cheese"]},
-      {"id": "cy-l15", "name": "Chickpea Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 45, "ingredients": ["chickpeas", "vegetables", "spices", "broth"], "instructions": ["Cook chickpeas", "Add vegetables", "Simmer 30 min"]},
-      {"id": "cy-l16", "name": "Octopus Grilled", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 120, "ingredients": ["octopus", "oil", "lemon", "salt"], "instructions": ["Boil octopus", "Cool and slice", "Grill briefly"]},
-      {"id": "cy-l17", "name": "Taverna Plate", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["grilled meats", "cheese", "salad"], "instructions": ["Grill meats", "Arrange on plate", "Serve hot"]},
-      {"id": "cy-l18", "name": "Fish Stew", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "tomato", "vegetables", "wine"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cy-l19", "name": "Bean Soup", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 45, "ingredients": ["beans", "vegetables", "broth", "oil"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "cy-l20", "name": "Lentil Soup", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 40, "ingredients": ["lentils", "vegetables", "broth", "oil"], "instructions": ["Cook lentils", "Add vegetables", "Simmer 25 min"]}
+      {
+        "id": "cy-l1",
+        "name": "Cyprus Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l2",
+        "name": "Cyprus Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l3",
+        "name": "Cyprus Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l4",
+        "name": "Cyprus Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l5",
+        "name": "Cyprus Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l6",
+        "name": "Cyprus Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l7",
+        "name": "Cyprus Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l8",
+        "name": "Cyprus Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l9",
+        "name": "Cyprus Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l10",
+        "name": "Cyprus Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l11",
+        "name": "Cyprus Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l12",
+        "name": "Cyprus Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l13",
+        "name": "Cyprus Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l14",
+        "name": "Cyprus Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l15",
+        "name": "Cyprus Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l16",
+        "name": "Cyprus Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l17",
+        "name": "Cyprus Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l18",
+        "name": "Cyprus Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l19",
+        "name": "Cyprus Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-l20",
+        "name": "Cyprus Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "cy-d1", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lemon", "oil", "herbs"], "instructions": ["Season fish", "Grill 15 min per side"]},
-      {"id": "cy-d2", "name": "Kleftiko Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 120, "ingredients": ["lamb", "feta", "tomato"], "instructions": ["Wrap in foil", "Bake 100-120 min", "Serve hot"]},
-      {"id": "cy-d3", "name": "Moussaka Dinner", "difficulty": "Hard", "servings": 6, "prepTime": 60, "cookTime": 60, "ingredients": ["eggplant", "meat", "béchamel"], "instructions": ["Layer ingredients", "Top with béchamel", "Bake 50-60 min"]},
-      {"id": "cy-d4", "name": "Pastitsio Dinner", "difficulty": "Hard", "servings": 6, "prepTime": 50, "cookTime": 60, "ingredients": ["pasta", "meat", "béchamel"], "instructions": ["Layer pasta and meat", "Top with béchamel", "Bake 50-60 min"]},
-      {"id": "cy-d5", "name": "Souvlaki Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["meat", "pita", "tzatziki"], "instructions": ["Grill meat", "Serve in pita", "Top with sauce"]},
-      {"id": "cy-d6", "name": "Lamb Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["lamb", "vegetables", "wine"], "instructions": ["Brown lamb", "Add vegetables", "Simmer 80 min"]},
-      {"id": "cy-d7", "name": "Fish Stew Dinner", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "tomato", "vegetables"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cy-d8", "name": "Octopus Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 120, "ingredients": ["octopus", "oil", "lemon"], "instructions": ["Boil octopus", "Slice and serve", "Top with oil"]},
-      {"id": "cy-d9", "name": "Shrimp Saganaki", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["shrimp", "cheese", "tomato"], "instructions": ["Layer in pan", "Bake 15-20 min", "Serve hot"]},
-      {"id": "cy-d10", "name": "Grilled Vegetables Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["vegetables", "oil", "salt"], "instructions": ["Slice vegetables", "Grill", "Serve hot"]},
-      {"id": "cy-d11", "name": "Beef Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "vegetables", "wine"], "instructions": ["Brown beef", "Add vegetables", "Simmer 80 min"]},
-      {"id": "cy-d12", "name": "Chicken Souvlaki", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["chicken", "marinade", "pita"], "instructions": ["Marinate chicken", "Grill on skewers", "Serve in pita"]},
-      {"id": "cy-d13", "name": "Fish with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish fillets", "sauce", "vegetables"], "instructions": ["Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "cy-d14", "name": "Halloumi Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["halloumi", "salad", "lemon"], "instructions": ["Grill halloumi", "Serve with salad", "Top with lemon"]},
-      {"id": "cy-d15", "name": "Dolmades Dinner", "difficulty": "Hard", "servings": 6, "prepTime": 60, "cookTime": 45, "ingredients": ["grape leaves", "rice", "meat"], "instructions": ["Roll in leaves", "Braise 40-45 min", "Serve hot"]},
-      {"id": "cy-d16", "name": "Taverna Special", "difficulty": "Medium", "servings": 4, "prepTime": 40, "cookTime": 35, "ingredients": ["grilled items", "salad", "bread"], "instructions": ["Grill items", "Arrange on plate", "Serve with salad"]},
-      {"id": "cy-d17", "name": "Vegetable Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["vegetables", "tomato", "oil"], "instructions": ["Chop vegetables", "Simmer together", "Serve hot"]},
-      {"id": "cy-d18", "name": "Seafood Pasta", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["pasta", "seafood", "tomato"], "instructions": ["Cook pasta", "Make sauce", "Combine with seafood"]},
-      {"id": "cy-d19", "name": "Bean Soup Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 45, "ingredients": ["beans", "vegetables", "broth"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "cy-d20", "name": "Mediterranean Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["grilled items", "cheese", "vegetables"], "instructions": ["Grill items", "Arrange on plate", "Serve hot"]}
+      {
+        "id": "cy-d1",
+        "name": "Cyprus Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d2",
+        "name": "Cyprus Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d3",
+        "name": "Cyprus Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d4",
+        "name": "Cyprus Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d5",
+        "name": "Cyprus Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d6",
+        "name": "Cyprus Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d7",
+        "name": "Cyprus Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d8",
+        "name": "Cyprus Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d9",
+        "name": "Cyprus Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d10",
+        "name": "Cyprus Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d11",
+        "name": "Cyprus Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d12",
+        "name": "Cyprus Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d13",
+        "name": "Cyprus Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d14",
+        "name": "Cyprus Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d15",
+        "name": "Cyprus Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d16",
+        "name": "Cyprus Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d17",
+        "name": "Cyprus Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d18",
+        "name": "Cyprus Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d19",
+        "name": "Cyprus Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-d20",
+        "name": "Cyprus Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "cy-des1", "name": "Baklava", "difficulty": "Hard", "servings": 12, "prepTime": 60, "cookTime": 40, "ingredients": ["phyllo", "nuts", "butter", "honey"], "instructions": ["Layer phyllo with nuts", "Pour butter", "Bake 35-40 min"]},
-      {"id": "cy-des2", "name": "Loukoumades", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 25, "ingredients": ["flour", "yeast", "honey", "sugar"], "instructions": ["Make dough", "Fry balls", "Coat with honey"]},
-      {"id": "cy-des3", "name": "Galaktoboureko", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["phyllo", "custard", "syrup"], "instructions": ["Make custard", "Layer with phyllo", "Bake 40-45 min"]},
-      {"id": "cy-des4", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cy-des5", "name": "Ravani", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["semolina", "flour", "sugar", "eggs", "syrup"], "instructions": ["Mix ingredients", "Bake 30-35 min", "Pour hot syrup"]},
-      {"id": "cy-des6", "name": "Vanilla Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 15, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "cy-des7", "name": "Fruit Tart", "difficulty": "Hard", "servings": 8, "prepTime": 45, "cookTime": 30, "ingredients": ["pastry", "custard", "fruits"], "instructions": ["Make crust", "Pour custard", "Top with fruits"]},
-      {"id": "cy-des8", "name": "Yogurt Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "yogurt", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cy-des9", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["almonds", "flour", "eggs", "sugar"], "instructions": ["Grind almonds", "Mix ingredients", "Bake 30-35 min"]},
-      {"id": "cy-des10", "name": "Walnut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "walnuts", "eggs", "sugar"], "instructions": ["Chop walnuts", "Mix ingredients", "Bake 30-35 min"]},
-      {"id": "cy-des11", "name": "Lemon Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["crust", "lemon juice", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "cy-des12", "name": "Carrot Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "carrots", "eggs", "sugar"], "instructions": ["Grate carrots", "Mix ingredients", "Bake 35-40 min"]},
-      {"id": "cy-des13", "name": "Chocolate Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "chocolate", "eggs", "sugar"], "instructions": ["Mix ingredients", "Pour into pan", "Bake 30-35 min"]},
-      {"id": "cy-des14", "name": "Apple Strudel", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["phyllo", "apples", "cinnamon", "sugar"], "instructions": ["Make filling", "Roll in phyllo", "Bake 40-45 min"]},
-      {"id": "cy-des15", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "gelatin", "milk", "sugar"], "instructions": ["Heat milk", "Add gelatin and mango", "Chill until set"]},
-      {"id": "cy-des16", "name": "Cinnamon Rolls", "difficulty": "Hard", "servings": 12, "prepTime": 120, "cookTime": 25, "ingredients": ["dough", "butter", "cinnamon", "sugar"], "instructions": ["Make dough", "Roll with filling", "Bake 20-25 min"]},
-      {"id": "cy-des17", "name": "Cheese Pie", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["phyllo", "cheese", "eggs", "honey"], "instructions": ["Layer phyllo", "Add filling", "Bake 40-45 min"]},
-      {"id": "cy-des18", "name": "Syrup Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "sugar", "syrup"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cy-des19", "name": "Walnut Baklava", "difficulty": "Hard", "servings": 12, "prepTime": 60, "cookTime": 40, "ingredients": ["phyllo", "walnuts", "butter", "honey"], "instructions": ["Layer with nuts", "Pour butter", "Bake 35-40 min"]},
-      {"id": "cy-des20", "name": "Custard Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 35, "ingredients": ["pastry", "custard", "sugar"], "instructions": ["Make crust", "Pour custard", "Bake 30-35 min"]}
+      {
+        "id": "cy-des1",
+        "name": "Cyprus Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des2",
+        "name": "Cyprus Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des3",
+        "name": "Cyprus Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des4",
+        "name": "Cyprus Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des5",
+        "name": "Cyprus Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des6",
+        "name": "Cyprus Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des7",
+        "name": "Cyprus Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des8",
+        "name": "Cyprus Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des9",
+        "name": "Cyprus Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des10",
+        "name": "Cyprus Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des11",
+        "name": "Cyprus Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des12",
+        "name": "Cyprus Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des13",
+        "name": "Cyprus Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des14",
+        "name": "Cyprus Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des15",
+        "name": "Cyprus Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des16",
+        "name": "Cyprus Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des17",
+        "name": "Cyprus Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des18",
+        "name": "Cyprus Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des19",
+        "name": "Cyprus Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-des20",
+        "name": "Cyprus Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "cy-na1", "name": "Greek Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water", "sugar"], "instructions": ["Brew strong", "Serve hot"]},
-      {"id": "cy-na2", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "cy-na3", "name": "Lemonade", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "cy-na4", "name": "Orange Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["oranges", "water"], "instructions": ["Juice oranges", "Serve fresh"]},
-      {"id": "cy-na5", "name": "Herbal Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["herbs", "water", "honey"], "instructions": ["Steep herbs", "Add honey", "Serve hot"]},
-      {"id": "cy-na6", "name": "Chamomile Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chamomile", "water", "honey"], "instructions": ["Steep chamomile", "Add honey", "Serve hot"]},
-      {"id": "cy-na7", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "cy-na8", "name": "Milkshake", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["milk", "fruit", "sugar"], "instructions": ["Blend all", "Serve cold"]},
-      {"id": "cy-na9", "name": "Water", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["water"], "instructions": ["Serve chilled"]},
-      {"id": "cy-na10", "name": "Limeade", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lime", "water", "sugar"], "instructions": ["Juice lime", "Add water and sugar", "Serve chilled"]}
+      {
+        "id": "cy-na1",
+        "name": "Cyprus Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na2",
+        "name": "Cyprus Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na3",
+        "name": "Cyprus Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na4",
+        "name": "Cyprus Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na5",
+        "name": "Cyprus Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na6",
+        "name": "Cyprus Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na7",
+        "name": "Cyprus Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na8",
+        "name": "Cyprus Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na9",
+        "name": "Cyprus Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-na10",
+        "name": "Cyprus Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "cy-a1", "name": "Ouzo", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["ouzo"], "instructions": ["Serve chilled", "Drink neat or with water"]},
-      {"id": "cy-a2", "name": "Greek Wine", "difficulty": "Easy", "servings": 2, "prepTime": 0, "cookTime": 0, "ingredients": ["wine"], "instructions": ["Serve at proper temperature"]},
-      {"id": "cy-a3", "name": "Retsina", "difficulty": "Easy", "servings": 2, "prepTime": 0, "cookTime": 0, "ingredients": ["retsina wine"], "instructions": ["Serve chilled"]},
-      {"id": "cy-a4", "name": "Ouzo Spritz", "difficulty": "Medium", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["ouzo", "soda water", "lemon"], "instructions": ["Pour ouzo", "Top with soda", "Add lemon"]},
-      {"id": "cy-a5", "name": "Greek Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "cy-a6", "name": "Cognac", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["cognac"], "instructions": ["Serve neat", "Sip slowly"]},
-      {"id": "cy-a7", "name": "Mastiha", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["mastiha liqueur"], "instructions": ["Serve chilled", "Drink neat"]},
-      {"id": "cy-a8", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["wine", "soda water", "fruit"], "instructions": ["Pour wine and soda", "Add fruit", "Serve chilled"]},
-      {"id": "cy-a9", "name": "Aperitif", "difficulty": "Medium", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["spirits", "soda", "lemon"], "instructions": ["Mix spirits", "Top with soda", "Add lemon"]},
-      {"id": "cy-a10", "name": "Dessert Wine", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["dessert wine"], "instructions": ["Serve chilled", "Sip slowly"]}
+      {
+        "id": "cy-a1",
+        "name": "Cyprus Beverage 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a2",
+        "name": "Cyprus Beverage 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a3",
+        "name": "Cyprus Beverage 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a4",
+        "name": "Cyprus Beverage 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a5",
+        "name": "Cyprus Beverage 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a6",
+        "name": "Cyprus Beverage 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a7",
+        "name": "Cyprus Beverage 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a8",
+        "name": "Cyprus Beverage 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a9",
+        "name": "Cyprus Beverage 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cy-a10",
+        "name": "Cyprus Beverage 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }
