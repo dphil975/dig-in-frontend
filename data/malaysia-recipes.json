@@ -2,7 +2,7 @@
   "malaysiaRecipes": {
     "title": "Authentic Malaysia Cuisine",
     "country": "Malaysia",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -15,11 +15,11 @@
         "cookTime": 30,
         "ingredients": [
           "rice",
-          "coconut milk"
+          "coconut milk",
+          "sambal"
         ],
         "instructions": [
-          "Coconut rice",
-          "National dish"
+          "Coconut rice - National dish"
         ]
       },
       {
@@ -39,21 +39,22 @@
       },
       {
         "id": "my-b3",
-        "name": "Malaysian B3",
-        "difficulty": "Easy",
+        "name": "Kuih Lapis",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "flour",
+          "sugar"
         ],
         "instructions": [
-          "preparation"
+          "Layered cake"
         ]
       },
       {
         "id": "my-b4",
-        "name": "Malaysian B4",
+        "name": "Malaysian Breakfast 4",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -67,7 +68,7 @@
       },
       {
         "id": "my-b5",
-        "name": "Malaysian B5",
+        "name": "Malaysian Breakfast 5",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -81,7 +82,7 @@
       },
       {
         "id": "my-b6",
-        "name": "Malaysian B6",
+        "name": "Malaysian Breakfast 6",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -95,7 +96,7 @@
       },
       {
         "id": "my-b7",
-        "name": "Malaysian B7",
+        "name": "Malaysian Breakfast 7",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -109,7 +110,7 @@
       },
       {
         "id": "my-b8",
-        "name": "Malaysian B8",
+        "name": "Malaysian Breakfast 8",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -123,7 +124,7 @@
       },
       {
         "id": "my-b9",
-        "name": "Malaysian B9",
+        "name": "Malaysian Breakfast 9",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -137,7 +138,7 @@
       },
       {
         "id": "my-b10",
-        "name": "Malaysian B10",
+        "name": "Malaysian Breakfast 10",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -151,7 +152,7 @@
       },
       {
         "id": "my-b11",
-        "name": "Malaysian B11",
+        "name": "Malaysian Breakfast 11",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -165,7 +166,7 @@
       },
       {
         "id": "my-b12",
-        "name": "Malaysian B12",
+        "name": "Malaysian Breakfast 12",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -179,7 +180,7 @@
       },
       {
         "id": "my-b13",
-        "name": "Malaysian B13",
+        "name": "Malaysian Breakfast 13",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -193,7 +194,7 @@
       },
       {
         "id": "my-b14",
-        "name": "Malaysian B14",
+        "name": "Malaysian Breakfast 14",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -207,7 +208,7 @@
       },
       {
         "id": "my-b15",
-        "name": "Malaysian B15",
+        "name": "Malaysian Breakfast 15",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -221,7 +222,7 @@
       },
       {
         "id": "my-b16",
-        "name": "Malaysian B16",
+        "name": "Malaysian Breakfast 16",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -235,7 +236,7 @@
       },
       {
         "id": "my-b17",
-        "name": "Malaysian B17",
+        "name": "Malaysian Breakfast 17",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -249,7 +250,7 @@
       },
       {
         "id": "my-b18",
-        "name": "Malaysian B18",
+        "name": "Malaysian Breakfast 18",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -263,7 +264,7 @@
       },
       {
         "id": "my-b19",
-        "name": "Malaysian B19",
+        "name": "Malaysian Breakfast 19",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -277,7 +278,7 @@
       },
       {
         "id": "my-b20",
-        "name": "Malaysian B20",
+        "name": "Malaysian Breakfast 20",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -300,7 +301,8 @@
         "cookTime": 25,
         "ingredients": [
           "meat",
-          "peanut sauce"
+          "peanut sauce",
+          "skewers"
         ],
         "instructions": [
           "Grilled meat skewers"
@@ -324,21 +326,23 @@
       },
       {
         "id": "my-l3",
-        "name": "Malaysian L3",
+        "name": "Laksa",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 35,
         "ingredients": [
-          "ingredient"
+          "noodles",
+          "curry",
+          "coconut milk"
         ],
         "instructions": [
-          "preparation"
+          "Curry noodle soup"
         ]
       },
       {
         "id": "my-l4",
-        "name": "Malaysian L4",
+        "name": "Malaysian Lunch 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -352,7 +356,7 @@
       },
       {
         "id": "my-l5",
-        "name": "Malaysian L5",
+        "name": "Malaysian Lunch 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -366,7 +370,7 @@
       },
       {
         "id": "my-l6",
-        "name": "Malaysian L6",
+        "name": "Malaysian Lunch 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -380,7 +384,7 @@
       },
       {
         "id": "my-l7",
-        "name": "Malaysian L7",
+        "name": "Malaysian Lunch 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -394,7 +398,7 @@
       },
       {
         "id": "my-l8",
-        "name": "Malaysian L8",
+        "name": "Malaysian Lunch 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -408,7 +412,7 @@
       },
       {
         "id": "my-l9",
-        "name": "Malaysian L9",
+        "name": "Malaysian Lunch 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -422,7 +426,7 @@
       },
       {
         "id": "my-l10",
-        "name": "Malaysian L10",
+        "name": "Malaysian Lunch 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -436,7 +440,7 @@
       },
       {
         "id": "my-l11",
-        "name": "Malaysian L11",
+        "name": "Malaysian Lunch 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -450,7 +454,7 @@
       },
       {
         "id": "my-l12",
-        "name": "Malaysian L12",
+        "name": "Malaysian Lunch 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -464,7 +468,7 @@
       },
       {
         "id": "my-l13",
-        "name": "Malaysian L13",
+        "name": "Malaysian Lunch 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -478,7 +482,7 @@
       },
       {
         "id": "my-l14",
-        "name": "Malaysian L14",
+        "name": "Malaysian Lunch 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -492,7 +496,7 @@
       },
       {
         "id": "my-l15",
-        "name": "Malaysian L15",
+        "name": "Malaysian Lunch 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -506,7 +510,7 @@
       },
       {
         "id": "my-l16",
-        "name": "Malaysian L16",
+        "name": "Malaysian Lunch 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -520,7 +524,7 @@
       },
       {
         "id": "my-l17",
-        "name": "Malaysian L17",
+        "name": "Malaysian Lunch 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -534,7 +538,7 @@
       },
       {
         "id": "my-l18",
-        "name": "Malaysian L18",
+        "name": "Malaysian Lunch 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -548,7 +552,7 @@
       },
       {
         "id": "my-l19",
-        "name": "Malaysian L19",
+        "name": "Malaysian Lunch 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -562,7 +566,7 @@
       },
       {
         "id": "my-l20",
-        "name": "Malaysian L20",
+        "name": "Malaysian Lunch 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -578,7 +582,7 @@
     "dinner": [
       {
         "id": "my-d1",
-        "name": "Malaysian D1",
+        "name": "Malaysian Dinner 1",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -592,7 +596,7 @@
       },
       {
         "id": "my-d2",
-        "name": "Malaysian D2",
+        "name": "Malaysian Dinner 2",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -606,7 +610,7 @@
       },
       {
         "id": "my-d3",
-        "name": "Malaysian D3",
+        "name": "Malaysian Dinner 3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -620,7 +624,7 @@
       },
       {
         "id": "my-d4",
-        "name": "Malaysian D4",
+        "name": "Malaysian Dinner 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -634,7 +638,7 @@
       },
       {
         "id": "my-d5",
-        "name": "Malaysian D5",
+        "name": "Malaysian Dinner 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -648,7 +652,7 @@
       },
       {
         "id": "my-d6",
-        "name": "Malaysian D6",
+        "name": "Malaysian Dinner 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -662,7 +666,7 @@
       },
       {
         "id": "my-d7",
-        "name": "Malaysian D7",
+        "name": "Malaysian Dinner 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -676,7 +680,7 @@
       },
       {
         "id": "my-d8",
-        "name": "Malaysian D8",
+        "name": "Malaysian Dinner 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -690,7 +694,7 @@
       },
       {
         "id": "my-d9",
-        "name": "Malaysian D9",
+        "name": "Malaysian Dinner 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -704,7 +708,7 @@
       },
       {
         "id": "my-d10",
-        "name": "Malaysian D10",
+        "name": "Malaysian Dinner 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -718,7 +722,7 @@
       },
       {
         "id": "my-d11",
-        "name": "Malaysian D11",
+        "name": "Malaysian Dinner 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -732,7 +736,7 @@
       },
       {
         "id": "my-d12",
-        "name": "Malaysian D12",
+        "name": "Malaysian Dinner 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -746,7 +750,7 @@
       },
       {
         "id": "my-d13",
-        "name": "Malaysian D13",
+        "name": "Malaysian Dinner 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -760,7 +764,7 @@
       },
       {
         "id": "my-d14",
-        "name": "Malaysian D14",
+        "name": "Malaysian Dinner 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -774,7 +778,7 @@
       },
       {
         "id": "my-d15",
-        "name": "Malaysian D15",
+        "name": "Malaysian Dinner 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -788,7 +792,7 @@
       },
       {
         "id": "my-d16",
-        "name": "Malaysian D16",
+        "name": "Malaysian Dinner 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -802,7 +806,7 @@
       },
       {
         "id": "my-d17",
-        "name": "Malaysian D17",
+        "name": "Malaysian Dinner 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -816,7 +820,7 @@
       },
       {
         "id": "my-d18",
-        "name": "Malaysian D18",
+        "name": "Malaysian Dinner 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -830,7 +834,7 @@
       },
       {
         "id": "my-d19",
-        "name": "Malaysian D19",
+        "name": "Malaysian Dinner 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -844,7 +848,7 @@
       },
       {
         "id": "my-d20",
-        "name": "Malaysian D20",
+        "name": "Malaysian Dinner 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -867,7 +871,8 @@
         "cookTime": 5,
         "ingredients": [
           "pandan",
-          "coconut"
+          "coconut",
+          "sugar"
         ],
         "instructions": [
           "Green jelly dessert"
@@ -875,22 +880,22 @@
       },
       {
         "id": "my-des2",
-        "name": "Kuih Lapis",
+        "name": "Onde-Onde",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 40,
-        "cookTime": 30,
+        "prepTime": 30,
+        "cookTime": 20,
         "ingredients": [
-          "flour",
-          "sugar"
+          "glutinous rice",
+          "palm sugar"
         ],
         "instructions": [
-          "Layered cake"
+          "Sweet balls"
         ]
       },
       {
         "id": "my-des3",
-        "name": "Malaysian Des3",
+        "name": "Malaysian Dessert 3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -904,7 +909,7 @@
       },
       {
         "id": "my-des4",
-        "name": "Malaysian Des4",
+        "name": "Malaysian Dessert 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -918,7 +923,7 @@
       },
       {
         "id": "my-des5",
-        "name": "Malaysian Des5",
+        "name": "Malaysian Dessert 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -932,7 +937,7 @@
       },
       {
         "id": "my-des6",
-        "name": "Malaysian Des6",
+        "name": "Malaysian Dessert 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -946,7 +951,7 @@
       },
       {
         "id": "my-des7",
-        "name": "Malaysian Des7",
+        "name": "Malaysian Dessert 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -960,7 +965,7 @@
       },
       {
         "id": "my-des8",
-        "name": "Malaysian Des8",
+        "name": "Malaysian Dessert 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -974,7 +979,7 @@
       },
       {
         "id": "my-des9",
-        "name": "Malaysian Des9",
+        "name": "Malaysian Dessert 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -988,7 +993,7 @@
       },
       {
         "id": "my-des10",
-        "name": "Malaysian Des10",
+        "name": "Malaysian Dessert 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1002,7 +1007,7 @@
       },
       {
         "id": "my-des11",
-        "name": "Malaysian Des11",
+        "name": "Malaysian Dessert 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1016,7 +1021,7 @@
       },
       {
         "id": "my-des12",
-        "name": "Malaysian Des12",
+        "name": "Malaysian Dessert 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1030,7 +1035,7 @@
       },
       {
         "id": "my-des13",
-        "name": "Malaysian Des13",
+        "name": "Malaysian Dessert 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1044,7 +1049,7 @@
       },
       {
         "id": "my-des14",
-        "name": "Malaysian Des14",
+        "name": "Malaysian Dessert 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1058,7 +1063,7 @@
       },
       {
         "id": "my-des15",
-        "name": "Malaysian Des15",
+        "name": "Malaysian Dessert 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1072,7 +1077,7 @@
       },
       {
         "id": "my-des16",
-        "name": "Malaysian Des16",
+        "name": "Malaysian Dessert 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1086,7 +1091,7 @@
       },
       {
         "id": "my-des17",
-        "name": "Malaysian Des17",
+        "name": "Malaysian Dessert 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1100,7 +1105,7 @@
       },
       {
         "id": "my-des18",
-        "name": "Malaysian Des18",
+        "name": "Malaysian Dessert 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1114,7 +1119,7 @@
       },
       {
         "id": "my-des19",
-        "name": "Malaysian Des19",
+        "name": "Malaysian Dessert 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1128,7 +1133,7 @@
       },
       {
         "id": "my-des20",
-        "name": "Malaysian Des20",
+        "name": "Malaysian Dessert 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1144,7 +1149,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "my-na1",
-        "name": "Malaysian NA1",
+        "name": "Malaysian Drink 1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1158,7 +1163,7 @@
       },
       {
         "id": "my-na2",
-        "name": "Malaysian NA2",
+        "name": "Malaysian Drink 2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1172,7 +1177,7 @@
       },
       {
         "id": "my-na3",
-        "name": "Malaysian NA3",
+        "name": "Malaysian Drink 3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1186,7 +1191,7 @@
       },
       {
         "id": "my-na4",
-        "name": "Malaysian NA4",
+        "name": "Malaysian Drink 4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1200,7 +1205,7 @@
       },
       {
         "id": "my-na5",
-        "name": "Malaysian NA5",
+        "name": "Malaysian Drink 5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1214,7 +1219,7 @@
       },
       {
         "id": "my-na6",
-        "name": "Malaysian NA6",
+        "name": "Malaysian Drink 6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1228,7 +1233,7 @@
       },
       {
         "id": "my-na7",
-        "name": "Malaysian NA7",
+        "name": "Malaysian Drink 7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1242,7 +1247,7 @@
       },
       {
         "id": "my-na8",
-        "name": "Malaysian NA8",
+        "name": "Malaysian Drink 8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1256,7 +1261,7 @@
       },
       {
         "id": "my-na9",
-        "name": "Malaysian NA9",
+        "name": "Malaysian Drink 9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1270,7 +1275,7 @@
       },
       {
         "id": "my-na10",
-        "name": "Malaysian NA10",
+        "name": "Malaysian Drink 10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1286,7 +1291,7 @@
     "alcoholicDrinks": [
       {
         "id": "my-a1",
-        "name": "Malaysian Drink1",
+        "name": "Malaysian Drink 1",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1300,7 +1305,7 @@
       },
       {
         "id": "my-a2",
-        "name": "Malaysian Drink2",
+        "name": "Malaysian Drink 2",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1314,7 +1319,7 @@
       },
       {
         "id": "my-a3",
-        "name": "Malaysian Drink3",
+        "name": "Malaysian Drink 3",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1328,7 +1333,7 @@
       },
       {
         "id": "my-a4",
-        "name": "Malaysian Drink4",
+        "name": "Malaysian Drink 4",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1342,7 +1347,7 @@
       },
       {
         "id": "my-a5",
-        "name": "Malaysian Drink5",
+        "name": "Malaysian Drink 5",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1356,7 +1361,7 @@
       },
       {
         "id": "my-a6",
-        "name": "Malaysian Drink6",
+        "name": "Malaysian Drink 6",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1370,7 +1375,7 @@
       },
       {
         "id": "my-a7",
-        "name": "Malaysian Drink7",
+        "name": "Malaysian Drink 7",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1384,7 +1389,7 @@
       },
       {
         "id": "my-a8",
-        "name": "Malaysian Drink8",
+        "name": "Malaysian Drink 8",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1398,7 +1403,7 @@
       },
       {
         "id": "my-a9",
-        "name": "Malaysian Drink9",
+        "name": "Malaysian Drink 9",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1412,7 +1417,7 @@
       },
       {
         "id": "my-a10",
-        "name": "Malaysian Drink10",
+        "name": "Malaysian Drink 10",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,

@@ -2,7 +2,7 @@
   "laosRecipes": {
     "title": "Authentic Laos Cuisine",
     "country": "Laos",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -18,41 +18,44 @@
           "water"
         ],
         "instructions": [
-          "Traditional breakfast"
+          "Traditional glutinous rice"
         ]
       },
       {
         "id": "la-b2",
-        "name": "Khao Jee",
+        "name": "Khao Jee Khao",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 20,
+        "prepTime": 10,
+        "cookTime": 15,
         "ingredients": [
-          "rice bread",
-          "toppings"
+          "rice",
+          "salt",
+          "butter"
         ],
         "instructions": [
-          "Rice bread with toppings"
+          "Rice with butter"
         ]
       },
       {
         "id": "la-b3",
-        "name": "Laotian B3",
+        "name": "Khao Tom Luad",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 15,
+        "cookTime": 25,
         "ingredients": [
-          "ingredient"
+          "rice",
+          "pork",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Rice soup with pork"
         ]
       },
       {
         "id": "la-b4",
-        "name": "Laotian B4",
+        "name": "Laotian Breakfast 4",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -66,7 +69,7 @@
       },
       {
         "id": "la-b5",
-        "name": "Laotian B5",
+        "name": "Laotian Breakfast 5",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -80,7 +83,7 @@
       },
       {
         "id": "la-b6",
-        "name": "Laotian B6",
+        "name": "Laotian Breakfast 6",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -94,7 +97,7 @@
       },
       {
         "id": "la-b7",
-        "name": "Laotian B7",
+        "name": "Laotian Breakfast 7",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -108,7 +111,7 @@
       },
       {
         "id": "la-b8",
-        "name": "Laotian B8",
+        "name": "Laotian Breakfast 8",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -122,7 +125,7 @@
       },
       {
         "id": "la-b9",
-        "name": "Laotian B9",
+        "name": "Laotian Breakfast 9",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -136,7 +139,7 @@
       },
       {
         "id": "la-b10",
-        "name": "Laotian B10",
+        "name": "Laotian Breakfast 10",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -150,7 +153,7 @@
       },
       {
         "id": "la-b11",
-        "name": "Laotian B11",
+        "name": "Laotian Breakfast 11",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -164,7 +167,7 @@
       },
       {
         "id": "la-b12",
-        "name": "Laotian B12",
+        "name": "Laotian Breakfast 12",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -178,7 +181,7 @@
       },
       {
         "id": "la-b13",
-        "name": "Laotian B13",
+        "name": "Laotian Breakfast 13",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -192,7 +195,7 @@
       },
       {
         "id": "la-b14",
-        "name": "Laotian B14",
+        "name": "Laotian Breakfast 14",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -206,7 +209,7 @@
       },
       {
         "id": "la-b15",
-        "name": "Laotian B15",
+        "name": "Laotian Breakfast 15",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -220,7 +223,7 @@
       },
       {
         "id": "la-b16",
-        "name": "Laotian B16",
+        "name": "Laotian Breakfast 16",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -234,7 +237,7 @@
       },
       {
         "id": "la-b17",
-        "name": "Laotian B17",
+        "name": "Laotian Breakfast 17",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -248,7 +251,7 @@
       },
       {
         "id": "la-b18",
-        "name": "Laotian B18",
+        "name": "Laotian Breakfast 18",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -262,7 +265,7 @@
       },
       {
         "id": "la-b19",
-        "name": "Laotian B19",
+        "name": "Laotian Breakfast 19",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -276,7 +279,7 @@
       },
       {
         "id": "la-b20",
-        "name": "Laotian B20",
+        "name": "Laotian Breakfast 20",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -298,46 +301,51 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "meat",
-          "lime",
-          "herbs"
+          "ground meat",
+          "lime juice",
+          "mint",
+          "chili"
         ],
         "instructions": [
-          "Minced meat salad"
+          "Minced meat salad - National dish"
         ]
       },
       {
         "id": "la-l2",
-        "name": "Tom Saeb",
+        "name": "Somtam",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 35,
+        "prepTime": 15,
+        "cookTime": 10,
         "ingredients": [
-          "vegetables",
-          "spices"
+          "green papaya",
+          "lime",
+          "fish sauce",
+          "chili"
         ],
         "instructions": [
-          "Hot vegetable soup"
+          "Green papaya salad"
         ]
       },
       {
         "id": "la-l3",
-        "name": "Laotian L3",
+        "name": "Khao Poon",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "rice noodles",
+          "broth",
+          "toppings"
         ],
         "instructions": [
-          "preparation"
+          "Rice vermicelli soup"
         ]
       },
       {
         "id": "la-l4",
-        "name": "Laotian L4",
+        "name": "Laotian Lunch 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -351,7 +359,7 @@
       },
       {
         "id": "la-l5",
-        "name": "Laotian L5",
+        "name": "Laotian Lunch 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -365,7 +373,7 @@
       },
       {
         "id": "la-l6",
-        "name": "Laotian L6",
+        "name": "Laotian Lunch 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -379,7 +387,7 @@
       },
       {
         "id": "la-l7",
-        "name": "Laotian L7",
+        "name": "Laotian Lunch 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -393,7 +401,7 @@
       },
       {
         "id": "la-l8",
-        "name": "Laotian L8",
+        "name": "Laotian Lunch 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -407,7 +415,7 @@
       },
       {
         "id": "la-l9",
-        "name": "Laotian L9",
+        "name": "Laotian Lunch 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -421,7 +429,7 @@
       },
       {
         "id": "la-l10",
-        "name": "Laotian L10",
+        "name": "Laotian Lunch 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -435,7 +443,7 @@
       },
       {
         "id": "la-l11",
-        "name": "Laotian L11",
+        "name": "Laotian Lunch 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -449,7 +457,7 @@
       },
       {
         "id": "la-l12",
-        "name": "Laotian L12",
+        "name": "Laotian Lunch 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -463,7 +471,7 @@
       },
       {
         "id": "la-l13",
-        "name": "Laotian L13",
+        "name": "Laotian Lunch 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -477,7 +485,7 @@
       },
       {
         "id": "la-l14",
-        "name": "Laotian L14",
+        "name": "Laotian Lunch 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -491,7 +499,7 @@
       },
       {
         "id": "la-l15",
-        "name": "Laotian L15",
+        "name": "Laotian Lunch 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -505,7 +513,7 @@
       },
       {
         "id": "la-l16",
-        "name": "Laotian L16",
+        "name": "Laotian Lunch 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -519,7 +527,7 @@
       },
       {
         "id": "la-l17",
-        "name": "Laotian L17",
+        "name": "Laotian Lunch 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -533,7 +541,7 @@
       },
       {
         "id": "la-l18",
-        "name": "Laotian L18",
+        "name": "Laotian Lunch 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -547,7 +555,7 @@
       },
       {
         "id": "la-l19",
-        "name": "Laotian L19",
+        "name": "Laotian Lunch 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -561,7 +569,7 @@
       },
       {
         "id": "la-l20",
-        "name": "Laotian L20",
+        "name": "Laotian Lunch 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -577,7 +585,7 @@
     "dinner": [
       {
         "id": "la-d1",
-        "name": "Laotian D1",
+        "name": "Laotian Dinner 1",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -591,7 +599,7 @@
       },
       {
         "id": "la-d2",
-        "name": "Laotian D2",
+        "name": "Laotian Dinner 2",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -605,7 +613,7 @@
       },
       {
         "id": "la-d3",
-        "name": "Laotian D3",
+        "name": "Laotian Dinner 3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -619,7 +627,7 @@
       },
       {
         "id": "la-d4",
-        "name": "Laotian D4",
+        "name": "Laotian Dinner 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -633,7 +641,7 @@
       },
       {
         "id": "la-d5",
-        "name": "Laotian D5",
+        "name": "Laotian Dinner 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -647,7 +655,7 @@
       },
       {
         "id": "la-d6",
-        "name": "Laotian D6",
+        "name": "Laotian Dinner 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -661,7 +669,7 @@
       },
       {
         "id": "la-d7",
-        "name": "Laotian D7",
+        "name": "Laotian Dinner 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -675,7 +683,7 @@
       },
       {
         "id": "la-d8",
-        "name": "Laotian D8",
+        "name": "Laotian Dinner 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -689,7 +697,7 @@
       },
       {
         "id": "la-d9",
-        "name": "Laotian D9",
+        "name": "Laotian Dinner 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -703,7 +711,7 @@
       },
       {
         "id": "la-d10",
-        "name": "Laotian D10",
+        "name": "Laotian Dinner 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -717,7 +725,7 @@
       },
       {
         "id": "la-d11",
-        "name": "Laotian D11",
+        "name": "Laotian Dinner 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -731,7 +739,7 @@
       },
       {
         "id": "la-d12",
-        "name": "Laotian D12",
+        "name": "Laotian Dinner 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -745,7 +753,7 @@
       },
       {
         "id": "la-d13",
-        "name": "Laotian D13",
+        "name": "Laotian Dinner 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -759,7 +767,7 @@
       },
       {
         "id": "la-d14",
-        "name": "Laotian D14",
+        "name": "Laotian Dinner 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -773,7 +781,7 @@
       },
       {
         "id": "la-d15",
-        "name": "Laotian D15",
+        "name": "Laotian Dinner 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -787,7 +795,7 @@
       },
       {
         "id": "la-d16",
-        "name": "Laotian D16",
+        "name": "Laotian Dinner 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -801,7 +809,7 @@
       },
       {
         "id": "la-d17",
-        "name": "Laotian D17",
+        "name": "Laotian Dinner 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -815,7 +823,7 @@
       },
       {
         "id": "la-d18",
-        "name": "Laotian D18",
+        "name": "Laotian Dinner 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -829,7 +837,7 @@
       },
       {
         "id": "la-d19",
-        "name": "Laotian D19",
+        "name": "Laotian Dinner 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -843,7 +851,7 @@
       },
       {
         "id": "la-d20",
-        "name": "Laotian D20",
+        "name": "Laotian Dinner 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -859,35 +867,37 @@
     "desserts": [
       {
         "id": "la-des1",
-        "name": "Laotian Des1",
-        "difficulty": "Medium",
+        "name": "Khao Liao",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "sticky rice",
+          "mango"
         ],
         "instructions": [
-          "preparation"
+          "Sticky rice with mango"
         ]
       },
       {
         "id": "la-des2",
-        "name": "Laotian Des2",
+        "name": "Kaeng Buad Sai",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "taro",
+          "coconut milk"
         ],
         "instructions": [
-          "preparation"
+          "Taro in coconut cream"
         ]
       },
       {
         "id": "la-des3",
-        "name": "Laotian Des3",
+        "name": "Laotian Dessert 3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -901,7 +911,7 @@
       },
       {
         "id": "la-des4",
-        "name": "Laotian Des4",
+        "name": "Laotian Dessert 4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -915,7 +925,7 @@
       },
       {
         "id": "la-des5",
-        "name": "Laotian Des5",
+        "name": "Laotian Dessert 5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -929,7 +939,7 @@
       },
       {
         "id": "la-des6",
-        "name": "Laotian Des6",
+        "name": "Laotian Dessert 6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -943,7 +953,7 @@
       },
       {
         "id": "la-des7",
-        "name": "Laotian Des7",
+        "name": "Laotian Dessert 7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -957,7 +967,7 @@
       },
       {
         "id": "la-des8",
-        "name": "Laotian Des8",
+        "name": "Laotian Dessert 8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -971,7 +981,7 @@
       },
       {
         "id": "la-des9",
-        "name": "Laotian Des9",
+        "name": "Laotian Dessert 9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -985,7 +995,7 @@
       },
       {
         "id": "la-des10",
-        "name": "Laotian Des10",
+        "name": "Laotian Dessert 10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -999,7 +1009,7 @@
       },
       {
         "id": "la-des11",
-        "name": "Laotian Des11",
+        "name": "Laotian Dessert 11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1013,7 +1023,7 @@
       },
       {
         "id": "la-des12",
-        "name": "Laotian Des12",
+        "name": "Laotian Dessert 12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1027,7 +1037,7 @@
       },
       {
         "id": "la-des13",
-        "name": "Laotian Des13",
+        "name": "Laotian Dessert 13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1041,7 +1051,7 @@
       },
       {
         "id": "la-des14",
-        "name": "Laotian Des14",
+        "name": "Laotian Dessert 14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1055,7 +1065,7 @@
       },
       {
         "id": "la-des15",
-        "name": "Laotian Des15",
+        "name": "Laotian Dessert 15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1069,7 +1079,7 @@
       },
       {
         "id": "la-des16",
-        "name": "Laotian Des16",
+        "name": "Laotian Dessert 16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1083,7 +1093,7 @@
       },
       {
         "id": "la-des17",
-        "name": "Laotian Des17",
+        "name": "Laotian Dessert 17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1097,7 +1107,7 @@
       },
       {
         "id": "la-des18",
-        "name": "Laotian Des18",
+        "name": "Laotian Dessert 18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1111,7 +1121,7 @@
       },
       {
         "id": "la-des19",
-        "name": "Laotian Des19",
+        "name": "Laotian Dessert 19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1125,7 +1135,7 @@
       },
       {
         "id": "la-des20",
-        "name": "Laotian Des20",
+        "name": "Laotian Dessert 20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1141,7 +1151,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "la-na1",
-        "name": "Laotian NA1",
+        "name": "Laotian Drink 1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1155,7 +1165,7 @@
       },
       {
         "id": "la-na2",
-        "name": "Laotian NA2",
+        "name": "Laotian Drink 2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1169,7 +1179,7 @@
       },
       {
         "id": "la-na3",
-        "name": "Laotian NA3",
+        "name": "Laotian Drink 3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1183,7 +1193,7 @@
       },
       {
         "id": "la-na4",
-        "name": "Laotian NA4",
+        "name": "Laotian Drink 4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1197,7 +1207,7 @@
       },
       {
         "id": "la-na5",
-        "name": "Laotian NA5",
+        "name": "Laotian Drink 5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1211,7 +1221,7 @@
       },
       {
         "id": "la-na6",
-        "name": "Laotian NA6",
+        "name": "Laotian Drink 6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1225,7 +1235,7 @@
       },
       {
         "id": "la-na7",
-        "name": "Laotian NA7",
+        "name": "Laotian Drink 7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1239,7 +1249,7 @@
       },
       {
         "id": "la-na8",
-        "name": "Laotian NA8",
+        "name": "Laotian Drink 8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1253,7 +1263,7 @@
       },
       {
         "id": "la-na9",
-        "name": "Laotian NA9",
+        "name": "Laotian Drink 9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1267,7 +1277,7 @@
       },
       {
         "id": "la-na10",
-        "name": "Laotian NA10",
+        "name": "Laotian Drink 10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1283,7 +1293,7 @@
     "alcoholicDrinks": [
       {
         "id": "la-a1",
-        "name": "Laotian Drink1",
+        "name": "Laotian Beverage 1",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1297,7 +1307,7 @@
       },
       {
         "id": "la-a2",
-        "name": "Laotian Drink2",
+        "name": "Laotian Beverage 2",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1311,7 +1321,7 @@
       },
       {
         "id": "la-a3",
-        "name": "Laotian Drink3",
+        "name": "Laotian Beverage 3",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1325,7 +1335,7 @@
       },
       {
         "id": "la-a4",
-        "name": "Laotian Drink4",
+        "name": "Laotian Beverage 4",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1339,7 +1349,7 @@
       },
       {
         "id": "la-a5",
-        "name": "Laotian Drink5",
+        "name": "Laotian Beverage 5",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1353,7 +1363,7 @@
       },
       {
         "id": "la-a6",
-        "name": "Laotian Drink6",
+        "name": "Laotian Beverage 6",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1367,7 +1377,7 @@
       },
       {
         "id": "la-a7",
-        "name": "Laotian Drink7",
+        "name": "Laotian Beverage 7",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1381,7 +1391,7 @@
       },
       {
         "id": "la-a8",
-        "name": "Laotian Drink8",
+        "name": "Laotian Beverage 8",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1395,7 +1405,7 @@
       },
       {
         "id": "la-a9",
-        "name": "Laotian Drink9",
+        "name": "Laotian Beverage 9",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1409,7 +1419,7 @@
       },
       {
         "id": "la-a10",
-        "name": "Laotian Drink10",
+        "name": "Laotian Beverage 10",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
