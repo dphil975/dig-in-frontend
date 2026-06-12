@@ -2,7 +2,7 @@
   "myanmarRecipes": {
     "title": "Authentic Myanmar Cuisine",
     "country": "Myanmar",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -23,36 +23,37 @@
       },
       {
         "id": "mm-b2",
-        "name": "Mont Lin Ma-Yar",
-        "difficulty": "Hard",
+        "name": "Congee",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 40,
+        "prepTime": 20,
         "cookTime": 45,
         "ingredients": [
-          "glutinous rice",
-          "filling"
+          "rice",
+          "stock"
         ],
         "instructions": [
-          "Sticky rice cake"
+          "Rice porridge"
         ]
       },
       {
         "id": "mm-b3",
-        "name": "Myanmar B3",
-        "difficulty": "Easy",
+        "name": "Paratha",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "flour",
+          "butter"
         ],
         "instructions": [
-          "preparation"
+          "Flatbread"
         ]
       },
       {
         "id": "mm-b4",
-        "name": "Myanmar B4",
+        "name": "Burmese B4",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -66,7 +67,7 @@
       },
       {
         "id": "mm-b5",
-        "name": "Myanmar B5",
+        "name": "Burmese B5",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -80,7 +81,7 @@
       },
       {
         "id": "mm-b6",
-        "name": "Myanmar B6",
+        "name": "Burmese B6",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -94,7 +95,7 @@
       },
       {
         "id": "mm-b7",
-        "name": "Myanmar B7",
+        "name": "Burmese B7",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -108,7 +109,7 @@
       },
       {
         "id": "mm-b8",
-        "name": "Myanmar B8",
+        "name": "Burmese B8",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -122,7 +123,7 @@
       },
       {
         "id": "mm-b9",
-        "name": "Myanmar B9",
+        "name": "Burmese B9",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -136,7 +137,7 @@
       },
       {
         "id": "mm-b10",
-        "name": "Myanmar B10",
+        "name": "Burmese B10",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -150,7 +151,7 @@
       },
       {
         "id": "mm-b11",
-        "name": "Myanmar B11",
+        "name": "Burmese B11",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -164,7 +165,7 @@
       },
       {
         "id": "mm-b12",
-        "name": "Myanmar B12",
+        "name": "Burmese B12",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -178,7 +179,7 @@
       },
       {
         "id": "mm-b13",
-        "name": "Myanmar B13",
+        "name": "Burmese B13",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -192,7 +193,7 @@
       },
       {
         "id": "mm-b14",
-        "name": "Myanmar B14",
+        "name": "Burmese B14",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -206,7 +207,7 @@
       },
       {
         "id": "mm-b15",
-        "name": "Myanmar B15",
+        "name": "Burmese B15",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -220,7 +221,7 @@
       },
       {
         "id": "mm-b16",
-        "name": "Myanmar B16",
+        "name": "Burmese B16",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -234,7 +235,7 @@
       },
       {
         "id": "mm-b17",
-        "name": "Myanmar B17",
+        "name": "Burmese B17",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -248,7 +249,7 @@
       },
       {
         "id": "mm-b18",
-        "name": "Myanmar B18",
+        "name": "Burmese B18",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -262,7 +263,7 @@
       },
       {
         "id": "mm-b19",
-        "name": "Myanmar B19",
+        "name": "Burmese B19",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -276,7 +277,7 @@
       },
       {
         "id": "mm-b20",
-        "name": "Myanmar B20",
+        "name": "Burmese B20",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
@@ -303,11 +304,27 @@
           "broth"
         ],
         "instructions": [
-          "Curry noodle soup"
+          "Curry noodle soup - National dish"
         ]
       },
       {
         "id": "mm-l2",
+        "name": "Shan Rice",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "meat",
+          "sauce"
+        ],
+        "instructions": [
+          "Rice with topping"
+        ]
+      },
+      {
+        "id": "mm-l3",
         "name": "Laphet Thoke",
         "difficulty": "Easy",
         "servings": 4,
@@ -322,22 +339,8 @@
         ]
       },
       {
-        "id": "mm-l3",
-        "name": "Myanmar L3",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
         "id": "mm-l4",
-        "name": "Myanmar L4",
+        "name": "Burmese L4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -351,7 +354,7 @@
       },
       {
         "id": "mm-l5",
-        "name": "Myanmar L5",
+        "name": "Burmese L5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -365,7 +368,7 @@
       },
       {
         "id": "mm-l6",
-        "name": "Myanmar L6",
+        "name": "Burmese L6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -379,7 +382,7 @@
       },
       {
         "id": "mm-l7",
-        "name": "Myanmar L7",
+        "name": "Burmese L7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -393,7 +396,7 @@
       },
       {
         "id": "mm-l8",
-        "name": "Myanmar L8",
+        "name": "Burmese L8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -407,7 +410,7 @@
       },
       {
         "id": "mm-l9",
-        "name": "Myanmar L9",
+        "name": "Burmese L9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -421,7 +424,7 @@
       },
       {
         "id": "mm-l10",
-        "name": "Myanmar L10",
+        "name": "Burmese L10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -435,7 +438,7 @@
       },
       {
         "id": "mm-l11",
-        "name": "Myanmar L11",
+        "name": "Burmese L11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -449,7 +452,7 @@
       },
       {
         "id": "mm-l12",
-        "name": "Myanmar L12",
+        "name": "Burmese L12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -463,7 +466,7 @@
       },
       {
         "id": "mm-l13",
-        "name": "Myanmar L13",
+        "name": "Burmese L13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -477,7 +480,7 @@
       },
       {
         "id": "mm-l14",
-        "name": "Myanmar L14",
+        "name": "Burmese L14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -491,7 +494,7 @@
       },
       {
         "id": "mm-l15",
-        "name": "Myanmar L15",
+        "name": "Burmese L15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -505,7 +508,7 @@
       },
       {
         "id": "mm-l16",
-        "name": "Myanmar L16",
+        "name": "Burmese L16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -519,7 +522,7 @@
       },
       {
         "id": "mm-l17",
-        "name": "Myanmar L17",
+        "name": "Burmese L17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -533,7 +536,7 @@
       },
       {
         "id": "mm-l18",
-        "name": "Myanmar L18",
+        "name": "Burmese L18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -547,7 +550,7 @@
       },
       {
         "id": "mm-l19",
-        "name": "Myanmar L19",
+        "name": "Burmese L19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -561,7 +564,7 @@
       },
       {
         "id": "mm-l20",
-        "name": "Myanmar L20",
+        "name": "Burmese L20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -577,7 +580,7 @@
     "dinner": [
       {
         "id": "mm-d1",
-        "name": "Myanmar D1",
+        "name": "Burmese D1",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -591,7 +594,7 @@
       },
       {
         "id": "mm-d2",
-        "name": "Myanmar D2",
+        "name": "Burmese D2",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -605,7 +608,7 @@
       },
       {
         "id": "mm-d3",
-        "name": "Myanmar D3",
+        "name": "Burmese D3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -619,7 +622,7 @@
       },
       {
         "id": "mm-d4",
-        "name": "Myanmar D4",
+        "name": "Burmese D4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -633,7 +636,7 @@
       },
       {
         "id": "mm-d5",
-        "name": "Myanmar D5",
+        "name": "Burmese D5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -647,7 +650,7 @@
       },
       {
         "id": "mm-d6",
-        "name": "Myanmar D6",
+        "name": "Burmese D6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -661,7 +664,7 @@
       },
       {
         "id": "mm-d7",
-        "name": "Myanmar D7",
+        "name": "Burmese D7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -675,7 +678,7 @@
       },
       {
         "id": "mm-d8",
-        "name": "Myanmar D8",
+        "name": "Burmese D8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -689,7 +692,7 @@
       },
       {
         "id": "mm-d9",
-        "name": "Myanmar D9",
+        "name": "Burmese D9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -703,7 +706,7 @@
       },
       {
         "id": "mm-d10",
-        "name": "Myanmar D10",
+        "name": "Burmese D10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -717,7 +720,7 @@
       },
       {
         "id": "mm-d11",
-        "name": "Myanmar D11",
+        "name": "Burmese D11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -731,7 +734,7 @@
       },
       {
         "id": "mm-d12",
-        "name": "Myanmar D12",
+        "name": "Burmese D12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -745,7 +748,7 @@
       },
       {
         "id": "mm-d13",
-        "name": "Myanmar D13",
+        "name": "Burmese D13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -759,7 +762,7 @@
       },
       {
         "id": "mm-d14",
-        "name": "Myanmar D14",
+        "name": "Burmese D14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -773,7 +776,7 @@
       },
       {
         "id": "mm-d15",
-        "name": "Myanmar D15",
+        "name": "Burmese D15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -787,7 +790,7 @@
       },
       {
         "id": "mm-d16",
-        "name": "Myanmar D16",
+        "name": "Burmese D16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -801,7 +804,7 @@
       },
       {
         "id": "mm-d17",
-        "name": "Myanmar D17",
+        "name": "Burmese D17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -815,7 +818,7 @@
       },
       {
         "id": "mm-d18",
-        "name": "Myanmar D18",
+        "name": "Burmese D18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -829,7 +832,7 @@
       },
       {
         "id": "mm-d19",
-        "name": "Myanmar D19",
+        "name": "Burmese D19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -843,7 +846,7 @@
       },
       {
         "id": "mm-d20",
-        "name": "Myanmar D20",
+        "name": "Burmese D20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
@@ -859,35 +862,37 @@
     "desserts": [
       {
         "id": "mm-des1",
-        "name": "Myanmar Des1",
-        "difficulty": "Medium",
+        "name": "Khao Liao",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "sticky rice",
+          "mango"
         ],
         "instructions": [
-          "preparation"
+          "Sticky rice with mango"
         ]
       },
       {
         "id": "mm-des2",
-        "name": "Myanmar Des2",
-        "difficulty": "Medium",
+        "name": "Coconut Dessert",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "coconut",
+          "sugar"
         ],
         "instructions": [
-          "preparation"
+          "Coconut sweet"
         ]
       },
       {
         "id": "mm-des3",
-        "name": "Myanmar Des3",
+        "name": "Burmese Des3",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -901,7 +906,7 @@
       },
       {
         "id": "mm-des4",
-        "name": "Myanmar Des4",
+        "name": "Burmese Des4",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -915,7 +920,7 @@
       },
       {
         "id": "mm-des5",
-        "name": "Myanmar Des5",
+        "name": "Burmese Des5",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -929,7 +934,7 @@
       },
       {
         "id": "mm-des6",
-        "name": "Myanmar Des6",
+        "name": "Burmese Des6",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -943,7 +948,7 @@
       },
       {
         "id": "mm-des7",
-        "name": "Myanmar Des7",
+        "name": "Burmese Des7",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -957,7 +962,7 @@
       },
       {
         "id": "mm-des8",
-        "name": "Myanmar Des8",
+        "name": "Burmese Des8",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -971,7 +976,7 @@
       },
       {
         "id": "mm-des9",
-        "name": "Myanmar Des9",
+        "name": "Burmese Des9",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -985,7 +990,7 @@
       },
       {
         "id": "mm-des10",
-        "name": "Myanmar Des10",
+        "name": "Burmese Des10",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -999,7 +1004,7 @@
       },
       {
         "id": "mm-des11",
-        "name": "Myanmar Des11",
+        "name": "Burmese Des11",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1013,7 +1018,7 @@
       },
       {
         "id": "mm-des12",
-        "name": "Myanmar Des12",
+        "name": "Burmese Des12",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1027,7 +1032,7 @@
       },
       {
         "id": "mm-des13",
-        "name": "Myanmar Des13",
+        "name": "Burmese Des13",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1041,7 +1046,7 @@
       },
       {
         "id": "mm-des14",
-        "name": "Myanmar Des14",
+        "name": "Burmese Des14",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1055,7 +1060,7 @@
       },
       {
         "id": "mm-des15",
-        "name": "Myanmar Des15",
+        "name": "Burmese Des15",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1069,7 +1074,7 @@
       },
       {
         "id": "mm-des16",
-        "name": "Myanmar Des16",
+        "name": "Burmese Des16",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1083,7 +1088,7 @@
       },
       {
         "id": "mm-des17",
-        "name": "Myanmar Des17",
+        "name": "Burmese Des17",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1097,7 +1102,7 @@
       },
       {
         "id": "mm-des18",
-        "name": "Myanmar Des18",
+        "name": "Burmese Des18",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1111,7 +1116,7 @@
       },
       {
         "id": "mm-des19",
-        "name": "Myanmar Des19",
+        "name": "Burmese Des19",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1125,7 +1130,7 @@
       },
       {
         "id": "mm-des20",
-        "name": "Myanmar Des20",
+        "name": "Burmese Des20",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
@@ -1141,7 +1146,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "mm-na1",
-        "name": "Myanmar NA1",
+        "name": "Burmese Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1155,7 +1160,7 @@
       },
       {
         "id": "mm-na2",
-        "name": "Myanmar NA2",
+        "name": "Burmese Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1169,7 +1174,7 @@
       },
       {
         "id": "mm-na3",
-        "name": "Myanmar NA3",
+        "name": "Burmese Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1183,7 +1188,7 @@
       },
       {
         "id": "mm-na4",
-        "name": "Myanmar NA4",
+        "name": "Burmese Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1197,7 +1202,7 @@
       },
       {
         "id": "mm-na5",
-        "name": "Myanmar NA5",
+        "name": "Burmese Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1211,7 +1216,7 @@
       },
       {
         "id": "mm-na6",
-        "name": "Myanmar NA6",
+        "name": "Burmese Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1225,7 +1230,7 @@
       },
       {
         "id": "mm-na7",
-        "name": "Myanmar NA7",
+        "name": "Burmese Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1239,7 +1244,7 @@
       },
       {
         "id": "mm-na8",
-        "name": "Myanmar NA8",
+        "name": "Burmese Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1253,7 +1258,7 @@
       },
       {
         "id": "mm-na9",
-        "name": "Myanmar NA9",
+        "name": "Burmese Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1267,7 +1272,7 @@
       },
       {
         "id": "mm-na10",
-        "name": "Myanmar NA10",
+        "name": "Burmese Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1283,7 +1288,7 @@
     "alcoholicDrinks": [
       {
         "id": "mm-a1",
-        "name": "Myanmar Drink1",
+        "name": "Burmese Drink1",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1297,7 +1302,7 @@
       },
       {
         "id": "mm-a2",
-        "name": "Myanmar Drink2",
+        "name": "Burmese Drink2",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1311,7 +1316,7 @@
       },
       {
         "id": "mm-a3",
-        "name": "Myanmar Drink3",
+        "name": "Burmese Drink3",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1325,7 +1330,7 @@
       },
       {
         "id": "mm-a4",
-        "name": "Myanmar Drink4",
+        "name": "Burmese Drink4",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1339,7 +1344,7 @@
       },
       {
         "id": "mm-a5",
-        "name": "Myanmar Drink5",
+        "name": "Burmese Drink5",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1353,7 +1358,7 @@
       },
       {
         "id": "mm-a6",
-        "name": "Myanmar Drink6",
+        "name": "Burmese Drink6",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1367,7 +1372,7 @@
       },
       {
         "id": "mm-a7",
-        "name": "Myanmar Drink7",
+        "name": "Burmese Drink7",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1381,7 +1386,7 @@
       },
       {
         "id": "mm-a8",
-        "name": "Myanmar Drink8",
+        "name": "Burmese Drink8",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1395,7 +1400,7 @@
       },
       {
         "id": "mm-a9",
-        "name": "Myanmar Drink9",
+        "name": "Burmese Drink9",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,
@@ -1409,7 +1414,7 @@
       },
       {
         "id": "mm-a10",
-        "name": "Myanmar Drink10",
+        "name": "Burmese Drink10",
         "difficulty": "Easy",
         "servings": 1,
         "prepTime": 5,

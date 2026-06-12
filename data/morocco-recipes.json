@@ -2,7 +2,7 @@
   "moroccoRecipes": {
     "title": "Authentic Morocco Cuisine",
     "country": "Morocco",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -39,16 +39,18 @@
       },
       {
         "id": "ma-b3",
-        "name": "Moroccan B3",
-        "difficulty": "Easy",
+        "name": "Harira",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 25,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "legumes",
+          "meat",
+          "spices"
         ],
         "instructions": [
-          "preparation"
+          "Traditional soup"
         ]
       },
       {
@@ -304,7 +306,7 @@
           "spices"
         ],
         "instructions": [
-          "Slow-cooked stew"
+          "Slow-cooked stew - National dish"
         ]
       },
       {
@@ -325,16 +327,17 @@
       },
       {
         "id": "ma-l3",
-        "name": "Moroccan L3",
-        "difficulty": "Medium",
+        "name": "Pastilla",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "phyllo",
+          "filling"
         ],
         "instructions": [
-          "preparation"
+          "Meat pastry"
         ]
       },
       {
@@ -861,32 +864,33 @@
     "desserts": [
       {
         "id": "ma-des1",
-        "name": "Briouats",
-        "difficulty": "Medium",
+        "name": "Baklava",
+        "difficulty": "Hard",
         "servings": 4,
         "prepTime": 40,
-        "cookTime": 25,
+        "cookTime": 45,
         "ingredients": [
           "phyllo",
-          "filling"
+          "nuts",
+          "honey"
         ],
         "instructions": [
-          "Sweet pastry"
+          "Honey pastry"
         ]
       },
       {
         "id": "ma-des2",
-        "name": "Khubeza",
+        "name": "Ma'amoul",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 30,
+        "prepTime": 45,
+        "cookTime": 25,
         "ingredients": [
-          "mallow plant",
-          "spices"
+          "dough",
+          "date filling"
         ],
         "instructions": [
-          "Herb stew with meat"
+          "Date-filled cookie"
         ]
       },
       {
@@ -1145,7 +1149,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "ma-na1",
-        "name": "Moroccan NA1",
+        "name": "Moroccan Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1159,7 +1163,7 @@
       },
       {
         "id": "ma-na2",
-        "name": "Moroccan NA2",
+        "name": "Moroccan Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1173,7 +1177,7 @@
       },
       {
         "id": "ma-na3",
-        "name": "Moroccan NA3",
+        "name": "Moroccan Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1187,7 +1191,7 @@
       },
       {
         "id": "ma-na4",
-        "name": "Moroccan NA4",
+        "name": "Moroccan Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1201,7 +1205,7 @@
       },
       {
         "id": "ma-na5",
-        "name": "Moroccan NA5",
+        "name": "Moroccan Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1215,7 +1219,7 @@
       },
       {
         "id": "ma-na6",
-        "name": "Moroccan NA6",
+        "name": "Moroccan Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1229,7 +1233,7 @@
       },
       {
         "id": "ma-na7",
-        "name": "Moroccan NA7",
+        "name": "Moroccan Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1243,7 +1247,7 @@
       },
       {
         "id": "ma-na8",
-        "name": "Moroccan NA8",
+        "name": "Moroccan Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1257,7 +1261,7 @@
       },
       {
         "id": "ma-na9",
-        "name": "Moroccan NA9",
+        "name": "Moroccan Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1271,7 +1275,7 @@
       },
       {
         "id": "ma-na10",
-        "name": "Moroccan NA10",
+        "name": "Moroccan Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
