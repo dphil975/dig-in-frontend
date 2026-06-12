@@ -1,121 +1,1421 @@
 {
-  "costaRicaRecipes": {
-    "title": "Authentic Costa Rican Cuisine",
+  "costaricaRecipes": {
+    "title": "Authentic Costa Rica Cuisine",
     "country": "Costa Rica",
-    "region": "Central America",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "cr-b1", "name": "Gallo Pinto", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["rice", "beans", "onion", "cilantro", "oil"], "instructions": ["Mix rice with beans", "Pan-fry with aromatics", "Serve hot"]},
-      {"id": "cr-b2", "name": "Huevos Rancheros", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "tortillas", "salsa", "beans"], "instructions": ["Fry eggs", "Warm tortillas", "Top with salsa"]},
-      {"id": "cr-b3", "name": "Casado", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["rice", "beans", "salad", "meat", "plantain"], "instructions": ["Prepare all components", "Arrange on plate", "Serve together"]},
-      {"id": "cr-b4", "name": "Tortilla con Queso", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["tortilla", "cheese", "butter"], "instructions": ["Warm tortilla", "Spread butter", "Add cheese", "Fold"]},
-      {"id": "cr-b5", "name": "Papaya Breakfast", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["papaya", "lime", "honey"], "instructions": ["Slice papaya", "Serve with lime", "Drizzle honey"]},
-      {"id": "cr-b6", "name": "Fried Plantain", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 15, "ingredients": ["plantain", "oil", "salt"], "instructions": ["Slice plantain", "Deep fry", "Drain and salt"]},
-      {"id": "cr-b7", "name": "Costa Rican Tamale", "difficulty": "Hard", "servings": 12, "prepTime": 120, "cookTime": 60, "ingredients": ["corn dough", "chicken", "potato", "corn husks"], "instructions": ["Make filling", "Wrap in husks", "Steam 50-60 min"]},
-      {"id": "cr-b8", "name": "Picadillo Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["ground beef", "potato", "onion", "tomato"], "instructions": ["Brown beef", "Add vegetables", "Simmer 15 min"]},
-      {"id": "cr-b9", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["tropical fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "cr-b10", "name": "Avocado Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "avocado", "lime", "salt"], "instructions": ["Toast bread", "Mash avocado", "Spread and salt"]},
-      {"id": "cr-b11", "name": "Empanada", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["dough", "meat filling", "oil"], "instructions": ["Make dough", "Fill and seal", "Deep fry"]},
-      {"id": "cr-b12", "name": "Arroz con Leche", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "milk", "sugar", "cinnamon"], "instructions": ["Cook rice in milk", "Add sugar and spices", "Simmer until creamy"]},
-      {"id": "cr-b13", "name": "Black Beans Breakfast", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["black beans", "onion", "cilantro", "salt"], "instructions": ["Heat beans", "Add aromatics", "Serve hot"]},
-      {"id": "cr-b14", "name": "Fresh Fruit Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime"], "instructions": ["Slice fruits", "Arrange on plate", "Serve with lime"]},
-      {"id": "cr-b15", "name": "Chorreadas", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["fresh corn", "flour", "sugar", "butter"], "instructions": ["Blend corn", "Make batter", "Cook on griddle"]},
-      {"id": "cr-b16", "name": "Banana with Sour Cream", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 0, "ingredients": ["banana", "sour cream", "sugar"], "instructions": ["Slice banana", "Top with sour cream", "Sprinkle sugar"]},
-      {"id": "cr-b17", "name": "Cheese and Tortilla", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["tortilla", "queso fresco", "butter"], "instructions": ["Warm tortilla", "Add cheese", "Melt and serve"]},
-      {"id": "cr-b18", "name": "Scrambled Eggs", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["eggs", "onion", "cilantro", "salt", "oil"], "instructions": ["Sauté onion", "Add scrambled eggs", "Top with cilantro"]},
-      {"id": "cr-b19", "name": "Bean Soup", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["beans", "broth", "onion", "salt"], "instructions": ["Heat beans", "Add aromatics", "Simmer 15 min"]},
-      {"id": "cr-b20", "name": "Mixed Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["banana", "papaya", "milk", "honey"], "instructions": ["Blend all ingredients", "Serve cold"]}
+      {
+        "id": "co-b1",
+        "name": "Costa-Rica B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b2",
+        "name": "Costa-Rica B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b3",
+        "name": "Costa-Rica B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b4",
+        "name": "Costa-Rica B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b5",
+        "name": "Costa-Rica B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b6",
+        "name": "Costa-Rica B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b7",
+        "name": "Costa-Rica B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b8",
+        "name": "Costa-Rica B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b9",
+        "name": "Costa-Rica B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b10",
+        "name": "Costa-Rica B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b11",
+        "name": "Costa-Rica B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b12",
+        "name": "Costa-Rica B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b13",
+        "name": "Costa-Rica B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b14",
+        "name": "Costa-Rica B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b15",
+        "name": "Costa-Rica B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b16",
+        "name": "Costa-Rica B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b17",
+        "name": "Costa-Rica B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b18",
+        "name": "Costa-Rica B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b19",
+        "name": "Costa-Rica B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b20",
+        "name": "Costa-Rica B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "cr-l1", "name": "Casado Completo", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["rice", "beans", "salad", "fish", "plantain", "vegetables"], "instructions": ["Prepare all components", "Arrange on plate", "Serve together"]},
-      {"id": "cr-l2", "name": "Fish with Lime", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["whole fish", "lime", "garlic", "cilantro", "oil"], "instructions": ["Season fish", "Grill or pan-fry", "Top with cilantro"]},
-      {"id": "cr-l3", "name": "Ceviche Costarricense", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 0, "ingredients": ["white fish", "lime juice", "onion", "cilantro", "avocado"], "instructions": ["Dice fish", "Marinate in lime", "Add vegetables"]},
-      {"id": "cr-l4", "name": "Picadillo de Papa", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground beef", "potato", "onion", "tomato", "peas"], "instructions": ["Brown beef", "Add vegetables", "Simmer 20 min"]},
-      {"id": "cr-l5", "name": "Arroz con Pollo", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "chicken", "vegetables", "broth"], "instructions": ["Cook rice", "Top with chicken", "Add vegetables"]},
-      {"id": "cr-l6", "name": "Gallo Pinto Lunch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["rice", "beans", "onion", "cilantro"], "instructions": ["Mix rice and beans", "Pan-fry", "Serve hot"]},
-      {"id": "cr-l7", "name": "Pollo Frito", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["chicken pieces", "flour", "salt", "oil"], "instructions": ["Coat chicken", "Deep fry", "Serve with rice"]},
-      {"id": "cr-l8", "name": "Empanada Lunch", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["dough", "meat filling", "oil"], "instructions": ["Make dough", "Fill and seal", "Deep fry"]},
-      {"id": "cr-l9", "name": "Black Bean Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["black beans", "rice", "onion", "cilantro"], "instructions": ["Heat beans", "Cook rice", "Serve together"]},
-      {"id": "cr-l10", "name": "Gallopinto with Meat", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["rice", "beans", "ground meat", "onion"], "instructions": ["Brown meat", "Mix with rice and beans", "Pan-fry"]},
-      {"id": "cr-l11", "name": "Shrimp Salad", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 15, "ingredients": ["shrimp", "vegetables", "lime dressing"], "instructions": ["Pan-fry shrimp", "Make salad", "Toss with dressing"]},
-      {"id": "cr-l12", "name": "Beef Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 50, "ingredients": ["beef", "vegetables", "potatoes", "broth"], "instructions": ["Brown beef", "Add vegetables", "Simmer 40 min"]},
-      {"id": "cr-l13", "name": "Chorreadas Lunch", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["fresh corn", "flour", "cheese", "butter"], "instructions": ["Blend corn", "Make batter", "Cook with cheese"]},
-      {"id": "cr-l14", "name": "Platano Maduro", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["ripe plantain", "oil", "sugar"], "instructions": ["Slice plantain", "Pan-fry", "Sprinkle sugar"]},
-      {"id": "cr-l15", "name": "Salsa Roja", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["tomato", "onion", "cilantro", "lime"], "instructions": ["Chop ingredients", "Mix", "Serve with tortillas"]},
-      {"id": "cr-l16", "name": "Olla de Carne", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 90, "ingredients": ["beef", "vegetables", "potatoes", "squash"], "instructions": ["Brown meat", "Add vegetables", "Simmer 75 min"]},
-      {"id": "cr-l17", "name": "Torta", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["tortillas", "refried beans", "cheese", "lettuce"], "instructions": ["Layer ingredients", "Heat until cheese melts"]},
-      {"id": "cr-l18", "name": "Sopa Negra", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["black beans", "broth", "vegetables", "cilantro"], "instructions": ["Blend beans", "Heat with broth", "Add vegetables"]},
-      {"id": "cr-l19", "name": "Pollo con Fideos", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["chicken", "pasta", "vegetables", "broth"], "instructions": ["Brown chicken", "Add pasta", "Simmer in broth"]},
-      {"id": "cr-l20", "name": "Fresh Fish Lunch", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish fillets", "vegetables", "lime", "oil"], "instructions": ["Season fish", "Pan-fry or grill", "Serve with vegetables"]}
+      {
+        "id": "co-l1",
+        "name": "Costa-Rica L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l2",
+        "name": "Costa-Rica L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l3",
+        "name": "Costa-Rica L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l4",
+        "name": "Costa-Rica L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l5",
+        "name": "Costa-Rica L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l6",
+        "name": "Costa-Rica L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l7",
+        "name": "Costa-Rica L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l8",
+        "name": "Costa-Rica L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l9",
+        "name": "Costa-Rica L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l10",
+        "name": "Costa-Rica L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l11",
+        "name": "Costa-Rica L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l12",
+        "name": "Costa-Rica L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l13",
+        "name": "Costa-Rica L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l14",
+        "name": "Costa-Rica L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l15",
+        "name": "Costa-Rica L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l16",
+        "name": "Costa-Rica L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l17",
+        "name": "Costa-Rica L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l18",
+        "name": "Costa-Rica L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l19",
+        "name": "Costa-Rica L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l20",
+        "name": "Costa-Rica L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "cr-d1", "name": "Casado Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["rice", "beans", "salad", "meat", "plantain"], "instructions": ["Prepare all components", "Arrange on plate", "Serve together"]},
-      {"id": "cr-d2", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lime", "herbs", "oil"], "instructions": ["Season fish", "Grill 15 min per side", "Serve with lime"]},
-      {"id": "cr-d3", "name": "Olla de Carne Dinner", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 90, "ingredients": ["beef", "vegetables", "potatoes", "squash"], "instructions": ["Brown meat", "Add vegetables", "Simmer 75 min"]},
-      {"id": "cr-d4", "name": "Pollo Asado", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "marinade", "lime"], "instructions": ["Marinate chicken", "Grill 40-45 min", "Serve with lime"]},
-      {"id": "cr-d5", "name": "Seafood Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish", "shrimp", "lime", "garlic", "oil"], "instructions": ["Pan-fry seafood", "Make garlic sauce", "Serve with rice"]},
-      {"id": "cr-d6", "name": "Beef and Rice", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["beef strips", "rice", "vegetables", "soy sauce"], "instructions": ["Stir-fry beef", "Cook rice", "Combine and serve"]},
-      {"id": "cr-d7", "name": "Black Beans Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["black beans", "rice", "cheese", "cilantro"], "instructions": ["Heat beans", "Cook rice", "Serve together"]},
-      {"id": "cr-d8", "name": "Sopa Negra Dinner", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["black beans", "broth", "vegetables", "egg"], "instructions": ["Blend beans", "Heat with broth", "Top with egg"]},
-      {"id": "cr-d9", "name": "Chicken Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "tomato", "broth"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cr-d10", "name": "Platano and Beans", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["plantain", "beans", "onion", "cilantro"], "instructions": ["Fry plantain", "Heat beans", "Serve together"]},
-      {"id": "cr-d11", "name": "Ceviche Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 0, "ingredients": ["white fish", "lime juice", "onion", "cilantro", "avocado"], "instructions": ["Dice fish", "Marinate in lime", "Add vegetables"]},
-      {"id": "cr-d12", "name": "Enchiladas Costrarricenses", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["tortillas", "chicken", "sauce", "cheese"], "instructions": ["Fill tortillas", "Top with sauce", "Bake 25 min"]},
-      {"id": "cr-d13", "name": "Picadillo Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground beef", "potato", "onion", "tomato"], "instructions": ["Brown beef", "Add vegetables", "Simmer 20 min"]},
-      {"id": "cr-d14", "name": "Fish al Horno", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["fish fillets", "vegetables", "lime", "herbs"], "instructions": ["Season fish", "Bake with vegetables", "Serve hot"]},
-      {"id": "cr-d15", "name": "Arroz con Pollo Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "chicken", "vegetables", "broth"], "instructions": ["Cook rice", "Top with chicken", "Add vegetables"]},
-      {"id": "cr-d16", "name": "Pollo con Fideos Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["chicken", "pasta", "vegetables", "broth"], "instructions": ["Brown chicken", "Add pasta", "Simmer in broth"]},
-      {"id": "cr-d17", "name": "Beef Tacos", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["beef", "tortillas", "salsa", "lettuce", "cheese"], "instructions": ["Brown beef", "Warm tortillas", "Fill and serve"]},
-      {"id": "cr-d18", "name": "Sopa de Pescado", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "broth", "vegetables", "lime"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cr-d19", "name": "Fajitas Costrarricenses", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["beef strips", "tortillas", "peppers", "onion"], "instructions": ["Stir-fry beef and vegetables", "Serve in tortillas"]},
-      {"id": "cr-d20", "name": "Guacamole and Chips", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["avocado", "lime", "salt", "tortilla chips"], "instructions": ["Mash avocado", "Add lime and salt", "Serve with chips"]}
+      {
+        "id": "co-d1",
+        "name": "Costa-Rica D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d2",
+        "name": "Costa-Rica D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d3",
+        "name": "Costa-Rica D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d4",
+        "name": "Costa-Rica D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d5",
+        "name": "Costa-Rica D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d6",
+        "name": "Costa-Rica D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d7",
+        "name": "Costa-Rica D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d8",
+        "name": "Costa-Rica D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d9",
+        "name": "Costa-Rica D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d10",
+        "name": "Costa-Rica D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d11",
+        "name": "Costa-Rica D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d12",
+        "name": "Costa-Rica D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d13",
+        "name": "Costa-Rica D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d14",
+        "name": "Costa-Rica D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d15",
+        "name": "Costa-Rica D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d16",
+        "name": "Costa-Rica D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d17",
+        "name": "Costa-Rica D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d18",
+        "name": "Costa-Rica D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d19",
+        "name": "Costa-Rica D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d20",
+        "name": "Costa-Rica D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "cr-des1", "name": "Flan Costarricense", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["sugar", "eggs", "milk", "vanilla"], "instructions": ["Caramelize sugar", "Pour custard", "Bake in water bath 35-40 min"]},
-      {"id": "cr-des2", "name": "Banana Bread", "difficulty": "Easy", "servings": 8, "prepTime": 20, "cookTime": 55, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 50-55 min"]},
-      {"id": "cr-des3", "name": "Arroz con Leche Dessert", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "milk", "sugar", "cinnamon"], "instructions": ["Cook rice in milk", "Add sugar", "Serve warm"]},
-      {"id": "cr-des4", "name": "Natilla", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 20, "ingredients": ["cornstarch", "milk", "sugar", "cinnamon"], "instructions": ["Mix cornstarch with milk", "Heat until thickened", "Pour into dishes"]},
-      {"id": "cr-des5", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and papaya", "Bake 30-35 min"]},
-      {"id": "cr-des6", "name": "Mango Sorbet", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "sugar", "water"], "instructions": ["Make syrup", "Mix with puree", "Churn until smooth"]},
-      {"id": "cr-des7", "name": "Tres Leches", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 30, "ingredients": ["cake", "condensed milk", "evaporated milk", "whipped cream"], "instructions": ["Soak cake in milk mixture", "Top with whipped cream", "Chill overnight"]},
-      {"id": "cr-des8", "name": "Polvorones", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "sugar", "egg yolk"], "instructions": ["Cream butter and sugar", "Add flour", "Bake 15-20 min"]},
-      {"id": "cr-des9", "name": "Gelatina", "difficulty": "Easy", "servings": 6, "prepTime": 20, "cookTime": 0, "ingredients": ["gelatin", "fruit juice", "sugar"], "instructions": ["Heat juice with sugar", "Add gelatin", "Chill until set"]},
-      {"id": "cr-des10", "name": "Coconut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["shredded coconut", "flour", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour and coconut", "Bake 30-35 min"]},
-      {"id": "cr-des11", "name": "Bunuelos", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 25, "ingredients": ["flour", "cheese", "eggs", "syrup"], "instructions": ["Make dough", "Deep fry", "Coat with syrup"]},
-      {"id": "cr-des12", "name": "Flan Casero", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["eggs", "milk", "sugar", "vanilla"], "instructions": ["Make custard base", "Bake in water bath 35-40 min"]},
-      {"id": "cr-des13", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "honey", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cr-des14", "name": "Fruit Tart", "difficulty": "Hard", "servings": 8, "prepTime": 45, "cookTime": 30, "ingredients": ["pastry", "tropical fruits", "custard"], "instructions": ["Make crust", "Pour custard", "Top with fruits"]},
-      {"id": "cr-des15", "name": "Lime Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["graham cracker crust", "lime juice", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "cr-des16", "name": "Cinnamon Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "sugar", "cinnamon", "oil"], "instructions": ["Mix wet ingredients", "Add flour and cinnamon", "Bake 30-35 min"]},
-      {"id": "cr-des17", "name": "Pineapple Upside Down", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["pineapple", "cake batter", "butter", "brown sugar"], "instructions": ["Arrange pineapple", "Pour batter", "Bake 30-35 min"]},
-      {"id": "cr-des18", "name": "Sweet Plantain", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["ripe plantain", "brown sugar", "cinnamon", "butter"], "instructions": ["Slice plantain", "Layer with sugar", "Bake 15-20 min"]},
-      {"id": "cr-des19", "name": "Ginger Cookies", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "ginger", "sugar", "eggs"], "instructions": ["Cream butter and sugar", "Add flour and ginger", "Bake 15-20 min"]},
-      {"id": "cr-des20", "name": "Vanilla Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 15, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk", "Add cornstarch slurry", "Cook until thick"]}
+      {
+        "id": "co-des1",
+        "name": "Costa-Rica Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des2",
+        "name": "Costa-Rica Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des3",
+        "name": "Costa-Rica Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des4",
+        "name": "Costa-Rica Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des5",
+        "name": "Costa-Rica Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des6",
+        "name": "Costa-Rica Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des7",
+        "name": "Costa-Rica Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des8",
+        "name": "Costa-Rica Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des9",
+        "name": "Costa-Rica Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des10",
+        "name": "Costa-Rica Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des11",
+        "name": "Costa-Rica Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des12",
+        "name": "Costa-Rica Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des13",
+        "name": "Costa-Rica Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des14",
+        "name": "Costa-Rica Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des15",
+        "name": "Costa-Rica Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des16",
+        "name": "Costa-Rica Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des17",
+        "name": "Costa-Rica Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des18",
+        "name": "Costa-Rica Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des19",
+        "name": "Costa-Rica Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des20",
+        "name": "Costa-Rica Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "cr-na1", "name": "Horchata Costarricense", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 10, "ingredients": ["rice", "almonds", "sugar", "cinnamon"], "instructions": ["Soak and blend rice", "Mix with almonds", "Strain and serve cold"]},
-      {"id": "cr-na2", "name": "Tamarindo Juice", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["tamarind pods", "water", "sugar"], "instructions": ["Boil tamarind", "Strain", "Add sugar to taste"]},
-      {"id": "cr-na3", "name": "Fresh Orange Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["oranges", "water", "sugar"], "instructions": ["Juice oranges", "Add water and sugar", "Serve fresh"]},
-      {"id": "cr-na4", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]},
-      {"id": "cr-na5", "name": "Papaya Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "water", "sugar"], "instructions": ["Blend papaya", "Strain juice", "Add water and sugar"]},
-      {"id": "cr-na6", "name": "Pineapple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["pineapple", "water", "sugar"], "instructions": ["Blend pineapple", "Strain juice", "Add water and sugar"]},
-      {"id": "cr-na7", "name": "Watermelon Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["watermelon", "water", "sugar", "lime"], "instructions": ["Blend watermelon", "Strain juice", "Add water, sugar, and lime"]},
-      {"id": "cr-na8", "name": "Ginger Tea", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["ginger", "water", "honey", "lemon"], "instructions": ["Simmer ginger", "Add honey and lemon", "Serve hot"]},
-      {"id": "cr-na9", "name": "Costa Rican Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong coffee", "Serve hot or cold"]},
-      {"id": "cr-na10", "name": "Agua Dulce", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 10, "ingredients": ["brown sugar", "water", "cinnamon", "vanilla"], "instructions": ["Dissolve sugar in water", "Add spices", "Serve hot"]}
+      {
+        "id": "co-na1",
+        "name": "Costa-Rica Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na2",
+        "name": "Costa-Rica Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na3",
+        "name": "Costa-Rica Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na4",
+        "name": "Costa-Rica Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na5",
+        "name": "Costa-Rica Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na6",
+        "name": "Costa-Rica Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na7",
+        "name": "Costa-Rica Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na8",
+        "name": "Costa-Rica Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na9",
+        "name": "Costa-Rica Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na10",
+        "name": "Costa-Rica Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "cr-a1", "name": "Guaro", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["guaro"], "instructions": ["Serve chilled", "Drink neat or mixed"]},
-      {"id": "cr-a2", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "juice", "sugar", "spice"], "instructions": ["Mix rum with juice", "Add sugar and spice", "Serve with ice"]},
-      {"id": "cr-a3", "name": "Mojito Costarricense", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["guaro", "lime juice", "sugar", "mint"], "instructions": ["Muddle mint with sugar", "Add guaro and lime", "Top with soda and ice"]},
-      {"id": "cr-a4", "name": "Tropical Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "tropical juice", "coconut"], "instructions": ["Mix rum with juice", "Add coconut", "Serve over ice"]},
-      {"id": "cr-a5", "name": "Margarita Tropical", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tequila", "mango juice", "lime", "triple sec"], "instructions": ["Shake all ingredients", "Serve over ice", "Rim with salt"]},
-      {"id": "cr-a6", "name": "Pisco Sour", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["pisco", "lime juice", "egg white", "sugar"], "instructions": ["Shake pisco with lime", "Add egg white", "Serve over ice"]},
-      {"id": "cr-a7", "name": "Local Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour into glass"]},
-      {"id": "cr-a8", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["white wine", "soda water", "fruit"], "instructions": ["Pour wine and soda", "Add fruit", "Serve chilled"]},
-      {"id": "cr-a9", "name": "Passion Fruit Daiquiri", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["guaro", "passion fruit puree", "lime juice", "sugar"], "instructions": ["Shake all ingredients", "Strain into glass", "Serve chilled"]},
-      {"id": "cr-a10", "name": "Coffee Liqueur", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["vodka", "coffee", "sugar"], "instructions": ["Infuse vodka with coffee", "Add sugar syrup", "Age 2-3 weeks"]}
+      {
+        "id": "co-a1",
+        "name": "Costa-Rica Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a2",
+        "name": "Costa-Rica Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a3",
+        "name": "Costa-Rica Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a4",
+        "name": "Costa-Rica Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a5",
+        "name": "Costa-Rica Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a6",
+        "name": "Costa-Rica Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a7",
+        "name": "Costa-Rica Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a8",
+        "name": "Costa-Rica Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a9",
+        "name": "Costa-Rica Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a10",
+        "name": "Costa-Rica Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

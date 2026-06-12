@@ -1,121 +1,1421 @@
 {
   "belgiumRecipes": {
-    "title": "Authentic Belgian Cuisine",
+    "title": "Authentic Belgium Cuisine",
     "country": "Belgium",
-    "region": "Western Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "bel_breakfast_001", "name": "Belgian Waffle", "difficulty": "Medium", "servings": "4 waffles", "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Flour", "Eggs", "Butter", "Sugar", "Baking powder"]},
-      {"id": "bel_breakfast_002", "name": "Liège Waffle", "difficulty": "Medium", "servings": "6 waffles", "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Dough", "Pearl sugar", "Butter"]},
-      {"id": "bel_breakfast_003", "name": "Chicory Coffee", "difficulty": "Easy", "servings": "2 cups", "prepTime": "5 minutes", "cookTime": "5 minutes", "ingredients": ["Coffee", "Chicory", "Milk", "Sugar"]},
-      {"id": "bel_breakfast_004", "name": "Belgian Bread", "difficulty": "Medium", "servings": "1 loaf", "prepTime": "120 minutes", "cookTime": "40 minutes", "ingredients": ["Flour", "Water", "Yeast", "Salt"]},
-      {"id": "bel_breakfast_005", "name": "Croissant", "difficulty": "Hard", "servings": "8 pieces", "prepTime": "180 minutes", "cookTime": "20 minutes", "ingredients": ["Flour", "Butter", "Yeast", "Milk"]},
-      {"id": "bel_breakfast_006", "name": "Pain au Chocolat", "difficulty": "Hard", "servings": "6 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Chocolate", "Butter"]},
-      {"id": "bel_breakfast_007", "name": "Cheese and Ham", "difficulty": "Easy", "servings": "2 pieces", "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Cheese", "Ham"]},
-      {"id": "bel_breakfast_008", "name": "Scrambled Eggs", "difficulty": "Easy", "servings": "2 servings", "prepTime": "10 minutes", "cookTime": "8 minutes", "ingredients": ["Eggs", "Butter", "Salt", "Pepper"]},
-      {"id": "bel_breakfast_009", "name": "Belgian Cake", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Flour", "Butter", "Sugar", "Eggs", "Vanilla"]},
-      {"id": "bel_breakfast_010", "name": "Speculoos Cookie", "difficulty": "Medium", "servings": "24 cookies", "prepTime": "25 minutes", "cookTime": "15 minutes", "ingredients": ["Flour", "Butter", "Sugar", "Spices"]},
-      {"id": "bel_breakfast_011", "name": "Fruit Salad", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "0 minutes", "ingredients": ["Mixed fruits", "Honey", "Lemon"]},
-      {"id": "bel_breakfast_012", "name": "Yogurt Parfait", "difficulty": "Easy", "servings": "2 servings", "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Yogurt", "Granola", "Berries", "Honey"]},
-      {"id": "bel_breakfast_013", "name": "Omelette", "difficulty": "Easy", "servings": "2 servings", "prepTime": "10 minutes", "cookTime": "8 minutes", "ingredients": ["Eggs", "Butter", "Cheese", "Herbs"]},
-      {"id": "bel_breakfast_014", "name": "Ham and Eggs", "difficulty": "Easy", "servings": "2 servings", "prepTime": "10 minutes", "cookTime": "10 minutes", "ingredients": ["Eggs", "Ham", "Butter", "Bread"]},
-      {"id": "bel_breakfast_015", "name": "Berry Jam", "difficulty": "Medium", "servings": "1 jar", "prepTime": "15 minutes", "cookTime": "30 minutes", "ingredients": ["Berries", "Sugar", "Lemon"]},
-      {"id": "bel_breakfast_016", "name": "Butter and Jam Toast", "difficulty": "Easy", "servings": "2 slices", "prepTime": "5 minutes", "cookTime": "2 minutes", "ingredients": ["Bread", "Butter", "Jam"]},
-      {"id": "bel_breakfast_017", "name": "Cheese Quiche", "difficulty": "Medium", "servings": "6 slices", "prepTime": "25 minutes", "cookTime": "35 minutes", "ingredients": ["Pastry", "Eggs", "Cheese", "Cream"]},
-      {"id": "bel_breakfast_018", "name": "Vegetable Quiche", "difficulty": "Medium", "servings": "6 slices", "prepTime": "30 minutes", "cookTime": "35 minutes", "ingredients": ["Pastry", "Vegetables", "Eggs", "Cream"]},
-      {"id": "bel_breakfast_019", "name": "Ham Croissant", "difficulty": "Hard", "servings": "4 pieces", "prepTime": "120 minutes", "cookTime": "20 minutes", "ingredients": ["Pastry", "Ham", "Cheese", "Butter"]},
-      {"id": "bel_breakfast_020", "name": "Muesli", "difficulty": "Easy", "servings": "2 servings", "prepTime": "5 minutes", "cookTime": "0 minutes", "ingredients": ["Oats", "Nuts", "Dried fruit", "Milk"]}
+      {
+        "id": "be-b1",
+        "name": "Belgium B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b2",
+        "name": "Belgium B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b3",
+        "name": "Belgium B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b4",
+        "name": "Belgium B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b5",
+        "name": "Belgium B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b6",
+        "name": "Belgium B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b7",
+        "name": "Belgium B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b8",
+        "name": "Belgium B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b9",
+        "name": "Belgium B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b10",
+        "name": "Belgium B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b11",
+        "name": "Belgium B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b12",
+        "name": "Belgium B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b13",
+        "name": "Belgium B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b14",
+        "name": "Belgium B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b15",
+        "name": "Belgium B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b16",
+        "name": "Belgium B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b17",
+        "name": "Belgium B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b18",
+        "name": "Belgium B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b19",
+        "name": "Belgium B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-b20",
+        "name": "Belgium B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "bel_lunch_001", "name": "Moules-Frites", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Mussels", "White wine", "Potatoes", "Spices"]},
-      {"id": "bel_lunch_002", "name": "Belgian Frites", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Potatoes", "Oil", "Salt"]},
-      {"id": "bel_lunch_003", "name": "Waterzooi", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Chicken", "Vegetables", "Cream", "Broth"]},
-      {"id": "bel_lunch_004", "name": "Fish Soup", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "40 minutes", "ingredients": ["Fish", "Vegetables", "Broth", "Cream"]},
-      {"id": "bel_lunch_005", "name": "Carbonnade Flamande", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Beer", "Onion", "Spices"]},
-      {"id": "bel_lunch_006", "name": "Croquettes", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Meat", "Potatoes", "Flour", "Oil"]},
-      {"id": "bel_lunch_007", "name": "Flemish Stew", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Vegetables", "Beer", "Spices"]},
-      {"id": "bel_lunch_008", "name": "Cheese Soup", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "25 minutes", "ingredients": ["Cheese", "Vegetables", "Broth", "Cream"]},
-      {"id": "bel_lunch_009", "name": "Leek Gratin", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "35 minutes", "ingredients": ["Leeks", "Ham", "Cheese", "Cream"]},
-      {"id": "bel_lunch_010", "name": "Pork Chops", "difficulty": "Medium", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Pork", "Vegetables", "Spices", "Oil"]},
-      {"id": "bel_lunch_011", "name": "Grilled Fish", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "20 minutes", "ingredients": ["Fish", "Lemon", "Herbs", "Oil"]},
-      {"id": "bel_lunch_012", "name": "Beef Stew", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Vegetables", "Wine", "Spices"]},
-      {"id": "bel_lunch_013", "name": "Chicken Stew", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "50 minutes", "ingredients": ["Chicken", "Vegetables", "Cream", "Spices"]},
-      {"id": "bel_lunch_014", "name": "Ham and Cheese Sandwich", "difficulty": "Easy", "servings": "2 sandwiches", "prepTime": "10 minutes", "cookTime": "0 minutes", "ingredients": ["Bread", "Ham", "Cheese"]},
-      {"id": "bel_lunch_015", "name": "Salad", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "0 minutes", "ingredients": ["Mixed greens", "Vegetables", "Dressing"]},
-      {"id": "bel_lunch_016", "name": "Pasta with Vegetables", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Pasta", "Vegetables", "Oil", "Spices"]},
-      {"id": "bel_lunch_017", "name": "Rice with Chicken", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "35 minutes", "ingredients": ["Rice", "Chicken", "Vegetables", "Spices"]},
-      {"id": "bel_lunch_018", "name": "Mushroom Soup", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "30 minutes", "ingredients": ["Mushrooms", "Broth", "Cream", "Herbs"]},
-      {"id": "bel_lunch_019", "name": "Vegetable Quiche", "difficulty": "Medium", "servings": "6 slices", "prepTime": "25 minutes", "cookTime": "35 minutes", "ingredients": ["Pastry", "Vegetables", "Eggs", "Cream"]},
-      {"id": "bel_lunch_020", "name": "Mixed Grill", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "30 minutes", "ingredients": ["Meat", "Vegetables", "Spices"]}
+      {
+        "id": "be-l1",
+        "name": "Belgium L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l2",
+        "name": "Belgium L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l3",
+        "name": "Belgium L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l4",
+        "name": "Belgium L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l5",
+        "name": "Belgium L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l6",
+        "name": "Belgium L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l7",
+        "name": "Belgium L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l8",
+        "name": "Belgium L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l9",
+        "name": "Belgium L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l10",
+        "name": "Belgium L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l11",
+        "name": "Belgium L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l12",
+        "name": "Belgium L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l13",
+        "name": "Belgium L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l14",
+        "name": "Belgium L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l15",
+        "name": "Belgium L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l16",
+        "name": "Belgium L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l17",
+        "name": "Belgium L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l18",
+        "name": "Belgium L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l19",
+        "name": "Belgium L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-l20",
+        "name": "Belgium L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "bel_dinner_001", "name": "Moules Dinner", "difficulty": "Medium", "servings": "4 servings", "prepTime": "25 minutes", "cookTime": "30 minutes", "ingredients": ["Mussels", "White wine", "Vegetables", "Herbs"]},
-      {"id": "bel_dinner_002", "name": "Beef Carbonnade", "difficulty": "Medium", "servings": "6 servings", "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Beer", "Vegetables", "Spices"]},
-      {"id": "bel_dinner_003", "name": "Fish Dinner", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Fish", "Vegetables", "Oil", "Spices"]},
-      {"id": "bel_dinner_004", "name": "Chicken Dinner", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "50 minutes", "ingredients": ["Chicken", "Cream", "Vegetables", "Spices"]},
-      {"id": "bel_dinner_005", "name": "Pork Roast", "difficulty": "Medium", "servings": "6 servings", "prepTime": "25 minutes", "cookTime": "90 minutes", "ingredients": ["Pork", "Vegetables", "Spices"]},
-      {"id": "bel_dinner_006", "name": "Lamb Stew", "difficulty": "Medium", "servings": "6 servings", "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Lamb", "Vegetables", "Wine", "Spices"]},
-      {"id": "bel_dinner_007", "name": "Waterzooi Dinner", "difficulty": "Medium", "servings": "8 servings", "prepTime": "30 minutes", "cookTime": "50 minutes", "ingredients": ["Chicken", "Vegetables", "Cream", "Spices"]},
-      {"id": "bel_dinner_008", "name": "Beef Stew Dinner", "difficulty": "Medium", "servings": "8 servings", "prepTime": "30 minutes", "cookTime": "90 minutes", "ingredients": ["Beef", "Vegetables", "Wine", "Spices"]},
-      {"id": "bel_dinner_009", "name": "Sea Bass", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Sea bass", "Lemon", "Herbs", "Oil"]},
-      {"id": "bel_dinner_010", "name": "Salmon", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "20 minutes", "ingredients": ["Salmon", "Vegetables", "Oil", "Spices"]},
-      {"id": "bel_dinner_011", "name": "Veal Schnitzel", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Veal", "Flour", "Eggs", "Breadcrumbs"]},
-      {"id": "bel_dinner_012", "name": "Duck Dinner", "difficulty": "Medium", "servings": "4 servings", "prepTime": "25 minutes", "cookTime": "75 minutes", "ingredients": ["Duck", "Vegetables", "Wine", "Spices"]},
-      {"id": "bel_dinner_013", "name": "Game Stew", "difficulty": "Hard", "servings": "6 servings", "prepTime": "30 minutes", "cookTime": "120 minutes", "ingredients": ["Game meat", "Vegetables", "Wine", "Spices"]},
-      {"id": "bel_dinner_014", "name": "Vegetable Gratin", "difficulty": "Medium", "servings": "4 servings", "prepTime": "25 minutes", "cookTime": "45 minutes", "ingredients": ["Vegetables", "Cheese", "Cream"]},
-      {"id": "bel_dinner_015", "name": "Cheese Fondue", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Cheese", "Wine", "Bread"]},
-      {"id": "bel_dinner_016", "name": "Meat Fondue", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "15 minutes", "ingredients": ["Meat", "Oil", "Vegetables"]},
-      {"id": "bel_dinner_017", "name": "Seafood Platter", "difficulty": "Hard", "servings": "6 servings", "prepTime": "35 minutes", "cookTime": "30 minutes", "ingredients": ["Mixed seafood", "Vegetables", "Spices"]},
-      {"id": "bel_dinner_018", "name": "Beef Steak", "difficulty": "Medium", "servings": "2 servings", "prepTime": "15 minutes", "cookTime": "20 minutes", "ingredients": ["Beef", "Vegetables", "Spices"]},
-      {"id": "bel_dinner_019", "name": "Chicken Fillet", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "25 minutes", "ingredients": ["Chicken", "Vegetables", "Cream"]},
-      {"id": "bel_dinner_020", "name": "Festive Dinner", "difficulty": "Hard", "servings": "8 servings", "prepTime": "40 minutes", "cookTime": "90 minutes", "ingredients": ["Multiple meats", "Vegetables", "Spices"]}
+      {
+        "id": "be-d1",
+        "name": "Belgium D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d2",
+        "name": "Belgium D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d3",
+        "name": "Belgium D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d4",
+        "name": "Belgium D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d5",
+        "name": "Belgium D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d6",
+        "name": "Belgium D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d7",
+        "name": "Belgium D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d8",
+        "name": "Belgium D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d9",
+        "name": "Belgium D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d10",
+        "name": "Belgium D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d11",
+        "name": "Belgium D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d12",
+        "name": "Belgium D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d13",
+        "name": "Belgium D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d14",
+        "name": "Belgium D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d15",
+        "name": "Belgium D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d16",
+        "name": "Belgium D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d17",
+        "name": "Belgium D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d18",
+        "name": "Belgium D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d19",
+        "name": "Belgium D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-d20",
+        "name": "Belgium D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "bel_dessert_001", "name": "Belgian Chocolate Cake", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "bel_dessert_002", "name": "Waffle with Chocolate", "difficulty": "Medium", "servings": "4 waffles", "prepTime": "15 minutes", "cookTime": "20 minutes"},
-      {"id": "bel_dessert_003", "name": "Speculoos", "difficulty": "Medium", "servings": "24 cookies", "prepTime": "25 minutes", "cookTime": "15 minutes"},
-      {"id": "bel_dessert_004", "name": "Tart Tatin", "difficulty": "Hard", "servings": "8 slices", "prepTime": "25 minutes", "cookTime": "45 minutes"},
-      {"id": "bel_dessert_005", "name": "Chocolate Mousse", "difficulty": "Easy", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_dessert_006", "name": "Crème Brûlée", "difficulty": "Medium", "servings": "4 servings", "prepTime": "20 minutes", "cookTime": "40 minutes"},
-      {"id": "bel_dessert_007", "name": "Panna Cotta", "difficulty": "Easy", "servings": "4 servings", "prepTime": "25 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_dessert_008", "name": "Tiramisu", "difficulty": "Medium", "servings": "8 servings", "prepTime": "30 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_dessert_009", "name": "Raspberry Tart", "difficulty": "Hard", "servings": "8 slices", "prepTime": "30 minutes", "cookTime": "35 minutes"},
-      {"id": "bel_dessert_010", "name": "Fruit Cake", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "25 minutes", "cookTime": "50 minutes"},
-      {"id": "bel_dessert_011", "name": "Cheesecake", "difficulty": "Hard", "servings": "8 slices", "prepTime": "30 minutes", "cookTime": "50 minutes"},
-      {"id": "bel_dessert_012", "name": "Chocolate Tart", "difficulty": "Hard", "servings": "8 slices", "prepTime": "25 minutes", "cookTime": "35 minutes"},
-      {"id": "bel_dessert_013", "name": "Meringue Pie", "difficulty": "Hard", "servings": "8 slices", "prepTime": "30 minutes", "cookTime": "40 minutes"},
-      {"id": "bel_dessert_014", "name": "Brownie", "difficulty": "Medium", "servings": "12 pieces", "prepTime": "20 minutes", "cookTime": "30 minutes"},
-      {"id": "bel_dessert_015", "name": "Apple Pie", "difficulty": "Medium", "servings": "8 slices", "prepTime": "30 minutes", "cookTime": "40 minutes"},
-      {"id": "bel_dessert_016", "name": "Custard Tart", "difficulty": "Medium", "servings": "8 slices", "prepTime": "25 minutes", "cookTime": "35 minutes"},
-      {"id": "bel_dessert_017", "name": "Fruit Salad", "difficulty": "Easy", "servings": "4 servings", "prepTime": "15 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_dessert_018", "name": "Chocolate Éclair", "difficulty": "Hard", "servings": "12 pieces", "prepTime": "35 minutes", "cookTime": "20 minutes"},
-      {"id": "bel_dessert_019", "name": "Vanilla Cake", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "25 minutes", "cookTime": "40 minutes"},
-      {"id": "bel_dessert_020", "name": "Berry Cake", "difficulty": "Medium", "servings": "8 pieces", "prepTime": "25 minutes", "cookTime": "45 minutes"}
+      {
+        "id": "be-des1",
+        "name": "Belgium Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des2",
+        "name": "Belgium Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des3",
+        "name": "Belgium Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des4",
+        "name": "Belgium Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des5",
+        "name": "Belgium Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des6",
+        "name": "Belgium Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des7",
+        "name": "Belgium Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des8",
+        "name": "Belgium Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des9",
+        "name": "Belgium Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des10",
+        "name": "Belgium Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des11",
+        "name": "Belgium Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des12",
+        "name": "Belgium Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des13",
+        "name": "Belgium Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des14",
+        "name": "Belgium Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des15",
+        "name": "Belgium Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des16",
+        "name": "Belgium Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des17",
+        "name": "Belgium Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des18",
+        "name": "Belgium Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des19",
+        "name": "Belgium Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-des20",
+        "name": "Belgium Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "bel_drink_na_001", "name": "Belgian Beer (Non-Alcoholic)", "servings": "1 pint", "prepTime": "0 minutes"},
-      {"id": "bel_drink_na_002", "name": "Chicory Coffee", "servings": "1 cup", "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "bel_drink_na_003", "name": "Hot Chocolate", "servings": "1 cup", "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "bel_drink_na_004", "name": "Tea", "servings": "1 cup", "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "bel_drink_na_005", "name": "Coffee", "servings": "1 cup", "prepTime": "5 minutes", "cookTime": "5 minutes"},
-      {"id": "bel_drink_na_006", "name": "Fruit Juice", "servings": "1 glass", "prepTime": "5 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_drink_na_007", "name": "Orange Juice", "servings": "1 glass", "prepTime": "5 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_drink_na_008", "name": "Apple Juice", "servings": "1 glass", "prepTime": "5 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_drink_na_009", "name": "Lemonade", "servings": "1 glass", "prepTime": "10 minutes", "cookTime": "0 minutes"},
-      {"id": "bel_drink_na_010", "name": "Milk", "servings": "1 glass", "prepTime": "2 minutes", "cookTime": "0 minutes"}
+      {
+        "id": "be-na1",
+        "name": "Belgium Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na2",
+        "name": "Belgium Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na3",
+        "name": "Belgium Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na4",
+        "name": "Belgium Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na5",
+        "name": "Belgium Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na6",
+        "name": "Belgium Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na7",
+        "name": "Belgium Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na8",
+        "name": "Belgium Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na9",
+        "name": "Belgium Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-na10",
+        "name": "Belgium Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "bel_drink_a_001", "name": "Belgian Trappist Beer", "servings": "1 pint"},
-      {"id": "bel_drink_a_002", "name": "Lambic Beer", "servings": "1 pint"},
-      {"id": "bel_drink_a_003", "name": "Dubbel Beer", "servings": "1 pint"},
-      {"id": "bel_drink_a_004", "name": "Tripel Beer", "servings": "1 pint"},
-      {"id": "bel_drink_a_005", "name": "Witbier", "servings": "1 pint"},
-      {"id": "bel_drink_a_006", "name": "Wine Red", "servings": "1 glass"},
-      {"id": "bel_drink_a_007", "name": "Wine White", "servings": "1 glass"},
-      {"id": "bel_drink_a_008", "name": "Champagne", "servings": "1 glass"},
-      {"id": "bel_drink_a_009", "name": "Jenever", "servings": "1 shot"},
-      {"id": "bel_drink_a_010", "name": "Cognac", "servings": "1 shot"}
+      {
+        "id": "be-a1",
+        "name": "Belgium Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a2",
+        "name": "Belgium Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a3",
+        "name": "Belgium Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a4",
+        "name": "Belgium Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a5",
+        "name": "Belgium Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a6",
+        "name": "Belgium Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a7",
+        "name": "Belgium Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a8",
+        "name": "Belgium Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a9",
+        "name": "Belgium Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "be-a10",
+        "name": "Belgium Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

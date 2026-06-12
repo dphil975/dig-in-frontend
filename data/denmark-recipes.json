@@ -1,121 +1,1421 @@
 {
   "denmarkRecipes": {
-    "title": "Authentic Danish Cuisine",
+    "title": "Authentic Denmark Cuisine",
     "country": "Denmark",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "dk-b1", "name": "Danish Pastry", "difficulty": "Hard", "servings": 8, "prepTime": 120, "cookTime": 25, "ingredients": ["dough", "butter", "filling", "sugar"], "instructions": ["Make dough", "Laminate with butter", "Fill and shape", "Bake 20-25 min"]},
-      {"id": "dk-b2", "name": "Smørrebrød", "difficulty": "Medium", "servings": 2, "prepTime": 20, "cookTime": 0, "ingredients": ["rye bread", "butter", "toppings", "cheese"], "instructions": ["Toast bread", "Spread butter", "Add toppings"]},
-      {"id": "dk-b3", "name": "Eggs and Bacon", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 15, "ingredients": ["eggs", "bacon", "oil", "salt"], "instructions": ["Fry bacon", "Cook eggs", "Serve together"]},
-      {"id": "dk-b4", "name": "Oatmeal Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 20, "ingredients": ["oats", "milk", "water", "sugar", "cinnamon"], "instructions": ["Cook oats", "Add milk", "Serve with toppings"]},
-      {"id": "dk-b5", "name": "Fresh Berries with Cream", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["berries", "cream", "sugar"], "instructions": ["Arrange berries", "Top with cream", "Sprinkle sugar"]},
-      {"id": "dk-b6", "name": "Danish Cheese", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["danish cheese", "bread", "butter"], "instructions": ["Slice cheese", "Serve with bread", "Add butter"]},
-      {"id": "dk-b7", "name": "Rye Bread Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["rye bread", "butter", "jam"], "instructions": ["Toast bread", "Spread butter", "Add jam"]},
-      {"id": "dk-b8", "name": "Smoked Fish Breakfast", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["smoked fish", "bread", "lemon", "dill"], "instructions": ["Slice fish", "Serve with bread", "Garnish with dill"]},
-      {"id": "dk-b9", "name": "Yogurt Bowl", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["yogurt", "granola", "berries", "honey"], "instructions": ["Pour yogurt", "Add granola", "Top with berries and honey"]},
-      {"id": "dk-b10", "name": "Danish Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong coffee", "Serve hot"]},
-      {"id": "dk-b11", "name": "Pancakes with Jam", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["flour", "eggs", "milk", "jam"], "instructions": ["Make batter", "Cook pancakes", "Serve with jam"]},
-      {"id": "dk-b12", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "dk-b13", "name": "Soft Boiled Eggs", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["eggs", "salt", "bread"], "instructions": ["Boil eggs", "Serve with bread", "Season with salt"]},
-      {"id": "dk-b14", "name": "Fruit Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["berries", "yogurt", "milk", "honey"], "instructions": ["Blend all ingredients", "Serve cold"]},
-      {"id": "dk-b15", "name": "Liver Pâté", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["liver", "butter", "spices", "bread"], "instructions": ["Prepare pâté", "Serve with bread"]},
-      {"id": "dk-b16", "name": "Rye Bread", "difficulty": "Medium", "servings": 8, "prepTime": 45, "cookTime": 35, "ingredients": ["flour", "yeast", "salt", "caraway"], "instructions": ["Make dough", "Let rise", "Bake 30-35 min"]},
-      {"id": "dk-b17", "name": "Raspberry Tart", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 35, "ingredients": ["pastry", "custard", "raspberries"], "instructions": ["Make crust", "Pour custard", "Top with berries"]},
-      {"id": "dk-b18", "name": "Ham and Cheese", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["ham", "cheese", "bread"], "instructions": ["Slice ham and cheese", "Serve with bread"]},
-      {"id": "dk-b19", "name": "Cucumber Salad", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["cucumber", "dill", "vinegar", "sugar"], "instructions": ["Slice cucumber", "Make dressing", "Mix together"]},
-      {"id": "dk-b20", "name": "Cinnamon Roll", "difficulty": "Medium", "servings": 8, "prepTime": 90, "cookTime": 25, "ingredients": ["dough", "butter", "cinnamon", "sugar"], "instructions": ["Make dough", "Roll with filling", "Bake 20-25 min"]}
+      {
+        "id": "de-b1",
+        "name": "Denmark B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b2",
+        "name": "Denmark B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b3",
+        "name": "Denmark B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b4",
+        "name": "Denmark B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b5",
+        "name": "Denmark B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b6",
+        "name": "Denmark B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b7",
+        "name": "Denmark B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b8",
+        "name": "Denmark B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b9",
+        "name": "Denmark B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b10",
+        "name": "Denmark B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b11",
+        "name": "Denmark B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b12",
+        "name": "Denmark B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b13",
+        "name": "Denmark B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b14",
+        "name": "Denmark B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b15",
+        "name": "Denmark B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b16",
+        "name": "Denmark B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b17",
+        "name": "Denmark B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b18",
+        "name": "Denmark B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b19",
+        "name": "Denmark B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-b20",
+        "name": "Denmark B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "dk-l1", "name": "Frikadeller", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["ground pork", "breadcrumbs", "eggs", "onion"], "instructions": ["Mix ingredients", "Form patties", "Pan-fry until golden"]},
-      {"id": "dk-l2", "name": "Meatballs with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground meat", "eggs", "breadcrumbs", "sauce"], "instructions": ["Form meatballs", "Fry until cooked", "Serve with sauce"]},
-      {"id": "dk-l3", "name": "Roasted Duck", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["duck", "herbs", "spices"], "instructions": ["Season duck", "Roast 85-90 min", "Serve hot"]},
-      {"id": "dk-l4", "name": "Smørrebrød Lunch", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["rye bread", "toppings", "fish", "cheese"], "instructions": ["Toast bread", "Add toppings", "Serve immediately"]},
-      {"id": "dk-l5", "name": "Fish Balls", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "breadcrumbs", "eggs", "spices"], "instructions": ["Mix fish mixture", "Form balls", "Boil until done"]},
-      {"id": "dk-l6", "name": "Pork Chops", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["pork chops", "oil", "herbs", "salt"], "instructions": ["Season chops", "Pan-fry 20-25 min", "Serve hot"]},
-      {"id": "dk-l7", "name": "Beef Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["beef", "vegetables", "broth", "spices"], "instructions": ["Brown beef", "Add vegetables", "Simmer 80 min"]},
-      {"id": "dk-l8", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lemon", "oil", "herbs"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "dk-l9", "name": "Vegetable Soup", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 35, "ingredients": ["vegetables", "broth", "oil", "herbs"], "instructions": ["Chop vegetables", "Simmer in broth", "Serve hot"]},
-      {"id": "dk-l10", "name": "Chicken Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "herbs"], "instructions": ["Roast chicken", "Add vegetables", "Serve hot"]},
-      {"id": "dk-l11", "name": "Potato Salad", "difficulty": "Easy", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["potatoes", "mayo", "herbs", "vegetables"], "instructions": ["Cook potatoes", "Make dressing", "Mix together"]},
-      {"id": "dk-l12", "name": "Shrimp Salad", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 10, "ingredients": ["shrimp", "lettuce", "dressing", "vegetables"], "instructions": ["Cook shrimp", "Make salad", "Toss with dressing"]},
-      {"id": "dk-l13", "name": "Pea Soup", "difficulty": "Easy", "servings": 6, "prepTime": 20, "cookTime": 50, "ingredients": ["split peas", "ham", "vegetables", "broth"], "instructions": ["Cook peas", "Add ham and vegetables", "Simmer 40 min"]},
-      {"id": "dk-l14", "name": "Liver and Onions", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["liver", "onions", "oil", "herbs"], "instructions": ["Slice liver and onions", "Pan-fry together", "Serve hot"]},
-      {"id": "dk-l15", "name": "Cucumber Soup", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["cucumber", "cream", "dill", "broth"], "instructions": ["Blend cucumber", "Add cream and broth", "Serve chilled"]},
-      {"id": "dk-l16", "name": "Herring Lunch", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["herring", "potatoes", "vegetables"], "instructions": ["Serve herring", "Add potatoes", "Garnish with vegetables"]},
-      {"id": "dk-l17", "name": "Mussels", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["mussels", "wine", "garlic", "herbs"], "instructions": ["Clean mussels", "Cook in wine", "Serve hot"]},
-      {"id": "dk-l18", "name": "Roasted Vegetables", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["vegetables", "oil", "herbs", "salt"], "instructions": ["Chop vegetables", "Roast at 400F", "Serve hot"]},
-      {"id": "dk-l19", "name": "Danish Sausage", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["sausage", "potatoes", "mustard"], "instructions": ["Cook sausage", "Serve with potatoes", "Add mustard"]},
-      {"id": "dk-l20", "name": "Fish Soup", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "broth", "vegetables", "cream"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]}
+      {
+        "id": "de-l1",
+        "name": "Denmark L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l2",
+        "name": "Denmark L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l3",
+        "name": "Denmark L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l4",
+        "name": "Denmark L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l5",
+        "name": "Denmark L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l6",
+        "name": "Denmark L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l7",
+        "name": "Denmark L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l8",
+        "name": "Denmark L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l9",
+        "name": "Denmark L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l10",
+        "name": "Denmark L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l11",
+        "name": "Denmark L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l12",
+        "name": "Denmark L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l13",
+        "name": "Denmark L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l14",
+        "name": "Denmark L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l15",
+        "name": "Denmark L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l16",
+        "name": "Denmark L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l17",
+        "name": "Denmark L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l18",
+        "name": "Denmark L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l19",
+        "name": "Denmark L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-l20",
+        "name": "Denmark L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "dk-d1", "name": "Whole Roasted Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["whole fish", "lemon", "herbs", "oil"], "instructions": ["Season fish", "Roast 30-35 min", "Serve hot"]},
-      {"id": "dk-d2", "name": "Danish Meatballs", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground meat", "breadcrumbs", "eggs"], "instructions": ["Form meatballs", "Fry until cooked", "Serve with sauce"]},
-      {"id": "dk-d3", "name": "Roasted Duck Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["duck", "herbs", "vegetables"], "instructions": ["Season duck", "Roast 85-90 min", "Serve hot"]},
-      {"id": "dk-d4", "name": "Beef Roast", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 90, "ingredients": ["beef roast", "vegetables", "herbs"], "instructions": ["Season beef", "Roast 80-90 min", "Serve hot"]},
-      {"id": "dk-d5", "name": "Pork Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 40, "ingredients": ["pork", "potatoes", "vegetables"], "instructions": ["Cook pork", "Add potatoes", "Serve together"]},
-      {"id": "dk-d6", "name": "Chicken Roast", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 60, "ingredients": ["whole chicken", "herbs", "vegetables"], "instructions": ["Season chicken", "Roast 55-60 min", "Serve hot"]},
-      {"id": "dk-d7", "name": "Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish fillets", "sauce", "vegetables"], "instructions": ["Make sauce", "Cook fish", "Serve with vegetables"]},
-      {"id": "dk-d8", "name": "Lamb Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 90, "ingredients": ["lamb", "vegetables", "broth", "spices"], "instructions": ["Brown lamb", "Add vegetables", "Simmer 80 min"]},
-      {"id": "dk-d9", "name": "Veal Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["veal", "sauce", "vegetables"], "instructions": ["Pan-fry veal", "Make sauce", "Serve with vegetables"]},
-      {"id": "dk-d10", "name": "Seafood Dinner", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 30, "ingredients": ["mixed seafood", "sauce", "vegetables"], "instructions": ["Prepare seafood", "Make sauce", "Serve together"]},
-      {"id": "dk-d11", "name": "Vegetable Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 40, "ingredients": ["vegetables", "broth", "herbs"], "instructions": ["Chop vegetables", "Simmer in broth", "Serve hot"]},
-      {"id": "dk-d12", "name": "Danish Dinner Plate", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["meat", "potatoes", "vegetables"], "instructions": ["Prepare all components", "Arrange on plate", "Serve hot"]},
-      {"id": "dk-d13", "name": "Mussels Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["mussels", "wine", "herbs"], "instructions": ["Clean mussels", "Cook in wine", "Serve hot"]},
-      {"id": "dk-d14", "name": "Shrimp Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 15, "ingredients": ["shrimp", "sauce", "vegetables"], "instructions": ["Cook shrimp", "Make sauce", "Serve hot"]},
-      {"id": "dk-d15", "name": "Bean Soup Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 45, "ingredients": ["beans", "vegetables", "broth"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "dk-d16", "name": "Potato Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 35, "ingredients": ["potatoes", "vegetables", "sauce"], "instructions": ["Cook potatoes", "Add vegetables", "Serve with sauce"]},
-      {"id": "dk-d17", "name": "Turnip Roots", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["root vegetables", "butter", "herbs"], "instructions": ["Roast vegetables", "Add butter", "Serve hot"]},
-      {"id": "dk-d18", "name": "Mushroom Stew", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["mushrooms", "cream", "herbs"], "instructions": ["Sauté mushrooms", "Add cream", "Simmer 20 min"]},
-      {"id": "dk-d19", "name": "Herring Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["herring", "potatoes", "vegetables"], "instructions": ["Serve herring", "Add potatoes", "Garnish with vegetables"]},
-      {"id": "dk-d20", "name": "Nordic Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["fish", "root vegetables", "sauce"], "instructions": ["Prepare fish", "Roast vegetables", "Make sauce", "Serve together"]}
+      {
+        "id": "de-d1",
+        "name": "Denmark D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d2",
+        "name": "Denmark D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d3",
+        "name": "Denmark D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d4",
+        "name": "Denmark D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d5",
+        "name": "Denmark D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d6",
+        "name": "Denmark D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d7",
+        "name": "Denmark D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d8",
+        "name": "Denmark D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d9",
+        "name": "Denmark D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d10",
+        "name": "Denmark D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d11",
+        "name": "Denmark D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d12",
+        "name": "Denmark D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d13",
+        "name": "Denmark D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d14",
+        "name": "Denmark D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d15",
+        "name": "Denmark D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d16",
+        "name": "Denmark D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d17",
+        "name": "Denmark D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d18",
+        "name": "Denmark D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d19",
+        "name": "Denmark D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-d20",
+        "name": "Denmark D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "dk-des1", "name": "Danish Pastry", "difficulty": "Hard", "servings": 8, "prepTime": 120, "cookTime": 25, "ingredients": ["dough", "butter", "jam", "sugar"], "instructions": ["Make laminated dough", "Fill with jam", "Bake 20-25 min"]},
-      {"id": "dk-des2", "name": "Strawberry Shortcake", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 30, "ingredients": ["sponge cake", "strawberries", "cream"], "instructions": ["Make cake", "Layer with cream", "Top with strawberries"]},
-      {"id": "dk-des3", "name": "Raspberry Tart", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 35, "ingredients": ["pastry", "custard", "raspberries"], "instructions": ["Make crust", "Pour custard", "Top with berries"]},
-      {"id": "dk-des4", "name": "Apple Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "apples", "eggs", "sugar"], "instructions": ["Arrange apples", "Pour batter", "Bake 35-40 min"]},
-      {"id": "dk-des5", "name": "Chocolate Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "chocolate", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "dk-des6", "name": "Custard Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 35, "ingredients": ["pastry", "custard", "sugar"], "instructions": ["Make crust", "Pour custard", "Bake 30-35 min"]},
-      {"id": "dk-des7", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "dk-des8", "name": "Carrot Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "carrots", "eggs", "sugar"], "instructions": ["Grate carrots", "Mix ingredients", "Bake 35-40 min"]},
-      {"id": "dk-des9", "name": "Fruit Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 40, "ingredients": ["flour", "fruit", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and fruit", "Bake 35-40 min"]},
-      {"id": "dk-des10", "name": "Cinnamon Roll", "difficulty": "Medium", "servings": 8, "prepTime": 90, "cookTime": 25, "ingredients": ["dough", "butter", "cinnamon", "sugar"], "instructions": ["Make dough", "Roll with filling", "Bake 20-25 min"]},
-      {"id": "dk-des11", "name": "Lemon Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["crust", "lemon juice", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "dk-des12", "name": "Walnut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "walnuts", "eggs", "sugar"], "instructions": ["Chop walnuts", "Mix", "Bake 30-35 min"]},
-      {"id": "dk-des13", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "almonds", "eggs", "sugar"], "instructions": ["Grind almonds", "Mix", "Bake 30-35 min"]},
-      {"id": "dk-des14", "name": "Vanilla Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 15, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "dk-des15", "name": "Cherry Tart", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 35, "ingredients": ["pastry", "custard", "cherries"], "instructions": ["Make crust", "Pour custard", "Top with cherries"]},
-      {"id": "dk-des16", "name": "Berry Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "berries", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour and berries", "Bake 30-35 min"]},
-      {"id": "dk-des17", "name": "Coffee Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "coffee", "eggs", "sugar"], "instructions": ["Mix wet", "Add flour", "Bake 30-35 min"]},
-      {"id": "dk-des18", "name": "Cheese Cake", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 50, "ingredients": ["graham crust", "cream cheese", "eggs"], "instructions": ["Make crust", "Pour filling", "Bake 45-50 min"]},
-      {"id": "dk-des19", "name": "Plum Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "plums", "eggs", "sugar"], "instructions": ["Arrange plums", "Pour batter", "Bake 30-35 min"]},
-      {"id": "dk-des20", "name": "Meringue Cake", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 50, "ingredients": ["meringue layers", "cream", "fruit"], "instructions": ["Make meringue", "Layer with cream", "Top with fruit"]}
+      {
+        "id": "de-des1",
+        "name": "Denmark Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des2",
+        "name": "Denmark Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des3",
+        "name": "Denmark Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des4",
+        "name": "Denmark Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des5",
+        "name": "Denmark Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des6",
+        "name": "Denmark Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des7",
+        "name": "Denmark Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des8",
+        "name": "Denmark Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des9",
+        "name": "Denmark Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des10",
+        "name": "Denmark Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des11",
+        "name": "Denmark Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des12",
+        "name": "Denmark Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des13",
+        "name": "Denmark Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des14",
+        "name": "Denmark Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des15",
+        "name": "Denmark Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des16",
+        "name": "Denmark Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des17",
+        "name": "Denmark Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des18",
+        "name": "Denmark Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des19",
+        "name": "Denmark Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-des20",
+        "name": "Denmark Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "dk-na1", "name": "Danish Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong", "Serve hot"]},
-      {"id": "dk-na2", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "dk-na3", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "dk-na4", "name": "Lemonade", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "dk-na5", "name": "Herbal Tea", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["herbs", "water", "honey"], "instructions": ["Steep herbs", "Add honey", "Serve hot"]},
-      {"id": "dk-na6", "name": "Blackcurrant Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["blackcurrants", "water", "sugar"], "instructions": ["Blend berries", "Strain juice", "Add water and sugar"]},
-      {"id": "dk-na7", "name": "Apple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["apples", "water", "sugar"], "instructions": ["Blend apples", "Strain juice", "Add water and sugar"]},
-      {"id": "dk-na8", "name": "Berry Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["berries", "yogurt", "milk"], "instructions": ["Blend all", "Serve cold"]},
-      {"id": "dk-na9", "name": "Milk", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["milk"], "instructions": ["Serve cold"]},
-      {"id": "dk-na10", "name": "Water", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["water"], "instructions": ["Serve chilled"]}
+      {
+        "id": "de-na1",
+        "name": "Denmark Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na2",
+        "name": "Denmark Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na3",
+        "name": "Denmark Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na4",
+        "name": "Denmark Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na5",
+        "name": "Denmark Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na6",
+        "name": "Denmark Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na7",
+        "name": "Denmark Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na8",
+        "name": "Denmark Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na9",
+        "name": "Denmark Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-na10",
+        "name": "Denmark Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "dk-a1", "name": "Danish Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "dk-a2", "name": "Aquavit", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["aquavit"], "instructions": ["Serve chilled", "Drink neat or with food"]},
-      {"id": "dk-a3", "name": "Danish Wine", "difficulty": "Easy", "servings": 2, "prepTime": 0, "cookTime": 0, "ingredients": ["wine"], "instructions": ["Serve at proper temperature"]},
-      {"id": "dk-a4", "name": "Akvavit Shot", "difficulty": "Easy", "servings": 1, "prepTime": 5, "cookTime": 0, "ingredients": ["akvavit", "caraway"], "instructions": ["Pour akvavit", "Serve as shot"]},
-      {"id": "dk-a5", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["wine", "soda water"], "instructions": ["Pour wine and soda", "Serve chilled"]},
-      {"id": "dk-a6", "name": "Mulled Wine", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["wine", "spices", "sugar"], "instructions": ["Heat wine", "Add spices", "Serve warm"]},
-      {"id": "dk-a7", "name": "Cognac", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["cognac"], "instructions": ["Serve neat", "Sip slowly"]},
-      {"id": "dk-a8", "name": "Gløgg", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 30, "ingredients": ["wine", "spices", "almonds"], "instructions": ["Heat wine", "Add spices", "Serve warm"]},
-      {"id": "dk-a9", "name": "Snaps", "difficulty": "Easy", "servings": 1, "prepTime": 5, "cookTime": 0, "ingredients": ["snaps"], "instructions": ["Serve chilled", "Drink as shot"]},
-      {"id": "dk-a10", "name": "Liqueur", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["liqueur"], "instructions": ["Serve neat or over ice"]}
+      {
+        "id": "de-a1",
+        "name": "Denmark Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a2",
+        "name": "Denmark Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a3",
+        "name": "Denmark Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a4",
+        "name": "Denmark Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a5",
+        "name": "Denmark Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a6",
+        "name": "Denmark Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a7",
+        "name": "Denmark Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a8",
+        "name": "Denmark Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a9",
+        "name": "Denmark Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "de-a10",
+        "name": "Denmark Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

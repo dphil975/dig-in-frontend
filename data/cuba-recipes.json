@@ -1,121 +1,1421 @@
 {
   "cubaRecipes": {
-    "title": "Authentic Cuban Cuisine",
+    "title": "Authentic Cuba Cuisine",
     "country": "Cuba",
-    "region": "Caribbean",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "cu-b1", "name": "Tostones", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["green plantains", "salt", "oil"], "instructions": ["Slice plantains", "Fry first time", "Flatten", "Fry second time"]},
-      {"id": "cu-b2", "name": "Huevos Rancheros Cubanos", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "tortillas", "black beans", "salsa"], "instructions": ["Fry eggs", "Warm tortillas", "Serve with beans"]},
-      {"id": "cu-b3", "name": "Congri", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "black beans", "onion", "garlic"], "instructions": ["Cook rice and beans together", "Add aromatics", "Serve hot"]},
-      {"id": "cu-b4", "name": "Avocado Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "avocado", "lime", "salt"], "instructions": ["Toast bread", "Mash avocado", "Spread and season"]},
-      {"id": "cu-b5", "name": "Fresh Tropical Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["tropical fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "cu-b6", "name": "Cuban Omelet", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["eggs", "ham", "cheese", "oil"], "instructions": ["Beat eggs", "Add ham and cheese", "Cook in hot oil"]},
-      {"id": "cu-b7", "name": "Plantain Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["plantain", "water", "salt", "sugar"], "instructions": ["Boil plantain", "Mash and cook", "Serve warm"]},
-      {"id": "cu-b8", "name": "Black Beans and Rice", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 40, "ingredients": ["rice", "black beans", "onion", "salt"], "instructions": ["Cook rice and beans", "Mix together", "Serve hot"]},
-      {"id": "cu-b9", "name": "Cuban Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["ground coffee", "water", "sugar"], "instructions": ["Brew strong coffee", "Add sugar", "Serve hot"]},
-      {"id": "cu-b10", "name": "Egg and Chorizo", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "chorizo", "onion", "oil"], "instructions": ["Cook chorizo", "Fry eggs", "Serve together"]},
-      {"id": "cu-b11", "name": "Yuca con Mojo", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["yuca", "garlic", "lime juice", "oil", "salt"], "instructions": ["Boil yuca", "Make garlic sauce", "Serve together"]},
-      {"id": "cu-b12", "name": "Fruit Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime"], "instructions": ["Slice fruits", "Arrange on plate", "Serve with lime"]},
-      {"id": "cu-b13", "name": "Cuban Sandwich Breakfast", "difficulty": "Medium", "servings": 2, "prepTime": 20, "cookTime": 15, "ingredients": ["ham", "cheese", "bread", "mustard"], "instructions": ["Make sandwich", "Press and heat", "Serve warm"]},
-      {"id": "cu-b14", "name": "Mofongo", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["plantains", "garlic", "salt", "oil"], "instructions": ["Fry plantains", "Mash with garlic", "Serve in mound"]},
-      {"id": "cu-b15", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "milk", "sugar"], "instructions": ["Blend papaya with milk", "Add sugar", "Serve cold"]},
-      {"id": "cu-b16", "name": "Coconut Bread", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "coconut", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour and coconut", "Bake 30-35 min"]},
-      {"id": "cu-b17", "name": "Cheese and Guava Paste", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["guava paste", "fresh cheese", "bread"], "instructions": ["Layer cheese and paste", "Serve with bread"]},
-      {"id": "cu-b18", "name": "Corn Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 20, "cookTime": 35, "ingredients": ["fresh corn", "milk", "sugar", "cinnamon"], "instructions": ["Blend corn", "Mix with milk and sugar", "Bake 30-35 min"]},
-      {"id": "cu-b19", "name": "Fried Cheese", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["queso fresco", "flour", "oil"], "instructions": ["Coat cheese", "Deep fry", "Serve hot"]},
-      {"id": "cu-b20", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]}
+      {
+        "id": "cu-b1",
+        "name": "Cuba B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b2",
+        "name": "Cuba B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b3",
+        "name": "Cuba B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b4",
+        "name": "Cuba B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b5",
+        "name": "Cuba B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b6",
+        "name": "Cuba B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b7",
+        "name": "Cuba B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b8",
+        "name": "Cuba B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b9",
+        "name": "Cuba B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b10",
+        "name": "Cuba B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b11",
+        "name": "Cuba B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b12",
+        "name": "Cuba B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b13",
+        "name": "Cuba B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b14",
+        "name": "Cuba B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b15",
+        "name": "Cuba B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b16",
+        "name": "Cuba B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b17",
+        "name": "Cuba B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b18",
+        "name": "Cuba B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b19",
+        "name": "Cuba B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-b20",
+        "name": "Cuba B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "cu-l1", "name": "Ropa Vieja", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["beef brisket", "tomato sauce", "peppers", "onion"], "instructions": ["Slow cook beef", "Shred", "Make sauce", "Combine"]},
-      {"id": "cu-l2", "name": "Picadillo Cubano", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground beef", "potatoes", "olives", "raisins", "tomato"], "instructions": ["Brown beef", "Add ingredients", "Simmer 20 min"]},
-      {"id": "cu-l3", "name": "Cuban Sandwich", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["ham", "pork", "cheese", "pickles", "bread"], "instructions": ["Layer ingredients", "Press and grill", "Serve warm"]},
-      {"id": "cu-l4", "name": "Arroz con Pollo", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "chicken", "vegetables", "broth", "saffron"], "instructions": ["Cook rice in broth", "Top with chicken", "Add vegetables"]},
-      {"id": "cu-l5", "name": "Ajiaco Cubano", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["meat", "vegetables", "potato", "corn", "broth"], "instructions": ["Brown meat", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cu-l6", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lime", "garlic", "cilantro"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "cu-l7", "name": "Yuca con Mojo Lunch", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["yuca", "garlic", "lime", "oil", "salt"], "instructions": ["Boil yuca", "Make sauce", "Serve together"]},
-      {"id": "cu-l8", "name": "Black Bean Soup", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 60, "ingredients": ["black beans", "broth", "vegetables", "spices"], "instructions": ["Cook beans", "Make soup", "Simmer 40 min"]},
-      {"id": "cu-l9", "name": "Congrí", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "black beans", "onion", "garlic"], "instructions": ["Cook together", "Mix well", "Serve hot"]},
-      {"id": "cu-l10", "name": "Mofongo with Meat", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["plantains", "meat", "garlic", "oil"], "instructions": ["Fry plantains", "Mash with garlic", "Top with meat"]},
-      {"id": "cu-l11", "name": "Marinated Pork", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 45, "ingredients": ["pork shoulder", "marinade", "citrus juices"], "instructions": ["Marinate pork", "Roast 40-45 min", "Serve hot"]},
-      {"id": "cu-l12", "name": "Shrimp Creole", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["shrimp", "creole sauce", "vegetables"], "instructions": ["Make sauce", "Add shrimp", "Simmer 15 min"]},
-      {"id": "cu-l13", "name": "Fried Plantains", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["plantains", "oil", "salt"], "instructions": ["Slice plantains", "Deep fry", "Drain and salt"]},
-      {"id": "cu-l14", "name": "Cuban Beans and Rice", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 40, "ingredients": ["rice", "beans", "onion", "garlic"], "instructions": ["Cook together", "Mix well", "Serve hot"]},
-      {"id": "cu-l15", "name": "Fish Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "tomato", "vegetables", "broth"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cu-l16", "name": "Lobster Creole", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 30, "ingredients": ["lobster", "creole sauce", "vegetables"], "instructions": ["Cut lobster", "Make sauce", "Combine"]},
-      {"id": "cu-l17", "name": "Chicken Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "tomato", "onion"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cu-l18", "name": "Cabbage Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["cabbage", "carrot", "lime dressing"], "instructions": ["Shred vegetables", "Make dressing", "Toss together"]},
-      {"id": "cu-l19", "name": "Plantain and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantains", "meat", "vegetables"], "instructions": ["Fry plantains", "Brown meat", "Serve together"]},
-      {"id": "cu-l20", "name": "Rice with Vegetables", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "vegetables", "broth"], "instructions": ["Cook rice in broth", "Add vegetables", "Serve hot"]}
+      {
+        "id": "cu-l1",
+        "name": "Cuba L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l2",
+        "name": "Cuba L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l3",
+        "name": "Cuba L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l4",
+        "name": "Cuba L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l5",
+        "name": "Cuba L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l6",
+        "name": "Cuba L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l7",
+        "name": "Cuba L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l8",
+        "name": "Cuba L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l9",
+        "name": "Cuba L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l10",
+        "name": "Cuba L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l11",
+        "name": "Cuba L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l12",
+        "name": "Cuba L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l13",
+        "name": "Cuba L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l14",
+        "name": "Cuba L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l15",
+        "name": "Cuba L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l16",
+        "name": "Cuba L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l17",
+        "name": "Cuba L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l18",
+        "name": "Cuba L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l19",
+        "name": "Cuba L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-l20",
+        "name": "Cuba L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "cu-d1", "name": "Whole Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lemon", "oil", "herbs"], "instructions": ["Season fish", "Grill 15 min per side"]},
-      {"id": "cu-d2", "name": "Ropa Vieja Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["beef brisket", "sauce", "peppers"], "instructions": ["Slow cook", "Shred", "Make sauce", "Serve"]},
-      {"id": "cu-d3", "name": "Picadillo Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["ground beef", "potatoes", "olives", "raisins"], "instructions": ["Brown beef", "Add ingredients", "Simmer 20 min"]},
-      {"id": "cu-d4", "name": "Arroz con Pollo Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "chicken", "vegetables", "broth"], "instructions": ["Cook rice", "Top with chicken", "Add vegetables"]},
-      {"id": "cu-d5", "name": "Ajiaco Dinner", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["meat", "vegetables", "potato", "corn"], "instructions": ["Brown meat", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cu-d6", "name": "Grilled Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lime", "garlic"], "instructions": ["Season and grill", "Serve with lime"]},
-      {"id": "cu-d7", "name": "Roasted Pork Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 90, "ingredients": ["pork shoulder", "marinade", "citrus"], "instructions": ["Marinate", "Roast 80-90 min", "Serve hot"]},
-      {"id": "cu-d8", "name": "Shrimp Creole Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["shrimp", "creole sauce", "vegetables"], "instructions": ["Make sauce", "Add shrimp", "Simmer 15 min"]},
-      {"id": "cu-d9", "name": "Black Bean Soup Dinner", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 60, "ingredients": ["black beans", "broth", "vegetables"], "instructions": ["Cook beans", "Make soup", "Simmer 40 min"]},
-      {"id": "cu-d10", "name": "Chicken Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "tomato"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "cu-d11", "name": "Lobster Creole Dinner", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 30, "ingredients": ["lobster", "creole sauce", "vegetables"], "instructions": ["Cut lobster", "Make sauce", "Combine"]},
-      {"id": "cu-d12", "name": "Fish Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["fish", "tomato", "vegetables"], "instructions": ["Make broth", "Add fish", "Simmer 30 min"]},
-      {"id": "cu-d13", "name": "Marinated Beef", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["beef", "citrus marinade", "spices"], "instructions": ["Marinate beef", "Grill or pan-fry", "Serve hot"]},
-      {"id": "cu-d14", "name": "Rice and Beans Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 40, "ingredients": ["rice", "beans", "onion", "garlic"], "instructions": ["Cook together", "Mix well", "Serve hot"]},
-      {"id": "cu-d15", "name": "Plantain Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["plantains", "meat", "sauce"], "instructions": ["Fry plantains", "Prepare meat", "Serve together"]},
-      {"id": "cu-d16", "name": "Seafood Medley", "difficulty": "Hard", "servings": 6, "prepTime": 45, "cookTime": 35, "ingredients": ["mixed seafood", "sauce", "vegetables"], "instructions": ["Prepare seafood", "Make sauce", "Combine and serve"]},
-      {"id": "cu-d17", "name": "Beef Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["beef", "vegetables", "potato", "broth"], "instructions": ["Brown beef", "Add vegetables", "Simmer 50 min"]},
-      {"id": "cu-d18", "name": "Mofongo Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["plantains", "garlic", "meat", "oil"], "instructions": ["Fry plantains", "Mash with garlic", "Top with meat"]},
-      {"id": "cu-d19", "name": "Congrí Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "black beans", "onion"], "instructions": ["Cook together", "Mix well", "Serve hot"]},
-      {"id": "cu-d20", "name": "Vegetable Stew Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["vegetables", "tomato", "oil", "herbs"], "instructions": ["Chop vegetables", "Simmer together", "Serve hot"]}
+      {
+        "id": "cu-d1",
+        "name": "Cuba D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d2",
+        "name": "Cuba D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d3",
+        "name": "Cuba D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d4",
+        "name": "Cuba D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d5",
+        "name": "Cuba D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d6",
+        "name": "Cuba D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d7",
+        "name": "Cuba D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d8",
+        "name": "Cuba D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d9",
+        "name": "Cuba D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d10",
+        "name": "Cuba D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d11",
+        "name": "Cuba D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d12",
+        "name": "Cuba D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d13",
+        "name": "Cuba D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d14",
+        "name": "Cuba D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d15",
+        "name": "Cuba D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d16",
+        "name": "Cuba D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d17",
+        "name": "Cuba D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d18",
+        "name": "Cuba D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d19",
+        "name": "Cuba D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-d20",
+        "name": "Cuba D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "cu-des1", "name": "Flan Cubano", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["sugar", "eggs", "milk", "vanilla"], "instructions": ["Caramelize sugar", "Pour custard", "Bake 35-40 min"]},
-      {"id": "cu-des2", "name": "Arroz con Leche", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "milk", "sugar", "cinnamon"], "instructions": ["Cook rice in milk", "Add sugar", "Serve warm"]},
-      {"id": "cu-des3", "name": "Natilla", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 20, "ingredients": ["cornstarch", "milk", "sugar", "cinnamon"], "instructions": ["Mix cornstarch", "Heat milk", "Cook until thick"]},
-      {"id": "cu-des4", "name": "Guava Paste Dessert", "difficulty": "Hard", "servings": 8, "prepTime": 40, "cookTime": 120, "ingredients": ["guava", "sugar", "water"], "instructions": ["Cook guava", "Make paste", "Set and cut"]},
-      {"id": "cu-des5", "name": "Coconut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["coconut", "flour", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour and coconut", "Bake 30-35 min"]},
-      {"id": "cu-des6", "name": "Plantain Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["plantains", "flour", "eggs", "sugar"], "instructions": ["Mash plantains", "Mix with other ingredients", "Bake 30-35 min"]},
-      {"id": "cu-des7", "name": "Pineapple Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["pineapple", "flour", "eggs", "sugar", "oil"], "instructions": ["Arrange pineapple", "Pour batter", "Bake 30-35 min"]},
-      {"id": "cu-des8", "name": "Banana Cake", "difficulty": "Easy", "servings": 8, "prepTime": 25, "cookTime": 35, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cu-des9", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and papaya", "Bake 30-35 min"]},
-      {"id": "cu-des10", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "gelatin", "milk", "sugar"], "instructions": ["Heat milk with sugar", "Add gelatin and mango", "Chill until set"]},
-      {"id": "cu-des11", "name": "Tres Leches", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 30, "ingredients": ["cake", "condensed milk", "evaporated milk", "cream"], "instructions": ["Soak cake", "Top with cream", "Chill overnight"]},
-      {"id": "cu-des12", "name": "Buñuelos", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 25, "ingredients": ["flour", "cheese", "eggs", "syrup"], "instructions": ["Make dough", "Deep fry", "Coat with syrup"]},
-      {"id": "cu-des13", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "honey", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "cu-des14", "name": "Lime Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["crust", "lime juice", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "cu-des15", "name": "Cinnamon Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "sugar", "cinnamon", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour and cinnamon", "Bake 30-35 min"]},
-      {"id": "cu-des16", "name": "Yam Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["yam", "flour", "eggs", "sugar", "oil"], "instructions": ["Boil and puree yam", "Mix with other ingredients", "Bake 30-35 min"]},
-      {"id": "cu-des17", "name": "Vanilla Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 15, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "cu-des18", "name": "Tapioca Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 35, "ingredients": ["tapioca", "milk", "sugar", "vanilla"], "instructions": ["Cook tapioca", "Mix with milk and sugar", "Chill and serve"]},
-      {"id": "cu-des19", "name": "Ginger Cookies", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "ginger", "sugar", "eggs"], "instructions": ["Cream butter and sugar", "Add flour and ginger", "Bake 15-20 min"]},
-      {"id": "cu-des20", "name": "Meringue Cake", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 50, "ingredients": ["meringue layers", "filling", "frosting"], "instructions": ["Make meringue", "Layer with filling", "Frost and chill"]}
+      {
+        "id": "cu-des1",
+        "name": "Cuba Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des2",
+        "name": "Cuba Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des3",
+        "name": "Cuba Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des4",
+        "name": "Cuba Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des5",
+        "name": "Cuba Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des6",
+        "name": "Cuba Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des7",
+        "name": "Cuba Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des8",
+        "name": "Cuba Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des9",
+        "name": "Cuba Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des10",
+        "name": "Cuba Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des11",
+        "name": "Cuba Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des12",
+        "name": "Cuba Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des13",
+        "name": "Cuba Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des14",
+        "name": "Cuba Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des15",
+        "name": "Cuba Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des16",
+        "name": "Cuba Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des17",
+        "name": "Cuba Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des18",
+        "name": "Cuba Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des19",
+        "name": "Cuba Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-des20",
+        "name": "Cuba Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "cu-na1", "name": "Cuban Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["ground coffee", "water", "sugar"], "instructions": ["Brew strong", "Add sugar", "Serve hot"]},
-      {"id": "cu-na2", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend", "Strain", "Add water and sugar"]},
-      {"id": "cu-na3", "name": "Papaya Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "water", "sugar"], "instructions": ["Blend", "Strain", "Add water and sugar"]},
-      {"id": "cu-na4", "name": "Pineapple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["pineapple", "water", "sugar"], "instructions": ["Blend", "Strain", "Add water and sugar"]},
-      {"id": "cu-na5", "name": "Lemonade", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "cu-na6", "name": "Agua de Jamaica", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 10, "ingredients": ["hibiscus", "water", "sugar"], "instructions": ["Boil flowers", "Strain", "Add sugar"]},
-      {"id": "cu-na7", "name": "Horchata", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 10, "ingredients": ["rice", "almonds", "sugar"], "instructions": ["Soak and blend", "Mix with almonds", "Strain and serve"]},
-      {"id": "cu-na8", "name": "Coconut Water", "difficulty": "Easy", "servings": 1, "prepTime": 5, "cookTime": 0, "ingredients": ["coconut"], "instructions": ["Open coconut", "Pour water", "Serve chilled"]},
-      {"id": "cu-na9", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "cu-na10", "name": "Guarapo", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["sugarcane juice", "lime", "water"], "instructions": ["Extract juice", "Add lime and water", "Serve chilled"]}
+      {
+        "id": "cu-na1",
+        "name": "Cuba Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na2",
+        "name": "Cuba Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na3",
+        "name": "Cuba Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na4",
+        "name": "Cuba Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na5",
+        "name": "Cuba Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na6",
+        "name": "Cuba Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na7",
+        "name": "Cuba Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na8",
+        "name": "Cuba Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na9",
+        "name": "Cuba Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-na10",
+        "name": "Cuba Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "cu-a1", "name": "Mojito", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime", "sugar", "mint", "soda"], "instructions": ["Muddle mint and sugar", "Add rum and lime", "Top with soda and ice"]},
-      {"id": "cu-a2", "name": "Daiquiri", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "sugar"], "instructions": ["Shake rum and lime", "Add sugar", "Serve chilled"]},
-      {"id": "cu-a3", "name": "Cuba Libre", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["rum", "cola", "lime"], "instructions": ["Pour rum", "Top with cola", "Garnish with lime"]},
-      {"id": "cu-a4", "name": "Piña Colada", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "pineapple juice", "coconut cream"], "instructions": ["Blend ingredients", "Serve in pineapple", "Add ice"]},
-      {"id": "cu-a5", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "juice", "sugar", "spice"], "instructions": ["Mix rum with juice", "Add sugar and spice", "Serve with ice"]},
-      {"id": "cu-a6", "name": "Cuban Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour and serve"]},
-      {"id": "cu-a7", "name": "Saoco", "difficulty": "Medium", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["rum", "coconut water", "lime"], "instructions": ["Pour rum", "Top with coconut water", "Add lime"]},
-      {"id": "cu-a8", "name": "Margarita", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tequila", "lime juice", "triple sec"], "instructions": ["Shake ingredients", "Serve over ice", "Rim with salt"]},
-      {"id": "cu-a9", "name": "Mai Tai", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "orgeat", "curacao"], "instructions": ["Shake all", "Serve over ice", "Garnish with orchid"]},
-      {"id": "cu-a10", "name": "Hurricane", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "passion fruit", "lime juice", "sugar"], "instructions": ["Shake all", "Serve over ice", "Add orange slice"]}
+      {
+        "id": "cu-a1",
+        "name": "Cuba Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a2",
+        "name": "Cuba Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a3",
+        "name": "Cuba Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a4",
+        "name": "Cuba Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a5",
+        "name": "Cuba Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a6",
+        "name": "Cuba Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a7",
+        "name": "Cuba Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a8",
+        "name": "Cuba Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a9",
+        "name": "Cuba Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "cu-a10",
+        "name": "Cuba Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }

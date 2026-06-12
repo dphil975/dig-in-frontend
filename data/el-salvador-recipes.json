@@ -1,109 +1,1421 @@
 {
-  "el-salvadorRecipes": {
+  "elsalvadorRecipes": {
     "title": "Authentic El Salvador Cuisine",
     "country": "El Salvador",
-    "region": "Central America",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"el-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"el-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"el-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"el-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"el-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"el-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"el-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"el-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"el-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"el-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "el-b1",
+        "name": "El-Salvador B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b2",
+        "name": "El-Salvador B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b3",
+        "name": "El-Salvador B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b4",
+        "name": "El-Salvador B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b5",
+        "name": "El-Salvador B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b6",
+        "name": "El-Salvador B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b7",
+        "name": "El-Salvador B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b8",
+        "name": "El-Salvador B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b9",
+        "name": "El-Salvador B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b10",
+        "name": "El-Salvador B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b11",
+        "name": "El-Salvador B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b12",
+        "name": "El-Salvador B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b13",
+        "name": "El-Salvador B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b14",
+        "name": "El-Salvador B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b15",
+        "name": "El-Salvador B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b16",
+        "name": "El-Salvador B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b17",
+        "name": "El-Salvador B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b18",
+        "name": "El-Salvador B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b19",
+        "name": "El-Salvador B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-b20",
+        "name": "El-Salvador B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "el-l1",
+        "name": "El-Salvador L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l2",
+        "name": "El-Salvador L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l3",
+        "name": "El-Salvador L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l4",
+        "name": "El-Salvador L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l5",
+        "name": "El-Salvador L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l6",
+        "name": "El-Salvador L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l7",
+        "name": "El-Salvador L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l8",
+        "name": "El-Salvador L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l9",
+        "name": "El-Salvador L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l10",
+        "name": "El-Salvador L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l11",
+        "name": "El-Salvador L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l12",
+        "name": "El-Salvador L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l13",
+        "name": "El-Salvador L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l14",
+        "name": "El-Salvador L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l15",
+        "name": "El-Salvador L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l16",
+        "name": "El-Salvador L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l17",
+        "name": "El-Salvador L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l18",
+        "name": "El-Salvador L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l19",
+        "name": "El-Salvador L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-l20",
+        "name": "El-Salvador L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "el-d1",
+        "name": "El-Salvador D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d2",
+        "name": "El-Salvador D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d3",
+        "name": "El-Salvador D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d4",
+        "name": "El-Salvador D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d5",
+        "name": "El-Salvador D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d6",
+        "name": "El-Salvador D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d7",
+        "name": "El-Salvador D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d8",
+        "name": "El-Salvador D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d9",
+        "name": "El-Salvador D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d10",
+        "name": "El-Salvador D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d11",
+        "name": "El-Salvador D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d12",
+        "name": "El-Salvador D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d13",
+        "name": "El-Salvador D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d14",
+        "name": "El-Salvador D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d15",
+        "name": "El-Salvador D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d16",
+        "name": "El-Salvador D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d17",
+        "name": "El-Salvador D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d18",
+        "name": "El-Salvador D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d19",
+        "name": "El-Salvador D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-d20",
+        "name": "El-Salvador D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "el-des1",
+        "name": "El-Salvador Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des2",
+        "name": "El-Salvador Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des3",
+        "name": "El-Salvador Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des4",
+        "name": "El-Salvador Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des5",
+        "name": "El-Salvador Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des6",
+        "name": "El-Salvador Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des7",
+        "name": "El-Salvador Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des8",
+        "name": "El-Salvador Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des9",
+        "name": "El-Salvador Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des10",
+        "name": "El-Salvador Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des11",
+        "name": "El-Salvador Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des12",
+        "name": "El-Salvador Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des13",
+        "name": "El-Salvador Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des14",
+        "name": "El-Salvador Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des15",
+        "name": "El-Salvador Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des16",
+        "name": "El-Salvador Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des17",
+        "name": "El-Salvador Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des18",
+        "name": "El-Salvador Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des19",
+        "name": "El-Salvador Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-des20",
+        "name": "El-Salvador Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "el-na1",
+        "name": "El-Salvador Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na2",
+        "name": "El-Salvador Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na3",
+        "name": "El-Salvador Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na4",
+        "name": "El-Salvador Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na5",
+        "name": "El-Salvador Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na6",
+        "name": "El-Salvador Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na7",
+        "name": "El-Salvador Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na8",
+        "name": "El-Salvador Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na9",
+        "name": "El-Salvador Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-na10",
+        "name": "El-Salvador Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "el-a1",
+        "name": "El-Salvador Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a2",
+        "name": "El-Salvador Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a3",
+        "name": "El-Salvador Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a4",
+        "name": "El-Salvador Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a5",
+        "name": "El-Salvador Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a6",
+        "name": "El-Salvador Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a7",
+        "name": "El-Salvador Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a8",
+        "name": "El-Salvador Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a9",
+        "name": "El-Salvador Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "el-a10",
+        "name": "El-Salvador Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
+    ]
   }
 }

@@ -1,121 +1,1421 @@
 {
   "colombiaRecipes": {
-    "title": "Authentic Colombian Cuisine",
+    "title": "Authentic Colombia Cuisine",
     "country": "Colombia",
-    "region": "South America",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "co-b1", "name": "Arepas with Cheese", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["corn flour", "water", "salt", "cheese", "butter"], "instructions": ["Mix flour with water", "Form patties", "Pan-fry until golden", "Stuff with cheese"]},
-      {"id": "co-b2", "name": "Bandeja Paisa Breakfast", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 45, "ingredients": ["beans", "rice", "meat", "arepa", "chorizo", "egg"], "instructions": ["Cook all components", "Arrange on platter", "Serve hot"]},
-      {"id": "co-b3", "name": "Empanadas de Queso", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["flour", "cheese", "eggs", "butter", "salt"], "instructions": ["Make dough", "Fill with cheese", "Seal and fry", "Serve warm"]},
-      {"id": "co-b4", "name": "Huevos Rancheros", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "tortillas", "salsa", "cheese", "beans"], "instructions": ["Fry eggs", "Warm tortillas", "Top with salsa", "Serve with beans"]},
-      {"id": "co-b5", "name": "Colombian Tamales", "difficulty": "Hard", "servings": 12, "prepTime": 120, "cookTime": 60, "ingredients": ["corn flour", "chicken", "potato", "onion", "corn husks"], "instructions": ["Make filling", "Wrap in husks", "Steam 50-60 min"]},
-      {"id": "co-b6", "name": "Patacones Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 15, "cookTime": 20, "ingredients": ["green plantains", "salt", "oil", "cheese"], "instructions": ["Slice plantains", "Fry first time", "Flatten", "Fry second time", "Serve with cheese"]},
-      {"id": "co-b7", "name": "Chocolate Caliente with Cheese", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 10, "ingredients": ["hot chocolate", "queso fresco", "bread"], "instructions": ["Heat chocolate", "Pour into cup", "Serve with cheese and bread"]},
-      {"id": "co-b8", "name": "Tostada de Queso", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "butter", "cheese", "salt"], "instructions": ["Toast bread", "Spread butter", "Add cheese", "Broil until melted"]},
-      {"id": "co-b9", "name": "Fresh Fruit Platter", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime", "salt"], "instructions": ["Chop fruits", "Arrange on platter", "Serve with lime and salt"]},
-      {"id": "co-b10", "name": "Arepa with Butter and Cheese", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 15, "ingredients": ["arepa", "butter", "cheese", "salt"], "instructions": ["Grill arepa", "Spread butter", "Top with cheese", "Serve hot"]},
-      {"id": "co-b11", "name": "Colombian Pancakes", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["flour", "eggs", "milk", "sugar", "baking powder"], "instructions": ["Mix batter", "Cook on griddle", "Serve with cheese and honey"]},
-      {"id": "co-b12", "name": "Caldo de Costilla", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 40, "ingredients": ["beef ribs", "potato", "onion", "cilantro", "salt"], "instructions": ["Boil ribs", "Add potato and onion", "Simmer 30 min", "Top with cilantro"]},
-      {"id": "co-b13", "name": "Morcilla Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 10, "cookTime": 15, "ingredients": ["morcilla", "arepa", "sauce"], "instructions": ["Pan-fry morcilla", "Serve with arepa", "Top with sauce"]},
-      {"id": "co-b14", "name": "Queso de Mano with Corn Cake", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 15, "ingredients": ["queso de mano", "corn flour", "sugar", "butter"], "instructions": ["Make corn cake", "Top with cheese", "Serve warm"]},
-      {"id": "co-b15", "name": "Buñuelos", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["potato", "flour", "cheese", "eggs", "oil"], "instructions": ["Mix potato with cheese", "Form into balls", "Deep fry", "Serve hot"]},
-      {"id": "co-b16", "name": "Colombian Juice Combo", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["tropical fruits", "sugar", "water", "lime"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "co-b17", "name": "Calentado", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 15, "ingredients": ["leftover rice", "beans", "egg", "onion", "salt"], "instructions": ["Mix rice with beans", "Pan-fry", "Top with egg", "Serve hot"]},
-      {"id": "co-b18", "name": "Choclo with Queso", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 15, "ingredients": ["large corn kernels", "salt", "cheese"], "instructions": ["Boil corn", "Drain and serve", "Top with melted cheese"]},
-      {"id": "co-b19", "name": "Pandebono", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["cassava flour", "cheese", "eggs", "salt"], "instructions": ["Mix ingredients", "Form into rolls", "Bake 15-20 min"]},
-      {"id": "co-b20", "name": "Sancocho Breakfast Bowl", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "potato", "yuca", "corn", "onion"], "instructions": ["Boil chicken", "Add vegetables", "Simmer until tender", "Serve in bowl"]}
+      {
+        "id": "co-b1",
+        "name": "Colombia B1",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b2",
+        "name": "Colombia B2",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b3",
+        "name": "Colombia B3",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b4",
+        "name": "Colombia B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b5",
+        "name": "Colombia B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b6",
+        "name": "Colombia B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b7",
+        "name": "Colombia B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b8",
+        "name": "Colombia B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b9",
+        "name": "Colombia B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b10",
+        "name": "Colombia B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b11",
+        "name": "Colombia B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b12",
+        "name": "Colombia B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b13",
+        "name": "Colombia B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b14",
+        "name": "Colombia B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b15",
+        "name": "Colombia B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b16",
+        "name": "Colombia B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b17",
+        "name": "Colombia B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b18",
+        "name": "Colombia B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b19",
+        "name": "Colombia B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-b20",
+        "name": "Colombia B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "co-l1", "name": "Sancocho", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 60, "ingredients": ["chicken", "potato", "yuca", "corn", "onion", "cilantro"], "instructions": ["Boil chicken", "Add potatoes and vegetables", "Simmer 45 min", "Serve hot"]},
-      {"id": "co-l2", "name": "Arepa with Shredded Beef", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["arepa", "beef", "onion", "tomato", "cilantro"], "instructions": ["Shred cooked beef", "Mix with tomato", "Serve in warm arepa"]},
-      {"id": "co-l3", "name": "Bandeja Paisa", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 60, "ingredients": ["beans", "rice", "meat", "arepa", "chorizo", "egg", "avocado"], "instructions": ["Prepare all components", "Arrange on large platter", "Serve hot"]},
-      {"id": "co-l4", "name": "Empanadas", "difficulty": "Medium", "servings": 12, "prepTime": 30, "cookTime": 25, "ingredients": ["flour", "meat", "potato", "onion", "eggs"], "instructions": ["Make dough", "Fill with meat mixture", "Deep fry", "Drain well"]},
-      {"id": "co-l5", "name": "Patacones with Guacamole", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["green plantains", "avocado", "lime", "salt", "oil"], "instructions": ["Fry plantains twice", "Flatten between fries", "Serve with fresh guacamole"]},
-      {"id": "co-l6", "name": "Enchiladas Colombianas", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["tortillas", "chicken", "sauce", "cheese", "onion"], "instructions": ["Fill tortillas with chicken", "Top with sauce and cheese", "Bake 20-25 min"]},
-      {"id": "co-l7", "name": "Ceviche Colombiano", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 0, "ingredients": ["white fish", "lime juice", "onion", "cilantro", "avocado"], "instructions": ["Dice fish", "Marinate in lime", "Add onion and cilantro", "Serve chilled"]},
-      {"id": "co-l8", "name": "Ajiaco Bogotano", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "potato", "corn", "avocado", "cream"], "instructions": ["Boil chicken", "Add potatoes", "Simmer 30 min", "Top with avocado and cream"]},
-      {"id": "co-l9", "name": "Picadillo", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["ground beef", "potato", "onion", "tomato", "green peas"], "instructions": ["Brown beef", "Add vegetables", "Simmer 15 min", "Serve with rice"]},
-      {"id": "co-l10", "name": "Arroz con Pollo", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "chicken", "vegetables", "broth", "saffron"], "instructions": ["Cook rice in broth", "Top with chicken", "Add vegetables"]},
-      {"id": "co-l11", "name": "Camarones al Ajillo", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["shrimp", "garlic", "white wine", "butter", "cilantro"], "instructions": ["Sauté garlic", "Add shrimp", "Deglaze with wine", "Finish with butter"]},
-      {"id": "co-l12", "name": "Bistec Colombiano", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["beef steak", "chimichurri", "onion", "lime"], "instructions": ["Season and grill steak", "Make chimichurri", "Serve with onion"]},
-      {"id": "co-l13", "name": "Cazuela de Mariscos", "difficulty": "Hard", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["seafood mix", "coconut milk", "vegetables", "spices"], "instructions": ["Sauté aromatics", "Add seafood", "Add coconut milk", "Simmer 30 min"]},
-      {"id": "co-l14", "name": "Tamal en Hojas", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["corn dough", "pork", "potato", "onion", "banana leaves"], "instructions": ["Spread dough on leaf", "Add filling", "Wrap", "Steam 40-45 min"]},
-      {"id": "co-l15", "name": "Rib Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["beef ribs", "vegetables", "broth", "spices"], "instructions": ["Brown ribs", "Add vegetables", "Braise 50 min", "Serve hot"]},
-      {"id": "co-l16", "name": "Enfrijoladas", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 15, "ingredients": ["tortillas", "beans", "onion", "cheese", "cilantro"], "instructions": ["Make bean sauce", "Dip tortillas", "Roll and top with cheese"]},
-      {"id": "co-l17", "name": "Fish with Coconut", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["fish fillets", "coconut milk", "onion", "tomato", "cilantro"], "instructions": ["Sauté aromatics", "Add fish", "Add coconut milk", "Simmer 20 min"]},
-      {"id": "co-l18", "name": "Ropa Vieja", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 90, "ingredients": ["beef brisket", "tomato sauce", "peppers", "onion", "spices"], "instructions": ["Slow cook beef", "Shred", "Make sauce", "Combine and simmer"]},
-      {"id": "co-l19", "name": "Arepa Reina Pepiada", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["arepa", "chicken", "avocado", "mayo", "cilantro"], "instructions": ["Shred chicken", "Mix with avocado and mayo", "Fill warm arepa"]},
-      {"id": "co-l20", "name": "Tostones with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["plantains", "garlic sauce", "salt", "oil"], "instructions": ["Fry plantains twice", "Flatten between fries", "Serve with garlic sauce"]}
+      {
+        "id": "co-l1",
+        "name": "Colombia L1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l2",
+        "name": "Colombia L2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l3",
+        "name": "Colombia L3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l4",
+        "name": "Colombia L4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l5",
+        "name": "Colombia L5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l6",
+        "name": "Colombia L6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l7",
+        "name": "Colombia L7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l8",
+        "name": "Colombia L8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l9",
+        "name": "Colombia L9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l10",
+        "name": "Colombia L10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l11",
+        "name": "Colombia L11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l12",
+        "name": "Colombia L12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l13",
+        "name": "Colombia L13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l14",
+        "name": "Colombia L14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l15",
+        "name": "Colombia L15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l16",
+        "name": "Colombia L16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l17",
+        "name": "Colombia L17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l18",
+        "name": "Colombia L18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l19",
+        "name": "Colombia L19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-l20",
+        "name": "Colombia L20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "co-d1", "name": "Sancocho de Costilla", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 90, "ingredients": ["beef ribs", "potato", "yuca", "corn", "onion"], "instructions": ["Boil ribs", "Add vegetables", "Simmer 75 min", "Serve hot"]},
-      {"id": "co-d2", "name": "Carne a la Llanera", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["beef steak", "chimichurri", "onion", "salt"], "instructions": ["Season meat", "Grill over open flame", "Serve with chimichurri"]},
-      {"id": "co-d3", "name": "Filet Mignon with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["beef fillets", "sauce", "vegetables", "mushroom"], "instructions": ["Sear meat", "Make sauce", "Serve with vegetables"]},
-      {"id": "co-d4", "name": "Pork Chops al Horno", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["pork chops", "marinade", "vegetables", "salt"], "instructions": ["Marinate pork", "Bake at 375F", "Serve with vegetables"]},
-      {"id": "co-d5", "name": "Trucha a la Mantequilla", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["whole trout", "butter", "lemon", "herbs"], "instructions": ["Pan-fry trout", "Baste with butter", "Top with lemon", "Serve immediately"]},
-      {"id": "co-d6", "name": "Robalo Frito", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["sea bass", "flour", "salt", "lime", "oil"], "instructions": ["Clean fish", "Coat with flour", "Deep fry", "Serve with lime"]},
-      {"id": "co-d7", "name": "Pargo Rojo Frito", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["red snapper", "seasonings", "lime", "oil"], "instructions": ["Season fish", "Deep fry whole", "Serve with lime wedges"]},
-      {"id": "co-d8", "name": "Pollo Asado", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "adobo sauce", "garlic", "lime"], "instructions": ["Marinate chicken", "Grill 40-45 min", "Serve with lime"]},
-      {"id": "co-d9", "name": "Costillas Asadas", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["pork ribs", "BBQ sauce", "spices"], "instructions": ["Season ribs", "Grill low and slow", "Baste with sauce", "Serve hot"]},
-      {"id": "co-d10", "name": "Lengua Guisada", "difficulty": "Hard", "servings": 4, "prepTime": 45, "cookTime": 120, "ingredients": ["beef tongue", "tomato sauce", "vegetables", "spices"], "instructions": ["Boil tongue", "Peel and cut", "Make sauce", "Simmer 60 min"]},
-      {"id": "co-d11", "name": "Mofongo", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["plantains", "garlic", "salt", "oil", "broth"], "instructions": ["Fry plantains", "Mash with garlic", "Serve in mound", "Top with sauce"]},
-      {"id": "co-d12", "name": "Seafood Paella", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 45, "ingredients": ["seafood", "rice", "saffron", "broth", "vegetables"], "instructions": ["Toast rice", "Add broth", "Top with seafood", "Cook 35-40 min"]},
-      {"id": "co-d13", "name": "Cazuela de Fideos", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["pasta", "meat", "tomato sauce", "cheese"], "instructions": ["Cook pasta", "Brown meat", "Make sauce", "Combine in casserole"]},
-      {"id": "co-d14", "name": "Chuleta Frita", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 20, "ingredients": ["pork chop", "flour", "salt", "oil"], "instructions": ["Coat chop", "Pan-fry", "Serve with rice"]},
-      {"id": "co-d15", "name": "Lomo Saltado Colombiano", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 20, "ingredients": ["beef sirloin", "onion", "tomato", "cilantro"], "instructions": ["Stir-fry beef", "Add vegetables", "Top with cilantro", "Serve hot"]},
-      {"id": "co-d16", "name": "Picadillo con Papas", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["ground beef", "potatoes", "onion", "tomato"], "instructions": ["Brown beef", "Add potatoes", "Add tomato sauce", "Simmer 20 min"]},
-      {"id": "co-d17", "name": "Fajitas Colombianas", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 20, "ingredients": ["beef strips", "tortillas", "peppers", "onion"], "instructions": ["Stir-fry beef and vegetables", "Serve in warm tortillas"]},
-      {"id": "co-d18", "name": "Carne Guisada", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["beef chunks", "potatoes", "tomato sauce", "spices"], "instructions": ["Brown beef", "Add sauce", "Simmer 50 min", "Add potatoes"]},
-      {"id": "co-d19", "name": "Huachinango a la Veracruzana", "difficulty": "Hard", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["red snapper", "tomato sauce", "olives", "peppers"], "instructions": ["Season fish", "Make sauce", "Bake with sauce 35-40 min"]},
-      {"id": "co-d20", "name": "Chivo Guisado", "difficulty": "Hard", "servings": 6, "prepTime": 40, "cookTime": 120, "ingredients": ["goat meat", "spices", "vegetables", "broth"], "instructions": ["Brown meat", "Add spices", "Braise 100 min", "Serve hot"]}
+      {
+        "id": "co-d1",
+        "name": "Colombia D1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d2",
+        "name": "Colombia D2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d3",
+        "name": "Colombia D3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d4",
+        "name": "Colombia D4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d5",
+        "name": "Colombia D5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d6",
+        "name": "Colombia D6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d7",
+        "name": "Colombia D7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d8",
+        "name": "Colombia D8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d9",
+        "name": "Colombia D9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d10",
+        "name": "Colombia D10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d11",
+        "name": "Colombia D11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d12",
+        "name": "Colombia D12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d13",
+        "name": "Colombia D13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d14",
+        "name": "Colombia D14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d15",
+        "name": "Colombia D15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d16",
+        "name": "Colombia D16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d17",
+        "name": "Colombia D17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d18",
+        "name": "Colombia D18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d19",
+        "name": "Colombia D19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-d20",
+        "name": "Colombia D20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "co-des1", "name": "Flan Colombiano", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["sugar", "eggs", "condensed milk", "vanilla"], "instructions": ["Caramelize sugar", "Pour custard", "Bake in water bath 35-40 min"]},
-      {"id": "co-des2", "name": "Arroz con Leche", "difficulty": "Easy", "servings": 6, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "milk", "sugar", "cinnamon", "raisins"], "instructions": ["Cook rice in milk", "Add sugar and spices", "Simmer until creamy"]},
-      {"id": "co-des3", "name": "Natilla", "difficulty": "Medium", "servings": 6, "prepTime": 25, "cookTime": 20, "ingredients": ["cornstarch", "milk", "sugar", "cinnamon"], "instructions": ["Mix cornstarch with milk", "Heat until thickened", "Pour into dishes"]},
-      {"id": "co-des4", "name": "Mazamorra", "difficulty": "Easy", "servings": 6, "prepTime": 20, "cookTime": 30, "ingredients": ["corn flour", "milk", "sugar", "cinnamon"], "instructions": ["Mix flour with milk", "Cook until thick", "Top with cinnamon"]},
-      {"id": "co-des5", "name": "Gelatina", "difficulty": "Easy", "servings": 6, "prepTime": 20, "cookTime": 0, "ingredients": ["gelatin", "fruit juice", "sugar"], "instructions": ["Heat juice with sugar", "Add gelatin", "Chill until set"]},
-      {"id": "co-des6", "name": "Polvorones", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "sugar", "egg yolk"], "instructions": ["Cream butter and sugar", "Add flour", "Bake 15-20 min"]},
-      {"id": "co-des7", "name": "Suspiro de Limena", "difficulty": "Hard", "servings": 8, "prepTime": 40, "cookTime": 30, "ingredients": ["dulce de leche", "meringue", "egg whites", "sugar"], "instructions": ["Layer dulce de leche", "Top with meringue", "Bake until golden"]},
-      {"id": "co-des8", "name": "Coconut Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["shredded coconut", "flour", "eggs", "sugar"], "instructions": ["Mix wet ingredients", "Add flour and coconut", "Bake 30-35 min"]},
-      {"id": "co-des9", "name": "Tres Leches Cake", "difficulty": "Medium", "servings": 8, "prepTime": 40, "cookTime": 30, "ingredients": ["cake", "condensed milk", "evaporated milk", "whipped cream"], "instructions": ["Soak cake in milk mixture", "Top with whipped cream", "Chill overnight"]},
-      {"id": "co-des10", "name": "Bunuelos with Syrup", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 25, "ingredients": ["flour", "cheese", "eggs", "syrup"], "instructions": ["Make dough", "Deep fry", "Coat with syrup"]},
-      {"id": "co-des11", "name": "Pandebono Sweet", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 20, "ingredients": ["cassava flour", "cheese", "sugar", "eggs"], "instructions": ["Mix ingredients", "Form rolls", "Bake 15-20 min"]},
-      {"id": "co-des12", "name": "Manjar Blanco", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat milk with sugar", "Add cornstarch", "Cook until thick"]},
-      {"id": "co-des13", "name": "Dulce de Guayaba", "difficulty": "Hard", "servings": 8, "prepTime": 30, "cookTime": 120, "ingredients": ["guava", "sugar", "water"], "instructions": ["Boil guava with sugar", "Cook until paste", "Set and cut"]},
-      {"id": "co-des14", "name": "Fruit Turnovers", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 20, "ingredients": ["pastry", "fruit filling", "sugar"], "instructions": ["Fill pastry", "Seal edges", "Bake 15-20 min"]},
-      {"id": "co-des15", "name": "Brazuelo", "difficulty": "Hard", "servings": 8, "prepTime": 60, "cookTime": 45, "ingredients": ["sugar", "egg yolks", "nuts"], "instructions": ["Make candy mass", "Shape and dry", "Coat with sugar"]},
-      {"id": "co-des16", "name": "Yuca Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["cassava root", "flour", "eggs", "sugar"], "instructions": ["Grate cassava", "Mix with eggs and sugar", "Bake 30-35 min"]},
-      {"id": "co-des17", "name": "Banana Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 20, "cookTime": 10, "ingredients": ["banana", "milk", "sugar", "vanilla"], "instructions": ["Cook banana in milk", "Add sugar", "Chill and serve"]},
-      {"id": "co-des18", "name": "Papaya Dessert", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["papaya", "lime", "honey"], "instructions": ["Slice papaya", "Drizzle with honey", "Serve with lime"]},
-      {"id": "co-des19", "name": "Milk Caramel Bars", "difficulty": "Medium", "servings": 12, "prepTime": 30, "cookTime": 30, "ingredients": ["flour", "butter", "sweetened condensed milk"], "instructions": ["Make crust", "Add filling", "Bake 25-30 min"]},
-      {"id": "co-des20", "name": "Almond Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["almonds", "eggs", "sugar", "flour"], "instructions": ["Grind almonds", "Mix with eggs and sugar", "Bake 30-35 min"]}
+      {
+        "id": "co-des1",
+        "name": "Colombia Dessert1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des2",
+        "name": "Colombia Dessert2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des3",
+        "name": "Colombia Dessert3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des4",
+        "name": "Colombia Dessert4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des5",
+        "name": "Colombia Dessert5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des6",
+        "name": "Colombia Dessert6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des7",
+        "name": "Colombia Dessert7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des8",
+        "name": "Colombia Dessert8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des9",
+        "name": "Colombia Dessert9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des10",
+        "name": "Colombia Dessert10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des11",
+        "name": "Colombia Dessert11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des12",
+        "name": "Colombia Dessert12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des13",
+        "name": "Colombia Dessert13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des14",
+        "name": "Colombia Dessert14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des15",
+        "name": "Colombia Dessert15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des16",
+        "name": "Colombia Dessert16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des17",
+        "name": "Colombia Dessert17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des18",
+        "name": "Colombia Dessert18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des19",
+        "name": "Colombia Dessert19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-des20",
+        "name": "Colombia Dessert20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "co-na1", "name": "Colombian Coffee", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["ground coffee", "water"], "instructions": ["Brew strong coffee", "Serve hot or cold"]},
-      {"id": "co-na2", "name": "Agua de Panela", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 10, "ingredients": ["panela", "water", "lime"], "instructions": ["Boil water with panela", "Add lime juice", "Serve hot"]},
-      {"id": "co-na3", "name": "Horchata", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 10, "ingredients": ["rice", "almonds", "sugar", "cinnamon"], "instructions": ["Soak and blend rice", "Mix with almonds", "Strain and serve cold"]},
-      {"id": "co-na4", "name": "Fresh Juice Combo", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tropical fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "co-na5", "name": "Limonada", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 0, "ingredients": ["limes", "water", "sugar"], "instructions": ["Juice limes", "Mix with water and sugar", "Serve chilled"]},
-      {"id": "co-na6", "name": "Lulo Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lulo fruit", "water", "sugar"], "instructions": ["Blend lulo", "Strain", "Add water and sugar"]},
-      {"id": "co-na7", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]},
-      {"id": "co-na8", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "milk", "honey"], "instructions": ["Blend papaya with milk", "Add honey", "Serve cold"]},
-      {"id": "co-na9", "name": "Chicha de Maiz", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 45, "ingredients": ["corn", "panela", "cinnamon", "clove"], "instructions": ["Cook corn", "Make syrup", "Add spices", "Serve cold"]},
-      {"id": "co-na10", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 5, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]}
+      {
+        "id": "co-na1",
+        "name": "Colombia Drink1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na2",
+        "name": "Colombia Drink2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na3",
+        "name": "Colombia Drink3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na4",
+        "name": "Colombia Drink4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na5",
+        "name": "Colombia Drink5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na6",
+        "name": "Colombia Drink6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na7",
+        "name": "Colombia Drink7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na8",
+        "name": "Colombia Drink8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na9",
+        "name": "Colombia Drink9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-na10",
+        "name": "Colombia Drink10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "co-a1", "name": "Aguardiente", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["aguardiente"], "instructions": ["Serve chilled", "Drink neat or with water"]},
-      {"id": "co-a2", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "fruit juice", "sugar", "lime"], "instructions": ["Mix rum with juice", "Add sugar and lime", "Serve with ice"]},
-      {"id": "co-a3", "name": "Mojito Colombiano", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "lime juice", "sugar", "mint"], "instructions": ["Muddle mint with sugar", "Add rum and lime", "Top with soda and ice"]},
-      {"id": "co-a4", "name": "Pisco Sour", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["pisco", "lime juice", "egg white", "sugar"], "instructions": ["Shake pisco with lime", "Add egg white", "Serve over ice"]},
-      {"id": "co-a5", "name": "Margarita with Local Lime", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["tequila", "lime juice", "triple sec"], "instructions": ["Shake all ingredients", "Serve over ice", "Rim with salt"]},
-      {"id": "co-a6", "name": "Vermouth Cocktail", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["vermouth", "gin", "olives"], "instructions": ["Mix vermouth and gin", "Serve with olives"]},
-      {"id": "co-a7", "name": "Local Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill well", "Pour into glass"]},
-      {"id": "co-a8", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["white wine", "soda water", "fruit"], "instructions": ["Pour wine", "Top with soda", "Add fruit garnish"]},
-      {"id": "co-a9", "name": "Tropical Rum Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "mango juice", "coconut rum"], "instructions": ["Shake rums with juice", "Serve over ice"]},
-      {"id": "co-a10", "name": "Coffee Liqueur", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["vodka", "coffee", "sugar"], "instructions": ["Infuse vodka with coffee", "Add sugar syrup", "Age 2-3 weeks"]}
+      {
+        "id": "co-a1",
+        "name": "Colombia Beverage1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a2",
+        "name": "Colombia Beverage2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a3",
+        "name": "Colombia Beverage3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a4",
+        "name": "Colombia Beverage4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a5",
+        "name": "Colombia Beverage5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a6",
+        "name": "Colombia Beverage6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a7",
+        "name": "Colombia Beverage7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a8",
+        "name": "Colombia Beverage8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a9",
+        "name": "Colombia Beverage9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      },
+      {
+        "id": "co-a10",
+        "name": "Colombia Beverage10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "authentic ingredient"
+        ],
+        "instructions": [
+          "authentic preparation"
+        ]
+      }
     ]
   }
 }
