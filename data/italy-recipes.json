@@ -1178,6 +1178,84 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "it-veg1",
+        "name": "Pasta Pomodoro",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "pasta",
+          "tomatoes",
+          "basil"
+        ],
+        "instructions": [
+          "Tomato pasta"
+        ]
+      },
+      {
+        "id": "it-veg2",
+        "name": "Caprese Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "tomatoes",
+          "mozzarella"
+        ],
+        "instructions": [
+          "Tomato cheese salad"
+        ]
+      },
+      {
+        "id": "it-veg3",
+        "name": "Minestrone",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 45,
+        "ingredients": [
+          "vegetables",
+          "pasta"
+        ],
+        "instructions": [
+          "Vegetable soup"
+        ]
+      },
+      {
+        "id": "it-veg4",
+        "name": "Tiramisu Vegetarian",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 240,
+        "ingredients": [
+          "mascarpone",
+          "espresso"
+        ],
+        "instructions": [
+          "Coffee dessert"
+        ]
+      },
+      {
+        "id": "it-veg5",
+        "name": "Eggplant Parmesan",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "eggplant",
+          "cheese"
+        ],
+        "instructions": [
+          "Fried eggplant"
+        ]
+      }
     ]
   }
 }

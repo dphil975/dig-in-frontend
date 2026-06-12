@@ -1434,6 +1434,83 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "fr-veg1",
+        "name": "Omelette Fran\u00e7aise",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "eggs",
+          "herbs"
+        ],
+        "instructions": [
+          "French omelette"
+        ]
+      },
+      {
+        "id": "fr-veg2",
+        "name": "Salade Ni\u00e7oise",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "vegetables",
+          "beans"
+        ],
+        "instructions": [
+          "Nice salad"
+        ]
+      },
+      {
+        "id": "fr-veg3",
+        "name": "Ratatouille",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "vegetables",
+          "herbs"
+        ],
+        "instructions": [
+          "Vegetable stew"
+        ]
+      },
+      {
+        "id": "fr-veg4",
+        "name": "Cr\u00e8me Br\u00fbl\u00e9e",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "cream",
+          "sugar"
+        ],
+        "instructions": [
+          "Burnt cream"
+        ]
+      },
+      {
+        "id": "fr-veg5",
+        "name": "Quiche Lorraine",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "eggs",
+          "vegetables"
+        ],
+        "instructions": [
+          "Savory pie"
+        ]
+      }
     ]
   }
 }

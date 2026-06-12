@@ -1429,6 +1429,83 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "th-veg1",
+        "name": "Vegetable Pad Thai",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "noodles",
+          "vegetables"
+        ],
+        "instructions": [
+          "Stir-fried noodles"
+        ]
+      },
+      {
+        "id": "th-veg2",
+        "name": "Green Curry Vegetarian",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "vegetables",
+          "curry paste"
+        ],
+        "instructions": [
+          "Spicy green curry"
+        ]
+      },
+      {
+        "id": "th-veg3",
+        "name": "Som Tam",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "papaya",
+          "lime"
+        ],
+        "instructions": [
+          "Green papaya salad"
+        ]
+      },
+      {
+        "id": "th-veg4",
+        "name": "Mango Sticky Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "mango",
+          "rice"
+        ],
+        "instructions": [
+          "Sweet mango rice"
+        ]
+      },
+      {
+        "id": "th-veg5",
+        "name": "Vegetable Spring Rolls",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "wrapper"
+        ],
+        "instructions": [
+          "Fresh spring rolls"
+        ]
+      }
     ]
   }
 }

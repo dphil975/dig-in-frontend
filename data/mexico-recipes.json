@@ -1438,6 +1438,85 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "mx-veg1",
+        "name": "Huevos Rancheros",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "eggs",
+          "tortillas",
+          "salsa"
+        ],
+        "instructions": [
+          "Ranch eggs"
+        ]
+      },
+      {
+        "id": "mx-veg2",
+        "name": "Chiles Rellenos",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "peppers",
+          "cheese",
+          "eggs"
+        ],
+        "instructions": [
+          "Stuffed peppers"
+        ]
+      },
+      {
+        "id": "mx-veg3",
+        "name": "Veggie Tacos",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "tortillas",
+          "vegetables"
+        ],
+        "instructions": [
+          "Vegetable tacos"
+        ]
+      },
+      {
+        "id": "mx-veg4",
+        "name": "Flan",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "eggs",
+          "milk"
+        ],
+        "instructions": [
+          "Caramel custard"
+        ]
+      },
+      {
+        "id": "mx-veg5",
+        "name": "Bean Burrito",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "beans",
+          "tortilla"
+        ],
+        "instructions": [
+          "Wrapped beans"
+        ]
+      }
     ]
   }
 }

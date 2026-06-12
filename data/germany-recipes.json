@@ -1433,6 +1433,83 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "de-veg1",
+        "name": "K\u00e4sesp\u00e4tzle Vegetarian",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "noodles",
+          "cheese"
+        ],
+        "instructions": [
+          "Cheese noodles"
+        ]
+      },
+      {
+        "id": "de-veg2",
+        "name": "Veggie Schnitzel",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetable",
+          "breadcrumbs"
+        ],
+        "instructions": [
+          "Fried veggie cutlet"
+        ]
+      },
+      {
+        "id": "de-veg3",
+        "name": "Beet Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "beets",
+          "vegetables"
+        ],
+        "instructions": [
+          "Beet salad"
+        ]
+      },
+      {
+        "id": "de-veg4",
+        "name": "Black Forest Cake",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 45,
+        "cookTime": 50,
+        "ingredients": [
+          "chocolate",
+          "cherries"
+        ],
+        "instructions": [
+          "Chocolate cherry cake"
+        ]
+      },
+      {
+        "id": "de-veg5",
+        "name": "Vegetable Broth",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Clear vegetable soup"
+        ]
+      }
     ]
   }
 }

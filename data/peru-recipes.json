@@ -1427,6 +1427,83 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "pe-veg1",
+        "name": "Causa Vegetariana",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "potatoes",
+          "vegetables"
+        ],
+        "instructions": [
+          "Potato cake"
+        ]
+      },
+      {
+        "id": "pe-veg2",
+        "name": "Vegetable Ceviche",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "vegetables",
+          "lime"
+        ],
+        "instructions": [
+          "Plant-based ceviche"
+        ]
+      },
+      {
+        "id": "pe-veg3",
+        "name": "Lentil Soup",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "lentils",
+          "vegetables"
+        ],
+        "instructions": [
+          "Lentil stew"
+        ]
+      },
+      {
+        "id": "pe-veg4",
+        "name": "Picarones",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "pumpkin",
+          "dough"
+        ],
+        "instructions": [
+          "Pumpkin fritters"
+        ]
+      },
+      {
+        "id": "pe-veg5",
+        "name": "Aji de Verduras",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "vegetables",
+          "peanuts"
+        ],
+        "instructions": [
+          "Vegetable in peanut sauce"
+        ]
+      }
     ]
   }
 }

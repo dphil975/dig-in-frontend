@@ -1422,6 +1422,85 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "in-veg1",
+        "name": "Chana Masala",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "chickpeas",
+          "spices"
+        ],
+        "instructions": [
+          "Spiced chickpeas"
+        ]
+      },
+      {
+        "id": "in-veg2",
+        "name": "Paneer Tikka",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "paneer",
+          "yogurt",
+          "spices"
+        ],
+        "instructions": [
+          "Grilled cheese"
+        ]
+      },
+      {
+        "id": "in-veg3",
+        "name": "Aloo Gobi",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "potatoes",
+          "cauliflower"
+        ],
+        "instructions": [
+          "Potato cauliflower"
+        ]
+      },
+      {
+        "id": "in-veg4",
+        "name": "Kheer",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "milk",
+          "sugar"
+        ],
+        "instructions": [
+          "Rice pudding"
+        ]
+      },
+      {
+        "id": "in-veg5",
+        "name": "Samosa",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 40,
+        "cookTime": 25,
+        "ingredients": [
+          "dough",
+          "potatoes"
+        ],
+        "instructions": [
+          "Fried pastry pocket"
+        ]
+      }
     ]
   }
 }

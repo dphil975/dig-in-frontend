@@ -1438,6 +1438,83 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "jp-veg1",
+        "name": "Vegetable Gyoza",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "dough",
+          "vegetables"
+        ],
+        "instructions": [
+          "Fried vegetable potsticker"
+        ]
+      },
+      {
+        "id": "jp-veg2",
+        "name": "Edamame",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "soybeans",
+          "salt"
+        ],
+        "instructions": [
+          "Steamed soybeans"
+        ]
+      },
+      {
+        "id": "jp-veg3",
+        "name": "Vegetable Sushi",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "rice",
+          "vegetables"
+        ],
+        "instructions": [
+          "Vegetable sushi roll"
+        ]
+      },
+      {
+        "id": "jp-veg4",
+        "name": "Dorayaki",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "red beans",
+          "flour"
+        ],
+        "instructions": [
+          "Red bean pastry"
+        ]
+      },
+      {
+        "id": "jp-veg5",
+        "name": "Miso Soup",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "miso",
+          "tofu"
+        ],
+        "instructions": [
+          "Soy soup"
+        ]
+      }
     ]
   }
 }

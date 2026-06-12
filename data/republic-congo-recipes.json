@@ -6,116 +6,1987 @@
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
-      {"id": "rc-b1", "name": "Fufu", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["plantain", "cassava", "salt", "water"], "instructions": ["Boil and mash", "Serve with sauce"]},
-      {"id": "rc-b2", "name": "Cassava Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["cassava flour", "water", "salt", "sugar"], "instructions": ["Cook porridge", "Add salt and sugar", "Serve warm"]},
-      {"id": "rc-b3", "name": "Fish and Rice", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "fish", "onion", "salt"], "instructions": ["Cook rice", "Pan-fry fish", "Combine and serve"]},
-      {"id": "rc-b4", "name": "Banana Breakfast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["banana", "bread", "honey"], "instructions": ["Slice banana", "Toast bread", "Drizzle honey"]},
-      {"id": "rc-b5", "name": "Okra Soup", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["okra", "fish", "onion", "tomato"], "instructions": ["Slice okra", "Cook with fish", "Add aromatics"]},
-      {"id": "rc-b6", "name": "Corn Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 10, "cookTime": 20, "ingredients": ["cornmeal", "water", "salt", "sugar"], "instructions": ["Cook cornmeal", "Add salt and sugar", "Serve hot"]},
-      {"id": "rc-b7", "name": "Egg and Vegetable", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["eggs", "vegetables", "onion", "salt", "oil"], "instructions": ["Sauté vegetables", "Add scrambled eggs", "Serve hot"]},
-      {"id": "rc-b8", "name": "Fish Ball Soup", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 25, "ingredients": ["fish", "flour", "eggs", "broth"], "instructions": ["Make fish paste", "Form balls", "Boil in broth"]},
-      {"id": "rc-b9", "name": "Yam and Egg", "difficulty": "Easy", "servings": 2, "prepTime": 20, "cookTime": 20, "ingredients": ["yam", "eggs", "onion", "salt", "oil"], "instructions": ["Boil yam", "Fry eggs", "Combine and serve"]},
-      {"id": "rc-b10", "name": "Beans and Rice", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 40, "ingredients": ["rice", "beans", "onion", "salt"], "instructions": ["Cook rice and beans", "Mix together", "Serve hot"]},
-      {"id": "rc-b11", "name": "Plantain Porridge", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["plantain", "water", "salt", "sugar"], "instructions": ["Boil and mash plantain", "Add salt and sugar", "Serve warm"]},
-      {"id": "rc-b12", "name": "Sweet Potato Breakfast", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 25, "ingredients": ["sweet potato", "water", "salt", "sugar"], "instructions": ["Boil sweet potato", "Mash", "Serve warm"]},
-      {"id": "rc-b13", "name": "Manioc Cake", "difficulty": "Medium", "servings": 6, "prepTime": 35, "cookTime": 35, "ingredients": ["cassava", "sugar", "eggs", "oil"], "instructions": ["Grate cassava", "Mix ingredients", "Bake 30-35 min"]},
-      {"id": "rc-b14", "name": "Groundnut Soup", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["peanuts", "water", "onion", "salt"], "instructions": ["Blend peanuts", "Cook in water", "Add salt"]},
-      {"id": "rc-b15", "name": "Spinach and Eggs", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 15, "ingredients": ["spinach", "eggs", "onion", "salt", "oil"], "instructions": ["Sauté spinach", "Add eggs", "Serve hot"]},
-      {"id": "rc-b16", "name": "Meat and Rice", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["rice", "meat", "onion", "salt"], "instructions": ["Cook rice", "Brown meat", "Combine and serve"]},
-      {"id": "rc-b17", "name": "Palm Oil Rice", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "palm oil", "onion", "salt"], "instructions": ["Heat palm oil", "Add rice", "Cook until done"]},
-      {"id": "rc-b18", "name": "Fish Curry Breakfast", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 25, "ingredients": ["fish", "curry powder", "onion", "tomato"], "instructions": ["Brown onion", "Add curry", "Add fish and tomato"]},
-      {"id": "rc-b19", "name": "Avocado Toast", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 5, "ingredients": ["bread", "avocado", "lime", "salt"], "instructions": ["Toast bread", "Mash avocado", "Spread on toast"]},
-      {"id": "rc-b20", "name": "Tropical Fruit Plate", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime", "honey"], "instructions": ["Slice fruits", "Arrange on plate", "Serve with honey"]}
+      {
+        "id": "rc-b1",
+        "name": "Fufu",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "plantain",
+          "cassava",
+          "salt",
+          "water"
+        ],
+        "instructions": [
+          "Boil and mash",
+          "Serve with sauce"
+        ]
+      },
+      {
+        "id": "rc-b2",
+        "name": "Cassava Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "cassava flour",
+          "water",
+          "salt",
+          "sugar"
+        ],
+        "instructions": [
+          "Cook porridge",
+          "Add salt and sugar",
+          "Serve warm"
+        ]
+      },
+      {
+        "id": "rc-b3",
+        "name": "Fish and Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "fish",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Pan-fry fish",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-b4",
+        "name": "Banana Breakfast",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "banana",
+          "bread",
+          "honey"
+        ],
+        "instructions": [
+          "Slice banana",
+          "Toast bread",
+          "Drizzle honey"
+        ]
+      },
+      {
+        "id": "rc-b5",
+        "name": "Okra Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "okra",
+          "fish",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Slice okra",
+          "Cook with fish",
+          "Add aromatics"
+        ]
+      },
+      {
+        "id": "rc-b6",
+        "name": "Corn Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "cornmeal",
+          "water",
+          "salt",
+          "sugar"
+        ],
+        "instructions": [
+          "Cook cornmeal",
+          "Add salt and sugar",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-b7",
+        "name": "Egg and Vegetable",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "eggs",
+          "vegetables",
+          "onion",
+          "salt",
+          "oil"
+        ],
+        "instructions": [
+          "Saut\u00e9 vegetables",
+          "Add scrambled eggs",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-b8",
+        "name": "Fish Ball Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "fish",
+          "flour",
+          "eggs",
+          "broth"
+        ],
+        "instructions": [
+          "Make fish paste",
+          "Form balls",
+          "Boil in broth"
+        ]
+      },
+      {
+        "id": "rc-b9",
+        "name": "Yam and Egg",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "yam",
+          "eggs",
+          "onion",
+          "salt",
+          "oil"
+        ],
+        "instructions": [
+          "Boil yam",
+          "Fry eggs",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-b10",
+        "name": "Beans and Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "rice",
+          "beans",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Cook rice and beans",
+          "Mix together",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-b11",
+        "name": "Plantain Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "plantain",
+          "water",
+          "salt",
+          "sugar"
+        ],
+        "instructions": [
+          "Boil and mash plantain",
+          "Add salt and sugar",
+          "Serve warm"
+        ]
+      },
+      {
+        "id": "rc-b12",
+        "name": "Sweet Potato Breakfast",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "sweet potato",
+          "water",
+          "salt",
+          "sugar"
+        ],
+        "instructions": [
+          "Boil sweet potato",
+          "Mash",
+          "Serve warm"
+        ]
+      },
+      {
+        "id": "rc-b13",
+        "name": "Manioc Cake",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 35,
+        "cookTime": 35,
+        "ingredients": [
+          "cassava",
+          "sugar",
+          "eggs",
+          "oil"
+        ],
+        "instructions": [
+          "Grate cassava",
+          "Mix ingredients",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-b14",
+        "name": "Groundnut Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "peanuts",
+          "water",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Blend peanuts",
+          "Cook in water",
+          "Add salt"
+        ]
+      },
+      {
+        "id": "rc-b15",
+        "name": "Spinach and Eggs",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "spinach",
+          "eggs",
+          "onion",
+          "salt",
+          "oil"
+        ],
+        "instructions": [
+          "Saut\u00e9 spinach",
+          "Add eggs",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-b16",
+        "name": "Meat and Rice",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "rice",
+          "meat",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Brown meat",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-b17",
+        "name": "Palm Oil Rice",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "palm oil",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Heat palm oil",
+          "Add rice",
+          "Cook until done"
+        ]
+      },
+      {
+        "id": "rc-b18",
+        "name": "Fish Curry Breakfast",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "fish",
+          "curry powder",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Brown onion",
+          "Add curry",
+          "Add fish and tomato"
+        ]
+      },
+      {
+        "id": "rc-b19",
+        "name": "Avocado Toast",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "bread",
+          "avocado",
+          "lime",
+          "salt"
+        ],
+        "instructions": [
+          "Toast bread",
+          "Mash avocado",
+          "Spread on toast"
+        ]
+      },
+      {
+        "id": "rc-b20",
+        "name": "Tropical Fruit Plate",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "tropical fruits",
+          "lime",
+          "honey"
+        ],
+        "instructions": [
+          "Slice fruits",
+          "Arrange on plate",
+          "Serve with honey"
+        ]
+      }
     ],
     "lunch": [
-      {"id": "rc-l1", "name": "Palm Oil Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["palm oil", "vegetables", "meat", "onion"], "instructions": ["Heat palm oil", "Add vegetables", "Add meat", "Simmer 30 min"]},
-      {"id": "rc-l2", "name": "Okra with Fish", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["okra", "fish", "onion", "tomato", "oil"], "instructions": ["Slice okra", "Make stew base", "Add fish", "Simmer 20 min"]},
-      {"id": "rc-l3", "name": "Cassava Leaf Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["cassava leaves", "meat", "peanut butter", "onion"], "instructions": ["Blanch leaves", "Brown meat", "Make stew", "Add peanut butter"]},
-      {"id": "rc-l4", "name": "Fish and Rice Bowl", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["rice", "fish fillets", "vegetables", "salt"], "instructions": ["Cook rice", "Pan-fry fish", "Serve together"]},
-      {"id": "rc-l5", "name": "Bean and Vegetable Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 45, "ingredients": ["beans", "vegetables", "onion", "oil"], "instructions": ["Cook beans", "Add vegetables", "Simmer 30 min"]},
-      {"id": "rc-l6", "name": "Grilled Fish", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["whole fish", "lemon", "spices", "oil"], "instructions": ["Season fish", "Grill 12-15 min per side"]},
-      {"id": "rc-l7", "name": "Fufu with Sauce", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["plantain", "cassava", "vegetables", "meat sauce"], "instructions": ["Make fufu", "Make sauce", "Serve together"]},
-      {"id": "rc-l8", "name": "Spinach Stew", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["spinach", "onion", "tomato", "oil", "salt"], "instructions": ["Sauté onion", "Add spinach", "Add tomato", "Simmer"]},
-      {"id": "rc-l9", "name": "Plantain and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "meat", "vegetables", "onion"], "instructions": ["Boil plantain", "Brown meat", "Combine and serve"]},
-      {"id": "rc-l10", "name": "Pumpkin Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["pumpkin", "onion", "tomato", "oil", "salt"], "instructions": ["Cube pumpkin", "Make stew base", "Combine and simmer"]},
-      {"id": "rc-l11", "name": "Chicken Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["chicken", "vegetables", "onion", "tomato"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 35 min"]},
-      {"id": "rc-l12", "name": "Rice and Peas", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 35, "ingredients": ["rice", "peas", "onion", "salt"], "instructions": ["Cook rice with peas", "Add aromatics", "Serve hot"]},
-      {"id": "rc-l13", "name": "Sweet Potato Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["sweet potato", "vegetables", "onion", "oil"], "instructions": ["Cube potato", "Make stew base", "Combine and simmer"]},
-      {"id": "rc-l14", "name": "Fish in Tomato Sauce", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 25, "ingredients": ["fish fillets", "tomato sauce", "onion", "garlic"], "instructions": ["Make sauce", "Add fish", "Simmer 20 min"]},
-      {"id": "rc-l15", "name": "Vegetable Soup", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 35, "ingredients": ["mixed vegetables", "broth", "onion", "salt"], "instructions": ["Chop vegetables", "Boil in broth", "Serve hot"]},
-      {"id": "rc-l16", "name": "Groundnut Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["peanuts", "meat", "vegetables", "onion"], "instructions": ["Make peanut sauce", "Add meat and vegetables", "Simmer 30 min"]},
-      {"id": "rc-l17", "name": "Lentil Stew", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 40, "ingredients": ["lentils", "vegetables", "onion", "tomato"], "instructions": ["Cook lentils", "Add vegetables", "Simmer 25 min"]},
-      {"id": "rc-l18", "name": "Cassava and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "meat", "vegetables", "onion"], "instructions": ["Boil cassava", "Brown meat", "Combine and serve"]},
-      {"id": "rc-l19", "name": "Fish Ball Stew", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 35, "ingredients": ["fish balls", "vegetables", "broth", "spices"], "instructions": ["Make balls", "Cook in broth", "Add vegetables"]},
-      {"id": "rc-l20", "name": "Yam and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["yam", "meat", "vegetables", "onion"], "instructions": ["Cube yam", "Brown meat", "Combine and simmer"]}
+      {
+        "id": "rc-l1",
+        "name": "Palm Oil Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "palm oil",
+          "vegetables",
+          "meat",
+          "onion"
+        ],
+        "instructions": [
+          "Heat palm oil",
+          "Add vegetables",
+          "Add meat",
+          "Simmer 30 min"
+        ]
+      },
+      {
+        "id": "rc-l2",
+        "name": "Okra with Fish",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "okra",
+          "fish",
+          "onion",
+          "tomato",
+          "oil"
+        ],
+        "instructions": [
+          "Slice okra",
+          "Make stew base",
+          "Add fish",
+          "Simmer 20 min"
+        ]
+      },
+      {
+        "id": "rc-l3",
+        "name": "Cassava Leaf Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "cassava leaves",
+          "meat",
+          "peanut butter",
+          "onion"
+        ],
+        "instructions": [
+          "Blanch leaves",
+          "Brown meat",
+          "Make stew",
+          "Add peanut butter"
+        ]
+      },
+      {
+        "id": "rc-l4",
+        "name": "Fish and Rice Bowl",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "fish fillets",
+          "vegetables",
+          "salt"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Pan-fry fish",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "rc-l5",
+        "name": "Bean and Vegetable Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 45,
+        "ingredients": [
+          "beans",
+          "vegetables",
+          "onion",
+          "oil"
+        ],
+        "instructions": [
+          "Cook beans",
+          "Add vegetables",
+          "Simmer 30 min"
+        ]
+      },
+      {
+        "id": "rc-l6",
+        "name": "Grilled Fish",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "whole fish",
+          "lemon",
+          "spices",
+          "oil"
+        ],
+        "instructions": [
+          "Season fish",
+          "Grill 12-15 min per side"
+        ]
+      },
+      {
+        "id": "rc-l7",
+        "name": "Fufu with Sauce",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "plantain",
+          "cassava",
+          "vegetables",
+          "meat sauce"
+        ],
+        "instructions": [
+          "Make fufu",
+          "Make sauce",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "rc-l8",
+        "name": "Spinach Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "spinach",
+          "onion",
+          "tomato",
+          "oil",
+          "salt"
+        ],
+        "instructions": [
+          "Saut\u00e9 onion",
+          "Add spinach",
+          "Add tomato",
+          "Simmer"
+        ]
+      },
+      {
+        "id": "rc-l9",
+        "name": "Plantain and Meat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "plantain",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Boil plantain",
+          "Brown meat",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-l10",
+        "name": "Pumpkin Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "pumpkin",
+          "onion",
+          "tomato",
+          "oil",
+          "salt"
+        ],
+        "instructions": [
+          "Cube pumpkin",
+          "Make stew base",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-l11",
+        "name": "Chicken Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "chicken",
+          "vegetables",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Add vegetables",
+          "Simmer 35 min"
+        ]
+      },
+      {
+        "id": "rc-l12",
+        "name": "Rice and Peas",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 35,
+        "ingredients": [
+          "rice",
+          "peas",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Cook rice with peas",
+          "Add aromatics",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-l13",
+        "name": "Sweet Potato Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "sweet potato",
+          "vegetables",
+          "onion",
+          "oil"
+        ],
+        "instructions": [
+          "Cube potato",
+          "Make stew base",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-l14",
+        "name": "Fish in Tomato Sauce",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "fish fillets",
+          "tomato sauce",
+          "onion",
+          "garlic"
+        ],
+        "instructions": [
+          "Make sauce",
+          "Add fish",
+          "Simmer 20 min"
+        ]
+      },
+      {
+        "id": "rc-l15",
+        "name": "Vegetable Soup",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "mixed vegetables",
+          "broth",
+          "onion",
+          "salt"
+        ],
+        "instructions": [
+          "Chop vegetables",
+          "Boil in broth",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-l16",
+        "name": "Groundnut Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "peanuts",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Make peanut sauce",
+          "Add meat and vegetables",
+          "Simmer 30 min"
+        ]
+      },
+      {
+        "id": "rc-l17",
+        "name": "Lentil Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 40,
+        "ingredients": [
+          "lentils",
+          "vegetables",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Cook lentils",
+          "Add vegetables",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-l18",
+        "name": "Cassava and Meat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "cassava",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Boil cassava",
+          "Brown meat",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-l19",
+        "name": "Fish Ball Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 35,
+        "ingredients": [
+          "fish balls",
+          "vegetables",
+          "broth",
+          "spices"
+        ],
+        "instructions": [
+          "Make balls",
+          "Cook in broth",
+          "Add vegetables"
+        ]
+      },
+      {
+        "id": "rc-l20",
+        "name": "Yam and Meat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "yam",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Cube yam",
+          "Brown meat",
+          "Combine and simmer"
+        ]
+      }
     ],
     "dinner": [
-      {"id": "rc-d1", "name": "Whole Grilled Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 20, "cookTime": 30, "ingredients": ["whole fish", "lemon", "herbs", "oil"], "instructions": ["Season fish", "Grill 15 min per side", "Serve with lemon"]},
-      {"id": "rc-d2", "name": "Braised Meat Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 60, "ingredients": ["meat", "vegetables", "broth", "spices"], "instructions": ["Brown meat", "Add vegetables", "Braise 50 min"]},
-      {"id": "rc-d3", "name": "Palm Oil Fish", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "palm oil", "vegetables", "onion"], "instructions": ["Heat palm oil", "Add fish", "Add vegetables", "Simmer 25 min"]},
-      {"id": "rc-d4", "name": "Rice and Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["rice", "meat", "vegetables", "broth"], "instructions": ["Cook rice", "Make stew", "Serve together"]},
-      {"id": "rc-d5", "name": "Fufu Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["plantain", "cassava", "meat", "vegetables"], "instructions": ["Make fufu", "Make sauce", "Serve together"]},
-      {"id": "rc-d6", "name": "Cassava Leaf Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava leaves", "meat", "peanut butter", "onion"], "instructions": ["Blanch leaves", "Make stew", "Serve with rice"]},
-      {"id": "rc-d7", "name": "Fish Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "vegetables", "tomato", "onion"], "instructions": ["Make stew base", "Add fish", "Simmer 25 min"]},
-      {"id": "rc-d8", "name": "Okra and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["okra", "meat", "onion", "tomato", "oil"], "instructions": ["Brown meat", "Add okra and onion", "Simmer 25 min"]},
-      {"id": "rc-d9", "name": "Chicken with Vegetables", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["chicken", "vegetables", "onion", "tomato"], "instructions": ["Brown chicken", "Add vegetables", "Simmer 30 min"]},
-      {"id": "rc-d10", "name": "Plantain with Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["plantain", "meat stew", "vegetables"], "instructions": ["Boil plantain", "Make stew", "Serve together"]},
-      {"id": "rc-d11", "name": "Pumpkin and Meat", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["pumpkin", "meat", "onion", "tomato"], "instructions": ["Cut pumpkin", "Brown meat", "Combine and simmer"]},
-      {"id": "rc-d12", "name": "Sweet Potato Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 45, "ingredients": ["sweet potato", "meat", "vegetables", "onion"], "instructions": ["Cube potato", "Brown meat", "Combine and simmer"]},
-      {"id": "rc-d13", "name": "Bean and Meat Stew", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 50, "ingredients": ["beans", "meat", "vegetables", "onion"], "instructions": ["Cook beans", "Brown meat", "Combine and simmer"]},
-      {"id": "rc-d14", "name": "Spinach and Fish Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 30, "ingredients": ["spinach", "fish", "onion", "tomato"], "instructions": ["Sauté spinach", "Add fish", "Simmer 20 min"]},
-      {"id": "rc-d15", "name": "Groundnut Stew Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["peanuts", "meat", "vegetables", "onion"], "instructions": ["Make peanut sauce", "Add meat and vegetables", "Simmer 30 min"]},
-      {"id": "rc-d16", "name": "Lentil Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["lentils", "vegetables", "onion", "tomato"], "instructions": ["Cook lentils", "Add vegetables", "Simmer 25 min"]},
-      {"id": "rc-d17", "name": "Cassava Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "meat", "vegetables", "onion"], "instructions": ["Boil cassava", "Brown meat", "Combine and serve"]},
-      {"id": "rc-d18", "name": "Vegetable Stew Dinner", "difficulty": "Easy", "servings": 4, "prepTime": 25, "cookTime": 35, "ingredients": ["mixed vegetables", "onion", "tomato", "oil"], "instructions": ["Chop vegetables", "Make stew base", "Combine and simmer"]},
-      {"id": "rc-d19", "name": "Fish with Vegetables Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 35, "ingredients": ["fish", "vegetables", "onion", "tomato"], "instructions": ["Make sauce", "Add fish", "Add vegetables", "Simmer 25 min"]},
-      {"id": "rc-d20", "name": "Yam and Meat Dinner", "difficulty": "Medium", "servings": 4, "prepTime": 30, "cookTime": 40, "ingredients": ["yam", "meat", "vegetables", "onion"], "instructions": ["Cube yam", "Brown meat", "Combine and simmer"]}
+      {
+        "id": "rc-d1",
+        "name": "Whole Grilled Fish Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "whole fish",
+          "lemon",
+          "herbs",
+          "oil"
+        ],
+        "instructions": [
+          "Season fish",
+          "Grill 15 min per side",
+          "Serve with lemon"
+        ]
+      },
+      {
+        "id": "rc-d2",
+        "name": "Braised Meat Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "meat",
+          "vegetables",
+          "broth",
+          "spices"
+        ],
+        "instructions": [
+          "Brown meat",
+          "Add vegetables",
+          "Braise 50 min"
+        ]
+      },
+      {
+        "id": "rc-d3",
+        "name": "Palm Oil Fish",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "fish",
+          "palm oil",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Heat palm oil",
+          "Add fish",
+          "Add vegetables",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-d4",
+        "name": "Rice and Stew Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "rice",
+          "meat",
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Make stew",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "rc-d5",
+        "name": "Fufu Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "plantain",
+          "cassava",
+          "meat",
+          "vegetables"
+        ],
+        "instructions": [
+          "Make fufu",
+          "Make sauce",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "rc-d6",
+        "name": "Cassava Leaf Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "cassava leaves",
+          "meat",
+          "peanut butter",
+          "onion"
+        ],
+        "instructions": [
+          "Blanch leaves",
+          "Make stew",
+          "Serve with rice"
+        ]
+      },
+      {
+        "id": "rc-d7",
+        "name": "Fish Stew Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "fish",
+          "vegetables",
+          "tomato",
+          "onion"
+        ],
+        "instructions": [
+          "Make stew base",
+          "Add fish",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-d8",
+        "name": "Okra and Meat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "okra",
+          "meat",
+          "onion",
+          "tomato",
+          "oil"
+        ],
+        "instructions": [
+          "Brown meat",
+          "Add okra and onion",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-d9",
+        "name": "Chicken with Vegetables",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "chicken",
+          "vegetables",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Add vegetables",
+          "Simmer 30 min"
+        ]
+      },
+      {
+        "id": "rc-d10",
+        "name": "Plantain with Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "plantain",
+          "meat stew",
+          "vegetables"
+        ],
+        "instructions": [
+          "Boil plantain",
+          "Make stew",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "rc-d11",
+        "name": "Pumpkin and Meat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "pumpkin",
+          "meat",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Cut pumpkin",
+          "Brown meat",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-d12",
+        "name": "Sweet Potato Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "sweet potato",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Cube potato",
+          "Brown meat",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-d13",
+        "name": "Bean and Meat Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 50,
+        "ingredients": [
+          "beans",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Cook beans",
+          "Brown meat",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-d14",
+        "name": "Spinach and Fish Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "spinach",
+          "fish",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Saut\u00e9 spinach",
+          "Add fish",
+          "Simmer 20 min"
+        ]
+      },
+      {
+        "id": "rc-d15",
+        "name": "Groundnut Stew Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "peanuts",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Make peanut sauce",
+          "Add meat and vegetables",
+          "Simmer 30 min"
+        ]
+      },
+      {
+        "id": "rc-d16",
+        "name": "Lentil Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "lentils",
+          "vegetables",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Cook lentils",
+          "Add vegetables",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-d17",
+        "name": "Cassava Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "cassava",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Boil cassava",
+          "Brown meat",
+          "Combine and serve"
+        ]
+      },
+      {
+        "id": "rc-d18",
+        "name": "Vegetable Stew Dinner",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "mixed vegetables",
+          "onion",
+          "tomato",
+          "oil"
+        ],
+        "instructions": [
+          "Chop vegetables",
+          "Make stew base",
+          "Combine and simmer"
+        ]
+      },
+      {
+        "id": "rc-d19",
+        "name": "Fish with Vegetables Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "fish",
+          "vegetables",
+          "onion",
+          "tomato"
+        ],
+        "instructions": [
+          "Make sauce",
+          "Add fish",
+          "Add vegetables",
+          "Simmer 25 min"
+        ]
+      },
+      {
+        "id": "rc-d20",
+        "name": "Yam and Meat Dinner",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "yam",
+          "meat",
+          "vegetables",
+          "onion"
+        ],
+        "instructions": [
+          "Cube yam",
+          "Brown meat",
+          "Combine and simmer"
+        ]
+      }
     ],
     "desserts": [
-      {"id": "rc-des1", "name": "Cassava Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 40, "ingredients": ["cassava", "coconut", "sugar", "eggs", "oil"], "instructions": ["Grate cassava", "Mix ingredients", "Bake 35-40 min"]},
-      {"id": "rc-des2", "name": "Banana Cake", "difficulty": "Easy", "servings": 8, "prepTime": 25, "cookTime": 35, "ingredients": ["banana", "flour", "sugar", "eggs", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "rc-des3", "name": "Coconut Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 25, "ingredients": ["coconut milk", "sugar", "cornstarch", "vanilla"], "instructions": ["Heat coconut milk", "Add cornstarch", "Cook until thick"]},
-      {"id": "rc-des4", "name": "Mango Pudding", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["mango puree", "gelatin", "milk", "sugar"], "instructions": ["Heat milk with sugar", "Add gelatin and mango", "Chill until set"]},
-      {"id": "rc-des5", "name": "Plantain Dessert", "difficulty": "Medium", "servings": 4, "prepTime": 25, "cookTime": 30, "ingredients": ["ripe plantain", "brown sugar", "cinnamon", "butter"], "instructions": ["Slice plantain", "Layer with sugar", "Bake 25-30 min"]},
-      {"id": "rc-des6", "name": "Sweet Potato Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["sweet potato", "milk", "sugar", "cinnamon"], "instructions": ["Boil and puree", "Mix with milk and sugar", "Bake 25-30 min"]},
-      {"id": "rc-des7", "name": "Groundnut Candy", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["peanuts", "sugar", "water", "butter"], "instructions": ["Toast peanuts", "Make candy syrup", "Mix and set"]},
-      {"id": "rc-des8", "name": "Vanilla Custard", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 40, "ingredients": ["eggs", "milk", "sugar", "vanilla"], "instructions": ["Make custard base", "Bake in water bath 35-40 min"]},
-      {"id": "rc-des9", "name": "Papaya Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["papaya", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour and papaya", "Bake 30-35 min"]},
-      {"id": "rc-des10", "name": "Coconut Macaroons", "difficulty": "Easy", "servings": 12, "prepTime": 15, "cookTime": 20, "ingredients": ["shredded coconut", "eggs", "sugar", "vanilla"], "instructions": ["Mix ingredients", "Drop onto baking sheet", "Bake 15-20 min"]},
-      {"id": "rc-des11", "name": "Yam Cake", "difficulty": "Medium", "servings": 8, "prepTime": 35, "cookTime": 35, "ingredients": ["yam", "flour", "eggs", "sugar", "oil"], "instructions": ["Boil and puree yam", "Mix with other ingredients", "Bake 30-35 min"]},
-      {"id": "rc-des12", "name": "Cornmeal Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["cornmeal", "flour", "eggs", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add cornmeal and flour", "Bake 30-35 min"]},
-      {"id": "rc-des13", "name": "Lemon Bars", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 30, "ingredients": ["flour", "butter", "lemon", "eggs", "sugar"], "instructions": ["Make crust", "Pour filling", "Bake 25-30 min"]},
-      {"id": "rc-des14", "name": "Rice Pudding", "difficulty": "Easy", "servings": 6, "prepTime": 25, "cookTime": 30, "ingredients": ["rice", "milk", "sugar", "cinnamon", "raisins"], "instructions": ["Cook rice in milk", "Add sugar", "Serve warm"]},
-      {"id": "rc-des15", "name": "Pumpkin Dessert", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 35, "ingredients": ["pumpkin", "sugar", "eggs", "cinnamon"], "instructions": ["Puree pumpkin", "Mix with sugar", "Bake 30-35 min"]},
-      {"id": "rc-des16", "name": "Fruit Salad", "difficulty": "Easy", "servings": 4, "prepTime": 20, "cookTime": 0, "ingredients": ["tropical fruits", "lime", "honey"], "instructions": ["Chop fruits", "Mix with lime", "Drizzle honey"]},
-      {"id": "rc-des17", "name": "Tapioca Pudding", "difficulty": "Medium", "servings": 6, "prepTime": 30, "cookTime": 35, "ingredients": ["tapioca", "milk", "sugar", "vanilla"], "instructions": ["Cook tapioca", "Mix with milk and sugar", "Chill and serve"]},
-      {"id": "rc-des18", "name": "Honey Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "honey", "sugar", "oil"], "instructions": ["Mix wet ingredients", "Add flour", "Bake 30-35 min"]},
-      {"id": "rc-des19", "name": "Ginger Cookies", "difficulty": "Medium", "servings": 12, "prepTime": 25, "cookTime": 20, "ingredients": ["flour", "butter", "ginger", "sugar", "eggs"], "instructions": ["Cream butter and sugar", "Add flour and ginger", "Bake 15-20 min"]},
-      {"id": "rc-des20", "name": "Cinnamon Cake", "difficulty": "Medium", "servings": 8, "prepTime": 30, "cookTime": 35, "ingredients": ["flour", "eggs", "sugar", "cinnamon", "oil"], "instructions": ["Mix wet ingredients", "Add flour and cinnamon", "Bake 30-35 min"]}
+      {
+        "id": "rc-des1",
+        "name": "Cassava Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 35,
+        "cookTime": 40,
+        "ingredients": [
+          "cassava",
+          "coconut",
+          "sugar",
+          "eggs",
+          "oil"
+        ],
+        "instructions": [
+          "Grate cassava",
+          "Mix ingredients",
+          "Bake 35-40 min"
+        ]
+      },
+      {
+        "id": "rc-des2",
+        "name": "Banana Cake",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "banana",
+          "flour",
+          "sugar",
+          "eggs",
+          "oil"
+        ],
+        "instructions": [
+          "Mix wet ingredients",
+          "Add flour",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des3",
+        "name": "Coconut Pudding",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "coconut milk",
+          "sugar",
+          "cornstarch",
+          "vanilla"
+        ],
+        "instructions": [
+          "Heat coconut milk",
+          "Add cornstarch",
+          "Cook until thick"
+        ]
+      },
+      {
+        "id": "rc-des4",
+        "name": "Mango Pudding",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "mango puree",
+          "gelatin",
+          "milk",
+          "sugar"
+        ],
+        "instructions": [
+          "Heat milk with sugar",
+          "Add gelatin and mango",
+          "Chill until set"
+        ]
+      },
+      {
+        "id": "rc-des5",
+        "name": "Plantain Dessert",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "ripe plantain",
+          "brown sugar",
+          "cinnamon",
+          "butter"
+        ],
+        "instructions": [
+          "Slice plantain",
+          "Layer with sugar",
+          "Bake 25-30 min"
+        ]
+      },
+      {
+        "id": "rc-des6",
+        "name": "Sweet Potato Pudding",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "sweet potato",
+          "milk",
+          "sugar",
+          "cinnamon"
+        ],
+        "instructions": [
+          "Boil and puree",
+          "Mix with milk and sugar",
+          "Bake 25-30 min"
+        ]
+      },
+      {
+        "id": "rc-des7",
+        "name": "Groundnut Candy",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "peanuts",
+          "sugar",
+          "water",
+          "butter"
+        ],
+        "instructions": [
+          "Toast peanuts",
+          "Make candy syrup",
+          "Mix and set"
+        ]
+      },
+      {
+        "id": "rc-des8",
+        "name": "Vanilla Custard",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "eggs",
+          "milk",
+          "sugar",
+          "vanilla"
+        ],
+        "instructions": [
+          "Make custard base",
+          "Bake in water bath 35-40 min"
+        ]
+      },
+      {
+        "id": "rc-des9",
+        "name": "Papaya Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "papaya",
+          "flour",
+          "eggs",
+          "sugar",
+          "oil"
+        ],
+        "instructions": [
+          "Mix wet ingredients",
+          "Add flour and papaya",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des10",
+        "name": "Coconut Macaroons",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "shredded coconut",
+          "eggs",
+          "sugar",
+          "vanilla"
+        ],
+        "instructions": [
+          "Mix ingredients",
+          "Drop onto baking sheet",
+          "Bake 15-20 min"
+        ]
+      },
+      {
+        "id": "rc-des11",
+        "name": "Yam Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 35,
+        "cookTime": 35,
+        "ingredients": [
+          "yam",
+          "flour",
+          "eggs",
+          "sugar",
+          "oil"
+        ],
+        "instructions": [
+          "Boil and puree yam",
+          "Mix with other ingredients",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des12",
+        "name": "Cornmeal Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "cornmeal",
+          "flour",
+          "eggs",
+          "sugar",
+          "oil"
+        ],
+        "instructions": [
+          "Mix wet ingredients",
+          "Add cornmeal and flour",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des13",
+        "name": "Lemon Bars",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "flour",
+          "butter",
+          "lemon",
+          "eggs",
+          "sugar"
+        ],
+        "instructions": [
+          "Make crust",
+          "Pour filling",
+          "Bake 25-30 min"
+        ]
+      },
+      {
+        "id": "rc-des14",
+        "name": "Rice Pudding",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "rice",
+          "milk",
+          "sugar",
+          "cinnamon",
+          "raisins"
+        ],
+        "instructions": [
+          "Cook rice in milk",
+          "Add sugar",
+          "Serve warm"
+        ]
+      },
+      {
+        "id": "rc-des15",
+        "name": "Pumpkin Dessert",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "pumpkin",
+          "sugar",
+          "eggs",
+          "cinnamon"
+        ],
+        "instructions": [
+          "Puree pumpkin",
+          "Mix with sugar",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des16",
+        "name": "Fruit Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "tropical fruits",
+          "lime",
+          "honey"
+        ],
+        "instructions": [
+          "Chop fruits",
+          "Mix with lime",
+          "Drizzle honey"
+        ]
+      },
+      {
+        "id": "rc-des17",
+        "name": "Tapioca Pudding",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "tapioca",
+          "milk",
+          "sugar",
+          "vanilla"
+        ],
+        "instructions": [
+          "Cook tapioca",
+          "Mix with milk and sugar",
+          "Chill and serve"
+        ]
+      },
+      {
+        "id": "rc-des18",
+        "name": "Honey Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "flour",
+          "eggs",
+          "honey",
+          "sugar",
+          "oil"
+        ],
+        "instructions": [
+          "Mix wet ingredients",
+          "Add flour",
+          "Bake 30-35 min"
+        ]
+      },
+      {
+        "id": "rc-des19",
+        "name": "Ginger Cookies",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "flour",
+          "butter",
+          "ginger",
+          "sugar",
+          "eggs"
+        ],
+        "instructions": [
+          "Cream butter and sugar",
+          "Add flour and ginger",
+          "Bake 15-20 min"
+        ]
+      },
+      {
+        "id": "rc-des20",
+        "name": "Cinnamon Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "flour",
+          "eggs",
+          "sugar",
+          "cinnamon",
+          "oil"
+        ],
+        "instructions": [
+          "Mix wet ingredients",
+          "Add flour and cinnamon",
+          "Bake 30-35 min"
+        ]
+      }
     ],
     "nonAlcoholicDrinks": [
-      {"id": "rc-na1", "name": "Fresh Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["tropical fruits", "water", "sugar"], "instructions": ["Blend fruits", "Strain juice", "Add water and sugar"]},
-      {"id": "rc-na2", "name": "Ginger Tea", "difficulty": "Easy", "servings": 2, "prepTime": 15, "cookTime": 10, "ingredients": ["ginger", "water", "honey", "lemon"], "instructions": ["Simmer ginger", "Add honey and lemon", "Serve hot"]},
-      {"id": "rc-na3", "name": "Banana Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["banana", "milk", "honey"], "instructions": ["Blend banana with milk", "Add honey", "Serve cold"]},
-      {"id": "rc-na4", "name": "Hibiscus Tea", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 10, "ingredients": ["hibiscus", "water", "sugar"], "instructions": ["Boil hibiscus", "Strain", "Add sugar", "Serve cold"]},
-      {"id": "rc-na5", "name": "Mango Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["mango", "water", "sugar"], "instructions": ["Blend mango", "Strain juice", "Add water and sugar"]},
-      {"id": "rc-na6", "name": "Lemon Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["lemon", "water", "sugar"], "instructions": ["Juice lemon", "Add water and sugar", "Serve chilled"]},
-      {"id": "rc-na7", "name": "Hot Chocolate", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 10, "ingredients": ["chocolate", "milk", "sugar"], "instructions": ["Heat milk", "Add chocolate", "Whisk until frothy"]},
-      {"id": "rc-na8", "name": "Pineapple Juice", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["pineapple", "water", "sugar"], "instructions": ["Blend pineapple", "Strain juice", "Add water and sugar"]},
-      {"id": "rc-na9", "name": "Papaya Smoothie", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["papaya", "yogurt", "honey"], "instructions": ["Blend papaya with yogurt", "Add honey", "Serve cold"]},
-      {"id": "rc-na10", "name": "Passion Fruit Drink", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["passion fruit", "water", "sugar"], "instructions": ["Blend pulp", "Strain seeds", "Add water and sugar"]}
+      {
+        "id": "rc-na1",
+        "name": "Fresh Juice",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "tropical fruits",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Blend fruits",
+          "Strain juice",
+          "Add water and sugar"
+        ]
+      },
+      {
+        "id": "rc-na2",
+        "name": "Ginger Tea",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "ginger",
+          "water",
+          "honey",
+          "lemon"
+        ],
+        "instructions": [
+          "Simmer ginger",
+          "Add honey and lemon",
+          "Serve hot"
+        ]
+      },
+      {
+        "id": "rc-na3",
+        "name": "Banana Smoothie",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "banana",
+          "milk",
+          "honey"
+        ],
+        "instructions": [
+          "Blend banana with milk",
+          "Add honey",
+          "Serve cold"
+        ]
+      },
+      {
+        "id": "rc-na4",
+        "name": "Hibiscus Tea",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "hibiscus",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Boil hibiscus",
+          "Strain",
+          "Add sugar",
+          "Serve cold"
+        ]
+      },
+      {
+        "id": "rc-na5",
+        "name": "Mango Juice",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "mango",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Blend mango",
+          "Strain juice",
+          "Add water and sugar"
+        ]
+      },
+      {
+        "id": "rc-na6",
+        "name": "Lemon Juice",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "lemon",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Juice lemon",
+          "Add water and sugar",
+          "Serve chilled"
+        ]
+      },
+      {
+        "id": "rc-na7",
+        "name": "Hot Chocolate",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "chocolate",
+          "milk",
+          "sugar"
+        ],
+        "instructions": [
+          "Heat milk",
+          "Add chocolate",
+          "Whisk until frothy"
+        ]
+      },
+      {
+        "id": "rc-na8",
+        "name": "Pineapple Juice",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "pineapple",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Blend pineapple",
+          "Strain juice",
+          "Add water and sugar"
+        ]
+      },
+      {
+        "id": "rc-na9",
+        "name": "Papaya Smoothie",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "papaya",
+          "yogurt",
+          "honey"
+        ],
+        "instructions": [
+          "Blend papaya with yogurt",
+          "Add honey",
+          "Serve cold"
+        ]
+      },
+      {
+        "id": "rc-na10",
+        "name": "Passion Fruit Drink",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "passion fruit",
+          "water",
+          "sugar"
+        ],
+        "instructions": [
+          "Blend pulp",
+          "Strain seeds",
+          "Add water and sugar"
+        ]
+      }
     ],
     "alcoholicDrinks": [
-      {"id": "rc-a1", "name": "Palm Wine", "difficulty": "Hard", "servings": 2, "prepTime": 30, "cookTime": 0, "ingredients": ["palm tree sap", "sugar"], "instructions": ["Tap palm tree", "Add sugar", "Serve fresh"]},
-      {"id": "rc-a2", "name": "Beer", "difficulty": "Easy", "servings": 1, "prepTime": 0, "cookTime": 0, "ingredients": ["beer"], "instructions": ["Chill", "Pour and serve"]},
-      {"id": "rc-a3", "name": "Rum Punch", "difficulty": "Easy", "servings": 4, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "juice", "sugar", "spice"], "instructions": ["Mix rum with juice", "Add sugar and spice", "Serve with ice"]},
-      {"id": "rc-a4", "name": "Wine Spritzer", "difficulty": "Easy", "servings": 2, "prepTime": 10, "cookTime": 0, "ingredients": ["wine", "soda", "fruit"], "instructions": ["Pour wine and soda", "Add fruit", "Serve chilled"]},
-      {"id": "rc-a5", "name": "Ginger Beer Cocktail", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "ginger beer", "lime"], "instructions": ["Pour rum over ice", "Top with ginger beer", "Garnish with lime"]},
-      {"id": "rc-a6", "name": "Tropical Rum", "difficulty": "Medium", "servings": 2, "prepTime": 15, "cookTime": 0, "ingredients": ["rum", "tropical juice", "coconut"], "instructions": ["Mix rum with juice", "Add coconut", "Serve over ice"]},
-      {"id": "rc-a7", "name": "Banana Liqueur", "difficulty": "Hard", "servings": 1, "prepTime": 30, "cookTime": 0, "ingredients": ["vodka", "banana", "sugar"], "instructions": ["Infuse vodka with banana", "Age 2-3 weeks", "Strain and serve"]},
-      {"id": "rc-a8", "name": "Honey Wine", "difficulty": "Hard", "servings": 4, "prepTime": 30, "cookTime": 0, "ingredients": ["honey", "water", "yeast"], "instructions": ["Mix honey with water", "Ferment with yeast", "Age several months"]},
-      {"id": "rc-a9", "name": "Fruit Wine", "difficulty": "Hard", "servings": 4, "prepTime": 40, "cookTime": 0, "ingredients": ["fruit", "sugar", "yeast", "water"], "instructions": ["Make fruit wine", "Ferment", "Age and bottle"]},
-      {"id": "rc-a10", "name": "Spiced Rum", "difficulty": "Hard", "servings": 1, "prepTime": 30, "cookTime": 0, "ingredients": ["rum", "spices", "sugar"], "instructions": ["Infuse rum with spices", "Age 3-4 weeks", "Strain and serve"]}
+      {
+        "id": "rc-a1",
+        "name": "Palm Wine",
+        "difficulty": "Hard",
+        "servings": 2,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "palm tree sap",
+          "sugar"
+        ],
+        "instructions": [
+          "Tap palm tree",
+          "Add sugar",
+          "Serve fresh"
+        ]
+      },
+      {
+        "id": "rc-a2",
+        "name": "Beer",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "beer"
+        ],
+        "instructions": [
+          "Chill",
+          "Pour and serve"
+        ]
+      },
+      {
+        "id": "rc-a3",
+        "name": "Rum Punch",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "rum",
+          "juice",
+          "sugar",
+          "spice"
+        ],
+        "instructions": [
+          "Mix rum with juice",
+          "Add sugar and spice",
+          "Serve with ice"
+        ]
+      },
+      {
+        "id": "rc-a4",
+        "name": "Wine Spritzer",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "wine",
+          "soda",
+          "fruit"
+        ],
+        "instructions": [
+          "Pour wine and soda",
+          "Add fruit",
+          "Serve chilled"
+        ]
+      },
+      {
+        "id": "rc-a5",
+        "name": "Ginger Beer Cocktail",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "rum",
+          "ginger beer",
+          "lime"
+        ],
+        "instructions": [
+          "Pour rum over ice",
+          "Top with ginger beer",
+          "Garnish with lime"
+        ]
+      },
+      {
+        "id": "rc-a6",
+        "name": "Tropical Rum",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "rum",
+          "tropical juice",
+          "coconut"
+        ],
+        "instructions": [
+          "Mix rum with juice",
+          "Add coconut",
+          "Serve over ice"
+        ]
+      },
+      {
+        "id": "rc-a7",
+        "name": "Banana Liqueur",
+        "difficulty": "Hard",
+        "servings": 1,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "vodka",
+          "banana",
+          "sugar"
+        ],
+        "instructions": [
+          "Infuse vodka with banana",
+          "Age 2-3 weeks",
+          "Strain and serve"
+        ]
+      },
+      {
+        "id": "rc-a8",
+        "name": "Honey Wine",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "honey",
+          "water",
+          "yeast"
+        ],
+        "instructions": [
+          "Mix honey with water",
+          "Ferment with yeast",
+          "Age several months"
+        ]
+      },
+      {
+        "id": "rc-a9",
+        "name": "Fruit Wine",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 40,
+        "cookTime": 0,
+        "ingredients": [
+          "fruit",
+          "sugar",
+          "yeast",
+          "water"
+        ],
+        "instructions": [
+          "Make fruit wine",
+          "Ferment",
+          "Age and bottle"
+        ]
+      },
+      {
+        "id": "rc-a10",
+        "name": "Spiced Rum",
+        "difficulty": "Hard",
+        "servings": 1,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "rum",
+          "spices",
+          "sugar"
+        ],
+        "instructions": [
+          "Infuse rum with spices",
+          "Age 3-4 weeks",
+          "Strain and serve"
+        ]
+      }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "re-veg1",
+        "name": "Vegetable Stir Fry",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "tofu"
+        ],
+        "instructions": [
+          "Stir-fried vegetables"
+        ]
+      },
+      {
+        "id": "re-veg2",
+        "name": "Bean Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "beans",
+          "vegetables"
+        ],
+        "instructions": [
+          "Mixed bean salad"
+        ]
+      },
+      {
+        "id": "re-veg3",
+        "name": "Vegetable Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Vegetable broth"
+        ]
+      },
+      {
+        "id": "re-veg4",
+        "name": "Fruit Dessert",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "fruits"
+        ],
+        "instructions": [
+          "Fresh fruit"
+        ]
+      },
+      {
+        "id": "re-veg5",
+        "name": "Vegetable Snack",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "vegetables"
+        ],
+        "instructions": [
+          "Veggie snack"
+        ]
+      }
     ]
   }
 }

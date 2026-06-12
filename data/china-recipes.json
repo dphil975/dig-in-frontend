@@ -1438,6 +1438,83 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "cn-veg1",
+        "name": "Buddha's Delight",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 30,
+        "ingredients": [
+          "vegetables",
+          "tofu"
+        ],
+        "instructions": [
+          "Buddhist vegetable dish"
+        ]
+      },
+      {
+        "id": "cn-veg2",
+        "name": "Vegetable Fried Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "rice",
+          "vegetables"
+        ],
+        "instructions": [
+          "Rice with veggies"
+        ]
+      },
+      {
+        "id": "cn-veg3",
+        "name": "Mapo Tofu",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "tofu",
+          "spices"
+        ],
+        "instructions": [
+          "Spicy tofu"
+        ]
+      },
+      {
+        "id": "cn-veg4",
+        "name": "Red Bean Bun",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "red beans",
+          "dough"
+        ],
+        "instructions": [
+          "Sweet bean pastry"
+        ]
+      },
+      {
+        "id": "cn-veg5",
+        "name": "Spring Rolls Vegetarian",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "wrapper"
+        ],
+        "instructions": [
+          "Veggie spring rolls"
+        ]
+      }
     ]
   }
 }

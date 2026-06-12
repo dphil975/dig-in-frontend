@@ -1437,6 +1437,84 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "br-veg1",
+        "name": "A\u00e7ai Bowl",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "acai",
+          "granola",
+          "fruit"
+        ],
+        "instructions": [
+          "Berry bowl"
+        ]
+      },
+      {
+        "id": "br-veg2",
+        "name": "Feijoada Vegetariana",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "beans",
+          "vegetables"
+        ],
+        "instructions": [
+          "Vegetarian bean stew"
+        ]
+      },
+      {
+        "id": "br-veg3",
+        "name": "Salada Tropical",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "tropical fruits",
+          "vegetables"
+        ],
+        "instructions": [
+          "Tropical salad"
+        ]
+      },
+      {
+        "id": "br-veg4",
+        "name": "Bolo de Chocolate",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 35,
+        "ingredients": [
+          "chocolate",
+          "flour"
+        ],
+        "instructions": [
+          "Chocolate cake"
+        ]
+      },
+      {
+        "id": "br-veg5",
+        "name": "Past\u00e9is de Queijo",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "cheese",
+          "dough"
+        ],
+        "instructions": [
+          "Cheese pastry"
+        ]
+      }
     ]
   }
 }

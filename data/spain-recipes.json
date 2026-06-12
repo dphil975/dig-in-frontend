@@ -1425,6 +1425,83 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "es-veg1",
+        "name": "Tortilla Espa\u00f1ola",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "eggs",
+          "potatoes"
+        ],
+        "instructions": [
+          "Potato omelette"
+        ]
+      },
+      {
+        "id": "es-veg2",
+        "name": "Gazpacho",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "tomatoes",
+          "vegetables"
+        ],
+        "instructions": [
+          "Cold tomato soup"
+        ]
+      },
+      {
+        "id": "es-veg3",
+        "name": "Vegetable Paella",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 50,
+        "ingredients": [
+          "rice",
+          "vegetables"
+        ],
+        "instructions": [
+          "Rice with veggies"
+        ]
+      },
+      {
+        "id": "es-veg4",
+        "name": "Flan",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "eggs",
+          "milk"
+        ],
+        "instructions": [
+          "Caramel custard"
+        ]
+      },
+      {
+        "id": "es-veg5",
+        "name": "Pan Con Tomate",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "bread",
+          "tomato"
+        ],
+        "instructions": [
+          "Tomato bread"
+        ]
+      }
     ]
   }
 }

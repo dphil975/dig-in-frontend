@@ -1416,6 +1416,84 @@
           "authentic preparation"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "au-veg1",
+        "name": "Avocado Toast",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "bread",
+          "avocado"
+        ],
+        "instructions": [
+          "Toast with avocado"
+        ]
+      },
+      {
+        "id": "au-veg2",
+        "name": "Falafel Wrap",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "falafel",
+          "vegetables",
+          "wrap"
+        ],
+        "instructions": [
+          "Wrapped falafel"
+        ]
+      },
+      {
+        "id": "au-veg3",
+        "name": "Buddha Bowl",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "vegetables",
+          "grains"
+        ],
+        "instructions": [
+          "Mixed grain bowl"
+        ]
+      },
+      {
+        "id": "au-veg4",
+        "name": "Lamington Cake",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "coconut",
+          "chocolate"
+        ],
+        "instructions": [
+          "Coconut cake"
+        ]
+      },
+      {
+        "id": "au-veg5",
+        "name": "Vegetable Fritter",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "flour"
+        ],
+        "instructions": [
+          "Fried vegetable patties"
+        ]
+      }
     ]
   }
 }

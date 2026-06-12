@@ -1437,6 +1437,85 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "dz-veg1",
+        "name": "Chakchouka",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "eggs",
+          "tomatoes",
+          "peppers"
+        ],
+        "instructions": [
+          "Vegetable egg scramble"
+        ]
+      },
+      {
+        "id": "dz-veg2",
+        "name": "Falafel",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "chickpeas",
+          "spices"
+        ],
+        "instructions": [
+          "Fried chickpea balls"
+        ]
+      },
+      {
+        "id": "dz-veg3",
+        "name": "Tabbouleh",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "parsley",
+          "bulgur",
+          "tomatoes"
+        ],
+        "instructions": [
+          "Fresh herb salad"
+        ]
+      },
+      {
+        "id": "dz-veg4",
+        "name": "Date Cake",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "dates",
+          "flour"
+        ],
+        "instructions": [
+          "Date pastry"
+        ]
+      },
+      {
+        "id": "dz-veg5",
+        "name": "Vegetable Couscous",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "couscous",
+          "vegetables"
+        ],
+        "instructions": [
+          "Semolina with veggies"
+        ]
+      }
     ]
   }
 }

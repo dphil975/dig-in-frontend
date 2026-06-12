@@ -1427,6 +1427,83 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "vn-veg1",
+        "name": "Vegetable Pho",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Vegetable noodle soup"
+        ]
+      },
+      {
+        "id": "vn-veg2",
+        "name": "Vegetable Spring Rolls",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 20,
+        "ingredients": [
+          "rice paper",
+          "vegetables"
+        ],
+        "instructions": [
+          "Fresh spring rolls"
+        ]
+      },
+      {
+        "id": "vn-veg3",
+        "name": "Tofu Banh Mi",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "bread",
+          "tofu"
+        ],
+        "instructions": [
+          "Vegan sandwich"
+        ]
+      },
+      {
+        "id": "vn-veg4",
+        "name": "Ch\u00e8 Ba M\u00e0u",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "beans",
+          "coconut"
+        ],
+        "instructions": [
+          "Colorful sweet"
+        ]
+      },
+      {
+        "id": "vn-veg5",
+        "name": "Vegetable Stir Fry",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "tofu"
+        ],
+        "instructions": [
+          "Stir-fried tofu"
+        ]
+      }
     ]
   }
 }

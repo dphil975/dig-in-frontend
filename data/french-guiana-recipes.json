@@ -5,105 +5,1642 @@
     "region": "South America",
     "totalRecipes": 100,
     "totalDrinks": 20,
-    "breakfast": [{"id":"fr-b1","name":"Breakfast 1","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b2","name":"Breakfast 2","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b3","name":"Breakfast 3","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b4","name":"Breakfast 4","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b5","name":"Breakfast 5","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b6","name":"Breakfast 6","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b7","name":"Breakfast 7","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b8","name":"Breakfast 8","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b9","name":"Breakfast 9","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b10","name":"Breakfast 10","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b11","name":"Breakfast 11","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b12","name":"Breakfast 12","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b13","name":"Breakfast 13","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b14","name":"Breakfast 14","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b15","name":"Breakfast 15","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b16","name":"Breakfast 16","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b17","name":"Breakfast 17","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b18","name":"Breakfast 18","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b19","name":"Breakfast 19","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-b20","name":"Breakfast 20","difficulty":"Medium","servings":4,"prepTime":20,"cookTime":20,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "lunch": [{"id":"fr-l1","name":"Lunch 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l2","name":"Lunch 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l3","name":"Lunch 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l4","name":"Lunch 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l5","name":"Lunch 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l6","name":"Lunch 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l7","name":"Lunch 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l8","name":"Lunch 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l9","name":"Lunch 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l10","name":"Lunch 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l11","name":"Lunch 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l12","name":"Lunch 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l13","name":"Lunch 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l14","name":"Lunch 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l15","name":"Lunch 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l16","name":"Lunch 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l17","name":"Lunch 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l18","name":"Lunch 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l19","name":"Lunch 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]},
-{"id":"fr-l20","name":"Lunch 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1","ingredient2"],"instructions":["Prepare","Serve"]}],
-    "dinner": [{"id":"fr-d1","name":"Dinner 1","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d2","name":"Dinner 2","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d3","name":"Dinner 3","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d4","name":"Dinner 4","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d5","name":"Dinner 5","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d6","name":"Dinner 6","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d7","name":"Dinner 7","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d8","name":"Dinner 8","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d9","name":"Dinner 9","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d10","name":"Dinner 10","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d11","name":"Dinner 11","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d12","name":"Dinner 12","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d13","name":"Dinner 13","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d14","name":"Dinner 14","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d15","name":"Dinner 15","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d16","name":"Dinner 16","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d17","name":"Dinner 17","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d18","name":"Dinner 18","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d19","name":"Dinner 19","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]},
-{"id":"fr-d20","name":"Dinner 20","difficulty":"Medium","servings":4,"prepTime":30,"cookTime":30,"ingredients":["ingredient1","ingredient2"],"instructions":["Cook","Serve"]}],
-    "desserts": [{"id":"fr-des1","name":"Dessert 1","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des2","name":"Dessert 2","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des3","name":"Dessert 3","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des4","name":"Dessert 4","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des5","name":"Dessert 5","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des6","name":"Dessert 6","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des7","name":"Dessert 7","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des8","name":"Dessert 8","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des9","name":"Dessert 9","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des10","name":"Dessert 10","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des11","name":"Dessert 11","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des12","name":"Dessert 12","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des13","name":"Dessert 13","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des14","name":"Dessert 14","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des15","name":"Dessert 15","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des16","name":"Dessert 16","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des17","name":"Dessert 17","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des18","name":"Dessert 18","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des19","name":"Dessert 19","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-des20","name":"Dessert 20","difficulty":"Medium","servings":4,"prepTime":25,"cookTime":25,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "nonAlcoholicDrinks": [{"id":"fr-na1","name":"Drink 1","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na2","name":"Drink 2","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na3","name":"Drink 3","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na4","name":"Drink 4","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na5","name":"Drink 5","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na6","name":"Drink 6","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na7","name":"Drink 7","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na8","name":"Drink 8","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na9","name":"Drink 9","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]},
-{"id":"fr-na10","name":"Drink 10","difficulty":"Easy","servings":2,"prepTime":10,"cookTime":5,"ingredients":["ingredient1"],"instructions":["Prepare","Serve"]}],
-    "alcoholicDrinks": [{"id":"fr-a1","name":"Spirit 1","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a2","name":"Spirit 2","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a3","name":"Spirit 3","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a4","name":"Spirit 4","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a5","name":"Spirit 5","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a6","name":"Spirit 6","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a7","name":"Spirit 7","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a8","name":"Spirit 8","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a9","name":"Spirit 9","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]},
-{"id":"fr-a10","name":"Spirit 10","difficulty":"Easy","servings":1,"prepTime":5,"cookTime":0,"ingredients":["spirit"],"instructions":["Serve"]}]
+    "breakfast": [
+      {
+        "id": "fr-b1",
+        "name": "Breakfast 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b2",
+        "name": "Breakfast 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b3",
+        "name": "Breakfast 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b4",
+        "name": "Breakfast 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b5",
+        "name": "Breakfast 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b6",
+        "name": "Breakfast 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b7",
+        "name": "Breakfast 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b8",
+        "name": "Breakfast 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b9",
+        "name": "Breakfast 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b10",
+        "name": "Breakfast 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b11",
+        "name": "Breakfast 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b12",
+        "name": "Breakfast 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b13",
+        "name": "Breakfast 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b14",
+        "name": "Breakfast 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b15",
+        "name": "Breakfast 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b16",
+        "name": "Breakfast 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b17",
+        "name": "Breakfast 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b18",
+        "name": "Breakfast 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b19",
+        "name": "Breakfast 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-b20",
+        "name": "Breakfast 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "fr-l1",
+        "name": "Lunch 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l2",
+        "name": "Lunch 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l3",
+        "name": "Lunch 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l4",
+        "name": "Lunch 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l5",
+        "name": "Lunch 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l6",
+        "name": "Lunch 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l7",
+        "name": "Lunch 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l8",
+        "name": "Lunch 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l9",
+        "name": "Lunch 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l10",
+        "name": "Lunch 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l11",
+        "name": "Lunch 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l12",
+        "name": "Lunch 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l13",
+        "name": "Lunch 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l14",
+        "name": "Lunch 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l15",
+        "name": "Lunch 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l16",
+        "name": "Lunch 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l17",
+        "name": "Lunch 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l18",
+        "name": "Lunch 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l19",
+        "name": "Lunch 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-l20",
+        "name": "Lunch 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      }
+    ],
+    "dinner": [
+      {
+        "id": "fr-d1",
+        "name": "Dinner 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d2",
+        "name": "Dinner 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d3",
+        "name": "Dinner 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d4",
+        "name": "Dinner 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d5",
+        "name": "Dinner 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d6",
+        "name": "Dinner 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d7",
+        "name": "Dinner 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d8",
+        "name": "Dinner 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d9",
+        "name": "Dinner 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d10",
+        "name": "Dinner 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d11",
+        "name": "Dinner 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d12",
+        "name": "Dinner 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d13",
+        "name": "Dinner 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d14",
+        "name": "Dinner 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d15",
+        "name": "Dinner 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d16",
+        "name": "Dinner 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d17",
+        "name": "Dinner 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d18",
+        "name": "Dinner 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d19",
+        "name": "Dinner 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-d20",
+        "name": "Dinner 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "ingredient1",
+          "ingredient2"
+        ],
+        "instructions": [
+          "Cook",
+          "Serve"
+        ]
+      }
+    ],
+    "desserts": [
+      {
+        "id": "fr-des1",
+        "name": "Dessert 1",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des2",
+        "name": "Dessert 2",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des3",
+        "name": "Dessert 3",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des4",
+        "name": "Dessert 4",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des5",
+        "name": "Dessert 5",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des6",
+        "name": "Dessert 6",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des7",
+        "name": "Dessert 7",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des8",
+        "name": "Dessert 8",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des9",
+        "name": "Dessert 9",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des10",
+        "name": "Dessert 10",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des11",
+        "name": "Dessert 11",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des12",
+        "name": "Dessert 12",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des13",
+        "name": "Dessert 13",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des14",
+        "name": "Dessert 14",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des15",
+        "name": "Dessert 15",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des16",
+        "name": "Dessert 16",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des17",
+        "name": "Dessert 17",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des18",
+        "name": "Dessert 18",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des19",
+        "name": "Dessert 19",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-des20",
+        "name": "Dessert 20",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "fr-na1",
+        "name": "Drink 1",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na2",
+        "name": "Drink 2",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na3",
+        "name": "Drink 3",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na4",
+        "name": "Drink 4",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na5",
+        "name": "Drink 5",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na6",
+        "name": "Drink 6",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na7",
+        "name": "Drink 7",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na8",
+        "name": "Drink 8",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na9",
+        "name": "Drink 9",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-na10",
+        "name": "Drink 10",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "ingredient1"
+        ],
+        "instructions": [
+          "Prepare",
+          "Serve"
+        ]
+      }
+    ],
+    "alcoholicDrinks": [
+      {
+        "id": "fr-a1",
+        "name": "Spirit 1",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a2",
+        "name": "Spirit 2",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a3",
+        "name": "Spirit 3",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a4",
+        "name": "Spirit 4",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a5",
+        "name": "Spirit 5",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a6",
+        "name": "Spirit 6",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a7",
+        "name": "Spirit 7",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a8",
+        "name": "Spirit 8",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a9",
+        "name": "Spirit 9",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      },
+      {
+        "id": "fr-a10",
+        "name": "Spirit 10",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "spirit"
+        ],
+        "instructions": [
+          "Serve"
+        ]
+      }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "fr-veg1",
+        "name": "Vegetable Stir Fry",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "tofu"
+        ],
+        "instructions": [
+          "Stir-fried vegetables"
+        ]
+      },
+      {
+        "id": "fr-veg2",
+        "name": "Bean Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "beans",
+          "vegetables"
+        ],
+        "instructions": [
+          "Mixed bean salad"
+        ]
+      },
+      {
+        "id": "fr-veg3",
+        "name": "Vegetable Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Vegetable broth"
+        ]
+      },
+      {
+        "id": "fr-veg4",
+        "name": "Fruit Dessert",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "fruits"
+        ],
+        "instructions": [
+          "Fresh fruit"
+        ]
+      },
+      {
+        "id": "fr-veg5",
+        "name": "Vegetable Snack",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "vegetables"
+        ],
+        "instructions": [
+          "Veggie snack"
+        ]
+      }
+    ]
   }
 }

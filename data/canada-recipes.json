@@ -1424,6 +1424,85 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "ca-veg1",
+        "name": "Tofu Scramble",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "tofu",
+          "vegetables"
+        ],
+        "instructions": [
+          "Scrambled tofu"
+        ]
+      },
+      {
+        "id": "ca-veg2",
+        "name": "Falafel Poutine",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "falafel",
+          "fries",
+          "sauce"
+        ],
+        "instructions": [
+          "Falafel fries"
+        ]
+      },
+      {
+        "id": "ca-veg3",
+        "name": "Kale Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "kale",
+          "vegetables"
+        ],
+        "instructions": [
+          "Green salad"
+        ]
+      },
+      {
+        "id": "ca-veg4",
+        "name": "Butter Tarts",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 35,
+        "ingredients": [
+          "pastry",
+          "butter"
+        ],
+        "instructions": [
+          "Sweet tarts"
+        ]
+      },
+      {
+        "id": "ca-veg5",
+        "name": "Vegetable Poutine",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 25,
+        "ingredients": [
+          "fries",
+          "vegetables",
+          "sauce"
+        ],
+        "instructions": [
+          "Vegetarian fries"
+        ]
+      }
     ]
   }
 }

@@ -1426,6 +1426,81 @@
           "serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "is-veg1",
+        "name": "Vegetable Stir Fry",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "vegetables",
+          "tofu"
+        ],
+        "instructions": [
+          "Stir-fried vegetables"
+        ]
+      },
+      {
+        "id": "is-veg2",
+        "name": "Bean Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "beans",
+          "vegetables"
+        ],
+        "instructions": [
+          "Mixed bean salad"
+        ]
+      },
+      {
+        "id": "is-veg3",
+        "name": "Vegetable Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "vegetables",
+          "broth"
+        ],
+        "instructions": [
+          "Vegetable broth"
+        ]
+      },
+      {
+        "id": "is-veg4",
+        "name": "Fruit Dessert",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "fruits"
+        ],
+        "instructions": [
+          "Fresh fruit"
+        ]
+      },
+      {
+        "id": "is-veg5",
+        "name": "Vegetable Snack",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "vegetables"
+        ],
+        "instructions": [
+          "Veggie snack"
+        ]
+      }
     ]
   }
 }

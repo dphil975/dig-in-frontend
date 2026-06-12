@@ -1440,6 +1440,83 @@
           "Serve"
         ]
       }
+    ],
+    "vegetarianRecipes": [
+      {
+        "id": "ar-veg1",
+        "name": "Milanesa de Soja",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "soy",
+          "breadcrumbs"
+        ],
+        "instructions": [
+          "Soy cutlet"
+        ]
+      },
+      {
+        "id": "ar-veg2",
+        "name": "Hummus",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "chickpeas",
+          "tahini"
+        ],
+        "instructions": [
+          "Chickpea dip"
+        ]
+      },
+      {
+        "id": "ar-veg3",
+        "name": "Ensalada de Quinoa",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "quinoa",
+          "vegetables"
+        ],
+        "instructions": [
+          "Quinoa salad"
+        ]
+      },
+      {
+        "id": "ar-veg4",
+        "name": "Dulce de Leche Cake",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "dulce de leche",
+          "flour"
+        ],
+        "instructions": [
+          "Caramel cake"
+        ]
+      },
+      {
+        "id": "ar-veg5",
+        "name": "Vegetable Empanadas",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 35,
+        "cookTime": 30,
+        "ingredients": [
+          "dough",
+          "vegetables"
+        ],
+        "instructions": [
+          "Filled pastry pockets"
+        ]
+      }
     ]
   }
 }
