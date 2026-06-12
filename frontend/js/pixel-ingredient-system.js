@@ -9,6 +9,131 @@
  */
 
 /* ══════════════════════════════════════════════════════════════ */
+/* Substitution rules — mirrors backend/substitution_engine.py     */
+/* "You don't have X? Use Y. Here's how."                          */
+/* ══════════════════════════════════════════════════════════════ */
+const SUBSTITUTIONS = {
+  'buttermilk': [
+    { name: 'Milk + lemon juice', emoji: '🥛', ratio: '1 cup milk + 1 tbsp lemon', note: 'wait 5 minutes' },
+    { name: 'Yogurt',             emoji: '🍦', ratio: '1:1', note: 'thin with milk if too thick' },
+    { name: 'Sour cream',         emoji: '🥄', ratio: '1:1', note: 'works in baked goods' },
+  ],
+  'heavy cream': [
+    { name: 'Milk + butter',  emoji: '🧈', ratio: '¾ cup milk + ¼ cup melted butter', note: '' },
+    { name: 'Coconut milk',   emoji: '🥥', ratio: '1:1', note: 'adds coconut flavor' },
+    { name: 'Greek yogurt',   emoji: '🍦', ratio: '1:1', note: 'works in sauces' },
+  ],
+  'egg': [
+    { name: 'Mashed banana', emoji: '🍌', ratio: '¼ cup = 1 egg', note: 'best for sweet dishes' },
+    { name: 'Applesauce',    emoji: '🍎', ratio: '¼ cup = 1 egg', note: 'adds moisture' },
+    { name: 'Flax egg',      emoji: '🌾', ratio: '1 tbsp flax + 3 tbsp water', note: 'wait 10 minutes' },
+    { name: 'Silken tofu',   emoji: '🧈', ratio: '¼ cup = 1 egg', note: 'great for quiche' },
+  ],
+  'flour': [
+    { name: 'Whole wheat flour', emoji: '🌾', ratio: '¾ cup = 1 cup AP', note: 'add 2 tbsp liquid' },
+    { name: 'Oat flour',         emoji: '🥣', ratio: '1:1', note: 'blend oats until fine' },
+    { name: 'Almond flour',      emoji: '🥜', ratio: '1:1', note: 'add 1 egg for binding' },
+  ],
+  'butter': [
+    { name: 'Coconut oil',  emoji: '🥥', ratio: '1:1', note: 'slight coconut taste' },
+    { name: 'Olive oil',    emoji: '🫒', ratio: '¾ cup = 1 cup butter', note: 'savory dishes' },
+    { name: 'Greek yogurt', emoji: '🍦', ratio: '½ cup = 1 cup butter', note: 'adds protein' },
+  ],
+  'fresh herbs': [
+    { name: 'Dried herbs', emoji: '🌿', ratio: '1 tsp dried = 1 tbsp fresh', note: '' },
+    { name: 'Herb paste',  emoji: '🟢', ratio: '1 tsp = 1 tbsp fresh', note: '' },
+  ],
+  'onion': [
+    { name: 'Shallot',      emoji: '🧅', ratio: '1:1', note: 'milder flavor' },
+    { name: 'Leek',         emoji: '🥬', ratio: '1:1', note: 'use white/light green parts' },
+    { name: 'Scallion',     emoji: '🌱', ratio: '2:1', note: 'green onion flavor' },
+    { name: 'Onion powder', emoji: '🧂', ratio: '1 tbsp = 1 medium onion', note: '' },
+  ],
+  'garlic': [
+    { name: 'Garlic powder', emoji: '🧂', ratio: '½ tsp = 1 clove', note: '' },
+    { name: 'Shallot',       emoji: '🧅', ratio: '1 small = 2 cloves', note: '' },
+    { name: 'Asafoetida',    emoji: '✨', ratio: '⅛ tsp = 1 clove', note: 'Indian cooking' },
+  ],
+  'chicken breast': [
+    { name: 'Chicken thigh', emoji: '🍗', ratio: '1:1', note: 'more flavorful, cook longer' },
+    { name: 'Tofu',          emoji: '🧈', ratio: '1:1', note: 'press and marinate first' },
+    { name: 'Seitan',        emoji: '🍖', ratio: '1:1', note: 'great texture substitute' },
+  ],
+  'ground beef': [
+    { name: 'Ground turkey', emoji: '🦃', ratio: '1:1', note: 'add oil for moisture' },
+    { name: 'Lentils',       emoji: '🫘', ratio: '1 cup cooked = 1 lb', note: 'tacos & bolognese' },
+    { name: 'Mushrooms',     emoji: '🍄', ratio: '8 oz chopped = 1 lb', note: 'umami bomb' },
+  ],
+  'ground pork': [
+    { name: 'Ground chicken', emoji: '🍗', ratio: '1:1', note: 'lighter flavor' },
+    { name: 'Crumbled tofu',  emoji: '🧈', ratio: '1:1', note: 'press firm tofu first' },
+    { name: 'Mushrooms',      emoji: '🍄', ratio: '1:1 chopped', note: 'umami-rich' },
+  ],
+  'soy sauce': [
+    { name: 'Tamari',        emoji: '🍶', ratio: '1:1', note: 'gluten-free' },
+    { name: 'Coconut aminos',emoji: '🥥', ratio: '1:1', note: 'slightly sweeter' },
+    { name: 'Miso + water',  emoji: '🥣', ratio: '1 tsp miso + 1 tsp water', note: '' },
+  ],
+  'ginger': [
+    { name: 'Ground ginger',   emoji: '🧂', ratio: '¼ tsp = 1 tbsp fresh', note: '' },
+    { name: 'Galangal',        emoji: '🫚', ratio: '1:1', note: 'Thai cooking' },
+    { name: 'Lemongrass',      emoji: '🌱', ratio: '1 stalk = 1 tbsp', note: 'bright & citrusy' },
+  ],
+  'sesame oil': [
+    { name: 'Peanut oil + sesame seeds', emoji: '🥜', ratio: '1:1 + pinch of seeds', note: '' },
+    { name: 'Walnut oil',                emoji: '🌰', ratio: '1:1', note: 'nutty finish' },
+  ],
+  'rice': [
+    { name: 'Quinoa',           emoji: '🥣', ratio: '1:1', note: 'protein boost' },
+    { name: 'Cauliflower rice', emoji: '🥦', ratio: '1:1', note: 'low-carb' },
+    { name: 'Couscous',         emoji: '🍚', ratio: '1:1', note: 'cooks faster' },
+  ],
+  'kimchi': [
+    { name: 'Sauerkraut + chili', emoji: '🌶️', ratio: '1:1 + gochugaru or sriracha', note: '' },
+    { name: 'Pickled veg',        emoji: '🥒', ratio: '1:1', note: 'add chili flakes' },
+  ],
+  'mushrooms': [
+    { name: 'Eggplant',  emoji: '🍆', ratio: '1:1', note: 'meaty texture' },
+    { name: 'Zucchini',  emoji: '🥒', ratio: '1:1', note: 'milder taste' },
+    { name: 'Tofu',      emoji: '🧈', ratio: '1:1', note: 'soaks up sauce' },
+  ],
+  'shrimp': [
+    { name: 'Chicken',       emoji: '🍗', ratio: '1:1', note: 'cut bite-size' },
+    { name: 'Firm tofu',     emoji: '🧈', ratio: '1:1', note: 'pan-fry until golden' },
+    { name: 'White fish',    emoji: '🐟', ratio: '1:1', note: 'gentle cooking' },
+  ],
+  'milk': [
+    { name: 'Oat milk',  emoji: '🥣', ratio: '1:1', note: 'creamy & neutral' },
+    { name: 'Soy milk',  emoji: '🫘', ratio: '1:1', note: 'best for baking' },
+    { name: 'Almond milk', emoji: '🥜', ratio: '1:1', note: 'lighter texture' },
+  ],
+  'sugar': [
+    { name: 'Honey',       emoji: '🍯', ratio: '¾ cup = 1 cup sugar', note: 'reduce liquid slightly' },
+    { name: 'Maple syrup', emoji: '🍁', ratio: '¾ cup = 1 cup sugar', note: '' },
+  ],
+  'tofu': [
+    { name: 'Chickpeas',     emoji: '🫘', ratio: '1:1', note: 'hearty bite' },
+    { name: 'Paneer',        emoji: '🧀', ratio: '1:1', note: "doesn't melt" },
+    { name: 'White beans',   emoji: '🫘', ratio: '1:1', note: 'soft & creamy' },
+  ],
+};
+
+const GENERIC_SUBS = [
+  { name: 'Skip it & improvise', emoji: '✨', ratio: '—', note: 'the best fusion comes from improv' },
+  { name: 'Something similar you have', emoji: '🔄', ratio: '1:1', note: 'match the texture' },
+  { name: 'Umami boost (miso or soy)', emoji: '🥣', ratio: 'a pinch', note: 'covers savory gaps' },
+];
+
+function findSubstitutes(ingredient) {
+  const key = (ingredient || '').toLowerCase();
+  if (SUBSTITUTIONS[key]) return SUBSTITUTIONS[key];
+  for (const [k, subs] of Object.entries(SUBSTITUTIONS)) {
+    if (key.includes(k) || k.includes(key)) return subs;
+  }
+  return GENERIC_SUBS;
+}
+
+/* ══════════════════════════════════════════════════════════════ */
 /* Core component library                                          */
 /* ══════════════════════════════════════════════════════════════ */
 class PixelIngredientSystem {
@@ -474,24 +599,39 @@ class CookingMode {
     );
 
     stage.addEventListener('click', e => {
+      // grid handler (deeper) toggles first; here we react to the new state
+      const toggle = e.target.closest('[data-toggle]');
+      if (toggle) {
+        const ing = toggle.dataset.toggle;
+        const nowMissing = this.system.selectedIngredients.get(ing)?.hasIt === false;
+        if (nowMissing && !this.swappedFrom?.has(ing)) this.showSubstitutionCard(ing);
+        return;
+      }
+
       const btn = e.target.closest('[data-cm]');
       if (!btn) return;
       if (btn.dataset.cm === 'quit') this.close();
       if (btn.dataset.cm === 'start') {
-        // swapped-out ingredients are covered by their substitutes — don't warn
-        const missing = [...this.system.selectedIngredients.entries()]
-          .filter(([name, v]) => !v.hasIt && !this.swappedFrom?.has(name)).length;
-        missing > 0 ? this.renderMissingWarning(missing) : this.renderSteps();
+        const uncovered = this.uncoveredMissing();
+        uncovered.length > 0 ? this.renderMissingWarning(uncovered) : this.renderSteps();
       }
     });
   }
 
-  renderMissingWarning(count) {
+  uncoveredMissing() {
+    return [...this.system.selectedIngredients.entries()]
+      .filter(([name, v]) => !v.hasIt && !this.swappedFrom?.has(name))
+      .map(([name]) => name);
+  }
+
+  renderMissingWarning(missing) {
+    const count = missing.length;
     const stage = this.stage(`
       <div class="cm-ribbon"><div class="cm-ribbon-plate">Hold on!</div></div>
-      ${this.bubble(`You're missing <b>${count} ingredient${count > 1 ? 's' : ''}</b>!<br>Cook anyway, or go back to the store?`, '😲')}
+      ${this.bubble(`You're missing <b>${count} ingredient${count > 1 ? 's' : ''}</b>!<br>Want a swap suggestion, or cook anyway?`, '😲')}
       <div class="cm-confirm-bar">
         <button class="cm-btn cm-btn-cancel" data-cm="back"><span class="btn-dot"></span>Back</button>
+        <button class="cm-btn cm-btn-make" data-cm="swaps"><span class="btn-dot"></span>See swaps</button>
         <button class="cm-btn cm-btn-make" data-cm="anyway"><span class="btn-dot"></span>Cook anyway!</button>
       </div>
     `);
@@ -500,7 +640,85 @@ class CookingMode {
       if (!btn) return;
       if (btn.dataset.cm === 'back') this.renderIntro();
       if (btn.dataset.cm === 'anyway') this.renderSteps();
+      if (btn.dataset.cm === 'swaps') {
+        this.renderIntro();
+        this.showSubstitutionCard(missing[0]);
+      }
     });
+  }
+
+  /* ── Substitution suggestion card (Love Shot style) ─────────── */
+  showSubstitutionCard(ingredient) {
+    const subs = findSubstitutes(ingredient);
+    const label = this.system.shortLabel(ingredient);
+    let chosen = 0;
+
+    const layer = document.createElement('div');
+    layer.className = 'cm-modal-layer';
+
+    const renderCard = () => {
+      const sub = subs[chosen];
+      layer.innerHTML = `
+        <div class="item-modification-card">
+          <div class="item-card-header">
+            <div class="item-visual">
+              <div class="item-pixel-art">${sub.emoji}</div>
+            </div>
+            <div class="item-info">
+              <h4>No ${label}?</h4>
+              <p class="item-description">Use <b>${sub.name}</b>!${sub.note ? `<br>${sub.note}` : ''}</p>
+              <span class="price-modifier">📏 ${sub.ratio}</span>
+            </div>
+          </div>
+          <div class="item-modifiers">
+            <div class="modifier-row">
+              <span class="modifier-label">Swap with:</span>
+              <select class="option-select" data-sub-select>
+                ${subs.map((s, i) => `<option value="${i}" ${i === chosen ? 'selected' : ''}>${s.emoji} ${s.name}</option>`).join('')}
+              </select>
+            </div>
+          </div>
+          <div class="item-actions">
+            <button class="btn-add-ingredient" data-sub="use">♥ Use this swap</button>
+            <button class="btn-cancel" data-sub="skip">✕ No thanks</button>
+          </div>
+        </div>
+      `;
+    };
+    renderCard();
+
+    layer.addEventListener('change', e => {
+      if (e.target.matches('[data-sub-select]')) {
+        chosen = Number(e.target.value);
+        renderCard();
+      }
+    });
+    layer.addEventListener('click', e => {
+      if (e.target === layer) { layer.remove(); return; }   // tap backdrop to dismiss
+      const btn = e.target.closest('[data-sub]');
+      if (!btn) return;
+      if (btn.dataset.sub === 'use') this.applySwap(ingredient, subs[chosen].name);
+      layer.remove();
+    });
+
+    this.overlay.appendChild(layer);
+  }
+
+  applySwap(original, subName) {
+    this.swappedFrom = this.swappedFrom || new Set();
+    this.swappedFrom.add(original);
+    this.system.selectedIngredients.set(original, { hasIt: false, addedPrice: 0 });
+
+    if (!this.recipe.ingredients.includes(subName)) this.recipe.ingredients.push(subName);
+    this.system.userAddedIngredients.add(subName);
+    this.system.selectedIngredients.set(subName, { hasIt: true, addedPrice: 0 });
+
+    // refresh the tray in place
+    const gridHost = this.overlay.querySelector('#cmGrid');
+    if (gridHost) {
+      gridHost.innerHTML = '';
+      gridHost.appendChild(this.system.renderIngredientGrid(this.recipe.ingredients));
+    }
   }
 
   /* ── Phase 2: step-by-step cooking ──────────────────────────── */
