@@ -2,7 +2,7 @@
   "srilankaRecipes": {
     "title": "Authentic Sri Lanka Cuisine",
     "country": "Sri Lanka",
-    "region": "Middle East/Asia",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
@@ -12,44 +12,44 @@
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 20,
-        "cookTime": 15,
+        "cookTime": 20,
         "ingredients": [
-          "flour",
-          "coconut milk",
-          "jaggery"
+          "rice flour",
+          "coconut"
         ],
         "instructions": [
-          "Cymbals-shaped pancakes"
+          "Bowl-shaped pancake"
         ]
       },
       {
         "id": "lk-b2",
-        "name": "Kottu Roti",
-        "difficulty": "Medium",
+        "name": "Lamprais",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 45,
+        "cookTime": 60,
         "ingredients": [
-          "roti",
-          "vegetables",
-          "curry"
+          "rice",
+          "meat",
+          "spices"
         ],
         "instructions": [
-          "Chopped roti stir-fry"
+          "Baked rice rolls"
         ]
       },
       {
         "id": "lk-b3",
-        "name": "Sri Lankan B3",
-        "difficulty": "Easy",
+        "name": "Kottu Roti",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "ingredient"
+          "flatbread",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Chopped roti"
         ]
       },
       {
@@ -297,45 +297,45 @@
         "name": "Curry",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 35,
+        "prepTime": 30,
+        "cookTime": 45,
         "ingredients": [
           "meat",
-          "coconut milk",
-          "spices"
+          "spices",
+          "coconut milk"
         ],
         "instructions": [
-          "Spiced curry"
+          "Island curry - National favorite"
         ]
       },
       {
         "id": "lk-l2",
-        "name": "Lamprais",
-        "difficulty": "Hard",
+        "name": "Devilled",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 40,
-        "cookTime": 50,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "rice",
           "meat",
-          "egg"
+          "chili"
         ],
         "instructions": [
-          "Baked rice and meat"
+          "Spicy stir-fry"
         ]
       },
       {
         "id": "lk-l3",
-        "name": "Sri Lankan L3",
-        "difficulty": "Medium",
+        "name": "Pittu",
+        "difficulty": "Easy",
         "servings": 4,
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ingredient"
+          "rice flour",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Steamed cylinder"
         ]
       },
       {
@@ -862,30 +862,33 @@
     "desserts": [
       {
         "id": "lk-des1",
-        "name": "Sri Lankan Des1",
+        "name": "Jaggery Cake",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
-          "ingredient"
+          "jaggery",
+          "flour"
         ],
         "instructions": [
-          "preparation"
+          "Palm sugar cake"
         ]
       },
       {
         "id": "lk-des2",
-        "name": "Sri Lankan Des2",
+        "name": "Watalappan",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "eggs",
+          "jaggery",
+          "spices"
         ],
         "instructions": [
-          "preparation"
+          "Egg custard"
         ]
       },
       {
@@ -1144,7 +1147,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "lk-na1",
-        "name": "Sri Lankan NA1",
+        "name": "Sri Lankan Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1158,7 +1161,7 @@
       },
       {
         "id": "lk-na2",
-        "name": "Sri Lankan NA2",
+        "name": "Sri Lankan Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1172,7 +1175,7 @@
       },
       {
         "id": "lk-na3",
-        "name": "Sri Lankan NA3",
+        "name": "Sri Lankan Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1186,7 +1189,7 @@
       },
       {
         "id": "lk-na4",
-        "name": "Sri Lankan NA4",
+        "name": "Sri Lankan Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1200,7 +1203,7 @@
       },
       {
         "id": "lk-na5",
-        "name": "Sri Lankan NA5",
+        "name": "Sri Lankan Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1214,7 +1217,7 @@
       },
       {
         "id": "lk-na6",
-        "name": "Sri Lankan NA6",
+        "name": "Sri Lankan Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1228,7 +1231,7 @@
       },
       {
         "id": "lk-na7",
-        "name": "Sri Lankan NA7",
+        "name": "Sri Lankan Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1242,7 +1245,7 @@
       },
       {
         "id": "lk-na8",
-        "name": "Sri Lankan NA8",
+        "name": "Sri Lankan Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1256,7 +1259,7 @@
       },
       {
         "id": "lk-na9",
-        "name": "Sri Lankan NA9",
+        "name": "Sri Lankan Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1270,7 +1273,7 @@
       },
       {
         "id": "lk-na10",
-        "name": "Sri Lankan NA10",
+        "name": "Sri Lankan Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

@@ -2,54 +2,53 @@
   "swedenRecipes": {
     "title": "Authentic Sweden Cuisine",
     "country": "Sweden",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "se-b1",
-        "name": "Sm\u00f6rg\u00e5sbord",
+        "name": "Meatballs",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 0,
+        "prepTime": 25,
+        "cookTime": 25,
         "ingredients": [
-          "bread",
-          "meats",
-          "cheese"
+          "ground meat",
+          "cream sauce"
         ],
         "instructions": [
-          "Swedish buffet"
+          "Swedish meatballs - Famous"
         ]
       },
       {
         "id": "se-b2",
-        "name": "Kanelbullar",
-        "difficulty": "Medium",
+        "name": "Smorgasbord",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 30,
+        "prepTime": 45,
+        "cookTime": 60,
         "ingredients": [
-          "dough",
-          "cinnamon",
-          "sugar"
+          "various meats",
+          "sides"
         ],
         "instructions": [
-          "Cinnamon buns"
+          "Scandinavian buffet"
         ]
       },
       {
         "id": "se-b3",
-        "name": "Swedish B3",
-        "difficulty": "Easy",
+        "name": "Cinnamon Buns",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
-          "ingredient"
+          "dough",
+          "cinnamon"
         ],
         "instructions": [
-          "preparation"
+          "Sweet pastry"
         ]
       },
       {
@@ -294,30 +293,28 @@
     "lunch": [
       {
         "id": "se-l1",
-        "name": "Meatballs",
+        "name": "K\u00f6ttbullar",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 25,
         "cookTime": 25,
         "ingredients": [
-          "meat",
-          "breadcrumbs",
+          "ground meat",
           "cream"
         ],
         "instructions": [
-          "Swedish meatballs"
+          "Swedish meatballs - National favorite"
         ]
       },
       {
         "id": "se-l2",
         "name": "Gravlax",
-        "difficulty": "Medium",
+        "difficulty": "Easy",
         "servings": 4,
         "prepTime": 30,
         "cookTime": 1440,
         "ingredients": [
           "salmon",
-          "salt",
           "dill"
         ],
         "instructions": [
@@ -326,16 +323,17 @@
       },
       {
         "id": "se-l3",
-        "name": "Swedish L3",
+        "name": "Herring Salad",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "herring",
+          "vegetables"
         ],
         "instructions": [
-          "preparation"
+          "Nordic salad"
         ]
       },
       {
@@ -862,33 +860,32 @@
     "desserts": [
       {
         "id": "se-des1",
-        "name": "Princess Cake",
-        "difficulty": "Hard",
+        "name": "Semla",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 45,
+        "prepTime": 30,
         "cookTime": 30,
         "ingredients": [
-          "sponge",
-          "cream",
-          "jam"
+          "pastry",
+          "cream"
         ],
         "instructions": [
-          "Green dome cake"
+          "Cardamom bun"
         ]
       },
       {
         "id": "se-des2",
-        "name": "Fika Cake",
-        "difficulty": "Medium",
+        "name": "Kr\u00e4m",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 40,
+        "prepTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "flour",
+          "berries",
           "cream"
         ],
         "instructions": [
-          "Swedish coffee cake"
+          "Berry dessert"
         ]
       },
       {
@@ -1147,7 +1144,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "se-na1",
-        "name": "Swedish NA1",
+        "name": "Swedish Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1161,7 +1158,7 @@
       },
       {
         "id": "se-na2",
-        "name": "Swedish NA2",
+        "name": "Swedish Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1175,7 +1172,7 @@
       },
       {
         "id": "se-na3",
-        "name": "Swedish NA3",
+        "name": "Swedish Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1189,7 +1186,7 @@
       },
       {
         "id": "se-na4",
-        "name": "Swedish NA4",
+        "name": "Swedish Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1203,7 +1200,7 @@
       },
       {
         "id": "se-na5",
-        "name": "Swedish NA5",
+        "name": "Swedish Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1217,7 +1214,7 @@
       },
       {
         "id": "se-na6",
-        "name": "Swedish NA6",
+        "name": "Swedish Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1231,7 +1228,7 @@
       },
       {
         "id": "se-na7",
-        "name": "Swedish NA7",
+        "name": "Swedish Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1245,7 +1242,7 @@
       },
       {
         "id": "se-na8",
-        "name": "Swedish NA8",
+        "name": "Swedish Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1259,7 +1256,7 @@
       },
       {
         "id": "se-na9",
-        "name": "Swedish NA9",
+        "name": "Swedish Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1273,7 +1270,7 @@
       },
       {
         "id": "se-na10",
-        "name": "Swedish NA10",
+        "name": "Swedish Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

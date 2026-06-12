@@ -1,46 +1,13 @@
 {
   "russiaRecipes": {
-    "title": "Authentic RUSSIA Cuisine",
-    "country": "RUSSIA",
+    "title": "Authentic Russia Cuisine",
+    "country": "Russia",
     "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "ru-b1",
-        "name": "Blini",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 15,
-        "ingredients": [
-          "flour",
-          "eggs",
-          "sour cream"
-        ],
-        "instructions": [
-          "Thin pancakes"
-        ]
-      },
-      {
-        "id": "ru-b2",
-        "name": "Kasha",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 20,
-        "ingredients": [
-          "buckwheat",
-          "water"
-        ],
-        "instructions": [
-          "Grain porridge"
-        ]
-      }
-    ],
-    "lunch": [
-      {
-        "id": "ru-l1",
         "name": "Borscht",
         "difficulty": "Medium",
         "servings": 4,
@@ -48,22 +15,22 @@
         "cookTime": 45,
         "ingredients": [
           "beets",
-          "meat",
-          "broth"
+          "beef",
+          "sour cream"
         ],
         "instructions": [
           "Red beet soup"
         ]
       },
       {
-        "id": "ru-l2",
+        "id": "ru-b2",
         "name": "Pelmeni",
         "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 40,
+        "prepTime": 45,
         "cookTime": 30,
         "ingredients": [
-          "flour",
+          "dough",
           "meat"
         ],
         "instructions": [
@@ -71,18 +38,307 @@
         ]
       },
       {
-        "id": "ru-l3",
+        "id": "ru-b3",
+        "name": "Blini",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "flour",
+          "eggs",
+          "milk"
+        ],
+        "instructions": [
+          "Thin pancakes"
+        ]
+      },
+      {
+        "id": "ru-b4",
+        "name": "Russian B4",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b5",
+        "name": "Russian B5",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b6",
+        "name": "Russian B6",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b7",
+        "name": "Russian B7",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b8",
+        "name": "Russian B8",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b9",
+        "name": "Russian B9",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b10",
+        "name": "Russian B10",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b11",
+        "name": "Russian B11",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b12",
+        "name": "Russian B12",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b13",
+        "name": "Russian B13",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b14",
+        "name": "Russian B14",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b15",
+        "name": "Russian B15",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b16",
+        "name": "Russian B16",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b17",
+        "name": "Russian B17",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b18",
+        "name": "Russian B18",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b19",
+        "name": "Russian B19",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      },
+      {
+        "id": "ru-b20",
+        "name": "Russian B20",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "ingredient"
+        ],
+        "instructions": [
+          "preparation"
+        ]
+      }
+    ],
+    "lunch": [
+      {
+        "id": "ru-l1",
         "name": "Stroganoff",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 30,
+        "prepTime": 25,
+        "cookTime": 35,
         "ingredients": [
           "beef",
-          "sour cream"
+          "sour cream",
+          "mushrooms"
         ],
         "instructions": [
-          "Creamy beef stew"
+          "Creamy beef - Famous worldwide"
+        ]
+      },
+      {
+        "id": "ru-l2",
+        "name": "Shchi",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 45,
+        "ingredients": [
+          "cabbage",
+          "meat",
+          "sauerkraut"
+        ],
+        "instructions": [
+          "Cabbage soup"
+        ]
+      },
+      {
+        "id": "ru-l3",
+        "name": "Olivier Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "potatoes",
+          "vegetables",
+          "mayo"
+        ],
+        "instructions": [
+          "Soviet salad - National favorite"
         ]
       },
       {
@@ -93,10 +349,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -107,10 +363,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -121,10 +377,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -135,10 +391,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -149,10 +405,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -163,10 +419,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -177,10 +433,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -191,10 +447,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -205,10 +461,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -219,10 +475,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -233,10 +489,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -247,10 +503,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -261,10 +517,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -275,10 +531,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -289,10 +545,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -303,10 +559,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -317,10 +573,10 @@
         "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       }
     ],
@@ -333,10 +589,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -347,10 +603,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -361,10 +617,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -375,10 +631,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -389,10 +645,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -403,10 +659,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -417,10 +673,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -431,10 +687,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -445,10 +701,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -459,10 +715,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -473,10 +729,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -487,10 +743,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -501,10 +757,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -515,10 +771,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -529,10 +785,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -543,10 +799,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -557,10 +813,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -571,10 +827,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -585,10 +841,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -599,10 +855,10 @@
         "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       }
     ],
@@ -610,31 +866,31 @@
       {
         "id": "ru-des1",
         "name": "Pirozhki",
-        "difficulty": "Medium",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 30,
+        "prepTime": 45,
         "cookTime": 30,
         "ingredients": [
-          "pastry",
+          "dough",
           "filling"
         ],
         "instructions": [
-          "Stuffed pastry"
+          "Filled pastry"
         ]
       },
       {
         "id": "ru-des2",
-        "name": "Syrniki",
+        "name": "Medovik",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 15,
+        "prepTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "cottage cheese",
-          "flour"
+          "honey",
+          "layers"
         ],
         "instructions": [
-          "Fried cheese pancakes"
+          "Honey cake"
         ]
       },
       {
@@ -645,10 +901,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -659,10 +915,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -673,10 +929,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -687,10 +943,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -701,10 +957,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -715,10 +971,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -729,10 +985,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -743,10 +999,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -757,10 +1013,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -771,10 +1027,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -785,10 +1041,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -799,10 +1055,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -813,10 +1069,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -827,10 +1083,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -841,10 +1097,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -855,10 +1111,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -869,10 +1125,10 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
@@ -883,152 +1139,152 @@
         "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       }
     ],
     "nonAlcoholicDrinks": [
       {
         "id": "ru-na1",
-        "name": "Russian NA1",
+        "name": "Russian Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na2",
-        "name": "Russian NA2",
+        "name": "Russian Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na3",
-        "name": "Russian NA3",
+        "name": "Russian Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na4",
-        "name": "Russian NA4",
+        "name": "Russian Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na5",
-        "name": "Russian NA5",
+        "name": "Russian Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na6",
-        "name": "Russian NA6",
+        "name": "Russian Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na7",
-        "name": "Russian NA7",
+        "name": "Russian Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na8",
-        "name": "Russian NA8",
+        "name": "Russian Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na9",
-        "name": "Russian NA9",
+        "name": "Russian Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       },
       {
         "id": "ru-na10",
-        "name": "Russian NA10",
+        "name": "Russian Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
         "cookTime": 5,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
-          "prep"
+          "preparation"
         ]
       }
     ],
@@ -1041,7 +1297,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1055,7 +1311,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1069,7 +1325,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1083,7 +1339,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1097,7 +1353,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1111,7 +1367,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1125,7 +1381,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1139,7 +1395,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1153,7 +1409,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"
@@ -1167,7 +1423,7 @@
         "prepTime": 5,
         "cookTime": 0,
         "ingredients": [
-          "ing"
+          "ingredient"
         ],
         "instructions": [
           "serve"

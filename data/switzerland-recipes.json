@@ -2,54 +2,52 @@
   "switzerlandRecipes": {
     "title": "Authentic Switzerland Cuisine",
     "country": "Switzerland",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "ch-b1",
-        "name": "Muesli",
-        "difficulty": "Easy",
+        "name": "Fondue",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 0,
+        "prepTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "oats",
-          "fruits",
-          "nuts",
-          "milk"
+          "cheese",
+          "bread"
         ],
         "instructions": [
-          "Cereal with milk"
+          "Melted cheese - Famous"
         ]
       },
       {
         "id": "ch-b2",
-        "name": "Croissant",
+        "name": "Rosti",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
+        "prepTime": 20,
         "cookTime": 25,
         "ingredients": [
-          "flour",
-          "butter"
+          "potatoes"
         ],
         "instructions": [
-          "Flaky pastry"
+          "Potato pancake"
         ]
       },
       {
         "id": "ch-b3",
-        "name": "Swiss B3",
+        "name": "Muesli",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
-        "cookTime": 10,
+        "cookTime": 5,
         "ingredients": [
-          "ingredient"
+          "oats",
+          "fruit"
         ],
         "instructions": [
-          "preparation"
+          "Cereal"
         ]
       },
       {
@@ -294,47 +292,46 @@
     "lunch": [
       {
         "id": "ch-l1",
-        "name": "Fondue",
+        "name": "Raclette",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
           "cheese",
-          "bread",
-          "wine"
+          "bread"
         ],
         "instructions": [
-          "Melted cheese dip"
+          "Melted cheese dish - National favorite"
         ]
       },
       {
         "id": "ch-l2",
-        "name": "Raclette",
-        "difficulty": "Medium",
+        "name": "Bratwurst",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 15,
         "cookTime": 25,
         "ingredients": [
-          "cheese",
-          "potatoes"
+          "sausage"
         ],
         "instructions": [
-          "Melted cheese dish"
+          "Grilled sausage"
         ]
       },
       {
         "id": "ch-l3",
-        "name": "Swiss L3",
-        "difficulty": "Medium",
+        "name": "Zurich Veal",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 30,
+        "cookTime": 35,
         "ingredients": [
-          "ingredient"
+          "veal",
+          "cream sauce"
         ],
         "instructions": [
-          "preparation"
+          "Creamed veal"
         ]
       },
       {
@@ -861,33 +858,32 @@
     "desserts": [
       {
         "id": "ch-des1",
-        "name": "Chocolate Cake",
-        "difficulty": "Medium",
+        "name": "Chocolate Mousse",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 40,
+        "prepTime": 15,
+        "cookTime": 120,
         "ingredients": [
           "chocolate",
-          "flour",
-          "eggs"
+          "cream"
         ],
         "instructions": [
-          "Swiss chocolate cake"
+          "Swiss chocolate"
         ]
       },
       {
         "id": "ch-des2",
-        "name": "Tiramis\u00f9",
+        "name": "Carrot Cake",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 0,
+        "cookTime": 45,
         "ingredients": [
-          "mascarpone",
-          "coffee"
+          "carrots",
+          "flour"
         ],
         "instructions": [
-          "Italian-Swiss dessert"
+          "Orange-flavored cake"
         ]
       },
       {
@@ -1146,7 +1142,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "ch-na1",
-        "name": "Swiss NA1",
+        "name": "Swiss Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1160,7 +1156,7 @@
       },
       {
         "id": "ch-na2",
-        "name": "Swiss NA2",
+        "name": "Swiss Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1174,7 +1170,7 @@
       },
       {
         "id": "ch-na3",
-        "name": "Swiss NA3",
+        "name": "Swiss Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1188,7 +1184,7 @@
       },
       {
         "id": "ch-na4",
-        "name": "Swiss NA4",
+        "name": "Swiss Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1202,7 +1198,7 @@
       },
       {
         "id": "ch-na5",
-        "name": "Swiss NA5",
+        "name": "Swiss Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1216,7 +1212,7 @@
       },
       {
         "id": "ch-na6",
-        "name": "Swiss NA6",
+        "name": "Swiss Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1230,7 +1226,7 @@
       },
       {
         "id": "ch-na7",
-        "name": "Swiss NA7",
+        "name": "Swiss Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1244,7 +1240,7 @@
       },
       {
         "id": "ch-na8",
-        "name": "Swiss NA8",
+        "name": "Swiss Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1258,7 +1254,7 @@
       },
       {
         "id": "ch-na9",
-        "name": "Swiss NA9",
+        "name": "Swiss Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1272,7 +1268,7 @@
       },
       {
         "id": "ch-na10",
-        "name": "Swiss NA10",
+        "name": "Swiss Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

@@ -2,53 +2,52 @@
   "southafricaRecipes": {
     "title": "Authentic South Africa Cuisine",
     "country": "South Africa",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "za-b1",
-        "name": "Bobotie",
-        "difficulty": "Hard",
+        "name": "Bunny Chow",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 45,
+        "prepTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "meat",
-          "egg",
-          "spices"
+          "bread",
+          "curry"
         ],
         "instructions": [
-          "Spiced meat casserole"
+          "Curry in bread - Street food"
         ]
       },
       {
         "id": "za-b2",
-        "name": "Mealie Pap",
-        "difficulty": "Easy",
+        "name": "Biltong",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 1440,
         "ingredients": [
-          "cornmeal",
-          "water"
+          "beef",
+          "spices"
         ],
         "instructions": [
-          "Corn porridge"
+          "Dried cured meat"
         ]
       },
       {
         "id": "za-b3",
-        "name": "South African B3",
-        "difficulty": "Easy",
+        "name": "Boerewors",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 20,
+        "cookTime": 25,
         "ingredients": [
-          "ingredient"
+          "sausage"
         ],
         "instructions": [
-          "preparation"
+          "Traditional sausage"
         ]
       },
       {
@@ -293,46 +292,49 @@
     "lunch": [
       {
         "id": "za-l1",
-        "name": "Bunny Chow",
-        "difficulty": "Medium",
+        "name": "Bouillabaisse",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 40,
+        "cookTime": 60,
         "ingredients": [
-          "bread",
-          "curry"
+          "fish",
+          "seafood",
+          "saffron"
         ],
         "instructions": [
-          "Curry-filled bread"
+          "Cape fish stew"
         ]
       },
       {
         "id": "za-l2",
-        "name": "Boerewors",
+        "name": "Bobotie",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 30,
+        "cookTime": 45,
         "ingredients": [
-          "sausage",
-          "spices"
+          "ground meat",
+          "spices",
+          "egg"
         ],
         "instructions": [
-          "Afrikaaner sausage"
+          "Spiced mince - National favorite"
         ]
       },
       {
         "id": "za-l3",
-        "name": "South African L3",
+        "name": "Sosaties",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 25,
         "ingredients": [
-          "ingredient"
+          "meat",
+          "apricots"
         ],
         "instructions": [
-          "preparation"
+          "Cape kebab"
         ]
       },
       {
@@ -862,11 +864,11 @@
         "name": "Koeksister",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
+        "prepTime": 20,
         "cookTime": 20,
         "ingredients": [
           "dough",
-          "syrup"
+          "cinnamon"
         ],
         "instructions": [
           "Fried pastry"
@@ -874,18 +876,17 @@
       },
       {
         "id": "za-des2",
-        "name": "Malva Pudding",
+        "name": "Milk Tart",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 45,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "flour",
-          "apricot",
-          "sauce"
+          "milk",
+          "eggs"
         ],
         "instructions": [
-          "Apricot pudding"
+          "Custard tart"
         ]
       },
       {
@@ -1144,7 +1145,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "za-na1",
-        "name": "South African NA1",
+        "name": "South African Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1158,7 +1159,7 @@
       },
       {
         "id": "za-na2",
-        "name": "South African NA2",
+        "name": "South African Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1172,7 +1173,7 @@
       },
       {
         "id": "za-na3",
-        "name": "South African NA3",
+        "name": "South African Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1186,7 +1187,7 @@
       },
       {
         "id": "za-na4",
-        "name": "South African NA4",
+        "name": "South African Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1200,7 +1201,7 @@
       },
       {
         "id": "za-na5",
-        "name": "South African NA5",
+        "name": "South African Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1214,7 +1215,7 @@
       },
       {
         "id": "za-na6",
-        "name": "South African NA6",
+        "name": "South African Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1228,7 +1229,7 @@
       },
       {
         "id": "za-na7",
-        "name": "South African NA7",
+        "name": "South African Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1242,7 +1243,7 @@
       },
       {
         "id": "za-na8",
-        "name": "South African NA8",
+        "name": "South African Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1256,7 +1257,7 @@
       },
       {
         "id": "za-na9",
-        "name": "South African NA9",
+        "name": "South African Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1270,7 +1271,7 @@
       },
       {
         "id": "za-na10",
-        "name": "South African NA10",
+        "name": "South African Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
