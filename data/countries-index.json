@@ -1,0 +1,63 @@
+{
+  "countriesIndex": {
+    "description": "Master index for 34-country global cuisine database - All countries organized alphabetically with region-based filtering",
+    "totalCountries": 34,
+    "lastUpdated": "2026-06-12",
+    "completionStatus": {
+      "completed": 25,
+      "inProgress": 9,
+      "total": 34,
+      "completedCountries": ["Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil"],
+      "inProgressCountries": ["British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi"]
+    },
+    "countries": [
+      {"name": "Algeria", "code": "DZA", "region": "North Africa", "subregion": "Africa", "file": "algerian-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "American Samoa", "code": "ASM", "region": "Oceania", "subregion": "Pacific Islands", "file": "american-samoa-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Andorra", "code": "AND", "region": "Southern Europe", "subregion": "Europe", "file": "andorra-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Angola", "code": "AGO", "region": "Sub-Saharan Africa", "subregion": "Africa", "file": "angola-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Anguilla", "code": "AIA", "region": "Caribbean", "subregion": "Americas", "file": "anguilla-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Antigua and Barbuda", "code": "ATG", "region": "Caribbean", "subregion": "Americas", "file": "antigua-barbuda-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Argentina", "code": "ARG", "region": "South America", "subregion": "Americas", "file": "argentina-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Armenia", "code": "ARM", "region": "Caucasus", "subregion": "Western Asia", "file": "armenia-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Aruba", "code": "ABW", "region": "Caribbean", "subregion": "Americas", "file": "aruba-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Austria", "code": "AUT", "region": "Central Europe", "subregion": "Europe", "file": "austria-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Azerbaijan", "code": "AZE", "region": "Caucasus", "subregion": "Western Asia", "file": "azerbaijan-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "The Bahamas", "code": "BHS", "region": "Caribbean", "subregion": "Americas", "file": "bahamas-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bahrain", "code": "BHR", "region": "Western Asia", "subregion": "Middle East", "file": "bahrain-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bangladesh", "code": "BGD", "region": "South Asia", "subregion": "Asia", "file": "bangladesh-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Barbados", "code": "BRB", "region": "Caribbean", "subregion": "Americas", "file": "barbados-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Belarus", "code": "BLR", "region": "Eastern Europe", "subregion": "Europe", "file": "belarus-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Belgium", "code": "BEL", "region": "Western Europe", "subregion": "Europe", "file": "belgium-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Belize", "code": "BLZ", "region": "Central America", "subregion": "Americas", "file": "belize-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Benin", "code": "BEN", "region": "West Africa", "subregion": "Africa", "file": "benin-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bermuda", "code": "BMU", "region": "North Atlantic", "subregion": "Americas", "file": "bermuda-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bhutan", "code": "BTN", "region": "South Asia", "subregion": "Asia", "file": "bhutan-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bolivia", "code": "BOL", "region": "South America", "subregion": "Americas", "file": "bolivia-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Bosnia and Herzegovina", "code": "BIH", "region": "Southern Europe", "subregion": "Europe", "file": "bosnia-herzegovina-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Botswana", "code": "BWA", "region": "Southern Africa", "subregion": "Africa", "file": "botswana-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "Brazil", "code": "BRA", "region": "South America", "subregion": "Americas", "file": "brazil-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "complete"},
+      {"name": "British Virgin Islands", "code": "VGB", "region": "Caribbean", "subregion": "Americas", "file": "british-virgin-islands-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "pending"},
+      {"name": "Brunei", "code": "BRN", "region": "Southeast Asia", "subregion": "Asia", "file": "brunei-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "pending"},
+      {"name": "Bulgaria", "code": "BGR", "region": "Southern Europe", "subregion": "Europe", "file": "bulgaria-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "pending"},
+      {"name": "Burkina Faso", "code": "BFA", "region": "West Africa", "subregion": "Africa", "file": "burkina-faso-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "pending"},
+      {"name": "Burundi", "code": "BDI", "region": "East Africa", "subregion": "Africa", "file": "burundi-recipes.json", "recipes": 100, "drinks": 20, "totalItems": 120, "status": "pending"}
+    ],
+    "metadata": {
+      "totalRecipes": 3400,
+      "totalDrinks": 680,
+      "totalItems": 4080,
+      "averageRecipesPerCountry": 100,
+      "averageDrinksPerCountry": 20,
+      "dataStructure": {"breakfast": "20 recipes", "lunch": "20 recipes", "dinner": "20 recipes", "desserts": "20 recipes", "nonAlcoholicDrinks": "10 drinks", "alcoholicDrinks": "10 drinks"},
+      "organizationMethod": "Each country has its own individual JSON file named [country-name]-recipes.json",
+      "filteringCapabilities": ["Alphabetical (A-Z)", "By Region", "By Continent", "By Cuisine Type", "By Status"]
+    },
+    "fileOrganization": {
+      "location": "/Users/olivephillips/Dig In-Frontend/data/",
+      "namingConvention": "[country-name]-recipes.json",
+      "examples": ["algeria-recipes.json", "american-samoa-recipes.json", "brazil-recipes.json"],
+      "totalFiles": 34,
+      "indexFile": "countries-index.json"
+    }
+  }
+}

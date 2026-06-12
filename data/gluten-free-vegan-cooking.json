@@ -1,0 +1,299 @@
+{
+  "glutenFreeVeganGuide": {
+    "title": "Great Gluten-Free Vegan Eats: Allergy-Free Recipes",
+    "description": "Delicious gluten-free vegan recipes and techniques for those avoiding gluten and animal products",
+    "introduction": "This guide combines gluten-free and vegan cooking - eliminating grains containing gluten and all animal products. Learn substitutions, cooking techniques, and nutritionally complete meal planning.",
+    "glutenFreeBaking": [
+      {
+        "id": "bake_001",
+        "topic": "Gluten-Free Flour Blends",
+        "description": "Creating flour blends that mimic wheat flour behavior",
+        "basicBlend": {
+          "ingredients": [
+            "40% rice flour or tapioca starch (moisture absorber)",
+            "30% almond or other nut flour (structure, fat)",
+            "20% potato starch (binding)",
+            "10% cornstarch or arrowroot (lightness)"
+          ],
+          "properties": "Absorbs moisture like wheat; provides structure"
+        },
+        "commercialOptions": [
+          "Bob's Red Mill 1-to-1 (best all-purpose)",
+          "King Arthur Measure for Measure",
+          "Pamela's Products (almond-based)",
+          "Caputo Fioreglut (pasta-specific)"
+        ],
+        "considerations": [
+          "Requires xanthan gum (0.5 tsp per cup) for binding",
+          "Often needs more liquid than wheat recipes",
+          "Different brands require different amounts"
+        ]
+      },
+      {
+        "id": "bake_002",
+        "topic": "Binding Agents",
+        "description": "Replacing eggs for structure and binding",
+        "eggsSubstitutes": [
+          {
+            "substitute": "Flax eggs (1 tbsp ground flax + 3 tbsp water, rest 5 min)",
+            "use": "Dense items (brownies, quick breads)",
+            "benefit": "Adds omega-3s, earthy flavor"
+          },
+          {
+            "substitute": "Chia eggs (same ratio as flax)",
+            "use": "Similar to flax, lighter texture",
+            "benefit": "Mild flavor, good nutrition"
+          },
+          {
+            "substitute": "Applesauce (1/4 cup per egg)",
+            "use": "Cakes, muffins, quick breads",
+            "benefit": "Light, moist crumb, adds sweetness"
+          },
+          {
+            "substitute": "Aquafaba (3 tbsp per egg, whipped)",
+            "use": "Meringues, mousses, cakes",
+            "benefit": "Creates lift, fluffy texture"
+          },
+          {
+            "substitute": "Cornstarch slurry (2 tbsp cornstarch + 3 tbsp water)",
+            "use": "Dense baked goods",
+            "benefit": "Neutral flavor, binding power"
+          }
+        ]
+      },
+      {
+        "id": "bake_003",
+        "topic": "Dairy Substitutes",
+        "description": "Replacing milk and butter in baking",
+        "milkAlternatives": [
+          {
+            "milk": "Almond milk (unsweetened)",
+            "ratio": "1:1 replacement for dairy milk",
+            "use": "All baking applications"
+          },
+          {
+            "milk": "Oat milk",
+            "ratio": "1:1 replacement",
+            "use": "Best milk substitute (closest to dairy nutrition)"
+          },
+          {
+            "milk": "Coconut milk (canned, full-fat)",
+            "ratio": "1:1 replacement",
+            "use": "Rich baked goods, adds flavor"
+          },
+          {
+            "milk": "Cashew cream (soaked cashews + water blended)",
+            "ratio": "1:1 replacement",
+            "use": "Creamy, neutral flavor"
+          }
+        ],
+        "butterAlternatives": [
+          {
+            "substitute": "Coconut oil",
+            "ratio": "1:1 replacement",
+            "characteristics": "Creates flakier texture, distinct coconut flavor"
+          },
+          {
+            "substitute": "Vegan butter (store-bought)",
+            "ratio": "1:1 replacement",
+            "brands": "Earth Balance, Miyoko's, Miyoko's Butter"
+          },
+          {
+            "substitute": "Olive oil",
+            "ratio": "75% of butter amount (oil has more fat)",
+            "characteristics": "Creates tender crumb, fruity flavor"
+          },
+          {
+            "substitute": "Applesauce (for moisture)",
+            "ratio": "50% of butter amount",
+            "use": "Combine with small amount of oil"
+          }
+        ]
+      }
+    ],
+    "veganProteinBuilding": [
+      {
+        "id": "protein_001",
+        "topic": "Legumes as Protein",
+        "sources": [
+          {
+            "legume": "Lentils (cooked)",
+            "proteinContent": "9g per cooked cup",
+            "aminoAcids": "Complete protein with all 9 amino acids",
+            "uses": ["Soups", "Burgers", "Tacos", "Salads"]
+          },
+          {
+            "legume": "Chickpeas (cooked)",
+            "proteinContent": "15g per cooked cup",
+            "aminoAcids": "Nearly complete; pair with grains",
+            "uses": ["Hummus", "Curry", "Roasted snacks", "Pasta"]
+          },
+          {
+            "legume": "Black beans (cooked)",
+            "proteinContent": "15g per cooked cup",
+            "aminoAcids": "Complete with whole grains",
+            "uses": ["Tacos", "Burritos", "Bowls", "Soups"]
+          },
+          {
+            "legume": "Tofu (firm)",
+            "proteinContent": "20g per 1/2 cup",
+            "aminoAcids": "Complete protein",
+            "uses": ["Stir-fry", "Scrambles", "Smoothies", "Tacos"]
+          },
+          {
+            "legume": "Tempeh",
+            "proteinContent": "19g per 3 oz",
+            "aminoAcids": "Complete protein",
+            "uses": ["Grilled", "Crumbled", "Baked", "Steamed"]
+          }
+        ]
+      },
+      {
+        "id": "protein_002",
+        "topic": "Complete Protein Combinations",
+        "combinations": [
+          {
+            "combo": "Rice + Beans",
+            "timing": "Can be eaten together or separately (body combines amino acids)",
+            "example": "Rice and black bean bowl"
+          },
+          {
+            "combo": "Hummus + Whole Wheat Bread",
+            "timing": "Traditional combination",
+            "example": "Chickpea and bread sandwich"
+          },
+          {
+            "combo": "Lentils + Nuts",
+            "timing": "Together or within same meal",
+            "example": "Lentil salad with walnut crumbles"
+          },
+          {
+            "combo": "Tofu/Tempeh + Vegetables + Grains",
+            "timing": "Single meal combination",
+            "example": "Miso tempeh over quinoa with vegetables"
+          }
+        ]
+      }
+    ],
+    "glutenFreeVeganRecipes": [
+      {
+        "id": "recipe_001",
+        "name": "Gluten-Free Vegan Black Bean Burgers",
+        "servings": "4 patties",
+        "ingredients": [
+          "1 can (15 oz) black beans, drained and mashed",
+          "1/2 cup cooked rice or quinoa",
+          "1/4 cup ground flaxseed",
+          "1/4 cup sautéed mushrooms (finely chopped)",
+          "2 tbsp tamari or soy sauce",
+          "1 tbsp maple syrup",
+          "1 tsp cumin",
+          "1/2 tsp black pepper",
+          "Gluten-free breadcrumbs (1/4 cup, if needed for binding)"
+        ],
+        "instructions": [
+          "Mix all ingredients in a bowl",
+          "Form into 4 patties (refrigerate 30 minutes)",
+          "Pan-fry in oil over medium-high heat",
+          "Cook 4-5 minutes per side until golden",
+          "Serve on gluten-free buns with toppings"
+        ],
+        "nutritionPerPatty": "Protein: 12g | Fat: 6g | Carbs: 24g | Fiber: 6g"
+      },
+      {
+        "id": "recipe_002",
+        "name": "Gluten-Free Vegan Pasta Primavera",
+        "servings": "4",
+        "ingredients": [
+          "8 oz gluten-free pasta",
+          "2 cups mixed vegetables (zucchini, bell pepper, carrots, peas)",
+          "4 cloves garlic, minced",
+          "3 tbsp olive oil",
+          "Juice of 1 lemon",
+          "Salt and pepper to taste",
+          "2 tbsp nutritional yeast",
+          "Fresh basil for garnish"
+        ],
+        "instructions": [
+          "Cook gluten-free pasta according to package directions",
+          "Sauté vegetables in olive oil until tender-crisp",
+          "Add garlic and cook 1 minute",
+          "Toss pasta with vegetables, lemon juice, and seasonings",
+          "Top with nutritional yeast and fresh basil"
+        ],
+        "note": "Nutritional yeast adds cheesy flavor and B vitamins"
+      },
+      {
+        "id": "recipe_003",
+        "name": "Gluten-Free Vegan Chocolate Brownies",
+        "servings": "12",
+        "ingredients": [
+          "1 cup gluten-free flour blend",
+          "1/2 cup cocoa powder",
+          "1 tsp xanthan gum (if not in flour blend)",
+          "1/2 tsp baking powder",
+          "1/4 tsp sea salt",
+          "3/4 cup coconut sugar",
+          "1/2 cup coconut oil (melted)",
+          "1/3 cup unsweetened almond milk",
+          "2 flax eggs (2 tbsp ground flax + 6 tbsp water, rested)",
+          "1 tsp vanilla extract",
+          "1/2 cup vegan chocolate chips"
+        ],
+        "instructions": [
+          "Preheat oven to 350°F, grease 8x8 pan",
+          "Mix dry ingredients (flour, cocoa, xanthan gum, baking powder, salt)",
+          "Whisk wet ingredients (oil, milk, flax eggs, vanilla)",
+          "Combine wet and dry, fold in chocolate chips",
+          "Bake 25-30 minutes until a toothpick comes out with fudgy crumbs",
+          "Cool completely before cutting"
+        ],
+        "texture": "Fudgy and moist"
+      }
+    ],
+    "nutritionConsiderations": [
+      {
+        "id": "nutrition_001",
+        "nutrient": "Vitamin B12",
+        "why": "Only naturally found in animal products",
+        "sources": [
+          "Fortified plant milks",
+          "Fortified nutritional yeast",
+          "Fortified cereals",
+          "B12 supplement (recommended)"
+        ],
+        "dailyNeed": "2.4 mcg per day"
+      },
+      {
+        "id": "nutrition_002",
+        "nutrient": "Iron",
+        "why": "Plant iron (non-heme) less absorbable than animal iron (heme)",
+        "enhancement": "Pair with vitamin C for absorption",
+        "sources": [
+          "Legumes",
+          "Leafy greens",
+          "Seeds",
+          "Fortified cereals"
+        ]
+      },
+      {
+        "id": "nutrition_003",
+        "nutrient": "Calcium",
+        "why": "Gluten-free diets may lower calcium intake",
+        "sources": [
+          "Fortified plant milks",
+          "Leafy greens (calcium-rich, low-oxalate varieties)",
+          "Tofu (if made with calcium)",
+          "Seeds (tahini, sesame)"
+        ]
+      },
+      {
+        "id": "nutrition_004",
+        "nutrient": "Omega-3 Fatty Acids",
+        "why": "Limited sources in plant-based diet",
+        "vegan": "Use flax, chia, hemp seeds, walnuts, or supplement",
+        "algaeOption": "Algae supplement for EPA/DHA (long-chain omega-3s)"
+      }
+    ]
+  }
+}

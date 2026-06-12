@@ -1,0 +1,343 @@
+{
+  "animeFoodCultureGuide": {
+    "title": "Cook Anime: Eat Like Your Favorite Character",
+    "author": "Diana Ault",
+    "description": "Iconic dishes from popular anime and manga, with recipes and cultural context",
+    "introduction": "Anime features some of the most beloved food scenes in entertainment. This guide explores iconic dishes from popular series, the cultural significance of food in anime, and recipes to recreate them at home.",
+    "animeFoodPhenomenon": [
+      {
+        "id": "phenomenon_001",
+        "aspect": "Food as Character Development",
+        "description": "Characters' food preferences and eating habits reveal personality and backstory",
+        "examples": [
+          {
+            "series": "Food Wars (Shokugeki no Soma)",
+            "example": "Soma's humble ramen vs elite French cuisine",
+            "meaning": "Passion for simple, honest food vs pretension"
+          }
+        ]
+      },
+      {
+        "id": "phenomenon_002",
+        "aspect": "Detailed Food Animation",
+        "description": "Studio animators spend significant time on food sequences",
+        "visual": "Close-ups of steam, texture, and presentation",
+        "culturalContext": "Reflects Japanese appreciation for food aesthetics"
+      },
+      {
+        "id": "phenomenon_003",
+        "aspect": "Culinary Excellence Theme",
+        "description": "Many anime feature cooking competitions and culinary school settings",
+        "philosophy": "Food as art form and expression of passion"
+      }
+    ],
+    "iconicDishes": [
+      {
+        "id": "dish_001",
+        "name": "Onigiri (Rice Balls)",
+        "origin": "Japan (ubiquitous)",
+        "culturalSignificance": "Home-cooked comfort food; symbol of motherly love and care",
+        "appearsIn": ["Multiple anime", "Lunch boxes in everyday life"],
+        "ingredients": [
+          "2 cups cooked white rice (warm)",
+          "1/2 tsp salt (for hands)",
+          "Fillings (umeboshi, salmon, tuna mayo, kombu)",
+          "Optional: nori seaweed sheets"
+        ],
+        "technique": [
+          "Wet hands lightly with salted water",
+          "Place small ball of rice in palm",
+          "Add filling in center",
+          "Add more rice on top",
+          "Gently squeeze into triangle or ball shape",
+          "Wrap with nori if desired",
+          "Serve at room temperature"
+        ],
+        "fillings": [
+          {
+            "filling": "Umeboshi (pickled plum)",
+            "characterization": "Sour, traditional"
+          },
+          {
+            "filling": "Salmon (salted or spicy mayo)",
+            "characterization": "Rich, luxurious"
+          },
+          {
+            "filling": "Tuna mayo",
+            "characterization": "Creamy, modern"
+          },
+          {
+            "filling": "Kombu (seaweed)",
+            "characterization": "Umami, traditional"
+          }
+        ]
+      },
+      {
+        "id": "dish_002",
+        "name": "Ramen",
+        "origin": "Japan (adapted from Chinese noodles)",
+        "culturalSignificance": "Comfort food; late-night sustenance; soul of a region",
+        "popularity": "One of most iconic anime food",
+        "components": [
+          {
+            "component": "Broth (tonkotsu, shoyu, miso)",
+            "importance": "Heart of the ramen; takes 12+ hours to make properly"
+          },
+          {
+            "component": "Noodles (alkaline, wavy, chewy)",
+            "importance": "Must have right texture and chew"
+          },
+          {
+            "component": "Toppings",
+            "items": ["Chashu (braised pork)", "Soft-boiled egg", "Nori", "Green onion", "Bamboo shoots", "Mushroom"]
+          }
+        ],
+        "brothTypes": [
+          {
+            "type": "Tonkotsu",
+            "characteristic": "Milky white from pork bones; rich, creamy"
+          },
+          {
+            "type": "Shoyu",
+            "characteristic": "Brown from soy sauce; complex, savory"
+          },
+          {
+            "type": "Miso",
+            "characteristic": "Golden from miso paste; tangy, umami-rich"
+          }
+        ],
+        "timeRequirement": "4-12 hours for proper broth (commercial versions substitute shortcuts)"
+      },
+      {
+        "id": "dish_003",
+        "name": "Bento Box",
+        "origin": "Japan (portable meal format)",
+        "culturalSignificance": "Meal preparation art; careful composition and balance",
+        "appearsIn": ["School lunch scenes; everyday meals"],
+        "components": [
+          {
+            "section": "Main dish area",
+            "contents": "Protein (meat, fish, tofu)",
+            "proportion": "About 1/2 of box"
+          },
+          {
+            "section": "Vegetable area",
+            "contents": "Cooked and raw vegetables",
+            "proportion": "About 1/4 of box"
+          },
+          {
+            "section": "Carbohydrate area",
+            "contents": "Rice or noodles",
+            "proportion": "About 1/4 of box"
+          },
+          {
+            "section": "Accent",
+            "contents": "Pickles, fruit, garnish",
+            "proportion": "Strategic placement"
+          }
+        ],
+        "principlesOfLayout": [
+          "Color variety (red, yellow, green, white, brown)",
+          "Texture contrast (soft, crunchy, chewy)",
+          "Balance of hot and cold",
+          "Thoughtful spacing (foods don't touch)"
+        ]
+      },
+      {
+        "id": "dish_004",
+        "name": "Gyudon (Beef Rice Bowl)",
+        "origin": "Japan (popular fast food)",
+        "culturalSignificance": "Quick, satisfying meal; often eaten in anime when characters are busy or emotional",
+        "appearsIn": ["Food Wars", "Romance anime"],
+        "components": [
+          "Hot steamed rice (base)",
+          "Thinly sliced beef (quick-cooked)",
+          "Onions (sliced and simmered)",
+          "Sweet-savory sauce (soy, mirin, sake, broth)"
+        ],
+        "cooking": [
+          "Sauté onions until translucent",
+          "Add sauce ingredients and bring to boil",
+          "Add thinly-sliced beef; simmer 2-3 minutes until cooked",
+          "Pour entire mixture over hot rice",
+          "Top with raw egg yolk (optional, traditional)",
+          "Serve immediately"
+        ],
+        "emotionalContext": "Often eaten when sad, celebrating, or making important decisions in anime"
+      },
+      {
+        "id": "dish_005",
+        "name": "Takoyaki (Octopus Balls)",
+        "origin": "Japan (street food)",
+        "culturalSignificance": "Festival food; social gathering food; requires special equipment",
+        "technique": [
+          {
+            "step": "Special takoyaki pan",
+            "description": "Spherical molds that create perfect balls"
+          },
+          {
+            "step": "Batter preparation",
+            "description": "Light tempura-like batter (flour, dashi, egg)"
+          },
+          {
+            "step": "Filling (tako piece, green onion, pickled ginger)",
+            "description": "Placed in batter-filled mold"
+          },
+          {
+            "step": "Rolling technique",
+            "description": "Using picks to constantly rotate for perfect sphere (requires skill)"
+          }
+        ],
+        "toppings": [
+          "Takoyaki sauce (like Worcestershire)",
+          "Mayonnaise (drizzle)",
+          "Bonito flakes (placed on top, dance from residual heat)",
+          "Aonori (seaweed powder)"
+        ]
+      },
+      {
+        "id": "dish_006",
+        "name": "Miso Soup",
+        "origin": "Japan (traditional staple)",
+        "culturalSignificance": "First meal of the day; comfort and home; appears in countless anime breakfast scenes",
+        "quickRecipe": [
+          "Heat dashi to steaming (not boiling)",
+          "Dissolve miso in ladle with hot dashi",
+          "Pour through strainer into bowl",
+          "Add tofu cubes and seaweed",
+          "Serve immediately"
+        ],
+        "animeTrope": "Character eating miso soup in morning; sets peaceful, homey tone"
+      },
+      {
+        "id": "dish_007",
+        "name": "Yakitori (Grilled Chicken Skewers)",
+        "origin": "Japan (street food / izakaya staple)",
+        "culturalSignificance": "Casual, social eating; cooked to order; street vendor food",
+        "varieties": [
+          {
+            "type": "Tori (chicken breast)",
+            "texture": "Tender, mild"
+          },
+          {
+            "type": "Negima (chicken + green onion)",
+            "characteristic": "Balanced flavors"
+          },
+          {
+            "type": "Tsubasa (chicken wings)",
+            "characteristic": "Crispy, flavorful"
+          },
+          {
+            "type": "Tsukune (chicken meatball)",
+            "characteristic": "Savory, juicy"
+          }
+        ],
+        "glazes": [
+          {
+            "glaze": "Tare (sweet soy glaze)",
+            "description": "Simmered soy + mirin + sake"
+          },
+          {
+            "glaze": "Salt (Shio)",
+            "description": "Simple salt finishing"
+          }
+        ]
+      },
+      {
+        "id": "dish_008",
+        "name": "Crepe (Japanese-style)",
+        "origin": "France adopted by Japan (street food)",
+        "culturalSignificance": "Modern, trendy food; often eaten while shopping or at festivals",
+        "fillings": [
+          "Nutella and strawberries",
+          "Fresh fruit and whipped cream",
+          "Chocolate and banana",
+          "Savory: egg, ham, cheese"
+        ],
+        "preparation": [
+          "Thin pancake-style crepe (different from French - thinner, more delicate)",
+          "Filled with sweet or savory ingredients",
+          "Wrapped in paper cone for eating while walking"
+        ]
+      }
+    ],
+    "foodAnimeTropes": [
+      {
+        "id": "trope_001",
+        "trope": "Food Orgasm Reaction",
+        "description": "Over-the-top reaction to delicious food (exaggerated pleasure)",
+        "appearance": "Eyes rolling, dramatic expressions, sometimes clothing falling off",
+        "culturalNote": "Exaggerates Japanese appreciation for quality ingredients and preparation"
+      },
+      {
+        "id": "trope_002",
+        "trope": "Comfort Food Moment",
+        "description": "Character eating comforting home-cooked meal to feel better",
+        "common": "Miso soup, ramen, bento box from mother/lover",
+        "emotionalArc": "Connection to home and care"
+      },
+      {
+        "id": "trope_003",
+        "trope": "Cooking as Love Language",
+        "description": "Character expresses love/care through cooking",
+        "examples": [
+          "Making elaborate bento for beloved",
+          "Teaching someone to cook",
+          "Sharing a special meal"
+        ]
+      },
+      {
+        "id": "trope_004",
+        "trope": "Food Competition/Tournament",
+        "description": "Culinary skill determines winner",
+        "emphasis": "Technical skill, creativity, emotional connection through food"
+      }
+    ],
+    "cuisineByRegion": [
+      {
+        "id": "region_001",
+        "region": "Tokyo/Kanto",
+        "characteristics": "Lighter sauces, delicate flavors; influenced by imperial court cuisine",
+        "dishes": ["Sushi", "Light broths", "Minimalist plating"]
+      },
+      {
+        "id": "region_002",
+        "region": "Kyoto/Kansai",
+        "characteristics": "Preserved foods, tofu specialties, vegetarian Buddhist cuisine",
+        "dishes": ["Kaiseki", "Yudofu (tofu hot pot)", "Kyoto-style pickles"]
+      },
+      {
+        "id": "region_003",
+        "region": "Okinawa",
+        "characteristics": "Unique blend of Japanese and Asian influences",
+        "dishes": ["Goya champuru (bitter melon stir-fry)", "Champuru (stir-fry style)"]
+      },
+      {
+        "id": "region_004",
+        "region": "Hiroshima",
+        "characteristics": "Oyster specialties, Hiroshima-style okonomiyaki",
+        "dishes": ["Okonomiyaki (savory pancake with layers)"]
+      }
+    ],
+    "bashi_cooking_techniques": [
+      {
+        "id": "tech_001",
+        "technique": "Teppanyaki (Flat-Top Cooking)",
+        "description": "Cooking on large griddle in front of diners (theatrical)",
+        "appearance": "Visually impressive; common in anime dining scenes"
+      },
+      {
+        "id": "tech_002",
+        "technique": "Okonomiyaki (Savory Pancake)",
+        "description": "Japanese-style cabbage pancake cooked and assembled on griddle",
+        "appeal": "Interactive cooking; customizable"
+      },
+      {
+        "id": "tech_003",
+        "technique": "Shabu-Shabu (Hot Pot)",
+        "description": "Diners cook thinly-sliced ingredients by dunking in simmering broth",
+        "social": "Highly communal dining experience"
+      }
+    ]
+  }
+}

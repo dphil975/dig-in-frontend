@@ -1,0 +1,648 @@
+{
+  "nutritionalBiochemistryGuide": {
+    "title": "Nutritional Biochemistry of the Vitamins",
+    "author": "David A. Bender",
+    "description": "Understand how vitamins function in your body and optimize your diet for health",
+    "introduction": "Vitamins are essential organic compounds that your body cannot produce in sufficient quantities. Each vitamin plays crucial roles in metabolism, immunity, and cellular function. This guide covers vitamin chemistry, dietary sources, absorption, and deficiency signs.",
+    "vitaminCategories": [
+      {
+        "category": "Fat-Soluble Vitamins",
+        "description": "Stored in body fat; can accumulate to toxic levels if consumed in excess",
+        "absorption": "Require dietary fat for absorption; store in liver and adipose tissue",
+        "toxicity": "Possible with high supplementation",
+        "vitamins": ["Vitamin A", "Vitamin D", "Vitamin E", "Vitamin K"]
+      },
+      {
+        "category": "Water-Soluble Vitamins",
+        "description": "Not stored in body; excess is excreted in urine; must be consumed regularly",
+        "absorption": "Don't require fat for absorption; absorbed directly into bloodstream",
+        "toxicity": "Generally safe (excess excreted)",
+        "vitamins": ["Vitamin C", "B-Complex vitamins (B1-B12)", "Folate"]
+      }
+    ],
+    "vitamins": [
+      {
+        "id": "vit_001",
+        "name": "Vitamin A (Retinol)",
+        "type": "Fat-Soluble",
+        "chemicalForm": "Retinol, retinal, retinoic acid",
+        "recommendedDaily": "700 mcg (women), 900 mcg (men)",
+        "functions": [
+          "Vision (retinal protein in retina)",
+          "Immune system regulation",
+          "Skin cell growth and repair",
+          "Gene regulation",
+          "Cell differentiation"
+        ],
+        "dietarySources": {
+          "animalBased": [
+            "Liver (beef, chicken, pork) - highest concentration",
+            "Fatty fish (salmon, mackerel)",
+            "Egg yolks",
+            "Dairy products",
+            "Butter"
+          ],
+          "plantBased": [
+            "Orange vegetables (carrots, sweet potatoes, squash)",
+            "Dark leafy greens (spinach, kale, collards)",
+            "Red peppers",
+            "Apricots",
+            "Cantaloupe"
+          ],
+          "note": "Plant sources contain beta-carotene (converted to retinol); conversion is 12:1 ratio"
+        },
+        "absorptionFactors": [
+          "Requires dietary fat for absorption",
+          "Best absorbed with protein",
+          "Affected by liver function",
+          "Zinc needed for conversion from beta-carotene"
+        ],
+        "deficiencySigns": [
+          "Night blindness (first sign)",
+          "Dry eyes (xerophthalmia)",
+          "Poor wound healing",
+          "Increased infections",
+          "Dry, scaly skin",
+          "Hair loss"
+        ],
+        "toxicityLevel": "Above 3,000 mcg daily (from supplements, not food)",
+        "toxicitySymptoms": [
+          "Headaches",
+          "Nausea and vomiting",
+          "Blurred vision",
+          "Birth defects (if pregnant)"
+        ],
+        "cookingConsiderations": "Fat-soluble, survives cooking; fat aids absorption"
+      },
+      {
+        "id": "vit_002",
+        "name": "Vitamin D (Calciferol)",
+        "type": "Fat-Soluble",
+        "chemicalForm": "Cholecalciferol (D3 from animals), Ergocalciferol (D2 from plants)",
+        "recommendedDaily": "600-800 IU, up to 4,000 IU for adults",
+        "functions": [
+          "Calcium absorption in intestines",
+          "Bone mineralization",
+          "Immune system regulation",
+          "Neuromuscular function",
+          "Cell growth regulation",
+          "Inflammation control"
+        ],
+        "bodySynthesis": "Sunlight triggers vitamin D synthesis in skin (UVB exposure)",
+        "dietarySources": {
+          "richSources": [
+            "Fatty fish (salmon, mackerel, herring, sardines) - 400-1000 IU per serving",
+            "Fish liver oils (cod liver oil) - highest source",
+            "Egg yolks - 40 IU per yolk",
+            "Mushrooms exposed to sunlight",
+            "Fortified milk and cereals"
+          ],
+          "note": "Few natural foods are rich in vitamin D; sunlight is primary source"
+        },
+        "sunlightExposure": {
+          "optimalExposure": "10-30 minutes midday sun, 3-4 times weekly",
+          "factors": [
+            "Latitude (less synthesis in northern climates)",
+            "Season (minimal synthesis in winter for most locations)",
+            "Skin tone (darker skin requires more sun exposure)",
+            "Age (older adults synthesize less)",
+            "Sunscreen (blocks synthesis)"
+          ]
+        },
+        "absorptionFactors": [
+          "Requires dietary fat",
+          "Requires adequate calcium and phosphorus",
+          "Liver and kidney function important",
+          "Age affects absorption efficiency"
+        ],
+        "deficiencySigns": [
+          "Weak, achy bones and muscles",
+          "Bone pain",
+          "Muscle weakness",
+          "Fatigue and mood changes",
+          "Frequent infections",
+          "Slow wound healing",
+          "Osteomalacia (soft bones in adults)",
+          "Rickets (in children)"
+        ],
+        "toxicityLevel": "Above 4,000 IU daily (prolonged overdose)",
+        "toxicitySymptoms": [
+          "High blood calcium (hypercalcemia)",
+          "Nausea and vomiting",
+          "Kidney damage",
+          "Weakness and confusion"
+        ],
+        "cookingConsiderations": "Heat-stable; survives cooking"
+      },
+      {
+        "id": "vit_003",
+        "name": "Vitamin E (Tocopherols)",
+        "type": "Fat-Soluble",
+        "chemicalForm": "Alpha, beta, gamma, delta tocopherols",
+        "recommendedDaily": "15 mg (alpha-tocopherol)",
+        "functions": [
+          "Antioxidant protection",
+          "Prevents cellular damage from free radicals",
+          "Supports immune function",
+          "Protects cell membranes",
+          "Red blood cell health"
+        ],
+        "dietarySources": [
+          "Vegetable oils (sunflower, safflower, wheat germ)",
+          "Seeds (sunflower, pumpkin)",
+          "Nuts (almonds, hazelnuts, peanuts)",
+          "Spinach and other leafy greens",
+          "Avocado",
+          "Whole grains",
+          "Fortified cereals"
+        ],
+        "absorptionFactors": [
+          "Requires dietary fat",
+          "Requires adequate fat absorption (intestinal health)",
+          "Interacts with selenium (works together as antioxidant)",
+          "Protected from oxidation by vitamin C"
+        ],
+        "deficiencySigns": [
+          "Nerve damage (peripheral neuropathy)",
+          "Muscle weakness",
+          "Vision problems",
+          "Immune dysfunction",
+          "Rare - usually only with fat malabsorption disorders"
+        ],
+        "toxicityLevel": "Generally safe from food; high supplement doses (above 1000 IU daily) may have risks",
+        "interactionWithOtherNutrients": "Works with selenium and vitamin C as antioxidant system",
+        "cookingConsiderations": "Heat-sensitive; some loss during cooking; protected by fat"
+      },
+      {
+        "id": "vit_004",
+        "name": "Vitamin K (Phylloquinone)",
+        "type": "Fat-Soluble",
+        "chemicalForm": "K1 (phylloquinone) from plants, K2 (menaquinone) from bacteria",
+        "recommendedDaily": "90 mcg (women), 120 mcg (men)",
+        "functions": [
+          "Blood clotting (activates clotting factors)",
+          "Bone mineralization",
+          "Calcium regulation",
+          "Cell growth and differentiation"
+        ],
+        "dietarySources": {
+          "highestSources": [
+            "Dark leafy greens (kale, spinach, collards, broccoli)",
+            "Cabbage",
+            "Broccoli",
+            "Brussels sprouts"
+          ],
+          "moderateSources": [
+            "Asparagus",
+            "Green beans",
+            "Lettuce",
+            "Blueberries",
+            "Pomegranate"
+          ],
+          "bacterialSynthesis": "Gut bacteria produce K2"
+        },
+        "absorptionFactors": [
+          "Requires dietary fat for absorption",
+          "Heat-stable; survives cooking",
+          "Fat from cooking improves absorption",
+          "Antibiotics may reduce bacterial K2 synthesis"
+        ],
+        "deficiencySigns": [
+          "Easy bruising",
+          "Excessive bleeding",
+          "Blood in urine or stool",
+          "Prolonged bleeding from cuts",
+          "Heavy menstrual bleeding",
+          "Poor bone health (K2 deficiency)"
+        ],
+        "toxicity": "Fat-soluble K is not toxic from food; supplements can interfere with blood thinners",
+        "medicationInteraction": "Warfarin (blood thinner) patients should maintain consistent K intake",
+        "cookingConsiderations": "Heat-stable; fat in cooking aids absorption"
+      },
+      {
+        "id": "vit_005",
+        "name": "Vitamin C (Ascorbic Acid)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "75 mg (women), 90 mg (men), 35 mg extra for smokers",
+        "functions": [
+          "Collagen synthesis (structural protein)",
+          "Antioxidant protection",
+          "Immune system support",
+          "Iron absorption enhancement (especially non-heme iron)",
+          "Wound healing",
+          "Neurotransmitter synthesis"
+        ],
+        "dietarySources": {
+          "excellentSources": [
+            "Citrus fruits (oranges, lemons, grapefruit) - 50-85 mg per medium fruit",
+            "Berries (strawberries, blueberries)",
+            "Kiwi - 65 mg per fruit",
+            "Cantaloupe - 47 mg per cup",
+            "Papaya - 88 mg per cup"
+          ],
+          "goodSources": [
+            "Tomatoes",
+            "Bell peppers (red has more)",
+            "Broccoli",
+            "Cabbage",
+            "Kale",
+            "Brussels sprouts"
+          ]
+        },
+        "absorptionFactors": [
+          "Absorbed in small intestine",
+          "Requires stomach acid for absorption",
+          "Meat/fish proteins enhance absorption",
+          "Competes with other nutrients for absorption"
+        ],
+        "deficiencySigns": [
+          "Slow wound healing",
+          "Weak connective tissue",
+          "Easy bruising",
+          "Joint pain and swelling",
+          "Anemia (iron absorption issue)",
+          "Weakened immune system",
+          "Scurvy (severe deficiency) - rare in modern times"
+        ],
+        "toxicity": "Water-soluble; excess excreted; high doses (>2000 mg) may cause diarrhea or kidney stones",
+        "cookingConsiderations": [
+          "Water-soluble; leaches into cooking water",
+          "Heat-sensitive; destroyed by high temperatures",
+          "Oxidizes when exposed to air",
+          "Minimal cooking time preserves content",
+          "Raw consumption retains maximum vitamin C"
+        ],
+        "interactionWithIron": "Vitamin C enhances absorption of non-heme iron from plant sources"
+      },
+      {
+        "id": "vit_006",
+        "name": "Thiamine (Vitamin B1)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "1.1 mg (women), 1.2 mg (men)",
+        "functions": [
+          "Energy metabolism (carbohydrate metabolism)",
+          "Nervous system function",
+          "Muscle function",
+          "Heart function",
+          "Brain development"
+        ],
+        "dietarySources": [
+          "Whole grains and enriched grains",
+          "Pork (excellent source)",
+          "Seeds (sunflower, pumpkin)",
+          "Legumes (beans, lentils)",
+          "Nuts",
+          "Fortified cereals",
+          "Asparagus"
+        ],
+        "deficiencySigns": [
+          "Fatigue and weakness",
+          "Nerve damage (beriberi)",
+          "Poor memory and concentration",
+          "Muscle pain and weakness",
+          "Heart problems",
+          "Wernicke-Korsakoff syndrome (in alcoholics)"
+        ],
+        "vulnerability": "Alcoholics at high risk; alcohol reduces absorption and storage",
+        "cookingConsiderations": "Water-soluble and heat-sensitive; leaches into cooking water"
+      },
+      {
+        "id": "vit_007",
+        "name": "Riboflavin (Vitamin B2)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "1.1 mg (women), 1.3 mg (men)",
+        "functions": [
+          "Energy production (FAD coenzyme)",
+          "Antioxidant protection",
+          "Growth and cell reproduction",
+          "Eye health",
+          "Skin health"
+        ],
+        "dietarySources": [
+          "Eggs",
+          "Almonds",
+          "Mushrooms",
+          "Fortified cereals",
+          "Salmon",
+          "Chicken",
+          "Milk and yogurt",
+          "Spinach"
+        ],
+        "deficiencySigns": [
+          "Cracks at corners of mouth",
+          "Sore throat",
+          "Inflamed tongue",
+          "Skin irritation",
+          "Eye sensitivity to light",
+          "Fatigue"
+        ],
+        "note": "Deficiency rare in developed countries",
+        "cookingConsiderations": "Water-soluble; sensitive to light and heat"
+      },
+      {
+        "id": "vit_008",
+        "name": "Niacin (Vitamin B3)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "14 mg (women), 16 mg (men)",
+        "functions": [
+          "Energy metabolism",
+          "DNA repair and replication",
+          "Cholesterol management",
+          "Brain and nervous system function",
+          "Skin health"
+        ],
+        "dietarySources": [
+          "Chicken and turkey",
+          "Tuna and salmon",
+          "Peanuts",
+          "Mushrooms",
+          "Brown rice",
+          "Fortified cereals and bread",
+          "Avocado"
+        ],
+        "bodyProduction": "Body can synthesize niacin from tryptophan (amino acid)",
+        "deficiencySigns": [
+          "Dermatitis (skin problems)",
+          "Diarrhea",
+          "Dementia",
+          "Mouth sores",
+          "Pellagra (severe deficiency) - 'Four Ds': dermatitis, diarrhea, dementia, death"
+        ],
+        "toxicity": "High supplements (>2g daily) may cause flushing and liver damage",
+        "cookingConsiderations": "Heat and water-soluble; some loss in cooking"
+      },
+      {
+        "id": "vit_009",
+        "name": "Pantothenic Acid (Vitamin B5)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "5 mg",
+        "functions": [
+          "Energy metabolism (CoA coenzyme)",
+          "Hormone and cholesterol synthesis",
+          "Red blood cell formation",
+          "Immune function",
+          "Stress response"
+        ],
+        "dietarySources": [
+          "Mushrooms",
+          "Egg yolks",
+          "Avocado",
+          "Chicken",
+          "Fortified cereals",
+          "Legumes",
+          "Whole grains"
+        ],
+        "note": "Widespread in foods; deficiency extremely rare",
+        "deficiencySigns": [
+          "Fatigue",
+          "Numbness in feet and hands",
+          "Muscle cramps (rare)"
+        ]
+      },
+      {
+        "id": "vit_010",
+        "name": "Vitamin B6 (Pyridoxine)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "1.3 mg (adults), 1.5-1.7 mg (over 50)",
+        "functions": [
+          "Amino acid metabolism",
+          "Brain development and function",
+          "Immune system regulation",
+          "Hemoglobin formation",
+          "Protein metabolism"
+        ],
+        "dietarySources": [
+          "Chickpeas",
+          "Salmon",
+          "Potatoes",
+          "Chicken",
+          "Bananas",
+          "Fortified cereals",
+          "Spinach",
+          "Avocado"
+        ],
+        "absorptionFactors": [
+          "Better absorbed with protein",
+          "Some forms better absorbed than others",
+          "Vitamin B12 and B6 work together"
+        ],
+        "deficiencySigns": [
+          "Weak immune system",
+          "Inflammation",
+          "Confusion",
+          "Depression",
+          "Mouth sores",
+          "Anemia"
+        ],
+        "toxicity": "High doses (>200 mg daily) may cause nerve damage"
+      },
+      {
+        "id": "vit_011",
+        "name": "Folate (Vitamin B9)",
+        "type": "Water-Soluble",
+        "chemicalForm": "Folate (natural), Folic acid (synthetic supplement form)",
+        "recommendedDaily": "400 mcg",
+        "importance": "Critical for cell division and DNA synthesis; especially important during pregnancy",
+        "functions": [
+          "DNA synthesis and repair",
+          "Cell division",
+          "Red blood cell formation",
+          "Homocysteine metabolism",
+          "Fetal development",
+          "Neural tube formation (brain/spinal cord development)"
+        ],
+        "dietarySources": [
+          "Dark leafy greens (spinach, kale, collards)",
+          "Legumes (lentils, beans, chickpeas) - excellent sources",
+          "Asparagus",
+          "Broccoli",
+          "Brussels sprouts",
+          "Fortified grains and cereals",
+          "Avocado"
+        ],
+        "pregnancyImportance": "400-800 mcg daily needed to prevent neural tube defects",
+        "deficiencySigns": [
+          "Anemia (megaloblastic)",
+          "Weak immune system",
+          "Neurological problems",
+          "Birth defects if deficient during pregnancy",
+          "Fatigue and weakness",
+          "Mouth sores"
+        ],
+        "interactionWithB12": "B12 and folate work together; B12 deficiency can mask as folate deficiency",
+        "cookingConsiderations": [
+          "Water-soluble; leaches into cooking water",
+          "Heat-sensitive; destroyed by high temperatures",
+          "Raw or lightly cooked vegetables retain more folate"
+        ]
+      },
+      {
+        "id": "vit_012",
+        "name": "Cobalamin (Vitamin B12)",
+        "type": "Water-Soluble",
+        "recommendedDaily": "2.4 mcg",
+        "chemicalForm": "Contains cobalt metal; unique among vitamins",
+        "functions": [
+          "Red blood cell formation",
+          "DNA synthesis",
+          "Nervous system maintenance",
+          "Myelin sheath integrity",
+          "Energy metabolism"
+        ],
+        "dietarySources": {
+          "animalOnly": [
+            "Beef and organ meats (liver excellent source)",
+            "Fish and seafood (salmon, tuna, clams)",
+            "Dairy products",
+            "Eggs",
+            "Poultry"
+          ],
+          "note": "NO natural plant sources; vegetarians/vegans need supplements or fortified foods"
+        },
+        "absorptionRequirements": [
+          "Intrinsic factor (protein from stomach) required for absorption",
+          "Stomach acid needed to release B12 from food",
+          "Absorption in terminal ileum (small intestine)"
+        ],
+        "absorptionProblems": [
+          "Pernicious anemia (lack of intrinsic factor)",
+          "Age-related decline in absorption",
+          "Gastrointestinal surgery",
+          "Certain medications (reduce stomach acid)"
+        ],
+        "deficiencySigns": [
+          "Megaloblastic anemia",
+          "Neurological problems (numbness, tingling in extremities)",
+          "Memory problems",
+          "Confusion and dementia",
+          "Difficulty walking",
+          "Depression",
+          "Fatigue and weakness",
+          "Mouth sores"
+        ],
+        "deficiencyRisk": "Especially high in vegans, elderly, those with absorption issues",
+        "toxicity": "Water-soluble; excess excreted; no known toxicity"
+      }
+    ],
+    "mineralNutrients": [
+      {
+        "id": "min_001",
+        "name": "Calcium",
+        "recommendedDaily": "1000-1300 mg depending on age",
+        "functions": [
+          "Bone and teeth structure",
+          "Muscle contraction",
+          "Nerve transmission",
+          "Blood clotting",
+          "Hormone regulation"
+        ],
+        "sources": [
+          "Dairy products (milk, yogurt, cheese)",
+          "Leafy greens (collards, kale, bok choy - better absorbed than spinach)",
+          "Fortified plant milks",
+          "Fish with bones (sardines, salmon)",
+          "Almonds",
+          "Tofu (if prepared with calcium)"
+        ],
+        "absorptionFactors": [
+          "Vitamin D essential for absorption",
+          "Stomach acid aids absorption",
+          "Oxalic acid (in spinach) inhibits absorption",
+          "Phytic acid (in grains/legumes) reduces absorption"
+        ]
+      },
+      {
+        "id": "min_002",
+        "name": "Iron",
+        "recommendedDaily": "8-18 mg depending on age/gender",
+        "functions": [
+          "Oxygen transport (hemoglobin)",
+          "Oxygen storage (myoglobin)",
+          "Enzyme function",
+          "Immune function"
+        ],
+        "types": [
+          {
+            "type": "Heme Iron",
+            "source": "Animal products (meat, poultry, fish)",
+            "absorption": "15-35% (highly absorbable)"
+          },
+          {
+            "type": "Non-heme Iron",
+            "source": "Plant products (beans, greens, fortified cereals)",
+            "absorption": "2-20% (less absorbable)",
+            "enhancement": "Vitamin C dramatically improves absorption"
+          }
+        ],
+        "deficiencySigns": [
+          "Anemia",
+          "Fatigue and weakness",
+          "Shortness of breath",
+          "Dizziness",
+          "Pale skin",
+          "Poor concentration"
+        ]
+      }
+    ],
+    "nutritionalOptimization": [
+      {
+        "id": "opt_001",
+        "strategy": "Vitamin C Enhances Iron Absorption",
+        "application": "Pair plant-based iron sources with vitamin C",
+        "examples": [
+          "Beans with tomato sauce",
+          "Spinach salad with citrus dressing",
+          "Lentil stew with bell peppers",
+          "Fortified cereal with orange juice"
+        ],
+        "science": "Vitamin C reduces iron to more absorbable form"
+      },
+      {
+        "id": "opt_002",
+        "strategy": "Fat Enables Fat-Soluble Vitamin Absorption",
+        "application": "Pair vegetables with healthy fats",
+        "examples": [
+          "Spinach salad with olive oil dressing",
+          "Roasted carrots with butter",
+          "Sweet potatoes with oil",
+          "Leafy greens with nuts or seeds"
+        ],
+        "science": "Fat-soluble vitamins (A, D, E, K) require dietary fat for absorption"
+      },
+      {
+        "id": "opt_003",
+        "strategy": "Minimize Nutrient Loss in Cooking",
+        "techniques": [
+          "Steam instead of boil (water-soluble vitamins don't leach)",
+          "Minimal cooking time (preserve vitamins)",
+          "Keep skin on vegetables (nutrients in skin)",
+          "Eat vegetables raw when possible",
+          "Use cooking water in soups/stocks (nutrient recovery)"
+        ]
+      }
+    ],
+    "deficiencyTesting": [
+      {
+        "id": "test_001",
+        "nutrient": "Vitamin B12",
+        "test": "Serum cobalamin level",
+        "normalRange": "200-900 pg/mL",
+        "interpretation": "Low levels indicate deficiency; neurological symptoms can occur even with borderline levels"
+      },
+      {
+        "id": "test_002",
+        "nutrient": "Folate",
+        "test": "Serum folate or RBC folate",
+        "normalRange": "5.4-16 ng/mL",
+        "note": "RBC folate is more accurate indicator of body stores"
+      },
+      {
+        "id": "test_003",
+        "nutrient": "Vitamin D",
+        "test": "25-hydroxyvitamin D",
+        "normalRange": "30-100 ng/mL (30-75 is adequate)",
+        "note": "Deficiency common, especially in northern climates and winter"
+      }
+    ]
+  }
+}

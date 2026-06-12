@@ -1,0 +1,308 @@
+{
+  "knifeSkillsGuide": {
+    "title": "Knife Skills - An Illustrated Kitchen Guide",
+    "author": "Bill Collins",
+    "description": "Master the fundamentals of knife selection, grip, and cutting techniques",
+    "introduction": "Proper knife skills are the foundation of efficient, safe, and professional cooking. This guide covers knife types, sharpening, gripping, and all essential cutting techniques.",
+    "knifeTypes": [
+      {
+        "id": "knife_001",
+        "name": "Chef's Knife",
+        "length": "8 inches",
+        "usage": "General-purpose cutting, chopping, slicing",
+        "bladeCurve": "Curved blade allows rocking motion",
+        "bestFor": [
+          "Vegetables (onions, carrots, celery)",
+          "Herbs (parsley, basil, cilantro)",
+          "Meat (slicing and dicing)",
+          "Fruits (apples, peaches, melons)"
+        ],
+        "technique": "Rock motion - tip stays on board, handle rises and falls",
+        "safetyTip": "Curl fingers into claw position when holding food"
+      },
+      {
+        "id": "knife_002",
+        "name": "Paring Knife",
+        "length": "3-4 inches",
+        "usage": "Detailed work, small cuts",
+        "bladeCurve": "Slight curve",
+        "bestFor": [
+          "Peeling vegetables",
+          "Deveining shrimp",
+          "Removing stems",
+          "Detailed garnishes",
+          "Small fruits"
+        ],
+        "technique": "Held like a pencil, controlled cuts",
+        "safetyTip": "Keep thumb behind blade, away from cutting edge"
+      },
+      {
+        "id": "knife_003",
+        "name": "Serrated Bread Knife",
+        "length": "10 inches",
+        "usage": "Slicing bread and soft items",
+        "bladeCurve": "Serrated edge (saw-tooth)",
+        "bestFor": [
+          "Crusty bread",
+          "Soft breads",
+          "Tomatoes",
+          "Cakes",
+          "Watermelon"
+        ],
+        "technique": "Sawing motion - never apply downward pressure alone",
+        "safetyTip": "Serrated blades are sharp - handle carefully"
+      },
+      {
+        "id": "knife_004",
+        "name": "Boning Knife",
+        "length": "5-6 inches",
+        "usage": "Butchering and deboning",
+        "bladeCurve": "Curved, narrow blade",
+        "bestFor": [
+          "Removing bones from meat",
+          "Separating meat from skin",
+          "Following contours of meat",
+          "Detailed butchering"
+        ],
+        "technique": "Controlled cutting following bone contours",
+        "safetyTip": "Sharp blade requires respect - careful thumb placement"
+      },
+      {
+        "id": "knife_005",
+        "name": "Utility Knife",
+        "length": "5-7 inches",
+        "usage": "General cutting, between chef's and paring",
+        "bladeCurve": "Slight curve",
+        "bestFor": [
+          "Medium vegetables",
+          "Small fruits",
+          "Cheese slicing",
+          "Sandwich prep"
+        ],
+        "technique": "Combination of rocking and slicing",
+        "safetyTip": "Maintain firm grip and control"
+      }
+    ],
+    "grips": [
+      {
+        "id": "grip_001",
+        "name": "Chef's Grip (Proper Grip)",
+        "description": "Professional grip for chef's knife",
+        "steps": [
+          "Hold knife handle with three fingers: index, middle, and ring",
+          "Rest pinky and thumb under the handle",
+          "Keep wrist straight, not bent",
+          "Let blade rest on middle knuckle",
+          "Index and middle fingers behind blade, ready to control"
+        ],
+        "advantage": "Provides maximum control and safety",
+        "safetyLevel": "High - professional standard"
+      },
+      {
+        "id": "grip_002",
+        "name": "Claw Grip (Food Holding)",
+        "description": "How to safely hold food being cut",
+        "steps": [
+          "Curl fingers of food-holding hand into a claw",
+          "Knuckles face the blade",
+          "Thumb tucked behind fingers",
+          "Fingertips point downward, not exposed",
+          "Move fingers back as you cut (advance the claw)"
+        ],
+        "advantage": "Protects fingertips from blade",
+        "safetyLevel": "Critical - prevents cuts"
+      },
+      {
+        "id": "grip_003",
+        "name": "Pinch Grip",
+        "description": "For paring knife and detailed work",
+        "steps": [
+          "Pinch the blade between thumb and index finger",
+          "Other fingers curl around handle",
+          "Blade stays low to board",
+          "Use for controlled, precise cuts"
+        ],
+        "advantage": "Maximum precision for small cuts",
+        "safetyLevel": "Medium - requires focus"
+      }
+    ],
+    "cuttingTechniques": [
+      {
+        "id": "cut_001",
+        "name": "Dice",
+        "description": "Cut into uniform cubes",
+        "sizes": ["Brunoise (1/8 inch)", "Small dice (1/4 inch)", "Medium dice (1/2 inch)", "Large dice (3/4 inch)"],
+        "steps": [
+          "Cut vegetable into planks/slices of desired thickness",
+          "Stack slices and cut into batons (sticks)",
+          "Turn batons and cut across to create cubes",
+          "Smaller stacks for smaller dice"
+        ],
+        "bestFor": [
+          "Onions for sauces",
+          "Carrots for soups",
+          "Peppers for salsas",
+          "Celery for stocks"
+        ],
+        "timing": "Consistent size ensures even cooking",
+        "technique": "Let knife do the work - smooth cutting motion"
+      },
+      {
+        "id": "cut_002",
+        "name": "Julienne",
+        "description": "Cut into thin, matchstick-like strips",
+        "size": "1/8 inch x 1/8 inch x 2-3 inches long",
+        "steps": [
+          "Square off the vegetable first (remove rounded sides)",
+          "Cut into thin planks",
+          "Stack planks and cut into sticks",
+          "All sticks should be uniform length"
+        ],
+        "bestFor": [
+          "Carrots for stir-fry",
+          "Bell peppers for garnish",
+          "Zucchini for pasta",
+          "Potatoes for fries"
+        ],
+        "timing": "Uniform size ensures even cooking",
+        "technique": "Consistent pressure and speed"
+      },
+      {
+        "id": "cut_003",
+        "name": "Brunoise",
+        "description": "Finest, most uniform dice",
+        "size": "1/8 inch cubes",
+        "steps": [
+          "Similar to dice but with thinner starting slices",
+          "Results in very small, perfect cubes",
+          "Requires precision and practice",
+          "Usually done with medium-sized vegetables"
+        ],
+        "bestFor": [
+          "Fine sauces",
+          "Elegant garnishes",
+          "Soups (for presentation)",
+          "Professional plating"
+        ],
+        "timing": "Small size = quick cooking",
+        "technique": "Precision is more important than speed"
+      },
+      {
+        "id": "cut_004",
+        "name": "Slice",
+        "description": "Cut perpendicular to length",
+        "thickness": "Variable (thin, medium, thick)",
+        "steps": [
+          "Hold vegetable or meat firmly",
+          "Cut perpendicular to the length",
+          "Use rocking motion for vegetables",
+          "Use smooth slicing motion for meat"
+        ],
+        "bestFor": [
+          "Tomatoes (thin slices)",
+          "Onions (rings or slices)",
+          "Meat (against the grain)",
+          "Bread (serrated knife)"
+        ],
+        "timing": "Thin slices cook quickly",
+        "technique": "Cut against the grain for meat"
+      },
+      {
+        "id": "cut_005",
+        "name": "Mince",
+        "description": "Cut into very small pieces",
+        "size": "Approximately 1/16 inch",
+        "steps": [
+          "Roughly chop the ingredient first",
+          "Gather into a pile",
+          "Rock the knife over it repeatedly",
+          "Continue until desired fineness"
+        ],
+        "bestFor": [
+          "Garlic",
+          "Herbs (parsley, basil)",
+          "Ginger",
+          "Chiles"
+        ],
+        "timing": "Very fine particles distribute flavor",
+        "technique": "Rocking motion with control"
+      },
+      {
+        "id": "cut_006",
+        "name": "Chop",
+        "description": "Rough, irregular cuts",
+        "size": "Irregular, various sizes",
+        "steps": [
+          "Use rocking or chopping motion",
+          "Size doesn't need to be uniform",
+          "Faster than precise cuts",
+          "For ingredients that will be blended or cooked down"
+        ],
+        "bestFor": [
+          "Rough vegetable prep",
+          "Ingredients for stocks",
+          "Food processor prep",
+          "Quick meal prep"
+        ],
+        "timing": "Speed is priority, not uniformity",
+        "technique": "Let the knife's weight do the work"
+      }
+    ],
+    "sharpening": [
+      {
+        "id": "sharp_001",
+        "type": "Honing Steel (Steel)",
+        "frequency": "Before each use",
+        "purpose": "Realigns blade edge (not sharpening)",
+        "steps": [
+          "Hold honing steel vertical (tip down on board)",
+          "Place knife heel against steel at 15-20 degree angle",
+          "Draw knife down and back in one smooth motion",
+          "Repeat 5-10 times on each side",
+          "Alternate sides with each stroke"
+        ],
+        "result": "Realigned edge, improved cutting performance"
+      },
+      {
+        "id": "sharp_002",
+        "type": "Whetstone",
+        "frequency": "Every few months or when needed",
+        "purpose": "Sharpens blade (removes metal)",
+        "steps": [
+          "Soak whetstone 10-15 minutes",
+          "Place on towel to prevent slipping",
+          "Start with coarse side if dull",
+          "Place blade at 15-20 degree angle",
+          "Draw knife diagonally across stone (heel to tip)",
+          "Flip and repeat on other side",
+          "End with fine-grit side for polishing"
+        ],
+        "result": "Sharp blade ready for precise cutting"
+      },
+      {
+        "id": "sharp_003",
+        "type": "Professional Sharpening",
+        "frequency": "1-2 times per year",
+        "purpose": "Professional restoration of blade",
+        "steps": [
+          "Use professional sharpening service",
+          "Or electric knife sharpener at home",
+          "Professional services preserve blade life"
+        ],
+        "result": "Factory-fresh sharpness maintained"
+      }
+    ],
+    "safetySummary": [
+      "Always use a sharp knife - dull knives require more pressure and are more likely to slip",
+      "Use the claw grip to protect your fingers",
+      "Keep your wrist straight, not bent",
+      "Let the knife do the work - don't force cuts",
+      "Cut away from your body and others",
+      "Focus on the task - no distractions",
+      "Clean and store knives properly",
+      "Never leave knives loose in a sink",
+      "Use a cutting board - never cut on glass or stone",
+      "Hone your knife before each use for optimal performance"
+    ]
+  }
+}

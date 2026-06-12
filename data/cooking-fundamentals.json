@@ -1,0 +1,585 @@
+{
+  "cookingFundamentalsGuide": {
+    "title": "The Basics: A Really Useful Cookbook",
+    "author": "Anthony Telford",
+    "description": "Master essential cooking techniques and build your foundation for culinary success",
+    "introduction": "Every good cook starts with mastering fundamental techniques. These techniques form the foundation for all other cooking methods and develop muscle memory, timing skills, and an intuitive understanding of how food behaves.",
+    "basicCookingMethods": [
+      {
+        "id": "method_001",
+        "name": "Boiling",
+        "description": "Cooking food in liquid at 212°F (100°C)",
+        "temperature": "212°F / 100°C",
+        "bestFor": [
+          "Pasta",
+          "Rice",
+          "Potatoes",
+          "Eggs",
+          "Vegetables (when speed matters)",
+          "Stocks and broths"
+        ],
+        "technique": {
+          "step1": "Bring liquid to vigorous boil",
+          "step2": "Add food when ready",
+          "step3": "Maintain rolling boil",
+          "step4": "Remove when done (test with fork or taste)"
+        },
+        "timing": "Varies by ingredient (pasta 8-12 min, potatoes 15-20 min, eggs 8-10 min)",
+        "tips": [
+          "Use enough water to prevent temperature drop when food is added",
+          "Add salt to water (seasons food, raises boiling point slightly)",
+          "Don't overcrowd pot (prevents temperature drop)",
+          "Stir occasionally to prevent sticking",
+          "Cover lid only for water heating; remove lid while cooking to prevent boil-over"
+        ],
+        "advantages": [
+          "Simple and forgiving",
+          "Consistent results",
+          "Doesn't require attention"
+        ],
+        "disadvantages": [
+          "Water-soluble nutrients leach into water",
+          "Can make vegetables mushy",
+          "Less flavorful than other methods"
+        ]
+      },
+      {
+        "id": "method_002",
+        "name": "Steaming",
+        "description": "Cooking food using steam (212°F / 100°C) without direct contact with water",
+        "equipment": "Steamer basket, bamboo steamer, or colander over water",
+        "bestFor": [
+          "Vegetables (retains color and nutrients)",
+          "Fish and seafood",
+          "Dumplings",
+          "Delicate foods",
+          "Healthy cooking (minimal oil)"
+        ],
+        "technique": {
+          "step1": "Add water to bottom of pot (doesn't touch steamer rack)",
+          "step2": "Bring water to boil",
+          "step3": "Place food on steamer rack",
+          "step4": "Cover tightly (keeps steam in)",
+          "step5": "Steam for required time"
+        },
+        "timing": "Varies: vegetables 5-10 min, fish 8-15 min, dumplings 10-15 min",
+        "tips": [
+          "Water shouldn't touch food (only steam cooks)",
+          "Refill water during steaming (doesn't boil away)",
+          "Keep steam basket covered (loses heat if opened frequently)",
+          "Arrange food in single layer (ensures even cooking)"
+        ],
+        "advantages": [
+          "Retains nutrients (doesn't leach into water)",
+          "Retains color and texture",
+          "Gentle cooking preserves delicate foods",
+          "Healthy (no added fat)"
+        ],
+        "disadvantages": [
+          "Slower than boiling",
+          "Less browning (no Maillard reaction)",
+          "Requires equipment"
+        ]
+      },
+      {
+        "id": "method_003",
+        "name": "Simmering",
+        "description": "Cooking food in liquid at 180-200°F (82-93°C) with gentle bubbles",
+        "temperature": "180-200°F / 82-93°C",
+        "bestFor": [
+          "Soups",
+          "Stews",
+          "Braises",
+          "Tough cuts of meat (become tender)",
+          "Stocks and broths",
+          "Sauces"
+        ],
+        "technique": {
+          "step1": "Bring liquid to boil initially",
+          "step2": "Reduce heat to low",
+          "step3": "Maintain gentle bubbles (not rolling boil)",
+          "step4": "Cover partially or fully as recipe indicates",
+          "step5": "Simmer for required time (minutes to hours)"
+        ],
+        "timing": "Minutes to hours depending on ingredients and tenderness goal",
+        "tips": [
+          "Gentle heat prevents tough meat from becoming mushy on outside/raw inside",
+          "Partially covering allows some evaporation (concentrates flavors)",
+          "Fully covering retains more liquid",
+          "Occasional stirring prevents sticking and ensures even cooking",
+          "Adding too much liquid at start - it will reduce over time"
+        ],
+        "advantages": [
+          "Tenderizes tough cuts of meat",
+          "Develops deep, complex flavors",
+          "Allows time for spices/seasonings to infuse",
+          "Forgiving (can't really overcook)"
+        ],
+        "disadvantages": [
+          "Time-intensive (1-3+ hours often)",
+          "Requires careful heat management"
+        ]
+      },
+      {
+        "id": "method_004",
+        "name": "Sautéing",
+        "description": "Cooking food quickly in a small amount of hot fat",
+        "temperature": "Medium to medium-high heat (350-450°F / 175-230°C)",
+        "equipment": "Wide, shallow pan (allows moisture to evaporate)",
+        "bestFor": [
+          "Vegetables (quick cooking, retains texture)",
+          "Meats (browning, creating crust)",
+          "Seafood",
+          "Building flavor base for soups/stews (mirepoix)",
+          "Cooking grains with fat"
+        ],
+        "technique": {
+          "step1": "Heat pan over medium-high heat",
+          "step2": "Add fat (oil, butter, or combination)",
+          "step3": "Heat fat until shimmering (just before smoking)",
+          "step4": "Add food in single layer",
+          "step5": "Don't move food - let it brown (2-3 minutes)",
+          "step6": "Stir and cook until done"
+        ],
+        "timing": "Fast - vegetables 5-10 minutes, meat depends on thickness",
+        "tips": [
+          "Pat food dry before sautéing (moisture prevents browning)",
+          "Don't overcrowd pan (causes steaming instead of browning)",
+          "Let food rest in pan before stirring (browning takes time)",
+          "Use medium-high heat (high causes burning, medium prevents browning)",
+          "Add vegetables in order of cooking time (hard vegetables first)"
+        ],
+        "fatSelection": [
+          "Olive oil: good flavor, smoke point 375-400°F",
+          "Butter: rich flavor, smoke point 325-350°F",
+          "Vegetable oil: neutral, high smoke point 450°F",
+          "Combination: balance flavor and heat tolerance"
+        ],
+        "advantages": [
+          "Fast cooking",
+          "Maillard reaction for flavor",
+          "Retains food texture",
+          "Flavorful"
+        ],
+        "disadvantages": [
+          "Requires attention",
+          "High heat can burn if not careful",
+          "Adds fat calories"
+        ]
+      },
+      {
+        "id": "method_005",
+        "name": "Pan-Frying / Shallow Frying",
+        "description": "Cooking food in ½ to 1 inch of hot fat",
+        "temperature": "350-375°F (175-190°C)",
+        "bestFor": [
+          "Cutlets and thin meat",
+          "Fish fillets",
+          "Breaded items",
+          "Thick vegetable slices",
+          "Pancakes"
+        ],
+        "technique": {
+          "step1": "Heat ½-1 inch fat in shallow pan",
+          "step2": "Test readiness (drop of batter sizzles immediately)",
+          "step3": "Add food",
+          "step4": "Cook 3-5 minutes per side until golden",
+          "step5": "Drain on paper towels"
+        },
+        "timing": "Typically 3-5 minutes per side",
+        "tips": [
+          "Use thermometer (340-350°F is ideal range)",
+          "Don't move food too soon (outer surface needs to brown and crisp)",
+          "Keep fat at consistent temperature (too hot burns, too cool produces greasy food)",
+          "Drain on paper towels to remove excess oil"
+        ],
+        "advantages": [
+          "Creates crispy exterior",
+          "Golden-brown color",
+          "Good texture contrast"
+        ],
+        "disadvantages": [
+          "More oil than sautéing",
+          "Cleanup (oil splatters)",
+          "Temperature management critical"
+        ]
+      },
+      {
+        "id": "method_006",
+        "name": "Deep Frying",
+        "description": "Submerging food in hot fat (completely submerged)",
+        "temperature": "325-375°F (163-190°C)",
+        "bestFor": [
+          "Chips/fries",
+          "Donuts",
+          "Fried chicken",
+          "Fried fish",
+          "Tempura"
+        ],
+        "technique": {
+          "step1": "Heat 2-3 inches fat to proper temperature",
+          "step2": "Test temperature (thermometer or drop test)",
+          "step3": "Carefully place food in hot fat",
+          "step4": "Don't overcrowd (temperature drops)",
+          "step5": "Fry until golden (varies by food)",
+          "step6": "Remove with slotted spoon",
+          "step7": "Drain on paper towels"
+        ],
+        "timing": "Varies: fries 3-5 minutes, chicken 12-15 minutes",
+        "safetyTips": [
+          "Never leave hot oil unattended",
+          "Keep baking soda nearby (in case of fire - never use water)",
+          "Dry food completely before frying (water causes splattering)",
+          "Add food slowly (hot oil can bubble over)",
+          "Use long tongs or slotted spoon (protects hands)"
+        ],
+        "temperatureManagement": [
+          "Too cool (below 325°F): greasy, heavy food",
+          "Too hot (above 375°F): burnt outside, raw inside",
+          "Just right (350°F): crispy outside, cooked inside"
+        ],
+        "advantages": [
+          "Creates very crispy exterior",
+          "Distinctive flavor and texture",
+          "Golden color"
+        ],
+        "disadvantages": [
+          "High fat content",
+          "Safety concerns",
+          "Oil disposal/cleanup",
+          "Requires special equipment",
+          "Requires temperature control"
+        ]
+      },
+      {
+        "id": "method_007",
+        "name": "Roasting",
+        "description": "Cooking food in oven with dry heat, often with some fat",
+        "temperature": "350-450°F (175-230°C)",
+        "bestFor": [
+          "Whole poultry",
+          "Root vegetables",
+          "Meats (roasts)",
+          "Fish",
+          "Herbs and spices (toasting)",
+          "Nuts"
+        ],
+        "technique": {
+          "step1": "Preheat oven to specified temperature",
+          "step2": "Place food in roasting pan",
+          "step3": "Add small amount of fat (oil, butter, cooking spray)",
+          "step4": "Season as desired",
+          "step5": "Roast uncovered (allows browning)",
+          "step6": "Check doneness by temperature or texture"
+        },
+        "timing": "Depends on size: vegetables 20-30 min, chicken 1.5 hours",
+        "tips": [
+          "Use high-sided roasting pan (catches drippings for gravy)",
+          "Place vegetables cut-side down (flat surface browns better)",
+          "Don't crowd pan (prevents steaming)",
+          "Stir vegetables halfway through",
+          "Meat should rest 5-10 minutes after roasting"
+        ],
+        "advantages": [
+          "Maillard reaction (browning) for flavor",
+          "Hands-off cooking",
+          "Can cook whole meals in one pan",
+          "Develops complex flavors"
+        ],
+        "disadvantages": [
+          "Requires oven access",
+          "Longer cooking time",
+          "Heat management (preheating)"
+        ]
+      },
+      {
+        "id": "method_008",
+        "name": "Baking",
+        "description": "Cooking food in enclosed oven with dry heat",
+        "temperature": "Usually 325-400°F (163-204°C)",
+        "bestFor": [
+          "Breads",
+          "Pastries",
+          "Cakes",
+          "Fish (in foil or parchment)",
+          "Casseroles"
+        ],
+        "technique": {
+          "step1": "Preheat oven (crucial for baking)",
+          "step2": "Prepare food (shape dough, arrange in dish)",
+          "step3": "Place in oven at specified temperature",
+          "step4": "Bake for specified time",
+          "step5": "Check doneness (visual cues, temperature, or touch)"
+        ],
+        "timing": "Varies widely by recipe",
+        "criticalFactors": [
+          "Accurate oven temperature (get oven thermometer)",
+          "Proper preheating (at least 15-20 minutes)",
+          "Following recipe precisely (chemistry is involved)",
+          "Not opening oven door frequently (temperature drops)"
+        ],
+        "advantages": [
+          "Hands-off cooking",
+          "Can cook multiple items",
+          "Precise control possible",
+          "Consistent results if temperature accurate"
+        ],
+        "disadvantages": [
+          "Requires accurate temperature control",
+          "Long time commitment",
+          "Hard to adjust mid-bake",
+          "Different ovens bake differently"
+        ]
+      },
+      {
+        "id": "method_009",
+        "name": "Grilling",
+        "description": "Cooking food over direct heat (charcoal or gas flames)",
+        "temperature": "Medium (350-400°F) to high heat (450-500°F+)",
+        "bestFor": [
+          "Steaks and chops",
+          "Burgers",
+          "Fish",
+          "Chicken",
+          "Vegetables",
+          "Shrimp"
+        ],
+        "technique": {
+          "step1": "Preheat grill 10-15 minutes",
+          "step2": "Clean grates with grill brush",
+          "step3": "Oil grates (prevents sticking)",
+          "step4": "Place food on grill",
+          "step5": "Don't move food until grill marks form (3-4 minutes)",
+          "step6": "Flip and cook until done"
+        },
+        "timing": "Varies: steaks 4-6 min per side, vegetables 5-8 min",
+        "tips": [
+          "Create hot and cool zones (move food to cool side if charring too fast)",
+          "Use indirect heat for thick cuts (move to side away from flames)",
+          "Close lid to finish thick items (acts like oven)",
+          "Meat should rest 5 minutes after grilling"
+        ],
+        "advantages": [
+          "Distinctive smoky flavor",
+          "Caramelization and browning",
+          "Fun and social",
+          "Fast cooking"
+        ],
+        "disadvantages": [
+          "Requires grill and fuel",
+          "Weather dependent (charcoal/gas)",
+          "Harder to control temperature",
+          "Requires outdoor space"
+        ]
+      },
+      {
+        "id": "method_010",
+        "name": "Braising",
+        "description": "Browning food, then slow cooking in liquid",
+        "temperature": "Initial sear: 400-450°F; Braising: 325-350°F in oven",
+        "bestFor": [
+          "Tough cuts of meat (becomes tender)",
+          "Whole vegetables",
+          "Tougher greens",
+          "Dried beans"
+        ],
+        "technique": {
+          "step1": "Heat fat in heavy pot",
+          "step2": "Brown food on all sides (develops flavor)",
+          "step3": "Remove and set aside",
+          "step4": "Brown vegetables if desired",
+          "step5": "Add liquid (partially covers food)",
+          "step6": "Return food to pot",
+          "step7": "Cover and cook low and slow (oven or stovetop)",
+          "step8": "Cook until tender (1-3+ hours)"
+        },
+        "liquid": [
+          "Stock or broth",
+          "Wine (red or white)",
+          "Tomato juice",
+          "Beer"
+        ],
+        "timing": "1-3+ hours depending on meat size and toughness",
+        "tips": [
+          "Use Dutch oven (heats evenly, retains heat)",
+          "Brown food before braising (Maillard reaction adds flavor)",
+          "Don't overcrowd pot (meat won't brown properly)",
+          "Keep liquid level consistent (top up if needed)"
+        ],
+        "advantages": [
+          "Tenderizes tough cuts",
+          "Develops rich, complex flavors",
+          "Braising liquid becomes flavorful sauce",
+          "Can be made ahead (improves with time)",
+          "Forgiving (hard to overcook)"
+        ],
+        "disadvantages": [
+          "Time-intensive",
+          "Requires heavy pot",
+          "Produces large quantities (good for batch cooking)"
+        ]
+      }
+    ],
+    "essentialSkills": [
+      {
+        "id": "skill_001",
+        "name": "Mise en Place (Everything in Its Place)",
+        "description": "Preparing and organizing all ingredients before cooking begins",
+        "importance": "Essential for smooth, organized cooking",
+        "process": [
+          "Read entire recipe before starting",
+          "Measure all ingredients",
+          "Prep all ingredients (wash, chop, mince, etc.)",
+          "Arrange ingredients in order of use",
+          "Have tools ready (pans, utensils, bowls)"
+        ],
+        "benefits": [
+          "Prevents forgetting ingredients",
+          "Allows you to focus on cooking technique",
+          "Prevents burning/overcooking while prepping",
+          "Reduces stress during cooking",
+          "Professional restaurant practice"
+        ]
+      },
+      {
+        "id": "skill_002",
+        "name": "Testing for Doneness",
+        "description": "Determining when food is properly cooked",
+        "methods": [
+          {
+            "method": "Meat Thermometer",
+            "accuracy": "Most accurate method",
+            "temperatures": [
+              "Rare beef: 125-130°F",
+              "Medium-rare beef: 130-135°F",
+              "Medium beef: 135-145°F",
+              "Well-done beef: 160°F+",
+              "Poultry: 165°F (internal, thickest part)",
+              "Fish: 145°F"
+            ],
+            "tips": "Insert into thickest part, away from bone"
+          },
+          {
+            "method": "Visual Inspection",
+            "uses": "Vegetables, fish, baked goods",
+            "indicators": "Color change, steam, flaking (fish), golden brown (baked)"
+          },
+          {
+            "method": "Touch Test (Experienced Cooks)",
+            "uses": "Meat (requires practice)",
+            "description": "Compare firmness to palm: rare (soft), medium (firm), done (very firm)"
+          },
+          {
+            "method": "Taste Test",
+            "uses": "Vegetables, grains, pasta",
+            "description": "Sample small piece; should be tender but not mushy"
+          }
+        ],
+        "importance": "Overcooking dries out food; undercooking can pose food safety risks"
+      },
+      {
+        "id": "skill_003",
+        "name": "Seasoning",
+        "description": "Building flavor with salt, acid, and spices",
+        "principles": [
+          {
+            "principle": "Salt",
+            "role": "Enhances all flavors; use throughout cooking, not just at end",
+            "amount": "Start small (can't remove)",
+            "timing": "Add multiple times during cooking"
+          },
+          {
+            "principle": "Acid",
+            "role": "Brightens flavors; adds liveliness to dishes",
+            "sources": "Lemon juice, vinegar, tomatoes, wine",
+            "timing": "Add at end (cooking diminishes acid taste)"
+          },
+          {
+            "principle": "Spices",
+            "role": "Adds complexity and depth",
+            "blooming": "Toast spices in oil/fat to release flavors",
+            "fresh_vs_dried": "Fresh herbs at end, dried early in cooking"
+          }
+        ],
+        "layeringFlavors": "Add different seasonings throughout cooking for depth"
+      },
+      {
+        "id": "skill_004",
+        "name": "Temperature Control",
+        "description": "Managing heat for proper cooking results",
+        "heatLevels": [
+          {
+            "level": "Low",
+            "temperature": "Below 300°F",
+            "use": "Simmering, slow braising, gentle cooking"
+          },
+          {
+            "level": "Medium",
+            "temperature": "300-375°F",
+            "use": "Most sautéing, simmering, normal cooking"
+          },
+          {
+            "level": "Medium-High",
+            "temperature": "375-450°F",
+            "use": "Browning, searing, pan-frying"
+          },
+          {
+            "level": "High",
+            "temperature": "450°F+",
+            "use": "Searing, boiling, high-heat stir-fry"
+          }
+        ],
+        "management": [
+          "Use thermometer (for accuracy)",
+          "Preheat pans/pots before adding food",
+          "Adjust heat to maintain desired temperature",
+          "Understand your specific stove (some run hot/cold)"
+        ]
+      }
+    ],
+    "commonMistakes": [
+      {
+        "id": "mistake_001",
+        "mistake": "Adding food to cold pan",
+        "result": "Food sticks, browns unevenly, takes longer",
+        "solution": "Preheat pan until it's hot; test by sprinkling water (should bead and roll)"
+      },
+      {
+        "id": "mistake_002",
+        "mistake": "Moving food too soon while browning",
+        "result": "Food doesn't brown, sticks to pan",
+        "solution": "Let food sit 3-5 minutes before stirring (browning takes time)"
+      },
+      {
+        "id": "mistake_003",
+        "mistake": "Crowding the pan",
+        "result": "Food steams instead of browns; temperature drops",
+        "solution": "Use larger pan or work in batches (give food space)"
+      },
+      {
+        "id": "mistake_004",
+        "mistake": "Not seasoning during cooking",
+        "result": "Bland food; can't taste salt when added at end",
+        "solution": "Taste and season throughout cooking (layer flavors)"
+      },
+      {
+        "id": "mistake_005",
+        "mistake": "Overcooking meat",
+        "result": "Dry, tough meat",
+        "solution": "Use thermometer; remove at target temperature; let rest"
+      },
+      {
+        "id": "mistake_006",
+        "mistake": "Not letting meat rest after cooking",
+        "result": "Juices run out onto plate, meat is dry",
+        "solution": "Rest 5-10 minutes after cooking (allows juices to redistribute)"
+      },
+      {
+        "id": "mistake_007",
+        "mistake": "Opening oven door frequently",
+        "result": "Temperature drops; uneven baking",
+        "solution": "Check doneness with window or at end; avoid opening mid-bake"
+      }
+    ]
+  }
+}

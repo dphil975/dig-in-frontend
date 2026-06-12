@@ -1,0 +1,438 @@
+{
+  "veganBeansGuide": {
+    "title": "The Great Vegan Bean Book: Plant-Based Protein & Delicious Dishes",
+    "description": "Comprehensive guide to beans, legumes, and pulse cooking for plant-based nutrition",
+    "introduction": "Beans and legumes are nutritional powerhouses: high in protein, fiber, and essential micronutrients. This guide covers bean varieties, cooking methods, and how to incorporate beans into delicious, satisfying meals.",
+    "beanVarieties": [
+      {
+        "id": "bean_001",
+        "name": "Black Beans",
+        "origin": "Central and South America",
+        "nutrition": {
+          "protein": "15g per cooked cup",
+          "fiber": "15g per cooked cup",
+          "calories": "227 per cooked cup"
+        },
+        "taste": "Earthy, slightly sweet, creamy",
+        "texture": "Creamy when cooked",
+        "cookingTime": "60-90 minutes",
+        "uses": [
+          "Tacos and burritos",
+          "Black bean soup",
+          "Rice and beans bowls",
+          "Black bean burgers",
+          "Refried beans"
+        ],
+        "pairing": "Works well with: cumin, chili, cilantro, lime, tomato"
+      },
+      {
+        "id": "bean_002",
+        "name": "Chickpeas (Garbanzo Beans)",
+        "origin": "Mediterranean / Middle East",
+        "nutrition": {
+          "protein": "15g per cooked cup",
+          "fiber": "12g per cooked cup",
+          "calories": "269 per cooked cup"
+        },
+        "taste": "Mild, slightly nutty, buttery",
+        "texture": "Firm yet creamy center",
+        "cookingTime": "90-120 minutes",
+        "uses": [
+          "Hummus",
+          "Curry dishes",
+          "Roasted chickpea snacks",
+          "Chickpea salad",
+          "Falafel",
+          "Pasta e ceci"
+        ],
+        "pairing": "Works well with: garlic, lemon, tahini, cumin, curry spices"
+      },
+      {
+        "id": "bean_003",
+        "name": "Lentils",
+        "origin": "Middle East / India",
+        "nutrition": {
+          "protein": "18g per cooked cup",
+          "fiber": "15.6g per cooked cup",
+          "calories": "230 per cooked cup"
+        },
+        "taste": "Earthy, slightly nutty",
+        "texture": "Soft but holds shape",
+        "cookingTime": "20-45 minutes (much faster than other beans)",
+        "varieties": [
+          {
+            "type": "Red lentils",
+            "characteristic": "Cook fastest, become mushy",
+            "use": "Soups, dals, purees"
+          },
+          {
+            "type": "Green/brown lentils",
+            "characteristic": "Hold shape better",
+            "use": "Salads, side dishes, soups"
+          },
+          {
+            "type": "Black lentils (Beluga)",
+            "characteristic": "Hold shape well, mild flavor",
+            "use": "Salads, sophisticated dishes"
+          }
+        ],
+        "pairing": "Works well with: cumin, turmeric, cinnamon, vinegar"
+      },
+      {
+        "id": "bean_004",
+        "name": "Kidney Beans",
+        "origin": "South America",
+        "nutrition": {
+          "protein": "15g per cooked cup",
+          "fiber": "11g per cooked cup",
+          "calories": "225 per cooked cup"
+        },
+        "taste": "Mild, slightly meaty",
+        "texture": "Firm, holds shape well",
+        "cookingTime": "60-90 minutes",
+        "uses": [
+          "Chili",
+          "Three-bean salad",
+          "Kidney bean curry",
+          "Bean soups"
+        ],
+        "caution": "Must be boiled for at least 10 minutes (contains lectin toxin if undercooked)",
+        "pairing": "Works well with: chili spices, tomato, garlic, onion"
+      },
+      {
+        "id": "bean_005",
+        "name": "Pinto Beans",
+        "origin": "Mexico",
+        "nutrition": {
+          "protein": "15g per cooked cup",
+          "fiber": "15g per cooked cup",
+          "calories": "245 per cooked cup"
+        },
+        "taste": "Mild, earthy",
+        "texture": "Soft, creamy",
+        "cookingTime": "60-120 minutes",
+        "uses": [
+          "Refried beans",
+          "Bean dips",
+          "Pinto bean soup",
+          "Mexican-style rice and beans"
+        ],
+        "pairing": "Works well with: cumin, chili, garlic, onion, cilantro"
+      },
+      {
+        "id": "bean_006",
+        "name": "Navy Beans",
+        "origin": "North America",
+        "nutrition": {
+          "protein": "15g per cooked cup",
+          "fiber": "11g per cooked cup",
+          "calories": "255 per cooked cup"
+        },
+        "taste": "Mild, slightly sweet",
+        "texture": "Soft, creamy",
+        "cookingTime": "60-90 minutes",
+        "uses": [
+          "Baked beans",
+          "Navy bean soup",
+          "White bean dips",
+          "Cassoulet (vegan version)"
+        ],
+        "pairing": "Works well with: sage, thyme, tomato, onion"
+      },
+      {
+        "id": "bean_007",
+        "name": "Split Peas",
+        "origin": "Mediterranean",
+        "nutrition": {
+          "protein": "16g per cooked cup",
+          "fiber": "16g per cooked cup",
+          "calories": "231 per cooked cup"
+        },
+        "taste": "Earthy, slightly sweet",
+        "texture": "Creamy, breaks down easily",
+        "cookingTime": "45-60 minutes",
+        "uses": [
+          "Split pea soup",
+          "Pea flour (baking)",
+          "Falafel variant (chana dhal)"
+        ],
+        "pairing": "Works well with: thyme, bay leaf, garlic, carrot, onion"
+      }
+    ],
+    "beanCookingMethods": [
+      {
+        "id": "method_001",
+        "name": "Stovetop Cooking (Traditional)",
+        "steps": [
+          {
+            "step": "Sort and rinse",
+            "detail": "Remove rocks or debris; rinse until water runs clear"
+          },
+          {
+            "step": "Soak (optional but recommended)",
+            "detail": "8 hours or overnight in 3 parts water to 1 part beans",
+            "benefit": "Reduces cooking time 20-30%; reduces gas-causing compounds; improves digestibility"
+          },
+          {
+            "step": "Drain soaking water",
+            "detail": "Always discard soaking water (where gas-causing compounds leach)"
+          },
+          {
+            "step": "Add fresh water",
+            "detail": "3 parts water to 1 part dried beans"
+          },
+          {
+            "step": "Bring to boil",
+            "detail": "High heat for 2 minutes (helps remove gas-causing compounds)"
+          },
+          {
+            "step": "Skim foam",
+            "detail": "Remove white foam that rises (oligosaccharides causing gas)"
+          },
+          {
+            "step": "Reduce heat and simmer",
+            "detail": "Partially covered; maintain gentle bubbling",
+            "timing": "See individual bean cooking times"
+          },
+          {
+            "step": "Check doneness",
+            "detail": "Beans should be tender when squeezed between fingers"
+          },
+          {
+            "step": "Add salt at end",
+            "detail": "Add salt only when beans are almost done (prevents toughening)"
+          }
+        ],
+        "advantage": "Full control; can season broth; energy efficient"
+      },
+      {
+        "id": "method_002",
+        "name": "Pressure Cooker (Fast)",
+        "steps": [
+          "Sort and rinse beans",
+          "Soak 4-8 hours if desired (reduces cooking time further)",
+          "Add drained beans + 3 parts water to pressure cooker",
+          "Bring to pressure (high pressure)",
+          "Cook 20-30 minutes depending on bean type",
+          "Allow pressure to release naturally 10 minutes",
+          "Quick release remaining pressure",
+          "Check doneness; cook longer if needed"
+        ],
+        "advantage": "2-3 times faster than stovetop",
+        "caution": "Follow manufacturer's instructions for safety"
+      },
+      {
+        "id": "method_003",
+        "name": "Slow Cooker (Low and Slow)",
+        "steps": [
+          "Sort and rinse beans",
+          "Add soaked beans (or unsoaked + extra water)",
+          "Add 3-4 parts water to 1 part beans",
+          "Cook on low 6-8 hours or high 3-4 hours",
+          "Add salt in last 30 minutes",
+          "Check for doneness; cook longer if needed"
+        ],
+        "advantage": "Set and forget; develops deep flavors",
+        "best": "Overnight cooking"
+      },
+      {
+        "id": "method_004",
+        "name": "Canned Beans (Convenience)",
+        "preparation": [
+          "Rinse thoroughly (removes up to 40% of sodium)",
+          "Use 1 can (about 1.5 cups cooked) as equivalent to 1/2 cup dried"
+        ],
+        "advantage": "No planning; ready in minutes",
+        "nutrition": "Similar nutritionally to home-cooked (though slightly softer texture)"
+      }
+    ],
+    "digestibility": [
+      {
+        "id": "digest_001",
+        "issue": "Gas and bloating from beans",
+        "cause": "Oligosaccharides (small sugars not easily digested)",
+        "solutions": [
+          {
+            "solution": "Soak beans",
+            "method": "8 hours+ in water; discard soaking water",
+            "reduction": "Reduces oligosaccharides by 50-70%"
+          },
+          {
+            "solution": "Skim foam",
+            "method": "When bringing to boil, skim white foam",
+            "reduction": "Removes water-soluble oligosaccharides"
+          },
+          {
+            "solution": "Cook beans thoroughly",
+            "benefit": "Thorough cooking breaks down oligosaccharides"
+          },
+          {
+            "solution": "Gradual introduction",
+            "method": "Start with small amounts; increase over weeks",
+            "benefit": "Gut bacteria adapt to bean digestion"
+          },
+          {
+            "solution": "Sprouting beans",
+            "method": "Soak 12-24 hours until small sprout appears",
+            "benefit": "Reduces anti-nutrients; easier digestion"
+          },
+          {
+            "solution": "Specific beans",
+            "note": "Lentils and split peas cause less gas than dried beans"
+          }
+        ]
+      },
+      {
+        "id": "digest_002",
+        "tip": "Pair with digestive spices",
+        "spices": [
+          "Ginger (stimulates digestion)",
+          "Cumin (traditional in bean dishes)",
+          "Fennel (settles stomach)",
+          "Turmeric (anti-inflammatory)"
+        ]
+      }
+    ],
+    "completeProteinCombinations": [
+      {
+        "id": "combo_001",
+        "combination": "Beans + Grains",
+        "examples": [
+          "Rice and beans (any color bean + rice)",
+          "Corn and beans (tortillas with beans)",
+          "Lentils and rice (dal and rice)",
+          "Chickpeas and wheat (hummus and pita)"
+        ],
+        "aminoAcids": "Beans lack methionine; grains lack lysine. Together = complete protein"
+      },
+      {
+        "id": "combo_002",
+        "combination": "Beans + Seeds/Nuts",
+        "examples": [
+          "Lentil salad with tahini dressing",
+          "Black bean dip with pumpkin seeds",
+          "Chickpea curry with coconut milk (fat)",
+          "Bean salad with sunflower seed dressing"
+        ],
+        "benefit": "Add essential amino acids + healthy fat"
+      },
+      {
+        "id": "combo_003",
+        "combination": "Three-Bean Power Salad",
+        "ingredients": [
+          "Black beans",
+          "Chickpeas",
+          "Kidney beans",
+          "Plus vegetables, oil, vinegar"
+        ],
+        "benefit": "Triple amino acid diversity"
+      }
+    ],
+    "beanRecipes": [
+      {
+        "id": "recipe_001",
+        "name": "Classic Black Bean Soup",
+        "servings": "6",
+        "ingredients": [
+          "2 cans black beans (or 1 cup dried, cooked)",
+          "1 large onion, diced",
+          "4 cloves garlic, minced",
+          "2 carrots, diced",
+          "4 cups vegetable broth",
+          "1 tbsp cumin",
+          "1 tsp chili powder",
+          "2 tbsp olive oil",
+          "Salt and pepper to taste",
+          "Lime juice (finish)",
+          "Cilantro (garnish)"
+        ],
+        "instructions": [
+          "Sauté onion, garlic, carrot in olive oil until soft (5 minutes)",
+          "Add cumin and chili powder; cook 1 minute",
+          "Add beans and broth",
+          "Bring to simmer; cook 15-20 minutes",
+          "Mash some beans to thicken soup (optional)",
+          "Season with salt, pepper, lime juice",
+          "Garnish with cilantro"
+        ],
+        "proteinPerServing": "12g"
+      },
+      {
+        "id": "recipe_002",
+        "name": "Creamy Hummus",
+        "servings": "Makes about 2 cups",
+        "ingredients": [
+          "1 can (15 oz) chickpeas, drained and rinsed",
+          "3 tbsp tahini (sesame paste)",
+          "3 tbsp lemon juice",
+          "2 cloves garlic, minced",
+          "1/4 tsp salt",
+          "2-3 tbsp water (adjust for consistency)",
+          "1 tbsp olive oil (optional, for serving)",
+          "Paprika (garnish)"
+        ],
+        "instructions": [
+          "Combine chickpeas, tahini, lemon, garlic in food processor",
+          "Blend until smooth (may take 2-3 minutes)",
+          "Add water gradually until creamy consistency",
+          "Drizzle with olive oil",
+          "Sprinkle with paprika",
+          "Serve with vegetables, pita, or crackers"
+        ]
+      },
+      {
+        "id": "recipe_003",
+        "name": "Lentil Curry",
+        "servings": "4",
+        "ingredients": [
+          "1 cup red lentils",
+          "2 tbsp oil or ghee",
+          "1 large onion, diced",
+          "4 cloves garlic, minced",
+          "1 tbsp ginger, minced",
+          "2 tsp cumin",
+          "1 tsp turmeric",
+          "1 tsp coriander",
+          "1/2 tsp cayenne (optional)",
+          "1 can coconut milk",
+          "2 cups vegetable broth",
+          "2 cups spinach",
+          "Salt to taste",
+          "Lime juice (finish)",
+          "Rice or naan (serve with)"
+        ],
+        "instructions": [
+          "Heat oil; sauté onion, garlic, ginger (5 minutes)",
+          "Add spices; cook 1 minute until fragrant",
+          "Add lentils, coconut milk, broth",
+          "Bring to boil; reduce heat and simmer 15-20 minutes",
+          "Lentils should be soft but not mushy",
+          "Stir in spinach; cook until wilted",
+          "Season with salt, lime juice",
+          "Serve over rice or with naan"
+        ],
+        "proteinPerServing": "18g"
+      }
+    ],
+    "storageAndPreservation": [
+      {
+        "id": "storage_001",
+        "state": "Dried beans",
+        "storage": "Cool, dry place in airtight container",
+        "lifespan": "6-12 months (after 1 year, may take longer to cook)"
+      },
+      {
+        "id": "storage_002",
+        "state": "Cooked beans",
+        "refrigerator": "3-4 days in airtight container",
+        "freezer": "6 months in freezer bag (freeze in portions for easy use)"
+      },
+      {
+        "id": "storage_003",
+        "state": "Bean-based dishes (soups, curries)",
+        "refrigerator": "3-4 days",
+        "freezer": "Up to 3 months"
+      }
+    ]
+  }
+}

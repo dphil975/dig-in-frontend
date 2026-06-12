@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Cooking Science - Dig In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DotGothic16', cursive;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 30px;
+            border: 3px solid #ffd700;
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.5em;
+            color: #ffd700;
+            text-shadow: 3px 3px #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            background: #2a2a4e;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            font-family: 'DotGothic16', cursive;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .tab-btn:hover {
+            background: #ffd700;
+            color: #1a1a2e;
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background: #ffd700;
+            color: #1a1a2e;
+            box-shadow: 0 0 20px #ffd700;
+        }
+
+        .search-box {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px;
+            font-family: 'DotGothic16', cursive;
+            background: #2a2a4e;
+            border: 2px solid #ffd700;
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+
+        .search-box input::placeholder {
+            color: #a0a0a0;
+        }
+
+        .search-box button {
+            padding: 12px 20px;
+            background: #ff6b6b;
+            border: 2px solid #ff6b6b;
+            color: white;
+            font-family: 'DotGothic16', cursive;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box button:hover {
+            background: transparent;
+            transform: translateY(-2px);
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .section {
+            background: rgba(42, 42, 78, 0.9);
+            border: 2px solid #ffd700;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        .section h3 {
+            color: #ff6b6b;
+            margin: 15px 0 10px 0;
+            font-size: 1em;
+        }
+
+        .item {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffd700;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .item:hover {
+            background: rgba(42, 42, 78, 0.95);
+            transform: translateX(5px);
+        }
+
+        .item h4 {
+            color: #ffd700;
+            margin-bottom: 8px;
+        }
+
+        .item p {
+            color: #d0d0d0;
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .item ul, .item ol {
+            margin-left: 20px;
+            color: #d0d0d0;
+            font-size: 0.9em;
+        }
+
+        .item li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        .item strong {
+            color: #ff6b6b;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85em;
+        }
+
+        th {
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        td {
+            border-bottom: 1px solid #404060;
+            padding: 10px 12px;
+            color: #d0d0d0;
+        }
+
+        tr:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .tag.difficulty-beginner {
+            background: #52b788;
+        }
+
+        .tag.difficulty-intermediate {
+            background: #ffd700;
+            color: #1a1a2e;
+        }
+
+        .tag.difficulty-advanced {
+            background: #ff6b6b;
+        }
+
+        .chemical-equation {
+            background: #404060;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            color: #66ff99;
+        }
+
+        .tip-box {
+            background: rgba(82, 183, 136, 0.2);
+            border-left: 4px solid #52b788;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .warning-box {
+            background: rgba(255, 107, 107, 0.2);
+            border-left: 4px solid #ff6b6b;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-btn {
+                width: 100%;
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: #a0a0a0;
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 15px;
+            background: #2a2a4e;
+            border: 1px solid #ffd700;
+            color: #ffd700;
+            font-family: 'DotGothic16', cursive;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #ffd700;
+            color: #1a1a2e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 COOKING SCIENCE 🔥</h1>
+            <p>Master the fundamentals and advanced techniques of culinary arts</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search all topics...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('knife-skills')">🔪 Knife Skills</button>
+            <button class="tab-btn" onclick="switchTab('molecular-gastronomy')">⚗️ Molecular Gastronomy</button>
+            <button class="tab-btn" onclick="switchTab('nutrition')">🥗 Nutrition</button>
+            <button class="tab-btn" onclick="switchTab('fundamentals')">👨‍🍳 Fundamentals</button>
+            <button class="tab-btn" onclick="switchTab('baking')">🍪 Baking Science</button>
+            <button class="tab-btn" onclick="switchTab('fiber')">🌾 Dietary Fiber</button>
+            <button class="tab-btn" onclick="switchTab('fermentation')">🫙 Fermentation</button>
+            <button class="tab-btn" onclick="switchTab('vegan')">🌱 Vegan & Gluten-Free</button>
+            <button class="tab-btn" onclick="switchTab('japanese')">🍱 Japanese Cooking</button>
+            <button class="tab-btn" onclick="switchTab('beans')">🫘 Vegan Beans</button>
+            <button class="tab-btn" onclick="switchTab('anime')">🍜 Anime Food</button>
+        </div>
+
+        <!-- KNIFE SKILLS TAB -->
+        <div id="knife-skills" class="content active">
+            <div class="section">
+                <h2>🔪 Knife Skills & Cutting Techniques</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Master the fundamentals of safe and efficient knife work. Learn proper grips, cutting techniques, and knife maintenance.</p>
+
+                <h3>Knife Types</h3>
+                <div id="knifesTypesContainer"></div>
+
+                <h3>Cutting Techniques</h3>
+                <div id="cuttingTechniquesContainer"></div>
+
+                <h3>Safety Summary</h3>
+                <div class="tip-box" style="border-left-color: #52b788;">
+                    <ul id="safetySummaryContainer" style="margin-left: 20px;"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOLECULAR GASTRONOMY TAB -->
+        <div id="molecular-gastronomy" class="content">
+            <div class="section">
+                <h2>⚗️ Molecular Gastronomy & Food Science</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Explore the chemistry and physics behind cooking techniques. Understand the transformations that occur when we heat, combine, and manipulate ingredients.</p>
+
+                <h3>Fundamental Concepts</h3>
+                <div id="fundamentalConceptsContainer"></div>
+
+                <h3>Temperature Control Techniques</h3>
+                <div id="temperatureControlContainer"></div>
+
+                <h3>Chemical Transformations</h3>
+                <div id="chemicalTransformationsContainer"></div>
+            </div>
+        </div>
+
+        <!-- NUTRITION TAB -->
+        <div id="nutrition" class="content">
+            <div class="section">
+                <h2>🥗 Nutritional Biochemistry & Vitamins</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Understand how vitamins function in your body, recognize deficiency signs, and optimize your diet for health.</p>
+
+                <h3>Vitamin Categories</h3>
+                <div id="vitaminCategoriesContainer"></div>
+
+                <h3>Essential Vitamins</h3>
+                <div id="vitaminsContainer"></div>
+
+                <h3>Nutritional Optimization</h3>
+                <div id="nutritionalOptContainer"></div>
+            </div>
+        </div>
+
+        <!-- FUNDAMENTALS TAB -->
+        <div id="fundamentals" class="content">
+            <div class="section">
+                <h2>👨‍🍳 Cooking Fundamentals & Methods</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Build your foundation with essential cooking methods and techniques. Master temperature control, seasoning, and doneness testing.</p>
+
+                <h3>Basic Cooking Methods</h3>
+                <div id="cookingMethodsContainer"></div>
+
+                <h3>Essential Skills</h3>
+                <div id="essentialSkillsContainer"></div>
+
+                <h3>Common Mistakes to Avoid</h3>
+                <div id="mistakesContainer"></div>
+            </div>
+        </div>
+
+        <!-- BAKING TAB -->
+        <div id="baking" class="content">
+            <div class="section">
+                <h2>🍪 Sandwich Cookies & Baking Science</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Master delicate sandwich cookies and understand the chemistry of baking. From macarons to shortbread, learn proven techniques.</p>
+
+                <h3>Baking Fundamentals</h3>
+                <div id="bakingFundamentalsContainer"></div>
+
+                <h3>Cookie Types</h3>
+                <div id="cookieTypesContainer"></div>
+
+                <h3>Filling Recipes</h3>
+                <div id="fillingRecipesContainer"></div>
+
+                <h3>Sandwich Cookie Recipes</h3>
+                <div id="sandwichRecipesContainer"></div>
+            </div>
+        </div>
+
+        <!-- DIETARY FIBER TAB -->
+        <div id="fiber" class="content">
+            <div class="section">
+                <h2>🌾 Dietary Fiber: Food Science and Technology</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Understand dietary fiber types, health benefits, food sources, and how fiber functions in cooking and digestion.</p>
+
+                <h3>Fiber Types</h3>
+                <div id="fiberTypesContainer"></div>
+
+                <h3>Health Benefits</h3>
+                <div id="fiberBenefitsContainer"></div>
+
+                <h3>Fiber Sources</h3>
+                <div id="fiberSourcesContainer"></div>
+            </div>
+        </div>
+
+        <!-- FERMENTATION TAB -->
+        <div id="fermentation" class="content">
+            <div class="section">
+                <h2>🫙 Microorganisms & Fermentation of Traditional Foods</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Explore traditional fermented foods, the microorganisms involved, fermentation conditions, and health benefits of fermentation.</p>
+
+                <h3>Primary Microorganisms</h3>
+                <div id="microbesContainer"></div>
+
+                <h3>Traditional Fermented Foods</h3>
+                <div id="fermentedFoodsContainer"></div>
+
+                <h3>Fermentation Conditions</h3>
+                <div id="fermentationConditionsContainer"></div>
+            </div>
+        </div>
+
+        <!-- VEGAN & GLUTEN-FREE TAB -->
+        <div id="vegan" class="content">
+            <div class="section">
+                <h2>🌱 Great Gluten-Free Vegan Eats</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Delicious gluten-free vegan recipes, ingredient substitutions, and nutritional guidance for plant-based, allergen-free cooking.</p>
+
+                <h3>Gluten-Free Baking</h3>
+                <div id="gfBakingContainer"></div>
+
+                <h3>Vegan Protein Building</h3>
+                <div id="veganProteinContainer"></div>
+
+                <h3>Nutrition Considerations</h3>
+                <div id="veganNutritionContainer"></div>
+            </div>
+        </div>
+
+        <!-- JAPANESE COOKING TAB -->
+        <div id="japanese" class="content">
+            <div class="section">
+                <h2>🍱 Japanese Home Cooking: Simple Meals, Authentic Flavors</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Traditional Japanese cooking principles, essential ingredients, fundamental techniques, and classic dishes.</p>
+
+                <h3>Fundamental Principles</h3>
+                <div id="japanPrinciplesContainer"></div>
+
+                <h3>Essential Ingredients</h3>
+                <div id="japanIngredientsContainer"></div>
+
+                <h3>Cooking Techniques</h3>
+                <div id="japanTechniquesContainer"></div>
+
+                <h3>Classic Dishes</h3>
+                <div id="japanDishesContainer"></div>
+            </div>
+        </div>
+
+        <!-- VEGAN BEANS TAB -->
+        <div id="beans" class="content">
+            <div class="section">
+                <h2>🫘 The Great Vegan Bean Book: Plant-Based Protein</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Master bean varieties, cooking methods, digestibility tips, and recipes for delicious plant-based nutrition.</p>
+
+                <h3>Bean Varieties</h3>
+                <div id="beanVarietiesContainer"></div>
+
+                <h3>Cooking Methods</h3>
+                <div id="beanMethodsContainer"></div>
+
+                <h3>Complete Protein Combinations</h3>
+                <div id="beanCombosContainer"></div>
+            </div>
+        </div>
+
+        <!-- ANIME FOOD TAB -->
+        <div id="anime" class="content">
+            <div class="section">
+                <h2>🍜 Cook Anime: Eat Like Your Favorite Character</h2>
+                <p style="margin-bottom: 15px; color: #d0d0d0;">Iconic dishes from popular anime and manga, with recipes and cultural context. Recreate your favorite anime food scenes!</p>
+
+                <h3>Iconic Dishes</h3>
+                <div id="animeIconicContainer"></div>
+
+                <h3>Anime Food Tropes</h3>
+                <div id="animeTropesContainer"></div>
+
+                <h3>Regional Japanese Cuisine</h3>
+                <div id="animeRegionContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let knifeData = null;
+        let molGastroData = null;
+        let nutritionData = null;
+        let fundamentalsData = null;
+        let bakingData = null;
+        let fiberData = null;
+        let fermentationData = null;
+        let veganData = null;
+        let japaneseData = null;
+        let beansData = null;
+        let animeData = null;
+
+        // Load all data
+        async function loadData() {
+            try {
+                const responses = await Promise.all([
+                    fetch('./data/knife-skills-guide.json'),
+                    fetch('./data/molecular-gastronomy-science.json'),
+                    fetch('./data/nutritional-biochemistry.json'),
+                    fetch('./data/cooking-fundamentals.json'),
+                    fetch('./data/sandwich-cookies-baking.json'),
+                    fetch('./data/dietary-fiber-guide.json'),
+                    fetch('./data/fermentation-microorganisms.json'),
+                    fetch('./data/gluten-free-vegan-cooking.json'),
+                    fetch('./data/japanese-home-cooking.json'),
+                    fetch('./data/vegan-beans-guide.json'),
+                    fetch('./data/anime-food-culture.json')
+                ]);
+
+                [knifeData, molGastroData, nutritionData, fundamentalsData, bakingData,
+                 fiberData, fermentationData, veganData, japaneseData, beansData, animeData] =
+                    await Promise.all(responses.map(r => r.json()));
+
+                renderKnifeSkills();
+                renderMolGastro();
+                renderNutrition();
+                renderFundamentals();
+                renderBaking();
+                renderFiber();
+                renderFermentation();
+                renderVegan();
+                renderJapanese();
+                renderBeans();
+                renderAnime();
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function switchTab(tabName) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            // Show selected content
+            document.getElementById(tabName).classList.add('active');
+
+            // Update button states
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function renderKnifeSkills() {
+            if (!knifeData) return;
+            const guide = knifeData.knifeSkillsGuide;
+
+            // Render knife types
+            let knifeHTML = '';
+            guide.knifeTypes.forEach(knife => {
+                knifeHTML += `
+                    <div class="item">
+                        <h4>${knife.name} (${knife.length})</h4>
+                        <p><strong>Usage:</strong> ${knife.usage}</p>
+                        <p><strong>Technique:</strong> ${knife.technique}</p>
+                        <p><strong>Best for:</strong> ${knife.bestFor.join(', ')}</p>
+                        <p style="color: #52b788;"><strong>⚠️ Safety:</strong> ${knife.safetyTip}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('knifesTypesContainer').innerHTML = knifeHTML;
+
+            // Render cutting techniques
+            let cutHTML = '';
+            guide.cuttingTechniques.forEach(cut => {
+                cutHTML += `
+                    <div class="item">
+                        <h4>${cut.name}</h4>
+                        <p>${cut.description}</p>
+                        <p><strong>Sizes:</strong> ${cut.sizes ? cut.sizes.join(', ') : cut.size}</p>
+                        <p><strong>Best for:</strong> ${cut.bestFor.join(', ')}</p>
+                        <p><strong>Technique:</strong> ${cut.technique}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('cuttingTechniquesContainer').innerHTML = cutHTML;
+
+            // Render safety summary
+            let safetyHTML = '';
+            guide.safetySummary.forEach(tip => {
+                safetyHTML += `<li>✓ ${tip}</li>`;
+            });
+            document.getElementById('safetySummaryContainer').innerHTML = safetyHTML;
+        }
+
+        function renderMolGastro() {
+            if (!molGastroData) return;
+            const guide = molGastroData.molecularGastronomyGuide;
+
+            // Render fundamental concepts
+            let conceptHTML = '';
+            guide.fundamentalConcepts.forEach(concept => {
+                conceptHTML += `
+                    <div class="item">
+                        <h4>${concept.name}</h4>
+                        <p>${concept.description}</p>
+                        <p><strong>Temperature:</strong> ${concept.temperature}</p>
+                        ${concept.chemicalBreakdown ? `
+                            <div class="chemical-equation">${concept.chemicalBreakdown}</div>
+                        ` : ''}
+                        ${concept.examples ? `
+                            <p><strong>Examples:</strong> ${concept.examples.join(', ')}</p>
+                        ` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('fundamentalConceptsContainer').innerHTML = conceptHTML;
+
+            // Render temperature techniques
+            let tempHTML = '';
+            guide.temperatureControlTechniques.forEach(tech => {
+                tempHTML += `
+                    <div class="item">
+                        <h4>${tech.name}</h4>
+                        <p><strong>Temperature:</strong> ${tech.temperature}</p>
+                        <p><strong>Process:</strong></p>
+                        <ol style="margin-left: 20px;">
+                            ${tech.process.map(p => `<li>${p}</li>`).join('')}
+                        </ol>
+                        ${tech.advantage ? `<p style="color: #52b788;"><strong>✓ Advantage:</strong> ${tech.advantage}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('temperatureControlContainer').innerHTML = tempHTML;
+
+            // Render chemical transformations
+            let chemHTML = '';
+            guide.chemicalTransformations.forEach(chem => {
+                chemHTML += `
+                    <div class="item">
+                        <h4>${chem.name}</h4>
+                        <p>${chem.description}</p>
+                        <p><strong>Process:</strong> ${chem.process}</p>
+                        <p><strong>Examples:</strong></p>
+                        <ul style="margin-left: 20px;">
+                            ${chem.examples.map(ex => `<li>${ex}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            });
+            document.getElementById('chemicalTransformationsContainer').innerHTML = chemHTML;
+        }
+
+        function renderNutrition() {
+            if (!nutritionData) return;
+            const guide = nutritionData.nutritionalBiochemistryGuide;
+
+            // Render categories
+            let catHTML = '';
+            guide.vitaminCategories.forEach(cat => {
+                catHTML += `
+                    <div class="item">
+                        <h4>${cat.category}</h4>
+                        <p>${cat.description}</p>
+                        <p><strong>Absorption:</strong> ${cat.absorption}</p>
+                        <p><strong>Toxicity:</strong> ${cat.toxicity}</p>
+                        <p><strong>Examples:</strong> ${cat.vitamins.join(', ')}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('vitaminCategoriesContainer').innerHTML = catHTML;
+
+            // Render vitamins
+            let vitHTML = '';
+            guide.vitamins.slice(0, 6).forEach(vit => {
+                vitHTML += `
+                    <div class="item">
+                        <h4>${vit.name} ${vit.type === 'Fat-Soluble' ? '🔶' : '💧'}</h4>
+                        <p><strong>Daily:</strong> ${vit.recommendedDaily}</p>
+                        <p><strong>Functions:</strong> ${vit.functions.slice(0, 2).join(', ')}</p>
+                        ${vit.dietarySources && typeof vit.dietarySources === 'object' && vit.dietarySources.excellentSources ? `
+                            <p><strong>Sources:</strong> ${vit.dietarySources.excellentSources.slice(0, 3).join(', ')}</p>
+                        ` : ''}
+                        ${vit.deficiencySigns ? `
+                            <p style="color: #ff6b6b;"><strong>⚠️ Deficiency:</strong> ${vit.deficiencySigns[0]}</p>
+                        ` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('vitaminsContainer').innerHTML = vitHTML;
+
+            // Render optimization
+            let optHTML = '';
+            guide.nutritionalOptimization.forEach(opt => {
+                optHTML += `
+                    <div class="item">
+                        <h4>💡 ${opt.strategy}</h4>
+                        <p><strong>Application:</strong> ${opt.application}</p>
+                        <p><strong>Examples:</strong> ${opt.examples.join(', ')}</p>
+                        ${opt.science ? `<p style="color: #66ff99;"><strong>Science:</strong> ${opt.science}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('nutritionalOptContainer').innerHTML = optHTML;
+        }
+
+        function renderFundamentals() {
+            if (!fundamentalsData) return;
+            const guide = fundamentalsData.cookingFundamentalsGuide;
+
+            // Render cooking methods
+            let methodHTML = '';
+            guide.basicCookingMethods.forEach(method => {
+                methodHTML += `
+                    <div class="item">
+                        <h4>${method.name}</h4>
+                        <p>${method.description}</p>
+                        <p><strong>Temperature:</strong> ${method.temperature}</p>
+                        <p><strong>Best for:</strong> ${method.bestFor.slice(0, 3).join(', ')}</p>
+                        <p><strong>Timing:</strong> ${method.timing}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('cookingMethodsContainer').innerHTML = methodHTML;
+
+            // Render essential skills
+            let skillHTML = '';
+            guide.essentialSkills.forEach(skill => {
+                skillHTML += `
+                    <div class="item">
+                        <h4>✓ ${skill.name}</h4>
+                        <p>${skill.description}</p>
+                        <p><strong>Importance:</strong> ${skill.importance || skill.process[0]}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('essentialSkillsContainer').innerHTML = skillHTML;
+
+            // Render common mistakes
+            let mistakeHTML = '';
+            guide.commonMistakes.slice(0, 4).forEach(mistake => {
+                mistakeHTML += `
+                    <div class="item" style="border-left-color: #ff6b6b;">
+                        <h4>❌ ${mistake.mistake}</h4>
+                        <p><strong>Result:</strong> ${mistake.result}</p>
+                        <p style="color: #52b788;"><strong>✓ Solution:</strong> ${mistake.solution}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('mistakesContainer').innerHTML = mistakeHTML;
+        }
+
+        function renderBaking() {
+            if (!bakingData) return;
+            const guide = bakingData.sandwichCookiesGuide;
+
+            // Render fundamentals
+            let fundHTML = '';
+            guide.bakingFundamentals.forEach(fund => {
+                fundHTML += `
+                    <div class="item">
+                        <h4>🧪 ${fund.topic}</h4>
+                        <p>${fund.description}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('bakingFundamentalsContainer').innerHTML = fundHTML;
+
+            // Render cookie types
+            let typeHTML = '';
+            guide.sandwichCookieTypes.forEach(type => {
+                const diffClass = type.difficulty.toLowerCase().replace(' ', '-');
+                typeHTML += `
+                    <div class="item">
+                        <h4>${type.name}</h4>
+                        <p><strong>Origin:</strong> ${type.country}</p>
+                        <span class="tag difficulty-${diffClass}">${type.difficulty}</span>
+                        <p style="margin-top: 8px;">${type.characteristics.slice(0, 2).join(', ')}</p>
+                        ${type.fillings ? `<p><strong>Fillings:</strong> ${type.fillings.slice(0, 2).join(', ')}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('cookieTypesContainer').innerHTML = typeHTML;
+
+            // Render fillings
+            let fillHTML = '';
+            guide.fillingRecipes.slice(0, 4).forEach(fill => {
+                const diffClass = fill.difficulty.toLowerCase().replace(' ', '-');
+                fillHTML += `
+                    <div class="item">
+                        <h4>${fill.name}</h4>
+                        <span class="tag difficulty-${diffClass}">${fill.difficulty}</span>
+                        <p style="margin-top: 8px;"><strong>Ingredients:</strong> ${fill.ingredients.slice(0, 2).join(', ')}</p>
+                        ${fill.advantages ? `<p style="color: #52b788;"><strong>✓ Advantages:</strong> ${fill.advantages.slice(0, 2).join(', ')}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('fillingRecipesContainer').innerHTML = fillHTML;
+
+            // Render recipes
+            let recipeHTML = '';
+            guide.sandwichCookieRecipes.forEach(recipe => {
+                const diffClass = recipe.difficulty.toLowerCase().replace(' ', '-');
+                recipeHTML += `
+                    <div class="item">
+                        <h4>${recipe.name}</h4>
+                        <span class="tag difficulty-${diffClass}">${recipe.difficulty}</span>
+                        <p style="margin-top: 8px;"><strong>Yield:</strong> ${recipe.yield}</p>
+                        ${recipe.filling ? `<p><strong>Filling:</strong> ${recipe.filling}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('sandwichRecipesContainer').innerHTML = recipeHTML;
+        }
+
+        function renderFiber() {
+            if (!fiberData) return;
+            const guide = fiberData.dietaryFiberGuide;
+
+            let typeHTML = '';
+            guide.fiberTypes.forEach(fiber => {
+                typeHTML += `
+                    <div class="item">
+                        <h4>${fiber.name}</h4>
+                        <p>${fiber.description}</p>
+                        <p><strong>Sources:</strong> ${fiber.sources.slice(0, 3).join(', ')}</p>
+                        <p><strong>Benefits:</strong> ${fiber.healthBenefits.slice(0, 2).join(', ')}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('fiberTypesContainer').innerHTML = typeHTML;
+
+            let benefitHTML = '';
+            guide.healthBenefits.slice(0, 3).forEach(benefit => {
+                benefitHTML += `
+                    <div class="item">
+                        <h4>✓ ${benefit.benefit}</h4>
+                        <p>${benefit.details.join(', ')}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('fiberBenefitsContainer').innerHTML = benefitHTML;
+
+            let sourceHTML = '';
+            guide.fiberSources.slice(0, 3).forEach(category => {
+                sourceHTML += `
+                    <div class="item">
+                        <h4>${category.category}</h4>
+                        ${category.sources.map(source => `
+                            <p><strong>${source.food}:</strong> ${source.fiberContent} (${source.type})</p>
+                        `).join('')}
+                    </div>
+                `;
+            });
+            document.getElementById('fiberSourcesContainer').innerHTML = sourceHTML;
+        }
+
+        function renderFermentation() {
+            if (!fermentationData) return;
+            const guide = fermentationData.fermentationMicroorganismsGuide;
+
+            let microbeHTML = '';
+            guide.primaryMicroorganisms.forEach(microbe => {
+                microbeHTML += `
+                    <div class="item">
+                        <h4>🦠 ${microbe.name}</h4>
+                        <p>${microbe.description}</p>
+                        ${microbe.commonSpecies ? `
+                            <p><strong>Common:</strong> ${microbe.commonSpecies.map(s => s.species).join(', ')}</p>
+                        ` : ''}
+                        ${microbe.healthBenefits ? `
+                            <p style="color: #52b788;"><strong>✓ Benefits:</strong> ${microbe.healthBenefits.slice(0, 2).join(', ')}</p>
+                        ` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('microbesContainer').innerHTML = microbeHTML;
+
+            let foodHTML = '';
+            guide.traditionalFermentedFoods.slice(0, 4).forEach(food => {
+                foodHTML += `
+                    <div class="item">
+                        <h4>${food.name}</h4>
+                        <p><strong>Origin:</strong> ${food.origin}</p>
+                        <p><strong>Microbes:</strong> ${food.primaryMicrobes.join(', ')}</p>
+                        <p><strong>Flavor:</strong> ${food.flavorProfile}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('fermentedFoodsContainer').innerHTML = foodHTML;
+
+            let condHTML = '';
+            guide.fermentationConditions.slice(0, 3).forEach(cond => {
+                condHTML += `
+                    <div class="item">
+                        <h4>⚙️ ${cond.factor}</h4>
+                        ${cond.optimal ? `<p><strong>Optimal:</strong> ${cond.optimal}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('fermentationConditionsContainer').innerHTML = condHTML;
+        }
+
+        function renderVegan() {
+            if (!veganData) return;
+            const guide = veganData.glutenFreeVeganGuide;
+
+            let bakeHTML = '';
+            guide.glutenFreeBaking.slice(0, 3).forEach(topic => {
+                bakeHTML += `
+                    <div class="item">
+                        <h4>🧪 ${topic.topic}</h4>
+                        <p>${topic.description}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('gfBakingContainer').innerHTML = bakeHTML;
+
+            let proteinHTML = '';
+            if (guide.veganProteinBuilding[0] && guide.veganProteinBuilding[0].sources) {
+                guide.veganProteinBuilding[0].sources.slice(0, 4).forEach(source => {
+                    proteinHTML += `
+                        <div class="item">
+                            <h4>${source.legume}</h4>
+                            <p><strong>Protein:</strong> ${source.proteinContent}</p>
+                            <p><strong>Uses:</strong> ${source.uses.join(', ')}</p>
+                        </div>
+                    `;
+                });
+            }
+            document.getElementById('veganProteinContainer').innerHTML = proteinHTML;
+
+            let nutritionHTML = '';
+            guide.nutritionConsiderations.forEach(nutrition => {
+                nutritionHTML += `
+                    <div class="item">
+                        <h4>⚠️ ${nutrition.nutrient}</h4>
+                        <p><strong>Why:</strong> ${nutrition.why}</p>
+                        <p><strong>Sources:</strong> ${Array.isArray(nutrition.sources) ? nutrition.sources.slice(0, 2).join(', ') : nutrition.sources || nutrition.vegan}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('veganNutritionContainer').innerHTML = nutritionHTML;
+        }
+
+        function renderJapanese() {
+            if (!japaneseData) return;
+            const guide = japaneseData.japaneseHomeCookingGuide;
+
+            let principleHTML = '';
+            guide.fundamentalPrinciples.forEach(principle => {
+                principleHTML += `
+                    <div class="item">
+                        <h4>🎯 ${principle.principle}</h4>
+                        <p><strong>Meaning:</strong> ${principle.meaning}</p>
+                        <p>${principle.application || principle.benefit || principle.philosophy}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('japanPrinciplesContainer').innerHTML = principleHTML;
+
+            let ingredHTML = '';
+            guide.essentialIngredients.slice(0, 4).forEach(ing => {
+                ingredHTML += `
+                    <div class="item">
+                        <h4>🍯 ${ing.ingredient}</h4>
+                        <p>${ing.description || ing.purpose || 'Essential ingredient'}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('japanIngredientsContainer').innerHTML = ingredHTML;
+
+            let techHTML = '';
+            guide.cookingTechniques.slice(0, 3).forEach(tech => {
+                techHTML += `
+                    <div class="item">
+                        <h4>🍳 ${tech.name}</h4>
+                        <p>${tech.description}</p>
+                        ${tech.examples ? `<p><strong>Examples:</strong> ${tech.examples.slice(0, 2).join(', ')}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('japanTechniquesContainer').innerHTML = techHTML;
+
+            let dishHTML = '';
+            guide.classicDishes.slice(0, 3).forEach(dish => {
+                dishHTML += `
+                    <div class="item">
+                        <h4>🍲 ${dish.name}</h4>
+                        <p>${dish.description}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('japanDishesContainer').innerHTML = dishHTML;
+        }
+
+        function renderBeans() {
+            if (!beansData) return;
+            const guide = beansData.veganBeansGuide;
+
+            let beanHTML = '';
+            guide.beanVarieties.slice(0, 5).forEach(bean => {
+                beanHTML += `
+                    <div class="item">
+                        <h4>🫘 ${bean.name}</h4>
+                        <p><strong>Origin:</strong> ${bean.origin}</p>
+                        <p><strong>Protein:</strong> ${bean.nutrition.protein}</p>
+                        <p><strong>Taste:</strong> ${bean.taste}</p>
+                        <p><strong>Cooking:</strong> ${bean.cookingTime}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('beanVarietiesContainer').innerHTML = beanHTML;
+
+            let methodHTML = '';
+            guide.beanCookingMethods.slice(0, 3).forEach(method => {
+                methodHTML += `
+                    <div class="item">
+                        <h4>🔥 ${method.name}</h4>
+                        ${method.advantage ? `<p><strong>✓ Advantage:</strong> ${method.advantage}</p>` : ''}
+                        ${method.timing ? `<p><strong>Time:</strong> ${method.timing}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('beanMethodsContainer').innerHTML = methodHTML;
+
+            let comboHTML = '';
+            guide.completeProteinCombinations.forEach(combo => {
+                comboHTML += `
+                    <div class="item">
+                        <h4>✓ ${combo.combination}</h4>
+                        <p><strong>Examples:</strong> ${combo.examples.slice(0, 2).join(', ')}</p>
+                        ${combo.benefit ? `<p style="color: #52b788;"><strong>✓ Benefit:</strong> ${combo.benefit}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('beanCombosContainer').innerHTML = comboHTML;
+        }
+
+        function renderAnime() {
+            if (!animeData) return;
+            const guide = animeData.animeFoodCultureGuide;
+
+            let dishHTML = '';
+            guide.iconicDishes.slice(0, 4).forEach(dish => {
+                dishHTML += `
+                    <div class="item">
+                        <h4>🍜 ${dish.name}</h4>
+                        <p><strong>Origin:</strong> ${dish.origin}</p>
+                        <p><strong>Significance:</strong> ${dish.culturalSignificance}</p>
+                        ${dish.appearsIn ? `<p><strong>In Anime:</strong> ${dish.appearsIn.slice(0, 1).join(', ')}</p>` : ''}
+                    </div>
+                `;
+            });
+            document.getElementById('animeIconicContainer').innerHTML = dishHTML;
+
+            let tropeHTML = '';
+            guide.foodAnimeTropes.slice(0, 3).forEach(trope => {
+                tropeHTML += `
+                    <div class="item">
+                        <h4>📺 ${trope.trope}</h4>
+                        <p>${trope.description}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('animeTropesContainer').innerHTML = tropeHTML;
+
+            let regionHTML = '';
+            guide.cuisineByRegion.forEach(region => {
+                regionHTML += `
+                    <div class="item">
+                        <h4>🗾 ${region.region}</h4>
+                        <p>${region.characteristics}</p>
+                    </div>
+                `;
+            });
+            document.getElementById('animeRegionContainer').innerHTML = regionHTML;
+        }
+
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            if (searchTerm.length < 2) return;
+
+            // Search logic would go here
+            console.log('Searching for:', searchTerm);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

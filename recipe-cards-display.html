@@ -18,6 +18,8 @@
       --primary: #667eea;
       --secondary: #764ba2;
       --accent: #FF5C9D;
+      --coffee: #6F4E37;
+      --coffee-light: #C4956A;
       --light-bg: #f9f9f9;
       --border-color: #e0e0e0;
     }
@@ -68,7 +70,6 @@
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
     }
 
     .recipe-card:hover {
@@ -180,15 +181,20 @@
       font-weight: bold;
     }
 
+    .card-actions {
+      display: flex;
+      gap: 8px;
+    }
+
     .btn-view-steps {
-      width: 100%;
+      flex: 1;
       padding: 10px;
       background: var(--primary);
       color: white;
       border: none;
       border-radius: 6px;
       font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
+      font-size: 9px;
       cursor: pointer;
       transition: background 0.3s;
       letter-spacing: 0.5px;
@@ -198,7 +204,25 @@
       background: var(--secondary);
     }
 
-    /* Modal for recipe steps */
+    .btn-pair-drink {
+      flex: 1;
+      padding: 10px;
+      background: var(--coffee);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      cursor: pointer;
+      transition: background 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-pair-drink:hover {
+      background: var(--coffee-light);
+    }
+
+    /* ── Modal base ── */
     .modal {
       display: none;
       position: fixed;
@@ -226,6 +250,7 @@
       background: white;
       border-radius: 12px;
       max-width: 700px;
+      width: 95%;
       max-height: 90vh;
       overflow-y: auto;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -246,9 +271,13 @@
       align-items: flex-start;
     }
 
+    .modal-header.coffee-header {
+      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
+    }
+
     .modal-header h2 {
       font-family: 'Press Start 2P', monospace;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 8px;
       letter-spacing: 1px;
     }
@@ -266,6 +295,7 @@
       align-items: center;
       justify-content: center;
       transition: background 0.3s;
+      flex-shrink: 0;
     }
 
     .modal-close:hover {
@@ -322,14 +352,8 @@
       margin-left: 20px;
     }
 
-    .step-time {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
     .step-time::before {
-      content: "⏱";
+      content: "⏱ ";
     }
 
     .step-tips {
@@ -349,6 +373,7 @@
       color: #FFB800;
     }
 
+    /* ── Filter section ── */
     .filter-section {
       background: rgba(255, 255, 255, 0.1);
       padding: 20px;
@@ -395,6 +420,259 @@
       color: white;
     }
 
+    /* ── Drink Pairing Modal ── */
+    .drink-modal-content {
+      max-width: 800px;
+    }
+
+    .pairing-context {
+      background: #f0ebe5;
+      border-left: 4px solid var(--coffee);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .pairing-context strong {
+      color: var(--coffee);
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+    }
+
+    /* Drink category filter bar */
+    .drink-cat-bar {
+      margin-bottom: 16px;
+    }
+
+    .drink-cat-bar-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+      color: var(--coffee);
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .drink-cat-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .cat-pill {
+      padding: 6px 12px;
+      border: 2px solid var(--coffee);
+      border-radius: 20px;
+      font-size: 11px;
+      font-family: monospace;
+      cursor: pointer;
+      background: white;
+      color: var(--coffee);
+      transition: all 0.2s;
+      font-weight: bold;
+    }
+
+    .cat-pill:hover {
+      background: var(--coffee);
+      color: white;
+    }
+
+    .cat-pill.active {
+      background: var(--coffee);
+      color: white;
+    }
+
+    .cat-pill.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      border-style: dashed;
+    }
+
+    /* Remix controls */
+    .remix-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .remix-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+      color: #555;
+    }
+
+    .remix-label span {
+      color: var(--coffee);
+    }
+
+    .btn-remix {
+      padding: 8px 16px;
+      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      cursor: pointer;
+      transition: opacity 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-remix:hover {
+      opacity: 0.85;
+    }
+
+    /* Drink result cards */
+    .drink-results {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .drink-card {
+      border: 2px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .drink-card:hover {
+      border-color: var(--coffee-light);
+      transform: translateY(-2px);
+    }
+
+    .drink-card.top-pick {
+      border-color: var(--coffee);
+      box-shadow: 0 2px 12px rgba(111, 78, 55, 0.2);
+    }
+
+    .drink-card-header {
+      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
+      color: white;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .drink-card.top-pick .drink-card-header {
+      background: linear-gradient(135deg, #C4956A 0%, var(--coffee) 100%);
+    }
+
+    .drink-card-name {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    .drink-emoji {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .drink-card-body {
+      padding: 10px 12px;
+    }
+
+    .drink-desc {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    .drink-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .drink-tag {
+      background: #f0ebe5;
+      color: var(--coffee);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .drink-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .drink-price {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 11px;
+      color: var(--coffee);
+    }
+
+    .drink-temp-badge {
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+
+    .drink-temp-badge.hot {
+      background: #FFF0E0;
+      color: #E67E22;
+    }
+
+    .drink-temp-badge.iced {
+      background: #E0F0FF;
+      color: #2980B9;
+    }
+
+    .drink-temp-badge.both {
+      background: #F0FFE0;
+      color: #27AE60;
+    }
+
+    .top-pick-ribbon {
+      font-size: 9px;
+      background: #FFD700;
+      color: #5a3e00;
+      padding: 1px 6px;
+      border-radius: 6px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .no-drinks-msg {
+      text-align: center;
+      padding: 30px;
+      color: #999;
+      font-size: 12px;
+      grid-column: 1 / -1;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 2px dashed var(--border-color);
+      margin: 20px 0;
+    }
+
+    .think-coffee-credit {
+      text-align: center;
+      font-size: 11px;
+      color: #999;
+      margin-top: 16px;
+    }
+
+    .think-coffee-credit strong {
+      color: var(--coffee);
+    }
+
     @media (max-width: 768px) {
       .recipe-grid {
         grid-template-columns: 1fr;
@@ -408,6 +686,14 @@
       .page-header h1 {
         font-size: 20px;
       }
+
+      .drink-results {
+        grid-template-columns: 1fr;
+      }
+
+      .card-actions {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -416,7 +702,7 @@
     <!-- Header -->
     <div class="page-header">
       <h1>🌍 Recipe Cards</h1>
-      <p>International Cookbook Recipes from Afghanistan, Balkans & More</p>
+      <p>International Cookbook Recipes — pair each dish with a Think Coffee drink</p>
     </div>
 
     <!-- Filter Section -->
@@ -434,11 +720,11 @@
 
     <!-- Recipe Grid -->
     <div class="recipe-grid" id="recipeGrid">
-      <!-- Recipes will be inserted here -->
+      <!-- Recipes injected here -->
     </div>
   </div>
 
-  <!-- Modal for Steps -->
+  <!-- Modal: Recipe Steps -->
   <div class="modal" id="stepsModal">
     <div class="modal-content">
       <div class="modal-header">
@@ -446,7 +732,7 @@
           <h2 id="modalTitle"></h2>
           <p id="modalSubtitle" style="opacity: 0.9; font-size: 12px;"></p>
         </div>
-        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <button class="modal-close" onclick="closeModal('stepsModal')">&times;</button>
       </div>
       <div class="modal-body">
         <div class="steps-container" id="stepsContainer"></div>
@@ -454,45 +740,77 @@
     </div>
   </div>
 
+  <!-- Modal: Drink Pairing -->
+  <div class="modal" id="drinkModal">
+    <div class="modal-content drink-modal-content">
+      <div class="modal-header coffee-header">
+        <div>
+          <h2>☕ Pair a Drink</h2>
+          <p id="drinkModalSubtitle" style="opacity: 0.85; font-size: 12px; margin-top: 4px;"></p>
+        </div>
+        <button class="modal-close" onclick="closeModal('drinkModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Context strip -->
+        <div class="pairing-context" id="pairingContext"></div>
+
+        <!-- Category remix pills -->
+        <div class="drink-cat-bar">
+          <div class="drink-cat-bar-label">REMIX BY DRINK TYPE</div>
+          <div class="drink-cat-pills" id="catPills"></div>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- Remix bar -->
+        <div class="remix-bar">
+          <div class="remix-label">Showing <span id="drinkCount">0</span> drinks for this meal</div>
+          <button class="btn-remix" onclick="remixDrinks()">🔀 REMIX SUGGESTIONS</button>
+        </div>
+
+        <!-- Drink cards -->
+        <div class="drink-results" id="drinkResults"></div>
+
+        <div class="think-coffee-credit">Drinks sourced from <strong>Think Coffee</strong> — NYC</div>
+      </div>
+    </div>
+  </div>
+
   <script>
     let recipesData = [];
+    let coffeeMenu = { drinks: [], pairingRules: {} };
     let currentFilter = 'all';
+    let activePairingRecipe = null;
+    let activeDrinkCategory = 'all';
+    let remixSeed = 0;
 
-    // Load recipes from JSON
-    async function loadRecipes() {
-      try {
-        const response = await fetch('data/international-cookbooks-recipes.json');
-        const data = await response.json();
-        recipesData = data.recipes;
-        renderRecipes();
-      } catch (error) {
-        console.error('Error loading recipes:', error);
-      }
+    // ── Load data ──────────────────────────────────────────────
+    async function loadAll() {
+      const [recipeRes, coffeeRes] = await Promise.all([
+        fetch('data/international-cookbooks-recipes.json'),
+        fetch('data/think-coffee-menu.json')
+      ]);
+      const recipeData = await recipeRes.json();
+      const coffeeData = await coffeeRes.json();
+      recipesData = recipeData.recipes;
+      coffeeMenu = coffeeData;
+      buildCatPills();
+      renderRecipes();
     }
 
+    // ── Recipe rendering ───────────────────────────────────────
     function renderRecipes() {
       const grid = document.getElementById('recipeGrid');
       grid.innerHTML = '';
-
       const filtered = currentFilter === 'all'
         ? recipesData
         : recipesData.filter(r => r.mealType === currentFilter);
-
-      filtered.forEach(recipe => {
-        const card = createRecipeCard(recipe);
-        grid.appendChild(card);
-      });
+      filtered.forEach(recipe => grid.appendChild(createRecipeCard(recipe)));
     }
 
     function createRecipeCard(recipe) {
       const div = document.createElement('div');
       div.className = 'recipe-card';
-
-      const ingredientsList = recipe.ingredients
-        .slice(0, 4)
-        .map(ing => `${ing.item}`)
-        .join(', ');
-
       div.innerHTML = `
         <div class="recipe-header">
           <h2>${recipe.name}</h2>
@@ -506,7 +824,6 @@
         </div>
         <div class="recipe-body">
           <p class="recipe-description">${recipe.description}</p>
-
           <div class="recipe-info">
             <div class="info-item">
               <span class="info-label">PREP TIME</span>
@@ -525,7 +842,6 @@
               ${recipe.steps.length} steps
             </div>
           </div>
-
           <div class="ingredients-preview">
             <h4>KEY INGREDIENTS</h4>
             <div class="ingredients-list">
@@ -534,24 +850,23 @@
               `).join('')}
             </div>
           </div>
-
-          <button class="btn-view-steps" onclick="openModal(${recipe.id})">VIEW RECIPE STEPS →</button>
+          <div class="card-actions">
+            <button class="btn-view-steps" onclick="openStepsModal(${recipe.id})">VIEW STEPS →</button>
+            <button class="btn-pair-drink" onclick="openDrinkModal(${recipe.id})">☕ PAIR DRINK</button>
+          </div>
         </div>
       `;
-
       return div;
     }
 
-    function openModal(recipeId) {
+    // ── Steps modal ────────────────────────────────────────────
+    function openStepsModal(recipeId) {
       const recipe = recipesData.find(r => r.id === recipeId);
       if (!recipe) return;
-
       document.getElementById('modalTitle').textContent = recipe.name;
       document.getElementById('modalSubtitle').textContent = recipe.subtitle;
-
-      const stepsContainer = document.getElementById('stepsContainer');
-      stepsContainer.innerHTML = '';
-
+      const container = document.getElementById('stepsContainer');
+      container.innerHTML = '';
       recipe.steps.forEach(step => {
         const stepDiv = document.createElement('div');
         stepDiv.className = 'step-card';
@@ -563,17 +878,224 @@
           </div>
           ${step.tips ? `<div class="step-tips">${step.tips}</div>` : ''}
         `;
-        stepsContainer.appendChild(stepDiv);
+        container.appendChild(stepDiv);
       });
-
       document.getElementById('stepsModal').classList.add('active');
     }
 
-    function closeModal() {
-      document.getElementById('stepsModal').classList.remove('active');
+    // ── Drink pairing modal ────────────────────────────────────
+    function openDrinkModal(recipeId) {
+      activePairingRecipe = recipesData.find(r => r.id === recipeId);
+      if (!activePairingRecipe) return;
+      activeDrinkCategory = 'all';
+      remixSeed = 0;
+
+      document.getElementById('drinkModalSubtitle').textContent =
+        `${activePairingRecipe.name} · ${activePairingRecipe.cuisine} · ${activePairingRecipe.mealType}`;
+
+      document.getElementById('pairingContext').innerHTML =
+        `<strong>PAIRING CONTEXT</strong><br>
+        ${activePairingRecipe.cuisine} cuisine · ${activePairingRecipe.mealType} · ${activePairingRecipe.difficulty} difficulty<br>
+        <em>${activePairingRecipe.description}</em>`;
+
+      updateCatPillState();
+      renderDrinkSuggestions();
+      document.getElementById('drinkModal').classList.add('active');
     }
 
-    // Filter functionality
+    // ── Category pills ─────────────────────────────────────────
+    function buildCatPills() {
+      const container = document.getElementById('catPills');
+      container.innerHTML = '';
+
+      const cats = [
+        { id: 'all',         label: 'All',          emoji: '🍶' },
+        { id: 'coffee',      label: 'Coffee',        emoji: '☕' },
+        { id: 'milk-drink',  label: 'Milk Drinks',   emoji: '🥛' },
+        { id: 'tea',         label: 'Tea',           emoji: '🍵' },
+        { id: 'matcha',      label: 'Matcha',        emoji: '🍃' },
+        { id: 'chocolate',   label: 'Chocolate',     emoji: '🍫' },
+        { id: 'juice',       label: 'Juice',         emoji: '🍋' },
+        { id: 'energy',      label: 'Energy',        emoji: '⚡' },
+        { id: 'specialty',   label: 'Specialty',     emoji: '✨' },
+        { id: 'non-alcoholic', label: 'Non-Alcoholic', emoji: '🧃' },
+        { id: 'alcoholic',   label: 'Alcoholic',     emoji: '🍸' },
+      ];
+
+      cats.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = 'cat-pill' + (cat.id === 'all' ? ' active' : '');
+        btn.dataset.cat = cat.id;
+        btn.textContent = `${cat.emoji} ${cat.label}`;
+        if (cat.id === 'alcoholic') {
+          btn.classList.add('disabled');
+          btn.title = 'No alcoholic options at Think Coffee';
+          btn.onclick = () => null;
+        } else {
+          btn.onclick = () => selectDrinkCategory(cat.id);
+        }
+        container.appendChild(btn);
+      });
+    }
+
+    function updateCatPillState() {
+      document.querySelectorAll('.cat-pill:not(.disabled)').forEach(pill => {
+        pill.classList.toggle('active', pill.dataset.cat === activeDrinkCategory);
+      });
+    }
+
+    function selectDrinkCategory(catId) {
+      activeDrinkCategory = catId;
+      remixSeed = 0;
+      updateCatPillState();
+      renderDrinkSuggestions();
+    }
+
+    // ── Pairing score logic ────────────────────────────────────
+    function scoreDrink(drink, recipe) {
+      let score = 0;
+      const cuisine = (recipe.cuisine || '').toLowerCase();
+      const mealType = (recipe.mealType || '').toLowerCase();
+
+      // Cuisine match via pairingRules
+      const rules = coffeeMenu.pairingRules || {};
+      const cuisineStyles = rules.cuisineTodrinkStyle || {};
+      for (const [key, styles] of Object.entries(cuisineStyles)) {
+        if (cuisine.includes(key)) {
+          const match = styles.filter(s => drink.categories.includes(s)).length;
+          score += match * 3;
+        }
+      }
+
+      // Direct pairsWith.cuisines match
+      if (drink.pairsWith?.cuisines) {
+        drink.pairsWith.cuisines.forEach(c => {
+          if (cuisine.includes(c.toLowerCase())) score += 4;
+        });
+      }
+
+      // Meal type match
+      if (drink.pairsWith?.mealTypes) {
+        drink.pairsWith.mealTypes.forEach(mt => {
+          if (mealType.includes(mt.toLowerCase())) score += 3;
+        });
+      }
+
+      // Mood match from mealTypeToMood
+      const mealMoods = rules.mealTypeToMood || {};
+      const moods = mealMoods[mealType] || [];
+      moods.forEach(mood => {
+        if (drink.pairingTags?.includes(mood)) score += 2;
+      });
+
+      // Seasonal bonus
+      if (drink.seasonal) score += 1;
+
+      // Featured bonus
+      if (drink.featured) score += 1;
+
+      return score;
+    }
+
+    // ── Deterministic shuffle with seed ────────────────────────
+    function seededShuffle(arr, seed) {
+      const a = [...arr];
+      let s = seed + 1;
+      for (let i = a.length - 1; i > 0; i--) {
+        s = ((s * 1664525) + 1013904223) & 0xffffffff;
+        const j = Math.abs(s) % (i + 1);
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    // ── Render drink suggestions ───────────────────────────────
+    function renderDrinkSuggestions() {
+      if (!activePairingRecipe) return;
+
+      const results = document.getElementById('drinkResults');
+      results.innerHTML = '';
+
+      let pool = coffeeMenu.drinks || [];
+
+      // Filter by selected category
+      if (activeDrinkCategory !== 'all') {
+        pool = pool.filter(d => d.categories.includes(activeDrinkCategory));
+      }
+
+      if (pool.length === 0) {
+        results.innerHTML = `<div class="no-drinks-msg">No drinks in this category. Try another!</div>`;
+        document.getElementById('drinkCount').textContent = '0';
+        return;
+      }
+
+      // Score, then shuffle within score tiers to support remix
+      const scored = pool.map(d => ({ drink: d, score: scoreDrink(d, activePairingRecipe) }));
+      scored.sort((a, b) => b.score - a.score);
+
+      // Group into tiers and shuffle within each tier for remix variety
+      const maxScore = scored[0].score;
+      const topTier = scored.filter(s => s.score >= maxScore - 2);
+      const rest = scored.filter(s => s.score < maxScore - 2);
+
+      const shuffledTop = seededShuffle(topTier, remixSeed);
+      const shuffledRest = seededShuffle(rest, remixSeed + 99);
+
+      const picks = [...shuffledTop, ...shuffledRest].slice(0, 6);
+
+      document.getElementById('drinkCount').textContent = pool.length;
+
+      picks.forEach((item, idx) => {
+        const card = createDrinkCard(item.drink, idx === 0 && activeDrinkCategory === 'all');
+        results.appendChild(card);
+      });
+    }
+
+    function createDrinkCard(drink, isTopPick) {
+      const div = document.createElement('div');
+      div.className = 'drink-card' + (isTopPick ? ' top-pick' : '');
+
+      const tempClass = drink.temp === 'both' ? 'both' : drink.temp;
+      const tempLabel = drink.temp === 'iced' ? '🧊 Iced' : drink.temp === 'hot' ? '🔥 Hot' : '🌡️ Any';
+
+      const seasonBadge = drink.seasonal
+        ? `<span class="top-pick-ribbon">${drink.seasonalLabel || 'Seasonal'}</span>`
+        : (isTopPick ? `<span class="top-pick-ribbon">⭐ Top Pick</span>` : '');
+
+      const flavorTags = (drink.flavorProfile || []).slice(0, 3)
+        .map(t => `<span class="drink-tag">${t}</span>`).join('');
+
+      div.innerHTML = `
+        <div class="drink-card-header">
+          <div>
+            <div class="drink-card-name">${drink.name}</div>
+            ${seasonBadge}
+          </div>
+          <div class="drink-emoji">${drink.emoji}</div>
+        </div>
+        <div class="drink-card-body">
+          <p class="drink-desc">${drink.description}</p>
+          <div class="drink-tags">${flavorTags}</div>
+          <div class="drink-footer">
+            <div class="drink-price">$${drink.price.toFixed(2)}</div>
+            <span class="drink-temp-badge ${tempClass}">${tempLabel}</span>
+          </div>
+        </div>
+      `;
+      return div;
+    }
+
+    function remixDrinks() {
+      remixSeed = (remixSeed + 1) % 50;
+      renderDrinkSuggestions();
+    }
+
+    // ── Shared modal close ─────────────────────────────────────
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    // Filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -583,15 +1105,14 @@
       });
     });
 
-    // Close modal when clicking outside
-    document.getElementById('stepsModal').addEventListener('click', (e) => {
-      if (e.target.id === 'stepsModal') {
-        closeModal();
-      }
+    // Close modals when clicking backdrop
+    ['stepsModal', 'drinkModal'].forEach(id => {
+      document.getElementById(id).addEventListener('click', (e) => {
+        if (e.target.id === id) closeModal(id);
+      });
     });
 
-    // Load recipes on page load
-    loadRecipes();
+    loadAll();
   </script>
 </body>
 </html>
