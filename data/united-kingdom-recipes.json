@@ -2,71 +2,59 @@
   "unitedkingdomRecipes": {
     "title": "Authentic United Kingdom Cuisine",
     "country": "United Kingdom",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
-        "id": "uk-b1",
+        "id": "gb-b1",
         "name": "Full English Breakfast",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "eggs",
           "bacon",
+          "eggs",
           "sausage",
-          "baked beans",
-          "mushrooms",
-          "tomato"
+          "beans"
         ],
         "instructions": [
-          "Fry bacon and sausage",
-          "Bake beans",
-          "Griddle mushrooms and tomato",
-          "Fry eggs"
+          "Classic breakfast - National iconic"
         ]
       },
       {
-        "id": "uk-b2",
+        "id": "gb-b2",
         "name": "Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "oats",
+          "milk"
+        ],
+        "instructions": [
+          "Scottish porridge"
+        ]
+      },
+      {
+        "id": "gb-b3",
+        "name": "Toast and Beans",
         "difficulty": "Easy",
         "servings": 4,
         "prepTime": 10,
         "cookTime": 15,
         "ingredients": [
-          "oats",
-          "milk",
-          "salt",
-          "honey"
+          "bread",
+          "baked beans"
         ],
         "instructions": [
-          "Cook oats in milk",
-          "Serve with honey"
+          "Simple breakfast"
         ]
       },
       {
-        "id": "uk-b3",
-        "name": "Crumpets",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 15,
-        "ingredients": [
-          "flour",
-          "yeast",
-          "milk",
-          "butter",
-          "jam"
-        ],
-        "instructions": [
-          "Griddle crumpets",
-          "Serve with butter and jam"
-        ]
-      },
-      {
-        "id": "uk-b4",
+        "id": "gb-b4",
         "name": "British B4",
         "difficulty": "Easy",
         "servings": 4,
@@ -80,7 +68,7 @@
         ]
       },
       {
-        "id": "uk-b5",
+        "id": "gb-b5",
         "name": "British B5",
         "difficulty": "Easy",
         "servings": 4,
@@ -94,7 +82,7 @@
         ]
       },
       {
-        "id": "uk-b6",
+        "id": "gb-b6",
         "name": "British B6",
         "difficulty": "Easy",
         "servings": 4,
@@ -108,7 +96,7 @@
         ]
       },
       {
-        "id": "uk-b7",
+        "id": "gb-b7",
         "name": "British B7",
         "difficulty": "Easy",
         "servings": 4,
@@ -122,7 +110,7 @@
         ]
       },
       {
-        "id": "uk-b8",
+        "id": "gb-b8",
         "name": "British B8",
         "difficulty": "Easy",
         "servings": 4,
@@ -136,7 +124,7 @@
         ]
       },
       {
-        "id": "uk-b9",
+        "id": "gb-b9",
         "name": "British B9",
         "difficulty": "Easy",
         "servings": 4,
@@ -150,7 +138,7 @@
         ]
       },
       {
-        "id": "uk-b10",
+        "id": "gb-b10",
         "name": "British B10",
         "difficulty": "Easy",
         "servings": 4,
@@ -164,7 +152,7 @@
         ]
       },
       {
-        "id": "uk-b11",
+        "id": "gb-b11",
         "name": "British B11",
         "difficulty": "Easy",
         "servings": 4,
@@ -178,7 +166,7 @@
         ]
       },
       {
-        "id": "uk-b12",
+        "id": "gb-b12",
         "name": "British B12",
         "difficulty": "Easy",
         "servings": 4,
@@ -192,7 +180,7 @@
         ]
       },
       {
-        "id": "uk-b13",
+        "id": "gb-b13",
         "name": "British B13",
         "difficulty": "Easy",
         "servings": 4,
@@ -206,7 +194,7 @@
         ]
       },
       {
-        "id": "uk-b14",
+        "id": "gb-b14",
         "name": "British B14",
         "difficulty": "Easy",
         "servings": 4,
@@ -220,7 +208,7 @@
         ]
       },
       {
-        "id": "uk-b15",
+        "id": "gb-b15",
         "name": "British B15",
         "difficulty": "Easy",
         "servings": 4,
@@ -234,7 +222,7 @@
         ]
       },
       {
-        "id": "uk-b16",
+        "id": "gb-b16",
         "name": "British B16",
         "difficulty": "Easy",
         "servings": 4,
@@ -248,7 +236,7 @@
         ]
       },
       {
-        "id": "uk-b17",
+        "id": "gb-b17",
         "name": "British B17",
         "difficulty": "Easy",
         "servings": 4,
@@ -262,7 +250,7 @@
         ]
       },
       {
-        "id": "uk-b18",
+        "id": "gb-b18",
         "name": "British B18",
         "difficulty": "Easy",
         "servings": 4,
@@ -276,7 +264,7 @@
         ]
       },
       {
-        "id": "uk-b19",
+        "id": "gb-b19",
         "name": "British B19",
         "difficulty": "Easy",
         "servings": 4,
@@ -290,7 +278,7 @@
         ]
       },
       {
-        "id": "uk-b20",
+        "id": "gb-b20",
         "name": "British B20",
         "difficulty": "Easy",
         "servings": 4,
@@ -306,63 +294,52 @@
     ],
     "lunch": [
       {
-        "id": "uk-l1",
+        "id": "gb-l1",
         "name": "Fish and Chips",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 25,
+        "cookTime": 20,
         "ingredients": [
-          "cod",
-          "flour",
-          "potatoes",
-          "vinegar"
+          "fish",
+          "potatoes"
         ],
         "instructions": [
-          "Batter and fry fish",
-          "Deep fry chips",
-          "Serve with vinegar"
+          "British classic - Most famous"
         ]
       },
       {
-        "id": "uk-l2",
+        "id": "gb-l2",
         "name": "Shepherd's Pie",
         "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
-        "cookTime": 50,
+        "cookTime": 45,
         "ingredients": [
           "lamb",
-          "potatoes",
-          "vegetables",
-          "gravy"
+          "potatoes"
         ],
         "instructions": [
-          "Mince lamb",
-          "Make gravy",
-          "Layer with mashed potatoes",
-          "Bake"
+          "Meat pie"
         ]
       },
       {
-        "id": "uk-l3",
-        "name": "Ploughman's Lunch",
-        "difficulty": "Easy",
+        "id": "gb-l3",
+        "name": "Sunday Roast",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 0,
+        "prepTime": 40,
+        "cookTime": 90,
         "ingredients": [
-          "bread",
-          "cheese",
-          "ham",
+          "roast beef",
           "vegetables"
         ],
         "instructions": [
-          "Traditional packed lunch"
+          "Traditional roast"
         ]
       },
       {
-        "id": "uk-l4",
+        "id": "gb-l4",
         "name": "British L4",
         "difficulty": "Medium",
         "servings": 4,
@@ -376,7 +353,7 @@
         ]
       },
       {
-        "id": "uk-l5",
+        "id": "gb-l5",
         "name": "British L5",
         "difficulty": "Medium",
         "servings": 4,
@@ -390,7 +367,7 @@
         ]
       },
       {
-        "id": "uk-l6",
+        "id": "gb-l6",
         "name": "British L6",
         "difficulty": "Medium",
         "servings": 4,
@@ -404,7 +381,7 @@
         ]
       },
       {
-        "id": "uk-l7",
+        "id": "gb-l7",
         "name": "British L7",
         "difficulty": "Medium",
         "servings": 4,
@@ -418,7 +395,7 @@
         ]
       },
       {
-        "id": "uk-l8",
+        "id": "gb-l8",
         "name": "British L8",
         "difficulty": "Medium",
         "servings": 4,
@@ -432,7 +409,7 @@
         ]
       },
       {
-        "id": "uk-l9",
+        "id": "gb-l9",
         "name": "British L9",
         "difficulty": "Medium",
         "servings": 4,
@@ -446,7 +423,7 @@
         ]
       },
       {
-        "id": "uk-l10",
+        "id": "gb-l10",
         "name": "British L10",
         "difficulty": "Medium",
         "servings": 4,
@@ -460,7 +437,7 @@
         ]
       },
       {
-        "id": "uk-l11",
+        "id": "gb-l11",
         "name": "British L11",
         "difficulty": "Medium",
         "servings": 4,
@@ -474,7 +451,7 @@
         ]
       },
       {
-        "id": "uk-l12",
+        "id": "gb-l12",
         "name": "British L12",
         "difficulty": "Medium",
         "servings": 4,
@@ -488,7 +465,7 @@
         ]
       },
       {
-        "id": "uk-l13",
+        "id": "gb-l13",
         "name": "British L13",
         "difficulty": "Medium",
         "servings": 4,
@@ -502,7 +479,7 @@
         ]
       },
       {
-        "id": "uk-l14",
+        "id": "gb-l14",
         "name": "British L14",
         "difficulty": "Medium",
         "servings": 4,
@@ -516,7 +493,7 @@
         ]
       },
       {
-        "id": "uk-l15",
+        "id": "gb-l15",
         "name": "British L15",
         "difficulty": "Medium",
         "servings": 4,
@@ -530,7 +507,7 @@
         ]
       },
       {
-        "id": "uk-l16",
+        "id": "gb-l16",
         "name": "British L16",
         "difficulty": "Medium",
         "servings": 4,
@@ -544,7 +521,7 @@
         ]
       },
       {
-        "id": "uk-l17",
+        "id": "gb-l17",
         "name": "British L17",
         "difficulty": "Medium",
         "servings": 4,
@@ -558,7 +535,7 @@
         ]
       },
       {
-        "id": "uk-l18",
+        "id": "gb-l18",
         "name": "British L18",
         "difficulty": "Medium",
         "servings": 4,
@@ -572,7 +549,7 @@
         ]
       },
       {
-        "id": "uk-l19",
+        "id": "gb-l19",
         "name": "British L19",
         "difficulty": "Medium",
         "servings": 4,
@@ -586,7 +563,7 @@
         ]
       },
       {
-        "id": "uk-l20",
+        "id": "gb-l20",
         "name": "British L20",
         "difficulty": "Medium",
         "servings": 4,
@@ -602,7 +579,7 @@
     ],
     "dinner": [
       {
-        "id": "uk-d1",
+        "id": "gb-d1",
         "name": "British D1",
         "difficulty": "Medium",
         "servings": 4,
@@ -616,7 +593,7 @@
         ]
       },
       {
-        "id": "uk-d2",
+        "id": "gb-d2",
         "name": "British D2",
         "difficulty": "Medium",
         "servings": 4,
@@ -630,7 +607,7 @@
         ]
       },
       {
-        "id": "uk-d3",
+        "id": "gb-d3",
         "name": "British D3",
         "difficulty": "Medium",
         "servings": 4,
@@ -644,7 +621,7 @@
         ]
       },
       {
-        "id": "uk-d4",
+        "id": "gb-d4",
         "name": "British D4",
         "difficulty": "Medium",
         "servings": 4,
@@ -658,7 +635,7 @@
         ]
       },
       {
-        "id": "uk-d5",
+        "id": "gb-d5",
         "name": "British D5",
         "difficulty": "Medium",
         "servings": 4,
@@ -672,7 +649,7 @@
         ]
       },
       {
-        "id": "uk-d6",
+        "id": "gb-d6",
         "name": "British D6",
         "difficulty": "Medium",
         "servings": 4,
@@ -686,7 +663,7 @@
         ]
       },
       {
-        "id": "uk-d7",
+        "id": "gb-d7",
         "name": "British D7",
         "difficulty": "Medium",
         "servings": 4,
@@ -700,7 +677,7 @@
         ]
       },
       {
-        "id": "uk-d8",
+        "id": "gb-d8",
         "name": "British D8",
         "difficulty": "Medium",
         "servings": 4,
@@ -714,7 +691,7 @@
         ]
       },
       {
-        "id": "uk-d9",
+        "id": "gb-d9",
         "name": "British D9",
         "difficulty": "Medium",
         "servings": 4,
@@ -728,7 +705,7 @@
         ]
       },
       {
-        "id": "uk-d10",
+        "id": "gb-d10",
         "name": "British D10",
         "difficulty": "Medium",
         "servings": 4,
@@ -742,7 +719,7 @@
         ]
       },
       {
-        "id": "uk-d11",
+        "id": "gb-d11",
         "name": "British D11",
         "difficulty": "Medium",
         "servings": 4,
@@ -756,7 +733,7 @@
         ]
       },
       {
-        "id": "uk-d12",
+        "id": "gb-d12",
         "name": "British D12",
         "difficulty": "Medium",
         "servings": 4,
@@ -770,7 +747,7 @@
         ]
       },
       {
-        "id": "uk-d13",
+        "id": "gb-d13",
         "name": "British D13",
         "difficulty": "Medium",
         "servings": 4,
@@ -784,7 +761,7 @@
         ]
       },
       {
-        "id": "uk-d14",
+        "id": "gb-d14",
         "name": "British D14",
         "difficulty": "Medium",
         "servings": 4,
@@ -798,7 +775,7 @@
         ]
       },
       {
-        "id": "uk-d15",
+        "id": "gb-d15",
         "name": "British D15",
         "difficulty": "Medium",
         "servings": 4,
@@ -812,7 +789,7 @@
         ]
       },
       {
-        "id": "uk-d16",
+        "id": "gb-d16",
         "name": "British D16",
         "difficulty": "Medium",
         "servings": 4,
@@ -826,7 +803,7 @@
         ]
       },
       {
-        "id": "uk-d17",
+        "id": "gb-d17",
         "name": "British D17",
         "difficulty": "Medium",
         "servings": 4,
@@ -840,7 +817,7 @@
         ]
       },
       {
-        "id": "uk-d18",
+        "id": "gb-d18",
         "name": "British D18",
         "difficulty": "Medium",
         "servings": 4,
@@ -854,7 +831,7 @@
         ]
       },
       {
-        "id": "uk-d19",
+        "id": "gb-d19",
         "name": "British D19",
         "difficulty": "Medium",
         "servings": 4,
@@ -868,7 +845,7 @@
         ]
       },
       {
-        "id": "uk-d20",
+        "id": "gb-d20",
         "name": "British D20",
         "difficulty": "Medium",
         "servings": 4,
@@ -884,7 +861,7 @@
     ],
     "desserts": [
       {
-        "id": "uk-des1",
+        "id": "gb-des1",
         "name": "Sticky Toffee Pudding",
         "difficulty": "Medium",
         "servings": 4,
@@ -892,34 +869,29 @@
         "cookTime": 40,
         "ingredients": [
           "dates",
-          "butter",
-          "sugar",
-          "cream"
+          "toffee"
         ],
         "instructions": [
-          "Moist sponge with toffee sauce"
+          "British dessert"
         ]
       },
       {
-        "id": "uk-des2",
-        "name": "Victoria Sponge",
-        "difficulty": "Medium",
+        "id": "gb-des2",
+        "name": "Bread Pudding",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 35,
+        "prepTime": 20,
+        "cookTime": 30,
         "ingredients": [
-          "flour",
-          "butter",
-          "eggs",
-          "sugar",
-          "jam"
+          "bread",
+          "milk"
         ],
         "instructions": [
-          "Classic layer cake"
+          "Bread pudding"
         ]
       },
       {
-        "id": "uk-des3",
+        "id": "gb-des3",
         "name": "British Des3",
         "difficulty": "Medium",
         "servings": 4,
@@ -933,7 +905,7 @@
         ]
       },
       {
-        "id": "uk-des4",
+        "id": "gb-des4",
         "name": "British Des4",
         "difficulty": "Medium",
         "servings": 4,
@@ -947,7 +919,7 @@
         ]
       },
       {
-        "id": "uk-des5",
+        "id": "gb-des5",
         "name": "British Des5",
         "difficulty": "Medium",
         "servings": 4,
@@ -961,7 +933,7 @@
         ]
       },
       {
-        "id": "uk-des6",
+        "id": "gb-des6",
         "name": "British Des6",
         "difficulty": "Medium",
         "servings": 4,
@@ -975,7 +947,7 @@
         ]
       },
       {
-        "id": "uk-des7",
+        "id": "gb-des7",
         "name": "British Des7",
         "difficulty": "Medium",
         "servings": 4,
@@ -989,7 +961,7 @@
         ]
       },
       {
-        "id": "uk-des8",
+        "id": "gb-des8",
         "name": "British Des8",
         "difficulty": "Medium",
         "servings": 4,
@@ -1003,7 +975,7 @@
         ]
       },
       {
-        "id": "uk-des9",
+        "id": "gb-des9",
         "name": "British Des9",
         "difficulty": "Medium",
         "servings": 4,
@@ -1017,7 +989,7 @@
         ]
       },
       {
-        "id": "uk-des10",
+        "id": "gb-des10",
         "name": "British Des10",
         "difficulty": "Medium",
         "servings": 4,
@@ -1031,7 +1003,7 @@
         ]
       },
       {
-        "id": "uk-des11",
+        "id": "gb-des11",
         "name": "British Des11",
         "difficulty": "Medium",
         "servings": 4,
@@ -1045,7 +1017,7 @@
         ]
       },
       {
-        "id": "uk-des12",
+        "id": "gb-des12",
         "name": "British Des12",
         "difficulty": "Medium",
         "servings": 4,
@@ -1059,7 +1031,7 @@
         ]
       },
       {
-        "id": "uk-des13",
+        "id": "gb-des13",
         "name": "British Des13",
         "difficulty": "Medium",
         "servings": 4,
@@ -1073,7 +1045,7 @@
         ]
       },
       {
-        "id": "uk-des14",
+        "id": "gb-des14",
         "name": "British Des14",
         "difficulty": "Medium",
         "servings": 4,
@@ -1087,7 +1059,7 @@
         ]
       },
       {
-        "id": "uk-des15",
+        "id": "gb-des15",
         "name": "British Des15",
         "difficulty": "Medium",
         "servings": 4,
@@ -1101,7 +1073,7 @@
         ]
       },
       {
-        "id": "uk-des16",
+        "id": "gb-des16",
         "name": "British Des16",
         "difficulty": "Medium",
         "servings": 4,
@@ -1115,7 +1087,7 @@
         ]
       },
       {
-        "id": "uk-des17",
+        "id": "gb-des17",
         "name": "British Des17",
         "difficulty": "Medium",
         "servings": 4,
@@ -1129,7 +1101,7 @@
         ]
       },
       {
-        "id": "uk-des18",
+        "id": "gb-des18",
         "name": "British Des18",
         "difficulty": "Medium",
         "servings": 4,
@@ -1143,7 +1115,7 @@
         ]
       },
       {
-        "id": "uk-des19",
+        "id": "gb-des19",
         "name": "British Des19",
         "difficulty": "Medium",
         "servings": 4,
@@ -1157,7 +1129,7 @@
         ]
       },
       {
-        "id": "uk-des20",
+        "id": "gb-des20",
         "name": "British Des20",
         "difficulty": "Medium",
         "servings": 4,
@@ -1173,8 +1145,8 @@
     ],
     "nonAlcoholicDrinks": [
       {
-        "id": "uk-na1",
-        "name": "British NA1",
+        "id": "gb-na1",
+        "name": "British Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1187,8 +1159,8 @@
         ]
       },
       {
-        "id": "uk-na2",
-        "name": "British NA2",
+        "id": "gb-na2",
+        "name": "British Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1201,8 +1173,8 @@
         ]
       },
       {
-        "id": "uk-na3",
-        "name": "British NA3",
+        "id": "gb-na3",
+        "name": "British Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1215,8 +1187,8 @@
         ]
       },
       {
-        "id": "uk-na4",
-        "name": "British NA4",
+        "id": "gb-na4",
+        "name": "British Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1229,8 +1201,8 @@
         ]
       },
       {
-        "id": "uk-na5",
-        "name": "British NA5",
+        "id": "gb-na5",
+        "name": "British Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1243,8 +1215,8 @@
         ]
       },
       {
-        "id": "uk-na6",
-        "name": "British NA6",
+        "id": "gb-na6",
+        "name": "British Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1257,8 +1229,8 @@
         ]
       },
       {
-        "id": "uk-na7",
-        "name": "British NA7",
+        "id": "gb-na7",
+        "name": "British Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1271,8 +1243,8 @@
         ]
       },
       {
-        "id": "uk-na8",
-        "name": "British NA8",
+        "id": "gb-na8",
+        "name": "British Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1285,8 +1257,8 @@
         ]
       },
       {
-        "id": "uk-na9",
-        "name": "British NA9",
+        "id": "gb-na9",
+        "name": "British Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1299,8 +1271,8 @@
         ]
       },
       {
-        "id": "uk-na10",
-        "name": "British NA10",
+        "id": "gb-na10",
+        "name": "British Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1315,7 +1287,7 @@
     ],
     "alcoholicDrinks": [
       {
-        "id": "uk-a1",
+        "id": "gb-a1",
         "name": "British Drink1",
         "difficulty": "Easy",
         "servings": 1,
@@ -1329,7 +1301,7 @@
         ]
       },
       {
-        "id": "uk-a2",
+        "id": "gb-a2",
         "name": "British Drink2",
         "difficulty": "Easy",
         "servings": 1,
@@ -1343,7 +1315,7 @@
         ]
       },
       {
-        "id": "uk-a3",
+        "id": "gb-a3",
         "name": "British Drink3",
         "difficulty": "Easy",
         "servings": 1,
@@ -1357,7 +1329,7 @@
         ]
       },
       {
-        "id": "uk-a4",
+        "id": "gb-a4",
         "name": "British Drink4",
         "difficulty": "Easy",
         "servings": 1,
@@ -1371,7 +1343,7 @@
         ]
       },
       {
-        "id": "uk-a5",
+        "id": "gb-a5",
         "name": "British Drink5",
         "difficulty": "Easy",
         "servings": 1,
@@ -1385,7 +1357,7 @@
         ]
       },
       {
-        "id": "uk-a6",
+        "id": "gb-a6",
         "name": "British Drink6",
         "difficulty": "Easy",
         "servings": 1,
@@ -1399,7 +1371,7 @@
         ]
       },
       {
-        "id": "uk-a7",
+        "id": "gb-a7",
         "name": "British Drink7",
         "difficulty": "Easy",
         "servings": 1,
@@ -1413,7 +1385,7 @@
         ]
       },
       {
-        "id": "uk-a8",
+        "id": "gb-a8",
         "name": "British Drink8",
         "difficulty": "Easy",
         "servings": 1,
@@ -1427,7 +1399,7 @@
         ]
       },
       {
-        "id": "uk-a9",
+        "id": "gb-a9",
         "name": "British Drink9",
         "difficulty": "Easy",
         "servings": 1,
@@ -1441,7 +1413,7 @@
         ]
       },
       {
-        "id": "uk-a10",
+        "id": "gb-a10",
         "name": "British Drink10",
         "difficulty": "Easy",
         "servings": 1,

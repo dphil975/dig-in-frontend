@@ -2,21 +2,21 @@
   "tunisiaRecipes": {
     "title": "Authentic Tunisia Cuisine",
     "country": "Tunisia",
-    "region": "Africa/Asia-Pacific",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "tn-b1",
         "name": "Brik",
-        "difficulty": "Medium",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 25,
-        "cookTime": 20,
+        "prepTime": 35,
+        "cookTime": 25,
         "ingredients": [
-          "phyllo",
+          "pastry",
           "egg",
-          "tuna"
+          "cheese"
         ],
         "instructions": [
           "Fried pastry pocket"
@@ -24,31 +24,32 @@
       },
       {
         "id": "tn-b2",
+        "name": "Harissa",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "chili",
+          "spices"
+        ],
+        "instructions": [
+          "Red pepper paste"
+        ]
+      },
+      {
+        "id": "tn-b3",
         "name": "Makroudh",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 20,
+        "prepTime": 40,
+        "cookTime": 30,
         "ingredients": [
           "semolina",
           "date"
         ],
         "instructions": [
-          "Date cookie"
-        ]
-      },
-      {
-        "id": "tn-b3",
-        "name": "Tunisian B3",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
+          "Date semolina cake"
         ]
       },
       {
@@ -304,36 +305,39 @@
           "vegetables"
         ],
         "instructions": [
-          "Semolina dish"
+          "Semolina pasta - National favorite"
         ]
       },
       {
         "id": "tn-l2",
-        "name": "Harissa",
+        "name": "Shakshuka",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 25,
         "cookTime": 30,
         "ingredients": [
-          "peppers",
-          "spices"
+          "eggs",
+          "tomatoes",
+          "peppers"
         ],
         "instructions": [
-          "Spiced paste"
+          "Egg in tomato sauce"
         ]
       },
       {
         "id": "tn-l3",
-        "name": "Tunisian L3",
-        "difficulty": "Medium",
+        "name": "Tagine",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "prepTime": 30,
+        "cookTime": 60,
         "ingredients": [
-          "ingredient"
+          "meat",
+          "vegetables",
+          "spices"
         ],
         "instructions": [
-          "preparation"
+          "Slow-cooked stew"
         ]
       },
       {
@@ -860,30 +864,33 @@
     "desserts": [
       {
         "id": "tn-des1",
-        "name": "Tunisian Des1",
-        "difficulty": "Medium",
+        "name": "Baklava",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 40,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "phyllo",
+          "nuts",
+          "honey"
         ],
         "instructions": [
-          "preparation"
+          "Honey pastry"
         ]
       },
       {
         "id": "tn-des2",
-        "name": "Tunisian Des2",
+        "name": "Makroudh",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 40,
+        "cookTime": 30,
         "ingredients": [
-          "ingredient"
+          "semolina",
+          "date"
         ],
         "instructions": [
-          "preparation"
+          "Date cake"
         ]
       },
       {
@@ -1142,7 +1149,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "tn-na1",
-        "name": "Tunisian NA1",
+        "name": "Tunisian Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1156,7 +1163,7 @@
       },
       {
         "id": "tn-na2",
-        "name": "Tunisian NA2",
+        "name": "Tunisian Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1170,7 +1177,7 @@
       },
       {
         "id": "tn-na3",
-        "name": "Tunisian NA3",
+        "name": "Tunisian Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1184,7 +1191,7 @@
       },
       {
         "id": "tn-na4",
-        "name": "Tunisian NA4",
+        "name": "Tunisian Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1198,7 +1205,7 @@
       },
       {
         "id": "tn-na5",
-        "name": "Tunisian NA5",
+        "name": "Tunisian Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1212,7 +1219,7 @@
       },
       {
         "id": "tn-na6",
-        "name": "Tunisian NA6",
+        "name": "Tunisian Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1226,7 +1233,7 @@
       },
       {
         "id": "tn-na7",
-        "name": "Tunisian NA7",
+        "name": "Tunisian Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1240,7 +1247,7 @@
       },
       {
         "id": "tn-na8",
-        "name": "Tunisian NA8",
+        "name": "Tunisian Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1254,7 +1261,7 @@
       },
       {
         "id": "tn-na9",
-        "name": "Tunisian NA9",
+        "name": "Tunisian Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1268,7 +1275,7 @@
       },
       {
         "id": "tn-na10",
-        "name": "Tunisian NA10",
+        "name": "Tunisian Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

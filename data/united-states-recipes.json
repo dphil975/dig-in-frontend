@@ -2,55 +2,55 @@
   "unitedstatesRecipes": {
     "title": "Authentic United States Cuisine",
     "country": "United States",
-    "region": "Americas",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "us-b1",
-        "name": "Eggs Benedict",
-        "difficulty": "Hard",
-        "servings": 4,
-        "prepTime": 30,
-        "cookTime": 25,
-        "ingredients": [
-          "eggs",
-          "English muffin",
-          "ham",
-          "hollandaise"
-        ],
-        "instructions": [
-          "Poached eggs with sauce"
-        ]
-      },
-      {
-        "id": "us-b2",
         "name": "Pancakes",
-        "difficulty": "Medium",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 15,
         "cookTime": 15,
         "ingredients": [
           "flour",
           "eggs",
-          "syrup"
+          "milk"
         ],
         "instructions": [
-          "Fluffy pancakes with syrup"
+          "Fluffy pancakes - American classic"
+        ]
+      },
+      {
+        "id": "us-b2",
+        "name": "Eggs and Bacon",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "eggs",
+          "bacon"
+        ],
+        "instructions": [
+          "Simple breakfast"
         ]
       },
       {
         "id": "us-b3",
-        "name": "American B3",
-        "difficulty": "Easy",
+        "name": "French Toast",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 15,
+        "cookTime": 15,
         "ingredients": [
-          "ingredient"
+          "bread",
+          "eggs",
+          "cinnamon"
         ],
         "instructions": [
-          "preparation"
+          "Sweet fried bread"
         ]
       },
       {
@@ -298,43 +298,44 @@
         "name": "Hamburger",
         "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 15,
+        "prepTime": 15,
+        "cookTime": 20,
         "ingredients": [
-          "ground beef",
+          "beef",
           "bun"
         ],
         "instructions": [
-          "Classic burger"
+          "Iconic American - Most famous"
         ]
       },
       {
         "id": "us-l2",
+        "name": "Hot Dog",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "hot dog",
+          "bun"
+        ],
+        "instructions": [
+          "Classic street food"
+        ]
+      },
+      {
+        "id": "us-l3",
         "name": "BBQ Ribs",
-        "difficulty": "Hard",
+        "difficulty": "Medium",
         "servings": 4,
         "prepTime": 30,
         "cookTime": 180,
         "ingredients": [
           "ribs",
-          "BBQ sauce"
+          "barbecue sauce"
         ],
         "instructions": [
-          "Slow-cooked ribs"
-        ]
-      },
-      {
-        "id": "us-l3",
-        "name": "American L3",
-        "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
+          "Slow-smoked ribs"
         ]
       },
       {
@@ -862,31 +863,31 @@
       {
         "id": "us-des1",
         "name": "Apple Pie",
-        "difficulty": "Medium",
+        "difficulty": "Hard",
         "servings": 4,
         "prepTime": 40,
-        "cookTime": 45,
+        "cookTime": 50,
         "ingredients": [
           "apples",
           "pastry"
         ],
         "instructions": [
-          "Classic apple pie"
+          "American classic"
         ]
       },
       {
         "id": "us-des2",
-        "name": "Cheesecake",
-        "difficulty": "Medium",
+        "name": "Brownies",
+        "difficulty": "Easy",
         "servings": 4,
-        "prepTime": 40,
-        "cookTime": 50,
+        "prepTime": 15,
+        "cookTime": 30,
         "ingredients": [
-          "cream cheese",
-          "graham cracker crust"
+          "chocolate",
+          "flour"
         ],
         "instructions": [
-          "New York cheesecake"
+          "Chocolate cake"
         ]
       },
       {
@@ -1145,7 +1146,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "us-na1",
-        "name": "American NA1",
+        "name": "American Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1159,7 +1160,7 @@
       },
       {
         "id": "us-na2",
-        "name": "American NA2",
+        "name": "American Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1173,7 +1174,7 @@
       },
       {
         "id": "us-na3",
-        "name": "American NA3",
+        "name": "American Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1187,7 +1188,7 @@
       },
       {
         "id": "us-na4",
-        "name": "American NA4",
+        "name": "American Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1201,7 +1202,7 @@
       },
       {
         "id": "us-na5",
-        "name": "American NA5",
+        "name": "American Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1215,7 +1216,7 @@
       },
       {
         "id": "us-na6",
-        "name": "American NA6",
+        "name": "American Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1229,7 +1230,7 @@
       },
       {
         "id": "us-na7",
-        "name": "American NA7",
+        "name": "American Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1243,7 +1244,7 @@
       },
       {
         "id": "us-na8",
-        "name": "American NA8",
+        "name": "American Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1257,7 +1258,7 @@
       },
       {
         "id": "us-na9",
-        "name": "American NA9",
+        "name": "American Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1271,7 +1272,7 @@
       },
       {
         "id": "us-na10",
-        "name": "American NA10",
+        "name": "American Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,

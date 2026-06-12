@@ -2,54 +2,54 @@
   "turkeyRecipes": {
     "title": "Authentic Turkey Cuisine",
     "country": "Turkey",
-    "region": "Europe",
+    "region": "Global",
     "totalRecipes": 100,
     "totalDrinks": 20,
     "breakfast": [
       {
         "id": "tr-b1",
         "name": "Menemen",
-        "difficulty": "Easy",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
-        "cookTime": 15,
+        "prepTime": 20,
+        "cookTime": 20,
         "ingredients": [
           "eggs",
           "tomatoes",
-          "peppers",
-          "onions"
+          "peppers"
         ],
         "instructions": [
-          "Scrambled eggs Turkish style"
+          "Scrambled egg dish"
         ]
       },
       {
         "id": "tr-b2",
-        "name": "Simit",
-        "difficulty": "Medium",
+        "name": "Borek",
+        "difficulty": "Hard",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 25,
+        "prepTime": 35,
+        "cookTime": 40,
         "ingredients": [
-          "flour",
-          "sesame"
+          "phyllo",
+          "filling"
         ],
         "instructions": [
-          "Sesame ring bread"
+          "Savory pastry"
         ]
       },
       {
         "id": "tr-b3",
-        "name": "Turkish B3",
-        "difficulty": "Easy",
+        "name": "Simit",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
+        "prepTime": 30,
+        "cookTime": 45,
         "ingredients": [
-          "ingredient"
+          "dough",
+          "sesame"
         ],
         "instructions": [
-          "preparation"
+          "Sesame bread ring"
         ]
       },
       {
@@ -297,15 +297,15 @@
         "name": "Kebab",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
-        "cookTime": 20,
+        "prepTime": 30,
+        "cookTime": 40,
         "ingredients": [
           "meat",
           "vegetables",
-          "pita"
+          "spices"
         ],
         "instructions": [
-          "Grilled meat and vegetables"
+          "Grilled meat - Most famous"
         ]
       },
       {
@@ -313,30 +313,29 @@
         "name": "Meze",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 30,
-        "cookTime": 0,
+        "prepTime": 25,
+        "cookTime": 30,
         "ingredients": [
-          "hummus",
-          "tzatziki",
-          "vegetables"
+          "vegetables",
+          "bread"
         ],
         "instructions": [
-          "Assorted appetizers"
+          "Appetizer platter"
         ]
       },
       {
         "id": "tr-l3",
-        "name": "Lentil Soup",
-        "difficulty": "Easy",
+        "name": "Pide",
+        "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 15,
+        "prepTime": 35,
         "cookTime": 30,
         "ingredients": [
-          "lentils",
-          "vegetables"
+          "dough",
+          "filling"
         ],
         "instructions": [
-          "Turkish lentil soup"
+          "Turkish pizza"
         ]
       },
       {
@@ -882,15 +881,15 @@
         "name": "Turkish Delight",
         "difficulty": "Medium",
         "servings": 4,
-        "prepTime": 20,
+        "prepTime": 30,
         "cookTime": 30,
         "ingredients": [
-          "sugar",
           "gelatin",
-          "rose water"
+          "sugar",
+          "rose"
         ],
         "instructions": [
-          "Confection"
+          "Gel candy"
         ]
       },
       {
@@ -1149,7 +1148,7 @@
     "nonAlcoholicDrinks": [
       {
         "id": "tr-na1",
-        "name": "Turkish NA1",
+        "name": "Turkish Drink1",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1163,7 +1162,7 @@
       },
       {
         "id": "tr-na2",
-        "name": "Turkish NA2",
+        "name": "Turkish Drink2",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1177,7 +1176,7 @@
       },
       {
         "id": "tr-na3",
-        "name": "Turkish NA3",
+        "name": "Turkish Drink3",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1191,7 +1190,7 @@
       },
       {
         "id": "tr-na4",
-        "name": "Turkish NA4",
+        "name": "Turkish Drink4",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1205,7 +1204,7 @@
       },
       {
         "id": "tr-na5",
-        "name": "Turkish NA5",
+        "name": "Turkish Drink5",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1219,7 +1218,7 @@
       },
       {
         "id": "tr-na6",
-        "name": "Turkish NA6",
+        "name": "Turkish Drink6",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1233,7 +1232,7 @@
       },
       {
         "id": "tr-na7",
-        "name": "Turkish NA7",
+        "name": "Turkish Drink7",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1247,7 +1246,7 @@
       },
       {
         "id": "tr-na8",
-        "name": "Turkish NA8",
+        "name": "Turkish Drink8",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1261,7 +1260,7 @@
       },
       {
         "id": "tr-na9",
-        "name": "Turkish NA9",
+        "name": "Turkish Drink9",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
@@ -1275,7 +1274,7 @@
       },
       {
         "id": "tr-na10",
-        "name": "Turkish NA10",
+        "name": "Turkish Drink10",
         "difficulty": "Easy",
         "servings": 2,
         "prepTime": 10,
