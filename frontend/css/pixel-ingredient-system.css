@@ -1,15 +1,210 @@
 /* ══════════════════════════════════════════════════════════════ */
-/* Pixel Ingredient System - Cooking Game UI Styling               */
+/* Pixel Ingredient System — "Cooking Mama" Theme                  */
+/* Recipe Card Part Two: post-shopping cooking mode                */
 /* ══════════════════════════════════════════════════════════════ */
 
-/* ── Ingredient Grid ─────────────────────────────────────────── */
+:root {
+  --cm-pink:        #F06292;
+  --cm-pink-deep:   #E2447E;
+  --cm-pink-hot:    #FF5C9D;
+  --cm-pink-pale:   #FBD3E0;
+  --cm-pink-panel:  #F993B9;
+  --cm-red:         #E84A5F;
+  --cm-blue:        #79C3E8;
+  --cm-blue-deep:   #3F7FBF;
+  --cm-blue-pale:   #CDE9F7;
+  --cm-cream:       #FFF8E1;
+  --cm-yellow:      #FFE08A;
+  --cm-yellow-deep: #FFC93C;
+  --cm-brown:       #7A4A32;
+  --cm-outline:     #4A2C1E;
+  --cm-white:       #FFFFFF;
+  --cm-green:       #8BC34A;
+  --cm-font: 'Press Start 2P', monospace;
+  --cm-font-body: 'DotGothic16', 'Press Start 2P', monospace;
+}
+
+/* ── Reusable backgrounds ───────────────────────────────────── */
+.cm-gingham-yellow {
+  background:
+    repeating-linear-gradient(0deg,  rgba(255,201,60,.30) 0 22px, transparent 22px 44px),
+    repeating-linear-gradient(90deg, rgba(255,201,60,.30) 0 22px, transparent 22px 44px),
+    #FFF4D6;
+}
+.cm-gingham-pink {
+  background:
+    repeating-linear-gradient(0deg,  rgba(240,98,146,.18) 0 20px, transparent 20px 40px),
+    repeating-linear-gradient(90deg, rgba(240,98,146,.18) 0 20px, transparent 20px 40px),
+    #FDE7EF;
+}
+.cm-hearts-paper {
+  background-color: #FDEFF4;
+  background-image: radial-gradient(#F8C8DA 2px, transparent 2.6px);
+  background-size: 18px 18px;
+}
+
+/* ══════════════════════════════════════════════════════════════ */
+/* COOKING MODE OVERLAY                                            */
+/* ══════════════════════════════════════════════════════════════ */
+.cm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 0 16px 32px;
+  background:
+    repeating-linear-gradient(0deg,  rgba(255,201,60,.30) 0 22px, transparent 22px 44px),
+    repeating-linear-gradient(90deg, rgba(255,201,60,.30) 0 22px, transparent 22px 44px),
+    #FFF4D6;
+  animation: cm-pop-in .25s ease-out;
+}
+@keyframes cm-pop-in {
+  from { opacity: 0; transform: scale(.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.cm-stage {
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-top: 14px;
+}
+
+/* ── Curtain top (pink scalloped valance) ───────────────────── */
+.cm-curtain {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100vw;
+  margin: 0 -16px;
+  height: 26px;
+  background:
+    repeating-linear-gradient(90deg, rgba(240,98,146,.25) 0 18px, transparent 18px 36px),
+    var(--cm-pink-pale);
+  border-bottom: 3px solid var(--cm-pink-deep);
+}
+.cm-curtain::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: -14px;
+  height: 14px;
+  background:
+    radial-gradient(circle at 14px -2px, var(--cm-pink-pale) 13px, transparent 14px) repeat-x;
+  background-size: 28px 14px;
+  filter: drop-shadow(0 2px 0 var(--cm-pink-deep));
+  pointer-events: none;
+}
+
+/* ── Ribbon banner: "Let's cook" ────────────────────────────── */
+.cm-ribbon {
+  position: relative;
+  align-self: center;
+  margin-top: 10px;
+  filter: drop-shadow(0 3px 0 rgba(74,44,30,.35));
+}
+.cm-ribbon-plate {
+  position: relative;
+  z-index: 2;
+  font-family: var(--cm-font);
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--cm-pink-deep);
+  letter-spacing: 1px;
+  background: linear-gradient(180deg, var(--cm-pink-hot) 0%, var(--cm-pink) 100%);
+  border: 3px solid var(--cm-outline);
+  border-radius: 14px;
+  padding: 14px 34px;
+}
+.cm-ribbon::before,
+.cm-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 46px;
+  height: 34px;
+  background: var(--cm-blue);
+  border: 3px solid var(--cm-outline);
+  z-index: 1;
+}
+.cm-ribbon::before {
+  left: -34px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 35% 50%);
+}
+.cm-ribbon::after {
+  right: -34px;
+  clip-path: polygon(0 0, 100% 0, 65% 50%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 65% 50%, 100% 100%, 0 100%);
+}
+
+/* ── Mama row: avatar + speech bubble ───────────────────────── */
+.cm-mama-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.cm-mama-avatar {
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  background: var(--cm-pink-pale);
+  border: 3px solid var(--cm-outline);
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 rgba(74,44,30,.3), inset 0 0 0 4px #fff;
+}
+.cm-speech-bubble {
+  position: relative;
+  flex: 1;
+  background: var(--cm-cream);
+  border: 3px solid var(--cm-outline);
+  border-radius: 18px;
+  padding: 16px 20px;
+  font-family: var(--cm-font);
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--cm-brown);
+  box-shadow: 3px 3px 0 rgba(74,44,30,.25);
+}
+.cm-speech-bubble::before {
+  content: '';
+  position: absolute;
+  left: -16px;
+  top: 28px;
+  width: 0; height: 0;
+  border: 10px solid transparent;
+  border-right-color: var(--cm-outline);
+}
+.cm-speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 31px;
+  width: 0; height: 0;
+  border: 7px solid transparent;
+  border-right-color: var(--cm-cream);
+}
+.cm-speech-bubble.bubble-right::before { left: auto; right: -16px; border-right-color: transparent; border-left-color: var(--cm-outline); }
+.cm-speech-bubble.bubble-right::after  { left: auto; right: -11px; border-right-color: transparent; border-left-color: var(--cm-cream); }
+
+/* ══════════════════════════════════════════════════════════════ */
+/* INGREDIENT INVENTORY (Items screen style)                       */
+/* ══════════════════════════════════════════════════════════════ */
 .pixel-ingredient-grid {
-  background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 100%);
-  border: 4px solid #8B4513;
-  border-radius: 12px;
-  padding: 16px;
+  background: var(--cm-cream);
+  border: 3px solid var(--cm-outline);
+  border-radius: 14px;
+  padding: 14px;
   margin: 16px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 0 rgba(74,44,30,.25);
 }
 
 .ingredient-grid-header {
@@ -17,86 +212,110 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 2px dashed #D2B48C;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  border: 3px solid var(--cm-outline);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: var(--cm-font);
 }
-
 .ingredient-grid-header h3 {
   margin: 0;
-  color: #1a1a1a;
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
   letter-spacing: 1px;
 }
-
 .ingredient-count {
-  background: #FFB6C1;
-  color: #fff;
+  background: #fff;
+  color: var(--cm-pink-deep);
+  border: 2px solid var(--cm-outline);
   padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 9px;
+  border-radius: 8px;
+  font-size: 8px;
   font-weight: bold;
 }
 
+/* Dotted inventory tray, like the Items screen */
 .ingredient-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 10px;
+  padding: 12px;
+  background: var(--cm-pink-pale);
+  border: 3px dashed var(--cm-blue-deep);
+  border-radius: 10px;
 }
 
-/* ── Pixel Ingredient Item ──────────────────────────────────── */
+/* ── One inventory slot ─────────────────────────────────────── */
 .pixel-ingredient-item {
-  background: white;
-  border: 3px solid #D2B48C;
-  border-radius: 8px;
-  padding: 10px;
+  position: relative;
+  background: #fff;
+  border: 3px solid var(--cm-blue-pale);
+  border-radius: 10px;
+  padding: 10px 8px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform .12s, box-shadow .12s, border-color .12s;
+  box-shadow: 0 2px 0 rgba(74,44,30,.15);
 }
+.pixel-ingredient-item:nth-child(4n+1) { border-color: #F8C8DA; }
+.pixel-ingredient-item:nth-child(4n+2) { border-color: var(--cm-blue-pale); }
+.pixel-ingredient-item:nth-child(4n+3) { border-color: #FFE08A; }
+.pixel-ingredient-item:nth-child(4n+4) { border-color: #CFEBC4; }
 
 .pixel-ingredient-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border-color: #FF69B4;
+  transform: translateY(-3px);
+  border-color: var(--cm-pink-hot);
+  box-shadow: 0 5px 0 rgba(232,68,126,.3);
 }
-
 .pixel-ingredient-item.missing {
-  opacity: 0.5;
-  background: #f0f0f0;
+  opacity: .55;
+  background: #F4ECE2;
   border-style: dashed;
 }
-
+.pixel-ingredient-item.missing .pixel-box { filter: grayscale(.8); }
 .pixel-ingredient-item.added {
-  border-color: #228B22;
-  background: #E8F5E9;
+  border-color: var(--cm-green);
+  background: #F1F8E9;
+}
+.pixel-ingredient-item.added::after {
+  content: 'NEW';
+  position: absolute;
+  top: -8px;
+  right: -6px;
+  font-family: var(--cm-font);
+  font-size: 7px;
+  color: #fff;
+  background: var(--cm-yellow-deep);
+  border: 2px solid var(--cm-outline);
+  border-radius: 6px;
+  padding: 2px 4px;
+  transform: rotate(8deg);
+  text-shadow: 1px 1px 0 rgba(74,44,30,.4);
 }
 
-/* ── Pixel Box ──────────────────────────────────────────────── */
+/* Stamp-style pixel tile (Love Shot icon framing) */
 .pixel-box {
-  width: 64px;
-  height: 64px;
+  width: 58px;
+  height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),
-              0 1px 3px rgba(255, 255, 255, 0.5);
+  background: var(--cm-blue-pale) !important; /* stamp blue, overrides inline color */
+  border: 2px dashed var(--cm-blue-deep);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 3px #fff;
   position: relative;
 }
-
 .pixel-emoji {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(1px 1px 0 rgba(74,44,30,.25));
 }
 
-/* ── Ingredient Label ───────────────────────────────────────── */
 .ingredient-label {
   display: flex;
   flex-direction: column;
@@ -104,686 +323,657 @@
   gap: 4px;
   width: 100%;
 }
-
 .ingredient-name {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 8px;
-  color: #1a1a1a;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-.price-tag {
-  background: #FFD700;
-  color: #8B0000;
-  padding: 2px 6px;
-  border-radius: 3px;
+  font-family: var(--cm-font);
   font-size: 7px;
-  font-weight: bold;
-  border: 1px solid #FFA500;
+  color: var(--cm-brown);
+  text-align: center;
+  letter-spacing: .5px;
+}
+.price-tag {
+  font-family: var(--cm-font);
+  background: var(--cm-yellow);
+  color: var(--cm-brown);
+  border: 2px solid var(--cm-outline);
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 7px;
 }
 
-/* ── Ingredient Toggle ──────────────────────────────────────– */
+/* Have / missing toggle */
 .ingredient-toggle {
-  width: 28px;
-  height: 28px;
-  border: 2px solid #D2B48C;
-  border-radius: 4px;
-  background: #FFF8DC;
-  color: #1a1a1a;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.ingredient-toggle:hover {
-  background: #FFE4B5;
-  border-color: #8B4513;
-}
-
-.pixel-ingredient-item.missing .ingredient-toggle {
-  background: #FFB6C1;
-  border-color: #C41E3A;
+  font-family: var(--cm-font);
+  font-size: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--cm-outline);
+  background: var(--cm-green);
   color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(74,44,30,.3);
+  transition: transform .1s;
 }
+.ingredient-toggle:active { transform: translateY(2px); box-shadow: none; }
+.pixel-ingredient-item.missing .ingredient-toggle { background: var(--cm-red); }
 
 /* ══════════════════════════════════════════════════════════════ */
-/* Recipe Steps Slider                                            */
+/* RECIPE STEPS — striped banner + heart arrows                    */
 /* ══════════════════════════════════════════════════════════════ */
-
 .recipe-steps-slider-container {
-  background: linear-gradient(180deg, #E0F2FF 0%, #B0E0FF 100%);
-  border: 4px solid #4A90E2;
-  border-radius: 12px;
-  padding: 16px;
+  background-color: #FDEFF4;
+  background-image: radial-gradient(#F8C8DA 2px, transparent 2.6px);
+  background-size: 18px 18px;
+  border: 3px solid var(--cm-outline);
+  border-radius: 14px;
+  padding: 14px;
   margin: 16px 0;
-  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+  box-shadow: 4px 4px 0 rgba(74,44,30,.25);
 }
 
+/* "Melt the butter!" striped instruction banner */
 .steps-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 2px dashed #4A90E2;
-  font-family: 'Press Start 2P', monospace;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--cm-yellow) 0 4px,
+    #FFEFC1 4px 8px
+  );
+  border: 3px solid var(--cm-outline);
+  border-radius: 999px;
+  font-family: var(--cm-font);
+  box-shadow: 0 3px 0 rgba(74,44,30,.25);
 }
-
 .steps-header h3 {
   margin: 0;
-  color: #1a5a8a;
   font-size: 11px;
+  color: var(--cm-blue-deep);
+  text-shadow: 1px 1px 0 #fff;
   letter-spacing: 1px;
 }
-
 .step-counter {
-  background: #4A90E2;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
   font-size: 9px;
-  font-weight: bold;
+  color: var(--cm-brown);
+  background: #fff;
+  border: 2px solid var(--cm-outline);
+  border-radius: 8px;
+  padding: 4px 8px;
 }
 
-/* ── Steps Carousel ─────────────────────────────────────────── */
+/* Carousel: heart arrows flanking the card */
 .steps-carousel {
   display: flex;
-  align-items: stretch;
-  gap: 12px;
-  margin: 16px 0;
-  position: relative;
+  align-items: center;
+  gap: 8px;
 }
 
 .carousel-btn {
-  width: 40px;
-  height: 100%;
-  min-height: 200px;
-  border: 3px solid #4A90E2;
-  border-radius: 6px;
-  background: white;
-  color: #4A90E2;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s;
   flex-shrink: 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-btn:hover {
-  background: #4A90E2;
-  color: white;
-  transform: scale(1.05);
-}
-
-.carousel-btn:active {
-  transform: scale(0.98);
-}
-
-.steps-slides {
-  flex: 1;
-  display: flex;
   position: relative;
-  height: 100%;
-  min-height: 200px;
+  width: 54px;
+  height: 54px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--cm-font);
+  padding: 0;
 }
-
-/* ── Step Card ──────────────────────────────────────────────– */
-.step-card {
-  background: white;
-  border: 3px solid #4A90E2;
-  border-radius: 12px;
-  padding: 16px;
+/* CSS pixel heart */
+.carousel-btn::before {
+  content: '♥';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  display: flex;
-  gap: 16px;
-  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
-}
-
-.step-card.active {
-  opacity: 1;
-  pointer-events: auto;
-  position: static;
-}
-
-.step-number {
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #4A90E2, #357ABD);
-  border-radius: 8px;
-  flex-shrink: 0;
-  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.3),
-              0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.step-number .num {
-  color: white;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 52px;
   line-height: 1;
+  color: var(--cm-pink-hot);
+  text-shadow:
+    -2px -2px 0 var(--cm-outline), 2px -2px 0 var(--cm-outline),
+    -2px  2px 0 var(--cm-outline), 2px  2px 0 var(--cm-outline),
+    0 4px 0 var(--cm-pink-deep);
+  transition: transform .12s;
+}
+.carousel-btn:hover::before { transform: scale(1.12); }
+.carousel-btn:active::before { transform: scale(.95); }
+.carousel-btn .arrow-glyph,
+.carousel-btn span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
 }
 
-.step-content {
+/* Step card */
+.steps-slides {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  min-height: 170px;
 }
-
-.step-content h4 {
-  margin: 0 0 8px 0;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 10px;
-  color: #1a5a8a;
-  letter-spacing: 0.5px;
+.step-card {
+  display: none;
+  background: var(--cm-cream);
+  border: 3px solid var(--cm-outline);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 3px 3px 0 rgba(74,44,30,.25);
+  animation: cm-card-in .25s ease-out;
 }
-
-.step-content p {
-  margin: 0 0 12px 0;
-  font-size: 13px;
-  line-height: 1.6;
-  color: #333;
+.step-card.active { display: flex; gap: 14px; }
+@keyframes cm-card-in {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
-
-.step-visual-hint {
+.step-number {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  border: 3px solid var(--cm-outline);
+  border-radius: 50%;
+  box-shadow: 0 3px 0 rgba(74,44,30,.3);
+}
+.step-number .num {
+  font-family: var(--cm-font);
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
+}
+.step-content h4 {
+  margin: 0 0 8px;
+  font-family: var(--cm-font);
+  font-size: 10px;
+  color: var(--cm-pink-deep);
+  letter-spacing: 1px;
+}
+.step-content p {
+  margin: 0;
+  font-family: var(--cm-font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cm-brown);
+}
+.step-visual-hint {
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
-  padding-top: 8px;
-  border-top: 1px dashed #4A90E2;
+  font-family: var(--cm-font);
+  font-size: 8px;
+  color: var(--cm-blue-deep);
+  animation: cm-bounce 1.2s ease-in-out infinite;
 }
-
-.hint-icon {
-  font-size: 16px;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
+@keyframes cm-bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+  50%      { transform: translateY(-4px); }
 }
 
-.hint-text {
-  font-size: 9px;
-  color: #4A90E2;
-  font-family: 'Press Start 2P', monospace;
-  letter-spacing: 0.5px;
-}
-
-/* ── Step Dots ──────────────────────────────────────────────– */
+/* Progress dots */
 .step-dots {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 14px;
+}
+.step-dots .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--cm-outline);
+  background: #fff;
+  cursor: pointer;
+  padding: 0;
+  transition: background .15s, transform .15s;
+}
+.step-dots .dot.active {
+  background: var(--cm-pink-hot);
+  transform: scale(1.25);
 }
 
-.dot {
+/* ── TIME bar ───────────────────────────────────────────────── */
+.cm-time-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 12px;
+}
+.cm-time-label {
+  font-family: var(--cm-font);
+  font-size: 9px;
+  color: var(--cm-pink-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 1px;
+}
+.cm-time-track {
+  flex: 1;
+  height: 16px;
+  background: #fff;
+  border: 3px solid var(--cm-pink-deep);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 0 rgba(74,44,30,.12);
+}
+.cm-time-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #FF8A3C 0%, var(--cm-yellow-deep) 60%, var(--cm-pink-hot) 100%);
+  border-radius: 999px;
+  transition: width .4s ease;
+}
+
+/* ══════════════════════════════════════════════════════════════ */
+/* CONFIRM BAR — "Cancel / Make" (Let's combine)                   */
+/* ══════════════════════════════════════════════════════════════ */
+.cm-confirm-bar {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px;
+  background: var(--cm-pink-panel);
+  border: 3px solid var(--cm-outline);
+  border-radius: 999px;
+  box-shadow: 0 4px 0 rgba(74,44,30,.3);
+}
+.cm-btn {
+  font-family: var(--cm-font);
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border: 3px solid var(--cm-outline);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .1s, box-shadow .1s;
+  box-shadow: 0 4px 0 rgba(74,44,30,.35);
+}
+.cm-btn:hover  { transform: translateY(-2px); }
+.cm-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(74,44,30,.35); }
+.cm-btn .btn-dot {
   width: 12px;
   height: 12px;
-  border: 2px solid #4A90E2;
   border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  transition: all 0.2s;
+  background: var(--cm-red);
+  border: 2px solid var(--cm-outline);
+  box-shadow: inset -2px -2px 0 rgba(0,0,0,.2);
+}
+.cm-btn-make {
+  background: linear-gradient(180deg, #fff, #FFE9F1);
+  color: var(--cm-pink-deep);
+}
+.cm-btn-cancel {
+  background: linear-gradient(180deg, #fff, #EDEDED);
+  color: var(--cm-brown);
+}
+.cm-btn-return {
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
 }
 
-.dot.active {
-  background: #4A90E2;
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+/* Dish plate preview (octopus dumplings screen) */
+.cm-dish-preview {
+  text-align: center;
+  padding: 18px;
+  background: #fff;
+  border: 3px solid var(--cm-outline);
+  border-radius: 16px;
+  box-shadow: 3px 3px 0 rgba(74,44,30,.25);
 }
-
-.dot:hover {
-  border-color: #357ABD;
+.cm-dish-name {
+  display: inline-block;
+  font-family: var(--cm-font);
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  border: 3px solid var(--cm-outline);
+  border-radius: 999px;
+  padding: 8px 22px;
+  margin-bottom: 14px;
 }
-
-/* ══════════════════════════════════════════════════════════════ */
-/* Item Modification Card (Love Shot Style)                       */
-/* ══════════════════════════════════════════════════════════════ */
-
-.item-modification-card {
-  background: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%);
-  border: 4px solid #C71585;
-  border-radius: 12px;
-  padding: 16px;
-  margin: 16px 0;
-  box-shadow: 0 6px 16px rgba(199, 21, 133, 0.4),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-.item-card-header {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.item-visual {
-  flex-shrink: 0;
-}
-
-.item-pixel-art {
-  width: 80px;
-  height: 80px;
-  background: white;
-  border: 3px solid #C71585;
-  border-radius: 8px;
+.cm-plate {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 42%, #fff 58%, #EDEDED 60%, #fff 66%);
+  border: 4px solid #D8D8D8;
+  box-shadow: 0 6px 0 rgba(74,44,30,.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
-              inset 0 1px 3px rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 2px;
+  font-size: 34px;
 }
 
-.item-info {
-  flex: 1;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+/* Made-count badge ("만든갯수 10") */
+.cm-counter-badge {
+  display: inline-flex;
+  align-items: stretch;
+  border: 3px solid var(--cm-outline);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: var(--cm-font);
+  box-shadow: 3px 3px 0 rgba(74,44,30,.25);
 }
-
-.item-info h4 {
-  margin: 0 0 4px 0;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  letter-spacing: 1px;
-}
-
-.item-description {
-  margin: 0 0 8px 0;
-  font-size: 12px;
-  line-height: 1.5;
-  opacity: 0.95;
-}
-
-.price-modifier {
-  display: inline-block;
-  background: rgba(255, 215, 0, 0.9);
-  color: #C71585;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: bold;
-  border: 2px solid #FFD700;
-}
-
-/* ── Item Modifiers ─────────────────────────────────────────– */
-.item-modifiers {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 12px;
-}
-
-.modifier-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 9px;
-  color: white;
-}
-
-.modifier-row:last-child {
-  margin-bottom: 0;
-}
-
-.modifier-label {
-  min-width: 100px;
-  letter-spacing: 0.5px;
-}
-
-.quantity-control {
+.cm-counter-label {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: white;
-  border-radius: 4px;
-  padding: 4px;
-}
-
-.quantity-control button {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #C71585;
-  border-radius: 3px;
-  background: #FFE4E1;
-  color: #C71585;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.quantity-control button:hover {
-  background: #FF69B4;
-  color: white;
-}
-
-.quantity-value {
-  min-width: 30px;
-  text-align: center;
-  color: #C71585;
-  font-weight: bold;
-  font-size: 10px;
-}
-
-.option-select {
-  flex: 1;
-  padding: 4px 8px;
-  border: 2px solid #FFD700;
-  border-radius: 4px;
-  background: white;
-  color: #1a1a1a;
+  background: linear-gradient(180deg, var(--cm-green), #6BA03A);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(74,44,30,.4);
   font-size: 9px;
-  font-family: monospace;
-  cursor: pointer;
+  padding: 10px 14px;
+}
+.cm-counter-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: var(--cm-brown);
+  font-size: 18px;
+  min-width: 56px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--cm-outline);
 }
 
-/* ── Item Actions ───────────────────────────────────────────– */
+/* ══════════════════════════════════════════════════════════════ */
+/* ITEM MODIFICATION CARD — Love Shot style                        */
+/* ══════════════════════════════════════════════════════════════ */
+.item-modification-card {
+  background: var(--cm-cream);
+  border: 3px solid var(--cm-outline);
+  border-radius: 16px;
+  padding: 14px;
+  max-width: 420px;
+  margin: 16px auto;
+  box-shadow: 5px 5px 0 rgba(74,44,30,.3);
+}
+.item-card-header {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.item-visual {
+  flex-shrink: 0;
+  width: 92px;
+  height: 92px;
+  background: var(--cm-blue-pale);
+  border: 3px dashed var(--cm-blue-deep);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 4px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-pixel-art { font-size: 46px; }
+.item-info {
+  flex: 1;
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  border: 3px solid var(--cm-outline);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.item-info h4 {
+  margin: 0 0 8px;
+  font-family: var(--cm-font);
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
+}
+.item-description {
+  margin: 0;
+  font-family: var(--cm-font);
+  font-size: 9px;
+  line-height: 1.8;
+  color: #FFE9F1;
+}
+.price-modifier {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--cm-font);
+  font-size: 8px;
+  background: var(--cm-yellow);
+  color: var(--cm-brown);
+  border: 2px solid var(--cm-outline);
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+
+.item-modifiers {
+  background: #fff;
+  border: 3px dashed var(--cm-pink);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.modifier-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+.modifier-label {
+  font-family: var(--cm-font);
+  font-size: 9px;
+  color: var(--cm-brown);
+}
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  font-family: var(--cm-font);
+  font-size: 12px;
+  background: var(--cm-pink-pale);
+  color: var(--cm-pink-deep);
+  border: 2px solid var(--cm-outline);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 0 rgba(74,44,30,.3);
+}
+.quantity-control button:active { transform: translateY(2px); box-shadow: none; }
+.quantity-value {
+  font-family: var(--cm-font);
+  font-size: 12px;
+  color: var(--cm-brown);
+  min-width: 24px;
+  text-align: center;
+}
+.option-select {
+  font-family: var(--cm-font);
+  font-size: 8px;
+  padding: 6px 8px;
+  border: 2px solid var(--cm-outline);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--cm-brown);
+}
+
 .item-actions {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
-
 .btn-add-ingredient,
 .btn-cancel {
   flex: 1;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 6px;
-  font-family: 'Press Start 2P', monospace;
+  font-family: var(--cm-font);
   font-size: 9px;
-  font-weight: bold;
+  padding: 12px;
+  border: 3px solid var(--cm-outline);
+  border-radius: 999px;
   cursor: pointer;
-  transition: all 0.2s;
-  letter-spacing: 0.5px;
+  box-shadow: 0 3px 0 rgba(74,44,30,.3);
+  transition: transform .1s, box-shadow .1s;
 }
-
 .btn-add-ingredient {
-  background: white;
-  color: #C71585;
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
 }
-
-.btn-add-ingredient:hover {
-  background: #FFE4E1;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-.btn-add-ingredient:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
-}
-
 .btn-cancel {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  background: #fff;
+  color: var(--cm-brown);
 }
-
-.btn-cancel:hover {
-  background: rgba(255, 255, 255, 0.4);
+.btn-add-ingredient:active, .btn-cancel:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
 
 /* ══════════════════════════════════════════════════════════════ */
-/* Profile History Reel                                           */
+/* PROFILE HISTORY REEL                                            */
 /* ══════════════════════════════════════════════════════════════ */
-
 .profile-history-reel {
-  background: linear-gradient(135deg, #FFF9E6 0%, #FFECCC 100%);
-  border: 4px solid #8B7500;
-  border-radius: 12px;
+  background:
+    repeating-linear-gradient(0deg,  rgba(255,201,60,.22) 0 18px, transparent 18px 36px),
+    repeating-linear-gradient(90deg, rgba(255,201,60,.22) 0 18px, transparent 18px 36px),
+    #FFF8E6;
+  border: 3px solid var(--cm-outline);
+  border-radius: 14px;
   padding: 16px;
-  margin: 20px 0;
+  margin: 16px 0;
+  box-shadow: 4px 4px 0 rgba(74,44,30,.25);
 }
-
 .reel-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  padding-bottom: 8px;
-  border-bottom: 2px dashed #8B7500;
+  margin-bottom: 14px;
 }
-
 .reel-header h2 {
   margin: 0;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 14px;
-  color: #1a1a1a;
+  font-family: var(--cm-font);
+  font-size: 12px;
+  color: var(--cm-pink-deep);
+  text-shadow: 1px 1px 0 #fff;
   letter-spacing: 1px;
 }
-
 .recipe-count {
-  background: #FFD700;
-  color: #8B7500;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 9px;
-  font-weight: bold;
+  font-family: var(--cm-font);
+  font-size: 8px;
+  background: #fff;
+  border: 2px solid var(--cm-outline);
+  border-radius: 8px;
+  padding: 4px 8px;
+  color: var(--cm-brown);
 }
-
-/* ── Reel Container ─────────────────────────────────────────– */
+.reel-container { overflow-x: auto; padding-bottom: 6px; }
 .reel-scroll {
   display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  padding: 12px 0;
-  scroll-behavior: smooth;
+  gap: 14px;
+  padding: 4px;
 }
 
-.reel-scroll::-webkit-scrollbar {
-  height: 6px;
-}
-
-.reel-scroll::-webkit-scrollbar-track {
-  background: #E8D4A0;
-  border-radius: 3px;
-}
-
-.reel-scroll::-webkit-scrollbar-thumb {
-  background: #8B7500;
-  border-radius: 3px;
-}
-
-/* ── History Card ───────────────────────────────────────────– */
 .history-card {
   flex-shrink: 0;
-  width: 220px;
-  background: white;
-  border-radius: 12px;
+  width: 180px;
+  background: var(--cm-cream);
+  border: 3px solid var(--cm-outline);
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s;
-  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(74,44,30,.25);
+  transition: transform .15s;
 }
-
-.history-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.pixel-card-frame {
-  border: 3px solid #8B7500;
-}
-
-.card-frame-border {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
+.history-card:hover { transform: translateY(-4px) rotate(-1deg); }
+.card-frame-border { padding: 10px; }
 .card-header {
   display: flex;
   justify-content: space-between;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 8px;
-  margin-bottom: 10px;
-  padding-bottom: 6px;
-  border-bottom: 1px dashed #D2B48C;
+  font-family: var(--cm-font);
+  font-size: 7px;
+  color: var(--cm-brown);
+  margin-bottom: 8px;
 }
-
 .card-number {
-  color: #8B7500;
-  font-weight: bold;
-}
-
-.card-date {
-  color: #999;
-}
-
-.card-visual {
-  margin-bottom: 10px;
-}
-
-.recipe-pixel-showcase {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-  padding: 8px;
-  background: #FFF9E6;
+  background: var(--cm-pink-hot);
+  color: #fff;
+  border: 2px solid var(--cm-outline);
   border-radius: 6px;
-  border: 1px dashed #D2B48C;
+  padding: 2px 5px;
 }
-
-.pixel-ingredient-mini {
-  font-size: 20px;
-  text-align: center;
-  filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.1));
+.card-visual {
+  background: var(--cm-blue-pale);
+  border: 2px dashed var(--cm-blue-deep);
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 3px #fff;
+  padding: 8px;
+  margin-bottom: 8px;
 }
-
-.card-body {
-  flex: 1;
-  margin-bottom: 10px;
+.recipe-pixel-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 22px;
 }
-
-.recipe-name {
-  margin: 0 0 4px 0;
-  font-family: 'Press Start 2P', monospace;
+.card-body .recipe-name {
+  margin: 0 0 4px;
+  font-family: var(--cm-font);
   font-size: 9px;
-  color: #1a1a1a;
-  letter-spacing: 0.5px;
+  color: var(--cm-pink-deep);
+  line-height: 1.5;
 }
-
-.recipe-type {
-  margin: 0 0 8px 0;
-  font-size: 10px;
-  color: #666;
+.card-body .recipe-type {
+  margin: 0 0 6px;
+  font-family: var(--cm-font);
+  font-size: 7px;
+  color: var(--cm-brown);
 }
-
 .recipe-stats {
   display: flex;
   gap: 8px;
-  font-size: 8px;
-  color: #8B7500;
-  font-weight: bold;
+  font-family: var(--cm-font);
+  font-size: 7px;
+  color: var(--cm-brown);
+  margin-bottom: 8px;
 }
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.card-footer {
-  padding-top: 8px;
-  border-top: 1px dashed #D2B48C;
-}
-
 .btn-view {
   width: 100%;
-  padding: 6px;
-  border: 2px solid #8B7500;
-  border-radius: 4px;
-  background: #FFD700;
-  color: #8B7500;
-  font-family: 'Press Start 2P', monospace;
+  font-family: var(--cm-font);
   font-size: 8px;
-  font-weight: bold;
+  padding: 8px;
+  background: linear-gradient(180deg, var(--cm-pink-hot), var(--cm-pink));
+  color: #fff;
+  text-shadow: 1px 1px 0 var(--cm-pink-deep);
+  border: 2px solid var(--cm-outline);
+  border-radius: 999px;
   cursor: pointer;
-  transition: all 0.2s;
+  box-shadow: 0 2px 0 rgba(74,44,30,.3);
 }
-
-.btn-view:hover {
-  background: #FFC700;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-view:active {
-  transform: scale(0.98);
-}
+.btn-view:active { transform: translateY(2px); box-shadow: none; }
 
 /* ══════════════════════════════════════════════════════════════ */
-/* Responsive Design                                              */
+/* RESPONSIVE                                                      */
 /* ══════════════════════════════════════════════════════════════ */
-
 @media (max-width: 768px) {
-  .ingredient-items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .step-card {
-    padding: 12px;
-  }
-
-  .carousel-btn {
-    width: 36px;
-    min-height: 160px;
-    font-size: 18px;
-  }
-
-  .history-card {
-    width: 180px;
-  }
+  .ingredient-items { grid-template-columns: repeat(3, 1fr); }
+  .cm-ribbon-plate  { font-size: 13px; padding: 12px 24px; }
+  .cm-mama-avatar   { width: 64px; height: 64px; font-size: 34px; }
+  .cm-speech-bubble { font-size: 9px; }
 }
-
 @media (max-width: 480px) {
-  .ingredient-items {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .pixel-ingredient-grid,
-  .recipe-steps-slider-container,
-  .item-modification-card,
-  .profile-history-reel {
-    padding: 12px;
-    border-width: 3px;
-  }
-
-  .step-card {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .step-number {
-    width: 50px;
-    height: 50px;
-  }
-
-  .step-number .num {
-    font-size: 20px;
-  }
-
-  .history-card {
-    width: 150px;
-  }
-
-  .recipe-pixel-showcase {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .ingredient-items { grid-template-columns: repeat(2, 1fr); }
+  .steps-carousel   { gap: 2px; }
+  .carousel-btn     { width: 44px; height: 44px; }
+  .carousel-btn::before { font-size: 42px; }
+  .step-card.active { flex-direction: column; }
+  .cm-btn           { font-size: 9px; padding: 10px 18px; }
+  .item-card-header { flex-direction: column; align-items: center; }
 }

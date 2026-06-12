@@ -6,7 +6,7 @@
   <title>Dig In - Pixel Ingredient UI System Demo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="frontend/css/pixel-ingredient-system.css">
   <style>
     * {
@@ -250,6 +250,18 @@
       <p>Pixel Ingredient UI System Demo</p>
     </div>
 
+    <!-- Demo 0: Full Cooking Mode flow -->
+    <div class="demo-section">
+      <div class="section-title">🍳 Cooking Mode — Recipe Card Part Two</div>
+      <p style="font-size:10px;color:#666;line-height:1.8;margin-bottom:16px;">
+        The full post-shopping flow: pantry check → step-by-step cooking with the TIME bar
+        and heart navigation → "New recipe added!" reward screen with your made-dishes counter.
+      </p>
+      <div class="controls">
+        <button class="btn primary" onclick="launchCookingMode()">▶ Let's cook!</button>
+      </div>
+    </div>
+
     <!-- Demo 1: Ingredient Grid -->
     <div class="demo-section">
       <div class="section-title">🥘 Ingredient Grid System</div>
@@ -460,8 +472,21 @@
       }
     ];
 
-    // Initialize system
-    let pixelSystem = initPixelIngredientSystem('ingredients-container', mapoTofuRecipe.id);
+    // Initialize system (pixelSystem is declared by pixel-ingredient-system.js)
+    pixelSystem = initPixelIngredientSystem('ingredients-container', mapoTofuRecipe.id);
+
+    // Launch the full Cooking Mama-style part-two flow
+    function launchCookingMode() {
+      CookingMode.launch({
+        id: mapoTofuRecipe.id,
+        name: 'Mapo Tofu',
+        cuisine: 'Chinese',
+        servings: 4,
+        totalTime: 30,
+        ingredients: mapoTofuRecipe.ingredients,
+        instructions: mapoTofuRecipe.instructions,
+      });
+    }
 
     // Populate ingredients
     function populateIngredients() {

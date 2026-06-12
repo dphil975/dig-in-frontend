@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIG-IN · Recipe</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/css/pixel-ingredient-system.css">
     <style>
         /* ── Reset & base ────────────────────────────────────────── */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -740,6 +741,7 @@
 
         /* ── Render ─────────────────────────────────────────────── */
         function render(r) {
+            window.__digInRecipe = r;   // used by CookingMode (recipe card part two)
             const cuisine    = r.cuisine || r.cuisine_type || '';
             const difficulty = (r.difficulty || r.difficulty_level || 'easy').toLowerCase();
             const totalTime  = r.totalTime || r.total_time || r.time;
@@ -922,8 +924,13 @@
             });
         });
 
-        /* ── Start cooking scrolls to steps ────────────────────── */
+        /* ── Start cooking → Cooking Mama mode (recipe card pt 2) ─ */
         document.getElementById('startCookingBtn')?.addEventListener('click', () => {
+            if (window.__digInRecipe && window.CookingMode) {
+                CookingMode.launch(window.__digInRecipe);
+                return;
+            }
+            // fallback: scroll to steps tab
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
             const stepsTab = document.querySelector('.tab[data-tab="steps"]');
@@ -935,5 +942,6 @@
         /* ── Boot ───────────────────────────────────────────────── */
         loadRecipe();
     </script>
+    <script src="frontend/js/pixel-ingredient-system.js"></script>
 </body>
 </html>

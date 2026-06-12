@@ -1,79 +1,117 @@
 /**
- * Pixel Ingredient System
- * Manages pixel art representations of ingredients with dynamic add/remove
- * Includes recipe steps slider and ingredient modification UI
+ * Pixel Ingredient System — "Cooking Mama" Theme
+ * Recipe Card Part Two: after the user commits to a recipe and returns
+ * from the store, CookingMode takes over with a pixel cooking-game flow.
+ *
+ *   intro  → pantry check (inventory grid, toggle have/missing)
+ *   steps  → step-by-step cards, heart arrows, TIME bar
+ *   finish → "Let's combine" plate + "New recipe added!" + made-counter
  */
 
+/* ══════════════════════════════════════════════════════════════ */
+/* Core component library                                          */
+/* ══════════════════════════════════════════════════════════════ */
 class PixelIngredientSystem {
   constructor(containerId, recipeId) {
     this.container = document.getElementById(containerId);
     this.recipeId = recipeId;
-    this.selectedIngredients = new Map(); // Map of ingredient -> {hasIt: boolean, addedPrice: number}
+    this.selectedIngredients = new Map(); // ingredient -> {hasIt, addedPrice}
     this.userAddedIngredients = new Set();
     this.pixelAssets = this.loadPixelAssets();
     this.currentStep = 0;
   }
 
-  // Pixel asset definitions
   loadPixelAssets() {
     return {
-      'tofu': { emoji: '🟫', color: '#D4A574', label: 'Tofu' },
-      'ground pork': { emoji: '🟥', color: '#C41E3A', label: 'Pork' },
-      'soy sauce': { emoji: '🟤', color: '#3D2817', label: 'Soy' },
-      'garlic': { emoji: '⚪', color: '#F5F5F5', label: 'Garlic' },
-      'ginger': { emoji: '🟨', color: '#FFD700', label: 'Ginger' },
-      'sesame oil': { emoji: '🟫', color: '#8B4513', label: 'Oil' },
-      'green onions': { emoji: '🟩', color: '#228B22', label: 'Onion' },
-      'chicken breast': { emoji: '🟧', color: '#FF8C00', label: 'Chicken' },
-      'eggs': { emoji: '🟡', color: '#FFD700', label: 'Eggs' },
-      'rice': { emoji: '⬜', color: '#FFFACD', label: 'Rice' },
-      'nori': { emoji: '🟫', color: '#2F4F2F', label: 'Nori' },
-      'mushrooms': { emoji: '🟤', color: '#8B4513', label: 'Mushroom' },
-      'kimchi': { emoji: '🟥', color: '#DC143C', label: 'Kimchi' },
-      'spinach': { emoji: '🟩', color: '#228B22', label: 'Spinach' },
-      'carrot': { emoji: '🟠', color: '#FF8C00', label: 'Carrot' },
-      'cabbage': { emoji: '🟩', color: '#90EE90', label: 'Cabbage' },
-      'beef': { emoji: '🟥', color: '#8B0000', label: 'Beef' },
-      'toasted cashews': { emoji: '🟡', color: '#DAA520', label: 'Cashews' },
-      'water chestnuts': { emoji: '⚪', color: '#E8E8E8', label: 'Chestnuts' },
-      'panko breadcrumbs': { emoji: '🟨', color: '#F4A460', label: 'Panko' },
+      'tofu':              { emoji: '🧈', color: '#D4A574', label: 'Tofu' },
+      'ground pork':       { emoji: '🥩', color: '#C41E3A', label: 'Pork' },
+      'soy sauce':         { emoji: '🍶', color: '#3D2817', label: 'Soy' },
+      'garlic':            { emoji: '🧄', color: '#F5F5F5', label: 'Garlic' },
+      'ginger':            { emoji: '🫚', color: '#FFD700', label: 'Ginger' },
+      'sesame oil':        { emoji: '🫗', color: '#8B4513', label: 'Oil' },
+      'green onions':      { emoji: '🌱', color: '#228B22', label: 'Onion' },
+      'chicken breast':    { emoji: '🍗', color: '#FF8C00', label: 'Chicken' },
+      'eggs':              { emoji: '🥚', color: '#FFD700', label: 'Eggs' },
+      'rice':              { emoji: '🍚', color: '#FFFACD', label: 'Rice' },
+      'nori':              { emoji: '🍙', color: '#2F4F2F', label: 'Nori' },
+      'mushrooms':         { emoji: '🍄', color: '#8B4513', label: 'Mushroom' },
+      'kimchi':            { emoji: '🌶️', color: '#DC143C', label: 'Kimchi' },
+      'spinach':           { emoji: '🥬', color: '#228B22', label: 'Spinach' },
+      'carrot':            { emoji: '🥕', color: '#FF8C00', label: 'Carrot' },
+      'cabbage':           { emoji: '🥬', color: '#90EE90', label: 'Cabbage' },
+      'beef':              { emoji: '🥩', color: '#8B0000', label: 'Beef' },
+      'toasted cashews':   { emoji: '🥜', color: '#DAA520', label: 'Cashews' },
+      'water chestnuts':   { emoji: '🌰', color: '#E8E8E8', label: 'Chestnuts' },
+      'panko breadcrumbs': { emoji: '🍞', color: '#F4A460', label: 'Panko' },
+      'butter':            { emoji: '🧈', color: '#FFE08A', label: 'Butter' },
+      'flour':             { emoji: '🌾', color: '#F5DEB3', label: 'Flour' },
+      'sugar':             { emoji: '🍬', color: '#FFF', label: 'Sugar' },
+      'milk':              { emoji: '🥛', color: '#FFF', label: 'Milk' },
+      'onion':             { emoji: '🧅', color: '#E8C39E', label: 'Onion' },
+      'tomato':            { emoji: '🍅', color: '#E84A5F', label: 'Tomato' },
+      'cheese':            { emoji: '🧀', color: '#FFC93C', label: 'Cheese' },
+      'shrimp':            { emoji: '🦐', color: '#FF8C69', label: 'Shrimp' },
+      'noodles':           { emoji: '🍜', color: '#F4D793', label: 'Noodles' },
+      'potato':            { emoji: '🥔', color: '#C9A66B', label: 'Potato' },
     };
   }
 
-  // Render ingredient grid with pixel assets
+  // Fuzzy lookup: "2 cloves garlic, minced" -> garlic asset
+  assetFor(name) {
+    const key = (name || '').toLowerCase();
+    if (this.pixelAssets[key]) return this.pixelAssets[key];
+    for (const [k, v] of Object.entries(this.pixelAssets)) {
+      if (key.includes(k) || k.includes(key)) return v;
+    }
+    return { emoji: '🍳', color: '#F8C8DA', label: this.shortLabel(name) };
+  }
+
+  shortLabel(name) {
+    const clean = (name || '').replace(/^[\d/.\s]+(cups?|tbsp|tsp|oz|lbs?|g|kg|ml|cloves?|cans?)?\s*/i, '');
+    const word = clean.split(/[,(]/)[0].trim();
+    return word.length > 10 ? word.slice(0, 9) + '…' : (word || 'Item');
+  }
+
+  /* ── Ingredient inventory grid ──────────────────────────────── */
   renderIngredientGrid(ingredients) {
     const grid = document.createElement('div');
     grid.className = 'pixel-ingredient-grid';
     grid.innerHTML = `
       <div class="ingredient-grid-header">
-        <h3>🎒 Your Ingredients</h3>
+        <h3>🧺 Pantry Check</h3>
         <span class="ingredient-count">${ingredients.length} items</span>
       </div>
       <div class="ingredient-items">
         ${ingredients.map((ing, idx) => this.renderPixelIngredient(ing, idx)).join('')}
       </div>
     `;
+
+    grid.addEventListener('click', e => {
+      const toggle = e.target.closest('[data-toggle]');
+      if (toggle) this.toggleIngredient(toggle.dataset.toggle);
+    });
+
     return grid;
   }
 
   renderPixelIngredient(ingredient, index) {
-    const asset = this.pixelAssets[ingredient] || { emoji: '🟫', color: '#999999', label: ingredient };
+    const asset = this.assetFor(ingredient);
     const hasIt = this.selectedIngredients.get(ingredient)?.hasIt ?? true;
     const isAdded = this.userAddedIngredients.has(ingredient);
     const addedPrice = this.selectedIngredients.get(ingredient)?.addedPrice;
 
     return `
       <div class="pixel-ingredient-item ${!hasIt ? 'missing' : ''} ${isAdded ? 'added' : ''}"
-           data-ingredient="${ingredient}"
+           data-ingredient="${ingredient.replace(/"/g, '&quot;')}"
            data-index="${index}">
-        <div class="pixel-box" style="background-color: ${asset.color};">
+        <div class="pixel-box">
           <span class="pixel-emoji">${asset.emoji}</span>
         </div>
         <div class="ingredient-label">
           <span class="ingredient-name">${asset.label}</span>
-          ${addedPrice ? `<span class="price-tag">💲+$${addedPrice.toFixed(2)}</span>` : ''}
+          ${addedPrice ? `<span class="price-tag">+$${addedPrice.toFixed(2)}</span>` : ''}
         </div>
-        <button class="ingredient-toggle" onclick="pixelSystem.toggleIngredient('${ingredient}')"
+        <button class="ingredient-toggle" data-toggle="${ingredient.replace(/"/g, '&quot;')}"
                 title="${hasIt ? 'Mark as missing' : 'Mark as have'}">
           ${hasIt ? '✓' : '✗'}
         </button>
@@ -88,35 +126,44 @@ class PixelIngredientSystem {
     this.updateDisplay();
   }
 
-  // Recipe steps slider with rounded cards
+  /* ── Recipe steps slider ────────────────────────────────────── */
   renderRecipeStepsSlider(steps) {
     const slider = document.createElement('div');
     slider.className = 'recipe-steps-slider-container';
 
     slider.innerHTML = `
       <div class="steps-header">
-        <h3>📖 Recipe Steps</h3>
+        <h3>🍴 Let's cook!</h3>
         <span class="step-counter"><span class="current-step">1</span> / ${steps.length}</span>
       </div>
 
-      <div class="steps-carousel">
-        <button class="carousel-btn prev" onclick="pixelSystem.previousStep()">‹</button>
+      <div class="cm-time-bar">
+        <span class="cm-time-label">🐰 TIME</span>
+        <div class="cm-time-track"><div class="cm-time-fill" style="width:${100 / steps.length}%"></div></div>
+      </div>
 
+      <div class="steps-carousel">
+        <button class="carousel-btn prev" data-nav="prev" aria-label="Previous step"><span>‹</span></button>
         <div class="steps-slides">
           ${steps.map((step, idx) => this.renderStepCard(step, idx)).join('')}
         </div>
-
-        <button class="carousel-btn next" onclick="pixelSystem.nextStep()">›</button>
+        <button class="carousel-btn next" data-nav="next" aria-label="Next step"><span>›</span></button>
       </div>
 
       <div class="step-dots">
         ${steps.map((_, idx) => `
-          <button class="dot ${idx === 0 ? 'active' : ''}"
-                  onclick="pixelSystem.goToStep(${idx})"
-                  title="Step ${idx + 1}"></button>
+          <button class="dot ${idx === 0 ? 'active' : ''}" data-dot="${idx}" title="Step ${idx + 1}"></button>
         `).join('')}
       </div>
     `;
+
+    // event delegation — no globals needed
+    slider.addEventListener('click', e => {
+      const nav = e.target.closest('[data-nav]');
+      const dot = e.target.closest('[data-dot]');
+      if (nav) nav.dataset.nav === 'next' ? this.nextStep() : this.previousStep();
+      if (dot) this.goToStep(Number(dot.dataset.dot));
+    });
 
     return slider;
   }
@@ -124,15 +171,13 @@ class PixelIngredientSystem {
   renderStepCard(step, index) {
     return `
       <div class="step-card ${index === 0 ? 'active' : ''}" data-step="${index}">
-        <div class="step-number">
-          <span class="num">${index + 1}</span>
-        </div>
+        <div class="step-number"><span class="num">${index + 1}</span></div>
         <div class="step-content">
           <h4>Step ${index + 1}</h4>
           <p>${step}</p>
           <div class="step-visual-hint">
             <span class="hint-icon">👉</span>
-            <span class="hint-text">Tap to continue</span>
+            <span class="hint-text">Tap ♥ to continue</span>
           </div>
         </div>
       </div>
@@ -140,13 +185,13 @@ class PixelIngredientSystem {
   }
 
   nextStep() {
-    const steps = this.container.querySelectorAll('.step-card').length;
+    const steps = this.stepCount();
     this.currentStep = (this.currentStep + 1) % steps;
     this.updateStepDisplay();
   }
 
   previousStep() {
-    const steps = this.container.querySelectorAll('.step-card').length;
+    const steps = this.stepCount();
     this.currentStep = (this.currentStep - 1 + steps) % steps;
     this.updateStepDisplay();
   }
@@ -156,30 +201,43 @@ class PixelIngredientSystem {
     this.updateStepDisplay();
   }
 
+  stepCount() {
+    return (this.container || document).querySelectorAll('.step-card').length;
+  }
+
   updateStepDisplay() {
-    // Hide all steps
-    document.querySelectorAll('.step-card').forEach(card => card.classList.remove('active'));
-    // Show current step
-    const activeCard = document.querySelector(`[data-step="${this.currentStep}"]`);
-    if (activeCard) activeCard.classList.add('active');
+    const root = this.container || document;
+    root.querySelectorAll('.step-card').forEach(card => card.classList.remove('active'));
+    root.querySelector(`[data-step="${this.currentStep}"]`)?.classList.add('active');
 
-    // Update counter
-    const totalSteps = document.querySelectorAll('.step-card').length;
-    document.querySelector('.current-step').textContent = this.currentStep + 1;
+    const total = this.stepCount();
+    const counter = root.querySelector('.current-step');
+    if (counter) counter.textContent = this.currentStep + 1;
 
-    // Update dots
-    document.querySelectorAll('.step-dots .dot').forEach((dot, idx) => {
+    const fill = root.querySelector('.cm-time-fill');
+    if (fill) fill.style.width = `${((this.currentStep + 1) / total) * 100}%`;
+
+    root.querySelectorAll('.step-dots .dot').forEach((dot, idx) => {
       dot.classList.toggle('active', idx === this.currentStep);
     });
   }
 
   updateDisplay() {
-    // This would refresh ingredient display when items are toggled
-    // In a real app, this would re-render the ingredient grid
-    console.log('Updated ingredients:', this.selectedIngredients);
+    // re-render toggled item states in place
+    const root = this.container || document;
+    this.selectedIngredients.forEach(({ hasIt }, ingredient) => {
+      const esc = (typeof CSS !== 'undefined' && CSS.escape)
+        ? CSS.escape(ingredient)
+        : ingredient.replace(/["\\]/g, '\\$&');
+      const item = root.querySelector(`[data-ingredient="${esc}"]`);
+      if (!item) return;
+      item.classList.toggle('missing', !hasIt);
+      const btn = item.querySelector('.ingredient-toggle');
+      if (btn) btn.textContent = hasIt ? '✓' : '✗';
+    });
   }
 
-  // Item modification interface (like the Love Shot card)
+  /* ── Item modification card (Love Shot style) ───────────────── */
   renderItemModification(item) {
     const itemCard = document.createElement('div');
     itemCard.className = 'item-modification-card';
@@ -187,12 +245,12 @@ class PixelIngredientSystem {
     itemCard.innerHTML = `
       <div class="item-card-header">
         <div class="item-visual">
-          <div class="item-pixel-art">${item.emoji || '📦'}</div>
+          <div class="item-pixel-art">${item.emoji || '🎀'}</div>
         </div>
         <div class="item-info">
           <h4>${item.name}</h4>
           <p class="item-description">${item.description}</p>
-          ${item.priceModifier ? `<span class="price-modifier">💲${item.priceModifier > 0 ? '+' : ''}$${item.priceModifier.toFixed(2)}</span>` : ''}
+          ${item.priceModifier ? `<span class="price-modifier">${item.priceModifier > 0 ? '+' : ''}$${item.priceModifier.toFixed(2)}</span>` : ''}
         </div>
       </div>
 
@@ -200,16 +258,15 @@ class PixelIngredientSystem {
         <div class="modifier-row">
           <span class="modifier-label">Quantity:</span>
           <div class="quantity-control">
-            <button onclick="pixelSystem.modifyQuantity('${item.id}', -1)">−</button>
+            <button data-qty="-1">−</button>
             <span class="quantity-value">1</span>
-            <button onclick="pixelSystem.modifyQuantity('${item.id}', 1)">+</button>
+            <button data-qty="1">+</button>
           </div>
         </div>
-
         ${item.options ? `
           <div class="modifier-row">
             <span class="modifier-label">Options:</span>
-            <select class="option-select" onchange="pixelSystem.updateOption('${item.id}', this.value)">
+            <select class="option-select">
               ${item.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
             </select>
           </div>
@@ -217,36 +274,44 @@ class PixelIngredientSystem {
       </div>
 
       <div class="item-actions">
-        <button class="btn-add-ingredient" onclick="pixelSystem.addItemToRecipe('${item.id}')">
-          ✨ Add to Recipe
-        </button>
-        <button class="btn-cancel" onclick="pixelSystem.closeModification()">
-          ✕ Cancel
-        </button>
+        <button class="btn-add-ingredient" data-action="add">♥ Add to Recipe</button>
+        <button class="btn-cancel" data-action="cancel">✕ Cancel</button>
       </div>
     `;
+
+    itemCard.addEventListener('click', e => {
+      const qty = e.target.closest('[data-qty]');
+      if (qty) {
+        const span = itemCard.querySelector('.quantity-value');
+        span.textContent = Math.max(1, Number(span.textContent) + Number(qty.dataset.qty));
+      }
+      const action = e.target.closest('[data-action]');
+      if (action?.dataset.action === 'cancel') itemCard.remove();
+      if (action?.dataset.action === 'add') {
+        this.userAddedIngredients.add(item.name.toLowerCase());
+        itemCard.remove();
+      }
+    });
 
     return itemCard;
   }
 
-  // Profile history reel (for saved recipes)
+  /* ── Profile history reel ───────────────────────────────────── */
   renderProfileHistoryReel(recipes) {
     const reel = document.createElement('div');
     reel.className = 'profile-history-reel';
 
     reel.innerHTML = `
       <div class="reel-header">
-        <h2>🎬 Your Recipe History</h2>
+        <h2>📖 Cooked Recipes</h2>
         <span class="recipe-count">${recipes.length} recipes</span>
       </div>
-
       <div class="reel-container">
         <div class="reel-scroll">
           ${recipes.map((recipe, idx) => this.renderHistoryCard(recipe, idx)).join('')}
         </div>
       </div>
     `;
-
     return reel;
   }
 
@@ -258,66 +323,247 @@ class PixelIngredientSystem {
             <span class="card-number">#${index + 1}</span>
             <span class="card-date">${recipe.date || 'Today'}</span>
           </div>
-
           <div class="card-visual">
             <div class="recipe-pixel-showcase">
-              ${recipe.ingredients.slice(0, 4).map(ing => {
-                const asset = this.pixelAssets[ing] || { emoji: '🟫' };
+              ${(recipe.ingredients || []).slice(0, 4).map(ing => {
+                const asset = this.assetFor(typeof ing === 'string' ? ing : ing.name);
                 return `<span class="pixel-ingredient-mini">${asset.emoji}</span>`;
               }).join('')}
             </div>
           </div>
-
           <div class="card-body">
             <h4 class="recipe-name">${recipe.name}</h4>
-            <p class="recipe-type">${recipe.type || 'Custom Recipe'}</p>
+            <p class="recipe-type">${recipe.type || recipe.cuisine || 'Custom Recipe'}</p>
             <div class="recipe-stats">
-              <span class="stat">⏱️ ${recipe.totalTime || '30'}m</span>
-              <span class="stat">🍽️ ${recipe.servings || '4'}</span>
+              <span class="stat">⏱ ${recipe.totalTime || '30'}m</span>
+              <span class="stat">🍽 ${recipe.servings || '4'}</span>
             </div>
           </div>
-
           <div class="card-footer">
-            <button class="btn-view" onclick="pixelSystem.viewRecipe(${recipe.id})">
-              View →
-            </button>
+            <button class="btn-view" onclick="location.href='recipe.html?id=${recipe.id}'">View →</button>
           </div>
         </div>
       </div>
     `;
   }
+}
 
-  viewRecipe(recipeId) {
-    console.log('Viewing recipe:', recipeId);
-    // Would navigate to recipe detail page
+/* ══════════════════════════════════════════════════════════════ */
+/* COOKING MODE — Recipe Card Part Two                             */
+/* ══════════════════════════════════════════════════════════════ */
+class CookingMode {
+  static HISTORY_KEY = 'dig_in_cook_history';
+  static COUNT_KEY   = 'dig_in_made_count';
+
+  constructor(recipe) {
+    this.recipe = this.normalize(recipe);
+    this.system = new PixelIngredientSystem(null, this.recipe.id);
+    this.phase = 'intro';
+    this.overlay = null;
   }
 
-  modifyQuantity(itemId, change) {
-    // Handle quantity modification
-    console.log('Modify quantity for:', itemId, 'by:', change);
+  static launch(recipe) {
+    const mode = new CookingMode(recipe);
+    mode.open();
+    return mode;
   }
 
-  updateOption(itemId, value) {
-    // Handle option selection
-    console.log('Update option for:', itemId, 'to:', value);
+  normalize(r) {
+    const ingredients = (r.ingredients || []).map(ing => {
+      if (typeof ing === 'string') return ing;
+      return `${ing.quantity ?? ing.amount ?? ''} ${ing.unit ?? ''} ${ing.name ?? ''}`.replace(/\s+/g, ' ').trim();
+    }).filter(Boolean);
+
+    const steps = (r.instructions || r.steps || []).map(s =>
+      typeof s === 'string' ? s : (s.instruction || s.text || '')
+    ).filter(Boolean);
+
+    return {
+      id: r.id ?? Date.now(),
+      name: r.name || 'Mystery Dish',
+      cuisine: r.cuisine || r.cuisine_type || '',
+      servings: r.servings || 4,
+      totalTime: r.totalTime || r.total_time || r.time || 30,
+      ingredients,
+      steps: steps.length ? steps : ['Mix everything together with love! ♥'],
+    };
   }
 
-  addItemToRecipe(itemId) {
-    // Add modified item to recipe
-    console.log('Adding item to recipe:', itemId);
+  open() {
+    this.overlay = document.createElement('div');
+    this.overlay.className = 'cm-overlay';
+    document.body.style.overflow = 'hidden';
+    document.body.appendChild(this.overlay);
+    this.renderIntro();
   }
 
-  closeModification() {
-    // Close the modification modal
-    const modal = document.querySelector('.item-modification-card');
-    if (modal) modal.remove();
+  close() {
+    this.overlay?.remove();
+    this.overlay = null;
+    document.body.style.overflow = '';
+  }
+
+  stage(innerHTML) {
+    this.overlay.innerHTML = `
+      <div class="cm-curtain"></div>
+      <div class="cm-stage">${innerHTML}</div>
+    `;
+    this.system.container = this.overlay;
+    return this.overlay.querySelector('.cm-stage');
+  }
+
+  bubble(text, emoji = '👩‍🍳') {
+    return `
+      <div class="cm-mama-row">
+        <div class="cm-mama-avatar">${emoji}</div>
+        <div class="cm-speech-bubble">${text}</div>
+      </div>
+    `;
+  }
+
+  /* ── Phase 1: pantry check ──────────────────────────────────── */
+  renderIntro() {
+    this.phase = 'intro';
+    const stage = this.stage(`
+      <div class="cm-ribbon"><div class="cm-ribbon-plate">Let's cook</div></div>
+      ${this.bubble(`Welcome back from the store!<br>Time to make <b>${this.recipe.name}</b>.<br>Check your ingredients!`)}
+      <div id="cmGrid"></div>
+      <div class="cm-confirm-bar">
+        <button class="cm-btn cm-btn-cancel" data-cm="quit"><span class="btn-dot"></span>Cancel</button>
+        <button class="cm-btn cm-btn-make" data-cm="start"><span class="btn-dot"></span>Let's cook!</button>
+      </div>
+    `);
+
+    stage.querySelector('#cmGrid').appendChild(
+      this.system.renderIngredientGrid(this.recipe.ingredients)
+    );
+
+    stage.addEventListener('click', e => {
+      const btn = e.target.closest('[data-cm]');
+      if (!btn) return;
+      if (btn.dataset.cm === 'quit') this.close();
+      if (btn.dataset.cm === 'start') {
+        const missing = [...this.system.selectedIngredients.values()].filter(v => !v.hasIt).length;
+        missing > 0 ? this.renderMissingWarning(missing) : this.renderSteps();
+      }
+    });
+  }
+
+  renderMissingWarning(count) {
+    const stage = this.stage(`
+      <div class="cm-ribbon"><div class="cm-ribbon-plate">Hold on!</div></div>
+      ${this.bubble(`You're missing <b>${count} ingredient${count > 1 ? 's' : ''}</b>!<br>Cook anyway, or go back to the store?`, '😲')}
+      <div class="cm-confirm-bar">
+        <button class="cm-btn cm-btn-cancel" data-cm="back"><span class="btn-dot"></span>Back</button>
+        <button class="cm-btn cm-btn-make" data-cm="anyway"><span class="btn-dot"></span>Cook anyway!</button>
+      </div>
+    `);
+    stage.addEventListener('click', e => {
+      const btn = e.target.closest('[data-cm]');
+      if (!btn) return;
+      if (btn.dataset.cm === 'back') this.renderIntro();
+      if (btn.dataset.cm === 'anyway') this.renderSteps();
+    });
+  }
+
+  /* ── Phase 2: step-by-step cooking ──────────────────────────── */
+  renderSteps() {
+    this.phase = 'steps';
+    this.system.currentStep = 0;
+    const stage = this.stage(`
+      <div class="cm-ribbon"><div class="cm-ribbon-plate">${this.recipe.name}</div></div>
+      <div id="cmSlider"></div>
+      <div class="cm-confirm-bar">
+        <button class="cm-btn cm-btn-cancel" data-cm="quit"><span class="btn-dot"></span>Quit</button>
+        <button class="cm-btn cm-btn-make" data-cm="done"><span class="btn-dot"></span>Finished!</button>
+      </div>
+    `);
+
+    stage.querySelector('#cmSlider').appendChild(
+      this.system.renderRecipeStepsSlider(this.recipe.steps)
+    );
+
+    stage.addEventListener('click', e => {
+      const btn = e.target.closest('[data-cm]');
+      if (!btn) return;
+      if (btn.dataset.cm === 'quit') this.close();
+      if (btn.dataset.cm === 'done') this.renderFinish();
+    });
+  }
+
+  /* ── Phase 3: combine + reward ──────────────────────────────── */
+  renderFinish() {
+    this.phase = 'finish';
+    const count = this.bumpMadeCount();
+    this.saveHistory();
+
+    const plateEmojis = this.recipe.ingredients.slice(0, 5)
+      .map(ing => this.system.assetFor(ing).emoji).join('');
+
+    const stage = this.stage(`
+      <div class="cm-ribbon"><div class="cm-ribbon-plate">Let's combine</div></div>
+      ${this.bubble(`<b>New recipe added!</b><br>You did it — it looks delicious! ♥`, '🥳')}
+      <div class="cm-dish-preview">
+        <div class="cm-dish-name">${this.recipe.name}</div>
+        <div class="cm-plate">${plateEmojis || '🍽️'}</div>
+      </div>
+      <div style="text-align:center;">
+        <div class="cm-counter-badge">
+          <span class="cm-counter-label">🥞 Dishes made</span>
+          <span class="cm-counter-value">${count}</span>
+        </div>
+      </div>
+      <div class="cm-confirm-bar">
+        <button class="cm-btn cm-btn-return" data-cm="return"><span class="btn-dot"></span>Return</button>
+      </div>
+    `);
+
+    stage.addEventListener('click', e => {
+      if (e.target.closest('[data-cm]')?.dataset.cm === 'return') this.close();
+    });
+  }
+
+  /* ── Persistence ────────────────────────────────────────────── */
+  bumpMadeCount() {
+    let n = 0;
+    try { n = Number(localStorage.getItem(CookingMode.COUNT_KEY) || 0); } catch (_) {}
+    n += 1;
+    try { localStorage.setItem(CookingMode.COUNT_KEY, String(n)); } catch (_) {}
+    return n;
+  }
+
+  saveHistory() {
+    try {
+      const history = JSON.parse(localStorage.getItem(CookingMode.HISTORY_KEY) || '[]');
+      history.unshift({
+        id: this.recipe.id,
+        name: this.recipe.name,
+        cuisine: this.recipe.cuisine,
+        ingredients: this.recipe.ingredients,
+        servings: this.recipe.servings,
+        totalTime: this.recipe.totalTime,
+        date: new Date().toLocaleDateString(),
+        cookedAt: Date.now(),
+      });
+      localStorage.setItem(CookingMode.HISTORY_KEY, JSON.stringify(history.slice(0, 50)));
+    } catch (_) {}
+  }
+
+  static getHistory() {
+    try { return JSON.parse(localStorage.getItem(CookingMode.HISTORY_KEY) || '[]'); }
+    catch (_) { return []; }
   }
 }
 
-// Initialize the system
+/* ── Global init helpers (back-compat with demo page) ─────────── */
 let pixelSystem = null;
-
 function initPixelIngredientSystem(containerId, recipeId) {
   pixelSystem = new PixelIngredientSystem(containerId, recipeId);
   return pixelSystem;
+}
+
+if (typeof window !== 'undefined') {
+  window.PixelIngredientSystem = PixelIngredientSystem;
+  window.CookingMode = CookingMode;
+  window.initPixelIngredientSystem = initPixelIngredientSystem;
 }
