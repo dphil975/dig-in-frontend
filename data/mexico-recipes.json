@@ -7,291 +7,220 @@
     "totalDrinks": 20,
     "breakfast": [
       {
-        "id": "mx-b1",
-        "name": "Huevos Rancheros",
-        "difficulty": "Medium",
+        "id": "bf-1",
+        "name": "Birria Dumplings Breakfast",
+        "difficulty": "Hard",
         "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "short rib",
+          "cascabel salsa",
+          "dope sauce",
+          "cotija cheese"
+        ],
+        "instructions": [
+          "Braise short rib",
+          "Fill dumplings",
+          "Top with salsa, sauce and cheese"
+        ]
+      },
+      {
+        "id": "bf-2",
+        "name": "Steak & Egg Burrito",
+        "difficulty": "Medium",
+        "servings": 1,
         "prepTime": 15,
         "cookTime": 20,
         "ingredients": [
           "eggs",
-          "tortillas",
-          "salsa",
-          "beans"
+          "pasilla marinated steak",
+          "bell pepper",
+          "avocado",
+          "home fries",
+          "oaxacan cheese",
+          "caramelized onion",
+          "cascabel sauce"
         ],
         "instructions": [
-          "Eggs with ranch sauce - iconic"
+          "Scramble fluffy eggs",
+          "Grill marinated steak",
+          "Wrap with all ingredients"
         ]
       },
       {
-        "id": "mx-b2",
-        "name": "Chilaquiles",
+        "id": "bf-3",
+        "name": "Breakfast Sliders",
         "difficulty": "Medium",
-        "servings": 4,
-        "prepTime": 20,
-        "cookTime": 25,
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 15,
         "ingredients": [
+          "bao bun",
+          "scrambled eggs",
+          "bacon",
+          "chipotle aioli",
+          "arugula",
+          "fries"
+        ],
+        "instructions": [
+          "Prepare scrambled eggs and bacon",
+          "Assemble in bao bun",
+          "Serve with fries"
+        ]
+      },
+      {
+        "id": "bf-4",
+        "name": "French Toast",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "sweet bread",
+          "fire roasted strawberries",
+          "Mexican cream cheese",
+          "whipped cream"
+        ],
+        "instructions": [
+          "Dip bread in egg mixture",
+          "Cook until golden",
+          "Top with strawberries and cream"
+        ]
+      },
+      {
+        "id": "bf-5",
+        "name": "Granola Bowl",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "yogurt",
+          "hibiscus",
+          "cinnamon",
+          "quinoa granola",
+          "seasonal tropical fruit",
+          "agave"
+        ],
+        "instructions": [
+          "Layer yogurt in bowl",
+          "Top with granola and fruit",
+          "Drizzle with agave"
+        ]
+      },
+      {
+        "id": "bf-6",
+        "name": "Sunrise Quesadilla",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "blue corn tortilla",
+          "scrambled eggs",
+          "chorizo",
+          "white cheddar",
+          "mushrooms",
+          "pico de gallo",
+          "guajillo salsa"
+        ],
+        "instructions": [
+          "Scramble eggs with chorizo",
+          "Fill tortilla with cheese and mushrooms",
+          "Serve with salsa"
+        ]
+      },
+      {
+        "id": "bf-7",
+        "name": "Morning Bowl",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "scrambled egg",
+          "avocado",
+          "jalape\u00f1o",
+          "tomato",
           "tortilla chips",
-          "salsa",
-          "eggs",
-          "cheese"
+          "chorizo",
+          "refried beans",
+          "rice",
+          "guajillo sauce",
+          "dope sauce"
         ],
         "instructions": [
-          "Fried tortilla chips in sauce"
+          "Scramble eggs",
+          "Prepare chorizo",
+          "Layer all ingredients in bowl"
         ]
       },
       {
-        "id": "mx-b3",
-        "name": "Tamales",
+        "id": "bf-8",
+        "name": "Barbacoa Hash",
         "difficulty": "Hard",
-        "servings": 4,
-        "prepTime": 40,
-        "cookTime": 45,
+        "servings": 1,
+        "prepTime": 20,
+        "cookTime": 480,
         "ingredients": [
-          "masa",
-          "filling",
-          "corn husks"
+          "roasted breakfast potatoes",
+          "slow braised short rib",
+          "poached eggs",
+          "tabasco",
+          "tajin",
+          "hollandaise"
         ],
         "instructions": [
-          "Corn dough packets - street food"
+          "Roast potatoes until crispy",
+          "Braise short rib",
+          "Top with poached eggs and spiced hollandaise"
         ]
       },
       {
-        "id": "mx-b4",
-        "name": "Mexican B4",
-        "difficulty": "Easy",
-        "servings": 4,
+        "id": "bf-9",
+        "name": "Omelette",
+        "difficulty": "Medium",
+        "servings": 1,
         "prepTime": 10,
         "cookTime": 10,
         "ingredients": [
-          "ingredient"
+          "eggs",
+          "breakfast potatoes",
+          "spinach",
+          "tomatoes",
+          "peppers",
+          "avocado",
+          "white cheddar",
+          "chorizo",
+          "bacon"
         ],
         "instructions": [
-          "preparation"
+          "Cook eggs into omelette",
+          "Add selected fillings",
+          "Serve with breakfast potatoes"
         ]
       },
       {
-        "id": "mx-b5",
-        "name": "Mexican B5",
-        "difficulty": "Easy",
-        "servings": 4,
+        "id": "bf-10",
+        "name": "Huevos Rancheros",
+        "difficulty": "Medium",
+        "servings": 1,
         "prepTime": 10,
-        "cookTime": 10,
+        "cookTime": 15,
         "ingredients": [
-          "ingredient"
+          "flour tortillas",
+          "avocado",
+          "salsa quemada",
+          "eggs",
+          "chorizo",
+          "black beans",
+          "queso fresco"
         ],
         "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b6",
-        "name": "Mexican B6",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b7",
-        "name": "Mexican B7",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b8",
-        "name": "Mexican B8",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b9",
-        "name": "Mexican B9",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b10",
-        "name": "Mexican B10",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b11",
-        "name": "Mexican B11",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b12",
-        "name": "Mexican B12",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b13",
-        "name": "Mexican B13",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b14",
-        "name": "Mexican B14",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b15",
-        "name": "Mexican B15",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b16",
-        "name": "Mexican B16",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b17",
-        "name": "Mexican B17",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b18",
-        "name": "Mexican B18",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b19",
-        "name": "Mexican B19",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
-        ]
-      },
-      {
-        "id": "mx-b20",
-        "name": "Mexican B20",
-        "difficulty": "Easy",
-        "servings": 4,
-        "prepTime": 10,
-        "cookTime": 10,
-        "ingredients": [
-          "ingredient"
-        ],
-        "instructions": [
-          "preparation"
+          "Crisp tortillas",
+          "Prepare salsa quemada",
+          "Top with eggs, chorizo and cheese"
         ]
       }
     ],
@@ -1515,6 +1444,637 @@
         ],
         "instructions": [
           "Wrapped beans"
+        ]
+      }
+    ],
+    "appetizers": [
+      {
+        "id": "ap-1",
+        "name": "Birria Dumplings",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "short rib",
+          "cascabel salsa",
+          "dope sauce",
+          "cotija cheese"
+        ],
+        "instructions": [
+          "Braise short rib for 8 hours",
+          "Fill dumplings with short rib",
+          "Top with cascabel salsa, dope sauce and cotija"
+        ]
+      },
+      {
+        "id": "ap-2",
+        "name": "Quesadilla",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "corn tortilla",
+          "white cheddar",
+          "poblano",
+          "caramelized onions",
+          "pico",
+          "dope sauce",
+          "chipotle aioli"
+        ],
+        "instructions": [
+          "Press tortilla with cheese and poblano",
+          "Add caramelized onions and pico",
+          "Top with dope sauce and chipotle aioli"
+        ]
+      },
+      {
+        "id": "ap-3",
+        "name": "Nachos",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "tortilla chips",
+          "black beans",
+          "cascabel queso",
+          "pico de gallo",
+          "pickled jalape\u00f1os",
+          "avocado sour cream"
+        ],
+        "instructions": [
+          "Layer chips with black beans and queso",
+          "Top with pico and jalape\u00f1os",
+          "Drizzle with avocado sour cream"
+        ]
+      },
+      {
+        "id": "ap-4",
+        "name": "Cali-Fries",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "fries",
+          "guacamole",
+          "black beans",
+          "cascabel queso",
+          "pico de gallo",
+          "chipotle",
+          "dope sauce"
+        ],
+        "instructions": [
+          "Fry and season potatoes",
+          "Layer with guacamole and beans",
+          "Top with queso, pico, chipotle and sauce"
+        ]
+      },
+      {
+        "id": "ap-5",
+        "name": "Tuna Tostadas",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "sushi grade tuna",
+          "pressed corn tostada",
+          "pickled onion",
+          "yuzu kosho",
+          "herb mixto"
+        ],
+        "instructions": [
+          "Press corn tostadas",
+          "Top with sushi grade tuna",
+          "Add pickled onion, yuzu kosho and herb mixto"
+        ]
+      },
+      {
+        "id": "ap-6",
+        "name": "Crab Empanadas",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "jumbo lump crab",
+          "gulf shrimp",
+          "roasted garlic",
+          "scallion",
+          "pressed corn",
+          "fresno chili dip"
+        ],
+        "instructions": [
+          "Prepare crab and shrimp filling",
+          "Fill corn empanadas",
+          "Serve with roasted garlic, scallion and fresno chili dip"
+        ]
+      },
+      {
+        "id": "ap-7",
+        "name": "Flautas",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "beef picadillo",
+          "pickles",
+          "caramelized onion",
+          "cascabel queso",
+          "secret sauce"
+        ],
+        "instructions": [
+          "Fill flour with beef picadillo",
+          "Add pickles and caramelized onion",
+          "Fry and top with queso and sauce"
+        ]
+      },
+      {
+        "id": "ap-8",
+        "name": "Crispy Fish Bao",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "crispy mahi-mahi",
+          "cali cabbage",
+          "avocado",
+          "oaxacan tartar sauce",
+          "house dorito dust"
+        ],
+        "instructions": [
+          "Prepare crispy mahi-mahi",
+          "Layer in bao with cabbage and avocado",
+          "Top with tartar sauce and dorito dust"
+        ]
+      },
+      {
+        "id": "ap-9",
+        "name": "Ceviche",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "fresh catch",
+          "citrus",
+          "seasonal accompaniments"
+        ],
+        "instructions": [
+          "Cut fresh catch into cubes",
+          "Cure in citrus juice",
+          "Serve with seasonal accompaniments"
+        ]
+      }
+    ],
+    "tacos_dinner": [
+      {
+        "id": "taco-1",
+        "name": "Carnitas Tacos",
+        "difficulty": "Hard",
+        "servings": 3,
+        "prepTime": 20,
+        "cookTime": 480,
+        "ingredients": [
+          "pork shoulder",
+          "crackling",
+          "guava fresno",
+          "cabbage",
+          "avocado",
+          "tomatillo"
+        ],
+        "instructions": [
+          "Braise pork shoulder 8 hours",
+          "Shred and crisp pork",
+          "Fill tacos with toppings"
+        ]
+      },
+      {
+        "id": "taco-2",
+        "name": "Fish Tacos",
+        "difficulty": "Medium",
+        "servings": 3,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "mahi-mahi",
+          "tempura batter",
+          "avocado",
+          "cabbage",
+          "pickled onion",
+          "chipotle",
+          "pico",
+          "dope sauce"
+        ],
+        "instructions": [
+          "Tempura batter fish",
+          "Fry until crispy",
+          "Fill tacos with toppings"
+        ]
+      },
+      {
+        "id": "taco-3",
+        "name": "Chicken Tacos",
+        "difficulty": "Medium",
+        "servings": 3,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "chicken thigh",
+          "avocado",
+          "heirloom cherry tomatoes",
+          "cali-slaw",
+          "lemon crema",
+          "chipotle"
+        ],
+        "instructions": [
+          "Roast chicken thigh",
+          "Shred chicken",
+          "Assemble with toppings"
+        ]
+      },
+      {
+        "id": "taco-4",
+        "name": "Shrimp Tacos",
+        "difficulty": "Medium",
+        "servings": 3,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "shrimp",
+          "avocado",
+          "basil-slaw",
+          "yuzu sweet chile aioli",
+          "radish",
+          "togarashi"
+        ],
+        "instructions": [
+          "Prepare bang bang shrimp",
+          "Assemble in tacos",
+          "Top with slaw, aioli and radish"
+        ]
+      },
+      {
+        "id": "taco-5",
+        "name": "Diablo Steak Tacos",
+        "difficulty": "Medium",
+        "servings": 3,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "steak",
+          "jicama slaw",
+          "crispy tortilla strips",
+          "asado crema",
+          "diablo sauce"
+        ],
+        "instructions": [
+          "Marinate and grill steak",
+          "Slice thinly",
+          "Assemble with spicy toppings"
+        ]
+      },
+      {
+        "id": "taco-6",
+        "name": "Veggie Tacos",
+        "difficulty": "Easy",
+        "servings": 3,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "broccolini",
+          "jicama slaw",
+          "avocado crema",
+          "dill pickle relish"
+        ],
+        "instructions": [
+          "Nashville hot fry broccolini",
+          "Assemble in tacos",
+          "Top with slaw, crema and relish"
+        ]
+      }
+    ],
+    "big_plates": [
+      {
+        "id": "bp-1",
+        "name": "Baja Bowl",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "ribeye",
+          "egg",
+          "rojo rice",
+          "corn",
+          "avocado",
+          "black beans",
+          "pico",
+          "dope sauce",
+          "guajillo salsa"
+        ],
+        "instructions": [
+          "Grill ribeye",
+          "Prepare rojo rice",
+          "Assemble bowl with all toppings"
+        ]
+      },
+      {
+        "id": "bp-2",
+        "name": "Barbacoa",
+        "difficulty": "Hard",
+        "servings": 1,
+        "prepTime": 20,
+        "cookTime": 480,
+        "ingredients": [
+          "short rib",
+          "chiltomate guajillo salsa",
+          "tortillas",
+          "rojo rice",
+          "pickled onions",
+          "black beans"
+        ],
+        "instructions": [
+          "Braise short rib slowly",
+          "Prepare guajillo salsa",
+          "Serve with rice, beans and pickled onions"
+        ]
+      },
+      {
+        "id": "bp-3",
+        "name": "Pescado",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "black cod",
+          "miso glaze",
+          "baby gem",
+          "crispy potatoes",
+          "spicy broth",
+          "cherry tomatoes"
+        ],
+        "instructions": [
+          "Sear black cod with miso glaze",
+          "Prepare crispy potatoes",
+          "Plate with lettuce and tomatoes in spicy broth"
+        ]
+      },
+      {
+        "id": "bp-4",
+        "name": "Chicken Fajitas",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "chicken",
+          "caramelized onions",
+          "red peppers",
+          "black beans",
+          "flour tortillas",
+          "crema",
+          "green pico"
+        ],
+        "instructions": [
+          "Saut\u00e9 chipotle chicken",
+          "Caramelize onions and peppers",
+          "Serve sizzling with beans and tortillas"
+        ]
+      },
+      {
+        "id": "bp-5",
+        "name": "Duck Enchilada",
+        "difficulty": "Hard",
+        "servings": 1,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "duck confit",
+          "charred mole negro",
+          "flour tortilla",
+          "sesame",
+          "green pico",
+          "pickled onions"
+        ],
+        "instructions": [
+          "Prepare duck confit",
+          "Make mole negro sauce",
+          "Roll in tortilla and top with sauce"
+        ]
+      },
+      {
+        "id": "bp-6",
+        "name": "California Burrito",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "steak",
+          "avocado",
+          "seasoned fries",
+          "black beans",
+          "tomato",
+          "red onion",
+          "cascabel queso"
+        ],
+        "instructions": [
+          "Marinate and grill steak",
+          "Prepare seasoned fries",
+          "Wrap all ingredients in tortilla"
+        ]
+      },
+      {
+        "id": "bp-7",
+        "name": "Mexican Ribeye",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "ribeye",
+          "ube mash",
+          "broccolini",
+          "cotija",
+          "chili lime",
+          "horseradish salsa",
+          "yuzu kosho salsa verde"
+        ],
+        "instructions": [
+          "Sear ribeye to temperature",
+          "Prepare creamy ube mash",
+          "Char broccolini and serve with salsas"
+        ]
+      },
+      {
+        "id": "bp-8",
+        "name": "Hamburguesa Torta",
+        "difficulty": "Medium",
+        "servings": 1,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "ribeye",
+          "birria patty",
+          "avocado",
+          "fresno honey jam",
+          "cali-slaw",
+          "oaxacan cheese",
+          "mole verde aioli",
+          "fries"
+        ],
+        "instructions": [
+          "Braise ribeye",
+          "Prepare birria patty",
+          "Assemble torta with toppings and serve with fries"
+        ]
+      }
+    ],
+    "salads": [
+      {
+        "id": "sal-1",
+        "name": "Taco Salad",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "tortilla strips",
+          "cali-slaw",
+          "avocado",
+          "roasted corn",
+          "black beans",
+          "spring greens",
+          "chipotle agave vinaigrette",
+          "queso fresco",
+          "salsa macha"
+        ],
+        "instructions": [
+          "Crisp tortilla strips",
+          "Toss greens with vinaigrette",
+          "Layer with vegetables and cheese"
+        ]
+      },
+      {
+        "id": "sal-2",
+        "name": "Julio Caesar",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "roasted corn",
+          "baby gem lettuce",
+          "candy cane beets",
+          "garlic croutons",
+          "avocado",
+          "pickled onion",
+          "caesar vinaigrette"
+        ],
+        "instructions": [
+          "Toss lettuce with caesar vinaigrette",
+          "Top with corn, beets, croutons and avocado",
+          "Finish with pickled onion"
+        ]
+      }
+    ],
+    "sides": [
+      {
+        "id": "side-1",
+        "name": "Chips & Salsas",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "tortilla chips",
+          "salsa trio"
+        ],
+        "instructions": [
+          "Fry tortilla chips",
+          "Prepare three salsas",
+          "Serve together"
+        ]
+      },
+      {
+        "id": "side-2",
+        "name": "Fries",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "potatoes",
+          "tajin mayo",
+          "spicy seasoning"
+        ],
+        "instructions": [
+          "Cut and fry potatoes",
+          "Season with tajin and spices",
+          "Serve with mayo"
+        ]
+      },
+      {
+        "id": "side-3",
+        "name": "Guacamole",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "avocado",
+          "lime",
+          "tomato",
+          "onion",
+          "cilantro"
+        ],
+        "instructions": [
+          "Mash avocado",
+          "Mix with lime juice",
+          "Add tomato, onion and cilantro"
+        ]
+      },
+      {
+        "id": "side-4",
+        "name": "Elotes",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "corn ribs",
+          "tajin mayo",
+          "cotija cheese",
+          "cilantro"
+        ],
+        "instructions": [
+          "Roast corn ribs",
+          "Coat with tajin mayo",
+          "Top with cotija and cilantro"
+        ]
+      },
+      {
+        "id": "side-5",
+        "name": "Blue Masa Cornbread",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "blue masa",
+          "fresno hot honey",
+          "salted butter"
+        ],
+        "instructions": [
+          "Bake cornbread with blue masa",
+          "Serve with hot honey and butter"
         ]
       }
     ]
