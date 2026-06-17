@@ -1,0 +1,249 @@
+{
+  "country": "Romania",
+  "region": "Eastern Europe",
+  "breakfast": [
+    {
+      "id": "rom-break-mălai",
+      "name": "Mălai (Cornmeal Porridge)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 30,
+      "description": "Romanian cornmeal breakfast",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "Cornmeal",
+        "Water",
+        "Salt",
+        "Butter",
+        "Cheese"
+      ],
+      "instructions": [
+        "Boil water with salt",
+        "Slowly add cornmeal while stirring",
+        "Cook 20-30 minutes, stirring constantly",
+        "Add butter and cheese",
+        "Serve hot"
+      ],
+      "notes": "Requires constant stirring",
+      "fun_fact": "Mălai is Romanian staple",
+      "alternatives": [
+        "With sour cream",
+        "Sweet version",
+        "Plain version"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "rom-lunch-mici",
+      "name": "Mici (Grilled Sausages)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Romanian grilled meat rolls",
+      "seasonings": [
+        "garlic",
+        "paprika"
+      ],
+      "ingredients": [
+        "1 lb ground meat",
+        "Garlic",
+        "Paprika",
+        "Caraway",
+        "Oil"
+      ],
+      "instructions": [
+        "Mix meat with spices",
+        "Form into rolls",
+        "Refrigerate 30 minutes",
+        "Grill over charcoal",
+        "Turn frequently",
+        "Serve with mustard and bread"
+      ],
+      "notes": "Must chill first",
+      "fun_fact": "Mici are Romanian street food",
+      "alternatives": [
+        "Lamb instead of beef",
+        "Spicier version",
+        "Longer rolls"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "rom-dinner-ciorbă",
+      "name": "Ciorbă (Sour Soup)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 60,
+      "description": "Romanian sour beef soup",
+      "seasonings": [
+        "bay leaf"
+      ],
+      "ingredients": [
+        "1.5 lbs beef",
+        "Vegetables",
+        "Broth",
+        "Sour cream or vinegar",
+        "Bay leaves",
+        "Oil"
+      ],
+      "instructions": [
+        "Brown beef",
+        "Add broth and vegetables",
+        "Simmer 45 minutes",
+        "Add sour cream or vinegar",
+        "Simmer 15 more minutes",
+        "Season to taste"
+      ],
+      "notes": "Sour is key",
+      "fun_fact": "Ciorbă is Romanian classic",
+      "alternatives": [
+        "With cabbage",
+        "More vegetables",
+        "Less sour"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "rom-snack-cozonac",
+      "name": "Cozonac (Sweet Bread)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 40,
+      "cookTime": 50,
+      "description": "Romanian walnut-filled bread",
+      "seasonings": [
+        "vanilla"
+      ],
+      "ingredients": [
+        "Dough: flour, milk, yeast",
+        "Walnuts",
+        "Honey",
+        "Butter",
+        "Sugar",
+        "Raisins"
+      ],
+      "instructions": [
+        "Make yeast dough",
+        "Let rise",
+        "Make walnut filling",
+        "Roll dough",
+        "Spread walnut filling",
+        "Roll into loaf",
+        "Let rise again",
+        "Bake at 375°F for 45-50 minutes"
+      ],
+      "notes": "Complex filling",
+      "fun_fact": "Cozonac is Easter specialty",
+      "alternatives": [
+        "Without raisins",
+        "Chocolate filling",
+        "Plainer version"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "rom-dessert-papanasi",
+      "name": "Papanasi (Fried Dough)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Romanian fried dough with jam and sour cream",
+      "seasonings": [],
+      "ingredients": [
+        "Dough: flour, yogurt, eggs",
+        "Jam",
+        "Sour cream",
+        "Honey",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Make yogurt dough",
+        "Let rest",
+        "Form into balls",
+        "Deep fry until golden",
+        "Fill with jam",
+        "Top with sour cream",
+        "Drizzle with honey"
+      ],
+      "notes": "Serve warm",
+      "fun_fact": "Papanasi are Romanian treat",
+      "alternatives": [
+        "Custard filling",
+        "Different jam",
+        "Without honey"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "rom-drink-tea",
+      "name": "Romanian Herbal Tea",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Traditional herbal tea",
+      "seasonings": [
+        "honey"
+      ],
+      "ingredients": [
+        "Herbs: linden, mint, chamomile",
+        "Water",
+        "Honey",
+        "Lemon"
+      ],
+      "instructions": [
+        "Heat water",
+        "Add dried herbs",
+        "Steep 5-10 minutes",
+        "Add honey",
+        "Add lemon juice",
+        "Serve hot"
+      ],
+      "notes": "Very traditional",
+      "fun_fact": "Herbal tea in Romanian culture",
+      "alternatives": [
+        "Different herbs",
+        "Without lemon",
+        "Cold version"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "rom-drink-tuica",
+      "name": "Tuică (Plum Brandy)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Romanian plum spirit",
+      "seasonings": [],
+      "ingredients": [
+        "Tuică"
+      ],
+      "instructions": [
+        "Serve in small glass",
+        "Room temperature",
+        "Drink slowly with food"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Tuică is Romanian staple",
+      "alternatives": [
+        "Different brands",
+        "Homemade",
+        "Different strength"
+      ]
+    }
+  ]
+}

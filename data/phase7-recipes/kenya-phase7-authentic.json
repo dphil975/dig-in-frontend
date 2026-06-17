@@ -1,0 +1,242 @@
+{
+  "country": "Kenya",
+  "region": "East Africa",
+  "breakfast": [
+    {
+      "id": "ken-break-ugali",
+      "name": "Ugali (Corn Porridge)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 20,
+      "description": "Kenyan cornmeal staple",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "Cornmeal",
+        "Water",
+        "Salt",
+        "Butter"
+      ],
+      "instructions": [
+        "Boil water with salt",
+        "Slowly add cornmeal",
+        "Stir constantly",
+        "Cook 15 minutes",
+        "Turn onto plate",
+        "Smooth with wet hands"
+      ],
+      "notes": "Smooth and firm",
+      "fun_fact": "Ugali is East African staple",
+      "alternatives": [
+        "Different thickness",
+        "With butter",
+        "Without butter"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "ken-lunch-sukuma",
+      "name": "Sukuma Wiki (Greens)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "description": "Kenyan sautéed leafy greens",
+      "seasonings": [
+        "garlic"
+      ],
+      "ingredients": [
+        "Collard greens",
+        "Onion",
+        "Tomato",
+        "Garlic",
+        "Oil"
+      ],
+      "instructions": [
+        "Chop greens",
+        "Sauté onion and garlic",
+        "Add greens",
+        "Add tomato",
+        "Cook until tender",
+        "Season to taste"
+      ],
+      "notes": "Very nutritious",
+      "fun_fact": "Sukuma wiki means 'push through the week'",
+      "alternatives": [
+        "Different greens",
+        "Spicier",
+        "With beans"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "ken-dinner-nyama",
+      "name": "Nyama Choma (Grilled Meat)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 20,
+      "description": "Kenyan grilled meat",
+      "seasonings": [
+        "garlic",
+        "lemon"
+      ],
+      "ingredients": [
+        "1.5 lbs meat",
+        "Garlic",
+        "Lemon juice",
+        "Chili",
+        "Oil"
+      ],
+      "instructions": [
+        "Marinate meat in lemon and garlic",
+        "Grill over charcoal",
+        "Cook until charred",
+        "Serve with ugali and greens"
+      ],
+      "notes": "Char the meat",
+      "fun_fact": "Nyama choma is Kenyan favorite",
+      "alternatives": [
+        "Chicken instead of beef",
+        "Different marinade",
+        "Less charred"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "ken-snack-samosa",
+      "name": "Samosa (Fried Pastry)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Kenyan spiced pastry",
+      "seasonings": [
+        "cumin"
+      ],
+      "ingredients": [
+        "Pastry sheets",
+        "Potato",
+        "Peas",
+        "Onion",
+        "Cumin",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Cook potato and peas",
+        "Mix with onion and spices",
+        "Fill pastry triangles",
+        "Deep fry until golden",
+        "Drain on paper towels"
+      ],
+      "notes": "Crispy outside",
+      "fun_fact": "Samosa is East African favorite",
+      "alternatives": [
+        "Meat filling",
+        "Different shape",
+        "Baked version"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "ken-dessert-mandazi",
+      "name": "Mandazi (Fried Dough)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Kenyan fried dough",
+      "seasonings": [],
+      "ingredients": [
+        "Flour",
+        "Eggs",
+        "Sugar",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Mix flour and eggs",
+        "Add sugar",
+        "Rest 30 minutes",
+        "Roll out",
+        "Cut into pieces",
+        "Deep fry until golden"
+      ],
+      "notes": "Serve warm",
+      "fun_fact": "Mandazi is street food favorite",
+      "alternatives": [
+        "With coconut",
+        "Sweeter",
+        "Less oil"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "ken-drink-chai",
+      "name": "Kenyan Chai (Spiced Tea)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "description": "Strong spiced milk tea",
+      "seasonings": [
+        "cinnamon",
+        "ginger"
+      ],
+      "ingredients": [
+        "Black tea",
+        "Milk",
+        "Water",
+        "Sugar",
+        "Ginger",
+        "Cinnamon"
+      ],
+      "instructions": [
+        "Heat water",
+        "Add tea and spices",
+        "Steep 5 minutes",
+        "Add milk and sugar",
+        "Serve hot"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Chai culture in Kenya",
+      "alternatives": [
+        "Without milk",
+        "Less sugar",
+        "Different spices"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "ken-drink-beer",
+      "name": "Kenyan Beer",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Local Kenyan beer brands",
+      "seasonings": [],
+      "ingredients": [
+        "Kenyan beer"
+      ],
+      "instructions": [
+        "Serve cold",
+        "Enjoy with food"
+      ],
+      "notes": "Refreshing",
+      "fun_fact": "Kenyan beer industry growing",
+      "alternatives": [
+        "Different brands",
+        "Different strength",
+        "Local brews"
+      ]
+    }
+  ]
+}
