@@ -14,6 +14,7 @@
             background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
             color: #3a2a30;
             min-height: 100vh;
+            padding: 20px;
         }
 
         /* ── Recipe Card ──────────────────────────────────────────────── */
@@ -21,85 +22,94 @@
             background: white;
             border-radius: 16px;
             border: 4px solid #1c1c1c;
-            box-shadow: 6px 6px 0 #1c1c1c;
-            max-width: 1000px;
-            margin: 40px auto;
+            box-shadow: 5px 5px 0 #1c1c1c;
+            max-width: 900px;
+            margin: 0 auto;
             overflow: hidden;
         }
 
-        /* ── Card Header ──────────────────────────────────────────────── */
+        /* ── Card Header (Dish Pane Style) ────────────────────────────── */
         .card-header {
-            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
-            color: white;
-            padding: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            gap: 20px;
+            background: #fdf5f0;
+            border-bottom: 4px solid #1c1c1c;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card-header-left {
+            margin-bottom: 16px;
         }
 
         .card-header-left h1 {
             font-family: 'Press Start 2P', monospace;
-            font-size: 20px;
+            font-size: 13px;
+            color: #3a2a30;
             margin-bottom: 8px;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
         }
 
         .card-header-left p {
-            font-size: 13px;
-            opacity: 0.95;
+            font-size: 12px;
+            color: #6a5550;
             margin-bottom: 12px;
+            font-style: italic;
         }
 
         .card-meta {
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
-            font-size: 11px;
+            justify-content: center;
         }
 
         .meta-badge {
-            background: rgba(255, 255, 255, 0.25);
-            padding: 5px 12px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            background: #fff0e0;
+            border: 3px solid #1c1c1c;
+            padding: 8px 14px;
             border-radius: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: #8b5e3c;
+            box-shadow: 2px 2px 0 #1c1c1c;
         }
 
         .card-header-right {
-            display: flex;
-            gap: 12px;
-            flex-direction: column;
-            flex-shrink: 0;
+            position: absolute;
+            top: 24px;
+            right: 20px;
         }
 
         .dish-emoji-big {
-            font-size: 72px;
+            font-size: 80px;
             line-height: 1;
             text-align: center;
         }
 
         /* ── Card Body ────────────────────────────────────────────────── */
         .card-body {
-            padding: 28px;
+            padding: 28px 32px 24px;
         }
 
-        /* ── Missing Indicator ────────────────────────────────────────── */
+        /* ── Missing Indicator (Warning Style) ────────────────────────── */
         .missing-indicator {
             background: #fde8ea;
             border: 3px solid #e06070;
-            border-radius: 12px;
+            border-radius: 10px;
             padding: 14px 16px;
             margin-bottom: 20px;
             display: none;
+            box-shadow: 3px 3px 0 #d0a0a8;
         }
 
         .missing-indicator.show { display: block; }
 
         .missing-indicator-title {
             font-family: 'Press Start 2P', monospace;
-            font-size: 10px;
+            font-size: 9px;
             color: #8b1c24;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             letter-spacing: 0.5px;
         }
 
@@ -110,7 +120,7 @@
         }
 
         .missing-tag {
-            background: #fff;
+            background: white;
             color: #8b1c24;
             border: 2px solid #e06070;
             border-radius: 20px;
@@ -119,57 +129,67 @@
             display: inline-block;
         }
 
-        /* ── View Mode Tabs ───────────────────────────────────────────── */
+        /* ── View Mode Tabs (Recipe Tabs Style) ──────────────────────── */
         .view-tabs {
             display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
+            gap: 0;
             border-bottom: 3px solid #1c1c1c;
+            margin-bottom: 20px;
         }
 
         .view-tab {
             font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            padding: 10px 16px;
+            font-size: 10px;
+            padding: 12px 18px;
             background: #f5e8e0;
             color: #8b5e3c;
             border: 3px solid #1c1c1c;
             border-bottom: none;
             border-radius: 6px 6px 0 0;
+            margin-right: 4px;
             cursor: pointer;
             transition: all 0.15s;
-        }
-
-        .view-tab.active {
-            background: #c8455f;
-            color: white;
+            box-shadow: none;
         }
 
         .view-tab:hover { background: #ffe0d0; }
 
-        /* ── Step View Toggle ─────────────────────────────────────────── */
+        .view-tab.active {
+            background: #c8455f;
+            color: white;
+            border-color: #1c1c1c;
+            transform: none;
+            position: relative;
+            top: 3px;
+            z-index: 1;
+        }
+
+        /* ── Step View Toggle (Inline with tabs) ──────────────────────── */
         .step-view-mode-toggle {
             display: flex;
             gap: 8px;
             margin-bottom: 16px;
-            padding: 12px;
+            padding: 12px 14px;
             background: #fff8f0;
-            border-radius: 8px;
+            border: 3px solid #f0d0b8;
+            border-radius: 10px;
             border-left: 4px solid #c8455f;
         }
 
         .mode-btn {
             font-family: 'Press Start 2P', monospace;
             font-size: 7px;
-            padding: 8px 12px;
+            padding: 9px 14px;
             border: 3px solid #1c1c1c;
-            border-radius: 6px;
-            background: white;
+            border-radius: 8px;
+            background: #f5e8e0;
             color: #8b5e3c;
             cursor: pointer;
             transition: all 0.15s;
-            flex: 1;
+            box-shadow: 2px 2px 0 #1c1c1c;
         }
+
+        .mode-btn:hover { background: #ffe0d0; }
 
         .mode-btn.active {
             background: #c8455f;
@@ -185,32 +205,36 @@
 
         .step-item {
             display: flex;
+            align-items: flex-start;
             gap: 14px;
             padding: 14px 0;
             border-bottom: 1px solid #f0e0d8;
+            cursor: pointer;
+            user-select: none;
         }
 
         .step-item:last-child { border-bottom: none; }
 
         .step-number-badge {
             flex-shrink: 0;
-            width: 28px;
-            height: 28px;
-            background: #c8455f;
+            width: 22px;
+            height: 22px;
+            background: #8b5e3c;
             color: white;
             border-radius: 50%;
-            border: 3px solid #1c1c1c;
+            border: 2px solid #1c1c1c;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
+            font-size: 7px;
             margin-top: 2px;
         }
 
         .step-text {
-            font-size: 13px;
-            line-height: 1.7;
+            font-family: 'DotGothic16', monospace;
+            font-size: 14px;
+            line-height: 1.6;
             color: #3a2a30;
         }
 
@@ -237,7 +261,8 @@
             min-width: 100%;
             flex-shrink: 0;
             perspective: 900px;
-            height: 360px;
+            height: 320px;
+            cursor: pointer;
         }
 
         .flip-inner {
@@ -259,21 +284,21 @@
             -webkit-backface-visibility: hidden;
             border: 4px solid #1c1c1c;
             border-radius: 12px;
-            padding: 20px;
+            padding: 18px 22px;
             box-shadow: 4px 4px 0 #1c1c1c;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            overflow: hidden;
         }
 
         .flip-front {
             background: #fdf5f0;
-            gap: 12px;
+            gap: 10px;
         }
 
         .flip-back {
-            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
-            color: white;
+            background: #1c1c1c;
+            color: #fff;
             transform: rotateY(180deg);
             align-items: center;
             justify-content: center;
@@ -283,13 +308,13 @@
 
         .flip-step-header {
             font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
+            font-size: 8px;
             color: #c8455f;
-            margin-bottom: 4px;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .flip-step-text {
+            font-family: 'DotGothic16', monospace;
             font-size: 13px;
             line-height: 1.6;
             color: #3a2a30;
@@ -299,30 +324,31 @@
 
         .flip-hint {
             font-family: 'Press Start 2P', monospace;
-            font-size: 6px;
+            font-size: 5px;
             color: #c8455f;
             letter-spacing: 1px;
-            margin-top: auto;
             text-align: right;
+            margin-top: auto;
         }
 
         .flip-stage-emoji {
-            font-size: 60px;
+            font-size: 64px;
             line-height: 1;
         }
 
         .flip-stage-label {
             font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
+            font-size: 7px;
             color: #f4a924;
             letter-spacing: 1px;
         }
 
         .flip-visual-text {
+            font-family: 'DotGothic16', monospace;
             font-size: 13px;
             color: #d0b8a8;
             line-height: 1.6;
-            max-width: 240px;
+            max-width: 230px;
         }
 
         /* ── Carousel Controls ────────────────────────────────────────── */
@@ -330,20 +356,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 14px;
+            margin-top: 14px;
         }
 
         .carousel-btn {
             font-family: 'Press Start 2P', monospace;
             font-size: 10px;
-            padding: 9px 16px;
+            padding: 10px 18px;
             background: #c8455f;
             color: white;
             border: 3px solid #1c1c1c;
             border-radius: 8px;
             cursor: pointer;
             box-shadow: 3px 3px 0 #1c1c1c;
-            transition: all 0.08s;
+            transition: transform 0.08s, box-shadow 0.08s;
         }
 
         .carousel-btn:hover:not(:disabled) {
@@ -355,90 +382,95 @@
             background: #e0c8c0;
             color: #b09090;
             cursor: default;
+            box-shadow: 2px 2px 0 #ccc;
         }
 
         .carousel-indicator {
             font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
+            font-size: 8px;
             color: #8b5e3c;
-            min-width: 60px;
+            min-width: 56px;
             text-align: center;
         }
 
-        /* ── Recipe Adaptation ────────────────────────────────────────── */
+        /* ── Recipe Adaptation (Pantry Style) ────────────────────────── */
         .adapt-section {
-            background: #fff8f0;
+            background: #fdf5f0;
             border: 3px solid #f0d0b8;
             border-radius: 10px;
-            padding: 16px;
-            margin-top: 20px;
+            padding: 14px 16px;
+            margin-top: 0;
             display: none;
+            box-shadow: 3px 3px 0 #e0c0a0;
         }
 
         .adapt-section.show { display: block; }
 
         .adapt-title {
             font-family: 'Press Start 2P', monospace;
-            font-size: 11px;
+            font-size: 9px;
             color: #8b5e3c;
             margin-bottom: 12px;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .adapt-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 8px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
             margin-bottom: 12px;
         }
 
         .adapt-btn {
             font-family: 'Press Start 2P', monospace;
-            font-size: 8px;
-            padding: 10px;
-            background: white;
+            font-size: 7px;
+            padding: 14px 10px;
             border: 3px solid #1c1c1c;
-            border-radius: 8px;
+            border-radius: 10px;
+            background: white;
             color: #3a2a30;
             cursor: pointer;
             text-align: center;
-            transition: all 0.15s;
+            transition: transform 0.08s, box-shadow 0.08s;
+            box-shadow: 3px 3px 0 #1c1c1c;
         }
 
-        .adapt-btn:hover { background: #ffe0d0; }
+        .adapt-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 #1c1c1c; }
 
         .adapt-btn.active {
             background: #c8455f;
             color: white;
+            box-shadow: 3px 3px 0 #8b2a40;
         }
 
         .adapt-results {
             background: white;
-            border: 2px dashed #d0b8a0;
+            border: 2px solid #d0b8a0;
             border-radius: 8px;
-            padding: 12px;
+            padding: 10px 12px;
             display: none;
             font-size: 12px;
             color: #555;
+            line-height: 1.6;
         }
 
         .adapt-results.show { display: block; }
 
-        /* ── Drink Pairings ───────────────────────────────────────────── */
+        /* ── Drink Pairings (Same Style) ──────────────────────────────── */
         .drinks-section {
-            margin-top: 20px;
-            padding: 16px;
-            background: #f0e8e0;
+            background: #fdf5f0;
+            border: 3px solid #f0d0b8;
             border-radius: 10px;
-            border: 3px solid #d0b8a0;
+            padding: 14px 16px;
+            box-shadow: 3px 3px 0 #e0c0a0;
         }
 
         .drinks-title {
             font-family: 'Press Start 2P', monospace;
-            font-size: 11px;
+            font-size: 9px;
             color: #8b5e3c;
             margin-bottom: 12px;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .drinks-category-pills {
@@ -450,9 +482,9 @@
 
         .drink-pill {
             font-family: 'DotGothic16', monospace;
-            font-size: 11px;
+            font-size: 12px;
             padding: 5px 11px;
-            border: 2px solid #8b5e3c;
+            border: 2px solid #d0b8a0;
             border-radius: 20px;
             background: white;
             color: #8b5e3c;
@@ -465,18 +497,25 @@
         .drink-pill.active {
             background: #8b5e3c;
             color: white;
+            border-color: #8b5e3c;
+        }
+
+        .drink-pill.disabled {
+            opacity: 0.4;
+            cursor: default;
+            border-style: dashed;
         }
 
         .drinks-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
             gap: 10px;
         }
 
         .drink-card {
             background: white;
             border: 3px solid #1c1c1c;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
             box-shadow: 3px 3px 0 #1c1c1c;
         }
@@ -487,41 +526,44 @@
         }
 
         .drink-card-head {
+            padding: 9px 12px;
             background: #3a2a30;
             color: white;
-            padding: 8px 10px;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
         }
 
         .drink-card.featured .drink-card-head {
             background: #8b5e3c;
         }
 
-        .drink-emoji { font-size: 16px; }
+        .drink-emoji {
+            font-size: 14px;
+            flex-shrink: 0;
+        }
 
         .drink-card-name {
-            font-weight: bold;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
             letter-spacing: 0.5px;
-            line-height: 1.3;
+            line-height: 1.5;
             flex: 1;
         }
 
         .drink-card-body {
-            padding: 8px 10px;
-            font-size: 11px;
+            padding: 10px 12px;
+            font-family: 'DotGothic16', monospace;
+            font-size: 12px;
             color: #555;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         /* ── Buttons ──────────────────────────────────────────────────── */
         .action-buttons {
             display: flex;
-            gap: 10px;
-            margin-top: 20px;
+            gap: 12px;
+            margin-top: 28px;
             flex-wrap: wrap;
         }
 
@@ -529,48 +571,61 @@
             flex: 1;
             min-width: 140px;
             font-family: 'Press Start 2P', monospace;
-            font-size: 10px;
-            padding: 12px 20px;
+            font-size: 11px;
+            padding: 14px 22px;
             background: #c8455f;
             color: white;
             border: 3px solid #1c1c1c;
             border-radius: 8px;
             cursor: pointer;
             box-shadow: 4px 4px 0 #1c1c1c;
-            transition: all 0.08s;
-            letter-spacing: 0.5px;
+            transition: transform 0.08s, box-shadow 0.08s;
         }
 
         .btn-primary:hover {
-            transform: translate(1px, 1px);
-            box-shadow: 3px 3px 0 #1c1c1c;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+
+        .btn-primary:active {
+            transform: translate(4px, 4px);
+            box-shadow: none;
         }
 
         .btn-secondary {
-            flex: 1;
-            min-width: 140px;
+            flex-shrink: 0;
             font-family: 'Press Start 2P', monospace;
-            font-size: 9px;
-            padding: 10px 16px;
-            background: white;
-            color: #8b5e3c;
+            font-size: 14px;
+            padding: 8px 12px;
+            background: #fff0f4;
+            color: #c8455f;
             border: 3px solid #1c1c1c;
             border-radius: 8px;
             cursor: pointer;
             box-shadow: 3px 3px 0 #1c1c1c;
-            transition: all 0.08s;
+            transition: transform 0.08s, box-shadow 0.08s;
+        }
+
+        .btn-secondary.on {
+            background: #c8455f;
+            color: white;
         }
 
         .btn-secondary:hover {
-            background: #f0e8e0;
             transform: translate(1px, 1px);
             box-shadow: 2px 2px 0 #1c1c1c;
         }
     </style>
 </head>
 <body>
+    <!-- ── Top decorations ── -->
+    <div style="position: fixed; inset: 0; pointer-events: none; z-index: 0; display: none;">
+        <span style="position: absolute; left: 6%; top: 8%; font-size: 18px; opacity: .18;">☁</span>
+        <span style="position: absolute; left: 80%; top: 14%; font-size: 18px; opacity: .18;">☁</span>
+    </div>
+
     <div class="recipe-card-final">
-        <!-- Header -->
+        <!-- Header (Dish Pane) -->
         <div class="card-header">
             <div class="card-header-left">
                 <h1 id="recipeName">Loading Recipe...</h1>
@@ -909,9 +964,13 @@
                 veggies: "Toss in 2 cups of roasted mushrooms and asparagus for veggie boost."
             };
 
+            const activeAdapts = Array.from(document.querySelectorAll('.adapt-btn.active'))
+                .map(b => b.dataset.adapt);
+
             const resultsEl = document.getElementById('adaptResults');
-            if (document.querySelector(`[data-adapt="${type}"]`).classList.contains('active')) {
-                resultsEl.innerHTML = `<strong>${type.toUpperCase()}:</strong> ${results[type]}`;
+            if (activeAdapts.length > 0) {
+                const adaptText = activeAdapts.map(a => `• ${results[a]}`).join('<br><br>');
+                resultsEl.innerHTML = adaptText;
                 resultsEl.classList.add('show');
             } else {
                 resultsEl.classList.remove('show');
