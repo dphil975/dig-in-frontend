@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG-IN · Recipe Final</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        /* ── Base ────────────────────────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'DotGothic16', monospace;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
+            color: #3a2a30;
+            min-height: 100vh;
+        }
+
+        /* ── Recipe Card ──────────────────────────────────────────────── */
+        .recipe-card-final {
+            background: white;
+            border-radius: 16px;
+            border: 4px solid #1c1c1c;
+            box-shadow: 6px 6px 0 #1c1c1c;
+            max-width: 1000px;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+
+        /* ── Card Header ──────────────────────────────────────────────── */
+        .card-header {
+            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
+            color: white;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .card-header-left h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 20px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .card-header-left p {
+            font-size: 13px;
+            opacity: 0.95;
+            margin-bottom: 12px;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 11px;
+        }
+
+        .meta-badge {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .card-header-right {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .dish-emoji-big {
+            font-size: 72px;
+            line-height: 1;
+            text-align: center;
+        }
+
+        /* ── Card Body ────────────────────────────────────────────────── */
+        .card-body {
+            padding: 28px;
+        }
+
+        /* ── Missing Indicator ────────────────────────────────────────── */
+        .missing-indicator {
+            background: #fde8ea;
+            border: 3px solid #e06070;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .missing-indicator.show { display: block; }
+
+        .missing-indicator-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            color: #8b1c24;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .missing-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .missing-tag {
+            background: #fff;
+            color: #8b1c24;
+            border: 2px solid #e06070;
+            border-radius: 20px;
+            padding: 4px 10px;
+            font-size: 11px;
+            display: inline-block;
+        }
+
+        /* ── View Mode Tabs ───────────────────────────────────────────── */
+        .view-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1c1c1c;
+        }
+
+        .view-tab {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            padding: 10px 16px;
+            background: #f5e8e0;
+            color: #8b5e3c;
+            border: 3px solid #1c1c1c;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .view-tab.active {
+            background: #c8455f;
+            color: white;
+        }
+
+        .view-tab:hover { background: #ffe0d0; }
+
+        /* ── Step View Toggle ─────────────────────────────────────────── */
+        .step-view-mode-toggle {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            padding: 12px;
+            background: #fff8f0;
+            border-radius: 8px;
+            border-left: 4px solid #c8455f;
+        }
+
+        .mode-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            padding: 8px 12px;
+            border: 3px solid #1c1c1c;
+            border-radius: 6px;
+            background: white;
+            color: #8b5e3c;
+            cursor: pointer;
+            transition: all 0.15s;
+            flex: 1;
+        }
+
+        .mode-btn.active {
+            background: #c8455f;
+            color: white;
+        }
+
+        /* ── Linear Steps View ────────────────────────────────────────── */
+        .step-list {
+            display: none;
+        }
+
+        .step-list.active { display: block; }
+
+        .step-item {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid #f0e0d8;
+        }
+
+        .step-item:last-child { border-bottom: none; }
+
+        .step-number-badge {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: #c8455f;
+            color: white;
+            border-radius: 50%;
+            border: 3px solid #1c1c1c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            margin-top: 2px;
+        }
+
+        .step-text {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #3a2a30;
+        }
+
+        /* ── Carousel View ────────────────────────────────────────────── */
+        .carousel-container {
+            display: none;
+        }
+
+        .carousel-container.active { display: block; }
+
+        .carousel-viewport {
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 14px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+        }
+
+        /* ── Flip Card ────────────────────────────────────────────────── */
+        .flip-card {
+            min-width: 100%;
+            flex-shrink: 0;
+            perspective: 900px;
+            height: 360px;
+        }
+
+        .flip-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+        }
+
+        .flip-card.flipped .flip-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-front, .flip-back {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border: 4px solid #1c1c1c;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .flip-front {
+            background: #fdf5f0;
+            gap: 12px;
+        }
+
+        .flip-back {
+            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
+            color: white;
+            transform: rotateY(180deg);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 8px;
+        }
+
+        .flip-step-header {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: #c8455f;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .flip-step-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #3a2a30;
+            flex: 1;
+            text-align: left;
+        }
+
+        .flip-hint {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            color: #c8455f;
+            letter-spacing: 1px;
+            margin-top: auto;
+            text-align: right;
+        }
+
+        .flip-stage-emoji {
+            font-size: 60px;
+            line-height: 1;
+        }
+
+        .flip-stage-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            color: #f4a924;
+            letter-spacing: 1px;
+        }
+
+        .flip-visual-text {
+            font-size: 13px;
+            color: #d0b8a8;
+            line-height: 1.6;
+            max-width: 240px;
+        }
+
+        /* ── Carousel Controls ────────────────────────────────────────── */
+        .carousel-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .carousel-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            padding: 9px 16px;
+            background: #c8455f;
+            color: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            transition: all 0.08s;
+        }
+
+        .carousel-btn:hover:not(:disabled) {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+
+        .carousel-btn:disabled {
+            background: #e0c8c0;
+            color: #b09090;
+            cursor: default;
+        }
+
+        .carousel-indicator {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: #8b5e3c;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        /* ── Recipe Adaptation ────────────────────────────────────────── */
+        .adapt-section {
+            background: #fff8f0;
+            border: 3px solid #f0d0b8;
+            border-radius: 10px;
+            padding: 16px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .adapt-section.show { display: block; }
+
+        .adapt-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px;
+            color: #8b5e3c;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .adapt-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .adapt-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            padding: 10px;
+            background: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            color: #3a2a30;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.15s;
+        }
+
+        .adapt-btn:hover { background: #ffe0d0; }
+
+        .adapt-btn.active {
+            background: #c8455f;
+            color: white;
+        }
+
+        .adapt-results {
+            background: white;
+            border: 2px dashed #d0b8a0;
+            border-radius: 8px;
+            padding: 12px;
+            display: none;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .adapt-results.show { display: block; }
+
+        /* ── Drink Pairings ───────────────────────────────────────────── */
+        .drinks-section {
+            margin-top: 20px;
+            padding: 16px;
+            background: #f0e8e0;
+            border-radius: 10px;
+            border: 3px solid #d0b8a0;
+        }
+
+        .drinks-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px;
+            color: #8b5e3c;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .drinks-category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .drink-pill {
+            font-family: 'DotGothic16', monospace;
+            font-size: 11px;
+            padding: 5px 11px;
+            border: 2px solid #8b5e3c;
+            border-radius: 20px;
+            background: white;
+            color: #8b5e3c;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-weight: bold;
+        }
+
+        .drink-pill:hover,
+        .drink-pill.active {
+            background: #8b5e3c;
+            color: white;
+        }
+
+        .drinks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .drink-card {
+            background: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 3px 3px 0 #1c1c1c;
+        }
+
+        .drink-card.featured {
+            border-color: #f4a924;
+            box-shadow: 3px 3px 0 #c8a000;
+        }
+
+        .drink-card-head {
+            background: #3a2a30;
+            color: white;
+            padding: 8px 10px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .drink-card.featured .drink-card-head {
+            background: #8b5e3c;
+        }
+
+        .drink-emoji { font-size: 16px; }
+
+        .drink-card-name {
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .drink-card-body {
+            padding: 8px 10px;
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* ── Buttons ──────────────────────────────────────────────────── */
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            flex: 1;
+            min-width: 140px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            padding: 12px 20px;
+            background: #c8455f;
+            color: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            transition: all 0.08s;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary:hover {
+            transform: translate(1px, 1px);
+            box-shadow: 3px 3px 0 #1c1c1c;
+        }
+
+        .btn-secondary {
+            flex: 1;
+            min-width: 140px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            padding: 10px 16px;
+            background: white;
+            color: #8b5e3c;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            transition: all 0.08s;
+        }
+
+        .btn-secondary:hover {
+            background: #f0e8e0;
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-card-final">
+        <!-- Header -->
+        <div class="card-header">
+            <div class="card-header-left">
+                <h1 id="recipeName">Loading Recipe...</h1>
+                <p id="recipeCountry">From the world</p>
+                <div class="card-meta">
+                    <span class="meta-badge" id="diffBadge">● Easy</span>
+                    <span class="meta-badge" id="timeBadge">⏱ — min</span>
+                    <span class="meta-badge" id="servBadge">🍽 — servings</span>
+                </div>
+            </div>
+            <div class="card-header-right">
+                <div class="dish-emoji-big" id="recipeEmoji">🍳</div>
+            </div>
+        </div>
+
+        <!-- Card Body -->
+        <div class="card-body">
+            <!-- Missing Indicator -->
+            <div class="missing-indicator" id="missingIndicator">
+                <div class="missing-indicator-title">❌ WHAT ARE YOU MISSING?</div>
+                <div class="missing-items" id="missingItems"></div>
+            </div>
+
+            <!-- View Tabs -->
+            <div class="view-tabs">
+                <button class="view-tab active" data-view="ingredients">Ingredients</button>
+                <button class="view-tab" data-view="instructions">Instructions</button>
+                <button class="view-tab" data-view="adapt">Adapt Recipe</button>
+                <button class="view-tab" data-view="drinks">Pair Drinks</button>
+            </div>
+
+            <!-- Ingredients View -->
+            <div id="view-ingredients" class="view-content">
+                <ul id="ingredientsList" style="list-style: none; padding: 0;"></ul>
+            </div>
+
+            <!-- Instructions View -->
+            <div id="view-instructions" class="view-content" style="display: none;">
+                <!-- Step View Mode Toggle -->
+                <div class="step-view-mode-toggle">
+                    <button class="mode-btn active" data-mode="linear">📋 LIST</button>
+                    <button class="mode-btn" data-mode="carousel">🎞 CAROUSEL</button>
+                </div>
+
+                <!-- Linear Steps -->
+                <div class="step-list active" id="stepList"></div>
+
+                <!-- Carousel Steps -->
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" id="carouselTrack"></div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" id="prevBtn">← PREV</button>
+                        <span class="carousel-indicator" id="stepIndicator">1 / —</span>
+                        <button class="carousel-btn" id="nextBtn">NEXT →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adaptation View -->
+            <div id="view-adapt" class="view-content" style="display: none;">
+                <div class="adapt-section show">
+                    <div class="adapt-title">🔧 HOW WOULD YOU LIKE TO ADAPT THIS?</div>
+                    <div class="adapt-options">
+                        <button class="adapt-btn" data-adapt="protein">+ PROTEIN</button>
+                        <button class="adapt-btn" data-adapt="fiber">+ FIBER</button>
+                        <button class="adapt-btn" data-adapt="lowcarb">🔻 CARBS</button>
+                        <button class="adapt-btn" data-adapt="veggies">+ VEGGIES</button>
+                    </div>
+                    <div class="adapt-results" id="adaptResults"></div>
+                </div>
+            </div>
+
+            <!-- Drinks View -->
+            <div id="view-drinks" class="view-content" style="display: none;">
+                <div class="drinks-section">
+                    <div class="drinks-title">🥤 PAIR WITH A DRINK</div>
+                    <div class="drinks-category-pills" id="drinkCategories"></div>
+                    <div class="drinks-grid" id="drinksGrid"></div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-primary" id="startBtn">▶ START COOKING</button>
+                <button class="btn-secondary" id="saveBtn">♡ SAVE RECIPE</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample recipe data structure
+        const sampleRecipe = {
+            id: "sample-1",
+            name: "Spaghetti Carbonara",
+            country: "Italy",
+            difficulty: "easy",
+            servings: 4,
+            prepTime: 15,
+            cookTime: 20,
+            ingredients: [
+                "400g spaghetti",
+                "200g guanciale or pancetta",
+                "4 large eggs",
+                "100g Pecorino Romano cheese",
+                "Black pepper to taste",
+                "Salt for pasta water"
+            ],
+            instructions: [
+                "Bring a large pot of salted water to a boil for the pasta.",
+                "While water heats, dice the guanciale and cook in a large pan over medium heat until crispy, about 5-7 minutes.",
+                "In a bowl, whisk together eggs, grated cheese, and plenty of black pepper. Set aside.",
+                "Add spaghetti to boiling water and cook according to package directions until al dente.",
+                "Reserve 1 cup of pasta water before draining.",
+                "Add hot drained pasta to the pan with guanciale (off heat).",
+                "Quickly pour the egg mixture over the pasta while tossing constantly.",
+                "Add pasta water a splash at a time to achieve a creamy sauce.",
+                "Serve immediately with extra cheese and black pepper."
+            ],
+            cuisine: "italian"
+        };
+
+        // Sample drinks data
+        const sampleDrinks = {
+            "hot-coffee": [
+                { name: "Espresso", emoji: "☕", desc: "Bold and concentrated" },
+                { name: "Cappuccino", emoji: "🍵", desc: "Creamy and smooth" },
+                { name: "Americano", emoji: "☕", desc: "Rich and smooth" }
+            ],
+            "iced-coffee": [
+                { name: "Iced Latte", emoji: "🧊", desc: "Refreshing and cool" },
+                { name: "Cold Brew", emoji: "🧊", desc: "Smooth and mellow" }
+            ],
+            "tea": [
+                { name: "Green Tea", emoji: "🫖", desc: "Light and fresh" },
+                { name: "Chamomile", emoji: "🫖", desc: "Soothing and warm" }
+            ],
+            "juice": [
+                { name: "Orange Juice", emoji: "🍊", desc: "Citrus and bright" },
+                { name: "Apple Juice", emoji: "🍎", desc: "Sweet and crisp" }
+            ]
+        };
+
+        // Initialize
+        function init() {
+            const recipe = sampleRecipe;
+            renderRecipeCard(recipe);
+            setupEventListeners();
+        }
+
+        function renderRecipeCard(recipe) {
+            // Header
+            document.getElementById('recipeName').textContent = recipe.name;
+            document.getElementById('recipeCountry').textContent = `From ${recipe.country}`;
+            document.getElementById('diffBadge').textContent = `● ${recipe.difficulty.charAt(0).toUpperCase() + recipe.difficulty.slice(1)}`;
+            document.getElementById('timeBadge').textContent = `⏱ ${(recipe.prepTime || 0) + (recipe.cookTime || 0)} min`;
+            document.getElementById('servBadge').textContent = `🍽 ${recipe.servings} servings`;
+
+            const emojiMap = {
+                italian: '🍝', mexican: '🌮', japanese: '🍜', indian: '🍛',
+                chinese: '🥢', american: '🍔', french: '🥐', thai: '🫕'
+            };
+            document.getElementById('recipeEmoji').textContent = emojiMap[recipe.cuisine] || '🍳';
+
+            // Ingredients
+            const ingList = document.getElementById('ingredientsList');
+            ingList.innerHTML = recipe.ingredients.map(ing => `
+                <li style="display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #f0e0d8;">
+                    <span style="flex-shrink: 0;">✓</span>
+                    <span style="flex: 1;">${ing}</span>
+                </li>
+            `).join('');
+
+            // Linear Steps
+            const stepList = document.getElementById('stepList');
+            stepList.innerHTML = recipe.instructions.map((step, i) => `
+                <div class="step-item">
+                    <div class="step-number-badge">${i + 1}</div>
+                    <div class="step-text">${step}</div>
+                </div>
+            `).join('');
+
+            // Carousel Steps
+            const track = document.getElementById('carouselTrack');
+            track.innerHTML = recipe.instructions.map((step, i) => `
+                <div class="flip-card" data-step="${i}">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <div class="flip-step-header">STEP ${i + 1} OF ${recipe.instructions.length}</div>
+                            <div class="flip-step-text">${step}</div>
+                            <div class="flip-hint">👆 TAP TO FLIP</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="flip-stage-emoji">👨‍🍳</div>
+                            <div class="flip-stage-label">COOKING</div>
+                            <div class="flip-visual-text">Watch the pasta texture change — it should be al dente, not soft.</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('stepIndicator').textContent = `1 / ${recipe.instructions.length}`;
+
+            // Drinks
+            renderDrinks();
+
+            // Missing Indicator
+            const missing = recipe.ingredients.filter((_, i) => i % 3 === 0); // Mock missing
+            if (missing.length > 0) {
+                document.getElementById('missingIndicator').classList.add('show');
+                document.getElementById('missingItems').innerHTML = missing.map(item =>
+                    `<span class="missing-tag">${item}</span>`
+                ).join('');
+            }
+        }
+
+        function renderDrinks() {
+            const categories = Object.keys(sampleDrinks);
+            const drinkCats = document.getElementById('drinkCategories');
+            drinkCats.innerHTML = categories.map(cat => `
+                <button class="drink-pill ${cat === 'hot-coffee' ? 'active' : ''}" data-cat="${cat}">
+                    ${cat.replace('-', ' ').toUpperCase()}
+                </button>
+            `).join('');
+
+            const drinksGrid = document.getElementById('drinksGrid');
+            renderDrinkCategory('hot-coffee', drinksGrid);
+
+            // Category filters
+            document.querySelectorAll('.drink-pill').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.drink-pill').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderDrinkCategory(btn.dataset.cat, drinksGrid);
+                });
+            });
+        }
+
+        function renderDrinkCategory(category, grid) {
+            const drinks = sampleDrinks[category] || [];
+            grid.innerHTML = drinks.map((drink, i) => `
+                <div class="drink-card ${i === 0 ? 'featured' : ''}">
+                    <div class="drink-card-head">
+                        <span class="drink-emoji">${drink.emoji}</span>
+                        <span class="drink-card-name">${drink.name}</span>
+                    </div>
+                    <div class="drink-card-body">${drink.desc}</div>
+                </div>
+            `).join('');
+        }
+
+        function setupEventListeners() {
+            // View tabs
+            document.querySelectorAll('.view-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const view = tab.dataset.view;
+                    document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.view-content').forEach(v => v.style.display = 'none');
+                    tab.classList.add('active');
+                    document.getElementById(`view-${view}`).style.display = 'block';
+                });
+            });
+
+            // Step mode toggle
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const mode = btn.dataset.mode;
+                    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    if (mode === 'linear') {
+                        document.getElementById('stepList').classList.add('active');
+                        document.getElementById('carouselContainer').classList.remove('active');
+                    } else {
+                        document.getElementById('stepList').classList.remove('active');
+                        document.getElementById('carouselContainer').classList.add('active');
+                        initCarousel();
+                    }
+                });
+            });
+
+            // Carousel
+            let currentStep = 0;
+            const totalSteps = sampleRecipe.instructions.length;
+
+            function initCarousel() {
+                const track = document.getElementById('carouselTrack');
+                const steps = track.querySelectorAll('.flip-card');
+
+                function goto(idx) {
+                    currentStep = Math.max(0, Math.min(idx, totalSteps - 1));
+                    track.style.transform = `translateX(-${currentStep * 100}%)`;
+                    document.getElementById('stepIndicator').textContent = `${currentStep + 1} / ${totalSteps}`;
+                    document.getElementById('prevBtn').disabled = currentStep === 0;
+                    document.getElementById('nextBtn').disabled = currentStep === totalSteps - 1;
+                }
+
+                document.getElementById('prevBtn').addEventListener('click', () => goto(currentStep - 1));
+                document.getElementById('nextBtn').addEventListener('click', () => goto(currentStep + 1));
+
+                // Flip card on click
+                steps.forEach(card => {
+                    card.addEventListener('click', () => {
+                        card.classList.toggle('flipped');
+                    });
+                });
+
+                goto(0);
+            }
+
+            // Adapt buttons
+            document.querySelectorAll('.adapt-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.classList.toggle('active');
+                    const adaptType = btn.dataset.adapt;
+                    showAdaptResults(adaptType);
+                });
+            });
+
+            // Action buttons
+            document.getElementById('startBtn').addEventListener('click', () => {
+                document.querySelector('[data-view="instructions"]').click();
+            });
+
+            document.getElementById('saveBtn').addEventListener('click', () => {
+                document.getElementById('saveBtn').textContent = document.getElementById('saveBtn').textContent === '♡ SAVE RECIPE' ? '♥ SAVED' : '♡ SAVE RECIPE';
+            });
+        }
+
+        function showAdaptResults(type) {
+            const results = {
+                protein: "Add 1-2 extra eggs or 100g grilled chicken breast to boost protein to 35g per serving.",
+                fiber: "Use whole wheat pasta and add 1 cup of spinach for 8g extra fiber.",
+                lowcarb: "Use zucchini noodles or low-carb pasta to cut carbs by 60%.",
+                veggies: "Toss in 2 cups of roasted mushrooms and asparagus for veggie boost."
+            };
+
+            const resultsEl = document.getElementById('adaptResults');
+            if (document.querySelector(`[data-adapt="${type}"]`).classList.contains('active')) {
+                resultsEl.innerHTML = `<strong>${type.toUpperCase()}:</strong> ${results[type]}`;
+                resultsEl.classList.add('show');
+            } else {
+                resultsEl.classList.remove('show');
+            }
+        }
+
+        // Start
+        init();
+    </script>
+</body>
+</html>
