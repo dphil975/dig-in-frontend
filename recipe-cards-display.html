@@ -2,1716 +2,1310 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="frontend/css/styles.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Cards - Dig In</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --primary: #667eea;
-      --secondary: #764ba2;
-      --accent: #FF5C9D;
-      --coffee: #6F4E37;
-      --coffee-light: #C4956A;
-      --light-bg: #f9f9f9;
-      --border-color: #e0e0e0;
-    }
-
-    body {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #333;
-      font-family: 'DotGothic16', monospace;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-
-    .page-header {
-      text-align: center;
-      margin-bottom: 40px;
-      color: white;
-    }
-
-    .page-header h1 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 36px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      letter-spacing: 2px;
-    }
-
-    .page-header p {
-      font-size: 13px;
-      opacity: 0.9;
-      margin-bottom: 20px;
-    }
-
-    .recipe-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-
-    .recipe-card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .recipe-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-    }
-
-    .recipe-header {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      color: white;
-      padding: 20px;
-    }
-
-    .recipe-header h2 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 16px;
-      margin-bottom: 5px;
-      letter-spacing: 1px;
-    }
-
-    .recipe-subtitle {
-      font-size: 12px;
-      opacity: 0.95;
-      margin-bottom: 10px;
-    }
-
-    .recipe-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-      font-size: 11px;
-    }
-
-    .meta-badge {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 4px 8px;
-      border-radius: 4px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .recipe-body {
-      padding: 20px;
-    }
-
-    .recipe-description {
-      font-size: 12px;
-      line-height: 1.6;
-      color: #666;
-      margin-bottom: 15px;
-    }
-
-    .recipe-info {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 15px;
-      font-size: 11px;
-    }
-
-    .info-item {
-      background: var(--light-bg);
-      padding: 8px;
-      border-radius: 6px;
-      border-left: 3px solid var(--primary);
-    }
-
-    .info-label {
-      color: var(--primary);
-      font-weight: bold;
-      display: block;
-      font-size: 10px;
-      margin-bottom: 2px;
-    }
-
-    .ingredients-preview {
-      background: var(--light-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 15px;
-    }
-
-    .ingredients-preview h4 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-      margin-bottom: 8px;
-      color: var(--primary);
-      letter-spacing: 0.5px;
-    }
-
-    .ingredients-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px;
-      font-size: 10px;
-    }
-
-    .ingredient-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #666;
-    }
-
-    .ingredient-item::before {
-      content: "•";
-      color: var(--accent);
-      font-weight: bold;
-    }
-
-    .card-actions {
-      display: flex;
-      gap: 8px;
-    }
-
-    .btn-view-steps {
-      flex: 1;
-      padding: 10px;
-      background: var(--primary);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
-      cursor: pointer;
-      transition: background 0.3s;
-      letter-spacing: 0.5px;
-    }
-
-    .btn-view-steps:hover {
-      background: var(--secondary);
-    }
-
-    .btn-pair-drink {
-      flex: 1;
-      padding: 10px;
-      background: var(--coffee);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
-      cursor: pointer;
-      transition: background 0.3s;
-      letter-spacing: 0.5px;
-    }
-
-    .btn-pair-drink:hover {
-      background: var(--coffee-light);
-    }
-
-    /* ── Modal base ── */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      animation: fadeIn 0.3s;
-    }
-
-    .modal.active {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    .modal-content {
-      background: white;
-      border-radius: 12px;
-      max-width: 700px;
-      width: 95%;
-      max-height: 90vh;
-      overflow-y: auto;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-      animation: slideUp 0.3s;
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    .modal-header {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      color: white;
-      padding: 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .modal-header.coffee-header {
-      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
-    }
-
-    .modal-header h2 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 16px;
-      margin-bottom: 8px;
-      letter-spacing: 1px;
-    }
-
-    .modal-close {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.3s;
-      flex-shrink: 0;
-    }
-
-    .modal-close:hover {
-      background: rgba(255, 255, 255, 0.3);
-    }
-
-    .modal-body {
-      padding: 30px;
-    }
-
-    .steps-container {
-      margin-bottom: 20px;
-    }
-
-    .step-card {
-      background: white;
-      border: 2px solid var(--primary);
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 15px;
-      position: relative;
-    }
-
-    .step-number {
-      position: absolute;
-      left: -15px;
-      top: -15px;
-      background: var(--primary);
-      color: white;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .step-instruction {
-      font-size: 12px;
-      line-height: 1.7;
-      color: #333;
-      margin-bottom: 10px;
-      margin-left: 20px;
-    }
-
-    .step-meta {
-      display: flex;
-      gap: 15px;
-      font-size: 11px;
-      color: #666;
-      margin-left: 20px;
-    }
-
-    .step-time::before {
-      content: "⏱ ";
-    }
-
-    .step-tips {
-      background: #FFF9E6;
-      border-left: 3px solid #FFB800;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 4px;
-      font-size: 11px;
-      color: #666;
-      margin-left: 20px;
-    }
-
-    .step-tips::before {
-      content: "💡 Tip: ";
-      font-weight: bold;
-      color: #FFB800;
-    }
-
-    /* ── Filter section ── */
-    .filter-section {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 30px;
-      backdrop-filter: blur(10px);
-    }
-
-    .filter-title {
-      font-family: 'Press Start 2P', monospace;
-      color: white;
-      font-size: 12px;
-      margin-bottom: 12px;
-      letter-spacing: 1px;
-    }
-
-    .filter-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .filter-btn {
-      padding: 8px 16px;
-      background: white;
-      color: var(--primary);
-      border: 2px solid white;
-      border-radius: 6px;
-      font-family: monospace;
-      font-size: 11px;
-      cursor: pointer;
-      transition: all 0.3s;
-      font-weight: bold;
-    }
-
-    .filter-btn:hover {
-      background: var(--primary);
-      color: white;
-    }
-
-    .filter-btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: white;
-    }
-
-    /* ── Drink Pairing Modal ── */
-    .drink-modal-content {
-      max-width: 800px;
-    }
-
-    .pairing-context {
-      background: #f0ebe5;
-      border-left: 4px solid var(--coffee);
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-      font-size: 12px;
-      color: #555;
-    }
-
-    .pairing-context strong {
-      color: var(--coffee);
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-    }
-
-    /* Drink category filter bar */
-    .drink-cat-bar {
-      margin-bottom: 16px;
-    }
-
-    .drink-cat-bar-label {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-      color: var(--coffee);
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
-
-    .drink-cat-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .cat-pill {
-      padding: 6px 12px;
-      border: 2px solid var(--coffee);
-      border-radius: 20px;
-      font-size: 11px;
-      font-family: monospace;
-      cursor: pointer;
-      background: white;
-      color: var(--coffee);
-      transition: all 0.2s;
-      font-weight: bold;
-    }
-
-    .cat-pill:hover {
-      background: var(--coffee);
-      color: white;
-    }
-
-    .cat-pill.active {
-      background: var(--coffee);
-      color: white;
-    }
-
-    .cat-pill.disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      border-style: dashed;
-    }
-
-    /* Remix controls */
-    .remix-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .remix-label {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-      color: #555;
-    }
-
-    .remix-label span {
-      color: var(--coffee);
-    }
-
-    .btn-remix {
-      padding: 8px 16px;
-      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
-      cursor: pointer;
-      transition: opacity 0.3s;
-      letter-spacing: 0.5px;
-    }
-
-    .btn-remix:hover {
-      opacity: 0.85;
-    }
-
-    /* Drink result cards */
-    .drink-results {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .drink-card {
-      border: 2px solid var(--border-color);
-      border-radius: 10px;
-      overflow: hidden;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-
-    .drink-card:hover {
-      border-color: var(--coffee-light);
-      transform: translateY(-2px);
-    }
-
-    .drink-card.top-pick {
-      border-color: var(--coffee);
-      box-shadow: 0 2px 12px rgba(111, 78, 55, 0.2);
-    }
-
-    .drink-card-header {
-      background: linear-gradient(135deg, var(--coffee) 0%, #3d2314 100%);
-      color: white;
-      padding: 10px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-    }
-
-    .drink-card.top-pick .drink-card-header {
-      background: linear-gradient(135deg, #C4956A 0%, var(--coffee) 100%);
-    }
-
-    .drink-card-name {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
-      letter-spacing: 0.5px;
-      line-height: 1.4;
-    }
-
-    .drink-emoji {
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-
-    .drink-card-body {
-      padding: 10px 12px;
-    }
-
-    .drink-desc {
-      font-size: 11px;
-      color: #555;
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-
-    .drink-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-      margin-bottom: 8px;
-    }
-
-    .drink-tag {
-      background: #f0ebe5;
-      color: var(--coffee);
-      padding: 2px 7px;
-      border-radius: 10px;
-      font-size: 10px;
-      font-weight: bold;
-    }
-
-    .drink-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 11px;
-    }
-
-    .drink-price {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 11px;
-      color: var(--coffee);
-    }
-
-    .drink-temp-badge {
-      padding: 2px 8px;
-      border-radius: 10px;
-      font-size: 10px;
-      font-weight: bold;
-    }
-
-    .drink-temp-badge.hot {
-      background: #FFF0E0;
-      color: #E67E22;
-    }
-
-    .drink-temp-badge.iced {
-      background: #E0F0FF;
-      color: #2980B9;
-    }
-
-    .drink-temp-badge.both {
-      background: #F0FFE0;
-      color: #27AE60;
-    }
-
-    .top-pick-ribbon {
-      font-size: 9px;
-      background: #FFD700;
-      color: #5a3e00;
-      padding: 1px 6px;
-      border-radius: 6px;
-      font-weight: bold;
-      white-space: nowrap;
-    }
-
-    .no-drinks-msg {
-      text-align: center;
-      padding: 30px;
-      color: #999;
-      font-size: 12px;
-      grid-column: 1 / -1;
-    }
-
-    .section-divider {
-      border: none;
-      border-top: 2px dashed var(--border-color);
-      margin: 20px 0;
-    }
-
-    .think-coffee-credit {
-      text-align: center;
-      font-size: 11px;
-      color: #999;
-      margin-top: 16px;
-    }
-
-    .think-coffee-credit strong {
-      color: var(--coffee);
-    }
-
-    /* ── Save button ── */
-    .btn-save {
-      width: 38px;
-      background: white;
-      color: #999;
-      border: 2px solid #ddd;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .btn-save.saved {
-      background: #fff0f5;
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-    .btn-save:hover { border-color: var(--accent); color: var(--accent); }
-
-    /* ── Modal full-recipe link ── */
-    .modal-goto-full {
-      display: block;
-      margin: 18px 0 4px;
-      padding: 10px;
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      transition: background 0.2s;
-    }
-    .modal-goto-full:hover { background: var(--secondary); }
-
-    /* ── Ingredient management inside modal ── */
-    .modal-ingredients {
-      background: #f9f9f9;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 14px;
-      margin-bottom: 20px;
-    }
-    .modal-ingredients h4 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 9px;
-      color: var(--primary);
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
-    .modal-ing-list {
-      list-style: none;
-      margin-bottom: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .modal-ing-list li {
-      background: white;
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 4px 10px;
-      font-size: 11px;
-      color: #555;
-    }
-    .modal-ing-list li.extra {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: #fff5f9;
-    }
-    .add-ing-row {
-      display: flex;
-      gap: 8px;
-    }
-    .add-ing-input {
-      flex: 1;
-      padding: 7px 10px;
-      border: 2px solid var(--border-color);
-      border-radius: 6px;
-      font-size: 12px;
-      font-family: 'DotGothic16', monospace;
-      transition: border-color 0.2s;
-    }
-    .add-ing-input:focus { outline: none; border-color: var(--primary); }
-    .add-ing-btn {
-      padding: 7px 14px;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      cursor: pointer;
-      transition: opacity 0.2s;
-    }
-    .add-ing-btn:hover { opacity: 0.85; }
-
-    /* ── Science panel inside steps modal ── */
-    .science-toggle {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 14px;
-      background: #1a1a2e;
-      color: #ffd700;
-      border: 2px solid #ffd700;
-      border-radius: 6px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      cursor: pointer;
-      margin: 18px 0 8px;
-      width: 100%;
-      letter-spacing: 0.5px;
-      transition: background 0.2s;
-    }
-    .science-toggle:hover { background: #2a2a4e; }
-    .science-panel {
-      display: none;
-      background: #1a1a2e;
-      border: 2px solid #ffd700;
-      border-radius: 8px;
-      padding: 14px;
-      margin-bottom: 12px;
-    }
-    .science-panel.open { display: block; }
-    .science-item {
-      border-left: 3px solid #ffd700;
-      padding: 8px 12px;
-      margin-bottom: 10px;
-      color: #d0d0d0;
-      font-size: 11px;
-      line-height: 1.6;
-    }
-    .science-item strong { color: #ffd700; display: block; margin-bottom: 3px; font-size: 10px; }
-    .science-item em { color: #66ff99; font-size: 10px; }
-
-    /* ── Step DONE tracking inside modal ── */
-    .step-card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 10px;
-      padding-top: 8px;
-      border-top: 1px dashed var(--border-color);
-    }
-    .step-done-btn {
-      padding: 6px 14px;
-      background: white;
-      color: var(--primary);
-      border: 2px solid var(--primary);
-      border-radius: 20px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    .step-done-btn.done { background: #4caf50; border-color: #4caf50; color: white; }
-    .step-done-btn:hover:not(.done) { background: var(--primary); color: white; }
-
-    /* ── Encouragement toast ── */
-    .encourage-toast {
-      position: fixed;
-      bottom: 28px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-      letter-spacing: 0.5px;
-      box-shadow: 0 4px 20px rgba(102,126,234,0.5);
-      z-index: 2000;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s, transform 0.3s;
-    }
-    .encourage-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-
-    /* ── Card inline drink pairing strip ── */
-    .card-drink-strip {
-      background: #fdf6f0;
-      border: 1px solid #e8ddd6;
-      border-radius: 8px;
-      padding: 10px 12px;
-      margin-bottom: 14px;
-    }
-    .card-drink-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 7px;
-    }
-    .card-drink-label {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 8px;
-      color: var(--coffee);
-      letter-spacing: 0.5px;
-    }
-    .card-drink-flavor {
-      font-size: 10px;
-      color: #999;
-      font-style: italic;
-      text-align: right;
-      max-width: 55%;
-    }
-    .card-drink-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .card-drink-chip {
-      background: white;
-      border: 1.5px solid var(--coffee-light);
-      border-radius: 20px;
-      padding: 4px 10px;
-      font-size: 10px;
-      color: var(--coffee);
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-    .card-drink-chip:hover {
-      background: var(--coffee);
-      color: white;
-      border-color: var(--coffee);
-    }
-
-    @media (max-width: 768px) {
-      .recipe-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .modal-content {
-        max-width: 95%;
-        max-height: 95vh;
-      }
-
-      .page-header h1 {
-        font-size: 20px;
-      }
-
-      .drink-results {
-        grid-template-columns: 1fr;
-      }
-
-      .card-actions {
-        flex-direction: column;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG-IN · Recipe Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'DotGothic16', monospace;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
+            color: #3a2a30;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* ── Meal type filter bar ─────────────────────────────────── */
+        .meal-filter-bar {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+        .meal-filter-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            color: #8b5e3c;
+            margin-right: 4px;
+            letter-spacing: 1px;
+        }
+        .meal-pill {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            padding: 9px 14px;
+            border: 3px solid #1c1c1c;
+            border-radius: 20px;
+            background: #fff0e0;
+            color: #8b5e3c;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .meal-pill:hover:not(.active) { background: #ffe0d0; }
+        .meal-pill.active {
+            background: #c8455f;
+            color: #fff;
+            box-shadow: 2px 2px 0 #8b2a40;
+        }
+
+        /* ── Recipe grid (browse) ─────────────────────────────────── */
+        #recipeBrowser {
+            max-width: 900px;
+            margin: 0 auto 24px;
+            display: none;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .recipe-thumb {
+            background: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            padding: 16px 14px;
+            cursor: pointer;
+            transition: transform .1s, box-shadow .1s;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .recipe-thumb:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0 #1c1c1c;
+        }
+        .recipe-thumb-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            color: #3a2a30;
+            line-height: 1.5;
+        }
+        .recipe-thumb-meta {
+            font-size: 11px;
+            color: #8b5e3c;
+        }
+        .recipe-thumb-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            padding: 6px 10px;
+            background: #c8455f;
+            color: white;
+            border: 2px solid #1c1c1c;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: auto;
+        }
+        /* ── Browser sections (ALL view) ─────────────────────────── */
+        .browser-section { margin-bottom: 28px; }
+        .browser-section-head {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: #8b5e3c;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #1c1c1c;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .browser-section-count {
+            font-size: 7px;
+            color: #c8455f;
+            margin-left: auto;
+        }
+        /* ── Pagination footer ────────────────────────────────────── */
+        #browserFooter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 20px 0 8px;
+        }
+        .page-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            background: #fff0e0;
+            color: #8b5e3c;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .page-btn:hover:not(.active):not(:disabled) { background: #ffe0d0; }
+        .page-btn.active {
+            background: #c8455f;
+            color: white;
+            box-shadow: 2px 2px 0 #8b2a40;
+        }
+        .page-btn:disabled { opacity: 0.4; cursor: default; }
+        .page-btn.nav { font-size: 10px; width: auto; padding: 0 12px; }
+        /* ── Hit badge ────────────────────────────────────────────── */
+        .hit-badge {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            color: #c8455f;
+            letter-spacing: 0.5px;
+        }
+
+        /* ── Recipe Card ──────────────────────────────────────────── */
+        .recipe-card-final {
+            background: white;
+            border-radius: 16px;
+            border: 4px solid #1c1c1c;
+            box-shadow: 5px 5px 0 #1c1c1c;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .card-header {
+            background: #fdf5f0;
+            border-bottom: 4px solid #1c1c1c;
+            padding: 24px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .card-header-left { margin-bottom: 16px; }
+        .card-header-left h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 13px;
+            color: #3a2a30;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
+        }
+        .card-header-left p { font-size: 12px; color: #6a5550; margin-bottom: 12px; font-style: italic; }
+        .card-meta { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+        .meta-badge {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            background: #fff0e0;
+            border: 3px solid #1c1c1c;
+            padding: 8px 14px;
+            border-radius: 20px;
+            color: #8b5e3c;
+            box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .card-header-right { position: absolute; top: 24px; right: 20px; }
+        .dish-emoji-big { font-size: 80px; line-height: 1; }
+
+        /* ── Card Body ────────────────────────────────────────────── */
+        .card-body { padding: 28px 32px 24px; }
+
+        /* ── View Tabs ────────────────────────────────────────────── */
+        .view-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            border-bottom: 3px solid #1c1c1c;
+            margin-bottom: 20px;
+        }
+        .view-tab {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            padding: 10px 16px;
+            background: #f5e8e0;
+            color: #8b5e3c;
+            border: 3px solid #1c1c1c;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            margin-right: 4px;
+            cursor: pointer;
+            transition: background .15s;
+        }
+        .view-tab:hover { background: #ffe0d0; }
+        .view-tab.active {
+            background: #c8455f;
+            color: white;
+            position: relative;
+            top: 3px;
+            z-index: 1;
+        }
+
+        /* ── Ingredients ──────────────────────────────────────────── */
+        .ing-list { list-style: none; padding: 0; }
+        .ing-list li {
+            display: flex;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0e0d8;
+            font-size: 14px;
+            align-items: flex-start;
+        }
+        .ing-list li:last-child { border-bottom: none; }
+        .ing-check {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #c8455f;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+            transition: background .15s;
+        }
+        .ing-check.checked { background: #c8455f; color: white; font-size: 10px; }
+
+        /* ── Step view toggle ─────────────────────────────────────── */
+        .step-mode-bar {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            padding: 10px 12px;
+            background: #fff8f0;
+            border: 3px solid #f0d0b8;
+            border-radius: 10px;
+            border-left: 4px solid #c8455f;
+        }
+        .mode-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            padding: 9px 14px;
+            border: 3px solid #1c1c1c;
+            border-radius: 8px;
+            background: #f5e8e0;
+            color: #8b5e3c;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: transform .08s;
+        }
+        .mode-btn:hover { background: #ffe0d0; }
+        .mode-btn.active { background: #c8455f; color: white; }
+
+        /* ── Step list ────────────────────────────────────────────── */
+        #stepList { display: block; }
+        .step-item {
+            display: flex;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid #f0e0d8;
+            cursor: pointer;
+            user-select: none;
+        }
+        .step-item:last-child { border-bottom: none; }
+        .step-item.done .step-text { text-decoration: line-through; color: #b09090; }
+        .step-num-badge {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: #8b5e3c;
+            color: white;
+            border-radius: 50%;
+            border: 2px solid #1c1c1c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            margin-top: 2px;
+        }
+        .step-text { font-size: 14px; line-height: 1.6; color: #3a2a30; flex: 1; }
+
+        /* ── Carousel ─────────────────────────────────────────────── */
+        #carouselContainer { display: none; }
+        .carousel-viewport { overflow: hidden; border-radius: 12px; margin-bottom: 14px; }
+        .carousel-track { display: flex; transition: transform 0.3s cubic-bezier(.4,0,.2,1); }
+        .flip-card {
+            min-width: 100%;
+            flex-shrink: 0;
+            perspective: 900px;
+            height: 300px;
+            cursor: pointer;
+        }
+        .flip-inner {
+            position: relative; width: 100%; height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+        }
+        .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+        .flip-front, .flip-back {
+            position: absolute; inset: 0;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border: 4px solid #1c1c1c;
+            border-radius: 12px;
+            padding: 18px 22px;
+            box-shadow: 4px 4px 0 #1c1c1c;
+            display: flex; flex-direction: column; overflow: hidden;
+        }
+        .flip-front { background: #fdf5f0; gap: 10px; }
+        .flip-back {
+            background: #1c1c1c; color: #fff;
+            transform: rotateY(180deg);
+            align-items: center; justify-content: center;
+            text-align: center; gap: 8px;
+        }
+        .flip-step-header {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px; color: #c8455f; letter-spacing: 1px;
+        }
+        .flip-step-text { font-size: 13px; line-height: 1.6; color: #3a2a30; flex: 1; }
+        .flip-hint {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 5px; color: #c8455f; letter-spacing: 1px;
+            text-align: right; margin-top: auto;
+        }
+        .flip-stage-emoji { font-size: 64px; line-height: 1; }
+        .flip-stage-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; color: #f4a924; letter-spacing: 1px;
+        }
+        .flip-visual-text { font-size: 13px; color: #d0b8a8; line-height: 1.6; max-width: 230px; }
+        .carousel-nav {
+            display: flex; align-items: center; justify-content: center;
+            gap: 14px; margin-top: 14px;
+        }
+        .carousel-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px; padding: 10px 18px;
+            background: #c8455f; color: white;
+            border: 3px solid #1c1c1c; border-radius: 8px;
+            cursor: pointer; box-shadow: 3px 3px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .carousel-btn:hover:not(:disabled) { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+        .carousel-btn:disabled { background: #e0c8c0; color: #b09090; cursor: default; box-shadow: 2px 2px 0 #ccc; }
+        .carousel-indicator {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px; color: #8b5e3c; min-width: 56px; text-align: center;
+        }
+
+        /* ── Adapt tab ────────────────────────────────────────────── */
+        .adapt-intro {
+            font-family: 'DotGothic16', monospace;
+            font-size: 13px; color: #6a5550; line-height: 1.7;
+            margin-bottom: 16px; padding: 10px 14px;
+            background: #fff8f0; border-radius: 8px;
+            border-left: 4px solid #8b5e3c;
+        }
+        .adapt-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; margin-bottom: 14px;
+        }
+        .adapt-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; padding: 14px 10px;
+            border: 3px solid #1c1c1c; border-radius: 10px;
+            background: white; color: #3a2a30;
+            cursor: pointer; text-align: center;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .adapt-btn:hover { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+        .adapt-btn.active { background: #c8455f; color: white; box-shadow: 3px 3px 0 #8b2a40; }
+        .adapt-results {
+            background: white; border: 2px solid #d0b8a0;
+            border-radius: 8px; padding: 12px 14px;
+            display: none; line-height: 1.7;
+        }
+        .adapt-results.show { display: block; }
+        .adapt-row {
+            display: flex; gap: 10px; align-items: flex-start;
+            padding: 8px 0; border-bottom: 1px solid #f0e0d8;
+        }
+        .adapt-row:last-child { border-bottom: none; }
+        .adapt-row-icon { font-size: 18px; flex-shrink: 0; }
+        .adapt-row-text { font-size: 13px; color: #3a2a30; line-height: 1.6; }
+        .adapt-row-text strong { color: #c8455f; }
+
+        /* ── Drinks ───────────────────────────────────────────────── */
+        .drinks-flavor-strip { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+        .drink-cat-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+        .drink-pill {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; padding: 7px 12px;
+            border: 2px solid #d0b8a0; border-radius: 20px;
+            background: white; color: #8b5e3c;
+            cursor: pointer; transition: all .15s;
+        }
+        .drink-pill:hover, .drink-pill.active {
+            background: #8b5e3c; color: white; border-color: #8b5e3c;
+        }
+        .drinks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 10px;
+        }
+        .drink-card {
+            background: white;
+            border: 3px solid #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 3px 3px 0 #1c1c1c;
+            cursor: pointer;
+            transition: transform .1s, box-shadow .1s;
+        }
+        .drink-card:hover { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+        .drink-card.featured { border-color: #f4a924; box-shadow: 3px 3px 0 #c8a000; }
+        .drink-card-head {
+            padding: 9px 12px;
+            background: #3a2a30;
+            color: white;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .drink-card.featured .drink-card-head { background: #8b5e3c; }
+        .drink-card-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px; line-height: 1.5; flex: 1;
+        }
+        .drink-card-body { padding: 10px 12px; font-size: 11px; color: #555; line-height: 1.5; }
+        .drink-card-price {
+            padding: 0 12px 8px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; color: #c8455f;
+        }
+        .drinks-remix-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; padding: 10px 16px; margin-top: 12px;
+            background: #fff0e0; color: #8b5e3c;
+            border: 3px solid #1c1c1c; border-radius: 8px;
+            cursor: pointer; box-shadow: 2px 2px 0 #1c1c1c;
+        }
+        .drinks-remix-btn:hover { background: #ffe0d0; }
+
+        /* ── Action buttons ───────────────────────────────────────── */
+        .action-buttons { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+        .btn-primary {
+            flex: 1; min-width: 140px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px; padding: 14px 22px;
+            background: #c8455f; color: white;
+            border: 3px solid #1c1c1c; border-radius: 8px;
+            cursor: pointer; box-shadow: 4px 4px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .btn-primary:hover { transform: translate(2px,2px); box-shadow: 2px 2px 0 #1c1c1c; }
+        .btn-primary:active { transform: translate(4px,4px); box-shadow: none; }
+        .btn-secondary {
+            flex-shrink: 0;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px; padding: 12px 18px;
+            background: #fff0f4; color: #c8455f;
+            border: 3px solid #1c1c1c; border-radius: 8px;
+            cursor: pointer; box-shadow: 3px 3px 0 #1c1c1c;
+            transition: transform .08s, box-shadow .08s;
+        }
+        .btn-secondary:hover { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+        .btn-secondary.saved { background: #c8455f; color: white; }
+
+        /* ── Drink steps modal ────────────────────────────────────── */
+        .drink-modal-overlay {
+            position: fixed; inset: 0;
+            background: rgba(0,0,0,0.7);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1000; padding: 20px;
+        }
+        .drink-modal {
+            background: white;
+            border: 4px solid #1c1c1c;
+            border-radius: 14px;
+            box-shadow: 6px 6px 0 #1c1c1c;
+            max-width: 480px; width: 100%;
+            max-height: 85vh; overflow-y: auto;
+        }
+        .drink-modal-header {
+            background: #3a2a30; color: white;
+            padding: 16px 20px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .drink-modal-title {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px; flex: 1; line-height: 1.5;
+        }
+        .drink-modal-close {
+            background: none; border: none;
+            color: white; font-size: 20px; cursor: pointer;
+        }
+        .drink-modal-body { padding: 20px; }
+        .drink-modal-desc { font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 14px; }
+        .drink-modal-steps { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+        .drink-modal-steps li {
+            display: flex; gap: 12px; align-items: flex-start;
+            padding: 10px 12px;
+            background: #fdf5f0;
+            border: 2px solid #e0c8b0;
+            border-radius: 8px;
+            font-size: 13px; line-height: 1.6;
+        }
+        .drink-step-num {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px; color: #c8455f;
+            min-width: 20px; padding-top: 2px;
+        }
+        .drink-modal-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+        .drink-modal-tag {
+            font-size: 10px; padding: 3px 10px;
+            background: #fff0e0; color: #8b5e3c;
+            border: 2px solid #d0b8a0; border-radius: 20px;
+        }
+        .drink-modal-price {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px; color: #c8455f; margin-top: 12px;
+        }
+
+        /* ── Empty state ──────────────────────────────────────────── */
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #a08070;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        .empty-state-icon { font-size: 40px; margin-bottom: 12px; }
+
+        @media (max-width: 600px) {
+            body { padding: 12px; }
+            .card-body { padding: 18px 16px; }
+            .adapt-options { grid-template-columns: 1fr; }
+            .dish-emoji-big { font-size: 50px; }
+            .card-header-right { position: static; margin-top: 10px; }
+        }
+    </style>
 </head>
 <body>
-    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
-    <div class="site-nav-wrap">
-        <div class="app-nav">
-            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
-                <span></span><span></span><span></span>
-            </button>
-            <div class="coin-counter" id="coinCounter">
-                <span class="coin-icon">COINS</span>
-                <span id="coinCount">0</span>
+
+    <!-- Meal Type Filter Bar -->
+    <div class="meal-filter-bar">
+        <span class="meal-filter-label">TRENDING:</span>
+        <button class="meal-pill active" data-meal="all">✦ ALL</button>
+        <button class="meal-pill" data-meal="breakfast">🍳 BREAKFAST</button>
+        <button class="meal-pill" data-meal="lunch">🥗 LUNCH</button>
+        <button class="meal-pill" data-meal="dinner">🍽 DINNER</button>
+        <button class="meal-pill" data-meal="desserts">🍿 SNACKS</button>
+    </div>
+
+    <!-- Recipe Browser -->
+    <div id="recipeBrowser">
+        <!-- ALL view: 4 labelled sections -->
+        <div id="browserSections"></div>
+        <!-- Single-category view -->
+        <div id="browserSingleGrid" style="display:none">
+            <div class="recipe-grid" id="singleGrid"></div>
+        </div>
+        <!-- Footer pagination -->
+        <div id="browserFooter"></div>
+    </div>
+
+    <!-- Recipe Card -->
+    <div class="recipe-card-final" id="recipeCard">
+        <div class="card-header">
+            <div class="card-header-left">
+                <h1 id="recipeName">Select a recipe above</h1>
+                <p id="recipeCountry">Use the filters to browse meals</p>
+                <div class="card-meta">
+                    <span class="meta-badge" id="diffBadge">● Easy</span>
+                    <span class="meta-badge" id="timeBadge">⏱ — min</span>
+                    <span class="meta-badge" id="servBadge">🍽 — servings</span>
+                </div>
             </div>
-            <a href="index.html" class="nav-title">DIG-IN</a>
-            <nav class="nav-links" id="navLinks">
-                <a href="index.html">Food Map</a>
-                <div class="nav-dropdown">
-                    <button class="nav-drop-btn" type="button">Cook ▾</button>
-                    <div class="nav-drop-menu">
-                        <a href="recipes.html">Recipes</a>
-                        <a href="recipe-cards-display.html">Recipe Cards</a>
-                        <a href="cookbook.html">Cookbook</a>
-                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
-                        <a href="educational-helper.html">Educational Helper</a>
-                        <a href="advanced-cooking-science.html">Cooking Science</a>
+            <div class="card-header-right">
+                <div class="dish-emoji-big" id="recipeEmoji">🍳</div>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <!-- View Tabs -->
+            <div class="view-tabs">
+                <button class="view-tab active" data-view="ingredients">Ingredients</button>
+                <button class="view-tab" data-view="instructions">Instructions</button>
+                <button class="view-tab" data-view="adapt">✦ Adapt</button>
+                <button class="view-tab" data-view="drinks">🥤 Drinks</button>
+            </div>
+
+            <!-- Ingredients -->
+            <div id="view-ingredients" class="view-content">
+                <ul class="ing-list" id="ingredientsList">
+                    <li><span class="ing-check"></span><span>Select a recipe to see ingredients</span></li>
+                </ul>
+            </div>
+
+            <!-- Instructions -->
+            <div id="view-instructions" class="view-content" style="display:none">
+                <div class="step-mode-bar">
+                    <button class="mode-btn active" data-mode="list">☰ LIST</button>
+                    <button class="mode-btn" data-mode="carousel">⧉ CAROUSEL</button>
+                </div>
+                <div id="stepList"></div>
+                <div id="carouselContainer">
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" id="carouselTrack"></div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" id="prevBtn">← PREV</button>
+                        <span class="carousel-indicator" id="stepIndicator">1 / —</span>
+                        <button class="carousel-btn" id="nextBtn">NEXT →</button>
                     </div>
                 </div>
-                <div class="nav-dropdown">
-                    <button class="nav-drop-btn" type="button">Discover ▾</button>
-                    <div class="nav-drop-menu">
-                        <a href="craving-search.html">What's Craving?</a>
-                        <a href="social-feed.html">Social Feed</a>
-                        <a href="catalog.html">Catalog</a>
-                    </div>
+            </div>
+
+            <!-- Adapt -->
+            <div id="view-adapt" class="view-content" style="display:none">
+                <p class="adapt-intro">Choose a goal and we'll rework the recipe to match.</p>
+                <div class="adapt-options">
+                    <button class="adapt-btn" data-adapt="protein">🥩 Boost Protein</button>
+                    <button class="adapt-btn" data-adapt="fiber">🌾 Add Fiber</button>
+                    <button class="adapt-btn" data-adapt="carbs">🥬 Lower Carbs</button>
+                    <button class="adapt-btn" data-adapt="veggies">🥦 Boost Veggies</button>
                 </div>
-                <div class="nav-dropdown">
-                    <button class="nav-drop-btn" type="button">Create ▾</button>
-                    <div class="nav-drop-menu">
-                        <a href="pixel-creator.html">Pixel Creator</a>
-                        <a href="pixel-map.html">Pixel Map</a>
-                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
-                    </div>
-                </div>
-                <a href="deals.html">Deals</a>
-                <div class="nav-dropdown">
-                    <button class="nav-drop-btn" type="button">Profile ▾</button>
-                    <div class="nav-drop-menu">
-                        <a href="profile.html">My Profile</a>
-                        <a href="badges.html">Badges</a>
-                        <a href="checkin.html">Check-In</a>
-                    </div>
-                </div>
-            </nav>
+                <div class="adapt-results" id="adaptResults"></div>
+            </div>
+
+            <!-- Drinks -->
+            <div id="view-drinks" class="view-content" style="display:none">
+                <div class="drinks-flavor-strip" id="drinksFlavorStrip"></div>
+                <div class="drink-cat-pills" id="drinkCatPills"></div>
+                <div class="drinks-grid" id="drinksGrid"></div>
+                <button class="drinks-remix-btn" id="remixBtn">🔀 Remix Pairings</button>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-primary" id="startBtn">▶ START COOKING</button>
+                <button class="btn-secondary" id="saveBtn">♡ SAVE</button>
+            </div>
         </div>
     </div>
-    <script src="frontend/js/nav.js" defer></script>
 
-  <div class="container">
-    <!-- Header -->
-    <div class="page-header">
-      <h1>🌍 Recipe Cards</h1>
-      <p>International Cookbook Recipes — pair each dish with a Think Coffee drink</p>
+    <!-- Drink Steps Modal -->
+    <div class="drink-modal-overlay" id="drinkModal" style="display:none">
+        <div class="drink-modal">
+            <div class="drink-modal-header">
+                <span id="drinkModalEmoji" style="font-size:24px"></span>
+                <div class="drink-modal-title" id="drinkModalTitle"></div>
+                <button class="drink-modal-close" id="drinkModalClose">✕</button>
+            </div>
+            <div class="drink-modal-body">
+                <p class="drink-modal-desc" id="drinkModalDesc"></p>
+                <ol class="drink-modal-steps" id="drinkModalSteps"></ol>
+                <div class="drink-modal-tags" id="drinkModalTags"></div>
+                <div class="drink-modal-price" id="drinkModalPrice"></div>
+            </div>
+        </div>
     </div>
 
-    <!-- Filter Section -->
-    <div class="filter-section">
-      <div class="filter-title">FILTER BY MEAL TYPE</div>
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All Recipes</button>
-        <button class="filter-btn" data-filter="appetizer">Appetizers</button>
-        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
-        <button class="filter-btn" data-filter="lunch">Lunch</button>
-        <button class="filter-btn" data-filter="dinner">Dinner</button>
-        <button class="filter-btn" data-filter="dessert">Desserts</button>
-        <button class="filter-btn" data-filter="saved" style="border-color:#FF5C9D;color:#FF5C9D;">♡ Saved</button>
-      </div>
-    </div>
+    <script>
+        /* ── State ──────────────────────────────────────────────────── */
+        let allData = null;
+        let currentRecipe = null;
+        let activeMealType = 'all';
+        let browserPage = 1;
+        let drinksData = null;
+        let activeDrinkCat = 'all';
+        let drinkSeed = Date.now();
+        let carouselStep = 0;
+        let savedRecipes = JSON.parse(localStorage.getItem('dig_in_saved') || '[]');
+        let hits = JSON.parse(localStorage.getItem('dig_in_hits') || '{}');
 
-    <!-- Recipe Grid -->
-    <div class="recipe-grid" id="recipeGrid">
-      <!-- Recipes injected here -->
-    </div>
-  </div>
-
-  <!-- Encouragement toast -->
-  <div class="encourage-toast" id="encourageToast"></div>
-
-  <!-- Modal: Recipe Steps -->
-  <div class="modal" id="stepsModal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <h2 id="modalTitle"></h2>
-          <p id="modalSubtitle" style="opacity: 0.9; font-size: 12px;"></p>
-        </div>
-        <button class="modal-close" onclick="closeModal('stepsModal')">&times;</button>
-      </div>
-      <div class="modal-body">
-        <!-- Ingredients with live add -->
-        <div class="modal-ingredients">
-          <h4>INGREDIENTS</h4>
-          <ul class="modal-ing-list" id="modalIngList"></ul>
-          <div class="add-ing-row">
-            <input class="add-ing-input" id="addIngInput" placeholder="Add an extra ingredient…" type="text">
-            <button class="add-ing-btn" id="addIngBtn">+ ADD</button>
-          </div>
-        </div>
-        <!-- Cooking Science toggle -->
-        <button class="science-toggle" id="scienceToggle">⚗️ COOKING SCIENCE FOR THIS RECIPE</button>
-        <div class="science-panel" id="sciencePanel"></div>
-        <!-- Steps -->
-        <div class="steps-container" id="stepsContainer"></div>
-        <!-- Full recipe page link -->
-        <a class="modal-goto-full" id="modalGotoFull" href="#">📖 OPEN FULL RECIPE PAGE →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Drink Pairing -->
-  <div class="modal" id="drinkModal">
-    <div class="modal-content drink-modal-content">
-      <div class="modal-header coffee-header">
-        <div>
-          <h2>🥤 Pair a Drink</h2>
-          <p id="drinkModalSubtitle" style="opacity: 0.85; font-size: 12px; margin-top: 4px;"></p>
-        </div>
-        <button class="modal-close" onclick="closeModal('drinkModal')">&times;</button>
-      </div>
-      <div class="modal-body">
-        <!-- Context strip -->
-        <div class="pairing-context" id="pairingContext"></div>
-
-        <!-- Category remix pills -->
-        <div class="drink-cat-bar">
-          <div class="drink-cat-bar-label">REMIX BY DRINK TYPE</div>
-          <div class="drink-cat-pills" id="catPills"></div>
-        </div>
-
-        <hr class="section-divider">
-
-        <!-- Remix bar -->
-        <div class="remix-bar">
-          <div class="remix-label">Showing <span id="drinkCount">0</span> drinks for this meal</div>
-          <button class="btn-remix" onclick="remixDrinks()">🔀 REMIX SUGGESTIONS</button>
-        </div>
-
-        <!-- Drink cards -->
-        <div class="drink-results" id="drinkResults"></div>
-
-        <div class="think-coffee-credit">Drinks sourced from <strong>Think Coffee</strong> — NYC</div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    let recipesData = [];
-    let coffeeMenu = { drinks: [], pairingRules: {} };
-    let currentFilter = 'all';
-    let activePairingRecipe = null;
-    let activeDrinkCategory = 'all';
-    let remixSeed = 0;
-    let activeModalRecipe = null;
-    let extraIngredients = [];
-
-    // ── Cooking-science lookup table (technique → science tip) ──
-    const SCIENCE_FACTS = {
-      sauté:       { title: 'Sautéing: Maillard Reaction', fact: 'High dry heat + protein = thousands of flavor compounds. Keep the pan hot and dry so steam can escape — crowding creates moisture and kills browning.', emoji: '🔬' },
-      sear:        { title: 'Searing: Crust Science', fact: 'A 140°C+/284°F+ surface triggers the Maillard reaction. Pat ingredients completely dry first — even a little moisture drops temp and steams instead of sears.', emoji: '🔥' },
-      boil:        { title: 'Boiling: Water & Starch', fact: 'At 100°C water molecules break starch granules open (gelatinization) — this is what makes pasta soft and potatoes fluffy. Salt raises flavour, not boiling point significantly.', emoji: '♨️' },
-      simmer:      { title: 'Simmering: Collagen Conversion', fact: '85–95°C keeps collagen in tough cuts slowly converting to gelatin, creating silky body in sauces and stews without toughening proteins.', emoji: '🫕' },
-      bake:        { title: 'Baking: Leavening Science', fact: 'Baking soda (NaHCO₃) + acid → CO₂ bubbles form immediately. Baking powder = double-acting — one burst when wet, second burst in oven heat. Temp matters: too hot collapses structure before it sets.', emoji: '🧁' },
-      roast:       { title: 'Roasting: Dry Heat Caramelisation', fact: 'Above 160°C sugars break down into 100s of new flavour molecules (caramelisation). Fat on the surface transfers heat faster than air — why oil-coated veg browns evenly.', emoji: '🥩' },
-      grill:       { title: 'Grilling: Smoke & Char', fact: 'Char lines are Maillard + pyrolysis (burning). Smoke compounds (guaiacol, syringol) bond to proteins, creating complex smoky flavour. Keep grill hot and grate clean.', emoji: '🥩' },
-      fry:         { title: 'Frying: Oil & Water Battle', fact: 'Food contains ~70–80% water. In hot oil that water turns to steam and pushes outward — the steam is what prevents oil from entering until the surface crisps. If oil is too cool, moisture soaks back in and you get greasy food.', emoji: '🛢️' },
-      whisk:       { title: 'Whisking: Emulsification', fact: 'Rapid whisking breaks oil into tiny droplets surrounded by emulsifiers (like egg yolk lecithin), suspending them in water-based liquid. Stop too early and it splits.', emoji: '🥄' },
-      fold:        { title: 'Folding: Gluten Protection', fact: 'Gentle folding preserves air bubbles and avoids over-developing gluten. Over-stirring = tough, flat result. Use a rubber spatula and cut-rotate-fold motion.', emoji: '🍰' },
-      knead:       { title: 'Kneading: Gluten Network', fact: 'Mechanical kneading aligns glutenin + gliadin proteins into stretchy gluten strands. Well-developed gluten traps CO₂ from yeast = chewy, risen bread.', emoji: '🍞' },
-      rest:        { title: 'Resting: Protein Relaxation', fact: 'After cooking, heat keeps driving moisture to the surface. Resting lets proteins relax and reabsorb juices. Cut steak immediately = pool of juice on your board.', emoji: '⏱️' },
-      reduce:      { title: 'Reducing: Concentration', fact: 'Evaporation removes water, concentrating sugars, acids, and flavour compounds. Reduction also increases viscosity as liquid-dissolved pectin/collagen thickens.', emoji: '🫙' },
-      marinate:    { title: 'Marinating: Diffusion vs. Flavour', fact: 'Acids/enzymes in marinades denature surface proteins (tenderise ~3mm deep). Flavour penetration is mainly surface-level — marinating for days vs. hours makes little structural difference.', emoji: '🧪' },
-      chop:        { title: 'Cutting: Cell Rupture', fact: 'Crushing vs. slicing releases different compounds. A sharp knife makes clean cuts that preserve cell walls — a dull knife crushes and releases more moisture, changing texture and releasing bitter compounds.', emoji: '🔪' },
-    };
-
-    function detectTechniques(steps) {
-      const found = new Set();
-      const text = steps.join(' ').toLowerCase();
-      Object.keys(SCIENCE_FACTS).forEach(tech => {
-        if (text.includes(tech)) found.add(tech);
-      });
-      return [...found].slice(0, 5);
-    }
-
-    // ── Flavor-profile detection (ingredient + description scanning) ──
-    const FLAVOR_KEYWORDS = {
-      spicy:   ['chili', 'chile', 'pepper', 'jalap', 'habanero', 'sriracha', 'hot sauce', 'cayenne', 'ancho', 'serrano', 'gochujang', 'wasabi', 'szechuan', 'sichuan', 'peri peri', 'harissa', 'sambal'],
-      sweet:   ['sugar', 'honey', 'maple', 'caramel', 'vanilla', 'chocolate', 'coconut milk', 'coconut cream', 'brown sugar', 'molasses', 'agave', 'condensed milk', 'sweet potato'],
-      savory:  ['soy sauce', 'fish sauce', 'miso', 'worcestershire', 'anchovy', 'parmesan', 'oyster sauce', 'tamari', 'bonito'],
-      umami:   ['mushroom', 'shiitake', 'miso', 'soy', 'anchovy', 'parmesan', 'tomato paste', 'worcestershire', 'fish sauce', 'dashi', 'bonito', 'kombu', 'porcini', 'dried shrimp'],
-      rich:    ['butter', 'cream', 'heavy cream', 'cheese', 'ghee', 'lard', 'pork belly', 'duck', 'bone marrow', 'mascarpone', 'crème fraîche'],
-      fatty:   ['pork belly', 'bacon', 'lard', 'duck fat', 'butter', 'cream cheese', 'fatty'],
-      fresh:   ['lemon', 'lime', 'herb', 'cilantro', 'parsley', 'mint', 'basil', 'cucumber', 'lettuce', 'green onion', 'scallion', 'spring onion'],
-      citrus:  ['lemon', 'lime', 'orange', 'yuzu', 'lemongrass', 'grapefruit', 'citrus', 'pomelo', 'calamansi'],
-      earthy:  ['mushroom', 'potato', 'beet', 'carrot', 'turnip', 'parsnip', 'truffle', 'miso', 'tahini', 'walnut', 'root vegetable'],
-      smoky:   ['smoked', 'smoke', 'bbq', 'chipotle', 'liquid smoke', 'paprika', 'charred', 'charcoal', 'grilled', 'chorizo'],
-      tangy:   ['vinegar', 'lemon juice', 'lime juice', 'tamarind', 'yogurt', 'sour cream', 'fermented', 'kimchi', 'pickle', 'sumac', 'amchur'],
-      herby:   ['basil', 'oregano', 'thyme', 'rosemary', 'sage', 'dill', 'cilantro', 'parsley', 'mint', 'herbs', 'bay leaf', 'marjoram'],
-      nutty:   ['almond', 'cashew', 'peanut', 'sesame', 'tahini', 'walnut', 'pecan', 'hazelnut', 'peanut butter', 'pine nut'],
-      floral:  ['rose', 'lavender', 'orange blossom', 'elderflower', 'jasmine', 'saffron'],
-      dessert: ['chocolate', 'vanilla extract', 'powdered sugar', 'baking soda', 'baking powder', 'flour', 'custard', 'cream cheese frosting', 'whipped cream'],
-    };
-
-    const FLAVOR_TO_DRINK_TAGS = {
-      spicy:   ['refreshing', 'palate-cleanser', 'earthy', 'light'],
-      sweet:   ['indulgent', 'sweet', 'chocolate', 'complementary', 'cozy'],
-      savory:  ['cuts-richness', 'bold', 'classic', 'balanced'],
-      umami:   ['earthy', 'umami-friendly', 'palate-cleanser', 'light', 'soothing'],
-      rich:    ['cuts-richness', 'tart', 'bold', 'refreshing', 'earthy'],
-      fatty:   ['cuts-richness', 'refreshing', 'tart', 'energizing', 'vibrant'],
-      fresh:   ['refreshing', 'light', 'earthy', 'vibrant', 'palate-cleanser'],
-      citrus:  ['refreshing', 'tart', 'vibrant', 'light', 'palate-cleanser'],
-      earthy:  ['earthy', 'umami-friendly', 'soothing', 'warming', 'light'],
-      smoky:   ['bold', 'cuts-richness', 'energizing', 'classic', 'intense'],
-      tangy:   ['sweet', 'refreshing', 'complementary', 'light', 'vibrant'],
-      herby:   ['light', 'earthy', 'refreshing', 'palate-cleanser', 'floral'],
-      nutty:   ['complementary', 'sweet', 'cozy', 'warming', 'indulgent'],
-      floral:  ['floral', 'light', 'delicate', 'sweet', 'aromatic'],
-      dessert: ['indulgent', 'sweet', 'chocolate', 'cozy', 'comforting', 'child-friendly'],
-    };
-
-    function detectFlavorProfile(recipe) {
-      const text = [
-        recipe.description || '',
-        recipe.cuisine || '',
-        ...(recipe.ingredients || []).map(i => (i.item || '').toLowerCase())
-      ].join(' ').toLowerCase();
-
-      const profile = [];
-      for (const [flavor, keywords] of Object.entries(FLAVOR_KEYWORDS)) {
-        if (keywords.some(kw => text.includes(kw))) profile.push(flavor);
-      }
-      return profile;
-    }
-
-    function getTopDrinks(recipe, count = 2) {
-      const pool = coffeeMenu.drinks || [];
-      if (!pool.length) return [];
-      const scored = pool.map(d => ({ drink: d, score: scoreDrink(d, recipe) }));
-      scored.sort((a, b) => b.score - a.score);
-      return scored.slice(0, count).map(s => s.drink);
-    }
-
-    // ── Encouragement messages ─────────────────────────────────
-    const ENCOURAGEMENTS = [
-      ["Let's go! 🔥", "First step in the bag! 🌟", "Great start! You've got this! ✨"],
-      ["Halfway! Keep it up! ⚡", "You're killing it in the kitchen! 💪", "Looking good, chef! 🍳"],
-      ["Almost there! Final stretch! 🎯", "So close! One more push! 💫", "Nearly done — don't stop now! 🏃"],
-      ["YOU DID IT! 🎉", "Chef mode: UNLOCKED! 👨‍🍳", "That's a wrap! Enjoy every bite! 🍽️"],
-    ];
-
-    function showEncourageToast(msg) {
-      const el = document.getElementById('encourageToast');
-      el.textContent = msg;
-      el.classList.add('show');
-      setTimeout(() => el.classList.remove('show'), 2800);
-    }
-
-    function pickEncouragement(stepIndex, totalSteps) {
-      const ratio = stepIndex / Math.max(totalSteps - 1, 1);
-      const tier = ratio < 0.25 ? 0 : ratio < 0.6 ? 1 : ratio < 0.95 ? 2 : 3;
-      const pool = ENCOURAGEMENTS[tier];
-      return pool[Math.floor(Math.random() * pool.length)];
-    }
-
-    // ── localStorage helpers ───────────────────────────────────
-    function getSaved() {
-      try { return JSON.parse(localStorage.getItem('dig_in_saved_recipes') || '[]'); } catch { return []; }
-    }
-    function isSaved(id) { return getSaved().some(r => String(r.id) === String(id)); }
-    function toggleSave(id) {
-      let saved = getSaved();
-      const idx = saved.findIndex(r => String(r.id) === String(id));
-      if (idx >= 0) { saved.splice(idx, 1); }
-      else {
-        const r = recipesData.find(r => String(r.id) === String(id));
-        if (r) saved.push(r);
-      }
-      localStorage.setItem('dig_in_saved_recipes', JSON.stringify(saved));
-      // Update all save buttons with this id
-      document.querySelectorAll(`.btn-save[data-id="${id}"]`).forEach(btn => {
-        btn.classList.toggle('saved', isSaved(id));
-        btn.title = isSaved(id) ? 'Remove from saved' : 'Save for later';
-      });
-      if (currentFilter === 'saved') renderRecipes();
-    }
-
-    // ── Normalize recipes_full.json schema ─────────────────────
-    function normalizeRecipe(r, idx) {
-      const steps = Array.isArray(r.instructions)
-        ? r.instructions.map((inst, i) => ({
-            step: i + 1,
-            instruction: typeof inst === 'string' ? inst : (inst.instruction || inst.text || ''),
-            time: 5,
-            tips: (Array.isArray(r.tips) ? r.tips[i] : null) || null
-          }))
-        : (r.steps || []);
-
-      const ingredients = (r.ingredients || []).map(ing => {
-        if (typeof ing === 'string') return { item: ing, amount: '', unit: '' };
-        const qty  = ing.quantity != null ? ing.quantity : (ing.amount || '');
-        const unit = ing.unit || '';
-        const name = ing.name || ing.item || '';
-        return { item: `${qty} ${unit} ${name}`.replace(/\s+/g,' ').trim(), amount: qty, unit };
-      });
-
-      return {
-        id: r.id != null ? r.id : idx,
-        name: r.name || 'Untitled Recipe',
-        subtitle: r.cuisine || r.recipe_type || '',
-        region: r.cuisine || 'World',
-        cuisine: r.cuisine || '',
-        mealType: (r.recipe_type || 'dinner').toLowerCase(),
-        difficulty: (r.difficulty || r.skillLevel || 'easy').toLowerCase(),
-        servings: r.servings || 2,
-        prepTime: r.prepTime || r.prep_time || 0,
-        cookTime: r.cookTime || r.cook_time || 0,
-        totalTime: r.totalTime || r.total_time || r.time || (parseInt(r.prepTime||0)+parseInt(r.cookTime||0)) || 30,
-        description: r.description || '',
-        ingredients,
-        steps,
-        tips: Array.isArray(r.tips) ? r.tips : (r.tips ? [r.tips] : []),
-        pixelEmoji: r.pixelEmoji || '🍳',
-      };
-    }
-
-    // ── Load data ──────────────────────────────────────────────
-    async function loadAll() {
-      const grid = document.getElementById('recipeGrid');
-      grid.innerHTML = '<p style="text-align:center;color:white;padding:40px;grid-column:1/-1;">Loading recipes…</p>';
-
-      try {
-        const [recipeRes, coffeeRes] = await Promise.all([
-          fetch('data/recipes_full.json'),
-          fetch('data/think-coffee-menu.json').catch(() => ({ ok: false }))
-        ]);
-
-        const recipeJson = await recipeRes.json();
-        recipesData = (recipeJson.recipes || []).map(normalizeRecipe);
-
-        if (coffeeRes.ok) {
-          const coffeeJson = await coffeeRes.json();
-          coffeeMenu = coffeeJson;
-        }
-      } catch (e) {
-        // Fallback: try localStorage
-        try {
-          const stored = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
-          recipesData = stored.map(normalizeRecipe);
-        } catch {}
-      }
-
-      buildCatPills();
-      renderRecipes();
-    }
-
-    // ── Recipe rendering ───────────────────────────────────────
-    function renderRecipes() {
-      const grid = document.getElementById('recipeGrid');
-      grid.innerHTML = '';
-
-      let pool = recipesData;
-      if (currentFilter === 'saved') {
-        const savedIds = getSaved().map(r => String(r.id));
-        pool = recipesData.filter(r => savedIds.includes(String(r.id)));
-      } else if (currentFilter !== 'all') {
-        pool = recipesData.filter(r => r.mealType === currentFilter);
-      }
-
-      if (pool.length === 0) {
-        grid.innerHTML = `<p style="text-align:center;color:white;padding:40px;opacity:.75;grid-column:1/-1;">
-          ${currentFilter === 'saved' ? 'No saved recipes yet — click ♡ on any card!' : 'No recipes in this category.'}</p>`;
-        return;
-      }
-
-      pool.forEach(recipe => grid.appendChild(createRecipeCard(recipe)));
-    }
-
-    function createRecipeCard(recipe) {
-      const saved = isSaved(recipe.id);
-
-      // Compute top 2 drink pairings and flavor profile for the inline strip
-      const topDrinks = getTopDrinks(recipe, 2);
-      const flavorProfile = detectFlavorProfile(recipe);
-      const flavorLabel = flavorProfile.length
-        ? flavorProfile.slice(0, 3).join(' · ')
-        : 'versatile';
-      const drinkChipsHtml = topDrinks.length
-        ? topDrinks.map(d =>
-            `<button class="card-drink-chip" onclick="event.stopPropagation();openDrinkModal(${recipe.id})">${d.emoji} ${d.name}</button>`
-          ).join('')
-        : `<span style="font-size:10px;color:#bbb;">Loading pairings…</span>`;
-
-      const div = document.createElement('div');
-      div.className = 'recipe-card';
-      div.innerHTML = `
-        <div class="recipe-header">
-          <h2>${recipe.name}</h2>
-          <p class="recipe-subtitle">${recipe.subtitle}</p>
-          <div class="recipe-meta">
-            <span class="meta-badge">🌍 ${recipe.region}</span>
-            <span class="meta-badge">📍 ${recipe.cuisine}</span>
-            <span class="meta-badge">⏱ ${recipe.totalTime}min</span>
-            <span class="meta-badge">👥 ${recipe.servings}</span>
-          </div>
-        </div>
-        <div class="recipe-body">
-          <p class="recipe-description">${recipe.description}</p>
-          <div class="recipe-info">
-            <div class="info-item">
-              <span class="info-label">PREP</span>
-              ${recipe.prepTime || '—'} min
-            </div>
-            <div class="info-item">
-              <span class="info-label">COOK</span>
-              ${recipe.cookTime || '—'} min
-            </div>
-            <div class="info-item">
-              <span class="info-label">DIFFICULTY</span>
-              ${recipe.difficulty}
-            </div>
-            <div class="info-item">
-              <span class="info-label">STEPS</span>
-              ${recipe.steps.length} steps
-            </div>
-          </div>
-          <div class="ingredients-preview">
-            <h4>KEY INGREDIENTS</h4>
-            <div class="ingredients-list">
-              ${recipe.ingredients.slice(0, 4).map(ing => `
-                <div class="ingredient-item">${ing.item}</div>
-              `).join('')}
-            </div>
-          </div>
-          <div class="card-drink-strip">
-            <div class="card-drink-header">
-              <span class="card-drink-label">PAIRS WITH</span>
-              <span class="card-drink-flavor">${flavorLabel}</span>
-            </div>
-            <div class="card-drink-chips">${drinkChipsHtml}</div>
-          </div>
-          <div class="card-actions">
-            <button class="btn-view-steps" onclick="openStepsModal(${recipe.id})">VIEW STEPS →</button>
-            <button class="btn-pair-drink" onclick="openDrinkModal(${recipe.id})">🥤 ALL DRINKS</button>
-            <button class="btn-save${saved ? ' saved' : ''}" data-id="${recipe.id}"
-              title="${saved ? 'Remove from saved' : 'Save for later'}"
-              onclick="toggleSave(${recipe.id})">♡</button>
-          </div>
-        </div>
-      `;
-      return div;
-    }
-
-    // ── Ingredient list render (modal) ─────────────────────────
-    function renderModalIngredients(recipe) {
-      const list = document.getElementById('modalIngList');
-      list.innerHTML = '';
-      recipe.ingredients.forEach(ing => {
-        const li = document.createElement('li');
-        li.textContent = ing.item;
-        list.appendChild(li);
-      });
-      extraIngredients.forEach(name => {
-        const li = document.createElement('li');
-        li.className = 'extra';
-        li.textContent = '+ ' + name;
-        list.appendChild(li);
-      });
-    }
-
-    // ── Steps modal ────────────────────────────────────────────
-    function openStepsModal(recipeId) {
-      const recipe = recipesData.find(r => String(r.id) === String(recipeId));
-      if (!recipe) return;
-      activeModalRecipe = recipe;
-      extraIngredients = [];
-
-      // Write to sessionStorage so recipe.html can pick it up
-      try {
-        const forPage = {
-          ...recipe,
-          instructions: recipe.steps.map(s => s.instruction),
-          cuisine: recipe.cuisine,
-          total_time: recipe.totalTime,
+        /* ── Flavor detection (for drink pairing) ──────────────────── */
+        const FLAVOR_KW = {
+            spicy:  ['spicy','chili','jalapeño','sriracha','pepper','hot sauce','cayenne'],
+            sweet:  ['sugar','honey','maple','caramel','chocolate','vanilla','coconut','fruit','mango','berry','banana'],
+            savory: ['soy sauce','miso','umami','mushroom','anchovy','parmesan','bacon','broth'],
+            rich:   ['butter','cream','cheese','beef','pork','lamb','duck','coconut milk'],
+            light:  ['salad','lemon','lime','citrus','herb','mint','cucumber','spring','greens'],
+            earthy: ['mushroom','truffle','lentil','bean','root','beet','squash','potato'],
+            smoky:  ['smoked','barbecue','chipotle','paprika','charcoal','grill','roasted'],
+            tangy:  ['vinegar','pickle','lemon','lime','yogurt','tamarind','fermented','kimchi'],
         };
-        sessionStorage.setItem('dig_in_current_recipe', JSON.stringify(forPage));
-      } catch {}
+        const FLAVOR_DRINK = {
+            spicy:  ['cooling','refreshing','milk-based','fruity','sweet'],
+            sweet:  ['bitter','coffee','tea','light','floral'],
+            savory: ['acidic','sparkling','light','citrus','refreshing'],
+            rich:   ['acidic','sparkling','bitter','coffee'],
+            light:  ['floral','tea','citrus','sparkling','light'],
+            earthy: ['coffee','roasted','tea','spiced'],
+            smoky:  ['bold','roasted','malty'],
+            tangy:  ['sweet','fruity','sparkling','refreshing'],
+        };
 
-      document.getElementById('modalTitle').textContent = recipe.name;
-      document.getElementById('modalSubtitle').textContent =
-        `${recipe.subtitle}  ·  ${recipe.mealType}  ·  ${recipe.steps.length} steps`;
-
-      // Ingredients
-      renderModalIngredients(recipe);
-
-      // Add-ingredient wiring
-      const addInput = document.getElementById('addIngInput');
-      const addBtn   = document.getElementById('addIngBtn');
-      addInput.value = '';
-
-      function addIngredient() {
-        const val = addInput.value.trim();
-        if (!val) return;
-        extraIngredients.push(val);
-        addInput.value = '';
-        renderModalIngredients(recipe);
-        addInput.focus();
-      }
-      addBtn.onclick = addIngredient;
-      addInput.onkeydown = e => { if (e.key === 'Enter') addIngredient(); };
-
-      // Science panel
-      const techniques = detectTechniques(recipe.steps.map(s => s.instruction));
-      const sciencePanel = document.getElementById('sciencePanel');
-      sciencePanel.classList.remove('open');
-      if (techniques.length) {
-        sciencePanel.innerHTML = techniques.map(tech => {
-          const f = SCIENCE_FACTS[tech];
-          return `<div class="science-item">
-            <strong>${f.emoji} ${f.title}</strong>
-            ${f.fact}
-          </div>`;
-        }).join('');
-      } else {
-        sciencePanel.innerHTML = '<div class="science-item"><strong>💡 Keep It Low & Slow</strong>Most cooking mistakes come from impatience — give heat time to work properly.</div>';
-      }
-
-      const scienceToggle = document.getElementById('scienceToggle');
-      scienceToggle.onclick = () => sciencePanel.classList.toggle('open');
-
-      // Steps with DONE buttons + encouragement
-      const container = document.getElementById('stepsContainer');
-      container.innerHTML = '';
-      const doneState = new Array(recipe.steps.length).fill(false);
-
-      recipe.steps.forEach((step, idx) => {
-        const stepDiv = document.createElement('div');
-        stepDiv.className = 'step-card';
-        stepDiv.innerHTML = `
-          <div class="step-number">${step.step}</div>
-          <div class="step-instruction">${step.instruction}</div>
-          <div class="step-meta">
-            <div class="step-time">${step.time} min</div>
-          </div>
-          ${step.tips ? `<div class="step-tips">${step.tips}</div>` : ''}
-          <div class="step-card-footer">
-            <span style="font-size:11px;color:#aaa;">Step ${idx + 1} of ${recipe.steps.length}</span>
-            <button class="step-done-btn" data-idx="${idx}">DONE ✓</button>
-          </div>
-        `;
-
-        const doneBtn = stepDiv.querySelector('.step-done-btn');
-        doneBtn.addEventListener('click', () => {
-          doneState[idx] = !doneState[idx];
-          doneBtn.classList.toggle('done', doneState[idx]);
-          doneBtn.textContent = doneState[idx] ? 'UNDO ↩' : 'DONE ✓';
-          if (doneState[idx]) {
-            const msg = pickEncouragement(idx, recipe.steps.length);
-            showEncourageToast(msg);
-          }
-        });
-
-        container.appendChild(stepDiv);
-      });
-
-      // Full recipe page link
-      const fullLink = document.getElementById('modalGotoFull');
-      fullLink.href = `recipe.html?id=${recipe.id}&name=${encodeURIComponent(recipe.name)}`;
-
-      document.getElementById('stepsModal').classList.add('active');
-    }
-
-    // ── Drink pairing modal ────────────────────────────────────
-    function openDrinkModal(recipeId) {
-      activePairingRecipe = recipesData.find(r => String(r.id) === String(recipeId));
-      if (!activePairingRecipe) return;
-      activeDrinkCategory = 'all';
-      remixSeed = 0;
-
-      document.getElementById('drinkModalSubtitle').textContent =
-        `${activePairingRecipe.name} · ${activePairingRecipe.cuisine} · ${activePairingRecipe.mealType}`;
-
-      const detectedFlavors = detectFlavorProfile(activePairingRecipe);
-      const flavorStr = detectedFlavors.length
-        ? detectedFlavors.slice(0, 4).join(' · ')
-        : 'versatile';
-      const shortDesc = activePairingRecipe.description.length > 110
-        ? activePairingRecipe.description.slice(0, 110) + '…'
-        : activePairingRecipe.description;
-
-      document.getElementById('pairingContext').innerHTML =
-        `<strong>FLAVOR PROFILE DETECTED</strong><br>
-        <em style="color:#6F4E37;font-size:11px;">${flavorStr}</em><br>
-        <span style="font-size:11px;color:#888;">${activePairingRecipe.cuisine} cuisine · ${activePairingRecipe.mealType} · ${activePairingRecipe.difficulty}</span><br>
-        <em>${shortDesc}</em>`;
-
-      updateCatPillState();
-      renderDrinkSuggestions();
-      document.getElementById('drinkModal').classList.add('active');
-    }
-
-    // ── Category pills ─────────────────────────────────────────
-    function buildCatPills() {
-      const container = document.getElementById('catPills');
-      container.innerHTML = '';
-      const cats = [
-        { id: 'all',           label: 'All',          emoji: '🍶' },
-        { id: 'coffee',        label: 'Coffee',        emoji: '☕' },
-        { id: 'milk-drink',    label: 'Milk (Coffee-Free)', emoji: '🥛' },
-        { id: 'tea',           label: 'Tea',           emoji: '🍵' },
-        { id: 'matcha',        label: 'Matcha',        emoji: '🍃' },
-        { id: 'chocolate',     label: 'Chocolate',     emoji: '🍫' },
-        { id: 'juice',         label: 'Juice',         emoji: '🍋' },
-        { id: 'energy',        label: 'Energy',        emoji: '⚡' },
-        { id: 'specialty',     label: 'Specialty',     emoji: '✨' },
-        { id: 'non-alcoholic', label: 'Non-Alcoholic', emoji: '🧃' },
-        { id: 'alcoholic',     label: 'Alcoholic',     emoji: '🍸' },
-      ];
-      cats.forEach(cat => {
-        const btn = document.createElement('button');
-        btn.className = 'cat-pill' + (cat.id === 'all' ? ' active' : '');
-        btn.dataset.cat = cat.id;
-        btn.textContent = `${cat.emoji} ${cat.label}`;
-        if (cat.id === 'alcoholic') {
-          btn.classList.add('disabled');
-          btn.title = 'No alcoholic options at Think Coffee';
-          btn.onclick = () => null;
-        } else {
-          btn.onclick = () => selectDrinkCategory(cat.id);
+        function detectFlavors(recipe) {
+            const text = [recipe.name || '',
+                ...(recipe.ingredients || []),
+                ...(recipe.instructions || [])
+            ].join(' ').toLowerCase();
+            return Object.entries(FLAVOR_KW)
+                .filter(([, kws]) => kws.some(kw => text.includes(kw)))
+                .map(([f]) => f);
         }
-        container.appendChild(btn);
-      });
-    }
 
-    function updateCatPillState() {
-      document.querySelectorAll('.cat-pill:not(.disabled)').forEach(pill => {
-        pill.classList.toggle('active', pill.dataset.cat === activeDrinkCategory);
-      });
-    }
-
-    function selectDrinkCategory(catId) {
-      activeDrinkCategory = catId;
-      remixSeed = 0;
-      updateCatPillState();
-      renderDrinkSuggestions();
-    }
-
-    // ── Pairing score logic ────────────────────────────────────
-    function scoreDrink(drink, recipe) {
-      let score = 0;
-      const cuisine  = (recipe.cuisine  || '').toLowerCase();
-      const mealType = (recipe.mealType || '').toLowerCase();
-      const rules    = coffeeMenu.pairingRules || {};
-
-      const cuisineStyles = rules.cuisineTodrinkStyle || {};
-      for (const [key, styles] of Object.entries(cuisineStyles)) {
-        if (cuisine.includes(key)) score += styles.filter(s => drink.categories.includes(s)).length * 3;
-      }
-      if (drink.pairsWith?.cuisines) {
-        drink.pairsWith.cuisines.forEach(c => { if (cuisine.includes(c.toLowerCase())) score += 4; });
-      }
-      if (drink.pairsWith?.mealTypes) {
-        drink.pairsWith.mealTypes.forEach(mt => { if (mealType.includes(mt.toLowerCase())) score += 3; });
-      }
-      const moods = (rules.mealTypeToMood || {})[mealType] || [];
-      moods.forEach(mood => { if (drink.pairingTags?.includes(mood)) score += 2; });
-
-      // Flavor-profile matching — scan recipe ingredients + description
-      const flavorProfile = detectFlavorProfile(recipe);
-      flavorProfile.forEach(flavor => {
-        const desiredTags = FLAVOR_TO_DRINK_TAGS[flavor] || [];
-        desiredTags.forEach(tag => { if (drink.pairingTags?.includes(tag)) score += 2; });
-      });
-
-      if (drink.seasonal) score += 1;
-      if (drink.featured) score += 1;
-      return score;
-    }
-
-    // ── Deterministic shuffle with seed ────────────────────────
-    function seededShuffle(arr, seed) {
-      const a = [...arr];
-      let s = seed + 1;
-      for (let i = a.length - 1; i > 0; i--) {
-        s = ((s * 1664525) + 1013904223) & 0xffffffff;
-        const j = Math.abs(s) % (i + 1);
-        [a[i], a[j]] = [a[j], a[i]];
-      }
-      return a;
-    }
-
-    // ── Render drink suggestions ───────────────────────────────
-    function renderDrinkSuggestions() {
-      if (!activePairingRecipe) return;
-      const results = document.getElementById('drinkResults');
-      results.innerHTML = '';
-      let pool = coffeeMenu.drinks || [];
-
-      if (activeDrinkCategory !== 'all') {
-        pool = pool.filter(d => d.categories.includes(activeDrinkCategory));
-        // Milk drinks = coffee-free only
-        if (activeDrinkCategory === 'milk-drink') {
-          pool = pool.filter(d => !d.categories.includes('coffee'));
+        function scoreDrink(drink, flavors) {
+            const tags = (drink.pairingTags || drink.flavorProfile || []).map(t => t.toLowerCase());
+            const desc = (drink.description || '').toLowerCase();
+            let score = 0;
+            flavors.forEach(f => {
+                (FLAVOR_DRINK[f] || []).forEach(t => { if (tags.includes(t) || desc.includes(t)) score += 2; });
+            });
+            score += (drinkSeed * 7 + (drink.name.charCodeAt(0) || 0)) % 5 * 0.1;
+            return score;
         }
-      }
-      if (!pool.length) {
-        results.innerHTML = `<div class="no-drinks-msg">No drinks in this category. Try another!</div>`;
-        document.getElementById('drinkCount').textContent = '0';
-        return;
-      }
 
-      const scored = pool.map(d => ({ drink: d, score: scoreDrink(d, activePairingRecipe) }));
-      scored.sort((a, b) => b.score - a.score);
-      const maxScore = scored[0].score;
-      const shuffledTop  = seededShuffle(scored.filter(s => s.score >= maxScore - 2), remixSeed);
-      const shuffledRest = seededShuffle(scored.filter(s => s.score <  maxScore - 2), remixSeed + 99);
-      const picks = [...shuffledTop, ...shuffledRest].slice(0, 6);
+        /* ── ADAPT suggestions ──────────────────────────────────────── */
+        const ADAPT = {
+            protein: [
+                { icon: '🍗', text: '<strong>Swap or add</strong> a lean protein: chicken breast, tofu, tempeh, or canned chickpeas' },
+                { icon: '🥚', text: '<strong>Add eggs</strong> on the side or stir them in scrambled for extra protein' },
+                { icon: '🫘', text: '<strong>Fold in beans or lentils</strong> — they double as fiber and protein' },
+                { icon: '💪', text: '<strong>Increase your protein portion</strong> by 30–40% to hit your goal' },
+            ],
+            fiber: [
+                { icon: '🥦', text: '<strong>Steam broccoli, spinach, or kale</strong> and fold into the dish' },
+                { icon: '🥕', text: '<strong>Grate carrots or zucchini</strong> into the mix — they disappear but add fiber' },
+                { icon: '🫘', text: '<strong>Replace half the protein</strong> with black beans or lentils' },
+                { icon: '🌾', text: '<strong>Swap white rice/pasta</strong> for brown rice, quinoa, or whole wheat' },
+            ],
+            carbs: [
+                { icon: '🥬', text: '<strong>Replace rice or pasta</strong> with cauliflower rice or zucchini noodles' },
+                { icon: '🥗', text: '<strong>Serve over a salad bed</strong> instead of a grain base' },
+                { icon: '🧀', text: '<strong>Skip sugary sauces</strong> — use olive oil, lemon, or vinegar instead' },
+                { icon: '🍳', text: '<strong>Increase fat slightly</strong> (olive oil, avocado) to stay satiated' },
+            ],
+            veggies: [
+                { icon: '🫑', text: '<strong>Sauté bell peppers and onions</strong> as a base layer' },
+                { icon: '🥦', text: '<strong>Add broccoli or green beans</strong> in the last few minutes of cooking' },
+                { icon: '🍅', text: '<strong>Finish with fresh tomatoes or cherry tomatoes</strong> for brightness' },
+                { icon: '🥕', text: '<strong>Roast a mix of root vegetables</strong> and serve alongside' },
+            ],
+        };
 
-      document.getElementById('drinkCount').textContent = pool.length;
-      picks.forEach((item, idx) => results.appendChild(createDrinkCard(item.drink, idx === 0 && activeDrinkCategory === 'all')));
-    }
+        /* ── Emoji map ──────────────────────────────────────────────── */
+        const EMOJI_MAP = {
+            pasta: '🍝', spaghetti: '🍝', noodle: '🍜', ramen: '🍜', soup: '🍲', stew: '🍲',
+            rice: '🍚', sushi: '🍣', taco: '🌮', burrito: '🌯', pizza: '🍕', burger: '🍔',
+            sandwich: '🥪', bread: '🍞', cake: '🎂', cookie: '🍪', pie: '🥧',
+            salad: '🥗', chicken: '🍗', beef: '🥩', pork: '🥓', fish: '🐟', shrimp: '🍤',
+            curry: '🍛', indian: '🍛', japanese: '🍜', thai: '🫕', mexican: '🌮',
+            italian: '🍝', french: '🥐', chinese: '🥢', american: '🍔', default: '🍽️'
+        };
+        function getEmoji(recipe) {
+            const text = (recipe.name + ' ' + (recipe.cuisine || '') + ' ' + (recipe.type || '')).toLowerCase();
+            for (const [k, v] of Object.entries(EMOJI_MAP)) {
+                if (text.includes(k)) return v;
+            }
+            return EMOJI_MAP.default;
+        }
 
-    function createDrinkCard(drink, isTopPick) {
-      const div = document.createElement('div');
-      div.className = 'drink-card' + (isTopPick ? ' top-pick' : '');
-      const tempClass = drink.temp === 'both' ? 'both' : drink.temp;
-      const tempLabel = drink.temp === 'iced' ? '🧊 Iced' : drink.temp === 'hot' ? '🔥 Hot' : '🌡️ Any';
-      const seasonBadge = drink.seasonal
-        ? `<span class="top-pick-ribbon">${drink.seasonalLabel || 'Seasonal'}</span>`
-        : (isTopPick ? `<span class="top-pick-ribbon">⭐ Top Pick</span>` : '');
-      const flavorTags = (drink.flavorProfile || []).slice(0, 3).map(t => `<span class="drink-tag">${t}</span>`).join('');
+        /* ── Load data ──────────────────────────────────────────────── */
+        async function loadData() {
+            const params = new URLSearchParams(window.location.search);
+            let dataFile = params.get('data');
 
-      div.innerHTML = `
-        <div class="drink-card-header">
-          <div><div class="drink-card-name">${drink.name}</div>${seasonBadge}</div>
-          <div class="drink-emoji">${drink.emoji}</div>
-        </div>
-        <div class="drink-card-body">
-          <p class="drink-desc">${drink.description}</p>
-          <div class="drink-tags">${flavorTags}</div>
-          <div class="drink-footer">
-            <div class="drink-price">$${drink.price.toFixed(2)}</div>
-            <span class="drink-temp-badge ${tempClass}">${tempLabel}</span>
-          </div>
-        </div>`;
-      return div;
-    }
+            const sessionRecipe = JSON.parse(sessionStorage.getItem('dig_in_current_recipe') || 'null');
 
-    function remixDrinks() {
-      remixSeed = (remixSeed + 1) % 50;
-      renderDrinkSuggestions();
-    }
+            if (dataFile) {
+                try {
+                    const res = await fetch(`data/${dataFile}`);
+                    const raw = await res.json();
+                    allData = Object.values(raw)[0];
+                } catch (e) { console.warn('Could not load', dataFile, e); }
+            }
 
-    // ── Modal close ────────────────────────────────────────────
-    function closeModal(id) {
-      document.getElementById(id).classList.remove('active');
-    }
+            if (!allData) {
+                const lsRecipes = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+                if (lsRecipes.length || sessionRecipe) {
+                    const combined = sessionRecipe ? [sessionRecipe, ...lsRecipes.filter(r => r.name !== sessionRecipe.name)] : lsRecipes;
+                    allData = {
+                        country: 'My Recipes',
+                        breakfast: combined.filter(r => (r.mealType || r.meal_type || '').toLowerCase().includes('breakfast')),
+                        lunch:     combined.filter(r => (r.mealType || r.meal_type || '').toLowerCase().includes('lunch')),
+                        dinner:    combined.filter(r => (r.mealType || r.meal_type || '').toLowerCase().includes('dinner')),
+                        desserts:  combined.filter(r => (r.mealType || r.meal_type || '').toLowerCase().includes('dessert')),
+                        vegetarianRecipes: combined.filter(r => r.vegetarian || r.dietary?.includes('v')),
+                        all: combined,
+                    };
+                    if (sessionRecipe) renderRecipeCard(sessionRecipe);
+                }
+            }
 
-    // Filter buttons
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
-        renderRecipes();
-      });
-    });
+            try {
+                const dRes = await fetch('data/think-coffee-menu.json');
+                drinksData = await dRes.json();
+            } catch (e) { console.warn('Could not load drinks', e); }
+        }
 
-    // Close modals on backdrop click
-    ['stepsModal', 'drinkModal'].forEach(id => {
-      document.getElementById(id).addEventListener('click', e => {
-        if (e.target.id === id) closeModal(id);
-      });
-    });
+        /* ── Render recipe card ─────────────────────────────────────── */
+        function renderRecipeCard(recipe) {
+            currentRecipe = recipe;
+            document.getElementById('recipeName').textContent = recipe.name || 'Unnamed Recipe';
+            document.getElementById('recipeCountry').textContent = recipe.country ? `From ${recipe.country}` : '';
+            const diff = recipe.difficulty || '—';
+            document.getElementById('diffBadge').textContent = `● ${diff}`;
+            const totalTime = (recipe.prepTime || 0) + (recipe.cookTime || 0);
+            document.getElementById('timeBadge').textContent = `⏱ ${totalTime || '—'} min`;
+            document.getElementById('servBadge').textContent = `🍽 ${recipe.servings || '—'} servings`;
+            document.getElementById('recipeEmoji').textContent = getEmoji(recipe);
 
-    loadAll();
-  </script>
+            // Ingredients
+            const ings = recipe.ingredients || [];
+            document.getElementById('ingredientsList').innerHTML = ings.length
+                ? ings.map((ing, i) => `
+                    <li>
+                        <span class="ing-check" data-idx="${i}"></span>
+                        <span>${typeof ing === 'object' ? ing.text || ing.name : ing}</span>
+                    </li>`).join('')
+                : '<li><span>No ingredients listed.</span></li>';
+
+            document.querySelectorAll('.ing-check').forEach(box => {
+                box.addEventListener('click', () => box.classList.toggle('checked'));
+                box.textContent = '';
+            });
+
+            // Steps (list)
+            const steps = recipe.instructions || recipe.steps || [];
+            document.getElementById('stepList').innerHTML = steps.length
+                ? steps.map((s, i) => `
+                    <div class="step-item" data-idx="${i}">
+                        <div class="step-num-badge">${i + 1}</div>
+                        <div class="step-text">${s}</div>
+                    </div>`).join('')
+                : '<p style="color:#a08070;font-size:13px;padding:16px 0">No steps listed.</p>';
+
+            document.querySelectorAll('.step-item').forEach(item => {
+                item.addEventListener('click', () => item.classList.toggle('done'));
+            });
+
+            // Carousel
+            const track = document.getElementById('carouselTrack');
+            const STAGE_LABELS = ['PREP', 'BUILDING', 'COOKING', 'FINISHING', 'PLATING'];
+            track.innerHTML = steps.map((s, i) => {
+                const ratio = i / Math.max(steps.length - 1, 1);
+                const stage = STAGE_LABELS[Math.min(Math.floor(ratio * STAGE_LABELS.length), STAGE_LABELS.length - 1)];
+                return `
+                <div class="flip-card" data-idx="${i}">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <div class="flip-step-header">STEP ${i + 1} OF ${steps.length}</div>
+                            <div class="flip-step-text">${s}</div>
+                            <div class="flip-hint">👆 TAP TO FLIP</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="flip-stage-emoji">${getEmoji(recipe)}</div>
+                            <div class="flip-stage-label">${stage}</div>
+                            <div class="flip-visual-text">You're in the ${stage.toLowerCase()} phase — keep going!</div>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+
+            carouselStep = 0;
+            document.getElementById('stepIndicator').textContent = `1 / ${steps.length || 1}`;
+            document.getElementById('prevBtn').disabled = true;
+            document.getElementById('nextBtn').disabled = steps.length <= 1;
+
+            track.querySelectorAll('.flip-card').forEach(card => {
+                card.addEventListener('click', () => card.classList.toggle('flipped'));
+            });
+
+            // Save button state
+            const isSaved = savedRecipes.some(r => r.name === recipe.name);
+            const saveBtn = document.getElementById('saveBtn');
+            saveBtn.textContent = isSaved ? '♥ SAVED' : '♡ SAVE';
+            saveBtn.classList.toggle('saved', isSaved);
+
+            // Drinks for this recipe
+            renderDrinksTab(recipe);
+
+            // Show card, hide browser
+            document.getElementById('recipeBrowser').style.display = 'none';
+            document.getElementById('recipeCard').style.display = '';
+
+            // Reset to ingredients tab
+            switchTab('ingredients');
+        }
+
+        /* ── Tab switching ──────────────────────────────────────────── */
+        function switchTab(view) {
+            document.querySelectorAll('.view-tab').forEach(t => t.classList.toggle('active', t.dataset.view === view));
+            document.querySelectorAll('.view-content').forEach(v => v.style.display = 'none');
+            const el = document.getElementById(`view-${view}`);
+            if (el) el.style.display = 'block';
+        }
+
+        /* ── Drinks tab ─────────────────────────────────────────────── */
+        function renderDrinksTab(recipe) {
+            if (!drinksData) return;
+            const flavors = detectFlavors(recipe);
+            const strip = document.getElementById('drinksFlavorStrip');
+            strip.innerHTML = flavors.length
+                ? flavors.map(f => `<span style="display:inline-block;background:#c8455f;color:#fff;border-radius:20px;padding:4px 12px;font-size:7px;font-family:'Press Start 2P',monospace;margin:2px">${f.toUpperCase()}</span>`).join('')
+                : '<span style="font-size:12px;color:#a08070">Neutral profile — all drinks pair well!</span>';
+
+            const cats = [{ id: 'all', label: '✦ ALL' }, ...(drinksData.drinkCategories || []).map(c => ({ id: c.id, label: (c.emoji || '') + ' ' + c.label }))];
+            document.getElementById('drinkCatPills').innerHTML = cats.map(c =>
+                `<button class="drink-pill${c.id === activeDrinkCat ? ' active' : ''}" data-cat="${c.id}">${c.label.toUpperCase()}</button>`
+            ).join('');
+
+            document.querySelectorAll('.drink-pill').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    activeDrinkCat = btn.dataset.cat;
+                    renderDrinkCards(recipe, flavors);
+                    document.querySelectorAll('.drink-pill').forEach(b => b.classList.toggle('active', b.dataset.cat === activeDrinkCat));
+                });
+            });
+
+            renderDrinkCards(recipe, flavors);
+        }
+
+        function renderDrinkCards(recipe, flavors) {
+            let drinks = (drinksData.drinks || []).filter(d => d.available !== false);
+            if (activeDrinkCat !== 'all') {
+                drinks = drinks.filter(d => (d.category || d.section || '') === activeDrinkCat ||
+                                            (d.categories || []).includes(activeDrinkCat));
+            }
+            drinks = drinks
+                .map(d => ({ ...d, _score: scoreDrink(d, flavors) }))
+                .sort((a, b) => b._score - a._score)
+                .slice(0, 9);
+
+            const grid = document.getElementById('drinksGrid');
+            grid.innerHTML = drinks.map(d => `
+                <div class="drink-card${d.featured ? ' featured' : ''}" data-id="${d.id}">
+                    <div class="drink-card-head">
+                        <span style="font-size:16px">${d.emoji || '🥤'}</span>
+                        <span class="drink-card-name">${d.name}</span>
+                        <span style="font-size:11px">${d.temperature === 'hot' ? '☕' : d.temperature === 'cold' ? '🧊' : ''}</span>
+                    </div>
+                    <div class="drink-card-body">${d.description || ''}</div>
+                    ${d.price ? `<div class="drink-card-price">$${d.price.toFixed(2)}</div>` : ''}
+                </div>`).join('') || '<p style="color:#a08070;font-size:13px;padding:10px 0">No drinks match this filter.</p>';
+
+            grid.querySelectorAll('.drink-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.dataset.id;
+                    const drink = (drinksData.drinks || []).find(d => d.id === id);
+                    if (drink) showDrinkModal(drink);
+                });
+            });
+        }
+
+        /* ── Drink modal ────────────────────────────────────────────── */
+        function showDrinkModal(drink) {
+            document.getElementById('drinkModalEmoji').textContent = drink.emoji || '🥤';
+            document.getElementById('drinkModalTitle').textContent = drink.name;
+            document.getElementById('drinkModalDesc').textContent = drink.description || '';
+
+            const steps = generateDrinkSteps(drink);
+            document.getElementById('drinkModalSteps').innerHTML = steps.map((s, i) => `
+                <li><span class="drink-step-num">${i + 1}.</span><span>${s}</span></li>`).join('');
+
+            const tags = [...(drink.flavorProfile || []), ...(drink.pairingTags || [])].slice(0, 6);
+            document.getElementById('drinkModalTags').innerHTML = tags.map(t =>
+                `<span class="drink-modal-tag">${t}</span>`).join('');
+
+            document.getElementById('drinkModalPrice').textContent = drink.price ? `$${drink.price.toFixed(2)}` : '';
+            document.getElementById('drinkModal').style.display = 'flex';
+        }
+
+        function generateDrinkSteps(drink) {
+            const name = drink.name.toLowerCase();
+            const isIced = drink.temperature === 'cold' || name.includes('iced') || name.includes('cold');
+            const isEspresso = name.includes('espresso') || name.includes('americano') || name.includes('latte') || name.includes('cappuccino');
+            const isTea = name.includes('tea') || name.includes('matcha') || name.includes('chai');
+            const isJuice = name.includes('juice') || name.includes('smoothie');
+            const isChocolate = name.includes('chocolate') || name.includes('mocha') || name.includes('cocoa');
+
+            if (isEspresso && !isIced) return [
+                'Pull a fresh espresso shot using finely ground beans, about 25–30 seconds.',
+                'Steam milk to 65°C (150°F) with a silky microfoam texture.',
+                `Combine espresso and milk in the correct ratio for a ${drink.name}.`,
+                'Serve immediately while hot.',
+            ];
+            if (isEspresso && isIced) return [
+                'Pull 1–2 fresh espresso shots and let cool for 1 minute.',
+                'Fill a glass with ice cubes.',
+                'Pour espresso over ice.',
+                isIced && name.includes('latte') ? 'Add cold milk to taste.' : 'Add cold water or milk and serve.',
+            ];
+            if (isTea) return [
+                'Heat water to the correct temperature (80°C for green tea, 95°C for black tea).',
+                `Steep ${drink.name} for 2–4 minutes depending on strength preference.`,
+                isIced ? 'Pour over ice and sweeten if desired.' : 'Remove tea and serve hot.',
+            ];
+            if (isJuice) return [
+                'Gather and wash your fresh ingredients.',
+                'Juice or blend until smooth.',
+                'Strain if desired, then pour over ice.',
+                'Serve immediately for the best flavor.',
+            ];
+            if (isChocolate) return [
+                'Heat milk until steaming but not boiling.',
+                'Add high-quality cocoa powder or melted dark chocolate and whisk until combined.',
+                'Sweeten to taste with sugar or honey.',
+                'Top with whipped cream or marshmallows and serve.',
+            ];
+            return [
+                `Prepare all ingredients for ${drink.name}.`,
+                'Combine in the correct proportions as per the recipe.',
+                'Stir or shake gently to blend flavors.',
+                'Serve at the appropriate temperature and enjoy.',
+            ];
+        }
+
+        /* ── Hit tracking ───────────────────────────────────────────── */
+        function recordHit(recipe) {
+            const key = recipe.id || recipe.name;
+            hits[key] = (hits[key] || 0) + 1;
+            localStorage.setItem('dig_in_hits', JSON.stringify(hits));
+        }
+
+        function getHits(recipe) {
+            return hits[recipe.id || recipe.name] || 0;
+        }
+
+        function sortByHits(arr) {
+            return [...arr].sort((a, b) => getHits(b) - getHits(a));
+        }
+
+        /* ── Recipe card thumbnail ──────────────────────────────────── */
+        function makeThumbHTML(r) {
+            const h = getHits(r);
+            return `
+                <div class="recipe-thumb" data-key="${r.id || r.name}">
+                    <div style="font-size:32px;text-align:center">${getEmoji(r)}</div>
+                    <div class="recipe-thumb-name">${r.name || 'Recipe'}</div>
+                    <div class="recipe-thumb-meta">
+                        ${r.difficulty ? `● ${r.difficulty}` : ''}
+                        ${(r.prepTime || 0) + (r.cookTime || 0) ? ` · ⏱ ${(r.prepTime||0)+(r.cookTime||0)} min` : ''}
+                    </div>
+                    ${h > 0 ? `<div class="hit-badge">🔥 ${h} view${h !== 1 ? 's' : ''}</div>` : ''}
+                    <div class="recipe-thumb-btn">VIEW RECIPE →</div>
+                </div>`;
+        }
+
+        function bindThumbs(container, recipeList) {
+            container.querySelectorAll('.recipe-thumb').forEach(card => {
+                card.addEventListener('click', () => {
+                    const key = card.dataset.key;
+                    const recipe = recipeList.find(r => (r.id || r.name) === key);
+                    if (recipe) {
+                        recordHit(recipe);
+                        renderRecipeCard(recipe);
+                        card.querySelector('.hit-badge')
+                            ? card.querySelector('.hit-badge').textContent = `🔥 ${getHits(recipe)} views`
+                            : card.insertAdjacentHTML('beforeend', `<div class="hit-badge">🔥 1 view</div>`);
+                    }
+                });
+            });
+        }
+
+        /* ── Pagination footer ──────────────────────────────────────── */
+        function renderFooter(page, totalPages, onPageChange) {
+            const footer = document.getElementById('browserFooter');
+            if (totalPages <= 1) { footer.innerHTML = ''; return; }
+
+            let html = `<button class="page-btn nav" ${page <= 1 ? 'disabled' : ''} data-p="${page - 1}">←</button>`;
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="page-btn${i === page ? ' active' : ''}" data-p="${i}">${i}</button>`;
+            }
+            html += `<button class="page-btn nav" ${page >= totalPages ? 'disabled' : ''} data-p="${page + 1}">→</button>`;
+            footer.innerHTML = html;
+
+            footer.querySelectorAll('.page-btn:not([disabled])').forEach(btn => {
+                btn.addEventListener('click', () => onPageChange(Number(btn.dataset.p)));
+            });
+        }
+
+        /* ── Recipe browser ─────────────────────────────────────────── */
+        const MEAL_CATS = [
+            { key: 'breakfast', label: '🍳 BREAKFAST' },
+            { key: 'lunch',     label: '🥗 LUNCH'     },
+            { key: 'dinner',    label: '🍽 DINNER'     },
+            { key: 'desserts',  label: '🍿 SNACKS'     },
+        ];
+        const PER_PAGE = 5;
+
+        function showMealBrowser(mealType, page) {
+            browserPage = page || 1;
+            activeMealType = mealType;
+
+            const browser = document.getElementById('recipeBrowser');
+            const sections = document.getElementById('browserSections');
+            const singleWrap = document.getElementById('browserSingleGrid');
+            const singleGrid = document.getElementById('singleGrid');
+
+            browser.style.display = 'block';
+            document.getElementById('recipeCard').style.display = currentRecipe ? '' : 'none';
+
+            if (mealType === 'all') {
+                sections.style.display = 'block';
+                singleWrap.style.display = 'none';
+
+                const catData = MEAL_CATS.map(c => ({
+                    ...c,
+                    recipes: sortByHits((allData || {})[c.key] || []),
+                }));
+
+                const maxPages = Math.max(...catData.map(c => Math.ceil(c.recipes.length / PER_PAGE)), 1);
+                const currentPageClamped = Math.min(browserPage, maxPages);
+
+                sections.innerHTML = catData.map(cat => {
+                    const slice = cat.recipes.slice((currentPageClamped - 1) * PER_PAGE, currentPageClamped * PER_PAGE);
+                    if (!slice.length) return '';
+                    return `
+                        <div class="browser-section">
+                            <div class="browser-section-head">
+                                ${cat.label}
+                                <span class="browser-section-count">${cat.recipes.length} total</span>
+                            </div>
+                            <div class="recipe-grid">${slice.map(makeThumbHTML).join('')}</div>
+                        </div>`;
+                }).join('');
+
+                catData.forEach(cat => {
+                    const slice = cat.recipes.slice((currentPageClamped - 1) * PER_PAGE, currentPageClamped * PER_PAGE);
+                    bindThumbs(sections, slice);
+                });
+
+                renderFooter(currentPageClamped, maxPages, p => showMealBrowser('all', p));
+
+            } else {
+                sections.style.display = 'none';
+                singleWrap.style.display = 'block';
+
+                const catInfo = MEAL_CATS.find(c => c.key === mealType);
+                const allCatRecipes = sortByHits((allData || {})[mealType] || []);
+                const totalPages = Math.max(Math.ceil(allCatRecipes.length / PER_PAGE), 1);
+                const clamped = Math.min(browserPage, totalPages);
+                const slice = allCatRecipes.slice((clamped - 1) * PER_PAGE, clamped * PER_PAGE);
+
+                singleGrid.innerHTML = slice.length
+                    ? `<div class="browser-section">
+                           <div class="browser-section-head">${catInfo ? catInfo.label : mealType.toUpperCase()} <span class="browser-section-count">${allCatRecipes.length} total</span></div>
+                           <div class="recipe-grid">${slice.map(makeThumbHTML).join('')}</div>
+                       </div>`
+                    : `<div class="empty-state"><div class="empty-state-icon">🍽️</div>No recipes loaded yet.</div>`;
+
+                bindThumbs(singleGrid, allCatRecipes);
+                renderFooter(clamped, totalPages, p => showMealBrowser(mealType, p));
+            }
+        }
+
+        /* ── Event wiring ───────────────────────────────────────────── */
+        function setupEvents() {
+            // Meal type filter pills
+            document.querySelectorAll('.meal-pill').forEach(pill => {
+                pill.addEventListener('click', () => {
+                    document.querySelectorAll('.meal-pill').forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    showMealBrowser(pill.dataset.meal, 1);
+                });
+            });
+
+            // View tabs
+            document.querySelectorAll('.view-tab').forEach(tab => {
+                tab.addEventListener('click', () => switchTab(tab.dataset.view));
+            });
+
+            // Step mode toggle
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const mode = btn.dataset.mode;
+                    document.getElementById('stepList').style.display = mode === 'list' ? 'block' : 'none';
+                    document.getElementById('carouselContainer').style.display = mode === 'carousel' ? 'block' : 'none';
+                    if (mode === 'carousel') gotoStep(carouselStep);
+                });
+            });
+
+            // Carousel nav
+            document.getElementById('prevBtn').addEventListener('click', () => {
+                document.querySelectorAll('.flip-card')[carouselStep]?.classList.remove('flipped');
+                gotoStep(carouselStep - 1);
+            });
+            document.getElementById('nextBtn').addEventListener('click', () => {
+                document.querySelectorAll('.flip-card')[carouselStep]?.classList.remove('flipped');
+                gotoStep(carouselStep + 1);
+            });
+
+            // Adapt buttons
+            document.querySelectorAll('.adapt-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const key = btn.dataset.adapt;
+                    document.querySelectorAll('.adapt-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const rows = ADAPT[key] || [];
+                    const el = document.getElementById('adaptResults');
+                    el.innerHTML = rows.map(r => `
+                        <div class="adapt-row">
+                            <span class="adapt-row-icon">${r.icon}</span>
+                            <span class="adapt-row-text">${r.text}</span>
+                        </div>`).join('');
+                    el.classList.add('show');
+                });
+            });
+
+            // Start Cooking
+            document.getElementById('startBtn').addEventListener('click', () => {
+                switchTab('instructions');
+                document.getElementById('view-instructions').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+
+            // Save Recipe
+            document.getElementById('saveBtn').addEventListener('click', () => {
+                if (!currentRecipe) return;
+                const btn = document.getElementById('saveBtn');
+                const idx = savedRecipes.findIndex(r => r.name === currentRecipe.name);
+                if (idx === -1) {
+                    savedRecipes.push(currentRecipe);
+                    btn.textContent = '♥ SAVED';
+                    btn.classList.add('saved');
+                } else {
+                    savedRecipes.splice(idx, 1);
+                    btn.textContent = '♡ SAVE';
+                    btn.classList.remove('saved');
+                }
+                localStorage.setItem('dig_in_saved', JSON.stringify(savedRecipes));
+            });
+
+            // Remix drinks
+            document.getElementById('remixBtn').addEventListener('click', () => {
+                drinkSeed = Date.now() + Math.random() * 9999;
+                if (currentRecipe) renderDrinksTab(currentRecipe);
+            });
+
+            // Drink modal close
+            document.getElementById('drinkModalClose').addEventListener('click', () => {
+                document.getElementById('drinkModal').style.display = 'none';
+            });
+            document.getElementById('drinkModal').addEventListener('click', (e) => {
+                if (e.target.id === 'drinkModal') document.getElementById('drinkModal').style.display = 'none';
+            });
+        }
+
+        function gotoStep(idx) {
+            const cards = document.querySelectorAll('.flip-card');
+            const total = cards.length;
+            if (!total) return;
+            carouselStep = Math.max(0, Math.min(idx, total - 1));
+            document.getElementById('carouselTrack').style.transform = `translateX(-${carouselStep * 100}%)`;
+            document.getElementById('stepIndicator').textContent = `${carouselStep + 1} / ${total}`;
+            document.getElementById('prevBtn').disabled = carouselStep === 0;
+            document.getElementById('nextBtn').disabled = carouselStep === total - 1;
+        }
+
+        /* ── Boot ───────────────────────────────────────────────────── */
+        async function boot() {
+            setupEvents();
+            await loadData();
+            if (currentRecipe) return;
+            showMealBrowser('all', 1);
+        }
+
+        boot();
+    </script>
 </body>
 </html>

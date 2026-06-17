@@ -1,0 +1,464 @@
+{
+  "country": "Brazil",
+  "region": "Americas",
+  "breakfast": [
+    {
+      "id": "bra-break-pao-queijo",
+      "name": "Pão de Queijo (Cheese Bread)",
+      "difficulty": "Easy",
+      "servings": 12,
+      "prepTime": 10,
+      "cookTime": 20,
+      "description": "Puffy, cheese-filled bread rolls made with cassava flour and cheese. A beloved Brazilian breakfast staple.",
+      "seasonings": [
+        "salt",
+        "black pepper"
+      ],
+      "ingredients": [
+        "1 cup cassava flour (tapioca flour)",
+        "1 cup whole milk",
+        "1/2 cup vegetable oil",
+        "4 eggs",
+        "2 cups shredded cheese (Gruyère or mozzarella preferred)",
+        "1 tsp salt",
+        "1/4 tsp black pepper"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F",
+        "In saucepan, combine milk, oil, and salt",
+        "Bring to boil",
+        "Remove from heat and stir in cassava flour until combined",
+        "Cool mixture slightly",
+        "Add eggs one at a time, beating well after each addition",
+        "Fold in shredded cheese and black pepper",
+        "Spoon batter into greased muffin tins or use two spoons to drop onto baking sheet",
+        "Bake for 18-20 minutes until puffed and golden",
+        "Serve warm, straight from oven"
+      ],
+      "notes": "The batter will be thick and sticky. Best served warm when they're still puffy.",
+      "fun_fact": "Pão de queijo originated in Minas Gerais state and is eaten throughout Brazil for breakfast or as a snack. They puff up dramatically in the oven.",
+      "alternatives": [
+        "Add jalapeños for spicy version",
+        "Make ahead and reheat (they deflate but still taste good)",
+        "Use different cheeses for flavor variation"
+      ]
+    },
+    {
+      "id": "bra-break-acai-bowl",
+      "name": "Açaí Bowl",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "A healthy breakfast bowl made from açai berry puree topped with granola, fruits, and honey. Popular in Brazil's coastal regions.",
+      "seasonings": [
+        "honey"
+      ],
+      "ingredients": [
+        "2 packets frozen açai puree (or 1 cup)",
+        "1/2 cup banana, sliced",
+        "1/4 cup granola",
+        "1/4 cup berries (blueberries, strawberries)",
+        "2 tbsp honey",
+        "2 tbsp coconut flakes",
+        "1 tbsp almonds, sliced",
+        "Splash of milk or juice"
+      ],
+      "instructions": [
+        "Blend frozen açai with splash of milk or juice until thick",
+        "Pour açai mixture into bowls",
+        "Arrange banana slices on top",
+        "Sprinkle with granola",
+        "Add fresh berries",
+        "Drizzle with honey",
+        "Top with coconut flakes and almonds",
+        "Eat with spoon and fork",
+        "Serve immediately"
+      ],
+      "notes": "Work quickly - the bowl starts melting as soon as it's made.",
+      "fun_fact": "Açai is native to the Amazon and has been eaten by indigenous peoples for centuries. It became popular worldwide as a 'superfood' in the 2000s.",
+      "alternatives": [
+        "Add chocolate chips for sweeter bowl",
+        "Use different berries in season",
+        "Add granola to the blended açai for texture"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "bra-lunch-feijoada",
+      "name": "Feijoada (Black Bean Stew)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 15,
+      "cookTime": 180,
+      "description": "Brazil's national dish - a hearty stew of black beans and various pork cuts. Served with rice, farofa, and orange slices.",
+      "seasonings": [
+        "bay leaves",
+        "garlic",
+        "cumin",
+        "coriander",
+        "black pepper"
+      ],
+      "ingredients": [
+        "1 lb dried black beans",
+        "1 lb pork shoulder, cubed",
+        "1/2 lb pork ribs",
+        "1/4 lb bacon, diced",
+        "1/4 lb sausage, sliced",
+        "2 onions, chopped",
+        "6 cloves garlic, minced",
+        "3 bay leaves",
+        "1 tsp cumin",
+        "1/2 tsp coriander",
+        "Black pepper to taste",
+        "Water or broth (about 8 cups)",
+        "Salt to taste",
+        "Oil",
+        "Orange slices for serving",
+        "Farofa (toasted cassava flour) for serving"
+      ],
+      "instructions": [
+        "Soak black beans overnight or use quick-soak method",
+        "In large pot, heat oil and cook bacon until crispy",
+        "Remove bacon; brown pork shoulder and ribs",
+        "Add onions and garlic; cook until soft",
+        "Return bacon to pot with drained beans",
+        "Add bay leaves, cumin, coriander, and black pepper",
+        "Cover with water or broth",
+        "Bring to boil, then reduce heat and simmer covered for 1.5 hours",
+        "Add sausage and continue simmering another 30 minutes",
+        "Beans and meat should be very tender",
+        "Season with salt",
+        "Serve in bowls with rice, farofa, and orange slices on the side",
+        "The cooking liquid (caldo) is part of the dish"
+      ],
+      "notes": "Feijoada is traditionally made a day ahead to develop flavors. It's a thick, hearty stew.",
+      "fun_fact": "Feijoada has roots in Afro-Brazilian cuisine and was historically made with leftover parts of pig, making it both economical and delicious. It's the ultimate comfort food in Brazil.",
+      "alternatives": [
+        "Vegetarian version with mushrooms and beans",
+        "Quick version with canned beans",
+        "Lighter version with less pork"
+      ]
+    },
+    {
+      "id": "bra-lunch-moqueca",
+      "name": "Moqueca (Fish Stew)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "A rich, aromatic Brazilian fish stew with coconut milk, dendê oil, and fresh herbs. Typical of Bahia region.",
+      "seasonings": [
+        "coriander",
+        "cumin",
+        "garlic",
+        "cilantro",
+        "lime"
+      ],
+      "ingredients": [
+        "1.5 lbs firm fish fillets (mahi-mahi or similar)",
+        "2 tbsp dendê oil (palm oil)",
+        "2 onions, sliced",
+        "4 cloves garlic, minced",
+        "2 tomatoes, diced",
+        "1 red bell pepper, sliced",
+        "1 can coconut milk",
+        "1/4 cup fresh cilantro",
+        "2 tbsp fresh coriander leaves",
+        "1 tsp cumin",
+        "2 lime juice",
+        "Salt and pepper to taste",
+        "Rice for serving"
+      ],
+      "instructions": [
+        "Heat dendê oil in large pot",
+        "Add sliced onions and cook until soft",
+        "Add garlic and cook 1 minute",
+        "Add tomatoes, bell pepper, and cumin",
+        "Cook for 5 minutes",
+        "Pour in coconut milk and bring to simmer",
+        "Carefully place fish fillets in stew",
+        "Simmer gently for 12-15 minutes until fish is cooked through",
+        "Add cilantro, coriander leaves, lime juice",
+        "Season with salt and pepper",
+        "Serve in bowls over white rice"
+      ],
+      "notes": "Dendê oil (palm oil) is essential for authentic flavor but can be hard to find. Use olive oil if necessary.",
+      "fun_fact": "Moqueca is the signature dish of Bahia, the heart of Afro-Brazilian culture and cuisine. The combination of fish, coconut, and dendê oil reflects the African diaspora influences.",
+      "alternatives": [
+        "Shrimp instead of fish for different protein",
+        "Olive oil instead of dendê oil",
+        "Add okra for authentic touch"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "bra-dinner-churrasco",
+      "name": "Churrasco (Brazilian BBQ)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 60,
+      "description": "Brazilian-style grilled meats served in rodizio style (servers bring skewers to your table). A celebration of meat.",
+      "seasonings": [
+        "salt",
+        "garlic",
+        "oregano",
+        "cumin"
+      ],
+      "ingredients": [
+        "3 lbs beef ribs",
+        "2 lbs chicken thighs",
+        "1.5 lbs pork ribs",
+        "1 lb beef steak",
+        "6 cloves garlic, minced",
+        "3 tbsp salt",
+        "1 tbsp black pepper",
+        "1 tbsp oregano",
+        "1 tbsp cumin",
+        "Olive oil",
+        "Chimichurri sauce",
+        "Rice and black beans for sides"
+      ],
+      "instructions": [
+        "Prepare coals for hot charcoal grill or use gas grill on high",
+        "Mix salt, garlic, pepper, oregano, and cumin",
+        "Season all meats generously with spice mixture",
+        "Let meats sit for 15 minutes",
+        "Place beef ribs on grill first (they take longest)",
+        "Grill for 30-40 minutes, rotating occasionally",
+        "Add chicken and pork ribs",
+        "Grill for additional 20-25 minutes",
+        "Add steaks in final 5-10 minutes",
+        "Brush with chimichurri periodically",
+        "Meat should be charred outside, pink inside",
+        "Serve with grilled rice, black beans, farofa, and fresh salad"
+      ],
+      "notes": "The key is proper heat management and knowing when each meat is done.",
+      "fun_fact": "Churrasco comes from the Gaucho tradition of the southern Brazilian states. It's served in rodizio restaurants where servers continuously bring grilled meats until you've had enough.",
+      "alternatives": [
+        "All beef for steak lovers",
+        "All chicken for lighter version",
+        "Oven roasting instead of open fire"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "bra-snack-pastel",
+      "name": "Pastel (Fried Pastry)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "A crispy fried pastry filled with meat, cheese, or vegetables. Popular street food served at fairs and parties.",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "garlic"
+      ],
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1/2 tsp salt",
+        "1 tbsp sugar",
+        "1 tbsp butter",
+        "1/2 cup water",
+        "1/2 cup beer",
+        "1/2 lb ground beef",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup shredded cheese",
+        "Oil for frying",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Make dough: Mix flour, salt, and sugar",
+        "Add butter and work with fingertips",
+        "Gradually add water and beer until dough forms",
+        "Rest dough 15 minutes",
+        "Make filling: Brown ground beef",
+        "Add onion and garlic; cook until soft",
+        "Mix in cheese; season with salt and pepper",
+        "Cool filling",
+        "Roll dough thin and cut into 3x4 inch rectangles",
+        "Place 1.5 tbsp filling on each rectangle",
+        "Fold in half and seal edges with fork",
+        "Heat oil to 350°F",
+        "Fry pastels until golden brown (2-3 minutes per side)",
+        "Drain on paper towels",
+        "Serve hot with hot sauce"
+      ],
+      "notes": "Beer in the dough makes it extra crispy. The filling should be cooled before assembly.",
+      "fun_fact": "Pastel is one of Brazil's most beloved street foods. You'll find pastel stands everywhere from street fairs to football games.",
+      "alternatives": [
+        "Spinach and cheese filling for vegetarian",
+        "Shrimp filling for seafood version",
+        "Baking instead of frying"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "bra-dessert-brigadeiro",
+      "name": "Brigadeiro (Chocolate Truffle)",
+      "difficulty": "Easy",
+      "servings": 20,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Small chocolate candy coated in sprinkles. Brazil's most iconic dessert, served at birthday parties and celebrations.",
+      "seasonings": [
+        "chocolate"
+      ],
+      "ingredients": [
+        "1 can (14 oz) sweetened condensed milk",
+        "4 tbsp cocoa powder",
+        "4 tbsp butter",
+        "Chocolate sprinkles",
+        "Small paper cups"
+      ],
+      "instructions": [
+        "In saucepan, combine condensed milk, cocoa powder, and butter",
+        "Heat over medium heat, stirring constantly",
+        "Continue cooking and stirring for 8-10 minutes",
+        "The mixture should thicken and pull away from sides",
+        "Remove from heat and let cool slightly",
+        "Spoon onto parchment paper or oil surface",
+        "When cool enough to handle, roll into balls",
+        "Coat generously in chocolate sprinkles",
+        "Place in small paper cups",
+        "Refrigerate until serving"
+      ],
+      "notes": "The mixture burns easily, so constant stirring is essential. Cool slightly before rolling so it doesn't burn your hands.",
+      "fun_fact": "Brigadeiro is said to be named after a Brazilian Air Force Brigadier (Brigadeiro in Portuguese) who was a favorite at parties. They're essential to every Brazilian birthday party.",
+      "alternatives": [
+        "Add 1 tsp vanilla extract for flavor variation",
+        "Roll in finely chopped nuts instead of sprinkles",
+        "Dulce de leche version for different flavor"
+      ]
+    },
+    {
+      "id": "bra-dessert-pavlova",
+      "name": "Pavlova (Meringue Cake)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 90,
+      "description": "A crispy meringue base topped with whipped cream and fresh fruit. Light and elegant Brazilian celebration dessert.",
+      "seasonings": [
+        "vanilla"
+      ],
+      "ingredients": [
+        "4 egg whites",
+        "1 cup powdered sugar",
+        "1 tbsp cornstarch",
+        "1 tbsp white vinegar",
+        "1 tsp vanilla extract",
+        "2 cups heavy cream",
+        "3 tbsp sugar",
+        "Fresh berries (strawberries, raspberries, blueberries)"
+      ],
+      "instructions": [
+        "Preheat oven to 300°F",
+        "Beat egg whites until soft peaks form",
+        "Gradually add powdered sugar while beating",
+        "Continue beating until stiff, glossy peaks form",
+        "Fold in cornstarch, vinegar, and vanilla",
+        "Draw 8-inch circle on parchment paper",
+        "Spoon meringue onto parchment, forming nest shape",
+        "Bake for 1.5 hours at 300°F until pale golden",
+        "Turn off oven and cool completely inside",
+        "Whip heavy cream with sugar until stiff peaks form",
+        "Top meringue with whipped cream",
+        "Arrange fresh berries on top",
+        "Serve immediately or chill until serving"
+      ],
+      "notes": "Humidity affects meringue. Make on dry days for best results.",
+      "fun_fact": "Though named after Russian ballerina Anna Pavlova, pavlova is extremely popular in Brazil as an elegant dessert for special occasions.",
+      "alternatives": [
+        "Use different fruits in season",
+        "Chocolate drizzle on the meringue",
+        "Store-bought meringue bases to save time"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "bra-drink-caipirinha-nonalc",
+      "name": "Agua Fresca (Fresh Water)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "A refreshing drink made with fresh fruit, water, and sugar. Perfect for hot Brazilian climate.",
+      "seasonings": [
+        "lime",
+        "sugar"
+      ],
+      "ingredients": [
+        "2 cups fresh fruit (watermelon, mango, or guava)",
+        "4 cups water",
+        "1/4 cup sugar",
+        "Juice of 2 limes",
+        "Ice",
+        "Fresh mint (optional)"
+      ],
+      "instructions": [
+        "Cube fresh fruit",
+        "In blender, combine fruit, water, and sugar",
+        "Blend until smooth",
+        "Strain through fine mesh into pitcher",
+        "Add lime juice",
+        "Chill thoroughly",
+        "Serve over ice",
+        "Garnish with fresh mint and fruit slice"
+      ],
+      "notes": "Use whatever fruit is in season for best flavor.",
+      "fun_fact": "Agua fresca is incredibly popular in Brazil and throughout Latin America during hot months. It's a cooling, refreshing drink with pure fruit flavor.",
+      "alternatives": [
+        "Different fruits for variety",
+        "Sparkling water instead of still water",
+        "Herbs like basil or cilantro for flavor"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "bra-drink-caipirinha",
+      "name": "Caipirinha (Lime Cocktail)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 3,
+      "cookTime": 0,
+      "description": "Brazil's national cocktail - a refreshing mix of cachaça, lime, sugar, and ice. Perfect for tropical heat.",
+      "seasonings": [
+        "sugar"
+      ],
+      "ingredients": [
+        "2 limes, cut into wedges",
+        "2 tbsp sugar",
+        "2 oz cachaça (Brazilian rum)",
+        "Ice",
+        "Lime wheel for garnish"
+      ],
+      "instructions": [
+        "Place lime wedges and sugar in glass",
+        "Gently muddle to release lime juice and dissolve sugar",
+        "Don't crush the lime - just press gently",
+        "Fill glass with ice",
+        "Add cachaça",
+        "Stir well",
+        "Garnish with lime wheel",
+        "Serve immediately"
+      ],
+      "notes": "Use fresh limes and don't over-muddle or the lime peel becomes bitter.",
+      "fun_fact": "Caipirinha became Brazil's official national cocktail. Cachaça is a spirit made from sugarcane that's uniquely Brazilian.",
+      "alternatives": [
+        "Vodka instead of cachaça for less authentic version",
+        "Add mint for fresh variation",
+        "Batch version for parties"
+      ]
+    }
+  ]
+}
