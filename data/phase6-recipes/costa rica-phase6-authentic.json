@@ -1,0 +1,278 @@
+{
+  "country": "Costa Rica",
+  "region": "Americas",
+  "breakfast": [
+    {
+      "id": "cr-break-gallo-pinto",
+      "name": "Gallo Pinto (Rice and Beans)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "description": "Costa Rican rice and beans breakfast",
+      "seasonings": [
+        "cumin",
+        "cilantro"
+      ],
+      "ingredients": [
+        "2 cups cooked rice",
+        "1 cup black beans",
+        "1 onion",
+        "1 bell pepper",
+        "2 cloves garlic",
+        "2 tbsp oil",
+        "Cumin",
+        "Cilantro",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Heat oil, sauté onion and garlic",
+        "Add bell pepper",
+        "Add cooked rice and beans",
+        "Add cumin",
+        "Stir frequently 10 minutes",
+        "Season with salt and pepper",
+        "Garnish with cilantro",
+        "Serve with eggs if desired"
+      ],
+      "notes": "Should be crispy and mixed",
+      "fun_fact": "Gallo Pinto is Costa Rican national breakfast",
+      "alternatives": [
+        "Refried beans",
+        "Add meat",
+        "Extra spice"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "cr-lunch-casado",
+      "name": "Casado (Plate of the Day)",
+      "difficulty": "Medium",
+      "servings": 1,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "Costa Rican set meal with multiple components",
+      "seasonings": [
+        "cumin",
+        "cilantro"
+      ],
+      "ingredients": [
+        "Rice",
+        "Black beans",
+        "Salad",
+        "Plantain",
+        "Protein (chicken/fish/beef)",
+        "Vegetables",
+        "Tortillas"
+      ],
+      "instructions": [
+        "Prepare rice",
+        "Prepare beans",
+        "Make mixed salad",
+        "Cook protein with spices",
+        "Fry plantain",
+        "Cook vegetables",
+        "Arrange all on plate",
+        "Serve with fresh tortillas"
+      ],
+      "notes": "Must have all components",
+      "fun_fact": "Casado is everyday Costa Rican lunch",
+      "alternatives": [
+        "Different proteins",
+        "Different vegetables",
+        "Skip plantain"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "cr-dinner-picadillo",
+      "name": "Picadillo (Spiced Ground Beef)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Costa Rican ground beef hash",
+      "seasonings": [
+        "cumin",
+        "cilantro"
+      ],
+      "ingredients": [
+        "1.5 lbs ground beef",
+        "2 potatoes, diced",
+        "1 carrot, diced",
+        "1 onion",
+        "3 cloves garlic",
+        "2 tbsp cumin",
+        "1/2 cup broth",
+        "Cilantro",
+        "Oil",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Brown beef in oil",
+        "Add onion and garlic",
+        "Add potatoes and carrot",
+        "Cook 15 minutes",
+        "Add cumin and broth",
+        "Simmer 10 minutes",
+        "Vegetables should be tender",
+        "Season with salt and pepper",
+        "Garnish with cilantro"
+      ],
+      "notes": "Diced vegetables",
+      "fun_fact": "Picadillo is popular Costa Rican dinner",
+      "alternatives": [
+        "Pork instead of beef",
+        "Different vegetables",
+        "Add raisins"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "cr-snack-empanada",
+      "name": "Costa Rican Empanada",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 25,
+      "description": "Fried pastry with meat or cheese filling",
+      "seasonings": [
+        "cumin"
+      ],
+      "ingredients": [
+        "Dough: flour, water, salt, oil",
+        "Filling: meat/cheese, onion, garlic, cumin",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Make dough with flour, water, salt, oil",
+        "Let rest 20 minutes",
+        "Brown filling ingredients",
+        "Roll dough thin",
+        "Cut into circles",
+        "Fill and fold",
+        "Deep fry at 350°F until golden",
+        "Drain on paper towels"
+      ],
+      "notes": "Filling must cool before sealing",
+      "fun_fact": "Empanadas are popular Costa Rican street food",
+      "alternatives": [
+        "Baked version",
+        "Different filling",
+        "Vegetarian"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "cr-dessert-flan",
+      "name": "Costa Rican Flan",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "Caramel custard dessert",
+      "seasonings": [
+        "vanilla"
+      ],
+      "ingredients": [
+        "1 cup sugar (for caramel)",
+        "6 eggs",
+        "1 can condensed milk",
+        "1 can evaporated milk",
+        "1 tsp vanilla",
+        "Salt"
+      ],
+      "instructions": [
+        "Preheat oven to 350°F",
+        "Melt 1/2 cup sugar in saucepan",
+        "Pour into flan dish",
+        "Blend eggs, milks, vanilla, salt",
+        "Pour over caramel",
+        "Place in water bath",
+        "Bake 40-45 minutes",
+        "Center should jiggle slightly",
+        "Cool and refrigerate"
+      ],
+      "notes": "Don't overbake",
+      "fun_fact": "Flan is popular Costa Rican dessert",
+      "alternatives": [
+        "Add cinnamon",
+        "Different sweetener",
+        "Individual flans"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "cr-drink-horchata",
+      "name": "Costa Rican Horchata",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "Sweet rice and cinnamon drink",
+      "seasonings": [
+        "cinnamon",
+        "vanilla"
+      ],
+      "ingredients": [
+        "1 cup rice flour",
+        "4 cups water",
+        "1/4 cup sugar",
+        "1 tsp cinnamon",
+        "1 tsp vanilla",
+        "Ice"
+      ],
+      "instructions": [
+        "Mix rice flour with small amount water",
+        "Make smooth paste",
+        "Add remaining water slowly",
+        "Add sugar, cinnamon, vanilla",
+        "Stir well",
+        "Chill thoroughly",
+        "Serve over ice"
+      ],
+      "notes": "Can be thick or thin",
+      "fun_fact": "Horchata is traditional Costa Rican drink",
+      "alternatives": [
+        "Thinner or thicker",
+        "Almond version",
+        "Different spices"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "cr-drink-guaro",
+      "name": "Guaro (Sugarcane Spirit)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Costa Rican sugarcane spirit",
+      "seasonings": [],
+      "ingredients": [
+        "Guaro"
+      ],
+      "instructions": [
+        "Serve at room temperature",
+        "Can mix with fruit juice",
+        "Popular social drink",
+        "Strong spirit"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Guaro is Costa Rican national spirit",
+      "alternatives": [
+        "Mixed drinks",
+        "Chilled",
+        "Different brand"
+      ]
+    }
+  ]
+}
