@@ -639,7 +639,13 @@
 
         function viewFullRecipe(recipeId) {
             const recipe = filteredRecipes.find(r => r.id === recipeId);
-            alert(`Full Recipe: ${recipe.name}\n\nSteps:\n${recipe.instructions.map((s, i) => `${i+1}. ${s}`).join('\n')}`);
+
+            // Store recipe data in sessionStorage for the steps viewer
+            sessionStorage.setItem('currentRecipe', JSON.stringify(recipe));
+
+            // Open the steps viewer in a new tab or modal
+            const stepsViewerURL = 'recipe-steps-viewer.html';
+            window.open(stepsViewerURL, 'RecipeSteps', 'width=1000,height=800,scrollbars=yes');
         }
 
         function showMoreInfo(recipeId) {
