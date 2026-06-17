@@ -575,10 +575,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     // ── World Map ─────────────────────────────────────────────────────────────
-    const worldMap = new PixelWorldMap('worldMapContainer', (country) => {
-        const found = currentRecipes.find(r => r.countryId === country.id);
-        if (found) showRecipeCard(found);
-    });
+    if (typeof PixelWorldMap !== 'undefined') {
+        new PixelWorldMap('worldMapContainer', (country) => {
+            const found = currentRecipes.find(r => r.countryId === country.id);
+            if (found) showRecipeCard(found);
+        });
+    }
 
     document.addEventListener('countrySelected', (e) => {
         const found = currentRecipes.find(r => r.countryId === e.detail.country.id);

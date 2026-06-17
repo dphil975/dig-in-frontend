@@ -863,6 +863,40 @@
     }
     .ing-mod-skip:hover { background: #f0e8e0; }
 
+    /* ── Steps list view ─────────────────────────────────── */
+    .steps-ol {
+        list-style: none; margin: 0; padding: 0;
+        display: flex; flex-direction: column; gap: 14px;
+    }
+    .steps-ol li {
+        display: flex; gap: 14px; align-items: flex-start;
+        background: #fdf5f0; border: 3px solid #1c1c1c;
+        border-radius: 10px; padding: 14px 16px;
+        box-shadow: 3px 3px 0 #1c1c1c;
+    }
+    .steps-ol .step-num {
+        font-family: 'Press Start 2P', monospace; font-size: 10px;
+        color: #c8455f; min-width: 22px; padding-top: 2px;
+    }
+    .steps-ol .step-txt {
+        font-family: 'DotGothic16', monospace; font-size: 14px;
+        color: #3a2a28; line-height: 1.7;
+    }
+    /* ── Carousel wrap ────────────────────────────────────── */
+    .step-carousel-wrap {
+        display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+    }
+    .step-flip-track-outer {
+        flex: 1; overflow: hidden;
+    }
+    #stepFlipTrack {
+        display: flex; transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+    }
+    .step-counter {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        text-align: center; color: #8b5e3c; letter-spacing: 1px;
+    }
+
     /* ── Step view toggle ─────────────────────────────────── */
     .step-view-toggle { display: flex; gap: 8px; margin-bottom: 16px; }
     .step-view-btn {
@@ -1210,8 +1244,10 @@
                 <div class="tabs">
                     <button class="tab active" data-tab="ingredients">Ingredients</button>
                     <button class="tab"        data-tab="steps">Steps</button>
+                    <button class="tab"        data-tab="adapt">✦ Adapt</button>
+                    <button class="tab"        data-tab="drinks">🥤 Drinks</button>
+                    <button class="tab"        data-tab="pantry">🔍 Missing?</button>
                     <button class="tab"        data-tab="notes">Notes</button>
-                    <button class="tab"        data-tab="pantry">🧂 Pantry</button>
                 </div>
 
                 <!-- Ingredients checklist -->
@@ -1228,9 +1264,50 @@
                     </div>
                 </div>
 
-                <!-- Steps — rendered by pixel ingredient system -->
+                <!-- Steps — dual view: list or flip-card carousel -->
                 <div class="tab-panel" id="steps">
-                    <div id="stepsSliderHost"></div>
+                    <div class="step-view-toggle">
+                        <button class="step-view-btn active" data-view="list">☰ Read All</button>
+                        <button class="step-view-btn" data-view="cards">⧉ Card View</button>
+                    </div>
+                    <!-- List view -->
+                    <div id="stepsListView">
+                        <ol class="steps-ol" id="stepsList"></ol>
+                    </div>
+                    <!-- Card carousel view -->
+                    <div id="stepsCardView" style="display:none">
+                        <div class="step-carousel-wrap">
+                            <button class="step-nav-btn" id="stepPrev">&#8592;</button>
+                            <div class="step-flip-track-outer">
+                                <div id="stepFlipTrack"></div>
+                            </div>
+                            <button class="step-nav-btn" id="stepNext">&#8594;</button>
+                        </div>
+                        <div class="step-counter" id="stepCounter"></div>
+                    </div>
+                </div>
+
+                <!-- Adapt this recipe -->
+                <div class="tab-panel" id="adapt">
+                    <p class="adapt-intro">Choose a goal and we'll rework the recipe to match.</p>
+                    <div class="adapt-grid">
+                        <button class="adapt-btn" data-adapt="protein">🥩 Boost Protein</button>
+                        <button class="adapt-btn" data-adapt="fiber">🌾 Add Fiber</button>
+                        <button class="adapt-btn" data-adapt="carbs">🥬 Lower Carbs</button>
+                        <button class="adapt-btn" data-adapt="veggies">🥦 Boost Veggies</button>
+                    </div>
+                    <div class="adapt-results" id="adaptResults">
+                        <div class="adapt-res-head" id="adaptResHead"></div>
+                        <div id="adaptResBody"></div>
+                    </div>
+                </div>
+
+                <!-- Drink pairings -->
+                <div class="tab-panel" id="drinks">
+                    <div class="drinks-flavor-strip" id="drinksFlavorStrip"></div>
+                    <div class="drinks-cat-pills" id="drinksCatPills"></div>
+                    <div class="drinks-result-grid" id="drinksResultGrid"></div>
+                    <button class="drinks-remix-btn" id="drinksRemixBtn">🔀 Remix Pairings</button>
                 </div>
 
                 <!-- Notes / tips -->
@@ -1606,17 +1683,12 @@
             buildSeasoningRec(ingredients.map(i => i.text));
             setupPantryForRecipe(r);
 
-            // Steps — pixel ingredient system slider
-            const stepsHost = document.getElementById('stepsSliderHost');
-            if (stepsHost) {
-                stepsHost.innerHTML = '';
-                if (steps.length) {
-                    const pSys = new PixelIngredientSystem('stepsSliderHost', null);
-                    stepsHost.appendChild(pSys.renderRecipeStepsSlider(steps));
-                } else {
-                    stepsHost.innerHTML = '<p style="padding:16px;color:#a08070;font-size:13px;font-family:\'DotGothic16\',monospace;">No steps found for this recipe yet.</p>';
-                }
-            }
+            // Steps — dual view (list + flip card carousel)
+            buildStepsView(steps, r);
+
+            // Drink pairings + Adapt tab
+            loadDrinkPairings(r);
+            setupAdaptTab(r);
 
             // Notes / tips — recipe tips + auto-generated technique notes
             const notesEl = document.getElementById('notesList');
