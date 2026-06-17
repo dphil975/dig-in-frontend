@@ -1,0 +1,192 @@
+{
+  "albaniaRecipes": {
+    "country": "Albania",
+    "region": "Europe",
+    "breakfast": [
+      {
+        "id": "alb-break-1",
+        "name": "Burek",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "Phyllo",
+          "Feta cheese",
+          "Eggs",
+          "Milk",
+          "Butter"
+        ],
+        "instructions": [
+          "Mix filling",
+          "Layer phyllo",
+          "Bake until golden"
+        ],
+        "notes": "Cheese pastry"
+      },
+      {
+        "id": "alb-break-2",
+        "name": "Cornbread with Yogurt",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Cornmeal",
+          "Flour",
+          "Sugar",
+          "Eggs",
+          "Yogurt",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dry ingredients",
+          "Combine wet",
+          "Bake until done"
+        ],
+        "notes": "Traditional breakfast"
+      }
+    ],
+    "lunch": [
+      {
+        "id": "alb-lunch-1",
+        "name": "Meat Pie",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 40,
+        "cookTime": 50,
+        "ingredients": [
+          "Phyllo",
+          "Ground lamb",
+          "Onions",
+          "Eggs",
+          "Milk"
+        ],
+        "instructions": [
+          "Prepare filling",
+          "Layer phyllo",
+          "Add egg mixture",
+          "Bake"
+        ],
+        "notes": "National dish"
+      },
+      {
+        "id": "alb-lunch-2",
+        "name": "Tav\u00eb Kosi",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb",
+          "Yogurt",
+          "Eggs",
+          "Onions",
+          "Oregano"
+        ],
+        "instructions": [
+          "Brown meat",
+          "Add yogurt mixture",
+          "Bake until set"
+        ],
+        "notes": "Lamb and yogurt"
+      }
+    ],
+    "dinner": [
+      {
+        "id": "alb-din-1",
+        "name": "Frikase",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Chicken",
+          "Butter",
+          "Carrots",
+          "Potatoes",
+          "White wine"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Add vegetables",
+          "Simmer"
+        ],
+        "notes": "Comfort food"
+      }
+    ],
+    "snacks": [
+      {
+        "id": "alb-sn-1",
+        "name": "Spinach Pie",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Phyllo",
+          "Spinach",
+          "Feta",
+          "Eggs",
+          "Butter"
+        ],
+        "instructions": [
+          "Saut\u00e9 spinach",
+          "Mix with cheese",
+          "Layer phyllo",
+          "Bake"
+        ],
+        "notes": "Spinach snack"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "alb-des-1",
+        "name": "Baklava",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 45,
+        "cookTime": 40,
+        "ingredients": [
+          "Phyllo",
+          "Walnuts",
+          "Sugar",
+          "Cinnamon",
+          "Butter",
+          "Honey"
+        ],
+        "instructions": [
+          "Layer phyllo",
+          "Add nut mixture",
+          "Bake",
+          "Add honey syrup"
+        ],
+        "notes": "Sweet pastry"
+      }
+    ],
+    "nonAlcoholicDrinks": [
+      {
+        "id": "alb-drink-1",
+        "name": "Turkish Coffee",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Water",
+          "Ground coffee",
+          "Sugar",
+          "Cardamom"
+        ],
+        "instructions": [
+          "Heat water",
+          "Add coffee and sugar",
+          "Simmer",
+          "Serve"
+        ],
+        "notes": "Traditional"
+      }
+    ],
+    "alcoholicDrinks": []
+  }
+}

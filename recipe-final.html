@@ -100,20 +100,64 @@
             text-align: center;
             margin-top: auto;
         }
-        .browse-back {
+        /* ── Browser sections (ALL view) ─────────────────────────── */
+        .browser-section { margin-bottom: 28px; }
+        .browser-section-head {
             font-family: 'Press Start 2P', monospace;
-            font-size: 7px;
-            padding: 8px 14px;
-            background: #fff0e0;
+            font-size: 9px;
             color: #8b5e3c;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #1c1c1c;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .browser-section-count {
+            font-size: 7px;
+            color: #c8455f;
+            margin-left: auto;
+        }
+        /* ── Pagination footer ────────────────────────────────────── */
+        #browserFooter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 20px 0 8px;
+        }
+        .page-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 3px solid #1c1c1c;
             border-radius: 8px;
+            background: #fff0e0;
+            color: #8b5e3c;
             cursor: pointer;
             box-shadow: 2px 2px 0 #1c1c1c;
-            margin-bottom: 14px;
-            display: inline-block;
+            transition: transform .08s, box-shadow .08s;
         }
-        .browse-back:hover { background: #ffe0d0; }
+        .page-btn:hover:not(.active):not(:disabled) { background: #ffe0d0; }
+        .page-btn.active {
+            background: #c8455f;
+            color: white;
+            box-shadow: 2px 2px 0 #8b2a40;
+        }
+        .page-btn:disabled { opacity: 0.4; cursor: default; }
+        .page-btn.nav { font-size: 10px; width: auto; padding: 0 12px; }
+        /* ── Hit badge ────────────────────────────────────────────── */
+        .hit-badge {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 6px;
+            color: #c8455f;
+            letter-spacing: 0.5px;
+        }
 
         /* ── Recipe Card ──────────────────────────────────────────── */
         .recipe-card-final {
@@ -536,20 +580,24 @@
 
     <!-- Meal Type Filter Bar -->
     <div class="meal-filter-bar">
-        <span class="meal-filter-label">FILTER:</span>
+        <span class="meal-filter-label">TRENDING:</span>
         <button class="meal-pill active" data-meal="all">✦ ALL</button>
         <button class="meal-pill" data-meal="breakfast">🍳 BREAKFAST</button>
         <button class="meal-pill" data-meal="lunch">🥗 LUNCH</button>
         <button class="meal-pill" data-meal="dinner">🍽 DINNER</button>
-        <button class="meal-pill" data-meal="desserts">🍰 DESSERTS</button>
-        <button class="meal-pill" data-meal="vegetarianRecipes">🥦 VEGETARIAN</button>
-        <button class="meal-pill" data-meal="drinks">🥤 DRINKS</button>
+        <button class="meal-pill" data-meal="desserts">🍿 SNACKS</button>
     </div>
 
-    <!-- Recipe Browser (shown when a meal type filter is active) -->
+    <!-- Recipe Browser -->
     <div id="recipeBrowser">
-        <button class="browse-back" id="browseBack">← BACK TO RECIPE</button>
-        <div class="recipe-grid" id="recipeGrid"></div>
+        <!-- ALL view: 4 labelled sections -->
+        <div id="browserSections"></div>
+        <!-- Single-category view -->
+        <div id="browserSingleGrid" style="display:none">
+            <div class="recipe-grid" id="singleGrid"></div>
+        </div>
+        <!-- Footer pagination -->
+        <div id="browserFooter"></div>
     </div>
 
     <!-- Recipe Card -->
@@ -651,14 +699,16 @@
 
     <script>
         /* ── State ──────────────────────────────────────────────────── */
-        let allData = null;           // loaded country JSON data
-        let currentRecipe = null;     // currently displayed recipe
+        let allData = null;
+        let currentRecipe = null;
         let activeMealType = 'all';
-        let drinksData = null;        // think-coffee-menu.json
+        let browserPage = 1;
+        let drinksData = null;
         let activeDrinkCat = 'all';
         let drinkSeed = Date.now();
         let carouselStep = 0;
         let savedRecipes = JSON.parse(localStorage.getItem('dig_in_saved') || '[]');
+        let hits = JSON.parse(localStorage.getItem('dig_in_hits') || '{}');
 
         /* ── Flavor detection (for drink pairing) ──────────────────── */
         const FLAVOR_KW = {
@@ -1010,54 +1060,147 @@
             ];
         }
 
-        /* ── Recipe browser ─────────────────────────────────────────── */
-        function showMealBrowser(mealType) {
-            if (!allData && mealType !== 'all') {
-                alert("No recipe data loaded. Add ?data=mexico-recipes.json to the URL to load a country's recipes.");
-                return;
-            }
+        /* ── Hit tracking ───────────────────────────────────────────── */
+        function recordHit(recipe) {
+            const key = recipe.id || recipe.name;
+            hits[key] = (hits[key] || 0) + 1;
+            localStorage.setItem('dig_in_hits', JSON.stringify(hits));
+        }
 
-            let recipes = [];
-            if (mealType === 'all') {
-                const cats = ['breakfast', 'lunch', 'dinner', 'desserts', 'vegetarianRecipes', 'all'];
-                const seen = new Set();
-                cats.forEach(cat => {
-                    ((allData || {})[cat] || []).forEach(r => {
-                        if (!seen.has(r.name || r.id)) { seen.add(r.name || r.id); recipes.push(r); }
-                    });
+        function getHits(recipe) {
+            return hits[recipe.id || recipe.name] || 0;
+        }
+
+        function sortByHits(arr) {
+            return [...arr].sort((a, b) => getHits(b) - getHits(a));
+        }
+
+        /* ── Recipe card thumbnail ──────────────────────────────────── */
+        function makeThumbHTML(r) {
+            const h = getHits(r);
+            return `
+                <div class="recipe-thumb" data-key="${r.id || r.name}">
+                    <div style="font-size:32px;text-align:center">${getEmoji(r)}</div>
+                    <div class="recipe-thumb-name">${r.name || 'Recipe'}</div>
+                    <div class="recipe-thumb-meta">
+                        ${r.difficulty ? `● ${r.difficulty}` : ''}
+                        ${(r.prepTime || 0) + (r.cookTime || 0) ? ` · ⏱ ${(r.prepTime||0)+(r.cookTime||0)} min` : ''}
+                    </div>
+                    ${h > 0 ? `<div class="hit-badge">🔥 ${h} view${h !== 1 ? 's' : ''}</div>` : ''}
+                    <div class="recipe-thumb-btn">VIEW RECIPE →</div>
+                </div>`;
+        }
+
+        function bindThumbs(container, recipeList) {
+            container.querySelectorAll('.recipe-thumb').forEach(card => {
+                card.addEventListener('click', () => {
+                    const key = card.dataset.key;
+                    const recipe = recipeList.find(r => (r.id || r.name) === key);
+                    if (recipe) {
+                        recordHit(recipe);
+                        renderRecipeCard(recipe);
+                        // Refresh hit count on card without re-rendering browser
+                        card.querySelector('.hit-badge')
+                            ? card.querySelector('.hit-badge').textContent = `🔥 ${getHits(recipe)} views`
+                            : card.insertAdjacentHTML('beforeend', `<div class="hit-badge">🔥 1 view</div>`);
+                    }
                 });
-            } else if (mealType === 'drinks') {
-                // Show drinks browser (switch to drinks tab on card)
-                if (currentRecipe) switchTab('drinks');
-                return;
-            } else {
-                recipes = (allData || {})[mealType] || [];
-            }
-
-            const grid = document.getElementById('recipeGrid');
-            grid.innerHTML = recipes.length
-                ? recipes.map(r => `
-                    <div class="recipe-thumb" data-id="${r.id || r.name}">
-                        <div style="font-size:32px;text-align:center">${getEmoji(r)}</div>
-                        <div class="recipe-thumb-name">${r.name || 'Recipe'}</div>
-                        <div class="recipe-thumb-meta">
-                            ${r.difficulty ? `● ${r.difficulty}` : ''}
-                            ${(r.prepTime || 0) + (r.cookTime || 0) ? ` · ⏱ ${(r.prepTime||0)+(r.cookTime||0)} min` : ''}
-                        </div>
-                        <div class="recipe-thumb-btn">VIEW RECIPE →</div>
-                    </div>`).join('')
-                : `<div class="empty-state">
-                    <div class="empty-state-icon">🍽️</div>
-                    No ${mealType} recipes loaded yet.<br>
-                    Add <code>?data=mexico-recipes.json</code> to the URL.
-                  </div>`;
-
-            grid.querySelectorAll('.recipe-thumb').forEach((card, idx) => {
-                card.addEventListener('click', () => renderRecipeCard(recipes[idx]));
             });
+        }
 
-            document.getElementById('recipeBrowser').style.display = 'block';
+        /* ── Pagination footer ──────────────────────────────────────── */
+        function renderFooter(page, totalPages, onPageChange) {
+            const footer = document.getElementById('browserFooter');
+            if (totalPages <= 1) { footer.innerHTML = ''; return; }
+
+            let html = `<button class="page-btn nav" ${page <= 1 ? 'disabled' : ''} data-p="${page - 1}">←</button>`;
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="page-btn${i === page ? ' active' : ''}" data-p="${i}">${i}</button>`;
+            }
+            html += `<button class="page-btn nav" ${page >= totalPages ? 'disabled' : ''} data-p="${page + 1}">→</button>`;
+            footer.innerHTML = html;
+
+            footer.querySelectorAll('.page-btn:not([disabled])').forEach(btn => {
+                btn.addEventListener('click', () => onPageChange(Number(btn.dataset.p)));
+            });
+        }
+
+        /* ── Recipe browser ─────────────────────────────────────────── */
+        const MEAL_CATS = [
+            { key: 'breakfast', label: '🍳 BREAKFAST' },
+            { key: 'lunch',     label: '🥗 LUNCH'     },
+            { key: 'dinner',    label: '🍽 DINNER'     },
+            { key: 'desserts',  label: '🍿 SNACKS'     },
+        ];
+        const PER_PAGE = 5;
+
+        function showMealBrowser(mealType, page) {
+            browserPage = page || 1;
+            activeMealType = mealType;
+
+            const browser = document.getElementById('recipeBrowser');
+            const sections = document.getElementById('browserSections');
+            const singleWrap = document.getElementById('browserSingleGrid');
+            const singleGrid = document.getElementById('singleGrid');
+
+            browser.style.display = 'block';
             document.getElementById('recipeCard').style.display = currentRecipe ? '' : 'none';
+
+            if (mealType === 'all') {
+                // 4-section layout: 5 per category per page, sorted by hits
+                sections.style.display = 'block';
+                singleWrap.style.display = 'none';
+
+                const catData = MEAL_CATS.map(c => ({
+                    ...c,
+                    recipes: sortByHits((allData || {})[c.key] || []),
+                }));
+
+                const maxPages = Math.max(...catData.map(c => Math.ceil(c.recipes.length / PER_PAGE)), 1);
+                const currentPageClamped = Math.min(browserPage, maxPages);
+
+                sections.innerHTML = catData.map(cat => {
+                    const slice = cat.recipes.slice((currentPageClamped - 1) * PER_PAGE, currentPageClamped * PER_PAGE);
+                    if (!slice.length) return '';
+                    return `
+                        <div class="browser-section">
+                            <div class="browser-section-head">
+                                ${cat.label}
+                                <span class="browser-section-count">${cat.recipes.length} total</span>
+                            </div>
+                            <div class="recipe-grid">${slice.map(makeThumbHTML).join('')}</div>
+                        </div>`;
+                }).join('');
+
+                // Bind click events across all sections
+                catData.forEach(cat => {
+                    const slice = cat.recipes.slice((currentPageClamped - 1) * PER_PAGE, currentPageClamped * PER_PAGE);
+                    bindThumbs(sections, slice);
+                });
+
+                renderFooter(currentPageClamped, maxPages, p => showMealBrowser('all', p));
+
+            } else {
+                // Single-category view
+                sections.style.display = 'none';
+                singleWrap.style.display = 'block';
+
+                const catInfo = MEAL_CATS.find(c => c.key === mealType);
+                const allCatRecipes = sortByHits((allData || {})[mealType] || []);
+                const totalPages = Math.max(Math.ceil(allCatRecipes.length / PER_PAGE), 1);
+                const clamped = Math.min(browserPage, totalPages);
+                const slice = allCatRecipes.slice((clamped - 1) * PER_PAGE, clamped * PER_PAGE);
+
+                singleGrid.innerHTML = slice.length
+                    ? `<div class="browser-section">
+                           <div class="browser-section-head">${catInfo ? catInfo.label : mealType.toUpperCase()} <span class="browser-section-count">${allCatRecipes.length} total</span></div>
+                           <div class="recipe-grid">${slice.map(makeThumbHTML).join('')}</div>
+                       </div>`
+                    : `<div class="empty-state"><div class="empty-state-icon">🍽️</div>No recipes loaded yet.</div>`;
+
+                bindThumbs(singleGrid, allCatRecipes);
+                renderFooter(clamped, totalPages, p => showMealBrowser(mealType, p));
+            }
         }
 
         /* ── Event wiring ───────────────────────────────────────────── */
@@ -1067,22 +1210,8 @@
                 pill.addEventListener('click', () => {
                     document.querySelectorAll('.meal-pill').forEach(p => p.classList.remove('active'));
                     pill.classList.add('active');
-                    activeMealType = pill.dataset.meal;
-                    if (activeMealType === 'all' && currentRecipe) {
-                        document.getElementById('recipeBrowser').style.display = 'none';
-                        document.getElementById('recipeCard').style.display = '';
-                    } else {
-                        showMealBrowser(activeMealType);
-                    }
+                    showMealBrowser(pill.dataset.meal, 1);
                 });
-            });
-
-            // Back button
-            document.getElementById('browseBack').addEventListener('click', () => {
-                document.getElementById('recipeBrowser').style.display = 'none';
-                document.getElementById('recipeCard').style.display = currentRecipe ? '' : 'none';
-                document.querySelectorAll('.meal-pill').forEach(p => p.classList.toggle('active', p.dataset.meal === 'all'));
-                activeMealType = 'all';
             });
 
             // View tabs
@@ -1182,14 +1311,8 @@
         async function boot() {
             setupEvents();
             await loadData();
-
-            // If we have a session recipe already rendered above, we're done
             if (currentRecipe) return;
-
-            // Otherwise show the browser with all available recipes
-            if (allData) {
-                showMealBrowser('all');
-            }
+            showMealBrowser('all', 1);
         }
 
         boot();
