@@ -1,0 +1,298 @@
+{
+  "country": "Bangladesh",
+  "region": "Asia",
+  "breakfast": [
+    {
+      "id": "bgd-break-paratha",
+      "name": "Paratha (Layered Bread)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Bangladeshi flatbread with layers and butter",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "2 cups flour",
+        "1 tsp salt",
+        "3/4 cup water",
+        "4 tbsp ghee or butter",
+        "Extra ghee for brushing"
+      ],
+      "instructions": [
+        "Mix flour and salt with water to make dough",
+        "Knead until smooth",
+        "Let rest 30 minutes",
+        "Divide into 4 balls",
+        "Roll each thin",
+        "Brush with ghee",
+        "Fold in half, brush again",
+        "Fold again",
+        "Coil into spiral",
+        "Roll out thin",
+        "Cook on griddle until golden and layered",
+        "Brush with more ghee",
+        "Serve hot"
+      ],
+      "notes": "Must develop layers through folding",
+      "fun_fact": "Paratha is Bangladesh's most popular breakfast bread eaten daily",
+      "alternatives": [
+        "Potato-filled paratha",
+        "Different shape",
+        "Less ghee version"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "bgd-lunch-biryani",
+      "name": "Bengali Biryani",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Bengali style rice and meat dish with aromatic spices",
+      "seasonings": [
+        "bay leaf",
+        "cinnamon",
+        "saffron"
+      ],
+      "ingredients": [
+        "3 cups basmati rice",
+        "2 lbs meat",
+        "2 cups yogurt",
+        "Onions",
+        "Garlic",
+        "Ginger",
+        "Green chilies",
+        "Spices: bay, cinnamon, cardamom, cloves",
+        "Ghee",
+        "Water",
+        "Potatoes for frying"
+      ],
+      "instructions": [
+        "Marinate meat in yogurt with spices",
+        "Cook rice until 3/4 done",
+        "Layer marinated meat in heavy pot with ghee",
+        "Add rice layer",
+        "Sprinkle saffron",
+        "Add fried potatoes",
+        "Cover with damp cloth",
+        "Cook on high heat 5 minutes to create steam",
+        "Reduce to low heat",
+        "Cook 40 minutes without opening",
+        "Fluff and serve"
+      ],
+      "notes": "Dum pukht steam cooking is essential",
+      "fun_fact": "Bengali Biryani has distinct flavor from Pakistani version and is beloved in Bangladesh",
+      "alternatives": [
+        "Chicken version",
+        "Fish biryani",
+        "Vegetarian"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "bgd-dinner-fish-curry",
+      "name": "Ilish Curry (Fish Curry)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Bengali spiced fish curry with turmeric and mustard",
+      "seasonings": [
+        "turmeric",
+        "mustard",
+        "cumin"
+      ],
+      "ingredients": [
+        "1.5 lbs fish (preferably ilish)",
+        "3 tbsp mustard oil",
+        "2 onions",
+        "4 cloves garlic",
+        "1-inch ginger",
+        "2 tbsp turmeric",
+        "1 tsp mustard seeds",
+        "Green chilies",
+        "Tomato",
+        "Coconut milk",
+        "Cilantro"
+      ],
+      "instructions": [
+        "Heat mustard oil",
+        "Temper mustard seeds",
+        "Add onions, garlic, ginger",
+        "Add turmeric, cook 1 minute",
+        "Add tomato",
+        "Add fish pieces",
+        "Add green chilies",
+        "Simmer 15 minutes",
+        "Add coconut milk",
+        "Simmer 10 more minutes",
+        "Fish should be cooked through",
+        "Garnish with cilantro"
+      ],
+      "notes": "Mustard oil is traditional",
+      "fun_fact": "Ilish (hilsa fish) is Bangladesh's national fish and is seasonal",
+      "alternatives": [
+        "Different fish type",
+        "Without coconut milk",
+        "Add potatoes"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "bgd-snack-singara",
+      "name": "Singara (Fried Triangle)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Bangladeshi fried pastry with potato filling",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "Pastry: 2 cups flour, 1/2 cup oil, Salt, Water",
+        "Filling: 4 potatoes, 1 onion, 2 green chilies, Salt, Pepper, Coriander",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Make pastry: mix flour, oil, salt, water",
+        "Make filling: mash boiled potatoes, add onion, chilies, spices",
+        "Roll pastry thin",
+        "Cut triangles",
+        "Fill and fold",
+        "Seal edges",
+        "Heat oil to 350°F",
+        "Deep fry until golden",
+        "Drain on paper towels",
+        "Serve with chutney"
+      ],
+      "notes": "Filling must be cool",
+      "fun_fact": "Singara is Bangladesh's most popular street snack",
+      "alternatives": [
+        "Meat filling",
+        "Different shape",
+        "Baked version"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "bgd-dessert-rasogolla",
+      "name": "Rasogolla (Sweet Balls)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Bengali cheese balls in light sugar syrup",
+      "seasonings": [
+        "cardamom"
+      ],
+      "ingredients": [
+        "2 liters milk",
+        "1/4 cup lemon juice",
+        "2 cups sugar",
+        "4 cups water",
+        "Cardamom pods",
+        "Rose water"
+      ],
+      "instructions": [
+        "Heat milk to almost boiling",
+        "Add lemon juice to curdle",
+        "Strain through muslin cloth",
+        "Let hang overnight to drain",
+        "Make syrup: dissolve sugar in water with cardamom",
+        "Cool syrup",
+        "Knead paneer (cheese) until smooth",
+        "Form into balls",
+        "Drop balls into boiling syrup",
+        "Reduce heat to low",
+        "Simmer 45 minutes",
+        "Balls will float and expand",
+        "Cool in syrup",
+        "Add rose water"
+      ],
+      "notes": "Requires patience and proper technique",
+      "fun_fact": "Rasogolla is Bengal's most iconic sweet and symbol of Bengali culture",
+      "alternatives": [
+        "Soda in cooking water",
+        "Different flavoring",
+        "Add nuts"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "bgd-drink-chai",
+      "name": "Bengali Chai",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 15,
+      "description": "Bengali spiced tea with milk",
+      "seasonings": [
+        "ginger",
+        "cardamom",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "2 tsp tea leaves",
+        "1 cup water",
+        "1 cup milk",
+        "1 tbsp sugar",
+        "1-inch ginger",
+        "Cardamom pods",
+        "Cinnamon stick"
+      ],
+      "instructions": [
+        "Heat water with ginger, cardamom, cinnamon",
+        "Let simmer 3 minutes",
+        "Add tea leaves",
+        "Let steep 2 minutes",
+        "Add milk",
+        "Add sugar",
+        "Strain into cups",
+        "Serve hot"
+      ],
+      "notes": "Strong and aromatic",
+      "fun_fact": "Bengali Chai is served throughout Bangladesh and is social ritual",
+      "alternatives": [
+        "More or less milk",
+        "Different spices",
+        "Without cardamom"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "bgd-drink-beer",
+      "name": "Bangladesh Beer",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Light lager beer",
+      "seasonings": [],
+      "ingredients": [
+        "Bangladesh beer"
+      ],
+      "instructions": [
+        "Serve ice-cold",
+        "Pour into glass",
+        "Enjoy with food"
+      ],
+      "notes": "Limited availability",
+      "fun_fact": "Beer has limited production and consumption in Bangladesh",
+      "alternatives": [
+        "Foreign beers",
+        "Non-alcoholic options"
+      ]
+    }
+  ]
+}

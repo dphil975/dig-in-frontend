@@ -169,6 +169,42 @@ function loadRecipes() {
       });
     }
 
+    // Load PHASE 5 recipes
+    const phase5Dir = path.join(dataDir, 'phase5-recipes');
+    let phase5Files = [];
+    if (fs.existsSync(phase5Dir)) {
+      phase5Files = fs.readdirSync(phase5Dir)
+        .filter(f => f.endsWith('-phase5-authentic.json'));
+
+      phase5Files.forEach(file => {
+        try {
+          const filePath = path.join(phase5Dir, file);
+          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+          if (content && content.country) {
+            const country = content.country;
+            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
+
+            const countryRecipes = [];
+            categories.forEach(cat => {
+              if (Array.isArray(content[cat])) {
+                content[cat].forEach(recipe => {
+                  recipe.country = country;
+                  recipe.category = cat;
+                  recipe.region = content.region || 'Unknown';
+                  countryRecipes.push(recipe);
+                  allRecipes.push(recipe);
+                });
+              }
+            });
+            recipesByCountry[country] = countryRecipes;
+          }
+        } catch (e) {
+          console.warn(`Warning: Error loading ${file}: ${e.message}`);
+        }
+      });
+    }
+
     // Load from data/ directory (old format files)
     const dataFiles = fs.readdirSync(dataDir)
       .filter(f => (f.endsWith('-recipes.json') || f.endsWith('-complete-recipes.json')) &&
