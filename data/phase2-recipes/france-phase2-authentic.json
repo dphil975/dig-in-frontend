@@ -1,0 +1,317 @@
+{
+  "country": "France",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "fra-break-croissant",
+      "name": "Croissant",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 120,
+      "cookTime": 25,
+      "description": "Buttery, flaky French pastry with hundreds of delicate layers. Symbol of French baking",
+      "seasonings": [
+        "salt",
+        "sugar"
+      ],
+      "ingredients": [
+        "3 cups all-purpose flour",
+        "1 tbsp salt",
+        "1 tbsp sugar",
+        "2 tsp instant yeast",
+        "1 cup water",
+        "1 lb cold unsalted butter",
+        "Egg wash (1 egg + 1 tbsp water)"
+      ],
+      "instructions": [
+        "Make dough: Mix flour, salt, sugar, yeast, and water until shaggy",
+        "Knead 5 minutes, refrigerate 30 minutes",
+        "Pound cold butter into thin sheet",
+        "Roll dough into rectangle, place butter in center",
+        "Fold dough over butter envelope-style",
+        "Refrigerate 30 minutes",
+        "Perform 4 letter folds (turn 90°, roll, fold): refrigerate 30 min between each",
+        "After final fold, refrigerate overnight",
+        "Roll dough 1/8 inch thick, cut into triangles",
+        "Roll triangles from base to point to form crescents",
+        "Let rise 2 hours at room temperature",
+        "Brush with egg wash",
+        "Bake at 400°F for 20-25 minutes until golden"
+      ],
+      "notes": "Lamination (folding butter into dough) creates the layers. Keeping butter cold is essential",
+      "fun_fact": "Despite the name, croissants originated in Austria and were brought to France by Marie Antoinette",
+      "alternatives": [
+        "Store-bought puff pastry to save time",
+        "Chocolate croissant (pain au chocolat) with filling",
+        "Almond croissant variation"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "fra-lunch-coq-au-vin",
+      "name": "Coq au Vin (Chicken in Wine)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 90,
+      "description": "Classic Burgundian dish with chicken braised in red wine with mushrooms, pearl onions, and lardons",
+      "seasonings": [
+        "thyme",
+        "bay leaf",
+        "parsley",
+        "garlic"
+      ],
+      "ingredients": [
+        "1 whole chicken (4 lbs), cut into pieces",
+        "6 oz pancetta or bacon, diced",
+        "2 cups pearl onions",
+        "8 oz mushrooms, halved",
+        "1 bottle (750ml) dry red wine",
+        "2 cups chicken broth",
+        "3 tbsp tomato paste",
+        "4 cloves garlic, minced",
+        "2 carrots, chunked",
+        "3 bay leaves",
+        "4 sprigs thyme",
+        "Parsley for garnish",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Cook pancetta in large pot until crispy, set aside",
+        "Brown chicken pieces in pancetta fat, set aside",
+        "Sauté pearl onions and mushrooms, set aside",
+        "Add garlic and tomato paste to pot, cook 2 minutes",
+        "Deglaze with red wine, scraping up browned bits",
+        "Add broth, bay leaves, thyme",
+        "Return chicken to pot with carrots",
+        "Bring to simmer, cover, braise 45 minutes",
+        "Add pearl onions and mushrooms",
+        "Braise uncovered 30 more minutes",
+        "Chicken should be tender and falling off bones",
+        "Season with salt and pepper",
+        "Garnish with parsley and pancetta",
+        "Serve with crusty bread or egg noodles"
+      ],
+      "notes": "The long braise develops deep flavors. Don't rush this dish",
+      "fun_fact": "Coq au Vin was born out of necessity - using old roosters tough enough to require long cooking",
+      "alternatives": [
+        "Beef instead of chicken (Beef Bourguignon)",
+        "White wine instead of red",
+        "Omit pancetta for lighter version"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "fra-dinner-bouillabaisse",
+      "name": "Bouillabaisse (Provençal Fish Stew)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Luxurious Provençal seafood stew from Marseille with saffron, fennel, and orange. Served with rouille and crusty bread",
+      "seasonings": [
+        "saffron",
+        "fennel",
+        "thyme",
+        "bay leaf",
+        "orange zest"
+      ],
+      "ingredients": [
+        "2 lbs mixed white fish (sea bass, halibut, monkfish)",
+        "1 lb mussels",
+        "1 lb shrimp",
+        "3 tbsp olive oil",
+        "1 large fennel bulb, chopped",
+        "1 onion, chopped",
+        "4 cloves garlic, minced",
+        "1 can crushed tomatoes",
+        "1/4 cup white wine",
+        "1/2 tsp saffron strands",
+        "4 cups fish broth",
+        "1 bay leaf",
+        "2 sprigs thyme",
+        "1 strip orange zest",
+        "Salt and pepper",
+        "Crusty bread for serving",
+        "Aioli (rouille) for serving"
+      ],
+      "instructions": [
+        "Heat oil in large pot over medium heat",
+        "Sauté fennel and onion until soft",
+        "Add garlic and cook 1 minute",
+        "Add tomatoes and wine, simmer 5 minutes",
+        "Add broth, bay leaf, thyme, orange zest",
+        "Simmer 20 minutes to develop flavors",
+        "Steep saffron in 1/4 cup warm broth, add to pot",
+        "Increase heat to medium-high",
+        "Add firm fish pieces first",
+        "Simmer 5 minutes",
+        "Add mussels and shrimp",
+        "Cook 5-8 minutes until shellfish opens and fish is cooked",
+        "Season with salt and pepper",
+        "Serve in wide bowls with broth, crusty bread, and generous rouille"
+      ],
+      "notes": "Use highest quality fish and shellfish. Authentic bouillabaisse uses specific Mediterranean fish",
+      "fun_fact": "Bouillabaisse is protected by an official recipe and charter in Marseille, France",
+      "alternatives": [
+        "Skip shellfish for simpler version",
+        "Use store-bought shellfish broth",
+        "Omit saffron for cost savings"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "fra-snack-macarons",
+      "name": "Macarons (Almond Meringue Cookies)",
+      "difficulty": "Hard",
+      "servings": 24,
+      "prepTime": 30,
+      "cookTime": 18,
+      "description": "Delicate French almond cookies with smooth dome shape, filled with ganache or buttercream",
+      "seasonings": [
+        "vanilla",
+        "food coloring"
+      ],
+      "ingredients": [
+        "1.5 cups powdered sugar",
+        "3/4 cup almond flour",
+        "3 egg whites",
+        "1/4 cup granulated sugar",
+        "1/2 tsp vanilla extract",
+        "Food coloring (optional)",
+        "Chocolate ganache for filling"
+      ],
+      "instructions": [
+        "Sift powdered sugar and almond flour together 3 times",
+        "Beat egg whites until soft peaks form",
+        "Gradually add granulated sugar while beating",
+        "Continue beating until stiff, glossy peaks form",
+        "Add vanilla and food coloring",
+        "Gently fold dry ingredients into meringue in 3 additions",
+        "Pipe 1-inch discs onto parchment paper using piping bag",
+        "Let sit at room temperature 30 minutes (shells form)",
+        "Bake at 300°F for 15-18 minutes (bottoms should be set)",
+        "Cool completely on baking sheet",
+        "Pipe filling (ganache or buttercream) on flat side of half",
+        "Sandwich with another macaron",
+        "Let set 24 hours for best texture"
+      ],
+      "notes": "Macarons are temperamental - humidity affects success. Precise measurements critical",
+      "fun_fact": "Macarons originated in Italy but became famous in France, especially Paris where Ladurée and Pierre Hermé are legendary",
+      "alternatives": [
+        "Store-bought almond flour to save time",
+        "Pre-made filling instead of homemade ganache",
+        "Different flavors: pistachio, lavender, rose"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "fra-dessert-creme-brulee",
+      "name": "Crème Brûlée (Burnt Cream)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "Silky vanilla custard with caramelized sugar topping. Iconic French dessert",
+      "seasonings": [
+        "vanilla bean",
+        "sugar"
+      ],
+      "ingredients": [
+        "2 cups heavy cream",
+        "1 vanilla bean (or 1 tsp vanilla extract)",
+        "5 egg yolks",
+        "1/2 cup sugar (divided)",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Heat cream with vanilla bean (scrape seeds into cream) until steaming",
+        "Let steep 30 minutes",
+        "Whisk egg yolks with 1/4 cup sugar until pale",
+        "Slowly temper yolks by adding warm cream while whisking",
+        "Strain through fine mesh",
+        "Add salt",
+        "Pour into ramekins",
+        "Place ramekins in water bath (hot water halfway up sides)",
+        "Bake at 325°F for 30-40 minutes (centers should jiggle slightly)",
+        "Cool completely, then refrigerate at least 4 hours",
+        "Just before serving, sprinkle remaining sugar on top of each",
+        "Use torch to caramelize sugar until deep amber",
+        "Let cool 1 minute before serving (sugar hardens to crack)"
+      ],
+      "notes": "Water bath is essential for creamy texture. Don't overbake",
+      "fun_fact": "Crème Brûlée became trendy globally in the 1980s-90s due to its elegant presentation and simple preparation",
+      "alternatives": [
+        "Different extracts: lavender, coffee, chocolate",
+        "Skip torch and use oven broiler",
+        "Add liqueur to custard for different flavor"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "fra-drink-cafe-au-lait",
+      "name": "Café au Lait (Coffee with Milk)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 2,
+      "cookTime": 5,
+      "description": "Strong coffee mixed with hot milk in equal proportions. Traditional French breakfast drink",
+      "seasonings": [],
+      "ingredients": [
+        "1/2 cup strong brewed coffee",
+        "1/2 cup hot milk",
+        "Sugar to taste"
+      ],
+      "instructions": [
+        "Brew strong coffee (darker roast preferred)",
+        "Heat milk until steaming",
+        "Pour coffee into large bowl or cup",
+        "Pour hot milk into coffee simultaneously",
+        "Mix well",
+        "Add sugar if desired",
+        "Drink from bowl using bread to dip (traditional)"
+      ],
+      "notes": "The ratio of coffee to milk is crucial - true café au lait is 50/50",
+      "fun_fact": "French breakfast culture revolves around café au lait and croissants",
+      "alternatives": [
+        "Different coffee roasts",
+        "Condensed milk for richer version",
+        "Add chicory for Creole version"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "fra-drink-bordeaux",
+      "name": "Bordeaux Wine",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Premium red wine from Bordeaux region, typically blend of Cabernet Sauvignon and Merlot",
+      "seasonings": [],
+      "ingredients": [
+        "Bordeaux wine (Médoc, Pomerol, or Saint-Emilion)"
+      ],
+      "instructions": [
+        "Serve at room temperature (16-18°C)",
+        "Open 30 minutes before serving to let breathe",
+        "Pour into wine glass",
+        "Appreciate color and aroma",
+        "Sip slowly, noting tannins and fruit notes"
+      ],
+      "notes": "Quality Bordeaux improves with age and can be cellared for decades",
+      "fun_fact": "Bordeaux wines are among the world's most prestigious and expensive wines",
+      "alternatives": [
+        "Burgundy wine for Pinot Noir",
+        "Loire Valley wines for variety",
+        "Champagne for celebrations"
+      ]
+    }
+  ]
+}

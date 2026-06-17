@@ -1,0 +1,242 @@
+{
+  "country": "Germany",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "ger-break-wurst",
+      "name": "Wurst with Bread",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "German sausages served with fresh bread and mustard",
+      "seasonings": [
+        "mustard",
+        "salt"
+      ],
+      "ingredients": [
+        "German wurst sausages",
+        "Fresh white bread",
+        "Whole grain mustard",
+        "Butter"
+      ],
+      "instructions": [
+        "Grill or pan-fry wurst over medium heat",
+        "Heat bread",
+        "Spread with mustard and butter",
+        "Serve wurst alongside bread"
+      ],
+      "notes": "Quality wurst is essential",
+      "fun_fact": "Germans eat over 1 million tons of wurst annually",
+      "alternatives": [
+        "Different wurst types",
+        "Rye bread",
+        "Sauerkraut topping"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "ger-lunch-schnitzel",
+      "name": "Wiener Schnitzel",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 10,
+      "description": "Thin breaded pork cutlet fried until golden",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "2 pork cutlets",
+        "Flour",
+        "2 eggs",
+        "Breadcrumbs",
+        "Oil for frying",
+        "Lemon"
+      ],
+      "instructions": [
+        "Pound meat thin",
+        "Coat in flour, egg, breadcrumbs",
+        "Fry in oil until golden",
+        "Serve with lemon"
+      ],
+      "notes": "Traditional Viennese dish popular in Germany",
+      "fun_fact": "Schnitzel is Austrian but very popular in Germany",
+      "alternatives": [
+        "Chicken version",
+        "Veal traditional version"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "ger-dinner-bratwurst-kraut",
+      "name": "Bratwurst with Sauerkraut",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 30,
+      "description": "Grilled bratwurst served with warm sauerkraut and mustard",
+      "seasonings": [
+        "caraway",
+        "juniper"
+      ],
+      "ingredients": [
+        "4 bratwursts",
+        "2 cups sauerkraut",
+        "1 tbsp caraway seeds",
+        "1 tsp juniper berries",
+        "Whole grain mustard",
+        "Beer"
+      ],
+      "instructions": [
+        "Grill bratwursts over medium heat",
+        "Warm sauerkraut with caraway and juniper",
+        "Serve sausages with sauerkraut and mustard",
+        "Drink cold beer alongside"
+      ],
+      "notes": "Classic Bavarian combination",
+      "fun_fact": "Germans consume about 150 pieces of sausage per person annually",
+      "alternatives": [
+        "Different sausages",
+        "Red cabbage instead",
+        "Potato pancakes"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "ger-snack-pretzels",
+      "name": "Bretzel (Soft Pretzels)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 60,
+      "cookTime": 20,
+      "description": "Bavarian soft pretzels with crispy outside and chewy inside",
+      "seasonings": [
+        "salt",
+        "caraway"
+      ],
+      "ingredients": [
+        "3.5 cups flour",
+        "1.5 tsp salt",
+        "1 tbsp sugar",
+        "1 tbsp yeast",
+        "1 cup water",
+        "2 tbsp butter",
+        "Baking soda solution",
+        "Coarse salt",
+        "Caraway seeds"
+      ],
+      "instructions": [
+        "Make dough and let rise 1 hour",
+        "Shape into pretzel forms",
+        "Let rise 30 minutes",
+        "Dip in baking soda bath 30 seconds",
+        "Place on baking sheet",
+        "Top with coarse salt and caraway",
+        "Bake at 425°F for 15-20 minutes"
+      ],
+      "notes": "Baking soda bath gives characteristic color",
+      "fun_fact": "Pretzels symbolize Bavaria and German culture",
+      "alternatives": [
+        "Cinnamon sugar version",
+        "Cheese-filled version"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "ger-dessert-black-forest",
+      "name": "Black Forest Cake",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Chocolate cake layered with cherries and whipped cream",
+      "seasonings": [
+        "chocolate",
+        "cherry"
+      ],
+      "ingredients": [
+        "Chocolate cake layers",
+        "Canned cherries with juice",
+        "Kirsch (cherry liqueur)",
+        "Whipped cream",
+        "Chocolate shavings"
+      ],
+      "instructions": [
+        "Bake chocolate cake and cool",
+        "Layer with cream and cherries",
+        "Top with whipped cream",
+        "Garnish with chocolate shavings and cherry"
+      ],
+      "notes": "Traditional Black Forest region specialty",
+      "fun_fact": "Black Forest cake is Germany's most famous cake",
+      "alternatives": [
+        "Skip liqueur for family version",
+        "Different berries"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "ger-drink-apfelschorle",
+      "name": "Apfelschorle (Apple Spritzer)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 2,
+      "cookTime": 0,
+      "description": "German refreshing drink of apple juice mixed with sparkling water",
+      "seasonings": [],
+      "ingredients": [
+        "1/2 cup apple juice",
+        "1/2 cup sparkling water",
+        "Ice",
+        "Lemon slice"
+      ],
+      "instructions": [
+        "Pour apple juice into glass",
+        "Add sparkling water",
+        "Add ice",
+        "Stir",
+        "Garnish with lemon"
+      ],
+      "notes": "Very popular summer drink in Germany",
+      "fun_fact": "Apfelschorle is known for refreshing properties",
+      "alternatives": [
+        "Orange schorle",
+        "Different juice bases"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "ger-drink-beer",
+      "name": "German Beer",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "German lager or wheat beer, world-renowned for quality",
+      "seasonings": [],
+      "ingredients": [
+        "German beer"
+      ],
+      "instructions": [
+        "Chill to 4-6°C",
+        "Pour into appropriate glass",
+        "Enjoy"
+      ],
+      "notes": "Germany has beer purity law (Reinheitsgebot)",
+      "fun_fact": "Germans consume over 100 liters of beer per person annually",
+      "alternatives": [
+        "Different German beer styles",
+        "Weizenbier",
+        "Dunkel"
+      ]
+    }
+  ]
+}
