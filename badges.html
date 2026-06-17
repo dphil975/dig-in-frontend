@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In — Badge Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #ffd700;
+        }
+
+        .header p {
+            color: #888;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .stat-card {
+            background: #0f0f1a;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #2a2a4a;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 20px;
+        }
+
+        .badge-card {
+            background: #0f0f1a;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #2a2a4a;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .badge-card.earned {
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+        }
+
+        .badge-card.locked {
+            opacity: 0.5;
+            filter: grayscale(0.8);
+        }
+
+        .badge-card .icon {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .badge-card .name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .badge-card .description {
+            font-size: 10px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .badge-card .progress {
+            width: 100%;
+            height: 4px;
+            background: #2a2a4a;
+            border-radius: 2px;
+            margin-top: 12px;
+            overflow: hidden;
+        }
+
+        .badge-card .progress .fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+            border-radius: 2px;
+            transition: width 0.5s ease;
+        }
+
+        .badge-card .badge-number {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ffd700;
+            color: #1a1a2e;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badge-card .earned-date {
+            font-size: 9px;
+            color: #4caf50;
+            margin-top: 8px;
+        }
+
+        .notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 16px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s ease;
+            z-index: 1000;
+            max-width: 350px;
+        }
+
+        .notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .notification .title {
+            font-weight: bold;
+        }
+
+        .notification .icon {
+            font-size: 24px;
+            margin-right: 12px;
+        }
+
+        /* Pixel Art Badge Preview */
+        .pixel-preview {
+            image-rendering: pixelated;
+            width: 64px;
+            height: 64px;
+            margin: 8px auto;
+            background: #0a0a0f;
+            border-radius: 8px;
+            border: 1px solid #2a2a4a;
+        }
+
+        .offline-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin: 24px 0;
+        }
+
+        .offline-btn {
+            padding: 10px 24px;
+            border: 2px solid #2a2a4a;
+            border-radius: 30px;
+            background: transparent;
+            color: #888;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .offline-btn.active {
+            border-color: #ffd700;
+            background: #ffd70020;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Food Map</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="frontend/js/nav.js" defer></script>
+
+    <div class="container">
+        <div class="header">
+            <h1>🏆 Badge Collection</h1>
+            <p>Explore the city, earn badges, collect them all!</p>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalEarned">0</div>
+                <div class="stat-label">Badges Earned</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="totalBadges">0</div>
+                <div class="stat-label">Total Badges</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completion">0%</div>
+                <div class="stat-label">Completion</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="boroughsExplored">0</div>
+                <div class="stat-label">Boroughs Explored</div>
+            </div>
+        </div>
+
+        <div class="offline-toggle">
+            <button class="offline-btn active" id="onlineMode">📶 Online</button>
+            <button class="offline-btn" id="offlineMode">📴 Offline Mode</button>
+            <button class="offline-btn" id="downloadBadges">⬇️ Download Badges for Offline</button>
+        </div>
+
+        <div class="badge-grid" id="badgeGrid"></div>
+    </div>
+
+    <div class="notification" id="notification">
+        <div style="display: flex; align-items: center;">
+            <span class="icon" id="notifIcon">🏆</span>
+            <div>
+                <div class="title" id="notifTitle">New Badge Earned!</div>
+                <div id="notifDesc">You earned a new badge!</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        let allBadges = [];
+        let earnedCount = 0;
+        let isOffline = false;
+
+        async function loadBadges() {
+            try {
+                const response = await fetch(`${API_BASE}/badges/progress`);
+                const data = await response.json();
+                allBadges = data.badges;
+                earnedCount = data.total_earned;
+                renderBadges(data);
+                updateStats(data);
+            } catch (error) {
+                console.error('Failed to load badges:', error);
+                // Fallback demo data
+                loadDemoBadges();
+            }
+        }
+
+        function renderBadges(data) {
+            const grid = document.getElementById('badgeGrid');
+            
+            grid.innerHTML = data.badges.map(badge => {
+                const isEarned = badge.earned;
+                const progressPercent = badge.progress_percent || 0;
+                
+                return `
+                    <div class="badge-card ${isEarned ? 'earned' : 'locked'}" onclick="toggleBadgeInfo('${badge.badge_id}')">
+                        ${isEarned ? `<div class="badge-number">${badge.badge_id.split('_').pop()}</div>` : ''}
+                        <div class="icon">${badge.icon}</div>
+                        <div class="name">${badge.name}</div>
+                        <div class="description">${badge.description}</div>
+                        <div class="progress">
+                            <div class="fill" style="width: ${progressPercent}%;"></div>
+                        </div>
+                        ${isEarned ? `<div class="earned-date">✅ Earned!</div>` : `<div style="font-size: 10px; color: #666; margin-top: 8px;">${badge.current}/${badge.required}</div>`}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function updateStats(data) {
+            const total = data.total_badges || allBadges.length || 12;
+            const earned = data.total_earned || earnedCount;
+            const percent = total > 0 ? Math.round((earned / total) * 100) : 0;
+            
+            document.getElementById('totalEarned').textContent = earned;
+            document.getElementById('totalBadges').textContent = total;
+            document.getElementById('completion').textContent = percent + '%';
+            document.getElementById('boroughsExplored').textContent = Math.min(4, Math.floor(earned / 3));
+        }
+
+        function toggleBadgeInfo(badgeId) {
+            // In production: show detailed badge info
+            const badge = allBadges.find(b => b.badge_id === badgeId);
+            if (badge) {
+                showNotification(badge.icon, badge.name, badge.description);
+            }
+        }
+
+        function showNotification(icon, title, desc) {
+            const notif = document.getElementById('notification');
+            document.getElementById('notifIcon').textContent = icon;
+            document.getElementById('notifTitle').textContent = title;
+            document.getElementById('notifDesc').textContent = desc;
+            notif.classList.add('show');
+            setTimeout(() => notif.classList.remove('show'), 3000);
+        }
+
+        function loadDemoBadges() {
+            const demoData = {
+                badges: [
+                    { badge_id: 'manhattan_explorer', name: 'Manhattan Explorer', icon: '🏙️', description: 'Visited 10 restaurants in Manhattan', earned: true, current: 10, required: 10, progress_percent: 100 },
+                    { badge_id: 'brooklyn_explorer', name: 'Brooklyn Explorer', icon: '🌉', description: 'Visited 10 restaurants in Brooklyn', earned: false, current: 6, required: 10, progress_percent: 60 },
+                    { badge_id: 'queens_explorer', name: 'Queens Explorer', icon: '🌳', description: 'Visited 10 restaurants in Queens', earned: false, current: 3, required: 10, progress_percent: 30 },
+                    { badge_id: 'bronx_explorer', name: 'Bronx Explorer', icon: '🏠', description: 'Visited 10 restaurants in the Bronx', earned: false, current: 1, required: 10, progress_percent: 10 },
+                    { badge_id: 'pizza_master', name: 'Pizza Master', icon: '🍕', description: 'Visited 10 pizza places', earned: true, current: 12, required: 10, progress_percent: 100 },
+                    { badge_id: 'taco_titan', name: 'Taco Titan', icon: '🌮', description: 'Visited 5 taco spots', earned: false, current: 3, required: 5, progress_percent: 60 },
+                    { badge_id: 'ramen_warrior', name: 'Ramen Warrior', icon: '🍜', description: 'Visited 5 ramen shops', earned: false, current: 2, required: 5, progress_percent: 40 },
+                    { badge_id: 'coffee_connoisseur', name: 'Coffee Connoisseur', icon: '☕', description: 'Visited 10 coffee shops', earned: false, current: 7, required: 10, progress_percent: 70 },
+                    { badge_id: 'world_explorer', name: 'World Explorer', icon: '🌍', description: 'Visited 5 different cuisines', earned: false, current: 3, required: 5, progress_percent: 60 },
+                    { badge_id: 'night_owl', name: 'Night Owl', icon: '🦉', description: 'Visited 5 restaurants after 10 PM', earned: false, current: 2, required: 5, progress_percent: 40 },
+                    { badge_id: 'early_bird', name: 'Early Bird', icon: '🐦', description: 'Visited 5 restaurants before 8 AM', earned: false, current: 0, required: 5, progress_percent: 0 },
+                    { badge_id: 'bridge_hopper', name: 'Bridge Hopper', icon: '🌉', description: 'Visited 5 restaurants near Brooklyn Bridge', earned: false, current: 1, required: 5, progress_percent: 20 }
+                ],
+                total_earned: 2,
+                total_badges: 12
+            };
+            
+            allBadges = demoData.badges;
+            earnedCount = demoData.total_earned;
+            renderBadges(demoData);
+            updateStats(demoData);
+        }
+
+        // Offline mode toggle
+        document.getElementById('offlineMode').addEventListener('click', () => {
+            isOffline = true;
+            document.getElementById('offlineMode').classList.add('active');
+            document.getElementById('onlineMode').classList.remove('active');
+            showNotification('📴', 'Offline Mode', 'Badges available offline. Earn progress will sync when online.');
+        });
+
+        document.getElementById('onlineMode').addEventListener('click', () => {
+            isOffline = false;
+            document.getElementById('onlineMode').classList.add('active');
+            document.getElementById('offlineMode').classList.remove('active');
+            loadBadges();
+        });
+
+        document.getElementById('downloadBadges').addEventListener('click', () => {
+            if (isOffline) {
+                alert('📴 Offline badge pack downloaded! Badges are ready to view without internet.');
+            } else {
+                showNotification('⬇️', 'Downloading Badges', 'Badge data cached for offline viewing.');
+            }
+        });
+
+        // Load on page load
+        loadBadges();
+    </script>
+</body>
+</html>

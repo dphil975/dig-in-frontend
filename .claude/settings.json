@@ -11,7 +11,13 @@
       "Bash(xargs ls -la)",
       "Bash(python3 -c \"import json; json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes_full.json'\\)\\)\")",
       "Bash(python3 -c \"import json; json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes.json'\\)\\)\")",
-      "Bash(python3 -c \"import json; d = json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes.json'\\)\\); print\\('OK —', len\\(d['recipes']\\), 'recipes,', len\\(d['smoothie_bowls']\\), 'smoothie bowls'\\)\")"
+      "Bash(python3 -c \"import json; d = json.load\\(open\\('/Users/olivephillips/Dig In-Frontend/data/recipes.json'\\)\\); print\\('OK —', len\\(d['recipes']\\), 'recipes,', len\\(d['smoothie_bowls']\\), 'smoothie bowls'\\)\")",
+      "Bash(git status *)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 /tmp/apply_nav.py)",
+      "Bash(pkill -f \"http.server 8766\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); r=d.get\\('recipes',[d]\\)[0] if isinstance\\(d,dict\\) else d[0]; print\\(json.dumps\\(r,indent=2\\)\\)\")"
     ],
     "additionalDirectories": [
       "/Users/olivephillips/Dig In-backend/node/routes",

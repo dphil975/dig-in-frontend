@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In — Leaderboard</title>
+    <style>
+        .leaderboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .leaderboard-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .leaderboard-header h1 {
+            font-size: 32px;
+            color: #ffd700;
+        }
+
+        .leaderboard-header p {
+            color: #888;
+        }
+
+        .leaderboard-tabs {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .leaderboard-tab {
+            padding: 10px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #0f0f1a;
+            border: 1px solid #2a2a4a;
+            color: #888;
+        }
+
+        .leaderboard-tab:hover {
+            border-color: #ffd700;
+            color: #fff;
+        }
+
+        .leaderboard-tab.active {
+            background: #ffd70020;
+            border-color: #ffd700;
+            color: #ffd700;
+        }
+
+        .leaderboard-card {
+            background: #0f0f1a;
+            border-radius: 16px;
+            border: 1px solid #2a2a4a;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid #2a2a4a;
+            transition: all 0.2s;
+        }
+
+        .leaderboard-item:last-child {
+            border-bottom: none;
+        }
+
+        .leaderboard-item:hover {
+            background: #1a1a2e;
+        }
+
+        .leaderboard-item .rank {
+            font-size: 18px;
+            font-weight: bold;
+            min-width: 40px;
+            color: #888;
+        }
+
+        .leaderboard-item .rank.gold {
+            color: #ffd700;
+        }
+
+        .leaderboard-item .rank.silver {
+            color: #c0c0c0;
+        }
+
+        .leaderboard-item .rank.bronze {
+            color: #cd7f32;
+        }
+
+        .leaderboard-item .avatar {
+            width: 40px;
+            height: 40px;
+            background: #2a2a4a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 12px;
+        }
+
+        .leaderboard-item .info {
+            flex: 1;
+        }
+
+        .leaderboard-item .username {
+            font-weight: 600;
+        }
+
+        .leaderboard-item .badges {
+            display: flex;
+            gap: 4px;
+            margin-top: 2px;
+        }
+
+        .leaderboard-item .badge-icon {
+            font-size: 14px;
+        }
+
+        .leaderboard-item .score {
+            font-weight: bold;
+            color: #ffd700;
+            font-size: 18px;
+        }
+
+        .leaderboard-item .borough {
+            font-size: 11px;
+            color: #888;
+            margin-right: 16px;
+        }
+
+        .your-rank {
+            background: #ffd70020;
+            border-left: 3px solid #ffd700;
+        }
+
+        .leaderboard-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: #0f0f1a;
+            border-radius: 16px;
+            padding: 16px;
+            text-align: center;
+            border: 1px solid #2a2a4a;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .weekly-podium {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .podium-item {
+            background: #0f0f1a;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #2a2a4a;
+        }
+
+        .podium-item .position {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .podium-item .position.first { color: #ffd700; }
+        .podium-item .position.second { color: #c0c0c0; }
+        .podium-item .position.third { color: #cd7f32; }
+
+        .podium-item .podium-avatar {
+            font-size: 48px;
+            margin: 8px 0;
+        }
+
+        .podium-item .podium-name {
+            font-weight: 600;
+        }
+
+        .podium-item .podium-score {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .podium-item .podium-badges {
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .weekly-podium {
+                grid-template-columns: 1fr;
+            }
+            .leaderboard-item {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .leaderboard-item .score {
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navPlaceholder"></div>
+
+    <div class="leaderboard-container">
+        <div class="leaderboard-header">
+            <h1>🏆 Community Leaderboard</h1>
+            <p>Earn points by exploring restaurants, cooking at home, and supporting local businesses</p>
+        </div>
+
+        <div class="leaderboard-stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalUsers">1,247</div>
+                <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalVisits">3,892</div>
+                <div class="stat-label">Restaurant Visits</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalRecipes">1,456</div>
+                <div class="stat-label">Recipes Made</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalBadges">8,234</div>
+                <div class="stat-label">Badges Earned</div>
+            </div>
+        </div>
+
+        <div class="leaderboard-tabs">
+            <button class="leaderboard-tab active" data-type="overall">🏆 Overall</button>
+            <button class="leaderboard-tab" data-type="restaurant">🍽️ Restaurant</button>
+            <button class="leaderboard-tab" data-type="home_cook">👨‍🍳 Home Cook</button>
+            <button class="leaderboard-tab" data-type="explorer">🗺️ Explorer</button>
+        </div>
+
+        <!-- Weekly Podium -->
+        <div class="weekly-podium" id="weeklyPodium">
+            <div class="podium-item">
+                <div class="position second">🥈</div>
+                <div class="podium-avatar">👩‍🍳</div>
+                <div class="podium-name">HomeChef</div>
+                <div class="podium-score">340 points</div>
+                <div class="podium-badges">
+                    <span class="badge-icon">👨‍🍳</span>
+                    <span class="badge-icon">📖</span>
+                </div>
+            </div>
+            <div class="podium-item">
+                <div class="position first">🥇</div>
+                <div class="podium-avatar">🍽️</div>
+                <div class="podium-name">FoodieNYC</div>
+                <div class="podium-score">450 points</div>
+                <div class="podium-badges">
+                    <span class="badge-icon">🏙️</span>
+                    <span class="badge-icon">🍕</span>
+                    <span class="badge-icon">🌉</span>
+                </div>
+            </div>
+            <div class="podium-item">
+                <div class="position third">🥉</div>
+                <div class="podium-avatar">🍕</div>
+                <div class="podium-name">PizzaLover</div>
+                <div class="podium-score">390 points</div>
+                <div class="podium-badges">
+                    <span class="badge-icon">🍕</span>
+                    <span class="badge-icon">🌮</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leaderboard List -->
+        <div class="leaderboard-card" id="leaderboardList">
+            <div class="leaderboard-item your-rank">
+                <div class="rank">#12</div>
+                <div class="avatar">👤</div>
+                <div class="info">
+                    <div class="username">You</div>
+                    <div class="badges">
+                        <span class="badge-icon">🏙️</span>
+                        <span class="badge-icon">🍕</span>
+                    </div>
+                </div>
+                <div class="borough">Manhattan</div>
+                <div class="score">185</div>
+            </div>
+
+            <div class="leaderboard-item">
+                <div class="rank gold">#1</div>
+                <div class="avatar">🍽️</div>
+                <div class="info">
+                    <div class="username">FoodieNYC</div>
+                    <div class="badges">
+                        <span class="badge-icon">🏙️</span>
+                        <span class="badge-icon">🍕</span>
+                        <span class="badge-icon">🌉</span>
+                    </div>
+                </div>
+                <div class="borough">All Boroughs</div>
+                <div class="score">450</div>
+            </div>
+
+            <div class="leaderboard-item">
+                <div class="rank silver">#2</div>
+                <div class="avatar">👩‍🍳</div>
+                <div class="info">
+                    <div class="username">HomeChef</div>
+                    <div class="badges">
+                        <span class="badge-icon">👨‍🍳</span>
+                        <span class="badge-icon">📖</span>
+                    </div>
+                </div>
+                <div class="borough">Brooklyn</div>
+                <div class="score">420</div>
+            </div>
+
+            <div class="leaderboard-item">
+                <div class="rank bronze">#3</div>
+                <div class="avatar">🍕</div>
+                <div class="info">
+                    <div class="username">PizzaLover</div>
+                    <div class="badges">
+                        <span class="badge-icon">🍕</span>
+                        <span class="badge-icon">🌮</span>
+                    </div>
+                </div>
+                <div class="borough">Queens</div>
+                <div class="score">390</div>
+            </div>
+
+            <div class="leaderboard-item">
+                <div class="rank">#4</div>
+                <div class="avatar">🌮</div>
+                <div class="info">
+                    <div class="username">TacoMaster</div>
+                    <div class="badges">
+                        <span class="badge-icon">🌮</span>
+                    </div>
+                </div>
+                <div class="borough">Bronx</div>
+                <div class="score">360</div>
+            </div>
+
+            <div class="leaderboard-item">
+                <div class="rank">#5</div>
+                <div class="avatar">🍣</div>
+                <div class="info">
+                    <div class="username">SushiExplorer</div>
+                    <div class="badges">
+                        <span class="badge-icon">🍣</span>
+                        <span class="badge-icon">🗺️</span>
+                    </div>
+                </div>
+                <div class="borough">Manhattan</div>
+                <div class="score">330</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+            <p style="color: #888; font-size: 13px;">
+                🏆 Top 10 each week earn premium badges and featured profiles
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Leaderboard tab switching
+        document.querySelectorAll('.leaderboard-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.leaderboard-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const type = this.dataset.type;
+                // In production: fetch leaderboard data
+                updateLeaderboard(type);
+            });
+        });
+
+        function updateLeaderboard(type) {
+            const board = document.getElementById('leaderboardList');
+            // Show loading state
+            board.innerHTML = '<div style="text-align: center; padding: 40px; color: #888;">Loading leaderboard...</div>';
+            
+            // In production: fetch from API
+            // For demo: simulate loading then show mock data
+            setTimeout(() => {
+                // Restore mock data
+                board.innerHTML = `
+                    <div class="leaderboard-item your-rank">
+                        <div class="rank">#12</div>
+                        <div class="avatar">👤</div>
+                        <div class="info">
+                            <div class="username">You</div>
+                            <div class="badges">
+                                <span class="badge-icon">🏙️</span>
+                                <span class="badge-icon">🍕</span>
+                            </div>
+                        </div>
+                        <div class="borough">Manhattan</div>
+                        <div class="score">185</div>
+                    </div>
+                    ${[1,2,3,4,5].map(i => `
+                        <div class="leaderboard-item">
+                            <div class="rank ${i === 1 ? 'gold' : i === 2 ? 'silver' : i === 3 ? 'bronze' : ''}">#${i}</div>
+                            <div class="avatar">${['🍽️','👩‍🍳','🍕','🌮','🍣'][i-1]}</div>
+                            <div class="info">
+                                <div class="username">${['FoodieNYC','HomeChef','PizzaLover','TacoMaster','SushiExplorer'][i-1]}</div>
+                                <div class="badges">
+                                    ${['🏙️🍕🌉','👨‍🍳📖','🍕🌮','🌮','🍣🗺️'][i-1].split('').map(b => `<span class="badge-icon">${b}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="borough">${['All Boroughs','Brooklyn','Queens','Bronx','Manhattan'][i-1]}</div>
+                            <div class="score">${[450,420,390,360,330][i-1]}</div>
+                        </div>
+                    `).join('')}
+                `;
+            }, 500);
+        }
+
+        // Load navigation
+        fetch('/navbar.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('navPlaceholder').innerHTML = html;
+            });
+    </script>
+</body>
+</html>

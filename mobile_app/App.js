@@ -351,8 +351,56 @@ function renderRecipeCategories() {
               `).join('')}
           </div>
       </div>
-  `).join('');
-}
+  `).join('');/**
+  * Dig In — Social Integration Module
+  */
+ 
+ class DigInSocial {
+     constructor() {
+         this.apiBase = 'http://localhost:8000';
+         this.platforms = ['instagram', 'youtube', 'twitter', 'pinterest', 'reddit'];
+     }
+     
+     async getSocialFoodTrends(location = null) {
+         const url = new URL(`${this.apiBase}/social/trends`);
+         if (location) url.searchParams.append('location', location);
+         
+         const response = await fetch(url);
+         return response.json();
+     }
+     
+     async getPriceComparison(item, location) {
+         const response = await fetch(`${this.apiBase}/price/compare?item=${encodeURIComponent(item)}&location=${encodeURIComponent(location)}`);
+         return response.json();
+     }
+     
+     async getCulturalFood(cuisine) {
+         const response = await fetch(`${this.apiBase}/culture/${encodeURIComponent(cuisine)}`);
+         return response.json();
+     }
+     
+     async generateMealPlan(budget, dietaryPreferences, location) {
+         const response = await fetch(`${this.apiBase}/meal-plan`, {
+             method: 'POST',
+             headers: { 'Content-Type': 'application/json' },
+             body: JSON.stringify({ budget, dietary_preferences: dietaryPreferences, location })
+         });
+         return response.json();
+     }
+     
+     async findNearbyStores(lat, lng, radius = 2.0) {
+         const response = await fetch(`${this.apiBase}/stores/nearby?lat=${lat}&lng=${lng}&radius=${radius}`);
+         return response.json();
+     }
+     
+     async getBestDeal(product, lat, lng) {
+         const response = await fetch(`${this.apiBase}/stores/best-deal?product=${encodeURIComponent(product)}&lat=${lat}&lng=${lng}`);
+         return response.json();
+     }
+ }
+ 
+ // Initialize
+ window.digInSocial = new DigInSocial();
 const styles = StyleSheet.create({
   container: {
     flex: 1,

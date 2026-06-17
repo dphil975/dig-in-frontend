@@ -10,20 +10,59 @@
 </head>
 <body>
     <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
     <div class="site-nav-wrap">
         <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
             <div class="coin-counter" id="coinCounter">
                 <span class="coin-icon">COINS</span>
                 <span id="coinCount">0</span>
             </div>
             <a href="index.html" class="nav-title">DIG-IN</a>
-            <nav class="nav-links">
-                <a href="recipes.html">Recipes</a>
+            <nav class="nav-links" id="navLinks">
                 <a href="index.html">Food Map</a>
-                <a href="profile.html" class="active">Profile</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </div>
+    <script src="frontend/js/nav.js" defer></script>
 
 <div class="app-container">
 
@@ -221,24 +260,35 @@
 <script src="frontend/js/pixel-ingredient-system.js"></script>
 <script>
 (function() {
-    // Dishes-made stat from CookingMode
     const made = parseInt(localStorage.getItem('dig_in_made_count') || '0', 10);
     document.getElementById('statDishes').textContent = made;
 
-    // Cooked recipe history reel
     const container = document.getElementById('historyReel');
-    const history = window.CookingMode ? CookingMode.getHistory() : [];
+    const history = typeof CookingMode !== 'undefined' ? CookingMode.getHistory() : [];
+    const sys = new PixelIngredientSystem(null, null);
 
     if (!history.length) {
-        container.innerHTML = `
-            <p class="profile-hint">
-                No dishes cooked yet — open a recipe and hit START COOKING,
-                or use "Cook with what I have" to get going! 🍳
-            </p>`;
+        // Show demo preview so the reel is always visible
+        const hint = document.createElement('p');
+        hint.className = 'profile-hint';
+        hint.style.cssText = 'margin-bottom:10px;font-size:12px;';
+        hint.textContent = 'Your cooked recipes will appear here — cook a dish to fill your reel!';
+        container.appendChild(hint);
+
+        const DEMO = [
+            { id:1, name:'Mapo Tofu',      type:'Chinese',  ingredients:['tofu','ground pork','garlic','ginger'],         date:'Preview', totalTime:30, servings:4 },
+            { id:2, name:'Bulgogi',         type:'Korean',   ingredients:['beef','soy sauce','garlic','sesame oil'],        date:'Preview', totalTime:40, servings:4 },
+            { id:3, name:'Miso Ramen',      type:'Japanese', ingredients:['miso paste','ramen noodles','eggs','mushrooms'], date:'Preview', totalTime:75, servings:2 },
+            { id:4, name:'Kung Pao Chicken',type:'Chinese',  ingredients:['chicken breast','cashews','garlic','chili'],     date:'Preview', totalTime:30, servings:4 },
+        ];
+        const reel = sys.renderProfileHistoryReel(DEMO);
+        // Mark as preview so styling can differ if needed
+        reel.style.opacity = '0.72';
+        reel.style.filter  = 'grayscale(18%)';
+        container.appendChild(reel);
         return;
     }
 
-    const sys = new PixelIngredientSystem(null, null);
     container.appendChild(sys.renderProfileHistoryReel(history));
 })();
 </script>

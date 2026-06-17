@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dig In - Pixel Ingredient UI System Demo</title>
@@ -243,6 +244,60 @@
   </style>
 </head>
 <body>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Food Map</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="frontend/js/nav.js" defer></script>
+
   <div class="demo-container">
     <!-- Page Header -->
     <div class="page-header">

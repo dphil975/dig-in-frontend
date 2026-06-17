@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe Cards - Dig In</title>
@@ -673,6 +674,238 @@
       color: var(--coffee);
     }
 
+    /* ── Save button ── */
+    .btn-save {
+      width: 38px;
+      background: white;
+      color: #999;
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-save.saved {
+      background: #fff0f5;
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .btn-save:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Modal full-recipe link ── */
+    .modal-goto-full {
+      display: block;
+      margin: 18px 0 4px;
+      padding: 10px;
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .modal-goto-full:hover { background: var(--secondary); }
+
+    /* ── Ingredient management inside modal ── */
+    .modal-ingredients {
+      background: #f9f9f9;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 20px;
+    }
+    .modal-ingredients h4 {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      color: var(--primary);
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .modal-ing-list {
+      list-style: none;
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .modal-ing-list li {
+      background: white;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 11px;
+      color: #555;
+    }
+    .modal-ing-list li.extra {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: #fff5f9;
+    }
+    .add-ing-row {
+      display: flex;
+      gap: 8px;
+    }
+    .add-ing-input {
+      flex: 1;
+      padding: 7px 10px;
+      border: 2px solid var(--border-color);
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: 'DotGothic16', monospace;
+      transition: border-color 0.2s;
+    }
+    .add-ing-input:focus { outline: none; border-color: var(--primary); }
+    .add-ing-btn {
+      padding: 7px 14px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .add-ing-btn:hover { opacity: 0.85; }
+
+    /* ── Science panel inside steps modal ── */
+    .science-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      background: #1a1a2e;
+      color: #ffd700;
+      border: 2px solid #ffd700;
+      border-radius: 6px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      cursor: pointer;
+      margin: 18px 0 8px;
+      width: 100%;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .science-toggle:hover { background: #2a2a4e; }
+    .science-panel {
+      display: none;
+      background: #1a1a2e;
+      border: 2px solid #ffd700;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .science-panel.open { display: block; }
+    .science-item {
+      border-left: 3px solid #ffd700;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      color: #d0d0d0;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+    .science-item strong { color: #ffd700; display: block; margin-bottom: 3px; font-size: 10px; }
+    .science-item em { color: #66ff99; font-size: 10px; }
+
+    /* ── Step DONE tracking inside modal ── */
+    .step-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-color);
+    }
+    .step-done-btn {
+      padding: 6px 14px;
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .step-done-btn.done { background: #4caf50; border-color: #4caf50; color: white; }
+    .step-done-btn:hover:not(.done) { background: var(--primary); color: white; }
+
+    /* ── Encouragement toast ── */
+    .encourage-toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 20px rgba(102,126,234,0.5);
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .encourage-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ── Card inline drink pairing strip ── */
+    .card-drink-strip {
+      background: #fdf6f0;
+      border: 1px solid #e8ddd6;
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+    }
+    .card-drink-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+    }
+    .card-drink-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 8px;
+      color: var(--coffee);
+      letter-spacing: 0.5px;
+    }
+    .card-drink-flavor {
+      font-size: 10px;
+      color: #999;
+      font-style: italic;
+      text-align: right;
+      max-width: 55%;
+    }
+    .card-drink-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .card-drink-chip {
+      background: white;
+      border: 1.5px solid var(--coffee-light);
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 10px;
+      color: var(--coffee);
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .card-drink-chip:hover {
+      background: var(--coffee);
+      color: white;
+      border-color: var(--coffee);
+    }
+
     @media (max-width: 768px) {
       .recipe-grid {
         grid-template-columns: 1fr;
@@ -698,6 +931,60 @@
   </style>
 </head>
 <body>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Food Map</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="frontend/js/nav.js" defer></script>
+
   <div class="container">
     <!-- Header -->
     <div class="page-header">
@@ -715,6 +1002,7 @@
         <button class="filter-btn" data-filter="lunch">Lunch</button>
         <button class="filter-btn" data-filter="dinner">Dinner</button>
         <button class="filter-btn" data-filter="dessert">Desserts</button>
+        <button class="filter-btn" data-filter="saved" style="border-color:#FF5C9D;color:#FF5C9D;">♡ Saved</button>
       </div>
     </div>
 
@@ -723,6 +1011,9 @@
       <!-- Recipes injected here -->
     </div>
   </div>
+
+  <!-- Encouragement toast -->
+  <div class="encourage-toast" id="encourageToast"></div>
 
   <!-- Modal: Recipe Steps -->
   <div class="modal" id="stepsModal">
@@ -735,7 +1026,22 @@
         <button class="modal-close" onclick="closeModal('stepsModal')">&times;</button>
       </div>
       <div class="modal-body">
+        <!-- Ingredients with live add -->
+        <div class="modal-ingredients">
+          <h4>INGREDIENTS</h4>
+          <ul class="modal-ing-list" id="modalIngList"></ul>
+          <div class="add-ing-row">
+            <input class="add-ing-input" id="addIngInput" placeholder="Add an extra ingredient…" type="text">
+            <button class="add-ing-btn" id="addIngBtn">+ ADD</button>
+          </div>
+        </div>
+        <!-- Cooking Science toggle -->
+        <button class="science-toggle" id="scienceToggle">⚗️ COOKING SCIENCE FOR THIS RECIPE</button>
+        <div class="science-panel" id="sciencePanel"></div>
+        <!-- Steps -->
         <div class="steps-container" id="stepsContainer"></div>
+        <!-- Full recipe page link -->
+        <a class="modal-goto-full" id="modalGotoFull" href="#">📖 OPEN FULL RECIPE PAGE →</a>
       </div>
     </div>
   </div>
@@ -745,7 +1051,7 @@
     <div class="modal-content drink-modal-content">
       <div class="modal-header coffee-header">
         <div>
-          <h2>☕ Pair a Drink</h2>
+          <h2>🥤 Pair a Drink</h2>
           <p id="drinkModalSubtitle" style="opacity: 0.85; font-size: 12px; margin-top: 4px;"></p>
         </div>
         <button class="modal-close" onclick="closeModal('drinkModal')">&times;</button>
@@ -783,17 +1089,205 @@
     let activePairingRecipe = null;
     let activeDrinkCategory = 'all';
     let remixSeed = 0;
+    let activeModalRecipe = null;
+    let extraIngredients = [];
+
+    // ── Cooking-science lookup table (technique → science tip) ──
+    const SCIENCE_FACTS = {
+      sauté:       { title: 'Sautéing: Maillard Reaction', fact: 'High dry heat + protein = thousands of flavor compounds. Keep the pan hot and dry so steam can escape — crowding creates moisture and kills browning.', emoji: '🔬' },
+      sear:        { title: 'Searing: Crust Science', fact: 'A 140°C+/284°F+ surface triggers the Maillard reaction. Pat ingredients completely dry first — even a little moisture drops temp and steams instead of sears.', emoji: '🔥' },
+      boil:        { title: 'Boiling: Water & Starch', fact: 'At 100°C water molecules break starch granules open (gelatinization) — this is what makes pasta soft and potatoes fluffy. Salt raises flavour, not boiling point significantly.', emoji: '♨️' },
+      simmer:      { title: 'Simmering: Collagen Conversion', fact: '85–95°C keeps collagen in tough cuts slowly converting to gelatin, creating silky body in sauces and stews without toughening proteins.', emoji: '🫕' },
+      bake:        { title: 'Baking: Leavening Science', fact: 'Baking soda (NaHCO₃) + acid → CO₂ bubbles form immediately. Baking powder = double-acting — one burst when wet, second burst in oven heat. Temp matters: too hot collapses structure before it sets.', emoji: '🧁' },
+      roast:       { title: 'Roasting: Dry Heat Caramelisation', fact: 'Above 160°C sugars break down into 100s of new flavour molecules (caramelisation). Fat on the surface transfers heat faster than air — why oil-coated veg browns evenly.', emoji: '🥩' },
+      grill:       { title: 'Grilling: Smoke & Char', fact: 'Char lines are Maillard + pyrolysis (burning). Smoke compounds (guaiacol, syringol) bond to proteins, creating complex smoky flavour. Keep grill hot and grate clean.', emoji: '🥩' },
+      fry:         { title: 'Frying: Oil & Water Battle', fact: 'Food contains ~70–80% water. In hot oil that water turns to steam and pushes outward — the steam is what prevents oil from entering until the surface crisps. If oil is too cool, moisture soaks back in and you get greasy food.', emoji: '🛢️' },
+      whisk:       { title: 'Whisking: Emulsification', fact: 'Rapid whisking breaks oil into tiny droplets surrounded by emulsifiers (like egg yolk lecithin), suspending them in water-based liquid. Stop too early and it splits.', emoji: '🥄' },
+      fold:        { title: 'Folding: Gluten Protection', fact: 'Gentle folding preserves air bubbles and avoids over-developing gluten. Over-stirring = tough, flat result. Use a rubber spatula and cut-rotate-fold motion.', emoji: '🍰' },
+      knead:       { title: 'Kneading: Gluten Network', fact: 'Mechanical kneading aligns glutenin + gliadin proteins into stretchy gluten strands. Well-developed gluten traps CO₂ from yeast = chewy, risen bread.', emoji: '🍞' },
+      rest:        { title: 'Resting: Protein Relaxation', fact: 'After cooking, heat keeps driving moisture to the surface. Resting lets proteins relax and reabsorb juices. Cut steak immediately = pool of juice on your board.', emoji: '⏱️' },
+      reduce:      { title: 'Reducing: Concentration', fact: 'Evaporation removes water, concentrating sugars, acids, and flavour compounds. Reduction also increases viscosity as liquid-dissolved pectin/collagen thickens.', emoji: '🫙' },
+      marinate:    { title: 'Marinating: Diffusion vs. Flavour', fact: 'Acids/enzymes in marinades denature surface proteins (tenderise ~3mm deep). Flavour penetration is mainly surface-level — marinating for days vs. hours makes little structural difference.', emoji: '🧪' },
+      chop:        { title: 'Cutting: Cell Rupture', fact: 'Crushing vs. slicing releases different compounds. A sharp knife makes clean cuts that preserve cell walls — a dull knife crushes and releases more moisture, changing texture and releasing bitter compounds.', emoji: '🔪' },
+    };
+
+    function detectTechniques(steps) {
+      const found = new Set();
+      const text = steps.join(' ').toLowerCase();
+      Object.keys(SCIENCE_FACTS).forEach(tech => {
+        if (text.includes(tech)) found.add(tech);
+      });
+      return [...found].slice(0, 5);
+    }
+
+    // ── Flavor-profile detection (ingredient + description scanning) ──
+    const FLAVOR_KEYWORDS = {
+      spicy:   ['chili', 'chile', 'pepper', 'jalap', 'habanero', 'sriracha', 'hot sauce', 'cayenne', 'ancho', 'serrano', 'gochujang', 'wasabi', 'szechuan', 'sichuan', 'peri peri', 'harissa', 'sambal'],
+      sweet:   ['sugar', 'honey', 'maple', 'caramel', 'vanilla', 'chocolate', 'coconut milk', 'coconut cream', 'brown sugar', 'molasses', 'agave', 'condensed milk', 'sweet potato'],
+      savory:  ['soy sauce', 'fish sauce', 'miso', 'worcestershire', 'anchovy', 'parmesan', 'oyster sauce', 'tamari', 'bonito'],
+      umami:   ['mushroom', 'shiitake', 'miso', 'soy', 'anchovy', 'parmesan', 'tomato paste', 'worcestershire', 'fish sauce', 'dashi', 'bonito', 'kombu', 'porcini', 'dried shrimp'],
+      rich:    ['butter', 'cream', 'heavy cream', 'cheese', 'ghee', 'lard', 'pork belly', 'duck', 'bone marrow', 'mascarpone', 'crème fraîche'],
+      fatty:   ['pork belly', 'bacon', 'lard', 'duck fat', 'butter', 'cream cheese', 'fatty'],
+      fresh:   ['lemon', 'lime', 'herb', 'cilantro', 'parsley', 'mint', 'basil', 'cucumber', 'lettuce', 'green onion', 'scallion', 'spring onion'],
+      citrus:  ['lemon', 'lime', 'orange', 'yuzu', 'lemongrass', 'grapefruit', 'citrus', 'pomelo', 'calamansi'],
+      earthy:  ['mushroom', 'potato', 'beet', 'carrot', 'turnip', 'parsnip', 'truffle', 'miso', 'tahini', 'walnut', 'root vegetable'],
+      smoky:   ['smoked', 'smoke', 'bbq', 'chipotle', 'liquid smoke', 'paprika', 'charred', 'charcoal', 'grilled', 'chorizo'],
+      tangy:   ['vinegar', 'lemon juice', 'lime juice', 'tamarind', 'yogurt', 'sour cream', 'fermented', 'kimchi', 'pickle', 'sumac', 'amchur'],
+      herby:   ['basil', 'oregano', 'thyme', 'rosemary', 'sage', 'dill', 'cilantro', 'parsley', 'mint', 'herbs', 'bay leaf', 'marjoram'],
+      nutty:   ['almond', 'cashew', 'peanut', 'sesame', 'tahini', 'walnut', 'pecan', 'hazelnut', 'peanut butter', 'pine nut'],
+      floral:  ['rose', 'lavender', 'orange blossom', 'elderflower', 'jasmine', 'saffron'],
+      dessert: ['chocolate', 'vanilla extract', 'powdered sugar', 'baking soda', 'baking powder', 'flour', 'custard', 'cream cheese frosting', 'whipped cream'],
+    };
+
+    const FLAVOR_TO_DRINK_TAGS = {
+      spicy:   ['refreshing', 'palate-cleanser', 'earthy', 'light'],
+      sweet:   ['indulgent', 'sweet', 'chocolate', 'complementary', 'cozy'],
+      savory:  ['cuts-richness', 'bold', 'classic', 'balanced'],
+      umami:   ['earthy', 'umami-friendly', 'palate-cleanser', 'light', 'soothing'],
+      rich:    ['cuts-richness', 'tart', 'bold', 'refreshing', 'earthy'],
+      fatty:   ['cuts-richness', 'refreshing', 'tart', 'energizing', 'vibrant'],
+      fresh:   ['refreshing', 'light', 'earthy', 'vibrant', 'palate-cleanser'],
+      citrus:  ['refreshing', 'tart', 'vibrant', 'light', 'palate-cleanser'],
+      earthy:  ['earthy', 'umami-friendly', 'soothing', 'warming', 'light'],
+      smoky:   ['bold', 'cuts-richness', 'energizing', 'classic', 'intense'],
+      tangy:   ['sweet', 'refreshing', 'complementary', 'light', 'vibrant'],
+      herby:   ['light', 'earthy', 'refreshing', 'palate-cleanser', 'floral'],
+      nutty:   ['complementary', 'sweet', 'cozy', 'warming', 'indulgent'],
+      floral:  ['floral', 'light', 'delicate', 'sweet', 'aromatic'],
+      dessert: ['indulgent', 'sweet', 'chocolate', 'cozy', 'comforting', 'child-friendly'],
+    };
+
+    function detectFlavorProfile(recipe) {
+      const text = [
+        recipe.description || '',
+        recipe.cuisine || '',
+        ...(recipe.ingredients || []).map(i => (i.item || '').toLowerCase())
+      ].join(' ').toLowerCase();
+
+      const profile = [];
+      for (const [flavor, keywords] of Object.entries(FLAVOR_KEYWORDS)) {
+        if (keywords.some(kw => text.includes(kw))) profile.push(flavor);
+      }
+      return profile;
+    }
+
+    function getTopDrinks(recipe, count = 2) {
+      const pool = coffeeMenu.drinks || [];
+      if (!pool.length) return [];
+      const scored = pool.map(d => ({ drink: d, score: scoreDrink(d, recipe) }));
+      scored.sort((a, b) => b.score - a.score);
+      return scored.slice(0, count).map(s => s.drink);
+    }
+
+    // ── Encouragement messages ─────────────────────────────────
+    const ENCOURAGEMENTS = [
+      ["Let's go! 🔥", "First step in the bag! 🌟", "Great start! You've got this! ✨"],
+      ["Halfway! Keep it up! ⚡", "You're killing it in the kitchen! 💪", "Looking good, chef! 🍳"],
+      ["Almost there! Final stretch! 🎯", "So close! One more push! 💫", "Nearly done — don't stop now! 🏃"],
+      ["YOU DID IT! 🎉", "Chef mode: UNLOCKED! 👨‍🍳", "That's a wrap! Enjoy every bite! 🍽️"],
+    ];
+
+    function showEncourageToast(msg) {
+      const el = document.getElementById('encourageToast');
+      el.textContent = msg;
+      el.classList.add('show');
+      setTimeout(() => el.classList.remove('show'), 2800);
+    }
+
+    function pickEncouragement(stepIndex, totalSteps) {
+      const ratio = stepIndex / Math.max(totalSteps - 1, 1);
+      const tier = ratio < 0.25 ? 0 : ratio < 0.6 ? 1 : ratio < 0.95 ? 2 : 3;
+      const pool = ENCOURAGEMENTS[tier];
+      return pool[Math.floor(Math.random() * pool.length)];
+    }
+
+    // ── localStorage helpers ───────────────────────────────────
+    function getSaved() {
+      try { return JSON.parse(localStorage.getItem('dig_in_saved_recipes') || '[]'); } catch { return []; }
+    }
+    function isSaved(id) { return getSaved().some(r => String(r.id) === String(id)); }
+    function toggleSave(id) {
+      let saved = getSaved();
+      const idx = saved.findIndex(r => String(r.id) === String(id));
+      if (idx >= 0) { saved.splice(idx, 1); }
+      else {
+        const r = recipesData.find(r => String(r.id) === String(id));
+        if (r) saved.push(r);
+      }
+      localStorage.setItem('dig_in_saved_recipes', JSON.stringify(saved));
+      // Update all save buttons with this id
+      document.querySelectorAll(`.btn-save[data-id="${id}"]`).forEach(btn => {
+        btn.classList.toggle('saved', isSaved(id));
+        btn.title = isSaved(id) ? 'Remove from saved' : 'Save for later';
+      });
+      if (currentFilter === 'saved') renderRecipes();
+    }
+
+    // ── Normalize recipes_full.json schema ─────────────────────
+    function normalizeRecipe(r, idx) {
+      const steps = Array.isArray(r.instructions)
+        ? r.instructions.map((inst, i) => ({
+            step: i + 1,
+            instruction: typeof inst === 'string' ? inst : (inst.instruction || inst.text || ''),
+            time: 5,
+            tips: (Array.isArray(r.tips) ? r.tips[i] : null) || null
+          }))
+        : (r.steps || []);
+
+      const ingredients = (r.ingredients || []).map(ing => {
+        if (typeof ing === 'string') return { item: ing, amount: '', unit: '' };
+        const qty  = ing.quantity != null ? ing.quantity : (ing.amount || '');
+        const unit = ing.unit || '';
+        const name = ing.name || ing.item || '';
+        return { item: `${qty} ${unit} ${name}`.replace(/\s+/g,' ').trim(), amount: qty, unit };
+      });
+
+      return {
+        id: r.id != null ? r.id : idx,
+        name: r.name || 'Untitled Recipe',
+        subtitle: r.cuisine || r.recipe_type || '',
+        region: r.cuisine || 'World',
+        cuisine: r.cuisine || '',
+        mealType: (r.recipe_type || 'dinner').toLowerCase(),
+        difficulty: (r.difficulty || r.skillLevel || 'easy').toLowerCase(),
+        servings: r.servings || 2,
+        prepTime: r.prepTime || r.prep_time || 0,
+        cookTime: r.cookTime || r.cook_time || 0,
+        totalTime: r.totalTime || r.total_time || r.time || (parseInt(r.prepTime||0)+parseInt(r.cookTime||0)) || 30,
+        description: r.description || '',
+        ingredients,
+        steps,
+        tips: Array.isArray(r.tips) ? r.tips : (r.tips ? [r.tips] : []),
+        pixelEmoji: r.pixelEmoji || '🍳',
+      };
+    }
 
     // ── Load data ──────────────────────────────────────────────
     async function loadAll() {
-      const [recipeRes, coffeeRes] = await Promise.all([
-        fetch('data/international-cookbooks-recipes.json'),
-        fetch('data/think-coffee-menu.json')
-      ]);
-      const recipeData = await recipeRes.json();
-      const coffeeData = await coffeeRes.json();
-      recipesData = recipeData.recipes;
-      coffeeMenu = coffeeData;
+      const grid = document.getElementById('recipeGrid');
+      grid.innerHTML = '<p style="text-align:center;color:white;padding:40px;grid-column:1/-1;">Loading recipes…</p>';
+
+      try {
+        const [recipeRes, coffeeRes] = await Promise.all([
+          fetch('data/recipes_full.json'),
+          fetch('data/think-coffee-menu.json').catch(() => ({ ok: false }))
+        ]);
+
+        const recipeJson = await recipeRes.json();
+        recipesData = (recipeJson.recipes || []).map(normalizeRecipe);
+
+        if (coffeeRes.ok) {
+          const coffeeJson = await coffeeRes.json();
+          coffeeMenu = coffeeJson;
+        }
+      } catch (e) {
+        // Fallback: try localStorage
+        try {
+          const stored = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
+          recipesData = stored.map(normalizeRecipe);
+        } catch {}
+      }
+
       buildCatPills();
       renderRecipes();
     }
@@ -802,13 +1296,39 @@
     function renderRecipes() {
       const grid = document.getElementById('recipeGrid');
       grid.innerHTML = '';
-      const filtered = currentFilter === 'all'
-        ? recipesData
-        : recipesData.filter(r => r.mealType === currentFilter);
-      filtered.forEach(recipe => grid.appendChild(createRecipeCard(recipe)));
+
+      let pool = recipesData;
+      if (currentFilter === 'saved') {
+        const savedIds = getSaved().map(r => String(r.id));
+        pool = recipesData.filter(r => savedIds.includes(String(r.id)));
+      } else if (currentFilter !== 'all') {
+        pool = recipesData.filter(r => r.mealType === currentFilter);
+      }
+
+      if (pool.length === 0) {
+        grid.innerHTML = `<p style="text-align:center;color:white;padding:40px;opacity:.75;grid-column:1/-1;">
+          ${currentFilter === 'saved' ? 'No saved recipes yet — click ♡ on any card!' : 'No recipes in this category.'}</p>`;
+        return;
+      }
+
+      pool.forEach(recipe => grid.appendChild(createRecipeCard(recipe)));
     }
 
     function createRecipeCard(recipe) {
+      const saved = isSaved(recipe.id);
+
+      // Compute top 2 drink pairings and flavor profile for the inline strip
+      const topDrinks = getTopDrinks(recipe, 2);
+      const flavorProfile = detectFlavorProfile(recipe);
+      const flavorLabel = flavorProfile.length
+        ? flavorProfile.slice(0, 3).join(' · ')
+        : 'versatile';
+      const drinkChipsHtml = topDrinks.length
+        ? topDrinks.map(d =>
+            `<button class="card-drink-chip" onclick="event.stopPropagation();openDrinkModal(${recipe.id})">${d.emoji} ${d.name}</button>`
+          ).join('')
+        : `<span style="font-size:10px;color:#bbb;">Loading pairings…</span>`;
+
       const div = document.createElement('div');
       div.className = 'recipe-card';
       div.innerHTML = `
@@ -826,12 +1346,12 @@
           <p class="recipe-description">${recipe.description}</p>
           <div class="recipe-info">
             <div class="info-item">
-              <span class="info-label">PREP TIME</span>
-              ${recipe.prepTime} min
+              <span class="info-label">PREP</span>
+              ${recipe.prepTime || '—'} min
             </div>
             <div class="info-item">
-              <span class="info-label">COOK TIME</span>
-              ${recipe.cookTime} min
+              <span class="info-label">COOK</span>
+              ${recipe.cookTime || '—'} min
             </div>
             <div class="info-item">
               <span class="info-label">DIFFICULTY</span>
@@ -850,24 +1370,108 @@
               `).join('')}
             </div>
           </div>
+          <div class="card-drink-strip">
+            <div class="card-drink-header">
+              <span class="card-drink-label">PAIRS WITH</span>
+              <span class="card-drink-flavor">${flavorLabel}</span>
+            </div>
+            <div class="card-drink-chips">${drinkChipsHtml}</div>
+          </div>
           <div class="card-actions">
             <button class="btn-view-steps" onclick="openStepsModal(${recipe.id})">VIEW STEPS →</button>
-            <button class="btn-pair-drink" onclick="openDrinkModal(${recipe.id})">☕ PAIR DRINK</button>
+            <button class="btn-pair-drink" onclick="openDrinkModal(${recipe.id})">🥤 ALL DRINKS</button>
+            <button class="btn-save${saved ? ' saved' : ''}" data-id="${recipe.id}"
+              title="${saved ? 'Remove from saved' : 'Save for later'}"
+              onclick="toggleSave(${recipe.id})">♡</button>
           </div>
         </div>
       `;
       return div;
     }
 
+    // ── Ingredient list render (modal) ─────────────────────────
+    function renderModalIngredients(recipe) {
+      const list = document.getElementById('modalIngList');
+      list.innerHTML = '';
+      recipe.ingredients.forEach(ing => {
+        const li = document.createElement('li');
+        li.textContent = ing.item;
+        list.appendChild(li);
+      });
+      extraIngredients.forEach(name => {
+        const li = document.createElement('li');
+        li.className = 'extra';
+        li.textContent = '+ ' + name;
+        list.appendChild(li);
+      });
+    }
+
     // ── Steps modal ────────────────────────────────────────────
     function openStepsModal(recipeId) {
-      const recipe = recipesData.find(r => r.id === recipeId);
+      const recipe = recipesData.find(r => String(r.id) === String(recipeId));
       if (!recipe) return;
+      activeModalRecipe = recipe;
+      extraIngredients = [];
+
+      // Write to sessionStorage so recipe.html can pick it up
+      try {
+        const forPage = {
+          ...recipe,
+          instructions: recipe.steps.map(s => s.instruction),
+          cuisine: recipe.cuisine,
+          total_time: recipe.totalTime,
+        };
+        sessionStorage.setItem('dig_in_current_recipe', JSON.stringify(forPage));
+      } catch {}
+
       document.getElementById('modalTitle').textContent = recipe.name;
-      document.getElementById('modalSubtitle').textContent = recipe.subtitle;
+      document.getElementById('modalSubtitle').textContent =
+        `${recipe.subtitle}  ·  ${recipe.mealType}  ·  ${recipe.steps.length} steps`;
+
+      // Ingredients
+      renderModalIngredients(recipe);
+
+      // Add-ingredient wiring
+      const addInput = document.getElementById('addIngInput');
+      const addBtn   = document.getElementById('addIngBtn');
+      addInput.value = '';
+
+      function addIngredient() {
+        const val = addInput.value.trim();
+        if (!val) return;
+        extraIngredients.push(val);
+        addInput.value = '';
+        renderModalIngredients(recipe);
+        addInput.focus();
+      }
+      addBtn.onclick = addIngredient;
+      addInput.onkeydown = e => { if (e.key === 'Enter') addIngredient(); };
+
+      // Science panel
+      const techniques = detectTechniques(recipe.steps.map(s => s.instruction));
+      const sciencePanel = document.getElementById('sciencePanel');
+      sciencePanel.classList.remove('open');
+      if (techniques.length) {
+        sciencePanel.innerHTML = techniques.map(tech => {
+          const f = SCIENCE_FACTS[tech];
+          return `<div class="science-item">
+            <strong>${f.emoji} ${f.title}</strong>
+            ${f.fact}
+          </div>`;
+        }).join('');
+      } else {
+        sciencePanel.innerHTML = '<div class="science-item"><strong>💡 Keep It Low & Slow</strong>Most cooking mistakes come from impatience — give heat time to work properly.</div>';
+      }
+
+      const scienceToggle = document.getElementById('scienceToggle');
+      scienceToggle.onclick = () => sciencePanel.classList.toggle('open');
+
+      // Steps with DONE buttons + encouragement
       const container = document.getElementById('stepsContainer');
       container.innerHTML = '';
-      recipe.steps.forEach(step => {
+      const doneState = new Array(recipe.steps.length).fill(false);
+
+      recipe.steps.forEach((step, idx) => {
         const stepDiv = document.createElement('div');
         stepDiv.className = 'step-card';
         stepDiv.innerHTML = `
@@ -877,15 +1481,36 @@
             <div class="step-time">${step.time} min</div>
           </div>
           ${step.tips ? `<div class="step-tips">${step.tips}</div>` : ''}
+          <div class="step-card-footer">
+            <span style="font-size:11px;color:#aaa;">Step ${idx + 1} of ${recipe.steps.length}</span>
+            <button class="step-done-btn" data-idx="${idx}">DONE ✓</button>
+          </div>
         `;
+
+        const doneBtn = stepDiv.querySelector('.step-done-btn');
+        doneBtn.addEventListener('click', () => {
+          doneState[idx] = !doneState[idx];
+          doneBtn.classList.toggle('done', doneState[idx]);
+          doneBtn.textContent = doneState[idx] ? 'UNDO ↩' : 'DONE ✓';
+          if (doneState[idx]) {
+            const msg = pickEncouragement(idx, recipe.steps.length);
+            showEncourageToast(msg);
+          }
+        });
+
         container.appendChild(stepDiv);
       });
+
+      // Full recipe page link
+      const fullLink = document.getElementById('modalGotoFull');
+      fullLink.href = `recipe.html?id=${recipe.id}&name=${encodeURIComponent(recipe.name)}`;
+
       document.getElementById('stepsModal').classList.add('active');
     }
 
     // ── Drink pairing modal ────────────────────────────────────
     function openDrinkModal(recipeId) {
-      activePairingRecipe = recipesData.find(r => r.id === recipeId);
+      activePairingRecipe = recipesData.find(r => String(r.id) === String(recipeId));
       if (!activePairingRecipe) return;
       activeDrinkCategory = 'all';
       remixSeed = 0;
@@ -893,10 +1518,19 @@
       document.getElementById('drinkModalSubtitle').textContent =
         `${activePairingRecipe.name} · ${activePairingRecipe.cuisine} · ${activePairingRecipe.mealType}`;
 
+      const detectedFlavors = detectFlavorProfile(activePairingRecipe);
+      const flavorStr = detectedFlavors.length
+        ? detectedFlavors.slice(0, 4).join(' · ')
+        : 'versatile';
+      const shortDesc = activePairingRecipe.description.length > 110
+        ? activePairingRecipe.description.slice(0, 110) + '…'
+        : activePairingRecipe.description;
+
       document.getElementById('pairingContext').innerHTML =
-        `<strong>PAIRING CONTEXT</strong><br>
-        ${activePairingRecipe.cuisine} cuisine · ${activePairingRecipe.mealType} · ${activePairingRecipe.difficulty} difficulty<br>
-        <em>${activePairingRecipe.description}</em>`;
+        `<strong>FLAVOR PROFILE DETECTED</strong><br>
+        <em style="color:#6F4E37;font-size:11px;">${flavorStr}</em><br>
+        <span style="font-size:11px;color:#888;">${activePairingRecipe.cuisine} cuisine · ${activePairingRecipe.mealType} · ${activePairingRecipe.difficulty}</span><br>
+        <em>${shortDesc}</em>`;
 
       updateCatPillState();
       renderDrinkSuggestions();
@@ -907,21 +1541,19 @@
     function buildCatPills() {
       const container = document.getElementById('catPills');
       container.innerHTML = '';
-
       const cats = [
-        { id: 'all',         label: 'All',          emoji: '🍶' },
-        { id: 'coffee',      label: 'Coffee',        emoji: '☕' },
-        { id: 'milk-drink',  label: 'Milk Drinks',   emoji: '🥛' },
-        { id: 'tea',         label: 'Tea',           emoji: '🍵' },
-        { id: 'matcha',      label: 'Matcha',        emoji: '🍃' },
-        { id: 'chocolate',   label: 'Chocolate',     emoji: '🍫' },
-        { id: 'juice',       label: 'Juice',         emoji: '🍋' },
-        { id: 'energy',      label: 'Energy',        emoji: '⚡' },
-        { id: 'specialty',   label: 'Specialty',     emoji: '✨' },
+        { id: 'all',           label: 'All',          emoji: '🍶' },
+        { id: 'coffee',        label: 'Coffee',        emoji: '☕' },
+        { id: 'milk-drink',    label: 'Milk (Coffee-Free)', emoji: '🥛' },
+        { id: 'tea',           label: 'Tea',           emoji: '🍵' },
+        { id: 'matcha',        label: 'Matcha',        emoji: '🍃' },
+        { id: 'chocolate',     label: 'Chocolate',     emoji: '🍫' },
+        { id: 'juice',         label: 'Juice',         emoji: '🍋' },
+        { id: 'energy',        label: 'Energy',        emoji: '⚡' },
+        { id: 'specialty',     label: 'Specialty',     emoji: '✨' },
         { id: 'non-alcoholic', label: 'Non-Alcoholic', emoji: '🧃' },
-        { id: 'alcoholic',   label: 'Alcoholic',     emoji: '🍸' },
+        { id: 'alcoholic',     label: 'Alcoholic',     emoji: '🍸' },
       ];
-
       cats.forEach(cat => {
         const btn = document.createElement('button');
         btn.className = 'cat-pill' + (cat.id === 'all' ? ' active' : '');
@@ -954,46 +1586,32 @@
     // ── Pairing score logic ────────────────────────────────────
     function scoreDrink(drink, recipe) {
       let score = 0;
-      const cuisine = (recipe.cuisine || '').toLowerCase();
+      const cuisine  = (recipe.cuisine  || '').toLowerCase();
       const mealType = (recipe.mealType || '').toLowerCase();
+      const rules    = coffeeMenu.pairingRules || {};
 
-      // Cuisine match via pairingRules
-      const rules = coffeeMenu.pairingRules || {};
       const cuisineStyles = rules.cuisineTodrinkStyle || {};
       for (const [key, styles] of Object.entries(cuisineStyles)) {
-        if (cuisine.includes(key)) {
-          const match = styles.filter(s => drink.categories.includes(s)).length;
-          score += match * 3;
-        }
+        if (cuisine.includes(key)) score += styles.filter(s => drink.categories.includes(s)).length * 3;
       }
-
-      // Direct pairsWith.cuisines match
       if (drink.pairsWith?.cuisines) {
-        drink.pairsWith.cuisines.forEach(c => {
-          if (cuisine.includes(c.toLowerCase())) score += 4;
-        });
+        drink.pairsWith.cuisines.forEach(c => { if (cuisine.includes(c.toLowerCase())) score += 4; });
       }
-
-      // Meal type match
       if (drink.pairsWith?.mealTypes) {
-        drink.pairsWith.mealTypes.forEach(mt => {
-          if (mealType.includes(mt.toLowerCase())) score += 3;
-        });
+        drink.pairsWith.mealTypes.forEach(mt => { if (mealType.includes(mt.toLowerCase())) score += 3; });
       }
+      const moods = (rules.mealTypeToMood || {})[mealType] || [];
+      moods.forEach(mood => { if (drink.pairingTags?.includes(mood)) score += 2; });
 
-      // Mood match from mealTypeToMood
-      const mealMoods = rules.mealTypeToMood || {};
-      const moods = mealMoods[mealType] || [];
-      moods.forEach(mood => {
-        if (drink.pairingTags?.includes(mood)) score += 2;
+      // Flavor-profile matching — scan recipe ingredients + description
+      const flavorProfile = detectFlavorProfile(recipe);
+      flavorProfile.forEach(flavor => {
+        const desiredTags = FLAVOR_TO_DRINK_TAGS[flavor] || [];
+        desiredTags.forEach(tag => { if (drink.pairingTags?.includes(tag)) score += 2; });
       });
 
-      // Seasonal bonus
       if (drink.seasonal) score += 1;
-
-      // Featured bonus
       if (drink.featured) score += 1;
-
       return score;
     }
 
@@ -1012,65 +1630,47 @@
     // ── Render drink suggestions ───────────────────────────────
     function renderDrinkSuggestions() {
       if (!activePairingRecipe) return;
-
       const results = document.getElementById('drinkResults');
       results.innerHTML = '';
-
       let pool = coffeeMenu.drinks || [];
 
-      // Filter by selected category
       if (activeDrinkCategory !== 'all') {
         pool = pool.filter(d => d.categories.includes(activeDrinkCategory));
+        // Milk drinks = coffee-free only
+        if (activeDrinkCategory === 'milk-drink') {
+          pool = pool.filter(d => !d.categories.includes('coffee'));
+        }
       }
-
-      if (pool.length === 0) {
+      if (!pool.length) {
         results.innerHTML = `<div class="no-drinks-msg">No drinks in this category. Try another!</div>`;
         document.getElementById('drinkCount').textContent = '0';
         return;
       }
 
-      // Score, then shuffle within score tiers to support remix
       const scored = pool.map(d => ({ drink: d, score: scoreDrink(d, activePairingRecipe) }));
       scored.sort((a, b) => b.score - a.score);
-
-      // Group into tiers and shuffle within each tier for remix variety
       const maxScore = scored[0].score;
-      const topTier = scored.filter(s => s.score >= maxScore - 2);
-      const rest = scored.filter(s => s.score < maxScore - 2);
-
-      const shuffledTop = seededShuffle(topTier, remixSeed);
-      const shuffledRest = seededShuffle(rest, remixSeed + 99);
-
+      const shuffledTop  = seededShuffle(scored.filter(s => s.score >= maxScore - 2), remixSeed);
+      const shuffledRest = seededShuffle(scored.filter(s => s.score <  maxScore - 2), remixSeed + 99);
       const picks = [...shuffledTop, ...shuffledRest].slice(0, 6);
 
       document.getElementById('drinkCount').textContent = pool.length;
-
-      picks.forEach((item, idx) => {
-        const card = createDrinkCard(item.drink, idx === 0 && activeDrinkCategory === 'all');
-        results.appendChild(card);
-      });
+      picks.forEach((item, idx) => results.appendChild(createDrinkCard(item.drink, idx === 0 && activeDrinkCategory === 'all')));
     }
 
     function createDrinkCard(drink, isTopPick) {
       const div = document.createElement('div');
       div.className = 'drink-card' + (isTopPick ? ' top-pick' : '');
-
       const tempClass = drink.temp === 'both' ? 'both' : drink.temp;
       const tempLabel = drink.temp === 'iced' ? '🧊 Iced' : drink.temp === 'hot' ? '🔥 Hot' : '🌡️ Any';
-
       const seasonBadge = drink.seasonal
         ? `<span class="top-pick-ribbon">${drink.seasonalLabel || 'Seasonal'}</span>`
         : (isTopPick ? `<span class="top-pick-ribbon">⭐ Top Pick</span>` : '');
-
-      const flavorTags = (drink.flavorProfile || []).slice(0, 3)
-        .map(t => `<span class="drink-tag">${t}</span>`).join('');
+      const flavorTags = (drink.flavorProfile || []).slice(0, 3).map(t => `<span class="drink-tag">${t}</span>`).join('');
 
       div.innerHTML = `
         <div class="drink-card-header">
-          <div>
-            <div class="drink-card-name">${drink.name}</div>
-            ${seasonBadge}
-          </div>
+          <div><div class="drink-card-name">${drink.name}</div>${seasonBadge}</div>
           <div class="drink-emoji">${drink.emoji}</div>
         </div>
         <div class="drink-card-body">
@@ -1080,8 +1680,7 @@
             <div class="drink-price">$${drink.price.toFixed(2)}</div>
             <span class="drink-temp-badge ${tempClass}">${tempLabel}</span>
           </div>
-        </div>
-      `;
+        </div>`;
       return div;
     }
 
@@ -1090,7 +1689,7 @@
       renderDrinkSuggestions();
     }
 
-    // ── Shared modal close ─────────────────────────────────────
+    // ── Modal close ────────────────────────────────────────────
     function closeModal(id) {
       document.getElementById(id).classList.remove('active');
     }
@@ -1105,9 +1704,9 @@
       });
     });
 
-    // Close modals when clicking backdrop
+    // Close modals on backdrop click
     ['stepsModal', 'drinkModal'].forEach(id => {
-      document.getElementById(id).addEventListener('click', (e) => {
+      document.getElementById(id).addEventListener('click', e => {
         if (e.target.id === id) closeModal(id);
       });
     });

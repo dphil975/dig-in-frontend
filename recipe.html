@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIG-IN · Recipe</title>
@@ -702,9 +703,432 @@
             text-align: center;
             font-size: 11px; color: #706060;
         }
+    .encourage-toast {
+      position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%) translateY(12px);
+      background: #ff5d8f; color: #fff; font-family: 'Press Start 2P', cursive; font-size: 9px;
+      padding: 10px 20px; border-radius: 6px; border: 2px solid #1c1c1c; box-shadow: 3px 3px 0 #1c1c1c;
+      opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; z-index: 9999;
+      white-space: nowrap;
+    }
+    .encourage-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ── Pantry stock-up tab ──────────────────────────────── */
+    .pantry-intro {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        color: #6a5550; line-height: 1.7; margin-bottom: 18px;
+        padding: 12px 14px; background: #fff8f0; border-radius: 10px;
+        border-left: 4px solid #c8455f;
+    }
+    .pantry-categories { display: flex; flex-direction: column; gap: 12px; }
+    .pantry-cat {
+        background: #fdf5f0; border: 3px solid #f0d0b8; border-radius: 10px;
+        padding: 12px 14px; box-shadow: 3px 3px 0 #e8c8a8;
+    }
+    .pantry-cat-head {
+        display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+    }
+    .pantry-cat-icon { font-size: 18px; }
+    .pantry-cat-lbl {
+        font-family: 'Press Start 2P', monospace; font-size: 8px;
+        color: #8b5e3c; letter-spacing: 1px;
+    }
+    .pantry-inputs { display: flex; flex-direction: column; gap: 6px; }
+    .pantry-input {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        padding: 9px 12px; border: 3px solid #d0b8a0; border-radius: 6px;
+        background: #fff; color: #3a2a30; outline: none; width: 100%;
+        box-sizing: border-box; transition: border-color .15s;
+    }
+    .pantry-input:focus { border-color: #c8455f; }
+    .pantry-input::placeholder { color: #c0a898; }
+    .pantry-result-head {
+        display: flex; justify-content: space-between; align-items: center;
+        margin-bottom: 14px;
+    }
+    .pantry-back-btn {
+        font-family: 'Press Start 2P', monospace; font-size: 8px;
+        background: #fff; color: #8b5e3c; border: 3px solid #1c1c1c;
+        border-radius: 6px; padding: 8px 12px; cursor: pointer;
+        box-shadow: 2px 2px 0 #1c1c1c;
+    }
+    .pantry-back-btn:hover { background: #f0e8e0; }
+    .pantry-match-block { margin-bottom: 14px; }
+    .pantry-match-label {
+        font-family: 'Press Start 2P', monospace; font-size: 8px;
+        color: #8b5e3c; margin-bottom: 8px; letter-spacing: 1px; display: block;
+    }
+    .pantry-tag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .ptag {
+        font-family: 'DotGothic16', monospace; font-size: 12px;
+        padding: 4px 10px; border-radius: 20px; border: 2px solid;
+    }
+    .ptag-have { background: #d4f4dd; color: #1a6a30; border-color: #4ac060; }
+    .ptag-miss { background: #fde8ea; color: #8b1c24; border-color: #e06070; }
+    .pantry-shop-note {
+        font-family: 'DotGothic16', monospace; font-size: 13px; color: #6a5550;
+        margin-top: 14px; padding: 12px 14px; background: #fff8f0;
+        border: 2px dashed #d0a060; border-radius: 8px; line-height: 1.7;
+    }
+
+    /* ── Ingredient MODIFY button ─────────────────────────── */
+    .check-item { position: relative; }
+    .ing-mod-btn {
+        position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+        font-family: 'Press Start 2P', monospace; font-size: 6px;
+        background: #f0e8e0; color: #8b5e3c; border: 2px solid #d0b8a0;
+        border-radius: 4px; padding: 4px 6px; cursor: pointer;
+        opacity: 0; transition: opacity .15s; box-shadow: 1px 1px 0 #c0a898;
+    }
+    .check-item:hover .ing-mod-btn,
+    .ing-mod-btn.applied { opacity: 1; }
+    .ing-mod-btn.applied { background: #d4f4dd; color: #1a6a30; border-color: #4ac060; }
+
+    /* ── Ingredient modification bottom sheet ─────────────── */
+    .ing-modify-overlay {
+        display: none; position: fixed; inset: 0;
+        background: rgba(28,28,28,.6); z-index: 2000;
+        align-items: flex-end; justify-content: center;
+    }
+    .ing-modify-overlay.open { display: flex; }
+    .ing-mod-sheet {
+        background: #fdf5f0; border: 4px solid #1c1c1c;
+        border-radius: 20px 20px 0 0; padding: 22px 24px;
+        width: 100%; max-width: 600px;
+        animation: slideUp .2s ease-out;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+    }
+    @keyframes slideUp {
+        from { transform: translateY(60px); opacity: .4; }
+        to   { transform: translateY(0);    opacity: 1;  }
+    }
+    .ing-mod-top {
+        display: flex; justify-content: space-between; align-items: flex-start;
+        margin-bottom: 16px;
+    }
+    .ing-mod-title {
+        font-family: 'Press Start 2P', monospace; font-size: 9px;
+        color: #3a2a30; line-height: 1.7; padding-right: 12px;
+    }
+    .ing-mod-close {
+        font-family: 'Press Start 2P', monospace; font-size: 8px;
+        background: #f0d0b8; color: #8b5e3c; border: 3px solid #1c1c1c;
+        border-radius: 8px; padding: 6px 10px; cursor: pointer;
+        box-shadow: 2px 2px 0 #1c1c1c; flex-shrink: 0;
+    }
+    .ing-mod-close:hover { background: #e0c0a0; }
+    .ing-mod-row {
+        display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+    }
+    .ing-mod-lbl {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        color: #8b5e3c; width: 76px; flex-shrink: 0;
+    }
+    .ing-qty-controls { display: flex; align-items: center; gap: 8px; }
+    .ing-qty-btn {
+        font-family: 'Press Start 2P', monospace;
+        width: 30px; height: 30px; background: #fff; color: #c8455f;
+        border: 3px solid #1c1c1c; border-radius: 6px; cursor: pointer;
+        box-shadow: 2px 2px 0 #1c1c1c; font-size: 14px;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .ing-qty-btn:hover { background: #c8455f; color: #fff; }
+    .ing-qty-val {
+        font-family: 'Press Start 2P', monospace; font-size: 12px;
+        color: #3a2a30; min-width: 28px; text-align: center;
+    }
+    .ing-form-select {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        padding: 8px 10px; border: 3px solid #d0b8a0; border-radius: 8px;
+        background: #fff; color: #3a2a30; outline: none; flex: 1;
+    }
+    .ing-form-select:focus { border-color: #c8455f; }
+    .ing-mod-hint {
+        font-family: 'DotGothic16', monospace; font-size: 12px; color: #a08070;
+        padding: 8px 12px; background: #fff; border: 2px dashed #d0b8a0;
+        border-radius: 6px; margin-bottom: 14px; line-height: 1.6;
+    }
+    .ing-mod-actions { display: flex; gap: 10px; }
+    .ing-mod-add {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        background: #c8455f; color: #fff; border: 3px solid #1c1c1c;
+        border-radius: 8px; padding: 12px 14px; cursor: pointer;
+        box-shadow: 3px 3px 0 #1c1c1c; flex: 1;
+    }
+    .ing-mod-add:hover { background: #a83348; }
+    .ing-mod-skip {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        background: #fff; color: #8b5e3c; border: 3px solid #1c1c1c;
+        border-radius: 8px; padding: 12px 14px; cursor: pointer;
+        box-shadow: 3px 3px 0 #1c1c1c;
+    }
+    .ing-mod-skip:hover { background: #f0e8e0; }
+
+    /* ── Step view toggle ─────────────────────────────────── */
+    .step-view-toggle { display: flex; gap: 8px; margin-bottom: 16px; }
+    .step-view-btn {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        padding: 9px 14px; border: 3px solid #1c1c1c; border-radius: 8px;
+        cursor: pointer; background: #f5e8e0; color: #8b5e3c;
+        box-shadow: 2px 2px 0 #1c1c1c; transition: transform .08s;
+    }
+    .step-view-btn.active { background: #c8455f; color: #fff; }
+    .step-view-btn:hover:not(.active) { background: #ffe0d0; }
+
+    /* ── Flip card styles ─────────────────────────────────── */
+    .step-flip-card {
+        min-width: 100%; flex-shrink: 0;
+        perspective: 900px; height: 320px; cursor: pointer;
+    }
+    .step-flip-inner {
+        position: relative; width: 100%; height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+    }
+    .step-flip-card.flipped .step-flip-inner { transform: rotateY(180deg); }
+    .step-flip-front, .step-flip-back {
+        position: absolute; inset: 0;
+        backface-visibility: hidden; -webkit-backface-visibility: hidden;
+        border: 4px solid #1c1c1c; border-radius: 12px;
+        padding: 18px 22px; box-shadow: 4px 4px 0 #1c1c1c;
+        overflow: hidden; display: flex; flex-direction: column;
+    }
+    .step-flip-front { background: #fdf5f0; gap: 10px; }
+    .step-flip-back {
+        background: #1c1c1c; color: #fff;
+        transform: rotateY(180deg);
+        align-items: center; justify-content: center;
+        text-align: center; gap: 8px;
+    }
+    .flip-tap-hint {
+        font-family: 'Press Start 2P', monospace; font-size: 5px;
+        color: #c8455f; letter-spacing: 1px; text-align: right;
+        margin-top: auto;
+    }
+    .flip-dish-big { font-size: 64px; line-height: 1; }
+    .flip-stage-lbl {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        color: #f4a924; letter-spacing: 1px;
+    }
+    .flip-visual-desc {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        color: #d0b8a8; line-height: 1.6; max-width: 230px;
+    }
+    .flip-tap-back {
+        font-family: 'Press Start 2P', monospace; font-size: 5px;
+        color: #555; margin-top: 8px;
+    }
+
+    /* ── Adapt tab ────────────────────────────────────────── */
+    .adapt-intro {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        color: #6a5550; line-height: 1.7; margin-bottom: 16px;
+        padding: 10px 14px; background: #fff8f0;
+        border-radius: 8px; border-left: 4px solid #8b5e3c;
+    }
+    .adapt-grid {
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 10px; margin-bottom: 16px;
+    }
+    .adapt-btn {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        padding: 14px 10px; border: 3px solid #1c1c1c; border-radius: 10px;
+        background: #fff; color: #3a2a30; cursor: pointer;
+        box-shadow: 3px 3px 0 #1c1c1c; transition: transform .08s, box-shadow .08s;
+        text-align: center; line-height: 2;
+    }
+    .adapt-btn:hover { transform: translate(1px,1px); box-shadow: 2px 2px 0 #1c1c1c; }
+    .adapt-btn.active { background: #c8455f; color: #fff; box-shadow: 3px 3px 0 #8b2a40; }
+    .adapt-results {
+        background: #fdf5f0; border: 3px solid #f0d0b8;
+        border-radius: 10px; padding: 14px 16px;
+        box-shadow: 3px 3px 0 #e0c0a0; display: none;
+    }
+    .adapt-results.open { display: block; }
+    .adapt-res-head {
+        font-family: 'Press Start 2P', monospace; font-size: 9px;
+        color: #8b5e3c; margin-bottom: 12px;
+    }
+    .adapt-row {
+        display: flex; gap: 12px; padding: 10px 0;
+        border-bottom: 1px dotted #d8bfb0;
+    }
+    .adapt-row:last-child { border-bottom: none; }
+    .adapt-row-icon { font-size: 20px; flex-shrink: 0; }
+    .adapt-row-text {
+        font-family: 'DotGothic16', monospace; font-size: 13px;
+        color: #3a2a30; line-height: 1.6;
+    }
+    .adapt-row-text strong { color: #c8455f; }
+
+    /* ── Drinks tab ───────────────────────────────────────── */
+    .drinks-flavor-strip {
+        font-family: 'DotGothic16', monospace; font-size: 12px;
+        color: #8b5e3c; background: #fff8f0;
+        border: 2px solid #f0d0b8; border-radius: 8px;
+        padding: 8px 12px; margin-bottom: 12px;
+    }
+    .drinks-cat-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .d-cat-pill {
+        font-family: 'DotGothic16', monospace; font-size: 12px;
+        padding: 5px 11px; border: 2px solid #d0b8a0; border-radius: 20px;
+        background: #fff; color: #8b5e3c; cursor: pointer; font-weight: bold;
+        transition: all .15s;
+    }
+    .d-cat-pill:hover, .d-cat-pill.active { background: #8b5e3c; color: #fff; border-color: #8b5e3c; }
+    .d-cat-pill.disabled { opacity: .4; cursor: default; border-style: dashed; }
+    .drinks-result-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    @media (max-width: 540px) { .drinks-result-grid { grid-template-columns: 1fr; } }
+    .d-card {
+        background: #fff; border: 3px solid #1c1c1c;
+        border-radius: 10px; overflow: hidden; box-shadow: 3px 3px 0 #1c1c1c;
+    }
+    .d-card.top { border-color: #f4a924; box-shadow: 3px 3px 0 #c8a000; }
+    .d-card-head {
+        padding: 9px 12px; background: #3a2a30; color: #fff;
+        display: flex; align-items: center; gap: 8px;
+    }
+    .d-card.top .d-card-head { background: #8b5e3c; }
+    .d-card-name {
+        font-family: 'Press Start 2P', monospace; font-size: 7px;
+        letter-spacing: .5px; line-height: 1.5; flex: 1;
+    }
+    .d-card-body { padding: 10px 12px; }
+    .d-card-desc {
+        font-family: 'DotGothic16', monospace; font-size: 12px;
+        color: #555; line-height: 1.5; margin-bottom: 7px;
+    }
+    .d-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 7px; }
+    .d-card-tag {
+        font-family: 'DotGothic16', monospace; font-size: 11px;
+        background: #f0e8e0; color: #8b5e3c; padding: 2px 7px; border-radius: 10px;
+    }
+    .d-card-foot { display: flex; justify-content: space-between; align-items: center; }
+    .d-card-price {
+        font-family: 'Press Start 2P', monospace; font-size: 9px; color: #8b5e3c;
+    }
+    .d-temp {
+        font-family: 'DotGothic16', monospace; font-size: 11px;
+        padding: 2px 8px; border-radius: 10px; font-weight: bold;
+    }
+    .d-temp.hot  { background: #fff0e0; color: #c8610a; }
+    .d-temp.iced { background: #e0f0ff; color: #1a7aaa; }
+    .d-temp.both { background: #f0ffe0; color: #2a8a2a; }
+    .drinks-remix-btn {
+        margin-top: 12px; font-family: 'Press Start 2P', monospace; font-size: 7px;
+        background: #fff; color: #8b5e3c; border: 3px solid #1c1c1c;
+        border-radius: 8px; padding: 10px 16px; cursor: pointer;
+        box-shadow: 2px 2px 0 #1c1c1c; width: 100%;
+        transition: transform .08s, box-shadow .08s;
+    }
+    .drinks-remix-btn:hover { transform: translate(1px,1px); box-shadow: 1px 1px 0 #1c1c1c; }
+
+    /* ── Seasoning blend recommendation ──────────────────── */
+    .seasoning-rec {
+        margin-top: 18px; padding: 14px 16px;
+        background: linear-gradient(135deg, #fff8e0 0%, #ffe8b8 100%);
+        border: 3px solid #e8b800; border-radius: 12px;
+        box-shadow: 4px 4px 0 #c8a000;
+    }
+    .season-rec-head {
+        display: flex; align-items: center; justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    .season-rec-title {
+        font-family: 'Press Start 2P', monospace; font-size: 8px;
+        color: #7a5800; letter-spacing: 1px;
+    }
+    .season-save-badge {
+        font-family: 'Press Start 2P', monospace; font-size: 6px;
+        background: #4aa860; color: #fff; border: 2px solid #1c1c1c;
+        border-radius: 20px; padding: 3px 7px;
+    }
+    .season-rec-desc {
+        font-family: 'DotGothic16', monospace; font-size: 12px; color: #5a4a00;
+        line-height: 1.6; margin-bottom: 10px;
+    }
+    .season-blend-box {
+        background: #fff; border: 3px solid #c8a000; border-radius: 8px;
+        padding: 10px 12px; box-shadow: 2px 2px 0 #a08000;
+    }
+    .season-blend-name {
+        font-family: 'Press Start 2P', monospace; font-size: 9px;
+        color: #3a2800; margin-bottom: 8px;
+    }
+    .season-blend-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+    .season-blend-tag {
+        font-family: 'DotGothic16', monospace; font-size: 11px;
+        background: #fff8d0; color: #5a4a00; border: 2px solid #c8a000;
+        border-radius: 20px; padding: 2px 8px;
+    }
+    .season-blend-note {
+        font-family: 'DotGothic16', monospace; font-size: 12px; color: #8b7030;
+        margin-bottom: 6px;
+    }
+    .season-savings {
+        font-family: 'Press Start 2P', monospace; font-size: 6px; color: #155724;
+        padding: 4px 9px; background: #d4f4dd; border-radius: 20px;
+        border: 2px solid #4ac060; display: inline-block;
+    }
     </style>
 </head>
 <body>
+    <div class="encourage-toast" id="encToast"></div>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Food Map</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="frontend/js/nav.js" defer></script>
+
     <!-- sky decorations -->
     <div class="bg-pixels" aria-hidden="true">
         <span class="px-cloud" style="--x:6%;--y:8%">☁</span>
@@ -787,33 +1211,129 @@
                     <button class="tab active" data-tab="ingredients">Ingredients</button>
                     <button class="tab"        data-tab="steps">Steps</button>
                     <button class="tab"        data-tab="notes">Notes</button>
+                    <button class="tab"        data-tab="pantry">🧂 Pantry</button>
                 </div>
 
                 <!-- Ingredients checklist -->
                 <div class="tab-panel active" id="ingredients">
                     <ul class="check-list" id="ingredientList"></ul>
+                    <!-- Seasoning blend recommendation (populated by JS) -->
+                    <div class="seasoning-rec" id="seasoningRec" style="display:none">
+                        <div class="season-rec-head">
+                            <span class="season-rec-title">🧂 SEASONING BLEND</span>
+                            <span class="season-save-badge">SAVE MONEY</span>
+                        </div>
+                        <p class="season-rec-desc">This recipe uses seasonings that are all covered by one blend — skip buying each one separately.</p>
+                        <div class="season-blend-box" id="seasonBlendCard"></div>
+                    </div>
                 </div>
 
-                <!-- Steps carousel -->
+                <!-- Steps — rendered by pixel ingredient system -->
                 <div class="tab-panel" id="steps">
-                    <div class="step-carousel">
-                        <div class="step-carousel-viewport">
-                            <div class="step-cards-track" id="stepCarouselTrack"></div>
-                        </div>
-                        <div class="step-carousel-nav">
-                            <button class="step-nav-btn" id="stepPrev">←</button>
-                            <span class="step-indicator" id="stepIndicator">1 / ?</span>
-                            <button class="step-nav-btn" id="stepNext">→</button>
-                        </div>
-                    </div>
+                    <div id="stepsSliderHost"></div>
                 </div>
 
                 <!-- Notes / tips -->
                 <div class="tab-panel" id="notes">
                     <div class="notes-box" id="notesList"></div>
                 </div>
+
+                <!-- Pantry stock-up -->
+                <div class="tab-panel" id="pantry">
+                    <!-- Phase 1: stock-up form -->
+                    <div id="pantryPhase1">
+                        <p class="pantry-intro">
+                            Before you cook or head to the store — let's see what you already have!
+                            Add up to 3 items from each category and we'll match them against this recipe.
+                        </p>
+                        <div class="pantry-categories">
+                            <div class="pantry-cat">
+                                <div class="pantry-cat-head">
+                                    <span class="pantry-cat-icon">🥩</span>
+                                    <span class="pantry-cat-lbl">PROTEIN</span>
+                                </div>
+                                <div class="pantry-inputs">
+                                    <input class="pantry-input" data-cat="protein" placeholder="e.g. chicken breast" maxlength="40" />
+                                    <input class="pantry-input" data-cat="protein" placeholder="e.g. ground beef" maxlength="40" />
+                                    <input class="pantry-input" data-cat="protein" placeholder="e.g. eggs" maxlength="40" />
+                                </div>
+                            </div>
+                            <div class="pantry-cat">
+                                <div class="pantry-cat-head">
+                                    <span class="pantry-cat-icon">🥛</span>
+                                    <span class="pantry-cat-lbl">DAIRY</span>
+                                </div>
+                                <div class="pantry-inputs">
+                                    <input class="pantry-input" data-cat="dairy" placeholder="e.g. milk" maxlength="40" />
+                                    <input class="pantry-input" data-cat="dairy" placeholder="e.g. cheddar cheese" maxlength="40" />
+                                    <input class="pantry-input" data-cat="dairy" placeholder="e.g. butter" maxlength="40" />
+                                </div>
+                            </div>
+                            <div class="pantry-cat">
+                                <div class="pantry-cat-head">
+                                    <span class="pantry-cat-icon">🥦</span>
+                                    <span class="pantry-cat-lbl">VEGGIES</span>
+                                </div>
+                                <div class="pantry-inputs">
+                                    <input class="pantry-input" data-cat="veggies" placeholder="e.g. garlic" maxlength="40" />
+                                    <input class="pantry-input" data-cat="veggies" placeholder="e.g. onion" maxlength="40" />
+                                    <input class="pantry-input" data-cat="veggies" placeholder="e.g. bell pepper" maxlength="40" />
+                                </div>
+                            </div>
+                            <div class="pantry-cat">
+                                <div class="pantry-cat-head">
+                                    <span class="pantry-cat-icon">🧂</span>
+                                    <span class="pantry-cat-lbl">SEASONING</span>
+                                </div>
+                                <div class="pantry-inputs">
+                                    <input class="pantry-input" data-cat="seasoning" placeholder="e.g. cumin" maxlength="40" />
+                                    <input class="pantry-input" data-cat="seasoning" placeholder="e.g. paprika" maxlength="40" />
+                                    <input class="pantry-input" data-cat="seasoning" placeholder="e.g. garlic powder" maxlength="40" />
+                                </div>
+                            </div>
+                        </div>
+                        <button class="cook-btn" id="pantryBuildBtn" style="width:100%;margin-top:18px;">
+                            🍳 CHECK MY PANTRY →
+                        </button>
+                    </div>
+                    <!-- Phase 2: results -->
+                    <div id="pantryPhase2" style="display:none">
+                        <div class="pantry-result-head">
+                            <button class="pantry-back-btn" id="pantryBackBtn">← Restock</button>
+                            <span class="section-head" style="margin:0;padding:0;border:none">PANTRY CHECK</span>
+                        </div>
+                        <div id="pantryResults"></div>
+                    </div>
+                </div>
             </section>
         </main>
+
+    <!-- Ingredient modification bottom sheet -->
+    <div class="ing-modify-overlay" id="ingModifyOverlay">
+        <div class="ing-mod-sheet">
+            <div class="ing-mod-top">
+                <span class="ing-mod-title" id="ingModName">Ingredient</span>
+                <button class="ing-mod-close" id="ingModClose">✕</button>
+            </div>
+            <div class="ing-mod-row">
+                <span class="ing-mod-lbl">Quantity</span>
+                <div class="ing-qty-controls">
+                    <button class="ing-qty-btn" id="ingQtyMinus">−</button>
+                    <span class="ing-qty-val" id="ingModQty">1</span>
+                    <button class="ing-qty-btn" id="ingQtyPlus">+</button>
+                </div>
+            </div>
+            <div class="ing-mod-row">
+                <span class="ing-mod-lbl">Form</span>
+                <select class="ing-form-select" id="ingFormSelect"></select>
+            </div>
+            <div class="ing-mod-hint" id="ingModHint"></div>
+            <div class="ing-mod-actions">
+                <button class="ing-mod-add" id="ingModSave">♥ SAVE MODIFICATION</button>
+                <button class="ing-mod-skip" id="ingModSkip">SKIP</button>
+            </div>
+        </div>
+    </div>
 
         <!-- ── Find Ingredients CTA ───────────────────────────────── -->
         <div style="text-align:center;margin:0 0 36px;">
@@ -879,10 +1399,33 @@
         const recipeId   = params.get('id');
         const recipeName = params.get('name');
 
+        /* ── Normalize backend (snake_case) recipe to frontend format ── */
+        function normalizeBackendRecipe(r) {
+            const instr = r.instructions || r.steps || r.directions || [];
+            const parsedInstr = typeof instr === 'string' ? JSON.parse(instr) : instr;
+            const tipsSrc = r.tips || r.cooking_notes || [];
+            const parsedTips = typeof tipsSrc === 'string' ? JSON.parse(tipsSrc) : tipsSrc;
+            const ingsSrc = r.ingredients || r.ingredientsDetails || [];
+            const parsedIngs = typeof ingsSrc === 'string' ? JSON.parse(ingsSrc) : ingsSrc;
+            return {
+                ...r,
+                cuisine:      r.cuisine || r.cuisine_type || '',
+                prepTime:     r.prepTime || r.prep_time || '',
+                cookTime:     r.cookTime || r.cook_time || '',
+                totalTime:    r.totalTime || r.total_time ||
+                              ((parseInt(r.prep_time)||0) + (parseInt(r.cook_time)||0)) || null,
+                difficulty:   r.difficulty || r.difficulty_level || 'easy',
+                recipe_type:  r.recipe_type || r.recipeType || '',
+                instructions: Array.isArray(parsedInstr) ? parsedInstr : [],
+                tips:         Array.isArray(parsedTips)  ? parsedTips  : (parsedTips ? [parsedTips] : []),
+                ingredients:  Array.isArray(parsedIngs)  ? parsedIngs  : [],
+            };
+        }
+
         async function loadRecipe() {
             let recipe = null;
 
-            // 1. sessionStorage (set by app.js on click)
+            // 1. sessionStorage (set by recipes.html on card click)
             try {
                 const stored = sessionStorage.getItem('dig_in_current_recipe');
                 if (stored) {
@@ -893,7 +1436,7 @@
                 }
             } catch(_) {}
 
-            // 2. localStorage (all uploaded/cached recipes)
+            // 2. localStorage cache
             if (!recipe) {
                 try {
                     const all = JSON.parse(localStorage.getItem('dig_in_recipes') || '[]');
@@ -903,15 +1446,28 @@
                 } catch(_) {}
             }
 
-            // 3. API fallback
+            // 3. Backend — fetch by ID
             if (!recipe && recipeId) {
                 try {
                     const res = await fetch(`http://localhost:5000/api/recipes/${recipeId}`);
-                    if (res.ok) recipe = await res.json();
+                    if (res.ok) recipe = normalizeBackendRecipe(await res.json());
                 } catch(_) {}
             }
 
-            // 4. Direct fetch from data file (handles cold start / direct navigation)
+            // 4. Backend — search by name
+            if (!recipe && recipeName) {
+                try {
+                    const res = await fetch(`http://localhost:5000/api/recipes/search/${encodeURIComponent(recipeName)}`);
+                    if (res.ok) {
+                        const results = await res.json();
+                        const match = results.find(r => r.name?.toLowerCase() === recipeName.toLowerCase())
+                                   || results[0];
+                        if (match) recipe = normalizeBackendRecipe(match);
+                    }
+                } catch(_) {}
+            }
+
+            // 5. Local data file (cold start / direct link)
             if (!recipe) {
                 try {
                     const res = await fetch('data/recipes_full.json');
@@ -922,12 +1478,38 @@
                             recipe = all.find(r => String(r.id) === String(recipeId));
                         if (!recipe && recipeName)
                             recipe = all.find(r => r.name?.toLowerCase() === recipeName?.toLowerCase());
-                        // Seed localStorage so future lookups are instant
                         if (all.length) {
                             try { localStorage.setItem('dig_in_recipes', JSON.stringify(all)); } catch(_) {}
                         }
                     }
                 } catch(_) {}
+            }
+
+            // 6. Enrich from backend if what we have has thin instructions
+            if (recipe && recipe.id) {
+                const hasSteps = (recipe.instructions || recipe.steps || []).length >= 3;
+                if (!hasSteps) {
+                    try {
+                        const res = await fetch(`http://localhost:5000/api/recipes/${recipe.id}`);
+                        if (res.ok) {
+                            const fresh = normalizeBackendRecipe(await res.json());
+                            if ((fresh.instructions || []).length > 0) {
+                                recipe = { ...recipe, ...fresh };
+                            }
+                        }
+                    } catch(_) {}
+                    // Also try backend search by name
+                    if (!(recipe.instructions || []).length && recipe.name) {
+                        try {
+                            const res = await fetch(`http://localhost:5000/api/recipes/search/${encodeURIComponent(recipe.name)}`);
+                            if (res.ok) {
+                                const results = await res.json();
+                                const match = results.find(r => r.name?.toLowerCase() === recipe.name.toLowerCase());
+                                if (match) recipe = { ...recipe, ...normalizeBackendRecipe(match) };
+                            }
+                        } catch(_) {}
+                    }
+                }
             }
 
             if (recipe) render(recipe);
@@ -954,9 +1536,10 @@
                 return { icon: '•', text: `${qty} ${unit} ${name}`.replace(/\s+/g,' ').trim() };
             }).filter(i => i.text);
 
-            const steps = (r.instructions || []).map(s => {
+            const rawSteps = r.instructions || r.steps || r.directions || [];
+            const steps = rawSteps.map(s => {
                 if (typeof s === 'string') return s;
-                return s.instruction || s.text || '';
+                return s.instruction || s.step || s.text || s.description || s.content || '';
             }).filter(Boolean);
 
             // Page title
@@ -1009,26 +1592,40 @@
 
             // Ingredient checklist
             const ingList = document.getElementById('ingredientList');
-            ingList.innerHTML = ingredients.map(({ text }) => `
+            ingList.innerHTML = ingredients.map(({ text }) => {
+                const safe = text.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+                return `
                 <li class="check-item" role="checkbox" aria-checked="false">
                     <span class="check-box"></span>
                     <span class="check-text">${text}</span>
-                </li>`).join('');
+                    <button class="ing-mod-btn" data-text="${safe}" tabindex="-1">MODIFY</button>
+                </li>`;
+            }).join('');
 
-            // Steps carousel — pass full recipe for context + adaptive help
-            buildStepCarousel(steps, r);
+            // Seasoning blend recommendation + pantry category filtering
+            buildSeasoningRec(ingredients.map(i => i.text));
+            setupPantryForRecipe(r);
 
-            // Notes / tips
-            const notesEl = document.getElementById('notesList');
-            if (tips.length) {
-                notesEl.innerHTML = tips.map(t => {
-                    const text = typeof t === 'string' ? t
-                        : (t.title ? `<strong>${t.title}</strong>${t.description ? ': ' + t.description : ''}` : '');
-                    return `<div class="notes-tip">${text}</div>`;
-                }).join('');
-            } else {
-                notesEl.innerHTML = `<p>No special notes for this recipe yet. Cook it and see what you discover! 🍳</p>`;
+            // Steps — pixel ingredient system slider
+            const stepsHost = document.getElementById('stepsSliderHost');
+            if (stepsHost) {
+                stepsHost.innerHTML = '';
+                if (steps.length) {
+                    const pSys = new PixelIngredientSystem('stepsSliderHost', null);
+                    stepsHost.appendChild(pSys.renderRecipeStepsSlider(steps));
+                } else {
+                    stepsHost.innerHTML = '<p style="padding:16px;color:#a08070;font-size:13px;font-family:\'DotGothic16\',monospace;">No steps found for this recipe yet.</p>';
+                }
             }
+
+            // Notes / tips — recipe tips + auto-generated technique notes
+            const notesEl = document.getElementById('notesList');
+            const allNotes = buildEnrichedNotes(tips, steps, r);
+            notesEl.innerHTML = allNotes.map(n => `
+                <div class="notes-tip">
+                    ${n.icon ? `<span style="font-size:16px;flex-shrink:0">${n.icon}</span>` : ''}
+                    <span>${n.text}</span>
+                </div>`).join('');
 
             // Similar recipes
             buildSimilarGrid(r);
@@ -1038,6 +1635,134 @@
             document.getElementById('dishTitle').textContent = 'Recipe not found';
             document.getElementById('ingredientList').innerHTML =
                 '<li style="padding:16px;font-size:13px;color:#aaa;">No data available. <a href="index.html">← Go back</a></li>';
+        }
+
+        /* ── Enriched cooking notes ─────────────────────────────── */
+        function buildEnrichedNotes(tips, steps, recipe) {
+            const notes = [];
+
+            // 1. Existing tips from recipe data (always first)
+            tips.forEach(t => {
+                const text = typeof t === 'string' ? t
+                    : (t.title ? `<strong>${t.title}</strong>${t.description ? ': ' + t.description : ''}` : '');
+                if (text) notes.push({ icon: '💡', text });
+            });
+
+            // 2. Auto-detect technique notes from steps
+            const allStepText = steps.join(' ').toLowerCase();
+            const techniqueNotes = [
+                {
+                    test: /stir|stirring|mix constantly|keep mixing/,
+                    icon: '🥄',
+                    text: 'Keep stirring — stepping away even briefly can cause sticking or burning on the bottom.',
+                },
+                {
+                    test: /simmer|low heat|gentle heat|don.t boil/,
+                    icon: '🔥',
+                    text: 'Watch your heat. A hard boil when you want a simmer will toughen proteins and reduce sauces too fast.',
+                },
+                {
+                    test: /boil|boiling water|rolling boil/,
+                    icon: '♨️',
+                    text: 'Once boiling, check frequently — water can boil over fast, especially with starchy pasta or grains.',
+                },
+                {
+                    test: /fry|deep.fry|pan.fry|shallow.fry/,
+                    icon: '🍳',
+                    text: 'Don\'t crowd the pan — too many pieces at once drops the oil temperature and you get soggy instead of crispy.',
+                },
+                {
+                    test: /sauté|saute|stir.fry/,
+                    icon: '🔥',
+                    text: 'High heat moves fast. Have everything prepped and ready before it hits the pan — there\'s no time to chop once you start.',
+                },
+                {
+                    test: /caramelize|caramelise|golden brown|browning/,
+                    icon: '⏳',
+                    text: 'Caramelizing takes longer than you think. Resist the urge to rush it — flavor builds in that browning.',
+                },
+                {
+                    test: /reduce|reduction|thicken/,
+                    icon: '🥄',
+                    text: 'Stir the bottom of the pot regularly while reducing — sauces can scorch quickly without you noticing.',
+                },
+                {
+                    test: /bake|oven|preheat/,
+                    icon: '⏱',
+                    text: 'Check 5 minutes before the timer goes off. Every oven runs differently and most run hotter than the dial says.',
+                },
+                {
+                    test: /roast|roasting/,
+                    icon: '🔁',
+                    text: 'Flip or rotate halfway through roasting for even browning — hot spots in the oven are real.',
+                },
+                {
+                    test: /marinate|marinating/,
+                    icon: '🕐',
+                    text: 'Longer marinating = more flavor. If you can, prep this the night before.',
+                },
+                {
+                    test: /rest|resting|let it rest|set aside/,
+                    icon: '⏸',
+                    text: 'Don\'t skip the resting step — juices redistribute back into the meat and the texture improves noticeably.',
+                },
+                {
+                    test: /season|salt|taste and adjust/,
+                    icon: '🧂',
+                    text: 'Taste as you go and season in layers — it\'s easier to add salt than remove it.',
+                },
+                {
+                    test: /garlic|ginger/,
+                    icon: '🌡',
+                    text: 'Garlic and ginger burn fast. Keep the heat moderate and stir them — 30 seconds of color is plenty before adding liquid.',
+                },
+                {
+                    test: /egg|eggs/,
+                    icon: '🥚',
+                    text: 'Take eggs off the heat a moment before they look fully done — residual heat finishes the job and prevents rubberiness.',
+                },
+                {
+                    test: /knead|dough|bread/,
+                    icon: '🫱',
+                    text: 'The dough should feel smooth and slightly tacky, not sticky. Under-kneading is the most common bread mistake.',
+                },
+                {
+                    test: /cream|whip|whisk/,
+                    icon: '🌀',
+                    text: 'Cold equipment makes whipping cream much easier — chill the bowl and whisk in the freezer for 5 minutes first.',
+                },
+            ];
+
+            techniqueNotes.forEach(({ test, icon, text }) => {
+                if (test.test(allStepText) && !notes.some(n => n.text === text)) {
+                    notes.push({ icon, text });
+                }
+            });
+
+            // 3. Universal notes based on recipe type
+            const rtype = (recipe.recipe_type || recipe.type || '').toLowerCase();
+            const cuisine = (recipe.cuisine || recipe.cuisine_type || '').toLowerCase();
+
+            if (!isDessertOrPastry(recipe) && notes.length < 3) {
+                notes.push({ icon: '🧂', text: 'Taste as you cook — seasoning at every stage builds depth. A dish seasoned only at the end tastes flat.' });
+            }
+            if (rtype === 'dessert' || isDessertOrPastry(recipe)) {
+                notes.push({ icon: '⚖️', text: 'Baking is chemistry — measure by weight when you can, especially for flour. A cup can vary by 20% depending on how you scoop.' });
+            }
+            if (/chinese|japanese|korean|thai|vietnamese/.test(cuisine)) {
+                if (!notes.some(n => n.text.includes('wok'))) {
+                    notes.push({ icon: '🔥', text: 'High heat is key in Asian stir-fry. If your pan can\'t get smoking hot, cook in smaller batches to avoid steaming.' });
+                }
+            }
+            if (/italian|french|mediterranean/.test(cuisine)) {
+                notes.push({ icon: '💧', text: 'Save your pasta or cooking water before draining — a splash added to sauces ties everything together.' });
+            }
+
+            if (!notes.length) {
+                notes.push({ icon: '🍳', text: 'No special notes for this recipe yet. Cook it and see what you discover!' });
+            }
+
+            return notes;
         }
 
         /* ── Step metadata extractor ────────────────────────────── */
@@ -1141,12 +1866,39 @@
             // Expose so "START COOKING" can reset to step 1
             track._gotoStep = goto;
 
+            const RECIPE_ENCOURAGEMENTS = [
+                ["Let's go! 🔥", "First step in the bag! 🌟", "Great start! You've got this! ✨"],
+                ["Halfway! Keep it up! ⚡", "You're killing it in the kitchen! 💪", "Looking good, chef! 🍳"],
+                ["Almost there! Final stretch! 🎯", "So close! One more push! 💫", "Nearly done — don't stop now! 🏃"],
+                ["YOU DID IT! 🎉", "Chef mode: UNLOCKED! 👨‍🍳", "That's a wrap! Enjoy every bite! 🍽️"]
+            ];
+
+            function showRecipeToast(msg) {
+                const el = document.getElementById('encToast');
+                if (!el) return;
+                el.textContent = msg;
+                el.classList.add('show');
+                clearTimeout(el._t);
+                el._t = setTimeout(() => el.classList.remove('show'), 2800);
+            }
+
+            function pickRecipeEncouragement(idx, total) {
+                const ratio = idx / Math.max(total - 1, 1);
+                const tier = ratio < 0.25 ? 0 : ratio < 0.6 ? 1 : ratio < 0.95 ? 2 : 3;
+                const pool = RECIPE_ENCOURAGEMENTS[tier];
+                return pool[Math.floor(Math.random() * pool.length)];
+            }
+
             track.querySelectorAll('.step-card-check').forEach((btn, i) => {
                 btn.addEventListener('click', () => {
                     const card = track.querySelectorAll('.step-card')[i];
                     card.classList.toggle('done');
-                    btn.textContent = card.classList.contains('done') ? 'UNDO ↩' : 'DONE ✓';
-                    if (!card.classList.contains('done') && i + 1 < steps.length) goto(i + 1);
+                    const isDone = card.classList.contains('done');
+                    btn.textContent = isDone ? 'UNDO ↩' : 'DONE ✓';
+                    if (isDone) {
+                        showRecipeToast(pickRecipeEncouragement(i, steps.length));
+                        if (i + 1 < steps.length) goto(i + 1);
+                    }
                 });
             });
 
@@ -1226,14 +1978,304 @@
             });
         });
 
-        /* ── Checkbox toggling ──────────────────────────────────── */
+        /* ── Checkbox toggling + MODIFY intercept ───────────────── */
         document.addEventListener('click', e => {
+            if (e.target.closest('.ing-mod-btn')) return; // handled separately
             const item = e.target.closest('.check-item');
             if (!item) return;
             const checked = item.classList.toggle('checked');
             item.setAttribute('aria-checked', checked);
             item.querySelector('.check-box').textContent = checked ? '✓' : '';
         });
+
+        /* ── Ingredient modification bottom sheet ───────────────── */
+        const modOverlay = document.getElementById('ingModifyOverlay');
+
+        function openIngMod(text) {
+            document.getElementById('ingModName').textContent = text;
+            document.getElementById('ingModQty').textContent = '1';
+            document.getElementById('ingFormSelect').innerHTML =
+                getIngForms(text).map(f => `<option>${f}</option>`).join('');
+            document.getElementById('ingModHint').textContent = getIngHint(text);
+            modOverlay._activeText = text;
+            modOverlay.classList.add('open');
+        }
+
+        document.addEventListener('click', e => {
+            const btn = e.target.closest('.ing-mod-btn');
+            if (!btn) return;
+            e.stopPropagation();
+            openIngMod(btn.dataset.text);
+        });
+
+        function getIngForms(ing) {
+            const t = ing.toLowerCase();
+            if (/beef|pork|chicken|lamb|fish|shrimp|turkey|sausage/.test(t))
+                return ['Fresh', 'Frozen', 'Pre-cooked', 'Canned'];
+            if (/tomato|bean|corn|pea|lentil|chickpea/.test(t))
+                return ['Fresh', 'Canned', 'Dried', 'Frozen'];
+            if (/mushroom|ginger|garlic|onion|herb/.test(t))
+                return ['Fresh', 'Dried / Powder', 'Frozen', 'Jarred / Paste'];
+            if (/cheese|cream|milk|butter|yogurt/.test(t))
+                return ['Full-fat', 'Low-fat', 'Plant-based', 'Reduced-sodium'];
+            if (/pasta|noodle|rice|flour|bread/.test(t))
+                return ['Regular', 'Whole wheat', 'Gluten-free', 'Brown / Wild'];
+            if (/oil/.test(t))
+                return ['Vegetable', 'Olive', 'Coconut', 'Avocado'];
+            return ['As-is', 'Fresh', 'Pre-made', 'Substitute'];
+        }
+
+        function getIngHint(ing) {
+            const t = ing.toLowerCase();
+            if (/salt/.test(t)) return 'Reduce by half if using soy sauce or salted broth';
+            if (/oil/.test(t)) return 'Any neutral oil works — vegetable, canola, or avocado';
+            if (/garlic/.test(t)) return '1 tsp powder ≈ 2 fresh cloves';
+            if (/onion/.test(t)) return '1 tbsp dried ≈ ½ medium fresh onion';
+            if (/tomato/.test(t)) return 'Canned tomatoes often have more depth than fresh out of season';
+            if (/butter/.test(t)) return 'Olive oil works as a 1:1 swap in most savory dishes';
+            if (/chicken/.test(t)) return 'Thighs stay juicier than breasts — either work here';
+            if (/soy sauce/.test(t)) return 'Coconut aminos for lower sodium; tamari for gluten-free';
+            return 'Swap freely — cooking is about working with what you have';
+        }
+
+        document.getElementById('ingModClose')?.addEventListener('click', () =>
+            modOverlay.classList.remove('open'));
+        document.getElementById('ingModSkip')?.addEventListener('click', () =>
+            modOverlay.classList.remove('open'));
+        modOverlay?.addEventListener('click', e => {
+            if (e.target === modOverlay) modOverlay.classList.remove('open');
+        });
+        document.getElementById('ingQtyMinus')?.addEventListener('click', () => {
+            const v = document.getElementById('ingModQty');
+            const cur = parseFloat(v.textContent);
+            v.textContent = cur > 0.5 ? (cur - 0.5) : 0.5;
+        });
+        document.getElementById('ingQtyPlus')?.addEventListener('click', () => {
+            const v = document.getElementById('ingModQty');
+            v.textContent = parseFloat(v.textContent) + 0.5;
+        });
+        document.getElementById('ingModSave')?.addEventListener('click', () => {
+            const ingText = modOverlay._activeText;
+            const qty = document.getElementById('ingModQty')?.textContent;
+            const form = document.getElementById('ingFormSelect')?.value;
+            const recipeName = window.__digInRecipe?.name || 'Recipe';
+            try {
+                const mods = JSON.parse(localStorage.getItem('dig_in_ing_mods') || '{}');
+                if (!mods[recipeName]) mods[recipeName] = {};
+                mods[recipeName][ingText] = { qty, form };
+                localStorage.setItem('dig_in_ing_mods', JSON.stringify(mods));
+            } catch(_) {}
+            // Badge the modify button as applied
+            document.querySelectorAll('.ing-mod-btn').forEach(btn => {
+                if (btn.dataset.text === ingText) {
+                    btn.textContent = '✓ MOD';
+                    btn.classList.add('applied');
+                }
+            });
+            modOverlay.classList.remove('open');
+        });
+
+        /* ── Seasoning blend recommendation ────────────────────── */
+        const SEASONING_BLENDS = [
+            { name: 'All-Purpose Seasoning', emoji: '🧂',
+              covers: ['salt','pepper','black pepper','garlic powder','onion powder','paprika'],
+              note: 'Covers the base of almost any savory dish.' },
+            { name: 'Taco Seasoning Blend', emoji: '🌮',
+              covers: ['cumin','chili powder','paprika','garlic powder','onion powder','oregano','cayenne','red pepper'],
+              note: 'One bag replaces all the individual spices for Mexican food.' },
+            { name: 'Italian Seasoning', emoji: '🌿',
+              covers: ['oregano','basil','thyme','rosemary','marjoram','sage','parsley'],
+              note: 'All the herbs for Italian, pasta, and Mediterranean dishes.' },
+            { name: 'Cajun Seasoning', emoji: '🌶️',
+              covers: ['paprika','cayenne','garlic powder','onion powder','thyme','oregano','black pepper','white pepper'],
+              note: 'Southern and Creole spice profile in one shake.' },
+            { name: 'Chinese Five Spice', emoji: '⭐',
+              covers: ['star anise','cloves','cinnamon','sichuan peppercorn','fennel','anise'],
+              note: 'Covers the warming spices for East Asian cooking.' },
+            { name: 'Curry Powder', emoji: '🟡',
+              covers: ['turmeric','cumin','coriander','chili powder','garam masala','fenugreek','cardamom'],
+              note: 'One blend for Indian and South Asian flavor profiles.' },
+            { name: 'BBQ Spice Rub', emoji: '🔥',
+              covers: ['smoked paprika','paprika','garlic powder','onion powder','cumin','cayenne','brown sugar','black pepper'],
+              note: 'All you need for grilled meats and American BBQ.' },
+            { name: 'Herbes de Provence', emoji: '💜',
+              covers: ['thyme','rosemary','savory','marjoram','lavender','basil','fennel'],
+              note: 'Classic French herb blend for meats and roasted veg.' },
+            { name: 'Poultry Seasoning', emoji: '🐓',
+              covers: ['sage','thyme','rosemary','marjoram','nutmeg','black pepper'],
+              note: 'Perfect blend for chicken, turkey, and stuffing.' },
+            { name: 'Lemon Pepper', emoji: '🍋',
+              covers: ['lemon','lemon zest','black pepper','pepper','garlic powder'],
+              note: 'Zesty blend great for fish, chicken, and pasta.' },
+        ];
+
+        const SEASONING_WORDS = [
+            'salt','pepper','cumin','paprika','garlic powder','onion powder',
+            'oregano','basil','thyme','rosemary','cinnamon','nutmeg','turmeric',
+            'cayenne','chili powder','garam masala','coriander','cardamom','allspice',
+            'bay leaf','fennel','star anise','cloves','sage','marjoram','sichuan',
+            'sumac','sesame','mustard','smoked paprika','white pepper','red pepper',
+            'ancho','chipotle','habanero','lemon pepper','herbs','spice','seasoning',
+            'five spice','za\'atar','fenugreek','lavender','savory','tarragon',
+            'dill','chive','parsley','brown sugar',
+        ];
+
+        function buildSeasoningRec(ingredientTexts) {
+            const el = document.getElementById('seasoningRec');
+            if (!el) return;
+            const recipeSeasonings = ingredientTexts.filter(ing =>
+                SEASONING_WORDS.some(sw => ing.toLowerCase().includes(sw))
+            );
+            if (recipeSeasonings.length < 2) { el.style.display = 'none'; return; }
+
+            let bestBlend = null, bestCount = 0;
+            for (const blend of SEASONING_BLENDS) {
+                const count = blend.covers.filter(c =>
+                    recipeSeasonings.some(s => s.toLowerCase().includes(c))
+                ).length;
+                if (count > bestCount) { bestCount = count; bestBlend = blend; }
+            }
+            if (!bestBlend || bestCount < 2) { el.style.display = 'none'; return; }
+
+            const covered = bestBlend.covers.filter(c =>
+                recipeSeasonings.some(s => s.toLowerCase().includes(c))
+            );
+            const savings = covered.length >= 3
+                ? `~$${((covered.length * 2.5) - 4).toFixed(2)} vs buying each separately`
+                : null;
+
+            document.getElementById('seasonBlendCard').innerHTML = `
+                <div class="season-blend-name">${bestBlend.emoji} ${bestBlend.name}</div>
+                <div class="season-blend-tags">
+                    ${covered.map(c => `<span class="season-blend-tag">✓ ${c}</span>`).join('')}
+                </div>
+                <div class="season-blend-note">${bestBlend.note}</div>
+                ${savings ? `<span class="season-savings">💰 Save ${savings}</span>` : ''}
+            `;
+            el.style.display = 'block';
+        }
+
+        /* ── Dessert / pastry detection ────────────────────────── */
+        const PASTRY_KEYWORDS = [
+            'cake','cookie','cookies','muffin','muffins','pastry','pastries',
+            'tart','pie','brownie','brownies','biscuit','scone','croissant',
+            'bun','buns','donut','doughnut','doughnuts','pudding','custard',
+            'mousse','macaron','macaroon','eclair','soufflé','cheesecake',
+            'wafer','fudge','truffle','praline','nougat','tiramisu','danish',
+            'strudel','baklava','cannoli','profiterole','choux','brioche',
+        ];
+
+        function isDessertOrPastry(r) {
+            const type = (r.recipe_type || r.type || '').toLowerCase();
+            if (type === 'dessert') return true;
+            const name = (r.name || '').toLowerCase();
+            return PASTRY_KEYWORDS.some(k => name.includes(k));
+        }
+
+        function setupPantryForRecipe(r) {
+            const dessert = isDessertOrPastry(r);
+            // Hide protein + veggies pantry categories for desserts/pastries
+            document.querySelectorAll('.pantry-cat').forEach(cat => {
+                const lbl = cat.querySelector('.pantry-cat-lbl')?.textContent?.trim();
+                if (lbl === 'PROTEIN' || lbl === 'VEGGIES') {
+                    cat.style.display = dessert ? 'none' : '';
+                }
+            });
+            // Hide savory seasoning recommendation for desserts/pastries
+            if (dessert) {
+                const rec = document.getElementById('seasoningRec');
+                if (rec) rec.style.display = 'none';
+            }
+            // Update pantry intro text for desserts
+            if (dessert) {
+                const intro = document.querySelector('.pantry-intro');
+                if (intro) intro.textContent =
+                    'Before you bake — check what you have! Add your dairy and baking staples below to see what this recipe needs.';
+            }
+        }
+
+        /* ── Pantry wizard ──────────────────────────────────────── */
+        const PANTRY_KEY = 'dig_in_pantry';
+        const PANTRY_CATS = ['protein','dairy','veggies','seasoning'];
+
+        function loadPantryInputs() {
+            try {
+                const saved = JSON.parse(localStorage.getItem(PANTRY_KEY) || '{}');
+                PANTRY_CATS.forEach(cat => {
+                    const inputs = [...document.querySelectorAll(`.pantry-input[data-cat="${cat}"]`)];
+                    (saved[cat] || []).forEach((val, i) => { if (inputs[i]) inputs[i].value = val; });
+                });
+            } catch(_) {}
+        }
+
+        function savePantryInputs() {
+            const data = {};
+            PANTRY_CATS.forEach(cat => {
+                data[cat] = [...document.querySelectorAll(`.pantry-input[data-cat="${cat}"]`)]
+                    .map(el => el.value.trim()).filter(Boolean);
+            });
+            try { localStorage.setItem(PANTRY_KEY, JSON.stringify(data)); } catch(_) {}
+            return data;
+        }
+
+        document.getElementById('pantryBuildBtn')?.addEventListener('click', () => {
+            const pantry = savePantryInputs();
+            const allItems = Object.values(pantry).flat().map(i => i.toLowerCase());
+            if (allItems.length < 3) {
+                showRecipeToast('Add a few pantry items first!');
+                return;
+            }
+            const recipe = window.__digInRecipe;
+            const recipeIngs = recipe ? (recipe.ingredients || []).map(ing => {
+                if (typeof ing === 'string') return ing;
+                return `${ing.quantity || ''} ${ing.unit || ''} ${ing.name || ''}`.trim();
+            }) : [];
+
+            const have = [], miss = [];
+            recipeIngs.forEach(ing => {
+                const low = ing.toLowerCase();
+                const matched = allItems.some(p => low.includes(p) || p.split(' ').some(w => w.length > 3 && low.includes(w)));
+                (matched ? have : miss).push(ing);
+            });
+
+            document.getElementById('pantryResults').innerHTML = `
+                ${have.length ? `
+                <div class="pantry-match-block">
+                    <span class="pantry-match-label">✓ YOU HAVE (${have.length})</span>
+                    <div class="pantry-tag-row">
+                        ${have.map(i => `<span class="ptag ptag-have">${i}</span>`).join('')}
+                    </div>
+                </div>` : ''}
+                ${miss.length ? `
+                <div class="pantry-match-block">
+                    <span class="pantry-match-label">✕ STILL NEED (${miss.length})</span>
+                    <div class="pantry-tag-row">
+                        ${miss.map(i => `<span class="ptag ptag-miss">${i}</span>`).join('')}
+                    </div>
+                </div>` : ''}
+                <div class="pantry-shop-note" style="${!miss.length ? 'border-color:#4ac060;background:#d4f4dd;' : ''}">
+                    ${miss.length
+                        ? `🛒 You need <strong>${miss.length} item${miss.length > 1 ? 's' : ''}</strong> for this recipe.
+                           Most can be found at a nearby bodega or corner store.
+                           ${miss.length <= 3 ? '<br>So close — a quick run and you\'re set! 🏃' : ''}`
+                        : `🎉 You have everything for this recipe!
+                           <br><br><a href="#" onclick="document.getElementById('startCookingBtn').click();return false;"
+                             style="color:#155724;font-family:'Press Start 2P',monospace;font-size:9px;">
+                             ▶ START COOKING →
+                           </a>`}
+                </div>
+            `;
+            document.getElementById('pantryPhase1').style.display = 'none';
+            document.getElementById('pantryPhase2').style.display = 'block';
+        });
+
+        document.getElementById('pantryBackBtn')?.addEventListener('click', () => {
+            document.getElementById('pantryPhase1').style.display = 'block';
+            document.getElementById('pantryPhase2').style.display = 'none';
+        });
+
+        // Restore saved pantry inputs
+        loadPantryInputs();
 
         /* ── Favourite button ───────────────────────────────────── */
         [document.getElementById('saveFavBtn'), document.getElementById('topFavBtn')].forEach(btn => {
@@ -1243,16 +2285,13 @@
             });
         });
 
-        /* ── Start cooking → jump to step 1 of the carousel ─────── */
+        /* ── Start cooking → switch to Steps tab ────────────────── */
         document.getElementById('startCookingBtn')?.addEventListener('click', () => {
-            // Switch to the Steps tab
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
             const stepsTab = document.querySelector('.tab[data-tab="steps"]');
             if (stepsTab) stepsTab.classList.add('active');
             document.getElementById('steps')?.classList.add('active');
-            // Reset carousel to step 1 via the closure's own goto()
-            document.getElementById('stepCarouselTrack')?._gotoStep?.(0);
             document.getElementById('steps')?.scrollIntoView({ behavior: 'smooth' });
         });
 

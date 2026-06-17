@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In — Pixel Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #ffd700;
+        }
+
+        .city-selector {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .city-btn {
+            padding: 10px 24px;
+            border: 2px solid #2a2a4a;
+            border-radius: 30px;
+            background: transparent;
+            color: #888;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .city-btn:hover {
+            border-color: #ffd700;
+            color: white;
+        }
+
+        .city-btn.active {
+            border-color: #ffd700;
+            background: #ffd70020;
+            color: #ffd700;
+        }
+
+        .map-container {
+            background: #0f0f1a;
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #2a2a4a;
+            image-rendering: pixelated;
+            overflow: auto;
+            text-align: center;
+        }
+
+        .map-container canvas {
+            image-rendering: pixelated;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .map-info {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .info-card {
+            background: #0f0f1a;
+            padding: 16px 24px;
+            border-radius: 16px;
+            border: 1px solid #2a2a4a;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .info-card .value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .info-card .label {
+            font-size: 11px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .legend {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: #0f0f1a;
+            padding: 16px;
+            border-radius: 16px;
+            border: 1px solid #2a2a4a;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        .landmark-list {
+            background: #0f0f1a;
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #2a2a4a;
+            margin-top: 24px;
+        }
+
+        .landmark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .landmark-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #1a1a2e;
+            border-radius: 12px;
+            border: 1px solid #2a2a4a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .landmark-item:hover {
+            border-color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        .landmark-item .icon {
+            font-size: 24px;
+        }
+
+        .landmark-item .name {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .landmark-item .category {
+            font-size: 10px;
+            color: #888;
+        }
+
+        .landmark-item.collected {
+            border-color: #4caf50;
+        }
+
+        .landmark-item .status {
+            margin-left: auto;
+            font-size: 18px;
+        }
+
+        .collection-progress {
+            width: 100%;
+            height: 8px;
+            background: #2a2a4a;
+            border-radius: 4px;
+            margin-top: 12px;
+            overflow: hidden;
+        }
+
+        .collection-progress .fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .map-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ══ STICKY NAV ══════════════════════════════════════════════ -->
+    <div class="site-nav-wrap">
+        <div class="app-nav">
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="coin-counter" id="coinCounter">
+                <span class="coin-icon">COINS</span>
+                <span id="coinCount">0</span>
+            </div>
+            <a href="index.html" class="nav-title">DIG-IN</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Food Map</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Cook ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="recipes.html">Recipes</a>
+                        <a href="recipe-cards-display.html">Recipe Cards</a>
+                        <a href="cookbook.html">Cookbook</a>
+                        <a href="recipe-ai-helper.html">AI Recipe Helper</a>
+                        <a href="educational-helper.html">Educational Helper</a>
+                        <a href="advanced-cooking-science.html">Cooking Science</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Discover ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="craving-search.html">What's Craving?</a>
+                        <a href="social-feed.html">Social Feed</a>
+                        <a href="catalog.html">Catalog</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Create ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="pixel-creator.html">Pixel Creator</a>
+                        <a href="pixel-map.html">Pixel Map</a>
+                        <a href="pixel-ingredient-demo.html">Ingredient Demo</a>
+                    </div>
+                </div>
+                <a href="deals.html">Deals</a>
+                <div class="nav-dropdown">
+                    <button class="nav-drop-btn" type="button">Profile ▾</button>
+                    <div class="nav-drop-menu">
+                        <a href="profile.html">My Profile</a>
+                        <a href="badges.html">Badges</a>
+                        <a href="checkin.html">Check-In</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="frontend/js/nav.js" defer></script>
+
+    <div class="container">
+        <div class="header">
+            <h1>🗺️ Food Explorer Map</h1>
+            <p style="color: #888;">Discover and collect pixel landmarks across the city</p>
+        </div>
+
+        <div class="city-selector">
+            <button class="city-btn active" data-city="brooklyn">🌉 Brooklyn</button>
+            <button class="city-btn" data-city="manhattan">🏙️ Manhattan</button>
+            <button class="city-btn" data-city="queens">🌳 Queens</button>
+            <button class="city-btn" data-city="bronx">🏠 Bronx</button>
+            <button class="city-btn" data-city="staten_island">⛴️ Staten Island</button>
+        </div>
+
+        <div class="map-info">
+            <div class="info-card">
+                <div class="value" id="collectedCount">0</div>
+                <div class="label">Collected</div>
+            </div>
+            <div class="info-card">
+                <div class="value" id="totalLandmarks">0</div>
+                <div class="label">Total Landmarks</div>
+            </div>
+            <div class="info-card">
+                <div class="value" id="completionPercent">0%</div>
+                <div class="label">Completion</div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <canvas id="pixelMap"></canvas>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3498DB;"></div>
+                <span>Water</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #27AE60;"></div>
+                <span>Land</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #95A5A6;"></div>
+                <span>Road</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #FFD700;"></div>
+                <span>Landmark</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #FF0000;"></div>
+                <span>You are here</span>
+            </div>
+        </div>
+
+        <div class="landmark-list">
+            <h3 style="margin-bottom: 8px;">📍 Landmarks</h3>
+            <div class="collection-progress">
+                <div class="fill" id="progressFill" style="width: 0%;"></div>
+            </div>
+            <div class="landmark-grid" id="landmarkGrid"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        let currentCity = 'brooklyn';
+        let mapData = null;
+        let collectedLandmarks = new Set();
+
+        // Load saved progress
+        const savedProgress = localStorage.getItem('collectedLandmarks');
+        if (savedProgress) {
+            collectedLandmarks = new Set(JSON.parse(savedProgress));
+        }
+
+        async function loadMap(city) {
+            try {
+                // In production: fetch from backend
+                // const response = await fetch(`${API_BASE}/pixel/map/${city}`);
+                // mapData = await response.json();
+                
+                // Demo data
+                mapData = {
+                    city: city,
+                    name: city.charAt(0).toUpperCase() + city.slice(1),
+                    collectible_count: 12,
+                    collected_count: collectedLandmarks.size,
+                    landmarks: [
+                        { id: 'williamsburg_bridge', name: 'Williamsburg Bridge', category: 'bridge', collectible: true, collected: collectedLandmarks.has('williamsburg_bridge') },
+                        { id: 'brooklyn_bridge', name: 'Brooklyn Bridge', category: 'bridge', collectible: true, collected: collectedLandmarks.has('brooklyn_bridge') },
+                        { id: 'pizza_shop', name: 'Di Fara Pizza', category: 'restaurant', collectible: true, collected: collectedLandmarks.has('pizza_shop') },
+                        { id: 'ramen_shop', name: 'Ramen Shop', category: 'restaurant', collectible: true, collected: collectedLandmarks.has('ramen_shop') },
+                        { id: 'dumpling_house', name: 'Dumpling House', category: 'restaurant', collectible: true, collected: collectedLandmarks.has('dumpling_house') },
+                        { id: 'prospect_park', name: 'Prospect Park', category: 'park', collectible: false, collected: false },
+                        { id: 'times_square', name: 'Times Square', category: 'landmark', collectible: true, collected: collectedLandmarks.has('times_square') }
+                    ]
+                };
+
+                renderMap(mapData);
+                
+            } catch (error) {
+                console.error('Failed to load map:', error);
+                // Fallback demo
+                renderDemoMap();
+            }
+        }
+
+        function renderMap(data) {
+            renderCanvas(data);
+            updateStats(data);
+            renderLandmarks(data);
+        }
+
+        function renderCanvas(data) {
+            const canvas = document.getElementById('pixelMap');
+            const ctx = canvas.getContext('2d');
+            
+            // Generate pixel grid
+            const width = 64;
+            const height = 64;
+            const pixelSize = 8;
+            
+            canvas.width = width * pixelSize;
+            canvas.height = height * pixelSize;
+            
+            ctx.imageSmoothingEnabled = false;
+            
+            // Generate terrain
+            const grid = generateTerrain(width, height);
+            
+            // Place landmarks
+            if (data.landmarks) {
+                data.landmarks.forEach(lm => {
+                    if (lm.collected) {
+                        placeCollectedMarker(ctx, lm, pixelSize);
+                    } else {
+                        placeLandmark(ctx, lm, pixelSize);
+                    }
+                });
+            }
+            
+            // Place user
+            placeUser(ctx, 32, 32, pixelSize);
+        }
+
+        function generateTerrain(width, height) {
+            const grid = [];
+            const colors = {
+                water: '#3498DB',
+                land: '#27AE60',
+                road: '#95A5A6',
+                sky: '#87CEEB',
+                park: '#2ECC71',
+                building: '#7F8C8D'
+            };
+            
+            for (let y = 0; y < height; y++) {
+                const row = [];
+                for (let x = 0; x < width; x++) {
+                    if (y < 5 || y > 55) {
+                        row.push(colors.sky);
+                    } else if (x < 3 || x > 60) {
+                        row.push(colors.water);
+                    } else if (20 < y && y < 40 && 25 < x && x < 45) {
+                        row.push(colors.park);
+                    } else if ((y % 5 === 0 && 8 < x && x < 55) || (x % 4 === 0 && 5 < y && y < 55)) {
+                        row.push(colors.road);
+                    } else {
+                        row.push(colors.land);
+                    }
+                }
+                grid.push(row);
+            }
+            return grid;
+        }
+
+        function placeLandmark(ctx, landmark, pixelSize) {
+            const x = (landmark.id.length * 7) % 50 + 5;
+            const y = (landmark.id.length * 11) % 50 + 5;
+            
+            ctx.fillStyle = '#FFD700';
+            ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize * 3, pixelSize * 3);
+            
+            // Add star icon
+            ctx.fillStyle = '#000';
+            ctx.font = '8px Arial';
+            ctx.fillText('⭐', x * pixelSize + 2, y * pixelSize + 10);
+        }
+
+        function placeCollectedMarker(ctx, landmark, pixelSize) {
+            const x = (landmark.id.length * 7) % 50 + 5;
+            const y = (landmark.id.length * 11) % 50 + 5;
+            
+            ctx.fillStyle = '#4CAF50';
+            ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize * 3, pixelSize * 3);
+            
+            ctx.fillStyle = '#000';
+            ctx.font = '8px Arial';
+            ctx.fillText('✅', x * pixelSize + 2, y * pixelSize + 10);
+        }
+
+        function placeUser(ctx, x, y, pixelSize) {
+            ctx.fillStyle = '#FF0000';
+            ctx.beginPath();
+            ctx.arc(x * pixelSize + pixelSize/2, y * pixelSize + pixelSize/2, pixelSize/2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Glow effect
+            ctx.shadowColor = '#FF0000';
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+        }
+
+        function updateStats(data) {
+            const total = data.landmarks.filter(l => l.collectible).length;
+            const collected = data.landmarks.filter(l => l.collectible && l.collected).length;
+            const percent = total > 0 ? Math.round((collected / total) * 100) : 0;
+            
+            document.getElementById('collectedCount').textContent = collected;
+            document.getElementById('totalLandmarks').textContent = total;
+            document.getElementById('completionPercent').textContent = percent + '%';
+            document.getElementById('progressFill').style.width = percent + '%';
+        }
+
+        function renderLandmarks(data) {
+            const grid = document.getElementById('landmarkGrid');
+            
+            grid.innerHTML = data.landmarks.map(lm => `
+                <div class="landmark-item ${lm.collected ? 'collected' : ''}" onclick="toggleLandmark('${lm.id}')">
+                    <span class="icon">${getIconForCategory(lm.category)}</span>
+                    <div>
+                        <div class="name">${lm.name}</div>
+                        <div class="category">${lm.category}</div>
+                    </div>
+                    <span class="status">${lm.collected ? '✅' : (lm.collectible ? '⭐' : '')}</span>
+                </div>
+            `).join('');
+        }
+
+        function getIconForCategory(category) {
+            const icons = {
+                bridge: '🌉',
+                restaurant: '🍽️',
+                park: '🌳',
+                landmark: '🏛️',
+                default: '📍'
+            };
+            return icons[category] || icons.default;
+        }
+
+        function toggleLandmark(id) {
+            if (collectedLandmarks.has(id)) {
+                collectedLandmarks.delete(id);
+            } else {
+                collectedLandmarks.add(id);
+            }
+            
+            localStorage.setItem('collectedLandmarks', JSON.stringify([...collectedLandmarks]));
+            
+            // Update map data
+            if (mapData) {
+                mapData.landmarks.forEach(lm => {
+                    if (lm.id === id) {
+                        lm.collected = collectedLandmarks.has(id);
+                    }
+                });
+                renderMap(mapData);
+            }
+        }
+
+        function renderDemoMap() {
+            // Demo render
+            const canvas = document.getElementById('pixelMap');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = 512;
+            canvas.height = 512;
+            
+            ctx.imageSmoothingEnabled = false;
+            
+            // Generate simple pixel map
+            for (let y = 0; y < 64; y++) {
+                for (let x = 0; x < 64; x++) {
+                    const pixelSize = 8;
+                    let color = '#27AE60';
+                    
+                    if (y < 5 || y > 55) color = '#87CEEB';
+                    else if (x < 3 || x > 60) color = '#3498DB';
+                    else if (20 < y && y < 40 && 25 < x && x < 45) color = '#2ECC71';
+                    else if ((y % 5 === 0 && 8 < x && x < 55) || (x % 4 === 0 && 5 < y && y < 55)) color = '#95A5A6';
+                    
+                    ctx.fillStyle = color;
+                    ctx.fillRect(x * pixelSize, y * pixelSize, pixelSize, pixelSize);
+                }
+            }
+            
+            // Place user
+            ctx.fillStyle = '#FF0000';
+            ctx.beginPath();
+            ctx.arc(32 * 8 + 4, 32 * 8 + 4, 4, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Place landmarks
+            const landmarkPositions = [
+                { x: 20, y: 30, color: '#FFD700' },
+                { x: 40, y: 28, color: '#FFD700' },
+                { x: 15, y: 45, color: '#FFD700' },
+                { x: 45, y: 50, color: '#FFD700' }
+            ];
+            
+            landmarkPositions.forEach(pos => {
+                ctx.fillStyle = pos.color;
+                ctx.fillRect(pos.x * 8, pos.y * 8, 24, 24);
+            });
+        }
+
+        // City selector
+        document.querySelectorAll('.city-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.city-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentCity = btn.dataset.city;
+                loadMap(currentCity);
+            });
+        });
+
+        // Initialize
+        loadMap('brooklyn');
+    </script>
+</body>
+</html>
