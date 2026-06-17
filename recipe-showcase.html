@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIG-IN · Authentic Recipe Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'DotGothic16', monospace;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
+            color: #3a2a30;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 28px;
+            color: #c8455f;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0 #1c1c1c;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #8b5e3c;
+            margin-bottom: 20px;
+        }
+
+        /* Filter Bar */
+        .filters {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 9px;
+            color: #8b5e3c;
+            letter-spacing: 0.5px;
+        }
+
+        .filter-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            padding: 9px 14px;
+            border: 3px solid #1c1c1c;
+            border-radius: 20px;
+            background: #fff0e0;
+            color: #8b5e3c;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: all 0.15s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #c8455f;
+            color: white;
+            box-shadow: 2px 2px 0 #8b2a40;
+        }
+
+        /* Grid */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* Recipe Card */
+        .recipe-card {
+            background: white;
+            border: 4px solid #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 5px 5px 0 #1c1c1c;
+            overflow: hidden;
+            transition: transform 0.1s, box-shadow 0.1s;
+            cursor: pointer;
+        }
+
+        .recipe-card:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0 #1c1c1c;
+        }
+
+        .card-emoji {
+            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 60px;
+            line-height: 1;
+            border-bottom: 3px solid #1c1c1c;
+        }
+
+        .card-body {
+            padding: 16px;
+        }
+
+        .card-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            color: #3a2a30;
+            margin-bottom: 12px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+        }
+
+        .card-meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 11px;
+        }
+
+        .meta-item {
+            background: #fff0e0;
+            border: 2px solid #1c1c1c;
+            border-radius: 6px;
+            padding: 8px;
+            text-align: center;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            color: #8b5e3c;
+        }
+
+        .meta-label {
+            display: block;
+            font-size: 6px;
+            margin-bottom: 3px;
+            opacity: 0.8;
+        }
+
+        .meta-value {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-ing {
+            background: #fdf5f0;
+            border: 2px solid #f0d0b8;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 12px;
+            font-size: 11px;
+            color: #6a5550;
+            max-height: 60px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-ing::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: linear-gradient(transparent, #fdf5f0);
+        }
+
+        .ing-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 7px;
+            color: #8b5e3c;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn {
+            flex: 1;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 8px;
+            padding: 10px;
+            border: 3px solid #1c1c1c;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: all 0.1s;
+            text-align: center;
+        }
+
+        .btn-view {
+            background: #c8455f;
+            color: white;
+        }
+
+        .btn-view:hover {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 #1c1c1c;
+        }
+
+        .btn-save {
+            background: #fff0e0;
+            color: #8b5e3c;
+            border-color: #1c1c1c;
+        }
+
+        .btn-save:hover {
+            background: #ffe0d0;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border: 4px solid #1c1c1c;
+            border-radius: 16px;
+            box-shadow: 8px 8px 0 #1c1c1c;
+            max-width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #c8455f 0%, #a83348 100%);
+            color: white;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #1c1c1c;
+        }
+
+        .modal-header h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .modal-close {
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .recipe-detail {
+            margin-bottom: 20px;
+        }
+
+        .recipe-detail h3 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 11px;
+            color: #8b5e3c;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #f0d0b8;
+            padding-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .recipe-detail p,
+        .recipe-detail li {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #3a2a30;
+            margin-bottom: 8px;
+        }
+
+        .recipe-detail li {
+            margin-left: 20px;
+        }
+
+        .recipe-detail ul {
+            list-style: none;
+        }
+
+        .recipe-detail li::before {
+            content: '• ';
+            color: #c8455f;
+            font-weight: bold;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+            color: #8b5e3c;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🍽️ AUTHENTIC RECIPES</h1>
+            <p>Real dishes from around the world, properly researched and formatted</p>
+        </div>
+
+        <div class="filters">
+            <span class="filter-label">FILTER BY:</span>
+            <button class="filter-btn active" data-filter="all">ALL RECIPES</button>
+            <button class="filter-btn" data-filter="Algeria">🇩🇿 ALGERIA</button>
+            <button class="filter-btn" data-filter="Italy">🇮🇹 ITALY</button>
+            <button class="filter-btn" data-filter="breakfast">BREAKFAST</button>
+            <button class="filter-btn" data-filter="lunch">LUNCH</button>
+            <button class="filter-btn" data-filter="dinner">DINNER</button>
+            <button class="filter-btn" data-filter="desserts">DESSERTS</button>
+            <button class="filter-btn" data-filter="nonAlcoholicDrinks">DRINKS</button>
+        </div>
+
+        <div class="recipe-grid" id="recipeGrid"></div>
+        <div class="no-results" id="noResults" style="display: none;">
+            No recipes match your filter
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Recipe Title</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        let allRecipes = [];
+        let currentFilter = 'all';
+
+        async function loadRecipes() {
+            try {
+                const res = await fetch('http://localhost:5000/api/recipes?limit=1000');
+                const data = await res.json();
+                allRecipes = data.recipes || [];
+                console.log(`Loaded ${allRecipes.length} recipes`);
+                renderRecipes();
+            } catch (err) {
+                console.error('Error loading recipes:', err);
+                document.getElementById('noResults').style.display = 'block';
+            }
+        }
+
+        function renderRecipes() {
+            const filtered = filterRecipes();
+            const grid = document.getElementById('recipeGrid');
+            const noResults = document.getElementById('noResults');
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            grid.innerHTML = filtered.map(recipe => `
+                <div class="recipe-card">
+                    <div class="card-emoji">${getEmoji(recipe)}</div>
+                    <div class="card-body">
+                        <div class="card-name">${recipe.name}</div>
+
+                        <div class="card-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">TIME</span>
+                                <span class="meta-value">${recipe.prepTime + recipe.cookTime}m</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">LEVEL</span>
+                                <span class="meta-value">${recipe.difficulty.charAt(0)}</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">SERVINGS</span>
+                                <span class="meta-value">${recipe.servings}</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">COUNTRY</span>
+                                <span class="meta-value">${recipe.country?.substring(0, 3).toUpperCase()}</span>
+                            </div>
+                        </div>
+
+                        <div class="card-ing">
+                            <div class="ing-label">INGREDIENTS (${recipe.ingredients?.length || 0})</div>
+                            ${(recipe.ingredients || []).slice(0, 3).map(ing =>
+                                `<div>• ${ing}</div>`
+                            ).join('')}
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-view" onclick="openRecipe('${recipe.id.replace(/'/g, "\\'")}')">
+                                VIEW RECIPE
+                            </button>
+                            <button class="btn btn-save" onclick="saveRecipe('${recipe.id}')">
+                                ♡
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterRecipes() {
+            if (currentFilter === 'all') {
+                return allRecipes;
+            }
+
+            return allRecipes.filter(recipe => {
+                if (recipe.country === currentFilter) return true;
+                if (recipe.category === currentFilter) return true;
+                return false;
+            });
+        }
+
+        function getEmoji(recipe) {
+            const emojiMap = {
+                Algeria: '🇩🇿',
+                Italy: '🇮🇹',
+                breakfast: '🍳',
+                lunch: '🍽️',
+                dinner: '🍴',
+                snacks: '🥜',
+                desserts: '🍰',
+                nonAlcoholicDrinks: '🥤',
+                alcoholicDrinks: '🍷'
+            };
+
+            return emojiMap[recipe.country] || emojiMap[recipe.category] || '🍽️';
+        }
+
+        function openRecipe(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            const modal = document.getElementById('modal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+
+            title.textContent = recipe.name;
+            body.innerHTML = `
+                <div class="recipe-detail">
+                    <p><strong>🌍 Country:</strong> ${recipe.country}</p>
+                    <p><strong>⏱️ Total Time:</strong> ${recipe.prepTime + recipe.cookTime} minutes (Prep: ${recipe.prepTime}m, Cook: ${recipe.cookTime}m)</p>
+                    <p><strong>👥 Servings:</strong> ${recipe.servings}</p>
+                    <p><strong>📊 Difficulty:</strong> ${recipe.difficulty}</p>
+                </div>
+
+                <div class="recipe-detail">
+                    <h3>📋 INGREDIENTS</h3>
+                    <ul>
+                        ${(recipe.ingredients || []).map(ing => `<li>${ing}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="recipe-detail">
+                    <h3>👨‍🍳 INSTRUCTIONS</h3>
+                    <ol>
+                        ${(recipe.instructions || []).map((inst, i) => `
+                            <li>${inst}</li>
+                        `).join('')}
+                    </ol>
+                </div>
+
+                ${recipe.notes ? `
+                <div class="recipe-detail">
+                    <h3>💡 NOTES</h3>
+                    <p>${recipe.notes}</p>
+                </div>
+                ` : ''}
+            `;
+
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        function saveRecipe(recipeId) {
+            alert('Recipe saved! (Demo)');
+        }
+
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderRecipes();
+            });
+        });
+
+        // Close modal on background click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') closeModal();
+        });
+
+        // Load recipes on page load
+        loadRecipes();
+    </script>
+</body>
+</html>

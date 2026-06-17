@@ -1872,123 +1872,267 @@
             return { phase, tech, timeHint, tempHint, critical };
         }
 
-        /* ── Steps carousel builder ────────────────────────────── */
-        function buildStepCarousel(steps, recipe) {
-            const track = document.getElementById('stepCarouselTrack');
-            const indicator = document.getElementById('stepIndicator');
+        /* ── Steps dual-view builder ────────────────────────────── */
+        function buildStepsView(steps, recipe) {
+            // List view
+            const listEl = document.getElementById('stepsList');
+            if (!steps.length) {
+                listEl.innerHTML = '<li style="padding:16px;color:#a08070;font-size:13px;font-family:\'DotGothic16\',monospace;list-style:none">No steps found for this recipe yet.</li>';
+            } else {
+                listEl.innerHTML = steps.map((s, i) => `
+                    <li>
+                        <span class="step-num">${i + 1}.</span>
+                        <span class="step-txt">${s}</span>
+                    </li>`).join('');
+            }
+
+            // Flip card carousel
+            const track = document.getElementById('stepFlipTrack');
+            const counterEl = document.getElementById('stepCounter');
             const prevBtn = document.getElementById('stepPrev');
             const nextBtn = document.getElementById('stepNext');
             if (!track || !steps.length) return;
 
-            let current = 0;
-            const recipeName = recipe?.name || window.__digInRecipe?.name
-                             || document.getElementById('dishTitle')?.textContent || 'Recipe';
-            const recipeType = recipe?.recipe_type || window.__digInRecipe?.recipe_type || '';
+            const DISH_EMOJI = {
+                soup: '🍲', stew: '🍲', rice: '🍚', noodle: '🍜', pasta: '🍝',
+                bread: '🍞', cake: '🎂', salad: '🥗', wrap: '🌯', burger: '🍔',
+                fish: '🐟', seafood: '🦞', chicken: '🍗', beef: '🥩', pork: '🥓',
+                default: '🍽️'
+            };
+            const typeLower = (recipe?.recipe_type || '').toLowerCase();
+            const dishEmoji = Object.entries(DISH_EMOJI).find(([k]) => typeLower.includes(k))?.[1] || DISH_EMOJI.default;
 
-            // Pre-compute metadata for every step
-            const meta = steps.map((s, i) => detectStepMeta(s, i, steps.length));
-
-            function truncate(str, n) {
-                return str && str.length > n ? str.slice(0, n) + '…' : (str || '');
-            }
+            const STAGE_LABELS = ['PREP', 'BUILDING', 'COOKING', 'FINISHING', 'PLATING'];
 
             track.innerHTML = steps.map((s, i) => {
-                const m       = meta[i];
-                const prevText = i > 0 ? truncate(steps[i - 1], 55) : null;
-                const nextText = i < steps.length - 1 ? truncate(steps[i + 1], 55) : null;
-
-                const ctxBar = (prevText || nextText) ? `
-                    <div class="step-context-bar">
-                        ${prevText ? `<div class="step-ctx-prev"><span class="step-ctx-label">← PREV STEP</span>${prevText}</div>` : '<div style="flex:1"></div>'}
-                        ${nextText ? `<div class="step-ctx-next"><span class="step-ctx-label">NEXT STEP →</span>${nextText}</div>` : '<div style="flex:1"></div>'}
-                    </div>` : '';
-
+                const ratio = i / Math.max(steps.length - 1, 1);
+                const stageIdx = Math.min(Math.floor(ratio * STAGE_LABELS.length), STAGE_LABELS.length - 1);
+                const stage = STAGE_LABELS[stageIdx];
                 return `
-                <div class="step-card" data-step="${i}">
-                    <div class="step-card-header">
-                        <div class="step-card-num">STEP ${i + 1} OF ${steps.length}</div>
-                        <span class="step-phase step-phase-${m.phase}">${m.phase.toUpperCase()}</span>
-                    </div>
-                    ${m.tech ? `<div class="step-technique">✦ ${m.tech.toUpperCase()}</div>` : ''}
-                    <p class="step-card-text">${s}</p>
-                    <div class="step-card-meta">
-                        ${m.timeHint ? `<span class="step-meta-chip">⏱ ${m.timeHint}</span>` : ''}
-                        ${m.tempHint ? `<span class="step-meta-chip temp">🌡 ${m.tempHint}</span>` : ''}
-                        ${m.critical ? `<span class="step-meta-chip" style="border-color:#c8455f;color:#c8455f;">⚠ critical step</span>` : ''}
-                    </div>
-                    ${ctxBar}
-                    <div class="step-card-btns">
-                        <button class="step-card-check">DONE ✓</button>
-                        <button class="step-card-help">? HELP</button>
+                <div class="step-flip-card" data-idx="${i}">
+                    <div class="step-flip-inner">
+                        <div class="step-flip-front">
+                            <div style="font-family:'Press Start 2P',monospace;font-size:7px;color:#c8455f;letter-spacing:1px">STEP ${i + 1} OF ${steps.length}</div>
+                            <p style="font-family:'DotGothic16',monospace;font-size:15px;color:#3a2a28;line-height:1.7;margin:0;flex:1">${s}</p>
+                            <div class="flip-tap-hint">TAP TO FLIP ▶</div>
+                        </div>
+                        <div class="step-flip-back">
+                            <div class="flip-dish-big">${dishEmoji}</div>
+                            <div class="flip-stage-lbl">${stage}</div>
+                            <div class="flip-visual-desc">Your dish is taking shape — this is the ${stage.toLowerCase()} phase. Keep going!</div>
+                            <div class="flip-tap-back">TAP TO FLIP BACK</div>
+                        </div>
                     </div>
                 </div>`;
             }).join('');
 
+            let current = 0;
             function goto(idx) {
                 current = Math.max(0, Math.min(idx, steps.length - 1));
                 track.style.transform = `translateX(-${current * 100}%)`;
-                indicator.textContent = `${current + 1} / ${steps.length}`;
+                counterEl.textContent = `${current + 1} / ${steps.length}`;
                 prevBtn.disabled = current === 0;
                 nextBtn.disabled = current === steps.length - 1;
             }
 
-            prevBtn.addEventListener('click', () => goto(current - 1));
-            nextBtn.addEventListener('click', () => goto(current + 1));
-
-            // Expose so "START COOKING" can reset to step 1
-            track._gotoStep = goto;
-
-            const RECIPE_ENCOURAGEMENTS = [
-                ["Let's go! 🔥", "First step in the bag! 🌟", "Great start! You've got this! ✨"],
-                ["Halfway! Keep it up! ⚡", "You're killing it in the kitchen! 💪", "Looking good, chef! 🍳"],
-                ["Almost there! Final stretch! 🎯", "So close! One more push! 💫", "Nearly done — don't stop now! 🏃"],
-                ["YOU DID IT! 🎉", "Chef mode: UNLOCKED! 👨‍🍳", "That's a wrap! Enjoy every bite! 🍽️"]
-            ];
-
-            function showRecipeToast(msg) {
-                const el = document.getElementById('encToast');
-                if (!el) return;
-                el.textContent = msg;
-                el.classList.add('show');
-                clearTimeout(el._t);
-                el._t = setTimeout(() => el.classList.remove('show'), 2800);
-            }
-
-            function pickRecipeEncouragement(idx, total) {
-                const ratio = idx / Math.max(total - 1, 1);
-                const tier = ratio < 0.25 ? 0 : ratio < 0.6 ? 1 : ratio < 0.95 ? 2 : 3;
-                const pool = RECIPE_ENCOURAGEMENTS[tier];
-                return pool[Math.floor(Math.random() * pool.length)];
-            }
-
-            track.querySelectorAll('.step-card-check').forEach((btn, i) => {
-                btn.addEventListener('click', () => {
-                    const card = track.querySelectorAll('.step-card')[i];
-                    card.classList.toggle('done');
-                    const isDone = card.classList.contains('done');
-                    btn.textContent = isDone ? 'UNDO ↩' : 'DONE ✓';
-                    if (isDone) {
-                        showRecipeToast(pickRecipeEncouragement(i, steps.length));
-                        if (i + 1 < steps.length) goto(i + 1);
-                    }
-                });
+            track.addEventListener('click', (e) => {
+                const card = e.target.closest('.step-flip-card');
+                if (card) card.classList.toggle('flipped');
             });
-
-            track.querySelectorAll('.step-card-help').forEach((btn, i) => {
-                btn.addEventListener('click', () => {
-                    if (typeof SmartHelper !== 'undefined') {
-                        new SmartHelper(
-                            recipeName, i + 1, steps[i], recipeType,
-                            steps,  // full steps array
-                            i       // zero-based index
-                        ).showHelpModal();
-                    } else {
-                        alert('Help system loading… please try again in a moment.');
-                    }
-                });
-            });
+            prevBtn.addEventListener('click', () => { track.querySelectorAll('.step-flip-card')[current]?.classList.remove('flipped'); goto(current - 1); });
+            nextBtn.addEventListener('click', () => { track.querySelectorAll('.step-flip-card')[current]?.classList.remove('flipped'); goto(current + 1); });
 
             goto(0);
+
+            // View toggle wiring
+            document.querySelectorAll('.step-view-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.step-view-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const view = btn.dataset.view;
+                    document.getElementById('stepsListView').style.display = view === 'list' ? '' : 'none';
+                    document.getElementById('stepsCardView').style.display = view === 'cards' ? '' : 'none';
+                    if (view === 'cards') goto(current);
+                });
+            });
+        }
+
+        /* ── Drink pairings ─────────────────────────────────────── */
+        const FLAVOR_KEYWORDS = {
+            spicy:   ['spicy','chili','jalapeño','sriracha','pepper','hot sauce','cayenne','habanero'],
+            sweet:   ['sugar','honey','maple','caramel','chocolate','vanilla','coconut','fruit','mango','berry','banana','apple'],
+            savory:  ['soy sauce','miso','umami','mushroom','anchovy','parmesan','bacon','broth','stock','worcestershire'],
+            rich:    ['butter','cream','cheese','beef','pork','lamb','duck','heavy','fat','coconut milk'],
+            light:   ['salad','lemon','lime','citrus','herb','mint','cucumber','spring','greens','vinegar'],
+            earthy:  ['mushroom','truffle','lentil','bean','root','beet','squash','potato','sweet potato','walnut'],
+            smoky:   ['smoked','barbecue','chipotle','paprika','charcoal','grill','roasted','cumin'],
+            tangy:   ['vinegar','pickle','lemon','lime','yogurt','tamarind','sumac','fermented','kimchi'],
+        };
+        const FLAVOR_TO_DRINK_TAGS = {
+            spicy:  ['cooling','refreshing','milk-based','fruity','sweet'],
+            sweet:  ['bitter','coffee','tea','light','floral'],
+            savory:  ['acidic','sparkling','light','citrus','refreshing'],
+            rich:   ['acidic','sparkling','bitter','coffee','tannic'],
+            light:  ['floral','tea','citrus','sparkling','light'],
+            earthy: ['coffee','roasted','tea','spiced','warming'],
+            smoky:  ['whiskey','beer','bold','roasted','malty'],
+            tangy:  ['sweet','fruity','floral','sparkling','refreshing'],
+        };
+
+        function detectFlavorProfile(recipe) {
+            const text = [
+                recipe.name || '',
+                ...(recipe.ingredients || []).map(i => typeof i === 'string' ? i : i.text || ''),
+                ...(recipe.steps || []),
+                recipe.description || ''
+            ].join(' ').toLowerCase();
+            return Object.entries(FLAVOR_KEYWORDS)
+                .filter(([, kws]) => kws.some(kw => text.includes(kw)))
+                .map(([flavor]) => flavor);
+        }
+
+        function scoreDrink(drink, flavorProfile, seed) {
+            const tags = (drink.tags || []).map(t => t.toLowerCase());
+            const desc = (drink.description || '').toLowerCase();
+            let score = 0;
+            flavorProfile.forEach(f => {
+                const targets = FLAVOR_TO_DRINK_TAGS[f] || [];
+                targets.forEach(t => { if (tags.includes(t) || desc.includes(t)) score += 2; });
+            });
+            // small deterministic jitter
+            score += ((seed * 13 + drink.name.charCodeAt(0)) % 5) * 0.1;
+            return score;
+        }
+
+        let _drinksData = null;
+        let _drinkActiveCat = 'all';
+        let _drinkFlavorProfile = [];
+        let _drinkSeed = Date.now();
+
+        async function loadDrinkPairings(recipe) {
+            if (!_drinksData) {
+                try {
+                    const res = await fetch('data/think-coffee-menu.json');
+                    _drinksData = await res.json();
+                } catch (_) { return; }
+            }
+            _drinkFlavorProfile = detectFlavorProfile(recipe);
+            renderDrinkTab();
+        }
+
+        function renderDrinkTab() {
+            const stripEl = document.getElementById('drinksFlavorStrip');
+            const pillsEl = document.getElementById('drinksCatPills');
+            const gridEl  = document.getElementById('drinksResultGrid');
+            if (!stripEl || !_drinksData) return;
+
+            // Flavor strip
+            stripEl.innerHTML = _drinkFlavorProfile.length
+                ? _drinkFlavorProfile.map(f => `<span style="display:inline-block;background:#c8455f;color:#fff;border-radius:20px;padding:4px 12px;font-size:8px;font-family:'Press Start 2P',monospace;margin:3px">${f.toUpperCase()}</span>`).join('')
+                : '<span style="font-size:12px;color:#a08070;font-family:\'DotGothic16\',monospace">Neutral flavor profile — all drinks pair well!</span>';
+
+            // Category pills
+            const cats = ['all', ...((_drinksData.drinkCategories || []).map(c => c.id))];
+            pillsEl.innerHTML = cats.map(c => `
+                <button class="d-cat-pill${c === _drinkActiveCat ? ' active' : ''}" data-cat="${c}">
+                    ${c === 'all' ? '✦ ALL' : c.toUpperCase().replace(/-/g,' ')}
+                </button>`).join('');
+            pillsEl.querySelectorAll('.d-cat-pill').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    _drinkActiveCat = btn.dataset.cat;
+                    renderDrinkTab();
+                });
+            });
+
+            // Score & filter drinks
+            let drinks = (_drinksData.drinks || []).filter(d => d.available !== false);
+            if (_drinkActiveCat !== 'all') drinks = drinks.filter(d => d.category === _drinkActiveCat);
+            drinks = drinks
+                .map(d => ({ ...d, _score: scoreDrink(d, _drinkFlavorProfile, _drinkSeed) }))
+                .sort((a, b) => b._score - a._score)
+                .slice(0, 9);
+
+            gridEl.innerHTML = drinks.map(d => `
+                <div class="d-card">
+                    <div class="d-card-head">
+                        <span class="d-card-name">${d.name}</span>
+                        <span class="d-temp">${d.temperature === 'hot' ? '☕' : d.temperature === 'cold' ? '🧊' : '🌡'}</span>
+                    </div>
+                    <div class="d-card-body">
+                        <p class="d-card-desc">${d.description || ''}</p>
+                        ${(d.tags||[]).length ? `<div class="d-card-tags">${d.tags.map(t=>`<span class="d-cat-pill" style="font-size:6px;padding:3px 8px">${t}</span>`).join('')}</div>` : ''}
+                    </div>
+                    <div class="d-card-foot">
+                        <span class="d-card-price">${d.price ? '$'+d.price.toFixed(2) : ''}</span>
+                    </div>
+                </div>`).join('') || '<p style="padding:16px;color:#a08070;font-family:\'DotGothic16\',monospace;font-size:13px">No drinks match this filter.</p>';
+
+            document.getElementById('drinksRemixBtn').onclick = () => {
+                _drinkSeed = Date.now() + Math.random() * 9999;
+                renderDrinkTab();
+            };
+        }
+
+        /* ── Adapt this recipe ──────────────────────────────────── */
+        const ADAPT_SUGGESTIONS = {
+            protein: {
+                head: '🥩 Boost Protein',
+                rows: [
+                    { icon: '🍗', text: '<strong>Swap or add</strong> a lean protein: chicken breast, tofu, tempeh, or canned chickpeas' },
+                    { icon: '🥚', text: '<strong>Add eggs</strong> on the side or stir in scrambled eggs for extra protein' },
+                    { icon: '🫘', text: '<strong>Fold in beans or lentils</strong> — they double as fiber and protein' },
+                    { icon: '💪', text: '<strong>Increase portion</strong> of existing meat by 30–40% to hit your goal' },
+                ]
+            },
+            fiber: {
+                head: '🌾 Add Fiber',
+                rows: [
+                    { icon: '🥦', text: '<strong>Steam broccoli, spinach, or kale</strong> and fold into the dish' },
+                    { icon: '🥕', text: '<strong>Grate carrots or zucchini</strong> into the mix — they disappear but add fiber' },
+                    { icon: '🫘', text: '<strong>Replace half the protein</strong> with black beans or lentils' },
+                    { icon: '🌾', text: '<strong>Swap white rice/pasta</strong> for brown rice, quinoa, or whole wheat' },
+                ]
+            },
+            carbs: {
+                head: '🥬 Lower Carbs',
+                rows: [
+                    { icon: '🥬', text: '<strong>Replace rice or pasta</strong> with cauliflower rice or zucchini noodles' },
+                    { icon: '🥗', text: '<strong>Serve over a salad bed</strong> instead of a grain base' },
+                    { icon: '🧀', text: '<strong>Skip sugary sauces</strong> — use olive oil, lemon, or vinegar instead' },
+                    { icon: '🍳', text: '<strong>Increase fat slightly</strong> (olive oil, avocado) to stay satiated without the carbs' },
+                ]
+            },
+            veggies: {
+                head: '🥦 Boost Veggies',
+                rows: [
+                    { icon: '🫑', text: '<strong>Sauté bell peppers and onions</strong> as a base layer' },
+                    { icon: '🥦', text: '<strong>Add broccoli or green beans</strong> in the last few minutes of cooking' },
+                    { icon: '🍅', text: '<strong>Finish with fresh tomatoes or cherry tomatoes</strong> for brightness' },
+                    { icon: '🥕', text: '<strong>Roast a mix of root vegetables</strong> and serve alongside' },
+                ]
+            }
+        };
+
+        function setupAdaptTab(recipe) {
+            document.querySelectorAll('.adapt-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const key = btn.dataset.adapt;
+                    const data = ADAPT_SUGGESTIONS[key];
+                    if (!data) return;
+
+                    document.querySelectorAll('.adapt-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const resultsEl = document.getElementById('adaptResults');
+                    document.getElementById('adaptResHead').textContent = data.head;
+                    document.getElementById('adaptResBody').innerHTML = data.rows.map(r => `
+                        <div class="adapt-row">
+                            <span class="adapt-row-icon">${r.icon}</span>
+                            <span class="adapt-row-text">${r.text}</span>
+                        </div>`).join('');
+                    resultsEl.classList.add('open');
+                });
+            });
         }
 
         /* ── Similar recipes from localStorage ──────────────────── */
