@@ -25,7 +25,7 @@ let recipesByCountry = {};
 
 function loadRecipes() {
   try {
-    // Load COMPLETE recipes first (new format - prioritized)
+    // Load COMPLETE recipes first (Phase 1)
     const completeRecipesDir = path.join(dataDir, 'complete-recipes');
     let completeFiles = [];
     if (fs.existsSync(completeRecipesDir)) {
@@ -37,7 +37,42 @@ function loadRecipes() {
           const filePath = path.join(completeRecipesDir, file);
           const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-          // New format: country data is directly at root
+          if (content && content.country) {
+            const country = content.country;
+            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
+
+            const countryRecipes = [];
+            categories.forEach(cat => {
+              if (Array.isArray(content[cat])) {
+                content[cat].forEach(recipe => {
+                  recipe.country = country;
+                  recipe.category = cat;
+                  recipe.region = content.region || 'Unknown';
+                  countryRecipes.push(recipe);
+                  allRecipes.push(recipe);
+                });
+              }
+            });
+            recipesByCountry[country] = countryRecipes;
+          }
+        } catch (e) {
+          console.warn(`Warning: Error loading ${file}: ${e.message}`);
+        }
+      });
+    }
+
+    // Load PHASE 2 recipes
+    const phase2Dir = path.join(dataDir, 'phase2-recipes');
+    let phase2Files = [];
+    if (fs.existsSync(phase2Dir)) {
+      phase2Files = fs.readdirSync(phase2Dir)
+        .filter(f => f.endsWith('-phase2-authentic.json'));
+
+      phase2Files.forEach(file => {
+        try {
+          const filePath = path.join(phase2Dir, file);
+          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
           if (content && content.country) {
             const country = content.country;
             const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
