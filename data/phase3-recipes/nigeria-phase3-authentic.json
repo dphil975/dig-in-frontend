@@ -1,0 +1,309 @@
+{
+  "country": "Nigeria",
+  "region": "Africa",
+  "breakfast": [
+    {
+      "id": "nig-break-jollof-rice",
+      "name": "Jollof Rice",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 15,
+      "cookTime": 35,
+      "description": "Nigerian rice cooked in tomato sauce with spices and vegetables",
+      "seasonings": [
+        "paprika",
+        "cayenne",
+        "bay leaf",
+        "curry"
+      ],
+      "ingredients": [
+        "2 cups rice",
+        "3 tomatoes (or can)",
+        "1 onion",
+        "4 cloves garlic",
+        "1/4 cup tomato paste",
+        "1/4 cup oil",
+        "4 cups broth",
+        "1 red pepper",
+        "Paprika",
+        "Cayenne",
+        "Curry powder",
+        "Bay leaf",
+        "Salt"
+      ],
+      "instructions": [
+        "Heat oil, sauté onion and garlic",
+        "Add tomato paste, cook 2 minutes",
+        "Blend tomatoes and red pepper, add to pot",
+        "Cook 5 minutes",
+        "Add broth and seasonings",
+        "Bring to boil",
+        "Add rice, stir well",
+        "Cover, simmer 20-25 minutes until rice is tender",
+        "Let rest 5 minutes",
+        "Fluff and serve"
+      ],
+      "notes": "The key is cooking on high heat then low, and not stirring too much",
+      "fun_fact": "Jollof Rice is beloved across West Africa and each country claims the best version",
+      "alternatives": [
+        "Add chicken or shrimp",
+        "Less spicy version",
+        "Add mixed vegetables"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "nig-lunch-pepper-soup",
+      "name": "Pepper Soup",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 40,
+      "description": "Spicy broth with meat and traditional Nigerian spices",
+      "seasonings": [
+        "cayenne",
+        "ginger",
+        "garlic",
+        "chili"
+      ],
+      "ingredients": [
+        "1.5 lbs beef or goat",
+        "6 cups water",
+        "2 onions",
+        "4 cloves garlic",
+        "1 tbsp ginger",
+        "3 hot peppers",
+        "2 tbsp cayenne",
+        "6 peppercorns",
+        "Curry powder",
+        "Thyme",
+        "Salt"
+      ],
+      "instructions": [
+        "Bring water to boil with meat",
+        "Add onion, garlic, ginger",
+        "Simmer 20 minutes",
+        "Crush peppers and peppercorns",
+        "Add to pot with cayenne and curry",
+        "Add thyme",
+        "Simmer 15 more minutes",
+        "Adjust seasoning",
+        "Serve hot in bowls"
+      ],
+      "notes": "Should be very spicy",
+      "fun_fact": "Pepper Soup is a popular street food and is also served at celebrations",
+      "alternatives": [
+        "Chicken instead of beef",
+        "Seafood version",
+        "Less spicy with fewer peppers"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "nig-dinner-egusi-soup",
+      "name": "Egusi Soup (Melon Seed)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 60,
+      "description": "Rich Nigerian soup with ground melon seeds, leafy greens, and meat",
+      "seasonings": [
+        "curry powder",
+        "bay leaf"
+      ],
+      "ingredients": [
+        "2 cups ground egusi seeds",
+        "1.5 lbs meat/fish",
+        "1 large onion",
+        "8 cups water",
+        "2 cups leafy greens (spinach)",
+        "2 tbsp palm oil",
+        "3 cloves garlic",
+        "2 tbsp cayenne",
+        "Curry powder",
+        "Bay leaf",
+        "Salt"
+      ],
+      "instructions": [
+        "Heat palm oil in pot",
+        "Sauté onion and garlic",
+        "Add meat and brown",
+        "Add water and bay leaf",
+        "Simmer meat until tender (20 min)",
+        "Mix egusi seeds with some broth to dissolve",
+        "Pour egusi mixture slowly into soup, stirring constantly",
+        "Add curry and cayenne",
+        "Simmer 20 minutes",
+        "Add leafy greens",
+        "Cook 5 more minutes",
+        "Season to taste"
+      ],
+      "notes": "Egusi must be thoroughly dissolved",
+      "fun_fact": "Egusi Soup is a staple at Nigerian celebrations and gatherings",
+      "alternatives": [
+        "Seafood instead of beef",
+        "Different leafy greens",
+        "Add potatoes"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "nig-snack-chin-chin",
+      "name": "Chin Chin (Fried Snack)",
+      "difficulty": "Medium",
+      "servings": 24,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Crispy fried pastry snack with butter and spices",
+      "seasonings": [
+        "nutmeg",
+        "ginger"
+      ],
+      "ingredients": [
+        "2 cups flour",
+        "1 egg",
+        "1/2 cup butter",
+        "1/4 cup milk",
+        "1 tsp baking powder",
+        "1 tsp nutmeg",
+        "1 tsp ginger",
+        "1/2 tsp salt",
+        "Oil for frying",
+        "Sugar"
+      ],
+      "instructions": [
+        "Mix flour and baking powder",
+        "Rub in cold butter",
+        "Add egg and milk",
+        "Knead until dough holds",
+        "Roll thin between parchment",
+        "Cut into 1-inch strips",
+        "Deep fry in batches until golden",
+        "Drain on paper towels",
+        "Dust with cinnamon sugar while hot"
+      ],
+      "notes": "Oil must be hot enough",
+      "fun_fact": "Chin Chin is a popular Nigerian snack eaten during celebrations and holidays",
+      "alternatives": [
+        "Savory version with no sugar",
+        "Add sesame seeds",
+        "Baked instead of fried"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "nig-dessert-puff-puff",
+      "name": "Puff Puff (Fried Donut)",
+      "difficulty": "Medium",
+      "servings": 16,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Nigerian fried donut balls with sugar coating",
+      "seasonings": [
+        "nutmeg",
+        "vanilla"
+      ],
+      "ingredients": [
+        "2 cups flour",
+        "1/2 cup sugar",
+        "1 packet yeast",
+        "1 cup warm water",
+        "1 egg",
+        "2 tbsp oil",
+        "1 tsp nutmeg",
+        "1 tsp vanilla",
+        "Oil for frying",
+        "Cinnamon sugar for coating"
+      ],
+      "instructions": [
+        "Mix flour, sugar, nutmeg",
+        "Dissolve yeast in warm water",
+        "Add to flour with egg and oil",
+        "Mix until sticky dough",
+        "Let rise 30 minutes",
+        "Heat oil to 350°F",
+        "Drop spoonfuls into oil",
+        "Fry until golden on both sides",
+        "Drain on paper towels",
+        "Coat with cinnamon sugar while warm"
+      ],
+      "notes": "Dough should be sticky",
+      "fun_fact": "Puff Puff is served at Nigerian celebrations and eaten as a quick breakfast",
+      "alternatives": [
+        "Chocolate-filled version",
+        "No sugar version",
+        "Different spices"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "nig-drink-zobo",
+      "name": "Zobo (Hibiscus Drink)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 30,
+      "description": "Refreshing Nigerian drink made from hibiscus flower petals",
+      "seasonings": [
+        "ginger",
+        "cloves"
+      ],
+      "ingredients": [
+        "2 cups dried hibiscus petals",
+        "6 cups water",
+        "1 tbsp ginger",
+        "4 cloves",
+        "1/2 cup sugar",
+        "Lemon juice"
+      ],
+      "instructions": [
+        "Boil water with ginger and cloves",
+        "Add hibiscus petals",
+        "Simmer 20 minutes",
+        "Strain through fine sieve",
+        "Add sugar and lemon juice",
+        "Chill thoroughly",
+        "Serve over ice"
+      ],
+      "notes": "Petals give deep red color",
+      "fun_fact": "Zobo is sold by street vendors throughout Nigeria and is a popular wedding drink",
+      "alternatives": [
+        "Add pineapple juice",
+        "More ginger for spice",
+        "Add mint"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "nig-drink-palm-wine",
+      "name": "Palm Wine",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Traditional Nigerian alcoholic drink from palm tree sap",
+      "seasonings": [],
+      "ingredients": [
+        "Palm wine"
+      ],
+      "instructions": [
+        "Serve chilled in gourd or glass",
+        "Drink slowly with friends",
+        "Often accompanied by kola nuts"
+      ],
+      "notes": "Fresh palm wine ferments quickly",
+      "fun_fact": "Palm Wine has been central to Nigerian culture for centuries and is essential at celebrations",
+      "alternatives": [
+        "Different palm types",
+        "Aged vs fresh",
+        "Tapped from different palms"
+      ]
+    }
+  ]
+}
