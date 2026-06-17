@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="frontend/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIG-IN · Recipe Final</title>
+    <title>DIG-IN · Recipe Cards</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap" rel="stylesheet">
     <style>
         /* ── Base ────────────────────────────────────────────────────── */
@@ -615,6 +614,57 @@
             transform: translate(1px, 1px);
             box-shadow: 2px 2px 0 #1c1c1c;
         }
+
+        /* ── Recipe Navigation Header ────────────────────────────── */
+        .recipe-nav-header {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .recipe-nav-header h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 14px;
+            color: #c8455f;
+            letter-spacing: 1px;
+        }
+
+        .recipe-nav-info {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            color: #8b5e3c;
+        }
+
+        .recipe-nav-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            padding: 8px 12px;
+            background: #fff0e0;
+            border: 3px solid #1c1c1c;
+            border-radius: 6px;
+            color: #8b5e3c;
+            cursor: pointer;
+            box-shadow: 2px 2px 0 #1c1c1c;
+            transition: all 0.1s;
+        }
+
+        .nav-btn:hover {
+            transform: translate(1px, 1px);
+            box-shadow: 1px 1px 0 #1c1c1c;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
     </style>
 </head>
 <body>
@@ -622,6 +672,16 @@
     <div style="position: fixed; inset: 0; pointer-events: none; z-index: 0; display: none;">
         <span style="position: absolute; left: 6%; top: 8%; font-size: 18px; opacity: .18;">☁</span>
         <span style="position: absolute; left: 80%; top: 14%; font-size: 18px; opacity: .18;">☁</span>
+    </div>
+
+    <!-- Recipe Navigation Header -->
+    <div class="recipe-nav-header">
+        <h2>🍽️ DIG IN</h2>
+        <span class="recipe-nav-info" id="recipeNavInfo">Recipe 1 of 64</span>
+        <div class="recipe-nav-buttons">
+            <button class="nav-btn" id="prevRecipeBtn" onclick="prevRecipe()">← PREV</button>
+            <button class="nav-btn" id="nextRecipeBtn" onclick="nextRecipe()">NEXT →</button>
+        </div>
     </div>
 
     <div class="recipe-card-final">
@@ -718,78 +778,93 @@
     </div>
 
     <script>
-        // Sample recipe data structure
-        const sampleRecipe = {
-            id: "sample-1",
-            name: "Spaghetti Carbonara",
-            country: "Italy",
-            difficulty: "easy",
-            servings: 4,
-            prepTime: 15,
-            cookTime: 20,
-            ingredients: [
-                "400g spaghetti",
-                "200g guanciale or pancetta",
-                "4 large eggs",
-                "100g Pecorino Romano cheese",
-                "Black pepper to taste",
-                "Salt for pasta water"
-            ],
-            instructions: [
-                "Bring a large pot of salted water to a boil for the pasta.",
-                "While water heats, dice the guanciale and cook in a large pan over medium heat until crispy, about 5-7 minutes.",
-                "In a bowl, whisk together eggs, grated cheese, and plenty of black pepper. Set aside.",
-                "Add spaghetti to boiling water and cook according to package directions until al dente.",
-                "Reserve 1 cup of pasta water before draining.",
-                "Add hot drained pasta to the pan with guanciale (off heat).",
-                "Quickly pour the egg mixture over the pasta while tossing constantly.",
-                "Add pasta water a splash at a time to achieve a creamy sauce.",
-                "Serve immediately with extra cheese and black pepper."
-            ],
-            cuisine: "italian"
-        };
+        let allRecipes = [];
+        let currentRecipeIndex = 0;
+        let currentRecipe = null;
 
-        // Sample drinks data
+        // Load recipes from API
+        async function loadRecipes() {
+            try {
+                const res = await fetch('http://localhost:5000/api/recipes?limit=100');
+                const data = await res.json();
+                allRecipes = data.recipes || [];
+                console.log(`✓ Loaded ${allRecipes.length} recipes`);
+
+                if (allRecipes.length > 0) {
+                    currentRecipeIndex = 0;
+                    displayRecipe(0);
+                }
+            } catch (err) {
+                console.error('Error loading recipes:', err);
+                alert('Could not load recipes. Make sure the API is running on http://localhost:5000');
+            }
+        }
+
+        function displayRecipe(index) {
+            if (allRecipes.length === 0) return;
+            currentRecipeIndex = Math.max(0, Math.min(index, allRecipes.length - 1));
+            currentRecipe = allRecipes[currentRecipeIndex];
+            renderRecipeCard(currentRecipe);
+            updateNavigation();
+        }
+
+        function updateNavigation() {
+            const info = document.getElementById('recipeNavInfo');
+            if (info) {
+                info.textContent = `Recipe ${currentRecipeIndex + 1} of ${allRecipes.length}`;
+            }
+
+            const prevBtn = document.getElementById('prevRecipeBtn');
+            const nextBtn = document.getElementById('nextRecipeBtn');
+            if (prevBtn) prevBtn.disabled = currentRecipeIndex === 0;
+            if (nextBtn) nextBtn.disabled = currentRecipeIndex === allRecipes.length - 1;
+        }
+
+        function nextRecipe() {
+            displayRecipe(currentRecipeIndex + 1);
+        }
+
+        function prevRecipe() {
+            displayRecipe(currentRecipeIndex - 1);
+        }
+
+        // Sample drinks data (for pairing)
         const sampleDrinks = {
             "hot-coffee": [
                 { name: "Espresso", emoji: "☕", desc: "Bold and concentrated" },
-                { name: "Cappuccino", emoji: "🍵", desc: "Creamy and smooth" },
-                { name: "Americano", emoji: "☕", desc: "Rich and smooth" }
-            ],
-            "iced-coffee": [
-                { name: "Iced Latte", emoji: "🧊", desc: "Refreshing and cool" },
-                { name: "Cold Brew", emoji: "🧊", desc: "Smooth and mellow" }
+                { name: "Cappuccino", emoji: "🍵", desc: "Creamy and smooth" }
             ],
             "tea": [
                 { name: "Green Tea", emoji: "🫖", desc: "Light and fresh" },
-                { name: "Chamomile", emoji: "🫖", desc: "Soothing and warm" }
-            ],
-            "juice": [
-                { name: "Orange Juice", emoji: "🍊", desc: "Citrus and bright" },
-                { name: "Apple Juice", emoji: "🍎", desc: "Sweet and crisp" }
+                { name: "Black Tea", emoji: "🫖", desc: "Strong and bold" }
             ]
         };
 
         // Initialize
         function init() {
-            const recipe = sampleRecipe;
-            renderRecipeCard(recipe);
+            loadRecipes();
             setupEventListeners();
         }
 
-        function renderRecipeCard(recipe) {
-            // Header
-            document.getElementById('recipeName').textContent = recipe.name;
-            document.getElementById('recipeCountry').textContent = `From ${recipe.country}`;
-            document.getElementById('diffBadge').textContent = `● ${recipe.difficulty.charAt(0).toUpperCase() + recipe.difficulty.slice(1)}`;
-            document.getElementById('timeBadge').textContent = `⏱ ${(recipe.prepTime || 0) + (recipe.cookTime || 0)} min`;
-            document.getElementById('servBadge').textContent = `🍽 ${recipe.servings} servings`;
-
+        function getEmojiForCountry(country) {
             const emojiMap = {
-                italian: '🍝', mexican: '🌮', japanese: '🍜', indian: '🍛',
-                chinese: '🥢', american: '🍔', french: '🥐', thai: '🫕'
+                'Argentina': '🇦🇷', 'Brazil': '🇧🇷', 'China': '🇨🇳', 'Afghanistan': '🇦🇫',
+                'Albania': '🇦🇱', 'Algeria': '🇩🇿', 'Italy': '🍝', 'Mexico': '🌮',
+                'Japan': '🍜', 'India': '🍛', 'USA': '🍔', 'France': '🥐', 'Thailand': '🫕'
             };
-            document.getElementById('recipeEmoji').textContent = emojiMap[recipe.cuisine] || '🍳';
+            return emojiMap[country] || '🍳';
+        }
+
+        function renderRecipeCard(recipe) {
+            if (!recipe) return;
+
+            // Header
+            document.getElementById('recipeName').textContent = recipe.name || 'Recipe';
+            document.getElementById('recipeCountry').textContent = `From ${recipe.country || 'Unknown'}`;
+            document.getElementById('diffBadge').textContent = `● ${recipe.difficulty ? recipe.difficulty.charAt(0).toUpperCase() + recipe.difficulty.slice(1) : 'Easy'}`;
+            document.getElementById('timeBadge').textContent = `⏱ ${(recipe.prepTime || 0) + (recipe.cookTime || 0)} min`;
+            document.getElementById('servBadge').textContent = `🍽 ${recipe.servings || 4} servings`;
+            document.getElementById('recipeEmoji').textContent = getEmojiForCountry(recipe.country);
 
             // Ingredients
             const ingList = document.getElementById('ingredientsList');
@@ -810,25 +885,26 @@
             `).join('');
 
             // Carousel Steps
+            const instructions = recipe.instructions || [];
             const track = document.getElementById('carouselTrack');
-            track.innerHTML = recipe.instructions.map((step, i) => `
+            track.innerHTML = instructions.map((step, i) => `
                 <div class="flip-card" data-step="${i}">
                     <div class="flip-inner">
                         <div class="flip-front">
-                            <div class="flip-step-header">STEP ${i + 1} OF ${recipe.instructions.length}</div>
+                            <div class="flip-step-header">STEP ${i + 1} OF ${instructions.length}</div>
                             <div class="flip-step-text">${step}</div>
                             <div class="flip-hint">👆 TAP TO FLIP</div>
                         </div>
                         <div class="flip-back">
                             <div class="flip-stage-emoji">👨‍🍳</div>
                             <div class="flip-stage-label">COOKING</div>
-                            <div class="flip-visual-text">Watch the pasta texture change — it should be al dente, not soft.</div>
+                            <div class="flip-visual-text">Executing step ${i + 1} of ${instructions.length}</div>
                         </div>
                     </div>
                 </div>
             `).join('');
 
-            document.getElementById('stepIndicator').textContent = `1 / ${recipe.instructions.length}`;
+            document.getElementById('stepIndicator').textContent = `1 / ${instructions.length}`;
 
             // Drinks
             renderDrinks();
@@ -910,9 +986,10 @@
 
             // Carousel
             let currentStep = 0;
-            const totalSteps = sampleRecipe.instructions.length;
+            const totalSteps = (recipe.instructions && recipe.instructions.length) || 0;
 
             function initCarousel() {
+                if (totalSteps === 0) return;
                 const track = document.getElementById('carouselTrack');
                 const steps = track.querySelectorAll('.flip-card');
 

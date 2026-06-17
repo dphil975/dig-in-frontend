@@ -25,35 +25,86 @@ let recipesByCountry = {};
 
 function loadRecipes() {
   try {
-    const files = fs.readdirSync(dataDir)
-      .filter(f => f.endsWith('-recipes.json'));
+    // Load COMPLETE recipes first (new format - prioritized)
+    const completeRecipesDir = path.join(dataDir, 'complete-recipes');
+    let completeFiles = [];
+    if (fs.existsSync(completeRecipesDir)) {
+      completeFiles = fs.readdirSync(completeRecipesDir)
+        .filter(f => f.endsWith('-complete-authentic.json'));
 
-    files.forEach(file => {
-      const filePath = path.join(dataDir, file);
-      const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      const countryKey = Object.keys(content)[0];
-      const countryData = content[countryKey];
+      completeFiles.forEach(file => {
+        try {
+          const filePath = path.join(completeRecipesDir, file);
+          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-      if (countryData) {
-        const country = countryData.country || countryKey;
-        const categories = ['breakfast', 'lunch', 'dinner', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks', 'vegetarianRecipes', 'specialtyCoffee'];
+          // New format: country data is directly at root
+          if (content && content.country) {
+            const country = content.country;
+            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
 
-        const countryRecipes = [];
-        categories.forEach(cat => {
-          if (Array.isArray(countryData[cat])) {
-            countryData[cat].forEach(recipe => {
-              recipe.country = country;
-              recipe.category = cat;
-              countryRecipes.push(recipe);
-              allRecipes.push(recipe);
+            const countryRecipes = [];
+            categories.forEach(cat => {
+              if (Array.isArray(content[cat])) {
+                content[cat].forEach(recipe => {
+                  recipe.country = country;
+                  recipe.category = cat;
+                  recipe.region = content.region || 'Unknown';
+                  countryRecipes.push(recipe);
+                  allRecipes.push(recipe);
+                });
+              }
             });
+            recipesByCountry[country] = countryRecipes;
           }
-        });
-        recipesByCountry[country] = countryRecipes;
+        } catch (e) {
+          console.warn(`Warning: Error loading ${file}: ${e.message}`);
+        }
+      });
+    }
+
+    // Load from data/ directory (old format files)
+    const dataFiles = fs.readdirSync(dataDir)
+      .filter(f => (f.endsWith('-recipes.json') || f.endsWith('-complete-recipes.json')) &&
+                    !f.startsWith('.'));
+
+    dataFiles.forEach(file => {
+      try {
+        const filePath = path.join(dataDir, file);
+        const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const countryKey = Object.keys(content)[0];
+        const countryData = content[countryKey];
+
+        if (countryData && countryData.country) {
+          // Skip if already loaded from complete-recipes
+          if (recipesByCountry[countryData.country]) {
+            return;
+          }
+
+          const country = countryData.country;
+          const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks', 'vegetarianRecipes', 'specialtyCoffee'];
+
+          const countryRecipes = [];
+          categories.forEach(cat => {
+            if (Array.isArray(countryData[cat])) {
+              countryData[cat].forEach(recipe => {
+                recipe.country = country;
+                recipe.category = cat;
+                recipe.region = countryData.region || 'Unknown';
+                countryRecipes.push(recipe);
+                allRecipes.push(recipe);
+              });
+            }
+          });
+          recipesByCountry[country] = countryRecipes;
+        }
+      } catch (e) {
+        console.warn(`Warning: Error loading ${file}: ${e.message}`);
       }
     });
 
-    console.log(`✓ Loaded ${allRecipes.length} recipes from ${files.length} countries`);
+    const countryCount = Object.keys(recipesByCountry).length;
+    console.log(`\n✓ Loaded ${allRecipes.length} recipes from ${countryCount} countries`);
+    console.log(`✓ Complete recipe countries: ${Object.keys(recipesByCountry).filter(c => recipesByCountry[c].some(r => r.fun_fact)).length}`);
   } catch (err) {
     console.error('Error loading recipes:', err.message);
   }
