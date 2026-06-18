@@ -42,7 +42,49 @@
       ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "grc-lunch-fish-souvlaki",
+      "name": "Fish Souvlaki (Grilled Fish Skewers)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 10,
+      "description": "Ancient Greek grilled fish skewers with vegetables, served in pita bread with tzatziki sauce. Traditional Mediterranean cooking method documented since Homer's time",
+      "seasonings": [
+        "dried oregano",
+        "salt",
+        "black pepper"
+      ],
+      "ingredients": [
+        "800g firm fish (swordfish or sea bass)",
+        "3 tbsp olive oil",
+        "2 tbsp lemon juice",
+        "2 cloves garlic",
+        "1 tsp dried oregano",
+        "Salt and pepper",
+        "Bell peppers",
+        "Red onion",
+        "Pita bread",
+        "Tzatziki sauce"
+      ],
+      "instructions": [
+        "Mix olive oil, lemon juice, garlic, oregano, salt and pepper for marinade",
+        "Cut fish into chunks and marinate for 30 minutes",
+        "Thread fish alternately with peppers and onion on skewers",
+        "Grill 3-4 minutes per side over high heat until charred",
+        "Serve in pita with tzatziki, tomatoes, and lettuce"
+      ],
+      "notes": "Firm fish varieties withstand grilling better than delicate white fish. Marinating adds flavor and keeps fish moist",
+      "fun_fact": "Souvlaki is the Greek equivalent of kebab, an ancient cooking method documented since Homer's time. Street food and restaurant staple throughout Greece",
+      "alternatives": [
+        "Use shrimp instead of fish",
+        "Add halloumi cheese to skewers",
+        "Serve with feta and olives",
+        "Make with chicken breast"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

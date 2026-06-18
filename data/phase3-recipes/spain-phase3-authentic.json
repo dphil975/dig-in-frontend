@@ -10,7 +10,9 @@
       "prepTime": 5,
       "cookTime": 5,
       "description": "One of Spain's simplest and most beloved breakfast dishes - toasted bread rubbed with garlic, topped with grated ripe tomato, excellent olive oil, and sea salt",
-      "seasonings": ["sea salt"],
+      "seasonings": [
+        "sea salt"
+      ],
       "ingredients": [
         "1 slice rustic bread or small baguette",
         "1-2 ripe plum tomatoes",
@@ -27,9 +29,14 @@
         "Sprinkle with sea salt to taste",
         "Serve immediately while toast is still warm"
       ],
-      "notes": "Using box grater to create thick tomato sauce rather than chopping ensures proper thick consistency found in Spanish cafés",
-      "fun_fact": "Pan con tomate takes only five minutes from start to table. It is typically made with small crusty baguettes (bollería) and is quick enough for hurried mornings",
-      "alternatives": ["Add jamón (cured ham)", "Top with cheese", "Add fresh basil", "Use whole grain bread"]
+      "notes": "Using box grater to create thick tomato sauce rather than chopping ensures proper thick consistency found in Spanish caf\u00e9s",
+      "fun_fact": "Pan con tomate takes only five minutes from start to table. It is typically made with small crusty baguettes (boller\u00eda) and is quick enough for hurried mornings",
+      "alternatives": [
+        "Add jam\u00f3n (cured ham)",
+        "Top with cheese",
+        "Add fresh basil",
+        "Use whole grain bread"
+      ]
     },
     {
       "id": "spa-break-churros",
@@ -39,7 +46,9 @@
       "prepTime": 10,
       "cookTime": 20,
       "description": "Golden Spanish fried pastry often served alongside thick hot chocolate for dunking. Can be served plain, dusted with cinnamon sugar, or filled with chocolate or custard",
-      "seasonings": ["cinnamon sugar"],
+      "seasonings": [
+        "cinnamon sugar"
+      ],
       "ingredients": [
         "1 cup water",
         "4 tbsp sugar",
@@ -55,7 +64,7 @@
         "Remove from heat and add flour, stirring until well combined into thick paste",
         "Cool slightly",
         "Transfer dough to churrera (churro maker) or piping bag with large star nozzle",
-        "Heat 2 inches of oil in deep pot to 375°F",
+        "Heat 2 inches of oil in deep pot to 375\u00b0F",
         "Pipe 4-6 inch strips of dough directly into hot oil",
         "Fry 1-2 minutes until golden on one side, then flip",
         "Fry another 1-2 minutes until golden on other side",
@@ -65,10 +74,59 @@
       ],
       "notes": "Churros are best served immediately after frying while still warm. Oil temperature must be consistent for even cooking",
       "fun_fact": "Churros are traditional Spanish breakfast often served alongside thick hot chocolate for dunking. Churros can also be filled with chocolate or custard cream",
-      "alternatives": ["Make mini churros", "Fill with dulce de leche", "Dip in chocolate sauce", "Make churro sticks"]
+      "alternatives": [
+        "Make mini churros",
+        "Fill with dulce de leche",
+        "Dip in chocolate sauce",
+        "Make churro sticks"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "spa-lunch-gazpacho",
+      "name": "Gazpacho (Cold Tomato Soup)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 0,
+      "description": "Traditional Spanish cold soup from Andalusia - perfect for hot summer lunches. Made from fresh tomatoes and vegetables",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "red wine vinegar"
+      ],
+      "ingredients": [
+        "1kg ripe tomatoes",
+        "1 cucumber",
+        "1 bell pepper",
+        "1/2 red onion",
+        "2 garlic cloves",
+        "50ml olive oil",
+        "25ml red wine vinegar",
+        "300ml tomato juice",
+        "Salt and pepper to taste",
+        "Bread crumbs",
+        "Ice"
+      ],
+      "instructions": [
+        "Roughly chop tomatoes, cucumber, pepper, onion and garlic",
+        "Working in batches, blend vegetables until smooth",
+        "Strain through fine sieve for smoother texture or keep chunky",
+        "Stir in olive oil, vinegar, tomato juice, salt and pepper",
+        "Chill for at least 2 hours",
+        "Serve ice-cold with croutons and diced vegetables"
+      ],
+      "notes": "Gazpacho improves overnight as flavors meld. Can be made vegetarian by omitting fish sauce",
+      "fun_fact": "Gazpacho is traditional Spanish lunch from Andalusia region, perfect for hot summer days",
+      "alternatives": [
+        "Add sherry vinegar instead of red wine",
+        "Include watermelon for sweetness",
+        "Make with roasted red peppers",
+        "Add fresh herbs"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

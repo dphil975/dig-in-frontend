@@ -10,7 +10,10 @@
       "prepTime": 10,
       "cookTime": 15,
       "description": "A Turkish breakfast specialty from the town of Menemen, combining soft vegetables with scrambled eggs for a simple yet satisfying meal traditionally served family-style",
-      "seasonings": ["salt", "black pepper"],
+      "seasonings": [
+        "salt",
+        "black pepper"
+      ],
       "ingredients": [
         "4 eggs",
         "2 green Turkish peppers (or Anaheim peppers)",
@@ -22,7 +25,7 @@
       ],
       "instructions": [
         "Heat olive oil in a large skillet over medium heat",
-        "Dice onions and peppers, add to oil and sauté for 5 minutes until softened",
+        "Dice onions and peppers, add to oil and saut\u00e9 for 5 minutes until softened",
         "Add diced tomatoes and cook for 3 minutes",
         "Gently crack eggs into pan and slowly scramble with the vegetable mixture",
         "Cook for 4-5 minutes until eggs are just set",
@@ -31,7 +34,12 @@
       ],
       "notes": "Menemen should be cooked slowly to keep eggs creamy. The dish is traditionally served in the skillet for family-style sharing",
       "fun_fact": "Menemen originated in the town of Menemen in Northern Izmir where it is believed to have been invented and remains a beloved traditional Turkish breakfast",
-      "alternatives": ["Add sausage or bacon", "Use red peppers instead of green", "Include kaşar cheese instead of feta", "Add fresh herbs like parsley or dill"]
+      "alternatives": [
+        "Add sausage or bacon",
+        "Use red peppers instead of green",
+        "Include ka\u015far cheese instead of feta",
+        "Add fresh herbs like parsley or dill"
+      ]
     },
     {
       "id": "tur-break-simit",
@@ -41,7 +49,9 @@
       "prepTime": 20,
       "cookTime": 18,
       "description": "A beloved Turkish street food - a golden sesame-crusted bread with a tender, fluffy interior, sitting between a bagel and soft pretzel",
-      "seasonings": ["salt"],
+      "seasonings": [
+        "salt"
+      ],
       "ingredients": [
         "500g all-purpose flour",
         "7g instant yeast",
@@ -65,15 +75,67 @@
         "Pour sesame seeds into shallow bowl",
         "Dip each simit ring into syrup, then roll in sesame seeds",
         "Place on oiled baking sheet and let rise 15-20 minutes",
-        "Bake at 400°F for 15-18 minutes, turning every 3-4 minutes",
+        "Bake at 400\u00b0F for 15-18 minutes, turning every 3-4 minutes",
         "Cool on wire rack and serve with cheese, olives, and Turkish tea"
       ],
       "notes": "Rotating simits while baking ensures even browning. Grape molasses creates authentic flavor",
       "fun_fact": "Turkish simit may have been invented around 1500s during Ottoman Empire. Today it remains a beloved street food, often eaten for breakfast with fresh vegetables and cheese",
-      "alternatives": ["Use olive oil", "Add everything bagel seasoning", "Make mini-simits", "Dip in zaatar instead of sesame"]
+      "alternatives": [
+        "Use olive oil",
+        "Add everything bagel seasoning",
+        "Make mini-simits",
+        "Dip in zaatar instead of sesame"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "tur-lunch-doner-kebab",
+      "name": "D\u00f6ner Kebab (Rotisserie Meat Sandwich)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 45,
+      "description": "Turkish rotisserie meat sandwich with thin-sliced cooked meat, vegetables and yogurt sauce in pita. Modern d\u00f6ner developed in Istanbul in 19th century",
+      "seasonings": [
+        "black pepper",
+        "cumin",
+        "paprika",
+        "salt"
+      ],
+      "ingredients": [
+        "1kg ground lamb",
+        "500g ground beef",
+        "100g beef fat",
+        "50g onion (grated)",
+        "3 cloves garlic",
+        "1 tsp black pepper",
+        "1 tsp cumin",
+        "1/2 tsp paprika",
+        "Salt to taste",
+        "Pita bread",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Yogurt sauce"
+      ],
+      "instructions": [
+        "Mix ground meat with fat, onion, garlic and spices",
+        "In vertical rotisserie (or bake at 400\u00b0F for 45 min), cook meat until outer layer browns and crisps",
+        "Slice thinly from outside",
+        "Serve in pita with vegetables and yogurt sauce",
+        "Squeeze lemon over filling"
+      ],
+      "notes": "If no vertical rotisserie, shape mixture into loaf on baking sheet and bake until golden, slicing as it cooks",
+      "fun_fact": "Modern d\u00f6ner kebab developed in Istanbul in 19th century, revolutionized by vertical rotisserie cooking. One of most popular lunch sandwiches worldwide",
+      "alternatives": [
+        "Use chicken instead of lamb",
+        "Add fried eggs",
+        "Make with vegetables (veggie d\u00f6ner)",
+        "Add cheese"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

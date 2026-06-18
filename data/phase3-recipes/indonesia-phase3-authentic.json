@@ -10,7 +10,13 @@
       "prepTime": 15,
       "cookTime": 25,
       "description": "Traditional Indonesian yellow rice infused with turmeric, coconut milk, and aromatic spices. Often served with perkedel potato fritters and other accompaniments for breakfast or special occasions",
-      "seasonings": ["turmeric", "lemongrass", "garlic", "ginger", "galangal"],
+      "seasonings": [
+        "turmeric",
+        "lemongrass",
+        "garlic",
+        "ginger",
+        "galangal"
+      ],
       "ingredients": [
         "2 cups jasmine rice",
         "1 can (400ml) coconut milk",
@@ -27,7 +33,7 @@
       ],
       "instructions": [
         "Rinse rice thoroughly under cold water",
-        "Heat oil in pot and sauté garlic, ginger, and galangal for 1-2 minutes until fragrant",
+        "Heat oil in pot and saut\u00e9 garlic, ginger, and galangal for 1-2 minutes until fragrant",
         "Add turmeric and stir for 30 seconds",
         "Add rice and stir for 1 minute to coat with oil and spices",
         "Pour in coconut milk and water, stirring well",
@@ -40,7 +46,12 @@
       ],
       "notes": "Salam leaves and other aromatics are important for authentic Indonesian flavor. Often served with perkedel and other accompaniments",
       "fun_fact": "Nasi kuning is often served for special occasions including weddings, birthdays, and independence day due to its perceived favorable fortune and auspicious meaning",
-      "alternatives": ["Add peas and corn", "Serve with cucumber salad", "Top with fried eggs", "Add peanuts for crunch"]
+      "alternatives": [
+        "Add peas and corn",
+        "Serve with cucumber salad",
+        "Top with fried eggs",
+        "Add peanuts for crunch"
+      ]
     },
     {
       "id": "idn-break-perkedel",
@@ -50,7 +61,12 @@
       "prepTime": 20,
       "cookTime": 30,
       "description": "Golden Indonesian potato fritters seasoned with garlic and nutmeg, traditionally served alongside nasi kuning and other breakfast items as part of tumpeng spread",
-      "seasonings": ["nutmeg", "black pepper", "salt", "garlic"],
+      "seasonings": [
+        "nutmeg",
+        "black pepper",
+        "salt",
+        "garlic"
+      ],
       "ingredients": [
         "1kg russet potatoes",
         "3 tbsp butter",
@@ -65,13 +81,13 @@
       "instructions": [
         "Boil potatoes in salted water until tender (about 20 minutes), drain well",
         "Peel potatoes while warm and mash until smooth",
-        "Heat butter and sauté minced garlic until fragrant (about 1 minute)",
+        "Heat butter and saut\u00e9 minced garlic until fragrant (about 1 minute)",
         "Add to mashed potatoes with eggs, nutmeg, black pepper, and salt",
         "Mix thoroughly until smooth consistency",
         "Spread flour on plate",
         "Drop 1/4 cup batter portions onto flour",
         "Using two forks, roll each portion to coat in flour, then shape into oval patties",
-        "Heat 2 inches of oil in deep pot to 350°F",
+        "Heat 2 inches of oil in deep pot to 350\u00b0F",
         "Carefully place perkedel in hot oil",
         "Fry 3-4 minutes total, turning halfway through, until golden brown",
         "Remove with slotted spoon and drain on paper towels",
@@ -79,10 +95,62 @@
       ],
       "notes": "Russet potatoes are preferred because of their higher starch content. Proper oil temperature is crucial for achieving golden exterior without greasy interior",
       "fun_fact": "Perkedel are authentic Indonesian snacks usually served alongside nasi kuning. They are often filled with potato, minced meat, corn, tofu, or fish depending on region",
-      "alternatives": ["Make with meat filling", "Add corn to mixture", "Stuff with cheese", "Make mini perkedels as appetizers"]
+      "alternatives": [
+        "Make with meat filling",
+        "Add corn to mixture",
+        "Stuff with cheese",
+        "Make mini perkedels as appetizers"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "idn-lunch-nasi-goreng",
+      "name": "Nasi Goreng (Indonesian Fried Rice)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 10,
+      "description": "Daily lunch in Indonesia - fried rice with sweet soy sauce, eggs and vegetables. Every household has unique variation",
+      "seasonings": [
+        "kecap manis (sweet soy sauce)",
+        "fish sauce",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "3 cups cooked rice (day-old, chilled)",
+        "3 tbsp oil",
+        "3 cloves garlic, minced",
+        "2 shallots, sliced",
+        "200g chicken or shrimp",
+        "2 eggs",
+        "1 cup mixed vegetables",
+        "3 tbsp kecap manis (sweet soy sauce)",
+        "1 tbsp fish sauce",
+        "Salt and pepper to taste",
+        "Fresh cilantro",
+        "Lime wedge"
+      ],
+      "instructions": [
+        "Heat wok, add oil and garlic/shallots, fry 1 minute",
+        "Add protein, cook until done",
+        "Push to side, scramble eggs, mix in",
+        "Add chilled rice, breaking up clumps, stir-fry 3 minutes",
+        "Add vegetables, kecap manis and fish sauce",
+        "Toss everything 2-3 minutes until heated through",
+        "Serve with fresh cilantro and lime"
+      ],
+      "notes": "Rice must be day-old and chilled to avoid clumping. Sweet soy sauce is essential for authentic flavor",
+      "fun_fact": "Nasi Goreng is daily lunch in Indonesia, every household and restaurant has own unique variation with local preferences",
+      "alternatives": [
+        "Add pineapple chunks",
+        "Include shrimp paste sambal",
+        "Top with fried egg",
+        "Make vegetarian version"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

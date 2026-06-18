@@ -10,7 +10,11 @@
       "prepTime": 20,
       "cookTime": 150,
       "description": "Rich and deeply flavored Ethiopian chicken stew made with slow-cooked onions and complex spice blend. Traditionally eaten for special occasions and weekends, often served on injera bread",
-      "seasonings": ["berbere spice blend", "ginger", "garlic"],
+      "seasonings": [
+        "berbere spice blend",
+        "ginger",
+        "garlic"
+      ],
       "ingredients": [
         "1.5kg chicken, cut into pieces",
         "8 onions, finely minced",
@@ -36,7 +40,12 @@
       ],
       "notes": "The long cooking of onions is crucial to developing complex flavor. Berbere spice blend is the soul of the dish",
       "fun_fact": "Doro Wat is a rich, deeply flavored Ethiopian dish traditionally eaten for special occasions and weekends. The long cooking of onions develops the complex flavor",
-      "alternatives": ["Make with lamb instead of chicken", "Add potatoes", "Use goat meat", "Make vegetarian with chickpeas and hard-boiled eggs"]
+      "alternatives": [
+        "Make with lamb instead of chicken",
+        "Add potatoes",
+        "Use goat meat",
+        "Make vegetarian with chickpeas and hard-boiled eggs"
+      ]
     },
     {
       "id": "eth-break-injera",
@@ -46,7 +55,9 @@
       "prepTime": 15,
       "cookTime": 4,
       "description": "Spongy Ethiopian flatbread made from teff flour with 2-4 day fermentation, creating characteristic tangy flavor and spongy texture. Serves as both plate and eating utensil",
-      "seasonings": ["salt"],
+      "seasonings": [
+        "salt"
+      ],
       "ingredients": [
         "3 cups teff flour",
         "3 cups water",
@@ -69,10 +80,57 @@
       ],
       "notes": "The 2-4 day fermentation is crucial for flavor and texture. Injera made from teff flour, a grain indigenous to Ethiopia",
       "fun_fact": "Injera is a spongy pancake made from teff flour indigenous to Ethiopia. Fermentation gives injera characteristic tangy flavor and spongy texture. Injera serves as plate and utensil",
-      "alternatives": ["Add spices to batter for flavored injera", "Use sourdough starter instead of fermenting from scratch", "Make smaller personal-sized injera", "Store in plastic for several days"]
+      "alternatives": [
+        "Add spices to batter for flavored injera",
+        "Use sourdough starter instead of fermenting from scratch",
+        "Make smaller personal-sized injera",
+        "Store in plastic for several days"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "eth-lunch-misir-wot",
+      "name": "Misir Wot (Ethiopian Red Lentil Stew)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 90,
+      "description": "Vegetarian Ethiopian lunch - red lentil stew with warming spices. Often served during fasting periods",
+      "seasonings": [
+        "berbere spice blend",
+        "ginger",
+        "garlic"
+      ],
+      "ingredients": [
+        "2 cups red lentils",
+        "3 tbsp niter kibbeh (clarified butter)",
+        "3 large onions, minced",
+        "3 tbsp ginger-garlic paste",
+        "4 tbsp berbere spice blend",
+        "3 cups water",
+        "Salt and pepper to taste",
+        "Injera bread for serving"
+      ],
+      "instructions": [
+        "Heat niter kibbeh, add minced onions, cook covered over low heat for 30 minutes until very soft",
+        "Add ginger-garlic paste, cook 5 minutes",
+        "Add berbere spice, cook 2-3 minutes",
+        "Add rinsed lentils and water, bring to boil",
+        "Reduce heat, simmer 30-40 minutes until lentils break down into thick stew",
+        "Season with salt and pepper",
+        "Serve on injera bread with side dishes"
+      ],
+      "notes": "Slow cooking of onions crucial for depth of flavor. Berbere spice blend is essential",
+      "fun_fact": "Misir Wot is vegetarian Ethiopian lunch, often served during fasting periods. Simple yet deeply flavorful",
+      "alternatives": [
+        "Add chickpeas for texture",
+        "Include tomatoes",
+        "Make spicier with extra berbere",
+        "Add spinach at end"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

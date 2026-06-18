@@ -10,7 +10,11 @@
       "prepTime": 30,
       "cookTime": 20,
       "description": "Popular Korean grab-and-go meal of seasoned rice rolled with vegetables and protein, sliced into rounds. Can be eaten warm or at room temperature with many regional variations",
-      "seasonings": ["sesame oil", "salt", "soy sauce"],
+      "seasonings": [
+        "sesame oil",
+        "salt",
+        "soy sauce"
+      ],
       "ingredients": [
         "3 cups cooked short-grain rice",
         "4 nori (dried seaweed) sheets",
@@ -39,10 +43,60 @@
       ],
       "notes": "Proper order of filling ingredients is crucial to keep stacked ingredients in place as you roll. Sesame oil is essential for authentic flavor",
       "fun_fact": "Gimbap is the most popular grab-and-go meal in Korea and can be found everywhere with many regional variations. It's often made with different fillings depending on region and preference",
-      "alternatives": ["Use canned tuna", "Add kimchi", "Make vegetarian version", "Include cheese for modern twist"]
+      "alternatives": [
+        "Use canned tuna",
+        "Add kimchi",
+        "Make vegetarian version",
+        "Include cheese for modern twist"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "kor-lunch-bibimbap",
+      "name": "Bibimbap (Korean Mixed Rice Bowl)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Mixed rice bowl with vegetables, beef and egg. Name means mixed rice, represents harmony of different ingredients",
+      "seasonings": [
+        "sesame oil",
+        "soy sauce",
+        "gochujang (red chili paste)"
+      ],
+      "ingredients": [
+        "3 cups cooked short-grain rice",
+        "100g ground beef",
+        "2 cups mixed vegetables (mushroom, spinach, zucchini, bean sprouts, carrot)",
+        "2 eggs",
+        "3 tbsp sesame oil",
+        "2 tbsp soy sauce",
+        "2 cloves garlic, minced",
+        "Gochujang (red chili paste)",
+        "Salt and pepper to taste",
+        "Sesame seeds"
+      ],
+      "instructions": [
+        "Season vegetables: saut\u00e9 each separately with sesame oil, garlic, salt, keep warm",
+        "Season beef with soy sauce, garlic, sesame oil, cook until done",
+        "Divide rice among bowls",
+        "Arrange vegetables and beef on top",
+        "Make indentation in center, crack raw egg into it",
+        "Top with gochujang and sesame seeds",
+        "Serve with bowl of hot broth on side",
+        "Mix everything together before eating"
+      ],
+      "notes": "Each vegetable should be seasoned separately for best flavor. Raw egg cooks from heat of rice",
+      "fun_fact": "Bibimbap name means mixed rice, represents harmony of different ingredients in one bowl. Popular lunch throughout Korea",
+      "alternatives": [
+        "Make vegetarian version without beef",
+        "Add kimchi",
+        "Include mushrooms only",
+        "Top with gochugaru (chili flakes)"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

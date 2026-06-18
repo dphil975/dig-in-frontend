@@ -10,7 +10,11 @@
       "prepTime": 20,
       "cookTime": 15,
       "description": "Traditional Lebanese flatbread topped with za'atar spice blend and olive oil, creating an aromatic, herbaceous breakfast staple served with bread, lemon, and cucumber yogurt",
-      "seasonings": ["za'atar spice blend", "sumac", "thyme"],
+      "seasonings": [
+        "za'atar spice blend",
+        "sumac",
+        "thyme"
+      ],
       "ingredients": [
         "500g flour",
         "7g instant yeast",
@@ -34,15 +38,66 @@
         "Mix za'atar with olive oil to create paste-like topping",
         "Spread 2 tbsp za'atar mixture on each dough round",
         "Place on baking sheet and let rise 15-20 minutes",
-        "Bake at 425°F for 12-15 minutes until edges are golden brown",
+        "Bake at 425\u00b0F for 12-15 minutes until edges are golden brown",
         "Serve warm from oven on wooden boards with lemon wedges and cucumber yogurt"
       ],
       "notes": "Za'atar is vibrant spice blend typically containing dried thyme, sumac, toasted sesame seeds, and oregano",
       "fun_fact": "Manakish is an anchor of the Lebanese breakfast experience. The dough is similar to pizza dough but the topping is distinctly Middle Eastern",
-      "alternatives": ["Make with cheese labneh topping", "Use olive paste instead of za'atar", "Add minced meat topping", "Make smaller individual manakish"]
+      "alternatives": [
+        "Make with cheese labneh topping",
+        "Use olive paste instead of za'atar",
+        "Add minced meat topping",
+        "Make smaller individual manakish"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "lbn-lunch-fattoush",
+      "name": "Fattoush (Lebanese Bread Salad)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 20,
+      "cookTime": 10,
+      "description": "Traditional Lebanese salad with fresh vegetables, toasted pita bread and sumac. Quick, refreshing lunch popular throughout Levant",
+      "seasonings": [
+        "sumac",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "2 large tomatoes, chopped",
+        "1 cucumber, chopped",
+        "1 bell pepper, chopped",
+        "2 cups lettuce",
+        "4 radishes, sliced",
+        "1/4 cup parsley, chopped",
+        "2 tbsp mint, chopped",
+        "2 pita breads",
+        "3 tbsp olive oil",
+        "2 tbsp lemon juice",
+        "1 clove garlic, minced",
+        "Salt and pepper to taste",
+        "Sumac for garnish"
+      ],
+      "instructions": [
+        "Cut vegetables into chunks",
+        "Break pita bread into bite-sized pieces and toast in 350\u00b0F oven for 8-10 minutes",
+        "Whisk olive oil, lemon juice, minced garlic, salt and pepper",
+        "Toss vegetables and herbs with dressing",
+        "Add toasted pita and toss immediately before serving",
+        "Sprinkle sumac on top"
+      ],
+      "notes": "Add pita just before serving to keep it crispy. Can prepare vegetables ahead and toast pita separately",
+      "fun_fact": "Fattoush means to crush/pound in Arabic, referring to breaking bread into salad",
+      "alternatives": [
+        "Add grilled chicken",
+        "Include feta cheese",
+        "Top with sesame seeds",
+        "Add pomegranate seeds"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

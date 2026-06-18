@@ -1,44 +1,53 @@
 {
   "country": "Brazil",
   "region": "Latin America",
-  "breakfast": [
+  "breakfast": [],
+  "lunch": [
     {
-      "id": "bra-break-pao-de-queijo",
-      "name": "Pão de Queijo (Brazilian Cheese Bread)",
-      "difficulty": "Easy",
-      "servings": 12,
-      "prepTime": 10,
-      "cookTime": 20,
-      "description": "Puffy, cheesy Brazilian bread made with tapioca starch, creating a naturally gluten-free treat with crispy exterior and soft, chewy interior. Best enjoyed fresh from the oven",
-      "seasonings": ["salt"],
+      "id": "bra-lunch-feijoada",
+      "name": "Feijoada (Brazilian Black Bean Stew)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 200,
+      "description": "Brazilian national lunch - hearty black bean stew with pork and sausage. Evolved from plantation cuisine",
+      "seasonings": [
+        "bay leaf",
+        "salt",
+        "pepper"
+      ],
       "ingredients": [
-        "1 cup whole milk",
-        "5 tbsp vegetable oil",
-        "2 tsp salt",
-        "2 eggs",
-        "2 cups tapioca starch (polvilho)",
-        "100g Parmesan cheese, grated",
-        "100g mozzarella cheese, grated"
+        "500g black beans (dried)",
+        "400g pork shoulder",
+        "200g pork ribs",
+        "100g smoked sausage",
+        "1 onion",
+        "4 cloves garlic",
+        "2 bay leaves",
+        "4 tbsp oil",
+        "Orange slices",
+        "Collard greens",
+        "White rice"
       ],
       "instructions": [
-        "Preheat oven to 375°F",
-        "Heat milk, oil, and salt in saucepan until steaming (do not boil)",
-        "Pour hot liquid into food processor with metal blade",
-        "While machine is running, add tapioca starch and cheese, process until dough forms",
-        "Add eggs one at a time through food chute while running",
-        "Process until smooth paste forms",
-        "Stop and let dough cool for 2-3 minutes",
-        "Using piping bag or small spoon, pipe dough into greased muffin tins or small paper cups",
-        "Fill each about 3/4 full",
-        "Bake for 15-20 minutes until golden brown and puffy",
-        "Serve immediately while warm when outside is crisp and inside is soft and chewy"
+        "Soak beans overnight",
+        "In large pot, heat oil, saut\u00e9 onion and garlic",
+        "Add pork, brown on all sides",
+        "Add beans, bay leaves and water to cover by 2 inches",
+        "Bring to boil, reduce heat, simmer 3 hours",
+        "Add sausage in last 30 minutes",
+        "Serve with rice, saut\u00e9ed collard greens and orange slices on side"
       ],
-      "notes": "Polvilho (tapioca starch) is essential - it gives pão de queijo its signature chewy texture. Cool dough slightly before piping for easier handling",
-      "fun_fact": "Pão de queijo is everywhere in Brazil as breakfast or afternoon coffee time (café da tarde). In Brazil it's traditionally made with mixture of polvilho doce and polvilho azedo",
-      "alternatives": ["Use different cheese combinations", "Add herbs like parsley", "Make jalapeño version", "Add cooked corn to mixture"]
+      "notes": "Long cooking time essential for tender meat and creamy beans. Tastes better the next day",
+      "fun_fact": "Feijoada is Brazilian national lunch, evolved from plantation cuisine as slave food. Now beloved dish across all social classes",
+      "alternatives": [
+        "Use different sausages",
+        "Add more spices",
+        "Make vegetarian with extra beans",
+        "Include bacon"
+      ]
     }
   ],
-  "lunch": [],
   "dinner": [],
   "snacks": [],
   "desserts": [],

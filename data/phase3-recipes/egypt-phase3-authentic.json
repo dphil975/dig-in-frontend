@@ -10,7 +10,11 @@
       "prepTime": 15,
       "cookTime": 25,
       "description": "A hearty, nutritious Egyptian breakfast of slow-cooked fava beans with spices, topped with tahini, olive oil, and fresh vegetables. Ancient dish with roots in Egyptian history",
-      "seasonings": ["cumin powder", "salt", "pepper"],
+      "seasonings": [
+        "cumin powder",
+        "salt",
+        "pepper"
+      ],
       "ingredients": [
         "400g dried fava beans (or canned)",
         "4 tbsp olive oil",
@@ -25,7 +29,7 @@
       ],
       "instructions": [
         "Soak dried fava beans overnight, then cook in water for 2-3 hours until very soft",
-        "Heat olive oil and sauté half the onion and cumin for 3 minutes",
+        "Heat olive oil and saut\u00e9 half the onion and cumin for 3 minutes",
         "Add cooked beans and 100ml water, bring to boil and simmer for 1 minute",
         "Mash beans with potato masher until partially crushed",
         "Add remaining onion, tomatoes, lemon juice, salt and pepper",
@@ -36,10 +40,62 @@
       ],
       "notes": "Can use canned fava beans to reduce cooking time. The partial mashing creates the proper creamy consistency with some whole beans remaining",
       "fun_fact": "Ful Medames dates back to at least the fourth century in Egypt. The name means buried, referring to traditional slow-cooking method where beans were buried over gentle embers all night",
-      "alternatives": ["Add hard-boiled eggs", "Top with minced parsley", "Serve with tahini sauce drizzled over", "Add a fried egg on top"]
+      "alternatives": [
+        "Add hard-boiled eggs",
+        "Top with minced parsley",
+        "Serve with tahini sauce drizzled over",
+        "Add a fried egg on top"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "egy-lunch-falafel",
+      "name": "Falafel (Fried Chickpea Patties)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 15,
+      "description": "Egyptian fried chickpea patties served in pita bread with tahini sauce, lettuce and tomato. Popular lunch throughout Middle East",
+      "seasonings": [
+        "cumin",
+        "coriander",
+        "cayenne",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "400g dried chickpeas (soaked overnight)",
+        "1 onion",
+        "4 cloves garlic",
+        "1/2 cup parsley",
+        "1/2 cup cilantro",
+        "1 tsp cumin",
+        "1 tsp coriander",
+        "1/4 tsp cayenne",
+        "Salt and pepper to taste",
+        "3 tbsp flour",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Drain soaked chickpeas",
+        "Pulse in food processor with onion, garlic, herbs until fine crumbles",
+        "Add spices, salt, pepper and flour",
+        "Form into small balls or patties",
+        "Heat oil to 350\u00b0F",
+        "Fry falafel 2-3 minutes per side until golden",
+        "Serve in pita with tahini sauce, lettuce and tomato"
+      ],
+      "notes": "Must use dried chickpeas, not canned. The moisture content affects texture significantly",
+      "fun_fact": "Falafel became popular lunch in Egypt and throughout Middle East, served in pita with vegetables and tahini sauce",
+      "alternatives": [
+        "Make with flour crust",
+        "Add harissa for heat",
+        "Stuff with cheese",
+        "Make as appetizer platter"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

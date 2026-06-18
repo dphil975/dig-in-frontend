@@ -9,12 +9,15 @@
       "servings": 1,
       "prepTime": 15,
       "cookTime": 0,
-      "description": "A beloved Vietnamese breakfast sandwich combining French colonial influences with Vietnamese ingredients - crusty bread filled with pâté, pickled vegetables, fresh herbs, and cilantro",
-      "seasonings": ["salt", "pepper"],
+      "description": "A beloved Vietnamese breakfast sandwich combining French colonial influences with Vietnamese ingredients - crusty bread filled with p\u00e2t\u00e9, pickled vegetables, fresh herbs, and cilantro",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
       "ingredients": [
         "1 Vietnamese or French baguette",
         "2 tbsp mayonnaise",
-        "150g lemongrass pork (or pâté)",
+        "150g lemongrass pork (or p\u00e2t\u00e9)",
         "1 cup pickled daikon and carrots",
         "1 fresh cucumber, sliced",
         "Fresh cilantro",
@@ -24,7 +27,7 @@
       "instructions": [
         "Slice baguette lengthwise and lightly toast if desired",
         "Spread mayonnaise on both sides of bread",
-        "Layer: pâté, sliced lemongrass pork, pickled vegetables, cucumber, chilies, and fresh herbs",
+        "Layer: p\u00e2t\u00e9, sliced lemongrass pork, pickled vegetables, cucumber, chilies, and fresh herbs",
         "Maintain proper ratio of filling to vegetables (approximately 1:1)",
         "Do not overstuff",
         "Slice sandwich in half if desired and serve immediately",
@@ -32,10 +35,62 @@
       ],
       "notes": "Balance of ingredients is crucial - too much filling makes it difficult to eat. The pickled vegetables provide essential tang and crunch",
       "fun_fact": "Banh mi reflects Vietnam's colonial history through use of French baguettes and ingredients. It was eaten for breakfast more mornings than can be counted in Vietnam's Nha Trang",
-      "alternatives": ["Use grilled chicken instead of pork", "Add fried eggs", "Include Vietnamese ham", "Make vegetarian with fried tofu"]
+      "alternatives": [
+        "Use grilled chicken instead of pork",
+        "Add fried eggs",
+        "Include Vietnamese ham",
+        "Make vegetarian with fried tofu"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "vtn-lunch-pho",
+      "name": "Ph\u1edf (Vietnamese Beef Noodle Soup)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 180,
+      "description": "Iconic Vietnamese lunch - fragrant beef broth with rice noodles and tender beef. Combination of Vietnamese and French influences",
+      "seasonings": [
+        "star anise",
+        "cinnamon",
+        "fish sauce",
+        "salt"
+      ],
+      "ingredients": [
+        "1kg beef bones",
+        "2-inch piece ginger",
+        "1 large onion",
+        "3 star anise",
+        "1 cinnamon stick",
+        "2 tbsp fish sauce",
+        "Salt to taste",
+        "300g rice noodles",
+        "200g thinly sliced beef",
+        "Fresh basil, cilantro, lime, chili for garnish",
+        "Beef broth"
+      ],
+      "instructions": [
+        "Char ginger and onion over open flame",
+        "In large pot, combine bones, charred ginger/onion, spices, fish sauce and water",
+        "Bring to boil, reduce heat, simmer 2-3 hours for deep flavor",
+        "Strain broth, season with fish sauce and salt",
+        "Cook rice noodles according to package",
+        "Arrange noodles in bowl, top with raw beef",
+        "Pour boiling broth over, beef will cook from heat",
+        "Serve with garnishes on side"
+      ],
+      "notes": "Long simmering time essential for rich broth flavor. Can prepare broth day ahead",
+      "fun_fact": "Ph\u1edf became iconic Vietnamese lunch, combination of Vietnamese and French influences from colonial era",
+      "alternatives": [
+        "Chicken ph\u1edf instead of beef",
+        "Seafood ph\u1edf with shrimp",
+        "Vegetarian with mushroom broth",
+        "Quick ph\u1edf with store-bought broth"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

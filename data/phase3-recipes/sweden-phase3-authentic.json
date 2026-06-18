@@ -1,291 +1,59 @@
 {
   "country": "Sweden",
-  "region": "Europe",
-  "breakfast": [
-    {
-      "id": "swe-break-smorgastarta",
-      "name": "Swedish Sandwich Cake",
-      "difficulty": "Hard",
-      "servings": 12,
-      "prepTime": 45,
-      "cookTime": 30,
-      "description": "Layered Swedish sandwich cake with bread, ham, cheese, and aspic",
-      "seasonings": [
-        "salt",
-        "pepper"
-      ],
-      "ingredients": [
-        "1 loaf white bread",
-        "1/2 lb ham",
-        "1/2 lb roast beef",
-        "1/2 lb shrimp",
-        "1 cup cheese",
-        "2 hard-boiled eggs",
-        "1 cup mayonnaise",
-        "2 tbsp gelatin",
-        "2 cups broth",
-        "Cucumber",
-        "Tomato"
-      ],
-      "instructions": [
-        "Slice bread horizontally to make 4-5 layers",
-        "Spread mayonnaise on each layer",
-        "Layer ham on first",
-        "Layer roast beef on second",
-        "Layer cheese on third",
-        "Layer shrimp on fourth",
-        "Cut into rectangular block",
-        "Make aspic: dissolve gelatin in warm broth",
-        "Cool until syrupy",
-        "Frost cake with aspic",
-        "Decorate with sliced eggs, cucumber, tomato",
-        "Refrigerate until set"
-      ],
-      "notes": "Must be chilled and set before serving",
-      "fun_fact": "Smörgåstårta is a Swedish party centerpiece and special occasion dish",
-      "alternatives": [
-        "All vegetarian version",
-        "Different meats",
-        "Different seafood"
-      ]
-    }
-  ],
+  "region": "Scandinavia",
+  "breakfast": [],
   "lunch": [
     {
-      "id": "swe-lunch-meatballs",
-      "name": "Swedish Meatballs",
-      "difficulty": "Medium",
-      "servings": 4,
-      "prepTime": 20,
-      "cookTime": 30,
-      "description": "Small tender meatballs in creamy gravy with lingonberry sauce",
-      "seasonings": [
-        "nutmeg",
-        "black pepper"
-      ],
-      "ingredients": [
-        "1.5 lbs ground beef",
-        "1/2 cup breadcrumbs",
-        "1/4 cup milk",
-        "1 egg",
-        "1 onion, minced",
-        "1/4 tsp nutmeg",
-        "Black pepper",
-        "2 tbsp butter",
-        "1 cup broth",
-        "1/2 cup cream",
-        "2 tbsp lingonberry jam"
-      ],
-      "instructions": [
-        "Soak breadcrumbs in milk",
-        "Mix with ground beef, egg, onion, nutmeg, pepper",
-        "Form into 1-inch balls",
-        "Brown in butter in batches",
-        "Set aside",
-        "Make gravy: whisk flour into butter drippings",
-        "Add broth slowly",
-        "Simmer 5 minutes",
-        "Add cream and lingonberry jam",
-        "Return meatballs to gravy",
-        "Simmer 10 minutes",
-        "Serve with lingonberry sauce"
-      ],
-      "notes": "Must be tender, don't overwork meat",
-      "fun_fact": "Swedish Meatballs are served at Christmas and are known worldwide from IKEA",
-      "alternatives": [
-        "Beef and pork mix",
-        "Mushroom gravy",
-        "Served with pasta"
-      ]
-    }
-  ],
-  "dinner": [
-    {
-      "id": "swe-dinner-gravlax",
+      "id": "swe-lunch-gravlax",
       "name": "Gravlax (Cured Salmon)",
-      "difficulty": "Hard",
+      "difficulty": "Medium",
       "servings": 8,
       "prepTime": 20,
       "cookTime": 0,
-      "description": "Nordic salt-cured salmon with dill and mustard sauce",
+      "description": "Ancient Scandinavian cured salmon appetizer. Traditionally buried in ground to cure before refrigeration",
       "seasonings": [
         "dill",
         "salt",
-        "pepper"
+        "sugar",
+        "peppercorns",
+        "coriander seeds"
       ],
       "ingredients": [
-        "2 lbs salmon fillet",
-        "3 tbsp salt",
-        "2 tbsp sugar",
-        "1 tbsp black pepper",
+        "800g salmon fillet (skin on)",
+        "50g salt",
+        "30g sugar",
+        "1 tbsp black peppercorns",
         "1 tbsp coriander seeds",
-        "1 bunch fresh dill",
-        "For sauce: 1/4 cup Dijon mustard",
-        "1 tbsp honey",
-        "2 tbsp olive oil",
-        "1 tbsp dill"
+        "50g fresh dill",
+        "2 tbsp aquavit or vodka (optional)",
+        "Rye bread",
+        "Cr\u00e8me fra\u00eeche",
+        "Fresh dill",
+        "Mustard sauce"
       ],
       "instructions": [
-        "Mix salt, sugar, pepper, coriander",
-        "Place dill in bottom of dish",
-        "Rub salt mixture on salmon",
-        "Layer more dill over salmon",
-        "Cover with plastic wrap",
-        "Place weight on top",
-        "Cure in refrigerator 3-7 days",
-        "Slice thin at angle to the skin",
-        "Make sauce: mix mustard, honey, oil, dill",
-        "Serve with toast and sauce"
+        "Crush peppercorns and coriander seeds",
+        "Mix salt, sugar, crushed spices and dill",
+        "Rub mixture all over salmon flesh side",
+        "Place skin-side down on plastic wrap, wrap tightly",
+        "Weight down with cutting board and cans",
+        "Refrigerate 3-4 days, turning every 12 hours and discarding liquid",
+        "Slice thinly and serve on rye bread with cr\u00e8me fra\u00eeche and fresh dill",
+        "Pair with mustard sauce"
       ],
-      "notes": "Patience is essential - curing takes days",
-      "fun_fact": "Gravlax dates back to medieval Swedish fishing traditions",
+      "notes": "Daily turning and liquid discarding essential for proper curing. Can be stored refrigerated for 2 weeks",
+      "fun_fact": "Gravlax is ancient Scandinavian dish, traditionally buried in ground to cure before refrigeration. Preparation technique unchanged for centuries",
       "alternatives": [
-        "Different fish",
-        "Skip coriander",
-        "Serve with crème fraîche"
+        "Make with trout",
+        "Add juniper berries",
+        "Use aquavit instead of vodka",
+        "Serve as appetizer instead of lunch"
       ]
     }
   ],
-  "snacks": [
-    {
-      "id": "swe-snack-open-sandwiches",
-      "name": "Swedish Open Sandwiches",
-      "difficulty": "Easy",
-      "servings": 4,
-      "prepTime": 10,
-      "cookTime": 0,
-      "description": "Rye bread topped with butter, cheese, and various toppings",
-      "seasonings": [
-        "salt",
-        "pepper"
-      ],
-      "ingredients": [
-        "Dark rye bread",
-        "Butter",
-        "Various cheeses",
-        "Ham",
-        "Salami",
-        "Pickled herring",
-        "Cucumber",
-        "Tomato",
-        "Lettuce"
-      ],
-      "instructions": [
-        "Slice dark rye bread",
-        "Spread generously with butter",
-        "Top with cheese",
-        "Add your choice of: ham, salami, or herring",
-        "Garnish with cucumber, tomato, lettuce",
-        "Arrange artfully on platter",
-        "Serve immediately"
-      ],
-      "notes": "Assembly is the key",
-      "fun_fact": "Open sandwiches are a Swedish tradition dating back centuries",
-      "alternatives": [
-        "Different cheeses",
-        "Different meats",
-        "Vegetarian versions"
-      ]
-    }
-  ],
-  "desserts": [
-    {
-      "id": "swe-dessert-princess-cake",
-      "name": "Princess Cake",
-      "difficulty": "Hard",
-      "servings": 12,
-      "prepTime": 45,
-      "cookTime": 60,
-      "description": "Swedish layer cake with jam, pastry cream, and green marzipan dome",
-      "seasonings": [
-        "vanilla"
-      ],
-      "ingredients": [
-        "Sponge cake layers",
-        "Pastry cream (vanilla)",
-        "Jam",
-        "Whipped cream",
-        "Green marzipan",
-        "Powdered sugar"
-      ],
-      "instructions": [
-        "Bake sponge cake layers",
-        "Let cool completely",
-        "Make pastry cream with vanilla",
-        "Layer cake with jam and pastry cream",
-        "Top with whipped cream",
-        "Roll green marzipan into ball",
-        "Cover cake completely with dome of marzipan",
-        "Dust with powdered sugar",
-        "Refrigerate until serving",
-        "Slice with hot knife for clean cuts"
-      ],
-      "notes": "Requires multiple steps and patience",
-      "fun_fact": "Princess Cake is Sweden's most iconic cake and has been made since 1918",
-      "alternatives": [
-        "Different colored marzipan",
-        "Different jam",
-        "Strawberry on top"
-      ]
-    }
-  ],
-  "nonAlcoholicDrinks": [
-    {
-      "id": "swe-drink-lingonberry",
-      "name": "Lingonberry Juice",
-      "difficulty": "Easy",
-      "servings": 4,
-      "prepTime": 5,
-      "cookTime": 0,
-      "description": "Sweet-tart Swedish berry juice",
-      "seasonings": [
-        "sugar"
-      ],
-      "ingredients": [
-        "Lingonberry concentrate",
-        "Water",
-        "Sugar"
-      ],
-      "instructions": [
-        "Mix concentrate with water per package",
-        "Sweeten to taste",
-        "Serve cold",
-        "Can be served with soda water"
-      ],
-      "notes": "Often served with meatballs",
-      "fun_fact": "Lingonberry is the national berry of Sweden",
-      "alternatives": [
-        "With sparkling water",
-        "Hot as winter drink"
-      ]
-    }
-  ],
-  "alcoholicDrinks": [
-    {
-      "id": "swe-drink-aquavit",
-      "name": "Aquavit (Caraway Spirit)",
-      "difficulty": "Easy",
-      "servings": 4,
-      "prepTime": 0,
-      "cookTime": 0,
-      "description": "Nordic spirit flavored with caraway and other spices",
-      "seasonings": [],
-      "ingredients": [
-        "Aquavit"
-      ],
-      "instructions": [
-        "Chill aquavit in freezer",
-        "Pour into shot glass",
-        "Serve ice-cold",
-        "Often followed by beer chaser"
-      ],
-      "notes": "Typically served as shot",
-      "fun_fact": "Aquavit is the national spirit of Sweden and Scandinavia",
-      "alternatives": [
-        "Room temperature",
-        "Different brands",
-        "Mixed with beer"
-      ]
-    }
-  ]
+  "dinner": [],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
 }

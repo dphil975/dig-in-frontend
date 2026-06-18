@@ -10,7 +10,10 @@
       "prepTime": 15,
       "cookTime": 90,
       "description": "A comforting Thai rice porridge made from jasmine rice simmered in broth until creamy, topped with savory ingredients like fried pork, soft-boiled eggs, and fresh garnishes",
-      "seasonings": ["salt", "white pepper"],
+      "seasonings": [
+        "salt",
+        "white pepper"
+      ],
       "ingredients": [
         "1 cup jasmine rice",
         "6 cups chicken or vegetable broth",
@@ -38,10 +41,62 @@
       ],
       "notes": "Breaking dry rice grains before cooking unlocks starch and creates velvety texture. Thai jasmine rice creates signature fragrant and creamy jook",
       "fun_fact": "Jook is the Thai version of rice porridge (congee) and is traditionally eaten for breakfast or when feeling under the weather",
-      "alternatives": ["Use chicken broth for richer flavor", "Add preserved vegetables", "Top with century eggs", "Serve with youtiao (fried dough)"]
+      "alternatives": [
+        "Use chicken broth for richer flavor",
+        "Add preserved vegetables",
+        "Top with century eggs",
+        "Serve with youtiao (fried dough)"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "tha-lunch-pad-thai",
+      "name": "Pad Thai (Thai Stir-Fried Noodles)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 40,
+      "cookTime": 8,
+      "description": "National dish of Thailand - rice noodles stir-fried with tamarind, fish sauce, and peanuts. Became national dish in 1930s-40s",
+      "seasonings": [
+        "fish sauce",
+        "tamarind paste",
+        "sugar"
+      ],
+      "ingredients": [
+        "250g rice noodles (dried)",
+        "3 tbsp tamarind paste",
+        "2 tbsp fish sauce",
+        "1 tbsp sugar",
+        "3 tbsp oil",
+        "200g shrimp or chicken",
+        "2 eggs",
+        "100g bean sprouts",
+        "3 scallions, sliced",
+        "1/4 cup roasted peanuts",
+        "2 cloves garlic, minced",
+        "1 red chili"
+      ],
+      "instructions": [
+        "Soak rice noodles in room temperature water for 30 min until pliable",
+        "Mix tamarind paste, fish sauce and sugar in bowl",
+        "Heat wok, add oil and garlic, cook 30 seconds",
+        "Add shrimp or chicken, cook until done",
+        "Push to side, scramble eggs, mix in",
+        "Add drained noodles and sauce, toss 2-3 minutes",
+        "Add bean sprouts, scallions and half the peanuts",
+        "Serve topped with remaining peanuts and lime wedge"
+      ],
+      "notes": "Tamarind paste is essential for authentic flavor. Balance of sweet, sour, salty is key",
+      "fun_fact": "Pad Thai became national dish of Thailand in 1930s-40s as part of nation-building campaign",
+      "alternatives": [
+        "Use tofu instead of shrimp",
+        "Add mixed vegetables",
+        "Make vegetarian version",
+        "Add crispy bacon"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],

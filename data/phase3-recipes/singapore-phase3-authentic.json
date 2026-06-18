@@ -10,7 +10,10 @@
       "prepTime": 10,
       "cookTime": 7,
       "description": "Classic Singaporean breakfast of toast with silky coconut egg jam (kaya) and cold salted butter, traditionally served with half-boiled eggs and black coffee or tea",
-      "seasonings": ["salt", "white pepper"],
+      "seasonings": [
+        "salt",
+        "white pepper"
+      ],
       "ingredients": [
         "2 slices bread (white or brioche)",
         "3 tbsp kaya (coconut egg jam)",
@@ -42,10 +45,61 @@
       ],
       "notes": "Kaya is custard-like spread made from coconut milk, eggs, sugar, and pandan leaves. Can substitute with homemade kaya or store-bought versions",
       "fun_fact": "Kaya toast is classic Singaporean breakfast found in every kopi tiam (coffee house). The traditional serving includes half-boiled eggs and black coffee (Kopi-O)",
-      "alternatives": ["Make with homemade kaya", "Serve with soft-boiled egg spread", "Add jam instead of kaya", "Make with different bread types"]
+      "alternatives": [
+        "Make with homemade kaya",
+        "Serve with soft-boiled egg spread",
+        "Add jam instead of kaya",
+        "Make with different bread types"
+      ]
     }
   ],
-  "lunch": [],
+  "lunch": [
+    {
+      "id": "sgp-lunch-laksa",
+      "name": "Laksa (Spiced Noodle Soup)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Popular Singaporean lunch - rich, spiced coconut broth with noodles and seafood or chicken",
+      "seasonings": [
+        "laksa paste",
+        "coconut milk",
+        "fish sauce"
+      ],
+      "ingredients": [
+        "3 tbsp laksa paste",
+        "400ml coconut milk",
+        "500ml chicken or seafood broth",
+        "200g rice noodles",
+        "200g shrimp or chicken",
+        "2 eggs (hard-boiled, halved)",
+        "Bean sprouts",
+        "Fresh cilantro",
+        "Fresh basil",
+        "Lime wedges",
+        "Fried tofu cubes"
+      ],
+      "instructions": [
+        "Heat 1 tbsp oil in pot, add laksa paste and fry for 2 minutes until fragrant",
+        "Add coconut milk and broth, bring to simmer",
+        "Cook protein until done, add to soup",
+        "Cook rice noodles separately according to package",
+        "Divide noodles into bowls",
+        "Pour hot laksa broth over noodles",
+        "Top with egg, bean sprouts, cilantro, basil and fried tofu",
+        "Serve with lime wedge on side"
+      ],
+      "notes": "Laksa paste is essential - can be store-bought or homemade. Coconut milk creates rich, smooth base",
+      "fun_fact": "Laksa is popular Singaporean lunch with many regional variations throughout Southeast Asia",
+      "alternatives": [
+        "Make with mixed seafood",
+        "Use chicken instead of shrimp",
+        "Make vegetarian with tofu",
+        "Add candlenuts for richness"
+      ]
+    }
+  ],
   "dinner": [],
   "snacks": [],
   "desserts": [],
