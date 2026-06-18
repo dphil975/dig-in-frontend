@@ -681,6 +681,17 @@
                 'low_sodium': '🧂'
             };
 
+            const flavorIcons = {
+                'spicy': '🌶️',
+                'umami': '🍜',
+                'sweet': '🍯',
+                'sour': '🍋',
+                'aromatic': '🌿',
+                'savory': '🧄',
+                'earthy': '🍄',
+                'fresh': '🌿'
+            };
+
             const timeVariants = recipe.time_variants || {};
             const timeOptions = Object.entries(timeVariants)
                 .map(([key, variant]) => `<option value="${key}">${variant.label} (${variant.prep_time}p + ${variant.cook_time}c)</option>`)
@@ -692,6 +703,10 @@
 
             const dietaryOptions = recipe.dietary_adaptations
                 .map(diet => `<span class="dietary-chip" onclick="toggleDietaryOption(this, '${recipe.id}', '${diet}')">${dietaryIcons[diet] || '✓'} ${diet.replace(/_/g, ' ')}</span>`)
+                .join('');
+
+            const flavorProfiles = ['spicy', 'umami', 'sweet', 'sour', 'aromatic', 'savory', 'earthy', 'fresh']
+                .map(flavor => `<span class="remix-chip" onclick="toggleFlavorProfile(this, '${recipe.id}', '${flavor}')" style="cursor: pointer; border: 2px solid #667eea; color: #67d8ff;">${flavorIcons[flavor]} ${flavor}</span>`)
                 .join('');
 
             return `
@@ -715,7 +730,15 @@
                         <div class="dietary-options">${dietaryOptions}</div>
                     </div>
 
-                    <button class="remix-button" onclick="showRemixOptions('${recipe.id}')">🔄 GENERATE REMIX</button>
+                    <div style="margin-bottom: 10px;">
+                        <div style="font-size: 0.7em; color: #67d8ff; margin-bottom: 6px; text-transform: uppercase;">🌟 Flavor Profile</div>
+                        <div class="flavor-profiles" style="display: flex; flex-wrap: wrap; gap: 8px;">${flavorProfiles}</div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <button class="remix-button" onclick="showRemixOptions('${recipe.id}')">🔄 GENERATE REMIX</button>
+                        <button class="remix-button" onclick="showFlavorRemix('${recipe.id}')" style="background: #667eea; color: #fff;">✨ FLAVOR REMIX</button>
+                    </div>
                 </div>
             `;
         }
@@ -723,6 +746,12 @@
         function toggleDietaryOption(element, recipeId, diet) {
             element.classList.toggle('active');
             trackRemixInteraction('dietary_toggle', recipeId, diet);
+        }
+
+        function toggleFlavorProfile(element, recipeId, flavor) {
+            element.classList.toggle('active');
+            element.style.background = element.classList.contains('active') ? 'rgba(102, 126, 234, 0.3)' : 'transparent';
+            trackRemixInteraction('flavor_toggle', recipeId, flavor);
         }
 
         function updateTimeVariant(recipeId, variant) {
@@ -808,6 +837,61 @@
             }
         }
 
+        async function showFlavorRemix(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            // Get selected flavor profile
+            const card = document.querySelector(`#card-${recipeId}`);
+            const selectedFlavorChip = card.querySelector('.flavor-profiles span.active');
+
+            if (!selectedFlavorChip) {
+                alert('Please select a flavor profile first!');
+                return;
+            }
+
+            const flavor = selectedFlavorChip.textContent.toLowerCase().split(' ')[1] || selectedFlavorChip.textContent.split(' ')[0];
+            const format = recipe.remix_formats ? recipe.remix_formats[0] : 'salad';
+
+            // Show loading
+            const button = Array.from(card.querySelectorAll('.remix-button')).find(b => b.textContent.includes('FLAVOR'));
+            const originalText = button.textContent;
+            button.textContent = '⏳ Transforming...';
+            button.disabled = true;
+
+            try {
+                // Call flavor remix API
+                const flavorResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/remix-flavor`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ flavor, format })
+                });
+
+                if (!flavorResponse.ok) throw new Error('Failed to generate flavor remix');
+                const flavorData = await flavorResponse.json();
+                const flavorRemix = flavorData.recipe;
+
+                // Get pairings for this flavor
+                const pairingsResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/pairings/${flavor}`);
+                let pairings = null;
+                if (pairingsResponse.ok) {
+                    const pairingData = await pairingsResponse.json();
+                    pairings = pairingData.pairings;
+                }
+
+                // Show flavor remix modal
+                showFlavorRemixModal(flavorRemix, pairings, flavor);
+
+                trackRemixInteraction('flavor_remix_generated', recipeId, flavor);
+            } catch (error) {
+                console.error('Error generating flavor remix:', error);
+                alert('Error generating flavor remix. Please try again.');
+            } finally {
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
         function showRemixModal(recipe, seasonings, dietaryOptions) {
             // Create modal for displaying remixed recipe
             const modal = document.createElement('div');
@@ -882,6 +966,175 @@
             // Track modal view
             if (window.userMetricsTracker) {
                 window.userMetricsTracker.trackFeatureUsage('remixViewed', { recipe: recipe.name });
+            }
+        }
+
+        function showFlavorRemixModal(recipe, pairings, flavor) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.8); display: flex; align-items: center;
+                justify-content: center; z-index: 1000;
+            `;
+
+            const content = document.createElement('div');
+            content.style.cssText = `
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                border: 3px solid #667eea; border-radius: 15px;
+                padding: 30px; max-width: 700px; max-height: 85vh; overflow-y: auto;
+                color: #fff; font-family: Arial, sans-serif;
+            `;
+
+            const title = document.createElement('h2');
+            title.style.cssText = 'color: #67d8ff; margin-bottom: 8px; font-family: Press Start 2P; font-size: 1.5em;';
+            title.textContent = recipe.name;
+
+            const flavorBadge = document.createElement('p');
+            flavorBadge.style.cssText = 'color: #667eea; margin-bottom: 15px; font-size: 0.95em; font-weight: bold;';
+            flavorBadge.innerHTML = `✨ ${flavor.toUpperCase()} TRANSFORMATION`;
+
+            const transformation = document.createElement('p');
+            transformation.style.cssText = 'color: #bbb; margin-bottom: 20px; line-height: 1.5; font-size: 0.9em;';
+            transformation.textContent = recipe.transformation_notes || 'This dish has been transformed with new seasonings and ingredients.';
+
+            const eatingExp = document.createElement('p');
+            eatingExp.style.cssText = 'color: #c9a961; margin-bottom: 15px; font-style: italic; font-size: 0.9em; line-height: 1.4;';
+            eatingExp.textContent = recipe.flavor_notes?.eating_experience || '';
+
+            // Seasonings section
+            const seasoningTitle = document.createElement('p');
+            seasoningTitle.style.cssText = 'color: #67d8ff; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+            seasoningTitle.textContent = '🧂 DOMINANT SEASONINGS:';
+            content.appendChild(seasoningTitle);
+
+            if (recipe.flavor_notes?.dominant_seasonings) {
+                const seasoningList = document.createElement('div');
+                seasoningList.style.cssText = 'display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;';
+                recipe.flavor_notes.dominant_seasonings.forEach(s => {
+                    const chip = document.createElement('span');
+                    chip.style.cssText = `
+                        background: rgba(102, 126, 234, 0.3); border: 1px solid #667eea;
+                        border-radius: 16px; padding: 6px 14px; font-size: 0.85em;
+                        color: #67d8ff;
+                    `;
+                    chip.textContent = s;
+                    seasoningList.appendChild(chip);
+                });
+                content.appendChild(seasoningList);
+            }
+
+            // Pairings section
+            if (pairings) {
+                const pairingsTitle = document.createElement('p');
+                pairingsTitle.style.cssText = 'color: #67d8ff; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+                pairingsTitle.textContent = '🥘 INGREDIENT PAIRINGS:';
+                content.appendChild(pairingsTitle);
+
+                const pairingGrid = document.createElement('div');
+                pairingGrid.style.cssText = 'display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px;';
+
+                // Protein
+                const proteinBox = document.createElement('div');
+                proteinBox.style.cssText = 'background: rgba(201, 169, 97, 0.15); border: 1px solid #c9a961; border-radius: 8px; padding: 12px;';
+                proteinBox.innerHTML = `
+                    <div style="color: #c9a961; font-weight: bold; font-size: 0.85em; margin-bottom: 4px;">PROTEIN</div>
+                    <div style="color: #fff; font-size: 0.9em; margin-bottom: 4px;">${pairings.protein.name}</div>
+                    <div style="color: #aaa; font-size: 0.75em;">${pairings.protein.reason}</div>
+                `;
+                pairingGrid.appendChild(proteinBox);
+
+                // Carb
+                const carbBox = document.createElement('div');
+                carbBox.style.cssText = 'background: rgba(90, 103, 216, 0.15); border: 1px solid #5a67d8; border-radius: 8px; padding: 12px;';
+                carbBox.innerHTML = `
+                    <div style="color: #5a67d8; font-weight: bold; font-size: 0.85em; margin-bottom: 4px;">CARBS</div>
+                    <div style="color: #fff; font-size: 0.9em; margin-bottom: 4px;">${pairings.carb.name}</div>
+                    <div style="color: #aaa; font-size: 0.75em;">${pairings.carb.reason}</div>
+                `;
+                pairingGrid.appendChild(carbBox);
+
+                // Bean
+                const beanBox = document.createElement('div');
+                beanBox.style.cssText = 'background: rgba(103, 216, 255, 0.15); border: 1px solid #67d8ff; border-radius: 8px; padding: 12px;';
+                beanBox.innerHTML = `
+                    <div style="color: #67d8ff; font-weight: bold; font-size: 0.85em; margin-bottom: 4px;">LEGUMES</div>
+                    <div style="color: #fff; font-size: 0.9em; margin-bottom: 4px;">${pairings.bean.name}</div>
+                    <div style="color: #aaa; font-size: 0.75em;">${pairings.bean.reason}</div>
+                `;
+                pairingGrid.appendChild(beanBox);
+
+                content.appendChild(pairingGrid);
+
+                // Pairing scores
+                if (pairings.pairing_scores) {
+                    const scoresTitle = document.createElement('p');
+                    scoresTitle.style.cssText = 'color: #667eea; font-weight: bold; margin-top: 15px; margin-bottom: 10px; font-size: 0.85em;';
+                    scoresTitle.textContent = '⭐ HARMONY SCORES:';
+                    content.appendChild(scoresTitle);
+
+                    const scoresList = document.createElement('div');
+                    scoresList.style.cssText = 'font-size: 0.85em; line-height: 1.8;';
+                    scoresList.innerHTML = `
+                        <div style="color: #bbb;">
+                            Protein Match: <span style="color: #ffd700; font-weight: bold;">${(pairings.pairing_scores.protein_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #bbb;">
+                            Carb Match: <span style="color: #ffd700; font-weight: bold;">${(pairings.pairing_scores.carb_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #bbb;">
+                            Bean Match: <span style="color: #ffd700; font-weight: bold;">${(pairings.pairing_scores.bean_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #bbb; margin-top: 8px; border-top: 1px solid #333; padding-top: 8px;">
+                            Overall Harmony: <span style="color: #67d8ff; font-weight: bold;">${(pairings.pairing_scores.overall_harmony * 100).toFixed(0)}%</span>
+                        </div>
+                    `;
+                    content.appendChild(scoresList);
+                }
+            }
+
+            // Beverage pairings
+            if (recipe.flavor_notes?.pairing_drinks) {
+                const drinkTitle = document.createElement('p');
+                drinkTitle.style.cssText = 'color: #67d8ff; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+                drinkTitle.textContent = '🍷 BEVERAGE PAIRINGS:';
+                content.appendChild(drinkTitle);
+
+                const drinkList = document.createElement('div');
+                drinkList.style.cssText = 'display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;';
+                recipe.flavor_notes.pairing_drinks.forEach(drink => {
+                    const chip = document.createElement('span');
+                    chip.style.cssText = `
+                        background: rgba(201, 169, 97, 0.2); border: 1px solid #c9a961;
+                        border-radius: 16px; padding: 6px 14px; font-size: 0.85em;
+                        color: #c9a961;
+                    `;
+                    chip.textContent = drink;
+                    drinkList.appendChild(chip);
+                });
+                content.appendChild(drinkList);
+            }
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '✕ Close';
+            closeBtn.style.cssText = `
+                background: #667eea; color: #fff; border: none; padding: 12px 24px;
+                border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.9em;
+                width: 100%; margin-top: 20px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            content.appendChild(title);
+            content.appendChild(flavorBadge);
+            content.appendChild(transformation);
+            if (eatingExp.textContent) content.appendChild(eatingExp);
+            content.appendChild(closeBtn);
+
+            modal.appendChild(content);
+            document.body.appendChild(modal);
+
+            // Track modal view
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackFeatureUsage('flavorRemixViewed', { flavor: flavor });
             }
         }
 

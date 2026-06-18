@@ -584,6 +584,146 @@ app.get('/api/recipes/:recipeId/seasonings/:format', (req, res) => {
   });
 });
 
+// ============ FLAVOR PROFILES ============
+app.get('/api/recipes/:recipeId/flavor-profiles', (req, res) => {
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
+  const currentProfile = remixEngine.detectRecipeFlavorProfile(recipe);
+
+  res.json({
+    success: true,
+    current_profile: currentProfile,
+    available_profiles: availableProfiles,
+    description: 'Transform your recipe using different flavor profiles. Each profile changes seasonings and ingredient pairings.'
+  });
+});
+
+// ============ FLAVOR-BASED REMIX ============
+app.post('/api/recipes/:recipeId/remix-flavor', (req, res) => {
+  const { flavor, format } = req.body;
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
+  if (!flavor || !availableProfiles.includes(flavor)) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid flavor profile',
+      valid_profiles: availableProfiles
+    });
+  }
+
+  try {
+    const remixed = remixEngine.generateSeasoningRemix(recipe, flavor, format || 'salad');
+
+    if (!remixed) {
+      return res.status(500).json({
+        success: false,
+        error: 'Seasoning pairing engine not available'
+      });
+    }
+
+    res.json({
+      success: true,
+      recipe: remixed
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Failed to generate flavor remix',
+      message: error.message
+    });
+  }
+});
+
+// ============ INGREDIENT PAIRINGS ============
+app.get('/api/recipes/:recipeId/pairings/:flavor', (req, res) => {
+  const { flavor } = req.params;
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
+  if (!availableProfiles.includes(flavor)) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid flavor profile',
+      valid_profiles: availableProfiles
+    });
+  }
+
+  try {
+    const pairings = remixEngine.getIngredientPairings(flavor, recipe.category || 'dinner');
+
+    if (!pairings) {
+      return res.status(500).json({
+        success: false,
+        error: 'Ingredient pairing engine not available'
+      });
+    }
+
+    res.json({
+      success: true,
+      flavor: flavor,
+      pairings: pairings
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get pairings',
+      message: error.message
+    });
+  }
+});
+
+// ============ CUISINE VARIANTS ============
+app.get('/api/recipes/:recipeId/cuisine-variants', (req, res) => {
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  try {
+    const variants = remixEngine.generateCuisineVariants(recipe);
+
+    res.json({
+      success: true,
+      recipe_name: recipe.name,
+      variants: variants,
+      description: 'Transform this recipe using seasonings and ingredients from different cuisines'
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Failed to generate cuisine variants',
+      message: error.message
+    });
+  }
+});
+
 // ============ ERROR HANDLING ============
 app.use((err, req, res, next) => {
   console.error('Error:', err);

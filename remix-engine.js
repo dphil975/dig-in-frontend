@@ -1,13 +1,28 @@
 /**
  * Recipe Remix Engine
- * Transforms recipes into different formats and dietary versions
+ * Transforms recipes into different formats, dietary versions, and flavor profiles
  */
+
+// Load seasoning pairing engine if available (Node.js)
+let SeasoningPairingEngine;
+if (typeof require !== 'undefined') {
+  try {
+    SeasoningPairingEngine = require('./seasoning-pairing-engine.js');
+  } catch (e) {
+    // SeasoningPairingEngine not available, will use basic seasonings
+  }
+}
 
 class RecipeRemixEngine {
   constructor() {
     this.formatTemplates = this.initializeFormatTemplates();
     this.dietarySubstitutions = this.initializeDietarySubstitutions();
     this.seasoningRecommendations = this.initializeSeasoningRecommendations();
+
+    // Initialize seasoning pairing engine if available
+    if (SeasoningPairingEngine) {
+      this.seasoningPairingEngine = new SeasoningPairingEngine();
+    }
   }
 
   /**
@@ -371,6 +386,82 @@ class RecipeRemixEngine {
     }
 
     return variantRecipe;
+  }
+
+  /**
+   * Generate a seasoning-based remix using flavor profiles
+   */
+  generateSeasoningRemix(recipe, flavorProfile, format = 'salad') {
+    if (!this.seasoningPairingEngine) {
+      return null; // Seasoning pairing engine not available
+    }
+
+    return this.seasoningPairingEngine.generateSeasoningRemix(recipe, flavorProfile, format);
+  }
+
+  /**
+   * Get available flavor profiles
+   */
+  getAvailableFlavorProfiles() {
+    return [
+      'spicy',
+      'umami',
+      'sweet',
+      'sour',
+      'aromatic',
+      'savory',
+      'earthy',
+      'fresh'
+    ];
+  }
+
+  /**
+   * Get ingredient pairing recommendations
+   */
+  getIngredientPairings(flavorProfile, category = 'dinner') {
+    if (!this.seasoningPairingEngine) {
+      return null;
+    }
+
+    return this.seasoningPairingEngine.recommendPairings(flavorProfile, category);
+  }
+
+  /**
+   * Detect the dominant flavor profile of a recipe
+   */
+  detectRecipeFlavorProfile(recipe) {
+    if (!this.seasoningPairingEngine) {
+      return 'balanced';
+    }
+
+    return this.seasoningPairingEngine.detectFlavorProfile(recipe);
+  }
+
+  /**
+   * Generate cuisine-style variants of a recipe
+   */
+  generateCuisineVariants(recipe) {
+    if (!this.seasoningPairingEngine) {
+      return [];
+    }
+
+    const cuisines = ['Thai', 'Indian', 'Italian', 'French', 'Chinese', 'Japanese', 'Mexican', 'Mediterranean'];
+    const variants = [];
+
+    for (const cuisine of cuisines) {
+      const sig = this.seasoningPairingEngine.cuisineSignatures[cuisine];
+      if (sig) {
+        const variant = {
+          cuisine,
+          flavor: sig.primary,
+          seasonings: sig.seasonings.slice(0, 4),
+          description: `${recipe.name} with ${cuisine} flavors and seasonings`
+        };
+        variants.push(variant);
+      }
+    }
+
+    return variants;
   }
 }
 

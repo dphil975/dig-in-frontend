@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dig In - Global Recipe Explorer</title>
+    <title>Dig In - Recipe Cards</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="analytics-tracker.js"></script>
+    <script src="user-metrics-tracker.js"></script>
     <style>
         * {
             margin: 0;
@@ -14,198 +16,222 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
+            background: #f5f1ed;
+            color: #333;
             min-height: 100vh;
-            padding: 20px;
+            padding: 30px 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
-            padding: 20px 0;
+            margin-bottom: 50px;
         }
 
         h1 {
             font-family: 'Press Start 2P', cursive;
-            font-size: 2.5em;
+            font-size: 2em;
+            color: #8b5cf6;
             margin-bottom: 10px;
-            color: #ff6b6b;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        .recipe-counter {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 0.8em;
-            color: #ffd700;
-            margin-bottom: 20px;
+        .header-subtitle {
+            font-size: 0.9em;
+            color: #666;
         }
 
         .controls {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             flex-wrap: wrap;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         input[type="text"], select {
-            padding: 12px 15px;
-            border: 2px solid #ff6b6b;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            font-family: 'Press Start 2P', cursive;
-            font-size: 0.7em;
-            cursor: pointer;
+            padding: 10px 15px;
+            border: 2px solid #8b5cf6;
+            border-radius: 6px;
+            background: #fff;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
         }
 
         input[type="text"]::placeholder {
-            color: rgba(255, 255, 255, 0.7);
+            color: #999;
         }
 
         button {
-            padding: 12px 25px;
-            background: #ff6b6b;
+            padding: 10px 20px;
+            background: #8b5cf6;
             color: #fff;
             border: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.7em;
+            font-size: 0.65em;
             cursor: pointer;
             transition: all 0.3s;
         }
 
         button:hover {
-            background: #ff5252;
+            background: #7c3aed;
             transform: scale(1.05);
         }
 
-        .cards-container {
+        .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .recipe-card {
-            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
-            border: 2px solid #ff6b6b;
+            background: #fff;
+            border: 3px solid #d4a574;
             border-radius: 15px;
-            padding: 25px;
-            transition: all 0.3s;
-            position: relative;
             overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .recipe-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.3);
-            border-color: #ffd700;
-        }
-
-        .recipe-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .recipe-card:hover::before {
-            left: 100%;
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
         }
 
         .card-header {
-            margin-bottom: 15px;
-            border-bottom: 2px solid rgba(255, 215, 0, 0.5);
-            padding-bottom: 15px;
+            background: linear-gradient(135deg, #7c5daf 0%, #6b4b8a 100%);
+            padding: 20px;
+            color: #fff;
         }
 
-        .recipe-title {
+        .recipe-name {
             font-family: 'Press Start 2P', cursive;
-            font-size: 1.2em;
-            color: #ff6b6b;
-            margin-bottom: 8px;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #fff;
         }
 
         .recipe-origin {
-            font-size: 0.8em;
-            color: #ffd700;
-            margin-bottom: 5px;
+            font-size: 0.85em;
+            color: #e0d0f0;
+            margin-bottom: 10px;
         }
 
-        .recipe-meta {
+        .recipe-quick-stats {
             display: flex;
-            justify-content: space-between;
+            gap: 15px;
             font-size: 0.75em;
-            color: #bbb;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
+            color: #d0c0e0;
         }
 
-        .meta-item {
+        .stat-item {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 4px;
+        }
+
+        .card-body {
+            padding: 20px;
+            background: #f9f6f2;
         }
 
         .recipe-description {
             font-size: 0.9em;
-            color: #ddd;
-            margin: 15px 0;
-            line-height: 1.4;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .recipe-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .info-item {
+            background: #fff;
+            padding: 10px;
+            border-left: 3px solid #8b5cf6;
+            border-radius: 4px;
+        }
+
+        .info-label {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            color: #8b5cf6;
+            margin-bottom: 3px;
+        }
+
+        .info-value {
+            font-size: 0.9em;
+            color: #333;
+            font-weight: bold;
         }
 
         .ingredients-section {
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 3px solid #ffd700;
-            padding: 15px;
-            margin: 15px 0;
+            background: #fff;
+            border: 1px solid #e0d0f0;
             border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
         }
 
         .ingredients-title {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.75em;
-            color: #ffd700;
-            margin-bottom: 10px;
+            font-size: 0.65em;
+            color: #8b5cf6;
+            margin-bottom: 8px;
         }
 
         .ingredients-list {
             list-style: none;
             font-size: 0.85em;
-            color: #ccc;
+            color: #666;
+            columns: 2;
+            gap: 10px;
         }
 
         .ingredients-list li {
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            margin-bottom: 4px;
         }
 
         .ingredients-list li:before {
             content: "• ";
-            color: #ff6b6b;
-            margin-right: 8px;
+            color: #d4a574;
+            margin-right: 5px;
         }
 
         .pairings-section {
-            background: rgba(255, 215, 0, 0.05);
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            padding: 12px;
-            margin: 15px 0;
+            background: #fff;
+            border: 1px solid #e0d0f0;
             border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
         }
 
         .pairings-title {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.65em;
-            color: #ffd700;
+            font-size: 0.6em;
+            color: #8b5cf6;
             margin-bottom: 8px;
+        }
+
+        .pairing-type {
+            font-size: 0.7em;
+            color: #999;
+            margin-left: 5px;
         }
 
         .pairing-chips {
@@ -214,200 +240,175 @@
             flex-wrap: wrap;
         }
 
-        .chip {
-            background: rgba(255, 107, 107, 0.3);
-            border: 1px solid #ff6b6b;
-            border-radius: 20px;
-            padding: 5px 12px;
-            font-size: 0.7em;
-            color: #fff;
-            cursor: pointer;
-            transition: all 0.2s;
+        .pairing-chip {
+            background: #f0e8f8;
+            border: 1px solid #d4a574;
+            border-radius: 16px;
+            padding: 4px 10px;
+            font-size: 0.75em;
+            color: #7c5daf;
         }
 
-        .chip:hover {
-            background: #ff6b6b;
-            transform: scale(1.05);
-        }
-
-        .card-actions {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-            flex-wrap: wrap;
-        }
-
-        .adapt-btn {
-            flex: 1;
-            min-width: 100px;
-            padding: 10px;
-            background: rgba(255, 107, 107, 0.8);
-            border: 1px solid #ff6b6b;
-            color: #fff;
-            border-radius: 6px;
-            font-size: 0.65em;
-            cursor: pointer;
-            font-family: 'Press Start 2P', cursive;
-            transition: all 0.2s;
-        }
-
-        .adapt-btn:hover {
-            background: #ff6b6b;
-        }
-
-        .action-btn {
-            flex: 1;
-            min-width: 100px;
-            padding: 10px;
-            background: rgba(255, 215, 0, 0.2);
-            border: 1px solid #ffd700;
-            color: #ffd700;
-            border-radius: 6px;
-            font-size: 0.65em;
-            cursor: pointer;
-            font-family: 'Press Start 2P', cursive;
-            transition: all 0.2s;
-        }
-
-        .action-btn:hover {
-            background: #ffd700;
-            color: #000;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            overflow-y: auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal.active {
-            display: flex;
-        }
-
-        .modal-content {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border: 3px solid #ff6b6b;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 600px;
-            width: 90%;
-            max-height: 90vh;
-            overflow-y: auto;
-        }
-
-        .modal-header {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 1.5em;
-            color: #ff6b6b;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .close-btn {
-            background: none;
-            border: none;
-            color: #ff6b6b;
-            font-size: 2em;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        .adapt-option {
-            background: rgba(255, 215, 0, 0.05);
-            border: 2px solid rgba(255, 215, 0, 0.3);
+        .customization-section {
+            background: #f0e8f8;
+            border: 2px solid #8b5cf6;
             border-radius: 8px;
-            padding: 15px;
-            margin: 15px 0;
-            cursor: pointer;
-            transition: all 0.2s;
+            padding: 12px;
+            margin-bottom: 12px;
         }
 
-        .adapt-option:hover {
-            border-color: #ffd700;
-            background: rgba(255, 215, 0, 0.1);
-        }
-
-        .adapt-option h3 {
-            color: #ffd700;
+        .customization-title {
             font-family: 'Press Start 2P', cursive;
-            font-size: 0.9em;
-            margin-bottom: 8px;
-        }
-
-        .adapt-option p {
-            color: #ddd;
-            font-size: 0.85em;
+            font-size: 0.65em;
+            color: #8b5cf6;
             margin-bottom: 10px;
         }
 
-        .modify-items {
-            background: rgba(0, 0, 0, 0.3);
-            border-left: 3px solid #ff6b6b;
-            padding: 10px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            color: #ccc;
+        .remix-formats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 10px;
         }
 
-        .confirm-btn {
-            background: #ff6b6b;
-            border: none;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-family: 'Press Start 2P', cursive;
+        .remix-chip {
+            background: #fff;
+            border: 1px solid #8b5cf6;
+            border-radius: 16px;
+            padding: 4px 10px;
             font-size: 0.7em;
+            color: #7c5daf;
             cursor: pointer;
-            margin-top: 15px;
-            width: 100%;
             transition: all 0.2s;
         }
 
-        .confirm-btn:hover {
-            background: #ff5252;
+        .remix-chip:hover {
+            background: #f0e8f8;
         }
 
-        .nav-buttons {
+        .remix-chip.active {
+            background: #8b5cf6;
+            color: #fff;
+        }
+
+        .dietary-options {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 10px;
         }
 
-        .nav-btn {
-            padding: 12px 25px;
-            background: rgba(255, 215, 0, 0.2);
-            border: 2px solid #ffd700;
-            color: #ffd700;
-            border-radius: 8px;
-            font-family: 'Press Start 2P', cursive;
+        .dietary-chip {
+            background: #fff;
+            border: 1px solid #d4a574;
+            border-radius: 16px;
+            padding: 4px 10px;
             font-size: 0.7em;
+            color: #8b5cf6;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .dietary-chip:hover {
+            background: #f9f6f2;
+        }
+
+        .dietary-chip.active {
+            background: #8b5cf6;
+            color: #fff;
+        }
+
+        .flavor-profiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .time-variants-select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #8b5cf6;
+            border-radius: 4px;
+            font-size: 0.85em;
+            background: #fff;
+        }
+
+        .remix-button {
+            width: 100%;
+            padding: 10px;
+            background: #8b5cf6;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 8px;
+        }
+
+        .remix-button:hover {
+            background: #7c3aed;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-steps-btn, .all-drinks-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
             cursor: pointer;
             transition: all 0.3s;
         }
 
-        .nav-btn:hover {
-            background: #ffd700;
-            color: #000;
+        .view-steps-btn {
+            background: #8b5cf6;
+            color: #fff;
         }
 
-        .nav-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .view-steps-btn:hover {
+            background: #7c3aed;
+        }
+
+        .all-drinks-btn {
+            background: #6b4a3d;
+            color: #fff;
+        }
+
+        .all-drinks-btn:hover {
+            background: #5a3a2d;
+        }
+
+        .favorite-btn {
+            padding: 8px 12px;
+            background: #f9f6f2;
+            border: 2px solid #d4a574;
+            border-radius: 6px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .favorite-btn:hover {
+            background: #d4a574;
+        }
+
+        .recipe-counter {
+            text-align: center;
+            color: #8b5cf6;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            margin-bottom: 20px;
         }
 
         @media (max-width: 768px) {
-            .cards-container {
+            .cards-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -415,8 +416,12 @@
                 font-size: 1.5em;
             }
 
-            .recipe-title {
-                font-size: 1em;
+            .recipe-name {
+                font-size: 0.9em;
+            }
+
+            .ingredients-list {
+                columns: 1;
             }
         }
     </style>
@@ -424,7 +429,7 @@
 <body>
     <header>
         <h1>🍽️ DIG IN</h1>
-        <p class="recipe-counter" id="recipeCounter">Loading recipes...</p>
+        <div class="header-subtitle">Premium Recipe Collection</div>
     </header>
 
     <div class="controls">
@@ -439,35 +444,17 @@
             <option value="dinner">Dinner</option>
             <option value="snacks">Snacks</option>
             <option value="desserts">Desserts</option>
-            <option value="nonAlcoholicDrinks">Non-Alcoholic Drinks</option>
-            <option value="alcoholicDrinks">Alcoholic Drinks</option>
         </select>
-        <button id="randomBtn">Random Recipe</button>
+        <button onclick="shuffleRecipes()">🎲 Shuffle</button>
     </div>
 
-    <div class="nav-buttons">
-        <button id="prevBtn" class="nav-btn">← PREV</button>
-        <button id="nextBtn" class="nav-btn">NEXT →</button>
-    </div>
-
-    <div class="cards-container" id="cardsContainer"></div>
-
-    <div id="adaptModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span>Customize Recipe</span>
-                <button class="close-btn" onclick="closeAdaptModal()">✕</button>
-            </div>
-            <div id="adaptOptions"></div>
-        </div>
-    </div>
+    <div class="recipe-counter" id="recipeCounter">Loading recipes...</div>
+    <div class="cards-grid" id="cardsGrid"></div>
 
     <script>
         const API_URL = 'http://localhost:5000';
         let allRecipes = [];
         let filteredRecipes = [];
-        let currentIndex = 0;
-        let recipesPerPage = 6;
 
         async function loadRecipes() {
             try {
@@ -480,6 +467,7 @@
                 updateCounter();
             } catch (error) {
                 console.error('Error loading recipes:', error);
+                document.getElementById('cardsGrid').innerHTML = '<p>Error loading recipes</p>';
             }
         }
 
@@ -507,176 +495,445 @@
                 return matchSearch && matchCountry && matchCategory;
             });
 
-            currentIndex = 0;
             displayRecipes();
             updateCounter();
         }
 
         function displayRecipes() {
-            const container = document.getElementById('cardsContainer');
-            container.innerHTML = '';
+            const grid = document.getElementById('cardsGrid');
+            grid.innerHTML = '';
 
-            const start = currentIndex;
-            const end = Math.min(start + recipesPerPage, filteredRecipes.length);
-
-            for (let i = start; i < end; i++) {
-                const recipe = filteredRecipes[i];
-                container.appendChild(createRecipeCard(recipe));
-            }
-
-            document.getElementById('prevBtn').disabled = currentIndex === 0;
-            document.getElementById('nextBtn').disabled = end >= filteredRecipes.length;
+            filteredRecipes.forEach(recipe => {
+                const card = createRecipeCard(recipe);
+                grid.appendChild(card);
+            });
         }
 
         function createRecipeCard(recipe) {
             const card = document.createElement('div');
             card.className = 'recipe-card';
+            card.id = `card-${recipe.id}`;
 
-            const ingredientsHTML = recipe.ingredients
-                .slice(0, 5)
+            const ingredientList = recipe.ingredients
+                .slice(0, 4)
                 .map(ing => `<li>${ing}</li>`)
                 .join('');
 
-            const adaptOptions = [
-                { name: '+Protein', description: 'Add more protein sources' },
-                { name: '+Fiber', description: 'Increase fiber content' },
-                { name: 'Lower Carbs', description: 'Reduce carbohydrates' },
-                { name: '+Veggies', description: 'Add more vegetables' }
-            ];
-
-            const adaptButtonsHTML = adaptOptions
-                .map(opt => `<button class="adapt-btn" onclick="showAdaptModal('${recipe.id}', '${opt.name}', '${recipe.name}')">+${opt.name.split('+')[1] || opt.name}</button>`)
+            const timeVariants = recipe.time_variants || {};
+            const timeOptions = Object.entries(timeVariants)
+                .map(([key, variant]) => `<option value="${key}">${variant.label} (${variant.prep_time}p + ${variant.cook_time}c)</option>`)
                 .join('');
+
+            const remixFormats = recipe.remix_formats
+                ?.map(format => `<span class="remix-chip">${format.replace(/_/g, ' ')}</span>`)
+                .join('') || '';
+
+            const dietaryOptions = recipe.dietary_adaptations
+                ?.map(diet => `<span class="dietary-chip" onclick="toggleDietaryOption(this, '${recipe.id}', '${diet}')">${diet.replace(/_/g, ' ')}</span>`)
+                .join('') || '';
+
+            const flavorProfiles = recipe.remix_formats ? `
+                <div style="margin-top: 10px;">
+                    <div style="font-size: 0.7em; color: #8b5cf6; margin-bottom: 6px; text-transform: uppercase;">🌟 Flavor Profile</div>
+                    <div class="flavor-profiles">
+                        <span class="remix-chip" onclick="toggleFlavorProfile(this, '${recipe.id}', 'spicy')" style="cursor: pointer; border: 2px solid #8b5cf6;">🌶️ spicy</span>
+                        <span class="remix-chip" onclick="toggleFlavorProfile(this, '${recipe.id}', 'umami')" style="cursor: pointer; border: 2px solid #8b5cf6;">🍜 umami</span>
+                        <span class="remix-chip" onclick="toggleFlavorProfile(this, '${recipe.id}', 'fresh')" style="cursor: pointer; border: 2px solid #8b5cf6;">🌿 fresh</span>
+                    </div>
+                </div>
+            ` : '';
+
+            const customization = recipe.remix_formats ? `
+                <div class="customization-section">
+                    <div class="customization-title">⚡ REMIX THIS RECIPE</div>
+                    <div style="margin-bottom: 10px;">
+                        <div style="font-size: 0.7em; color: #8b5cf6; margin-bottom: 6px; text-transform: uppercase;">Format</div>
+                        <div class="remix-formats">${remixFormats}</div>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <div style="font-size: 0.7em; color: #8b5cf6; margin-bottom: 6px; text-transform: uppercase;">Time</div>
+                        <select class="time-variants-select" onchange="updateTimeVariant('${recipe.id}', this.value)">
+                            ${timeOptions}
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-size: 0.7em; color: #8b5cf6; margin-bottom: 6px; text-transform: uppercase;">Dietary Options</div>
+                        <div class="dietary-options">${dietaryOptions}</div>
+                    </div>
+                    ${flavorProfiles}
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px;">
+                        <button class="remix-button" onclick="showRemixOptions('${recipe.id}')">🔄 REMIX</button>
+                        <button class="remix-button" onclick="showFlavorRemix('${recipe.id}')" style="background: #667eea;">✨ FLAVOR</button>
+                    </div>
+                </div>
+            ` : '';
 
             card.innerHTML = `
                 <div class="card-header">
-                    <div class="recipe-title">${recipe.name}</div>
-                    <div class="recipe-origin">${recipe.country} • ${recipe.region}</div>
-                    <div class="recipe-meta">
-                        <span class="meta-item">⏱️ ${recipe.prepTime + recipe.cookTime} min</span>
-                        <span class="meta-item">📊 ${recipe.difficulty}</span>
-                        <span class="meta-item">👥 ${recipe.servings}</span>
+                    <div class="recipe-name">${recipe.name}</div>
+                    <div class="recipe-origin">${recipe.country}</div>
+                    <div class="recipe-quick-stats">
+                        <span class="stat-item">🌍 ${recipe.region || 'N/A'}</span>
+                        <span class="stat-item">⏱️ ${recipe.prepTime + recipe.cookTime}min</span>
+                        <span class="stat-item">👥 ${recipe.servings || 4}</span>
                     </div>
                 </div>
 
-                <p class="recipe-description">${recipe.description}</p>
+                <div class="card-body">
+                    <p class="recipe-description">${recipe.description}</p>
 
-                <div class="ingredients-section">
-                    <div class="ingredients-title">KEY INGREDIENTS</div>
-                    <ul class="ingredients-list">
-                        ${ingredientsHTML}
-                    </ul>
-                </div>
-
-                <div class="pairings-section">
-                    <div class="pairings-title">ADAPT RECIPE</div>
-                    <div class="card-actions">
-                        ${adaptButtonsHTML}
+                    <div class="recipe-info-grid">
+                        <div class="info-column">
+                            <div class="info-item">
+                                <div class="info-label">PREP</div>
+                                <div class="info-value">${recipe.prepTime} min</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">DIFFICULTY</div>
+                                <div class="info-value">${recipe.difficulty || 'N/A'}</div>
+                            </div>
+                        </div>
+                        <div class="info-column">
+                            <div class="info-item">
+                                <div class="info-label">COOK</div>
+                                <div class="info-value">${recipe.cookTime} min</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">STEPS</div>
+                                <div class="info-value">${recipe.instructions?.length || 0} steps</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card-actions">
-                    <button class="action-btn" onclick="viewFullRecipe('${recipe.id}')">VIEW STEPS</button>
-                    <button class="action-btn" onclick="showMoreInfo('${recipe.id}')">FULL DETAILS</button>
+                    <div class="ingredients-section">
+                        <div class="ingredients-title">KEY INGREDIENTS</div>
+                        <ul class="ingredients-list">
+                            ${ingredientList}
+                        </ul>
+                    </div>
+
+                    <div class="pairings-section">
+                        <div class="pairings-title">
+                            PAIRS WITH
+                            <span class="pairing-type">${recipe.category}</span>
+                        </div>
+                        <div class="pairing-chips">
+                            <span class="pairing-chip">☕ Coffee</span>
+                            <span class="pairing-chip">🍷 Wine</span>
+                        </div>
+                    </div>
+
+                    ${customization}
+
+                    <div class="action-buttons">
+                        <button class="view-steps-btn" onclick="showSteps('${recipe.id}')">VIEW STEPS →</button>
+                        <button class="all-drinks-btn" onclick="showDrinks('${recipe.id}')">🍷 ALL DRINKS</button>
+                    </div>
                 </div>
             `;
 
             return card;
         }
 
-        function showAdaptModal(recipeId, adaptType, recipeName) {
-            const recipe = filteredRecipes.find(r => r.id === recipeId);
-            const modal = document.getElementById('adaptModal');
-            const options = document.getElementById('adaptOptions');
+        function toggleDietaryOption(element, recipeId, diet) {
+            element.classList.toggle('active');
+        }
 
-            const adaptations = {
-                'Protein': {
-                    description: 'Add protein-rich ingredients to boost nutritional value',
-                    suggestions: ['Add Greek yogurt', 'Include beans or lentils', 'Add nuts or seeds', 'Use protein powder']
-                },
-                'Fiber': {
-                    description: 'Increase fiber content for better digestion',
-                    suggestions: ['Add whole grains', 'Include vegetables', 'Use legumes', 'Add nuts and seeds']
-                },
-                'Carbs': {
-                    description: 'Reduce carbohydrates while maintaining taste',
-                    suggestions: ['Replace grains with vegetables', 'Use cauliflower rice', 'Reduce sugar', 'Use sugar alternatives']
-                },
-                'Veggies': {
-                    description: 'Add more vegetables for nutrition and volume',
-                    suggestions: ['Add leafy greens', 'Include root vegetables', 'Add mushrooms', 'Use seasonal vegetables']
+        function toggleFlavorProfile(element, recipeId, flavor) {
+            element.classList.toggle('active');
+            element.style.background = element.classList.contains('active') ? 'rgba(139, 92, 246, 0.3)' : 'transparent';
+        }
+
+        function updateTimeVariant(recipeId, variant) {
+            console.log(`Time variant selected: ${variant}`);
+        }
+
+        async function showRemixOptions(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            const card = document.querySelector(`#card-${recipeId}`);
+            const selectedDietary = Array.from(card.querySelectorAll('.dietary-chip.active'))
+                .map(chip => {
+                    const text = chip.textContent.toLowerCase();
+                    return text.replace(/[^a-z_]/g, '').substring(0, 20) || text.split(' ')[1];
+                });
+
+            const format = recipe.remix_formats ? recipe.remix_formats[0] : 'salad';
+
+            try {
+                const response = await fetch(`${API_URL}/api/recipes/${recipeId}/remix`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ format, dietaryOptions: selectedDietary })
+                });
+
+                if (!response.ok) throw new Error('Failed to remix');
+                const data = await response.json();
+                showRemixModal(data.recipe, selectedDietary);
+            } catch (error) {
+                alert('Error generating remix: ' + error.message);
+            }
+        }
+
+        async function showFlavorRemix(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            const card = document.querySelector(`#card-${recipeId}`);
+            const selectedFlavorChip = card.querySelector('.flavor-profiles span.active');
+
+            if (!selectedFlavorChip) {
+                alert('Please select a flavor profile first!');
+                return;
+            }
+
+            const flavor = selectedFlavorChip.textContent.toLowerCase().split(' ')[1] || selectedFlavorChip.textContent.split(' ')[0];
+            const format = recipe.remix_formats ? recipe.remix_formats[0] : 'salad';
+
+            try {
+                const flavorResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/remix-flavor`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ flavor, format })
+                });
+
+                if (!flavorResponse.ok) throw new Error('Failed to generate flavor remix');
+                const flavorData = await flavorResponse.json();
+
+                const pairingsResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/pairings/${flavor}`);
+                let pairings = null;
+                if (pairingsResponse.ok) {
+                    const pairingData = await pairingsResponse.json();
+                    pairings = pairingData.pairings;
                 }
-            };
 
-            const type = adaptType.replace(/[+]/g, '');
-            const adapt = adaptations[type] || adaptations['Protein'];
+                showFlavorRemixModal(flavorData.recipe, pairings, flavor);
+            } catch (error) {
+                alert('Error generating flavor remix: ' + error.message);
+            }
+        }
 
-            options.innerHTML = `
-                <div class="adapt-option">
-                    <h3>${adaptType}</h3>
-                    <p>${adapt.description}</p>
-                    <div class="modify-items">
-                        <strong>Recipe: ${recipeName}</strong><br>
-                        ${adapt.suggestions.map(s => `✓ ${s}`).join('<br>')}
-                    </div>
-                    <button class="confirm-btn" onclick="applyAdaptation('${recipeId}', '${adaptType}')">
-                        APPLY CHANGES
-                    </button>
-                </div>
+        function showRemixModal(recipe, dietaryOptions) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                justify-content: center; z-index: 1000; overflow-y: auto;
             `;
 
-            modal.classList.add('active');
+            const content = document.createElement('div');
+            content.style.cssText = `
+                background: #f9f6f2; border: 3px solid #d4a574; border-radius: 15px;
+                padding: 30px; max-width: 600px; max-height: 80vh; overflow-y: auto;
+                color: #333; font-family: Arial, sans-serif; margin: 20px auto;
+            `;
+
+            const title = document.createElement('h2');
+            title.style.cssText = 'color: #8b5cf6; margin-bottom: 10px; font-family: Press Start 2P;';
+            title.textContent = recipe.name;
+
+            const subtitle = document.createElement('p');
+            subtitle.style.cssText = 'color: #666; margin-bottom: 15px; font-size: 0.9em;';
+            subtitle.textContent = `🔄 ${recipe.format || 'Custom'} ${dietaryOptions.length ? `| ${dietaryOptions.join(', ')}` : ''}`;
+
+            const times = document.createElement('p');
+            times.style.cssText = 'color: #8b5cf6; margin-bottom: 15px; font-size: 0.9em;';
+            times.innerHTML = `⏱️ Prep: ${recipe.prepTime}min | Cook: ${recipe.cookTime}min`;
+
+            const description = document.createElement('p');
+            description.style.cssText = 'color: #666; margin-bottom: 20px; line-height: 1.4;';
+            description.textContent = recipe.description;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '✕ Close';
+            closeBtn.style.cssText = `
+                background: #8b5cf6; color: #fff; border: none; padding: 10px 20px;
+                border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.9em;
+                width: 100%; margin-top: 15px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            content.appendChild(title);
+            content.appendChild(subtitle);
+            content.appendChild(times);
+            content.appendChild(description);
+            content.appendChild(closeBtn);
+
+            modal.appendChild(content);
+            document.body.appendChild(modal);
         }
 
-        function closeAdaptModal() {
-            document.getElementById('adaptModal').classList.remove('active');
+        function showFlavorRemixModal(recipe, pairings, flavor) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.7); display: flex; align-items: center;
+                justify-content: center; z-index: 1000; overflow-y: auto;
+            `;
+
+            const content = document.createElement('div');
+            content.style.cssText = `
+                background: #f9f6f2; border: 3px solid #8b5cf6; border-radius: 15px;
+                padding: 30px; max-width: 700px; max-height: 85vh; overflow-y: auto;
+                color: #333; font-family: Arial, sans-serif; margin: 20px auto;
+            `;
+
+            const title = document.createElement('h2');
+            title.style.cssText = 'color: #8b5cf6; margin-bottom: 8px; font-family: Press Start 2P; font-size: 1.3em;';
+            title.textContent = recipe.name;
+
+            const flavorBadge = document.createElement('p');
+            flavorBadge.style.cssText = 'color: #8b5cf6; margin-bottom: 15px; font-size: 0.95em; font-weight: bold;';
+            flavorBadge.innerHTML = `✨ ${flavor.toUpperCase()} TRANSFORMATION`;
+
+            const transformation = document.createElement('p');
+            transformation.style.cssText = 'color: #666; margin-bottom: 20px; line-height: 1.5; font-size: 0.9em;';
+            transformation.textContent = recipe.transformation_notes || 'This dish has been transformed with new seasonings and ingredients.';
+
+            const eatingExp = document.createElement('p');
+            eatingExp.style.cssText = 'color: #8b5cf6; margin-bottom: 15px; font-style: italic; font-size: 0.9em; line-height: 1.4;';
+            eatingExp.textContent = recipe.flavor_notes?.eating_experience || '';
+
+            content.appendChild(title);
+            content.appendChild(flavorBadge);
+            content.appendChild(transformation);
+            if (eatingExp.textContent) content.appendChild(eatingExp);
+
+            // Seasonings
+            if (recipe.flavor_notes?.dominant_seasonings) {
+                const seasoningTitle = document.createElement('p');
+                seasoningTitle.style.cssText = 'color: #8b5cf6; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+                seasoningTitle.textContent = '🧂 DOMINANT SEASONINGS:';
+                content.appendChild(seasoningTitle);
+
+                const seasoningList = document.createElement('div');
+                seasoningList.style.cssText = 'display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;';
+                recipe.flavor_notes.dominant_seasonings.forEach(s => {
+                    const chip = document.createElement('span');
+                    chip.style.cssText = `
+                        background: #f0e8f8; border: 1px solid #8b5cf6;
+                        border-radius: 16px; padding: 6px 14px; font-size: 0.85em;
+                        color: #8b5cf6;
+                    `;
+                    chip.textContent = s;
+                    seasoningList.appendChild(chip);
+                });
+                content.appendChild(seasoningList);
+            }
+
+            // Pairings
+            if (pairings) {
+                const pairingsTitle = document.createElement('p');
+                pairingsTitle.style.cssText = 'color: #8b5cf6; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+                pairingsTitle.textContent = '🥘 INGREDIENT PAIRINGS:';
+                content.appendChild(pairingsTitle);
+
+                const pairingGrid = document.createElement('div');
+                pairingGrid.style.cssText = 'display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px;';
+
+                const boxes = [
+                    { label: 'PROTEIN', data: pairings.protein, color: '#d4a574' },
+                    { label: 'CARBS', data: pairings.carb, color: '#8b5cf6' },
+                    { label: 'LEGUMES', data: pairings.bean, color: '#8b5cf6' }
+                ];
+
+                boxes.forEach(box => {
+                    const pairingBox = document.createElement('div');
+                    pairingBox.style.cssText = `background: rgba(139, 92, 246, 0.1); border: 1px solid ${box.color}; border-radius: 8px; padding: 12px;`;
+                    pairingBox.innerHTML = `
+                        <div style="color: ${box.color}; font-weight: bold; font-size: 0.85em; margin-bottom: 4px;">${box.label}</div>
+                        <div style="color: #333; font-size: 0.9em; margin-bottom: 4px;">${box.data.name}</div>
+                        <div style="color: #666; font-size: 0.75em;">${box.data.reason}</div>
+                    `;
+                    pairingGrid.appendChild(pairingBox);
+                });
+                content.appendChild(pairingGrid);
+
+                // Scores
+                if (pairings.pairing_scores) {
+                    const scoresTitle = document.createElement('p');
+                    scoresTitle.style.cssText = 'color: #8b5cf6; font-weight: bold; margin-top: 15px; margin-bottom: 10px; font-size: 0.85em;';
+                    scoresTitle.textContent = '⭐ HARMONY SCORES:';
+                    content.appendChild(scoresTitle);
+
+                    const scoresList = document.createElement('div');
+                    scoresList.style.cssText = 'font-size: 0.85em; line-height: 1.8;';
+                    scoresList.innerHTML = `
+                        <div style="color: #666;">
+                            Protein Match: <span style="color: #8b5cf6; font-weight: bold;">${(pairings.pairing_scores.protein_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #666;">
+                            Carb Match: <span style="color: #8b5cf6; font-weight: bold;">${(pairings.pairing_scores.carb_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #666;">
+                            Bean Match: <span style="color: #8b5cf6; font-weight: bold;">${(pairings.pairing_scores.bean_flavor_match * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="color: #666; margin-top: 8px; border-top: 1px solid #ddd; padding-top: 8px;">
+                            Overall Harmony: <span style="color: #8b5cf6; font-weight: bold;">${(pairings.pairing_scores.overall_harmony * 100).toFixed(0)}%</span>
+                        </div>
+                    `;
+                    content.appendChild(scoresList);
+                }
+            }
+
+            // Drinks
+            if (recipe.flavor_notes?.pairing_drinks) {
+                const drinkTitle = document.createElement('p');
+                drinkTitle.style.cssText = 'color: #8b5cf6; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 0.95em;';
+                drinkTitle.textContent = '🍷 BEVERAGE PAIRINGS:';
+                content.appendChild(drinkTitle);
+
+                const drinkList = document.createElement('div');
+                drinkList.style.cssText = 'display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;';
+                recipe.flavor_notes.pairing_drinks.forEach(drink => {
+                    const chip = document.createElement('span');
+                    chip.style.cssText = `
+                        background: #f0e8f8; border: 1px solid #d4a574;
+                        border-radius: 16px; padding: 6px 14px; font-size: 0.85em;
+                        color: #8b5cf6;
+                    `;
+                    chip.textContent = drink;
+                    drinkList.appendChild(chip);
+                });
+                content.appendChild(drinkList);
+            }
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '✕ Close';
+            closeBtn.style.cssText = `
+                background: #8b5cf6; color: #fff; border: none; padding: 12px 24px;
+                border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.9em;
+                width: 100%; margin-top: 20px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            content.appendChild(closeBtn);
+            modal.appendChild(content);
+            document.body.appendChild(modal);
         }
 
-        function applyAdaptation(recipeId, adaptType) {
-            alert(`Applied "${adaptType}" to recipe!\n\nYour customized recipe has been updated. You can now view the modified version with the new ingredients and instructions.`);
-            closeAdaptModal();
+        function showSteps(recipeId) {
+            alert('Steps view coming soon!');
         }
 
-        function viewFullRecipe(recipeId) {
-            const recipe = filteredRecipes.find(r => r.id === recipeId);
-
-            // Store recipe data in sessionStorage for the steps viewer
-            sessionStorage.setItem('currentRecipe', JSON.stringify(recipe));
-
-            // Open the steps viewer in a new tab or modal
-            const stepsViewerURL = 'recipe-steps-viewer.html';
-            window.open(stepsViewerURL, 'RecipeSteps', 'width=1000,height=800,scrollbars=yes');
+        function showDrinks(recipeId) {
+            alert('Drinks view coming soon!');
         }
 
-        function showMoreInfo(recipeId) {
-            const recipe = filteredRecipes.find(r => r.id === recipeId);
-            alert(`${recipe.name}\n\nFun Fact: ${recipe.fun_fact}\n\nAlternatives:\n${recipe.alternatives.map(a => `• ${a}`).join('\n')}`);
+        function shuffleRecipes() {
+            filteredRecipes = filteredRecipes.sort(() => Math.random() - 0.5);
+            displayRecipes();
+        }
+
+        function updateCounter() {
+            const counter = document.getElementById('recipeCounter');
+            counter.textContent = `Showing ${filteredRecipes.length} recipes`;
         }
 
         document.getElementById('searchInput').addEventListener('input', filterRecipes);
         document.getElementById('countryFilter').addEventListener('change', filterRecipes);
         document.getElementById('categoryFilter').addEventListener('change', filterRecipes);
-        document.getElementById('randomBtn').addEventListener('click', () => {
-            currentIndex = Math.floor(Math.random() * Math.max(0, filteredRecipes.length - recipesPerPage));
-            displayRecipes();
-        });
-
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            currentIndex = Math.max(0, currentIndex - recipesPerPage);
-            displayRecipes();
-        });
-
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            currentIndex = Math.min(currentIndex + recipesPerPage, filteredRecipes.length - recipesPerPage);
-            displayRecipes();
-        });
-
-        function updateCounter() {
-            const start = currentIndex + 1;
-            const end = Math.min(currentIndex + recipesPerPage, filteredRecipes.length);
-            document.getElementById('recipeCounter').textContent =
-                `Showing ${start}-${end} of ${filteredRecipes.length} recipes`;
-        }
 
         loadRecipes();
     </script>
