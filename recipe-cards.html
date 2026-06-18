@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In - Recipe Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #8D7B9E;
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-subtitle {
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"],
+        select {
+            padding: 12px 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            font-size: 0.95em;
+            min-width: 150px;
+        }
+
+        button.filter-btn {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button.filter-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .recipe-counter {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            margin-bottom: 30px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .recipe-card {
+            max-width: 400px;
+            background: #FAEBD7;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 2px solid #6B463C/40;
+            transition: all 0.3s;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            background: linear-gradient(135deg, #6B6FBB 0%, #5a5da0 100%);
+            padding: 25px;
+            color: #fff;
+        }
+
+        .recipe-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .recipe-subtitle {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .tag-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 0.75em;
+            color: #fff;
+        }
+
+        .card-body {
+            padding: 25px;
+            background: #f9f6f2;
+        }
+
+        .recipe-description {
+            font-size: 0.95em;
+            color: #2d1b13/80;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .stat-box {
+            background: #FAEBD7;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #d4bca5/30;
+        }
+
+        .stat-label {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            color: #6B6FBB;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 0.95em;
+            color: #2d1b13;
+            font-weight: 600;
+        }
+
+        .ingredients-section,
+        .pairings-section,
+        .flavor-section {
+            border: 1px solid #d4bca5/50;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #FAEBD7;
+        }
+
+        .section-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            color: #6B6FBB;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .ingredients-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 12px;
+        }
+
+        .ingredient-item {
+            display: flex;
+            gap: 8px;
+            font-size: 0.85em;
+            color: #2d1b13;
+        }
+
+        .ingredient-bullet {
+            color: #6B6FBB;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .pairings-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 12px;
+        }
+
+        .pairing-type {
+            font-size: 0.7em;
+            color: #2d1b13/50;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .pairing-chips {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pairing-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 2px solid #6B463C;
+            border-radius: 20px;
+            background: transparent;
+            color: #2d1b13;
+            font-size: 0.75em;
+            font-weight: 600;
+        }
+
+        .flavor-options {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .flavor-chip {
+            padding: 8px 14px;
+            border: 2px solid #6B6FBB;
+            border-radius: 20px;
+            background: #fff;
+            color: #6B6FBB;
+            font-size: 0.75em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .flavor-chip:hover {
+            background: #f0e8f8;
+        }
+
+        .flavor-chip.active {
+            background: #6B6FBB;
+            color: #fff;
+        }
+
+        .flavor-button {
+            width: 100%;
+            padding: 12px;
+            background: #6B6FBB;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .flavor-button:hover:not(:disabled) {
+            background: #5a5da0;
+        }
+
+        .flavor-button:disabled {
+            background: #999;
+            cursor: not-allowed;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-steps-btn,
+        .all-drinks-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .view-steps-btn {
+            background: #6B6FBB;
+            color: #fff;
+            border-bottom: 2px solid #4A4D80;
+        }
+
+        .view-steps-btn:hover {
+            background: #585B9E;
+        }
+
+        .all-drinks-btn {
+            flex: 1.5;
+            background: #4A2E25;
+            color: #fff;
+            border-bottom: 2px solid #2D1B13;
+        }
+
+        .all-drinks-btn:hover {
+            background: #3A241D;
+        }
+
+        .like-btn {
+            width: 50px;
+            height: 45px;
+            background: #fff;
+            border: 1px solid #d4bca5/50;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .like-btn:hover {
+            background: #f5f5f5;
+        }
+
+        .like-btn.liked {
+            color: #ef4444;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #f9f6f2;
+            border-radius: 20px;
+            border: 2px solid #6B6FBB;
+            padding: 30px;
+            max-width: 700px;
+            max-height: 85vh;
+            overflow-y: auto;
+            color: #333;
+        }
+
+        .modal-title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #6B6FBB;
+            margin-bottom: 8px;
+        }
+
+        .modal-subtitle {
+            color: #6B6FBB;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .modal-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .modal-section-title {
+            color: #6B6FBB;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+        }
+
+        .seasonings-list,
+        .beverages-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .seasoning-chip,
+        .beverage-chip {
+            background: #f0e8f8;
+            border: 1px solid #6B6FBB;
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 0.85em;
+            color: #6B6FBB;
+        }
+
+        .pairings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .pairing-box {
+            background: #f0e8f8;
+            border: 1px solid #d4a574;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .pairing-box-label {
+            color: #d4a574;
+            font-weight: bold;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .pairing-box-name {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .pairing-box-reason {
+            color: #666;
+            font-size: 0.8em;
+        }
+
+        .harmony-scores {
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+
+        .harmony-score {
+            color: #666;
+        }
+
+        .harmony-value {
+            color: #6B6FBB;
+            font-weight: bold;
+        }
+
+        .close-btn {
+            width: 100%;
+            padding: 15px;
+            background: #6B6FBB;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .close-btn:hover {
+            background: #5a5da0;
+        }
+
+        .loading {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .ingredients-list {
+                grid-template-columns: 1fr;
+            }
+
+            .pairings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ DIG IN</h1>
+            <div class="header-subtitle">Premium Recipe Cards with Flavor Profiles</div>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+            <select id="countryFilter">
+                <option value="">All Countries</option>
+            </select>
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="desserts">Desserts</option>
+            </select>
+            <button class="filter-btn" onclick="shuffleRecipes()">🎲 Shuffle</button>
+        </div>
+
+        <div class="recipe-counter" id="recipeCounter">Loading recipes...</div>
+        <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+
+    <!-- Flavor Remix Modal -->
+    <div class="modal" id="flavorModal">
+        <div class="modal-content">
+            <div class="modal-title" id="modalTitle"></div>
+            <div class="modal-subtitle" id="modalSubtitle"></div>
+            <div class="modal-description" id="modalDescription"></div>
+
+            <div id="eatingExperience" style="color: #6B6FBB; font-style: italic; margin-bottom: 20px;"></div>
+
+            <div id="seasoningsSection"></div>
+            <div id="pairingsSection"></div>
+            <div id="beveragesSection"></div>
+
+            <button class="close-btn" onclick="closeModal()">✕ Close</button>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000';
+        let allRecipes = [];
+        let filteredRecipes = [];
+
+        async function loadRecipes() {
+            try {
+                const response = await fetch(`${API_URL}/api/recipes?limit=1000`);
+                const data = await response.json();
+                allRecipes = data.recipes;
+                filteredRecipes = allRecipes;
+                updateCountries();
+                displayRecipes();
+                updateCounter();
+            } catch (error) {
+                console.error('Error loading recipes:', error);
+                document.getElementById('cardsGrid').innerHTML = '<p class="loading">Error loading recipes</p>';
+            }
+        }
+
+        function updateCountries() {
+            const countries = [...new Set(allRecipes.map(r => r.country))].sort();
+            const select = document.getElementById('countryFilter');
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                select.appendChild(option);
+            });
+        }
+
+        function filterRecipes() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const country = document.getElementById('countryFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+
+            filteredRecipes = allRecipes.filter(recipe => {
+                const matchSearch = recipe.name.toLowerCase().includes(search) ||
+                    (recipe.description && recipe.description.toLowerCase().includes(search));
+                const matchCountry = !country || recipe.country === country;
+                const matchCategory = !category || recipe.category === category;
+                return matchSearch && matchCountry && matchCategory;
+            });
+
+            displayRecipes();
+            updateCounter();
+        }
+
+        function displayRecipes() {
+            const grid = document.getElementById('cardsGrid');
+            grid.innerHTML = '';
+
+            filteredRecipes.forEach(recipe => {
+                const card = createRecipeCard(recipe);
+                grid.appendChild(card);
+            });
+        }
+
+        function createRecipeCard(recipe) {
+            const card = document.createElement('div');
+            card.className = 'recipe-card';
+            card.id = `card-${recipe.id}`;
+
+            const ingredientList = recipe.ingredients
+                ?.slice(0, 4)
+                .map(ing => `<div class="ingredient-item"><span class="ingredient-bullet">•</span><span>${ing}</span></div>`)
+                .join('') || '';
+
+            const drinkPairings = [
+                '<div class="pairing-chip">☕ Coffee</div>',
+                '<div class="pairing-chip">🍷 Wine</div>'
+            ].join('');
+
+            const flavorChips = ['spicy', 'umami', 'fresh'].map(flavor =>
+                `<button class="flavor-chip" onclick="toggleFlavor('${recipe.id}', '${flavor}')">${
+                    flavor === 'spicy' ? '🌶️' : flavor === 'umami' ? '🍜' : '🌿'
+                } ${flavor}</button>`
+            ).join('');
+
+            card.innerHTML = `
+                <!-- Header -->
+                <div class="card-header">
+                    <div class="recipe-name">${recipe.name}</div>
+                    <div class="recipe-subtitle">${recipe.country}</div>
+                    <div class="tag-badges">
+                        <span class="tag-badge">🌍 ${recipe.region || 'Global'}</span>
+                        <span class="tag-badge">⏱️ ${recipe.prepTime + recipe.cookTime}min</span>
+                        <span class="tag-badge">👥 ${recipe.servings || 4}</span>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="card-body">
+                    <p class="recipe-description">${recipe.description}</p>
+
+                    <!-- Stats -->
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">Prep</div>
+                            <div class="stat-value">${recipe.prepTime} min</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Cook</div>
+                            <div class="stat-value">${recipe.cookTime} min</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Difficulty</div>
+                            <div class="stat-value">${recipe.difficulty || 'Easy'}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Steps</div>
+                            <div class="stat-value">${recipe.instructions?.length || 0} steps</div>
+                        </div>
+                    </div>
+
+                    <!-- Ingredients -->
+                    <div class="ingredients-section">
+                        <div class="section-title">KEY INGREDIENTS</div>
+                        <div class="ingredients-list">
+                            ${ingredientList}
+                        </div>
+                    </div>
+
+                    <!-- Pairings -->
+                    <div class="pairings-section">
+                        <div class="pairings-header">
+                            <div class="section-title">PAIRS WITH</div>
+                            <div class="pairing-type">sweet · rich · fatty</div>
+                        </div>
+                        <div class="pairing-chips">
+                            ${drinkPairings}
+                        </div>
+                    </div>
+
+                    <!-- Flavor Profile -->
+                    <div class="flavor-section">
+                        <div class="section-title">🌟 FLAVOR PROFILE</div>
+                        <div class="flavor-options">
+                            ${flavorChips}
+                        </div>
+                        <button class="flavor-button" onclick="showFlavorRemix('${recipe.id}')">✨ FLAVOR REMIX</button>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="action-buttons">
+                        <button class="view-steps-btn">VIEW STEPS ▼</button>
+                        <button class="all-drinks-btn">☕ ALL DRINKS</button>
+                        <button class="like-btn" onclick="toggleLike(this)">♡</button>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function toggleFlavor(recipeId, flavor) {
+            const card = document.getElementById(`card-${recipeId}`);
+            const chip = card.querySelector(`.flavor-chip`);
+            const buttons = Array.from(card.querySelectorAll('.flavor-chip'));
+            buttons.forEach(btn => {
+                if (btn.textContent.includes(flavor)) {
+                    btn.classList.toggle('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        async function showFlavorRemix(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (!recipe) return;
+
+            const card = document.getElementById(`card-${recipeId}`);
+            const activeFlavor = card.querySelector('.flavor-chip.active');
+
+            if (!activeFlavor) {
+                alert('Please select a flavor first!');
+                return;
+            }
+
+            const flavor = activeFlavor.textContent.toLowerCase().split(' ')[1];
+
+            try {
+                const [remixRes, pairingsRes] = await Promise.all([
+                    fetch(`${API_URL}/api/recipes/${recipeId}/remix-flavor`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ flavor, format: 'salad' })
+                    }),
+                    fetch(`${API_URL}/api/recipes/${recipeId}/pairings/${flavor}`)
+                ]);
+
+                const remixData = await remixRes.json();
+                const pairingsData = await pairingsRes.json();
+
+                displayFlavorModal(remixData.recipe, pairingsData.pairings, flavor);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error generating flavor remix');
+            }
+        }
+
+        function displayFlavorModal(recipe, pairings, flavor) {
+            document.getElementById('modalTitle').textContent = recipe.name;
+            document.getElementById('modalSubtitle').textContent = `✨ ${flavor.toUpperCase()} TRANSFORMATION`;
+            document.getElementById('modalDescription').textContent = recipe.transformation_notes || '';
+
+            const eatingExp = recipe.flavor_notes?.eating_experience || '';
+            document.getElementById('eatingExperience').textContent = eatingExp;
+
+            // Seasonings
+            if (recipe.flavor_notes?.dominant_seasonings) {
+                const seasonings = recipe.flavor_notes.dominant_seasonings.map(s =>
+                    `<span class="seasoning-chip">${s}</span>`
+                ).join('');
+                document.getElementById('seasoningsSection').innerHTML = `
+                    <div class="modal-section-title">🧂 DOMINANT SEASONINGS:</div>
+                    <div class="seasonings-list">${seasonings}</div>
+                `;
+            }
+
+            // Pairings
+            if (pairings) {
+                const pairingBoxes = `
+                    <div class="modal-section-title">🥘 INGREDIENT PAIRINGS:</div>
+                    <div class="pairings-grid">
+                        <div class="pairing-box">
+                            <div class="pairing-box-label">Protein</div>
+                            <div class="pairing-box-name">${pairings.protein.name}</div>
+                            <div class="pairing-box-reason">${pairings.protein.reason}</div>
+                        </div>
+                        <div class="pairing-box">
+                            <div class="pairing-box-label">Carbs</div>
+                            <div class="pairing-box-name">${pairings.carb.name}</div>
+                            <div class="pairing-box-reason">${pairings.carb.reason}</div>
+                        </div>
+                        <div class="pairing-box">
+                            <div class="pairing-box-label">Legumes</div>
+                            <div class="pairing-box-name">${pairings.bean.name}</div>
+                            <div class="pairing-box-reason">${pairings.bean.reason}</div>
+                        </div>
+                    </div>
+                    <div class="harmony-scores">
+                        <div class="harmony-score">Protein Match: <span class="harmony-value">${(pairings.pairing_scores.protein_flavor_match * 100).toFixed(0)}%</span></div>
+                        <div class="harmony-score">Carb Match: <span class="harmony-value">${(pairings.pairing_scores.carb_flavor_match * 100).toFixed(0)}%</span></div>
+                        <div class="harmony-score">Bean Match: <span class="harmony-value">${(pairings.pairing_scores.bean_flavor_match * 100).toFixed(0)}%</span></div>
+                        <div class="harmony-score" style="margin-top: 8px; padding-top: 8px; border-top: 1px solid #ddd;">
+                            Overall Harmony: <span class="harmony-value">${(pairings.pairing_scores.overall_harmony * 100).toFixed(0)}%</span>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('pairingsSection').innerHTML = pairingBoxes;
+            }
+
+            // Beverages
+            if (recipe.flavor_notes?.pairing_drinks) {
+                const beverages = recipe.flavor_notes.pairing_drinks.map(d =>
+                    `<span class="beverage-chip">${d}</span>`
+                ).join('');
+                document.getElementById('beveragesSection').innerHTML = `
+                    <div class="modal-section-title">🍷 BEVERAGE PAIRINGS:</div>
+                    <div class="beverages-list">${beverages}</div>
+                `;
+            }
+
+            document.getElementById('flavorModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('flavorModal').classList.remove('active');
+        }
+
+        function toggleLike(button) {
+            button.classList.toggle('liked');
+            button.textContent = button.classList.contains('liked') ? '❤️' : '♡';
+        }
+
+        function shuffleRecipes() {
+            filteredRecipes = filteredRecipes.sort(() => Math.random() - 0.5);
+            displayRecipes();
+        }
+
+        function updateCounter() {
+            document.getElementById('recipeCounter').textContent = `Showing ${filteredRecipes.length} recipes`;
+        }
+
+        document.getElementById('searchInput').addEventListener('input', filterRecipes);
+        document.getElementById('countryFilter').addEventListener('change', filterRecipes);
+        document.getElementById('categoryFilter').addEventListener('change', filterRecipes);
+
+        loadRecipes();
+    </script>
+</body>
+</html>
