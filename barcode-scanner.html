@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In - Barcode Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+    <script src="analytics-tracker.js"></script>
+    <script src="notification-service.js"></script>
+    <script src="pairing-intelligence.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .scanner-section {
+            background: rgba(0, 0, 0, 0.5);
+            border: 3px solid #c9a961;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        #scanner-container {
+            position: relative;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            aspect-ratio: 4/3;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .scanner-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 100px;
+            border: 3px solid #ffd700;
+            border-radius: 8px;
+            background: rgba(255, 215, 0, 0.1);
+            box-shadow: inset 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .scanner-hint {
+            text-align: center;
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            background: #5a67d8;
+            border: 2px solid #5a67d8;
+            color: #fff;
+            border-radius: 8px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #6b7ce0;
+            box-shadow: 0 0 15px rgba(90, 103, 216, 0.5);
+        }
+
+        button.secondary {
+            background: #c9a961;
+            border-color: #c9a961;
+            color: #000;
+        }
+
+        button.secondary:hover {
+            background: #ffd700;
+        }
+
+        .scanned-items {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.9em;
+            color: #ffd700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .item-card {
+            background: rgba(90, 103, 216, 0.1);
+            border-left: 4px solid #5a67d8;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .item-details {
+            font-size: 0.85em;
+            color: #aaa;
+        }
+
+        .item-nutrition {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid #c9a961;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            color: #ffd700;
+            text-align: right;
+            min-width: 120px;
+        }
+
+        .remove-btn {
+            background: #ff6b6b;
+            border: 1px solid #ff6b6b;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2em;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .remove-btn:hover {
+            background: #ff5252;
+        }
+
+        .empty-state {
+            color: #999;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .meal-time-section {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .meal-times-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .meal-time-card {
+            background: rgba(90, 103, 216, 0.1);
+            border: 2px solid #5a67d8;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .meal-time-card:hover {
+            border-color: #ffd700;
+            background: rgba(90, 103, 216, 0.2);
+        }
+
+        .meal-time-card.active {
+            background: #5a67d8;
+            border-color: #ffd700;
+        }
+
+        .meal-time-icon {
+            font-size: 2em;
+            margin-bottom: 8px;
+        }
+
+        .meal-time-name {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .meal-time-input {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        input[type="time"],
+        input[type="text"] {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #c9a961;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        input[type="time"]::placeholder,
+        input[type="text"]::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .pairing-analysis {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .pairing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .pairing-card {
+            background: rgba(107, 70, 193, 0.1);
+            border: 1px solid #6b46c1;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .pairing-score {
+            font-size: 1.8em;
+            color: #ffd700;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .pairing-label {
+            font-size: 0.85em;
+            color: #ccc;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #1a1a2e;
+            border: 3px solid #c9a961;
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: #c9a961;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.3em;
+            }
+
+            .meal-times-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .success-message {
+            background: #4caf50;
+            border: 2px solid #45a049;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .error-message {
+            background: #ff6b6b;
+            border: 2px solid #ff5252;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 SCAN & TRACK</h1>
+            <p style="color: #aaa; font-size: 0.9em;">Barcode Scanner + Meal Reminders</p>
+        </header>
+
+        <!-- Scanner Section -->
+        <div class="scanner-section">
+            <div class="scanner-hint">📍 Point camera at barcode</div>
+            <div id="scanner-container">
+                <div class="scanner-overlay"></div>
+            </div>
+            <div class="controls">
+                <button onclick="startScanner()">▶️ START SCAN</button>
+                <button class="secondary" onclick="manualEntry()">✏️ MANUAL ENTRY</button>
+                <button class="secondary" onclick="goBack()">← BACK</button>
+            </div>
+        </div>
+
+        <!-- Meal Reminder Settings -->
+        <div class="meal-time-section">
+            <div class="section-title">🔔 Meal Reminders</div>
+            <div class="meal-times-grid" id="mealTimesGrid"></div>
+            <button style="width: 100%; margin-top: 15px;" onclick="saveMealTimes()">💾 SAVE REMINDERS</button>
+        </div>
+
+        <!-- Scanned Items -->
+        <div class="scanned-items">
+            <div class="section-title">📦 Today's Scans</div>
+            <div id="scannedList">
+                <div class="empty-state">No items scanned yet</div>
+            </div>
+        </div>
+
+        <!-- Pairing Analysis -->
+        <div class="pairing-analysis">
+            <div class="section-title">🍴 Smart Pairing Analysis</div>
+            <p style="color: #aaa; font-size: 0.85em; margin-bottom: 15px;">
+                AI learns what foods and drinks pair well together
+            </p>
+            <div id="pairingResults">
+                <div class="empty-state">Scan items to see pairing suggestions</div>
+            </div>
+        </div>
+
+        <!-- Recipe Remix Button -->
+        <div style="margin-top: 30px; text-align: center;">
+            <button style="width: 100%; padding: 15px; font-size: 0.8em;" onclick="remixRecipe()">
+                🎨 REMIX RECIPE FROM SCANS
+            </button>
+        </div>
+    </div>
+
+    <!-- Manual Entry Modal -->
+    <div id="manualModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Add Item Manually</span>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 8px; color: #ffd700;">Product Name</label>
+                <input type="text" id="productName" placeholder="e.g., Greek Yogurt" style="width: 100%; margin-bottom: 15px;">
+
+                <label style="display: block; margin-bottom: 8px; color: #ffd700;">Barcode (Optional)</label>
+                <input type="text" id="productBarcode" placeholder="UPC code" style="width: 100%; margin-bottom: 15px;">
+
+                <label style="display: block; margin-bottom: 8px; color: #ffd700;">Calories</label>
+                <input type="number" id="productCalories" placeholder="120" style="width: 100%; margin-bottom: 15px;">
+
+                <label style="display: block; margin-bottom: 8px; color: #ffd700;">Meal Type</label>
+                <select id="mealType" style="width: 100%; padding: 10px; background: rgba(255,255,255,0.1); border: 1px solid #c9a961; border-radius: 6px; color: #fff; margin-bottom: 15px;">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                    <option value="drink">Drink</option>
+                </select>
+
+                <button style="width: 100%;" onclick="addManualItem()">➕ ADD ITEM</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class BarcodeScanner {
+            constructor() {
+                this.scannedItems = this.loadScannedItems();
+                this.mealTimes = this.loadMealTimes();
+                this.pairingData = this.loadPairingData();
+                this.initializeMealTimes();
+            }
+
+            loadScannedItems() {
+                const saved = localStorage.getItem('dig_in_scanned_items');
+                return saved ? JSON.parse(saved) : [];
+            }
+
+            loadMealTimes() {
+                const saved = localStorage.getItem('dig_in_meal_times');
+                return saved ? JSON.parse(saved) : {
+                    breakfast: { time: '08:00', enabled: true },
+                    lunch: { time: '12:30', enabled: true },
+                    dinner: { time: '18:30', enabled: true },
+                    snack: { time: '15:00', enabled: false }
+                };
+            }
+
+            loadPairingData() {
+                const saved = localStorage.getItem('dig_in_pairing_data');
+                return saved ? JSON.parse(saved) : {};
+            }
+
+            savePairingData() {
+                localStorage.setItem('dig_in_pairing_data', JSON.stringify(this.pairingData));
+            }
+
+            initializeMealTimes() {
+                const grid = document.getElementById('mealTimesGrid');
+                const mealIcons = {
+                    breakfast: '🌅',
+                    lunch: '🍽️',
+                    dinner: '🌙',
+                    snack: '🍿'
+                };
+
+                grid.innerHTML = Object.keys(this.mealTimes).map(meal => `
+                    <div class="meal-time-card ${this.mealTimes[meal].enabled ? 'active' : ''}" onclick="toggleMealTime('${meal}')">
+                        <div class="meal-time-icon">${mealIcons[meal]}</div>
+                        <div class="meal-time-name">${meal}</div>
+                        <div class="meal-time-input" style="display: ${this.mealTimes[meal].enabled ? 'grid' : 'none'};" id="input-${meal}">
+                            <input type="time" id="time-${meal}" value="${this.mealTimes[meal].time}" onchange="updateMealTime('${meal}')">
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            addScannedItem(item) {
+                const scanData = {
+                    id: Date.now(),
+                    name: item.name,
+                    barcode: item.barcode || '',
+                    calories: item.calories || 0,
+                    protein: item.protein || 0,
+                    carbs: item.carbs || 0,
+                    fat: item.fat || 0,
+                    timestamp: new Date().toLocaleTimeString(),
+                    mealType: item.mealType || 'snack',
+                    type: item.type || (item.mealType === 'drink' ? 'drink' : 'food')
+                };
+
+                this.scannedItems.push(scanData);
+                this.saveScannedItems();
+                this.updatePairingData(scanData);
+                this.displayScannedItems();
+                this.analyzePairings();
+
+                // Record in pairing intelligence for AI learning
+                if (window.pairingIntelligence) {
+                    window.pairingIntelligence.recordScan({
+                        name: item.name,
+                        type: scanData.type,
+                        calories: item.calories || 0,
+                        protein: item.protein || 0,
+                        carbs: item.carbs || 0,
+                        fat: item.fat || 0,
+                        mealType: item.mealType || 'snack'
+                    });
+                }
+
+                // Track analytics
+                if (window.digInAnalytics) {
+                    window.digInAnalytics.track('barcode_scan', {
+                        product_name: item.name,
+                        barcode: item.barcode,
+                        calories: item.calories,
+                        meal_type: item.mealType,
+                        item_type: scanData.type
+                    });
+                }
+            }
+
+            updatePairingData(newItem) {
+                const key = newItem.name.toLowerCase();
+                if (!this.pairingData[key]) {
+                    this.pairingData[key] = { count: 0, pairings: {} };
+                }
+                this.pairingData[key].count++;
+
+                // Track drinks specially
+                if (newItem.mealType === 'drink') {
+                    // Find what was eaten before drink
+                    if (this.scannedItems.length > 1) {
+                        const previousItem = this.scannedItems[this.scannedItems.length - 2];
+                        const prevKey = previousItem.name.toLowerCase();
+
+                        if (!this.pairingData[key].pairings[prevKey]) {
+                            this.pairingData[key].pairings[prevKey] = 0;
+                        }
+                        this.pairingData[key].pairings[prevKey]++;
+                    }
+                }
+
+                this.savePairingData();
+            }
+
+            analyzePairings() {
+                if (this.scannedItems.length < 2) return;
+
+                const container = document.getElementById('pairingResults');
+                const drinks = this.scannedItems.filter(i => i.mealType === 'drink');
+                const foods = this.scannedItems.filter(i => i.mealType !== 'drink');
+
+                if (drinks.length === 0 || foods.length === 0) {
+                    container.innerHTML = '<div class="empty-state">Scan a drink with food to see pairing analysis</div>';
+                    return;
+                }
+
+                const pairingScores = {};
+                drinks.forEach(drink => {
+                    const drinkKey = drink.name.toLowerCase();
+                    const drinkData = this.pairingData[drinkKey];
+
+                    if (drinkData && Object.keys(drinkData.pairings).length > 0) {
+                        foods.forEach(food => {
+                            const foodKey = food.name.toLowerCase();
+                            const score = drinkData.pairings[foodKey] || 0;
+                            const key = `${food.name} + ${drink.name}`;
+                            pairingScores[key] = score;
+                        });
+                    }
+                });
+
+                if (Object.keys(pairingScores).length === 0) {
+                    container.innerHTML = '<div class="empty-state">Keep scanning to build pairing intelligence</div>';
+                    return;
+                }
+
+                container.innerHTML = `
+                    <div class="pairing-grid">
+                        ${Object.entries(pairingScores).map(([pair, score]) => `
+                            <div class="pairing-card">
+                                <div class="pairing-score">${score > 0 ? '✓' : '?'}</div>
+                                <div class="pairing-label">${pair}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            displayScannedItems() {
+                const container = document.getElementById('scannedList');
+
+                if (this.scannedItems.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No items scanned yet</div>';
+                    return;
+                }
+
+                container.innerHTML = this.scannedItems.map((item, idx) => `
+                    <div class="item-card">
+                        <div class="item-info">
+                            <div class="item-name">${item.name}</div>
+                            <div class="item-details">
+                                ${item.timestamp} • ${item.mealType}
+                            </div>
+                        </div>
+                        <div class="item-nutrition">
+                            ${item.calories} cal
+                        </div>
+                        <button class="remove-btn" onclick="scanner.removeItem(${idx})">×</button>
+                    </div>
+                `).join('');
+            }
+
+            removeItem(index) {
+                this.scannedItems.splice(index, 1);
+                this.saveScannedItems();
+                this.displayScannedItems();
+                this.analyzePairings();
+            }
+
+            saveScannedItems() {
+                localStorage.setItem('dig_in_scanned_items', JSON.stringify(this.scannedItems));
+            }
+        }
+
+        let scanner = new BarcodeScanner();
+
+        function startScanner() {
+            alert('📱 Camera access needed.\n\nIn production, this would use:\n• QuaggaJS for barcode detection\n• Camera stream from device\n• Real-time barcode recognition\n\nFor now, use "Manual Entry"');
+        }
+
+        function manualEntry() {
+            document.getElementById('manualModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('manualModal').classList.remove('active');
+        }
+
+        function addManualItem() {
+            const name = document.getElementById('productName').value;
+            const barcode = document.getElementById('productBarcode').value;
+            const calories = parseInt(document.getElementById('productCalories').value) || 0;
+            const mealType = document.getElementById('mealType').value;
+
+            if (!name) {
+                alert('Please enter product name');
+                return;
+            }
+
+            scanner.addScannedItem({
+                name: name,
+                barcode: barcode,
+                calories: calories,
+                mealType: mealType
+            });
+
+            document.getElementById('productName').value = '';
+            document.getElementById('productBarcode').value = '';
+            document.getElementById('productCalories').value = '';
+            closeModal();
+
+            // Show success
+            const msg = document.createElement('div');
+            msg.className = 'success-message';
+            msg.textContent = `✅ Added ${name}`;
+            document.querySelector('.container').prepend(msg);
+            setTimeout(() => msg.remove(), 3000);
+        }
+
+        function toggleMealTime(meal) {
+            scanner.mealTimes[meal].enabled = !scanner.mealTimes[meal].enabled;
+            scanner.initializeMealTimes();
+        }
+
+        function updateMealTime(meal) {
+            const time = document.getElementById(`time-${meal}`).value;
+            scanner.mealTimes[meal].time = time;
+        }
+
+        function saveMealTimes() {
+            localStorage.setItem('dig_in_meal_times', JSON.stringify(scanner.mealTimes));
+
+            // Show success
+            const msg = document.createElement('div');
+            msg.className = 'success-message';
+            msg.textContent = '✅ Meal reminders saved!';
+            document.querySelector('.container').prepend(msg);
+            setTimeout(() => msg.remove(), 3000);
+
+            // Schedule notifications
+            scheduleMealReminders();
+
+            // Track analytics
+            if (window.digInAnalytics) {
+                window.digInAnalytics.track('meal_reminders_set', {
+                    meals_enabled: Object.keys(scanner.mealTimes).filter(m => scanner.mealTimes[m].enabled).length
+                });
+            }
+        }
+
+        function scheduleMealReminders() {
+            // This would use Service Workers + Push API in production
+            alert('🔔 Reminders scheduled!\n\nYou\'ll get notifications at:\n' +
+                Object.entries(scanner.mealTimes)
+                    .filter(([, data]) => data.enabled)
+                    .map(([meal, data]) => `${meal}: ${data.time}`)
+                    .join('\n'));
+        }
+
+        function remixRecipe() {
+            if (scanner.scannedItems.length === 0) {
+                alert('⚠️ Scan some items first!');
+                return;
+            }
+
+            const items = scanner.scannedItems.map(i => i.name).join(', ');
+            const totalCalories = scanner.scannedItems.reduce((sum, i) => sum + i.calories, 0);
+
+            alert(`🎨 REMIX RECIPE\n\nItems: ${items}\nTotal Calories: ${totalCalories}\n\nIn production:\n• AI generates new recipes\n• Uses scanned ingredients\n• Matches nutrition goals\n• Suggests pairings`);
+
+            if (window.digInAnalytics) {
+                window.digInAnalytics.track('recipe_remix', {
+                    items_count: scanner.scannedItems.length,
+                    total_calories: totalCalories
+                });
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'recipe-cards-premium.html';
+        }
+
+        // Initialize display
+        scanner.displayScannedItems();
+        scanner.analyzePairings();
+    </script>
+</body>
+</html>
