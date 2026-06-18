@@ -1,289 +1,48 @@
 {
   "country": "Egypt",
-  "region": "Africa/Middle East",
+  "region": "Middle East",
   "breakfast": [
     {
-      "id": "egy-break-fuul-medames",
-      "name": "Fuul Medames (Fava Beans)",
+      "id": "egy-break-ful-medames",
+      "name": "Ful Medames (Egyptian Fava Bean Stew)",
       "difficulty": "Easy",
       "servings": 4,
-      "prepTime": 10,
-      "cookTime": 10,
-      "description": "Stewed fava beans with garlic, lemon, and olive oil",
-      "seasonings": [
-        "garlic",
-        "cumin",
-        "lemon"
-      ],
-      "ingredients": [
-        "2 cans fava beans (or soaked dried)",
-        "4 cloves garlic, minced",
-        "1/4 cup olive oil",
-        "2 tbsp lemon juice",
-        "1 tsp cumin",
-        "Salt",
-        "Pepper",
-        "Hard-boiled eggs"
-      ],
-      "instructions": [
-        "Heat olive oil in pan",
-        "Sauté garlic until fragrant",
-        "Add fava beans with some liquid",
-        "Warm through, 5-10 minutes",
-        "Mash some beans but leave some whole",
-        "Add lemon juice and cumin",
-        "Season with salt and pepper",
-        "Transfer to serving bowl",
-        "Drizzle with more olive oil",
-        "Top with hard-boiled eggs"
-      ],
-      "notes": "Can use fresh or canned beans",
-      "fun_fact": "Fuul is the national dish of Egypt and eaten for breakfast by millions daily",
-      "alternatives": [
-        "Add tomatoes",
-        "More garlic",
-        "Include onions"
-      ]
-    }
-  ],
-  "lunch": [
-    {
-      "id": "egy-lunch-koshari",
-      "name": "Koshari (Mixed Dish)",
-      "difficulty": "Easy",
-      "servings": 2,
       "prepTime": 15,
-      "cookTime": 30,
-      "description": "Egyptian street food combining rice, lentils, pasta, and tomato sauce",
-      "seasonings": [
-        "cumin",
-        "garlic"
-      ],
+      "cookTime": 25,
+      "description": "A hearty, nutritious Egyptian breakfast of slow-cooked fava beans with spices, topped with tahini, olive oil, and fresh vegetables. Ancient dish with roots in Egyptian history",
+      "seasonings": ["cumin powder", "salt", "pepper"],
       "ingredients": [
-        "1 cup cooked rice",
-        "1 cup cooked brown lentils",
-        "1 cup cooked short pasta",
-        "2 cups tomato sauce",
-        "1 can chickpeas",
-        "4 cloves garlic, minced",
-        "Vinegar",
-        "Cumin",
-        "Crispy onions"
+        "400g dried fava beans (or canned)",
+        "4 tbsp olive oil",
+        "3 cloves garlic, minced",
+        "1 tbsp cumin powder",
+        "1 onion, diced",
+        "2 tomatoes, diced",
+        "2 tbsp lemon juice",
+        "Salt and pepper to taste",
+        "Tahini for serving",
+        "Fresh diced peppers, red onion, and tomato for topping"
       ],
       "instructions": [
-        "Cook rice, lentils, and pasta separately",
-        "Mix garlic into tomato sauce",
-        "Heat chickpeas",
-        "Layer rice in bowl",
-        "Top with lentils and pasta",
-        "Pour tomato sauce over",
-        "Sprinkle crispy onions",
-        "Drizzle with vinegar",
-        "Serve hot"
+        "Soak dried fava beans overnight, then cook in water for 2-3 hours until very soft",
+        "Heat olive oil and sauté half the onion and cumin for 3 minutes",
+        "Add cooked beans and 100ml water, bring to boil and simmer for 1 minute",
+        "Mash beans with potato masher until partially crushed",
+        "Add remaining onion, tomatoes, lemon juice, salt and pepper",
+        "Simmer for 2 minutes until flavors meld",
+        "Top with tahini and olive oil",
+        "Garnish with diced peppers, red onion, and tomato",
+        "Serve with pita bread or fried eggs on the side"
       ],
-      "notes": "Each component should be slightly seasoned separately",
-      "fun_fact": "Koshari is Egypt's national fast food and is the most popular street food in Cairo",
-      "alternatives": [
-        "More vegetables mixed in",
-        "Different pastas",
-        "Add fried chicken"
-      ]
+      "notes": "Can use canned fava beans to reduce cooking time. The partial mashing creates the proper creamy consistency with some whole beans remaining",
+      "fun_fact": "Ful Medames dates back to at least the fourth century in Egypt. The name means buried, referring to traditional slow-cooking method where beans were buried over gentle embers all night",
+      "alternatives": ["Add hard-boiled eggs", "Top with minced parsley", "Serve with tahini sauce drizzled over", "Add a fried egg on top"]
     }
   ],
-  "dinner": [
-    {
-      "id": "egy-dinner-molokhia",
-      "name": "Molokhia (Green Stew)",
-      "difficulty": "Medium",
-      "servings": 6,
-      "prepTime": 20,
-      "cookTime": 40,
-      "description": "Egyptian stew with leafy greens and meat in broth",
-      "seasonings": [
-        "garlic",
-        "coriander"
-      ],
-      "ingredients": [
-        "1 lb molokhia (or spinach)",
-        "1.5 lbs lamb or chicken",
-        "6 cups broth",
-        "8 cloves garlic",
-        "2 tbsp coriander",
-        "2 tbsp oil",
-        "Lemon juice",
-        "Salt"
-      ],
-      "instructions": [
-        "Bring broth to boil with meat",
-        "Simmer 20 minutes until tender",
-        "Remove meat, cut into pieces",
-        "Add meat back to broth",
-        "Finely chop molokhia",
-        "Add to broth, stir constantly",
-        "Add crushed garlic and coriander",
-        "Simmer 15 minutes, stirring often",
-        "Add lemon juice",
-        "Serve over rice"
-      ],
-      "notes": "Must stir constantly to prevent clumping",
-      "fun_fact": "Molokhia is Cleopatra's favorite dish - has been eaten in Egypt for thousands of years",
-      "alternatives": [
-        "Vegetarian with chickpeas",
-        "Add tomato",
-        "Use chard instead of molokhia"
-      ]
-    }
-  ],
-  "snacks": [
-    {
-      "id": "egy-snack-tamiya",
-      "name": "Tamiya (Fava Bean Fritters)",
-      "difficulty": "Medium",
-      "servings": 12,
-      "prepTime": 10,
-      "cookTime": 20,
-      "description": "Crispy Egyptian fritters made from fava beans and herbs",
-      "seasonings": [
-        "parsley",
-        "cilantro",
-        "cumin"
-      ],
-      "ingredients": [
-        "2 cups dried fava beans (soaked)",
-        "1 onion, chopped",
-        "1 cup parsley",
-        "1/2 cup cilantro",
-        "3 cloves garlic",
-        "1 tsp cumin",
-        "1 tsp coriander",
-        "Flour",
-        "Oil for frying",
-        "Salt"
-      ],
-      "instructions": [
-        "Drain soaked beans",
-        "Grind beans with herbs, onion, garlic",
-        "Add spices",
-        "Add enough flour to hold together",
-        "Form into small patties",
-        "Heat oil to 350°F",
-        "Fry until golden on both sides",
-        "Drain on paper towels",
-        "Serve in pita with tahini sauce"
-      ],
-      "notes": "Use dried fava beans, not canned",
-      "fun_fact": "Tamiya is the Egyptian version of falafel and is eaten throughout the region",
-      "alternatives": [
-        "Add chickpeas",
-        "Different herbs",
-        "Baked instead of fried"
-      ]
-    }
-  ],
-  "desserts": [
-    {
-      "id": "egy-dessert-basboosa",
-      "name": "Basboosa (Coconut Cake)",
-      "difficulty": "Medium",
-      "servings": 24,
-      "prepTime": 30,
-      "cookTime": 35,
-      "description": "Egyptian semolina cake soaked in sugar syrup",
-      "seasonings": [
-        "vanilla"
-      ],
-      "ingredients": [
-        "2 cups shredded coconut",
-        "2 cups semolina",
-        "1 cup sugar",
-        "1 cup yogurt",
-        "1 tbsp baking powder",
-        "For syrup: 2 cups sugar, 1 cup water, 1 tbsp lemon juice",
-        "Whole cloves",
-        "Almond slivers"
-      ],
-      "instructions": [
-        "Mix coconut, semolina, sugar, yogurt, baking powder",
-        "Spread in greased pan 1/2-inch thick",
-        "Cut into diamonds or squares",
-        "Place almond in center of each piece",
-        "Press clove on top",
-        "Bake at 350°F for 30-35 minutes until golden",
-        "Meanwhile, heat sugar and water for syrup, add lemon juice",
-        "Pour hot syrup over hot cake",
-        "Cool completely"
-      ],
-      "notes": "Must pour hot syrup on hot cake",
-      "fun_fact": "Basboosa is a staple at Egyptian celebrations and holidays",
-      "alternatives": [
-        "All almond instead of coconut",
-        "Less sugar in dough",
-        "Different toppings"
-      ]
-    }
-  ],
-  "nonAlcoholicDrinks": [
-    {
-      "id": "egy-drink-hibiscus",
-      "name": "Hibiscus Tea (Karkade)",
-      "difficulty": "Easy",
-      "servings": 4,
-      "prepTime": 5,
-      "cookTime": 10,
-      "description": "Sweet Egyptian hibiscus flower drink",
-      "seasonings": [
-        "sugar",
-        "ginger"
-      ],
-      "ingredients": [
-        "1/4 cup dried hibiscus flowers",
-        "4 cups water",
-        "1/4 cup sugar",
-        "1 tbsp fresh ginger (optional)"
-      ],
-      "instructions": [
-        "Bring water to boil",
-        "Add hibiscus flowers and ginger",
-        "Remove from heat, let steep 5 minutes",
-        "Strain through fine sieve",
-        "Add sugar, stir until dissolved",
-        "Chill thoroughly",
-        "Serve over ice"
-      ],
-      "notes": "Can be served hot or cold",
-      "fun_fact": "Hibiscus Tea is the national drink of Egypt and is served during Ramadan",
-      "alternatives": [
-        "Add lime juice",
-        "Serve hot",
-        "Different sweetener"
-      ]
-    }
-  ],
-  "alcoholicDrinks": [
-    {
-      "id": "egy-drink-beer",
-      "name": "Egyptian Beer (Stella)",
-      "difficulty": "Easy",
-      "servings": 1,
-      "prepTime": 0,
-      "cookTime": 0,
-      "description": "Light lager beer brewed in Egypt",
-      "seasonings": [],
-      "ingredients": [
-        "Egyptian Beer"
-      ],
-      "instructions": [
-        "Pour into cold glass",
-        "Serve with food",
-        "Enjoy chilled"
-      ],
-      "notes": "Most popular beer in Egypt",
-      "fun_fact": "Stella Artois has been brewed in Egypt since 1897 and is the most popular beer",
-      "alternatives": [
-        "Different beer brands",
-        "Beer cocktail",
-        "Room temperature"
-      ]
-    }
-  ]
+  "lunch": [],
+  "dinner": [],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
 }
