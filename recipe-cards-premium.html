@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="analytics-tracker.js"></script>
     <script src="user-metrics-tracker.js"></script>
+    <script src="market-metrics-tracker.js"></script>
     <style>
         * {
             margin: 0;
@@ -428,6 +429,7 @@
         <button onclick="shuffleRecipes()">🎲 Shuffle</button>
         <button onclick="window.location.href='analytics-dashboard.html'" style="background: #ffd700; color: #000;">📊 Analytics</button>
         <button onclick="window.location.href='user-metrics-dashboard.html'" style="background: #9c27b0; color: #fff;">👤 User Metrics</button>
+        <button onclick="window.location.href='market-metrics-dashboard.html'" style="background: #667eea; color: #fff;">🌍 Market Metrics</button>
         <button onclick="window.location.href='barcode-scanner.html'" style="background: #ff6b6b; color: #fff;">📱 Scanner</button>
     </div>
 
@@ -555,6 +557,11 @@
             // Track recipe view
             window.digInAnalytics.trackRecipeView(recipe.id, recipe.name, recipe.country, recipe.category);
 
+            // Track market metrics
+            if (window.marketMetricsTracker) {
+                window.marketMetricsTracker.trackRecipeViewMarket(recipe.id, recipe.name, recipe.country, recipe.category);
+            }
+
             const pairings = drinkPairings[recipe.category] || drinkPairings['lunch'];
             const ingredientList = recipe.ingredients
                 .slice(0, 4)
@@ -680,6 +687,11 @@
             // Track user metrics
             if (window.userMetricsTracker) {
                 window.userMetricsTracker.trackRecipeSave(recipeId, recipe.name, isLiking);
+            }
+
+            // Track market metrics
+            if (window.marketMetricsTracker && recipe) {
+                window.marketMetricsTracker.trackRecipeSaveMarket(recipeId, window.userMetricsTracker?.userData?.userId, isLiking);
             }
         }
 
