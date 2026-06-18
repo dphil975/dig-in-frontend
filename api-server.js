@@ -7,9 +7,11 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const RecipeRemixEngine = require('./remix-engine.js');
 
 const app = express();
 const PORT = 5000;
+const remixEngine = new RecipeRemixEngine();
 
 // Middleware
 app.use(cors({
@@ -490,6 +492,95 @@ app.post('/api/recipes/:recipeId/rate', (req, res) => {
   res.json({
     success: true,
     message: 'Rating recorded'
+  });
+});
+
+// ============ REMIX RECIPE ============
+app.post('/api/recipes/:recipeId/remix', (req, res) => {
+  const { format, dietaryOptions } = req.body;
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  if (!format || !remixEngine.formatTemplates[format]) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid format. Valid formats: ' + Object.keys(remixEngine.formatTemplates).join(', ')
+    });
+  }
+
+  try {
+    const remixed = remixEngine.generateRemix(recipe, format, dietaryOptions || []);
+    res.json({
+      success: true,
+      recipe: remixed
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Failed to generate remix',
+      message: error.message
+    });
+  }
+});
+
+// ============ TIME VARIANT ============
+app.post('/api/recipes/:recipeId/time-variant', (req, res) => {
+  const { variant } = req.body;
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  if (!variant || !recipe.time_variants || !recipe.time_variants[variant]) {
+    return res.status(400).json({
+      success: false,
+      error: 'Invalid time variant. Valid variants: ' + (recipe.time_variants ? Object.keys(recipe.time_variants).join(', ') : 'none')
+    });
+  }
+
+  try {
+    const variantRecipe = remixEngine.getTimeVariant(recipe, variant);
+    res.json({
+      success: true,
+      recipe: variantRecipe
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: 'Failed to get time variant',
+      message: error.message
+    });
+  }
+});
+
+// ============ SEASONING RECOMMENDATIONS ============
+app.get('/api/recipes/:recipeId/seasonings/:format', (req, res) => {
+  const { format } = req.params;
+  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
+
+  if (!recipe) {
+    return res.status(404).json({
+      success: false,
+      error: 'Recipe not found'
+    });
+  }
+
+  const seasonings = remixEngine.getSeasoningRecommendations(format);
+  res.json({
+    success: true,
+    format: format,
+    recommended_seasonings: seasonings,
+    current_seasonings: recipe.seasonings
   });
 });
 

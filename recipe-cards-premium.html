@@ -734,11 +734,154 @@
             }
         }
 
-        function showRemixOptions(recipeId) {
+        async function showRemixOptions(recipeId) {
             const recipe = allRecipes.find(r => r.id === recipeId);
-            if (recipe) {
-                alert(`🔄 Remix Feature Coming Soon!\n\nThis will generate:\n- Alternative formats (${recipe.remix_formats?.join(', ')})\n- Dietary adaptations\n- Quick versions\n\nTrack your remix preferences to personalize future recommendations!`);
-                trackRemixInteraction('remix_generated', recipeId, recipe.remix_formats?.join(','));
+            if (!recipe) return;
+
+            // Get selected dietary options
+            const card = document.querySelector(`#card-${recipeId}`);
+            const selectedDietary = Array.from(card.querySelectorAll('.dietary-chip.active'))
+                .map(chip => {
+                    const text = chip.textContent.toLowerCase();
+                    return text.replace(/[^a-z_]/g, '').substring(0, 20) || text.split(' ')[1];
+                });
+
+            // Get selected time variant
+            const timeSelect = card.querySelector('.time-variants-select');
+            const timeVariant = timeSelect ? timeSelect.value : 'full';
+
+            // Get selected format (use first format as default)
+            const format = recipe.remix_formats ? recipe.remix_formats[0] : 'salad';
+
+            // Show loading
+            const button = card.querySelector('.remix-button');
+            const originalText = button.textContent;
+            button.textContent = '⏳ Generating...';
+            button.disabled = true;
+
+            try {
+                // Call remix API
+                const remixResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/remix`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ format, dietaryOptions: selectedDietary })
+                });
+
+                if (!remixResponse.ok) throw new Error('Failed to remix recipe');
+                const remixData = await remixResponse.json();
+                const remixedRecipe = remixData.recipe;
+
+                // Get time variant if needed
+                let finalRecipe = remixedRecipe;
+                if (timeVariant !== 'full') {
+                    const timeResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/time-variant`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ variant: timeVariant })
+                    });
+                    if (timeResponse.ok) {
+                        const timeData = await timeResponse.json();
+                        finalRecipe = timeData.recipe;
+                    }
+                }
+
+                // Get seasoning recommendations
+                const seasoningResponse = await fetch(`${API_URL}/api/recipes/${recipeId}/seasonings/${format}`);
+                let seasonings = [];
+                if (seasoningResponse.ok) {
+                    const seasoningData = await seasoningResponse.json();
+                    seasonings = seasoningData.recommended_seasonings;
+                }
+
+                // Store remixed recipe and show modal
+                window.currentRemix = finalRecipe;
+                window.remixSeasonings = seasonings;
+                showRemixModal(finalRecipe, seasonings, selectedDietary);
+
+                trackRemixInteraction('remix_generated', recipeId, format);
+            } catch (error) {
+                console.error('Error generating remix:', error);
+                alert('Error generating remix. Please try again.');
+            } finally {
+                button.textContent = originalText;
+                button.disabled = false;
+            }
+        }
+
+        function showRemixModal(recipe, seasonings, dietaryOptions) {
+            // Create modal for displaying remixed recipe
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                background: rgba(0,0,0,0.8); display: flex; align-items: center;
+                justify-content: center; z-index: 1000;
+            `;
+
+            const content = document.createElement('div');
+            content.style.cssText = `
+                background: #1a1a2e; border: 3px solid #ffd700; border-radius: 15px;
+                padding: 30px; max-width: 600px; max-height: 80vh; overflow-y: auto;
+                color: #fff; font-family: Arial, sans-serif;
+            `;
+
+            const title = document.createElement('h2');
+            title.style.cssText = 'color: #ffd700; margin-bottom: 15px; font-family: Press Start 2P;';
+            title.textContent = recipe.remix_metadata?.original_name || recipe.name;
+
+            const subtitle = document.createElement('p');
+            subtitle.style.cssText = 'color: #aaa; margin-bottom: 20px; font-size: 0.9em;';
+            subtitle.textContent = `🔄 Remix: ${recipe.remix_metadata?.format || 'Custom'} ${dietaryOptions.length ? `| ${dietaryOptions.join(', ')}` : ''}`;
+
+            const times = document.createElement('p');
+            times.style.cssText = 'color: #5a67d8; margin-bottom: 15px; font-size: 0.9em;';
+            times.innerHTML = `⏱️ Prep: ${recipe.prepTime}min | Cook: ${recipe.cookTime}min`;
+
+            const description = document.createElement('p');
+            description.style.cssText = 'color: #bbb; margin-bottom: 20px; line-height: 1.4;';
+            description.textContent = recipe.remix_metadata?.remix_notes || recipe.description;
+
+            if (seasonings.length > 0) {
+                const seasoningLabel = document.createElement('p');
+                seasoningLabel.style.cssText = 'color: #c9a961; font-weight: bold; margin-top: 15px;';
+                seasoningLabel.textContent = '🧂 Recommended Seasonings:';
+                content.appendChild(seasoningLabel);
+
+                const seasoningList = document.createElement('div');
+                seasoningList.style.cssText = 'display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;';
+                seasonings.forEach(s => {
+                    const chip = document.createElement('span');
+                    chip.style.cssText = `
+                        background: rgba(201, 169, 97, 0.2); border: 1px solid #c9a961;
+                        border-radius: 16px; padding: 4px 12px; font-size: 0.8em;
+                        color: #c9a961;
+                    `;
+                    chip.textContent = s;
+                    seasoningList.appendChild(chip);
+                });
+                content.appendChild(seasoningList);
+            }
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = '✕ Close';
+            closeBtn.style.cssText = `
+                background: #5a67d8; color: #fff; border: none; padding: 10px 20px;
+                border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.9em;
+                width: 100%; margin-top: 15px;
+            `;
+            closeBtn.onclick = () => modal.remove();
+
+            content.appendChild(title);
+            content.appendChild(subtitle);
+            content.appendChild(times);
+            content.appendChild(description);
+            content.appendChild(closeBtn);
+
+            modal.appendChild(content);
+            document.body.appendChild(modal);
+
+            // Track modal view
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackFeatureUsage('remixViewed', { recipe: recipe.name });
             }
         }
 
