@@ -10,7 +10,10 @@
       "prepTime": 20,
       "cookTime": 4,
       "description": "Belgian waffles that are thicker and have deeper indentations than standard waffles, with crispy exterior and soft interior. Served with chocolate, fruit, or whipped cream",
-      "seasonings": ["salt", "vanilla extract"],
+      "seasonings": [
+        "salt",
+        "vanilla extract"
+      ],
       "ingredients": [
         "250g flour",
         "1 tsp baking powder",
@@ -40,11 +43,66 @@
       ],
       "notes": "Cornstarch is secret ingredient making waffles extra crispy. Authentic Belgian waffles made from dough (not batter) with pearl sugar hidden inside",
       "fun_fact": "Belgian waffles are thicker and have deeper indentations than standard waffles. Cornstarch creates extra crispy texture found in authentic Belgian waffles",
-      "alternatives": ["Make with chocolate chips in batter", "Serve with Nutella", "Add fresh fruit filling", "Make with buckwheat flour for nuttier flavor"]
+      "alternatives": [
+        "Make with chocolate chips in batter",
+        "Serve with Nutella",
+        "Add fresh fruit filling",
+        "Make with buckwheat flour for nuttier flavor"
+      ]
     }
   ],
   "lunch": [],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "bel-dinner-stoemp",
+      "name": "Stoemp (Belgian Mashed Vegetables with Sausage)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 35,
+      "description": "Belgian comfort food - mashed potatoes with vegetables and sausage",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "ingredients": [
+        "800g potatoes, peeled and cubed",
+        "300g carrots, sliced",
+        "200g onions, diced",
+        "200g leeks, white part, sliced",
+        "100g butter",
+        "150ml whole milk, warmed",
+        "4 Belgian sausages (Boudin or similar)",
+        "2 cloves garlic, minced",
+        "Salt and white pepper to taste",
+        "1/4 teaspoon nutmeg",
+        "2 tablespoons fresh parsley, chopped"
+      ],
+      "instructions": [
+        "Boil potatoes in salted water 15 minutes",
+        "Add carrots and leeks; continue cooking 10 minutes",
+        "Add onions; cook final 5 minutes until all vegetables tender",
+        "Meanwhile, pan-fry sausages in separate skillet 12-15 minutes until cooked through; keep warm",
+        "Drain vegetables, reserving 100ml cooking liquid",
+        "Return vegetables to pot, add butter and minced garlic",
+        "Mash until desired consistency (some prefer chunky, some prefer smooth)",
+        "Gradually add warm milk and reserved cooking liquid to reach creamy texture",
+        "Season with salt, white pepper, and nutmeg",
+        "Fold in parsley",
+        "Serve in bowls with sausage on top",
+        "Drizzle with pan drippings from sausages if desired"
+      ],
+      "notes": "Traditionally served as working person's meal. Cooking vegetables together creates flavor unity",
+      "fun_fact": "Stoemp is considered authentic Belgian peasant food, simple but deeply satisfying comfort food",
+      "alternatives": [
+        "Use different vegetables",
+        "Add cheese to mash",
+        "Use different sausage types",
+        "Make vegetarian version"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],
