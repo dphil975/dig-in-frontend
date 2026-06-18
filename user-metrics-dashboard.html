@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dig In - User Metrics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="user-metrics-tracker.js"></script>
+    <script src="analytics-tracker.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2em;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 24px;
+            background: #5a67d8;
+            border: 2px solid #5a67d8;
+            color: #fff;
+            border-radius: 8px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #6b7ce0;
+            box-shadow: 0 0 15px rgba(90, 103, 216, 0.5);
+        }
+
+        button.secondary {
+            background: #c9a961;
+            border-color: #c9a961;
+            color: #000;
+        }
+
+        button.secondary:hover {
+            background: #ffd700;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, rgba(90, 103, 216, 0.1) 0%, rgba(107, 70, 193, 0.1) 100%);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .metric-card:hover {
+            border-color: #ffd700;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .metric-label {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            color: #ffd700;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .metric-subtext {
+            font-size: 0.8em;
+            color: #aaa;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2em;
+            color: #ffd700;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #c9a961;
+            padding-bottom: 10px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .info-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(201, 169, 97, 0.3);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #c9a961;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .feature-usage {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .feature-box {
+            background: rgba(90, 103, 216, 0.1);
+            border: 1px solid #5a67d8;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .feature-name {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            color: #5a67d8;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .feature-count {
+            font-size: 1.8em;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .chart-container {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #c9a961;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .bar-chart {
+            margin-top: 15px;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .bar-label {
+            min-width: 120px;
+            font-size: 0.85em;
+            color: #c9a961;
+            font-weight: bold;
+        }
+
+        .bar-background {
+            flex: 1;
+            height: 25px;
+            background: rgba(90, 103, 216, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid #5a67d8;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #5a67d8, #ffd700);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            padding-right: 8px;
+            justify-content: flex-end;
+        }
+
+        .bar-value {
+            font-size: 0.8em;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.3em;
+            }
+
+            .metric-value {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👤 USER METRICS</h1>
+        <div class="subtitle">Comprehensive User Activity & Engagement Dashboard</div>
+    </header>
+
+    <div class="container">
+        <div class="action-buttons">
+            <button onclick="refreshDashboard()">🔄 REFRESH</button>
+            <button class="secondary" onclick="exportMetrics()">💾 EXPORT</button>
+            <button class="secondary" onclick="goBack()">← BACK</button>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Daily Active (DAU)</div>
+                <div class="metric-value" id="dau">1</div>
+                <div class="metric-subtext">active today</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Monthly Active (MAU)</div>
+                <div class="metric-value" id="mau">0</div>
+                <div class="metric-subtext">days this month</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Total Sessions</div>
+                <div class="metric-value" id="totalSessions">1</div>
+                <div class="metric-subtext">all-time</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Return Rate</div>
+                <div class="metric-value" id="returnRate">0%</div>
+                <div class="metric-subtext">days with activity</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Engagement Time</div>
+                <div class="metric-value" id="engagementTime">0m</div>
+                <div class="metric-subtext">today</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Recipes Saved</div>
+                <div class="metric-value" id="recipesSaved">0</div>
+                <div class="metric-subtext">all-time</div>
+            </div>
+        </div>
+
+        <!-- User Information -->
+        <div class="section">
+            <div class="section-title">👤 User Information</div>
+            <div class="info-box">
+                <div class="info-row">
+                    <div class="info-label">User ID</div>
+                    <div class="info-value" id="userId" style="font-size: 0.9em; word-break: break-all;">—</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Signup Date</div>
+                    <div class="info-value" id="signupDate">—</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Last Visit</div>
+                    <div class="info-value" id="lastVisit">—</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Returning User</div>
+                    <div class="info-value" id="isReturning">—</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Device</div>
+                    <div class="info-value" id="device">—</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Browser</div>
+                    <div class="info-value" id="browser">—</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Metrics -->
+        <div class="two-column">
+            <div class="section">
+                <div class="section-title">📊 Activity Metrics</div>
+                <div class="info-box">
+                    <div class="info-row">
+                        <div class="info-label">Current Streak</div>
+                        <div class="info-value" id="currentStreak">0</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Longest Streak</div>
+                        <div class="info-value" id="longestStreak">0</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Avg Session Time</div>
+                        <div class="info-value" id="avgSession">0m</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Total Time Spent</div>
+                        <div class="info-value" id="totalTime">0h</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">📚 Recipe Engagement</div>
+                <div class="info-box">
+                    <div class="info-row">
+                        <div class="info-label">Recipes Viewed</div>
+                        <div class="info-value" id="recipesViewed">0</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Recipes Completed</div>
+                        <div class="info-value" id="recipesCompleted">0</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Save Rate</div>
+                        <div class="info-value" id="saveRate">0%</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Completion Rate</div>
+                        <div class="info-value" id="completionRate">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feature Usage -->
+        <div class="section">
+            <div class="section-title">🎯 Feature Usage</div>
+            <div class="feature-usage" id="featureUsage">
+                <!-- Will be populated -->
+            </div>
+        </div>
+
+        <!-- Engagement Time Chart -->
+        <div class="section">
+            <div class="section-title">⏱️ Engagement Trends</div>
+            <div class="chart-container">
+                <div class="bar-chart" id="engagementChart">
+                    <!-- Will be populated -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Last 7 Days Activity -->
+        <div class="section">
+            <div class="section-title">📅 Last 7 Days Activity</div>
+            <div class="chart-container">
+                <div class="bar-chart" id="last7Days">
+                    <!-- Will be populated -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function refreshDashboard() {
+            const metrics = window.userMetricsTracker.getUserMetrics();
+
+            // Update metric cards
+            document.getElementById('dau').textContent = metrics.activity.dau;
+            document.getElementById('mau').textContent = metrics.activity.mau;
+            document.getElementById('totalSessions').textContent = metrics.activity.totalSessions;
+            document.getElementById('returnRate').textContent = metrics.activity.returnRate;
+            document.getElementById('engagementTime').textContent = metrics.engagement.todayEngagementTime;
+            document.getElementById('recipesSaved').textContent = metrics.recipes.totalRecipesSaved;
+
+            // Update user info
+            document.getElementById('userId').textContent = metrics.user.userId;
+            document.getElementById('signupDate').textContent = new Date(metrics.user.signupDate).toLocaleDateString();
+            document.getElementById('lastVisit').textContent = new Date(metrics.user.lastVisit).toLocaleString();
+            document.getElementById('isReturning').textContent = metrics.user.isReturningUser ? '✅ Yes' : '❌ No';
+            document.getElementById('device').textContent = metrics.user.deviceType;
+            document.getElementById('browser').textContent = metrics.user.browser;
+
+            // Update activity metrics
+            document.getElementById('currentStreak').textContent = metrics.activity.currentStreak + ' days';
+            document.getElementById('longestStreak').textContent = metrics.activity.longestStreak + ' days';
+            document.getElementById('avgSession').textContent = metrics.engagement.avgSessionDuration;
+            document.getElementById('totalTime').textContent = (
+                Math.round(parseInt(metrics.engagement.totalEngagementTime.split(' ')[0]) / 60)
+            ) + 'h';
+
+            // Update recipe metrics
+            document.getElementById('recipesViewed').textContent = metrics.recipes.totalRecipesViewed;
+            document.getElementById('recipesCompleted').textContent = metrics.recipes.completedRecipes;
+            document.getElementById('saveRate').textContent = metrics.recipes.saveRate;
+            document.getElementById('completionRate').textContent = metrics.recipes.completedRecipes > 0
+                ? Math.round((metrics.recipes.completedRecipes / Math.max(metrics.recipes.totalRecipesViewed, 1)) * 100) + '%'
+                : '0%';
+
+            // Update feature usage
+            updateFeatureUsage(metrics.engagement.featureUsage);
+
+            // Update charts
+            updateEngagementChart(metrics.engagement);
+            updateLast7DaysChart();
+        }
+
+        function updateFeatureUsage(features) {
+            const container = document.getElementById('featureUsage');
+            const featureTitles = {
+                'recipeBrowsing': '🍽️ Recipe Browsing',
+                'barcodeScan': '📱 Barcode Scan',
+                'mealReminder': '🔔 Meal Reminder',
+                'recipeAdapt': '🎨 Adapt Recipe',
+                'recipeMix': '🎭 Recipe Mix',
+                'analytics': '📊 Analytics'
+            };
+
+            container.innerHTML = Object.entries(features).map(([key, count]) => `
+                <div class="feature-box">
+                    <div class="feature-name">${featureTitles[key]}</div>
+                    <div class="feature-count">${count}</div>
+                </div>
+            `).join('');
+        }
+
+        function updateEngagementChart(engagement) {
+            const container = document.getElementById('engagementChart');
+            const dailyData = engagement.dailyEngagementTime || {};
+            const maxValue = Math.max(...Object.values(dailyData).map(v => parseInt(v) || 0), 1);
+
+            const days = Object.entries(dailyData).slice(-7).map(([date, time]) => {
+                const minutes = parseInt(time) || 0;
+                const percentage = (minutes / (maxValue || 1)) * 100;
+                const dateObj = new Date(date);
+                const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+
+                return `
+                    <div class="bar-item">
+                        <div class="bar-label">${dayName}</div>
+                        <div class="bar-background">
+                            <div class="bar-fill" style="width: ${percentage}%">
+                                <span class="bar-value">${minutes}m</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = days || '<div class="empty-state">No engagement data</div>';
+        }
+
+        function updateLast7DaysChart() {
+            const tracker = window.userMetricsTracker;
+            const last7days = {};
+
+            for (let i = 0; i < 7; i++) {
+                const date = new Date();
+                date.setDate(date.getDate() - i);
+                const dateStr = date.toDateString();
+                const sessionCount = tracker.sessionData.sessions.filter(s => s.date === dateStr).length;
+                last7days[dateStr] = sessionCount;
+            }
+
+            const maxSessions = Math.max(...Object.values(last7days), 1);
+            const container = document.getElementById('last7Days');
+
+            const chart = Object.entries(last7days).reverse().map(([date, count]) => {
+                const dateObj = new Date(date);
+                const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+                const percentage = (count / maxSessions) * 100;
+
+                return `
+                    <div class="bar-item">
+                        <div class="bar-label">${dayName}</div>
+                        <div class="bar-background">
+                            <div class="bar-fill" style="width: ${percentage}%">
+                                <span class="bar-value">${count} session${count !== 1 ? 's' : ''}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            container.innerHTML = chart;
+        }
+
+        function exportMetrics() {
+            window.userMetricsTracker.exportMetrics();
+            alert('✅ Metrics exported!');
+        }
+
+        function goBack() {
+            window.location.href = 'recipe-cards-premium.html';
+        }
+
+        // Initialize and auto-refresh every 5 seconds
+        refreshDashboard();
+        setInterval(refreshDashboard, 5000);
+    </script>
+</body>
+</html>

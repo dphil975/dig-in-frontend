@@ -6,6 +6,7 @@
     <title>Dig In - Premium Recipe Cards</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="analytics-tracker.js"></script>
+    <script src="user-metrics-tracker.js"></script>
     <style>
         * {
             margin: 0;
@@ -426,6 +427,7 @@
         </select>
         <button onclick="shuffleRecipes()">🎲 Shuffle</button>
         <button onclick="window.location.href='analytics-dashboard.html'" style="background: #ffd700; color: #000;">📊 Analytics</button>
+        <button onclick="window.location.href='user-metrics-dashboard.html'" style="background: #9c27b0; color: #fff;">👤 User Metrics</button>
         <button onclick="window.location.href='barcode-scanner.html'" style="background: #ff6b6b; color: #fff;">📱 Scanner</button>
     </div>
 
@@ -521,6 +523,11 @@
             }
             if (category) {
                 window.digInAnalytics.trackFilterUsage('category', category, filteredRecipes.length);
+            }
+
+            // Track user metrics
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackFeatureUsage('recipeBrowsing');
             }
         }
 
@@ -630,6 +637,11 @@
             // Track analytics
             window.digInAnalytics.trackViewSteps(recipeId, recipe.name);
 
+            // Track user metrics
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackFeatureUsage('recipeBrowsing');
+            }
+
             sessionStorage.setItem('currentRecipe', JSON.stringify(recipe));
             window.open('recipe-steps-viewer.html', 'RecipeSteps', 'width=1000,height=800,scrollbars=yes');
         }
@@ -664,6 +676,11 @@
 
             // Track analytics
             window.digInAnalytics.trackRecipeLike(recipeId, recipe.name, isLiking);
+
+            // Track user metrics
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackRecipeSave(recipeId, recipe.name, isLiking);
+            }
         }
 
         function shuffleRecipes() {
