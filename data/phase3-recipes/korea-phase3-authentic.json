@@ -48,7 +48,87 @@
         "Add kimchi",
         "Make vegetarian version",
         "Include cheese for modern twist"
-      ]
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
     }
   ],
   "lunch": [
@@ -94,7 +174,87 @@
         "Add kimchi",
         "Include mushrooms only",
         "Top with gochugaru (chili flakes)"
-      ]
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
     }
   ],
   "dinner": [
@@ -145,7 +305,87 @@
         "Use pork or chicken",
         "Lettuce wraps",
         "Add vegetables"
-      ]
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 40,
+          "cook_time": 10,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 20,
+          "cook_time": 6,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 7,
+          "cook_time": 3,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
     },
     {
       "id": "kor-dinner-galbitang",
@@ -199,7 +439,87 @@
         "Add glass noodles",
         "Make with chicken",
         "Add barley"
-      ]
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 90,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 54,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 27,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
     }
   ],
   "snacks": [],

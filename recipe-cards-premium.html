@@ -282,6 +282,113 @@
             font-size: 1em;
         }
 
+        .customization-section {
+            background: rgba(90, 103, 216, 0.1);
+            border: 1px solid #5a67d8;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        .customization-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.65em;
+            color: #5a67d8;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .remix-formats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .remix-chip {
+            background: rgba(90, 103, 216, 0.3);
+            border: 1px solid #5a67d8;
+            border-radius: 16px;
+            padding: 4px 10px;
+            font-size: 0.7em;
+            color: #5a67d8;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .remix-chip:hover {
+            background: #5a67d8;
+            color: #fff;
+        }
+
+        .time-variants-select {
+            width: 100%;
+            padding: 6px 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #5a67d8;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+        }
+
+        .dietary-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .dietary-chip {
+            background: rgba(201, 169, 97, 0.2);
+            border: 1px solid #c9a961;
+            border-radius: 16px;
+            padding: 4px 10px;
+            font-size: 0.7em;
+            color: #c9a961;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .dietary-chip:hover {
+            background: #c9a961;
+            color: #000;
+        }
+
+        .dietary-chip.active {
+            background: #c9a961;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .remix-button {
+            background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+            border: 1px solid #5a67d8;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-family: 'Press Start 2P', cursive;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .remix-button:hover {
+            background: linear-gradient(135deg, #6b46c1 0%, #5a67d8 100%);
+            box-shadow: 0 0 15px rgba(90, 103, 216, 0.5);
+        }
+
         .card-actions {
             display: flex;
             gap: 10px;
@@ -549,6 +656,101 @@
             document.getElementById('nextBtn').disabled = end >= filteredRecipes.length;
         }
 
+        function renderCustomizationSection(recipe) {
+            if (!recipe.remix_formats || !recipe.dietary_adaptations) {
+                return '';
+            }
+
+            const remixIcons = {
+                'salad': '🥗',
+                'sandwich': '🥪',
+                'soup': '🍲',
+                'pasta': '🍝',
+                'one_pot': '🍳',
+                'smoothie_bowl': '🥣',
+                'overnight_oats': '🥣',
+                'wrap': '🌯',
+                'parfait': '🍨'
+            };
+
+            const dietaryIcons = {
+                'vegan': '🌱',
+                'vegetarian': '🥬',
+                'gluten_free': '🌾',
+                'pescatarian': '🐟',
+                'low_sodium': '🧂'
+            };
+
+            const timeVariants = recipe.time_variants || {};
+            const timeOptions = Object.entries(timeVariants)
+                .map(([key, variant]) => `<option value="${key}">${variant.label} (${variant.prep_time}p + ${variant.cook_time}c)</option>`)
+                .join('');
+
+            const remixFormats = recipe.remix_formats
+                .map(format => `<span class="remix-chip">${remixIcons[format] || '🍽️'} ${format.replace(/_/g, ' ')}</span>`)
+                .join('');
+
+            const dietaryOptions = recipe.dietary_adaptations
+                .map(diet => `<span class="dietary-chip" onclick="toggleDietaryOption(this, '${recipe.id}', '${diet}')">${dietaryIcons[diet] || '✓'} ${diet.replace(/_/g, ' ')}</span>`)
+                .join('');
+
+            return `
+                <div class="customization-section">
+                    <div class="customization-title">⚡ REMIX THIS RECIPE</div>
+
+                    <div style="margin-bottom: 10px;">
+                        <div style="font-size: 0.7em; color: #5a67d8; margin-bottom: 6px; text-transform: uppercase;">Format</div>
+                        <div class="remix-formats">${remixFormats}</div>
+                    </div>
+
+                    <div style="margin-bottom: 10px;">
+                        <div style="font-size: 0.7em; color: #5a67d8; margin-bottom: 6px; text-transform: uppercase;">Time</div>
+                        <select class="time-variants-select" onchange="updateTimeVariant('${recipe.id}', this.value)">
+                            ${timeOptions}
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-size: 0.7em; color: #c9a961; margin-bottom: 6px; text-transform: uppercase;">Dietary Options</div>
+                        <div class="dietary-options">${dietaryOptions}</div>
+                    </div>
+
+                    <button class="remix-button" onclick="showRemixOptions('${recipe.id}')">🔄 GENERATE REMIX</button>
+                </div>
+            `;
+        }
+
+        function toggleDietaryOption(element, recipeId, diet) {
+            element.classList.toggle('active');
+            trackRemixInteraction('dietary_toggle', recipeId, diet);
+        }
+
+        function updateTimeVariant(recipeId, variant) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (recipe && recipe.time_variants && recipe.time_variants[variant]) {
+                const variantData = recipe.time_variants[variant];
+                console.log(`Time variant selected: ${variantData.label} - ${variantData.prep_time}min prep, ${variantData.cook_time}min cook`);
+                trackRemixInteraction('time_variant', recipeId, variant);
+            }
+        }
+
+        function showRemixOptions(recipeId) {
+            const recipe = allRecipes.find(r => r.id === recipeId);
+            if (recipe) {
+                alert(`🔄 Remix Feature Coming Soon!\n\nThis will generate:\n- Alternative formats (${recipe.remix_formats?.join(', ')})\n- Dietary adaptations\n- Quick versions\n\nTrack your remix preferences to personalize future recommendations!`);
+                trackRemixInteraction('remix_generated', recipeId, recipe.remix_formats?.join(','));
+            }
+        }
+
+        function trackRemixInteraction(action, recipeId, value) {
+            if (window.userMetricsTracker) {
+                window.userMetricsTracker.trackFeatureUsage('remixEngine', { action, recipeId, value });
+            }
+            if (window.digInAnalytics) {
+                window.digInAnalytics.trackInteraction('remix', action, value);
+            }
+        }
+
         function createRecipeCard(recipe) {
             const card = document.createElement('div');
             card.className = 'recipe-card';
@@ -626,6 +828,8 @@
                             `).join('')}
                         </div>
                     </div>
+
+                    ${renderCustomizationSection(recipe)}
 
                     <div class="card-actions">
                         <button class="action-btn" onclick="viewSteps('${recipe.id}')">VIEW STEPS</button>
