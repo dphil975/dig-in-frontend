@@ -10,7 +10,10 @@
       "prepTime": 15,
       "cookTime": 30,
       "description": "Traditional South African breakfast of creamy maize porridge, grilled farm sausage, and spiced tomato relish - representing heritage and culture of South Africa",
-      "seasonings": ["salt", "butter"],
+      "seasonings": [
+        "salt",
+        "butter"
+      ],
       "ingredients": [
         "4 traditional South African farmer's sausages (boerewors)",
         "4 cups water",
@@ -32,18 +35,59 @@
         "Place boerewors in coil on grill or in skillet",
         "Cook for 15-20 minutes, turning occasionally, until golden brown and cooked through",
         "Remove from heat and slice if desired",
-        "Make sous: Heat oil in pan and sauté onion until soft",
+        "Make sous: Heat oil in pan and saut\u00e9 onion until soft",
         "Add diced tomatoes and cook until broken down (about 5 minutes)",
         "Season with salt and pepper",
         "Serve boerewors and pap together, topped with sous"
       ],
       "notes": "Boerewors means 'farmer's sausage' in Afrikaans and is traditionally cooked on a braai (BBQ). Pap should have creamy consistency, not lumpy",
       "fun_fact": "This traditional South African breakfast of creamy pap, soft-boiled eggs, and boerewors represents the heritage and culture of South Africa. Often cooked on weekend braais",
-      "alternatives": ["Add eggs sunny-side up", "Make with beef stew instead of sausage", "Add spinach to pap", "Serve with bread"]
+      "alternatives": [
+        "Add eggs sunny-side up",
+        "Make with beef stew instead of sausage",
+        "Add spinach to pap",
+        "Serve with bread"
+      ]
     }
   ],
   "lunch": [],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "zaf-dinner-boerewors",
+      "name": "South African Boerewors (Traditional Spiced Sausage)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 40,
+      "cookTime": 20,
+      "description": "South African farmer's sausage - braai centerpiece",
+      "seasonings": [
+        "coriander seeds",
+        "pepper",
+        "allspice",
+        "nutmeg"
+      ],
+      "ingredients": [
+        "500g beef",
+        "300g pork",
+        "100g fat",
+        "breadcrumbs",
+        "spices",
+        "casings"
+      ],
+      "instructions": [
+        "Mix meat with breadcrumbs and spices",
+        "Fill casings",
+        "Grill over coals without pricking"
+      ],
+      "notes": "Never prick casing - juices are essential",
+      "fun_fact": "Iconic centerpiece of South African braai",
+      "alternatives": [
+        "Make smaller links",
+        "Serve with pap",
+        "Add cheese to filling"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

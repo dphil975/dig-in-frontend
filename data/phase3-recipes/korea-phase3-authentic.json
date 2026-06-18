@@ -97,7 +97,43 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "kor-dinner-bulgogi",
+      "name": "Korean Bulgogi (Korean BBQ Beef)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 40,
+      "cookTime": 10,
+      "description": "Thinly sliced beef marinated in sweet soy - Korean dinner favorite",
+      "seasonings": [
+        "soy sauce",
+        "mirin",
+        "sesame oil",
+        "ginger"
+      ],
+      "ingredients": [
+        "600g beef",
+        "pear",
+        "soy sauce",
+        "sesame oil",
+        "garlic",
+        "ginger"
+      ],
+      "instructions": [
+        "Marinate beef with pear and sauce",
+        "Grill marinated beef",
+        "Serve with rice and kimchi"
+      ],
+      "notes": "Pear enzymes tenderize beef while adding sweetness",
+      "fun_fact": "Pear is essential for tenderizing and flavor",
+      "alternatives": [
+        "Use pork or chicken",
+        "Lettuce wraps",
+        "Add vegetables"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

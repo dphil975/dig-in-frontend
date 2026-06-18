@@ -45,7 +45,44 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "jpn-dinner-sukiyaki",
+      "name": "Japanese Sukiyaki (Hot Pot with Thinly Sliced Beef)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Japanese hot pot with thinly sliced beef and vegetables - interactive dinner",
+      "seasonings": [
+        "soy sauce",
+        "mirin",
+        "sake"
+      ],
+      "ingredients": [
+        "600g beef",
+        "tofu",
+        "napa cabbage",
+        "mushrooms",
+        "noodles",
+        "eggs"
+      ],
+      "instructions": [
+        "Prepare warishita sauce",
+        "Heat pan with beef fat",
+        "Cook beef slices",
+        "Add vegetables and sauce",
+        "Dip in raw egg"
+      ],
+      "notes": "Raw egg creates silky coating",
+      "fun_fact": "Traditionally dipped in raw egg for silky coating",
+      "alternatives": [
+        "Use lamb or pork",
+        "Vegetarian version",
+        "Electric hot pot"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

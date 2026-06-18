@@ -45,7 +45,43 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "ger-dinner-sauerbraten",
+      "name": "German Sauerbraten (Sour Pot Roast)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 180,
+      "description": "Sour pot roast with sweet-tangy gravy - German dinner tradition",
+      "seasonings": [
+        "vinegar",
+        "bay leaves",
+        "juniper berries",
+        "peppercorns"
+      ],
+      "ingredients": [
+        "1.5kg beef roast",
+        "red wine",
+        "vinegar",
+        "marinade vegetables",
+        "gingersnaps"
+      ],
+      "instructions": [
+        "Marinate 3-7 days",
+        "Brown roast",
+        "Braise 2.5-3 hours",
+        "Make sauce with gingersnaps"
+      ],
+      "notes": "Acid penetration from long marinating tenderizes meat",
+      "fun_fact": "Traditional marinating for up to a week tenderizes meat",
+      "alternatives": [
+        "Use pork",
+        "Make vegetarian with mushrooms",
+        "Serve with red cabbage"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

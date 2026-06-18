@@ -35,7 +35,7 @@
       "notes": "The key is not to overcook the eggs - they should remain creamy and not rubbery. Use ripe, flavorful tomatoes for best results",
       "fun_fact": "Strapatsada reflects the Greek breakfast philosophy: focus on quality, fresh ingredients rather than quantity. This dish has been enjoyed in Greece for generations",
       "alternatives": [
-        "Add sautéed peppers along with tomatoes",
+        "Add saut\u00e9ed peppers along with tomatoes",
         "Use feta or halloumi cheese",
         "Add fresh herbs like dill or parsley",
         "Include pan-fried saganaki (fried cheese) on the side"
@@ -85,7 +85,54 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "grc-dinner-moussaka",
+      "name": "Moussaka (Baked Eggplant and Meat Lasagna)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 45,
+      "cookTime": 90,
+      "description": "Greek layered baked dish with eggplant, meat sauce and b\u00e9chamel topping. Dates back to Ottoman palace cuisine",
+      "seasonings": [
+        "cinnamon",
+        "nutmeg",
+        "oregano"
+      ],
+      "ingredients": [
+        "2 medium eggplants, sliced",
+        "500g ground lamb or beef",
+        "1 onion, diced",
+        "400g canned tomatoes",
+        "250ml red wine",
+        "250ml beef broth",
+        "500g potatoes, sliced",
+        "100g butter",
+        "100g flour",
+        "500ml milk",
+        "Salt, pepper, cinnamon, nutmeg, oregano to taste",
+        "Extra virgin olive oil"
+      ],
+      "instructions": [
+        "Salt eggplant slices and let rest 30 minutes to remove moisture",
+        "Heat olive oil and fry eggplant and potato slices until golden; set aside",
+        "Brown meat with onion, add garlic, fry 1 minute",
+        "Add tomatoes, wine, broth, cinnamon, nutmeg, oregano; simmer 30 minutes",
+        "Make b\u00e9chamel: melt butter, add flour, stir 1 minute, slowly add milk whisking constantly",
+        "Season b\u00e9chamel with salt, pepper, nutmeg",
+        "Layer in baking dish: potatoes, eggplant, meat sauce, repeat; top with b\u00e9chamel",
+        "Bake at 180\u00b0C for 60 minutes until golden"
+      ],
+      "notes": "Moussaka improves when made a day ahead and reheated. Proper b\u00e9chamel should be smooth and creamy",
+      "fun_fact": "Moussaka dates back to Ottoman palace cuisine, though the modern layered version with b\u00e9chamel was perfected in 1920s Greece",
+      "alternatives": [
+        "Use chicken instead of lamb",
+        "Add pine nuts to meat layer",
+        "Make individual moussaka in smaller pans",
+        "Use zucchini instead of eggplant"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

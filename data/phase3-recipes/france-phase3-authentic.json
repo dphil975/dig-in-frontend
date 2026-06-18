@@ -136,7 +136,43 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "fra-dinner-coq-au-vin",
+      "name": "French Coq au Vin (Chicken Braised in Red Wine)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 120,
+      "description": "Chicken braised in Burgundy wine - French dinner classic",
+      "seasonings": [
+        "bay leaves",
+        "thyme",
+        "rosemary"
+      ],
+      "ingredients": [
+        "1.5kg chicken",
+        "750ml Pinot Noir",
+        "bacon",
+        "pearl onions",
+        "mushrooms",
+        "carrots"
+      ],
+      "instructions": [
+        "Brown bacon and chicken",
+        "Make sauce with wine",
+        "Add vegetables",
+        "Braise 1-2 hours"
+      ],
+      "notes": "Julia Child elevated this rustic dish to iconic status",
+      "fun_fact": "Traditional version uses tough rooster meat",
+      "alternatives": [
+        "Use chicken thighs",
+        "Make with brandy",
+        "Add mushrooms"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

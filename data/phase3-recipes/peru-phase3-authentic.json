@@ -44,7 +44,42 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "per-dinner-ceviche",
+      "name": "Peruvian Ceviche (Raw Fish Cured in Lime Juice)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 45,
+      "cookTime": 0,
+      "description": "Raw fish cured in lime juice with leche de tigre - Peruvian dinner specialty",
+      "seasonings": [
+        "lime juice",
+        "cilantro",
+        "aji amarillo"
+      ],
+      "ingredients": [
+        "600g white fish",
+        "lime juice",
+        "cilantro",
+        "red onion",
+        "sweet potato"
+      ],
+      "instructions": [
+        "Prepare leche de tigre",
+        "Cut fish into cubes",
+        "Marinate 5-10 minutes",
+        "Serve immediately"
+      ],
+      "notes": "Must use very fresh fish prepared same day",
+      "fun_fact": "Lime juice 'cooks' fish through protein denaturation",
+      "alternatives": [
+        "Use seafood variation",
+        "Add avocado",
+        "Serve with corn cobs"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

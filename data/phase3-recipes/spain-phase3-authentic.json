@@ -127,7 +127,103 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "spa-dinner-paella-valenciana",
+      "name": "Paella Valenciana (Traditional Valencian Paella)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Traditional Valencian paella with chicken and rabbit - no seafood in the original",
+      "seasonings": [
+        "saffron",
+        "rosemary",
+        "paprika"
+      ],
+      "ingredients": [
+        "1kg bomba rice",
+        "500g chicken, cubed",
+        "500g rabbit, cubed",
+        "250g green beans, cut into 3cm pieces",
+        "250g garrof\u00f3 (white beans), soaked",
+        "150g red bell pepper, diced",
+        "3 artichoke hearts, quartered",
+        "300g tomatoes, grated",
+        "2 dozen snails (optional)",
+        "6-8 saffron strands, steeped in warm water",
+        "6 cloves garlic, minced",
+        "1 fresh rosemary sprig",
+        "1 teaspoon paprika",
+        "3.5 liters water or broth",
+        "300ml olive oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Heat olive oil in large paella pan over medium heat",
+        "Saut\u00e9 chicken and rabbit 5 minutes until partially cooked",
+        "Add green beans, artichokes, tomatoes, pepper; fry 5 minutes",
+        "Add paprika, fry 1 minute",
+        "Add water and saffron, bring to boil",
+        "Add garrof\u00f3 beans, salt to taste, boil 15 minutes",
+        "Spread rice evenly across pan (do not stir)",
+        "Boil 15 minutes until liquid mostly evaporates",
+        "Reduce heat to low for 5 minutes to create socarrat (crispy bottom)",
+        "Cover with cloth and rest 10-15 minutes"
+      ],
+      "notes": "Bomba rice is essential - it absorbs liquid without becoming mushy",
+      "fun_fact": "Authentic Valencian paella does NOT contain seafood\u2014that's a modern tourist invention",
+      "alternatives": [
+        "Add seafood version (paella mixta)",
+        "Use chicken only",
+        "Add more vegetables",
+        "Make individual paellas"
+      ]
+    },
+    {
+      "id": "spa-dinner-pulpo-gallega",
+      "name": "Pulpo a la Gallega (Galician-Style Octopus)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 50,
+      "description": "Galician dinner classic - tender octopus with smoked paprika and olive oil",
+      "seasonings": [
+        "Piment\u00f3n de la Vera (smoked paprika)",
+        "sea salt"
+      ],
+      "ingredients": [
+        "1 whole fresh or frozen octopus (1-2kg)",
+        "500g waxy potatoes (Desiree or King Edward), peeled and halved",
+        "2 tablespoons Spanish smoked paprika",
+        "100ml extra virgin olive oil",
+        "Sea salt flakes",
+        "Fresh parsley (optional garnish)"
+      ],
+      "instructions": [
+        "Clean octopus by removing beak and eyes; rinse thoroughly",
+        "Bring large pot of salted water to rolling boil",
+        "Dip octopus into boiling water three times, lifting out each time",
+        "After third dip, fully submerge octopus in water",
+        "Cook 30-50 minutes depending on size; pierce thickest part to test doneness",
+        "Meanwhile, boil potatoes in salted water until just tender",
+        "Remove cooked octopus; let cool slightly, then slice tentacles into rings",
+        "Arrange sliced potatoes on wooden serving platter",
+        "Layer sliced octopus on top of potatoes",
+        "Sprinkle generously with sea salt and smoked paprika",
+        "Drizzle abundantly with extra virgin olive oil",
+        "Serve immediately while warm"
+      ],
+      "notes": "The three-dip technique helps the octopus tentacles curl and skin stay intact during cooking",
+      "fun_fact": "Piment\u00f3n de la Vera is smoked over oak for 10-15 days, giving it complex flavor impossible to replicate with regular paprika",
+      "alternatives": [
+        "Add paprika oil drizzle",
+        "Serve cold as appetizer",
+        "Add saut\u00e9ed mushrooms",
+        "Use shrimp instead of octopus"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

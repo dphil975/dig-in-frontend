@@ -131,7 +131,37 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "eth-dinner-injera-base",
+      "name": "Ethiopian Injera (Fermented Teff Flatbread Base)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 15,
+      "description": "Fermented teff flatbread base for Ethiopian dinners - complete protein grain",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "2 cups teff flour",
+        "3.5 cups filtered water",
+        "1/2 tsp salt"
+      ],
+      "instructions": [
+        "Mix flour and water",
+        "Ferment 4-6 days",
+        "Cook on non-stick skillet 2-3 minutes per side"
+      ],
+      "notes": "Fermentation activates nutrients and improves digestibility",
+      "fun_fact": "Teff is complete protein with all 8 essential amino acids",
+      "alternatives": [
+        "Use 50/50 teff and wheat flour",
+        "Faster fermentation with warmth",
+        "Serve with wot stews"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

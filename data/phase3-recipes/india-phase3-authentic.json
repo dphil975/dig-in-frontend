@@ -314,7 +314,44 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "ind-dinner-tikka-masala",
+      "name": "Chicken Tikka Masala (Creamy Tomato-Based Chicken Curry)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Creamy tomato-based chicken curry - perfected in British Indian restaurants",
+      "seasonings": [
+        "garam masala",
+        "cumin",
+        "coriander",
+        "turmeric"
+      ],
+      "ingredients": [
+        "800g chicken",
+        "yogurt",
+        "400g tomatoes",
+        "cream",
+        "cashew paste",
+        "spices"
+      ],
+      "instructions": [
+        "Marinate chicken",
+        "Pan-fry chicken",
+        "Make sauce with tomatoes and cream",
+        "Simmer together"
+      ],
+      "notes": "Cashew paste creates creamy texture",
+      "fun_fact": "Perfected in British Indian restaurants in 1960s",
+      "alternatives": [
+        "Use paneer",
+        "Make vegetarian with cauliflower",
+        "Use coconut cream"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],

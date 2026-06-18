@@ -48,7 +48,43 @@
       ]
     }
   ],
-  "dinner": [],
+  "dinner": [
+    {
+      "id": "bra-dinner-feijoada",
+      "name": "Brazilian Feijoada (Black Bean and Meat Stew)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 300,
+      "description": "Black bean and meat stew - Brazil's national dinner dish",
+      "seasonings": [
+        "bay leaves",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "500g black beans",
+        "beef",
+        "pork",
+        "sausage",
+        "carne seca",
+        "onions"
+      ],
+      "instructions": [
+        "Cook beans",
+        "Brown meats separately",
+        "Combine with beans",
+        "Simmer 4-5 hours"
+      ],
+      "notes": "Improves with time - tastes better next day",
+      "fun_fact": "Believed to originate from slave quarters as resilience symbol",
+      "alternatives": [
+        "Add more vegetables",
+        "Make vegetarian version",
+        "Serve with orange slices"
+      ]
+    }
+  ],
   "snacks": [],
   "desserts": [],
   "nonAlcoholicDrinks": [],
