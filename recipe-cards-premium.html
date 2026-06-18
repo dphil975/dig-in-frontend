@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dig In - Premium Recipe Cards</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="analytics-tracker.js"></script>
     <style>
         * {
             margin: 0;
@@ -424,6 +425,7 @@
             <option value="alcoholicDrinks">Alcoholic Drinks</option>
         </select>
         <button onclick="shuffleRecipes()">🎲 Shuffle</button>
+        <button onclick="window.location.href='analytics-dashboard.html'" style="background: #ffd700; color: #000;">📊 Analytics</button>
     </div>
 
     <div class="recipe-counter" id="recipeCounter">Loading recipes...</div>
@@ -508,6 +510,17 @@
             currentIndex = 0;
             displayRecipes();
             updateCounter();
+
+            // Track analytics
+            if (search) {
+                window.digInAnalytics.trackRecipeSearch(search, filteredRecipes.length);
+            }
+            if (country) {
+                window.digInAnalytics.trackFilterUsage('country', country, filteredRecipes.length);
+            }
+            if (category) {
+                window.digInAnalytics.trackFilterUsage('category', category, filteredRecipes.length);
+            }
         }
 
         function displayRecipes() {
@@ -530,6 +543,9 @@
             const card = document.createElement('div');
             card.className = 'recipe-card';
             card.id = `card-${recipe.id}`;
+
+            // Track recipe view
+            window.digInAnalytics.trackRecipeView(recipe.id, recipe.name, recipe.country, recipe.category);
 
             const pairings = drinkPairings[recipe.category] || drinkPairings['lunch'];
             const ingredientList = recipe.ingredients
@@ -609,26 +625,44 @@
 
         function viewSteps(recipeId) {
             const recipe = filteredRecipes.find(r => r.id === recipeId);
+
+            // Track analytics
+            window.digInAnalytics.trackViewSteps(recipeId, recipe.name);
+
             sessionStorage.setItem('currentRecipe', JSON.stringify(recipe));
             window.open('recipe-steps-viewer.html', 'RecipeSteps', 'width=1000,height=800,scrollbars=yes');
         }
 
         function showAllDrinks(recipeId) {
             const recipe = filteredRecipes.find(r => r.id === recipeId);
+
+            // Track analytics
+            window.digInAnalytics.track('view_all_drinks', {
+                recipe_id: recipeId,
+                recipe_name: recipe.name,
+                category: recipe.category
+            });
+
             alert(`Drink Pairings for ${recipe.name}:\n\nCategory: ${recipe.category}\n\nRecommended drinks:\n☕ Coffee options\n🍷 Wine selections\n🍺 Beer varieties\n🧃 Juice options`);
         }
 
         function toggleFavorite(recipeId) {
-            if (favorites.has(recipeId)) {
-                favorites.delete(recipeId);
-            } else {
+            const recipe = filteredRecipes.find(r => r.id === recipeId);
+            const isLiking = !favorites.has(recipeId);
+
+            if (isLiking) {
                 favorites.add(recipeId);
+            } else {
+                favorites.delete(recipeId);
             }
 
             const btn = document.querySelector(`#card-${recipeId} .favorite-btn`);
             if (btn) {
                 btn.classList.toggle('active');
             }
+
+            // Track analytics
+            window.digInAnalytics.trackRecipeLike(recipeId, recipe.name, isLiking);
         }
 
         function shuffleRecipes() {
@@ -639,6 +673,9 @@
             }
             currentIndex = 0;
             displayRecipes();
+
+            // Track analytics
+            window.digInAnalytics.trackShuffle();
         }
 
         document.getElementById('searchInput').addEventListener('input', filterRecipes);
