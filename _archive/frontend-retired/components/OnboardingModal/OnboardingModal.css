@@ -1,0 +1,269 @@
+.ob-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 16px;
+}
+
+.ob-card {
+  background: #F3EADA;
+  border: 3px solid #33302A;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 #33302A;
+  padding: 32px 28px 28px;
+  max-width: 460px;
+  width: 100%;
+  animation: ob-slide-in 0.25s ease;
+}
+
+@keyframes ob-slide-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ob-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.ob-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #ddd;
+  border: 1.5px solid #33302A;
+  transition: background 0.2s;
+}
+
+.ob-dot.active {
+  background: #6E8259;
+}
+
+.ob-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ob-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  animation: ob-bounce 1.8s ease infinite;
+}
+
+@keyframes ob-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+.ob-title {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: #33302A;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.ob-body {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Screen 1 feature list */
+.ob-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ob-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.5;
+  background: #fff;
+  border: 1.5px solid #33302A;
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.ob-feat-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Screen 2 borough buttons */
+.ob-borough-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.ob-borough-btn {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.12s;
+  text-align: left;
+}
+
+.ob-borough-btn:hover {
+  border-color: #33302A;
+  color: #33302A;
+  background: #F3EADA;
+}
+
+.ob-borough-btn.selected {
+  border-color: #33302A;
+  background: #6E8259;
+  color: #33302A;
+  box-shadow: 3px 3px 0 #33302A;
+}
+
+/* Screen 3 quest cards */
+.ob-quests {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.ob-quest-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #33302A;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.ob-quest-emoji {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.ob-quest-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 6px;
+}
+
+.ob-quest-desc {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Navigation */
+.ob-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.ob-btn {
+  background: #6E8259;
+  color: #33302A;
+  border: 2px solid #33302A;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #33302A;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: all 0.12s;
+  min-height: 44px;
+}
+
+.ob-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0 #33302A;
+}
+
+.ob-btn:active {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0 #33302A;
+}
+
+.ob-btn-finish {
+  flex: 1;
+}
+
+.ob-btn-back {
+  background: transparent;
+  border: 2px solid #bbb;
+  border-radius: 4px;
+  color: #777;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: all 0.12s;
+  min-height: 44px;
+}
+
+.ob-btn-back:hover {
+  border-color: #33302A;
+  color: #333;
+}
+
+/* Screen 1 single CTA */
+.ob-screen > .ob-btn {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .ob-card {
+    padding: 24px 16px 20px;
+  }
+
+  .ob-title {
+    font-size: 11px;
+  }
+
+  .ob-btn,
+  .ob-btn-back {
+    font-size: 8px;
+    padding: 12px 14px;
+  }
+
+  .ob-borough-btn {
+    font-size: 8px;
+    padding: 12px 14px;
+  }
+
+  .ob-quest-title {
+    font-size: 8px;
+  }
+}

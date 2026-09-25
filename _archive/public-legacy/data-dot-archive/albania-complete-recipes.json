@@ -1,0 +1,293 @@
+{
+  "country": "Albania",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "alb-break-byrek",
+      "name": "Byrek (Savory Pastry Pie)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 45,
+      "description": "A traditional baked pastry filled with spinach, cheese, or meat. The phyllo-like pastry is layered with filling and baked until golden.",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "ingredients": [
+        "1 lb phyllo dough",
+        "1 lb spinach, chopped",
+        "1 cup feta cheese, crumbled",
+        "2 eggs",
+        "1 onion, chopped",
+        "1/2 cup oil",
+        "Salt and pepper to taste",
+        "1/4 tsp nutmeg"
+      ],
+      "instructions": [
+        "Sauté onion and spinach in 2 tbsp oil until wilted",
+        "Remove from heat and cool",
+        "Mix in feta cheese, eggs, salt, pepper, and nutmeg",
+        "Brush phyllo sheets with oil as you layer them",
+        "Place half the phyllo in baking pan",
+        "Spread filling over phyllo",
+        "Layer remaining phyllo on top",
+        "Brush top with oil",
+        "Bake at 375°F for 35-45 minutes until golden brown",
+        "Cool for 5 minutes before cutting"
+      ],
+      "notes": "Keep phyllo covered with damp cloth while working to prevent drying.",
+      "fun_fact": "Byrek is the most iconic Albanian dish and is eaten for breakfast, lunch, or dinner. Every Albanian family has their own byrek recipe passed down through generations.",
+      "alternatives": [
+        "Meat filling instead of spinach",
+        "All cheese filling for vegetarian version",
+        "Butter instead of oil for richer taste"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "alb-lunch-frikase",
+      "name": "Frikase (Meat and Liver Stew)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "A traditional Albanian stew combining veal or pork with liver, cooked in white wine and broth. Rich and flavorful.",
+      "seasonings": [
+        "bay leaves",
+        "rosemary",
+        "thyme",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "1 lb veal or pork, cubed",
+        "1/2 lb liver, sliced",
+        "2 tbsp oil",
+        "2 onions, chopped",
+        "2 cups white wine",
+        "2 cups broth",
+        "2 potatoes, cubed",
+        "2 bay leaves",
+        "1 tsp rosemary",
+        "1 tsp thyme",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Heat oil and brown meat on all sides",
+        "Add onions and cook until soft",
+        "Pour in wine and broth",
+        "Add bay leaves, rosemary, and thyme",
+        "Bring to boil, then reduce heat and simmer 20 minutes",
+        "Add potatoes and continue cooking 15 minutes",
+        "Add liver slices and cook additional 10 minutes",
+        "Season with salt and pepper",
+        "Serve hot"
+      ],
+      "notes": "Liver cooks quickly, so add it only at the end.",
+      "fun_fact": "Frikase is a festive dish served during celebrations and special family gatherings in Albania. It represents the resourcefulness of using all parts of the animal.",
+      "alternatives": [
+        "Chicken instead of veal",
+        "Red wine instead of white",
+        "Skip liver for simpler version"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "alb-dinner-tavë-kosi",
+      "name": "Tavë Kosi (Baked Lamb with Yogurt)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 15,
+      "cookTime": 60,
+      "description": "Tender lamb baked in a creamy yogurt sauce with rice. A classic Albanian comfort dish.",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "nutmeg"
+      ],
+      "ingredients": [
+        "2 lbs lamb, cubed",
+        "3 cups yogurt",
+        "2 tbsp butter",
+        "3 eggs",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 cup rice",
+        "2 cups broth",
+        "Salt and pepper",
+        "Pinch of nutmeg"
+      ],
+      "instructions": [
+        "Brown lamb in butter",
+        "Transfer to baking dish",
+        "Mix yogurt with eggs, salt, pepper, and nutmeg",
+        "Pour yogurt mixture over lamb",
+        "Cook rice in broth separately",
+        "When lamb is partially cooked, add cooked rice to dish",
+        "Bake at 375°F for 45 minutes",
+        "Serve hot"
+      ],
+      "notes": "Make sure yogurt is at room temperature before adding to hot lamb to avoid curdling.",
+      "fun_fact": "Tavë Kosi is often called 'the national dish of Albania.' It represents the perfect combination of lamb, which is the primary meat of Albanian cuisine, and yogurt, which is essential to Albanian food culture.",
+      "alternatives": [
+        "Veal instead of lamb",
+        "Sour cream instead of yogurt",
+        "Chicken for lighter version"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "alb-snack-burek",
+      "name": "Burek (Cheese Pastry)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 40,
+      "description": "A flaky pastry filled with cheese and baked until golden crispy. Often served as a snack with yogurt.",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "1 lb phyllo dough",
+        "1 lb cheese (feta or white cheese), crumbled",
+        "2 eggs",
+        "1/2 cup oil",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Mix cheese with eggs, salt, and pepper",
+        "Brush phyllo sheets with oil",
+        "Layer phyllo in baking pan",
+        "Spread cheese filling",
+        "Layer more phyllo on top",
+        "Cut into squares",
+        "Bake at 375°F for 35-40 minutes until golden",
+        "Serve hot or room temperature"
+      ],
+      "notes": "Burek can be rolled instead of layered for variation.",
+      "fun_fact": "Burek is found throughout the Balkans and Middle East, but the Albanian version is known for its delicate, crispy pastry and high cheese content.",
+      "alternatives": [
+        "Meat filling instead of cheese",
+        "Spinach and cheese combination",
+        "Butter instead of oil for extra flakiness"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "alb-dessert-baklava",
+      "name": "Baklava (Honey Nut Pastry)",
+      "difficulty": "Hard",
+      "servings": 20,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Layers of phyllo dough filled with walnuts or pistachios, baked, and soaked in honey syrup. Sweet and rich.",
+      "seasonings": [
+        "cinnamon",
+        "cloves"
+      ],
+      "ingredients": [
+        "1 lb phyllo dough",
+        "2 cups walnuts or pistachios, chopped",
+        "1 cup butter, melted",
+        "1 tsp cinnamon",
+        "1/4 tsp cloves",
+        "1 cup honey",
+        "1 cup water",
+        "1/2 cup sugar"
+      ],
+      "instructions": [
+        "Mix nuts with cinnamon and cloves",
+        "Layer phyllo in baking pan, brushing each sheet with butter",
+        "Sprinkle nut mixture on phyllo",
+        "Repeat layering",
+        "Top with remaining phyllo, butter each sheet",
+        "Cut into diamond or square shapes",
+        "Bake at 350°F for 45 minutes until golden",
+        "Meanwhile, heat honey, water, and sugar until syrup forms",
+        "Pour hot syrup over hot baklava",
+        "Cool completely before serving"
+      ],
+      "notes": "The hot syrup on hot baklava creates the perfect texture.",
+      "fun_fact": "Baklava is the ultimate celebration dessert in Albania and throughout the Mediterranean. The recipe dates back centuries to Ottoman times.",
+      "alternatives": [
+        "Different nuts like hazelnuts or almonds",
+        "Rose water in honey syrup for Persian flavor",
+        "Phyllo made from scratch for authentic touch"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "alb-drink-kafe",
+      "name": "Kafe (Turkish Coffee)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 2,
+      "cookTime": 5,
+      "description": "Strong, thick coffee served in small cups. An important part of Albanian social culture.",
+      "seasonings": [
+        "cardamom seeds"
+      ],
+      "ingredients": [
+        "1 cup water",
+        "1.5 tbsp finely ground coffee",
+        "1/2 tbsp sugar",
+        "Cardamom seeds"
+      ],
+      "instructions": [
+        "Pour water into cezve (coffee pot)",
+        "Add ground coffee and sugar",
+        "Stir well and heat over medium flame",
+        "When foam rises, remove from heat",
+        "Pour into small cup",
+        "Serve immediately with cardamom seeds"
+      ],
+      "notes": "Coffee should be finely ground. Don't let it boil over.",
+      "fun_fact": "Coffee culture is central to Albanian social life. Coffee 'hour' is a time for socializing and catching up with friends and family.",
+      "alternatives": [
+        "No sugar for less sweet version",
+        "Cinnamon instead of cardamom",
+        "Double the coffee for extra strong"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "alb-drink-raki",
+      "name": "Raki (Grape Brandy)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "A strong spirit distilled from grapes, plums, or other fruits. An important part of Albanian celebrations.",
+      "seasonings": [],
+      "ingredients": [
+        "Grapes or fruit",
+        "Glass containers for fermentation",
+        "Distillation equipment"
+      ],
+      "instructions": [
+        "Crush fruit and place in container",
+        "Cover and let ferment 2-4 weeks",
+        "Distill using proper equipment",
+        "Collect the heart of the distillation",
+        "Age in glass bottles",
+        "Serve at room temperature in small glasses"
+      ],
+      "notes": "Proper distillation equipment is needed for safety. Homemade raki can be dangerous.",
+      "fun_fact": "Raki is offered to guests as a gesture of hospitality in Albania. 'Rakia' is also found throughout the Balkans with regional variations.",
+      "alternatives": [
+        "Plum brandy for different fruit base",
+        "Buy commercially made raki",
+        "Ouzo for Greek equivalent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+/* PixelStorePopup — map marker popup */
+
+.psp-wrap {
+  width: 100%;          /* fills whatever the Leaflet popup gives us */
+  min-width: 280px;
+  background: #F3EADA;
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  color: #33302A;
+  position: relative;
+}
+
+/* ── Close ───────────────────────────────────────────────── */
+.psp-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background: rgba(0,0,0,.18);
+  border: none;
+  color: #33302A;
+  font-size: 16px;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  line-height: 1;
+  transition: background 0.12s;
+}
+.psp-close:hover { background: rgba(0,0,0,.32); }
+
+/* ── Header ──────────────────────────────────────────────── */
+.psp-header {
+  padding: 16px 48px 14px 16px;
+  border-bottom: 3px solid #33302A;
+}
+
+.psp-header-top-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 7px;
+  flex-wrap: wrap;
+}
+
+.psp-type-tag {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #33302A;
+  background: rgba(0,0,0,.14);
+  padding: 3px 9px;
+  display: inline-block;
+}
+
+/* open/closed pill in the header */
+.psp-open-pill-header {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 3px 8px;
+}
+.psp-open   { background: #33302A; color: #96B36B; }   /* matcha */
+.psp-closed { background: #33302A; color: #fff; }      /* closed = Bark */
+
+.psp-store-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: #33302A;
+  line-height: 1.7;
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.psp-store-addr {
+  font-size: 14px;
+  color: rgba(51, 48, 42,.65);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.psp-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 3px;
+}
+
+.psp-neighborhood {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: rgba(51, 48, 42,.55);
+  text-transform: uppercase;
+}
+
+/* ── Star rating ─────────────────────────────────────────── */
+.psp-stars {
+  font-size: 15px;
+  color: #c8860a;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 1;
+}
+
+.psp-rating-num {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: rgba(51, 48, 42,.6);
+  margin-left: 4px;
+}
+
+/* ── Hours / distance row ────────────────────────────────── */
+.psp-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #f0ece2;
+  border-bottom: 2px solid #e0dbd0;
+}
+
+.psp-dist {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #6E8259;   /* crimson distance pill */
+}
+
+.psp-hours {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ── Deal banner (exact LIVE_DEAL match) ─────────────────── */
+.psp-deal-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #fff9e0;
+  border-bottom: 2px solid #f4c842;
+}
+
+.psp-deal-icon { font-size: 26px; flex-shrink: 0; }
+
+.psp-deal-body { flex: 1; min-width: 0; }
+
+.psp-deal-flag {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c8860a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.psp-deal-title {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: #7a4f00;
+  line-height: 1.7;
+}
+
+.psp-deal-desc {
+  font-size: 13px;
+  color: #9a6000;
+  line-height: 1.3;
+  margin-top: 3px;
+}
+
+.psp-deal-badge {
+  font-family: var(--font-display);
+  font-size: 13px;
+  background: #f4c842;
+  border: 2px solid #33302A;
+  padding: 5px 10px;
+  color: #33302A;
+  box-shadow: 2px 2px 0 #33302A;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Chain-level deal hint ───────────────────────────────── */
+.psp-deal-hint {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  background: #fffbf0;
+  border-bottom: 2px solid #f4c842;
+  font-size: 13px;
+  color: #7a5500;
+  line-height: 1.4;
+}
+
+.psp-deal-hint-icon { font-size: 18px; flex-shrink: 0; }
+
+.psp-deal-link {
+  color: #c8860a;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.psp-deal-link:hover { color: #7a4f00; }
+
+/* ── Contact section ─────────────────────────────────────── */
+.psp-contact-section {
+  border-bottom: 2px solid #e0dbd0;
+}
+
+.psp-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+  transition: background 0.1s;
+  border-bottom: 1px solid #ede9df;
+}
+.psp-contact-row:last-child { border-bottom: none; }
+.psp-contact-row:hover { background: #f5f0e8; color: #33302A; }
+.psp-contact-row svg { color: #888; flex-shrink: 0; }
+
+.psp-website-row { color: #6E8259; }
+.psp-website-row:hover { color: #5C7049; }
+.psp-website-row svg { color: #6E8259; }
+
+.psp-ext-icon { margin-left: auto; opacity: .5; }
+
+/* ── Check-in section ────────────────────────────────────── */
+.psp-checkin-section {
+  padding: 13px 16px;
+  border-bottom: 2px solid #e0dbd0;
+}
+
+.psp-visits-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.psp-visits-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: rgba(45,45,45,.5);
+  text-transform: uppercase;
+}
+
+.psp-community-visits {
+  font-size: 12px;
+  color: rgba(45,45,45,.4);
+  font-family: var(--font-ui);
+}
+
+.psp-checkin-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* primary check-in button — crimson = primary brand color */
+.psp-ck-btn {
+  background: #6E8259;
+  border: 2px solid #33302A;
+  color: #fff;
+  font-family: 'DotGothic16', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 9px 18px;
+  box-shadow: 3px 3px 0 rgba(0,0,0,.22);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: filter 0.12s;
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.psp-ck-btn:hover:not(:disabled) { filter: brightness(.88); }
+.psp-ck-btn:disabled { opacity: .55; cursor: default; box-shadow: none; }
+
+.psp-ck-verifying {
+  background: #FF6D8B;      /* pink while verifying */
+  color: #fff;
+  animation: psp-pulse 0.75s ease-in-out infinite;
+}
+.psp-ck-done { background: #96B36B; }   /* matcha green = success */
+.psp-ck-err  { background: #e05c3a; }
+
+@keyframes psp-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.6; }
+}
+
+.psp-map-btn,
+.psp-share-btn {
+  background: #fff;
+  border: 2px solid #33302A;
+  color: #33302A;
+  font-family: 'DotGothic16', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 9px 15px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.14);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s;
+  min-height: 44px;
+}
+.psp-map-btn:hover { background: #f4f0e8; }
+
+.psp-share-btn { border-color: #96B36B; color: #96B36B; }   /* matcha */
+.psp-share-btn:hover { background: #f0f9eb; }
+
+/* error message */
+.psp-ck-error {
+  margin-top: 10px;
+  background: #fdf0ee;
+  border: 2px solid #e05c3a;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.psp-ck-error strong {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c0392b;
+  line-height: 1.7;
+}
+.psp-ck-error span { font-size: 13px; color: #7a2020; line-height: 1.4; }
+
+/* ── Photo Missions ──────────────────────────────────────── */
+.psp-missions-section {
+  border-bottom: 2px solid #e0dbd0;
+}
+
+.psp-missions-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px 8px;
+  background: #f7f3e8;
+  border-bottom: 1.5px solid #e8e2d4;
+}
+
+.psp-missions-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.psp-missions-sub {
+  font-size: 12px;
+  color: #666;
+  margin-left: auto;
+}
+
+.psp-mission-card {
+  padding: 11px 16px;
+  border-bottom: 1px solid #ede9df;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.psp-mission-card:last-child { border-bottom: none; }
+
+.psp-mission-top {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.psp-mission-emoji {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.psp-mission-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.psp-mission-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 2px;
+}
+
+.psp-mission-instruction {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.psp-mission-coins {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: #f4c842;
+  border: 2px solid #33302A;
+  color: #33302A;
+  padding: 3px 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.15);
+}
+
+.psp-mission-photo-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #fff;
+  border: 2px dashed #c8a840;
+  color: #7a5500;
+  font-family: 'DotGothic16', monospace;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+  min-height: 44px;
+}
+.psp-mission-photo-btn:hover {
+  background: #fff9e6;
+  border-color: #f4c842;
+  border-style: solid;
+}
+.psp-mission-photo-btn svg { color: #c8a840; }
+
+/* processing state */
+.psp-mission-processing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c8860a;
+  animation: psp-pulse 0.75s ease-in-out infinite;
+}
+
+/* done state: pixel preview + earned label */
+.psp-mission-done {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.psp-pixel-preview {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #33302A;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+  box-shadow: 3px 3px 0 rgba(0,0,0,.2);
+}
+
+.psp-mission-done-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.psp-mission-done-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #3faa6e;
+  margin-bottom: 3px;
+}
+
+.psp-mission-done-earned {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c8860a;
+}
+
+.psp-mission-done-saved {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* ── Directions CTA — crimson primary action ─────────────── */
+.psp-directions-btn {
+  width: 100%;
+  background: #6E8259;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  padding: 16px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.12s;
+  letter-spacing: 0.04em;
+  min-height: 52px;
+  box-shadow: 0 -2px 0 rgba(0,0,0,.2) inset;
+}
+.psp-directions-btn:hover { background: #a60018; }

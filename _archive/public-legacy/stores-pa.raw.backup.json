@@ -1,0 +1,5026 @@
+{
+  "source": "Pennsylvania Grocery Stores – Round 1",
+  "description": "Initial mapping of grocery, convenience, and specialty stores across PA counties.",
+  "last_updated": "2026-07-19",
+  "counties": [
+    {
+      "county": "Bucks",
+      "stores": [
+        {
+          "name": "ALDI",
+          "address": "1445 Street Road, Bensalem, PA 19020",
+          "phone": null,
+          "type": "Grocery Store",
+          "latitude": null,
+          "longitude": null,
+          "source": "ALDI Store Locator"
+        }
+      ]
+    },
+    {
+      "county": "Dauphin",
+      "stores": [
+        {
+          "name": "ALDI (Coming Soon)",
+          "address": "2020 EG Drive, Linglestown, PA (Blue Ridge Village)",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Opening: Early Fall 2026",
+          "latitude": null,
+          "longitude": null,
+          "source": "Pocono Record / ABC27 News"
+        },
+        {
+          "name": "ALDI (Coming Soon)",
+          "address": "1350 Gettysburg Pike, Dillsburg, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Opening: Summer 2026",
+          "latitude": null,
+          "longitude": null,
+          "source": "Pocono Record / Harrisburg100"
+        },
+        {
+          "name": "CrossWinds Winery at Hershey",
+          "address": "621 Hershey Road, Hummelstown, PA 17036",
+          "phone": null,
+          "type": "Specialty Store (Winery)",
+          "opening_hours": "Fri–Sun: 12:00 PM – 6:00 PM (Closed Mon–Thu)",
+          "latitude": null,
+          "longitude": null,
+          "source": "WineTourism.com"
+        }
+      ]
+    },
+    {
+      "county": "Dauphin",
+      "stores": [
+        {
+          "name": "Cullari Vineyards",
+          "address": "1251 E. Chocolate Avenue, Hershey, PA 17033",
+          "phone": null,
+          "type": "Specialty Store (Winery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Viator / Tourism Directory"
+        }
+      ]
+    },
+    {
+      "county": "Lackawanna",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "70 Phoenix Street, Duryea, PA 18642",
+          "phone": "(570) 451-0190",
+          "type": "Grocery Store",
+          "opening_hours": "Mon–Sun: 7:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe"
+        }
+      ]
+    },
+    {
+      "county": "Montgomery",
+      "stores": [
+        {
+          "name": "Trader Joe's (Coming Soon)",
+          "address": "125 West Lincoln Highway, Exton, PA",
+          "phone": null,
+          "type": "Specialty Store",
+          "opening_hours": "Coming Soon",
+          "latitude": null,
+          "longitude": null,
+          "source": "Pocono Record / Trader Joe's Announcement"
+        },
+        {
+          "name": "Trader Joe's (Coming Soon)",
+          "address": "550 Lancaster Avenue, Berwyn, PA",
+          "phone": null,
+          "type": "Specialty Store",
+          "opening_hours": "Coming Soon",
+          "latitude": null,
+          "longitude": null,
+          "source": "Pocono Record / Trader Joe's Announcement"
+        },
+        {
+          "name": "Boyd's Cardinal Hollow Winery",
+          "address": "West Point (Lansdale area), PA",
+          "phone": null,
+          "type": "Specialty Store (Winery)",
+          "opening_hours": "Daily: 12:00 PM – 6:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "WineTourism.com"
+        }
+      ]
+    },
+    {
+      "county": "Philadelphia",
+      "stores": [
+        {
+          "name": "Wawa (Corporate Office / Multiple locations)",
+          "address": "Philadelphia area, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MMA Global"
+        }
+      ]
+    },
+    {
+      "county": "York",
+      "stores": [
+        {
+          "name": "Rutter's Store No. 18",
+          "address": "Route 30 & Sherman Street, York, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CStore Decisions (September 2025)"
+        },
+        {
+          "name": "Rutter's Store No. 90",
+          "address": "921 Industrial Park Road, Milton, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CSP Daily News"
+        }
+      ]
+    },
+    {
+      "county": "Adams",
+      "stores": [
+        {
+          "name": "ALDI",
+          "address": "1115 York Road, Straban Township, Gettysburg, PA 17325",
+          "phone": null,
+          "type": "Grocery Store (Discount Supermarket)",
+          "opening_hours": "9:00 AM – 9:00 PM daily (opened May 22, 2025)",
+          "latitude": null,
+          "longitude": null,
+          "source": "York Daily Record / ALDI Announcement [citation:2]"
+        },
+        {
+          "name": "Kennie's Market",
+          "address": "217 West Middle Street, Gettysburg, PA 17325",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "6:30 AM – 9:00 PM daily",
+          "latitude": 39.83,
+          "longitude": -77.2362,
+          "source": "PA 211 [citation:9], Mapcarta [citation:12]"
+        },
+        {
+          "name": "Apple Valley Creamery",
+          "address": "541 Germany Road, East Berlin, PA 17316 (Reading Township)",
+          "phone": null,
+          "type": "Supermarket / Specialty",
+          "opening_hours": null,
+          "latitude": 39.9668,
+          "longitude": -77.0518,
+          "source": "Mapcarta / OpenStreetMap [citation:5]"
+        },
+        {
+          "name": "Costco (Reference – Serving Adams County)",
+          "address": "Nearest location(s) in York, PA or Frederick, MD (serving Adams County residents)",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": "Mon-Fri: 10:00 AM – 8:30 PM, Sat: 9:30 AM – 6:00 PM, Sun: 10:00 AM – 6:00 PM (standard hours)",
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive 2025 Retail Roundup [citation:8]"
+        }
+      ]
+    },
+    {
+      "county": "Adams",
+      "stores": [
+        {
+          "name": "Adams County Winery",
+          "address": "251 Peach Tree Road, Orrtanna, PA 17353",
+          "phone": null,
+          "type": "Specialty Store (Winery)",
+          "opening_hours": "Open 7 days a week (specific hours not specified)",
+          "latitude": null,
+          "longitude": null,
+          "source": "AARP Local, Frederick News-Post, FOX43"
+        },
+        {
+          "name": "Main Street Market",
+          "address": "Glen Rock, PA (exact street address not specified)",
+          "phone": null,
+          "type": "Specialty Store / Farmers Market",
+          "opening_hours": "Sunday Farmers Market during summer months",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe"
+        },
+        {
+          "name": "Mister Ed's Elephant Museum & Candy Emporium",
+          "address": "6019 Chambersburg Rd, Orrtanna, PA 17353",
+          "phone": null,
+          "type": "Specialty Store (Candy / Gifts)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Family Destinations Guide"
+        },
+        {
+          "name": "Myers Meat Market",
+          "address": "Township of Conewago, Adams County, PA (3rd Street)",
+          "phone": null,
+          "type": "Grocery Store / Butcher (Supermarket)",
+          "opening_hours": null,
+          "latitude": 39.80459,
+          "longitude": -77.00601,
+          "source": "Mapcarta"
+        }
+      ]
+    },
+    {
+      "county": "Allegheny",
+      "stores": [
+        {
+          "name": "Giant Eagle Supermarket",
+          "address": "1671 Butler Plank Rd, Glenshaw, PA 15116",
+          "phone": "(412) 492-2730",
+          "type": "Supermarket",
+          "opening_hours": "Open 24 hours daily",
+          "latitude": 40.5376067,
+          "longitude": -79.965169,
+          "source": "OpenDataNY"
+        },
+        {
+          "name": "Community Market - Bloomfield (formerly Shur-Save IGA)",
+          "address": "4401 Liberty Avenue, Pittsburgh, PA 15224",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Allegheny County WIC Approved Vendors"
+        },
+        {
+          "name": "Giant Eagle Express",
+          "address": "2611 Freeport Road, Pittsburgh, PA 15238",
+          "phone": null,
+          "type": "Convenience Store / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Allegheny County WIC Approved Vendors"
+        },
+        {
+          "name": "Ruthfred Food Market",
+          "address": "3400 South Park Road, Bethel Park, PA 15102",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.322,
+          "longitude": -80.05756,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Harvest Valley Farms",
+          "address": "Gibsonia/Bakerstown area, Allegheny County, PA",
+          "phone": null,
+          "type": "Specialty Store / Farmers Market",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CBS News Pittsburgh"
+        },
+        {
+          "name": "Whole Foods Market",
+          "address": "5700 Penn Ave, Pittsburgh, PA 15206",
+          "phone": null,
+          "type": "Specialty Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        },
+        {
+          "name": "Market Fresh Meats",
+          "address": "5 Crafton Ingram Shopping Center, Crafton, PA 15205",
+          "phone": null,
+          "type": "Grocery Store / Butcher",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "CoGo's 817",
+          "address": "2800 Brownsville Rd, Pittsburgh, PA 15227",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "CoGo's 1322",
+          "address": "510 Station Street, Bridgeville, PA 15017",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "CoGo's 1786",
+          "address": "2003 S Braddock Ave, Swissvale, PA 15218",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "CoGo's Express",
+          "address": "2516 Monroeville Blvd, Monroeville, PA 15146",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "Aldi 53",
+          "address": "5159 Library Rd, Bethel Park, PA 15102",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "Isaly's 7020",
+          "address": "537 E Ohio St, Pittsburgh, PA 15212",
+          "phone": null,
+          "type": "Grocery / Deli",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "L E Corner Store",
+          "address": "601 Lincoln Ave, East Liberty, PA 15206",
+          "phone": null,
+          "type": "Corner Store / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "RITE AID 0272",
+          "address": "209 Atwood St, Pittsburgh, PA 15213",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "RITE AID 4682",
+          "address": "100 William Marks Way, Munhall, PA 15120",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "Dollar General (Multiple locations)",
+          "address": "Various locations throughout Allegheny County",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List"
+        },
+        {
+          "name": "Walmart (Multiple locations)",
+          "address": "Various locations throughout Allegheny County",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch Market Share Analysis"
+        },
+        {
+          "name": "Target (Multiple locations)",
+          "address": "Various locations throughout Allegheny County",
+          "phone": null,
+          "type": "Big-Box Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch Market Share Analysis"
+        },
+        {
+          "name": "Shop 'n Save (Multiple locations)",
+          "address": "Various locations throughout Allegheny County",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch Market Share Analysis"
+        },
+        {
+          "name": "Ruthfred Food Market",
+          "address": "South Park Road, Bethel Park, PA 15102",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.322,
+          "longitude": -80.05756,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Bakery (unidentified)",
+          "address": "6520 Wilkins Ave, Pittsburgh, PA 15217",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        },
+        {
+          "name": "Bakery (unidentified)",
+          "address": "317 S Craig St, Pittsburgh, PA 15213",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        }
+      ],
+      "market_share_notes": {
+        "source": "Patch.com, based on Washington Post analysis of OpenStreetMap data",
+        "breakdown": {
+          "Giant Eagle": "24% market share",
+          "Aldi": "14% market share",
+          "Walmart": "8% market share",
+          "Shop 'n Save": "7% market share",
+          "Target": "7% market share"
+        }
+      }
+    },
+    {
+      "county": "Allegheny",
+      "stores": [
+        {
+          "name": "CCM Foods LLC",
+          "address": "4548 Broadway Blvd, Monroeville, PA 15146",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Naicslist – NAICS 445110, 56 employees"
+        },
+        {
+          "name": "D'agostino",
+          "address": "Pittsburgh, PA 15122 (Allegheny County)",
+          "phone": "(412) 462-1420",
+          "type": "Grocery Store / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Hub Biz"
+        },
+        {
+          "name": "Unidentified Bakery",
+          "address": "6520 Wilkins Ave, Pittsburgh, PA 15217",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com – Highly rated bakery"
+        },
+        {
+          "name": "Unidentified Bakery",
+          "address": "317 S Craig St, Pittsburgh, PA 15213",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com – Highly rated bakery"
+        }
+      ],
+      "note": "A complete dataset for Allegheny County exists through the Western Pennsylvania Regional Data Center (WPRDC) containing location information for ALL supermarkets and convenience stores in the county, using Allegheny County Fee and Permit Data. This can be accessed via data.wprdc.org. The addendum above adds businesses found through other sources that are not in the earlier sample."
+    },
+    {
+      "county": "Beaver",
+      "stores": [
+        {
+          "name": "Beaver Supermarket",
+          "address": "648 3rd Street, Beaver, PA 15009",
+          "phone": null,
+          "type": "Supermarket (Independent)",
+          "opening_hours": null,
+          "latitude": 40.69539,
+          "longitude": -80.3054,
+          "source": "Mapcarta, Beaver County Times"
+        },
+        {
+          "name": "Kuhn's",
+          "address": "2284 Broadhead Road, Aliquippa, PA 15001",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "6:00 AM – 11:00 PM daily",
+          "latitude": 40.5868,
+          "longitude": -80.2564,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Giant Eagle Supermarket",
+          "address": "Rochester Town, Beaver County, PA (specific address not specified)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "7:00 AM – 10:00 PM daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        },
+        {
+          "name": "Nichol's Market",
+          "address": "1011 Bechtel St, Monaca, PA 15061",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Guy's Market on 68",
+          "address": "838 PA-68, New Brighton, PA 15066",
+          "phone": "(724) 847-4897",
+          "type": "Convenience Store / Grocery",
+          "opening_hours": "Mon-Fri: 6:00 AM – 10:00 PM, Sat: 7:00 AM – 10:00 PM, Sun: 8:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe"
+        },
+        {
+          "name": "Health Hut Stores",
+          "address": "Beaver and Chippewa, PA (multiple locations)",
+          "phone": null,
+          "type": "Specialty Store (Natural/Organic Foods)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Health Hut Official"
+        },
+        {
+          "name": "The Market on Bridge Street",
+          "address": "228 Bridge St, Beaver, PA 15009",
+          "phone": null,
+          "type": "Specialty Store (Deli / Gourmet Foods)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Zmenu"
+        },
+        {
+          "name": "Kretchmar's Bakery",
+          "address": "664 3rd St, Beaver, PA 15009",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Mercer Mini Mart",
+          "address": "807 Mercer Rd, Beaver Falls, PA 15010",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Al's Corner Deli",
+          "address": "7412 Big Beaver Boulevard, Koppel, PA",
+          "phone": null,
+          "type": "Convenience Store / Deli",
+          "opening_hours": null,
+          "latitude": 40.83393,
+          "longitude": -80.32721,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "100 Chippewa Town Center, Beaver Falls, PA 15010",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "1500 Economy Way, Baden, PA 15005",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        },
+        {
+          "name": "Dollar General",
+          "address": "110 Pleasant Dr, Aliquippa, PA 15001",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree.com"
+        }
+      ]
+    },
+    {
+      "county": "Bedford",
+      "stores": [
+        {
+          "name": "Giant (Former Saxton Market)",
+          "address": "509 Main St, Saxton, PA 16678",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "7:00 AM – 9:00 PM daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Progressive Grocer, WTAJ – Opened May 1, 2026 [citation:1][citation:6]"
+        },
+        {
+          "name": "Giant (Former Everett Foodliner)",
+          "address": "250 West Main St, Everett, PA 15537",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Opened May 15, 2026",
+          "latitude": null,
+          "longitude": null,
+          "source": "Progressive Grocer, WTAJ – Opening May 15, 2026 [citation:1][citation:6]"
+        },
+        {
+          "name": "Weis Market 140",
+          "address": "16 Bedford Sq, Everett, PA 15537",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Bedford Giant Eagle #1602",
+          "address": "510 E Pitt St, Bedford, PA 15522",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Walmart Supercenter 1684",
+          "address": "72 Bedford Sq, Everett, PA 15537",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Fisher's Country Store",
+          "address": "111 Hoagland Rd, Bedford, PA 15522",
+          "phone": null,
+          "type": "Country Store / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Shawnee Country Market",
+          "address": "PO Box 107, Schellsburg, PA 15559",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Linda's Little General",
+          "address": "6453 Raystown Rd, Hopewell, PA 16650",
+          "phone": null,
+          "type": "Grocery / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Dollar General Store 4731",
+          "address": "3628 Quaker Valley Rd, Alum Bank, PA 15521",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Sheetz 225",
+          "address": "16467 Lincoln Hwy, Breezewood, PA 15533",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours",
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Sheetz 352",
+          "address": "4354 Business 220, Bedford, PA 15522",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours",
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Rutter's",
+          "address": "2 Rutter Drive, Bedford, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Rutter's Announcement – Opened December 2022 [citation:15]"
+        },
+        {
+          "name": "CVS Pharmacy 1682",
+          "address": "644 E Penn St, Bedford, PA 15522",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4]"
+        },
+        {
+          "name": "Rite Aid 1581",
+          "address": "524 N 6th St, Reading, PA 19601",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PA SNAP Retailers List [citation:4] (Note: This may be a duplicate or mis-coded store)"
+        },
+        {
+          "name": "Peppercorn Market",
+          "address": "Bedford, PA (downtown historic district)",
+          "phone": "814-494-4303",
+          "type": "Specialty Store (Food + Gift)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Bedford County Visitors Bureau – Independently owned specialty shop [citation:3][citation:8]"
+        },
+        {
+          "name": "HeBrews Coffee Company",
+          "address": "Bedford, PA",
+          "phone": "814-623-8600",
+          "type": "Specialty Store (Coffeehouse)",
+          "opening_hours": "Mon-Fri 7am-5pm, Sat 8am-5pm, Sun 10am-3pm",
+          "latitude": null,
+          "longitude": null,
+          "source": "Bedford County Visitors Bureau [citation:3]"
+        },
+        {
+          "name": "Dunkin'",
+          "address": "Bedford County, PA",
+          "phone": "814-729-7004",
+          "type": "Specialty Store (Coffee/Baked Goods)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Bedford County Visitors Bureau [citation:3]"
+        }
+      ],
+      "notes": {
+        "giant_acquisition": "Giant Co. acquired Everett Foodliner and Saxton Market from the Appleby family in February 2026. Both stores reopened under the Giant banner in May 2026 [citation:1][citation:5][citation:10].",
+        "county_context": "Bedford County is a rural county with limited grocery options. The two new Giant stores mark the first Giant locations in the county [citation:1].",
+        "specialty_stores": "The county has a strong presence of independent country stores and specialty shops, including Fisher's Country Store, Shawnee Country Market, and Peppercorn Market [citation:2][citation:3]."
+      }
+    },
+    {
+      "county": "Berks",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "5370 Allentown Pike, Temple, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Walmart",
+          "address": "1135 Berkshire Blvd, Wyomissing, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "ALDI",
+          "address": "3520 N 5th Street Hwy, Reading, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "ALDI",
+          "address": "4703 Perkiomen Ave, Reading, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "GIANT",
+          "address": "4320 N 5th Street Hwy, Temple, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "GIANT",
+          "address": "4655 Perkiomen Ave, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "GIANT",
+          "address": "600 E Lancaster Ave, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "GIANT",
+          "address": "2104 Van Reed Rd, West Lawn, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "GIANT",
+          "address": "2641 Shillington Rd, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "2020 N 13th St, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "1112 W Wyomissing Blvd, West Lawn, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Redner's Warehouse Markets",
+          "address": "3205 N 5th Street Hwy, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Redner's Fresh Markets",
+          "address": "1149 Berkshire Blvd, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Redner's Warehouse Markets",
+          "address": "11 Douglassville Shopping Center, Douglassville, PA",
+          "phone": null,
+          "type": "Warehouse Store / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "CTown Supermarkets",
+          "address": "600 Greenwich St, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Bravo Supermarkets",
+          "address": "228 Penn St, Reading, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Save A Lot",
+          "address": "810 Oley St, Reading, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "BB's Grocery Outlet",
+          "address": "150 Morview Blvd, Morgantown, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect 2025"
+        },
+        {
+          "name": "Cilantro Food Market Restaurant",
+          "address": "660 Schuylkill Ave, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store (Hispanic)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.2/5, 5 reviews"
+        },
+        {
+          "name": "Mary Grocery",
+          "address": "128 W Greenwich St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.6/5, 5 reviews"
+        },
+        {
+          "name": "V & P Grocery Restaurant",
+          "address": "521 Chestnut St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store (Hispanic)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.8/5, 5 reviews"
+        },
+        {
+          "name": "Dominicanos Grocery and Restaurant",
+          "address": "522 N 9th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store (Hispanic)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 3 reviews"
+        },
+        {
+          "name": "El Latino Supermarket II",
+          "address": "1231 Greenwich St, Reading, PA",
+          "phone": null,
+          "type": "Supermarket (Hispanic)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 1 review"
+        },
+        {
+          "name": "Pike mini market",
+          "address": "1400 N 10th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 3 reviews"
+        },
+        {
+          "name": "Valdez Grocery Store",
+          "address": "139 S 6th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.0/5, 4 reviews"
+        },
+        {
+          "name": "R&J Supermarket Inc.",
+          "address": "859 Penn St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect"
+        },
+        {
+          "name": "Glenside Grocery",
+          "address": "1230 Schuylkill Ave, Reading, PA 19601",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Tung Cheng",
+          "address": "1127 Chestnut St, Reading, PA 19602",
+          "phone": null,
+          "type": "Grocery Store (Asian)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Rutter's",
+          "address": "100 Grand Street, Hamburg, PA 19526",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily",
+          "latitude": 40.54858,
+          "longitude": -75.98711,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Rutter's",
+          "address": "5515 Pottsville Pike, Leesport, PA 19533",
+          "phone": "(484) 671-2780",
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily",
+          "latitude": 40.4549,
+          "longitude": -75.9734,
+          "source": "Nextdoor"
+        },
+        {
+          "name": "Sheetz",
+          "address": "Leesport, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily (listed as open until 9PM but known as 24/7 chain)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Nextdoor"
+        },
+        {
+          "name": "Bethel Food Shop",
+          "address": "8558 Lancaster Avenue, Bethel, PA 19507",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 40.47506,
+          "longitude": -76.29473,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Dietrich’s Meats & Country Store",
+          "address": "660 Old US 22, Krumsville, PA 19534",
+          "phone": null,
+          "type": "Specialty Store (Meat / Country Store)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Ever After in the Woods – Decades-old smokehouse, real wood smoked bologna"
+        },
+        {
+          "name": "Wanamaker’s General Store",
+          "address": "8888 Kings Hwy, Kempton, PA 19529",
+          "phone": null,
+          "type": "Specialty Store (General Store / Deli)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Family Destinations Guide – Famous for chicken salad"
+        },
+        {
+          "name": "Fisher’s Produce Stand",
+          "address": "Oley, PA 19547",
+          "phone": null,
+          "type": "Specialty Store (Farmers Market)",
+          "opening_hours": "Open seasonally, closes November 1 - Mother's Day",
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – Known for Sugar & Cream corn, Oley Baker Bread, Shoefly Pie"
+        },
+        {
+          "name": "Plum Creek Farm Market & Creamery",
+          "address": "5035 Bernville Rd, Bernville, PA",
+          "phone": null,
+          "type": "Specialty Store (Farmers Market)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.7/5, 1,989 reviews"
+        },
+        {
+          "name": "Russo Gourmet Foods And Market",
+          "address": "1150 Bern Rd, Wyomissing, PA",
+          "phone": null,
+          "type": "Specialty Store (Italian Grocery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.7/5, 995 reviews"
+        },
+        {
+          "name": "Good Deal Food Mart",
+          "address": "160 N 8th St, Reading, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 4.5/5, 4 reviews"
+        },
+        {
+          "name": "All Right Stop N Shop",
+          "address": "1500 N 13th St, Reading, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 3 reviews"
+        },
+        {
+          "name": "New Holland Food Mart",
+          "address": "1660 New Holland Rd, Reading, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 3.4/5, 5 reviews"
+        },
+        {
+          "name": "Creekside Market",
+          "address": "2080 Tulpehocken Rd, Reading, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 3.3/5, 3 reviews"
+        },
+        {
+          "name": "CABA GROCERY STORE LLC",
+          "address": "1101 N 9th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 1 review"
+        },
+        {
+          "name": "Mena Cibao Deli & Grocery",
+          "address": "256 S 10th St, Reading, PA",
+          "phone": null,
+          "type": "Deli / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect – 5.0/5, 2 reviews"
+        },
+        {
+          "name": "Olivares Grocery",
+          "address": "301 N Front St, Reading, PA 19601",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest – Ethnic-owned business"
+        },
+        {
+          "name": "Cooking Simple with Kerry",
+          "address": "1624 Fayette Ave, Reading, PA",
+          "phone": null,
+          "type": "Gourmet Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect"
+        },
+        {
+          "name": "Sabor Dominicano Deli And Grocery #2",
+          "address": "1101 Spruce St, Reading, PA",
+          "phone": null,
+          "type": "Deli / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect"
+        }
+      ],
+      "notes": {
+        "county_context": "Berks County is one of the larger Pennsylvania counties with a dense concentration of grocery options, particularly in the Reading metro area.",
+        "independent_stores": "Reading has a particularly high density of independent bodegas and corner stores serving diverse communities.",
+        "specialty_stores": "Notable specialty stores include: Dietrich’s Meats, Wanamaker’s General Store, Russo Gourmet Foods, and Fisher’s Produce Stand."
+      }
+    },
+    {
+      "county": "Blair",
+      "stores": [
+        {
+          "name": "Bellwood Hometown Market",
+          "address": "Main Street, Bellwood, PA 16617",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.59572,
+          "longitude": -78.33648,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket [citation:1]"
+        },
+        {
+          "name": "Bressler's Food Mart & Sports",
+          "address": "Tyrone, PA 16686",
+          "phone": null,
+          "type": "Supermarket (Marketplace)",
+          "opening_hours": null,
+          "latitude": 40.67816,
+          "longitude": -78.24492,
+          "source": "Mapcarta – OpenStreetMap amenity=marketplace [citation:12]"
+        },
+        {
+          "name": "Save-A-Lot",
+          "address": "Tyrone, PA 16686",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – Located near Bressler's Food Mart [citation:12]"
+        },
+        {
+          "name": "Sheetz",
+          "address": "Tyrone, PA 16686",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – Located near Bressler's Food Mart [citation:12]"
+        },
+        {
+          "name": "Rite Aid",
+          "address": "Tyrone, PA 16686",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – Located near Bressler's Food Mart [citation:12]"
+        },
+        {
+          "name": "Dollar General (DG Market)",
+          "address": "E. Pleasant Valley Boulevard, Tyrone, PA 16686",
+          "phone": null,
+          "type": "Discount Retail / Grocery (DG Market with fresh food)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "NewsBreak – Newly opened DG Market in Tyrone with expanded fresh food [citation:4]"
+        },
+        {
+          "name": "Rutter's",
+          "address": "432 Sabbath Rest Road, Blair County, PA 16686",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily (opened March 5, 2024)",
+          "latitude": null,
+          "longitude": null,
+          "source": "WTAJ – Rutter's latest location in Blair County [citation:10]"
+        },
+        {
+          "name": "WalMart",
+          "address": "Blair County, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CliffsNotes – Listed as one of the major supermarkets in the county [citation:9]"
+        },
+        {
+          "name": "Giant Foods",
+          "address": "Blair County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CliffsNotes – Listed as one of the major supermarkets in the county [citation:9]"
+        },
+        {
+          "name": "Aldi",
+          "address": "Blair County, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CliffsNotes – Listed as one of the major supermarkets in the county [citation:9]"
+        },
+        {
+          "name": "Sam's Club",
+          "address": "Blair County, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "CliffsNotes – Listed as one of the major supermarkets in the county [citation:9]"
+        },
+        {
+          "name": "Martin's",
+          "address": "Blair County, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Yandex Maps – Confirmed grocery store in Blair County [citation:5]"
+        },
+        {
+          "name": "Henry Schmitt Grocery Store",
+          "address": "1224 Second Avenue, Altoona, PA 16601",
+          "phone": null,
+          "type": "Grocery Store (Historic – I & K Grocery)",
+          "opening_hours": "Historic building, currently operating as I & K Grocery",
+          "latitude": null,
+          "longitude": null,
+          "source": "Library of Congress – Historic American Buildings Survey HABS PA-5824 [citation:8]"
+        }
+      ],
+      "notes": {
+        "county_context": "Blair County is a central Pennsylvania county with Altoona as its largest city.",
+        "recent_openings": "Rutter's opened a new location in Blair County on March 5, 2024. A new Dollar General (DG Market) has also opened in Tyrone.",
+        "major_employer": "UPMC Altoona, a Trauma 1 hospital, is the county's largest employer.",
+        "independent_stores": "Bellwood Hometown Market and Bressler's Food Mart are independently operated supermarkets with confirmed coordinates."
+      }
+    },
+    {
+      "county": "Bradford",
+      "stores": [
+        {
+          "name": "Shedden's Wholesale",
+          "address": "36755 PA-14, Gillet, PA 16925",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon–Fri: 9:00 AM – 5:00 PM",
+          "latitude": 41.99539,
+          "longitude": -76.7759,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket, way 680581489"
+        },
+        {
+          "name": "Red Barn Farm Market",
+          "address": "Route 220, New Albany, PA 18833",
+          "phone": "(570) 567-4455",
+          "type": "Specialty Store (Farmers Market)",
+          "opening_hours": "Fri–Sun: 10:00 AM – 7:00 PM",
+          "latitude": 41.58,
+          "longitude": -76.43,
+          "source": "LocalHarvest.org – Certified by Lancaster Farm Fresh, between Dushore and New Albany"
+        },
+        {
+          "name": "Jones General Store",
+          "address": "5968 Jackson Valley Road, Warren Center, PA 18851",
+          "phone": "(570) 395-0900",
+          "type": "Country Store / Grocery",
+          "opening_hours": "Mon–Sat: 6:00 AM – 9:00 PM, Sun: 7:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Warren Township Business Directory – Known for subs, fuel, and propane"
+        },
+        {
+          "name": "Save A Lot",
+          "address": "75 Forman St Unit A, Bradford, PA 16701",
+          "phone": "(814) 362-4418",
+          "type": "Discount Grocery",
+          "opening_hours": "Mon–Sun: 8:00 AM – 8:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Bradford, PA location (McKean County border, serves Bradford County)"
+        },
+        {
+          "name": "Dollar General",
+          "address": "1034 E Main St, Bradford, PA 16701",
+          "phone": "(814) 363-3552",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": "Mon–Thu: 8:00 AM – 9:00 PM, Fri: 8:00 AM – 11:00 PM, Sat–Sun: 8:00 AM – 9:00 PM",
+          "latitude": 41.98047,
+          "longitude": -78.61678,
+          "source": "OpenGovNY – Grocery/Home Goods Store"
+        },
+        {
+          "name": "Pennmart",
+          "address": "Wyalusing Township, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 41.66011,
+          "longitude": -76.25006,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, node 1460658928"
+        },
+        {
+          "name": "Wyalusing Dandy MiniMart",
+          "address": "223 State Street, Wyalusing, PA 18853",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "24 hours daily",
+          "latitude": 41.6669,
+          "longitude": -76.26548,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, node 1427595819"
+        },
+        {
+          "name": "Camptown Dandy MiniMart",
+          "address": "Camptown, PA (Wyalusing Township)",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 41.73025,
+          "longitude": -76.23461,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, node 1427531927"
+        },
+        {
+          "name": "Dandy MiniMart (Athens)",
+          "address": "Athens, PA (near Stockyards Flea and Farmers Market)",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – Located near Stockyards Flea and Farmers Market"
+        },
+        {
+          "name": "Stockyards Flea and Farmers Market",
+          "address": "Athens, PA",
+          "phone": null,
+          "type": "Specialty Store (Farmers Market/Flea Market)",
+          "opening_hours": null,
+          "latitude": 41.93924,
+          "longitude": -76.52294,
+          "source": "Mapcarta – OpenStreetMap landuse=retail, way 591620878"
+        },
+        {
+          "name": "Redner's Markets",
+          "address": "Bradford County, PA (likely in larger towns)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch analysis – Redner's has 4% market share in PA"
+        },
+        {
+          "name": "IGA",
+          "address": "Bradford County, PA (likely in larger towns)",
+          "phone": null,
+          "type": "Supermarket (Independent Grocers Association)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive analysis – IGA stores in central PA"
+        }
+      ],
+      "notes": {
+        "county_context": "Bradford County is a rural county in north central Pennsylvania, bordering New York State.",
+        "bradford_warning": "Some listings for 'Bradford' may refer to McKean County (Bradford, PA) rather than Bradford County, though these stores likely serve the region.",
+        "retail_vacancies": "Bradford County has experienced retail vacancies, with a former Walmart Supercenter in Wysox being converted to a storage facility."
+      }
+    },
+    {
+      "county": "Bucks",
+      "stores": [
+        {
+          "name": "GIANT",
+          "address": "176 W St Rd, Feasterville-Trevose, PA 19053",
+          "phone": "(215) 396-3393",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 6:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Feasterville-Trevose location [citation:1]"
+        },
+        {
+          "name": "ALDI",
+          "address": "2339 East Lincoln Highway, Langhorne, PA 19047",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 8:30 AM – 8:00 PM",
+          "latitude": 40.17767,
+          "longitude": -74.87706,
+          "source": "Mapcarta – OpenStreetMap coordinates [citation:2]"
+        },
+        {
+          "name": "County Farms",
+          "address": "Neshaminy Falls area, Lower Southampton Township, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 40.15302,
+          "longitude": -74.96548,
+          "source": "Mapcarta – OpenStreetMap shop=convenience [citation:3]"
+        },
+        {
+          "name": "Clusters Handcrafted Popcorn (Newtown)",
+          "address": "The Village at Newtown, Newtown, PA 18940",
+          "phone": null,
+          "type": "Specialty Store (Snacks)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch.com – Upcoming specialty popcorn shop [citation:4]"
+        },
+        {
+          "name": "Clusters Handcrafted Popcorn (New Hope)",
+          "address": "New Hope, PA",
+          "phone": null,
+          "type": "Specialty Store (Snacks)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch.com – Existing location in Bucks County [citation:4]"
+        },
+        {
+          "name": "Clusters Handcrafted Popcorn (Lahaska/Peddler's Village)",
+          "address": "Peddler's Village, Lahaska, PA",
+          "phone": null,
+          "type": "Specialty Store (Snacks)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch.com – Existing location in Bucks County [citation:4]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Bensalem, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Chalfont, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Doylestown, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Feasterville, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Jamison, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Levittown, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Newtown, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Fresh Market",
+          "address": "Warrington, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Family Market",
+          "address": "Dublin, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Family Market",
+          "address": "New Hope, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Family Market",
+          "address": "Quakertown, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Genuardi's Family Market",
+          "address": "Warrington, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Pathmark",
+          "address": "Bensalem, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Pathmark",
+          "address": "Warminster, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Publix Super Market",
+          "address": "Southampton, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Wegmans",
+          "address": "Warrington, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Wegmans",
+          "address": "Yardley, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Miraheze – Supermarkets in Bucks County [citation:5]"
+        },
+        {
+          "name": "Whole Foods Market",
+          "address": "1745 South Easton Road, Doylestown, PA 18901",
+          "phone": null,
+          "type": "Specialty Grocery (Organic)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Grocery Insight Magazine – Opened March 2025 [citation:6]"
+        },
+        {
+          "name": "Sparta Convenience Store",
+          "address": "22 North Main Street, Doylestown, PA 18901",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "Mon-Sun: 7:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "BUCKSCO.Today – New downtown location [citation:7]"
+        },
+        {
+          "name": "Newtown Farmer's Market",
+          "address": "2150 S Eagle Rd, Newtown, PA 18940",
+          "phone": "(215) 860-8821",
+          "type": "Farmers Market",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Cybo – Newtown farmers market [citation:8]"
+        },
+        {
+          "name": "Milk House Farm Market",
+          "address": "1118 Slack Rd, Newtown, PA 18940",
+          "phone": "(215) 852-4305",
+          "type": "Farmers Market",
+          "opening_hours": "Open Now (verified)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Cybo – Newtown farm market [citation:8]"
+        },
+        {
+          "name": "Garden Farm Market",
+          "address": "1 E Trenton Ave, Morrisville, PA 19067",
+          "phone": "(215) 428-3664",
+          "type": "Grocery Store / Farmers Market",
+          "opening_hours": "Open Now (verified)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Cybo – Morrisville grocery [citation:8]"
+        },
+        {
+          "name": "Simply Fresh by McCaffrey's",
+          "address": "200 West State Street, Doylestown, PA 18901",
+          "phone": "(215) 348-1000",
+          "type": "Specialty Grocery",
+          "opening_hours": "Mon-Sun: 7:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree, FoodBevg – McCaffrey's specialty location [citation:9][citation:13]"
+        },
+        {
+          "name": "McCaffrey's Food Markets",
+          "address": "Center Square Plaza, 1301 Skippack Pike, Blue Bell, PA 19422",
+          "phone": "(215) 437-3200",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "FoodBevg – McCaffrey's locations [citation:13]"
+        },
+        {
+          "name": "McCaffrey's Food Markets",
+          "address": "Edgewood Village, 635 Heacock Road, Yardley, PA 19067",
+          "phone": "(215) 493-9616",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "FoodBevg – McCaffrey's locations [citation:13]"
+        },
+        {
+          "name": "McCaffrey's Food Markets",
+          "address": "The Villages at Newtown, 2890 South Eagle Rd, Newtown, PA 18940",
+          "phone": "(215) 579-1310",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "FoodBevg – McCaffrey's locations [citation:13]"
+        },
+        {
+          "name": "Bucks County Peanut Butter Shoppe",
+          "address": "Peddler's Village, Lahaska, PA",
+          "phone": null,
+          "type": "Specialty Store (Peanut Butter)",
+          "opening_hours": "Mon-Thu: 10:00 AM – 6:00 PM, Fri-Sat: 10:00 AM – 8:00 PM, Sun: 11:00 AM – 6:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch.com – New store opening June 2026 [citation:12]"
+        }
+      ],
+      "notes": {
+        "county_context": "Bucks County is a densely populated suburban county just north of Philadelphia, with strong regional-chain and specialty-store representation.",
+        "new_openings": "A new Whole Foods Market opened in Doylestown in March 2025. A new Sparta convenience store opened in downtown Doylestown in 2025. A new Clusters Handcrafted Popcorn shop is coming to The Village at Newtown."
+      }
+    },
+    {
+      "county": "Butler",
+      "stores": [
+        {
+          "name": "Brose's Superette",
+          "address": "100 E Rockenstein Ave, Butler, PA 16001",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest – Established in 1947, family-owned grocery store in Butler"
+        },
+        {
+          "name": "Cooper's Store",
+          "address": "Butler County, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 40.975,
+          "longitude": -80.13822,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, way 71178432"
+        },
+        {
+          "name": "Frankferd Farms Foods",
+          "address": "Clinton Township, Butler County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.71962,
+          "longitude": -79.85194,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket, way 468508160"
+        },
+        {
+          "name": "Gordon's Mini Mart",
+          "address": "Cranberry Township, Butler County, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 40.69845,
+          "longitude": -80.1208,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, node 2444404928"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Butler, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Nextdoor – Community-recommended grocery store in Butler"
+        },
+        {
+          "name": "Giant Eagle Supermarket",
+          "address": "700 Moraine Pointe Plz, Butler, PA 16001",
+          "phone": "+1-724-287-5001",
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.874978,
+          "longitude": -79.949791,
+          "source": "Nextdoor – Supermarket with confirmed coordinates"
+        },
+        {
+          "name": "Burtner's North Pike Produce",
+          "address": "Jefferson Township, Butler County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.76772,
+          "longitude": -79.78686,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket, way 404217756"
+        },
+        {
+          "name": "Planet Mart Food Stores",
+          "address": "642 Pittsburgh Rd, Butler, PA 16002",
+          "phone": "(724) 586-9784",
+          "type": "Convenience Store / Grocery",
+          "opening_hours": "Mon-Fri: 6:00 AM – 7:00 PM, Sat-Sun: 7:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Butler County convenience store chain with multiple locations"
+        },
+        {
+          "name": "Planet Mart Food Stores (Mars)",
+          "address": "Mars, PA",
+          "phone": null,
+          "type": "Convenience Store / Grocery",
+          "opening_hours": "Mon-Fri: 6:00 AM – 7:00 PM, Sat-Sun: 7:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Additional location in Mars"
+        },
+        {
+          "name": "Planet Mart Food Stores (Cabot)",
+          "address": "Cabot, PA",
+          "phone": null,
+          "type": "Convenience Store / Grocery",
+          "opening_hours": "Mon-Fri: 6:00 AM – 7:00 PM, Sat-Sun: 7:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Additional location in Cabot"
+        },
+        {
+          "name": "Planet Mart Food Stores (Penn Twp)",
+          "address": "Penn Township, Butler County, PA",
+          "phone": null,
+          "type": "Convenience Store / Grocery",
+          "opening_hours": "Mon-Fri: 6:00 AM – 7:00 PM, Sat-Sun: 7:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Additional location in Penn Township"
+        },
+        {
+          "name": "Prospect Corner Store",
+          "address": "Borough of Prospect, Butler County, PA",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": 40.90424,
+          "longitude": -80.04715,
+          "source": "Mapcarta – OpenStreetMap shop=convenience, node 2792016392"
+        }
+      ]
+    },
+    {
+      "county": "Carbon",
+      "stores": [
+        {
+          "name": "Dollar General 3936",
+          "address": "Dollar General, Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 6549",
+          "address": "Dollar General, Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "L A Grocery Store",
+          "address": "L A Grocery Store, Carbon County, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Ken's Beverage",
+          "address": "Ken's Beverage, Carbon County, PA",
+          "phone": null,
+          "type": "Specialty Store (Beverage)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Outdoorsman Beverage",
+          "address": "Outdoorsman Beverage, Carbon County, PA",
+          "phone": null,
+          "type": "Specialty Store (Beverage)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 10230",
+          "address": "Dollar General, Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Patch Market Share Analysis – confirmed presence in Carbon County"
+        },
+        {
+          "name": "Food Market (general)",
+          "address": "Carbon County, PA (conference resource listing)",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "American Educational Research Association – Conference resources"
+        }
+      ],
+      "notes": {
+        "county_context": "Carbon County has sparse grocery coverage with primarily Dollar General and specialty beverage stores. Walmart Supercenter serves the county. Additional stores exist but were not captured in the search results."
+      }
+    },
+    {
+      "county": "Cambria",
+      "stores": [
+        {
+          "name": "Amerigo's Fine Grocery",
+          "address": "512 Chestnut St, Johnstown, PA 15906",
+          "phone": null,
+          "type": "Specialty Store (Italian Market)",
+          "opening_hours": "Wed-Thu: 10:00 AM – 6:00 PM, Sat: 9:00 AM – 3:00 PM (Closed Mon-Tue, Fri, Sun)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online – Italian specialty market in Cambria City"
+        },
+        {
+          "name": "Cresson Mini Market",
+          "address": "Cresson, PA 16630",
+          "phone": null,
+          "type": "Grocery Store / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Centerville Business Directory"
+        },
+        {
+          "name": "Dollar General 4993",
+          "address": "Franklin St, Gallitzin, PA 16641",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 6140",
+          "address": "1000 Main St, Portage, PA 15946",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 7263",
+          "address": "620 Park Ave, Patton, PA 16668",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 7554",
+          "address": "1124 Scalp Ave, Johnstown, PA 15904",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Karns Quality Foods",
+          "address": "1592 Franklin St, Johnstown, PA 15905",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Leyos Market",
+          "address": "503 Railroad Avenue, Patton, PA 16668",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.63826,
+          "longitude": -78.65121,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Rite Aid 4502",
+          "address": "111 Far Hills Ln, Johnstown, PA 15904",
+          "phone": null,
+          "type": "Pharmacy / Convenience",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Stager True Value",
+          "address": "Dulancey Drive, Portage, PA 15946",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.39109,
+          "longitude": -78.66703,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Warfields Market",
+          "address": "459 Magee Avenue, Patton, PA 16668",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.63377,
+          "longitude": -78.64974,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        }
+      ]
+    },
+    {
+      "county": "Cameron",
+      "stores": [
+        {
+          "name": "Barts Big Dollar",
+          "address": "27 E 4th St, Emporium, PA 15834",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Butch's Cash Market",
+          "address": "Cameron County, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Nittany MinitMart (Coming Soon)",
+          "address": "15420 Route 120, Emporium, PA 15834 (formerly GKN Plant 1 site)",
+          "phone": null,
+          "type": "Convenience Store (24/7)",
+          "opening_hours": "24 hours daily (opening TBD – permit process ongoing as of Oct 2024)",
+          "latitude": null,
+          "longitude": null,
+          "source": "WTAJ – New Nittany MinitMart location replacing closed Sheetz"
+        },
+        {
+          "name": "Ollivette's Surefine",
+          "address": "Emporium, PA 15834",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.50962,
+          "longitude": -78.2274,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        }
+      ],
+      "notes": {
+        "county_context": "Cameron County is Pennsylvania's least populated county. Sheetz closed its only Emporium location in August 2024. Nittany MinitMart announced plans to open a new 24/7 location at 15420 Route 120. The Olivett family, who ran the local supermarket for decades, have transitioned to running the Cameron County Farmers Market."
+      }
+    },
+    {
+      "county": "Carbon",
+      "stores": [
+        {
+          "name": "Carbon Plaza Mall – Giant Supermarket",
+          "address": "1241 Blakeslee Boulevard Drive East, Lehighton, PA 18235 (Carbon Plaza Mall)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Grokipedia – Anchor store at Carbon Plaza Mall"
+        },
+        {
+          "name": "Country Junction",
+          "address": "6565 Interchange Rd, Lehighton, PA 18235",
+          "phone": null,
+          "type": "Specialty Store (General Store)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Family Destinations Guide – World's largest general store"
+        },
+        {
+          "name": "Dollar General 3936",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 6549",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Dollar General 10230",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Jim Thorpe Market",
+          "address": "River Street, Jim Thorpe, PA 18229",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.8673,
+          "longitude": -75.73334,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Ken's Beverage",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Specialty Store (Beverage)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "L A Grocery Store",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Outdoorsman Beverage",
+          "address": "Carbon County, PA",
+          "phone": null,
+          "type": "Specialty Store (Beverage)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Helping Americans Find Help – EBT/SNAP retailer"
+        },
+        {
+          "name": "Tresckow Superfood",
+          "address": "Banks Township, Carbon County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.91444,
+          "longitude": -75.96527,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        }
+      ],
+      "notes": {
+        "county_context": "Carbon County has several new and notable stores: the former Country Junction store has been rebranded as the world's largest general store. A new Giant supermarket has been confirmed as an anchor at Carbon Plaza Mall. Jim Thorpe Market and Tresckow Superfood are confirmed with coordinates."
+      }
+    },
+    {
+      "county": "Centre",
+      "stores": [
+        {
+          "name": "Nature's Pantry",
+          "address": "2331 Commercial Boulevard, State College, PA 16801",
+          "phone": null,
+          "email": "naturespantry@gmail.com",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Fri: 10:00 AM – 6:00 PM, Sat: 10:00 AM – 4:00 PM",
+          "latitude": 40.82442,
+          "longitude": -77.8125,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Trader Joe's",
+          "address": "243 Patriot Ln, State College, PA 16803",
+          "phone": null,
+          "type": "Specialty Grocery",
+          "opening_hours": "Mon-Sun: 9:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online – 4.60 rating, SNAP/EBT accepted"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "501 N Centre St, Philipsburg, PA 16866",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree – 8.2/10 rating, known for fried chicken, deli, and produce"
+        }
+      ],
+      "notes": {
+        "county_context": "Centre County is home to Penn State University. Trader Joe's in State College has a unique Penn State mural inside.",
+        "missing_data": "The search results did not provide a complete list of all stores for Centre County. Many supermarkets like Wegmans, Giant, and ALDI are known to operate in the county but were not captured in these results."
+      }
+    },
+    {
+      "county": "Chester",
+      "stores": [
+        {
+          "name": "Crops",
+          "address": "1257 Horseshoe Pike, Downingtown, PA 19335",
+          "phone": "+1 484-593-2665",
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.037739,
+          "longitude": -75.771037,
+          "source": "Nextdoor – Locally owned since 1953, known for fresh produce, bakery, deli, seafood, and on-site butcher"
+        },
+        {
+          "name": "Kimberton Whole Foods",
+          "address": "2140 Kimberton Road, Kimberton, PA 19460",
+          "phone": null,
+          "type": "Specialty Grocery (Organic/Sustainable)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Lighthouse.ai – Independent, family-owned, 8th store opening at Eagleview Town Center (Spring 2026)"
+        },
+        {
+          "name": "Kimberton Whole Foods (Eagleview – Coming Spring 2026)",
+          "address": "Rice Boulevard, Eagleview Town Center, Chester County, PA",
+          "phone": null,
+          "type": "Specialty Grocery (Organic/Sustainable)",
+          "opening_hours": "Spring 2026 (Opening)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Lighthouse.ai – 14,000 sq ft store, largest Chester County location"
+        },
+        {
+          "name": "West Chester Cooperative (Coming Soon)",
+          "address": "West Chester, PA",
+          "phone": null,
+          "type": "Cooperative Grocery",
+          "opening_hours": "Brick-and-mortar in development",
+          "latitude": null,
+          "longitude": null,
+          "source": "Inquirer.com – New brick-and-mortar store for members and the public"
+        },
+        {
+          "name": "Kennett Community Grocer (Coming Spring 2026)",
+          "address": "Kennett Square, PA",
+          "phone": null,
+          "type": "Cooperative Grocery",
+          "opening_hours": "Spring 2026 (Target)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Inquirer.com – Will sell local produce, dairy, meats, eggs, and feature a cafe"
+        }
+      ],
+      "notes": {
+        "county_context": "Chester County has a significant concentration of organic, local, and cooperative grocery stores. Two national chains are also eyeing spots in Phoenixville. The county is known for its 'eat local' culture."
+      }
+    },
+    {
+      "county": "Clarion",
+      "stores": [
+        {
+          "name": "County Line Market",
+          "address": "Pine Hollow Drive, Washington Township, Clarion County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.42853,
+          "longitude": -79.36791,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Leeper Market",
+          "address": "29611 Route 66, Lucinda, PA 16235",
+          "phone": null,
+          "type": "Supermarket (Family-owned)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discover Clarion County – Family-owned grocery store, 30+ years, camp essentials, fresh fruits & vegetables, sub counter"
+        },
+        {
+          "name": "Tom's Riverside",
+          "address": "Borough of Knox, Clarion County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.2298,
+          "longitude": -79.52777,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "Arko's Market",
+          "address": "State Route 68, Sligo, PA 16255 (Clarion County)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.10626,
+          "longitude": -79.48998,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        }
+      ],
+      "notes": {
+        "county_context": "Clarion County is rural with independent family-owned supermarkets. Leeper Market is a local institution with multiple locations across the region.",
+        "county_seat": "Clarion, PA"
+      }
+    },
+    {
+      "county": "Clearfield",
+      "stores": [
+        {
+          "name": "Goodman's Foodliner",
+          "address": "State Street, Borough of Curwensville, Clearfield County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.9755,
+          "longitude": -78.52463,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket, operated by Dorce A Michaels"
+        },
+        {
+          "name": "Mt View Market Place Deli",
+          "address": "111 Rolling Stone Rd, Kylertown, PA 16847",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.99143,
+          "longitude": -78.16847,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "S & S Cash Market",
+          "address": "Borough of New Washington, Clearfield County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.82917,
+          "longitude": -78.71886,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        }
+      ],
+      "notes": {
+        "county_context": "Clearfield County is rural with independent supermarkets. Additional chains like Walmart and Giant are known to operate in the county but were not captured in these search results."
+      }
+    },
+    {
+      "county": "Clinton",
+      "stores": [
+        {
+          "name": "Lingle's Neighborhood Market",
+          "address": "15th Street, 150, Renovo, PA 17764",
+          "phone": "+1 570-923-0343",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 8:00 AM – 9:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "OpenAlfa – Verified supermarket in Renovo borough"
+        },
+        {
+          "name": "Dollar General",
+          "address": "Renovo Road, Renovo, PA 17764",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": "8:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "OpenAlfa – Variety store in Renovo"
+        },
+        {
+          "name": "Lock Haven Farmers' Market",
+          "address": "Lock Haven, PA 17745",
+          "phone": "(570) 748-1576",
+          "email": "mboileau777@gmail.com",
+          "type": "Farmers Market",
+          "opening_hours": "Seasonal (website: www.lockhaven.org)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Farmer's Pal – Organic and sustainable grocers directory"
+        }
+      ],
+      "notes": {
+        "county_context": "Clinton County is rural. Renovo is a small borough with limited grocery options. The Lock Haven Farmers' Market serves the county seat.",
+        "missing_data": "Other supermarkets like Weis Markets, Giant, and Walmart are known to operate in Lock Haven but were not captured in the search results."
+      }
+    },
+    {
+      "county": "Armstrong",
+      "stores": [
+        {
+          "name": "Putneyville Store",
+          "address": "1047 State Rte 1025, New Bethlehem, PA 16242",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Mon: 9:00 AM – 7:00 PM, Wed-Fri: 9:00 AM – 7:00 PM, Sat-Sun: 9:00 AM – 8:00 PM, Tue: Closed",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online"
+        },
+        {
+          "name": "Damaio's Supermarket",
+          "address": "Cowanshannock Township, Armstrong County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.79457,
+          "longitude": -79.28228,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Graff Gourmet Foods",
+          "address": "Borough of Leechburg, Armstrong County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.62702,
+          "longitude": -79.60651,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Dollar General",
+          "address": "Armstrong County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online"
+        },
+        {
+          "name": "Hankey's Riverside",
+          "address": "Armstrong County, PA",
+          "phone": null,
+          "type": "Grocery Store (Closed)",
+          "opening_hours": "Closed (noted in search results)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online"
+        },
+        {
+          "name": "Subway (Putneyville Store vicinity)",
+          "address": "Near Putneyville Store, Armstrong County, PA",
+          "phone": null,
+          "type": "Fast Food / Deli",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta"
+        }
+      ]
+    },
+    {
+      "county": "Columbia",
+      "stores": [
+        {
+          "name": "Boyer's Food Market",
+          "address": "125 E 3rd St, Berwick, PA 18603",
+          "phone": "(570) 759-0759",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 6:00 AM – 11:00 PM",
+          "latitude": 41.0570477,
+          "longitude": -76.2336089,
+          "source": "OpenGovNY, Mapcarta",
+          "rating": 4.3
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "100 Lunger Drive, Bloomsburg, PA 17815",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": "24/7",
+          "latitude": 41.00871,
+          "longitude": -76.48529,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Farmer Moofy's Produce",
+          "address": "991 Central Road, Bloomsburg, PA 17815",
+          "phone": null,
+          "type": "Specialty Store (Farm Shop/Produce)",
+          "opening_hours": null,
+          "latitude": 41.02444,
+          "longitude": -76.42516,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Columbia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Weis Markets operates nearly 200 stores in PA, MD, NJ, NY, and WV"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Columbia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Columbia County"
+        }
+      ],
+      "notes": "Boyer's Food Market is a local supermarket in Berwick with a 4.3 rating. Walmart Supercenter in Bloomsburg operates 24/7."
+    },
+    {
+      "county": "Crawford",
+      "stores": [
+        {
+          "name": "Valesky's",
+          "address": "1044 Water Street, Meadville, PA 16335",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.63548,
+          "longitude": -80.15692,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Countryside Farm Market",
+          "address": "24989 Pennsylvania 99, Cambridge Springs, PA 16403",
+          "phone": "814-398-9222",
+          "type": "Specialty Store (Farm Market / Bulk Foods / Deli / Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Visit Crawford County"
+        },
+        {
+          "name": "Finney's Deli & Bulk Foods",
+          "address": "24999 State Highway 99, Cambridge Springs, PA 16403",
+          "phone": null,
+          "type": "Grocery Store (Deli / Bulk Foods)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Crawford County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Crawford County"
+        }
+      ],
+      "notes": "Countryside Farm Market and Finney's Deli are both located on Pennsylvania 99 in Cambridge Springs. Valesky's in Meadville has confirmed coordinates."
+    },
+    {
+      "county": "Cumberland",
+      "stores": [
+        {
+          "name": "Costco Wholesale",
+          "address": "6719 Carlisle Pike, Silver Spring Township, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": "Opened October 30, 2025",
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Karn's Quality Foods",
+          "address": "1706 Spring Road, Carlisle, PA 17013",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 10:00 PM",
+          "latitude": 40.22537,
+          "longitude": -77.181,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Weis Markets (Newville)",
+          "address": "37 Carlisle Road, Newville, PA 17241",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Opened February 2025 (converted from Saylor's Market)",
+          "latitude": null,
+          "longitude": null,
+          "source": "ABC27 News"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Cumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Cumberland County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Cumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain operating in Cumberland County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Cumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain operating in Cumberland County"
+        },
+        {
+          "name": "Sam's Club",
+          "address": "Cumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Warehouse club chain operating in Cumberland County"
+        },
+        {
+          "name": "Karns Fresh Foods",
+          "address": "Mechanicsburg, PA (serving Cumberland County)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Known for local meat sourcing, thick-cut bacon, and marinated chicken breasts"
+        }
+      ],
+      "notes": "Costco opened October 30, 2025 at 161,163 sq ft with expanded Indian foods section. Weis Markets opened February 2025 in Newville with 10,000 lower-priced items."
+    },
+    {
+      "county": "Dauphin",
+      "stores": [
+        {
+          "name": "ALDI",
+          "address": "2020 EG Drive, Blue Ridge Village, Lower Paxton Township, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": "Opened October 16, 2025",
+          "latitude": null,
+          "longitude": null,
+          "source": "ABC27 News"
+        },
+        {
+          "name": "Walmart Supercenter (Remodeled)",
+          "address": "200 Kocher Lane, Elizabethville, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "ABC27 News – Remodeled store with expanded departments, Vision Center, Pharmacy, and online pickup/delivery"
+        },
+        {
+          "name": "Karns Foods",
+          "address": "101 South Union Street, Middletown, PA 17057",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.19416,
+          "longitude": -76.73177,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Red Hill Farm Market",
+          "address": "3967 River Rd, Middletown, PA 17057",
+          "phone": "(717) 572-6132",
+          "type": "Grocery Store / Farmers Market",
+          "opening_hours": "9:00 AM – 7:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Cybo"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Dauphin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Dauphin County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Dauphin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Weis Markets operates nearly 200 stores in PA, MD, NJ, NY, and WV"
+        },
+        {
+          "name": "Costco Wholesale",
+          "address": "Dauphin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National warehouse club chain operating in Dauphin County"
+        }
+      ]
+    },
+    {
+      "county": "Delaware",
+      "stores": [
+        {
+          "name": "Sister Food Market",
+          "address": "815 Morton Ave, Chester, PA 19013",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest"
+        },
+        {
+          "name": "B N Food Market LLC",
+          "address": "1600 W 3rd St, Chester, PA 19013",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Naicslist – Serves Chester and surrounding areas"
+        },
+        {
+          "name": "Twin Grocers",
+          "address": "1001 Upland St, Chester, PA 19013",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Established 1999",
+          "latitude": null,
+          "longitude": null,
+          "source": "MapQuest – Ethnic-owned business"
+        },
+        {
+          "name": "Pagano's Italian Specialties",
+          "address": "1216 Township Line Road, Upper Darby, PA 19026",
+          "phone": null,
+          "type": "Specialty Store (Italian Market)",
+          "opening_hours": null,
+          "latitude": 39.95756,
+          "longitude": -75.31955,
+          "source": "Mapcarta – OpenStreetMap shop=supermarket"
+        },
+        {
+          "name": "ACME Markets",
+          "address": "Delaware County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Delaware County"
+        },
+        {
+          "name": "ShopRite",
+          "address": "Delaware County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Delaware County"
+        }
+      ]
+    },
+    {
+      "county": "Elk",
+      "stores": [
+        {
+          "name": "Elk County Foods",
+          "address": "444 Wilcox Rd, Johnsonburg, PA 15845",
+          "phone": "(814) 965-2450",
+          "type": "Grocery Store",
+          "opening_hours": "8:00 AM – 8:00 PM daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Smaller grocery store with great prices and deli hot bar"
+        },
+        {
+          "name": "Ridgway Elk County Foods",
+          "address": "1 Baker Alley, Ridgway, PA 15853",
+          "phone": "(814) 772-1334",
+          "type": "Grocery Store",
+          "opening_hours": "7:00 AM – 8:00 PM daily",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – Family-owned community hub with craft beer, smoked meats, and deli"
+        },
+        {
+          "name": "Pfaff's Market",
+          "address": "229 Dippold Ave, St. Marys, PA 15857",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": 41.43202,
+          "longitude": -78.55992,
+          "source": "Mapcarta – OpenStreetMap shop=grocery"
+        },
+        {
+          "name": "Elk County Foods (Corporate)",
+          "address": "1 Baker Alley, Ridgway, PA 15853",
+          "phone": null,
+          "type": "Corporate Headquarters / Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Kona Equity – Founded in 2010, family-owned and operated, $5.7M annual revenue, 17 employees"
+        },
+        {
+          "name": "Sugar Mamas Bake Shop",
+          "address": "411 Center St, St. Marys, PA 15857",
+          "phone": null,
+          "type": "Specialty Store (Bakery)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – Located near Pfaff's Market"
+        }
+      ]
+    },
+    {
+      "county": "Erie",
+      "stores": [
+        {
+          "name": "Wegmans",
+          "address": "5028 W Ridge Rd, Erie, PA 16506",
+          "phone": "(814) 835-1900",
+          "type": "Supermarket",
+          "opening_hours": "Open 24 hours daily",
+          "latitude": 42.0700364,
+          "longitude": -80.1907627,
+          "source": "OpenGovNY",
+          "rating": 4.7
+        },
+        {
+          "name": "Giant Eagle Supermarket",
+          "address": "2501 W 12th St, Erie, PA 16505",
+          "phone": "(814) 838-6990",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 6:00 AM – 1:00 AM",
+          "latitude": 42.1010377,
+          "longitude": -80.1344465,
+          "source": "OpenGovNY",
+          "rating": 4.1
+        },
+        {
+          "name": "Erie Food Co-op",
+          "address": "1341 West 26th Street, Erie, PA 16508",
+          "phone": null,
+          "type": "Supermarket (Co-op)",
+          "opening_hours": "Mon-Sat: 8:00 AM – 8:00 PM, Sun: 10:00 AM – 8:00 PM",
+          "latitude": 42.10107,
+          "longitude": -80.10149,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "450 W. 8th St, Erie, PA",
+          "phone": "582-852-1487",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "2307 State St, Erie, PA",
+          "phone": "814-636-1026",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "155 E. 12th St, Erie, PA",
+          "phone": "814-844-6013",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "1530 W. 26th St, Erie, PA",
+          "phone": "814-636-1977",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "856 E. 6th St, Erie, PA",
+          "phone": "814-636-1921",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "2184 W. 12th St, Erie, PA",
+          "phone": "814-844-6909",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "2226 Broad St, Erie, PA",
+          "phone": "814-844-6907",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "148 W. Main St, North East, PA",
+          "phone": "814-347-3064",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Family Dollar",
+          "address": "370 W. Columbus Ave, Corry, PA",
+          "phone": "814-964-6021",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "3708 Liberty St, Erie, PA",
+          "phone": "814-844-6499",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "954 E. 26th St, Erie, PA",
+          "phone": "814-844-6505",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "2211 W. 12th St, Erie, PA",
+          "phone": "814-844-6576",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "2306 E. 38th St, Erie, PA",
+          "phone": "814-844-6577",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "1914 Keystone Drive, Erie, PA",
+          "phone": "814-844-6036",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "4234 W. Ridge Road, Erie, PA",
+          "phone": "814-844-6487",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "3604 Buffalo Road, Erie, PA",
+          "phone": "814-844-6037",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "9149 W. Ridge Road, Girard, PA",
+          "phone": "814-622-6010",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "206 Waterford St, Edinboro, PA",
+          "phone": "814-250-6006",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Dollar General",
+          "address": "32 locations in Erie County",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        },
+        {
+          "name": "Five Below",
+          "address": "2808 Interchange Road, Erie, PA",
+          "phone": "814-866-1302",
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Erie Times-News"
+        }
+      ],
+      "notes": "Erie County has 46 confirmed grocery/discount stores including Wegmans (4.7 rating), Giant Eagle (4.1 rating), Erie Food Co-op, 9 Family Dollar locations, 9 Dollar Tree locations, 32 Dollar General locations, and Five Below."
+    },
+    {
+      "county": "Fayette",
+      "stores": [
+        {
+          "name": "Pechin Shopping Village",
+          "address": "Route 119, Dunbar Township, PA (Laurel Mall area)",
+          "phone": null,
+          "type": "Supermarket / Shopping Center",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Encyclopedia.com – Founded 1947, relocated in 2005, includes grocery store, beer distributor, hardware, take-out counter"
+        },
+        {
+          "name": "Shop 'n Save",
+          "address": "150 Walnut Hill Rd, Uniontown, PA 15401",
+          "phone": "(724) 437-2764",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 7:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Loc8NearMe – 4.8/5 rating"
+        },
+        {
+          "name": "Save-A-Lot",
+          "address": "Uniontown, PA (North Union Township)",
+          "phone": null,
+          "type": "Supermarket (Discount Grocery)",
+          "opening_hours": null,
+          "latitude": 39.9188,
+          "longitude": -79.69361,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Walmart",
+          "address": "355 Wal Mart Drive, Uniontown, PA 15401",
+          "phone": "724-438-3344",
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Fayette Chamber of Commerce"
+        },
+        {
+          "name": "Walmart",
+          "address": "3023 National Pike, Farmington, PA 15437",
+          "phone": "724-329-2022",
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Fayette Chamber of Commerce"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Fayette County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Fayette County"
+        },
+        {
+          "name": "Shop 'n Save (Farmington)",
+          "address": "Farmington, PA 15437",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Fayette Chamber of Commerce"
+        },
+        {
+          "name": "Save-A-Lot (Uniontown)",
+          "address": "Uniontown, PA",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": 39.9188,
+          "longitude": -79.69361,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Pechin Firehouse Restaurant and Catering",
+          "address": "Pechin Shopping Village, Dunbar Township, PA",
+          "phone": null,
+          "type": "Specialty Store (Restaurant/Catering)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Encyclopedia.com"
+        }
+      ]
+    },
+    {
+      "county": "Forest",
+      "stores": [
+        {
+          "name": "Harmony General Store",
+          "address": "Harmony Township, Forest County, PA",
+          "phone": null,
+          "type": "Grocery Store (Neighborhood)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BestPlaces"
+        },
+        {
+          "name": "University Korner",
+          "address": "102 Chestnut Street, Marienville, PA 16239",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": "5:00 AM – 12:00 AM",
+          "latitude": 41.46934,
+          "longitude": -79.12255,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Superfresh",
+          "address": "Forest County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BestPlaces"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Forest County, PA",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BestPlaces"
+        },
+        {
+          "name": "Sheetz",
+          "address": "Forest County, PA (multiple locations)",
+          "phone": null,
+          "type": "Convenience Store (24/7)",
+          "opening_hours": "24/7",
+          "latitude": null,
+          "longitude": null,
+          "source": "BestPlaces"
+        },
+        {
+          "name": "Harmony General Store",
+          "address": "Harmony Township, Forest County, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "BestPlaces"
+        }
+      ]
+    },
+    {
+      "county": "Franklin",
+      "stores": [
+        {
+          "name": "Weis Markets (Chambersburg)",
+          "address": "49 Warm Spring Rd, Chambersburg, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Opened November 2024 (converted from Sunnyway Foods)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Weis Markets Official"
+        },
+        {
+          "name": "Weis Markets (Greencastle)",
+          "address": "212 N. Antrim Way, Greencastle, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Opened November 2024 (converted from Sunnyway Foods)",
+          "latitude": null,
+          "longitude": null,
+          "source": "Weis Markets Official"
+        },
+        {
+          "name": "Martin's Foods",
+          "address": "500 North Antrim Way, Greencastle, PA 17225",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 6:00 AM – 11:00 PM",
+          "latitude": 39.7991,
+          "longitude": -77.72771,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Franklin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Franklin County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Franklin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain operating in Franklin County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Franklin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain operating in Franklin County"
+        },
+        {
+          "name": "Karns Foods",
+          "address": "Franklin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Franklin County"
+        }
+      ]
+    },
+    {
+      "county": "Fulton",
+      "stores": [
+        {
+          "name": "Missy's Market & Grill LLC",
+          "address": "8933 Waterfall Rd, Hustontown, PA 17229",
+          "phone": null,
+          "type": "Grocery Store / Restaurant",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Naicslist"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Fulton County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain operating in Fulton County"
+        }
+      ]
+    },
+    {
+      "county": "Greene",
+      "stores": [
+        {
+          "name": "Shop 'n Save",
+          "address": "560 PA-88, Carmichaels, PA 15320",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sun: 8:00 AM – 10:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online",
+          "rating": 3.9
+        },
+        {
+          "name": "Giant Eagle Supermarket",
+          "address": "Gardners, PA 17324",
+          "phone": "724-592-6068",
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online",
+          "rating": 4.2
+        },
+        {
+          "name": "Dollar General",
+          "address": "Greene County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online"
+        }
+      ]
+    },
+    {
+      "county": "Huntingdon",
+      "stores": [
+        {
+          "name": "Peight's Store",
+          "address": "Shirley Township, Huntingdon County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 40.36191,
+          "longitude": -77.86218,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Aylen's Mini Market",
+          "address": "951 N 5th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Opens 8 AM",
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect",
+          "rating": 4.3
+        },
+        {
+          "name": "Sunny's Sandwich Mart",
+          "address": "1300 N 10th St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Opens 8 AM",
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect",
+          "rating": 5
+        },
+        {
+          "name": "CMC Grocery and Deli LLC",
+          "address": "837 Muhlenberg St, Reading, PA",
+          "phone": null,
+          "type": "Grocery Store / Deli",
+          "opening_hours": "Opens 8 AM",
+          "latitude": null,
+          "longitude": null,
+          "source": "BerksConnect",
+          "rating": 4.5
+        }
+      ],
+      "notes": "Aylen's Mini Market, Sunny's Sandwich Mart, and CMC Grocery and Deli LLC are Reading, PA addresses sourced from BerksConnect (a Berks County directory) — geographically these are Berks County businesses, not Huntingdon County. Reclassified to Berks in the normalized dataset."
+    },
+    {
+      "county": "Indiana",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "3100 Oakland Ave #27, Indiana, PA 15701",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Postcard"
+        },
+        {
+          "name": "Walmart Deli",
+          "address": "3100 Oakland Ave #27, Indiana, PA 15701",
+          "phone": null,
+          "type": "Deli / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Postcard – Located inside Walmart Supercenter"
+        }
+      ]
+    },
+    {
+      "county": "Jefferson",
+      "stores": [
+        {
+          "name": "Mike's Bi-Lo",
+          "address": "32 South 5th Street, Reynoldsville, PA 15851",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sat: 7:00 AM – 8:00 PM",
+          "latitude": 41.09423,
+          "longitude": -78.88967,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Dollar General",
+          "address": "Jefferson County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional discount chain"
+        }
+      ]
+    },
+    {
+      "county": "Juniata",
+      "stores": [
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "9535 Rte 75th S, East Waterford, PA 17021-7364",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "211 6th St, Port Royal, PA 17082-9765",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "316 Market St, Port Royal, PA 17082",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "1849 William Penn Hwy, Mifflintown, PA 17059-7816",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "Milford St, Port Royal, PA 17082",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "312 Market St, Port Royal, PA 17082",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "9189 Rte 75th S, East Waterford, PA 17021-7249",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "5430 Cedar Spgs Rd, Mifflintown, PA 17059-8152",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        },
+        {
+          "name": "Grocery Store (Off-Market)",
+          "address": "2698 William Penn Hwy, Mifflintown, PA 17059-9084",
+          "phone": null,
+          "type": "Grocery / Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Realmo"
+        }
+      ],
+      "notes": "All 9 entries are unnamed \"Off-Market\" commercial real estate records from Realmo, not verified operating businesses — no store name is given for any of them, only a property address. Excluded from the plottable dataset pending verification that these are actually open, named grocery stores rather than vacant/former grocery-zoned buildings."
+    },
+    {
+      "county": "Lackawanna",
+      "stores": [
+        {
+          "name": "Gerrity's Supermarket",
+          "address": "Keyser Oak Shopping Center, Scranton, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree – Anchor store at Keyser Oak Shopping Center"
+        },
+        {
+          "name": "Ace Hardware",
+          "address": "Keyser Oak Shopping Center, Scranton, PA",
+          "phone": null,
+          "type": "Hardware / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree"
+        },
+        {
+          "name": "Ollie's Bargain Outlet",
+          "address": "Keyser Oak Shopping Center, Scranton, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree"
+        },
+        {
+          "name": "Dollar Tree",
+          "address": "Keyser Oak Shopping Center, Scranton, PA",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Wheree"
+        }
+      ]
+    },
+    {
+      "county": "Lancaster",
+      "stores": [
+        {
+          "name": "Strasburg Market Place",
+          "address": "214 Hartman Bridge Rd, Ronks, PA 17572",
+          "phone": null,
+          "type": "Farmers Market / Grocery Store",
+          "opening_hours": "Mon-Sat: 8:00 AM – 8:00 PM, Sun: Closed",
+          "latitude": null,
+          "longitude": null,
+          "source": "Wanderlog"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Lancaster County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Lancaster County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "ALDI",
+          "address": "Lancaster County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Wegmans",
+          "address": "Lancaster County, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Karns Foods",
+          "address": "Lancaster County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Yoder's Country Market",
+          "address": "Lancaster County, PA",
+          "phone": null,
+          "type": "Specialty Store (Family-owned Market)",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        }
+      ]
+    },
+    {
+      "county": "Lawrence",
+      "stores": [
+        {
+          "name": "Joseph's Marketplace",
+          "address": "2716 Mercer Road, New Castle, PA 16105",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": 41.0287,
+          "longitude": -80.33723,
+          "source": "Mapcarta"
+        },
+        {
+          "name": "Tic Toc Food Mart",
+          "address": "Near 2716 Mercer Road, New Castle, PA 16105",
+          "phone": null,
+          "type": "Convenience Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Mapcarta – 580 meters south of Joseph's Marketplace"
+        }
+      ]
+    },
+    {
+      "county": "Lebanon",
+      "stores": [
+        {
+          "name": "Key Food Supermarket",
+          "address": "611 North 12th Street, Lebanon, PA",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sat: 7:00 AM – 10:00 PM, Sun: 8:00 AM – 8:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "ABC27 – Opened February 5, 2026"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Lebanon County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Lebanon County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        },
+        {
+          "name": "ALDI",
+          "address": "Lebanon County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "PennLive"
+        }
+      ]
+    },
+    {
+      "county": "Lehigh",
+      "stores": [
+        {
+          "name": "Valley Fresh Marketplace",
+          "address": "1384 Hanover Ave, Allentown, PA (Allentown Commons shopping center)",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": "Mon-Sat: 7:00 AM – 7:00 PM, Sun: 8:00 AM – 5:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "WFMZ – Opened March 2026"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Lehigh County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Lehigh County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Lehigh County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Lehigh County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Lehigh County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Lehigh County"
+        }
+      ]
+    },
+    {
+      "county": "Luzerne",
+      "stores": [
+        {
+          "name": "Mountain Fresh Supermarket",
+          "address": "2203 PA-118, Hunlock, PA 18621",
+          "phone": "570-477-2988",
+          "type": "Supermarket",
+          "opening_hours": "Mon-Sat: 7:00 AM – 8:00 PM, Sun: 8:00 AM – 6:00 PM",
+          "latitude": null,
+          "longitude": null,
+          "source": "Top-Rated.Online",
+          "rating": 4.3
+        },
+        {
+          "name": "Gerrity's Supermarket",
+          "address": "Luzerne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Luzerne County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Luzerne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Luzerne County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Luzerne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Luzerne County"
+        }
+      ]
+    },
+    {
+      "county": "Lycoming",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Lycoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Feed America"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Lycoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Lycoming County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Lycoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Lycoming County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Lycoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Lycoming County"
+        }
+      ],
+      "notes": "Lycoming County has 91 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "McKean",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "McKean County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving McKean County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "McKean County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving McKean County"
+        },
+        {
+          "name": "Dollar General",
+          "address": "McKean County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional discount chain serving McKean County"
+        }
+      ],
+      "notes": "McKean County has 39 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Mercer",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Mercer County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Mercer County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Mercer County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Mercer County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Mercer County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Mercer County"
+        }
+      ],
+      "notes": "Mercer County has 102 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Mifflin",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Mifflin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Mifflin County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Mifflin County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Mifflin County"
+        }
+      ],
+      "notes": "Mifflin County has 47 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Monroe",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Monroe County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Monroe County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Monroe County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Monroe County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Monroe County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Monroe County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Monroe County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Monroe County"
+        }
+      ],
+      "notes": "Monroe County has 124 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Montour",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Montour County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Montour County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Montour County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Montour County"
+        }
+      ],
+      "notes": "Montour County has 17 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Northampton",
+      "stores": [
+        {
+          "name": "Giant Food Stores",
+          "address": "Northampton County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Northampton County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Northampton County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Northampton County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Northampton County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Northampton County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Northampton County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Northampton County"
+        }
+      ],
+      "notes": "Northampton County has 84 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Northumberland",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Northumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Northumberland County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Northumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Northumberland County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Northumberland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Northumberland County"
+        }
+      ],
+      "notes": "Northumberland County has 91 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Perry",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Perry County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Perry County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Perry County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Perry County"
+        }
+      ],
+      "notes": "Perry County has 14 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Philadelphia",
+      "stores": [
+        {
+          "name": "ShopRite",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Philadelphia County"
+        },
+        {
+          "name": "Acme Markets",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Philadelphia County"
+        },
+        {
+          "name": "Whole Foods Market",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Specialty Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Philadelphia County"
+        },
+        {
+          "name": "Trader Joe's",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Specialty Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Philadelphia County"
+        },
+        {
+          "name": "Walmart",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Philadelphia County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Philadelphia County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Philadelphia County"
+        }
+      ],
+      "notes": "Philadelphia County has 86 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Pike",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Pike County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Pike County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Pike County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Pike County"
+        },
+        {
+          "name": "ShopRite",
+          "address": "Pike County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Pike County"
+        }
+      ],
+      "notes": "Pike County has 85 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Potter",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Potter County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Potter County"
+        },
+        {
+          "name": "Dollar General",
+          "address": "Potter County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional discount chain serving Potter County"
+        }
+      ],
+      "notes": "Potter County has 18 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Schuylkill",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Schuylkill County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Schuylkill County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Schuylkill County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Schuylkill County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Schuylkill County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Schuylkill County"
+        }
+      ],
+      "notes": "Schuylkill County has 91 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Snyder",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Snyder County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Snyder County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Snyder County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Snyder County"
+        }
+      ],
+      "notes": "Snyder County has 39 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Somerset",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Somerset County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Somerset County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Somerset County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Somerset County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Somerset County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Somerset County"
+        }
+      ],
+      "notes": "Somerset County has 67 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Sullivan",
+      "stores": [
+        {
+          "name": "Dollar General",
+          "address": "Sullivan County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Retail / Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional discount chain serving Sullivan County"
+        },
+        {
+          "name": "Independent Grocer",
+          "address": "Sullivan County, PA (multiple locations)",
+          "phone": null,
+          "type": "Grocery Store",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Local independent stores serve the county"
+        }
+      ],
+      "notes": "Sullivan County has 7 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Susquehanna",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Susquehanna County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Susquehanna County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Susquehanna County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Susquehanna County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Susquehanna County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Susquehanna County"
+        }
+      ],
+      "notes": "Susquehanna County has 82 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Tioga",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Tioga County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Tioga County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Tioga County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Tioga County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Tioga County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Tioga County"
+        }
+      ],
+      "notes": "Tioga County has 43 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Union",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Union County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Union County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Union County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Union County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Union County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Union County"
+        }
+      ],
+      "notes": "Union County has 62 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Venango",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Venango County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Venango County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Venango County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Venango County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Venango County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Venango County"
+        }
+      ],
+      "notes": "Venango County has 44 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Warren",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Warren County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Warren County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Warren County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Warren County"
+        },
+        {
+          "name": "Save-A-Lot",
+          "address": "Warren County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Warren County"
+        }
+      ],
+      "notes": "Warren County has 39 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Washington",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Washington County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Washington County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Washington County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Washington County"
+        },
+        {
+          "name": "Shop 'n Save",
+          "address": "Washington County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Washington County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Washington County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Washington County"
+        }
+      ],
+      "notes": "Washington County has 82 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Wayne",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Wayne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Wayne County"
+        },
+        {
+          "name": "Weis Markets",
+          "address": "Wayne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Wayne County"
+        },
+        {
+          "name": "Giant Food Stores",
+          "address": "Wayne County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Wayne County"
+        }
+      ],
+      "notes": "Wayne County has 41 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Westmoreland",
+      "stores": [
+        {
+          "name": "Walmart Supercenter",
+          "address": "Westmoreland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Westmoreland County"
+        },
+        {
+          "name": "Giant Eagle",
+          "address": "Westmoreland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Westmoreland County"
+        },
+        {
+          "name": "Shop 'n Save",
+          "address": "Westmoreland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Westmoreland County"
+        },
+        {
+          "name": "ALDI",
+          "address": "Westmoreland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Discount Grocery",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Discount grocery chain serving Westmoreland County"
+        },
+        {
+          "name": "Sam's Club",
+          "address": "Westmoreland County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Warehouse Club",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Westmoreland County"
+        }
+      ],
+      "notes": "Westmoreland County has 154 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    },
+    {
+      "county": "Wyoming",
+      "stores": [
+        {
+          "name": "Weis Markets",
+          "address": "Wyoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Supermarket",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "Regional chain serving Wyoming County"
+        },
+        {
+          "name": "Walmart Supercenter",
+          "address": "Wyoming County, PA (multiple locations)",
+          "phone": null,
+          "type": "Big-Box Grocery / Supercenter",
+          "opening_hours": null,
+          "latitude": null,
+          "longitude": null,
+          "source": "National chain serving Wyoming County"
+        }
+      ],
+      "notes": "Wyoming County has 19 SNAP retailers confirmed by Feed America data, but the search results only identified chain names with no single addresses — nothing plottable."
+    }
+  ]
+}

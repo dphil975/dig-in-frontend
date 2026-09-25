@@ -1,0 +1,603 @@
+/* ─── DrinkScan ──────────────────────────────────────────────────────────────── */
+.ds-page {
+  min-height: 100vh;
+  background: #F3EADA;
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  color: #33302A;
+  padding-bottom: 60px;
+}
+
+/* ─── Header ────────────────────────────────────────────────────────────────── */
+.ds-header {
+  background: #33302A;
+  padding: 16px 20px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 4px solid #ff6d8b;
+}
+.ds-back-btn {
+  background: none;
+  border: none;
+  color: #F3EADA;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.ds-header-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #F3EADA;
+  letter-spacing: 1px;
+}
+.ds-header-sub {
+  font-size: 10px;
+  color: #9b8ea0;
+  margin-top: 3px;
+  display: block;
+}
+
+/* ─── Body ──────────────────────────────────────────────────────────────────── */
+.ds-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+/* ─── Brand Tabs ─────────────────────────────────────────────────────────────── */
+.ds-brand-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.ds-brand-tab {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 6px 10px;
+  border: 2px solid #33302A;
+  background: #F3EADA;
+  color: #33302A;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 2px 2px 0 #33302A;
+}
+.ds-brand-tab:hover { filter: brightness(0.95); }
+.ds-brand-tab.active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+
+/* ─── Upload Zone ────────────────────────────────────────────────────────────── */
+.ds-upload-card {
+  border: 3px dashed #b5a9c0;
+  background: #fff;
+  border-radius: 2px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ds-upload-card.dragging {
+  border-color: #ff6d8b;
+  background: #fff5f7;
+}
+.ds-upload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #9b8ea0;
+}
+.ds-upload-headline {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 6px;
+}
+.ds-upload-sub {
+  font-size: 10px;
+  color: #9b8ea0;
+  margin-bottom: 16px;
+}
+.ds-upload-input {
+  display: none;
+}
+.ds-upload-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 9px 18px;
+  background: #ff6d8b;
+  color: #fff;
+  border: 2px solid #33302A;
+  box-shadow: 3px 3px 0 #33302A;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.ds-upload-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 #33302A; }
+
+/* ─── Demo Row ───────────────────────────────────────────────────────────────── */
+.ds-demo-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.ds-demo-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 7px 11px;
+  border: 2px solid #33302A;
+  background: #f0e8ff;
+  color: #5a3a8a;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #33302A;
+  text-transform: uppercase;
+}
+.ds-demo-btn:hover { background: #e2d5ff; }
+.ds-demo-btn:active { transform: translate(2px, 2px); box-shadow: none; }
+
+/* ─── Analyzing ─────────────────────────────────────────────────────────────── */
+.ds-analyzing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.ds-spin {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #e8dff5;
+  border-top-color: #ff6d8b;
+  border-radius: 50%;
+  animation: ds-spin 0.8s linear infinite;
+}
+@keyframes ds-spin { to { transform: rotate(360deg); } }
+.ds-analyzing-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #5a3a8a;
+}
+.ds-analyzing-sub {
+  font-size: 10px;
+  color: #9b8ea0;
+}
+
+/* ─── Result Card ────────────────────────────────────────────────────────────── */
+.ds-result {
+  background: #fff;
+  border: 3px solid #33302A;
+  box-shadow: 5px 5px 0 #33302A;
+}
+
+/* Brand Banner */
+.ds-brand-banner {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #33302A;
+}
+.ds-brand-badge {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 3px 8px;
+  border: 2px solid currentColor;
+  text-transform: uppercase;
+}
+.ds-result-name {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+}
+.ds-result-cal {
+  margin-left: auto;
+  font-size: 10px;
+  color: #9b8ea0;
+}
+
+/* Size / Price */
+.ds-size-section {
+  padding: 12px 14px;
+  border-bottom: 2px solid #ede8f5;
+}
+.ds-size-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #9b8ea0;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ds-size-row {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.ds-size-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 6px 10px;
+  border: 2px solid #33302A;
+  background: #F3EADA;
+  color: #33302A;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #33302A;
+  text-align: center;
+  min-width: 68px;
+}
+.ds-size-btn.selected {
+  background: #33302A;
+  color: #F3EADA;
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+.ds-size-price {
+  display: block;
+  font-size: 8px;
+  margin-top: 3px;
+  font-family: 'DotGothic16', monospace;
+  font-size: 9px;
+}
+
+/* Tabs inside result */
+.ds-tabs {
+  display: flex;
+  border-bottom: 2px solid #ede8f5;
+}
+.ds-tab-btn {
+  flex: 1;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 9px 4px;
+  border: none;
+  background: #F3EADA;
+  color: #9b8ea0;
+  cursor: pointer;
+  border-right: 1px solid #ede8f5;
+  text-transform: uppercase;
+  transition: background 0.1s, color 0.1s;
+}
+.ds-tab-btn:last-child { border-right: none; }
+.ds-tab-btn.active {
+  background: #33302A;
+  color: #F3EADA;
+}
+
+/* Tab panels */
+.ds-panel {
+  padding: 16px 14px;
+}
+
+/* ─── Recipe Panel ───────────────────────────────────────────────────────────── */
+.ds-secret-box {
+  background: #33302A;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+.ds-secret-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #ff6d8b;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ds-secret-body {
+  font-size: 10px;
+  color: #e8dff5;
+  line-height: 1.55;
+}
+
+.ds-ingredients-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #5a3a8a;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ds-ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ds-ingredient-chip {
+  font-size: 9px;
+  padding: 3px 9px;
+  background: #f0e8ff;
+  border: 1px solid #b5a9c0;
+  color: #5a3a8a;
+}
+
+.ds-steps-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #5a3a8a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ds-steps-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ds-step {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.ds-step-num {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: #ff6d8b;
+  color: #fff;
+  border: 2px solid #33302A;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ds-step-text {
+  font-size: 10px;
+  line-height: 1.5;
+  padding-top: 4px;
+  color: #33302A;
+}
+
+/* ─── Chemistry Panel ────────────────────────────────────────────────────────── */
+.ds-chem-note {
+  font-size: 10px;
+  color: #5a3a8a;
+  line-height: 1.6;
+  background: #f0e8ff;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border-left: 3px solid #5a3a8a;
+}
+.ds-compounds-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #9b8ea0;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.ds-compound-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.ds-compound {
+  border: 2px solid #ede8f5;
+  padding: 10px 12px;
+}
+.ds-compound-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  gap: 8px;
+}
+.ds-compound-name {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+}
+.ds-compound-amount {
+  font-size: 9px;
+  color: #ff6d8b;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.ds-compound-receptor {
+  font-size: 9px;
+  color: #9b8ea0;
+  margin-bottom: 4px;
+}
+.ds-compound-effect {
+  font-size: 10px;
+  color: #33302A;
+  line-height: 1.45;
+}
+.ds-sensitivity {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 2px 5px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.ds-sens-high   { background: #F3EADA; color: #c0392b; }
+.ds-sens-very   { background: #F3EADA; color: #900; border: 1px solid #c0392b; }
+.ds-sens-extreme{ background: #c0392b; color: #fff; }
+.ds-sens-medium { background: #F3EADA; color: #b35900; }
+.ds-sens-low    { background: #e6f4ee; color: #1a7a45; }
+
+/* ─── Flavor Profile ────────────────────────────────────────────────────────── */
+.ds-flavor-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #9b8ea0;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.ds-flavor-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.ds-flavor-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ds-flavor-axis {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  width: 52px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  color: #5a3a8a;
+}
+.ds-flavor-track {
+  flex: 1;
+  height: 10px;
+  background: #ede8f5;
+  border: 1px solid #b5a9c0;
+  position: relative;
+}
+.ds-flavor-fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  background: #ff6d8b;
+  transition: width 0.5s ease;
+}
+.ds-flavor-val {
+  font-size: 9px;
+  color: #9b8ea0;
+  width: 28px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ─── Timeline Panel ─────────────────────────────────────────────────────────── */
+.ds-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ds-timeline-item {
+  display: flex;
+  gap: 0;
+}
+.ds-timeline-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  flex-shrink: 0;
+}
+.ds-tl-icon {
+  font-size: 18px;
+  line-height: 1;
+  z-index: 1;
+  background: #F3EADA;
+  padding: 2px 0;
+}
+.ds-tl-line {
+  flex: 1;
+  width: 2px;
+  background: #ede8f5;
+  min-height: 20px;
+}
+.ds-timeline-item:last-child .ds-tl-line {
+  background: transparent;
+}
+.ds-timeline-content {
+  padding: 0 0 20px 12px;
+  flex: 1;
+}
+.ds-tl-time {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #ff6d8b;
+  margin-bottom: 4px;
+}
+.ds-tl-event {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+.ds-tl-detail {
+  font-size: 10px;
+  color: #5a3a8a;
+  line-height: 1.55;
+}
+
+/* ─── Taste Notes ───────────────────────────────────────────────────────────── */
+.ds-taste-notes {
+  font-size: 10px;
+  color: #5a3a8a;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f0e8ff, #ffeef5);
+  padding: 12px 14px;
+  border: 2px solid #b5a9c0;
+  margin-bottom: 16px;
+}
+.ds-taste-notes-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #5a3a8a;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  display: block;
+}
+
+/* ─── Empty State ────────────────────────────────────────────────────────────── */
+.ds-empty {
+  text-align: center;
+  padding: 48px 20px;
+  color: #9b8ea0;
+}
+.ds-empty-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 14px;
+}
+.ds-empty-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 8px;
+}
+.ds-empty-sub {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ─── Disclaimer ─────────────────────────────────────────────────────────────── */
+.ds-disclaimer {
+  margin-top: 18px;
+  padding: 8px 12px;
+  background: #ede8f5;
+  border-left: 3px solid #9b8ea0;
+  font-size: 9px;
+  color: #9b8ea0;
+  line-height: 1.5;
+}
+
+/* Cross-link banner → Zero-Proof Bar */
+.ds-zeroproof-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 16px;
+  padding: 13px 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(124, 93, 175, 0.28);
+  background: linear-gradient(135deg, rgba(124, 93, 175, 0.1), rgba(212, 165, 116, 0.12));
+  color: #33302A;
+}
+.ds-zeroproof-emoji { font-size: 24px; flex-shrink: 0; }
+.ds-zeroproof-text { flex: 1; font-size: 12.5px; line-height: 1.4; }
+.ds-zeroproof-text b { display: block; font-size: 14px; margin-bottom: 2px; color: #33302A; }
+.ds-zeroproof-arrow { font-size: 20px; color: #6E8259; flex-shrink: 0; }
+

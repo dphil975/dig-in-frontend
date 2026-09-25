@@ -1,0 +1,132 @@
+/* ── Transformation proof cards — recipe-card display styling ───
+   Same band as the stats. Each card mirrors a recipe reel card:
+   purple gradient header (.rcard-header), dark #221a33 body, gold
+   #D8CAB4 border, pixel labels, gold-highlighted seasonings. */
+.transformations {
+  background: var(--light-bg);
+  padding: 18px 22px 66px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: 'DotGothic16', Arial, sans-serif;
+}
+.tx-inner { max-width: 1040px; margin: 0 auto; }
+
+.tx-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 30px 0 12px;
+}
+.tx-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--text-dark);
+  margin-bottom: 26px;
+}
+.tx-title span { color: var(--primary); }
+
+.tx-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* The card — recipe reel card language */
+.tx-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  background: #221a33;
+  border: 2px solid #D8CAB4;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.42);
+  color: #ece8f7;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(.2,.8,.2,1), box-shadow 0.2s;
+}
+.tx-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55); }
+
+/* Gradient header — same as .rcard-header */
+.tx-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #5d61a8 0%, #7a5fa0 100%);
+}
+.tx-base {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  line-height: 1.5;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.28);
+}
+.tx-emoji { font-size: 22px; flex-shrink: 0; }
+
+/* Body */
+.tx-body { display: flex; flex-direction: column; flex: 1; padding: 16px; }
+.tx-flow { display: flex; align-items: center; gap: 10px; margin-bottom: auto; }
+.tx-step { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+.tx-step-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #D8CAB4;
+}
+.tx-step-name { font-size: 15px; line-height: 1.25; color: #ece8f7; }
+.tx-cuisine { font-size: 11px; color: rgba(236, 232, 247, 0.55); }
+.tx-arrow-mid { font-size: 18px; color: #D8CAB4; flex-shrink: 0; }
+
+/* Seasonings — highlighted gold (the transformation hero) */
+.tx-seasonings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+  padding-right: 38px;   /* clear the corner arrow */
+}
+.tx-seasoning {
+  font-size: 11px;
+  padding: 4px 9px;
+  border-radius: 7px;
+  background: rgba(244, 169, 36, 0.16);
+  border: 1px solid rgba(244, 169, 36, 0.38);
+  color: #f4c87a;
+}
+
+/* Circular arrow — bottom-right, gold like the recipe-card flags */
+.tx-go {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #33302A;
+  background: #6E8259;
+  color: #33302A;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.tx-go:hover { transform: scale(1.12); background: #ffc14d; }
+
+@media (max-width: 900px) {
+  .tx-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .transformations { padding: 14px 16px 48px; }
+  .tx-title { font-size: 15px; }
+  .tx-grid { grid-template-columns: 1fr; }
+}

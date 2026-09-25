@@ -1,0 +1,973 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Omurice",
+        "cuisine": "Japanese",
+        "difficulty": "Medium",
+        "time": 25,
+        "imageUrl": "/assets/dishes/omurice.jpg",
+        "pixelEmoji": "🍳",
+        "pixelArtReference": "omurice_8bit",
+        "ingredients": ["rice", "egg", "chicken", "onion", "ketchup", "butter"],
+        "description": "Japanese omelette rice - a cozy favorite!"
+      },
+      {
+        "id": 2,
+        "name": "Cacio e Pepe",
+        "cuisine": "Italian",
+        "difficulty": "Medium",
+        "time": 15,
+        "imageUrl": "/assets/dishes/cacio-e-pepe.jpg",
+        "pixelEmoji": "🍝",
+        "pixelArtReference": "pasta_8bit",
+        "ingredients": ["pasta", "pecorino", "black pepper", "salt"],
+        "description": "Roman pasta with just 4 ingredients!"
+      },
+      {
+        "id": 3,
+        "name": "Sopa de Fideo",
+        "cuisine": "Mexican",
+        "difficulty": "Easy",
+        "time": 20,
+        "imageUrl": "/assets/dishes/sopa-fideo.jpg",
+        "pixelEmoji": "🍜",
+        "pixelArtReference": "soup_8bit",
+        "ingredients": ["noodles", "tomato", "onion", "garlic", "chicken broth"],
+        "description": "Mexican noodle soup - ultimate comfort food"
+      }
+    ],
+    "smoothie_bowls": [
+        {
+          "id": "berry-blast",
+          "name": "Berry Blast Smoothie Bowl",
+          "page": 27,
+          "ingredients": [
+            "1 cup frozen mixed berries",
+            "1/2 frozen banana",
+            "1/2 cup almond milk",
+            "1 tbsp chia seeds",
+            "1/2 cup baby spinach"
+          ],
+          "toppings": [
+            "1/2 banana, sliced",
+            "6 fresh blackberries",
+            "8 fresh raspberries",
+            "2 tbsp pomegranate seeds"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "pixelArt": "smoothie-bowl"
+        },
+        {
+          "id": "berry-cherry-acai",
+          "name": "Berry Cherry Acai Bowl",
+          "page": 28,
+          "ingredients": [
+            "1/2 cup frozen cherries",
+            "1/2 cup frozen raspberries",
+            "1/2 frozen banana",
+            "1 packet frozen acai puree, thawed",
+            "1/2 cup coconut milk",
+            "1 tbsp coconut oil"
+          ],
+          "toppings": [
+            "1/4 cup fresh raspberries",
+            "1/2 banana, sliced",
+            "1 tbsp coconut flakes, unsweetened",
+            "1 tbsp hemp seeds"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free", "paleo"],
+          "superfood": "Acai berries help with arthritis and high cholesterol",
+          "pixelArt": "acai-bowl"
+        },
+        {
+          "id": "tropical-smoothie",
+          "name": "Tropical Smoothie Bowl",
+          "page": 29,
+          "ingredients": [
+            "1/2 cup frozen mango",
+            "1/2 cup frozen pineapple",
+            "1/2 frozen banana",
+            "1/2 cup coconut milk",
+            "1/2 cup fresh baby spinach"
+          ],
+          "toppings": [
+            "1/2 banana, sliced",
+            "1 kiwi, peeled and sliced",
+            "1 tsp chia seeds",
+            "2 tbsp shredded coconut, unsweetened",
+            "Drizzle raw honey"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "superfood": "Spirulina powder can be added for protein",
+          "pixelArt": "tropical-bowl"
+        },
+        {
+          "id": "raspberry-mango",
+          "name": "Raspberry Mango Smoothie Bowl",
+          "page": 30,
+          "ingredients": [
+            "1/2 cup frozen mango",
+            "1/2 cup frozen raspberries",
+            "1/2 cup coconut milk"
+          ],
+          "toppings": [
+            "1/4 cup fresh raspberries",
+            "1/4 cup fresh blueberries",
+            "1/2 cup homemade granola",
+            "2 tbsp shredded coconut, unsweetened",
+            "1 tbsp pumpkin seeds"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "tip": "Mango is naturally sweet and creamy",
+          "pixelArt": "raspberry-mango"
+        },
+        {
+          "id": "blueberry-pineapple-mint",
+          "name": "Blueberry, Pineapple, and Mint Smoothie Bowl",
+          "page": 31,
+          "ingredients": [
+            "1/2 cup frozen blueberries",
+            "1/2 cup frozen pineapple",
+            "1/2 frozen banana",
+            "1/2 cup almond milk",
+            "1/4 cup mint leaves"
+          ],
+          "toppings": [
+            "1/4 cup fresh blueberries",
+            "1/4 cup diced pineapple",
+            "2 tbsp pumpkin seeds",
+            "1 tbsp flaxseed",
+            "Mint leaves"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "pixelArt": "blueberry-mint"
+        },
+        {
+          "id": "toasted-coconut",
+          "name": "Toasted Coconut Smoothie Bowl",
+          "page": 32,
+          "ingredients": [
+            "1 frozen banana",
+            "1/2 cup Greek yogurt",
+            "1/2 cup coconut milk",
+            "1/2 cup ice"
+          ],
+          "toppings": [
+            "2 tbsp coconut flakes, toasted",
+            "2 tbsp dark chocolate chips",
+            "3 fresh strawberries, sliced"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegetarian", "gluten-free"],
+          "tip": "Watch coconut closely when toasting — it burns quickly",
+          "pixelArt": "toasted-coconut"
+        },
+        {
+          "id": "avocado-kale",
+          "name": "Avocado and Kale Smoothie Bowl",
+          "page": 33,
+          "ingredients": [
+            "1/2 cup ice",
+            "1/2 frozen banana",
+            "1/2 avocado",
+            "1 cup kale, chopped",
+            "1 cup almond milk",
+            "1 tbsp agave"
+          ],
+          "toppings": [
+            "1/2 cup fresh raspberries",
+            "1/2 banana",
+            "1 kiwi, peeled and sliced",
+            "1 tsp chia seeds"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "travelTip": "Serve in a mason jar for on-the-go",
+          "pixelArt": "avocado-kale"
+        },
+        {
+          "id": "chunky-monkey",
+          "name": "Chunky Monkey Smoothie Bowl",
+          "page": 34,
+          "ingredients": [
+            "1 frozen banana",
+            "1/2 cup Greek yogurt",
+            "1/2 cup almond milk",
+            "1 tbsp cacao powder",
+            "1 tbsp peanut butter",
+            "1 tsp chia seeds",
+            "1/2 tsp pure vanilla extract"
+          ],
+          "toppings": [
+            "1/2 banana, sliced",
+            "1 tbsp cacao nibs",
+            "1 tbsp coconut flakes, unsweetened",
+            "2 tbsp chopped almonds",
+            "1 tbsp peanut butter"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Try swapping peanut butter for almond butter",
+          "pixelArt": "chunky-monkey"
+        },
+        {
+          "id": "packed-full",
+          "name": "Packed Full Smoothie Bowl",
+          "page": 35,
+          "ingredients": [
+            "1 frozen banana",
+            "1/4 avocado",
+            "1/2 cup almond milk",
+            "1 tbsp ground turmeric",
+            "1/2 cup spinach",
+            "1 Medjool date, pitted"
+          ],
+          "toppings": [
+            "1/4 cup homemade granola",
+            "1/4 blood orange",
+            "1 tbsp shredded coconut, unsweetened",
+            "1 tbsp flaxseed",
+            "1 tbsp pomegranate seeds",
+            "1 tbsp chopped almonds",
+            "1 tbsp golden raisins"
+          ],
+          "instructions": [
+            "In a blender, place ingredients in order listed",
+            "Blend until smooth, scraping down sides if needed",
+            "Pour into bowl, garnish with toppings",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "healthNote": "Turmeric is anti-inflammatory and boosts brain function",
+          "swapTip": "Swap Medjool date for two dried apricots",
+          "pixelArt": "packed-full"
+        }
+      ],
+      "breakfast_bowls": [
+        {
+          "id": "fruit-nut-bowl",
+          "name": "Fruit and Nut Bowl",
+          "page": 46,
+          "ingredients": [
+            "1 cup Greek yogurt",
+            "1/4 cup fresh blueberries",
+            "1/4 cup fresh raspberries",
+            "1/2 cup papaya",
+            "1/2 cup sliced honeydew melon",
+            "1/2 tbsp pumpkin seeds",
+            "1/2 tbsp sliced almonds",
+            "1/2 tbsp shredded coconut, unsweetened"
+          ],
+          "instructions": [
+            "Spoon Greek yogurt into bowl",
+            "Layer blueberries, raspberries, papaya, and melon on top",
+            "Add pumpkin seeds, almonds, and coconut"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Fruit, nuts, and seeds can be swapped for whatever you have on hand",
+          "pixelArt": "fruit-nut"
+        },
+        {
+          "id": "five-minute-breakfast",
+          "name": "Five-Minute Breakfast Bowl",
+          "page": 47,
+          "ingredients": [
+            "2 bananas, sliced",
+            "1/2 cup coconut milk",
+            "1/4 cup chopped pecans",
+            "2 tbsp shredded coconut, unsweetened",
+            "1 tsp ground cinnamon"
+          ],
+          "instructions": [
+            "In a microwave-safe bowl, combine all ingredients",
+            "Mix well",
+            "Heat on high for 2 minutes until fully warmed",
+            "Stir and eat"
+          ],
+          "prepTime": 2,
+          "cookTime": 2,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "travelTip": "Prep the night before and store in refrigerator",
+          "pixelArt": "five-minute"
+        },
+        {
+          "id": "fruit-granola-parfait",
+          "name": "Fresh Fruit and Granola Parfait Bowl",
+          "page": 48,
+          "ingredients": [
+            "1 cup homemade granola",
+            "2 cups Greek yogurt",
+            "1/2 cup dried apricots, diced",
+            "1/2 cup strawberries",
+            "1/4 cup blueberries"
+          ],
+          "instructions": [
+            "Line 2 bowls, each with 1/4 cup granola",
+            "Add Greek yogurt",
+            "Top with apricots, strawberries, blueberries, and remaining granola"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegetarian"],
+          "pixelArt": "parfait"
+        },
+        {
+          "id": "apple-pie-breakfast",
+          "name": "Apple Pie Breakfast Bowl",
+          "page": 49,
+          "ingredients": [
+            "1 cup almond milk",
+            "1 cup Greek yogurt",
+            "2 tbsp organic maple syrup",
+            "1 tsp pure vanilla extract",
+            "Pinch sea salt",
+            "1/3 cup chia seeds"
+          ],
+          "toppings": [
+            "1 apple, sliced",
+            "1/4 cup homemade granola",
+            "1 tbsp dried cranberries",
+            "1 tsp ground cinnamon"
+          ],
+          "instructions": [
+            "In a large bowl, combine almond milk, yogurt, maple syrup, vanilla, and salt",
+            "Mix in chia seeds and let stand 30 minutes, stirring occasionally",
+            "Cover and refrigerate overnight",
+            "Divide chia seed pudding between 2 bowls",
+            "Top with apples, granola, cranberries, and cinnamon"
+          ],
+          "prepTime": 30,
+          "chillTime": "overnight",
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Add 2 tsp cacao powder for chocolate flavor",
+          "pixelArt": "apple-pie"
+        },
+        {
+          "id": "blueberry-chia-jam-oatmeal",
+          "name": "Blueberry Chia Jam and Oatmeal Breakfast Bowl",
+          "page": 50,
+          "ingredients": {
+            "jam": [
+              "2 cups frozen blueberries",
+              "1 tbsp organic maple syrup",
+              "1 tsp pure vanilla extract",
+              "1 tsp fresh lemon juice",
+              "Pinch sea salt",
+              "1 tbsp chia seeds"
+            ],
+            "oatmeal": [
+              "1 tbsp coconut oil",
+              "2 cups gluten-free rolled oats",
+              "1/2 cup almond milk",
+              "1 1/2 cups + 2 tbsp water",
+              "Pinch sea salt",
+              "1/4 tsp ground cinnamon"
+            ]
+          },
+          "toppings": [
+            "2 tbsp chopped almonds, toasted",
+            "2 tbsp coconut flakes, unsweetened",
+            "1 tbsp chia seeds",
+            "1 tbsp flaxseed"
+          ],
+          "instructions": [
+            "For jam: In food processor, combine blueberries, maple syrup, vanilla, lemon juice, salt. Process until smooth.",
+            "With processor running, slowly add chia seeds until incorporated (5-10 seconds)",
+            "Scrape jam into jar, refrigerate until gelled (15-20 min)",
+            "For oatmeal: In large skillet over medium heat, heat coconut oil",
+            "Add oats, toast 6-8 minutes, stirring occasionally",
+            "In large pot over medium heat, bring almond milk, water, salt, cinnamon to boil",
+            "Stir oats into liquid, cover, turn off heat, let sit 7 minutes",
+            "Divide oatmeal between 2 bowls, swirl in jam, top with almonds, coconut, chia seeds, flaxseed"
+          ],
+          "prepTime": 25,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "swapTip": "This jam technique works for any berry",
+          "pixelArt": "blueberry-chia"
+        }
+      ],
+      "grain_bowls": [
+        {
+          "id": "greens-and-grains",
+          "name": "Greens and Grains Bowl",
+          "page": 65,
+          "ingredients": [
+            "1 cup red quinoa, rinsed and drained",
+            "1 cup water",
+            "1 cup kale, chopped",
+            "1 cup broccoli florets",
+            "1 cup chopped Brussels sprouts",
+            "1/2 cup roughly chopped carrots",
+            "1/4 cup chopped fresh parsley",
+            "1/4 cup almonds",
+            "1 tbsp sunflower seeds",
+            "1 1/2 tbsp extra-virgin olive oil",
+            "Juice of 1 lemon",
+            "1/2 tbsp Dijon mustard",
+            "1 tsp organic maple syrup",
+            "Sea salt",
+            "Freshly ground black pepper"
+          ],
+          "instructions": [
+            "In a large pot over high heat, bring quinoa and water to a boil",
+            "Reduce heat to low, simmer 15-20 minutes until liquid absorbed",
+            "While quinoa cooks, combine kale, broccoli, Brussels sprouts, carrots, parsley, almonds, sunflower seeds in food processor",
+            "Pulse until roughly chopped",
+            "In small bowl, whisk olive oil, lemon juice, mustard, maple syrup, salt, pepper",
+            "Fluff quinoa with fork, divide between 2 bowls",
+            "Top with salad mixture, drizzle with dressing"
+          ],
+          "prepTime": 5,
+          "cookTime": 20,
+          "dietary": ["vegan", "gluten-free"],
+          "swapTip": "Cook quinoa in vegetable stock for more flavor",
+          "pixelArt": "greens-grains"
+        },
+        {
+          "id": "roasted-beet-quinoa",
+          "name": "Roasted Beet and Quinoa Bowl",
+          "page": 66,
+          "ingredients": [
+            "4 baby beets, scrubbed, peeled, halved",
+            "1 tbsp coconut oil",
+            "Sea salt",
+            "Freshly ground black pepper",
+            "1/2 cup red quinoa, rinsed and drained",
+            "1 cup water",
+            "2 cups kale, chopped",
+            "2 tbsp extra-virgin olive oil",
+            "2 tbsp fresh orange juice",
+            "2 garlic cloves, minced",
+            "1/2 tsp raw honey",
+            "1 tsp tamari",
+            "1/2 tsp balsamic vinegar"
+          ],
+          "instructions": [
+            "Preheat oven to 350°F",
+            "On baking sheet, place beets with coconut oil, salt, pepper",
+            "Roast 30-35 minutes until fork-tender, cool 5 minutes",
+            "Meanwhile, cook quinoa: bring quinoa and water to boil, reduce heat, simmer 15-20 minutes",
+            "In large bowl, combine beets, quinoa, kale",
+            "Divide between 2 bowls",
+            "Whisk olive oil, orange juice, garlic, honey, tamari, balsamic vinegar",
+            "Pour dressing over mixture and serve"
+          ],
+          "prepTime": 10,
+          "cookTime": 35,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "swapTip": "Butternut squash or sweet potato are delicious alternatives",
+          "pixelArt": "roasted-beet"
+        },
+        {
+          "id": "winter-veggie-grain",
+          "name": "Winter Veggie and Grain Bowl",
+          "page": 67,
+          "ingredients": [
+            "2 beets, cut into 1/2-inch pieces",
+            "1 sweet potato, cut into 1/2-inch pieces",
+            "1 cup cauliflower florets",
+            "2 tbsp extra-virgin olive oil",
+            "Sea salt",
+            "Freshly ground black pepper",
+            "1 cup quinoa, rinsed and drained",
+            "2 cups water",
+            "1 (12-oz) bag frozen shelled edamame, thawed",
+            "1/4 cup roughly chopped walnuts",
+            "1/2 cup roughly chopped fresh cilantro",
+            "Tahini-Ginger Dressing (page 143)"
+          ],
+          "instructions": [
+            "Preheat oven to 425°F",
+            "In zip-top bag, place beets, sweet potato, cauliflower with olive oil. Massage to coat",
+            "On parchment-lined baking sheet, place veggies in single layer, season with salt and pepper",
+            "Roast 30 minutes, stirring halfway",
+            "While roasting, cook quinoa: bring quinoa and water to boil, reduce heat, simmer 15-20 minutes",
+            "In medium pot, boil water, add edamame, cook 5 minutes until tender, drain",
+            "In hot skillet, toast walnuts 4-5 minutes, stirring regularly",
+            "Divide quinoa among 4 bowls, top with roasted veggies, edamame, walnuts, cilantro",
+            "Top with Tahini-Ginger Dressing"
+          ],
+          "prepTime": 15,
+          "cookTime": 35,
+          "dietary": ["vegan", "gluten-free"],
+          "swapTip": "Swap dressing for plain Greek yogurt",
+          "pixelArt": "winter-veggie"
+        },
+        {
+          "id": "chili-farro",
+          "name": "Chili and Farro Bowl",
+          "page": 68,
+          "ingredients": [
+            "1 (15-oz) can diced tomatoes",
+            "1 (15-oz) can dark red kidney beans, drained and rinsed",
+            "1 (15-oz) can black beans, drained and rinsed",
+            "1 small white onion, diced",
+            "1 red bell pepper, seeded and chopped",
+            "4 garlic cloves, minced",
+            "1 tbsp chili powder",
+            "1 tbsp cumin",
+            "1 tbsp smoked paprika",
+            "1 tsp cayenne pepper",
+            "1 cup farro",
+            "4 cups vegetable broth"
+          ],
+          "instructions": [
+            "In slow cooker, place all ingredients",
+            "Cover and cook on low for 8 hours",
+            "Divide chili and farro mixture among 4 bowls"
+          ],
+          "prepTime": 10,
+          "cookTime": 480,
+          "dietary": ["vegan", "vegetarian"],
+          "cookingTip": "Double recipe and freeze extra batch",
+          "pixelArt": "chili-farro"
+        },
+        {
+          "id": "forbidden-rice",
+          "name": "Forbidden Rice Bowl",
+          "page": 69,
+          "ingredients": [
+            "2 cups black rice, rinsed and soaked",
+            "1 zucchini, diced",
+            "1 cup green peas",
+            "1/2 cup sliced almonds",
+            "Jalapeño-Lime Vinaigrette (page 141)",
+            "Orange zest, to taste",
+            "Edible flowers, for garnish (optional)"
+          ],
+          "instructions": [
+            "Preheat oven to 375°F",
+            "Prepare rice according to package instructions",
+            "In large bowl, combine rice, zucchini, peas, almonds",
+            "Toss with Jalapeño-Lime Vinaigrette",
+            "Divide between 2 bowls, top with orange zest, garnish with edible flowers"
+          ],
+          "prepTime": 10,
+          "cookTime": 25,
+          "dietary": ["vegan", "gluten-free"],
+          "pixelArt": "forbidden-rice"
+        }
+      ],
+      "salad_bowls": [
+        {
+          "id": "farm-fresh-salad",
+          "name": "Farm-Fresh Salad Bowl",
+          "page": 83,
+          "ingredients": [
+            "1 cup kale, chopped",
+            "1 seedless cucumber, sliced",
+            "1 medium tomato, diced",
+            "1/4 cup fresh basil leaves, chopped",
+            "2 tbsp extra-virgin olive oil",
+            "2 tbsp red wine vinegar",
+            "2 tbsp goat cheese",
+            "1/4 cup pecans, chopped"
+          ],
+          "instructions": [
+            "Combine kale, cucumber, tomato, basil, olive oil, vinegar in large bowl",
+            "Toss well to combine",
+            "Divide between 2 bowls",
+            "Top with goat cheese and pecans"
+          ],
+          "prepTime": 10,
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Swap kale for baby spinach or romaine",
+          "pixelArt": "farm-salad"
+        },
+        {
+          "id": "greek-salad-bowl",
+          "name": "Greek Salad Bowl",
+          "page": 84,
+          "ingredients": [
+            "2 cups romaine lettuce, chopped",
+            "1 cucumber, sliced",
+            "1/2 red onion, chopped",
+            "1/2 cup cherry tomatoes, halved",
+            "1/2 cup peppercornici peppers",
+            "1/4 cup Kalamata olives, pitted and sliced",
+            "1 tsp fresh oregano, chopped",
+            "Sea salt",
+            "Freshly ground black pepper",
+            "2 tbsp extra-virgin olive oil, for drizzling"
+          ],
+          "instructions": [
+            "In large bowl, combine lettuce, cucumber, red onion, tomatoes, peppers, olives",
+            "Sprinkle with oregano, season with salt and pepper",
+            "Drizzle with olive oil, toss gently",
+            "Divide between 2 bowls"
+          ],
+          "prepTime": 10,
+          "dietary": ["vegetarian", "gluten-free", "vegan"],
+          "swapTip": "Add chickpeas for extra protein",
+          "pixelArt": "greek-salad"
+        },
+        {
+          "id": "ultimate-taco-salad",
+          "name": "Ultimate Taco Salad Bowl",
+          "page": 85,
+          "ingredients": [
+            "1 tbsp extra-virgin olive oil",
+            "1 pound ground beef",
+            "1 tsp paprika",
+            "1 tsp chili powder",
+            "1 tsp garlic powder",
+            "1 tsp onion powder",
+            "1/2 tsp sea salt",
+            "1/4 tsp freshly ground black pepper",
+            "1/4 tsp dried oregano",
+            "1/4 tsp cayenne powder",
+            "1/4 cup water",
+            "2 cups romaine lettuce, chopped",
+            "1 avocado, diced",
+            "1 cup cherry tomatoes, halved",
+            "1/4 red onion, chopped",
+            "1/4 cup jalapeño",
+            "Salsa (page 145)",
+            "Jalapeño-Lime Vinaigrette (page 141)",
+            "Fresh cilantro, for garnish"
+          ],
+          "instructions": [
+            "In cast-iron pan over medium-high heat, heat olive oil",
+            "Add ground beef, cook 7-10 minutes, breaking into crumbles, until browned",
+            "In small bowl, combine paprika, chili powder, garlic powder, onion powder, salt, pepper, oregano, cayenne",
+            "Add spice mixture and water to ground beef, stir to combine",
+            "Reduce heat to low, simmer 3-4 minutes",
+            "Divide lettuce between 2 bowls",
+            "Top with ground beef, avocado, tomatoes, onion, jalapeño, salsa",
+            "Drizzle with Jalapeño-Lime Vinaigrette, garnish with cilantro"
+          ],
+          "prepTime": 15,
+          "cookTime": 15,
+          "dietary": ["gluten-free"],
+          "pixelArt": "taco-salad"
+        }
+      ],
+      "soup_bowls": [
+        {
+          "id": "rustic-vegetable-soup",
+          "name": "Rustic Vegetable Soup",
+          "page": 101,
+          "ingredients": [
+            "1 tbsp olive oil",
+            "1 small onion, diced",
+            "2 carrots, diced",
+            "2 celery stalks, trimmed and diced",
+            "1 large leek, rinsed and sliced",
+            "2 garlic cloves, chopped",
+            "3 tbsp tomato paste",
+            "1 (15-oz) can white beans, rinsed and drained",
+            "1 (28-oz) can diced tomatoes",
+            "6 to 8 cups vegetable broth",
+            "2 sprigs fresh thyme",
+            "2 potatoes, diced",
+            "Sea salt",
+            "Freshly ground black pepper",
+            "4 to 5 kale leaves, stemmed, roughly chopped"
+          ],
+          "instructions": [
+            "In large pot over medium heat, heat olive oil",
+            "Add onion, sauté 3-4 minutes until soft",
+            "Add carrots, celery, leek, cook 5 minutes, stirring frequently",
+            "Add garlic, cook 30 seconds",
+            "Add tomato paste, stir well",
+            "Add beans, diced tomatoes, broth, thyme, potatoes",
+            "Season with salt and pepper",
+            "Increase heat to high, bring to boil",
+            "Reduce heat, simmer 15-20 minutes until potatoes tender",
+            "Stir in kale, cook 5 minutes until wilted",
+            "Divide among 4 bowls"
+          ],
+          "prepTime": 15,
+          "cookTime": 30,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "pixelArt": "rustic-soup"
+        },
+        {
+          "id": "spiced-butternut-squash-soup",
+          "name": "Spiced Butternut Squash Soup",
+          "page": 102,
+          "ingredients": [
+            "1 butternut squash, halved and seeded",
+            "3 tbsp extra-virgin olive oil, divided",
+            "1 onion, chopped",
+            "1 cup chicken stock",
+            "1/2 tsp garlic powder",
+            "1/2 tsp ground ginger",
+            "1/2 tsp ground turmeric",
+            "1/2 tsp ground white pepper",
+            "1/2 tsp ground cinnamon",
+            "1/4 tsp ground nutmeg",
+            "Sea salt",
+            "Freshly ground black pepper",
+            "1 cup raw pumpkin seeds",
+            "1 tsp ground cumin",
+            "1/2 tsp garlic powder",
+            "1/2 tsp paprika"
+          ],
+          "instructions": [
+            "Preheat oven to 350°F",
+            "Line baking sheet with foil, place squash cut-side down",
+            "Roast 60 minutes, cool slightly, scoop out flesh",
+            "Increase oven to 375°F, line baking sheet with parchment",
+            "In large pot over medium heat, heat 2 tbsp olive oil",
+            "Add onion, sauté 5-8 minutes until soft",
+            "Add squash, chicken stock, garlic powder, ginger, turmeric, white pepper, cinnamon, nutmeg",
+            "Season with salt and pepper, stir well",
+            "Bring to boil, simmer 20 minutes",
+            "In medium bowl, toss pumpkin seeds with remaining 1 tbsp olive oil, cumin, garlic powder, paprika",
+            "Place on parchment-lined sheet in single layer",
+            "Roast 8 minutes, cool",
+            "Using immersion blender, blend soup until smooth",
+            "Divide into 4 bowls, top with toasted pumpkin seeds"
+          ],
+          "prepTime": 15,
+          "cookTime": 60,
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Add pears or apples for extra flavor",
+          "pixelArt": "butternut-soup"
+        }
+      ],
+      "noodle_bowls": [
+        {
+          "id": "simple-noodle-bowl",
+          "name": "Simple Noodle Bowl",
+          "page": 115,
+          "ingredients": [
+            "1 tbsp extra-virgin olive oil",
+            "4 garlic cloves, minced",
+            "1 carrot, diced",
+            "1 zucchini, diced",
+            "2 cups brown rice noodles",
+            "2 cups water",
+            "1/4 cup tamari",
+            "1 tbsp sesame oil",
+            "1 tsp apple cider vinegar",
+            "1 tsp raw honey",
+            "1/2 tsp red pepper flakes"
+          ],
+          "instructions": [
+            "In large skillet over medium-high heat, warm olive oil",
+            "Add garlic, carrot, zucchini, cook 7-8 minutes until tender",
+            "Add brown rice noodles, water, tamari, sesame oil, apple cider vinegar, honey",
+            "Stir to incorporate, cover skillet",
+            "Cook until water evaporates, stirring regularly, about 10 minutes",
+            "Add red pepper flakes, stir to combine",
+            "Divide among 4 bowls"
+          ],
+          "prepTime": 10,
+          "cookTime": 20,
+          "dietary": ["vegan", "dairy-free"],
+          "swapTip": "Omit noodles and spiralize 2 carrots and 2 zucchini instead",
+          "pixelArt": "simple-noodle"
+        },
+        {
+          "id": "garlic-shrimp-zucchini-noodles",
+          "name": "Garlic Shrimp and Zucchini Noodle Bowl",
+          "page": 116,
+          "ingredients": [
+            "20 jumbo shrimp, tails removed, peeled, deveined",
+            "1/2 tsp sea salt",
+            "1/2 tsp freshly ground black pepper",
+            "1 tsp garlic powder",
+            "5 tbsp butter, divided",
+            "5 garlic cloves, minced",
+            "1 yellow bell pepper, spiralized",
+            "1 medium white onion, spiralized",
+            "2 large zucchini, spiralized"
+          ],
+          "instructions": [
+            "Place shrimp in large bowl, sprinkle with salt, pepper, garlic powder, toss to coat",
+            "In large skillet, heat 4 tbsp butter and garlic over medium heat",
+            "Add bell pepper noodles and onion noodles, sauté 4 minutes until soft",
+            "Add seasoned shrimp, cook 10-15 minutes until opaque",
+            "In medium skillet over medium heat, heat remaining 1 tbsp butter",
+            "Add zucchini noodles, cook 4 minutes",
+            "Divide zucchini noodles among 4 bowls",
+            "Top with shrimp and veggie noodle mixture"
+          ],
+          "prepTime": 15,
+          "cookTime": 20,
+          "dietary": ["gluten-free"],
+          "swapTip": "Swap shrimp for pan-seared chicken",
+          "pixelArt": "garlic-shrimp"
+        }
+      ],
+      "dessert_bowls": [
+        {
+          "id": "chocolate-nice-cream",
+          "name": "Chocolate Nice Cream Bowl",
+          "page": 133,
+          "ingredients": [
+            "3 bananas, peeled, sliced, frozen",
+            "2 tbsp cacao powder",
+            "1 tbsp organic maple syrup",
+            "2 tbsp shredded coconut, unsweetened",
+            "2 tbsp dark chocolate chips",
+            "1/2 cup dehydrated banana chips",
+            "4 fresh strawberries, sliced"
+          ],
+          "instructions": [
+            "In blender, combine frozen bananas, cacao powder, maple syrup",
+            "Blend until thick and smooth, scraping down sides",
+            "Divide ice cream between 2 bowls",
+            "Top with coconut, chocolate chips, banana chips, strawberries",
+            "Serve immediately"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "swapTip": "Swap cacao powder for any frozen fruit to customize flavor",
+          "pixelArt": "nice-cream"
+        },
+        {
+          "id": "dark-chocolate-strawberry",
+          "name": "Dark Chocolate Strawberry Bowl",
+          "page": 134,
+          "ingredients": [
+            "1 avocado, halved and pitted",
+            "1/3 cup cacao powder",
+            "1/4 cup organic maple syrup",
+            "2 tbsp almond milk",
+            "1 tsp pure vanilla extract",
+            "1/4 tsp sea salt",
+            "8 fresh strawberries, chopped",
+            "2 tbsp pistachios, chopped"
+          ],
+          "instructions": [
+            "In blender, combine avocado, cacao powder, maple syrup, almond milk, vanilla, salt",
+            "Blend until thick and smooth",
+            "Divide avocado pudding between 2 bowls",
+            "Refrigerate 30 minutes",
+            "Top chilled bowls with strawberries and pistachios",
+            "Serve immediately"
+          ],
+          "prepTime": 10,
+          "chillTime": 30,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "swapTip": "Top with coconut flakes, chia seeds, or hemp seeds for crunch",
+          "pixelArt": "chocolate-strawberry"
+        }
+      ],
+      "bowl_necessities": [
+        {
+          "id": "simple-lemon-dressing",
+          "name": "Simple Lemon Dressing",
+          "page": 140,
+          "ingredients": [
+            "4 tbsp fresh lemon juice",
+            "2 tbsp Dijon mustard",
+            "2 tsp minced shallot",
+            "2 garlic cloves, minced",
+            "1/2 cup extra-virgin olive oil",
+            "Sea salt",
+            "Freshly ground black pepper"
+          ],
+          "instructions": [
+            "In medium bowl, whisk lemon juice, mustard, shallot, garlic until combined",
+            "Slowly add olive oil while continuing to whisk until thickened",
+            "Season with salt and pepper",
+            "Store in airtight container in refrigerator 4-5 days"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "pixelArt": "lemon-dressing"
+        },
+        {
+          "id": "jalapeno-lime-vinaigrette",
+          "name": "Jalapeño-Lime Vinaigrette",
+          "page": 141,
+          "ingredients": [
+            "1 cup fresh lime juice",
+            "1/2 cup extra-virgin olive oil",
+            "1 jalapeño, seeded and minced",
+            "1 1/2 tsp sea salt",
+            "3/4 tsp freshly ground black pepper"
+          ],
+          "instructions": [
+            "In medium bowl, whisk together lime juice, olive oil, jalapeño, salt, pepper",
+            "Store in airtight container in refrigerator 4-5 days"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegan", "gluten-free", "dairy-free"],
+          "swapTip": "Swap lime juice for orange juice",
+          "pixelArt": "jalapeno-lime"
+        },
+        {
+          "id": "avocado-cilantro-cream",
+          "name": "Avocado-Cilantro Cream",
+          "page": 142,
+          "ingredients": [
+            "1/2 cup Greek yogurt",
+            "1 ripe avocado, pitted and skinned",
+            "1/4 cup chopped fresh cilantro",
+            "Juice of 1 lime",
+            "1 jalapeño, chopped and seeded",
+            "Sea salt"
+          ],
+          "instructions": [
+            "In blender, combine yogurt, avocado, cilantro, lime juice, jalapeño",
+            "Season with salt",
+            "Blend until smooth",
+            "Store in airtight container in refrigerator 4-5 days"
+          ],
+          "prepTime": 5,
+          "dietary": ["vegetarian", "gluten-free"],
+          "swapTip": "Swap Greek yogurt with coconut yogurt for dairy-free",
+          "pixelArt": "avocado-cream"
+        }
+    ]
+}
