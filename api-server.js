@@ -1,752 +1,266 @@
 /**
- * Simple Recipe API Server
- * Serves recipes from local JSON files without requiring MongoDB
+ * Local dev runner for Vercel API functions.
+ * Mirrors the logic in api/recipe-ai.js so `npm run dev:ai` gives you
+ * a live /api/recipe-ai endpoint while Vite proxies the rest to the backends.
+ *
+ * Usage: node --env-file=.env api-server.js
+ *   (or via `npm run dev:ai`)
  */
 
 const express = require('express');
-const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
-const RecipeRemixEngine = require('./remix-engine.js');
 
-const app = express();
-const PORT = 5000;
-const remixEngine = new RecipeRemixEngine();
+const app  = express();
+const PORT = process.env.AI_API_PORT || 5003;
 
-// Middleware
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:8000', 'http://127.0.0.1:8000', 'http://127.0.0.1:3000'],
-  credentials: true
-}));
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({ limit: '12mb' }));
 
-// Load all recipe files
-const dataDir = path.join(__dirname, 'data');
-let allRecipes = [];
-let recipesByCountry = {};
+const OPENAI_URL = 'https://api.openai.com/v1/chat/completions';
 
-function loadRecipes() {
-  try {
-    // Load COMPLETE recipes first (Phase 1)
-    const completeRecipesDir = path.join(dataDir, 'complete-recipes');
-    let completeFiles = [];
-    if (fs.existsSync(completeRecipesDir)) {
-      completeFiles = fs.readdirSync(completeRecipesDir)
-        .filter(f => f.endsWith('-complete-authentic.json'));
-
-      completeFiles.forEach(file => {
-        try {
-          const filePath = path.join(completeRecipesDir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 2 recipes
-    const phase2Dir = path.join(dataDir, 'phase2-recipes');
-    let phase2Files = [];
-    if (fs.existsSync(phase2Dir)) {
-      phase2Files = fs.readdirSync(phase2Dir)
-        .filter(f => f.endsWith('-phase2-authentic.json'));
-
-      phase2Files.forEach(file => {
-        try {
-          const filePath = path.join(phase2Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 3 recipes
-    const phase3Dir = path.join(dataDir, 'phase3-recipes');
-    let phase3Files = [];
-    if (fs.existsSync(phase3Dir)) {
-      phase3Files = fs.readdirSync(phase3Dir)
-        .filter(f => f.endsWith('-phase3-authentic.json'));
-
-      phase3Files.forEach(file => {
-        try {
-          const filePath = path.join(phase3Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 4 recipes
-    const phase4Dir = path.join(dataDir, 'phase4-recipes');
-    let phase4Files = [];
-    if (fs.existsSync(phase4Dir)) {
-      phase4Files = fs.readdirSync(phase4Dir)
-        .filter(f => f.endsWith('-phase4-authentic.json'));
-
-      phase4Files.forEach(file => {
-        try {
-          const filePath = path.join(phase4Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 5 recipes
-    const phase5Dir = path.join(dataDir, 'phase5-recipes');
-    let phase5Files = [];
-    if (fs.existsSync(phase5Dir)) {
-      phase5Files = fs.readdirSync(phase5Dir)
-        .filter(f => f.endsWith('-phase5-authentic.json'));
-
-      phase5Files.forEach(file => {
-        try {
-          const filePath = path.join(phase5Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 6 recipes
-    const phase6Dir = path.join(dataDir, 'phase6-recipes');
-    let phase6Files = [];
-    if (fs.existsSync(phase6Dir)) {
-      phase6Files = fs.readdirSync(phase6Dir)
-        .filter(f => f.endsWith('-phase6-authentic.json'));
-
-      phase6Files.forEach(file => {
-        try {
-          const filePath = path.join(phase6Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load PHASE 7 recipes
-    const phase7Dir = path.join(dataDir, 'phase7-recipes');
-    let phase7Files = [];
-    if (fs.existsSync(phase7Dir)) {
-      phase7Files = fs.readdirSync(phase7Dir)
-        .filter(f => f.endsWith('-phase7-authentic.json'));
-
-      phase7Files.forEach(file => {
-        try {
-          const filePath = path.join(phase7Dir, file);
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
-          if (content && content.country) {
-            const country = content.country;
-            const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks'];
-
-            const countryRecipes = [];
-            categories.forEach(cat => {
-              if (Array.isArray(content[cat])) {
-                content[cat].forEach(recipe => {
-                  recipe.country = country;
-                  recipe.category = cat;
-                  recipe.region = content.region || 'Unknown';
-                  countryRecipes.push(recipe);
-                  allRecipes.push(recipe);
-                });
-              }
-            });
-            recipesByCountry[country] = countryRecipes;
-          }
-        } catch (e) {
-          console.warn(`Warning: Error loading ${file}: ${e.message}`);
-        }
-      });
-    }
-
-    // Load from data/ directory (old format files)
-    const dataFiles = fs.readdirSync(dataDir)
-      .filter(f => (f.endsWith('-recipes.json') || f.endsWith('-complete-recipes.json')) &&
-                    !f.startsWith('.'));
-
-    dataFiles.forEach(file => {
-      try {
-        const filePath = path.join(dataDir, file);
-        const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        const countryKey = Object.keys(content)[0];
-        const countryData = content[countryKey];
-
-        if (countryData && countryData.country) {
-          // Skip if already loaded from complete-recipes
-          if (recipesByCountry[countryData.country]) {
-            return;
-          }
-
-          const country = countryData.country;
-          const categories = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts', 'nonAlcoholicDrinks', 'alcoholicDrinks', 'vegetarianRecipes', 'specialtyCoffee'];
-
-          const countryRecipes = [];
-          categories.forEach(cat => {
-            if (Array.isArray(countryData[cat])) {
-              countryData[cat].forEach(recipe => {
-                recipe.country = country;
-                recipe.category = cat;
-                recipe.region = countryData.region || 'Unknown';
-                countryRecipes.push(recipe);
-                allRecipes.push(recipe);
-              });
-            }
-          });
-          recipesByCountry[country] = countryRecipes;
-        }
-      } catch (e) {
-        console.warn(`Warning: Error loading ${file}: ${e.message}`);
-      }
-    });
-
-    const countryCount = Object.keys(recipesByCountry).length;
-    console.log(`\n✓ Loaded ${allRecipes.length} recipes from ${countryCount} countries`);
-    console.log(`✓ Complete recipe countries: ${Object.keys(recipesByCountry).filter(c => recipesByCountry[c].some(r => r.fun_fact)).length}`);
-  } catch (err) {
-    console.error('Error loading recipes:', err.message);
+async function callOpenAI(apiKey, body) {
+  const r = await fetch(OPENAI_URL, {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    body:    JSON.stringify(body),
+  });
+  if (!r.ok) {
+    const text = await r.text();
+    throw new Error(`OpenAI ${r.status}: ${text.slice(0, 200)}`);
   }
+  const data    = await r.json();
+  const content = data.choices?.[0]?.message?.content ?? '';
+  return JSON.parse(content.replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim());
 }
 
-// ============ HEALTH CHECK ============
-app.get('/api/health', (req, res) => {
-  res.json({
-    success: true,
-    status: 'API is running',
-    timestamp: new Date(),
-    recipesLoaded: allRecipes.length
-  });
-});
-
-// ============ SEARCH ============
-app.get('/api/recipes/search', (req, res) => {
-  const { q, country, category, limit = 20, skip = 0 } = req.query;
-
-  let results = allRecipes;
-
-  // Text search
-  if (q) {
-    const searchLower = q.toLowerCase();
-    results = results.filter(r =>
-      (r.name && r.name.toLowerCase().includes(searchLower)) ||
-      (r.ingredients && JSON.stringify(r.ingredients).toLowerCase().includes(searchLower))
-    );
+app.post('/api/recipe-ai', async (req, res) => {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    return res.status(503).json({ fallback: true, error: 'Set OPENAI_API_KEY in .env to enable AI recipes.' });
   }
 
-  // Filter by country
-  if (country) {
-    results = results.filter(r => r.country.toLowerCase() === country.toLowerCase());
-  }
+  const { mode = 'recipes', ingredients = [], image, step, recipe: recipeName,
+          question, context = [], tone = 'listener',
+          area, existingNames = [], count = 4 } = req.body ?? {};
 
-  // Filter by category
-  if (category) {
-    results = results.filter(r => r.category === category);
-  }
+  try {
+    // ── Recipe generation ───────────────────────────────────────────────────
+    if (mode === 'recipes') {
+      const list = ingredients.filter(Boolean).join(', ');
+      if (!list) return res.status(400).json({ error: 'Provide at least one ingredient' });
 
-  const total = results.length;
-  const paginated = results.slice(parseInt(skip), parseInt(skip) + parseInt(limit));
+      const parsed = await callOpenAI(apiKey, {
+        model:       'gpt-4o-mini',
+        max_tokens:  2000,
+        temperature: 0.75,
+        messages: [
+          {
+            role:    'system',
+            content: 'You are a practical home cooking assistant for Dig In, an NYC food app. ' +
+                     'Respond with valid JSON only — no markdown fences, no text outside the JSON.',
+          },
+          {
+            role:    'user',
+            content: `I have: ${list}.
 
-  res.json({
-    success: true,
-    totalResults: total,
-    results: paginated,
-    filters: {
-      countries: [...new Set(allRecipes.map(r => r.country))].sort(),
-      categories: [...new Set(allRecipes.map(r => r.category))].sort()
+Generate exactly 3 recipes I can make (or mostly make) with these.
+Return this exact JSON — no extra keys, no comments:
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Recipe Name",
+      "tag": "SHORT WORD naming the dish category, e.g. PASTA, TACOS, SOUP — plain text, no emoji",
+      "description": "One sentence, max 80 chars",
+      "time": "25 min",
+      "difficulty": "Easy",
+      "steps": ["Action step 1", "Action step 2"],
+      "tips": [
+        {"label": "PRO TIP",  "text": "Helpful note", "type": "success"},
+        {"label": "WATCH OUT","text": "Common mistake", "type": "danger"}
+      ],
+      "substitutions": [
+        {"ingredient": "X", "substitute": "Y", "note": "Brief reason"}
+      ]
     }
-  });
-});
+  ]
+}
 
-// ============ GET RECIPE BY ID ============
-app.get('/api/recipes/:recipeId', (req, res) => {
-  const { recipeId } = req.params;
-
-  let recipe = allRecipes.find(r =>
-    r.id === recipeId ||
-    (r.name && r.name.toLowerCase() === decodeURIComponent(recipeId).toLowerCase())
-  );
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  res.json({
-    success: true,
-    recipe
-  });
-});
-
-// ============ GET ALL RECIPES ============
-app.get('/api/recipes', (req, res) => {
-  const { country, category, limit = 50, skip = 0 } = req.query;
-
-  let results = allRecipes;
-
-  if (country) {
-    results = results.filter(r => r.country.toLowerCase() === country.toLowerCase());
-  }
-
-  if (category) {
-    results = results.filter(r => r.category === category);
-  }
-
-  const total = results.length;
-  const paginated = results.slice(parseInt(skip), parseInt(skip) + parseInt(limit));
-
-  res.json({
-    success: true,
-    total,
-    limit: parseInt(limit),
-    skip: parseInt(skip),
-    recipes: paginated
-  });
-});
-
-// ============ GET COUNTRIES ============
-app.get('/api/countries', (req, res) => {
-  const countries = [...new Set(allRecipes.map(r => r.country))].sort();
-  const countryStats = countries.map(country => ({
-    _id: country,
-    count: allRecipes.filter(r => r.country === country).length,
-    categories: [...new Set(allRecipes.filter(r => r.country === country).map(r => r.category))]
-  }));
-
-  res.json({
-    success: true,
-    totalCountries: countries.length,
-    countries: countryStats
-  });
-});
-
-// ============ GET CATEGORIES ============
-app.get('/api/categories', (req, res) => {
-  const categories = [...new Set(allRecipes.map(r => r.category))].sort();
-
-  res.json({
-    success: true,
-    categories
-  });
-});
-
-// ============ GET STATS ============
-app.get('/api/stats', (req, res) => {
-  const categories = [...new Set(allRecipes.map(r => r.category))];
-  const countries = [...new Set(allRecipes.map(r => r.country))];
-
-  res.json({
-    success: true,
-    stats: {
-      totalRecipes: allRecipes.length,
-      totalCountries: countries.length,
-      totalCategories: categories.length,
-      categories,
-      averageRating: 0
-    }
-  });
-});
-
-// ============ TRENDING ============
-app.get('/api/trending', (req, res) => {
-  const { limit = 20 } = req.query;
-  const trending = allRecipes.slice(0, parseInt(limit));
-
-  res.json({
-    success: true,
-    trending
-  });
-});
-
-// ============ RATE RECIPE ============
-app.post('/api/recipes/:recipeId/rate', (req, res) => {
-  const { rating } = req.body;
-
-  if (rating < 1 || rating > 5) {
-    return res.status(400).json({
-      success: false,
-      error: 'Rating must be between 1 and 5'
-    });
-  }
-
-  res.json({
-    success: true,
-    message: 'Rating recorded'
-  });
-});
-
-// ============ REMIX RECIPE ============
-app.post('/api/recipes/:recipeId/remix', (req, res) => {
-  const { format, dietaryOptions } = req.body;
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  if (!format || !remixEngine.formatTemplates[format]) {
-    return res.status(400).json({
-      success: false,
-      error: 'Invalid format. Valid formats: ' + Object.keys(remixEngine.formatTemplates).join(', ')
-    });
-  }
-
-  try {
-    const remixed = remixEngine.generateRemix(recipe, format, dietaryOptions || []);
-    res.json({
-      success: true,
-      recipe: remixed
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: 'Failed to generate remix',
-      message: error.message
-    });
-  }
-});
-
-// ============ TIME VARIANT ============
-app.post('/api/recipes/:recipeId/time-variant', (req, res) => {
-  const { variant } = req.body;
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  if (!variant || !recipe.time_variants || !recipe.time_variants[variant]) {
-    return res.status(400).json({
-      success: false,
-      error: 'Invalid time variant. Valid variants: ' + (recipe.time_variants ? Object.keys(recipe.time_variants).join(', ') : 'none')
-    });
-  }
-
-  try {
-    const variantRecipe = remixEngine.getTimeVariant(recipe, variant);
-    res.json({
-      success: true,
-      recipe: variantRecipe
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: 'Failed to get time variant',
-      message: error.message
-    });
-  }
-});
-
-// ============ SEASONING RECOMMENDATIONS ============
-app.get('/api/recipes/:recipeId/seasonings/:format', (req, res) => {
-  const { format } = req.params;
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  const seasonings = remixEngine.getSeasoningRecommendations(format);
-  res.json({
-    success: true,
-    format: format,
-    recommended_seasonings: seasonings,
-    current_seasonings: recipe.seasonings
-  });
-});
-
-// ============ FLAVOR PROFILES ============
-app.get('/api/recipes/:recipeId/flavor-profiles', (req, res) => {
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
-  const currentProfile = remixEngine.detectRecipeFlavorProfile(recipe);
-
-  res.json({
-    success: true,
-    current_profile: currentProfile,
-    available_profiles: availableProfiles,
-    description: 'Transform your recipe using different flavor profiles. Each profile changes seasonings and ingredient pairings.'
-  });
-});
-
-// ============ FLAVOR-BASED REMIX ============
-app.post('/api/recipes/:recipeId/remix-flavor', (req, res) => {
-  const { flavor, format } = req.body;
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
-  if (!flavor || !availableProfiles.includes(flavor)) {
-    return res.status(400).json({
-      success: false,
-      error: 'Invalid flavor profile',
-      valid_profiles: availableProfiles
-    });
-  }
-
-  try {
-    const remixed = remixEngine.generateSeasoningRemix(recipe, flavor, format || 'salad');
-
-    if (!remixed) {
-      return res.status(500).json({
-        success: false,
-        error: 'Seasoning pairing engine not available'
+Rules:
+- 5–8 steps per recipe, each a concrete single action
+- 2–3 tips (type must be "success", "warning", "danger", or "")
+- 2–3 substitutions for hard-to-find or missing ingredients
+- difficulty: "Easy", "Medium", or "Hard"
+- Make recipes practical for a standard NYC apartment kitchen`,
+          },
+        ],
       });
+
+      return res.json(parsed);
     }
 
-    res.json({
-      success: true,
-      recipe: remixed
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: 'Failed to generate flavor remix',
-      message: error.message
-    });
-  }
-});
+    // ── Photo analysis ──────────────────────────────────────────────────────
+    if (mode === 'photo') {
+      if (!image) return res.status(400).json({ error: 'image is required' });
 
-// ============ INGREDIENT PAIRINGS ============
-app.get('/api/recipes/:recipeId/pairings/:flavor', (req, res) => {
-  const { flavor } = req.params;
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
-  const availableProfiles = remixEngine.getAvailableFlavorProfiles();
-  if (!availableProfiles.includes(flavor)) {
-    return res.status(400).json({
-      success: false,
-      error: 'Invalid flavor profile',
-      valid_profiles: availableProfiles
-    });
-  }
-
-  try {
-    const pairings = remixEngine.getIngredientPairings(flavor, recipe.category || 'dinner');
-
-    if (!pairings) {
-      return res.status(500).json({
-        success: false,
-        error: 'Ingredient pairing engine not available'
+      const parsed = await callOpenAI(apiKey, {
+        model:      'gpt-4o',
+        max_tokens: 400,
+        messages: [
+          {
+            role:    'system',
+            content: 'You are a cooking instructor reviewing a student photo. Respond with valid JSON only.',
+          },
+          {
+            role:    'user',
+            content: [
+              {
+                type: 'text',
+                text: `I'm making "${recipeName}" and I'm on this step: "${step}".
+Analyse my photo and return this exact JSON:
+{
+  "match":   {"label": "STEP MATCH",  "text": "...", "type": "success|warning|danger"},
+  "texture": {"label": "TEXTURE",     "text": "...", "type": "success|warning"},
+  "tip":     {"label": "NEXT ACTION", "text": "...", "type": ""}
+}`,
+              },
+              { type: 'image_url', image_url: { url: image, detail: 'low' } },
+            ],
+          },
+        ],
       });
+
+      return res.json(parsed);
     }
 
-    res.json({
-      success: true,
-      flavor: flavor,
-      pairings: pairings
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: 'Failed to get pairings',
-      message: error.message
-    });
+    // ── Ask Nova: grounded cooking Q&A in her mood voice ─────────────────────
+    if (mode === 'ask') {
+      if (!question) return res.status(400).json({ error: 'question is required' });
+
+      const TONE_PERSONA = {
+        listener:    'quiet, present, unhurried — you hold space and answer plainly',
+        calm:        'grounding and slow; you lower the temperature and reassure',
+        coach:       'warm but pointed; you name the fix and the next move',
+        cheerleader: 'big encouraging energy; you believe in the cook',
+        sassy:       'a little unhinged but deeply on their side — comfort with teeth',
+      };
+      const sources = (context || [])
+        .map(c => `- "${c.name}"${c.source ? ` (${c.source})` : ''}${c.snippet ? `: ${c.snippet}` : ''}`)
+        .join('\n') || '(no specific recipe matched)';
+
+      const parsed = await callOpenAI(apiKey, {
+        model:       'gpt-4o-mini',
+        max_tokens:  500,
+        temperature: 0.5,
+        messages: [
+          {
+            role: 'system',
+            content:
+              `You are Nova, the home-cooking brain inside Dig In. Voice: ${TONE_PERSONA[tone] || TONE_PERSONA.listener}. ` +
+              'Answer the cooking question practically and accurately — substitutions, technique, troubleshooting, food safety. ' +
+              'Be specific and concise (2–5 sentences). Ground your answer in the provided sources when relevant and cite them. ' +
+              'For food-safety questions, give the safe answer (temperatures, times) and never guess. Respond with valid JSON only — no markdown fences.',
+          },
+          {
+            role: 'user',
+            content: `Question: ${question}
+
+Sources from my cookbooks that may be relevant:
+${sources}
+
+Return this exact JSON:
+{
+  "answer": "your answer in Nova's voice, 2–5 sentences",
+  "citations": [{"name": "Recipe or source name", "source": "book name"}]
+}
+Only cite sources listed above; use an empty array if none apply.`,
+          },
+        ],
+      });
+
+      return res.json(parsed);
+    }
+
+    // ── Trending dishes: what's currently ordered on delivery in this area,
+    //    for the Food Cost Arbitrage feed ────────────────────────────────────
+    if (mode === 'trending') {
+      const avoid = existingNames.length ? `Avoid repeating: ${existingNames.join(', ')}.` : '';
+
+      const parsed = await callOpenAI(apiKey, {
+        model:       'gpt-4o-mini',
+        max_tokens:  1400,
+        temperature: 0.8,
+        messages: [
+          {
+            role: 'system',
+            content:
+              'You generate realistic, currently-popular delivery-app dishes (the kind ordered via UberEats/DoorDash/GrubHub) ' +
+              'for a cost-comparison feature that shows a dish\'s delivery price next to its true home-cooked ingredient cost. ' +
+              'Prices must be realistic and internally consistent (delivery price > ingredient cost, by a lot). ' +
+              'Respond with valid JSON only — no markdown fences, no text outside the JSON.',
+          },
+          {
+            role: 'user',
+            content: `Generate ${count} trending delivery dishes for ${area || 'a typical US city'}. ${avoid}
+
+Return this exact JSON:
+{
+  "dishes": [
+    {
+      "name": "Dish Name",
+      "emoji": "single emoji",
+      "cuisine": "Cuisine",
+      "restaurant": "Fictional but plausible restaurant name",
+      "deliveryBase": 18.50,
+      "cookTime": 25,
+      "servings": 3,
+      "difficulty": "Easy|Medium|Hard",
+      "chefNote": "One punchy sentence on why cooking it is easy/cheap",
+      "ingredients": [{"name": "Ingredient", "cost": 1.99}],
+      "instructions": ["Step 1", "Step 2", "Step 3", "Step 4"]
+    }
+  ]
+}
+
+Rules:
+- deliveryBase is the base menu price only (fees are added separately downstream), realistic for the dish
+- 4-5 ingredients per dish with realistic grocery-store prices (their sum should be well under deliveryBase)
+- 4-6 concrete instruction steps
+- Vary cuisines across the ${count} dishes`,
+          },
+        ],
+      });
+
+      return res.json(parsed);
+    }
+
+    return res.status(400).json({ error: `Unknown mode: ${mode}` });
+
+  } catch (err) {
+    console.error('[recipe-ai]', err.message);
+    return res.status(500).json({ fallback: true, error: 'AI service error' });
   }
 });
 
-// ============ CUISINE VARIANTS ============
-app.get('/api/recipes/:recipeId/cuisine-variants', (req, res) => {
-  const recipe = allRecipes.find(r => r.id === req.params.recipeId);
-
-  if (!recipe) {
-    return res.status(404).json({
-      success: false,
-      error: 'Recipe not found'
-    });
-  }
-
+/* Current FDA recalls — local-dev mirror of api/recalls.js (the Vercel function
+   that serves this in production). Shares the exact parse logic via a dynamic
+   import of the .mjs core (CJS → ESM), and caches in-memory for an hour so
+   opening the Fresh tab repeatedly doesn't re-hit the FDA each time. */
+let _recallCache = { at: 0, data: null };
+app.get('/api/recalls', async (req, res) => {
+  const raw = parseInt(req.query.limit, 10);
+  const limit = Math.min(Math.max(Number.isFinite(raw) ? raw : 12, 1), 25);
   try {
-    const variants = remixEngine.generateCuisineVariants(recipe);
-
-    res.json({
-      success: true,
-      recipe_name: recipe.name,
-      variants: variants,
-      description: 'Transform this recipe using seasonings and ingredients from different cuisines'
-    });
-  } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: 'Failed to generate cuisine variants',
-      message: error.message
-    });
+    if (!_recallCache.data || Date.now() - _recallCache.at > 3600 * 1000) {
+      const { fetchFdaRecalls } = await import('./api/_fdaRecalls.mjs');
+      _recallCache = { at: Date.now(), data: await fetchFdaRecalls({ limit: 25 }) };
+    }
+    res.json({ recalls: _recallCache.data.slice(0, limit), source: 'fda-rss', fetchedAt: _recallCache.at });
+  } catch (err) {
+    console.error('[recalls]', err.message);
+    res.json({ recalls: [], source: 'error' });
   }
 });
-
-// ============ ERROR HANDLING ============
-app.use((err, req, res, next) => {
-  console.error('Error:', err);
-  res.status(500).json({
-    success: false,
-    error: 'Server error',
-    message: err.message
-  });
-});
-
-app.use((req, res) => {
-  res.status(404).json({
-    success: false,
-    error: 'Endpoint not found'
-  });
-});
-
-// ============ START SERVER ============
-loadRecipes();
 
 app.listen(PORT, () => {
-  console.log(`\n🍽️  DIG IN Recipe API Server`);
-  console.log(`📍 Port: ${PORT}`);
-  console.log(`✓ Ready at http://localhost:${PORT}`);
-  console.log(`✓ Frontend: http://localhost:8000\n`);
+  console.log(`AI API server → http://localhost:${PORT}`);
+  console.log(`  OPENAI_API_KEY: ${process.env.OPENAI_API_KEY ? '✓ set' : '✗ missing — add to .env'}`);
 });
