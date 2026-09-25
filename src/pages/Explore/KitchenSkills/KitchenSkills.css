@@ -1,0 +1,151 @@
+/* KitchenSkills.css — Twitter, 2019: white ground, hairline dividers instead
+   of card shadows, a dense system font, pill buttons, sticky tabs with a
+   colored underline bar. Deliberately NOT this app's usual Press Start 2P /
+   offset-hard-shadow pixel chrome — a sub-experience earning its own visual
+   identity, same precedent as Craving Tracker's own homestead palette. The
+   accent stays Dig-In's own matcha green rather than Twitter's literal blue —
+   the density and card language are Twitter's; the color is this app's. */
+
+.ks-page {
+  min-height: 100vh;
+  background: #fff;
+  font-family: var(--font-ui);
+  color: #0f1419;                 /* Twitter's actual near-black body text */
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.ks-shell { max-width: 600px; margin: 0 auto; }
+
+.ks-back {
+  display: block;
+  font-family: inherit; font-size: 13px; font-weight: 700;
+  background: none; border: none; color: var(--dig-matcha, #6E8259);
+  padding: 12px 16px; cursor: pointer;
+}
+.ks-back:hover { text-decoration: underline; }
+
+/* ── Sticky tab bar, Twitter's exact pattern: bottom hairline, colored
+   underline bar on the active tab ─────────────────────────────────────── */
+.ks-tabbar {
+  position: sticky; top: 0; z-index: 5;
+  display: flex;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eff3f4;
+}
+.ks-tab {
+  flex: 1;
+  font-family: inherit; font-size: 15px; font-weight: 700;
+  color: #536471;
+  background: none; border: none;
+  padding: 14px 0 12px;
+  cursor: pointer;
+  position: relative;
+}
+.ks-tab:hover { background: rgba(15,20,25,.03); }
+.ks-tab.active { color: #0f1419; }
+.ks-tab.active::after {
+  content: ''; position: absolute; left: 25%; right: 25%; bottom: 0;
+  height: 4px; border-radius: 4px 4px 0 0;
+  background: var(--dig-matcha, #6E8259);
+}
+
+.ks-timeline { padding-bottom: 40px; }
+
+/* ── One "tweet" — hairline border-bottom only, no card shadow ─────────── */
+.ks-tweet {
+  display: flex; gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eff3f4;
+}
+.ks-tweet.ks-intro { display: block; color: #536471; font-size: 15px; }
+.ks-tweet.ks-intro p { margin: 0; }
+
+.ks-avatar {
+  flex-shrink: 0;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #f0f4ee;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+
+.ks-tweet-body { flex: 1; min-width: 0; }
+.ks-tweet-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 3px; }
+.ks-tweet-name { font-weight: 800; font-size: 15px; color: #0f1419; }
+.ks-tweet-text { margin: 4px 0 0; color: #0f1419; line-height: 1.4; }
+
+/* ── Pill buttons — Twitter's exact Follow-button shape ─────────────────── */
+.ks-pill {
+  flex-shrink: 0;
+  font-family: inherit; font-size: 13px; font-weight: 700;
+  border: 1px solid var(--dig-matcha, #6E8259);
+  color: var(--dig-matcha, #6E8259);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.ks-pill:hover { background: rgba(110,130,89,.08); }
+.ks-pill.owned {
+  background: var(--dig-matcha, #6E8259); color: #fff; border-color: var(--dig-matcha, #6E8259);
+}
+.ks-pill.owned:hover { background: #5b6d49; }
+
+/* ── Quote-card — substitution guidance, styled like a quote-tweet ──────── */
+.ks-quote {
+  margin-top: 8px;
+  border: 1px solid #cfd9de; border-radius: 12px;
+  padding: 10px 12px;
+}
+.ks-quote-label { display: block; font-size: 10.5px; font-weight: 800; letter-spacing: .4px; color: #536471; margin-bottom: 4px; }
+.ks-quote-main { margin: 0 0 3px; font-size: 14px; color: #0f1419; }
+.ks-quote-sub { margin: 0; font-size: 13px; color: #536471; line-height: 1.4; }
+
+/* ── Section headers + rows (hydration "when you need more" list) ───────── */
+.ks-section-head { display: block; font-size: 11px; font-weight: 800; letter-spacing: .5px; color: #536471; margin-bottom: 8px; }
+.ks-row { margin-bottom: 10px; }
+.ks-row:last-child { margin-bottom: 0; }
+.ks-row-label { font-weight: 700; font-size: 14px; color: #0f1419; }
+.ks-row-why { margin: 2px 0 0; font-size: 13.5px; color: #536471; line-height: 1.4; }
+
+/* ── Thread numbering ("1/5") on hydration recipe cards ──────────────────── */
+.ks-thread-n { flex-shrink: 0; font-size: 12px; color: #536471; }
+
+.ks-ings { margin: 4px 0 0; padding-left: 18px; font-size: 14px; color: #0f1419; }
+.ks-ings li { margin: 2px 0; }
+.ks-ings li.have { color: var(--dig-matcha, #6E8259); font-weight: 600; }
+
+.ks-why { margin: 6px 0 0; font-size: 13px; color: #536471; line-height: 1.4; font-style: italic; }
+
+.ks-coverage {
+  flex-shrink: 0; font-size: 12px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: rgba(110,130,89,.1); border-radius: 999px; padding: 3px 9px;
+}
+.ks-savings { display: block; margin-top: 8px; font-size: 12.5px; color: #536471; }
+.ks-savings b { color: var(--dig-matcha, #6E8259); }
+
+.ks-tweet.ks-section { display: block; }
+.ks-reciperow { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.ks-recipechip {
+  font-size: 13px; color: #0f1419; background: #f7f9f9;
+  border: 1px solid #eff3f4; border-radius: 999px; padding: 5px 11px;
+}
+
+.ks-tweet.ks-stats { display: block; }
+.ks-statrow { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px dashed #eff3f4; }
+.ks-statrow:last-of-type { border-bottom: none; }
+.ks-statname { font-size: 14px; color: #0f1419; }
+.ks-statnums { font-size: 13px; color: #536471; white-space: nowrap; }
+.ks-statnums b { color: var(--dig-matcha, #6E8259); }
+.ks-notesmall { margin: 10px 0 0; font-size: 12px; color: #8a97a0; font-style: italic; }
+
+.ks-disclaimer {
+  font-size: 12px; color: #8a97a0; line-height: 1.5; font-style: italic;
+  padding: 14px 16px; margin: 0;
+}
+
+@media (max-width: 480px) {
+  .ks-shell { max-width: 100%; }
+  .ks-tweet { padding: 11px 12px; }
+}

@@ -1,0 +1,146 @@
+/* BudgetPanel — price point + spins.
+   Palette: Cream/Bark/Matcha as always. Honey ONLY on the spins block, which
+   is genuinely an earned thing (THE PALETTE's rule), and on the "close to
+   your limit" state, where it's the app's existing attention color. Crimson
+   stays scarce — going over budget is not a hazard, it's information, so it
+   gets a muted red-brown rather than the reserved alarm red. */
+
+.bpx {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 24px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .14);
+  font-family: var(--font-ui);
+  color: var(--dig-bark, #33302A);
+}
+.bpx-under { border-left: 6px solid var(--dig-matcha, #6E8259); }
+.bpx-close { border-left: 6px solid var(--dig-honey, #E0A32E); }
+.bpx-over  { border-left: 6px solid #b5652a; }
+
+.bpx-title {
+  font-family: var(--font-display); font-size: 0.74em; line-height: 1.5;
+  color: var(--dig-matcha, #6E8259); margin: 0; letter-spacing: 0.05em;
+}
+.bpx-sub { color: #6b6157; font-size: 0.88em; line-height: 1.55; margin: 10px 0 16px; }
+.bpx-note { color: #8a7a68; font-size: 0.76em; text-align: center; margin: 10px 0 0; }
+
+.bpx-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* ── the $5 stepper ─────────────────────────────────────────────────── */
+.bpx-stepper {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  margin: 4px 0 16px;
+}
+.bpx-step {
+  width: 46px; height: 46px; flex: 0 0 auto;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 12px;
+  background: #fff; color: var(--dig-bark, #33302A);
+  font-size: 1.5em; line-height: 1; cursor: pointer;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.bpx-step:hover:not(:disabled) { background: #f4f7f0; transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark,#33302A); }
+.bpx-step:disabled { opacity: .35; cursor: default; }
+.bpx-step-sm { width: 30px; height: 30px; font-size: 1.1em; box-shadow: 1px 1px 0 var(--dig-bark,#33302A); }
+
+.bpx-amount {
+  font-family: var(--font-display); font-size: 1.6em; line-height: 1.2;
+  min-width: 110px; text-align: center; font-variant-numeric: tabular-nums;
+}
+.bpx-dollar { font-size: 0.6em; vertical-align: super; margin-right: 2px; color: #8a7a68; }
+
+.bpx-target-ctl { display: flex; align-items: center; gap: 8px; }
+.bpx-target { font-family: var(--font-display); font-size: 0.86em; }
+
+.bpx-primary {
+  width: 100%; padding: 14px;
+  background: var(--dig-matcha, #6E8259); color: #fff;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 10px;
+  font-family: inherit; font-weight: 800; font-size: 0.92em; cursor: pointer;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
+}
+.bpx-primary:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark, #33302A); }
+
+/* ── the headline ───────────────────────────────────────────────────── */
+.bpx-hero { text-align: center; margin: 16px 0 12px; }
+.bpx-remaining { display: flex; flex-direction: column; gap: 2px; }
+.bpx-remaining-num {
+  font-family: var(--font-display); font-size: 1.75em; line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+.bpx-under .bpx-remaining-num { color: var(--dig-matcha, #6E8259); }
+.bpx-close .bpx-remaining-num { color: #b5872a; }
+.bpx-over  .bpx-remaining-num { color: #b5652a; }
+.bpx-remaining-label { font-size: 0.78em; color: #8a7a68; letter-spacing: 0.05em; text-transform: uppercase; }
+
+.bpx-meals { margin: 12px 0 0; font-size: 0.88em; color: #4a453d; line-height: 1.5; }
+.bpx-meals strong { color: var(--dig-matcha, #6E8259); }
+.bpx-basis { color: #a89a86; font-size: 0.88em; }
+
+/* stacked bar: real spend solid, estimate hatched so they never read alike */
+.bpx-bar {
+  display: flex; height: 14px; margin: 14px 0 12px;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 999px;
+  overflow: hidden; background: var(--dig-cashmere, #D8CAB4);
+}
+.bpx-bar-spent { background: var(--dig-matcha, #6E8259); }
+.bpx-bar-planned {
+  background: repeating-linear-gradient(45deg,
+    var(--dig-honey, #E0A32E) 0 5px, #f0c874 5px 10px);
+}
+
+.bpx-split { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 0 0 10px; }
+.bpx-cell {
+  text-align: center; padding: 9px 6px;
+  background: #faf8f3; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 9px;
+}
+.bpx-cell dt { font-size: 0.66em; text-transform: uppercase; letter-spacing: 0.05em; color: #8a7a68; }
+.bpx-cell dd { margin: 3px 0 0; font-weight: 800; font-size: 1em; font-variant-numeric: tabular-nums; }
+.bpx-cell-note { display: block; margin-top: 2px; font-size: 0.62em; color: #a89a86; }
+
+.bpx-estimate-note {
+  margin: 0 0 12px; font-size: 0.78em; line-height: 1.5; color: #8a7a68;
+  background: #faf8f3; border-left: 3px solid var(--dig-honey, #E0A32E);
+  padding: 8px 10px; border-radius: 0 8px 8px 0;
+}
+.bpx-estimate-note strong { color: var(--dig-bark, #33302A); }
+
+/* ── spins ──────────────────────────────────────────────────────────── */
+.bpx-spins {
+  margin-top: 14px; padding: 12px;
+  background: var(--dig-honey, #E0A32E);
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 12px;
+  color: var(--dig-bark, #33302A);
+}
+.bpx-spins-head { display: flex; align-items: center; gap: 11px; }
+.bpx-spins-icon { font-size: 1.6em; line-height: 1; }
+.bpx-spins-num { margin: 0; font-family: var(--font-display); font-size: 0.86em; line-height: 1.3; }
+.bpx-spins-sub { margin: 3px 0 0; font-size: 0.72em; opacity: .8; }
+.bpx-spins-toggle {
+  margin-left: auto; background: rgba(51,48,42,.14); border: none; border-radius: 8px;
+  padding: 6px 11px; font-family: inherit; font-size: 0.76em; font-weight: 700;
+  color: var(--dig-bark, #33302A); cursor: pointer;
+}
+.bpx-spins-toggle:hover { background: rgba(51,48,42,.24); }
+
+.bpx-ledger { list-style: none; margin: 11px 0 0; padding: 10px 0 0; border-top: 1.5px dashed rgba(51,48,42,.3); }
+.bpx-ledger li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.8em; padding: 3px 0; }
+.bpx-ledger li.is-spend { opacity: .7; }
+.bpx-ledger-spins { font-weight: 800; font-variant-numeric: tabular-nums; }
+.bpx-ledger-empty { display: block !important; line-height: 1.5; opacity: .85; }
+
+.bpx-clear {
+  display: block; width: 100%; margin-top: 12px;
+  background: none; border: none; color: #8a7a68;
+  font-family: inherit; font-size: 0.78em; text-decoration: underline; cursor: pointer;
+}
+.bpx-clear:hover { color: var(--dig-bark, #33302A); }
+
+@media (max-width: 460px) {
+  .bpx-split { grid-template-columns: 1fr; }
+  .bpx-amount { font-size: 1.3em; min-width: 90px; }
+}
+
+/* Cash view of the remaining balance — see CashStack for why this exists. */
+.bpx-cash { display: flex; justify-content: center; margin-top: 12px; }

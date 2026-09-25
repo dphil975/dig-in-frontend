@@ -1,0 +1,52 @@
+/* RecallBar — the feed's real-recall information bar. Uses the same #d32f2f
+   the app already treats as its one "genuine safety warning" red (see
+   AllergyPanel) rather than the reserved --dig-crimson (that's spoken for —
+   the main CTA + the "altered" verification mark) or inventing a third red. */
+
+.recallbar {
+  background: #fff5f4;
+  border: 2px solid #d32f2f;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.recallbar-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  flex-wrap: wrap;
+}
+.recallbar-icon { font-size: 17px; color: #d32f2f; flex-shrink: 0; }
+.recallbar-line { flex: 1; min-width: 200px; font-size: 13px; line-height: 1.45; color: var(--dig-bark, #33302A); }
+.recallbar-line b { color: #d32f2f; }
+.recallbar-toggle {
+  font-size: 12px; font-weight: 800; color: #d32f2f;
+  background: #fff; border: 1.5px solid #d32f2f; border-radius: 7px;
+  padding: 6px 11px; cursor: pointer; flex-shrink: 0;
+}
+.recallbar-toggle:hover { background: #d32f2f; color: #fff; }
+.recallbar-dismiss {
+  background: none; border: none; color: #8a7a68; font-size: 14px; font-weight: 700;
+  cursor: pointer; padding: 4px 6px; flex-shrink: 0; line-height: 1;
+}
+.recallbar-dismiss:hover { color: var(--dig-bark, #33302A); }
+
+.recallbar-body { padding: 0 14px 14px; border-top: 1.5px dashed rgba(211,47,47,.3); }
+.recallbar-item { padding: 12px 0; border-bottom: 1px solid rgba(211,47,47,.15); }
+.recallbar-item:last-of-type { border-bottom: none; }
+.recallbar-item-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+.recallbar-item-head b { font-size: 13.5px; color: var(--dig-bark, #33302A); }
+.recallbar-item-date { font-size: 11px; color: #8a7a68; white-space: nowrap; }
+.recallbar-item-desc { font-size: 12.5px; line-height: 1.5; color: var(--dig-bark, #33302A); margin: 0 0 4px; }
+.recallbar-item-reason { font-size: 12px; line-height: 1.5; color: #6b6157; margin: 0; }
+.recallbar-item-reason b { color: var(--dig-bark, #33302A); }
+
+.recallbar-go {
+  margin-top: 8px;
+  font-size: 12.5px; font-weight: 800; color: #fff; background: #d32f2f;
+  border: none; border-radius: 8px; padding: 9px 14px; cursor: pointer;
+}
+.recallbar-go:hover { background: #b71c1c; }
+.recallbar-note { font-size: 11px; line-height: 1.5; color: #8a7a68; margin: 10px 0 0; }
+.recallbar-note a { color: #d32f2f; }

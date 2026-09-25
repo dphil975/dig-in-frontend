@@ -1,0 +1,80 @@
+/* Community hub shell — restyled onto the app's real pixel/homestead system
+   (see Home.css / SideRail.css), pushed further into a chunky, Y2K-pixel-game
+   register: hard corners, thick bark borders, offset "pixel-press" shadows,
+   Press Start 2P everywhere text is a label. A faint pixel-check texture on
+   the page background (not a photo, not an image — pure CSS dither) is the
+   one purely decorative touch, kept subtle so it reads as texture, not noise. */
+
+.dih-hub {
+  min-height: 100vh;
+  background:
+    repeating-conic-gradient(#efe4d0 0% 25%, transparent 0% 50%) 0 0 / 16px 16px,
+    var(--dig-cream, #F3EADA);
+}
+
+.dih-hub-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 20px 20px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.dih-hub-tab {
+  padding: 12px 20px;
+  border: 3px solid var(--dig-bark, #33302A);
+  border-radius: 6px 6px 0 0;
+  background: #fff;
+  color: var(--dig-bark, #33302A);
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: .04em;
+  cursor: pointer;
+  box-shadow: 3px -3px 0 rgba(51, 48, 42, .18);
+  transition: transform .12s, box-shadow .12s, background-color .15s, color .15s;
+}
+
+.dih-hub-tab:hover:not(.active) {
+  background: #fbf7f0;
+  transform: translateY(-2px);
+}
+
+.dih-hub-tab.active {
+  background: var(--dig-matcha, #6E8259);
+  border-color: var(--dig-bark, #33302A);
+  color: #fff;
+  box-shadow: 3px -3px 0 var(--dig-bark, #33302A);
+}
+
+/* Your communities — the followed-hashtag strip that leads the hub. */
+.dih-communities { max-width: 1100px; margin: 0 auto; padding: 18px 20px 0; }
+.dih-communities-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.dih-communities-title {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em; color: var(--dig-matcha, #6E8259);
+}
+.dih-communities-sub { font-size: 12px; color: #8a7a68; }
+.dih-community-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.dih-community-chip {
+  font-size: 13px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A); padding: 8px 14px; cursor: pointer;
+  transition: transform .12s, box-shadow .12s;
+}
+.dih-community-chip:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+.dih-community-chip.flagged { border-color: var(--dig-honey, #E0A32E); box-shadow: 2px 2px 0 var(--dig-honey, #E0A32E); }
+
+/* ── Your Tags tab (mirrored from Home) ────────────────────────────────── */
+.ytf { max-width: 560px; margin: 0 auto; padding: 6px 16px 48px; }
+.ytf-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.ytf-chip {
+  font-size: 12.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 999px;
+  padding: 5px 12px; cursor: pointer; transition: border-color .1s, background .1s;
+}
+.ytf-chip:hover { border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
+
+@media (max-width: 640px) {
+  .dih-hub-tab { font-size: 8px; padding: 10px 14px; }
+  .dih-communities { padding: 14px 14px 0; }
+}

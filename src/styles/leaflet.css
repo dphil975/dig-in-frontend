@@ -1,0 +1,49 @@
+/* ════════════════════════════════════════════════════════════
+   GLOBAL LEAFLET SAFETY NET
+   Imported once in App.jsx so EVERY map popup, on every page,
+   has a sane baseline — even before a page's own styles load.
+
+   The "long unreadable line" bug happens when a popup opens
+   before Leaflet's sizing CSS is applied: the content has no
+   width and no wrapping, so it renders as one horizontal strip.
+   These rules guarantee that can never happen again.
+   ════════════════════════════════════════════════════════════ */
+
+/* Brand palette (kept local so this file is self-contained) */
+:root {
+  --dig-crimson: #C8001E;   /* primary */
+  --dig-matcha:  #96B36B;
+  --dig-cream:   #F3EADA;
+  --dig-pink:    #FF6D8B;
+  --dig-ink:     #33302A;
+}
+
+/* Every popup gets a real, readable box by default. Pages may
+   override with a higher-specificity scoped class (.dig-popup,
+   .catalog-popup) — those win because of the extra class. */
+.leaflet-popup-content {
+  min-width:   200px;
+  max-width:   320px;
+  margin:      12px 14px;
+  line-height: 1.6;
+  white-space: normal;       /* never collapse into a single line */
+  word-break:  break-word;
+  overflow-wrap: anywhere;
+}
+
+.leaflet-popup-content-wrapper {
+  background:    var(--dig-cream);
+  color:         var(--dig-ink);
+  border:        3px solid var(--dig-ink);
+  border-radius: 10px;
+  box-shadow:    4px 4px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* Keep the tip (little pointer triangle) consistent with the box */
+.leaflet-popup-tip {
+  background: var(--dig-cream);
+  border:     3px solid var(--dig-ink);
+}
+
+/* Make sure popups always float above tiles / controls */
+.leaflet-popup { z-index: 700; }

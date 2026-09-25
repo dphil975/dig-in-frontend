@@ -1,0 +1,157 @@
+/* FreshPanel — the stewardship tab. Matches Home's pixel/Y2K card language:
+   bark borders, offset shadows, cream fills, matcha accents. Light-themed to
+   match the rest of the app (no dark-mode fork here — the app commits to one
+   warm palette). */
+
+.fresh-panel { display: flex; flex-direction: column; gap: 18px; }
+
+.fresh-intro {
+  font-size: 13.5px; line-height: 1.5; color: var(--dig-bark, #33302A);
+  margin: 2px 2px 0;
+}
+.fresh-intro b { color: var(--dig-matcha, #6E8259); }
+
+/* ── Section shell ─────────────────────────────────────────────────────── */
+.fresh-sec {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .14);
+  padding: 14px 14px 16px;
+}
+.fresh-sec-head { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+.fresh-sec-icon {
+  flex: 0 0 auto; width: 30px; height: 30px; display: grid; place-items: center;
+  font-size: 16px; background: var(--dig-cream, #F3EADA);
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+}
+.fresh-sec-title { margin: 0; font-size: 15px; font-weight: 900; color: var(--dig-bark, #33302A); letter-spacing: .01em; }
+.fresh-sec-sub { margin: 2px 0 0; font-size: 12px; color: #8a8072; line-height: 1.35; }
+
+/* ── Shared bits ───────────────────────────────────────────────────────── */
+.fresh-empty { font-size: 12.5px; color: #8a8072; margin: 4px 2px; }
+.fresh-empty-block {
+  background: var(--dig-cream, #F3EADA); border: 1.5px dashed var(--dig-cashmere, #D8CAB4);
+  border-radius: 8px; padding: 12px; font-size: 12.5px; color: var(--dig-bark, #33302A);
+  display: flex; flex-direction: column; gap: 10px; align-items: flex-start;
+}
+.fresh-empty-block p { margin: 0; line-height: 1.45; }
+
+.fresh-btn {
+  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha, #6E8259);
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A); padding: 8px 12px; cursor: pointer;
+  transition: transform .08s, box-shadow .08s;
+}
+.fresh-btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--dig-bark, #33302A); }
+.fresh-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--dig-bark, #33302A); }
+
+.fresh-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.fresh-link { font-size: 12px; font-weight: 700; color: var(--dig-matcha, #6E8259); text-decoration: none; }
+.fresh-link:hover { text-decoration: underline; }
+.fresh-fineprint { margin: 10px 2px 0; font-size: 11px; color: #a49a8b; line-height: 1.4; }
+
+/* ── 1. Recall Watch ───────────────────────────────────────────────────── */
+.fresh-pantry-flag {
+  width: 100%; text-align: left; font-size: 12.5px; color: var(--dig-bark, #33302A);
+  background: #fdeaea; border: 2px solid var(--dig-crimson, #C8001E); border-radius: 8px;
+  box-shadow: 3px 3px 0 rgba(200, 0, 30, .18); padding: 9px 11px; margin-bottom: 12px; cursor: pointer;
+}
+.fresh-pantry-flag:hover { background: #fbdede; }
+
+.fresh-recall-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.fresh-recall {
+  border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-left-width: 4px;
+  border-radius: 8px; padding: 10px 11px; background: #fffdf9;
+}
+.fresh-recall-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; }
+.fresh-sev {
+  font-size: 10.5px; font-weight: 900; letter-spacing: .03em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 999px; border: 1.5px solid var(--dig-bark, #33302A);
+}
+.fresh-sev.sev-hi  { background: var(--dig-crimson, #C8001E); color: #fff; }
+.fresh-sev.sev-mid { background: var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A); }
+.fresh-sev.sev-lo  { background: var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A); }
+.fresh-recall-date { font-size: 11px; color: #a49a8b; font-weight: 700; white-space: nowrap; }
+.fresh-recall-desc { margin: 0; font-size: 12.5px; line-height: 1.4; color: var(--dig-bark, #33302A); font-weight: 600; }
+a.fresh-recall-desc-link { display: block; text-decoration: none; }
+a.fresh-recall-desc-link:hover { color: var(--dig-matcha, #6E8259); text-decoration: underline; }
+.fresh-recall-reason { margin: 4px 0 0; font-size: 12px; line-height: 1.4; color: #6a6154; }
+.fresh-recall-reason b { color: var(--dig-bark, #33302A); }
+.fresh-recall-meta { margin: 4px 0 0; font-size: 11px; color: #a49a8b; }
+
+/* ── 2. Grow & Regrow ──────────────────────────────────────────────────── */
+.fresh-grow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fresh-grow {
+  background: #fffdf9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px;
+  padding: 10px 11px; display: flex; flex-direction: column; gap: 5px;
+}
+.fresh-grow-top { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.fresh-grow-name { font-size: 12.5px; font-weight: 800; color: var(--dig-bark, #33302A); line-height: 1.2; }
+.fresh-grow-tag {
+  flex: 0 0 auto; font-size: 9.5px; font-weight: 900; text-transform: uppercase; letter-spacing: .03em;
+  padding: 2px 6px; border-radius: 999px; border: 1.5px solid var(--dig-bark, #33302A);
+}
+.fresh-grow-tag.is-regrow { background: var(--dig-frog, #96B36B); color: var(--dig-bark, #33302A); }
+.fresh-grow-tag.is-seed   { background: var(--dig-cream, #F3EADA); color: #8a8072; }
+.fresh-grow-how { margin: 0; font-size: 12px; line-height: 1.4; color: var(--dig-bark, #33302A); }
+.fresh-grow-tip { margin: 0; font-size: 11.5px; line-height: 1.4; color: #6a6154; }
+.fresh-grow-foot {
+  margin-top: auto; padding-top: 6px; display: flex; align-items: center;
+  justify-content: space-between; gap: 6px; flex-wrap: wrap;
+}
+.fresh-grow-space { font-size: 10.5px; font-weight: 700; color: #6a6154; }
+.fresh-grow-days { font-size: 11px; font-weight: 800; color: var(--dig-matcha, #6E8259); }
+
+/* ── Small-space / apartment guide ─────────────────────────────────────── */
+.fresh-space {
+  margin-top: 14px; padding-top: 14px; border-top: 2px dashed var(--dig-cashmere, #D8CAB4);
+}
+.fresh-space-head { margin: 0 0 10px; font-size: 12.5px; font-weight: 800; color: var(--dig-bark, #33302A); }
+.fresh-space-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fresh-space-tier {
+  background: var(--dig-cream, #F3EADA); border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 8px; padding: 10px 11px;
+}
+.fresh-space-place { font-size: 12px; font-weight: 900; color: var(--dig-matcha, #6E8259); display: block; }
+.fresh-space-blurb { margin: 4px 0 7px; font-size: 11.5px; line-height: 1.4; color: #6a6154; }
+.fresh-space-grows { display: flex; flex-wrap: wrap; gap: 4px; }
+.fresh-space-grows span {
+  font-size: 10px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #fff; border: 1px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 999px; padding: 1px 6px;
+}
+@media (max-width: 520px) {
+  .fresh-space-grid { grid-template-columns: 1fr; }
+}
+
+/* ── 3. Use It Up ──────────────────────────────────────────────────────── */
+.fresh-expire-list { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.fresh-expire {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 8px 10px; border-radius: 7px; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-left-width: 4px; background: #fffdf9;
+}
+.fresh-expire.expired, .fresh-expire.urgent { border-left-color: var(--dig-crimson, #C8001E); }
+.fresh-expire.soon { border-left-color: var(--dig-honey, #E0A32E); }
+.fresh-expire-name { font-size: 12.5px; font-weight: 700; color: var(--dig-bark, #33302A); }
+.fresh-expire-days { font-size: 11px; font-weight: 800; color: #8a8072; white-space: nowrap; }
+
+/* ── 4. From people ────────────────────────────────────────────────────── */
+.fresh-tip-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.fresh-tip {
+  background: #fffdf9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px; padding: 10px 11px;
+}
+.fresh-tip-head { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.fresh-tip-title { font-size: 13px; font-weight: 800; color: var(--dig-bark, #33302A); }
+.fresh-tip-author { font-size: 11px; color: #a49a8b; }
+.fresh-tip-body { margin: 5px 0 0; font-size: 12px; line-height: 1.45; color: #6a6154; }
+.fresh-tip-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.fresh-tip-tags span {
+  font-size: 10.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: var(--dig-cream, #F3EADA); border-radius: 999px; padding: 2px 7px;
+}
+
+@media (max-width: 520px) {
+  .fresh-grow-grid { grid-template-columns: 1fr; }
+}

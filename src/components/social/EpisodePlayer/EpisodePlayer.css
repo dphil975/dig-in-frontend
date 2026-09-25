@@ -1,0 +1,50 @@
+/* EpisodePlayer — warm, on The Table's palette (cream/gold/ink browns). */
+
+.ep {
+  background: #fdf7ee; border: 1px solid #f0d9bf; border-radius: 14px;
+  padding: 14px 16px; margin: 0 0 16px;
+}
+.ep-kicker {
+  font-family: var(--font-ui); font-size: 11px; text-transform: uppercase;
+  color: #c8925a; display: block; margin-bottom: 12px;
+}
+
+/* Empty (no recording yet) — honest, quiet. */
+.ep-empty { background: #faf5ec; border-style: dashed; }
+.ep-empty-note { margin: 0; font-size: 13px; line-height: 1.5; color: #8a7c67; font-style: italic; }
+
+/* The player row. */
+.ep-player { display: flex; align-items: center; gap: 14px; }
+.ep-play {
+  flex: 0 0 auto; width: 46px; height: 46px; border-radius: 50%;
+  background: #c8925a; color: #fff; border: none; cursor: pointer;
+  font-size: 15px; line-height: 1; display: grid; place-items: center;
+  transition: transform .1s, background .15s;
+}
+.ep-play:hover { transform: scale(1.05); background: #b47f49; }
+.ep-track { flex: 1; min-width: 0; }
+.ep-seek {
+  width: 100%; height: 6px; -webkit-appearance: none; appearance: none;
+  background: #ecdcc2; border-radius: 999px; outline: none; cursor: pointer;
+}
+.ep-seek::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 15px; height: 15px; border-radius: 50%;
+  background: #c8925a; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+.ep-seek::-moz-range-thumb {
+  width: 15px; height: 15px; border-radius: 50%; background: #c8925a; border: 2px solid #fff;
+}
+.ep-time { display: flex; justify-content: space-between; font-size: 11px; color: #a98d6a; margin-top: 5px; }
+
+/* Platform links (the off-app reach layer). */
+.ep-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.ep-links-lead { font-size: 12px; color: #8a7c67; }
+.ep-link {
+  font-size: 12px; font-weight: 700; color: #b98a4f; text-decoration: none;
+  background: #fff; border: 1.5px solid #e8b877; border-radius: 999px; padding: 5px 11px;
+}
+.ep-link:hover { background: #fdf7ee; }
+
+/* Compact (archive) variant — no card chrome, just the control. */
+.ep-compact { background: none; border: none; padding: 0; margin: 10px 0 0; }
+.ep-compact .ep-play { width: 38px; height: 38px; font-size: 13px; }

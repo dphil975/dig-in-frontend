@@ -1,0 +1,58 @@
+/* NovaUseItUp — expiring-ingredients rescue card in the Pantry. Warm amber
+   alert framing so it reads as a gentle "before it's too late", not an error. */
+
+.nuiu {
+  background: #FFF7E9;
+  border: 2px solid #6E8259;
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  margin: 0 0 20px;
+  box-shadow: 0 6px 20px rgba(201,135,26,.16);
+}
+
+.nuiu-head { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.nuiu-head-text { flex: 1; min-width: 0; }
+.nuiu-title {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px;
+  color: #c9871a; margin-bottom: 7px;
+}
+.nuiu-line { font-size: 14px; line-height: 1.5; color: #5a4a30; margin: 0; }
+.nuiu-line strong { color: #33302A; }
+
+.nuiu-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
+.nuiu-chip {
+  font-size: 11px; font-weight: 600; letter-spacing: .2px;
+  padding: 5px 10px; border-radius: 999px;
+  background: #fff; border: 1px solid rgba(212,188,165,.9); color: #6a5a45;
+}
+.nuiu-chip.nuiu-soon    { border-color: #6E8259; color: #a56a12; }
+.nuiu-chip.nuiu-urgent  { border-color: #e07b2e; background: #fff3e6; color: #b4560f; }
+.nuiu-chip.nuiu-expired { border-color: #33302A; background: #F3EADA; color: #33302A; }
+
+.nuiu-recipes { display: flex; flex-direction: column; gap: 9px; }
+.nuiu-recipe {
+  display: flex; align-items: center; gap: 12px;
+  background: #fff; border: 1px solid rgba(212,188,165,.8);
+  border-radius: 12px; padding: 11px 12px;
+}
+.nuiu-recipe-main { flex: 1; min-width: 0; }
+.nuiu-recipe-name {
+  font-weight: 700; font-size: 14px; color: #33302A;
+  margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.nuiu-recipe-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 11px; }
+.nuiu-cov     { color: #96B36B; font-weight: 600; }
+.nuiu-uses    { color: #6E8259; font-weight: 600; }
+.nuiu-missing { color: #a08d78; }
+
+.nuiu-cook {
+  flex: 0 0 auto;
+  font-family: var(--font-ui); font-size: 11px;
+  color: #fff; background: #96B36B; border: none;
+  border-bottom: 3px solid #1f5a23; border-radius: 10px;
+  padding: 11px 12px; cursor: pointer; transition: background .15s, transform .08s;
+}
+.nuiu-cook:hover  { background: #276b2b; }
+.nuiu-cook:active { transform: translateY(2px); border-bottom-width: 1px; }
+
+.nuiu-empty { font-size: 13px; line-height: 1.5; color: #7a6a52; margin: 0; }

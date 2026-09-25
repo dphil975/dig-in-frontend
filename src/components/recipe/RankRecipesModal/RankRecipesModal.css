@@ -1,0 +1,137 @@
+.rank-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 16px;
+}
+
+.rank-card {
+  background: #F3EADA;
+  border: 3px solid #33302A;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 #33302A;
+  padding: 26px 22px;
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  animation: rank-slide-in 0.2s ease;
+}
+
+@keyframes rank-slide-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.rank-title {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: #33302A;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.rank-body {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.12s;
+  text-align: left;
+}
+
+.rank-item:hover { border-color: #33302A; }
+
+.rank-item.picked {
+  border-color: #33302A;
+  background: #6E8259;
+  box-shadow: 3px 3px 0 #33302A;
+}
+
+.rank-badge {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #33302A;
+  border-radius: 50%;
+  background: #fff;
+  font-family: var(--font-ui);
+  font-size: 11px;
+}
+
+.rank-emoji { font-size: 20px; flex-shrink: 0; }
+
+.rank-name {
+  font-size: 13px;
+  color: #33302A;
+  line-height: 1.4;
+}
+
+.rank-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rank-btn-back {
+  background: transparent;
+  border: 2px solid #bbb;
+  border-radius: 4px;
+  color: #777;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.rank-btn-back:hover { border-color: #33302A; color: #333; }
+
+.rank-btn-confirm {
+  flex: 1;
+  background: #6E8259;
+  color: #33302A;
+  border: 2px solid #33302A;
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 #33302A;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.rank-btn-confirm:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0 #33302A;
+}
+
+.rank-btn-confirm:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}

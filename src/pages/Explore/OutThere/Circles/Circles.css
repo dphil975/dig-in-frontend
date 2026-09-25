@@ -1,0 +1,175 @@
+.circ-hub-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 16px 16px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.circ-hub-tab {
+  padding: 10px 18px;
+  border: 2px solid #6E8259;
+  background: #fff;
+  color: #6b6580;
+  font-family: 'DotGothic16', monospace;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.circ-hub-tab:hover { background: #F3EADA; }
+
+.circ-hub-tab.active {
+  background: #6E8259;
+  color: #fff;
+}
+
+.circ-page { max-width: 640px; margin: 0 auto; padding: 24px 16px 60px; }
+
+.circ-header h1 {
+  font-family: var(--font-display); font-size: 18px; color: #3a3550; margin-bottom: 8px;
+}
+.circ-header p { color: #6b6580; margin-bottom: 14px; font-size: 13px; }
+
+.circ-btn {
+  border: 2px solid #6E8259; background: #fff; border-radius: 9px;
+  padding: 9px 14px; font-family: 'DotGothic16', monospace; font-size: 13px; cursor: pointer;
+}
+.circ-btn-primary { background: #6E8259; color: #fff; }
+.circ-btn:disabled { opacity: .6; cursor: default; }
+
+.circ-create, .circ-post-form {
+  display: flex; flex-direction: column; gap: 10px;
+  background: #F3EADA; border: 2px solid #6E8259; border-radius: 12px;
+  padding: 14px; margin: 14px 0;
+}
+.circ-input, .circ-textarea {
+  font-family: 'DotGothic16', monospace; font-size: 14px;
+  border: 1px solid #6E8259; border-radius: 8px; padding: 10px;
+}
+.circ-textarea { min-height: 70px; resize: vertical; }
+
+.circ-error { color: #33302A; font-size: 13px; }
+
+.circ-loading, .circ-empty { text-align: center; color: #8a7a68; padding: 30px 0; }
+
+.circ-list { display: flex; flex-direction: column; gap: 12px; }
+.circ-card {
+  background: #F3EADA; border: 2px solid #6E8259; border-radius: 12px; padding: 14px;
+}
+.circ-card-name { font-family: 'DotGothic16', monospace; font-size: 16px; color: #3a3550; }
+.circ-card-desc { color: #6b6580; font-size: 13px; margin: 4px 0 10px; }
+.circ-card-actions { display: flex; gap: 8px; }
+
+.circ-back {
+  background: none; border: none; color: #6E8259; cursor: pointer;
+  font-family: 'DotGothic16', monospace; font-size: 13px; margin-bottom: 14px;
+}
+
+.circ-members { color: #6b6580; font-size: 12px; margin-bottom: 14px; }
+
+.circ-posts { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+.circ-post {
+  background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 10px 12px;
+}
+.circ-post-author { font-size: 11px; color: #6E8259; margin-bottom: 4px; }
+.circ-post-text { font-size: 14px; color: #3a3550; line-height: 1.5; }
+.circ-post-image { max-width: 100%; border-radius: 8px; margin-top: 8px; }
+.circ-post-audio { width: 100%; height: 38px; margin-top: 8px; display: block; }
+.circ-issue-audio { width: 100%; height: 38px; margin-bottom: 8px; display: block; }
+
+.circ-notice {
+  font-size: 13px; padding: 8px 10px; border-radius: 8px;
+  background: #fff3cd; color: #6b5100;
+}
+.circ-notice.blocked { background: #f8d7da; color: #7a1a24; }
+
+/* ── This week's question (same warm-gold accent as The Table, so the episode
+      and the circle answer read as one thing) ──────────────────────────────── */
+.circ-question {
+  background: linear-gradient(160deg, #f6f1e6 0%, #efe6d4 100%);
+  border: 2px solid #e8b877; border-radius: 12px; padding: 14px 16px; margin-bottom: 14px;
+}
+.circ-question-kicker {
+  font-family: var(--font-ui); font-size: 11px; text-transform: uppercase;
+  color: #b98a4f; display: block; margin-bottom: 8px;
+}
+.circ-question-text { font-size: 16px; font-weight: 800; color: #4a3b2a; line-height: 1.4; margin: 0; }
+.circ-question-link {
+  margin-top: 8px; background: none; border: none; cursor: pointer;
+  font-family: 'DotGothic16', monospace; font-size: 12px; color: #b98a4f; text-decoration: underline; padding: 0;
+}
+
+/* ── "X of N answered this week" — the retention keystone ───────────────────── */
+.circ-participation { margin-bottom: 16px; }
+.circ-part-bar { height: 8px; background: #e7ddcb; border-radius: 999px; overflow: hidden; }
+.circ-part-fill { display: block; height: 100%; background: #6E8259; border-radius: 999px; transition: width .3s ease; }
+.circ-part-line { font-size: 13px; color: #3a3550; margin-top: 7px; }
+.circ-part-line b { color: #6E8259; }
+.circ-part-you { color: #a98d6a; }
+.circ-part-you.done { color: #6E8259; font-weight: 700; }
+.circ-part-links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 9px; }
+.circ-issue-toggle {
+  background: none; border: none; cursor: pointer;
+  font-family: 'DotGothic16', monospace; font-size: 12.5px; color: #6E8259; text-decoration: underline; padding: 0;
+}
+
+/* Consent to the public issue — off by default, stated plainly. */
+.circ-share {
+  display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: #6b5f4e; line-height: 1.4; cursor: pointer;
+}
+.circ-share input { margin-top: 2px; flex: 0 0 auto; accent-color: #6E8259; }
+.circ-share b { color: #4a3b2a; }
+
+/* ── The weekly issue (magazine that writes itself) ─────────────────────────── */
+.circ-issue {
+  background: #fffdf8; border: 2px solid #e8b877; border-radius: 12px; padding: 16px; margin-bottom: 16px;
+}
+.circ-issue-masthead { border-bottom: 1px dashed #e8cfa4; padding-bottom: 12px; margin-bottom: 12px; }
+.circ-issue-eyebrow {
+  font-family: var(--font-ui); font-size: 11px; text-transform: uppercase; color: #b98a4f;
+}
+.circ-issue-place { font-size: 18px; color: #4a3b2a; margin: 10px 0 6px; font-weight: 800; }
+.circ-issue-quote { font-style: italic; color: #574b3b; font-size: 14px; line-height: 1.45; margin: 0; }
+.circ-issue-quote cite { display: block; margin-top: 4px; font-style: normal; font-size: 12px; font-weight: 700; color: #b98a4f; }
+.circ-issue-q { font-size: 14px; font-weight: 700; color: #4a3b2a; margin: 10px 0 0; }
+.circ-issue-answers { display: flex; flex-direction: column; gap: 14px; }
+.circ-issue-answer { margin: 0; }
+.circ-issue-photo { width: 100%; border-radius: 10px; display: block; margin-bottom: 8px; }
+.circ-issue-text { font-size: 15px; color: #3a3550; line-height: 1.5; margin: 0; font-style: italic; }
+.circ-issue-by { font-size: 12px; color: #a98d6a; margin-top: 5px; }
+
+/* ── A post made this week is flagged as an answer ─────────────────────────── */
+.circ-post.this-week { border-color: #e8b877; }
+.circ-post-week {
+  margin-left: 8px; font-size: 9.5px; font-weight: 700; color: #b98a4f;
+  background: #f6ecd8; border-radius: 999px; padding: 1px 7px; vertical-align: middle;
+}
+
+/* ── Compose: photo answer ─────────────────────────────────────────────────── */
+.circ-post-actions { display: flex; align-items: center; gap: 10px; }
+.circ-photo-btn {
+  flex: 0 0 auto; cursor: pointer; font-family: 'DotGothic16', monospace; font-size: 12.5px;
+  color: #6E8259; background: #fff; border: 1.5px solid #6E8259; border-radius: 8px; padding: 8px 12px;
+}
+.circ-post-actions .circ-btn-primary { margin-left: auto; }
+.circ-photo-preview { position: relative; align-self: flex-start; }
+.circ-photo-preview img { max-height: 140px; border-radius: 8px; display: block; }
+.circ-photo-remove {
+  position: absolute; top: -8px; right: -8px; width: 22px; height: 22px; border-radius: 50%;
+  background: #fff; border: 1.5px solid #33302A; color: #33302A; cursor: pointer; font-size: 11px; line-height: 1;
+}
+
+/* ── Take it offline: the meet-up unlock ───────────────────────────────────── */
+.circ-meetup {
+  background: linear-gradient(160deg, #eef3e9 0%, #e3ecdb 100%);
+  border: 2px solid #6E8259; border-radius: 12px; padding: 16px; margin-top: 18px;
+}
+.circ-meetup-kicker {
+  font-family: var(--font-ui); font-size: 11px; text-transform: uppercase; color: #6E8259;
+  display: block; margin-bottom: 8px;
+}
+.circ-meetup-text { font-size: 13.5px; color: #3a3550; line-height: 1.55; margin: 0 0 12px; }

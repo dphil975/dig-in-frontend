@@ -29,7 +29,18 @@
 
    Pairs with madeItRate.js, which measures consequence in the physical world
    (did anyone actually cook it). MIR answers "did this matter"; this module
-   answers "did anyone show up for the person who posted it." */
+   answers "did anyone show up for the person who posted it."
+
+   ── Lifting, specifically ──────────────────────────────────────────────────
+   Counting replies answers "did anyone show up." It can't tell you whether
+   showing up meant something — a one-word "nice" and "I've been there too,
+   you've got this" both just look like a reply. liftSignal.js reads what was
+   actually written and tells the two apart, so a comment that genuinely lifts
+   the author up is worth more than one that merely exists. It's additive on
+   top of the normal reply credit below, not a replacement for it — a lift is
+   still a reply, plus something more. */
+
+import { classifyLift } from './liftSignal';
 
 const RETURN_KEY = 'dig_in_author_returns';
 
@@ -40,6 +51,7 @@ const RETURN_KEY = 'dig_in_author_returns';
 export const WEIGHTS = {
   reply: 12,          // a distinct person wrote words
   replyFromNew: 18,   // ...someone who had never replied to this author before
+  lift: 22,           // ...and it specifically lifted her up (liftSignal.js) — stacks on top of reply/replyFromNew
   authorReplied: 15,  // the author answered — this is what makes it a conversation
   returned: 25,       // someone came back to this author on a later day
   like: 1,            // acknowledged. barely counted.
@@ -70,6 +82,18 @@ export function depthScore(post, ctx = {}) {
   const newPeople = [...people].filter((id) => !priorRepliers.has(id));
   const authorReplies = replies.filter((r) => (r.authorId || r.userId) === authorId).length;
 
+  // Distinct people whose reply reads as a genuine lift — encouragement or
+  // "I've been there" solidarity — not just a reply. One classification per
+  // person even if they wrote more than once, same "breadth over volume"
+  // rule the rest of this function uses.
+  const lifters = new Map();
+  for (const r of replies) {
+    const id = r.authorId || r.userId;
+    if (!id || id === authorId || lifters.has(id)) continue;
+    const lift = classifyLift(r.text || r.body || '');
+    if (lift.isLift) lifters.set(id, lift.kind);
+  }
+
   const parts = [];
   let score = 0;
 
@@ -84,6 +108,16 @@ export function depthScore(post, ctx = {}) {
   if (newPeople.length > 0) {
     score += Math.sqrt(newPeople.length) * WEIGHTS.replyFromNew;
     parts.push(`${newPeople.length} of them for the first time`);
+  }
+
+  if (lifters.size > 0) {
+    score += Math.sqrt(lifters.size) * WEIGHTS.lift;
+    const relateCount = [...lifters.values()].filter((k) => k === 'relate').length;
+    const encourageCount = lifters.size - relateCount;
+    const bits = [];
+    if (encourageCount > 0) bits.push(`${encourageCount} lifted her up`);
+    if (relateCount > 0) bits.push(`${relateCount} said "me too"`);
+    parts.push(bits.join(', '));
   }
 
   // Reciprocity is a multiplier, not an addition, because it changes what the

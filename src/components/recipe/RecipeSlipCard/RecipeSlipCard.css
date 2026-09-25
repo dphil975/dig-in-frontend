@@ -1,0 +1,215 @@
+/* ── Recipe slip card — split rounded rectangle (map | preview) ──── */
+.slip-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: slip-fade 0.18s ease;
+}
+@keyframes slip-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.slip-card {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  background: #221a33;
+  border: 2px solid #D8CAB4;
+  border-radius: 24px;                /* curved edges on its sides */
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  color: #ece8f7;
+  min-height: 320px;
+  animation: slip-rise 0.26s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes slip-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+.slip-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #33302A;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slip-close:hover { background: #33302A; }
+
+/* Left — smaller map half */
+.slip-map {
+  position: relative;
+  flex: 0 0 40%;
+  min-width: 0;
+  border-right: 2px solid #D8CAB4;
+  background: #33302A;
+}
+.slip-map .dish-pixel-preview { height: 100% !important; }
+.slip-map-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: #6E8259;
+  color: #33302A;
+  border: 2px solid #33302A;
+  border-radius: 6px;
+  padding: 5px 7px;
+}
+
+/* Right — recipe preview half */
+.slip-preview {
+  flex: 1;
+  min-width: 0;
+  padding: 22px 22px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.slip-visual {
+  height: 96px;
+  border-radius: 12px;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 8px, transparent 8px 16px),
+    #33302A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.slip-visual img { width: 100%; height: 100%; object-fit: cover; }
+/* No photo yet — a small faded pixel-font badge, matching the "no photo"
+   treatment used elsewhere (DishPixelPreview, RegionCard's image fallback),
+   not a giant plain word standing in for a missing emoji glyph. */
+.slip-visual-ph {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  padding: 0 12px;
+}
+
+.slip-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 0 12px;
+}
+.slip-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.slip-tag {
+  font-family: 'DotGothic16', monospace;
+  font-size: 11px;
+  color: #f3f0fb;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 7px;
+  padding: 4px 9px;
+  text-transform: capitalize;
+}
+.slip-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(236, 232, 247, 0.8);
+  margin: 0 0 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.slip-actions { display: flex; gap: 10px; margin-top: auto; flex-wrap: wrap; }
+.slip-btn {
+  flex: 1;
+  min-width: 130px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 13px;
+  border: 2px solid #33302A;
+  border-radius: 10px;
+  background: #2a2140;
+  color: #ece8f7;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  transition: transform .12s, box-shadow .12s, background .15s;
+}
+.slip-btn:hover { transform: translate(1px, 1px); box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); }
+.slip-btn-primary { background: #6E8259; color: #33302A; }
+.slip-btn-primary:hover { background: #ffc14d; }
+
+.slip-stars { display: flex; gap: 3px; margin: 2px 0 12px; }
+.slip-star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: #4a3f66;
+  padding: 0;
+  transition: color .1s, transform .1s;
+}
+.slip-star:hover { transform: scale(1.15); }
+.slip-star.filled { color: #6E8259; }
+
+.slip-board-picker {
+  min-width: 200px;
+  background: #2a2140;
+  border: 2px solid #33302A;
+  border-radius: 10px;
+  padding: 10px;
+}
+.slip-board-list { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.slip-board-list button {
+  width: 100%;
+  text-align: left;
+  font-size: 11px;
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: #1f1830;
+  border: 1px solid #4a3f66;
+  color: #ece8f7;
+  cursor: pointer;
+}
+.slip-board-list button:hover { border-color: #6E8259; }
+.slip-board-list button:disabled { color: #6aa06a; cursor: default; opacity: .8; }
+.slip-board-new { display: flex; gap: 6px; }
+.slip-board-new input {
+  flex: 1;
+  min-width: 0;
+  font-size: 11px;
+  padding: 6px 8px;
+  border-radius: 7px;
+  border: 1px solid #4a3f66;
+  background: #1f1830;
+  color: #ece8f7;
+}
+.slip-board-new button {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: none;
+  background: #6E8259;
+  color: #33302A;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .slip-card { flex-direction: column; min-height: 0; max-height: 88vh; overflow-y: auto; }
+  .slip-map { flex: none; height: 180px; border-right: none; border-bottom: 2px solid #D8CAB4; }
+}

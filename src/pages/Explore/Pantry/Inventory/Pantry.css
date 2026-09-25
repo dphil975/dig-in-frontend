@@ -1,0 +1,485 @@
+/* Virtual Pantry — restyled onto the app's real pixel/homestead system (see
+   Home.css / SideRail.css / styles.css "THE PALETTE"): cream background, bark
+   borders/text, matcha primary accent, honey for earned/attention things,
+   frog for small success touches, cashmere for soft dividers. This used to
+   run its own "dark navy + gold" theme, disconnected from the rest of the
+   app — same category of fix as SocialFeed/RecipeAlchemist earlier this
+   session. SNAP = frog green, WIC = the same blue FoodMap's popup already
+   uses for it (#1565C0) — matching precedent, not inventing a new one.
+   RECALL = the one non-palette red (#d32f2f) the app already treats as its
+   genuine safety-warning color (AllergyPanel, RecallBar) — reserved for that,
+   never decorative. */
+
+.pantry-page {
+  font-family: 'DotGothic16', Arial, sans-serif;
+  background: var(--dig-cream, #F3EADA);
+  color: var(--dig-bark, #33302A);
+  min-height: 100vh;
+}
+.pantry-wrap { max-width: 860px; margin: 0 auto; padding: 20px 20px 60px; }
+.pantry-back {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); color: var(--dig-bark, #33302A);
+  padding: 7px 14px; border-radius: 8px; cursor: pointer; font-size: 0.8em; letter-spacing: 0.05em;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.pantry-back:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+
+.pantry-head { text-align: left; margin: 20px 0 18px; }
+.pantry-title {
+  font-family: var(--font-display); font-size: 1.25em; color: var(--dig-matcha, #6E8259);
+  margin: 0; line-height: 1.4;
+}
+.pantry-sub { color: #6b6157; font-size: 0.92em; max-width: 560px; margin: 10px 0 0; line-height: 1.5; }
+
+.pantry-flash {
+  position: sticky; top: 10px; z-index: 5;
+  background: var(--dig-matcha, #6E8259); color: #fff; font-weight: 700; text-align: center;
+  padding: 10px; border-radius: 10px; margin-bottom: 14px; border: 2px solid var(--dig-bark, #33302A);
+}
+
+/* Real, just-found recall banner (Pantry/index.jsx) — same red RecallBar uses. */
+.pantry-recall-banner { background: #fff5f4; border: 2px solid #d32f2f; border-radius: 12px; margin-bottom: 14px; padding: 12px 14px; }
+.pantry-recall-banner-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 800; color: #d32f2f; font-size: 0.9em; }
+.pantry-recall-dismiss { background: none; border: none; color: #8a7a68; font-size: 1em; cursor: pointer; }
+.pantry-recall-banner-item { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(211,47,47,.3); font-size: 0.9em; }
+.pantry-recall-banner-item b { color: var(--dig-bark, #33302A); }
+
+/* --- SNAP / WIC / put-back tallies --- */
+.pantry-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 22px; }
+.pstat {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 14px;
+  padding: 16px 10px; text-align: center; box-shadow: 3px 3px 0 rgba(51, 48, 42, .14);
+}
+.pstat-num { font-family: var(--font-display); font-size: 1.4em; margin-bottom: 8px; }
+.pstat-label { color: #8a7a68; font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.04em; }
+.pstat-snap .pstat-num { color: var(--dig-matcha, #6E8259); }
+.pstat-wic  .pstat-num { color: #1565C0; }
+.pstat-back .pstat-num { color: var(--dig-honey, #E0A32E); }
+
+/* --- shopping mode + banners --- */
+.pantry-head-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.pantry-shopmode {
+  background: #fff; border: 2px solid var(--dig-matcha, #6E8259); color: var(--dig-matcha, #6E8259);
+  padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: 0.82em; font-weight: 700; white-space: nowrap;
+}
+.pantry-shopmode.on { background: var(--dig-matcha, #6E8259); color: #fff; }
+
+.pantry-shopbanner {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: #eef7ea; border: 1.5px solid var(--dig-frog, #96B36B); color: var(--dig-bark, #33302A);
+  padding: 12px 14px; border-radius: 12px; margin-bottom: 14px; font-size: 0.9em; line-height: 1.5;
+}
+.pantry-shopbanner-dot {
+  width: 10px; height: 10px; border-radius: 50%; background: var(--dig-frog, #96B36B);
+  margin-top: 5px; flex-shrink: 0; animation: pantry-pulse 1.4s ease-in-out infinite;
+}
+@keyframes pantry-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+.pantry-inline-link { background: none; border: none; color: var(--dig-matcha, #6E8259); cursor: pointer; font: inherit; font-weight: 700; text-decoration: underline; padding: 0; }
+
+/* Beat-the-drive-thru intercept — an attention nudge, not a hazard, so honey not red. */
+.pantry-spike {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: #faf1dd; border: 1.5px solid var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A);
+  padding: 12px 14px; border-radius: 12px; margin-bottom: 14px; font-size: 0.92em; line-height: 1.5;
+}
+.pantry-spike-emoji { font-size: 1.3em; line-height: 1.2; flex-shrink: 0; }
+
+/* --- add-item mode toggle --- */
+.pantry-mode { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.pantry-mode-btn {
+  flex: 1; min-width: 160px; background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4);
+  color: var(--dig-bark, #33302A); padding: 10px 12px; border-radius: 10px; cursor: pointer;
+  font-size: 0.85em; font-weight: 700;
+}
+.pantry-mode-btn:hover { border-color: var(--dig-matcha, #6E8259); }
+.pantry-mode-btn.active { background: var(--dig-matcha, #6E8259); color: #fff; border-color: var(--dig-bark, #33302A); }
+
+/* --- receipt import --- */
+.pantry-receipt { background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 14px; padding: 18px; margin-bottom: 18px; box-shadow: 4px 4px 0 rgba(51, 48, 42, .14); }
+.pantry-add-title { color: var(--dig-matcha, #6E8259); font-size: 0.85em; letter-spacing: 0.06em; margin-bottom: 14px; font-family: var(--font-display); }
+.pantry-receipt-help { color: #6b6157; font-size: 0.88em; line-height: 1.5; margin: 0 0 12px; }
+.pantry-receipt-help code { background: #f7f2e9; padding: 1px 5px; border-radius: 4px; }
+.pantry-receipt-help strong { color: var(--dig-matcha, #6E8259); font-weight: 800; }
+.pantry-receipt-controls { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+.pantry-receipt-file {
+  background: var(--dig-matcha, #6E8259); color: #fff; font-weight: 700; font-size: 0.82em;
+  padding: 8px 14px; border-radius: 8px; cursor: pointer; border: 2px solid var(--dig-bark, #33302A);
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.pantry-receipt-file.is-busy { opacity: 0.7; cursor: progress; }
+.pantry-receipt-or { color: #8a7a68; font-size: 0.82em; }
+.pantry-receipt-note { color: var(--dig-matcha, #6E8259); font-size: 0.82em; margin-bottom: 10px; }
+
+.pantry-ocr { margin-bottom: 10px; }
+.pantry-ocr-label { color: var(--dig-bark, #33302A); font-size: 0.8em; font-weight: 700; margin-bottom: 5px; }
+.pantry-ocr-bar { height: 8px; border-radius: 999px; background: var(--dig-cashmere, #D8CAB4); overflow: hidden; }
+.pantry-ocr-bar span { display: block; height: 100%; border-radius: 999px; background: var(--dig-matcha, #6E8259); transition: width 0.25s ease; }
+
+.pantry-receipt-text {
+  width: 100%; box-sizing: border-box; background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 10px; color: var(--dig-bark, #33302A); padding: 12px; font-family: 'Courier New', monospace;
+  font-size: 0.9em; resize: vertical; margin-bottom: 12px;
+}
+.pantry-receipt-text:focus { outline: none; border-color: var(--dig-matcha, #6E8259); }
+.pantry-receipt-preview { margin-bottom: 12px; }
+.pantry-receipt-preview-head { color: var(--dig-matcha, #6E8259); font-weight: 700; font-size: 0.85em; margin-bottom: 8px; }
+.pantry-receipt-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.pantry-receipt-chip { background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A); font-size: 0.78em; padding: 4px 8px; border-radius: 6px; }
+
+.pantry-receipt-header {
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 8px; padding: 9px 12px; margin-bottom: 10px;
+}
+.pantry-receipt-store { color: var(--dig-matcha, #6E8259); font-weight: 800; font-size: 0.92em; }
+.pantry-receipt-addr, .pantry-receipt-when { color: #6b6157; font-size: 0.8em; }
+.pantry-receipt-total { color: var(--dig-matcha, #6E8259); font-weight: 800; font-size: 0.86em; margin-left: auto; }
+
+.pantry-attach-only { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.pantry-attach-only .pantry-input { flex: 1 1 220px; }
+.pantry-attachment-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px;
+  padding: 7px 10px; font-size: 0.85em; color: var(--dig-bark, #33302A); margin-bottom: 10px;
+}
+.pantry-attachment-remove { background: none; border: none; color: #d32f2f; font-size: 1em; cursor: pointer; padding: 0 2px; }
+
+/* --- shared inputs (still used by the receipt-attach-only flow above, and
+   by RestaurantFavorites / SmartPrepping's own little inline forms) --- */
+.pantry-add-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.pantry-input {
+  background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px;
+  color: var(--dig-bark, #33302A); padding: 11px 12px; font-size: 0.95em;
+}
+.pantry-input:focus { outline: none; border-color: var(--dig-matcha, #6E8259); }
+.pantry-input::placeholder { color: #a89a86; }
+.pantry-input-name  { flex: 1 1 240px; }
+.pantry-input-price { flex: 0 1 110px; }
+
+/* SNAP/WIC toggle chips — shared by the pick-up slip's Eligibility section
+   and (via the same classes) anywhere else eligibility gets toggled. */
+.pantry-chip {
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); color: #6b6157;
+  border-radius: 20px; padding: 7px 14px; cursor: pointer; font-size: 0.78em; font-weight: 700; letter-spacing: 0.04em;
+}
+.pantry-chip-snap.on { background: #eef7ea; border-color: var(--dig-frog, #96B36B); color: #3a6b2f; }
+.pantry-chip-wic.on  { background: #e8f1fb; border-color: #1565C0; color: #0d47a1; }
+
+.pantry-btn {
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px; padding: 11px 16px;
+  font-size: 0.8em; font-weight: 700; letter-spacing: 0.05em; cursor: pointer;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A); transition: transform .12s, box-shadow .12s;
+}
+.pantry-btn:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+.pantry-btn-primary { background: var(--dig-matcha, #6E8259); color: #fff; }
+.pantry-btn-buy  { background: var(--dig-frog, #96B36B); color: var(--dig-bark, #33302A); }
+.pantry-btn-back { background: #fff; color: var(--dig-bark, #33302A); }
+
+/* ══════════════════════════════════════════════════════════════════════
+   THE PICK-UP SLIP — "just picked something up" redesigned as an actual
+   receipt: a store-header block, fields grouped by what they're ABOUT
+   (Item / Where / Eligibility — Apple's spec-sheet habit of grouping by
+   meaning, not by whichever row had space), dashed tear-lines between
+   sections, and a bold total line before the CTA. No barcode field — the
+   dedicated Scan a Barcode page already owns that flow, this is the quick
+   path. Borderless: definition comes from the paper-white fill and shadow
+   against the page's cream, not a drawn line.
+
+   Deliberately NOT this page's usual 2px-border + hard-offset-shadow pixel
+   chrome — a soft paper shadow instead, same precedent as Kitchen Skills
+   borrowing Twitter's density: the paper language is a receipt's, the
+   accent color is still Dig In's matcha.
+   ══════════════════════════════════════════════════════════════════════ */
+.receipt-card {
+  position: relative;
+  background: #fffdf7;
+  border-radius: 3px;
+  padding: 22px 24px 24px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 28px rgba(51, 48, 42, .10), 0 1px 0 rgba(51, 48, 42, .04);
+  font-family: var(--font-ui);
+  color: var(--dig-bark, #33302A);
+}
+
+/* torn-paper edge, top and bottom — a repeating half-circle "bite" cut out
+   of the card in the page's own cream, so the slip reads as pulled off a
+   roll rather than a plain rounded card. */
+.receipt-notch {
+  position: absolute; left: 0; right: 0; height: 13px;
+  background:
+    radial-gradient(circle at 9px 9px, var(--dig-cream, #F3EADA) 9px, transparent 9.5px) top left / 18px 18px repeat-x;
+  pointer-events: none;
+}
+.receipt-notch-top { top: -1px; }
+.receipt-notch-bottom { bottom: -1px; transform: scaleY(-1); }
+
+.receipt-head { text-align: center; padding: 4px 0 2px; }
+.receipt-title {
+  margin: 0; font-family: var(--font-ui); font-weight: 800; font-size: 1.08em;
+  color: var(--dig-bark, #33302A); line-height: 1.35;
+}
+.receipt-head-meta {
+  margin: 7px 0 0; color: #8a7a68; font-size: 0.8em;
+  display: flex; align-items: center; justify-content: center; gap: 7px; flex-wrap: wrap;
+}
+.receipt-head-dot { opacity: .6; }
+
+/* section rules — solid under the header, dashed between the item/where/
+   eligibility blocks (a tear line), solid again above the total. */
+.receipt-rule { border: none; border-top: 1px solid var(--rule-strong, #d9d2c1); margin: 16px 0; }
+.receipt-rule-dashed { border-top-style: dashed; border-top-color: var(--dig-cashmere, #D8CAB4); }
+.receipt-rule-solid { border-top: 1px solid var(--dig-bark, #33302A); margin: 18px 0 14px; }
+
+.receipt-section { padding: 0; }
+.receipt-label {
+  margin: 0 0 12px; font-size: 0.7em; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #8a7a68;
+}
+
+.receipt-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.receipt-field:last-child { margin-bottom: 0; }
+.receipt-field label {
+  font-size: 0.74em; font-weight: 700; letter-spacing: 0.03em; color: #6b6157;
+}
+.receipt-field-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; align-items: flex-end; }
+.receipt-field-row .receipt-field { flex: 1 1 160px; margin-bottom: 0; }
+
+.receipt-input {
+  width: 100%; box-sizing: border-box;
+  background: #fff; border: 1px solid var(--rule-strong, #d9d2c1); border-radius: 8px;
+  color: var(--dig-bark, #33302A); padding: 10px 12px; font-size: 0.92em; font-family: inherit;
+}
+.receipt-input:focus { outline: none; border-color: var(--dig-matcha, #6E8259); box-shadow: 0 0 0 3px rgba(110,130,89,.12); }
+.receipt-input::placeholder { color: #a89a86; }
+
+.receipt-price-input {
+  display: flex; align-items: center; gap: 4px;
+  background: #fff; border: 1px solid var(--rule-strong, #d9d2c1); border-radius: 8px;
+  padding: 10px 12px; color: #8a7a68; font-size: 0.92em;
+}
+.receipt-price-input:focus-within { border-color: var(--dig-matcha, #6E8259); box-shadow: 0 0 0 3px rgba(110,130,89,.12); }
+.receipt-price-input input {
+  border: none; outline: none; width: 100%; font-size: 1em; font-family: inherit;
+  color: var(--dig-bark, #33302A); background: transparent; padding: 0;
+}
+
+/* Live price-match hint — how today's price compares to what's actually
+   been paid before for this item. Neutral by default (grey), matcha when it
+   works in the shopper's favor (lower/same), a warm amber (not red — nothing
+   here is an error) when it's higher than last time. */
+.receipt-price-match {
+  margin: -2px 0 12px; font-size: 0.78em; color: #6b6157;
+}
+.receipt-price-match-lower, .receipt-price-match-same { color: var(--dig-matcha, #6E8259); }
+.receipt-price-match-higher { color: #a8752f; }
+
+.receipt-select {
+  width: 100%; box-sizing: border-box;
+  background: #fff; border: 1px solid var(--rule-strong, #d9d2c1); border-radius: 8px;
+  color: var(--dig-bark, #33302A); padding: 10px 12px; font-size: 0.92em; font-family: inherit;
+}
+.receipt-locate-btn {
+  flex: 0 0 auto; background: #fff; border: 1px solid var(--rule-strong, #d9d2c1); border-radius: 8px;
+  color: var(--dig-bark, #33302A); padding: 10px 14px; font-size: 0.8em; font-family: inherit;
+  cursor: pointer; white-space: nowrap;
+}
+.receipt-locate-btn:hover:not(:disabled) { border-color: var(--dig-matcha, #6E8259); }
+.receipt-locate-btn:disabled { opacity: 0.5; cursor: default; }
+
+.receipt-eligibility { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.receipt-total-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  font-weight: 800; font-size: 0.92em; color: var(--dig-bark, #33302A);
+}
+.receipt-total-price { font-family: 'Courier New', monospace; color: var(--dig-matcha, #6E8259); font-size: 1.1em; }
+
+.receipt-submit {
+  display: block; width: 100%; margin-top: 14px;
+  background: var(--dig-matcha, #6E8259); color: #fff; border: none; border-radius: 10px;
+  padding: 14px; font-family: var(--font-ui); font-weight: 800; font-size: 0.9em; letter-spacing: 0.03em;
+  cursor: pointer; transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 4px 0 #566846;
+}
+.receipt-submit:hover { transform: translateY(-1px); box-shadow: 0 5px 0 #566846; }
+.receipt-submit:active { transform: translateY(2px); box-shadow: 0 2px 0 #566846; }
+
+@media (max-width: 480px) {
+  .receipt-card { padding: 20px 16px 20px; }
+  /* flex-basis is a HEIGHT once the row switches to a column, so every field
+     needs it reset here — leaving it at e.g. 160px turned each stacked field
+     into a 160px-tall box with the input pinned to the top and dead space
+     below it. `flex: none` drops basis/grow/shrink back to auto together. */
+  .receipt-field-row { flex-direction: column; align-items: stretch; gap: 12px; }
+  .receipt-field-row .receipt-field { flex: none; }
+}
+
+/* --- deciding tray --- */
+.pantry-section-title { color: var(--dig-matcha, #6E8259); font-size: 0.82em; letter-spacing: 0.08em; margin: 4px 0 14px; text-transform: uppercase; font-family: var(--font-display); }
+.pantry-count { display: inline-block; background: var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A); border-radius: 10px; padding: 1px 9px; font-size: 0.85em; margin-left: 6px; }
+.pantry-empty, .bucket-empty { color: #a89a86; font-size: 0.85em; font-style: italic; padding: 8px 0; }
+.pantry-holding { margin-bottom: 28px; }
+.hold-card {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 12px;
+  align-items: center; justify-content: space-between; box-shadow: 3px 3px 0 rgba(51, 48, 42, .10);
+}
+.hold-main { flex: 1; min-width: 220px; }
+.hold-name { font-size: 1.05em; font-weight: 700; margin-bottom: 6px; color: var(--dig-bark, #33302A); }
+.hold-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.hold-loc { color: #8a7a68; font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.04em; }
+.hold-price { color: var(--dig-honey, #E0A32E); font-size: 0.85em; font-weight: 700; }
+.hold-size  { color: #8a7a68; font-size: 0.78em; }
+.hold-store { color: var(--dig-matcha, #6E8259); font-size: 0.78em; }
+
+.badge { font-size: 0.66em; font-weight: 800; letter-spacing: 0.05em; padding: 2px 7px; border-radius: 5px; }
+.badge-snap { background: #eef7ea; color: #3a6b2f; border: 1px solid var(--dig-frog, #96B36B); }
+.badge-wic  { background: #e8f1fb; color: #0d47a1; border: 1px solid #1565C0; }
+.badge-recall { background: #fff5f4; color: #d32f2f; border: 1px solid #d32f2f; font-weight: 800; }
+.badge-fresh-soon    { background: #faf1dd; color: #7a5c1e; border: 1px solid var(--dig-honey, #E0A32E); }
+.badge-fresh-urgent  { background: #fdf0e4; color: #9a4d0f; border: 1px solid #c9701f; }
+.badge-fresh-expired { background: #fff5f4; color: #d32f2f; border: 1px solid #d32f2f; }
+.hold-actions { display: flex; gap: 8px; }
+
+.hold-reasons { flex: 1 1 100%; border-top: 1.5px dashed var(--dig-cashmere, #D8CAB4); padding-top: 12px; }
+.hold-reasons-title { color: var(--dig-bark, #33302A); font-size: 0.82em; margin-bottom: 10px; font-weight: 700; }
+.hold-reasons-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.reason-btn { background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A); border-radius: 18px; padding: 7px 13px; cursor: pointer; font-size: 0.8em; }
+.reason-btn:hover { border-color: var(--dig-matcha, #6E8259); background: #f7f2e9; }
+.reason-cancel { background: none; border: none; color: #8a7a68; cursor: pointer; font-size: 0.78em; margin-top: 10px; text-decoration: underline; }
+
+/* ══════════════════════════════════════════════════════════════════════
+   THE SHELVES — real shelves you look at, not a settings list. Each
+   location is its own "material" (a subtle repeating-plank texture, not a
+   smooth gradient — flat color bands, pixel-consistent), items sit on it as
+   small tiles in a grid, like a cozy inventory screen. ══════════════════ */
+.pantry-buckets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 28px; }
+.bucket {
+  border: 3px solid var(--dig-bark, #33302A); border-radius: 14px;
+  padding: 12px 12px 16px; min-height: 150px;
+  box-shadow: 5px 5px 0 rgba(51, 48, 42, .16);
+}
+.bucket-pantry  { background: repeating-linear-gradient(180deg, #f3ecd9 0px, #f3ecd9 26px, #eaddb9 26px, #eaddb9 28px); }
+.bucket-fridge  { background: repeating-linear-gradient(180deg, #eaf2fb 0px, #eaf2fb 26px, #dbe9f7 26px, #dbe9f7 28px); }
+.bucket-freezer { background: repeating-linear-gradient(180deg, #eaf7f9 0px, #eaf7f9 26px, #d8eef2 26px, #d8eef2 28px); }
+.bucket-title {
+  display: flex; align-items: center; gap: 7px;
+  font-family: var(--font-display); font-size: 0.62em; letter-spacing: 0.03em;
+  text-transform: uppercase; color: var(--dig-bark, #33302A);
+  margin-bottom: 14px; line-height: 1.5;
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  padding: 7px 9px; box-shadow: 2px 2px 0 rgba(51, 48, 42, .14);
+}
+.bucket-icon { font-size: 1.4em; }
+
+.bucket-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 9px; }
+.bucket-item {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  background: #fff; border: 2.5px solid var(--fresh-color, var(--dig-bark, #33302A));
+  border-radius: 10px; padding: 8px 5px 7px; text-align: center;
+  box-shadow: 2px 2px 0 rgba(51, 48, 42, .12);
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+.bucket-item:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 rgba(51, 48, 42, .18); }
+.bucket-item-frame {
+  width: 46px; height: 46px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  font-size: 24px; overflow: hidden; position: relative;
+}
+.bucket-item-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
+.bucket-item-frame-add { cursor: pointer; border-style: dashed; }
+.bucket-item-frame-add:hover { border-color: var(--dig-matcha, #6E8259); }
+.bucket-item-icon { font-size: 22px; line-height: 1; }
+.bucket-item-cam {
+  position: absolute; bottom: -2px; right: -2px; font-size: 10px;
+  background: #fff; border-radius: 50%; padding: 1px 2px; line-height: 1;
+}
+.bucket-item-name { font-size: 10.5px; font-weight: 700; color: var(--dig-bark, #33302A); line-height: 1.25; max-width: 76px; overflow-wrap: break-word; }
+.bucket-item-tags { display: flex; flex-wrap: wrap; gap: 3px; justify-content: center; }
+.chip { font-size: 8px; font-weight: 800; letter-spacing: 0.03em; padding: 1px 5px; border-radius: 4px; }
+.chip-fresh-soon    { background: #faf1dd; color: #7a5c1e; }
+.chip-fresh-urgent  { background: #fdf0e4; color: #9a4d0f; }
+.chip-fresh-expired { background: #fff5f4; color: #d32f2f; }
+.chip-snap { background: #eef7ea; color: #3a6b2f; }
+.chip-wic  { background: #e8f1fb; color: #0d47a1; }
+.chip-recall { background: #fff5f4; color: #d32f2f; }
+.bucket-remove {
+  position: absolute; top: -6px; right: -6px; width: 18px; height: 18px; border-radius: 50%;
+  background: #fff; border: 1.5px solid var(--dig-bark, #33302A); color: var(--dig-bark, #33302A);
+  font-size: 11px; line-height: 1; cursor: pointer; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.bucket-remove:hover { background: #fff5f4; border-color: #d32f2f; color: #d32f2f; }
+
+/* --- put-back insight --- */
+.pantry-insight { background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 14px; padding: 16px 18px; box-shadow: 4px 4px 0 rgba(51, 48, 42, .14); }
+.insight-rows { display: flex; flex-direction: column; gap: 2px; }
+.insight-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.insight-reason { flex: 0 0 200px; font-size: 0.85em; color: var(--dig-bark, #33302A); }
+.insight-bar { flex: 1; background: #f7f2e9; border-radius: 6px; height: 12px; overflow: hidden; }
+.insight-bar span { display: block; height: 100%; background: var(--dig-honey, #E0A32E); }
+.insight-n { flex: 0 0 24px; text-align: right; color: var(--dig-honey, #E0A32E); font-weight: 700; font-size: 0.85em; }
+
+/* --- saved shopping trips --- */
+.pantry-trips { margin-top: 26px; }
+.pantry-trips-help { color: #6b6157; font-size: 0.85em; line-height: 1.5; margin: 0 0 12px; }
+.pantry-trips-list { display: flex; flex-direction: column; gap: 8px; }
+.trip-card {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 10px; padding: 11px 13px;
+}
+.trip-main { flex: 1; min-width: 0; }
+.trip-store { color: var(--dig-bark, #33302A); font-weight: 800; font-size: 0.95em; }
+.trip-addr { color: #8a7a68; font-size: 0.78em; margin-top: 1px; }
+.trip-meta { color: var(--dig-matcha, #6E8259); font-size: 0.8em; margin-top: 3px; }
+.trip-remove { flex-shrink: 0; cursor: pointer; background: none; border: none; color: #a89a86; font-size: 1em; line-height: 1; padding: 2px 4px; border-radius: 6px; }
+.trip-remove:hover { color: #d32f2f; background: #fff5f4; }
+
+/* --- recipes from what I have --- */
+.pantry-cook { margin-top: 26px; }
+.pantry-cook-tier { color: #6b6157; font-size: 0.85em; margin: 0 0 12px; }
+.pantry-cook-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.pantry-rolodex-link {
+  float: right; cursor: pointer; border: 1.5px solid var(--dig-honey, #E0A32E); background: #faf1dd;
+  color: #7a5c1e; font-weight: 800; font-size: 0.92em; letter-spacing: 0.02em; text-transform: none;
+  padding: 4px 12px; border-radius: 999px; transition: background 0.13s ease;
+}
+.pantry-rolodex-link:hover { background: var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A); }
+.cook-card { background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.cook-card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.cook-card-name { font-weight: 700; color: var(--dig-bark, #33302A); font-size: 0.98em; }
+.cook-card-cov { color: var(--dig-matcha, #6E8259); font-size: 0.76em; font-weight: 700; white-space: nowrap; }
+.cook-card-bar { height: 6px; background: #f7f2e9; border-radius: 3px; overflow: hidden; }
+.cook-card-bar span { display: block; height: 100%; background: var(--dig-frog, #96B36B); }
+.cook-card-have { color: #6b6157; font-size: 0.8em; line-height: 1.4; }
+.cook-card-missing { color: #9a7a3f; font-size: 0.8em; line-height: 1.4; }
+.cook-card-almost { color: var(--dig-matcha, #6E8259); }
+.cook-card-ready { color: var(--dig-frog, #96B36B); font-size: 0.82em; font-weight: 700; }
+.cook-card-btn { margin-top: 4px; }
+
+/* --- restaurant favorites --- */
+.pantry-favorites { margin-top: 22px; }
+.pantry-favorites-help { color: #6b6157; font-size: 0.85em; line-height: 1.5; margin: 0 0 12px; }
+.pantry-fav-form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.pantry-fav-remove { align-self: flex-start; background: none; border: none; color: #d32f2f; font-size: 0.78em; cursor: pointer; padding: 0; text-decoration: underline; }
+
+/* --- smart prepping timers --- */
+.pantry-timers { margin-top: 22px; }
+.pantry-timer-presets { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.pantry-timer-preset { background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A); padding: 8px 12px; border-radius: 16px; font-size: 0.8em; cursor: pointer; }
+.pantry-timer-preset:hover { border-color: var(--dig-matcha, #6E8259); background: #f7f2e9; }
+.pantry-timer-list { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; }
+.pantry-timer-row { display: flex; align-items: center; gap: 10px; background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 10px; padding: 10px 12px; }
+.pantry-timer-row.done { border-color: var(--dig-frog, #96B36B); background: #eef7ea; }
+.pantry-timer-label { flex: 1; font-size: 0.88em; color: var(--dig-bark, #33302A); }
+.pantry-timer-remaining { font-family: var(--font-display); font-size: 0.7em; color: var(--dig-matcha, #6E8259); }
+.pantry-timer-row.done .pantry-timer-remaining { color: var(--dig-frog, #96B36B); }
+.pantry-timer-dismiss { background: none; border: none; color: #8a7a68; cursor: pointer; font-size: 0.9em; padding: 0 2px; }
+
+@media (max-width: 620px) {
+  .pantry-stats, .pantry-buckets { grid-template-columns: 1fr; }
+  .insight-reason { flex-basis: 130px; }
+}

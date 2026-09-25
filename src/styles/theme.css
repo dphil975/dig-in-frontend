@@ -1,0 +1,132 @@
+/* theme.css — shared theme tokens */
+:root {
+  /* Colors — THE PALETTE (see styles.css's :root for the full definitions
+     and role rules; these names are kept for this file's ~11 existing
+     consumers, now pointing at the same values instead of a second,
+     competing color scheme). */
+  --primary: #6E8259;      /* Matcha */
+  --secondary: #D8CAB4;    /* Cashmere */
+  --light-bg: #F3EADA;     /* Cream */
+  --dark-bg: #F3EADA;      /* Cream */
+  --text-dark: #33302A;    /* Bark */
+  --text-light: #F3EADA;   /* Cream, for text on a Matcha/dark fill */
+  --success: #96B36B;      /* Frog — small doses only, never a background */
+  --warning: #ef4444;      /* unchanged — the palette doesn't define a danger color */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, #566846 100%);
+  --gradient-neutral: linear-gradient(135deg, var(--light-bg) 0%, var(--dark-bg) 100%);
+
+  /* ── TYPE ─────────────────────────────────────────────────────────────────
+     Press Start 2P is drawn on an 8-pixel grid: every glyph is built from
+     8x8 blocks with no hinting and no real lowercase differentiation. Set it
+     at 7-8px and each of those blocks lands on less than a physical pixel,
+     which is why the app read as unreadable rather than merely retro. An
+     audit found 697 pixel-font declarations, 528 of them at 11px or below.
+
+     So the pixel face is now a DISPLAY font with a floor, not a UI font:
+
+       --font-display  Press Start 2P. Wordmark, big numerals, hero kickers.
+                       Never below 13px. It is a logo that happens to spell
+                       words, and it should be used like one.
+       --font-ui       Small interface text: chips, labels, buttons, tabs,
+                       pills, timestamps. A real hinted UI stack, because
+                       these are sizes where hinting is the whole ballgame.
+       --font-body     Reading text. Same stack, stated separately so body
+                       copy can diverge later without touching UI chrome.
+
+     The system stack is also closer to the reference the founder named —
+     Twitter circa 2019 and Tumblr both ran clean UI sans, with personality
+     carried by layout and color rather than by a novelty face on every
+     label. The pixel font keeps the brand; it just stops doing a job it
+     was never drawn for. */
+  --font-display: 'Press Start 2P', monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Editorial serif — for large, quiet display moments (a hero invitation, a
+     recipe title). A refined SYSTEM stack, no web-font load: Iowan/Palatino
+     where present, Georgia as the reliable floor. This is the "confident type,
+     not more chrome" half of the editorial direction — used sparingly, on
+     headlines only, never on body or labels. */
+  --font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, 'Times New Roman', serif;
+
+  /* Hairline rules — the single biggest "calm, not over-produced" move: a 1px
+     warm-grey line in place of a 2px bark border + offset hard-shadow. Tuned to
+     sit quietly on the cream ground. */
+  --rule: #e6e0d3;
+  --rule-strong: #d9d2c1;
+
+  /* Smallest size any UI text should ever be set at. Below this, legibility
+     is a function of size, not family — swapping the face doesn't save it. */
+  --font-ui-min: 11px;
+}
+
+/* All pages use consistent background */
+body {
+  background: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/* Only headers get color */
+.page-header {
+  background: var(--gradient-primary);
+  color: var(--text-light);
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   DISPLAY PREFERENCES (src/lib/appSkins.js)
+   applyDisplay() stamps data-* attributes and --skin-* vars on <html>.
+   These rules are what make those settings real. They are intentionally
+   global and low-specificity so they layer over any page's own styles
+   without needing every component to know skins exist.
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* Text size + spacing. Scaling the ROOT font size makes every em/rem-based
+   size in the app scale together, which is why the app is built on em units.
+   WCAG 1.4.12 requires spacing be adjustable without breaking layout —
+   line-height and letter-spacing are set here, never a fixed height. */
+html { font-size: calc(100% * var(--skin-text-scale, 1)); }
+body {
+  line-height: var(--skin-line, 1.5);
+  letter-spacing: var(--skin-letter, 0);
+}
+
+/* Reduce motion — honors BOTH the user's OS setting and the in-app toggle.
+   Someone may want motion off in this app only, or may be on a device where
+   they never found the OS switch. */
+html[data-motion="reduced"] *,
+html[data-motion="reduced"] *::before,
+html[data-motion="reduced"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* High contrast — darkens text and firms up borders. Aimed at clearing the
+   WCAG 4.5:1 body-text ratio comfortably rather than merely technically. */
+html[data-contrast="high"] {
+  --dig-bark: #16150F;
+  --rule: #6b6157;
+  --rule-strong: #4a453d;
+}
+html[data-contrast="high"] body { color: #16150F; }
+html[data-contrast="high"] a,
+html[data-contrast="high"] button { border-color: currentColor; }
+html[data-contrast="high"] ::placeholder { color: #5a5348; opacity: 1; }
+
+/* Roomy spacing — paragraph rhythm, not just line-height. */
+html[data-spacing="roomy"] p,
+html[data-spacing="roomy"] li { margin-bottom: 0.9em; }
+
+/* Always show a real focus ring. Removing focus outlines is one of the most
+   common ways an app becomes unusable by keyboard. */
+:focus-visible { outline: 3px solid var(--dig-matcha, #6E8259); outline-offset: 2px; }

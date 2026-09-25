@@ -1,0 +1,1003 @@
+/* ── CravingCompass page ─────────────────────────────────────────── */
+
+@keyframes cc-spin     { to   { transform: rotate(360deg); } }
+@keyframes cc-slide-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+.cc-page {
+  min-height: 100vh;
+  background: var(--dig-cream, #F3EADA);
+  color: #33302A;
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  max-width: 540px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────── */
+.cc-header {
+  background: #E0A32E;
+  color: #33302A;
+  padding: 24px 20px 36px;
+  position: relative;
+  overflow: hidden;
+}
+.cc-header-orb {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 130px;
+  height: 130px;
+  background: rgba(255,255,255,.06);
+  border-radius: 50%;
+}
+.cc-header-orb2 {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,.04);
+  border-radius: 50%;
+}
+.cc-header-inner { position: relative; z-index: 1; }
+.cc-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+.cc-subtitle {
+  font-size: 12px;
+  opacity: .75;
+  margin: 0;
+  font-family: 'DotGothic16', monospace;
+}
+
+/* ── Body ────────────────────────────────────────────────────────── */
+.cc-body {
+  padding: 0 16px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 10;
+}
+
+/* ── Form card ───────────────────────────────────────────────────── */
+.cc-form-card {
+  background: #fff;
+  border: 3px solid #33302A;
+  box-shadow: 4px 4px 0 #33302A;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cc-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.cc-textarea {
+  width: 100%;
+  background: #F3EADA;
+  border: 2px solid #ccc;
+  padding: 10px 12px;
+  font-family: 'DotGothic16', monospace;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  height: 80px;
+  box-sizing: border-box;
+  transition: border-color .15s;
+}
+.cc-textarea:focus { border-color: #E0A32E; }
+.cc-input-row {
+  display: flex;
+  gap: 12px;
+}
+.cc-input-group { flex: 1; }
+.cc-input {
+  width: 100%;
+  background: #F3EADA;
+  border: 2px solid #ccc;
+  padding: 10px 12px;
+  font-family: 'DotGothic16', monospace;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color .15s;
+}
+.cc-input:focus { border-color: #E0A32E; }
+.cc-submit-btn {
+  align-self: flex-end;
+  flex: 1;
+  background: #E0A32E;
+  color: #33302A;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 900;
+  border: 3px solid #33302A;
+  box-shadow: 3px 3px 0 #33302A;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background .15s, transform .1s, box-shadow .1s;
+  text-transform: uppercase;
+}
+.cc-submit-btn:hover    { background: #c48b26; }
+.cc-submit-btn:active   { transform: translate(3px,3px); box-shadow: none; }
+.cc-submit-btn:disabled { opacity: .6; cursor: default; }
+
+/* ── Loading card ────────────────────────────────────────────────── */
+.cc-loading-card {
+  background: #fff;
+  border: 3px solid #33302A;
+  box-shadow: 4px 4px 0 #33302A;
+  padding: 40px 20px;
+  text-align: center;
+}
+.cc-spinner {
+  color: #E0A32E;
+  display: block;
+  margin: 0 auto 12px;
+  animation: cc-spin 1s linear infinite;
+}
+.cc-loading-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 6px;
+}
+.cc-loading-sub { font-size: 12px; color: #888; }
+
+/* ── Results (animated) ──────────────────────────────────────────── */
+.cc-results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: cc-slide-up .4s ease;
+}
+
+/* ── Recipe card ─────────────────────────────────────────────────── */
+.cc-recipe-card {
+  background: #fff;
+  border: 3px solid #33302A;
+  box-shadow: 4px 4px 0 #33302A;
+  padding: 20px;
+}
+.cc-recipe-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+.cc-recipe-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  line-height: 1.5;
+  margin: 0;
+}
+.cc-time-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #F3EADA;
+  border: 2px solid #E0A32E;
+  color: #E0A32E;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 4px 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cc-recipe-desc {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.cc-ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.cc-ingredient-tag {
+  background: #F3EADA;
+  border: 2px solid #e0dcd0;
+  color: #444;
+  font-size: 11px;
+  font-family: var(--font-ui);
+  padding: 4px 8px;
+}
+.cc-flavor-note {
+  background: #F3EADA;
+  border-left: 4px solid #E0A32E;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+.cc-flavor-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #D8CAB4;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.cc-flavor-text { font-size: 11px; color: #D8CAB4; line-height: 1.5; }
+.cc-steps-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  display: block;
+  margin-bottom: 8px;
+}
+.cc-steps { display: flex; flex-direction: column; gap: 8px; }
+.cc-step  { display: flex; gap: 10px; font-size: 12px; color: #2c3e50; line-height: 1.5; }
+.cc-step-num {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #E0A32E;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+/* ── Traffic / timing card ───────────────────────────────────────── */
+.cc-traffic-card {
+  background: #33302A;
+  color: #F3EADA;
+  border: 3px solid #33302A;
+  box-shadow: 4px 4px 0 #E0A32E;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.cc-traffic-bg-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: .06;
+}
+.cc-traffic-inner { position: relative; z-index: 1; }
+.cc-traffic-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #E0A32E;
+}
+.cc-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.cc-stat-box {
+  background: rgba(255,255,255,.08);
+  padding: 10px 8px;
+  text-align: center;
+}
+.cc-stat-box-highlight {
+  background: rgba(110, 130, 89,.15);
+  border: 1px solid rgba(110, 130, 89,.4);
+  padding: 10px 8px;
+  text-align: center;
+}
+.cc-stat-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  opacity: .7;
+  display: block;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.cc-stat-val {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 900;
+  color: #E0A32E;
+}
+.cc-start-box {
+  background: #fff;
+  color: #E0A32E;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #E0A32E;
+}
+.cc-start-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  display: block;
+  margin-bottom: 6px;
+}
+.cc-start-time {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+}
+.cc-start-hint { font-size: 9px; opacity: .6; margin-top: 4px; }
+
+/* ── Store comparison ────────────────────────────────────────────── */
+.cc-stores-section { display: flex; flex-direction: column; gap: 4px; }
+.cc-stores-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.cc-store-card {
+  background: #fff;
+  border: 3px solid #e0dcd0;
+  box-shadow: 3px 3px 0 #e0dcd0;
+  padding: 14px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.cc-store-card.cc-store-recommended {
+  border-color: #E0A32E;
+  box-shadow: 3px 3px 0 #E0A32E;
+  background: #F3EADA;
+}
+.cc-store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.cc-store-name {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+}
+.cc-best-badge {
+  background: #E0A32E;
+  color: #33302A;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 3px 7px;
+  border: 2px solid #33302A;
+  white-space: nowrap;
+}
+.cc-travel-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.cc-travel-dot {
+  width: 4px; height: 4px;
+  background: #ccc;
+  border-radius: 50%;
+}
+.cc-price-list {
+  background: #F3EADA;
+  border: 2px solid #e0dcd0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.cc-price-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+}
+.cc-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 2px 0;
+}
+.cc-price-item { color: #2c3e50; }
+.cc-price-val  { color: #E0A32E; font-weight: 700; }
+.cc-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #e0dcd0;
+  padding-top: 8px;
+}
+.cc-total-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+}
+.cc-total-val {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: #33302A;
+}
+.cc-cheapest-note {
+  background: #fff;
+  border: 2px solid #e0dcd0;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+.cc-cheapest-label { font-size: 10px; color: #999; }
+.cc-cheapest-val   { font-family: var(--font-ui); font-size: 11px; color: #E0A32E; }
+.cc-cheapest-tag   { background: #f0f0f0; font-size: 9px; color: #888; padding: 3px 8px; border: 1px solid #ddd; }
+
+/* ── Mode bar (Fast / Wander toggle) ─────────────────────────────── */
+.cc-mode-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.cc-mode-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 7px 12px;
+  border: 2px solid #ccc;
+  background: #fff;
+  color: #888;
+  cursor: pointer;
+  transition: all .15s;
+  text-transform: uppercase;
+}
+.cc-mode-btn.active {
+  border-color: #E0A32E;
+  background: #E0A32E;
+  color: #33302A;
+  box-shadow: 3px 3px 0 #33302A;
+}
+.cc-mode-btn:not(.active):hover { border-color: #E0A32E; color: #E0A32E; }
+
+/* ── Traffic severity pill ────────────────────────────────────────── */
+.cc-traffic-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 2px solid;
+  margin-left: auto;
+  text-transform: uppercase;
+}
+.cc-traffic-pill-good { background: #d4f5e2; border-color: #1a7a45; color: #1a7a45; }
+.cc-traffic-pill-ok   { background: #F3EADA; border-color: #d4a017; color: #7a5500; }
+.cc-traffic-pill-bad  { background: #F3EADA; border-color: #33302A; color: #33302A; }
+
+/* ── Wander mode banner ───────────────────────────────────────────── */
+.cc-wander-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: #F3EADA;
+  border: 2px solid #E0A32E;
+  box-shadow: 3px 3px 0 #E0A32E;
+  padding: 10px 12px;
+  font-size: 11px;
+  color: #5a4f2b;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.cc-wander-banner svg { flex-shrink: 0; margin-top: 2px; color: #E0A32E; }
+
+/* ── Geolocation status row ──────────────────────────────────────── */
+.cc-geo-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 11px;
+}
+.cc-geo-ok {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #1a7a45;
+  font-family: var(--font-ui);
+  font-size: 11px;
+}
+.cc-geo-loading {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-family: var(--font-ui);
+  font-size: 11px;
+}
+.cc-spinner-inline { animation: cc-spin 1s linear infinite; }
+.cc-geo-err {
+  font-size: 10px;
+  color: #33302A;
+  font-family: 'DotGothic16', monospace;
+}
+.cc-geo-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 2px solid #E0A32E;
+  color: #E0A32E;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #E0A32E;
+  text-transform: uppercase;
+  transition: background .12s, color .12s;
+}
+.cc-geo-btn:hover { background: #E0A32E; color: #33302A; }
+
+/* ── Store card additions ────────────────────────────────────────── */
+.cc-store-rank-pill {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.cc-store-recommended .cc-store-rank-pill { color: #E0A32E; }
+
+.cc-store-neighborhood {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  color: #999;
+  margin-top: 2px;
+  font-family: 'DotGothic16', monospace;
+}
+
+/* Traffic tag on store card */
+.cc-traffic-tag {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid;
+}
+.cc-traffic-tag-good { background: #d4f5e2; border-color: #1a7a45; color: #1a7a45; }
+.cc-traffic-tag-ok   { background: #F3EADA; border-color: #d4a017; color: #7a5500; }
+.cc-traffic-tag-bad  { background: #F3EADA; border-color: #33302A; color: #33302A; }
+
+/* Wander discovery note on store card */
+.cc-wander-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  background: #F3EADA;
+  border-left: 3px solid #E0A32E;
+  padding: 7px 10px;
+  font-size: 10px;
+  color: #5a4f2b;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.cc-wander-note svg { flex-shrink: 0; margin-top: 2px; color: #E0A32E; }
+
+/* Savings tag below store total */
+.cc-savings-tag {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #1a7a45;
+  margin-top: 3px;
+}
+
+/* ── Traffic advisory inside timing card ─────────────────────────── */
+.cc-traffic-advisory {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 7px 10px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.cc-traffic-advisory-good { background: rgba(212,245,226,.15); color: #a8e6c4; border: 1px solid rgba(212,245,226,.3); }
+.cc-traffic-advisory-ok   { background: rgba(110, 130, 89,.12);  color: #E0A32E; border: 1px solid rgba(110, 130, 89,.3); }
+.cc-traffic-advisory-bad  { background: rgba(200,0,30,.12);    color: #ff8a8a; border: 1px solid rgba(200,0,30,.3); }
+
+/* ══════════════════════════════════════════════════════════════════════
+   BRAIN STATE + NEUROSCIENCE SECTION
+   ══════════════════════════════════════════════════════════════════════ */
+
+.cc-brain-state-card {
+  background: linear-gradient(135deg, #33302A 0%, #16213e 100%);
+  border: 2px solid #7b61ff;
+  box-shadow: 4px 4px 0 rgba(123,97,255,.3);
+  padding: 18px 16px;
+  margin-bottom: 14px;
+}
+
+.cc-brain-state-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cc-brain-state-emoji {
+  font-size: 28px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.cc-brain-state-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #7b61ff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+
+.cc-brain-state-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #e8e0ff;
+  line-height: 1.6;
+}
+
+.cc-brain-state-body {
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  font-size: 12px;
+  color: #c0b8e8;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+.cc-brain-state-need {
+  background: rgba(123,97,255,.12);
+  border-left: 3px solid #7b61ff;
+  padding: 9px 12px;
+  font-size: 11px;
+  color: #d0c8f8;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.cc-brain-state-need strong {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #a090ff;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+/* neuro toggle button */
+.cc-neuro-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1.5px solid rgba(123,97,255,.5);
+  color: #a090ff;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 6px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.12s, border-color 0.12s;
+  line-height: 1.6;
+}
+.cc-neuro-toggle:hover { background: rgba(123,97,255,.15); border-color: #7b61ff; }
+
+/* individual neuroscience fact block */
+.cc-neuro-fact {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(123,97,255,.25);
+  padding: 12px 12px;
+  margin-top: 10px;
+}
+
+.cc-neuro-fact-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c8bcff;
+  line-height: 1.7;
+  margin-bottom: 7px;
+}
+
+.cc-neuro-fact-body {
+  font-size: 11px;
+  color: #b0a8d8;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+
+.cc-neuro-fact-brain {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: rgba(123,97,255,.7);
+  line-height: 1.8;
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   THE MISSING ELEMENT
+   ══════════════════════════════════════════════════════════════════════ */
+
+.cc-missing-element {
+  background: linear-gradient(135deg, #1c1a12 0%, #221e0a 100%);
+  border: 2px solid #E0A32E;
+  box-shadow: 3px 3px 0 rgba(110, 130, 89,.3);
+  padding: 14px 14px;
+  margin-top: 16px;
+}
+
+.cc-missing-el-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cc-missing-el-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.cc-missing-el-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #E0A32E;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+
+.cc-missing-el-secret {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #ffe8a0;
+  line-height: 1.6;
+}
+
+.cc-missing-el-why {
+  font-size: 12px;
+  color: #d8c888;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+.cc-missing-el-how {
+  background: rgba(110, 130, 89,.1);
+  border-left: 3px solid #E0A32E;
+  padding: 8px 10px;
+  font-size: 11px;
+  color: #c8a840;
+  line-height: 1.6;
+}
+
+.cc-missing-el-how strong {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #E0A32E;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   SEASONING LAYERS — THE MAKEUP ANALOGY
+   ══════════════════════════════════════════════════════════════════════ */
+
+.cc-seasoning-wrap { margin-top: 16px; }
+
+.cc-layers-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  background: #33302A;
+  border: 2px solid #3faa6e;
+  color: #3faa6e;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 9px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.12s;
+  text-align: left;
+  line-height: 1.6;
+}
+.cc-layers-toggle:hover { background: rgba(63,170,110,.12); }
+
+.cc-seasoning-layers {
+  background: #161e1a;
+  border: 2px solid #2a3a30;
+  border-top: none;
+  padding: 14px 14px;
+}
+
+.cc-seasoning-intro {
+  font-family: 'DotGothic16', 'Courier New', monospace;
+  font-size: 12px;
+  color: #7a9e88;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a3a30;
+  font-style: italic;
+}
+
+.cc-seasoning-layer {
+  padding: 12px 0;
+  border-bottom: 1px solid #2a3a30;
+}
+.cc-seasoning-layer:last-of-type { border-bottom: none; }
+
+.cc-seasoning-layer-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.cc-seasoning-emoji {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.cc-seasoning-layer-info { flex: 1; }
+
+.cc-seasoning-name {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c8f0d8;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.cc-makeup-tag {
+  font-size: 5.5px;
+  background: rgba(63,170,110,.18);
+  border: 1px solid rgba(63,170,110,.4);
+  color: #3faa6e;
+  padding: 1px 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cc-seasoning-timing {
+  font-size: 10px;
+  color: #5a7a62;
+  line-height: 1.4;
+}
+
+.cc-seasoning-what {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #8abf98;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.cc-seasoning-why {
+  font-size: 11px;
+  color: #90a898;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+
+.cc-seasoning-rule {
+  font-family: 'DotGothic16', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #3faa6e;
+  line-height: 1.5;
+  padding-left: 4px;
+  border-left: 2px solid #3faa6e;
+}
+
+.cc-seasoning-donot {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #e05c3a;
+  line-height: 1.5;
+  padding-left: 4px;
+  border-left: 2px solid #e05c3a;
+}
+
+/* ── Quick Reference Cheat Sheet ── */
+.cc-layer-cheatsheet {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #2a3a30;
+}
+
+.cc-layer-cheatsheet-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #3faa6e;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.cc-cheat-row {
+  display: grid;
+  grid-template-columns: 22px 16px 1fr auto;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(42,58,48,.6);
+  font-size: 10px;
+}
+
+.cc-cheat-emoji { font-size: 14px; text-align: center; }
+
+.cc-cheat-stage {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #3faa6e;
+  text-align: center;
+}
+
+.cc-cheat-name {
+  color: #c8e8d0;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cc-cheat-when {
+  font-size: 9px;
+  color: #4a6a52;
+  white-space: nowrap;
+  text-align: right;
+}

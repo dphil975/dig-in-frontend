@@ -836,11 +836,11 @@ export const EXTRA_RECIPES = [
 
   {
     "id": "fc_sg_001",
-    "name": "Harvest Grain Bowl",
+    "name": "Wild Rice & Sweet Potato Bowl",
     "description": "Wild rice with roasted sweet potato, apples, goat cheese, and a balsamic drizzle.",
     "difficulty": "easy",
     "time": 40,
-    "source": "Sweetgreen",
+    "source": "Salad Bar",
     "ingredients": [
       "1 cup wild rice, cooked",
       "1 sweet potato, cubed and roasted",
@@ -866,7 +866,7 @@ export const EXTRA_RECIPES = [
     "description": "Chopped kale and romaine with parmesan, crunchy croutons, and a light caesar dressing.",
     "difficulty": "easy",
     "time": 15,
-    "source": "Sweetgreen",
+    "source": "Salad Bar",
     "ingredients": [
       "3 cups chopped kale",
       "2 cups chopped romaine",
@@ -888,11 +888,11 @@ export const EXTRA_RECIPES = [
   },
   {
     "id": "fc_sg_003",
-    "name": "Guacamole Greens Bowl",
+    "name": "Avocado Lime Greens Bowl",
     "description": "Mixed greens with grilled chicken, avocado, tomato, and a lime-cilantro dressing.",
     "difficulty": "easy",
     "time": 20,
-    "source": "Sweetgreen",
+    "source": "Salad Bar",
     "ingredients": [
       "4 cups mixed greens",
       "1 cup cooked chicken, sliced",
@@ -918,7 +918,7 @@ export const EXTRA_RECIPES = [
     "description": "Crunchy cabbage, carrots, and edamame with a peanut-lime dressing and a little heat.",
     "difficulty": "easy",
     "time": 20,
-    "source": "Sweetgreen",
+    "source": "Salad Bar",
     "ingredients": [
       "3 cups shredded cabbage",
       "1 carrot, shredded",
@@ -944,7 +944,7 @@ export const EXTRA_RECIPES = [
     "description": "Fluffy quinoa with roasted seasonal veggies, chickpeas, and a lemon-tahini drizzle.",
     "difficulty": "easy",
     "time": 35,
-    "source": "Sweetgreen",
+    "source": "Salad Bar",
     "ingredients": [
       "1 cup quinoa, cooked",
       "2 cups mixed veggies (broccoli, zucchini, peppers)",

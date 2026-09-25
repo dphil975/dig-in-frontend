@@ -1,0 +1,290 @@
+/* SocialFeed — "Posts" tab of the Community hub. Restyled onto the app's real
+   pixel/homestead system (see Home.css / SideRail.css / styles.css "THE
+   PALETTE"), pushed further into a chunky Y2K-pixel-game register than the
+   rest of the app: thick bark borders, NOTCHED corners (the stepped-pixel
+   corner cut classic to retro RPG dialog boxes / trading cards), hard-edged
+   offset "pixel-press" shadows instead of soft blurred ones, Press Start 2P
+   for every label/headline, hard drop-shadow text over photos instead of a
+   soft blur.
+
+   The horizontal 8-card carousel (.gk-track/.gk-card) is GONE — replaced by
+   a real vertical feed column (.feed-column/.sfp-card) borrowing a proven
+   feed's information order (community/author line → title → media → real
+   meta → an engagement row of Save/Share/Full-recipe) without inventing any
+   number this app can't back with real data: no vote counts, no comment
+   counts — see .sfp-card's own comment in index.jsx for why. .gk-eyebrow,
+   .gk-modal*, .hero-* and the notched-corner mixin are unchanged; the recipe
+   detail modal still opens from a card the same way it always did. */
+
+.social-feed-page {
+  font-family: 'DotGothic16', Arial, sans-serif;
+  background: var(--dig-cream, #F3EADA);
+  color: var(--dig-bark, #33302A);
+  min-height: 100vh;
+}
+
+/* Reusable notched-corner clip — the small stepped cut at each corner that
+   reads as "pixel game window" instead of a smooth rounded card. */
+:root {
+  --pixel-notch: polygon(
+    0 10px, 10px 10px, 10px 0,
+    calc(100% - 10px) 0, calc(100% - 10px) 10px, 100% 10px,
+    100% calc(100% - 10px), calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) 100%,
+    10px 100%, 10px calc(100% - 10px), 0 calc(100% - 10px)
+  );
+}
+
+.gk-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 22px 64px;
+}
+
+/* ── Section header ────────────────────────────────────────── */
+.gk-head { margin: 6px 6px 24px; }
+.gk-head-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.gk-head-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px; letter-spacing: 1px; color: var(--dig-matcha, #6E8259);
+  margin-bottom: 12px;
+}
+.gk-head-title {
+  font-family: var(--font-display);
+  font-size: 22px; line-height: 1.5; color: var(--dig-bark, #33302A);
+  text-shadow: 3px 3px 0 var(--dig-cashmere, #D8CAB4);
+  margin-bottom: 14px;
+}
+.gk-head-sub { font-size: 15px; line-height: 1.55; color: #6b6157; max-width: 600px; }
+.gk-head-sub b { color: var(--dig-matcha, #6E8259); }
+
+/* ── The feed column — a real vertical scroll instead of an 8-wide
+   horizontal strip. Narrower than the page (a reading column, not the full
+   1100px width) so a post reads the way a feed post should: tall, one at a
+   time, not squeezed into a card's worth of horizontal space. ─────────── */
+.feed-column { max-width: 620px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+.feed-column-item { display: flex; flex-direction: column; gap: 18px; }
+
+.sfp-empty {
+  max-width: 620px; margin: 0 auto 18px; text-align: center;
+  font-size: 13.5px; color: #8a7a68; padding: 20px; line-height: 1.5;
+}
+
+/* ── One feed post — community/author line, title, media, real meta, then
+   an engagement row. Same notched-frame / bark-border / offset-shadow
+   family as the hero and modal, so the column reads as one system. ────── */
+.sfp-card {
+  background: #fff;
+  border: 3px solid var(--dig-bark, #33302A);
+  clip-path: var(--pixel-notch);
+  box-shadow: 5px 5px 0 rgba(51, 48, 42, .18);
+  overflow: hidden;
+}
+
+.sfp-head {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 12px 16px;
+  border-bottom: 1.5px dashed var(--dig-cashmere, #D8CAB4);
+}
+.sfp-platform {
+  font-family: var(--font-ui); font-size: 10.5px; font-weight: 800; letter-spacing: .05em;
+  color: var(--dig-bark, #33302A); background: var(--dig-honey, #E0A32E);
+  padding: 4px 8px; border-radius: 4px;
+}
+.sfp-user { font-family: var(--font-ui); font-size: 12.5px; font-weight: 700; color: var(--dig-matcha, #6E8259); }
+.sfp-loc { font-family: var(--font-ui); font-size: 11.5px; color: #9a8f7c; margin-left: auto; }
+
+.sfp-media {
+  display: block; width: 100%; height: 260px; padding: 0; border: none;
+  border-bottom: 3px solid var(--dig-bark, #33302A);
+  background: var(--dig-cashmere, #D8CAB4); cursor: pointer;
+}
+.sfp-media img { width: 100%; height: 100%; object-fit: cover; display: block; image-rendering: pixelated; }
+.sfp-media-fallback {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  background: var(--dig-matcha, #6E8259);
+  font-family: var(--font-display); font-size: 13px; color: #fff; text-align: center; padding: 20px;
+}
+
+.sfp-body { padding: 16px 18px 6px; }
+.sfp-title {
+  font-family: var(--font-display); font-size: 14px; line-height: 1.6;
+  color: var(--dig-bark, #33302A); margin: 0 0 10px; cursor: pointer;
+}
+.sfp-title:hover { color: var(--dig-matcha, #6E8259); }
+.sfp-desc { font-size: 14.5px; line-height: 1.55; color: #6b6157; margin: 0 0 12px; }
+.sfp-meta { margin-bottom: 4px; }
+
+.sfp-actions {
+  display: flex; align-items: center; gap: 8px;
+  padding: 12px 16px; border-top: 1.5px dashed var(--dig-cashmere, #D8CAB4);
+}
+.sfp-action {
+  font-family: var(--font-ui); font-size: 12px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 6px;
+  padding: 7px 12px; cursor: pointer; transition: transform .1s ease, box-shadow .1s ease;
+}
+.sfp-action:hover { border-color: var(--dig-matcha, #6E8259); transform: translate(-1px, -1px); }
+.sfp-action.on, .sfp-save.on { background: var(--dig-honey, #E0A32E); border-color: var(--dig-bark, #33302A); color: var(--dig-bark, #33302A); }
+.sfp-action-primary { margin-left: auto; background: var(--dig-matcha, #6E8259); border-color: var(--dig-bark, #33302A); color: #fff; }
+.sfp-action-primary:hover { border-color: var(--dig-bark, #33302A); }
+
+/* ── Promoted card — same shell, one honest tell where the platform/author
+   line normally sits. Never appears unless a real sponsor exists for this
+   placement (ShoutoutCard's own "ships empty" rule). ───────────────────── */
+.sfp-promoted { border-color: var(--dig-honey, #E0A32E); }
+.sfp-promoted .sfp-head { border-bottom-color: rgba(224,163,46,.4); }
+.sfp-promoted-label {
+  font-family: var(--font-ui); font-size: 10.5px; font-weight: 800; letter-spacing: .08em;
+  color: var(--dig-bark, #33302A); background: var(--dig-honey, #E0A32E);
+  padding: 4px 8px; border-radius: 4px;
+}
+/* ShoutoutCard already sits inside this card's own bark-bordered, shadowed
+   shell — strip its own frame here so the two don't double up. */
+.sfp-promoted .shoutout-wrap { margin: 0; }
+.sfp-promoted .shoutout-card { border: none; box-shadow: none; border-radius: 0; padding: 14px 16px 16px; background: none; }
+
+/* ── Recipe detail modal ──────────────────────────────────────── */
+.gk-modal-overlay {
+  position: fixed; inset: 0; background: rgba(51, 48, 42, .55);
+  -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; z-index: 1000;
+}
+.gk-modal {
+  position: relative; width: 100%; max-width: 540px; max-height: 88vh;
+  overflow-y: auto;
+  background: #fff; border: 3px solid var(--dig-bark, #33302A);
+  clip-path: var(--pixel-notch);
+  box-shadow: 6px 6px 0 var(--dig-bark, #33302A);
+}
+.gk-modal-close {
+  position: absolute; top: 14px; right: 14px;
+  width: 30px; height: 30px;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 5px;
+  background: #fff; color: var(--dig-bark, #33302A); font-size: 13px; font-weight: 700;
+  cursor: pointer; z-index: 2;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.gk-modal-close:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+.gk-modal-hero {
+  position: relative; height: 220px; overflow: hidden;
+  background: var(--dig-matcha, #6E8259);
+  border-bottom: 3px solid var(--dig-bark, #33302A);
+  display: flex; align-items: flex-end;
+}
+.gk-modal-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
+.gk-modal-emoji { font-family: var(--font-display); font-size: 16px; margin: auto; color: #fff; }
+.gk-modal-hero-text {
+  position: relative; width: 100%; padding: 20px 22px 18px;
+  background: linear-gradient(180deg, transparent, rgba(51,48,42,.75));
+}
+.gk-modal-hero-text h3 { font-family: var(--font-display); font-size: 16px; line-height: 1.5; color: #fff; text-shadow: 2px 2px 0 var(--dig-bark, #33302A); }
+.gk-modal-hero-text .gk-eyebrow { background: #fff; }
+.gk-modal-body { padding: 22px 24px 26px; }
+.gk-modal-loc { font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em; color: #9a8f7c; margin-bottom: 12px; }
+.gk-modal-desc { font-size: 15px; line-height: 1.55; color: var(--dig-bark, #33302A); margin-bottom: 16px; }
+.gk-modal-body .feed-meta { margin-bottom: 14px; }
+.gk-modal-body h4 {
+  font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259);
+  margin: 18px 0 12px; letter-spacing: .04em;
+}
+
+/* ── Shared tag/meta/detail primitives (used inside the modal) ───────────── */
+.feed-meta { display: flex; gap: 14px; flex-wrap: wrap; }
+.feed-meta span {
+  font-family: var(--font-ui); font-size: 11px; color: var(--dig-bark, #33302A);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 5px; padding: 5px 9px;
+}
+.feed-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+.tag {
+  font-size: 11.5px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 20px; padding: 4px 12px;
+}
+.tag.ingredient { background: #f7f2e9; color: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); }
+.tag.dietary { background: #eef7ea; color: #3a6b2f; border-color: var(--dig-frog, #96B36B); }
+
+.recipe-section-label {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em;
+  color: var(--dig-matcha, #6E8259); margin: 14px 0 8px;
+}
+.recipe-steps { font-size: 14px; line-height: 1.7; padding-left: 18px; margin-bottom: 12px; color: var(--dig-bark, #33302A); }
+.recipe-steps li { margin-bottom: 6px; }
+.recipe-ingredients-list { font-size: 14px; line-height: 1.7; margin-bottom: 12px; color: var(--dig-bark, #33302A); }
+
+.shopping-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 13px; }
+.shopping-category { background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px; padding: 9px 12px; }
+.shopping-category strong { display: block; font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); margin-bottom: 6px; }
+
+.cost-breakdown {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; background: #eef7ea; border: 1.5px solid var(--dig-frog, #96B36B);
+  border-radius: 8px; margin-top: 12px; font-size: 14px; color: var(--dig-bark, #33302A);
+}
+.savings-note { margin-top: 12px; font-size: 12.5px; color: #6b6157; }
+
+/* ── Hero — "Recipe of the Day" / "Your Cooking Moments" ──────────────────
+   A chunky notched-frame banner card instead of a soft pastel gradient. */
+.hero-section {
+  position: relative;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  background: #fff;
+  border: 3px solid var(--dig-bark, #33302A);
+  clip-path: var(--pixel-notch);
+  padding: 30px 34px;
+  margin: 6px 6px 28px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0 rgba(51, 48, 42, .25);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.hero-section:hover { transform: translate(-2px, -3px); box-shadow: 7px 8px 0 rgba(51, 48, 42, .25); }
+.hero-boomerang { cursor: default; background: #fdf6ea; }
+.hero-boomerang:hover { transform: none; box-shadow: 5px 5px 0 rgba(51, 48, 42, .25); }
+
+.hero-text { flex: 1 1 320px; max-width: 480px; }
+.hero-eyebrow {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
+  color: var(--dig-matcha, #6E8259); margin-bottom: 12px;
+}
+.hero-title {
+  font-family: var(--font-display); font-size: 18px; line-height: 1.55;
+  color: var(--dig-bark, #33302A); margin-bottom: 12px;
+}
+.hero-title span { color: var(--dig-matcha, #6E8259); }
+.hero-sub { font-size: 14.5px; line-height: 1.55; color: #6b6157; }
+
+.hero-float-card {
+  flex: 0 0 auto;
+  background: var(--dig-cream, #F3EADA);
+  border: 2.5px solid var(--dig-bark, #33302A); border-radius: 10px;
+  padding: 8px 8px 10px;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .25);
+  text-align: center;
+  width: 190px;
+}
+.hero-float-img {
+  width: 100%; height: 140px; object-fit: cover; border-radius: 5px; display: block; margin-bottom: 8px;
+  background: var(--dig-cashmere, #D8CAB4);
+  image-rendering: pixelated;
+}
+.hero-float-fallback {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px;
+  color: #fff; background: var(--dig-matcha, #6E8259);
+}
+.hero-float-caption { font-family: var(--font-ui); font-size: 11px; color: #6b6157; }
+
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .gk-wrap { padding: 20px 14px 44px; }
+  .gk-head-title { font-size: 16px; }
+  .gk-head-sub { font-size: 13.5px; }
+  .sfp-media { height: 200px; }
+  .sfp-loc { margin-left: 0; flex-basis: 100%; }
+  .sfp-actions { flex-wrap: wrap; }
+  .sfp-action-primary { margin-left: 0; flex: 1 1 100%; text-align: center; }
+  .gk-modal-hero { height: 170px; }
+  .hero-section { padding: 22px 20px; margin: 6px 6px 22px; }
+  .hero-title { font-size: 15px; }
+  .hero-float-card { width: 100%; }
+}

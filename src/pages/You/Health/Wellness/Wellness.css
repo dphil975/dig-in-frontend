@@ -1,0 +1,80 @@
+/* Same dark navy + gold theme as Occasions/Pantry/Allergies. */
+.wel-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #33302A 0%, #16213e 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+.wel-wrap { max-width: 780px; margin: 0 auto; padding: 20px 20px 64px; }
+.wel-back {
+  background: none; border: 1px solid #D8CAB4; color: #D8CAB4;
+  padding: 7px 14px; border-radius: 8px; cursor: pointer; font-size: 0.8em; letter-spacing: 0.05em;
+}
+.wel-back:hover { background: rgba(201,169,97,0.12); }
+
+.wel-head { text-align: center; margin: 22px 0 24px; }
+.wel-title { font-family: var(--font-display); font-size: 1.4em; color: #6E8259; margin-bottom: 12px; }
+.wel-sub { color: #aab; font-size: 0.92em; max-width: 560px; margin: 0 auto; line-height: 1.6; }
+
+.wel-section {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.wel-section-title {
+  font-family: var(--font-display);
+  font-size: 0.72em;
+  color: #6E8259;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.wel-hint { color: #99a; font-size: 0.82em; margin: 4px 0 12px; line-height: 1.5; }
+
+/* Progress stats */
+.wel-stats { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+.wel-stat { text-align: center; min-width: 100px; }
+.wel-stat-num { display: block; font-family: var(--font-display); font-size: 1.4em; color: #96B36B; }
+.wel-stat-label { font-size: 0.78em; color: #99a; margin-top: 6px; }
+
+/* Goal toggles */
+.wel-goals { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.wel-goal {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 4px;
+  background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 12px; padding: 12px; cursor: pointer; text-align: left; color: #fff;
+}
+.wel-goal.active { border-color: #96B36B; background: rgba(125,174,92,0.12); }
+.wel-goal-label { font-weight: 700; font-size: 0.92em; }
+.wel-goal-blurb { font-size: 0.78em; color: #99a; line-height: 1.4; }
+
+/* Mindful journal form */
+.wel-form { display: flex; flex-direction: column; gap: 12px; }
+.wel-input {
+  padding: 10px 12px; background: #33302A; border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px; color: #fff; font-family: inherit; font-size: 0.9em;
+}
+.wel-feel-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.wel-feel-group { flex: 1 1 200px; }
+.wel-feel-label { font-size: 0.78em; color: #99a; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+.wel-feel-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.wel-chip {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.2);
+  color: #ccd; padding: 6px 11px; border-radius: 14px; font-size: 0.8em; cursor: pointer;
+}
+.wel-chip.active { background: #6E8259; border-color: #6E8259; color: #33302A; font-weight: 700; }
+.wel-submit {
+  background: #6E8259; color: #33302A; border: none; border-radius: 12px;
+  padding: 11px; font-weight: 700; cursor: pointer; font-size: 0.9em;
+}
+
+/* Journal list */
+.wel-journal-list { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.wel-journal-row {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 10px;
+  background: rgba(255,255,255,0.04); border-radius: 10px; padding: 10px 12px;
+}
+.wel-journal-ate { font-weight: 700; color: #fff; font-size: 0.92em; }
+.wel-journal-meta { color: #99a; font-size: 0.8em; margin-top: 2px; }
+.wel-journal-remove { background: none; border: none; color: #99a; cursor: pointer; font-size: 0.9em; }

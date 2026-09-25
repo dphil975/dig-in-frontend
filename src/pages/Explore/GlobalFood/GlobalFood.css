@@ -1,0 +1,347 @@
+.global-page {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #33302A 0%, #16213e 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.global-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.global-header {
+    text-align: center;
+    margin: 22px 0 28px;
+}
+
+.global-header h1 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    line-height: 1.4;
+    color: #6E8259;
+    margin-bottom: 12px;
+}
+
+.global-header p {
+    color: #aab;
+    font-size: 0.92em;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.global-hint {
+    color: #99a;
+    font-size: 0.85em;
+    margin-top: 6px;
+}
+
+/* ── Upcoming holiday banner ─────────────────────────────── */
+.global-holiday {
+    background: rgba(255, 215, 0, 0.06);
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 26px;
+}
+
+.global-holiday-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.global-holiday-badge {
+    font-family: var(--font-ui);
+    font-size: 11px;
+    color: #33302A;
+    background: #6E8259;
+    padding: 5px 9px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+.global-holiday-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.global-holiday-blurb {
+    color: #ccd;
+    font-size: 0.92em;
+    margin-bottom: 4px;
+}
+
+.global-holiday-caveat {
+    color: #99a;
+    font-size: 0.78em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.global-holiday-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.global-holiday-link {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 16px;
+    font-size: 0.82em;
+    cursor: pointer;
+}
+
+.global-holiday-link:hover {
+    background: rgba(255, 215, 0, 0.15);
+    border-color: #6E8259;
+}
+
+.global-holiday-stores {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.global-holiday-stores-title {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #889;
+    margin-bottom: 8px;
+}
+
+.global-store-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.global-store-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.85em;
+    flex-wrap: wrap;
+}
+
+.global-store-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.global-store-name {
+    font-weight: 600;
+    color: #fff;
+}
+
+.global-store-type {
+    color: #99a;
+    font-size: 0.9em;
+}
+
+.global-store-hours {
+    margin-left: auto;
+    color: #99a;
+    font-size: 0.85em;
+}
+
+.global-store-hours.open {
+    color: #96B36B;
+    font-weight: 600;
+}
+
+.global-holiday-notify {
+    margin-top: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 0.82em;
+    cursor: pointer;
+}
+
+.global-holiday-notify:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.country-card {
+    background: #0f0f1a;
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid #2a2a4a;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.country-card:hover {
+    border-color: #6E8259;
+    transform: translateY(-4px);
+}
+
+.country-card.locked {
+    cursor: default;
+    opacity: 0.6;
+}
+
+.country-card.locked:hover {
+    border-color: #2a2a4a;
+    transform: none;
+}
+
+.country-lock-hint {
+    color: #99a;
+    font-size: 0.82em;
+    line-height: 1.4;
+}
+
+.country-flag {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.country-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.country-cuisine {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.country-dishes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.dish-tag {
+    background: #2a2a4a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.country-details {
+    display: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a4a;
+}
+
+.country-details.open {
+    display: block;
+}
+
+.country-details ul {
+    padding-left: 20px;
+    color: #aaa;
+}
+
+.country-details li {
+    margin: 4px 0;
+}
+
+.diy-condiment {
+    background: #6E825910;
+    border: 1px solid #6E8259;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+}
+
+.diy-condiment .savings {
+    color: #96B36B;
+    font-weight: bold;
+}
+
+.craving-tracker {
+    background: #0f0f1a;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #2a2a4a;
+    margin-top: 24px;
+}
+
+.craving-tracker h3 {
+    margin-bottom: 12px;
+}
+
+.craving-input {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.craving-input select,
+.craving-input input {
+    padding: 10px;
+    background: #33302A;
+    border: 1px solid #2a2a4a;
+    border-radius: 12px;
+    color: white;
+    font-family: inherit;
+}
+
+.craving-input button {
+    padding: 10px 20px;
+    background: #6E8259;
+    color: #33302A;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.craving-pattern {
+    margin-top: 16px;
+    padding: 16px;
+    background: #33302A;
+    border-radius: 12px;
+}
+
+.skill-progress {
+    margin-top: 16px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: #2a2a4a;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.skill-bar .fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6E8259, #96B36B);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}

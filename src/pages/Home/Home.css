@@ -12,24 +12,42 @@
 .dash {
   display: grid;
   grid-template-columns: minmax(0, 600px) 220px;
-  gap: 22px;
+  gap: 34px;
   justify-content: center;
   align-items: start;
-  padding: 20px 16px 60px;
+  padding: 6px 16px 72px;
 }
+
+/* ── Editorial hero — a calm, centered masthead. One thin mark, a quiet
+   contextual kicker, one confident serif invitation, one hairline. The whole
+   point is restraint: no card, no shadow, no second colour — the opposite of
+   the chrome that used to greet you here. ─────────────────────────────────── */
+.home-hero { max-width: 640px; margin: 0 auto; padding: 42px 20px 30px; text-align: center; }
+.home-hero-mark { display: inline-flex; color: var(--dig-matcha); margin-bottom: 18px; }
+.home-hero-kicker {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+  color: #a89e8c; margin: 0 0 12px;
+}
+.home-hero-invite {
+  font-family: var(--font-serif); font-weight: 500;
+  font-size: clamp(27px, 5.5vw, 39px); line-height: 1.12; letter-spacing: -.015em;
+  color: var(--dig-bark); margin: 0 auto; max-width: 13em;
+}
+.home-hero-rule { display: block; width: 38px; height: 1px; background: var(--rule-strong); margin: 28px auto 0; }
 /* No top bar anymore — the right rail sticks near the top of the viewport. */
 .rail { position: sticky; top: 20px; }
 
 /* "Write a post" — the Home-only composer trigger, moved off the (retired)
    inline left rail into the top of the feed column. */
 .column-write-cta {
-  align-self: flex-start;
-  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
-  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dig-bark);
-  padding: 9px 14px; margin-bottom: 12px; cursor: pointer;
+  align-self: center;
+  font-family: var(--font-ui); font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--dig-matcha); background: none;
+  border: 1px solid var(--rule-strong); border-radius: 999px; box-shadow: none;
+  padding: 9px 22px; margin-bottom: 20px; cursor: pointer;
+  transition: border-color .15s, background .15s;
 }
-.column-write-cta:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
-.column-write-cta:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--dig-bark); }
+.column-write-cta:hover { background: #fff; border-color: var(--dig-matcha); }
 
 /* Recess handoff strip — the plan yesterday-you made, paid off in the feed. */
 .home-handoff {
@@ -164,7 +182,7 @@
 .rail-left { display: flex; flex-direction: column; gap: 18px; }
 .brand-block { text-align: left; }
 .brand-wordmark {
-  font-family: 'Press Start 2P', monospace;
+  font-family: var(--font-display);
   font-size: 22px;
   line-height: 1.1;
   color: var(--dig-cashmere);
@@ -173,8 +191,8 @@
   letter-spacing: 1px;
 }
 .brand-tagline {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 8px;
+  font-family: var(--font-ui);
+  font-size: 11px;
   line-height: 1.6;
   color: var(--dig-matcha);
   margin: 10px 0 0;
@@ -189,8 +207,8 @@
   background: var(--dig-frog); box-shadow: 0 0 0 3px rgba(150,179,107,.25);
 }
 .post-cta {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 9px; line-height: 1.5;
+  font-family: var(--font-ui);
+  font-size: 11px; line-height: 1.5;
   color: #fff; background: var(--dig-crimson);
   border: 2px solid var(--dig-bark); border-radius: 6px;
   box-shadow: 3px 3px 0 var(--dig-bark);
@@ -228,32 +246,39 @@
 .column { width: 100%; min-width: 0; }
 
 .column-tabs {
-  display: flex; gap: 4px; margin-bottom: 14px;
-  background: #fff; border: 2px solid var(--dig-bark); border-radius: 10px;
-  box-shadow: 3px 3px 0 rgba(51,48,42,.14); padding: 4px;
+  display: flex; justify-content: center; gap: 30px; margin-bottom: 22px;
+  border-bottom: 1px solid var(--rule); padding: 0;
 }
 .column-tab {
-  flex: 1; font-family: 'Press Start 2P', monospace; font-size: 8px; line-height: 1.4;
-  color: #8a8072; background: none; border: none; border-radius: 6px;
-  padding: 10px 4px; cursor: pointer;
+  font-family: var(--font-ui); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase;
+  color: #a89e8c; background: none; border: none; cursor: pointer;
+  padding: 0 2px 12px; margin-bottom: -1px;
+  border-bottom: 1.5px solid transparent;
+  transition: color .15s, border-color .15s;
 }
-.column-tab.active { color: #fff; background: var(--dig-matcha); }
+.column-tab:hover { color: var(--dig-bark); }
+.column-tab.active { color: var(--dig-bark); border-bottom-color: var(--dig-matcha); }
 
-.column-search { display: flex; gap: 6px; margin-bottom: 16px; }
-.column-search input {
-  flex: 1; min-width: 0; padding: 11px 14px; font-size: 14px; font-family: inherit;
-  border: 2px solid var(--dig-bark); border-radius: 8px; background: #fff; color: var(--dig-bark);
+.column-search {
+  display: flex; gap: 6px; margin-bottom: 20px; align-items: center;
+  border: 1px solid var(--rule-strong); border-radius: 999px;
+  background: #fff; padding: 3px 4px 3px 16px;
 }
-.column-search input:focus { outline: none; border-color: var(--dig-matcha); }
+.column-search input {
+  flex: 1; min-width: 0; padding: 9px 0; font-size: 14px; font-family: inherit;
+  border: none; background: none; color: var(--dig-bark);
+}
+.column-search input:focus { outline: none; }
+.column-search:focus-within { border-color: var(--dig-matcha); }
 .column-search button[type="submit"] {
-  padding: 0 18px; font-weight: 800; font-size: 13px; color: #fff;
-  background: var(--dig-matcha); border: 2px solid var(--dig-bark); border-radius: 8px;
-  box-shadow: 2px 2px 0 var(--dig-bark); cursor: pointer;
+  padding: 8px 18px; font-weight: 700; font-size: 13px; color: #fff;
+  background: var(--dig-matcha); border: none; border-radius: 999px; cursor: pointer;
 }
 .column-search-clear {
-  padding: 0 12px; font-weight: 700; font-size: 12px; color: var(--dig-crimson);
-  background: none; border: 2px solid var(--dig-crimson); border-radius: 8px; cursor: pointer;
+  padding: 0 12px; font-weight: 600; font-size: 12px; color: #a89e8c;
+  background: none; border: none; cursor: pointer;
 }
+.column-search-clear:hover { color: var(--dig-bark); }
 
 .column-filterbar {
   display: flex; align-items: center; justify-content: space-between;
@@ -286,7 +311,7 @@
   padding: 16px; margin-bottom: 18px;
 }
 .onboard-q {
-  font-family: 'Press Start 2P', monospace; font-size: 11px; line-height: 1.6;
+  font-family: var(--font-ui); font-size: 11px; line-height: 1.6;
   margin: 0 0 12px;
 }
 .onboard-opts { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -299,20 +324,20 @@
 .onboard-skip { background: transparent !important; color: var(--dig-cream) !important; border-style: dashed !important; }
 
 /* ── POSTS — one shell, many shapes ───────────────────────────────────── */
-.column-feed, .column-results { display: flex; flex-direction: column; gap: 18px; }
+.column-feed, .column-results { display: flex; flex-direction: column; gap: 22px; }
 
 .post {
   background: #fff;
-  border: 2px solid var(--dig-bark);
-  border-radius: 10px;
-  box-shadow: 4px 4px 0 rgba(51,48,42,.16);
-  padding: 14px;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 20px 22px;
 }
 .post-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
 .post-avatar {
   width: 34px; height: 34px; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Press Start 2P', monospace; font-size: 12px; color: #fff;
+  font-family: var(--font-ui); font-size: 12px; color: #fff;
   border: 2px solid var(--dig-bark); border-radius: 6px;
 }
 .post-head-txt { display: flex; flex-direction: column; line-height: 1.2; }
@@ -332,7 +357,7 @@
 /* Ask — solid honey text block, no image (Tumblr's text post). */
 .post-ask { background: var(--dig-honey); border-color: var(--dig-bark); }
 .post-ask-kicker {
-  font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
   color: #7a5c1e; text-transform: uppercase;
 }
 .post-ask-q { font-size: 19px; font-weight: 800; line-height: 1.35; color: var(--dig-bark); margin: 10px 0 14px; }
@@ -361,7 +386,7 @@
 .post-cookingNow { background: var(--dig-bark); border-color: #000; color: var(--dig-cream); }
 .post-live {
   display: inline-flex; align-items: center; gap: 7px;
-  font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px; color: var(--dig-honey);
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px; color: var(--dig-honey);
 }
 .post-live-dot, .rr-live-dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--dig-crimson);
@@ -393,7 +418,7 @@
 }
 .post-place-txt { display: flex; flex-direction: column; min-width: 0; }
 .post-place-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .5px; color: var(--dig-honey); text-transform: uppercase; }
-.post-place-city { font-family: 'Press Start 2P', monospace; font-size: 13px; color: var(--dig-bark); margin: 4px 0; }
+.post-place-city { font-family: var(--font-display); font-size: 13px; color: var(--dig-bark); margin: 4px 0; }
 .post-place-blurb { font-size: 12.5px; line-height: 1.5; color: #6c6355; margin: 0 0 8px; }
 .post-place-dish { font-size: 13px; font-weight: 800; color: var(--dig-matcha); margin-bottom: 8px; }
 .post-place-btn {
@@ -417,7 +442,7 @@
 /* Chain — a dish nested on the original it came from (the reblog). */
 .post-chain { border-left: 6px solid var(--dig-honey); }
 .post-chain-mark {
-  margin-left: auto; font-family: 'Press Start 2P', monospace; font-size: 7px;
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px;
   color: var(--dig-honey); background: rgba(224,163,46,.14); padding: 4px 6px; border-radius: 4px;
 }
 .post-chain-origin {
@@ -430,7 +455,7 @@
 /* Meal-time — contextual first post. */
 .post-mealtime { background: #eef3e8; border-color: var(--dig-matcha); }
 .post-mealtime-kicker {
-  font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
   color: var(--dig-matcha); text-transform: uppercase;
 }
 .post-mealtime-line { font-size: 17px; font-weight: 800; color: var(--dig-bark); margin: 10px 0 14px; }
@@ -466,7 +491,7 @@
 
 /* Whimsy — a post, once a week, on Sunday. */
 .post-whimsy { background: var(--dig-cashmere); border-color: var(--dig-bark); }
-.post-whimsy-kicker { font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px; color: var(--dig-matcha); }
+.post-whimsy-kicker { font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px; color: var(--dig-matcha); }
 .post-whimsy-line { font-size: 16px; font-weight: 800; color: var(--dig-bark); margin: 10px 0 14px; }
 .post-whimsy-btn {
   font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
@@ -477,7 +502,7 @@
 /* Editorial — the below-the-fold systems, now single cards in the column. */
 .post-editorial { padding: 12px; }
 .post-editorial-label {
-  display: block; font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px;
+  display: block; font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
   color: #9a8f7c; text-transform: uppercase; margin-bottom: 8px;
 }
 /* These three reused components predate the palette reskin — they still
@@ -545,14 +570,14 @@
 /* The feed ends — the direct answer to aimless scrolling. */
 .post-end { text-align: center; padding: 40px 16px 10px; color: #9a8f7c; }
 .post-end-mark { font-size: 22px; color: var(--dig-honey); }
-.post-end p { font-family: 'Press Start 2P', monospace; font-size: 10px; line-height: 1.9; margin: 8px 0 0; color: var(--dig-bark); }
+.post-end p { font-family: var(--font-ui); font-size: 11px; line-height: 1.9; margin: 8px 0 0; color: var(--dig-bark); }
 .post-end-sub { color: #9a8f7c !important; }
 
 /* ── RIGHT RAIL — quiet, gets out of the way ──────────────────────────── */
 .rail-right { display: flex; flex-direction: column; gap: 16px; }
 .rr-card {
-  background: #fff; border: 2px solid var(--dig-bark); border-radius: 10px;
-  box-shadow: 3px 3px 0 rgba(51,48,42,.14); padding: 14px;
+  background: #fff; border: 1px solid var(--rule); border-radius: 6px;
+  box-shadow: none; padding: 16px 18px;
 }
 .rr-cooking { background: var(--dig-bark); }
 .rr-cooking .rr-head { color: var(--dig-honey); }
@@ -564,7 +589,7 @@
 }
 .rr-you .rr-stats { display: flex; justify-content: space-between; text-align: center; }
 .rr-stat { display: flex; flex-direction: column; gap: 2px; }
-.rr-stat-n { font-family: 'Press Start 2P', monospace; font-size: 15px; color: var(--dig-matcha); }
+.rr-stat-n { font-family: var(--font-serif); font-weight: 600; font-size: 20px; color: var(--dig-bark); }
 .rr-stat-l { font-size: 10px; color: #8a7a68; }
 
 /* ── Voice tags (Layer 2) — personality, not filter: plain text, no chip ── */
@@ -619,7 +644,7 @@
   display: flex; flex-direction: column; align-items: center; text-align: center;
   padding: 4px 0 12px; margin-bottom: 10px; border-bottom: 2px dashed var(--dig-cashmere);
 }
-.rr-meals-n { font-family: 'Press Start 2P', monospace; font-size: 22px; color: var(--dig-crimson); line-height: 1.3; }
+.rr-meals-n { font-family: var(--font-serif); font-weight: 600; font-size: 30px; color: var(--dig-bark); line-height: 1.15; }
 .rr-meals-l { font-size: 11px; font-weight: 700; color: var(--dig-bark); margin-top: 4px; text-transform: uppercase; letter-spacing: .04em; }
 .rr-events { font-size: 10px; color: #8a7a68; margin-top: 3px; }
 
@@ -676,7 +701,7 @@
   box-shadow: 3px 3px 0 rgba(51,48,42,.16); padding: 12px 14px; margin-bottom: 14px;
 }
 .tagpage-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-.tagpage-title { font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--dig-bark); }
+.tagpage-title { font-family: var(--font-ui); font-size: 12px; color: var(--dig-bark); }
 .tagpage-clear {
   font-size: 11px; font-weight: 700; color: var(--dig-crimson);
   background: none; border: none; cursor: pointer;
@@ -721,7 +746,7 @@
 }
 .post-writeup .post-head { margin-bottom: 10px; }
 .post-writeup-mark {
-  margin-left: auto; font-family: 'Press Start 2P', monospace; font-size: 7px;
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px;
   color: var(--dig-matcha); background: rgba(110,130,89,.12); padding: 4px 6px; border-radius: 4px;
 }
 .post-writeup-origin {
@@ -730,8 +755,9 @@
 }
 .post-writeup-origin b { color: var(--dig-bark); }
 .post-writeup-title {
-  font-size: 22px; font-weight: 800; line-height: 1.25; color: var(--dig-bark);
-  margin: 4px 0 12px;
+  font-family: var(--font-serif); font-size: 25px; font-weight: 600;
+  letter-spacing: -.01em; line-height: 1.22; color: var(--dig-bark);
+  margin: 6px 0 12px;
 }
 .post-writeup-cook {
   margin-top: 12px; font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
@@ -754,14 +780,14 @@
   border: 2px solid var(--dig-bark); border-radius: 10px;
 }
 .post-writeup-method-head {
-  display: block; font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: 1px;
+  display: block; font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
   color: var(--dig-honey); text-transform: uppercase; margin-bottom: 10px;
 }
 .post-writeup-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .post-writeup-steps li { display: flex; gap: 10px; align-items: flex-start; }
 .post-writeup-step-n {
   flex-shrink: 0; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;
-  font-family: 'Press Start 2P', monospace; font-size: 9px; color: #fff; background: var(--dig-matcha);
+  font-family: var(--font-ui); font-size: 11px; color: #fff; background: var(--dig-matcha);
   border: 2px solid var(--dig-bark); border-radius: 6px;
 }
 .post-writeup-step-t { font-size: 14px; line-height: 1.55; color: #4c463c; padding-top: 1px; }
@@ -774,7 +800,7 @@
   padding: 18px 20px;
 }
 .post-moving-kicker {
-  font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: .5px;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px;
   color: #7a5c1e; text-transform: uppercase;
 }
 .post-moving-headline { font-size: 19px; font-weight: 800; line-height: 1.3; color: var(--dig-bark); margin: 10px 0 4px; }
@@ -843,7 +869,7 @@
    this just gives it a defined height + a frame to sit in. */
 .post-reel-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
 .post-reel-kicker {
-  font-family: 'Press Start 2P', monospace; font-size: 8px; letter-spacing: .04em;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em;
   color: var(--dig-matcha); background: rgba(110,130,89,.12); padding: 5px 8px; border-radius: 5px;
 }
 .post-reel-line { font-size: 12.5px; color: #8a7a68; }
@@ -865,12 +891,20 @@
   box-shadow: 4px 4px 0 rgba(51,48,42,.16); padding: 16px; margin-bottom: 16px;
 }
 .composer-head { display: flex; align-items: center; margin-bottom: 4px; }
-.composer-title { font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--dig-matcha); }
+.composer-title { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha); }
 .composer-x {
   margin-left: auto; font-size: 15px; font-weight: 800; color: #8a7a68;
   background: none; border: none; cursor: pointer; line-height: 1;
 }
 .composer-hint { font-size: 12px; line-height: 1.5; color: #8a7a68; margin: 0 0 12px; }
+.composer-modes { display: flex; gap: 6px; margin-bottom: 10px; }
+.composer-mode {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: #8a7a68;
+  background: #fdfbf7; border: 2px solid var(--dig-cashmere); border-radius: 999px;
+  padding: 6px 13px; cursor: pointer;
+}
+.composer-mode.active { color: #fff; background: var(--dig-matcha); border-color: var(--dig-matcha); }
+.composer-quickfield { font-size: 15px; line-height: 1.5; }
 .composer-input {
   width: 100%; font: inherit; color: var(--dig-bark);
   border: 2px solid var(--dig-cashmere); border-radius: 8px; padding: 9px 11px;
@@ -917,7 +951,8 @@
   .rail-right { display: none; }
 }
 @media (max-width: 760px) {
-  .dash { grid-template-columns: minmax(0, 1fr); padding: 12px 10px 80px; }
+  .dash { grid-template-columns: minmax(0, 1fr); padding: 4px 10px 80px; }
+  .home-hero { padding: 30px 18px 22px; }
   .rail-left { display: none; }
   .rail { position: static; }
   /* Nav becomes the tab bar: the column's tabs stick to the top on mobile. */

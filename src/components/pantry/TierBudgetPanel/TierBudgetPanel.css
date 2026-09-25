@@ -1,0 +1,108 @@
+/* "Your budget, your brand" panel — sits in the recipe flow, so it borrows the
+   recipe page's card feel: light card, clear numbers, tier accents. */
+.tbp {
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 18px 0;
+}
+.tbp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.tbp-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  letter-spacing: 0.04em;
+}
+.tbp-tiers { display: flex; gap: 6px; }
+.tbp-tier {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 7px 9px;
+  border-radius: 14px;
+  border: 2px solid #33302A;
+  background: #fff;
+  color: #33302A;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tbp-tier-budget.active  { background: #96B36B; color: #fff; border-color: #1b5e20; }
+.tbp-tier-mid.active     { background: #6E8259; color: #33302A; border-color: #c9a200; }
+.tbp-tier-premium.active { background: #6E8259; color: #fff; border-color: #543a86; }
+
+.tbp-storeline { font-size: 12px; color: #555; margin-bottom: 12px; }
+
+.tbp-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 0;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  margin-bottom: 14px;
+}
+.tbp-row {
+  display: grid;
+  grid-template-columns: 1fr auto minmax(0, 1.4fr) auto;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13px;
+}
+.tbp-row-name { color: #33302A; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tbp-row-arrow { color: #aaa; }
+.tbp-row-brand { color: #4a7c59; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tbp-row-price { color: #33302A; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tbp-onhand { font-size: 11px; color: #999; font-style: italic; margin-top: 2px; }
+
+.tbp-totals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.tbp-total-block { text-align: center; }
+.tbp-total-num { font-family: var(--font-display); font-size: 20px; color: #96B36B; }
+.tbp-total-out .tbp-total-num { color: #33302A; }
+.tbp-total-label { font-size: 10px; color: #777; margin-top: 5px; line-height: 1.3; }
+.tbp-vs { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.tbp-save {
+  background: rgba(46,125,50,0.1);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  color: #1b5e20;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.tbp-find {
+  width: 100%;
+  background: #33302A;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  cursor: pointer;
+}
+.tbp-find:hover { background: #333; }
+
+@media (prefers-color-scheme: dark) {
+  .tbp { background: #1e1e28; border-color: #3a3a4a; }
+  .tbp-title, .tbp-row-name, .tbp-row-price { color: #f0f0f0; }
+  .tbp-tier { background: #2a2a36; color: #eee; border-color: #4a4a5a; }
+  .tbp-storeline { color: #aab; }
+  .tbp-rows { border-color: #3a3a4a; }
+  .tbp-row-brand { color: #8fd4a2; }
+  .tbp-find { background: #6E8259; color: #33302A; }
+}

@@ -1,0 +1,134 @@
+/* ── RecipeExtras — ingredients/nutrition/remix/serve-with/tips/storage/FAQ.
+   Reuses .rd-section / .rd-title / .rd-sub from RecipeCards.css (already
+   loaded by RecipeFull) for the section wrapper + header; these are just
+   the layouts for what goes inside each one. */
+
+/* Ingredients */
+.re-ing-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.re-mult { display: flex; gap: 6px; }
+.re-mult-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 6px 9px;
+  border: 2px solid rgba(212, 188, 165, .7);
+  border-radius: 8px;
+  background: #fff;
+  color: #6E8259;
+  cursor: pointer;
+}
+.re-mult-btn.active { background: #6E8259; border-color: #4A4D80; color: #fff; }
+
+.re-ing-group-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #c2410c;
+  margin: 12px 0 8px;
+}
+.re-ing-group-title:first-of-type { margin-top: 0; }
+.re-ing-list { list-style: none; margin: 0; padding: 0; }
+.re-ing-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(212, 188, 165, .4);
+  font-size: 13px;
+  color: #33302A;
+}
+.re-ing-item:last-child { border-bottom: none; }
+.re-ing-amt { font-weight: 700; color: #6E8259; white-space: nowrap; }
+.re-ing-name { font-weight: 600; }
+.re-ing-note { font-size: 11.5px; color: rgba(45, 27, 19, .6); font-style: italic; }
+
+.re-equip { display: flex; flex-wrap: wrap; gap: 8px; }
+.re-equip-chip {
+  font-size: 12px;
+  padding: 6px 11px;
+  border: 1px solid rgba(212, 188, 165, .7);
+  border-radius: 20px;
+  background: #F3EADA;
+  color: #33302A;
+}
+
+/* Nutrition facts */
+.re-nutrition {
+  border: 2px solid #33302A;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.re-nutrition-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #33302A;
+  color: #fff;
+  font-size: 12px;
+}
+.re-nutrition-cal { font-family: var(--font-ui); font-size: 12px; color: #6E8259; }
+.re-nutrition-grid { padding: 4px 14px; }
+.re-nutrition-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(212, 188, 165, .4);
+  font-size: 12.5px;
+  color: #33302A;
+}
+.re-nutrition-row:last-child { border-bottom: none; }
+.re-nutrition-row span:last-child { font-weight: 700; }
+
+/* Shared tip-card list (remix / serve-with / expert tips / storage) */
+.re-tips { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.re-tip {
+  background: #F3EADA;
+  border: 2px solid rgba(212, 188, 165, .7);
+  border-radius: 11px;
+  padding: 12px 13px;
+}
+.re-tip-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 6px;
+}
+.re-tip-text { font-size: 12px; color: #4A2E25; line-height: 1.5; }
+
+.re-makeahead { font-size: 13px; color: #4A2E25; line-height: 1.6; margin: 0; }
+
+/* FAQs — accordion */
+.re-faqs { display: flex; flex-direction: column; gap: 8px; }
+.re-faq {
+  border: 2px solid rgba(212, 188, 165, .7);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #F3EADA;
+}
+.re-faq.open { border-color: #6E8259; }
+.re-faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  padding: 12px 14px;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #33302A;
+  cursor: pointer;
+}
+.re-faq-caret { color: #6E8259; flex-shrink: 0; }
+.re-faq-a {
+  padding: 0 14px 14px;
+  font-size: 12.5px;
+  color: #4A2E25;
+  line-height: 1.55;
+}
+
+@media (max-width: 620px) {
+  .re-tips { grid-template-columns: 1fr; }
+}

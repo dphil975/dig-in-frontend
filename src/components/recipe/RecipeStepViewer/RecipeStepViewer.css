@@ -1,0 +1,389 @@
+/* RecipeStepViewer — Apple-smooth bento step card, Dig In pixel style.
+   Dark glassy panel (echoes the NOAL reference) so the pixel gold + photo pop,
+   sitting inside the cream recipe page as a feature block.
+   Smooth = soft shadows, rounded corners, cubic-bezier easing.
+   Pixel = Press Start 2P, hard gold accents, chunky chips. */
+
+.rsv {
+  --rsv-ink:    #16201a;
+  --rsv-panel:  rgba(255, 255, 255, 0.055);
+  --rsv-line:   rgba(255, 247, 236, 0.14);
+  --rsv-cream:  #F3EADA;
+  --rsv-gold:   #E0A32E;
+  --rsv-crimson:#6E8259;
+  --rsv-matcha: #6FBF8B;
+  --rsv-ease:   cubic-bezier(0.22, 1, 0.36, 1);
+  font-family: var(--font-display);
+  margin: 8px 0 4px;
+}
+
+/* ── The bento card ───────────────────────────────────────────────────────── */
+.rsv-bento {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  gap: 14px;
+  padding: 16px;
+  border-radius: 22px;                 /* small curve to the edges */
+  background:
+    radial-gradient(120% 120% at 0% 0%, #243528 0%, var(--rsv-ink) 60%) ,
+    var(--rsv-ink);
+  border: 1px solid var(--rsv-line);
+  box-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.rsv-left {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* Two squares up top */
+.rsv-squares { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.rsv-square {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--rsv-panel);
+  border: 1px solid var(--rsv-line);
+  display: flex; align-items: center; justify-content: center;
+}
+.rsv-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rsv-img-ph {
+  font-size: 28px; color: var(--rsv-gold);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+.rsv-square-tag {
+  position: absolute; left: 8px; bottom: 8px;
+  font-size: 7px; letter-spacing: 1px; color: var(--rsv-ink);
+  background: var(--rsv-gold); padding: 4px 6px; border-radius: 6px;
+}
+
+/* Snapped step photo — rendered pixel art, so keep hard edges when scaled */
+.rsv-pixel-photo { image-rendering: pixelated; }
+
+/* Detail-level picker (32/64/128-bit) — layered top-left on the step square */
+.rsv-bit-picker {
+  position: absolute; top: 8px; left: 8px;
+  display: flex; gap: 3px;
+  z-index: 1;
+}
+.rsv-bit-pill {
+  font-family: inherit; font-size: 6px; letter-spacing: 0.5px;
+  color: var(--rsv-cream);
+  background: rgba(22,32,26,0.65);
+  border: 1px solid var(--rsv-line);
+  border-radius: 6px;
+  padding: 4px 5px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.15s var(--rsv-ease), color 0.15s var(--rsv-ease), border-color 0.15s var(--rsv-ease);
+}
+.rsv-bit-pill:hover { border-color: rgba(255,230,109,0.6); }
+.rsv-bit-pill.active { background: var(--rsv-gold); color: var(--rsv-ink); border-color: transparent; }
+
+/* "Snap & pixelate" — camera button layered on the step square */
+.rsv-snap-btn {
+  position: absolute; top: 8px; right: 8px;
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; line-height: 1;
+  border-radius: 50%;
+  background: rgba(22,32,26,0.65);
+  border: 1px solid var(--rsv-line);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: transform 0.18s var(--rsv-ease), background 0.18s var(--rsv-ease);
+}
+.rsv-snap-btn:hover:not(:disabled) { transform: scale(1.08); background: rgba(255,230,109,0.9); }
+.rsv-snap-btn.busy { animation: rsv-spin 1s linear infinite; }
+.rsv-snap-btn:disabled { cursor: default; }
+@keyframes rsv-spin { to { transform: rotate(360deg); } }
+
+/* Ad placeholder */
+.rsv-ad {
+  flex-direction: column; gap: 6px;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 6px, transparent 6px 12px),
+    var(--rsv-panel);
+  border-style: dashed;
+}
+.rsv-ad-tag { font-size: 14px; color: var(--rsv-cream); }
+.rsv-ad-sub { font-size: 7px; color: rgba(255,247,236,0.45); letter-spacing: 1px; }
+
+/* Nudge to snap/boomerang the current step, above the "UP NOW" preview */
+.rsv-progress-nudge {
+  font-family: 'DotGothic16', monospace;
+  font-size: 10px; line-height: 1.5;
+  color: var(--rsv-gold);
+  background: rgba(255,230,109,0.1);
+  border: 1px solid rgba(255,230,109,0.3);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.rsv-progress-nudge.done {
+  color: var(--rsv-matcha);
+  background: rgba(111,191,139,0.1);
+  border-color: rgba(111,191,139,0.35);
+}
+
+/* Wide preview rectangle under the squares */
+.rsv-wide {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(255,107,107,0.16), rgba(255,107,107,0.05));
+  border: 1px solid rgba(255,107,107,0.35);
+  padding: 14px;
+  display: flex; flex-direction: column; gap: 9px; justify-content: center;
+  min-height: 86px;
+  animation: rsv-rise 0.6s var(--rsv-ease) both;
+}
+.rsv-wide-label { font-size: 7px; letter-spacing: 2px; color: var(--rsv-crimson); }
+.rsv-wide-preview { font-size: 9px; line-height: 1.9; color: var(--rsv-cream); }
+.rsv-progress { height: 6px; border-radius: 4px; background: rgba(255,255,255,0.1); overflow: hidden; }
+.rsv-progress span {
+  display: block; height: 100%; border-radius: 4px;
+  background: linear-gradient(90deg, var(--rsv-gold), var(--rsv-crimson));
+  transition: width 0.55s var(--rsv-ease);
+}
+
+/* ── The tall upright rectangle — main step display ───────────────────────── */
+.rsv-main {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background:
+    radial-gradient(140% 90% at 100% 0%, rgba(111,191,139,0.18), transparent 55%),
+    var(--rsv-panel);
+  border: 1px solid var(--rsv-line);
+  padding: 22px 22px 18px;
+  display: flex; flex-direction: column;
+  min-height: 240px;
+}
+.rsv-eyebrow {
+  font-size: 7px; letter-spacing: 2px; color: var(--rsv-matcha);
+  text-transform: uppercase; margin-bottom: 12px;
+  animation: rsv-fade 0.7s var(--rsv-ease) both;
+}
+.rsv-main-num-row { display: flex; align-items: center; gap: 12px; }
+.rsv-main-num {
+  font-size: 30px; color: var(--rsv-gold);
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+  animation: rsv-reveal 0.85s var(--rsv-ease) both;
+}
+.rsv-main-num i { font-size: 13px; color: rgba(255,247,236,0.5); font-style: normal; }
+.rsv-main-text {
+  margin: 16px 0 auto;
+  font-size: 12px; line-height: 2.05; color: var(--rsv-cream);
+  /* "preview → flash → reveal" */
+  animation: rsv-reveal 0.9s var(--rsv-ease) both;
+}
+
+/* "Confused? here's why" — per-step help, only shown when a step has help text */
+.rsv-help-btn {
+  width: 26px; height: 26px; flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--rsv-line);
+  background: rgba(255,255,255,0.08);
+  color: var(--rsv-cream);
+  font-family: inherit; font-size: 13px; font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.rsv-help-btn:hover, .rsv-help-btn.active {
+  background: var(--rsv-gold); border-color: var(--rsv-gold); color: var(--rsv-ink);
+}
+.rsv-help-box {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  background: rgba(255,230,109,0.1);
+  border: 1px solid rgba(255,230,109,0.35);
+  border-radius: 10px;
+  animation: rsv-fade 0.25s ease both;
+}
+.rsv-help-label {
+  display: block;
+  font-size: 7px; letter-spacing: 1px; color: var(--rsv-gold);
+  margin-bottom: 6px;
+}
+.rsv-help-box p { margin: 0; font-size: 12px; line-height: 1.6; color: var(--rsv-cream); }
+
+/* The flash sweep that plays each time the step changes */
+.rsv-flash {
+  position: absolute; inset: 0; pointer-events: none; border-radius: 18px;
+  background: linear-gradient(115deg, transparent 30%, rgba(255,247,236,0.85) 50%, transparent 70%);
+  background-size: 280% 100%;
+  opacity: 0;
+  animation: rsv-flash 0.9s var(--rsv-ease) both;
+  mix-blend-mode: screen;
+}
+
+/* Nav buttons */
+.rsv-nav { display: flex; gap: 10px; margin-top: 16px; }
+.rsv-btn {
+  font-family: inherit; font-size: 8px; letter-spacing: 1px;
+  color: var(--rsv-cream); background: rgba(255,255,255,0.06);
+  border: 1px solid var(--rsv-line); border-radius: 10px;
+  padding: 11px 13px; cursor: pointer;
+  transition: transform 0.18s var(--rsv-ease), background 0.18s var(--rsv-ease), box-shadow 0.18s var(--rsv-ease);
+}
+.rsv-btn:hover:not(:disabled) { transform: translateY(-2px); background: rgba(255,255,255,0.12); }
+.rsv-btn:disabled { opacity: 0.35; cursor: default; }
+.rsv-btn-next {
+  margin-left: auto; color: var(--rsv-ink); background: var(--rsv-gold);
+  border-color: transparent; box-shadow: 0 4px 0 #b89a2e;
+}
+.rsv-btn-next:hover:not(:disabled) { box-shadow: 0 6px 0 #b89a2e; }
+.rsv-btn-next:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 2px 0 #b89a2e; }
+
+/* ── Carousel rail — one rectangle per step, grows with the recipe ────────── */
+.rsv-rail {
+  display: flex; gap: 10px;
+  margin-top: 14px; padding: 4px 2px 10px;
+  overflow-x: auto; scroll-snap-type: x proximity;
+  scrollbar-width: thin; scrollbar-color: var(--rsv-gold) transparent;
+}
+.rsv-rail::-webkit-scrollbar { height: 6px; }
+.rsv-rail::-webkit-scrollbar-thumb { background: rgba(255,230,109,0.6); border-radius: 4px; }
+
+.rsv-chip {
+  flex: 0 0 108px; scroll-snap-align: center;
+  display: flex; flex-direction: column; gap: 8px; justify-content: space-between;
+  height: 74px; padding: 10px;
+  font-family: inherit; text-align: left; cursor: pointer;
+  border-radius: 12px;
+  background: rgba(22,32,26,0.65);
+  border: 1px solid var(--rsv-line);
+  color: rgba(255,247,236,0.7);
+  transition: transform 0.22s var(--rsv-ease), background 0.22s var(--rsv-ease),
+              border-color 0.22s var(--rsv-ease), box-shadow 0.22s var(--rsv-ease);
+}
+.rsv-chip:hover { transform: translateY(-3px); border-color: rgba(255,230,109,0.5); }
+.rsv-chip-num { font-size: 12px; color: var(--rsv-cream); }
+.rsv-chip-prev { font-size: 6px; line-height: 1.7; color: rgba(255,247,236,0.5); }
+.rsv-chip.is-done { opacity: 0.7; }
+.rsv-chip.is-done .rsv-chip-num { color: var(--rsv-matcha); }
+.rsv-chip.is-active {
+  background: linear-gradient(180deg, var(--rsv-gold), #f0c93b);
+  border-color: transparent; color: var(--rsv-ink);
+  box-shadow: 0 8px 22px -8px rgba(255,230,109,0.7);
+  transform: translateY(-3px) scale(1.03);
+}
+.rsv-chip.is-active .rsv-chip-num,
+.rsv-chip.is-active .rsv-chip-prev { color: var(--rsv-ink); }
+
+.rsv-empty { font-family: var(--font-ui); font-size: 11px; color: #D8CAB4; padding: 16px; }
+
+/* ── Animations ───────────────────────────────────────────────────────────── */
+@keyframes rsv-flash {
+  0%   { opacity: 0; background-position: 120% 0; }
+  42%  { opacity: 0; }
+  55%  { opacity: 0.9; }
+  100% { opacity: 0; background-position: -40% 0; }
+}
+/* preview phase (dim/blurred) → flash → crisp reveal */
+@keyframes rsv-reveal {
+  0%   { opacity: 0; filter: blur(7px) brightness(0.6); transform: translateY(10px); }
+  45%  { opacity: 0.25; filter: blur(5px) brightness(0.7); transform: translateY(6px); }
+  56%  { opacity: 1; filter: blur(0) brightness(1.9); }
+  100% { opacity: 1; filter: blur(0) brightness(1); transform: translateY(0); }
+}
+@keyframes rsv-rise {
+  0%   { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes rsv-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Respect reduced-motion: keep it readable, drop the flash/blur. */
+@media (prefers-reduced-motion: reduce) {
+  .rsv-flash { display: none; }
+  .rsv-main-num, .rsv-main-text, .rsv-wide, .rsv-eyebrow { animation: rsv-fade 0.3s ease both; }
+}
+
+/* ── Responsive: stack the columns on narrow screens ──────────────────────── */
+@media (max-width: 720px) {
+  .rsv-bento { grid-template-columns: 1fr; }
+  .rsv-main { min-height: 200px; }
+}
+
+/* ── Phase label (grouped recipes: pastry cream / dough / topping) ── */
+.rsv-phase {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: #33302A;
+  background: #6E8259;
+  border: 2px solid #33302A;
+  border-radius: 6px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* Phase divider in the step rail */
+.rsv-rail-group {
+  flex: 0 0 auto;
+  align-self: center;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  color: #7a5fa0;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 4px 2px;
+  margin: 0 2px;
+  border-left: 2px solid #e3d9c8;
+}
+
+/* ── Nova, check my step — live photo coaching ──────────────────────────── */
+.rsv-nova-check { margin: 14px 0 0; display: flex; flex-direction: column; gap: 10px; }
+.rsv-nova-btn {
+  align-self: flex-start;
+  font-family: inherit; font-size: 8px; letter-spacing: 1px;
+  color: var(--rsv-cream);
+  background: rgba(124, 93, 175, 0.28);
+  border: 1px solid rgba(124, 93, 175, 0.6); border-radius: 10px;
+  padding: 11px 14px; cursor: pointer;
+  transition: background 0.18s var(--rsv-ease), transform 0.12s var(--rsv-ease);
+}
+.rsv-nova-btn:hover:not(:disabled) { background: rgba(124, 93, 175, 0.42); }
+.rsv-nova-btn:active:not(:disabled) { transform: translateY(1px); }
+.rsv-nova-btn.busy, .rsv-nova-btn:disabled { opacity: 0.7; cursor: default; }
+
+.rsv-nova-note { font-size: 11px; line-height: 1.5; color: rgba(255, 247, 236, 0.72); }
+.rsv-nova-note code {
+  background: rgba(255,255,255,0.1); padding: 1px 5px; border-radius: 4px; font-size: 10px;
+}
+
+/* She pops up when she spots a real problem */
+.rsv-nova-popup {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: rgba(200, 0, 30, 0.14);
+  border: 1px solid rgba(255, 120, 132, 0.55);
+  border-left: 4px solid #ff5a6a;
+  border-radius: 12px; padding: 12px 14px;
+  animation: rsv-fade 0.25s ease both;
+}
+.rsv-nova-popup-title {
+  font-family: inherit; font-size: 10px; letter-spacing: .5px;
+  color: #ff9aa6; margin-bottom: 6px;
+}
+.rsv-nova-popup-text { font-size: 13px; line-height: 1.5; color: var(--rsv-cream); }
+
+.rsv-crit-cards { display: flex; flex-direction: column; gap: 8px; }
+.rsv-crit {
+  display: flex; flex-direction: column; gap: 4px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--rsv-line); border-left: 4px solid rgba(255,247,236,0.4);
+  border-radius: 10px; padding: 10px 12px;
+}
+.rsv-crit-success { border-left-color: #96B36B; }
+.rsv-crit-warning { border-left-color: #E0A32E; }
+.rsv-crit-danger  { border-left-color: #ff5a6a; }
+.rsv-crit-label {
+  font-family: inherit; font-size: 8px; letter-spacing: .8px; color: rgba(255,247,236,0.7);
+}
+.rsv-crit-text { font-size: 13px; line-height: 1.5; color: var(--rsv-cream); }

@@ -1,0 +1,106 @@
+/* DishFlipCard — same 3D-rotate technique as RecipeCards.css's .flip-card,
+   new `dfc-` prefix so nothing collides with that component's classes. */
+
+.dfc-wrap { display: flex; flex-direction: column; }
+
+.dfc-card {
+  perspective: 1000px;
+  height: 340px;
+  cursor: pointer;
+}
+.dfc-inner {
+  position: relative; width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+}
+.dfc-card.flipped .dfc-inner { transform: rotateY(180deg); }
+.dfc-front, .dfc-back {
+  position: absolute; inset: 0;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border: 3px solid #6E8259; border-radius: 14px;
+  padding: 14px 16px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.dfc-front { background: #fff; gap: 6px; }
+.dfc-back {
+  background: #6E8259; color: #fff;
+  transform: rotateY(180deg);
+  align-items: center; justify-content: center;
+  text-align: center; gap: 8px;
+}
+
+.dfc-photo { width: 100%; height: 130px; object-fit: cover; border-radius: 10px; }
+.dfc-photo-ph {
+  display: flex; align-items: center; justify-content: center;
+  background: #f4f0ff; font-size: 30px;
+}
+
+.dfc-badge {
+  align-self: flex-start;
+  font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 8px;
+  background: #eef; color: #4A4D80;
+}
+.dfc-badge[data-faithful="true"] { background: #e3f4de; color: #2f6b2f; }
+
+.dfc-name { font-weight: 800; font-size: 14px; color: #33302A; line-height: 1.2; }
+.dfc-by { font-size: 11px; color: #8a7a68; }
+.dfc-remix-note { font-size: 11px; color: #6E8259; font-style: italic; }
+
+.dfc-diff-chip {
+  align-self: flex-start;
+  font-family: var(--font-ui); font-size: 11px; color: #6E8259;
+  background: rgba(110, 130, 89, .1);
+  border-radius: 6px; padding: 3px 7px;
+}
+
+.dfc-rating { display: flex; align-items: center; gap: 2px; margin-top: auto; }
+.dfc-star {
+  border: none; background: none; padding: 0; font-size: 15px; color: #ddd; cursor: pointer;
+  line-height: 1;
+}
+.dfc-star.lit { color: #6E8259; }
+.dfc-star:disabled { cursor: default; }
+.dfc-rating-count { font-size: 11px; color: #8a7a68; margin-left: 6px; }
+
+.dfc-own-hint { font-size: 10px; color: #8a7a68; }
+.dfc-flip-hint { font-size: 10px; color: #b0a396; text-align: right; }
+
+.dfc-back-kicker { font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px; opacity: .8; }
+.dfc-back-name { font-weight: 800; font-size: 15px; }
+.dfc-back-list { font-size: 11px; list-style: none; padding: 0; margin: 0; opacity: .92; }
+.dfc-back-list li { margin: 2px 0; }
+.dfc-back-steps { font-size: 11px; opacity: .8; }
+.dfc-back-tools { font-size: 10.5px; opacity: .85; margin: 2px 0 0; }
+.dfc-back-missing { font-size: 11px; opacity: .8; }
+
+/* ── Optional note, below the card ───────────────────────────────────── */
+.dfc-note { margin-top: 8px; }
+.dfc-note-open {
+  border: none; background: none; padding: 0;
+  font-size: 11px; color: #6E8259; cursor: pointer;
+}
+.dfc-note-open:hover { text-decoration: underline; }
+.dfc-note-input {
+  width: 100%; resize: vertical; min-height: 44px;
+  font-family: inherit; font-size: 12px; color: #33302A;
+  border: 1.5px solid #d8cfc0; border-radius: 8px; padding: 8px 10px;
+  background: #fffef9;
+}
+.dfc-note-input:focus { outline: none; border-color: #6E8259; }
+.dfc-note-send {
+  margin-top: 6px;
+  border: none; border-radius: 999px;
+  background: #6E8259; color: #fff;
+  font-size: 11px; font-weight: 700; padding: 6px 14px;
+  cursor: pointer;
+}
+.dfc-note-send:disabled { opacity: 0.5; cursor: default; }
+.dfc-note-sent { font-size: 11.5px; color: #6E8259; font-style: italic; margin: 0; }
+
+/* ── Difference highlighting — the recipe's own list, changes marked in place ── */
+.dfc-diff-list { text-align: left; align-self: stretch; }
+.dfc-diff-struck { text-decoration: line-through; opacity: .6; }
+.dfc-diff-used { font-weight: 700; color: #ffe9a8; }     /* the substitution, called out */
+.dfc-diff-added { color: #d7f2c4; }                       /* additions read as a clear insertion */
+.dfc-diff-omitted { opacity: .6; }

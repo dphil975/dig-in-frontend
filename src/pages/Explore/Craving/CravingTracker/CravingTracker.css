@@ -1,0 +1,345 @@
+/* Homestead/tradwife palette — deliberately distinct from the rest of the
+   app's pixel-arcade language: warm cream, sage, terracotta, a serif type
+   stack (no new font load — Georgia/serif is a safe system fallback that
+   reads warm and traditional). */
+
+.ct-page {
+  min-height: 100vh;
+  background: #faf6ee;
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+}
+
+.ct-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+.ct-back {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  background: none;
+  border: 1px solid #c9b99a;
+  color: #6b5744;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.ct-back:hover { background: #f1e8d8; }
+
+.ct-head { text-align: center; margin-bottom: 30px; }
+.ct-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a8714f;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.ct-title { font-size: 26px; color: #4a3f35; margin-bottom: 10px; line-height: 1.3; }
+.ct-sub { font-size: 15px; color: #6b5744; line-height: 1.6; max-width: 560px; margin: 0 auto; }
+
+.ct-section {
+  background: #fffdf8;
+  border: 1px solid #e5d8bd;
+  border-radius: 4px;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(107, 87, 68, 0.06);
+}
+.ct-section-title {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a9a7b;
+  font-weight: 700;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e5d8bd;
+  padding-bottom: 8px;
+}
+
+/* ── Log form ─────────────────────────────────────────────────── */
+.ct-log-form form { display: flex; flex-direction: column; gap: 12px; }
+.ct-input {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 11px 14px;
+  border: 1px solid #d5c4a1;
+  border-radius: 4px;
+  background: #fffef9;
+  color: #4a3f35;
+}
+.ct-input:focus { outline: none; border-color: #8a9a7b; }
+.ct-input::placeholder { color: #a89678; font-style: italic; }
+
+.ct-form-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.ct-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #8a7a5f;
+  flex: 1;
+  min-width: 150px;
+}
+.ct-select {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #d5c4a1;
+  border-radius: 4px;
+  background: #fffef9;
+  color: #4a3f35;
+}
+
+.ct-submit {
+  align-self: flex-start;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #a8714f;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.ct-submit:hover { background: #8f5c3d; }
+
+/* ── Patterns ─────────────────────────────────────────────────── */
+.ct-patterns { display: flex; flex-wrap: wrap; gap: 8px; }
+.ct-pattern-chip {
+  background: #f1e8d8;
+  border: 1px solid #d5c4a1;
+  color: #6b5744;
+  font-size: 13px;
+  padding: 6px 13px;
+  border-radius: 999px;
+}
+
+/* ── Stock the pantry ─────────────────────────────────────────── */
+.ct-stock { background: #f4f1e6; border-color: #c9d2b8; }
+.ct-stock .ct-section-title { color: #6b7d5a; border-bottom-color: #c9d2b8; }
+.ct-stock-sub { font-size: 13px; color: #6b7d5a; margin: -6px 0 14px; font-style: italic; }
+.ct-stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+.ct-stock-card {
+  background: #fffdf8;
+  border: 1px solid #c9d2b8;
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.ct-stock-flavor { font-weight: 700; color: #4a3f35; font-size: 14px; margin-bottom: 6px; }
+.ct-stock-items { margin: 0; padding-left: 18px; font-size: 13px; color: #6b5744; line-height: 1.7; }
+
+/* ── Recent log ───────────────────────────────────────────────── */
+.ct-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e5d8bd;
+  padding-bottom: 8px;
+}
+.ct-section-title-row .ct-section-title { margin-bottom: 0; border-bottom: none; padding-bottom: 0; }
+.ct-summary-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.ct-summary-pill {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1e8d8;
+  color: #8a7a5f;
+  border: 1px solid #d5c4a1;
+  white-space: nowrap;
+}
+.ct-summary-pill.ct-summary-planned { background: #eef1e6; color: #6b7d5a; border-color: #c9d2b8; }
+.ct-summary-pill.ct-summary-made { background: #f4ede6; color: #8f5c3d; border-color: #e0c4ab; }
+
+.ct-log-list { display: flex; flex-direction: column; gap: 10px; }
+.ct-log-item {
+  background: #fffef9;
+  border: 1px solid #ece1c8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.ct-log-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+}
+.ct-log-main { flex: 1; min-width: 0; }
+.ct-log-text { font-size: 14px; color: #4a3f35; margin-bottom: 3px; }
+.ct-log-meta { font-size: 11.5px; color: #a8916f; text-transform: capitalize; }
+.ct-log-status-line { font-size: 12.5px; color: #6b7d5a; margin-top: 6px; line-height: 1.4; }
+.ct-log-status-line.ct-made-line { color: #8f5c3d; }
+.ct-log-status-recipe { text-decoration: underline; cursor: pointer; }
+.ct-log-status-recipe:hover { color: #a8714f; }
+
+.ct-status-pill {
+  flex-shrink: 0;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+.ct-status-logged { background: #f1e8d8; color: #8a7a5f; }
+.ct-status-planned { background: #eef1e6; color: #6b7d5a; }
+.ct-status-made { background: #f4ede6; color: #8f5c3d; }
+
+.ct-log-remove {
+  background: none;
+  border: none;
+  color: #b98a6f;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+.ct-log-remove:hover { color: #a8714f; }
+
+.ct-log-actions { display: flex; gap: 8px; flex-wrap: wrap; padding: 0 14px 12px; }
+.ct-plan-btn {
+  font-family: Georgia, serif;
+  font-size: 12.5px;
+  background: none;
+  border: 1px solid #a8714f;
+  color: #a8714f;
+  padding: 6px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.ct-plan-btn:hover:not(:disabled) { background: #a8714f; color: #fff; }
+.ct-plan-btn:disabled { opacity: 0.5; cursor: default; }
+.ct-plan-btn-ghost { border-color: #c9b99a; color: #6b5744; }
+.ct-plan-btn-ghost:hover { background: #f1e8d8; color: #4a3f35; }
+.ct-made-btn {
+  font-family: Georgia, serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  background: #8a9a7b;
+  border: none;
+  color: #fff;
+  padding: 6px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.ct-made-btn:hover { background: #728063; }
+
+/* ── Planner panel ────────────────────────────────────────────── */
+.ct-panel {
+  background: #f7f2e6;
+  border-top: 1px dashed #e5d8bd;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ct-panel-block { display: flex; flex-direction: column; gap: 8px; }
+.ct-panel-label {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8a7a5f;
+  font-weight: 700;
+}
+.ct-panel-empty { font-size: 12.5px; color: #a8916f; font-style: italic; margin: 0; line-height: 1.5; }
+.ct-panel-replaces { font-size: 12px; color: #8a7a5f; margin: 0; }
+.ct-panel-replaces em { color: #6b5744; font-style: normal; font-weight: 700; }
+.ct-panel-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.ct-panel-cancel {
+  font-family: Georgia, serif;
+  font-size: 12.5px;
+  background: none;
+  border: none;
+  color: #a8916f;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+.ct-panel-cancel:hover { color: #6b5744; }
+
+.ct-stage-picker { display: flex; gap: 6px; flex-wrap: wrap; }
+.ct-stage-btn {
+  font-family: Georgia, serif;
+  font-size: 12.5px;
+  background: #fffef9;
+  border: 1px solid #d5c4a1;
+  color: #6b5744;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.ct-stage-btn.active { background: #a8714f; border-color: #a8714f; color: #fff; }
+
+.ct-recipe-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ct-recipe-chip {
+  font-family: Georgia, serif;
+  font-size: 12.5px;
+  background: #fffdf8;
+  border: 1px solid #d5c4a1;
+  color: #6b5744;
+  padding: 7px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.ct-recipe-chip:hover { border-color: #a8714f; }
+.ct-recipe-chip.active { background: #a8714f; border-color: #a8714f; color: #fff; }
+.ct-recipe-chip-static { cursor: default; background: #f1e8d8; }
+.ct-recipe-chip-static:hover { border-color: #d5c4a1; }
+
+/* ── Craving-shape insight (pregnancyGuide, live) ────────────────── */
+.ct-insight {
+  background: #fffdf8;
+  border: 1px solid #e0c4ab;
+  border-radius: 4px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ct-insight-label { font-weight: 700; color: #a8714f; font-size: 13.5px; }
+.ct-insight-read { font-size: 13px; color: #4a3f35; line-height: 1.55; margin: 0; }
+.ct-insight-bonus { font-size: 12.5px; color: #6b7d5a; font-style: italic; margin: 0; }
+.ct-pica {
+  font-size: 12.5px;
+  color: #8f5c3d;
+  background: #f4ede6;
+  border-radius: 4px;
+  padding: 9px 11px;
+  margin: 0;
+  line-height: 1.5;
+}
+.ct-insight-posture { font-size: 12.5px; color: #6b5744; line-height: 1.5; margin: 0; }
+.ct-insight-disclaimer { font-size: 11px; color: #a8916f; font-style: italic; line-height: 1.4; margin: 2px 0 0; }
+
+/* ── Maternal reference ───────────────────────────────────────── */
+.ct-maternal { background: #f7efe9; border-color: #e0c4ab; }
+.ct-maternal .ct-section-title { color: #a8714f; border-bottom-color: #e0c4ab; }
+.ct-maternal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.ct-maternal-card {
+  background: #fffdf8;
+  border: 1px solid #e0c4ab;
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.ct-maternal-label { font-weight: 700; color: #4a3f35; font-size: 13.5px; margin-bottom: 5px; }
+.ct-maternal-note { font-size: 12.5px; color: #6b5744; line-height: 1.55; margin: 0; }
+.ct-maternal-disclaimer {
+  font-size: 12px;
+  color: #8a7a5f;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px dashed #e0c4ab;
+}

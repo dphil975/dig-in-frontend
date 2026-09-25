@@ -1,0 +1,180 @@
+/* Nudges.css — the Nova Nudge playbook page. Light, on-brand. */
+
+.nudges-page { min-height: 100vh; background: var(--light-bg, #F3EADA); }
+.nudges-wrap { max-width: 680px; margin: 0 auto; padding: 16px 16px 64px; }
+
+.nudges-back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--primary, #6E8259);
+  padding: 8px 0;
+}
+
+.nudges-head { margin-bottom: 18px; }
+.nudges-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.24em; color: var(--primary, #6E8259); margin: 0 0 6px; }
+.nudges-title { font-size: 28px; font-weight: 900; margin: 0 0 8px; color: #33302A; line-height: 1.1; }
+.nudges-sub { font-size: 14px; line-height: 1.5; color: #5b5470; margin: 0; }
+.nudges-sub em { font-style: italic; color: #33302A; }
+
+/* ── Live card ─────────────────────────────────────────────── */
+.nudges-live {
+  background: #fff;
+  border: 1px solid rgba(124, 93, 175, 0.16);
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(44, 36, 64, 0.08);
+}
+.nudges-live.is-convenience {
+  border-color: rgba(212, 165, 116, 0.55);
+  background: linear-gradient(180deg, #fff 0%, #fff6ea 100%);
+}
+.nudges-live-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.nudges-live-icon { font-size: 22px; }
+.nudges-live-label { font-size: 11px; font-weight: 800; letter-spacing: 0.16em; color: var(--primary, #6E8259); }
+.nudges-live-tag {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.08em;
+  color: #7a4a12; background: var(--secondary, #D8CAB4);
+  padding: 3px 8px; border-radius: 999px;
+}
+.nudges-live-tag-craving { color: #fff; background: var(--primary, #6E8259); }
+.nudges-live-title { font-size: 19px; font-weight: 800; margin: 0 0 6px; color: #33302A; }
+.nudges-live-body { font-size: 14px; line-height: 1.45; color: #5b5470; margin: 0 0 14px; }
+
+.nudges-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259));
+  box-shadow: 0 8px 20px rgba(124, 93, 175, 0.4);
+}
+.nudges-cta:active { transform: scale(0.98); }
+
+/* ── Notifications ─────────────────────────────────────────── */
+.nudges-notify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-bottom: 22px;
+}
+.nudges-notify-text h3 { margin: 0 0 4px; font-size: 15px; color: #33302A; }
+.nudges-notify-text p { margin: 0; font-size: 12.5px; line-height: 1.4; color: #6b6480; max-width: 400px; }
+.nudges-notify-btns { display: flex; align-items: center; gap: 8px; }
+.nudges-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  border: 1px solid rgba(124, 93, 175, 0.3);
+  background: #fff;
+  color: var(--primary, #6E8259);
+}
+.nudges-btn-primary { border: none; color: #fff; background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259)); }
+.nudges-on-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 800; color: #1c7c46;
+  background: #dcf5e6; padding: 8px 13px; border-radius: 999px;
+}
+
+/* ── Sections ──────────────────────────────────────────────── */
+.nudges-section { margin-bottom: 24px; }
+.nudges-section-title { font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #6b6480; margin: 0 0 12px; }
+.nudges-empty { color: #6b6480; font-size: 14px; }
+
+/* ── Timeline ──────────────────────────────────────────────── */
+.nudges-timeline { list-style: none; margin: 0; padding: 0; }
+.nudges-row {
+  display: grid;
+  grid-template-columns: 62px 30px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 14px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+.nudges-row:first-child { border-top: none; }
+.nudges-row.is-live { background: rgba(212, 165, 116, 0.08); border-radius: 12px; padding: 14px 10px; margin: 0 -10px; }
+.nudges-row-time { font-size: 12px; font-weight: 800; color: var(--primary, #6E8259); padding-top: 2px; }
+.nudges-row-icon { font-size: 20px; }
+.nudges-row-title { font-size: 14px; font-weight: 800; color: #33302A; margin: 0 0 3px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.nudges-row-livedot { font-size: 9px; font-weight: 800; letter-spacing: 0.08em; color: #c8452c; }
+.nudges-row-craving {
+  font-size: 8px; font-weight: 800; letter-spacing: 0.06em;
+  color: #fff; background: var(--primary, #6E8259);
+  padding: 2px 7px; border-radius: 999px;
+}
+.nudges-row-body { font-size: 13px; line-height: 1.4; color: #6b6480; margin: 0 0 7px; }
+.nudges-row-cta { background: none; border: none; cursor: pointer; padding: 0; font-size: 12px; font-weight: 800; color: var(--primary, #6E8259); }
+
+/* ── Preferences ───────────────────────────────────────────── */
+.nudges-prefs { display: flex; flex-direction: column; gap: 8px; }
+.nudges-pref {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  padding: 13px 15px;
+  text-align: left;
+}
+.nudges-pref-label { font-size: 14px; font-weight: 600; color: #33302A; }
+.nudges-pref:not(.is-on) .nudges-pref-label { color: #a49db6; }
+.nudges-switch {
+  width: 40px;
+  height: 24px;
+  border-radius: 999px;
+  background: #d6d0e0;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.18s ease;
+}
+.nudges-switch.is-on { background: var(--primary, #6E8259); }
+.nudges-switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.18s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.nudges-switch.is-on .nudges-switch-knob { transform: translateX(16px); }
+
+/* ── Honest data note ──────────────────────────────────────── */
+.nudges-note {
+  display: flex;
+  gap: 12px;
+  background: rgba(124, 93, 175, 0.06);
+  border: 1px dashed rgba(124, 93, 175, 0.3);
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #5b5470;
+}
+.nudges-note svg { flex-shrink: 0; margin-top: 2px; color: var(--primary, #6E8259); }
+.nudges-note p { margin: 0; font-size: 12.5px; line-height: 1.5; }
+.nudges-note b { color: #33302A; }

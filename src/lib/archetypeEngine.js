@@ -3,7 +3,7 @@
 
    ── What this is ────────────────────────────────────────────────────────────
    Every recommender eventually learns "this person likes X" and then serves X
-   until X is all they see. DIG_IN_ALGORITHM.md Part 1 calls this correctly: an
+   until X is all they see. docs/product/DIG_IN_ALGORITHM.md Part 1 calls this correctly: an
    engagement-ranked feed converges, and the fixed point is a monoculture. This
    module is the counter-pressure. It reads how someone actually cooks, names
    the pattern, and then deliberately spends 40% of the feed on the OPPOSITE of
@@ -159,7 +159,7 @@ export const ARCHETYPE_BY_ID = Object.fromEntries(ARCHETYPES.map((a) => [a.id, a
 
 /* ── The mix ────────────────────────────────────────────────────────────────
    40 aligned / 40 counterweight / 20 wildcard. This is a QUOTA, in the same
-   spirit as the slot system in DIG_IN_ALGORITHM.md Part 3: content competes
+   spirit as the slot system in docs/product/DIG_IN_ALGORITHM.md Part 3: content competes
    inside its band and never across, so no single disposition can take the
    whole feed even if every engagement signal says it should. */
 export const MIX = { aligned: 0.4, counter: 0.4, wildcard: 0.2 };
@@ -238,7 +238,7 @@ export function recordSignal(signal, weight = 1, profile = loadProfile()) {
 
 /* ── The main ingest point ──────────────────────────────────────────────────
    A finished cook is the richest, most honest signal this app has: it's a
-   record of consequence, not attention (DIG_IN_ALGORITHM.md Part 2). One call
+   record of consequence, not attention (docs/product/DIG_IN_ALGORITHM.md Part 2). One call
    from saveService.markCooked() derives everything observable from the dish
    plus the user's own history — difficulty chosen, who they cooked for,
    whether they returned to something or reached for something new.
@@ -487,7 +487,7 @@ export function mixFeed(candidates = [], opts = {}) {
    has run, quotas are satisfied, MIR has ranked inside each slot).
 
    This is deliberately NOT mixFeed. mixFeed selects to a quota, which would
-   undo the slot allocator's fairness guarantee — the thing DIG_IN_ALGORITHM.md
+   undo the slot allocator's fairness guarantee — the thing docs/product/DIG_IN_ALGORITHM.md
    Part 3 says protects the feed from becoming a monoculture. A lens must not
    overrule a slot.
 

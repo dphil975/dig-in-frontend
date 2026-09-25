@@ -1,0 +1,189 @@
+.mp-page { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; }
+
+.mp-header h1 {
+  font-family: var(--font-display); font-size: 20px; color: #3a3550; margin-bottom: 10px;
+}
+.mp-header p { color: #6b6580; margin-bottom: 24px; }
+
+.mp-loading { text-align: center; color: #8a7a68; padding: 40px 0; }
+
+.mp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.mp-day {
+  background: #F3EADA;
+  border: 2px solid #6E8259;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: box-shadow .12s, transform .12s;
+}
+.mp-day:hover { box-shadow: 3px 3px 0 rgba(110, 130, 89,.35); transform: translate(-1px, -1px); }
+.mp-day.open { border-color: #4a4e94; box-shadow: 3px 3px 0 rgba(110, 130, 89,.5); }
+
+.mp-day-label {
+  font-family: var(--font-ui); font-size: 11px; color: #6E8259;
+}
+
+.mp-dish {
+  font-family: 'DotGothic16', monospace; font-size: 14px; color: #3a3550;
+  line-height: 1.4; flex: 1;
+}
+
+.mp-day-hint {
+  font-size: 10px; color: #8a85a8; letter-spacing: .03em;
+}
+
+.mp-swap {
+  align-self: flex-start;
+  background: none; border: 1px solid #6E8259; border-radius: 999px;
+  padding: 4px 10px; font-size: 11px; color: #6E8259; cursor: pointer;
+}
+
+/* ── Day detail — expanded 4-meal breakdown ─────────────────────── */
+.mp-detail {
+  background: #fff;
+  border: 2px solid #3a3550;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+.mp-detail-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin-bottom: 14px;
+}
+.mp-detail-title {
+  font-family: var(--font-display); font-size: 14px; color: #3a3550;
+}
+.mp-reroll-day {
+  background: #6E8259; color: #fff; border: none; border-radius: 999px;
+  padding: 7px 14px; font-size: 11px; font-weight: 700; cursor: pointer;
+}
+
+.mp-meal-list { display: flex; flex-direction: column; gap: 12px; }
+.mp-meal-row {
+  background: #F3EADA;
+  border: 2px solid #e4d5bd;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.mp-meal-slot-label {
+  font-family: var(--font-ui); font-size: 11px; color: #a08e5f;
+  letter-spacing: .05em; margin-bottom: 6px;
+}
+.mp-meal-main {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; flex-wrap: wrap;
+}
+.mp-meal-name {
+  font-family: 'DotGothic16', monospace; font-size: 15px; color: #3a3550;
+  cursor: pointer; flex: 1;
+}
+.mp-meal-name:hover { text-decoration: underline; }
+/* Cross-reference to the Craving Tracker's own palette (terracotta/cream) —
+   deliberately borrowed rather than matched to this page's own pixel-arcade
+   colors, so the tag reads as "this came from that other page," not native. */
+.mp-craving-tag {
+  font-family: var(--font-ui); font-size: 9.5px; letter-spacing: 0.03em;
+  color: #a8714f; background: #f7efe9; border: 1px solid #e0c4ab;
+  padding: 4px 8px; border-radius: 999px; white-space: nowrap; cursor: default;
+}
+
+.mp-drink-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-top: 8px; padding-top: 8px; border-top: 1px dashed #d8c7a8;
+  font-size: 12px;
+}
+.mp-drink-label { color: #8a7a5f; }
+.mp-drink-name {
+  color: #4a7c59; font-weight: 700; cursor: pointer;
+}
+.mp-drink-name:hover { text-decoration: underline; }
+.mp-drink-swap {
+  background: none; border: 1px solid #4a7c59; border-radius: 999px;
+  padding: 3px 9px; font-size: 10px; color: #4a7c59; cursor: pointer;
+}
+.mp-drink-remove {
+  background: none; border: none; color: #a89; cursor: pointer; font-size: 12px; padding: 2px 4px;
+}
+.mp-drink-add {
+  background: none; border: 1px dashed #6E8259; border-radius: 999px;
+  padding: 4px 10px; font-size: 11px; color: #6E8259; cursor: pointer;
+}
+
+/* ── Buy once, cook more — dynamic pricing + ingredient-overlap payoff ── */
+.mp-boc {
+  background: #fff;
+  border: 2px solid #3a3550;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.mp-boc-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin-bottom: 10px;
+}
+.mp-boc-title {
+  font-family: var(--font-display); font-size: 14px; color: #3a3550; margin: 0;
+}
+.mp-boc-tiers { display: flex; gap: 6px; }
+.mp-boc-tier {
+  background: #f6f5fc; border: 1px solid #d8d3ee; color: #6b6580;
+  font-size: 11px; font-weight: 700; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+}
+.mp-boc-tier.active { background: #6E8259; border-color: #6E8259; color: #fff; }
+
+.mp-boc-sub { color: #6b6580; font-size: 13px; line-height: 1.6; margin: 0 0 18px; }
+
+.mp-boc-totals {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.mp-boc-block {
+  flex: 1 1 140px;
+  background: #F3EADA;
+  border: 2px solid #e4d5bd;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.mp-boc-num {
+  font-family: var(--font-display); font-size: 18px; color: #3a3550; margin-bottom: 6px;
+}
+.mp-boc-label { font-size: 11px; color: #8a7a5f; }
+
+.mp-boc-bonus-title {
+  font-family: var(--font-ui); font-size: 11px; color: #a08e5f;
+  letter-spacing: .05em; margin-bottom: 10px;
+}
+.mp-boc-bonus-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.mp-boc-bonus-card {
+  background: #f6f5fc; border: 1px solid #d8d3ee; border-radius: 8px;
+  padding: 8px 12px; font-family: 'DotGothic16', monospace; font-size: 12.5px;
+  color: #3a3550; cursor: pointer; text-align: left;
+}
+.mp-boc-bonus-card:hover { border-color: #6E8259; background: #efeefc; }
+
+.mp-actions { display: flex; justify-content: center; }
+.mp-btn-primary {
+  background: #96B36B; color: #fff; border: none; border-radius: 11px;
+  padding: 15px 20px; font-family: var(--font-ui); font-size: 11px; cursor: pointer;
+}
+
+.mp-prep-section { margin-top: 36px; }
+.mp-prep-title {
+  font-family: var(--font-display); font-size: 14px; color: #3a3550; margin-bottom: 6px;
+}
+.mp-prep-sub { color: #6b6580; margin-bottom: 16px; font-size: 13px; }
+.mp-prep-card { border-color: #96B36B; }
+.mp-prep-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.mp-prep-remove {
+  background: none; border: none; color: #a89; cursor: pointer; font-size: 13px; padding: 2px 4px;
+}

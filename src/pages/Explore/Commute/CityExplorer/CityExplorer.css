@@ -1,0 +1,518 @@
+/* ── City Explorer ────────────────────────────────────────────────────────── */
+.ce-page {
+  min-height: 100vh;
+  background: #F3EADA;
+  font-family: var(--font-display);
+}
+
+.ce-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 16px 48px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.ce-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ce-title {
+  font-size: clamp(16px, 4vw, 26px);
+  color: #33302A;
+  letter-spacing: 3px;
+  margin: 0 0 10px;
+}
+
+.ce-sub {
+  font-size: 8px;
+  color: #888;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* ── Tab strip ───────────────────────────────────────────────────────────── */
+.ce-tab-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: -3px; /* overlap the card border so active tab looks connected */
+  position: relative;
+  z-index: 2;
+}
+
+.ce-tab {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 10px 14px;
+  background: #e8e0cc;
+  border: 3px solid #33302A;
+  border-bottom: none;
+  color: #666;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: background 0.1s, color 0.1s;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ce-tab:hover {
+  background: #fef3d0;
+  color: #33302A;
+}
+
+.ce-tab.active {
+  background: #F3EADA;
+  color: #33302A;
+  border-bottom: 3px solid #F3EADA; /* hide bottom border so tab bleeds into card */
+}
+
+/* ── Main card ───────────────────────────────────────────────────────────── */
+.ce-card {
+  background: #F3EADA;
+  border: 3px solid #33302A;
+  box-shadow: 6px 6px 0 #33302A;
+  position: relative;
+  z-index: 1;
+}
+
+.ce-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 480px;
+}
+
+@media (max-width: 720px) {
+  .ce-layout { grid-template-columns: 1fr; }
+}
+
+/* ── Info panel (left) ───────────────────────────────────────────────────── */
+.ce-info-panel {
+  border-right: 3px solid #33302A;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #fff;
+}
+
+@media (max-width: 720px) {
+  .ce-info-panel { border-right: none; border-bottom: 3px solid #33302A; }
+}
+
+.ce-area-name {
+  font-size: clamp(10px, 2.5vw, 14px);
+  color: #6E8259;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* Stat list */
+.ce-stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.ce-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  gap: 8px;
+  font-size: 7px;
+}
+
+.ce-stat-row:last-child { border-bottom: none; }
+.ce-stat-row span { color: #888; flex-shrink: 0; }
+.ce-stat-row strong { color: #33302A; text-align: right; line-height: 1.4; }
+.ce-coins { color: #6E8259 !important; }
+
+.ce-divider {
+  height: 2px;
+  background: #33302A;
+  margin: 4px 0 20px;
+}
+
+/* ZIP search */
+.ce-zip-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.ce-zip-label {
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.ce-zip-row {
+  display: flex;
+  gap: 0;
+}
+
+.ce-zip-input {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  flex: 1;
+  padding: 10px 10px;
+  border: 3px solid #33302A;
+  border-right: none;
+  background: #F3EADA;
+  color: #33302A;
+  outline: none;
+  min-width: 0;
+}
+
+.ce-zip-input:focus { border-color: #6E8259; }
+
+.ce-zip-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 10px 14px;
+  background: #6E8259;
+  border: 3px solid #33302A;
+  color: #33302A;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #33302A;
+  transition: transform 0.1s, box-shadow 0.1s;
+  flex-shrink: 0;
+}
+
+.ce-zip-btn:hover  { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 #33302A; }
+.ce-zip-btn:active { transform: translate(2px, 2px);   box-shadow: 1px 1px 0 #33302A; }
+.ce-zip-btn:disabled { opacity: 0.5; cursor: wait; }
+
+.ce-zip-error {
+  font-size: 7px;
+  color: #cc3333;
+  margin: 0;
+}
+
+.ce-zip-hint {
+  font-size: 7px;
+  color: #bbb;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ── Map (right) ─────────────────────────────────────────────────────────── */
+.ce-map-wrap {
+  position: relative;
+  min-height: 420px;
+}
+
+.ce-map {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+}
+
+/* Override Leaflet's z-index so it doesn't escape our card */
+.ce-map-wrap .leaflet-container { z-index: 0; }
+.ce-map-wrap .leaflet-pane      { z-index: 0; }
+.ce-map-wrap .leaflet-top,
+.ce-map-wrap .leaflet-bottom    { z-index: 1; }
+
+.ce-map-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 500;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: #F3EADA;
+  border: 2px solid #33302A;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 0 #33302A;
+  pointer-events: none;
+  color: #33302A;
+}
+
+.ce-agency {
+  font-size: 7px;
+  color: #888;
+  letter-spacing: 1px;
+  margin: -14px 0 16px;
+}
+
+/* Park & ride marker pin (Leaflet divIcon) */
+.ce-pr-pin {
+  width: 26px; height: 26px;
+  background: #96B36B;
+  border: 2px solid #33302A;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+}
+
+/* ── Park & Ride section ─────────────────────────────────────────────────── */
+.ce-parkride {
+  border-top: 3px solid #33302A;
+  padding: 24px 24px 28px;
+}
+
+.ce-parkride-head { margin-bottom: 18px; }
+.ce-parkride-title {
+  font-family: var(--font-display);
+  font-size: clamp(10px, 2.2vw, 13px);
+  color: #33302A;
+  margin: 0 0 8px;
+}
+.ce-parkride-sub {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 640px;
+}
+.ce-parkride-empty {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #888;
+}
+
+.ce-parkride-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.ce-lot-card {
+  text-align: left;
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 8px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+.ce-lot-card:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 #33302A; }
+
+.ce-lot-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 4px; }
+.ce-lot-name { font-weight: 700; font-size: 13px; color: #33302A; }
+.ce-lot-cost { font-size: 11px; font-weight: 700; color: #96B36B; flex-shrink: 0; }
+.ce-lot-city { font-size: 11px; color: #999; margin-bottom: 4px; }
+.ce-lot-line { font-size: 11px; color: #6E8259; font-weight: 700; margin-bottom: 6px; }
+.ce-lot-notes { font-size: 11.5px; color: #666; line-height: 1.5; margin: 0; }
+
+.ce-howto {
+  background: #fef3d0;
+  border: 2px solid #33302A;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+.ce-howto-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  margin-bottom: 12px;
+}
+.ce-howto-steps {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* ── Plotted store pin ─────────────────────────────────────────────────── */
+.ce-store-pin {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--dig-matcha, #6E8259); border: 2px solid #33302A;
+  box-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+/* ── Store carousel — names under the map, 5 at a time, evenly spaced ───── */
+.ce-stores { margin-top: 20px; }
+.ce-stores-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+.ce-stores-title { font-family: var(--font-display); font-size: 13px; color: #33302A; margin: 0; }
+.ce-stores-count { font-size: 11px; font-weight: 700; color: #9a8f7c; }
+
+.ce-store-track {
+  display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 2px 2px 10px; scrollbar-width: none;
+}
+.ce-store-track::-webkit-scrollbar { display: none; }
+
+.ce-store-card {
+  flex: 0 0 calc((100% - 48px) / 5); min-width: 158px; scroll-snap-align: start;
+  display: flex; flex-direction: column; gap: 6px; text-align: left;
+  background: #fff; border: 2px solid #33302A; border-radius: 10px;
+  box-shadow: 3px 3px 0 #33302A; padding: 12px; cursor: pointer;
+  transition: transform .12s, box-shadow .12s;
+}
+.ce-store-card:hover  { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 #33302A; }
+.ce-store-card:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 #33302A; }
+.ce-store-name { font-weight: 800; font-size: 13px; color: #33302A; line-height: 1.25; }
+.ce-store-addr { font-size: 11px; color: #8a7a68; line-height: 1.35; flex: 1; }
+.ce-store-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 2px; }
+.ce-walk { font-size: 10.5px; font-weight: 800; padding: 3px 8px; border-radius: 999px; border: 1.5px solid; white-space: nowrap; }
+.ce-walk-walk  { color: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); background: rgba(150,179,107,.14); }
+.ce-walk-ride  { color: var(--dig-honey, #E0A32E); border-color: var(--dig-honey, #E0A32E); background: rgba(224,163,46,.12); }
+.ce-walk-drive { color: #8a7a68; border-color: #ccbfa8; background: #f4efe6; }
+.ce-store-km { font-family: var(--font-ui); font-size: 11px; color: #9a8f7c; }
+.ce-stores-empty { font-size: 13px; color: #8a7a68; }
+.ce-stores-note { font-size: 11px; line-height: 1.5; color: #9a8f7c; margin: 10px 2px 0; }
+
+/* ── Transit awareness — can you reach these stores without a car? ─────── */
+.ce-transit-summary {
+  display: flex; align-items: flex-start; gap: 9px;
+  margin: 4px 0 14px; padding: 10px 12px;
+  border: 2px solid #33302A; border-radius: 10px; box-shadow: 3px 3px 0 rgba(51,48,42,.12);
+}
+.ce-transit-summary-ic { font-size: 17px; line-height: 1.2; flex-shrink: 0; }
+.ce-transit-summary-txt { font-size: 12.5px; line-height: 1.45; font-weight: 700; color: #33302A; }
+.ce-transit-good  { background: rgba(150,179,107,.16); }
+.ce-transit-limited { background: rgba(224,163,46,.14); }
+.ce-transit-sparse, .ce-transit-none { background: #f4efe6; }
+.ce-transit-wait, .ce-transit-unknown { background: #f7f3ec; }
+.ce-transit-unknown .ce-transit-summary-txt { color: #8a7a68; }
+
+/* Per-store transit badge on the card. */
+.ce-transit {
+  font-size: 10px; font-weight: 800; padding: 3px 8px; border-radius: 999px;
+  border: 1.5px solid; white-space: nowrap; align-self: flex-start;
+}
+.ce-transit-ok   { color: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); background: rgba(150,179,107,.14); }
+.ce-transit-car  { color: #8a7a68; border-color: #ccbfa8; background: #f4efe6; }
+.ce-transit-wait { color: #9a8f7c; border-color: #ddd3c2; background: #f7f3ec; }
+
+/* Fastest-route links in the modal. */
+.ce-routes { margin-top: 14px; border-top: 2px dashed var(--dig-cashmere, #D8CAB4); padding-top: 12px; }
+.ce-routes-label {
+  display: block; font-size: 10px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--dig-matcha, #6E8259); margin-bottom: 8px;
+}
+.ce-routes-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.ce-route {
+  font-size: 12px; font-weight: 800; color: #33302A; text-decoration: none;
+  background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px;
+  padding: 7px 11px;
+}
+.ce-route:hover { border-color: #33302A; }
+.ce-route-primary {
+  color: #fff; background: var(--dig-matcha, #6E8259); border-color: #33302A;
+  box-shadow: 2px 2px 0 #33302A;
+}
+.ce-route-primary:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 #33302A; }
+
+@media (max-width: 900px) { .ce-store-card { flex-basis: calc((100% - 12px) / 2); } }
+
+/* ════ City Explorer rebuild (2026-07-29) — ZIP-driven, type-organized ════ */
+
+/* ── ZIP bar ───────────────────────────────────────────────────────────── */
+.ce-ziprow {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  background: #fff; border: 2px solid #33302A; border-radius: 12px;
+  box-shadow: 4px 4px 0 #33302A; padding: 8px 10px; margin: 0 0 14px;
+}
+.ce-zip-pin { font-size: 16px; }
+.ce-zip-field {
+  flex: 1; min-width: 160px; border: none; outline: none; background: none;
+  font-size: 15px; font-weight: 700; color: #33302A; padding: 6px 4px;
+}
+.ce-zip-field::placeholder { color: #b3a893; font-weight: 600; }
+.ce-zip-go {
+  font-family: var(--font-ui); font-size: 11px; color: #fff;
+  background: var(--dig-matcha, #6E8259); border: 2px solid #33302A; border-radius: 8px;
+  box-shadow: 2px 2px 0 #33302A; padding: 10px 14px; cursor: pointer;
+}
+.ce-zip-go:hover  { background: #5d6f4b; }
+.ce-zip-go:active { transform: translate(2px,2px); box-shadow: 0 0 0 #33302A; }
+.ce-region {
+  font-size: 12px; font-weight: 800; color: var(--dig-matcha, #6E8259);
+  background: rgba(150,179,107,.14); border-radius: 999px; padding: 5px 12px;
+}
+
+/* ── Type filter bar (the real tabs, organized) ────────────────────────── */
+.ce-typebar {
+  display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 12px; margin-bottom: 6px;
+  scrollbar-width: none;
+}
+.ce-typebar::-webkit-scrollbar { display: none; }
+.ce-type {
+  display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; flex: 0 0 auto;
+  font-size: 12.5px; font-weight: 800; color: #6c6355;
+  background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 999px;
+  padding: 8px 14px; cursor: pointer; transition: transform .1s, border-color .12s;
+}
+.ce-type:hover  { border-color: #33302A; }
+.ce-type.active { border-color: #33302A; background: #33302A; color: #fff; box-shadow: 2px 2px 0 rgba(51,48,42,.25); }
+.ce-type-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--type-color, #6E8259); border: 1.5px solid rgba(0,0,0,.35); }
+.ce-type-n { font-family: var(--font-ui); font-size: 11px; opacity: .75; }
+
+/* ── Map framing (standalone now, pixel-consistent) ────────────────────── */
+.ce-map-wrap {
+  border: 2px solid #33302A; border-radius: 14px; overflow: hidden;
+  box-shadow: 5px 5px 0 #33302A; margin-bottom: 6px;
+}
+.ce-store-pin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #33302A; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.ce-pop-btn {
+  margin-top: 6px; font-size: 11px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0;
+}
+
+/* ── Store card: type badge + visited flag (carousel base styles already set) */
+.ce-store-type { display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 800; color: var(--type-color, #6E8259); text-transform: uppercase; letter-spacing: .03em; }
+.ce-store-visited { font-size: 10.5px; font-weight: 800; color: var(--dig-matcha, #6E8259); }
+
+/* ── Store detail modal ────────────────────────────────────────────────── */
+.ce-modal-overlay {
+  position: fixed; inset: 0; z-index: 4000; background: rgba(51,48,42,.55);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.ce-modal {
+  position: relative; width: 100%; max-width: 420px; background: #fff;
+  border: 3px solid #33302A; border-radius: 16px; box-shadow: 8px 8px 0 rgba(51,48,42,.4);
+  padding: 22px; max-height: 88vh; overflow-y: auto;
+}
+.ce-modal-x { position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; font-size: 15px; font-weight: 800; color: #33302A; background: #F3EADA; border: 2px solid #33302A; border-radius: 8px; cursor: pointer; }
+.ce-modal-type { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; color: var(--type-color, #6E8259); text-transform: uppercase; letter-spacing: .04em; }
+.ce-modal-name { font-family: var(--font-display); font-size: 15px; line-height: 1.4; color: #33302A; margin: 10px 0 4px; }
+.ce-modal-addr { font-size: 13px; color: #8a7a68; margin: 0 0 14px; line-height: 1.4; }
+.ce-modal-facts { display: flex; flex-direction: column; gap: 8px; border-top: 2px dashed var(--dig-cashmere, #D8CAB4); padding-top: 14px; }
+.ce-fact { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; }
+.ce-fact-k { color: #9a8f7c; font-weight: 700; }
+.ce-fact-v { color: #33302A; font-weight: 700; text-align: right; }
+.ce-modal-actions { display: flex; gap: 10px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
+.ce-checkin-btn {
+  flex: 1; min-width: 200px; font-size: 13px; font-weight: 800; color: #fff;
+  background: var(--dig-crimson, #C8001E); border: 2px solid #33302A; border-radius: 10px;
+  box-shadow: 3px 3px 0 #33302A; padding: 12px; cursor: pointer;
+}
+.ce-checkin-btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 #33302A; }
+.ce-directions { font-size: 12.5px; font-weight: 700; color: var(--dig-matcha, #6E8259); text-decoration: underline; }
+.ce-checkin-msg { margin: 12px 0 0; font-size: 12px; color: var(--dig-crimson, #C8001E); font-weight: 700; }
+
+/* ── Badge toast ───────────────────────────────────────────────────────── */
+.ce-toast {
+  position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 5000;
+  font-size: 13px; font-weight: 700; color: #33302A; background: var(--dig-honey, #E0A32E);
+  border: 2px solid #33302A; border-radius: 10px; box-shadow: 4px 4px 0 #33302A; padding: 12px 18px;
+}
+.ce-toast-icon { font-family: var(--font-ui); font-size: 11px; margin-right: 6px; }
+
+/* ── "Search this area" — Yelp-style, so you're never stuck in your ZIP ──── */
+.ce-search-area {
+  position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 500;
+  font-family: var(--font-ui); font-size: 11px; color: #33302A;
+  background: #fff; border: 2px solid #33302A; border-radius: 999px;
+  box-shadow: 2px 2px 0 #33302A; padding: 9px 14px; cursor: pointer; white-space: nowrap;
+}
+.ce-search-area:hover  { background: var(--dig-honey, #E0A32E); }
+.ce-search-area:active { transform: translateX(-50%) translateY(2px); box-shadow: 0 0 0 #33302A; }
+.ce-search-area:disabled { opacity: .6; cursor: default; }

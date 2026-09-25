@@ -1,0 +1,25 @@
+/* CookTimerHUD — small docked badge, visible while cooking. */
+
+.cth-hud {
+  position: sticky;
+  top: 12px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 12px;
+  padding: 8px 14px;
+  background: #F3EADA;
+  border: 2px solid #6E8259;
+  border-radius: 999px;
+  font-family: 'DotGothic16', monospace;
+  font-size: 13px;
+  color: #3a3550;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+.cth-icon { font-size: 14px; }
+.cth-elapsed { font-weight: 700; }
+.cth-estimate { color: #6b6580; }
+.cth-behind { color: #33302A; }
+.cth-ahead { color: #4E9A6B; }

@@ -1,0 +1,237 @@
+/* Occasions — same dark navy + gold "opportunity" theme as the Pantry. */
+.occ-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #33302A 0%, #16213e 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+.occ-wrap { max-width: 880px; margin: 0 auto; padding: 20px 20px 64px; }
+.occ-back {
+  background: none; border: 1px solid #D8CAB4; color: #D8CAB4;
+  padding: 7px 14px; border-radius: 8px; cursor: pointer; font-size: 0.8em; letter-spacing: 0.05em;
+}
+.occ-back:hover { background: rgba(201,169,97,0.12); }
+
+.occ-head { text-align: center; margin: 22px 0 20px; }
+.occ-title { font-family: var(--font-display); font-size: 1.5em; color: #6E8259; margin-bottom: 12px; line-height: 1.3; }
+.occ-sub { color: #aab; font-size: 0.92em; max-width: 580px; margin: 0 auto; line-height: 1.5; }
+
+/* Occasion cards */
+.occ-types { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.occ-type {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  background: rgba(255,255,255,0.05); border: 2px solid rgba(201,169,97,0.3);
+  border-radius: 14px; padding: 16px; cursor: pointer; text-align: left; color: #fff;
+}
+.occ-type.active { border-color: #6E8259; background: rgba(110, 130, 89,0.1); }
+.occ-type-emoji { font-size: 1.6em; }
+.occ-type-label { font-weight: 700; font-size: 1.05em; }
+.occ-type-blurb { font-size: 0.82em; color: #aab; line-height: 1.4; }
+
+/* Controls */
+.occ-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 22px; }
+.occ-control { display: flex; align-items: center; gap: 10px; }
+.occ-control-label { font-size: 0.78em; color: #889; text-transform: uppercase; letter-spacing: 0.08em; }
+.occ-tiers, .occ-themes { display: flex; gap: 6px; flex-wrap: wrap; }
+.occ-tier, .occ-theme {
+  font-size: 0.78em; padding: 7px 11px; border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #eee; cursor: pointer;
+}
+.occ-tier-budget.active  { background: #96B36B; border-color: #96B36B; color: #fff; }
+.occ-tier-mid.active     { background: #6E8259; border-color: #6E8259; color: #33302A; }
+.occ-tier-premium.active { background: #6E8259; border-color: #6E8259; color: #fff; }
+.occ-theme.active { background: #6E8259; border-color: #6E8259; color: #33302A; }
+.occ-count { display: flex; align-items: center; gap: 10px; }
+.occ-count button {
+  width: 30px; height: 30px; border-radius: 50%; border: 1px solid #D8CAB4;
+  background: none; color: #D8CAB4; font-size: 1.1em; cursor: pointer; line-height: 1;
+}
+.occ-count-num { font-family: var(--font-display); font-size: 1em; color: #6E8259; min-width: 24px; text-align: center; }
+.occ-date {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px;
+  color: #eee; font-size: 0.82em; padding: 7px 10px; font-family: inherit;
+}
+.occ-date::-webkit-calendar-picker-indicator { filter: invert(0.8); cursor: pointer; }
+.occ-shuffle {
+  margin-left: auto; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2);
+  color: #fff; padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: 0.82em;
+}
+.occ-shuffle:hover { background: rgba(255,255,255,0.15); }
+
+/* Menu */
+.occ-menu { margin-bottom: 18px; }
+.occ-menu-head { margin-bottom: 12px; }
+.occ-menu-title { font-family: var(--font-display); font-size: 0.72em; color: #6E8259; line-height: 1.4; }
+.occ-courses { display: flex; flex-direction: column; gap: 10px; }
+.occ-course {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 14px 16px;
+}
+.occ-course-tag {
+  font-size: 0.66em; text-transform: uppercase; letter-spacing: 0.08em; color: #33302A;
+  background: #D8CAB4; padding: 4px 8px; border-radius: 6px; font-weight: 700; white-space: nowrap; flex-shrink: 0;
+}
+.occ-course-main { flex: 1; min-width: 0; }
+.occ-course-name { font-weight: 700; font-size: 1.05em; }
+.occ-course-meta { display: flex; gap: 12px; font-size: 0.8em; color: #99a; margin-top: 4px; flex-wrap: wrap; }
+.occ-course-price { color: #96B36B; font-weight: 700; }
+.occ-course-cook {
+  background: #96B36B; color: #10231a; border: none; border-radius: 8px;
+  padding: 8px 12px; font-weight: 700; font-size: 0.78em; cursor: pointer; flex-shrink: 0;
+}
+
+/* Pitch: cost vs eating out */
+.occ-pitch { background: rgba(255,255,255,0.04); border-radius: 16px; padding: 20px; margin-bottom: 18px; }
+.occ-pitch-cols { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.occ-pitch-block { text-align: center; }
+.occ-pitch-num { font-family: var(--font-display); font-size: 1.6em; color: #96B36B; }
+.occ-pitch-out .occ-pitch-num { color: #6E8259; }
+.occ-pitch-label { font-size: 0.72em; color: #99a; margin-top: 6px; line-height: 1.4; }
+.occ-pitch-vs { font-size: 0.8em; color: #778; text-transform: uppercase; letter-spacing: 0.1em; }
+.occ-pitch-save {
+  margin-top: 14px; text-align: center; font-size: 0.92em; color: #dfeede;
+  background: rgba(125,174,92,0.14); border-radius: 10px; padding: 12px;
+}
+
+/* Shopping list */
+.occ-shop { background: rgba(255,255,255,0.04); border-radius: 16px; padding: 18px; }
+.occ-shop-title { font-family: var(--font-display); font-size: 0.66em; color: #6E8259; margin-bottom: 12px; }
+.occ-shop-items { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.occ-shop-item {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14);
+  color: #dde; font-size: 0.8em; padding: 4px 9px; border-radius: 6px;
+}
+.occ-shop-find {
+  width: 100%; background: #6E8259; color: #33302A; border: none; border-radius: 10px;
+  padding: 11px; font-family: var(--font-display); font-size: 0.62em; cursor: pointer;
+}
+.occ-empty { color: #99a; font-style: italic; padding: 20px; text-align: center; }
+.occ-loading { color: #99a; text-align: center; padding: 40px 0; }
+
+/* "Hosting is an art form" */
+.occ-art {
+  background: rgba(255, 215, 0, 0.06);
+  border: 2px solid rgba(255, 215, 0, 0.35);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+.occ-art-title {
+  font-family: var(--font-display); font-size: 0.75em; color: #6E8259; margin-bottom: 10px;
+}
+.occ-art-body { font-size: 0.92em; color: #dde; line-height: 1.6; margin: 0; }
+
+/* Theme memory */
+.occ-memory {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 10px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 12px 16px; margin-bottom: 20px;
+}
+.occ-memory-text { flex: 1; min-width: 200px; font-size: 0.85em; color: #ccd; line-height: 1.5; }
+.occ-memory-text strong { color: #6E8259; }
+.occ-memory-save {
+  background: #6E8259; color: #fff; border: none; border-radius: 20px;
+  padding: 9px 16px; font-size: 0.82em; font-weight: 700; cursor: pointer; white-space: nowrap;
+}
+.occ-memory-save:disabled { opacity: 0.5; cursor: default; }
+.occ-memory-forget {
+  background: none; border: 1px solid rgba(255,255,255,0.2); color: #99a;
+  border-radius: 20px; padding: 6px 12px; font-size: 0.75em; cursor: pointer; white-space: nowrap;
+}
+
+/* Prep timeline */
+.occ-timeline { margin-bottom: 18px; }
+.occ-timeline-title {
+  font-family: var(--font-display); font-size: 0.72em; color: #6E8259; margin-bottom: 14px;
+}
+.occ-timeline-list { display: flex; flex-direction: column; gap: 4px; }
+.occ-timeline-step {
+  display: flex; gap: 16px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 14px 16px;
+}
+.occ-timeline-when {
+  flex: 0 0 120px; font-family: var(--font-display); font-size: 0.62em;
+  color: #D8CAB4; line-height: 1.6;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.occ-timeline-date { font-family: Arial, sans-serif; font-size: 1.15em; color: #6E8259; letter-spacing: 0; }
+.occ-timeline-hint { font-size: 0.78em; color: #889; margin: -6px 0 12px; font-style: italic; }
+.occ-timeline-body { flex: 1; min-width: 0; }
+.occ-timeline-step-title { font-weight: 700; font-size: 0.95em; margin-bottom: 6px; color: #fff; }
+.occ-timeline-tasks { margin: 0; padding-left: 18px; font-size: 0.82em; color: #aab; line-height: 1.7; }
+
+/* "Not just food for the party" — bonus recipes from the same haul */
+.occ-bonus { background: rgba(255,255,255,0.04); border-radius: 16px; padding: 18px; margin-top: 18px; }
+.occ-bonus-title {
+  font-family: var(--font-display); font-size: 0.62em; color: #6E8259; line-height: 1.6; margin-bottom: 8px;
+}
+.occ-bonus-sub { font-size: 0.85em; color: #aab; line-height: 1.5; margin: 0 0 14px; }
+.occ-bonus-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.occ-bonus-card {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px;
+  padding: 12px; text-align: left; cursor: pointer; color: #fff;
+}
+.occ-bonus-card:hover { border-color: #6E8259; background: rgba(110, 130, 89,0.08); }
+.occ-bonus-name { font-weight: 700; font-size: 0.88em; line-height: 1.35; margin-bottom: 4px; }
+.occ-bonus-type { font-size: 0.7em; color: #99a; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Practice timeline — test-run new dishes at 1 serving before the real thing */
+.occ-practice { background: rgba(255,255,255,0.04); border-radius: 16px; padding: 18px; margin-bottom: 18px; }
+.occ-practice-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.occ-practice-title { font-family: var(--font-display); font-size: 0.72em; color: #6E8259; }
+.occ-practice-build {
+  background: #6E8259; color: #fff; border: none; border-radius: 20px;
+  padding: 9px 16px; font-size: 0.8em; font-weight: 700; cursor: pointer; white-space: nowrap;
+}
+.occ-practice-build:hover { background: #6E8259; }
+.occ-practice-blurb { font-size: 0.88em; color: #ccd; line-height: 1.6; margin: 0 0 14px; }
+.occ-practice-none {
+  color: #dfeede; background: rgba(125,174,92,0.14); border-radius: 10px;
+  padding: 12px; font-size: 0.88em; text-align: center;
+}
+.occ-practice-tight {
+  color: #ffe6b3; background: rgba(110, 130, 89,0.08); border: 1px solid rgba(110, 130, 89,0.25);
+  border-radius: 10px; padding: 10px 12px; font-size: 0.82em; margin-bottom: 12px;
+}
+.occ-practice-progress { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.occ-practice-progress-track { flex: 1; height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+.occ-practice-progress-fill { height: 100%; background: #96B36B; border-radius: 4px; transition: width 0.3s; }
+.occ-practice-progress-label { font-size: 0.76em; color: #99a; white-space: nowrap; }
+
+.occ-practice-list { display: flex; flex-direction: column; gap: 10px; }
+.occ-practice-card {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 14px 16px;
+}
+.occ-practice-card.done { border-color: rgba(125,174,92,0.5); background: rgba(125,174,92,0.06); }
+.occ-practice-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.occ-practice-when { font-family: var(--font-display); font-size: 0.62em; color: #D8CAB4; }
+.occ-practice-done-badge { font-size: 0.68em; font-weight: 700; color: #96B36B; letter-spacing: 0.04em; }
+.occ-practice-name { font-weight: 700; font-size: 1em; color: #fff; margin-bottom: 6px; }
+.occ-practice-reason { font-size: 0.82em; color: #aab; line-height: 1.5; margin: 0 0 8px; }
+.occ-practice-scale-note {
+  display: inline-block; font-size: 0.74em; color: #33302A; background: #6E8259;
+  padding: 3px 9px; border-radius: 8px; font-weight: 700; margin-bottom: 10px;
+}
+.occ-practice-toggle {
+  display: block; background: none; border: none; color: #6E8259; font-size: 0.8em;
+  cursor: pointer; text-decoration: underline; padding: 0; margin-bottom: 8px;
+}
+.occ-practice-ings { margin: 0 0 12px; padding-left: 18px; font-size: 0.84em; color: #ccd; line-height: 1.7; }
+.occ-practice-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.occ-practice-cook {
+  background: #96B36B; color: #10231a; border: none; border-radius: 8px;
+  padding: 8px 14px; font-weight: 700; font-size: 0.8em; cursor: pointer;
+}
+.occ-practice-mark {
+  background: none; border: 1px solid rgba(255,255,255,0.25); color: #ccd; border-radius: 8px;
+  padding: 8px 14px; font-size: 0.8em; cursor: pointer;
+}
+.occ-practice-mark:disabled { opacity: 0.6; cursor: default; border-color: rgba(125,174,92,0.5); color: #96B36B; }
+
+@media (max-width: 560px) {
+  .occ-timeline-step { flex-direction: column; gap: 6px; }
+  .occ-timeline-when { flex: none; flex-direction: row; align-items: baseline; gap: 8px; }
+}

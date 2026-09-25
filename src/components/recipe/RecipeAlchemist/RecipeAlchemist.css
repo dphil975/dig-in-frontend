@@ -1,0 +1,311 @@
+/* ── Kitchen Alchemist ─────────────────────────────────────────────────────
+   Facelifted onto the app's real design tokens (see styles.css "THE PALETTE"):
+   cream background, bark text/borders, matcha primary accent, frog for small
+   success touches, honey ONLY for earned/verified things (saved, AI-powered),
+   cashmere for soft dividers/borders. No purple, no blurred drop-shadows —
+   flat bark-bordered cards (the Panel family's "light-card recipe-page feel":
+   AllergyPanel/WellnessPanel/GutHealthPanel) + the app's pixel-press offset
+   shadow for anything clickable. Shared by both Alchemist modes — Describe It
+   (DescribeMode.jsx) and From Ingredients (IngredientsMode.jsx, merged in from
+   the former standalone AI Recipe Helper) — so switching modes never jumps
+   visual language. */
+
+.alch { padding: 4px 2px 24px; font-family: 'DotGothic16', Arial, sans-serif; }
+.alch-inner { max-width: 860px; margin: 0 auto; }
+
+.alch-head { text-align: center; margin-bottom: 14px; }
+.alch-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px; letter-spacing: 1px; color: var(--dig-matcha, #6E8259);
+}
+
+/* Mode switch — a segmented control (not separate pill buttons), so it reads
+   as a sub-choice nested under InventTab's own pill row, not a second row of
+   the same control. */
+.alch-switch-wrap { display: flex; justify-content: center; margin-bottom: 20px; }
+.alch-switch {
+  display: inline-flex; gap: 2px; padding: 3px;
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 11px;
+  box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.alch-switch-btn {
+  font-size: 12.5px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: none; border: none; border-radius: 8px; padding: 9px 18px; cursor: pointer;
+  transition: background-color .15s, color .15s;
+}
+.alch-switch-btn:hover:not(.active) { background: #f7f2e9; }
+.alch-switch-btn.active { background: var(--dig-matcha, #6E8259); color: #fff; }
+
+/* Card — the one container shape every section uses (flat, no drop-shadow;
+   the shadow language is reserved for things you click). */
+.alch-card {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 16px;
+  padding: 20px; margin-bottom: 16px;
+}
+.alch-card-head { text-align: center; }
+.alch-card-label {
+  display: block; font-family: var(--font-ui); font-size: 11px;
+  letter-spacing: .04em; color: var(--dig-matcha, #6E8259); margin-bottom: 12px;
+}
+
+.alch-title {
+  font-family: var(--font-display); font-size: 17px; color: var(--dig-bark, #33302A);
+  line-height: 1.55; margin-bottom: 8px;
+}
+.alch-title span { color: var(--dig-matcha, #6E8259); }
+.alch-sub { font-size: 14px; line-height: 1.5; color: #6b6157; max-width: 560px; margin: 0 auto; }
+.alch-sub b { color: var(--dig-matcha, #6E8259); }
+
+/* ── Buttons — one shared language: flat bark border + pixel-offset shadow,
+   lifts on hover, presses on active/disabled (the SideRail CTA convention). */
+.alch-btn {
+  font-family: var(--font-ui); font-size: 11px;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 9px; padding: 11px 16px;
+  cursor: pointer; box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+  transition: transform .12s, box-shadow .12s, background-color .15s, color .15s;
+  white-space: nowrap;
+}
+.alch-btn:hover:not(:disabled) { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+.alch-btn:active:not(:disabled) { transform: translate(1px,1px); box-shadow: 1px 1px 0 var(--dig-bark, #33302A); }
+.alch-btn:disabled { cursor: default; }
+.alch-btn-primary { background: var(--dig-matcha, #6E8259); color: #fff; }
+.alch-btn-outline { background: #fff; color: var(--dig-bark, #33302A); }
+.alch-btn-outline-matcha { background: #fff; color: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); }
+.alch-btn-frog { background: #fff; color: #3a6b2f; border-color: var(--dig-frog, #96B36B); }
+.alch-btn-frog:hover:not(:disabled) { background: var(--dig-frog, #96B36B); color: #fff; }
+/* Honey = earned/verified ONLY (the palette's own rule) — the "already saved" state. */
+.alch-btn-earned {
+  background: var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A); border-color: var(--dig-bark, #33302A);
+  transform: none; box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+}
+.alch-badge-earned {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em;
+  background: var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A);
+  border-radius: 6px; padding: 5px 9px; white-space: nowrap;
+}
+
+/* ── Describe mode ─────────────────────────────────────────────────────── */
+.alch-prompt { display: flex; gap: 10px; margin-bottom: 14px; }
+.alch-input {
+  flex: 1; min-width: 0; padding: 13px 15px; font-size: 15px;
+  background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 10px; color: var(--dig-bark, #33302A);
+}
+.alch-input:focus { outline: none; border-color: var(--dig-matcha, #6E8259); }
+.alch-input::placeholder { color: rgba(51,48,42,0.4); }
+
+.alch-examples { display: flex; flex-wrap: wrap; gap: 8px; }
+.alch-ex {
+  font-size: 12px; padding: 7px 12px; border-radius: 20px; cursor: pointer;
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A);
+  transition: border-color .15s, background-color .15s;
+}
+.alch-ex:hover { border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
+.alch-ex::before { content: '“'; }
+.alch-ex::after { content: '”'; }
+
+.alch-formats { display: flex; flex-direction: column; gap: 10px; }
+.alch-fgroup { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.alch-fgroup-label {
+  font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); width: 56px; flex-shrink: 0;
+}
+.alch-fbtn {
+  font-size: 13px; padding: 9px 13px; border-radius: 9px; cursor: pointer;
+  background: #fff; border: 2px solid var(--dig-cashmere, #D8CAB4); color: var(--dig-bark, #33302A);
+  transition: border-color .15s, background-color .15s, color .15s, transform .1s;
+}
+.alch-fbtn:hover { border-color: var(--dig-matcha, #6E8259); }
+.alch-fbtn.active { background: var(--dig-matcha, #6E8259); color: #fff; border-color: var(--dig-bark, #33302A); transform: translateY(-1px); }
+
+/* Nova's read on the request + the invented dish's flavor tag */
+.alch-nova {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: #fbf7f0; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 14px;
+  padding: 14px 16px; margin-bottom: 16px;
+}
+.alch-nova-body { flex: 1; min-width: 0; }
+.alch-nova-head {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 0.04em;
+  color: var(--dig-matcha, #6E8259); margin-bottom: 6px; text-transform: uppercase;
+}
+.alch-nova-line { font-size: 14px; color: var(--dig-bark, #33302A); margin: 0 0 4px; line-height: 1.5; }
+.alch-nova-flavors { font-size: 13px; color: #6b6157; margin: 0; line-height: 1.5; }
+.alch-nova-flavors b { color: var(--dig-matcha, #6E8259); }
+
+/* Result card — the invented dish. A light card (not a dark purple detour):
+   matcha header strip, bark text throughout, one pixel-offset shadow since
+   this is the payoff moment. */
+.alch-result {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 16px;
+  overflow: hidden; box-shadow: 4px 4px 0 var(--dig-bark, #33302A); margin-bottom: 16px;
+}
+.alch-error { padding: 20px; text-align: center; font-size: 14px; color: var(--dig-bark, #33302A); }
+.alch-error b { color: var(--dig-matcha, #6E8259); }
+
+.alch-rcard-head {
+  display: flex; align-items: center; gap: 14px; padding: 18px 20px;
+  background: var(--dig-matcha, #6E8259); flex-wrap: wrap;
+}
+.alch-remoji { font-size: 34px; }
+.alch-rname { font-family: var(--font-display); font-size: 14px; color: #fff; line-height: 1.5; margin-bottom: 8px; }
+.alch-rtags { display: flex; gap: 6px; flex-wrap: wrap; }
+.alch-rtag {
+  font-size: 11px; padding: 3px 9px; border-radius: 6px;
+  background: rgba(255,255,255,.2); border: 1px solid rgba(255,255,255,.35); color: #fff; text-transform: capitalize;
+}
+.alch-r5 {
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px;
+  background: var(--dig-frog, #96B36B); color: var(--dig-bark, #33302A); padding: 6px 9px; border-radius: 6px;
+}
+
+.alch-rbody { display: grid; grid-template-columns: 1fr 1.4fr; gap: 22px; padding: 20px; }
+.alch-rlabel { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); margin-bottom: 12px; }
+.alch-ings { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.alch-ings li { font-size: 14px; color: var(--dig-bark, #33302A); padding-left: 16px; position: relative; line-height: 1.4; }
+.alch-ings li::before { content: '•'; position: absolute; left: 2px; color: var(--dig-frog, #96B36B); font-weight: 700; }
+.alch-summary { font-size: 15px; line-height: 1.6; color: var(--dig-bark, #33302A); margin: 0 0 14px; }
+.alch-stepcount {
+  font-size: 13px; color: var(--dig-matcha, #6E8259);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 8px; padding: 9px 11px;
+}
+
+.alch-pairings {
+  margin: 0 20px 18px; padding: 16px;
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 12px;
+}
+.alch-pair-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.alch-pair { font-size: 13px; line-height: 1.45; color: var(--dig-bark, #33302A); }
+.alch-pair b {
+  display: block; font-family: var(--font-ui); font-size: 11px;
+  color: var(--dig-matcha, #6E8259); margin-bottom: 6px; letter-spacing: .5px;
+}
+
+.alch-ractions { display: flex; gap: 10px; padding: 0 20px 20px; flex-wrap: wrap; }
+.alch-ractions .alch-btn { flex: 1; min-width: 160px; text-align: center; }
+
+/* Metrics strip — no card, a quiet footer under the whole mode. */
+.alch-metrics {
+  display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;
+  margin-top: 6px; padding-top: 16px; border-top: 1.5px dashed var(--dig-cashmere, #D8CAB4);
+}
+.alch-metric { font-size: 13px; color: var(--dig-bark, #33302A); }
+.alch-metric b { color: var(--dig-matcha, #6E8259); font-size: 15px; }
+.alch-metric-muted { color: #6b6157; font-size: 12px; }
+
+/* ── Ingredients mode (merged in from the former AI Recipe Helper) ────────── */
+.alchi-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+
+.alchi-chipwrap {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 12px; padding: 10px 14px; min-height: 52px;
+  cursor: text; transition: border-color .2s;
+}
+.alchi-chipwrap:focus-within { border-color: var(--dig-matcha, #6E8259); }
+.alchi-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: #f7f2e9; border: 1.5px solid var(--dig-matcha, #6E8259); border-radius: 20px;
+  padding: 4px 10px; font-size: 12.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+}
+.alchi-chip-x { background: none; border: none; color: var(--dig-matcha, #6E8259); cursor: pointer; font-size: 15px; line-height: 1; padding: 0; opacity: .65; }
+.alchi-chip-x:hover { opacity: 1; }
+.alchi-chipfield { flex: 1; min-width: 140px; border: none; outline: none; font-size: 13px; font-family: inherit; color: var(--dig-bark, #33302A); background: transparent; }
+
+.alchi-hint { font-size: 11.5px; color: #6b6157; }
+.alchi-gen-error {
+  margin-top: 12px; font-size: 12px; color: var(--dig-bark, #33302A);
+  background: #faf6f0; border-left: 3px solid var(--dig-honey, #E0A32E); border-radius: 8px; padding: 9px 12px;
+}
+
+.alchi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.alchi-recipe {
+  padding: 14px; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 12px; cursor: pointer;
+  background: #fff; transition: border-color .15s, transform .12s;
+}
+.alchi-recipe:hover { border-color: var(--dig-matcha, #6E8259); transform: translateY(-2px); }
+.alchi-recipe.selected { border-color: var(--dig-matcha, #6E8259); background: #f7f2e9; }
+.alchi-recipe-tag { font-family: var(--font-ui); font-size: 11px; letter-spacing: .04em; color: #9a8f7c; margin-bottom: 8px; }
+.alchi-recipe-name { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); line-height: 1.5; margin-bottom: 6px; }
+.alchi-recipe-desc { font-size: 12px; color: #6b6157; line-height: 1.5; }
+.alchi-recipe-meta { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.alchi-recipe-meta span { font-size: 11px; color: var(--dig-bark, #33302A); background: #f7f2e9; border-radius: 8px; padding: 3px 8px; }
+.alchi-diff-easy   { color: #3a6b2f !important; background: #eef7ea !important; }
+.alchi-diff-medium { color: #7a5c1e !important; background: #faf1dd !important; }
+.alchi-diff-hard   { color: var(--dig-bark, #33302A) !important; background: #f7f2e9 !important; }
+
+.alchi-loading { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 42px 20px; color: #6b6157; }
+.alchi-spinner { width: 40px; height: 40px; border: 4px solid var(--dig-cashmere, #D8CAB4); border-top-color: var(--dig-matcha, #6E8259); border-radius: 50%; animation: alch-spin 1s linear infinite; }
+.alchi-spinner-sm { display: inline-block; width: 10px; height: 10px; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff; border-radius: 50%; animation: alch-spin 1s linear infinite; margin-right: 6px; }
+@keyframes alch-spin { to { transform: rotate(360deg); } }
+
+.alchi-assist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.alchi-steps { display: flex; flex-direction: column; gap: 10px; }
+.alchi-step {
+  padding: 12px; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 9px; cursor: pointer;
+  background: #fff; transition: border-color .15s, background-color .15s;
+}
+.alchi-step:hover { border-color: var(--dig-matcha, #6E8259); }
+.alchi-step.active { border-color: var(--dig-matcha, #6E8259); background: #f7f2e9; }
+.alchi-step-n { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); margin-bottom: 5px; }
+.alchi-step-t { font-size: 13px; color: #4c463c; line-height: 1.5; }
+
+.alchi-upload {
+  border: 2px dashed var(--dig-matcha, #6E8259); border-radius: 10px; padding: 26px; text-align: center; cursor: pointer;
+  background: #fbf7f0; margin-bottom: 14px; transition: border-color .15s, background-color .15s, transform .12s;
+}
+.alchi-upload:hover, .alchi-upload.drag-over { border-color: var(--dig-frog, #96B36B); background: #f2f7ee; }
+.alchi-upload.drag-over { transform: scale(1.01); }
+.alchi-upload-text { font-family: var(--font-ui); color: var(--dig-matcha, #6E8259); font-size: 11px; margin-bottom: 6px; }
+.alchi-upload-sub { font-size: 11px; color: #6b6157; margin-bottom: 14px; }
+
+.alchi-preview-img { width: 100%; max-height: 260px; object-fit: cover; border-radius: 10px; border: 2px solid var(--dig-cashmere, #D8CAB4); margin-bottom: 12px; }
+.alchi-analysing {
+  display: flex; align-items: center; justify-content: center; gap: 10px; padding: 16px;
+  background: #f7f2e9; border-radius: 9px; font-size: 12px; color: var(--dig-matcha, #6E8259); margin-bottom: 12px;
+}
+.alchi-analysis-item { padding: 11px 12px; border-left: 4px solid var(--dig-matcha, #6E8259); background: #f7f2e9; border-radius: 6px; margin-bottom: 10px; }
+.alchi-analysis-item.success { border-left-color: var(--dig-frog, #96B36B); background: #eef7ea; }
+.alchi-analysis-item.warning { border-left-color: var(--dig-honey, #E0A32E); background: #faf1dd; }
+.alchi-analysis-item.danger  { border-left-color: #c0392b; background: #fbeae8; }
+.alchi-analysis-label { font-family: var(--font-ui); font-size: 11px; color: var(--dig-bark, #33302A); margin-bottom: 4px; text-transform: uppercase; }
+.alchi-analysis-text { font-size: 12px; color: #4c463c; line-height: 1.55; }
+
+.alchi-feedback { margin-top: 14px; padding: 12px; background: #f7f2e9; border-radius: 9px; }
+.alchi-feedback-head { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); margin-bottom: 10px; }
+.alchi-feedback-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.alchi-feedback-btn { padding: 7px 14px; border: 1.5px solid var(--dig-cashmere, #D8CAB4); background: #fff; border-radius: 8px; font-size: 11px; cursor: pointer; transition: all .15s; }
+.alchi-feedback-btn.correct:hover { border-color: var(--dig-frog, #96B36B); background: #eef7ea; color: #3a6b2f; }
+.alchi-feedback-btn.incorrect:hover { border-color: var(--dig-cashmere, #D8CAB4); background: #f7f2e9; }
+
+.alchi-guide-tip { font-size: 12.5px; line-height: 1.6; padding: 9px 12px; border-left: 4px solid var(--dig-cashmere, #D8CAB4); background: #faf8f4; border-radius: 6px; margin-bottom: 8px; }
+.alchi-guide-tip.tip-success { border-left-color: var(--dig-frog, #96B36B); background: #eef7ea; }
+.alchi-guide-tip.tip-warning { border-left-color: var(--dig-honey, #E0A32E); background: #faf1dd; }
+.alchi-guide-tip.tip-danger  { border-left-color: #c0392b; background: #fbeae8; }
+.alchi-guide-tip strong { color: var(--dig-bark, #33302A); }
+
+.alchi-subs { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.alchi-sub { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; background: #f7f2e9; border-radius: 8px; padding: 8px 12px; font-size: 13px; }
+.alchi-sub-orig { font-weight: 700; color: var(--dig-bark, #33302A); }
+.alchi-sub-arrow { color: var(--dig-matcha, #6E8259); font-weight: 700; }
+.alchi-sub-new { font-weight: 700; color: var(--dig-matcha, #6E8259); }
+.alchi-sub-note { font-size: 11px; color: #6b6157; font-style: italic; }
+
+/* ── Teaser — the compact callout used where the full tool doesn't belong
+   (e.g. inline in Browse), pointing to its one real home on the Invent tab. */
+.alch-teaser {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 14px;
+  padding: 16px 18px; margin: 14px 0;
+}
+.alch-teaser-emoji { font-size: 28px; flex-shrink: 0; }
+.alch-teaser-txt { flex: 1; min-width: 200px; }
+.alch-teaser-kicker { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha, #6E8259); letter-spacing: .04em; }
+.alch-teaser-line { font-size: 13px; color: var(--dig-bark, #33302A); line-height: 1.45; margin-top: 4px; }
+
+@media (max-width: 640px) {
+  .alch-title { font-size: 14px; }
+  .alch-rbody { grid-template-columns: 1fr; gap: 16px; }
+  .alch-pair-row { grid-template-columns: 1fr; gap: 10px; }
+  .alch-r5 { margin-left: 0; }
+  .alchi-assist-grid { grid-template-columns: 1fr; }
+  .alch-switch-btn { font-size: 11px; padding: 9px 13px; }
+}

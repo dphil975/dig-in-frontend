@@ -1,0 +1,84 @@
+/* City Food Passport — warm travel-journal palette (cream, navy, gold stamp
+   accents), distinct from the purple/beige lab pages. */
+
+.fp-page { min-height: 100vh; background: #f7f1e3; }
+.fp-wrap { max-width: 780px; margin: 0 auto; padding: 20px 16px 70px; }
+
+.fp-head { text-align: center; padding: 10px 0 6px; }
+.fp-eyebrow { font-family: var(--font-ui); font-size: 11px; color: #33302A; letter-spacing: .5px; }
+.fp-title { font-size: 26px; color: #33302A; margin: 10px 0 6px; }
+.fp-sub { color: #6b5a45; font-size: 14px; max-width: 480px; margin: 0 auto; line-height: 1.5; }
+
+.fp-detect { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0 6px; }
+.fp-detect-btn {
+  padding: 12px 18px; border: 2px solid #33302A; border-radius: 12px;
+  background: #6E8259; color: #33302A; font-weight: 800; font-size: 14px; cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.25);
+}
+.fp-detect-btn:disabled { opacity: .6; cursor: default; }
+.fp-zip-form { display: flex; gap: 6px; }
+.fp-zip-input { padding: 10px 12px; border: 2px solid #33302A; border-radius: 10px; font-size: 14px; width: 140px; }
+
+.fp-status { text-align: center; color: #6b5a45; font-size: 13px; margin: 4px 0; }
+
+.fp-just-stamped {
+  display: flex; align-items: center; gap: 10px; justify-content: center; flex-wrap: wrap;
+  margin: 14px auto; padding: 12px 16px; border: 2px dashed #6E8259; border-radius: 12px;
+  background: #fff8e6; max-width: 460px; text-align: center;
+}
+
+.fp-book-title { text-align: center; color: #33302A; font-size: 18px; margin: 26px 0 12px; }
+.fp-book-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px;
+}
+.fp-stamp {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 16px 10px; border: 3px solid #33302A; border-radius: 50%;
+  background: #fff; cursor: pointer; aspect-ratio: 1;
+  transform: rotate(-2deg); transition: transform .12s;
+}
+.fp-stamp:nth-child(even) { transform: rotate(2deg); }
+.fp-stamp:hover { transform: rotate(0) scale(1.05); }
+.fp-stamp-emoji { font-size: 26px; }
+.fp-stamp-label { font-size: 10px; font-weight: 800; color: #33302A; text-align: center; line-height: 1.2; }
+
+.fp-hint { color: #8a7358; font-size: 13px; text-align: center; padding: 10px 0; }
+
+/* ── Detail overlay ── */
+.fp-overlay {
+  position: fixed; inset: 0; z-index: 220; display: flex; align-items: center; justify-content: center;
+  background: rgba(45, 27, 19, .6); backdrop-filter: blur(3px); padding: 16px;
+}
+.fp-detail {
+  position: relative; width: 100%; max-width: 460px; max-height: 90vh; overflow-y: auto;
+  background: #fffaf0; border: 3px solid #33302A; border-radius: 18px; padding: 24px 20px 20px;
+}
+.fp-close {
+  position: absolute; top: 10px; right: 12px; width: 30px; height: 30px;
+  border: none; border-radius: 8px; background: rgba(45,27,19,.1); cursor: pointer; font-size: 15px;
+}
+.fp-detail-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.fp-detail-emoji { font-size: 34px; }
+.fp-detail-title { font-size: 20px; color: #33302A; margin: 0; }
+
+.fp-section { margin-bottom: 18px; }
+.fp-section-title {
+  font-family: var(--font-ui); font-size: 11px; color: #6b5a45;
+  letter-spacing: .5px; margin: 0 0 8px;
+}
+.fp-dish-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.fp-dish-chip { background: #fff0d6; border: 1px solid #6E8259; border-radius: 20px; padding: 5px 12px; font-size: 12px; }
+
+.fp-spot-list, .fp-cooked-list { list-style: none; padding: 0; margin: 0 0 8px; }
+.fp-spot { display: flex; flex-direction: column; padding: 6px 0; border-bottom: 1px solid #eee0c8; }
+.fp-spot-name { font-weight: 700; font-size: 13px; color: #33302A; }
+.fp-spot-meta { font-size: 11px; color: #8a7358; }
+.fp-cooked-list li { font-size: 13px; padding: 4px 0; color: #33302A; }
+
+.fp-mini-btn {
+  margin-top: 4px; padding: 8px 14px; border: none; border-radius: 8px;
+  background: #33302A; color: #fff; font-weight: 700; font-size: 12px; cursor: pointer;
+}
+
+.fp-partner-hint { text-align: left; font-style: italic; }
+.fp-partner-list { list-style: none; padding: 0; margin: 0; font-size: 13px; }

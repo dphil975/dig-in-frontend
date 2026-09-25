@@ -1,0 +1,72 @@
+/* Matches AllergyPanel / TierBudgetPanel's light-card recipe-page feel. */
+.wnp {
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.wnp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.wnp-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  letter-spacing: 0.04em;
+}
+
+.wnp-manage {
+  background: none;
+  border: none;
+  color: #4a7c59;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.wnp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.wnp-tag {
+  background: #eef7ea;
+  border: 1px solid #96B36B;
+  color: #3a6b2f;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 14px;
+}
+
+.wnp-swaps { display: flex; flex-direction: column; gap: 8px; }
+.wnp-swap-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #f6f5fc;
+  border: 1px solid #e0ddf0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+}
+.wnp-swap-name { font-weight: 700; color: #33302A; white-space: nowrap; }
+.wnp-swap-options { color: #555; flex: 1; min-width: 140px; }
+.wnp-swap-btn {
+  background: #6E8259;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.wnp-swap-btn.used { background: #96B36B; cursor: default; }

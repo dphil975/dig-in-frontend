@@ -1,0 +1,34 @@
+/* Matches AllergyPanel/WellnessPanel/TierBudgetPanel's light-card recipe-page feel. */
+.fsp {
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.fsp-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.fsp-sub { font-size: 12px; color: #777; margin: 0 0 12px; line-height: 1.5; }
+
+.fsp-temps { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.fsp-temp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #fff4e0;
+  border: 1px solid #6E8259;
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+.fsp-temp-label { font-size: 13px; color: #33302A; font-weight: 600; }
+.fsp-temp-val { font-family: var(--font-ui); font-size: 11px; color: #b8720a; white-space: nowrap; }
+
+.fsp-note { font-size: 11.5px; color: #888; line-height: 1.5; margin: 0; }

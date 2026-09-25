@@ -1,0 +1,84 @@
+.cl-wrap { background: #14101f; padding: 44px 0; }
+.cl-inner { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+.cl-head { text-align: center; margin-bottom: 26px; }
+.cl-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #6E8259;
+  margin: 0 0 8px;
+}
+.cl-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: #ece8f7;
+  margin: 0;
+  line-height: 1.4;
+}
+.cl-title span { color: #6E8259; }
+
+.cl-frame { display: flex; align-items: center; gap: 14px; }
+.cl-nav {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(236,232,247,0.25);
+  background: transparent;
+  color: #ece8f7;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.cl-nav:hover { background: #6E8259; border-color: #6E8259; }
+
+.cl-slide {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: #1e1830;
+  border: 2px solid rgba(236,232,247,0.14);
+  border-radius: 20px;
+  padding: 26px 28px;
+  min-height: 180px;
+  animation: cl-fade .25s ease;
+}
+@keyframes cl-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+.cl-slide-visual {
+  flex-shrink: 0;
+  width: 84px; height: 84px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6E8259, #33302A);
+  display: flex; align-items: center; justify-content: center;
+}
+.cl-slide-visual span {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.cl-slide-body { flex: 1; min-width: 0; }
+.cl-slide-count { display: block; font-size: 11px; color: #7a6fa0; margin-bottom: 6px; font-weight: 700; }
+.cl-slide-title { display: block; font-size: 17px; font-weight: 800; color: #ece8f7; margin-bottom: 6px; }
+.cl-slide-teaser { font-size: 13.5px; color: #b8afd4; margin: 0 0 10px; line-height: 1.5; }
+.cl-slide-detail { font-size: 13px; color: #d8d2ee; line-height: 1.6; margin: 0; }
+.cl-slide-more {
+  background: none; border: none; color: #6E8259; font-size: 13px; font-weight: 700;
+  cursor: pointer; padding: 0;
+}
+
+.cl-dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+.cl-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  border: none; background: rgba(236,232,247,0.25); cursor: pointer; padding: 0;
+}
+.cl-dot.active { background: #6E8259; }
+
+@media (max-width: 560px) {
+  .cl-slide { flex-direction: column; text-align: center; padding: 22px; }
+  .cl-slide-count, .cl-slide-title { text-align: center; }
+}

@@ -1,0 +1,9 @@
+/* Tailwind utility layer for the project.
+ *
+ * Preflight (Tailwind's global reset) is disabled in tailwind.config.js so this
+ * file only emits opt-in utility/component classes and does NOT alter any
+ * existing hand-written CSS pages. Components that want Tailwind (e.g.
+ * CarPlayDashboard) just use the className utilities — nothing global changes. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

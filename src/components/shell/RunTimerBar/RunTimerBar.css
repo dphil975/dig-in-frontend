@@ -1,0 +1,84 @@
+/* RunTimerBar — the global "you're mid-run" clock.
+
+   Bottom-LEFT on purpose: Ask Nova's floating button owns the bottom-right
+   corner on every page, and two floating controls fighting for the same
+   corner is how you get a UI that can't be tapped. Honey fill + Bark text is
+   THE PALETTE's earned-thing spec — same reasoning as the run's own HUD
+   clock, which this mirrors. */
+
+.rtb {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 190;               /* under modals (210+), above page content */
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px 11px;
+
+  background: var(--dig-honey, #E0A32E);
+  color: var(--dig-bark, #33302A);
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
+
+  font-family: var(--font-ui);
+  cursor: pointer;
+  animation: rtb-in .28s ease-out both;
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+.rtb:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--dig-bark, #33302A); }
+.rtb:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--dig-bark, #33302A); }
+
+.rtb-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--dig-bark, #33302A);
+  animation: rtb-pulse 1.6s ease-in-out infinite;
+  flex: 0 0 auto;
+}
+
+.rtb-clock {
+  font-family: var(--font-display);
+  font-size: 0.82em;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.rtb-meta { display: flex; align-items: baseline; gap: 4px; }
+.rtb-count { font-weight: 800; font-size: 0.86em; }
+.rtb-label { font-size: 0.7em; opacity: .75; }
+
+/* progress hairline along the bottom edge of the pill */
+.rtb-bar {
+  position: absolute; left: 8px; right: 8px; bottom: 4px;
+  height: 3px; border-radius: 999px;
+  background: rgba(51, 48, 42, .22);
+  overflow: hidden;
+}
+.rtb-bar span {
+  display: block; height: 100%; border-radius: 999px;
+  background: var(--dig-bark, #33302A);
+  transition: width .3s ease;
+}
+
+@keyframes rtb-in {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+@keyframes rtb-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rtb { animation: none; }
+  .rtb-dot { animation: none; }
+  .rtb-bar span { transition: none; }
+}
+
+/* On a narrow screen the sidebar drawer and Nova both crowd the bottom —
+   keep it compact but still reachable with a thumb. */
+@media (max-width: 520px) {
+  .rtb { left: 12px; bottom: 12px; padding: 8px 12px 10px; gap: 8px; }
+  .rtb-clock { font-size: 0.72em; }
+}

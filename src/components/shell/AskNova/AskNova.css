@@ -1,0 +1,129 @@
+/* AskNova — global floating cooking-brain launcher + ask panel. */
+
+/* Launcher — persistent, bottom-right, sits below an active NovaNudge card. */
+.askn-launcher {
+  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 1150;
+  display: flex; align-items: center; gap: 8px;
+  background: #33302A; color: #fff;
+  border: 2px solid #6E8259; border-radius: 999px;
+  padding: 7px 14px 7px 8px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,.35);
+  transition: transform .12s, box-shadow .12s;
+}
+.askn-launcher:hover { transform: translateY(-2px); box-shadow: 0 9px 26px rgba(0,0,0,.42); }
+.askn-launcher-label { font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px; }
+
+/* Overlay + panel */
+.askn-overlay {
+  position: fixed; inset: 0; z-index: 1300;
+  display: flex; align-items: flex-end; justify-content: flex-end;
+  background: rgba(20,16,34,.5); backdrop-filter: blur(2px);
+  padding: 0;
+}
+.askn-panel {
+  display: flex; flex-direction: column;
+  width: 100%; max-width: 440px; height: 100%; max-height: 100vh;
+  background: #F3EADA; border-left: 3px solid #6E8259;
+  box-shadow: -12px 0 40px rgba(0,0,0,.4);
+  animation: askn-slide .22s ease;
+}
+@keyframes askn-slide { from { transform: translateX(30px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+.askn-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; background: #33302A; color: #fff;
+  border-bottom: 2px solid #6E8259;
+}
+.askn-head-id { display: flex; align-items: center; gap: 10px; }
+.askn-head-title { font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px; }
+.askn-head-sub { font-size: 11px; color: #b9b4d6; margin-top: 3px; }
+.askn-close {
+  width: 30px; height: 30px; border: none; border-radius: 8px;
+  background: rgba(255,255,255,.12); color: #fff; font-size: 14px; cursor: pointer;
+}
+.askn-close:hover { background: rgba(255,255,255,.24); }
+
+.askn-plain {
+  font-size: 10px; padding: 6px 10px; margin-right: 6px;
+  border: 1px solid rgba(255,255,255,.3); border-radius: 999px;
+  background: rgba(255,255,255,.08); color: #d8d5ef; cursor: pointer;
+  white-space: nowrap;
+}
+.askn-plain:hover { background: rgba(255,255,255,.16); }
+.askn-plain.active { background: #96B36B; border-color: #96B36B; color: #10231a; font-weight: 700; }
+
+.askn-body { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; }
+
+.askn-intro p { font-size: 14px; line-height: 1.55; color: #5a4a3a; margin: 0 0 14px; }
+.askn-suggested { display: flex; flex-wrap: wrap; gap: 8px; }
+.askn-chip {
+  font-size: 12px; text-align: left;
+  background: #fff; border: 1px solid rgba(110, 130, 89,.4);
+  color: #4A4D80; border-radius: 999px; padding: 8px 12px; cursor: pointer;
+  transition: background .12s, border-color .12s;
+}
+.askn-chip:hover { background: #f0eefb; border-color: #6E8259; }
+
+.askn-turn { margin-bottom: 18px; }
+.askn-q {
+  align-self: flex-end; max-width: 85%; margin-left: auto;
+  background: #6E8259; color: #fff; font-size: 14px; line-height: 1.4;
+  padding: 9px 13px; border-radius: 14px 14px 4px 14px; margin-bottom: 10px;
+  width: fit-content;
+}
+.askn-a { display: flex; gap: 9px; align-items: flex-start; }
+.askn-a-sprite { flex: 0 0 auto; margin-top: 2px; }
+.askn-a-body {
+  flex: 1; min-width: 0;
+  background: #fff; border: 1px solid rgba(212,188,165,.9);
+  border-radius: 4px 14px 14px 14px; padding: 12px 13px;
+}
+.askn-a-text { font-size: 14px; line-height: 1.55; color: #33302A; margin: 0; white-space: pre-wrap; }
+
+.askn-cites { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.askn-cite {
+  font-size: 11px; color: #6E8259; background: #f0eefb;
+  border: 1px solid rgba(110, 130, 89,.3); border-radius: 6px; padding: 3px 8px;
+  max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.askn-a-meta { margin-top: 9px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.askn-save {
+  font-size: 11px; font-weight: 700; margin-left: auto;
+  color: #c33e78; background: #fff; border: 1px solid rgba(232,106,160,.5);
+  border-radius: 9px; padding: 5px 10px; cursor: pointer; transition: background .15s;
+}
+.askn-save:hover:not(:disabled) { background: #ffeef5; }
+.askn-save.is-saved { color: #a03060; border-color: rgba(232,106,160,.3); cursor: default; }
+.askn-badge { font-size: 10px; letter-spacing: .3px; color: #a08d78; }
+.askn-badge-ai { color: #6E8259; font-weight: 700; }
+.askn-badge-shift {
+  color: #4a7c59;
+  background: #eef7ea;
+  border: 1px solid rgba(125,174,92,.4);
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+.askn-thinking { font-size: 11px; color: #a08d78; font-style: italic; }
+@keyframes askn-pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+.askn-thinking { animation: askn-pulse 1.2s ease-in-out infinite; }
+
+.askn-input-row {
+  display: flex; gap: 8px; padding: 12px 16px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  border-top: 2px solid rgba(110, 130, 89,.25); background: #fff;
+}
+.askn-input {
+  flex: 1; font-size: 14px; padding: 11px 13px;
+  border: 1px solid rgba(110, 130, 89,.4); border-radius: 10px; outline: none;
+}
+.askn-input:focus { border-color: #6E8259; }
+.askn-send {
+  flex: 0 0 auto; width: 44px; border: none; border-radius: 10px;
+  background: #6E8259; color: #fff; font-size: 18px; cursor: pointer;
+}
+.askn-send:hover { background: #585B9E; }
+
+@media (max-width: 500px) {
+  .askn-panel { max-width: 100%; border-left: none; }
+}

@@ -1,0 +1,46 @@
+/* Commute hub shell — the same layout as the Recipes hub (.rcp-shell), given
+   its own class so it doesn't pull in Recipes.css's global dark `body` override
+   (that page is dark-themed; this hub keeps the cream homestead theme). */
+
+.cm-hub {
+  min-height: 100vh;
+  background: var(--dig-cream, #F3EADA);
+}
+
+/* The global SideRail (App.jsx) is the left nav now, so this is a single wide
+   column — the hub's tabs + center content. */
+.cm-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 22px 80px;
+}
+.cm-main { min-width: 0; }
+
+.cm-hub-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 0 0 2px;
+  margin: 0 0 12px;
+  flex-wrap: wrap;
+}
+.cm-hub-tab {
+  padding: 10px 18px;
+  border: 2px solid var(--dig-cashmere, #D8CAB4);
+  background: #fff;
+  color: var(--dig-bark, #33302A);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.cm-hub-tab:hover { background: var(--dig-cream, #F3EADA); }
+.cm-hub-tab.active {
+  background: var(--dig-matcha, #6E8259);
+  border-color: var(--dig-matcha, #6E8259);
+  color: var(--dig-cream, #F3EADA);
+}
+
+@media (max-width: 860px) {
+  .cm-shell { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 12px 12px 80px; }
+}

@@ -1,0 +1,283 @@
+/* Recess.css — matches the hero/Pantry house style: cream ground, Press Start
+   2P for chips and kickers only, and the signature offset hard shadow
+   (Npx Npx 0 rgba(51,48,42,.1–.16)).
+
+   Nothing here glows, pulses, counts down, or turns red. The pacing is the
+   feature — a page that hurries you is not recess. */
+
+.rc-page {
+  min-height: 100vh;
+  background: var(--dig-cream, #F3EADA);
+}
+
+.rc-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 20px 80px;
+}
+
+.rc-back {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: #fff;
+  border: 2px solid var(--dig-matcha, #6E8259);
+  color: var(--dig-matcha, #6E8259);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background .15s, color .15s;
+}
+.rc-back:hover { background: var(--dig-matcha, #6E8259); color: #fff; }
+
+/* ---- Hero ---- */
+.rc-hero { max-width: 640px; margin: 0 0 30px; }
+
+.rc-kicker {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--dig-matcha, #6E8259);
+  margin: 0 0 14px;
+}
+.rc-headline {
+  font-size: clamp(26px, 5vw, 39px);
+  line-height: 1.13;
+  font-weight: 800;
+  color: var(--dig-bark, #33302A);
+  margin: 0 0 14px;
+}
+.rc-sub {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #5c5346;
+  margin: 0;
+}
+.rc-sub em { color: var(--dig-matcha, #6E8259); font-style: normal; font-weight: 700; }
+
+.rc-streak {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: var(--dig-honey, #E0A32E);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 16px 0 0;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .14);
+}
+
+.rc-alldone {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--dig-matcha, #6E8259);
+  font-weight: 700;
+  margin: 14px 0 0;
+}
+
+/* ---- Steps ---- */
+.rc-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: #fff;
+  border: 3px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .12);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: border-color .2s, opacity .2s;
+}
+/* A finished step recedes — it does not celebrate at you or lock shut. */
+.rc-step.done { border-color: var(--dig-frog, #96B36B); opacity: .82; }
+
+.rc-stepnum {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  background: var(--dig-cashmere, #D8CAB4);
+  color: var(--dig-bark, #33302A);
+  border-radius: 9px;
+}
+.rc-step.done .rc-stepnum { background: var(--dig-frog, #96B36B); color: #fff; }
+
+.rc-stepbody { min-width: 0; flex: 1; }
+
+.rc-chip {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: .5px;
+  background: var(--dig-cream, #F3EADA);
+  color: var(--dig-bark, #33302A);
+  padding: 7px 10px;
+  border-radius: 7px;
+  margin-bottom: 11px;
+}
+
+.rc-step-title {
+  font-size: clamp(17px, 3vw, 21px);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--dig-bark, #33302A);
+  margin: 0 0 9px;
+}
+.rc-step-title em { color: var(--dig-matcha, #6E8259); font-style: normal; }
+
+.rc-body {
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #5c5346;
+  margin: 0 0 10px;
+}
+.rc-body strong { color: var(--dig-bark, #33302A); }
+
+.rc-hint {
+  font-size: 13.5px;
+  color: #7a7063;
+  margin: 0 0 13px;
+  font-style: italic;
+}
+
+/* The sourced line — visually set apart from the app's own voice, because it's
+   the part carrying a real citation behind it. */
+.rc-teach {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #4a4236;
+  background: var(--dig-cream, #F3EADA);
+  border-left: 4px solid var(--dig-frog, #96B36B);
+  padding: 11px 13px;
+  border-radius: 0 8px 8px 0;
+  margin: 12px 0 0;
+}
+
+.rc-found {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dig-matcha, #6E8259);
+  margin: 0 0 8px;
+}
+.rc-found span { display: block; font-size: 13px; font-weight: 700; color: #6b6255; margin-top: 3px; }
+
+.rc-fineprint {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #8a8072;
+  margin: 12px 0 0;
+}
+
+/* ---- Inputs / buttons ---- */
+.rc-row { display: flex; gap: 9px; margin: 13px 0 0; flex-wrap: wrap; }
+
+.rc-input {
+  flex: 1 1 190px;
+  min-width: 0;
+  font-size: 14.5px;
+  font-family: inherit;
+  padding: 11px 13px;
+  border: 3px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 9px;
+  background: #fff;
+  color: var(--dig-bark, #33302A);
+}
+.rc-input:focus { outline: none; border-color: var(--dig-matcha, #6E8259); }
+
+.rc-btn {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: var(--dig-matcha, #6E8259);
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .16);
+  transition: transform .12s, box-shadow .12s;
+}
+.rc-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 rgba(51, 48, 42, .16); }
+
+.rc-btn-ghost {
+  background: #fff;
+  color: var(--dig-matcha, #6E8259);
+  border: 2px solid var(--dig-matcha, #6E8259);
+  margin-top: 12px;
+}
+
+/* ---- I Spy shortcuts ---- */
+.rc-shortcuts { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-bottom: 4px; }
+.rc-shortcuts-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #8a8072;
+  margin-right: 3px;
+}
+.rc-shortcut {
+  font-size: 13px;
+  background: var(--dig-cream, #F3EADA);
+  border: 2px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--dig-bark, #33302A);
+  transition: border-color .15s;
+}
+.rc-shortcut:hover { border-color: var(--dig-matcha, #6E8259); }
+
+.rc-result { margin-top: 4px; }
+
+/* ---- Handoff ---- */
+.rc-handoff {
+  background: #fff;
+  border: 3px dashed var(--dig-honey, #E0A32E);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .12);
+  padding: 20px;
+  margin-top: 26px;
+}
+.rc-handoff .rc-chip { background: var(--dig-honey, #E0A32E); color: #fff; }
+
+/* ---- Money override ---- */
+.rc-money {
+  background: #fff;
+  border: 3px solid var(--dig-honey, #E0A32E);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .12);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.rc-money .rc-chip { background: var(--dig-honey, #E0A32E); color: #fff; }
+
+.rc-moneyrow { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0 0; }
+.rc-moneystat {
+  flex: 1 1 140px;
+  background: var(--dig-cream, #F3EADA);
+  border-radius: 11px;
+  padding: 14px;
+}
+.rc-moneynum {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: var(--dig-bark, #33302A);
+  margin-bottom: 7px;
+}
+.rc-moneylabel { font-size: 12.5px; color: #7a7063; }
+
+.rc-divider {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #8a8072;
+  text-align: center;
+  margin: 26px 0 18px;
+}
+
+@media (max-width: 640px) {
+  .rc-wrap { padding: 16px 14px 64px; }
+  .rc-step, .rc-handoff, .rc-money { padding: 16px; }
+  .rc-step { gap: 11px; }
+}

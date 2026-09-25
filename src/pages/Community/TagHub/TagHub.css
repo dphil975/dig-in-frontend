@@ -1,0 +1,74 @@
+/* TagHub.css — a tag's own page. Same offset-shadow pixel language as
+   Community.css's .dih-* chrome (the page that links here most), --dig-*
+   tokens throughout. .column/.column-empty come from Home.css (already
+   imported) so the post list matches Home exactly. */
+
+.th-page { min-height: 100vh; background: var(--dig-cream, #F3EADA); }
+.th-wrap { max-width: 640px; margin: 0 auto; padding: 20px 16px 70px; }
+
+.th-back {
+  font-family: var(--font-ui); font-size: 11px;
+  background: none; border: 2px solid var(--dig-bark); border-radius: 8px;
+  color: var(--dig-bark); padding: 7px 13px; cursor: pointer; margin-bottom: 16px;
+}
+.th-back:hover { background: #fff; }
+
+.th-head { margin-bottom: 18px; }
+.th-eyebrow {
+  font-family: var(--font-ui); font-size: 10px; letter-spacing: 1.5px;
+  color: var(--dig-matcha); display: block; margin-bottom: 6px;
+}
+.th-tag {
+  font-family: var(--font-display); font-size: clamp(20px, 5vw, 28px);
+  color: var(--dig-bark); margin: 0 0 8px; line-height: 1.3; word-break: break-word;
+}
+.th-stats { font-size: 13px; color: #7a7060; margin: 0 0 12px; }
+.th-follow {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 700;
+  background: var(--dig-matcha); color: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 9px 15px; cursor: pointer;
+  transition: transform .1s, box-shadow .1s;
+}
+.th-follow:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
+.th-follow.following { background: #fff; color: var(--dig-matcha); }
+
+.th-windows {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  background: #fff; border: 2px solid var(--dig-bark); border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(51,48,42,.14);
+  padding: 4px; margin-bottom: 18px;
+}
+.th-window {
+  flex: 1; min-width: 70px;
+  font-family: var(--font-ui); font-size: 10px; letter-spacing: .3px;
+  color: #8a8072; background: none; border: none; border-radius: 6px;
+  padding: 9px 6px; cursor: pointer;
+}
+.th-window.active { color: #fff; background: var(--dig-matcha); }
+
+.th-related { margin-bottom: 20px; }
+.th-related-head {
+  display: block; font-family: var(--font-ui); font-size: 9px; letter-spacing: 1px;
+  color: #9a8f7c; margin-bottom: 10px;
+}
+.th-related-track {
+  display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+.th-related-chip {
+  flex: 0 0 auto; display: flex; align-items: center; gap: 6px;
+  background: #fff; border: 2px solid var(--dig-cashmere); border-radius: 999px;
+  padding: 7px 12px; cursor: pointer; white-space: nowrap;
+  transition: border-color .15s, background .15s;
+}
+.th-related-chip:hover { border-color: var(--dig-matcha); background: #fbf7f0; }
+.th-related-tag { font-size: 12.5px; font-weight: 700; color: var(--dig-matcha); }
+.th-related-count { font-size: 10.5px; color: #a08e5f; }
+
+.th-column { padding: 0; }
+
+@media (max-width: 480px) {
+  .th-wrap { padding: 16px 12px 60px; }
+}

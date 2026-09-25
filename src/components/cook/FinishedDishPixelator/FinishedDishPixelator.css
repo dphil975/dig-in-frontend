@@ -1,0 +1,99 @@
+/* FinishedDishPixelator — sits inside an .rd-section on the full recipe page */
+
+.fdp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 14px;
+}
+.fdp-control-block { display: flex; flex-direction: column; gap: 6px; }
+.fdp-label {
+  font-family: var(--font-ui);
+  font-size: 11px; letter-spacing: 1.5px;
+  color: #6E8259;
+}
+
+.fdp-pill-row { display: flex; gap: 6px; }
+.fdp-pill {
+  font-family: var(--font-ui); font-size: 11px;
+  color: #6E8259; background: #fff;
+  border: 2px solid #6E8259; border-radius: 8px;
+  padding: 8px 10px; cursor: pointer;
+  transition: background .12s, color .12s;
+}
+.fdp-pill.active { background: #6E8259; color: #fff; }
+
+.fdp-pal-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.fdp-pal-btn {
+  display: flex; gap: 2px;
+  padding: 6px; border-radius: 8px;
+  border: 2px solid rgba(212,188,165,.7);
+  background: #F3EADA;
+  cursor: pointer;
+  transition: border-color .12s;
+}
+.fdp-pal-btn.active { border-color: #6E8259; }
+.fdp-swatch { width: 10px; height: 10px; border-radius: 2px; display: block; }
+
+.fdp-brick-toggle {
+  font-family: var(--font-ui); font-size: 11px;
+  color: #6E8259; background: #fff;
+  border: 2px solid #6E8259; border-radius: 8px;
+  padding: 8px 10px; cursor: pointer;
+  transition: background .12s, color .12s;
+  white-space: nowrap;
+}
+.fdp-brick-toggle.active { background: #6E8259; color: #fff; }
+
+.fdp-body { display: flex; gap: 14px; flex-wrap: wrap; align-items: flex-start; }
+
+.fdp-frame {
+  position: relative;
+  width: 140px; height: 140px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: repeating-linear-gradient(45deg, rgba(110, 130, 89,.06) 0 8px, transparent 8px 16px), #F3EADA;
+  border: 2px solid rgba(212,188,165,.7);
+  display: flex; align-items: center; justify-content: center;
+}
+.fdp-result-img { width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; display: block; }
+.fdp-frame-ph {
+  font-family: var(--font-ui); font-size: 11px;
+  color: rgba(45,27,19,.4); text-align: center; padding: 0 12px;
+}
+.fdp-frame-badge {
+  position: absolute; left: 6px; bottom: 6px;
+  font-family: var(--font-ui); font-size: 11px;
+  color: #33302A; background: #6E8259;
+  padding: 4px 6px; border-radius: 5px;
+}
+
+.fdp-actions {
+  display: flex; flex-direction: column; gap: 8px;
+  flex: 1; min-width: 160px;
+}
+.fdp-btn {
+  font-family: var(--font-ui); font-size: 11px;
+  color: #6E8259; background: #fff;
+  border: 2px solid #6E8259; border-radius: 10px;
+  padding: 11px 12px; cursor: pointer; text-align: left;
+  transition: background .12s, color .12s, transform .08s;
+}
+.fdp-btn:hover:not(:disabled) { background: #f0f0fb; }
+.fdp-btn:active:not(:disabled) { transform: translateY(1px); }
+.fdp-btn:disabled { opacity: .5; cursor: default; }
+.fdp-btn-primary { background: #6E8259; color: #fff; }
+.fdp-btn-primary:hover:not(:disabled) { background: #585B9E; }
+
+.fdp-toast {
+  margin-top: 12px;
+  font-family: var(--font-ui); font-size: 11px; line-height: 1.6;
+  color: #96B36B; background: #eef7ee; border: 1px solid #b7dfb7;
+  border-radius: 8px; padding: 10px 12px;
+}
+
+@media (max-width: 480px) {
+  .fdp-body { flex-direction: column; align-items: stretch; }
+  .fdp-frame { width: 100%; height: 180px; }
+}
