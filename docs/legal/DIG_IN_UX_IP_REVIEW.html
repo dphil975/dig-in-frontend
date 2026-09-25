@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dig In — UX + IP Strategy Review</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --crimson:    #7A1F1F;
+    --crimson-lt: #A33030;
+    --burnt:      #C45C1A;
+    --burnt-lt:   #E07A3A;
+    --matcha:     #5A7A45;
+    --matcha-lt:  #7DA662;
+    --cream:      #FDF6EC;
+    --warm-gray:  #3A2E28;
+    --card-bg:    #FFFFFF;
+    --muted:      #7A6A60;
+    --border:     #E8DDD0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--warm-gray);
+    line-height: 1.7;
+  }
+
+  /* ── Hero ─────────────────────────────────────────────────── */
+  .hero {
+    background: var(--crimson);
+    position: relative;
+    overflow: hidden;
+    padding: 64px 48px 56px;
+    color: white;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 600px 400px at 80% 50%, rgba(196,92,26,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 300px 300px at 10% 80%, rgba(90,122,69,0.25) 0%, transparent 60%);
+  }
+  /* Pride of Barbados petal motif */
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 340px; height: 340px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23C45C1A' opacity='.18' transform='rotate(0 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23A33030' opacity='.15' transform='rotate(45 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%235A7A45' opacity='.12' transform='rotate(90 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23C45C1A' opacity='.14' transform='rotate(135 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23A33030' opacity='.16' transform='rotate(180 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%235A7A45' opacity='.13' transform='rotate(225 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23C45C1A' opacity='.15' transform='rotate(270 100 100)'/%3E%3Cellipse cx='100' cy='40' rx='18' ry='55' fill='%23A33030' opacity='.12' transform='rotate(315 100 100)'/%3E%3C/svg%3E") center/cover;
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; max-width: 800px; }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 16px;
+  }
+  .hero h1 span { color: var(--burnt-lt); }
+  .hero-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    max-width: 580px;
+    line-height: 1.6;
+  }
+  .hero-meta {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .hero-meta-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-meta-item .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--burnt-lt);
+  }
+  .hero-meta-item .lbl {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* ── Layout ────────────────────────────────────────────────── */
+  .doc-body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 32px 80px;
+  }
+
+  /* ── Section headers ──────────────────────────────────────── */
+  .section {
+    margin-bottom: 60px;
+  }
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .section-num {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .section-num.crimson { background: var(--crimson); color: white; }
+  .section-num.burnt   { background: var(--burnt); color: white; }
+  .section-num.matcha  { background: var(--matcha); color: white; }
+  .section-num.cream   { background: var(--cream); color: var(--crimson); border: 2px solid var(--crimson); }
+
+  .section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--warm-gray);
+    line-height: 1.2;
+  }
+  .section-intro {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    max-width: 700px;
+    line-height: 1.7;
+  }
+
+  /* ── Divider ──────────────────────────────────────────────── */
+  .divider {
+    height: 2px;
+    background: linear-gradient(to right, var(--crimson), var(--burnt), var(--matcha), transparent);
+    margin-bottom: 60px;
+    border-radius: 2px;
+  }
+
+  /* ── Page audit cards ─────────────────────────────────────── */
+  .audit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 700px) { .audit-grid { grid-template-columns: 1fr; } }
+
+  .audit-col-head {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0;
+  }
+  .audit-col-head.keep   { background: var(--matcha);  color: white; }
+  .audit-col-head.merge  { background: var(--burnt);   color: white; }
+  .audit-col-head.cut    { background: var(--crimson); color: white; }
+
+  .audit-col {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .audit-items { padding: 12px; }
+  .audit-item {
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .audit-item.keep  { background: #EEF5E8; color: #2C5520; }
+  .audit-item.merge { background: #FDF0E6; color: #7A3A10; }
+  .audit-item.cut   { background: #FAEAEA; color: #6B1515; }
+  .audit-item .why {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ── IA pillars ───────────────────────────────────────────── */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 800px) { .pillars { grid-template-columns: 1fr 1fr; } }
+
+  .pillar {
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .pillar-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .pillar h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .pillar p {
+    font-size: 11px;
+    line-height: 1.5;
+    opacity: 0.85;
+  }
+  .pillar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+    text-align: left;
+  }
+  .pillar ul li {
+    font-size: 11px;
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    opacity: 0.85;
+  }
+  .pillar-1 { background: var(--crimson);  color: white; }
+  .pillar-2 { background: var(--burnt);    color: white; }
+  .pillar-3 { background: var(--matcha);   color: white; }
+  .pillar-4 { background: #4A3060;         color: white; }
+  .pillar-5 { background: var(--warm-gray); color: white; }
+
+  /* ── Color swatch row ─────────────────────────────────────── */
+  .swatches {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .swatch {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+  }
+  .swatch-dot {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .swatch-info .name { font-weight: 600; font-size: 13px; }
+  .swatch-info .hex  { font-size: 11px; color: var(--muted); font-family: monospace; }
+  .swatch-info .role { font-size: 11px; color: var(--muted); }
+
+  /* ── Texture inspiration ──────────────────────────────────── */
+  .texture-block {
+    background: var(--crimson);
+    border-radius: 12px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .texture-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%23C45C1A' opacity='.2' transform='rotate(0 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%235A7A45' opacity='.15' transform='rotate(36 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%23C45C1A' opacity='.18' transform='rotate(72 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%235A7A45' opacity='.12' transform='rotate(108 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%23C45C1A' opacity='.15' transform='rotate(144 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%235A7A45' opacity='.18' transform='rotate(180 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%23C45C1A' opacity='.14' transform='rotate(216 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%235A7A45' opacity='.16' transform='rotate(252 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%23C45C1A' opacity='.12' transform='rotate(288 200 200)'/%3E%3Cellipse cx='200' cy='80' rx='30' ry='90' fill='%235A7A45' opacity='.2' transform='rotate(324 200 200)'/%3E%3C/svg%3E") center/cover;
+    pointer-events: none;
+  }
+  .texture-block h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .texture-block p { position: relative; font-size: 14px; opacity: 0.85; max-width: 560px; }
+
+  /* ── Feature cards ────────────────────────────────────────── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 650px) { .features-grid { grid-template-columns: 1fr; } }
+
+  .feature-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px;
+    border-left: 4px solid var(--burnt);
+  }
+  .feature-card.crimson { border-left-color: var(--crimson); }
+  .feature-card.matcha  { border-left-color: var(--matcha); }
+  .feature-card.purple  { border-left-color: #6A4A9C; }
+
+  .feature-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--warm-gray);
+  }
+  .feature-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .feature-card .ip-tag {
+    display: inline-block;
+    background: #FDF0E6;
+    color: var(--burnt);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  .feature-card.crimson .ip-tag { background: #FAEAEA; color: var(--crimson); }
+  .feature-card.matcha .ip-tag  { background: #EEF5E8; color: var(--matcha); }
+  .feature-card.purple .ip-tag  { background: #F2EAFB; color: #6A4A9C; }
+
+  /* ── IP table ─────────────────────────────────────────────── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+  }
+  thead tr { background: var(--crimson); color: white; }
+  thead th { padding: 13px 16px; text-align: left; font-weight: 600; font-size: 12px; letter-spacing: 0.5px; }
+  tbody tr:nth-child(even) { background: #FDF8F3; }
+  tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+  tbody td:first-child { font-weight: 600; color: var(--warm-gray); }
+  tbody td:last-child { color: var(--muted); font-size: 12px; }
+  .tag-protect { color: var(--matcha); font-weight: 700; font-size: 11px; }
+  .tag-trade   { color: var(--burnt); font-weight: 700; font-size: 11px; }
+  .tag-copy    { color: #6A4A9C; font-weight: 700; font-size: 11px; }
+
+  /* ── Quote blocks ─────────────────────────────────────────── */
+  .callout {
+    background: white;
+    border-left: 5px solid var(--burnt);
+    border-radius: 0 8px 8px 0;
+    padding: 18px 22px;
+    font-size: 14px;
+    color: var(--warm-gray);
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  .callout.crimson { border-left-color: var(--crimson); }
+  .callout.matcha  { border-left-color: var(--matcha); }
+  .callout strong  { color: var(--warm-gray); }
+
+  /* ── Action steps ─────────────────────────────────────────── */
+  .action-list {
+    counter-reset: actions;
+    list-style: none;
+    padding: 0;
+  }
+  .action-list li {
+    counter-increment: actions;
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .action-list li::before {
+    content: counter(actions);
+    min-width: 30px; height: 30px;
+    background: var(--burnt);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .action-list li .action-text { font-size: 14px; line-height: 1.6; }
+  .action-list li .action-text strong { color: var(--warm-gray); display: block; margin-bottom: 4px; }
+  .action-list li .action-text span { color: var(--muted); font-size: 13px; }
+
+  /* ── Nav mockup ───────────────────────────────────────────── */
+  .nav-mockup {
+    background: var(--crimson);
+    border-radius: 12px;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .nav-mockup-bar {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 32px;
+  }
+  .nav-mockup-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .nav-mockup-tabs {
+    display: flex;
+    gap: 4px;
+  }
+  .nav-tab-mock {
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+  }
+  .nav-tab-mock.active { background: rgba(255,255,255,0.15); color: white; }
+  .nav-mockup-subbar {
+    background: rgba(0,0,0,0.2);
+    padding: 10px 24px;
+    display: flex;
+    gap: 24px;
+  }
+  .nav-sub-link {
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+  }
+  .nav-sub-link.active { color: var(--burnt-lt); font-weight: 700; }
+
+  /* ── Footer ───────────────────────────────────────────────── */
+  .doc-footer {
+    background: var(--warm-gray);
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .doc-footer strong { color: white; }
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══════════════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">IP Attorney × UI/UX Review · July 2026</div>
+    <h1>Dig In needs to stop<br/>being <span>70 things</span><br/>and start being<br/><span>one unforgettable one.</span></h1>
+    <p class="hero-sub">A complete audit of what to keep, what to merge, what to cut, and the new design language that makes the app feel like you walked into 2002 and someone was actually glad you showed up.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span class="num">70+</span><span class="lbl">pages today</span></div>
+      <div class="hero-meta-item"><span class="num">5</span><span class="lbl">pillars proposed</span></div>
+      <div class="hero-meta-item"><span class="num">18</span><span class="lbl">pages to cut/merge</span></div>
+      <div class="hero-meta-item"><span class="num">9</span><span class="lbl">IP assets to protect</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="doc-body">
+
+  <!-- ══ SECTION 1 — THE PROBLEM ════════════════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num crimson">1</div>
+      <h2>The Core Problem</h2>
+    </div>
+    <p class="section-intro">The app is brilliant but it's trying to be every idea you've ever had, all at once, which means a new user opens it and doesn't know where to stand. From a UX and IP standpoint, this is the biggest risk right now.</p>
+
+    <div class="callout crimson">
+      <strong>IP Attorney lens:</strong> When you claim IP on a platform that does 70 things, you can't claim distinctiveness in any of them. A competitor can copy one piece and say "we only do that one thing — we're different." The more you scatter, the harder it is to protect. The goal is to own a tightly defined lane so clearly that copying it is obvious infringement.
+    </div>
+    <div class="callout">
+      <strong>UX lens:</strong> A first-time user has about 8 seconds of goodwill before they feel lost. Right now, the "Explore" dropdown alone has <strong>23 items</strong>. That's not a menu — that's an anxiety attack. People will leave before they discover the best features (Nova, Girl Dinner, CravingCompass) because they can't find them.
+    </div>
+    <div class="callout matcha">
+      <strong>Your vision translated:</strong> You said it yourself — people love aimlessly scrolling, but you want to stop that. That means the app has to make the decision for them with confidence. Show one compelling thing immediately. Let them discover depth over time. The app should feel like a warm, specific invitation — not a warehouse.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 2 — PAGE AUDIT ═════════════════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num burnt">2</div>
+      <h2>Full Page Audit — Keep, Merge, Cut</h2>
+    </div>
+    <p class="section-intro">Every route in App.jsx has been reviewed. The goal is to get from 50+ user-facing routes down to about 20 — each one purposeful, each one doing something the others can't.</p>
+
+    <div class="audit-grid">
+      <!-- KEEP -->
+      <div class="audit-col">
+        <div class="audit-col-head keep">KEEP — Core Identity</div>
+        <div class="audit-items">
+          <div class="audit-item keep">/ Home<span class="why">First impression. Needs a visual overhaul.</span></div>
+          <div class="audit-item keep">/recipes + /recipe<span class="why">The foundation. Can't cut this.</span></div>
+          <div class="audit-item keep">/my-cookbook<span class="why">Personal + collectible. Keep.</span></div>
+          <div class="audit-item keep">/girl-dinner<span class="why">Major IP asset. Must stay prominent.</span></div>
+          <div class="audit-item keep">/craving-compass<span class="why">Unique NLP feature. Protectable.</span></div>
+          <div class="audit-item keep">/nova<span class="why">The Nest is the emotional heart. Non-negotiable.</span></div>
+          <div class="audit-item keep">/kitchen-alchemist<span class="why">Core tool. Keep as the "lab" hub.</span></div>
+          <div class="audit-item keep">/leaderboard<span class="why">Social proof + retention loop.</span></div>
+          <div class="audit-item keep">/circles<span class="why">Community feature. Key to the mission.</span></div>
+          <div class="audit-item keep">/profile<span class="why">Identity and personal data.</span></div>
+          <div class="audit-item keep">/meal-plan<span class="why">High utility. Keep.</span></div>
+          <div class="audit-item keep">/zero-proof<span class="why">Distinctive positioning. Keep.</span></div>
+          <div class="audit-item keep">/chaos-night<span class="why">Fun + brand personality. Keep.</span></div>
+          <div class="audit-item keep">/shopping<span class="why">High practical utility. Keep.</span></div>
+          <div class="audit-item keep">/pantry<span class="why">Merge with PantryRolodex into one tabbed page.</span></div>
+          <div class="audit-item keep">/badges<span class="why">Gamification + retention. Keep.</span></div>
+          <div class="audit-item keep">/discover<span class="why">The exploration hub. Needs a redesign.</span></div>
+          <div class="audit-item keep">/city-explorer<span class="why">Connects to your travel vision.</span></div>
+        </div>
+      </div>
+
+      <!-- MERGE -->
+      <div class="audit-col">
+        <div class="audit-col-head merge">MERGE — Consolidate Into Hubs</div>
+        <div class="audit-items">
+          <div class="audit-item merge">/feed + /social + /reels<span class="why">→ ONE community feed with tabs: Posts / Reels / Stories. Three separate pages for the same concept is confusing.</span></div>
+          <div class="audit-item merge">/craving + /craving-compass + /craving-tracker<span class="why">→ Already partially done. Finish the job. One /cravings page, three tabs.</span></div>
+          <div class="audit-item merge">/kitchen-alchemist + /fusion + /remix + /build-bar<span class="why">→ ONE "Kitchen Lab" hub with 4 modes. All four are "invent a recipe" variations.</span></div>
+          <div class="audit-item merge">/pantry + /pantry-recipes<span class="why">→ One Pantry with tabs: Inventory / Recipes from what I have.</span></div>
+          <div class="audit-item merge">/allergies + /wellness + /cravings (health)<span class="why">→ Already consolidated as HealthProfile. Just clean it up and rename to "My Health."</span></div>
+          <div class="audit-item merge">/copycat + /drink-scan + /zero-proof<span class="why">→ Already CopycatDrinks. Good. Just surface it better.</span></div>
+          <div class="audit-item merge">/discover + /global-food + /city-explorer<span class="why">→ One "Explore" hub. Global recipes, city food maps, and deals all live here.</span></div>
+          <div class="audit-item merge">/checkin + /occasions<span class="why">→ Occasions becomes the check-in. "I'm cooking for…" sets the mood and logs it.</span></div>
+          <div class="audit-item merge">/pixel-creator<span class="why">→ Absorb as a feature inside My Cookbook / profile. Not a standalone destination.</span></div>
+          <div class="audit-item merge">/recipe-cards + /recipe-ai<span class="why">→ Merge into /recipes as tabs or sidebar actions, not separate routes.</span></div>
+          <div class="audit-item merge">/table<span class="why">→ Absorb into Circles or the community feed. "The Table" concept works as a section, not a page.</span></div>
+          <div class="audit-item merge">/boards<span class="why">→ Absorb into My Cookbook as a "Collections" tab.</span></div>
+        </div>
+      </div>
+
+      <!-- CUT -->
+      <div class="audit-col">
+        <div class="audit-col-head cut">CUT — Remove From User-Facing App</div>
+        <div class="audit-items">
+          <div class="audit-item cut">/analytics<span class="why">Internal B2B dashboard. Move to a separate admin portal. Users should never land here.</span></div>
+          <div class="audit-item cut">/market-metrics<span class="why">Same — B2B intelligence, not a user feature. Admin panel only.</span></div>
+          <div class="audit-item cut">/user-metrics<span class="why">Same. Rename to "Founder Dashboard" and gate it behind your login only.</span></div>
+          <div class="audit-item cut">/commute (CommuteRoute)<span class="why">Too niche and overlaps CravingCompass. Cut.</span></div>
+          <div class="audit-item cut">/rural-trend<span class="why">Internal research tool. Not a user destination. Admin only.</span></div>
+          <div class="audit-item cut">/carplay<span class="why">CarPlayDashboard is experimental. Not ready for users. Remove from router.</span></div>
+          <div class="audit-item cut">/pixel-map + /pixel-ingredient<span class="why">Demo pages. Should never be public routes.</span></div>
+          <div class="audit-item cut">/widget<span class="why">Dev tool, not a user destination. Remove or gate.</span></div>
+          <div class="audit-item cut">/nudges<span class="why">Nova Nudges are ambient — they should appear on other pages, not have their own route. This creates a destination for something that should be a feeling.</span></div>
+          <div class="audit-item cut">/education (as a route)<span class="why">Educational context should live inside /recipe and /nova naturally. A separate /education page competes with itself.</span></div>
+          <div class="audit-item cut">/deals (standalone)<span class="why">Deals belong inside Explore or Girl Dinner as a "budget mode" filter. Not its own page.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 3 — NEW INFORMATION ARCHITECTURE ═══════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num matcha">3</div>
+      <h2>New Information Architecture — 5 Pillars</h2>
+    </div>
+    <p class="section-intro">Everything collapses into 5 clear sections. A user can describe the app in one sentence: <em>"It's where I cook, create, explore food from other places, connect with people who love eating, and Nova keeps me sane through all of it."</em></p>
+
+    <div class="pillars">
+      <div class="pillar pillar-1">
+        <span class="pillar-icon">🍳</span>
+        <h3>COOK</h3>
+        <ul>
+          <li>Recipes</li>
+          <li>My Cookbook</li>
+          <li>Girl Dinner</li>
+          <li>Meal Plan</li>
+          <li>Pantry</li>
+          <li>Shopping List</li>
+          <li>Chaos Night</li>
+          <li>Occasions</li>
+        </ul>
+      </div>
+      <div class="pillar pillar-2">
+        <span class="pillar-icon">⚗️</span>
+        <h3>CREATE</h3>
+        <ul>
+          <li>Kitchen Lab</li>
+          <li>→ Alchemist mode</li>
+          <li>→ Fusion mode</li>
+          <li>→ Remix mode</li>
+          <li>→ Build Bar</li>
+          <li>ZeroProof / Copycat</li>
+          <li>Barcode Scan</li>
+          <li>Pixel Dish</li>
+        </ul>
+      </div>
+      <div class="pillar pillar-3">
+        <span class="pillar-icon">🗺️</span>
+        <h3>EXPLORE</h3>
+        <ul>
+          <li>CravingCompass</li>
+          <li>Global Food</li>
+          <li>City Explorer</li>
+          <li>Deals + Budget</li>
+          <li>Discover</li>
+          <li>Trending</li>
+          <li>Travel Mode</li>
+        </ul>
+      </div>
+      <div class="pillar pillar-4">
+        <span class="pillar-icon">🌐</span>
+        <h3>CONNECT</h3>
+        <ul>
+          <li>Community Feed</li>
+          <li>7-Second Reels</li>
+          <li>Kitchen Circles</li>
+          <li>Leaderboard</li>
+          <li>Dish Submissions</li>
+          <li>Badges</li>
+          <li>Events</li>
+        </ul>
+      </div>
+      <div class="pillar pillar-5">
+        <span class="pillar-icon">✨</span>
+        <h3>NOVA</h3>
+        <ul>
+          <li>The Nest</li>
+          <li>Shadow-to-Light</li>
+          <li>Happiness Engine</li>
+          <li>Tone Settings</li>
+          <li>Memory Vault</li>
+          <li>Nudges (ambient)</li>
+          <li>Ask Nova</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Navigation reality check:</strong> The new nav has exactly 5 items. COOK · CREATE · EXPLORE · CONNECT · NOVA. Each one has a clean dropdown of 5–8 sub-pages max. The current "Explore" dropdown has 23 items — a user has to scroll the dropdown just to read it. That's over.
+    </div>
+
+    <!-- Nav mockup -->
+    <div class="nav-mockup">
+      <div class="nav-mockup-bar">
+        <div class="nav-mockup-brand">DIG IN</div>
+        <div class="nav-mockup-tabs">
+          <div class="nav-tab-mock active">Cook</div>
+          <div class="nav-tab-mock">Create</div>
+          <div class="nav-tab-mock">Explore</div>
+          <div class="nav-tab-mock">Connect</div>
+          <div class="nav-tab-mock">Nova</div>
+        </div>
+      </div>
+      <div class="nav-mockup-subbar">
+        <span class="nav-sub-link active">Recipes</span>
+        <span class="nav-sub-link">Girl Dinner</span>
+        <span class="nav-sub-link">Meal Plan</span>
+        <span class="nav-sub-link">My Pantry</span>
+        <span class="nav-sub-link">Shopping</span>
+        <span class="nav-sub-link">Chaos Night</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 4 — DESIGN LANGUAGE ═══════════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num crimson">4</div>
+      <h2>The New Design Language — Pride of Barbados</h2>
+    </div>
+    <p class="section-intro">The Pride of Barbados is a fiery tropical flower — crimson and orange petals, spiky and alive, thriving in heat. That's the app's visual identity. Warm, bold, textured. Not corporate. Not sanitized. Something that feels grown, not manufactured.</p>
+
+    <div class="texture-block">
+      <h3>The Feel: 2002, but Make It Now</h3>
+      <p>Warm backgrounds instead of blinding white. Rounded, soft cards that feel like something you can touch. Typefaces with personality — a serif for headlines that feels like it was set by hand. Burnt orange CTAs because orange says "go" without aggression. Matcha green for anything that says "yes, you did it." Crimson for depth, grounding, the thing you come back to.</p>
+    </div>
+
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#7A1F1F;"></div>
+        <div class="swatch-info">
+          <div class="name">Deep Crimson</div>
+          <div class="hex">#7A1F1F</div>
+          <div class="role">Primary brand / nav / headers</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#C45C1A;"></div>
+        <div class="swatch-info">
+          <div class="name">Burnt Orange</div>
+          <div class="hex">#C45C1A</div>
+          <div class="role">CTAs / accents / interactive</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#5A7A45;"></div>
+        <div class="swatch-info">
+          <div class="name">Matcha Green</div>
+          <div class="hex">#5A7A45</div>
+          <div class="role">Success / nature / Girl Dinner</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#FDF6EC;"></div>
+        <div class="swatch-info">
+          <div class="name">Warm Cream</div>
+          <div class="hex">#FDF6EC</div>
+          <div class="role">Page background (NOT white)</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#3A2E28;"></div>
+        <div class="swatch-info">
+          <div class="name">Espresso</div>
+          <div class="hex">#3A2E28</div>
+          <div class="role">Body text / dark mode base</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#6A4A9C;"></div>
+        <div class="swatch-info">
+          <div class="name">Nova Violet</div>
+          <div class="hex">#6A4A9C</div>
+          <div class="role">Nova / emotional / The Nest</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h4>Typography: Playfair Display + Inter</h4>
+        <p>Playfair Display for all headings — it has elegance and warmth without being stiff. Inter for body copy because it's clean at small sizes. Never Helvetica, never Roboto. Those fonts say "I work at a tech company." Playfair says "I have a kitchen."</p>
+      </div>
+      <div class="feature-card crimson">
+        <h4>Background: Warm Cream, Not White</h4>
+        <p>Pure white (#FFF) makes an app look like a spreadsheet. The cream (#FDF6EC) makes it feel like a cookbook. Every page background gets this warmth. Cards are white, but they float on cream. This single change makes the whole app feel alive.</p>
+      </div>
+      <div class="feature-card matcha">
+        <h4>The Barbados Petal Motif</h4>
+        <p>A subtle SVG radial petal pattern — 8-10 elongated ellipses rotating from a center point. Use it as a faint texture on hero sections, card backgrounds, and the Nova page. It ties the visual identity to the brand name without using literal imagery.</p>
+      </div>
+      <div class="feature-card purple">
+        <h4>Motion: Intentional, Warm, Slow</h4>
+        <p>2002 energy means things don't snap — they ease in. 300ms transitions with ease-out curves. Cards lift on hover with a soft shadow, not a harsh jump. Nova's responses should fade in word by word, not pop instantly. Everything breathes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 5 — NEW FEATURES TO BUILD ═════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num burnt">5</div>
+      <h2>New Features From Your Vision — What to Actually Build</h2>
+    </div>
+    <p class="section-intro">You described a lot of ideas. Here's what's worth building right now vs. what's a Phase 2+ concept. The rule: if it creates community, generates content, or makes a user feel seen — build it now. If it requires buying land — that's later.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h4>Dish Submission + Leaderboard Flip Card</h4>
+        <p>User cooks a recipe → takes a photo → submits it to the leaderboard. The card flips to reveal the original recipe. A checkmark badge shows if they followed it faithfully vs. remixed. Community votes. This is your Instagram moment but it has <em>craft attached to it</em>.</p>
+        <span class="ip-tag">BUILD NOW — HIGH IP VALUE</span>
+      </div>
+      <div class="feature-card crimson">
+        <h4>Whimsy Week Plan</h4>
+        <p>A curated 7-day plan Nova builds for you based on your mood. Not just recipes — activities, check-ins, small adventures. "Today: cook this, try this café, share this with your circle." The lifestyle coaching feature you described, but grounded in food. Send this to micro-influencers as a gift kit concept.</p>
+        <span class="ip-tag">BUILD NOW</span>
+      </div>
+      <div class="feature-card matcha">
+        <h4>City Food Passport</h4>
+        <p>When you travel to a new city, the app unlocks a stamp. You see what dishes the city is known for, which local spots serve them, what Dig In users have cooked from that region. Ties to your travel brand partnership vision. Referral code integration with travel brands and credit cards lives here naturally.</p>
+        <span class="ip-tag">BUILD NOW</span>
+      </div>
+      <div class="feature-card purple">
+        <h4>Grow It Yourself — Apartment Garden Mode</h4>
+        <p>You mentioned apartment food growing. This is a feature, not an app. A tab inside Pantry: "Grow your own." Shows what you can grow in a window box based on your climate zip code. Links to Girl Dinner recipes using only what you grew. This is a quiet but powerful community story.</p>
+        <span class="ip-tag">PHASE 2</span>
+      </div>
+      <div class="feature-card">
+        <h4>People Podcast Integration</h4>
+        <p>The "hear everyone's story" concept — a podcast embed inside the app where regular people talk about food memories. Episode list, with each episode tied to a recipe. You can listen while cooking. This becomes the content engine that feeds social and community without requiring video production from you daily.</p>
+        <span class="ip-tag">PHASE 2</span>
+      </div>
+      <div class="feature-card crimson">
+        <h4>Referral Shoutout System</h4>
+        <p>Brand partner pages inside the app. Not banner ads — curated "I used this" moments. A matcha brand sponsors the Girl Dinner page. A travel card sponsors the City Explorer. Users click → referral link → you earn. Feels like a recommendation from a friend, not an ad. This is how you make money before VC.</p>
+        <span class="ip-tag">BUILD NOW — REVENUE</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 6 — IP PROTECTION TABLE ════════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num matcha">6</div>
+      <h2>IP Protection — What's Yours and How to Protect It</h2>
+    </div>
+    <p class="section-intro">From an IP attorney standpoint, the following features have protectable elements right now. These are the things that should be in trade secret filings and provisional patent applications before you demo this publicly to anyone outside a signed NDA.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>What Makes It Protectable</th>
+          <th>Type</th>
+          <th>Action Needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shadow-to-Light Protocol</td>
+          <td>7-phase emotional recovery sequence (detect → validate → mirror → reframe → reset → pivot → anchor) implemented as a structured algorithm. The specific phase names + transitions are distinctive.</td>
+          <td><span class="tag-protect">PATENT</span></td>
+          <td>Provisional application — describe the algorithm as a method claim.</td>
+        </tr>
+        <tr>
+          <td>Girl Dinner SATIETY_PRINCIPLE</td>
+          <td>The 3-lever satiety model (sensory variety + protein/fiber anchor + visual presentation ≠ calorie math) as a decision engine, combined with 8 named MOODs as input states.</td>
+          <td><span class="tag-protect">PATENT</span></td>
+          <td>Provisional — method claim for mood-driven satiety recipe generation.</td>
+        </tr>
+        <tr>
+          <td>CravingCompass NLP → Store Routing</td>
+          <td>The pipeline: free-text craving → 8-flavor profile decode → real lat/lng store routing with life-stage context tagging. No competitor does all three steps as one system.</td>
+          <td><span class="tag-protect">PATENT</span></td>
+          <td>Provisional — claim the full pipeline as a novel method.</td>
+        </tr>
+        <tr>
+          <td>Dish Submission Flip Card</td>
+          <td>The "flip photo to reveal recipe + faithful/remixed badge" mechanism as a social cooking verification system. The specific UX interaction is potentially novel trade dress.</td>
+          <td><span class="tag-trade">TRADE DRESS</span></td>
+          <td>Document the interaction spec and date-stamp it before launch.</td>
+        </tr>
+        <tr>
+          <td>Chemical Knowledge Graph</td>
+          <td>The Maillard/Protein/Collagen/Emulsion reaction data mapped to cooking steps with real temperature targets, sourced from Hervé This. Compiled as a proprietary dataset.</td>
+          <td><span class="tag-copy">COPYRIGHT + TRADE SECRET</span></td>
+          <td>Register the dataset as a compilation copyright. Mark as trade secret internally.</td>
+        </tr>
+        <tr>
+          <td>Happiness Engine — 5 Loops</td>
+          <td>The specific combination of Gratitude Log, Win Collection, Kindness Chain, Helping Hand, and Lightness Index as a behavioral reinforcement system read by the AI to pace tone.</td>
+          <td><span class="tag-copy">COPYRIGHT + PATENT</span></td>
+          <td>Provisional — the system where AI reads emotional state from loop scores to adjust output tone is patentable as a method.</td>
+        </tr>
+        <tr>
+          <td>Thermodynamic Engine</td>
+          <td>calculate_step_duration(ingredient, temp_target) — real engineering applied to cooking time prediction. High-heat vs. slow-braise variance models coded as functions.</td>
+          <td><span class="tag-protect">PATENT + TRADE SECRET</span></td>
+          <td>Provisional + mark source code as trade secret in internal documentation.</td>
+        </tr>
+        <tr>
+          <td>Recipe Remix Engine (81 combos)</td>
+          <td>The 9×9 matrix of bases × fillings with the insight "the base barely matters — the filling does the flavor work" coded as a decision algorithm.</td>
+          <td><span class="tag-copy">COPYRIGHT + PATENT</span></td>
+          <td>Copyright the specific matrix. Provisional on the method.</td>
+        </tr>
+        <tr>
+          <td>Nova Tone Personality System</td>
+          <td>The 5 named tone personalities (Listener, Calm, Coach, Cheerleader, Sassy) selected by user and dynamically adjusted by the Lightness Index. The specific names + behavioral definitions are copyright; the system is patentable.</td>
+          <td><span class="tag-copy">COPYRIGHT + PATENT</span></td>
+          <td>Copyright the definitions. Provisional on the AI tone-selection system.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout crimson">
+      <strong>Critical warning:</strong> Every time you demo this app to someone without a signed NDA, you start a public disclosure clock. In the US, you have 12 months from first public disclosure to file a patent. Do not let that clock run without filing at least a provisional. A provisional costs $320 if you qualify as a micro-entity and gives you 12 months of "patent pending" protection.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 7 — YOUR VISION, TRANSLATED ════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num crimson">7</div>
+      <h2>Your Vision, Translated Into Product Strategy</h2>
+    </div>
+    <p class="section-intro">You said a lot in your message. Here's what it means as product decisions, not dreams.</p>
+
+    <ul class="action-list">
+      <li>
+        <div class="action-text">
+          <strong>"People want to feel like they're the main event."</strong>
+          <span>The Home screen should open on YOUR activity, not generic content. Not "trending recipes" — "You cooked 3 times this week. Nova noticed. Here's what's next for you." The app should feel like it was built for the specific person who opened it.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"I don't want to be the brand face — I want it to be faceless."</strong>
+          <span>Good. The app is the personality. Nova is the face. Your name doesn't need to be on anything. The Pride of Barbados visual identity carries the brand. You show up in the podcast and the events — but the app stands alone.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"I want travel brand and credit card partnerships."</strong>
+          <span>The City Food Passport feature IS that partnership. When a user checks in at a new city and unlocks their stamp, a branded "How to eat well in [City] for under $X with [Card Name]" card appears. That's a native ad that feels like a gift, not an interruption. Brands will pay for that placement.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"People don't want products pushed on them — they want to be entertained first."</strong>
+          <span>Function before monetization. The app earns trust by being actually useful (CravingCompass finding you a real store, Girl Dinner actually making you full, Nova actually listening). Then the referral and partnership revenue is a side effect of use, not the point. Build the function first. Revenue follows trust.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"I keep adding ideas and need to minimize and bridge them together."</strong>
+          <span>Done. The 5-pillar structure above is that bridge. Every idea you have from now on goes into one of 5 buckets. If it doesn't fit in any bucket, it's Phase 3. The buckets don't get a 6th column until the first 5 are polished and earning.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"Recipe apps are boring and nobody cares about people's stories."</strong>
+          <span>True. Which is why the leaderboard submission + flip card feature is the killer move. It's not a story about a person — it's a result. A finished dish. Proof that it works. That's what people actually want to see. You finished it → show off → get ranked. No backstory required.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"Connect people in unwalkable cities, get them out of their area."</strong>
+          <span>The City Explorer + Food Passport + Circles features do this without you having to be physically present. A user in rural Ohio sees a circle of people cooking the same dish in Denver and thinks "I want to go there." The app creates desire to travel, not just information about it.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>"I want a monopoly on food experience in the US."</strong>
+          <span>That starts with owning one thing so completely that no competitor can touch it. The emotional food AI space (Nova + Girl Dinner + the satiety science) is that thing. Once you own that lane, every other feature is an extension of it — not a separate product.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 8 — IMMEDIATE PRIORITY LIST ════════════════════ -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num burnt">8</div>
+      <h2>What to Do This Month — In Order</h2>
+    </div>
+    <p class="section-intro">Everything prioritized. Do these in order. Don't start #3 before #1 is done.</p>
+
+    <ul class="action-list">
+      <li>
+        <div class="action-text">
+          <strong>Cut the 11 routes that shouldn't be public.</strong>
+          <span>Remove /analytics, /market-metrics, /user-metrics, /commute, /rural-trend, /carplay, /pixel-map, /pixel-ingredient, /widget, /nudges (as a page), /education (as a page) from App.jsx. This alone makes the app feel 40% less overwhelming. Do it before showing anyone.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>Consolidate the Kitchen Lab into one page.</strong>
+          <span>Merge /kitchen-alchemist, /fusion, /remix, /build-bar into one /lab page with 4 tab modes. Same code, one destination. This is a 2-day refactor that eliminates 3 confusing menu items.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>Rebuild the Nav with the 5-pillar structure.</strong>
+          <span>COOK / CREATE / EXPLORE / CONNECT / NOVA. Max 8 items per dropdown. The "Explore" dropdown goes from 23 items to 6. This is the most visible user-facing change and takes about a day.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>Apply the new color palette globally.</strong>
+          <span>Swap the existing theme to crimson (#7A1F1F), burnt orange (#C45C1A), matcha (#5A7A45), and warm cream (#FDF6EC) backgrounds. Add the Barbados petal SVG motif to the Hero, Nova page, and Girl Dinner headers. This is a CSS/design token update, not a rebuild.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>Build the Dish Submission + Flip Card Leaderboard.</strong>
+          <span>This is the feature that will get people to open the app again tomorrow. User takes a photo → submits → card flips to recipe → community votes. Build an MVP version in one sprint. This is your retention hook and your IP moment.</span>
+        </div>
+      </li>
+      <li>
+        <div class="action-text">
+          <strong>File provisional patent applications on the top 3 systems.</strong>
+          <span>Shadow-to-Light, CravingCompass pipeline, and the Girl Dinner satiety engine. These three are the clearest, most novel, and most at risk from larger companies copying them once you're visible. File before your next public demo.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="doc-footer">
+  <strong>Dig In — UX + IP Strategy Review</strong><br/>
+  Prepared July 2026 · Confidential · For founder use<br/>
+  This document is proprietary to Dig In. Do not distribute without NDA.
+</div>
+
+</body>
+</html>
