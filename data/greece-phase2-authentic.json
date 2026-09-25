@@ -1,0 +1,261 @@
+{
+  "country": "Greece",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "gre-break-yogurt",
+      "name": "Greek Yogurt with Honey",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 0,
+      "description": "Thick creamy Greek yogurt drizzled with honey and walnuts",
+      "seasonings": [
+        "honey",
+        "walnuts"
+      ],
+      "ingredients": [
+        "2 cups Greek yogurt",
+        "2 tbsp honey",
+        "1/4 cup walnuts",
+        "Fresh berries"
+      ],
+      "instructions": [
+        "Spoon yogurt into bowls",
+        "Drizzle with honey",
+        "Top with walnuts",
+        "Add fresh berries",
+        "Serve cold"
+      ],
+      "notes": "Greek yogurt is strained and very thick",
+      "fun_fact": "Greek yogurt is staple of Mediterranean diet",
+      "alternatives": [
+        "Different nuts",
+        "Granola topping",
+        "Different berries"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "gre-lunch-souvlaki",
+      "name": "Souvlaki (Grilled Skewers)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 15,
+      "description": "Marinated meat or seafood grilled on skewers, served with pita and tzatziki",
+      "seasonings": [
+        "oregano",
+        "lemon",
+        "olive oil"
+      ],
+      "ingredients": [
+        "1.5 lbs pork or chicken, cubed",
+        "1/4 cup olive oil",
+        "2 tbsp lemon juice",
+        "2 tbsp oregano",
+        "4 cloves garlic",
+        "Pita bread",
+        "Tzatziki sauce",
+        "Lettuce",
+        "Tomato",
+        "Red onion"
+      ],
+      "instructions": [
+        "Make marinade with oil, lemon, oregano, garlic",
+        "Marinate meat 1 hour",
+        "Thread meat on skewers",
+        "Grill over high heat 12-15 minutes",
+        "Turn frequently",
+        "Serve in pita with tzatziki and vegetables"
+      ],
+      "notes": "Metal skewers work best",
+      "fun_fact": "Souvlaki is Greece's favorite street food",
+      "alternatives": [
+        "Shrimp souvlaki",
+        "Lamb version",
+        "Vegetables only"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "gre-dinner-moussaka",
+      "name": "Moussaka",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 90,
+      "description": "Layered eggplant and meat casserole with béchamel sauce",
+      "seasonings": [
+        "cinnamon",
+        "oregano"
+      ],
+      "ingredients": [
+        "3 eggplants",
+        "1 lb ground lamb or beef",
+        "1 onion",
+        "2 cloves garlic",
+        "1 can tomato sauce",
+        "1 tsp cinnamon",
+        "1 tsp oregano",
+        "4 tbsp butter",
+        "3 tbsp flour",
+        "2 cups milk",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Slice and salt eggplants, let sit 30 min",
+        "Pan-fry eggplant until golden",
+        "Brown meat, add tomato, spices",
+        "Make béchamel: melt butter, whisk in flour, add milk",
+        "Layer in baking dish: eggplant, meat, béchamel",
+        "Bake at 350°F for 60 minutes"
+      ],
+      "notes": "Complex but impressive dish",
+      "fun_fact": "Moussaka is considered Greece's national dish",
+      "alternatives": [
+        "Zucchini instead of eggplant",
+        "Lighter sauce",
+        "Meatless version"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "gre-snack-saganaki",
+      "name": "Saganaki (Fried Cheese)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 5,
+      "description": "Fried cheese block served with lemon",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "1/2 lb feta or halloumi cheese",
+        "Flour",
+        "Oil for frying",
+        "Lemon wedge"
+      ],
+      "instructions": [
+        "Cut cheese into 1/2 inch thick slices",
+        "Lightly coat in flour",
+        "Heat oil to 350°F",
+        "Fry until golden and crispy",
+        "Serve immediately with lemon",
+        "Squeeze lemon juice over cheese"
+      ],
+      "notes": "Must be served immediately",
+      "fun_fact": "Traditionally prepared tableside at Greek restaurants",
+      "alternatives": [
+        "Different cheese types",
+        "Honey drizzle"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "gre-dessert-baklava",
+      "name": "Baklava",
+      "difficulty": "Hard",
+      "servings": 24,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Phyllo layers with nuts and honey syrup",
+      "seasonings": [
+        "cinnamon",
+        "honey"
+      ],
+      "ingredients": [
+        "Phyllo dough",
+        "Walnuts or pistachios",
+        "Butter",
+        "Honey",
+        "Cinnamon",
+        "Sugar"
+      ],
+      "instructions": [
+        "Layer phyllo with melted butter",
+        "Sprinkle nuts and cinnamon",
+        "Repeat layers",
+        "Cut into diamond shapes",
+        "Bake at 350°F for 40-45 minutes",
+        "Pour hot honey syrup over",
+        "Cool before serving"
+      ],
+      "notes": "Phyllo must be kept moist",
+      "fun_fact": "Baklava is Middle Eastern but very popular in Greece",
+      "alternatives": [
+        "Different nuts",
+        "Rose water in syrup"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "gre-drink-greek-coffee",
+      "name": "Greek Coffee",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 2,
+      "cookTime": 5,
+      "description": "Strong coffee made in special briki pot",
+      "seasonings": [
+        "sugar",
+        "cardamom"
+      ],
+      "ingredients": [
+        "1 cup water",
+        "1 tbsp Greek coffee",
+        "1/2 tsp sugar",
+        "Cardamom pod"
+      ],
+      "instructions": [
+        "Add water and coffee to briki",
+        "Stir well",
+        "Place over heat",
+        "When foam rises, remove from heat",
+        "Pour into cup",
+        "Add cardamom"
+      ],
+      "notes": "Very fine ground coffee essential",
+      "fun_fact": "Greek coffee is same as Turkish coffee",
+      "alternatives": [
+        "Without sugar for unsweetened",
+        "With more cardamom"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "gre-drink-ouzo",
+      "name": "Ouzo",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Anise-flavored Greek spirit served with ice water",
+      "seasonings": [
+        "anise"
+      ],
+      "ingredients": [
+        "Ouzo"
+      ],
+      "instructions": [
+        "Pour 2 oz ouzo",
+        "Add water or ice",
+        "Drink turns milky",
+        "Sip slowly"
+      ],
+      "notes": "Traditionally served with water",
+      "fun_fact": "Ouzo turns white when water is added due to oil content",
+      "alternatives": [
+        "Neat",
+        "Different ouzo brands"
+      ]
+    }
+  ]
+}

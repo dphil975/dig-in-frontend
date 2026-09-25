@@ -1,0 +1,665 @@
+{
+  "country": "France",
+  "region": "Western Europe",
+  "breakfast": [],
+  "lunch": [
+    {
+      "id": "fra-lunch-croque-monsieur",
+      "name": "Croque Monsieur (Ham and Cheese Sandwich)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 8,
+      "description": "Classic French lunch - toasted ham and cheese sandwich with mustard and b\u00e9chamel. Adding egg makes it Croque Madame",
+      "seasonings": [
+        "Dijon mustard",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "4 slices white bread",
+        "200g ham (sliced)",
+        "150g Emmental cheese (sliced)",
+        "2 tbsp butter",
+        "1 tbsp Dijon mustard",
+        "1 tbsp b\u00e9chamel sauce (optional)",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Butter outside of bread slices",
+        "On unbuttered side of 2 slices, spread thin layer of Dijon mustard and b\u00e9chamel",
+        "Layer ham and cheese on each",
+        "Top with second bread slice, buttered side out",
+        "Heat skillet over medium heat",
+        "Cook sandwich 3-4 minutes until golden and crispy on both sides",
+        "Press gently with spatula - cheese should melt completely",
+        "Serve hot with cornichons and mustard"
+      ],
+      "notes": "Medium heat prevents burning outside before cheese melts. Pressing helps cheese distribution",
+      "fun_fact": "Croque Monsieur is classic French lunch, adding egg makes it Croque Madame (Mrs. instead of Mr.)",
+      "alternatives": [
+        "Add fried egg to make Croque Madame",
+        "Use different cheese",
+        "Add tomato slice",
+        "Include p\u00e2t\u00e9"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 5,
+          "cook_time": 8,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 2,
+          "cook_time": 4,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 0,
+          "cook_time": 2,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "fra-lunch-salade-nicoise",
+      "name": "Salade Ni\u00e7oise (French Tuna Salad)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 25,
+      "cookTime": 15,
+      "description": "Traditional lunch from Nice - fresh salad with tuna, eggs, vegetables and anchovies. Uses local fresh ingredients",
+      "seasonings": [
+        "Dijon mustard",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "200g canned or cooked tuna",
+        "4 eggs (hard-boiled)",
+        "200g new potatoes (boiled)",
+        "100g green beans (blanched)",
+        "200g mixed lettuce",
+        "100g black olives",
+        "4 anchovy fillets",
+        "3 tbsp olive oil",
+        "1 tbsp red wine vinegar",
+        "1 tbsp Dijon mustard",
+        "Salt and pepper to taste",
+        "Cherry tomatoes"
+      ],
+      "instructions": [
+        "Arrange lettuce on large plate",
+        "Arrange potatoes, beans, tomatoes and olives in sections",
+        "Top with tuna chunks and egg wedges",
+        "Whisk olive oil, vinegar, mustard, salt and pepper for dressing",
+        "Drizzle dressing over salad",
+        "Top with anchovy fillets",
+        "Serve immediately at room temperature"
+      ],
+      "notes": "Traditional recipe calls for raw tuna, but cooked canned tuna is acceptable substitute",
+      "fun_fact": "Salade Ni\u00e7oise is traditional lunch from Nice, uses fresh local ingredients of Provence",
+      "alternatives": [
+        "Use fresh tuna instead of canned",
+        "Add grilled chicken",
+        "Include hard-boiled quail eggs",
+        "Make vegetarian without tuna"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 25,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 12,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 4,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "fra-lunch-ratatouille",
+      "name": "Ratatouille (French Vegetable Stew)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 40,
+      "description": "Proven\u00e7al vegetable stew from French countryside. Becomes more flavorful after sitting overnight",
+      "seasonings": [
+        "dried thyme",
+        "bay leaf",
+        "basil"
+      ],
+      "ingredients": [
+        "2 eggplants (diced)",
+        "2 zucchini (diced)",
+        "1 red bell pepper (diced)",
+        "1 yellow bell pepper (diced)",
+        "3 tomatoes (diced)",
+        "1 onion (diced)",
+        "4 cloves garlic (minced)",
+        "100ml olive oil",
+        "1 tsp dried thyme",
+        "1 bay leaf",
+        "Salt and pepper to taste",
+        "Fresh basil"
+      ],
+      "instructions": [
+        "Heat olive oil, saut\u00e9 onion and garlic until soft",
+        "Add eggplant and cook 10 minutes, stirring occasionally",
+        "Add zucchini, peppers, tomatoes, thyme and bay leaf",
+        "Cook over medium heat 20-30 minutes, stirring occasionally",
+        "Vegetables should be tender but not mushy",
+        "Season with salt and pepper",
+        "Garnish with fresh basil",
+        "Serve warm or at room temperature with crusty bread"
+      ],
+      "notes": "Ratatouille improves overnight as flavors meld. Can be made ahead and reheated",
+      "fun_fact": "Ratatouille is Proven\u00e7al vegetable dish from French countryside, becomes more flavorful after sitting overnight",
+      "alternatives": [
+        "Make into soup",
+        "Top with grilled bread and cheese",
+        "Serve cold as appetizer",
+        "Add beans for protein"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 40,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 24,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 12,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "fra-dinner-coq-au-vin",
+      "name": "French Coq au Vin (Chicken Braised in Red Wine)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 120,
+      "description": "Chicken braised in Burgundy wine - French dinner classic",
+      "seasonings": [
+        "bay leaves",
+        "thyme",
+        "rosemary"
+      ],
+      "ingredients": [
+        "1.5kg chicken, cut into 8 pieces (preferably rooster or dark meat)",
+        "750ml Pinot Noir wine (Burgundy preferred)",
+        "300g lardons (French bacon or pork belly), diced",
+        "400g pearl onions, peeled",
+        "300g mushrooms (cremini or button), halved",
+        "3 carrots, cut into 5cm pieces",
+        "4 cloves garlic, minced",
+        "2 bay leaves",
+        "3 sprigs fresh thyme",
+        "1 sprig parsley",
+        "2 tablespoons tomato paste",
+        "500ml chicken stock",
+        "2 tablespoons butter, softened",
+        "2 tablespoons flour",
+        "Salt and pepper to taste",
+        "2 tablespoons cognac or brandy (optional)"
+      ],
+      "instructions": [
+        "Optional: marinate chicken in wine with onion and herbs overnight",
+        "In heavy pot, cook lardons over medium heat until fat renders; remove with slotted spoon",
+        "Pat chicken dry; season with salt and pepper",
+        "Brown chicken pieces in bacon fat in batches, 6-8 minutes total; set aside",
+        "Add pearl onions to pot; brown 3 minutes; remove",
+        "Add carrots, mushrooms; saut\u00e9 5 minutes; remove",
+        "Add garlic, tomato paste; cook 2 minutes",
+        "Add wine, scraping up browned bits; simmer 5 minutes",
+        "Return chicken to pot; add stock, bay leaves, thyme, parsley",
+        "Bring to gentle boil; cover, reduce heat to low",
+        "Simmer 45-60 minutes until chicken tender",
+        "Return browned vegetables and lardons to pot",
+        "Simmer 15 minutes more",
+        "Make beurre mani\u00e9: mix soft butter and flour into paste; whisk into sauce",
+        "Simmer 3-4 minutes until sauce thickens",
+        "Taste and adjust salt/pepper",
+        "Serve with buttered egg noodles or crusty bread"
+      ],
+      "notes": "Marinating improves flavor but can be skipped",
+      "fun_fact": "Julia Child's famous recipe elevated this rustic dish",
+      "alternatives": [
+        "Use chicken thighs",
+        "Make with brandy",
+        "Add mushrooms"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 120,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 72,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 36,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "fra-dinner-beef-bourguignon",
+      "name": "Beef Bourguignon (Beef Stew in Red Wine)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 180,
+      "description": "French braised beef in burgundy wine - Julia Child's masterpiece",
+      "seasonings": [
+        "bay leaves",
+        "thyme",
+        "rosemary",
+        "red wine"
+      ],
+      "ingredients": [
+        "1.5kg beef chuck or brisket, cut into 3cm chunks",
+        "250g lardons (bacon), cubed",
+        "750ml Pinot Noir or Burgundy wine",
+        "250ml beef stock",
+        "2 carrots, chunked",
+        "2 onions, chunked",
+        "4 cloves garlic, minced",
+        "200g mushrooms, halved",
+        "24 pearl onions, peeled",
+        "2 tablespoons tomato paste",
+        "2 bay leaves",
+        "4 sprigs fresh thyme",
+        "1 sprig rosemary",
+        "2 tablespoons flour",
+        "2 tablespoons butter",
+        "Salt and pepper to taste",
+        "Oil for cooking"
+      ],
+      "instructions": [
+        "Cook lardons in large Dutch oven until fat renders, remove with slotted spoon",
+        "Pat beef dry, season with salt and pepper",
+        "Brown beef in batches in bacon fat (4 minutes per side), remove",
+        "In same pot, cook chunked carrots and onions 5 minutes, remove",
+        "Add minced garlic, cook 1 minute",
+        "Add tomato paste, cook 2 minutes",
+        "Sprinkle flour over vegetables, stir 1 minute",
+        "Add red wine, scrape up browned bits",
+        "Add beef stock, bay leaves, thyme, rosemary",
+        "Return beef and lardons to pot",
+        "Bring to boil, then cover and braise in 325\u00b0F oven for 2-2.5 hours",
+        "Add pearl onions and mushrooms to pot",
+        "Continue braising 30-45 minutes",
+        "Remove herb sprigs",
+        "In small bowl, mix butter and flour into paste (beurre mani\u00e9)",
+        "Whisk into stew to thicken slightly (optional)",
+        "Taste and adjust salt and pepper",
+        "Serve with egg noodles or crusty bread"
+      ],
+      "notes": "Low and slow cooking is essential. Wine and time create the magic",
+      "fun_fact": "Julia Child's recipe made Beef Bourguignon famous to American home cooks",
+      "alternatives": [
+        "Use different wine",
+        "Add potatoes",
+        "Make with venison",
+        "Use different mushrooms"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 180,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 108,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 54,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
+}

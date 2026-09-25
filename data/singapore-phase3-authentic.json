@@ -1,0 +1,587 @@
+{
+  "country": "Singapore",
+  "region": "Southeast Asia",
+  "breakfast": [
+    {
+      "id": "sgp-break-kaya-toast",
+      "name": "Kaya Toast (Singaporean Coconut Jam Toast)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 10,
+      "cookTime": 7,
+      "description": "Classic Singaporean breakfast of toast with silky coconut egg jam (kaya) and cold salted butter, traditionally served with half-boiled eggs and black coffee or tea",
+      "seasonings": [
+        "salt",
+        "white pepper"
+      ],
+      "ingredients": [
+        "2 slices bread (white or brioche)",
+        "3 tbsp kaya (coconut egg jam)",
+        "2 tbsp salted butter",
+        "2 eggs",
+        "Water for boiling",
+        "1 tbsp soy sauce",
+        "White pepper to taste"
+      ],
+      "instructions": [
+        "Make kaya toast: Toast bread slices in toaster or over charcoal until golden brown",
+        "Using serrated knife, carefully split each toasted slice in half horizontally",
+        "Expose steamy interior",
+        "Smear approximately 1.5 tbsp kaya generously on one half of toast",
+        "Top with slab of cold salted butter",
+        "Close sandwich with other toast half",
+        "Cut diagonally in half",
+        "Serve immediately",
+        "Make half-boiled eggs: Bring water to rolling boil in pot",
+        "Carefully place eggs in boiling water",
+        "Cook for 6-7 minutes to achieve soft-boiled eggs with runny yolks",
+        "Transfer immediately to ice bath to stop cooking",
+        "Gently tap and peel eggs",
+        "Place in small bowl or egg cup",
+        "Season with soy sauce and white pepper",
+        "Serve alongside kaya toast with black coffee or tea",
+        "Soft yolk can be mixed with seasonings and eaten with spoon",
+        "Toast pieces can be dipped into egg yolk"
+      ],
+      "notes": "Kaya is custard-like spread made from coconut milk, eggs, sugar, and pandan leaves. Can substitute with homemade kaya or store-bought versions",
+      "fun_fact": "Kaya toast is classic Singaporean breakfast found in every kopi tiam (coffee house). The traditional serving includes half-boiled eggs and black coffee (Kopi-O)",
+      "alternatives": [
+        "Make with homemade kaya",
+        "Serve with soft-boiled egg spread",
+        "Add jam instead of kaya",
+        "Make with different bread types"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 10,
+          "cook_time": 7,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 5,
+          "cook_time": 4,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 1,
+          "cook_time": 2,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "ingredientGroups": [
+        {
+          "title": "For the Kaya Toast",
+          "items": [
+            {
+              "amount": 2,
+              "unit": "slices",
+              "name": "Bread (white or brioche)",
+              "note": ""
+            },
+            {
+              "amount": 3,
+              "unit": "tbsp",
+              "name": "Kaya (coconut egg jam)",
+              "note": ""
+            },
+            {
+              "amount": 2,
+              "unit": "tbsp",
+              "name": "Salted butter",
+              "note": "Cold, straight from the fridge"
+            }
+          ]
+        },
+        {
+          "title": "For the Half-Boiled Eggs",
+          "items": [
+            {
+              "amount": 2,
+              "unit": "",
+              "name": "Eggs",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "pot",
+              "name": "Water for boiling",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "tbsp",
+              "name": "Soy sauce",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "pinch",
+              "name": "White pepper",
+              "note": "To taste"
+            }
+          ]
+        }
+      ],
+      "equipment": [
+        "Toaster (or grill)",
+        "Small pot",
+        "Serrated knife"
+      ],
+      "stepHelp": [
+        "Traditionally toasted over charcoal for a smoky edge, but a regular toaster on medium-high works fine — you want deep golden color, not just warm bread.",
+        null,
+        null,
+        "Don't be shy — kaya toast is meant to be generously filled, closer to a spread than a thin layer.",
+        "Keep the butter cold and in a slab rather than softened — it melts slowly into the hot toast for pockets of richness instead of disappearing completely.",
+        null,
+        null,
+        null,
+        null,
+        "Lower them in gently with a spoon rather than dropping them, so the shells don't crack.",
+        "6 minutes gives a very runny yolk, 7 minutes a slightly firmer but still soft one — timing is the whole game with half-boiled eggs.",
+        "This stops the cooking instantly — skip it and the eggs keep cooking from residual heat, overshooting the soft yolk you want.",
+        "Half-boiled eggs are delicate — crack the shell gently all over first, then peel, since the white is much softer than a hard-boiled egg.",
+        null,
+        null,
+        null,
+        null
+      ],
+      "variations": [
+        {
+          "title": "Homemade Kaya",
+          "text": "Make your own coconut egg jam from coconut milk, eggs, sugar, and pandan leaf for a fresher, more fragrant spread."
+        },
+        {
+          "title": "Different Bread",
+          "text": "Try it on thick white toast, brioche, or even a baguette for a different texture — traditional kopitiams often use a specific soft white loaf."
+        },
+        {
+          "title": "Jam Instead of Kaya",
+          "text": "In a pinch, any good fruit jam with cold butter makes a quick, if less traditional, version."
+        },
+        {
+          "title": "Steamed Egg Style",
+          "text": "Some kopitiams steam the eggs instead of boiling for an even silkier texture."
+        },
+        {
+          "title": "Extra Butter Layer",
+          "text": "Add a second thin slice of butter for an even richer bite, especially if your bread is on the drier side."
+        }
+      ],
+      "serveWith": {
+        "intro": "A kopitiam (coffee house) breakfast is built around this exact combination — toast, egg, and something to drink.",
+        "items": [
+          {
+            "title": "Kopi-O (Black Coffee)",
+            "text": "Strong, sweetened black coffee is the traditional kopitiam pairing."
+          },
+          {
+            "title": "Teh (Milk Tea)",
+            "text": "A sweet, creamy alternative to coffee if you want something milder."
+          },
+          {
+            "title": "Extra Half-Boiled Eggs",
+            "text": "Order or make a second egg on the side — they're the perfect dip for any leftover toast corners."
+          },
+          {
+            "title": "Fresh Fruit",
+            "text": "Something light like papaya or melon rounds out the richness of the buttery toast."
+          },
+          {
+            "title": "Extra Soy & Pepper",
+            "text": "Keep more on the table for dipping toast directly into the egg."
+          }
+        ]
+      },
+      "expertTips": [
+        {
+          "title": "Timing the Eggs Is Everything",
+          "text": "Have your water at a full rolling boil before the eggs go in, and start timing immediately — a slow simmer will give you inconsistent results."
+        },
+        {
+          "title": "Toast It Twice If Needed",
+          "text": "If your bread isn't crisp enough after one pass, toast it again — you want real crunch to contrast the soft kaya and butter."
+        },
+        {
+          "title": "Cold Butter, Hot Toast",
+          "text": "The contrast of cold butter against hot toast is the whole point — don't soften the butter first."
+        },
+        {
+          "title": "Season the Egg Simply",
+          "text": "Just soy sauce and white pepper — the egg's richness doesn't need much else."
+        }
+      ],
+      "storage": [
+        {
+          "title": "Kaya",
+          "text": "Store-bought or homemade kaya keeps in the fridge in a sealed jar for up to 2 weeks."
+        },
+        {
+          "title": "Assembled Toast",
+          "text": "Best eaten immediately — the toast loses its crunch quickly once assembled with the kaya and butter."
+        },
+        {
+          "title": "Eggs",
+          "text": "Half-boiled eggs don't store well and should be made fresh; they're not meant to be held at room temperature for long due to the soft-cooked yolk."
+        }
+      ],
+      "makeAhead": "The only truly make-ahead component is the kaya itself — a batch keeps in the fridge for up to 2 weeks, so you can make your own coconut jam once and have kaya toast ready to assemble any morning. The toast and eggs should always be made fresh to order.",
+      "faqs": [
+        {
+          "q": "Where can I find kaya?",
+          "a": "Look for it at Asian grocery stores, often in the jam or Southeast Asian foods aisle — or make your own from coconut milk, eggs, sugar, and pandan leaf."
+        },
+        {
+          "q": "How do I get the egg yolk really runny?",
+          "a": "6 minutes in a full rolling boil, straight into an ice bath, gives the classic very-runny kaya toast egg. Adjust by 30-second increments to find your preference."
+        },
+        {
+          "q": "Can I make this without a toaster?",
+          "a": "Yes — a dry skillet or grill pan over medium heat works, just watch it closely so it toasts evenly without burning."
+        },
+        {
+          "q": "Is the egg safe to eat half-boiled?",
+          "a": "As with any soft-cooked egg, use fresh, properly refrigerated eggs from a reliable source, and eat them freshly made rather than holding them at room temperature."
+        }
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "sgp-lunch-laksa",
+      "name": "Laksa (Spiced Noodle Soup)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Popular Singaporean lunch - rich, spiced coconut broth with noodles and seafood or chicken",
+      "seasonings": [
+        "laksa paste",
+        "coconut milk",
+        "fish sauce"
+      ],
+      "ingredients": [
+        "3 tbsp laksa paste",
+        "400ml coconut milk",
+        "500ml chicken or seafood broth",
+        "200g rice noodles",
+        "200g shrimp or chicken",
+        "2 eggs (hard-boiled, halved)",
+        "Bean sprouts",
+        "Fresh cilantro",
+        "Fresh basil",
+        "Lime wedges",
+        "Fried tofu cubes"
+      ],
+      "instructions": [
+        "Heat 1 tbsp oil in pot, add laksa paste and fry for 2 minutes until fragrant",
+        "Add coconut milk and broth, bring to simmer",
+        "Cook protein until done, add to soup",
+        "Cook rice noodles separately according to package",
+        "Divide noodles into bowls",
+        "Pour hot laksa broth over noodles",
+        "Top with egg, bean sprouts, cilantro, basil and fried tofu",
+        "Serve with lime wedge on side"
+      ],
+      "notes": "Laksa paste is essential - can be store-bought or homemade. Coconut milk creates rich, smooth base",
+      "fun_fact": "Laksa is popular Singaporean lunch with many regional variations throughout Southeast Asia",
+      "alternatives": [
+        "Make with mixed seafood",
+        "Use chicken instead of shrimp",
+        "Make vegetarian with tofu",
+        "Add candlenuts for richness"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 30,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 18,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 9,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "sgp-dinner-chicken-rice",
+      "name": "Hainanese Chicken Rice (Singapore Version)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 45,
+      "description": "Poached chicken with fragrant rice - Singapore's national dish",
+      "seasonings": [
+        "ginger",
+        "garlic",
+        "sesame oil",
+        "soy sauce"
+      ],
+      "ingredients": [
+        "1.5kg whole chicken or chicken thighs",
+        "2 liters chicken stock or water",
+        "1 piece ginger (5cm), smashed",
+        "4 cloves garlic, smashed",
+        "3 scallions, whole",
+        "2 bay leaves",
+        "Salt to taste",
+        "500g jasmine rice",
+        "3 tablespoons chicken fat or oil",
+        "4 cloves garlic, minced",
+        "1 tablespoon ginger, finely minced",
+        "For sauce: 2 tablespoons soy sauce, 1 tablespoon dark soy, 1 tablespoon rice vinegar, 1 clove garlic minced, 1 red chili sliced",
+        "For ginger sauce: 100g fresh ginger, minced, 3 tablespoons oil, salt, white pepper",
+        "Cucumber slices for garnish",
+        "Cilantro for garnish"
+      ],
+      "instructions": [
+        "Bring chicken stock to boil in large pot",
+        "Add smashed ginger, garlic, scallions, bay leaves",
+        "Carefully place whole chicken into boiling stock",
+        "Return to boil, then reduce heat to simmer",
+        "Simmer 35-40 minutes until chicken is fully cooked and tender",
+        "Remove chicken, reserve cooking liquid (skim fat for rice cooking)",
+        "Measure 750ml reserved chicken stock",
+        "Heat chicken fat or oil in saucepan over medium heat",
+        "Add minced garlic and ginger, stir-fry 2 minutes until fragrant",
+        "Add jasmine rice, stir constantly for 2 minutes until each grain is coated",
+        "Add reserved chicken stock and salt",
+        "Bring to boil, then reduce heat to low",
+        "Cover and cook 18-20 minutes until rice is fluffy",
+        "Let rest 5 minutes covered",
+        "Meanwhile, prepare soy-based sauce by combining ingredients",
+        "Prepare ginger sauce: mix minced ginger with hot oil, add salt and white pepper",
+        "Cut cooked chicken into serving pieces",
+        "Arrange rice on platter with chicken pieces on top",
+        "Garnish with cucumber slices and cilantro",
+        "Serve with both sauces on the side"
+      ],
+      "notes": "Cooking rice in chicken fat is essential for authentic flavor. Chicken must be fully submerged",
+      "fun_fact": "Hainanese Chicken Rice originated from Hainan province China but perfected and popularized by Singapore",
+      "alternatives": [
+        "Use chicken parts instead of whole bird",
+        "Add mushrooms to rice",
+        "Make with different sauces",
+        "Add soy-marinated eggs"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 45,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 27,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 13,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
+}

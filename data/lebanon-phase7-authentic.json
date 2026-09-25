@@ -1,0 +1,273 @@
+{
+  "country": "Lebanon",
+  "region": "Middle East",
+  "breakfast": [
+    {
+      "id": "leb-break-fattoush",
+      "name": "Fattoush Salad for Breakfast",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 5,
+      "description": "Lebanese salad with pita chips and vegetables",
+      "seasonings": [
+        "sumac",
+        "lemon"
+      ],
+      "ingredients": [
+        "Mixed greens",
+        "Tomatoes",
+        "Cucumber",
+        "Radish",
+        "Pita bread",
+        "Parmesan",
+        "Lemon juice",
+        "Olive oil",
+        "Sumac",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Cut pita into chips, toast until crispy",
+        "Chop vegetables finely",
+        "Combine in large bowl",
+        "Make dressing: lemon juice, olive oil, sumac",
+        "Toss salad with dressing",
+        "Top with pita chips",
+        "Serve immediately"
+      ],
+      "notes": "Pita chips must stay crispy",
+      "fun_fact": "Fattoush is Lebanese salad that comes to life with bread",
+      "alternatives": [
+        "Different vegetables",
+        "Without sumac",
+        "Add chickpeas"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "leb-lunch-shawarma",
+      "name": "Chicken Shawarma",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Spiced marinated chicken cooked on vertical spit",
+      "seasonings": [
+        "cumin",
+        "coriander",
+        "paprika"
+      ],
+      "ingredients": [
+        "3 lbs chicken",
+        "Yogurt marinade",
+        "Spices: cumin, coriander, paprika, turmeric",
+        "Garlic",
+        "Onion",
+        "Pita bread",
+        "Tahini sauce",
+        "Pickled vegetables"
+      ],
+      "instructions": [
+        "Marinate chicken 4+ hours",
+        "Cook on vertical spit or oven at 425°F",
+        "Slice thin from outside as it cooks",
+        "Grill/fry thinly sliced onions",
+        "Warm pita bread",
+        "Make tahini sauce",
+        "Assemble: pita, chicken, onions, tahini, pickles"
+      ],
+      "notes": "Requires vertical spit ideally",
+      "fun_fact": "Shawarma is Lebanese favorite street food",
+      "alternatives": [
+        "Lamb instead of chicken",
+        "Different sauce",
+        "Grilled instead of spit"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "leb-dinner-kibbeh",
+      "name": "Kibbeh (Meat Croquettes)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 30,
+      "description": "Lebanese fried bulgur and meat croquettes",
+      "seasonings": [
+        "cumin",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "1 cup bulgur",
+        "1 lb ground lamb",
+        "Onions",
+        "Pine nuts",
+        "Cumin",
+        "Cinnamon",
+        "Salt",
+        "Pepper",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Soak bulgur in water",
+        "Brown lamb with onions",
+        "Add pine nuts, spices",
+        "Cool lamb filling",
+        "Mix bulgur with salt, pepper",
+        "Form oval shells with filling inside",
+        "Fry at 350°F until golden",
+        "Drain on paper towels"
+      ],
+      "notes": "Requires shaping skill",
+      "fun_fact": "Kibbeh is Lebanese national dish",
+      "alternatives": [
+        "Beef instead of lamb",
+        "Baked version",
+        "Different stuffing"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "leb-snack-manakish",
+      "name": "Manakish (Flatbread)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Lebanese zaatar flatbread",
+      "seasonings": [
+        "zaatar"
+      ],
+      "ingredients": [
+        "Dough: flour, water, oil, salt, yeast",
+        "Zaatar: thyme, sumac, sesame",
+        "Olive oil",
+        "Cheese (optional)"
+      ],
+      "instructions": [
+        "Make yeast dough",
+        "Let rise 1 hour",
+        "Divide into pieces",
+        "Flatten on sheet",
+        "Mix zaatar with olive oil",
+        "Spread on dough",
+        "Add cheese if desired",
+        "Bake at 425°F for 15-20 minutes"
+      ],
+      "notes": "Zaatar is essential",
+      "fun_fact": "Manakish is Lebanese breakfast staple",
+      "alternatives": [
+        "Cheese version",
+        "Meat filling",
+        "Different herbs"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "leb-dessert-baklava",
+      "name": "Baklava with Pistachios",
+      "difficulty": "Hard",
+      "servings": 24,
+      "prepTime": 45,
+      "cookTime": 40,
+      "description": "Crispy phyllo with pistachios and honey",
+      "seasonings": [
+        "cinnamon"
+      ],
+      "ingredients": [
+        "Phyllo dough",
+        "2 cups pistachios",
+        "1 cup butter",
+        "Honey syrup",
+        "Cinnamon",
+        "Lemon juice"
+      ],
+      "instructions": [
+        "Layer phyllo with butter",
+        "Sprinkle pistachios between layers",
+        "Top with phyllo",
+        "Cut into diamonds",
+        "Bake at 350°F for 35-40 minutes",
+        "Heat honey with cinnamon and lemon",
+        "Pour hot honey over hot baklava"
+      ],
+      "notes": "Hot honey on hot baklava essential",
+      "fun_fact": "Baklava perfected in Lebanese kitchens",
+      "alternatives": [
+        "Walnuts instead of pistachios",
+        "Different nuts",
+        "Less honey"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "leb-drink-mint-lemonade",
+      "name": "Lebanese Mint Lemonade",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "Refreshing mint and lemon drink",
+      "seasonings": [
+        "mint"
+      ],
+      "ingredients": [
+        "6 fresh mint leaves (per glass)",
+        "1 lemon (per glass)",
+        "1 tbsp sugar (per glass)",
+        "Ice",
+        "Water"
+      ],
+      "instructions": [
+        "Muddle mint with sugar",
+        "Squeeze lemon juice",
+        "Add ice",
+        "Fill with water",
+        "Stir well",
+        "Serve immediately"
+      ],
+      "notes": "Fresh mint essential",
+      "fun_fact": "Mint lemonade is summer Lebanese drink",
+      "alternatives": [
+        "Add rose water",
+        "Different citrus",
+        "More or less sugar"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "leb-drink-arak",
+      "name": "Arak (Anise Spirit)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Lebanese anise spirit served with water",
+      "seasonings": [],
+      "ingredients": [
+        "Arak"
+      ],
+      "instructions": [
+        "Pour 1 oz arak in glass",
+        "Add ice",
+        "Add 3 oz water",
+        "Drink slowly with food",
+        "Turns milky white when water added"
+      ],
+      "notes": "Called 'milk of lions'",
+      "fun_fact": "Arak is Lebanese national spirit",
+      "alternatives": [
+        "Different water ratio",
+        "Neat",
+        "Different arak type"
+      ]
+    }
+  ]
+}

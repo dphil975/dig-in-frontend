@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#0f0f1a"/>
+
+  <!-- Steam wisps (pixel columns) -->
+  <rect x="164" y="80"  width="16" height="48" fill="#ffffff" opacity="0.35"/>
+  <rect x="164" y="64"  width="16" height="16" fill="#ffffff" opacity="0.20"/>
+  <rect x="248" y="64"  width="16" height="64" fill="#ffffff" opacity="0.35"/>
+  <rect x="248" y="48"  width="16" height="16" fill="#ffffff" opacity="0.20"/>
+  <rect x="332" y="80"  width="16" height="48" fill="#ffffff" opacity="0.35"/>
+  <rect x="332" y="64"  width="16" height="16" fill="#ffffff" opacity="0.20"/>
+
+  <!-- Pan handle -->
+  <rect x="352" y="224" width="112" height="32" fill="#f4a924"/>
+  <rect x="352" y="256" width="112" height="16" fill="#c8820a"/>
+  <rect x="448" y="208" width="32"  height="16" fill="#f4a924"/>
+  <rect x="448" y="272" width="32"  height="16" fill="#f4a924"/>
+
+  <!-- Pan body top rim -->
+  <rect x="96"  y="176" width="272" height="16" fill="#f4a924"/>
+  <!-- Pan body sides + fill -->
+  <rect x="80"  y="192" width="288" height="144" fill="#f4a924"/>
+  <!-- Inner pan (dark) -->
+  <rect x="96"  y="208" width="256" height="112" fill="#1a1a2e"/>
+
+  <!-- Fried egg white -->
+  <rect x="160" y="224" width="128" height="80"  fill="#ffffff"/>
+  <rect x="144" y="240" width="160" height="48"  fill="#ffffff"/>
+
+  <!-- Yolk -->
+  <rect x="208" y="240" width="48"  height="48"  fill="#f4a924"/>
+  <rect x="224" y="232" width="16"  height="64"  fill="#f4a924"/>
+  <rect x="192" y="248" width="80"  height="32"  fill="#f4a924"/>
+  <rect x="216" y="256" width="32"  height="16"  fill="#ffdb6b"/>
+
+  <!-- Pan base -->
+  <rect x="80"  y="336" width="288" height="16"  fill="#c8820a"/>
+
+  <!-- App name — pixel dots spelling "DIG IN" would be noisy at small size; -->
+  <!-- use a simple gold bar as a branding band instead -->
+  <rect x="112" y="368" width="224" height="8"   fill="#f4a924" opacity="0.6"/>
+</svg>

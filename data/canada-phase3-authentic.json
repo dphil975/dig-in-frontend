@@ -1,0 +1,660 @@
+{
+  "country": "Canada",
+  "region": "Americas",
+  "breakfast": [
+    {
+      "id": "can-break-poutine",
+      "name": "Poutine (Fries with Gravy)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 30,
+      "description": "Canadian comfort food of crispy fries smothered in rich gravy and cheese curds",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "beef broth"
+      ],
+      "ingredients": [
+        "3 russet potatoes",
+        "Oil for frying",
+        "Salt",
+        "3 tbsp butter",
+        "3 tbsp flour",
+        "2 cups beef broth",
+        "1 cup cheese curds",
+        "Black pepper"
+      ],
+      "instructions": [
+        "Cut potatoes into fries",
+        "Heat oil to 375\u00b0F",
+        "Fry potatoes in batches until golden",
+        "Drain on paper towels, season with salt",
+        "Make gravy: melt butter, whisk in flour",
+        "Add beef broth slowly while whisking",
+        "Simmer 5 minutes until thickened",
+        "Season with salt and pepper",
+        "Layer fries in container",
+        "Top with cheese curds",
+        "Pour hot gravy over",
+        "Serve immediately"
+      ],
+      "notes": "Gravy must be hot to slightly melt cheese curds",
+      "fun_fact": "Poutine originated in Quebec and is now a Canadian icon",
+      "alternatives": [
+        "Brown gravy instead of beef",
+        "Different cheese",
+        "Vegetarian gravy"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 10,
+          "cook_time": 30,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 5,
+          "cook_time": 18,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 1,
+          "cook_time": 9,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "can-lunch-butter-tarts",
+      "name": "Butter Tarts",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Canadian sweet tarts with gooey butter filling and raisins",
+      "seasonings": [
+        "vanilla",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "Pie crust",
+        "1/2 cup butter",
+        "1 cup brown sugar",
+        "1 egg",
+        "1 tbsp vanilla",
+        "1/2 cup raisins",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Line tartlet tins with pie crust",
+        "Cream butter and brown sugar",
+        "Add egg and vanilla",
+        "Stir in raisins and salt",
+        "Fill shells halfway with filling",
+        "Bake at 350\u00b0F for 15-20 minutes",
+        "Filling should be bubbly but not overcooked",
+        "Cool slightly before removing from tins"
+      ],
+      "notes": "The gooey center is essential to authentic butter tarts",
+      "fun_fact": "Butter tarts are a beloved Canadian dessert, often served at fairs and celebrations",
+      "alternatives": [
+        "Pecans instead of raisins",
+        "No filling extras",
+        "Larger single tart"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "can-dinner-tourtiere",
+      "name": "Tourti\u00e8re (Meat Pie)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Traditional French-Canadian meat pie with ground pork and spices",
+      "seasonings": [
+        "cinnamon",
+        "cloves",
+        "allspice",
+        "thyme"
+      ],
+      "ingredients": [
+        "Pie dough (top and bottom)",
+        "1.5 lbs ground pork",
+        "1 onion, minced",
+        "2 cloves garlic",
+        "1/2 cup broth",
+        "1 tsp cinnamon",
+        "1/4 tsp cloves",
+        "1/4 tsp allspice",
+        "1 tsp thyme",
+        "Salt and pepper",
+        "Egg wash"
+      ],
+      "instructions": [
+        "Line pie pan with dough",
+        "Brown pork with onion and garlic",
+        "Add broth and spices",
+        "Simmer 10 minutes until liquid reduces",
+        "Cool mixture",
+        "Fill pie shell",
+        "Top with dough, seal edges",
+        "Brush with egg wash",
+        "Cut vents",
+        "Bake at 375\u00b0F for 45-50 minutes until golden"
+      ],
+      "notes": "Traditionally eaten during holiday season",
+      "fun_fact": "Tourti\u00e8re is a French-Canadian Christmas tradition",
+      "alternatives": [
+        "Beef instead of pork",
+        "Different spice blend",
+        "Individual pot pies"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 60,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 36,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 18,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "can-dinner-poutine",
+      "name": "Poutine (Fries, Gravy, and Cheese Curds)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Quebec's iconic dish - crispy fries with gravy and squeaky cheese curds",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "garlic"
+      ],
+      "ingredients": [
+        "800g potatoes for fries",
+        "200g fresh cheese curds (or mozzarella if unavailable)",
+        "For gravy: 3 tablespoons butter, 3 tablespoons flour, 500ml beef stock, 1 tablespoon tomato paste, 1 onion diced, 2 cloves garlic minced, 1 bay leaf, salt and pepper",
+        "Oil for deep frying (about 1.5 liters)",
+        "Salt for seasoning fries"
+      ],
+      "instructions": [
+        "Make gravy first: melt butter in saucepan over medium heat",
+        "Add diced onion, cook 3 minutes until softened",
+        "Add minced garlic, cook 1 minute",
+        "Sprinkle flour over onion and garlic, stir constantly for 2 minutes to create roux",
+        "Gradually add beef stock, whisking to avoid lumps",
+        "Add tomato paste and bay leaf",
+        "Simmer 15 minutes until thickened, season with salt and pepper",
+        "Remove bay leaf, keep gravy warm",
+        "Meanwhile, cut potatoes into thick fries (about 1/2 inch thick)",
+        "Soak cut potatoes in cold water 30 minutes (removes starch for crispier fries)",
+        "Heat oil to 325\u00b0F (160\u00b0C)",
+        "First fry: cook potatoes in batches 10 minutes until partially cooked but not brown; drain",
+        "Increase oil temperature to 375\u00b0F (190\u00b0C)",
+        "Second fry: cook pre-fried potatoes in batches 2-3 minutes until golden and crispy; drain on paper towels",
+        "Season hot fries generously with salt",
+        "Place hot fries in serving container",
+        "Top with cheese curds (they should start to soften from heat)",
+        "Pour hot gravy over fries and cheese",
+        "Serve immediately while hot and crispy"
+      ],
+      "notes": "Fresh cheese curds are essential - they have a squeaky texture when properly made. Two-stage frying creates the perfect fry",
+      "fun_fact": "Poutine originated in rural Quebec in the 1950s and has become a symbol of Quebec culture",
+      "alternatives": [
+        "Add pulled pork for 'Loaded Poutine'",
+        "Use different gravy styles",
+        "Add fried onions",
+        "Make with sweet potato fries"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 30,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 18,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 9,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "snacks": [
+    {
+      "id": "can-snack-maple-taffy",
+      "name": "Maple Taffy on Snow",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 10,
+      "cookTime": 20,
+      "description": "Canadian maple candy made by pouring hot maple syrup on clean snow",
+      "seasonings": [
+        "maple syrup"
+      ],
+      "ingredients": [
+        "2 cups pure maple syrup",
+        "1 tbsp butter",
+        "Clean snow or ice",
+        "Popsicle sticks"
+      ],
+      "instructions": [
+        "Heat maple syrup to 235\u00b0F (soft-ball stage)",
+        "Add butter",
+        "Pack clean snow or shaved ice in pan or on clean surface",
+        "Slowly pour hot syrup in thin ribbons on snow",
+        "Let cool for 1-2 minutes until it sets",
+        "Roll each piece around popsicle stick",
+        "Eat immediately"
+      ],
+      "notes": "Uses thermometer to test temperature",
+      "fun_fact": "Maple Taffy on Snow is a popular treat at Canadian sugar shacks",
+      "alternatives": [
+        "Maple fudge instead",
+        "Use frozen beet juice for colored version"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "can-dessert-beavertails",
+      "name": "Beavertails (Fried Pastry)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 30,
+      "description": "Deep-fried pastry shaped like beaver tail, served with sweet toppings",
+      "seasonings": [
+        "cinnamon",
+        "sugar"
+      ],
+      "ingredients": [
+        "2 cups flour",
+        "1 tbsp baking powder",
+        "1/2 tsp salt",
+        "3/4 cup water",
+        "Oil for frying",
+        "Cinnamon and sugar mix",
+        "Chocolate sauce",
+        "Maple syrup"
+      ],
+      "instructions": [
+        "Mix flour, baking powder, salt",
+        "Add water to form dough",
+        "Let rest 20 minutes",
+        "Roll dough thin",
+        "Cut into oval beaver tail shapes",
+        "Heat oil to 350\u00b0F",
+        "Fry until golden on both sides",
+        "Drain on paper towels",
+        "Dust with cinnamon sugar",
+        "Serve warm with chocolate or maple syrup"
+      ],
+      "notes": "Dough should be thin and crispy when fried",
+      "fun_fact": "Beavertails are a Canadian pastry found at Canadian fairs and events",
+      "alternatives": [
+        "Different toppings",
+        "Savory version with cheese",
+        "Baked instead of fried"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "can-drink-caesar",
+      "name": "Caesar Cocktail (Non-Alcoholic)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "description": "Canadian drink with Clamato juice and spices, virgin version without alcohol",
+      "seasonings": [
+        "Worcestershire",
+        "hot sauce",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "1 cup Clamato juice",
+        "1/2 tsp Worcestershire sauce",
+        "Dash hot sauce",
+        "Ice",
+        "Celery stick",
+        "Lime wedge",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Fill glass with ice",
+        "Add Clamato juice, Worcestershire, hot sauce",
+        "Stir well",
+        "Salt and pepper rim",
+        "Garnish with celery stick",
+        "Serve with lime wedge"
+      ],
+      "notes": "Clamato juice is essential",
+      "fun_fact": "Caesars are so popular in Canada that some say more Caesars are consumed there than Bloody Marys in the US",
+      "alternatives": [
+        "Add vodka for alcoholic version",
+        "Different hot sauces",
+        "Bacon garnish"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "can-drink-canadian-whisky",
+      "name": "Canadian Whisky",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Light, smooth Canadian whisky often made from corn base, served on rocks or neat",
+      "seasonings": [],
+      "ingredients": [
+        "Canadian whisky"
+      ],
+      "instructions": [
+        "Pour 1.5 oz into glass",
+        "Add ice or serve neat",
+        "Sip slowly",
+        "Enjoy the smooth character"
+      ],
+      "notes": "Lighter and smoother than American bourbon",
+      "fun_fact": "Canadian whisky is known for its smooth, accessible taste",
+      "alternatives": [
+        "Whisky sour",
+        "Canadian whisky and ginger ale",
+        "Different brands like Crown Royal"
+      ]
+    }
+  ]
+}

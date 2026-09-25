@@ -1,0 +1,561 @@
+{
+  "country": "Mexico",
+  "region": "Americas",
+  "breakfast": [
+    {
+      "id": "mex-break-huevos-rancheros",
+      "name": "Huevos Rancheros (Ranch-Style Eggs)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 15,
+      "description": "Fried eggs served on tortillas with spicy tomato sauce and topped with cheese and avocado",
+      "seasonings": [
+        "cumin",
+        "chili powder",
+        "cilantro",
+        "garlic",
+        "jalapeño"
+      ],
+      "ingredients": [
+        "4 corn tortillas",
+        "4 eggs",
+        "2 tbsp oil",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 can (14 oz) crushed tomatoes",
+        "1 jalapeño, minced",
+        "1/2 tsp cumin",
+        "1/4 tsp chili powder",
+        "Salt and pepper",
+        "1/2 cup shredded cheese",
+        "1 avocado, sliced",
+        "Fresh cilantro"
+      ],
+      "instructions": [
+        "Warm tortillas in dry skillet",
+        "In separate pan, heat 1 tbsp oil",
+        "Sauté onion, garlic, and jalapeño until soft",
+        "Add crushed tomatoes, cumin, chili powder, salt, and pepper",
+        "Simmer 5-7 minutes to thicken",
+        "In another pan, heat remaining oil",
+        "Fry eggs sunny-side up or over-easy",
+        "Place one tortilla on each plate",
+        "Top with egg",
+        "Pour tomato sauce over egg",
+        "Sprinkle with cheese",
+        "Top with avocado slices",
+        "Garnish with fresh cilantro"
+      ],
+      "notes": "Can be served with black beans, refried beans, or potatoes on the side",
+      "fun_fact": "Huevos Rancheros originated as a quick breakfast for ranch workers but has become iconic Mexican breakfast",
+      "alternatives": [
+        "Poached eggs instead of fried",
+        "Flour tortillas instead of corn",
+        "White cheese instead of yellow",
+        "Add chorizo for protein"
+      ],
+      "ingredientGroups": [
+        {
+          "title": "For the Ranchero Sauce",
+          "items": [
+            {
+              "amount": 2,
+              "unit": "tbsp",
+              "name": "Oil",
+              "note": "For sautéing"
+            },
+            {
+              "amount": 1,
+              "unit": "",
+              "name": "Onion, chopped",
+              "note": ""
+            },
+            {
+              "amount": 2,
+              "unit": "cloves",
+              "name": "Garlic, minced",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "can (14 oz)",
+              "name": "Crushed tomatoes",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "",
+              "name": "Jalapeño, minced",
+              "note": "Seed it for less heat"
+            },
+            {
+              "amount": 0.5,
+              "unit": "tsp",
+              "name": "Cumin",
+              "note": ""
+            },
+            {
+              "amount": 0.25,
+              "unit": "tsp",
+              "name": "Chili powder",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "pinch",
+              "name": "Salt and pepper",
+              "note": "To taste"
+            }
+          ]
+        },
+        {
+          "title": "To Assemble",
+          "items": [
+            {
+              "amount": 4,
+              "unit": "",
+              "name": "Corn tortillas",
+              "note": ""
+            },
+            {
+              "amount": 4,
+              "unit": "",
+              "name": "Eggs",
+              "note": "Fried sunny-side up or over-easy"
+            },
+            {
+              "amount": 0.5,
+              "unit": "cup",
+              "name": "Shredded cheese",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "",
+              "name": "Avocado, sliced",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "handful",
+              "name": "Fresh cilantro",
+              "note": "For garnish"
+            }
+          ]
+        }
+      ],
+      "equipment": [
+        "Skillet",
+        "Small saucepan",
+        "Spatula"
+      ],
+      "stepHelp": [
+        "A dry skillet (no oil) over medium heat for about 20-30 seconds per side is enough — you're just making them pliable and lightly toasted, not crisp.",
+        null,
+        "About 3-4 minutes, stirring occasionally. You want them soft and fragrant, not browned — lower the heat if they start to color.",
+        null,
+        "The sauce is ready when a spoon dragged across the pan leaves a trail that doesn't immediately fill back in.",
+        null,
+        "Sunny-side up: don't flip, cover the pan for the last minute so the top sets without flipping. Over-easy: flip once, briefly, keeping the yolk runny.",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "variations": [
+        {
+          "title": "Green Sauce Swap",
+          "text": "Use a roasted tomatillo salsa verde instead of the tomato sauce for a brighter, tangier version."
+        },
+        {
+          "title": "Bean Layer",
+          "text": "Spread a layer of warm refried or black beans on the tortilla before the egg for extra heft and protein."
+        },
+        {
+          "title": "Smoky Heat",
+          "text": "Add a chipotle in adobo to the sauce while it simmers for smoky depth instead of just jalapeño heat."
+        },
+        {
+          "title": "Baked Version",
+          "text": "Nestle the tortillas, sauce, and eggs into a baking dish and bake at 375°F until the eggs just set for a hands-off, shareable version."
+        },
+        {
+          "title": "Chorizo Boost",
+          "text": "Brown crumbled chorizo with the onions for a heartier, meatier plate."
+        }
+      ],
+      "serveWith": {
+        "intro": "A classic Mexican breakfast plate is even better with a few sides that round out the spice and richness.",
+        "items": [
+          {
+            "title": "Refried Beans",
+            "text": "Creamy, savory beans are the traditional side and help balance the tomato sauce's acidity."
+          },
+          {
+            "title": "Mexican Rice",
+            "text": "A scoop of tomato rice turns this into a full, hearty breakfast plate."
+          },
+          {
+            "title": "Fresh Fruit",
+            "text": "Cool, juicy fruit like mango or papaya offsets the heat of the jalapeño."
+          },
+          {
+            "title": "Horchata",
+            "text": "The cinnamon-rice drink's sweetness is a gentle counterpoint to the spicy sauce."
+          },
+          {
+            "title": "Warm Tortillas on the Side",
+            "text": "Extra tortillas for scooping up any sauce and yolk left on the plate."
+          }
+        ]
+      },
+      "expertTips": [
+        {
+          "title": "Don't Skip the Simmer",
+          "text": "Give the sauce the full 5-7 minutes — a thin, watery sauce will make the tortilla soggy instead of tender."
+        },
+        {
+          "title": "Fresh Jalapeño Matters",
+          "text": "Taste your jalapeño first; heat varies a lot. Add it gradually if you're not sure."
+        },
+        {
+          "title": "Warm the Tortillas Last",
+          "text": "Warm tortillas right before plating so they're still pliable and warm when the sauce goes on."
+        },
+        {
+          "title": "Runny Yolk Is the Point",
+          "text": "The yolk becomes part of the sauce when you cut into it — don't overcook the eggs."
+        }
+      ],
+      "storage": [
+        {
+          "title": "Fridge",
+          "text": "Best fresh, but sauce and toppings keep separately in an airtight container for up to 3 days — fry fresh eggs and tortillas when ready to eat."
+        },
+        {
+          "title": "Freezer",
+          "text": "Freeze the ranchero sauce alone (without eggs or tortillas) in a sealed container for up to 2 months."
+        },
+        {
+          "title": "Reheating",
+          "text": "Reheat sauce gently in a small saucepan over low heat, stirring occasionally, then fry fresh eggs and warm tortillas to assemble."
+        }
+      ],
+      "makeAhead": "The ranchero sauce is the perfect make-ahead component — cook it up to 3 days in advance and keep it in the fridge, or freeze it for up to 2 months. When you're ready to eat, just reheat the sauce, warm your tortillas, fry fresh eggs, and assemble.",
+      "faqs": [
+        {
+          "q": "Can I use flour tortillas instead of corn?",
+          "a": "Yes — flour tortillas work fine and are softer, though corn tortillas are more traditional and hold up better under the sauce."
+        },
+        {
+          "q": "How do I make it less spicy?",
+          "a": "Remove the jalapeño's seeds and ribs before mincing, or leave it out entirely and use a milder chili powder instead."
+        },
+        {
+          "q": "Can I make this vegetarian?",
+          "a": "It already is, as written — just double check your cheese if you're avoiding animal rennet."
+        },
+        {
+          "q": "What's the best way to fry the eggs?",
+          "a": "Medium-low heat with a lid on for the last minute of sunny-side-up gives you a fully set white and a runny yolk without flipping."
+        }
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "mex-lunch-enchiladas-verdes",
+      "name": "Enchiladas Verdes (Green Sauce Enchiladas)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 35,
+      "description": "Rolled tortillas filled with chicken and topped with tart green tomatillo sauce and melted cheese",
+      "seasonings": [
+        "cilantro",
+        "jalapeño",
+        "cumin",
+        "garlic"
+      ],
+      "ingredients": [
+        "8 corn tortillas",
+        "2 lbs chicken breast",
+        "1.5 lbs fresh tomatillos (or canned)",
+        "2-3 jalapeños",
+        "1/2 white onion, quartered",
+        "2 cloves garlic",
+        "1/2 cup fresh cilantro",
+        "2 tbsp oil",
+        "1 cup sour cream",
+        "2 cups shredded cheese",
+        "Salt and pepper"
+      ],
+      "instructions": [
+        "Boil chicken until cooked through, shred, and set aside",
+        "For salsa verde: Boil tomatillos, jalapeños, onion, and garlic 5 minutes",
+        "Drain and blend with cilantro and salt",
+        "Stir in sour cream",
+        "Warm tortillas to make pliable",
+        "Dip tortilla in green salsa",
+        "Fill with 2 tbsp shredded chicken",
+        "Roll tightly and place seam-side down in oiled baking dish",
+        "Pour remaining salsa over enchiladas",
+        "Top with shredded cheese",
+        "Bake at 375°F for 20-25 minutes until bubbly",
+        "Garnish with more cilantro and sour cream"
+      ],
+      "notes": "Can be made with cheese, vegetables, or leftover cooked meat",
+      "fun_fact": "The word 'enchilada' comes from 'enchilar' meaning to add chili to",
+      "alternatives": [
+        "Red sauce (mole rojo) instead of green",
+        "Cheese filling for vegetarian",
+        "Mixture of chicken and ricotta",
+        "Poblano peppers in sauce"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "mex-dinner-chiles-rellenos",
+      "name": "Chiles Rellenos (Stuffed Peppers)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Roasted poblano peppers filled with cheese, battered, and fried, served in tomato sauce",
+      "seasonings": [
+        "cumin",
+        "oregano",
+        "garlic",
+        "cilantro"
+      ],
+      "ingredients": [
+        "4 poblano peppers",
+        "2 cups shredded cheese",
+        "4 eggs, separated",
+        "2 tbsp flour",
+        "Oil for frying",
+        "2 tbsp oil",
+        "1 onion, chopped",
+        "3 cloves garlic",
+        "1 can tomatoes",
+        "1/2 tsp cumin",
+        "1/2 tsp oregano",
+        "Salt and pepper",
+        "Fresh cilantro"
+      ],
+      "instructions": [
+        "Roast poblanos over flame or under broiler until charred",
+        "Place in plastic bag for 10 minutes to steam",
+        "Peel off charred skin",
+        "Make slit and carefully remove seeds",
+        "Stuff each pepper with shredded cheese",
+        "Beat egg whites until stiff peaks form",
+        "Fold in egg yolks gently",
+        "Coat stuffed peppers in flour",
+        "Dip in egg batter to coat completely",
+        "Heat oil to 350°F and fry peppers 2-3 minutes per side",
+        "Make sauce: Heat oil, sauté onion and garlic",
+        "Add tomatoes, cumin, oregano, salt, and pepper",
+        "Simmer 10 minutes",
+        "Place fried peppers in sauce",
+        "Simmer 5-10 more minutes",
+        "Garnish with cilantro and serve"
+      ],
+      "notes": "The egg batter creates a delicate, crispy coating. Handle carefully when frying",
+      "fun_fact": "Chiles Rellenos is a national dish of Mexico and represents Mexican cuisine's sophistication",
+      "alternatives": [
+        "Bell peppers instead of poblano",
+        "Oaxaca cheese (quesillo) instead of regular cheese",
+        "Skip batter and bake instead for lighter version",
+        "Add chorizo to cheese filling"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "mex-snack-tacos-al-pastor",
+      "name": "Tacos Al Pastor (Spit-Cooked Tacos)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 30,
+      "description": "Thin slices of marinated and cooked pork served in corn tortillas with pineapple, onion, and cilantro",
+      "seasonings": [
+        "cumin",
+        "chili powder",
+        "achiote",
+        "vinegar",
+        "garlic",
+        "oregano"
+      ],
+      "ingredients": [
+        "1.5 lbs pork shoulder, thinly sliced",
+        "1/4 cup achiote paste",
+        "1/4 cup white vinegar",
+        "3 cloves garlic",
+        "1 tbsp cumin",
+        "1 tbsp chili powder",
+        "1 tbsp oregano",
+        "2 tbsp oil",
+        "8-12 corn tortillas",
+        "1 fresh pineapple, diced",
+        "1 white onion, diced",
+        "Fresh cilantro",
+        "Lime wedges"
+      ],
+      "instructions": [
+        "Make marinade: Blend achiote paste, vinegar, garlic, cumin, chili, oregano, and oil",
+        "Marinate pork slices for 15-30 minutes",
+        "Heat cast iron skillet or griddle over high heat",
+        "Cook marinated pork in batches until edges are charred and caramelized",
+        "Build tacos: Warm tortilla, add 2-3 slices cooked pork",
+        "Top with diced pineapple, onion, and cilantro",
+        "Serve with lime wedges",
+        "Traditionally served with pineapple crown on side"
+      ],
+      "notes": "The achiote (annatto) gives the characteristic red color and subtle flavor",
+      "fun_fact": "Tacos Al Pastor originated in Mexico City from Lebanese-Mexican fusion of shawarma technique",
+      "alternatives": [
+        "Chicken instead of pork",
+        "Grill instead of stovetop if no cast iron",
+        "Skip achiote and use chili powder and paprika",
+        "Serve in flour tortillas for different style"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "mex-dessert-flan",
+      "name": "Flan (Caramel Custard)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 15,
+      "cookTime": 50,
+      "description": "Silky smooth custard with caramel sauce. Popular dessert throughout Mexico and Latin America",
+      "seasonings": [
+        "vanilla",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "1 cup sugar (divided)",
+        "1/2 cup water",
+        "6 eggs",
+        "1 can (14 oz) sweetened condensed milk",
+        "1 can (12 oz) evaporated milk",
+        "1 tbsp vanilla extract",
+        "Pinch of salt",
+        "1/4 tsp cinnamon"
+      ],
+      "instructions": [
+        "Make caramel: Heat 1/2 cup sugar and water in saucepan over medium-high heat",
+        "Swirl pan occasionally until golden amber (don't stir)",
+        "Quickly pour caramel into flan dish, coating bottom and sides",
+        "In blender, combine eggs, both milks, vanilla, salt, and cinnamon",
+        "Blend until smooth",
+        "Pour custard mixture into caramel-lined dish",
+        "Place flan dish in larger roasting pan",
+        "Pour hot water into roasting pan until halfway up sides (water bath)",
+        "Bake at 350°F for 40-50 minutes",
+        "Center should jiggle slightly but not be liquid",
+        "Cool completely, then refrigerate at least 4 hours",
+        "Run knife around edges and invert onto serving plate"
+      ],
+      "notes": "Water bath ensures creamy custard. Don't overbake or it becomes rubbery",
+      "fun_fact": "Flan is served at celebrations, quinceañeras, and special occasions throughout Mexico",
+      "alternatives": [
+        "Skip cinnamon for simpler version",
+        "Add chocolate to custard",
+        "Use coconut milk instead of evaporated",
+        "Individual ramekins instead of one large flan"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "mex-drink-agua-fresca",
+      "name": "Agua Fresca (Fresh Fruit Drink)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "Refreshing drink made from fresh fruit, water, and sugar. Popular street drink during hot Mexican afternoons",
+      "seasonings": [
+        "lime juice",
+        "sugar",
+        "mint"
+      ],
+      "ingredients": [
+        "2 cups fresh fruit (watermelon, mango, or strawberry)",
+        "4 cups water",
+        "1/4 cup sugar",
+        "2 tbsp lime juice",
+        "Fresh mint leaves",
+        "Ice"
+      ],
+      "instructions": [
+        "Cut fruit into chunks",
+        "Blend fruit with 1 cup water until smooth",
+        "Strain through fine mesh into pitcher",
+        "Add remaining water, sugar, and lime juice",
+        "Stir well",
+        "Chill thoroughly",
+        "Serve over ice",
+        "Garnish with fresh mint",
+        "Stir before serving"
+      ],
+      "notes": "Can be made with any fresh seasonal fruit",
+      "fun_fact": "Agua fresca vendors are common on Mexican streets and their calls are iconic sounds of summer",
+      "alternatives": [
+        "Different fruits based on season",
+        "Rice-based agua fresca (horchata-light)",
+        "Add sparkling water for effervescence",
+        "Hibiscus flower water (agua de Jamaica)"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "mex-drink-margarita",
+      "name": "Margarita (Tequila Cocktail)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 0,
+      "description": "Classic Mexican cocktail with tequila, lime juice, and orange liqueur, served in a salt-rimmed glass",
+      "seasonings": [
+        "salt",
+        "lime"
+      ],
+      "ingredients": [
+        "2 oz silver tequila",
+        "1 oz freshly squeezed lime juice",
+        "1/2 oz Cointreau or triple sec",
+        "Coarse salt",
+        "Ice",
+        "Lime wheel for garnish"
+      ],
+      "instructions": [
+        "Rub lime wedge around rim of margarita glass",
+        "Dip rim in coarse salt",
+        "Fill glass with ice",
+        "Pour tequila, lime juice, and Cointreau into shaker with ice",
+        "Shake vigorously for 10 seconds",
+        "Strain into prepared glass",
+        "Garnish with lime wheel",
+        "Serve immediately"
+      ],
+      "notes": "Fresh lime juice is essential for authentic taste. Simple syrup can be added for sweeter version",
+      "fun_fact": "The margarita was invented in Mexico in the 1930s-40s, though its exact origins are debated",
+      "alternatives": [
+        "Frozen margarita blended with ice",
+        "Pomegranate or strawberry variation",
+        "Spicy margarita with jalapeño",
+        "Tamarin margarita for different flavor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "country": "Jewish",
+  "region": "Middle East",
+  "breakfast": [
+    {
+      "id": "isr-break-shakshuka",
+      "name": "Shakshuka (Eggs in Tomato Sauce)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 20,
+      "description": "Jewish eggs poached in spiced tomato sauce",
+      "seasonings": [
+        "cumin",
+        "paprika"
+      ],
+      "ingredients": [
+        "4 eggs",
+        "2 cups tomato sauce",
+        "1 onion",
+        "3 cloves garlic",
+        "1 tsp cumin",
+        "1 tsp paprika",
+        "Olive oil",
+        "Parsley",
+        "Feta cheese (optional)"
+      ],
+      "instructions": [
+        "Heat olive oil",
+        "Sauté onion and garlic",
+        "Add tomato sauce",
+        "Add spices",
+        "Simmer 5 minutes",
+        "Make wells in sauce",
+        "Crack eggs into wells",
+        "Cover, simmer until eggs set (5-8 minutes)",
+        "Garnish with parsley and feta"
+      ],
+      "notes": "Eggs should be runny",
+      "fun_fact": "Shakshuka is Middle Eastern favorite",
+      "alternatives": [
+        "Add peppers",
+        "Use chickpeas",
+        "Different spices"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "isr-lunch-falafel",
+      "name": "Falafel",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Jewish fried chickpea fritters",
+      "seasonings": [
+        "cumin",
+        "coriander"
+      ],
+      "ingredients": [
+        "2 cups chickpeas (dried)",
+        "1 onion",
+        "3 cloves garlic",
+        "1/2 cup parsley",
+        "1/4 cup cilantro",
+        "Spices: cumin, coriander",
+        "Flour",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Soak dried chickpeas overnight",
+        "Drain thoroughly",
+        "Grind with onion, garlic, herbs",
+        "Add spices and flour",
+        "Form into balls",
+        "Deep fry at 350°F until golden",
+        "Drain on paper towels",
+        "Serve with tahini sauce"
+      ],
+      "notes": "Use dried, not canned chickpeas",
+      "fun_fact": "Falafel is Jewish street food favorite",
+      "alternatives": [
+        "Larger patties",
+        "Baked version",
+        "Different herbs"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "isr-dinner-hummus",
+      "name": "Hummus with Meat (Hummus M'sara)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Jewish hummus topped with spiced meat",
+      "seasonings": [
+        "cumin",
+        "sumac"
+      ],
+      "ingredients": [
+        "2 cups hummus",
+        "1 lb ground lamb",
+        "1 onion",
+        "Pine nuts",
+        "Olive oil",
+        "Paprika",
+        "Cumin",
+        "Sumac",
+        "Pita bread"
+      ],
+      "instructions": [
+        "Brown lamb with onion",
+        "Add spices and pine nuts",
+        "Prepare or buy hummus",
+        "Spread hummus on plate",
+        "Top with meat mixture",
+        "Drizzle with olive oil",
+        "Sprinkle sumac",
+        "Serve with pita"
+      ],
+      "notes": "Meat topping is key",
+      "fun_fact": "Hummus M'sara is Lebanese-Jewish dish",
+      "alternatives": [
+        "Chicken instead of lamb",
+        "Vegetarian hummus",
+        "Different toppings"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "isr-snack-pita",
+      "name": "Pita Bread",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 25,
+      "description": "Jewish pocket bread",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "3 cups flour",
+        "1 packet yeast",
+        "1 cup warm water",
+        "1 tbsp oil",
+        "1 tsp salt"
+      ],
+      "instructions": [
+        "Mix flour, salt, yeast",
+        "Add water and oil",
+        "Knead until smooth",
+        "Let rise 1 hour",
+        "Divide into 8 pieces",
+        "Roll into thin rounds",
+        "Let rest 20 minutes",
+        "Bake at 475°F for 5-7 minutes until puffed"
+      ],
+      "notes": "Puffs when hot",
+      "fun_fact": "Pita is essential to Jewish meals",
+      "alternatives": [
+        "Whole wheat",
+        "Smaller pitas",
+        "Seeded"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "isr-dessert-halva",
+      "name": "Halva (Tahini Confection)",
+      "difficulty": "Hard",
+      "servings": 16,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Jewish tahini sweet candy",
+      "seasonings": [
+        "vanilla"
+      ],
+      "ingredients": [
+        "2 cups tahini",
+        "1 cup sugar",
+        "1/2 cup honey",
+        "1 tsp vanilla",
+        "Oil",
+        "Chocolate (optional)"
+      ],
+      "instructions": [
+        "Mix tahini with honey and sugar",
+        "Add vanilla",
+        "Heat on low, stirring constantly",
+        "Pour into oiled pan",
+        "Cool partially",
+        "Mark into pieces",
+        "Cool completely",
+        "Top with melted chocolate if desired"
+      ],
+      "notes": "Requires constant stirring",
+      "fun_fact": "Halva is Middle Eastern favorite",
+      "alternatives": [
+        "Pistachio halva",
+        "Different nuts",
+        "Chocolate layer"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "isr-drink-mint-tea",
+      "name": "Jewish Mint Tea",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Fresh mint tea with lemon",
+      "seasonings": [
+        "mint",
+        "lemon"
+      ],
+      "ingredients": [
+        "Fresh mint leaves",
+        "Water",
+        "Lemon juice",
+        "Honey",
+        "Sugar"
+      ],
+      "instructions": [
+        "Heat water",
+        "Add fresh mint",
+        "Steep 5 minutes",
+        "Add lemon juice and sweetener",
+        "Serve hot or cold"
+      ],
+      "notes": "Fresh mint essential",
+      "fun_fact": "Mint tea is Jewish tradition",
+      "alternatives": [
+        "Different herbs",
+        "Served cold",
+        "Add spices"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "isr-drink-wine",
+      "name": "Jewish Wine",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Quality Jewish wine from local vineyards",
+      "seasonings": [],
+      "ingredients": [
+        "Jewish wine"
+      ],
+      "instructions": [
+        "Serve at appropriate temperature",
+        "Red wines at room temperature",
+        "White wines chilled",
+        "Pair with food",
+        "Enjoy Jewish viticulture"
+      ],
+      "notes": "Growing wine industry",
+      "fun_fact": "Jewish wine industry is rapidly expanding",
+      "alternatives": [
+        "Different wine regions",
+        "Different grape varieties",
+        "Red or white"
+      ]
+    }
+  ]
+}

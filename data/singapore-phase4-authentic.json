@@ -1,0 +1,285 @@
+{
+  "country": "Singapore",
+  "region": "Asia",
+  "breakfast": [
+    {
+      "id": "sin-break-kaya-toast",
+      "name": "Kaya Toast (Coconut Jam Toast)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Singapore's beloved breakfast toast with coconut jam and butter",
+      "seasonings": [
+        "coconut",
+        "pandan"
+      ],
+      "ingredients": [
+        "2 slices white bread",
+        "Kaya (coconut jam)",
+        "Butter",
+        "2 soft-boiled eggs",
+        "Soy sauce",
+        "White pepper"
+      ],
+      "instructions": [
+        "Toast bread until golden",
+        "Spread butter on hot toast",
+        "Top with generous kaya",
+        "Serve with soft-boiled eggs in small bowls",
+        "Mix soy sauce and white pepper in small bowl",
+        "Dip eggs into soy-pepper mixture",
+        "Eat egg with toast and jam"
+      ],
+      "notes": "Best served hot and eaten immediately",
+      "fun_fact": "Kaya Toast is Singapore's iconic breakfast found at every kopitiam (coffee shop)",
+      "alternatives": [
+        "Different bread types",
+        "Without butter",
+        "Store-bought kaya"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "sin-lunch-chicken-rice",
+      "name": "Hainanese Chicken Rice",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 35,
+      "description": "Singapore's most famous dish: poached chicken with ginger rice",
+      "seasonings": [
+        "ginger",
+        "garlic",
+        "soy sauce"
+      ],
+      "ingredients": [
+        "2 lbs chicken",
+        "3 cups rice",
+        "1/4 cup oil",
+        "4 cloves garlic, minced",
+        "2-inch ginger, minced",
+        "4 cups chicken broth",
+        "Soy sauce",
+        "Chili sauce",
+        "Lime",
+        "Cilantro"
+      ],
+      "instructions": [
+        "Poach chicken in water 30 minutes until tender",
+        "Reserve 4 cups poaching liquid",
+        "Heat oil, fry garlic and ginger",
+        "Add rice, stir until coated",
+        "Add reserved broth",
+        "Cover and cook 20 minutes",
+        "Rice should be tender and fluffy",
+        "Chop poached chicken into pieces",
+        "Arrange chicken on rice",
+        "Serve with chili sauce and lime"
+      ],
+      "notes": "Chicken must be poached gently",
+      "fun_fact": "Hainanese Chicken Rice is Singapore's national dish and is available everywhere",
+      "alternatives": [
+        "Add darker soy for color",
+        "Roasted chicken instead",
+        "Extra ginger for stronger flavor"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "sin-dinner-chili-crab",
+      "name": "Chili Crab",
+      "difficulty": "Hard",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Singapore's iconic dish: whole crab in spicy tomato chili sauce",
+      "seasonings": [
+        "chili",
+        "garlic",
+        "ginger"
+      ],
+      "ingredients": [
+        "2 live crabs",
+        "4 tbsp chili paste",
+        "4 tbsp tomato paste",
+        "3 cloves garlic",
+        "1-inch ginger",
+        "1/2 cup water",
+        "2 tbsp oil",
+        "1 egg",
+        "Scallions",
+        "Lime juice",
+        "Salt",
+        "Sugar"
+      ],
+      "instructions": [
+        "Clean and quarter crabs",
+        "Heat oil in wok",
+        "Fry garlic and ginger",
+        "Add chili paste and tomato paste",
+        "Stir 2 minutes",
+        "Add crabs, stir well to coat",
+        "Add water",
+        "Cover and simmer 15-20 minutes",
+        "Crab should be red and cooked through",
+        "Push crabs to side",
+        "Stir egg slowly into sauce to create ribbons",
+        "Add scallions and lime juice",
+        "Season with salt and sugar"
+      ],
+      "notes": "Requires handling live crabs",
+      "fun_fact": "Chili Crab was invented in Singapore in the 1950s and is now iconic Singaporean food",
+      "alternatives": [
+        "Shrimp instead of crab",
+        "Less spicy version",
+        "Add more sweetness"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "sin-snack-popiah",
+      "name": "Popiah (Fresh Spring Rolls)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Singapore's fresh spring rolls with vegetables and shrimp",
+      "seasonings": [
+        "soy sauce",
+        "garlic"
+      ],
+      "ingredients": [
+        "8 popiah wrappers",
+        "1 cup cooked shrimp",
+        "2 cups fresh lettuce",
+        "1 cup cooked turnip",
+        "1 carrot, julienned",
+        "1 cup bamboo shoots",
+        "Hoisin sauce",
+        "Peanut sauce"
+      ],
+      "instructions": [
+        "Arrange all ingredients on platter",
+        "Warm popiah wrappers",
+        "Place wrapper on work surface",
+        "Add hoisin sauce",
+        "Layer lettuce, vegetables, shrimp",
+        "Roll tightly",
+        "Serve immediately with peanut sauce"
+      ],
+      "notes": "Assemble just before eating",
+      "fun_fact": "Popiah is a Singaporean Chinese favorite and is a do-it-yourself appetizer",
+      "alternatives": [
+        "All vegetarian",
+        "Add crab",
+        "Different sauce"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "sin-dessert-chendol",
+      "name": "Chendol (Pandan Dessert)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 0,
+      "description": "Singaporean shaved ice with pandan noodles and sweetened red beans",
+      "seasonings": [
+        "pandan",
+        "palm sugar"
+      ],
+      "ingredients": [
+        "Shaved ice",
+        "Chendol noodles",
+        "Red beans",
+        "1 cup gula melaka syrup",
+        "1 cup coconut milk",
+        "Pandan leaves"
+      ],
+      "instructions": [
+        "Make gula melaka syrup with pandan",
+        "Cool completely",
+        "Place chendol in glass",
+        "Add cooled red beans",
+        "Top with shaved ice",
+        "Pour gula melaka syrup over ice",
+        "Top with coconut milk",
+        "Mix well before eating",
+        "Serve immediately"
+      ],
+      "notes": "Assemble and serve quickly",
+      "fun_fact": "Chendol is Singapore's most iconic dessert and is sold at every hawker center",
+      "alternatives": [
+        "Store-bought chendol",
+        "Different bean types",
+        "More or less milk"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "sin-drink-kopi",
+      "name": "Kopi (Singapore Coffee)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 5,
+      "description": "Strong Singaporean coffee served in traditional style",
+      "seasonings": [
+        "condensed milk"
+      ],
+      "ingredients": [
+        "Strong brewed coffee",
+        "Condensed milk",
+        "Evaporated milk"
+      ],
+      "instructions": [
+        "Brew strong coffee in small pot",
+        "Add condensed milk to cup",
+        "Pour hot coffee over milk",
+        "Stir well",
+        "Serve hot or iced",
+        "Add evaporated milk if desired"
+      ],
+      "notes": "Traditional preparation is key",
+      "fun_fact": "Kopi is Singapore's national coffee and is served at every kopitiam throughout the island",
+      "alternatives": [
+        "Kopi-O (no milk)",
+        "Different milk ratios",
+        "Iced version"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "sin-drink-tiger",
+      "name": "Tiger Beer",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Singapore's iconic beer brand, light lager",
+      "seasonings": [],
+      "ingredients": [
+        "Tiger Beer"
+      ],
+      "instructions": [
+        "Serve ice-cold",
+        "Pour into glass",
+        "Enjoy with food"
+      ],
+      "notes": "Most popular beer in Singapore",
+      "fun_fact": "Tiger Beer was first brewed in Singapore in 1932 and is now the best-selling beer in Asia",
+      "alternatives": [
+        "Different beer brands",
+        "Mixed drinks",
+        "Room temperature"
+      ]
+    }
+  ]
+}

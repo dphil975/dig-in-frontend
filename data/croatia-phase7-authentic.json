@@ -1,0 +1,245 @@
+{
+  "country": "Croatia",
+  "region": "Balkans",
+  "breakfast": [
+    {
+      "id": "cro-break-ajvar",
+      "name": "Ajvar and Cheese Toast",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 5,
+      "description": "Croatian breakfast toast",
+      "seasonings": [],
+      "ingredients": [
+        "Bread",
+        "Ajvar",
+        "Cheese",
+        "Olive oil"
+      ],
+      "instructions": [
+        "Toast bread",
+        "Spread ajvar",
+        "Add cheese",
+        "Drizzle olive oil",
+        "Serve warm"
+      ],
+      "notes": "Quick breakfast",
+      "fun_fact": "Toast is Croatian breakfast",
+      "alternatives": [
+        "Without cheese",
+        "Add egg",
+        "Different spreads"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "cro-lunch-dalmatian",
+      "name": "Dalmatian Pasta Dish",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Croatian pasta with seafood",
+      "seasonings": [
+        "garlic"
+      ],
+      "ingredients": [
+        "Pasta",
+        "Squid",
+        "Shrimp",
+        "Garlic",
+        "White wine",
+        "Oil",
+        "Parsley"
+      ],
+      "instructions": [
+        "Cook pasta",
+        "Sauté garlic",
+        "Add squid, cook 15 minutes",
+        "Add shrimp",
+        "Add white wine",
+        "Toss with pasta",
+        "Garnish with parsley"
+      ],
+      "notes": "Fresh seafood",
+      "fun_fact": "Dalmatian coast is famous",
+      "alternatives": [
+        "Only squid",
+        "Only shrimp",
+        "With tomato"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "cro-dinner-pašticada",
+      "name": "Pašticada (Beef Stew)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 120,
+      "description": "Croatian marinated beef stew",
+      "seasonings": [
+        "bay leaf",
+        "thyme"
+      ],
+      "ingredients": [
+        "2 lbs beef",
+        "Wine",
+        "Vinegar",
+        "Onion",
+        "Carrot",
+        "Bay leaf",
+        "Thyme",
+        "Prunes"
+      ],
+      "instructions": [
+        "Marinate beef overnight",
+        "Brown in pot",
+        "Add vegetables",
+        "Add herbs and wine",
+        "Slow cook 2 hours",
+        "Add prunes",
+        "Serve with gnocchi"
+      ],
+      "notes": "Low and slow",
+      "fun_fact": "Pašticada is Croatian classic",
+      "alternatives": [
+        "Without prunes",
+        "More vegetables",
+        "Faster cooking"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "cro-snack-ćevapčići",
+      "name": "Ćevapčići (Grilled Meat)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Croatian grilled meat skewers",
+      "seasonings": [
+        "paprika",
+        "garlic"
+      ],
+      "ingredients": [
+        "1.5 lbs ground meat",
+        "Onion",
+        "Paprika",
+        "Garlic",
+        "Oil"
+      ],
+      "instructions": [
+        "Mix meat with onion, spices",
+        "Form into long sausages",
+        "Grill over charcoal",
+        "Turn frequently",
+        "Serve with bread and ajvar"
+      ],
+      "notes": "Char the outside",
+      "fun_fact": "Ćevapčići are Balkan favorite",
+      "alternatives": [
+        "Chicken version",
+        "Lamb version",
+        "Longer sausages"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "cro-dessert-krafne",
+      "name": "Krafne (Jam Donuts)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 20,
+      "description": "Croatian jam-filled donuts",
+      "seasonings": [],
+      "ingredients": [
+        "Dough: flour, yeast, milk, sugar",
+        "Jam",
+        "Oil for frying",
+        "Powdered sugar"
+      ],
+      "instructions": [
+        "Make yeast dough",
+        "Let rise",
+        "Divide and fill with jam",
+        "Let rise again",
+        "Deep fry until golden",
+        "Roll in powdered sugar"
+      ],
+      "notes": "Puffy and tender",
+      "fun_fact": "Krafne are Croatian treat",
+      "alternatives": [
+        "Different jam",
+        "Chocolate filling",
+        "Custard filling"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "cro-drink-coffee",
+      "name": "Croatian Coffee",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Strong Turkish-style coffee",
+      "seasonings": [],
+      "ingredients": [
+        "Coffee grounds",
+        "Water",
+        "Sugar (optional)"
+      ],
+      "instructions": [
+        "Heat water in cezve",
+        "Add finely ground coffee",
+        "Add sugar if desired",
+        "Heat until foaming",
+        "Pour into cup",
+        "Serve strong"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Coffee culture in Croatia",
+      "alternatives": [
+        "Without sugar",
+        "Topped with foam",
+        "Different strength"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "cro-drink-wine",
+      "name": "Croatian Wine",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Quality wine from Croatian regions",
+      "seasonings": [],
+      "ingredients": [
+        "Croatian wine"
+      ],
+      "instructions": [
+        "Serve at proper temperature",
+        "Red wines room temperature",
+        "White wines chilled",
+        "Enjoy with food"
+      ],
+      "notes": "Growing wine region",
+      "fun_fact": "Dalmatian wine is excellent",
+      "alternatives": [
+        "Different varieties",
+        "Red or white",
+        "Different regions"
+      ]
+    }
+  ]
+}

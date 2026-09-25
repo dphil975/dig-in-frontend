@@ -24,7 +24,7 @@ class RecipeConverter {
       ingredients: rawRecipe.ingredients || [],
       instructions: rawRecipe.instructions || [],
       tips: rawRecipe.tips || [],
-      pixelEmoji: rawRecipe.pixelEmoji || '🍪',
+      pixelEmoji: rawRecipe.pixelEmoji || 'DISH',
       pixelArtUrl: rawRecipe.pixelArtUrl || null,
       imageUrl: rawRecipe.imageUrl || null,
       substitutions: rawRecipe.substitutions || {},

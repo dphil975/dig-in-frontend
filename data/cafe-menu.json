@@ -1,0 +1,2085 @@
+{
+  "shop": {
+    "name": "House Café",
+    "tagline": "The Dig In house menu",
+    "location": "New York City"
+  },
+  "drinkCategories": [
+    {
+      "id": "coffee",
+      "label": "Coffee",
+      "emoji": "COFFEE",
+      "description": "Espresso, drip, cold brew — pure coffee"
+    },
+    {
+      "id": "milk-drink",
+      "label": "Milk Drinks",
+      "emoji": "MILK",
+      "description": "Lattes, cappuccinos, cortados"
+    },
+    {
+      "id": "tea",
+      "label": "Tea",
+      "emoji": "TEA",
+      "description": "Chai, hot tea, iced tea"
+    },
+    {
+      "id": "matcha",
+      "label": "Matcha",
+      "emoji": "MATCHA",
+      "description": "Matcha lattes and matcha blends"
+    },
+    {
+      "id": "chocolate",
+      "label": "Chocolate",
+      "emoji": "CHOCOLATE",
+      "description": "Mocha, hot chocolate, iced chocolate"
+    },
+    {
+      "id": "juice",
+      "label": "Juice & Refreshers",
+      "emoji": "JUICE",
+      "description": "Matcha lemonade, iced tea blends"
+    },
+    {
+      "id": "energy",
+      "label": "Energy Drinks",
+      "emoji": "ENERGY",
+      "description": "High-caffeine options like Red Eye and Cold Brew"
+    },
+    {
+      "id": "specialty",
+      "label": "Specialty",
+      "emoji": "SPECIALTY",
+      "description": "Seasonal and signature drinks"
+    },
+    {
+      "id": "non-alcoholic",
+      "label": "Non-Alcoholic",
+      "emoji": "NON",
+      "description": "All drinks — no alcohol"
+    },
+    {
+      "id": "alcoholic",
+      "label": "Alcoholic",
+      "emoji": "ALCOHOLIC",
+      "description": "No alcoholic options on the house menu"
+    }
+  ],
+  "drinks": [
+    {
+      "id": "tc-001",
+      "name": "Iced Americano",
+      "section": "iced",
+      "price": 4.75,
+      "emoji": "ICED",
+      "description": "Freshly pulled espresso shots poured over ice water — bold and clean.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "bold",
+        "clean",
+        "slightly-bitter"
+      ],
+      "pairingTags": [
+        "cuts-richness",
+        "light-companion",
+        "bold"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "mexican",
+          "american",
+          "middle-eastern"
+        ],
+        "mealTypes": [
+          "lunch",
+          "dinner",
+          "breakfast"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "hearty",
+          "savory"
+        ],
+        "mood": "focused"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-002",
+      "name": "Matcha Tea Lemonade",
+      "section": "iced",
+      "price": 7.0,
+      "emoji": "MATCHA",
+      "description": "Smooth, earthy matcha blended with iced tea — a refreshing twist on a classic.",
+      "categories": [
+        "matcha",
+        "tea",
+        "juice",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "earthy",
+        "refreshing",
+        "slightly-sweet",
+        "grassy"
+      ],
+      "pairingTags": [
+        "refreshing",
+        "earthy",
+        "palate-cleanser"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "japanese",
+          "korean",
+          "chinese",
+          "asian",
+          "vietnamese"
+        ],
+        "mealTypes": [
+          "lunch",
+          "appetizer",
+          "light-meal"
+        ],
+        "flavorContrast": [
+          "umami",
+          "delicate",
+          "fresh",
+          "light"
+        ],
+        "mood": "refreshed"
+      },
+      "featured": true,
+      "seasonal": true,
+      "seasonalLabel": "Spring Drink!"
+    },
+    {
+      "id": "tc-003",
+      "name": "Iced Salted Caramel Latte",
+      "section": "iced",
+      "price": 7.0,
+      "emoji": "ICED",
+      "description": "Espresso with sweet caramel and a pinch of salt over ice.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "caramel",
+        "salty",
+        "creamy"
+      ],
+      "pairingTags": [
+        "sweet",
+        "indulgent",
+        "comfort"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "french",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "breakfast",
+          "snack"
+        ],
+        "flavorContrast": [
+          "nutty",
+          "buttery",
+          "sweet"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": true,
+      "seasonalLabel": "Fall 2025 special"
+    },
+    {
+      "id": "tc-004",
+      "name": "Cold Brew",
+      "section": "iced",
+      "price": 5.0,
+      "emoji": "COLD",
+      "description": "Steeped for over 24 hours — deep, naturally sweet and smooth.",
+      "categories": [
+        "coffee",
+        "energy",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "high",
+      "flavorProfile": [
+        "bold",
+        "smooth",
+        "naturally-sweet",
+        "low-acid"
+      ],
+      "pairingTags": [
+        "bold",
+        "energizing",
+        "cuts-richness"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "mexican",
+          "latin",
+          "bbq"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "lunch",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "smoky",
+          "spicy"
+        ],
+        "mood": "energized"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-005",
+      "name": "Iced Lavender Honey Latte",
+      "section": "iced",
+      "price": 7.0,
+      "emoji": "ICED",
+      "description": "Iced latte with a hint of lavender and honey — floral and delicate.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "floral",
+        "sweet",
+        "honey",
+        "creamy",
+        "delicate"
+      ],
+      "pairingTags": [
+        "floral",
+        "light",
+        "delicate",
+        "sweet"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "french",
+          "mediterranean",
+          "middle-eastern",
+          "greek"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert",
+          "snack"
+        ],
+        "flavorContrast": [
+          "light",
+          "herby",
+          "floral",
+          "fresh"
+        ],
+        "mood": "relaxed"
+      },
+      "featured": true,
+      "seasonal": true,
+      "seasonalLabel": "Spring Drink!"
+    },
+    {
+      "id": "tc-006",
+      "name": "Iced Red Eye",
+      "section": "iced",
+      "price": 6.25,
+      "emoji": "ICED",
+      "description": "Cold brew plus espresso — for when regular coffee isn't enough.",
+      "categories": [
+        "coffee",
+        "energy",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "very-high",
+      "flavorProfile": [
+        "bold",
+        "intense",
+        "bitter",
+        "strong"
+      ],
+      "pairingTags": [
+        "bold",
+        "energizing",
+        "intense"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "italian",
+          "greek"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "savory",
+          "heavy"
+        ],
+        "mood": "powered-up"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-007",
+      "name": "Iced Strawberry Mocha",
+      "section": "iced",
+      "price": 7.0,
+      "emoji": "ICED",
+      "description": "Iced latte with chocolate and a hint of strawberry.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "chocolate",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "fruity",
+        "chocolate",
+        "creamy"
+      ],
+      "pairingTags": [
+        "sweet",
+        "fruity",
+        "dessert-like"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "french",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "fruity",
+          "light"
+        ],
+        "mood": "playful"
+      },
+      "featured": true,
+      "seasonal": true,
+      "seasonalLabel": "Spring Drink!"
+    },
+    {
+      "id": "tc-008",
+      "name": "Iced Espresso",
+      "section": "iced",
+      "price": 4.5,
+      "emoji": "ICED",
+      "description": "Double shots fresh over ice — espresso at its boldest.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "high",
+      "flavorProfile": [
+        "bold",
+        "intense",
+        "rich",
+        "concentrated"
+      ],
+      "pairingTags": [
+        "bold",
+        "cuts-richness",
+        "classic"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "spanish",
+          "latin",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "lunch",
+          "dinner"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "fatty",
+          "rich"
+        ],
+        "mood": "focused"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-009",
+      "name": "Iced Cappuccino",
+      "section": "iced",
+      "price": 5.75,
+      "emoji": "ICED",
+      "description": "Rich espresso, light milk, velvety micro-foam — over ice.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "bold",
+        "creamy",
+        "light-foam",
+        "balanced"
+      ],
+      "pairingTags": [
+        "balanced",
+        "creamy",
+        "classic"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "european",
+          "french"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "rich",
+          "pastry"
+        ],
+        "mood": "classic"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-010",
+      "name": "Iced Latte",
+      "section": "iced",
+      "price": 5.75,
+      "emoji": "ICED",
+      "description": "Bold espresso poured over cold milk and ice — smooth and balanced.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "smooth",
+        "creamy",
+        "balanced",
+        "mild"
+      ],
+      "pairingTags": [
+        "versatile",
+        "smooth",
+        "crowd-pleaser"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "italian",
+          "french",
+          "european"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "lunch",
+          "brunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "savory",
+          "sweet",
+          "light",
+          "medium"
+        ],
+        "mood": "easygoing"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-011",
+      "name": "Iced Spanish Latte",
+      "section": "iced",
+      "price": 6.5,
+      "emoji": "ICED",
+      "description": "Strong espresso and creamy milk sweetened with condensed milk.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "creamy",
+        "rich",
+        "indulgent"
+      ],
+      "pairingTags": [
+        "sweet",
+        "rich",
+        "indulgent"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "spanish",
+          "latin",
+          "mexican",
+          "cuban"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "savory",
+          "spicy",
+          "smoky"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-012",
+      "name": "Iced Graham Cracker Latte",
+      "section": "iced",
+      "price": 7.0,
+      "emoji": "ICED",
+      "description": "Cozy campfire flavors made refreshingly cool.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "graham",
+        "vanilla",
+        "nostalgic"
+      ],
+      "pairingTags": [
+        "sweet",
+        "cozy",
+        "nostalgic"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "nutty",
+          "creamy"
+        ],
+        "mood": "nostalgic"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-013",
+      "name": "Iced Mocha Latte",
+      "section": "iced",
+      "price": 6.5,
+      "emoji": "ICED",
+      "description": "Rich espresso meets chocolate — dessert in a cup.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "chocolate",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "chocolate",
+        "sweet",
+        "creamy",
+        "rich"
+      ],
+      "pairingTags": [
+        "dessert-like",
+        "chocolate",
+        "indulgent"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "french",
+          "italian"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "fruity",
+          "nutty"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-014",
+      "name": "Iced Matcha Latte",
+      "section": "iced",
+      "price": 6.5,
+      "emoji": "ICED",
+      "description": "Premium green tea matcha and creamy milk over ice.",
+      "categories": [
+        "matcha",
+        "milk-drink",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "earthy",
+        "creamy",
+        "grassy",
+        "mild-sweet"
+      ],
+      "pairingTags": [
+        "earthy",
+        "refreshing",
+        "light"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "japanese",
+          "korean",
+          "asian",
+          "thai",
+          "vietnamese"
+        ],
+        "mealTypes": [
+          "lunch",
+          "appetizer",
+          "light-meal",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "umami",
+          "delicate",
+          "light",
+          "fresh"
+        ],
+        "mood": "calm"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-015",
+      "name": "Matcha Lemonade",
+      "section": "iced",
+      "price": 6.5,
+      "emoji": "MATCHA",
+      "description": "Finely ground Japanese green tea blended with tart lemonade.",
+      "categories": [
+        "matcha",
+        "juice",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "earthy",
+        "citrus",
+        "tart",
+        "refreshing"
+      ],
+      "pairingTags": [
+        "refreshing",
+        "tart",
+        "palate-cleanser",
+        "vibrant"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "japanese",
+          "asian",
+          "mediterranean",
+          "greek",
+          "middle-eastern"
+        ],
+        "mealTypes": [
+          "lunch",
+          "appetizer",
+          "salad",
+          "light-meal"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "heavy",
+          "fried"
+        ],
+        "mood": "energized"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-016",
+      "name": "Iced Chai Latte",
+      "section": "iced",
+      "price": 6.5,
+      "emoji": "ICED",
+      "description": "Brewed black tea with aromatic spices — bold and smooth over ice.",
+      "categories": [
+        "tea",
+        "milk-drink",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "spiced",
+        "warm-spice",
+        "sweet",
+        "creamy"
+      ],
+      "pairingTags": [
+        "spiced",
+        "warming",
+        "aromatic"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "indian",
+          "middle-eastern",
+          "afghan",
+          "persian",
+          "moroccan",
+          "north-african"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert",
+          "snack"
+        ],
+        "flavorContrast": [
+          "spicy",
+          "savory",
+          "herby",
+          "earthy"
+        ],
+        "mood": "cozy"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-017",
+      "name": "Iced Chocolate",
+      "section": "iced",
+      "price": 6.0,
+      "emoji": "ICED",
+      "description": "Real cocoa and cold milk — a decadent twist on a classic.",
+      "categories": [
+        "chocolate",
+        "milk-drink",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "none",
+      "flavorProfile": [
+        "chocolate",
+        "rich",
+        "sweet",
+        "creamy"
+      ],
+      "pairingTags": [
+        "dessert-like",
+        "rich",
+        "sweet",
+        "comforting"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "french",
+          "american",
+          "european",
+          "swiss"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "fruity",
+          "nutty",
+          "sweet"
+        ],
+        "mood": "comforted"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-018",
+      "name": "Iced Tea",
+      "section": "iced",
+      "price": 4.75,
+      "emoji": "ICED",
+      "description": "Crisp and refreshing classic iced tea.",
+      "categories": [
+        "tea",
+        "juice",
+        "non-alcoholic"
+      ],
+      "temp": "iced",
+      "caffeineLevel": "low",
+      "flavorProfile": [
+        "light",
+        "crisp",
+        "refreshing",
+        "clean"
+      ],
+      "pairingTags": [
+        "refreshing",
+        "light",
+        "palate-cleanser",
+        "versatile"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "southern",
+          "asian",
+          "mediterranean"
+        ],
+        "mealTypes": [
+          "lunch",
+          "dinner",
+          "light-meal",
+          "appetizer"
+        ],
+        "flavorContrast": [
+          "rich",
+          "spicy",
+          "fatty",
+          "hearty"
+        ],
+        "mood": "refreshed"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-019",
+      "name": "Coffee",
+      "section": "hot",
+      "price": 3.75,
+      "emoji": "COFFEE",
+      "description": "Drip coffee brewed fresh all day with thoughtfully sourced beans.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "classic",
+        "balanced",
+        "clean",
+        "warm"
+      ],
+      "pairingTags": [
+        "classic",
+        "versatile",
+        "warming"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "european",
+          "french"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "savory",
+          "light",
+          "pastry"
+        ],
+        "mood": "classic"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-020",
+      "name": "Decaf Coffee",
+      "section": "hot",
+      "price": 3.75,
+      "emoji": "DECAF",
+      "description": "Same great drip coffee, no caffeine.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "none",
+      "flavorProfile": [
+        "classic",
+        "balanced",
+        "clean",
+        "warm"
+      ],
+      "pairingTags": [
+        "classic",
+        "gentle",
+        "warming"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "european",
+          "french"
+        ],
+        "mealTypes": [
+          "dessert",
+          "breakfast",
+          "brunch",
+          "evening"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "savory",
+          "light"
+        ],
+        "mood": "relaxed"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-021",
+      "name": "Salted Caramel Latte",
+      "section": "hot",
+      "price": 7.0,
+      "emoji": "SALTED",
+      "description": "Espresso with sweet caramel and a pinch of salt, steamed milk.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "caramel",
+        "salty",
+        "creamy",
+        "warm"
+      ],
+      "pairingTags": [
+        "sweet",
+        "indulgent",
+        "cozy"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "french",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "breakfast",
+          "brunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "nutty",
+          "buttery",
+          "sweet"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": true,
+      "seasonalLabel": "Fall 2025 special"
+    },
+    {
+      "id": "tc-022",
+      "name": "Lavender Honey Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "LAVENDER",
+      "description": "Sweet scent of lavender and honey in a warm latte.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "floral",
+        "honey",
+        "sweet",
+        "creamy",
+        "delicate"
+      ],
+      "pairingTags": [
+        "floral",
+        "delicate",
+        "aromatic",
+        "sweet"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "french",
+          "mediterranean",
+          "middle-eastern",
+          "greek"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert",
+          "snack"
+        ],
+        "flavorContrast": [
+          "light",
+          "herby",
+          "floral",
+          "fresh"
+        ],
+        "mood": "serene"
+      },
+      "featured": false,
+      "seasonal": true,
+      "seasonalLabel": "Spring 2026 special"
+    },
+    {
+      "id": "tc-023",
+      "name": "Strawberry Mocha",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "STRAWBERRY",
+      "description": "Milk, speculaas syrup, and espresso with a berry twist.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "chocolate",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "fruity",
+        "chocolate",
+        "spiced",
+        "warm"
+      ],
+      "pairingTags": [
+        "sweet",
+        "fruity",
+        "warming",
+        "dessert-like"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "european",
+          "french"
+        ],
+        "mealTypes": [
+          "dessert",
+          "brunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "light",
+          "fruity"
+        ],
+        "mood": "playful"
+      },
+      "featured": false,
+      "seasonal": true,
+      "seasonalLabel": "Spring 2026 special"
+    },
+    {
+      "id": "tc-024",
+      "name": "Red Eye",
+      "section": "hot",
+      "price": 5.0,
+      "emoji": "RED",
+      "description": "Drip coffee with a shot of espresso — double the power.",
+      "categories": [
+        "coffee",
+        "energy",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "very-high",
+      "flavorProfile": [
+        "bold",
+        "intense",
+        "bitter",
+        "warming"
+      ],
+      "pairingTags": [
+        "bold",
+        "energizing",
+        "intense"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "italian",
+          "diner"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "heavy",
+          "savory"
+        ],
+        "mood": "powered-up"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-025",
+      "name": "Americano",
+      "section": "hot",
+      "price": 4.25,
+      "emoji": "AMERICANO",
+      "description": "Freshly pulled espresso poured over hot water — rich and full-bodied.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "bold",
+        "clean",
+        "rich",
+        "warm"
+      ],
+      "pairingTags": [
+        "cuts-richness",
+        "bold",
+        "classic"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "american",
+          "european",
+          "middle-eastern"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "lunch",
+          "dinner"
+        ],
+        "flavorContrast": [
+          "rich",
+          "fatty",
+          "savory",
+          "heavy"
+        ],
+        "mood": "focused"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-026",
+      "name": "Flat White",
+      "section": "hot",
+      "price": 5.25,
+      "emoji": "FLAT",
+      "description": "Concentrated espresso with silky steamed milk — balanced and beautiful.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium-high",
+      "flavorProfile": [
+        "bold",
+        "silky",
+        "balanced",
+        "rich"
+      ],
+      "pairingTags": [
+        "balanced",
+        "smooth",
+        "elegant"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "australian",
+          "european",
+          "british",
+          "american"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "savory",
+          "light",
+          "pastry"
+        ],
+        "mood": "refined"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-027",
+      "name": "Café Con Leche",
+      "section": "hot",
+      "price": 5.0,
+      "emoji": "CAF",
+      "description": "Equal parts bold brewed coffee and hot steamed milk — classic Spanish style.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "bold",
+        "creamy",
+        "balanced",
+        "warm"
+      ],
+      "pairingTags": [
+        "balanced",
+        "traditional",
+        "comforting"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "spanish",
+          "latin",
+          "cuban",
+          "mexican"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch"
+        ],
+        "flavorContrast": [
+          "savory",
+          "sweet",
+          "pastry",
+          "bread"
+        ],
+        "mood": "traditional"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-028",
+      "name": "Macchiato",
+      "section": "hot",
+      "price": 4.5,
+      "emoji": "MACCHIATO",
+      "description": "Espresso marked with just a touch of foam — refined and bold.",
+      "categories": [
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "high",
+      "flavorProfile": [
+        "bold",
+        "intense",
+        "concentrated",
+        "slightly-creamy"
+      ],
+      "pairingTags": [
+        "bold",
+        "classic",
+        "small-sip"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "after-dinner"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "rich",
+          "chocolate"
+        ],
+        "mood": "refined"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-029",
+      "name": "Cortado",
+      "section": "hot",
+      "price": 5.0,
+      "emoji": "CORTADO",
+      "description": "Espresso and a touch of steamed milk — perfectly balanced.",
+      "categories": [
+        "coffee",
+        "milk-drink",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium-high",
+      "flavorProfile": [
+        "bold",
+        "balanced",
+        "smooth",
+        "minimal-milk"
+      ],
+      "pairingTags": [
+        "balanced",
+        "cuts-richness",
+        "minimalist"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "spanish",
+          "latin",
+          "italian",
+          "european"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "rich",
+          "savory"
+        ],
+        "mood": "balanced"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-030",
+      "name": "Cappuccino",
+      "section": "hot",
+      "price": 5.25,
+      "emoji": "CAPPUCCINO",
+      "description": "Equal parts espresso, steamed milk, and velvety micro-foam.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "bold",
+        "creamy",
+        "airy",
+        "classic"
+      ],
+      "pairingTags": [
+        "classic",
+        "airy",
+        "balanced"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "italian",
+          "european",
+          "american"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "pastry",
+          "light"
+        ],
+        "mood": "classic"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-031",
+      "name": "Latte",
+      "section": "hot",
+      "price": 5.75,
+      "emoji": "LATTE",
+      "description": "Bold espresso with creamy steamed milk — a timeless café favorite.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "smooth",
+        "creamy",
+        "mild",
+        "warm"
+      ],
+      "pairingTags": [
+        "versatile",
+        "smooth",
+        "comforting"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "italian",
+          "french",
+          "european"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "lunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "savory",
+          "light",
+          "medium"
+        ],
+        "mood": "relaxed"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-032",
+      "name": "Matcha Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "MATCHA",
+      "description": "Single-source Japanese matcha with steamed milk — earthy and soothing.",
+      "categories": [
+        "matcha",
+        "milk-drink",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "earthy",
+        "creamy",
+        "grassy",
+        "warm",
+        "delicate"
+      ],
+      "pairingTags": [
+        "earthy",
+        "soothing",
+        "umami-friendly"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "japanese",
+          "korean",
+          "asian",
+          "thai"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert",
+          "light-meal"
+        ],
+        "flavorContrast": [
+          "umami",
+          "delicate",
+          "sweet",
+          "light"
+        ],
+        "mood": "calm"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-033",
+      "name": "Chai Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "CHAI",
+      "description": "Bold black tea, aromatic spices, and steamed milk — soul-soothing.",
+      "categories": [
+        "tea",
+        "milk-drink",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "low-medium",
+      "flavorProfile": [
+        "spiced",
+        "warming",
+        "sweet",
+        "creamy",
+        "aromatic"
+      ],
+      "pairingTags": [
+        "spiced",
+        "aromatic",
+        "warming",
+        "cozy"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "indian",
+          "middle-eastern",
+          "afghan",
+          "persian",
+          "moroccan",
+          "balkan"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert",
+          "snack",
+          "evening"
+        ],
+        "flavorContrast": [
+          "spicy",
+          "savory",
+          "herby",
+          "earthy",
+          "rich"
+        ],
+        "mood": "cozy"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-034",
+      "name": "Mocha Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "MOCHA",
+      "description": "Deep espresso and rich chocolate — the best of both worlds.",
+      "categories": [
+        "milk-drink",
+        "chocolate",
+        "coffee",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "chocolate",
+        "coffee",
+        "sweet",
+        "rich",
+        "warm"
+      ],
+      "pairingTags": [
+        "rich",
+        "chocolate",
+        "indulgent",
+        "warming"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american",
+          "french",
+          "italian",
+          "european"
+        ],
+        "mealTypes": [
+          "dessert",
+          "brunch",
+          "snack"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "fruity",
+          "nutty"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-035",
+      "name": "Spanish Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "SPANISH",
+      "description": "Bold espresso with condensed milk and steamed milk — luxuriously sweet.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "creamy",
+        "rich",
+        "caramel-like"
+      ],
+      "pairingTags": [
+        "sweet",
+        "rich",
+        "indulgent"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "spanish",
+          "latin",
+          "cuban",
+          "mexican"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "brunch",
+          "dessert"
+        ],
+        "flavorContrast": [
+          "spicy",
+          "savory",
+          "salty"
+        ],
+        "mood": "indulgent"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-036",
+      "name": "Graham Cracker Latte",
+      "section": "hot",
+      "price": 6.5,
+      "emoji": "GRAHAM",
+      "description": "Bold espresso with nostalgic graham cracker and campfire flavors.",
+      "categories": [
+        "milk-drink",
+        "coffee",
+        "specialty",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "medium",
+      "flavorProfile": [
+        "sweet",
+        "graham",
+        "vanilla",
+        "warm",
+        "nostalgic"
+      ],
+      "pairingTags": [
+        "sweet",
+        "cozy",
+        "nostalgic",
+        "warming"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "american"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch",
+          "evening"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "nutty",
+          "creamy"
+        ],
+        "mood": "nostalgic"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-037",
+      "name": "Hot Chocolate",
+      "section": "hot",
+      "price": 5.5,
+      "emoji": "HOT",
+      "description": "Real cocoa and steamed milk — smooth, rich, and comforting.",
+      "categories": [
+        "chocolate",
+        "milk-drink",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "none",
+      "flavorProfile": [
+        "chocolate",
+        "rich",
+        "sweet",
+        "creamy",
+        "warm"
+      ],
+      "pairingTags": [
+        "comforting",
+        "sweet",
+        "rich",
+        "child-friendly"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "french",
+          "american",
+          "european",
+          "swiss"
+        ],
+        "mealTypes": [
+          "dessert",
+          "snack",
+          "brunch",
+          "evening"
+        ],
+        "flavorContrast": [
+          "sweet",
+          "fruity",
+          "nutty",
+          "pastry"
+        ],
+        "mood": "comforted"
+      },
+      "featured": false,
+      "seasonal": false
+    },
+    {
+      "id": "tc-038",
+      "name": "Hot Tea",
+      "section": "hot",
+      "price": 4.0,
+      "emoji": "HOT",
+      "description": "Hand-packed loose leaf tea — simple and soothing.",
+      "categories": [
+        "tea",
+        "non-alcoholic"
+      ],
+      "temp": "hot",
+      "caffeineLevel": "low",
+      "flavorProfile": [
+        "light",
+        "clean",
+        "warm",
+        "herbal"
+      ],
+      "pairingTags": [
+        "light",
+        "palate-cleanser",
+        "soothing",
+        "gentle"
+      ],
+      "pairsWith": {
+        "cuisines": [
+          "japanese",
+          "chinese",
+          "british",
+          "asian",
+          "middle-eastern"
+        ],
+        "mealTypes": [
+          "breakfast",
+          "light-meal",
+          "dessert",
+          "evening"
+        ],
+        "flavorContrast": [
+          "delicate",
+          "sweet",
+          "savory",
+          "light"
+        ],
+        "mood": "serene"
+      },
+      "featured": false,
+      "seasonal": false
+    }
+  ],
+  "pairingRules": {
+    "cuisineTodrinkStyle": {
+      "italian": [
+        "coffee",
+        "milk-drink"
+      ],
+      "japanese": [
+        "matcha",
+        "tea"
+      ],
+      "korean": [
+        "matcha",
+        "tea"
+      ],
+      "chinese": [
+        "tea",
+        "matcha"
+      ],
+      "asian": [
+        "tea",
+        "matcha",
+        "juice"
+      ],
+      "thai": [
+        "matcha",
+        "tea",
+        "juice"
+      ],
+      "vietnamese": [
+        "coffee",
+        "matcha",
+        "tea"
+      ],
+      "indian": [
+        "tea",
+        "milk-drink"
+      ],
+      "afghan": [
+        "tea",
+        "milk-drink"
+      ],
+      "persian": [
+        "tea",
+        "milk-drink"
+      ],
+      "moroccan": [
+        "tea",
+        "milk-drink"
+      ],
+      "middle-eastern": [
+        "tea",
+        "coffee",
+        "milk-drink"
+      ],
+      "greek": [
+        "coffee",
+        "juice",
+        "tea"
+      ],
+      "mediterranean": [
+        "coffee",
+        "juice",
+        "tea"
+      ],
+      "spanish": [
+        "coffee",
+        "milk-drink"
+      ],
+      "latin": [
+        "coffee",
+        "milk-drink",
+        "specialty"
+      ],
+      "mexican": [
+        "coffee",
+        "energy",
+        "juice"
+      ],
+      "cuban": [
+        "coffee",
+        "milk-drink"
+      ],
+      "american": [
+        "coffee",
+        "milk-drink",
+        "energy"
+      ],
+      "french": [
+        "coffee",
+        "milk-drink",
+        "chocolate"
+      ],
+      "european": [
+        "coffee",
+        "milk-drink"
+      ],
+      "british": [
+        "tea",
+        "milk-drink"
+      ],
+      "australian": [
+        "milk-drink",
+        "coffee"
+      ],
+      "balkan": [
+        "coffee",
+        "tea"
+      ],
+      "north-african": [
+        "tea",
+        "coffee"
+      ]
+    },
+    "mealTypeToMood": {
+      "breakfast": [
+        "warming",
+        "energizing",
+        "classic"
+      ],
+      "brunch": [
+        "indulgent",
+        "floral",
+        "sweet",
+        "classic"
+      ],
+      "lunch": [
+        "refreshing",
+        "balanced",
+        "cuts-richness"
+      ],
+      "dinner": [
+        "bold",
+        "cuts-richness",
+        "palate-cleanser"
+      ],
+      "dessert": [
+        "complementary",
+        "sweet",
+        "chocolate",
+        "indulgent"
+      ],
+      "light-meal": [
+        "refreshing",
+        "light",
+        "earthy"
+      ],
+      "appetizer": [
+        "refreshing",
+        "light"
+      ],
+      "snack": [
+        "versatile",
+        "sweet",
+        "cozy"
+      ],
+      "evening": [
+        "warming",
+        "decaf",
+        "cozy"
+      ],
+      "after-dinner": [
+        "bold",
+        "small-sip",
+        "classic"
+      ]
+    }
+  }
+}

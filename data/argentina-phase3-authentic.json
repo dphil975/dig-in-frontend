@@ -1,0 +1,136 @@
+{
+  "country": "Argentina",
+  "region": "Various",
+  "breakfast": [],
+  "lunch": [],
+  "dinner": [
+    {
+      "id": "arg-dinner-asado",
+      "name": "Asado (Argentine Grilled Beef)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 60,
+      "description": "Argentine grilled beef with chimichurri - national pride dish",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "garlic",
+        "herbs"
+      ],
+      "ingredients": [
+        "1.5kg beef short ribs or rib eye steak (2cm thick)",
+        "Salt and black pepper to taste",
+        "For chimichurri: 1 cup fresh parsley, finely chopped, 1/4 cup fresh oregano, finely chopped, 6 cloves garlic, minced, 3/4 cup extra virgin olive oil, 1/4 cup red wine vinegar, 1/2 teaspoon red pepper flakes, Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Make chimichurri: combine parsley, oregano, minced garlic in bowl",
+        "Add olive oil, red wine vinegar, red pepper flakes",
+        "Season with salt and pepper",
+        "Let chimichurri sit at least 30 minutes to blend flavors (can be made hours ahead)",
+        "Prepare grill for medium-high heat (wood charcoal is traditional)",
+        "Pat beef dry with paper towels",
+        "Season beef generously with salt and pepper on both sides",
+        "Place beef on hot grill grates",
+        "Grill 25-30 minutes for medium-rare (internal temp 130-135\u00b0F), turning occasionally",
+        "Do not move meat constantly - let it develop char",
+        "Remove beef from grill and let rest 10 minutes (crucial for meat texture)",
+        "Slice against the grain",
+        "Serve immediately with chimichurri on the side or spooned over meat",
+        "Traditional accompaniments: grilled vegetables, salad, crusty bread"
+      ],
+      "notes": "Chimichurri is essential - it's the soul of the dish. Resting meat allows juices to redistribute",
+      "fun_fact": "Asado is more than food in Argentina - it's a social and cultural tradition bringing people together",
+      "alternatives": [
+        "Use different beef cuts",
+        "Add grilled vegetables to platter",
+        "Make herb-butter baste",
+        "Use skirt steak (traditional cut)"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 60,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 36,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 18,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
+}

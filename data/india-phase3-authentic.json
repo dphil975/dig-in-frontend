@@ -1,0 +1,1379 @@
+{
+  "country": "India",
+  "region": "South Asia",
+  "breakfast": [
+    {
+      "id": "ind-break-idli",
+      "name": "Idli (Steamed South Indian Rice Cakes)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Soft, fluffy steamed rice cakes from South India, made from fermented batter and naturally gluten-free. Typically served with sambar and coconut chutney",
+      "seasonings": [
+        "salt",
+        "fenugreek seeds"
+      ],
+      "ingredients": [
+        "2 cups idly rice (par-boiled)",
+        "1 cup urad dal (hulled black gram)",
+        "1/2 tsp fenugreek seeds",
+        "1 tsp salt",
+        "Water"
+      ],
+      "instructions": [
+        "Soak rice and urad dal separately for 6 hours",
+        "Add fenugreek seeds to urad dal",
+        "Grind urad dal into smooth paste, transfer to bowl",
+        "Grind rice into smooth paste",
+        "Mix both pastes together",
+        "Let ferment overnight (8-12 hours) until batter becomes light and airy",
+        "Pour batter into greased idli molds, filling 3/4 full",
+        "Steam in idli maker for 10-15 minutes until toothpick comes out clean",
+        "Cool slightly and push idlis out onto plate",
+        "Serve with sambar and coconut chutney"
+      ],
+      "notes": "Fermentation is crucial for proper texture and flavor. The batter should have small air bubbles after fermentation",
+      "fun_fact": "Idlis require fermentation which enhances nutrition through microbial activity. Idlis are naturally gluten-free and highly digestible, making them suitable for those with gluten intolerance",
+      "alternatives": [
+        "Make mini-idlis",
+        "Add vegetables to batter",
+        "Serve with upma instead of sambar",
+        "Make instant idli with baking soda if in hurry"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-break-dosa",
+      "name": "Dosa (South Indian Crepe)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 10,
+      "cookTime": 4,
+      "description": "Thin, crispy South Indian crepe made from fermented rice and lentil batter, typically served with sambar, coconut chutney, or potato curry",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "Fermented dosa batter (from idli recipe above)",
+        "2 tbsp oil or ghee",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "Heat non-stick griddle or tava over medium-high heat",
+        "Grease griddle lightly with oil",
+        "Pour 1/2 cup batter in center of pan",
+        "Immediately spread very thin in circular motion using ladle back",
+        "Drizzle oil around edges and under dosa",
+        "Cook for 1-2 minutes until bottom turns golden and crispy",
+        "Flip carefully and cook another 30 seconds",
+        "Fold and serve hot with sambar, chutney, or potato curry"
+      ],
+      "notes": "Well-fermented batter creates naturally crispy, golden exterior. Spreading technique takes practice but is essential for proper thin crepe",
+      "fun_fact": "A well-fermented dosa batter creates a naturally crispy exterior while remaining soft inside. Some regions prepare masala dosa by adding spiced potato filling before folding",
+      "alternatives": [
+        "Make masala dosa with potato filling",
+        "Serve with sambhar",
+        "Add cheese and vegetables",
+        "Make instant dosa without fermentation"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 10,
+          "cook_time": 4,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 5,
+          "cook_time": 2,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 1,
+          "cook_time": 1,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-break-puri",
+      "name": "Puri (Deep-Fried Indian Flatbread)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "description": "Golden, puffy deep-fried flatbread from India, often served with curries like nihari or sabzi. The deep frying creates a light, airy, crispy texture",
+      "seasonings": [
+        "salt"
+      ],
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1/2 tsp salt",
+        "1 tbsp oil",
+        "1/2 cup warm water",
+        "Oil for deep frying"
+      ],
+      "instructions": [
+        "Mix flour and salt in bowl",
+        "Add oil and rub into flour",
+        "Gradually add warm water and knead into soft, smooth dough",
+        "Cover and rest dough for 20-30 minutes",
+        "Divide dough into 8 equal portions and roll each into thin circle (4-5 inches)",
+        "Heat oil for deep frying in heavy-bottomed pot to 350°F",
+        "Carefully place puri in hot oil - it will sink initially",
+        "Using slotted spoon, gently press down center so it puffs up",
+        "Flip after 10 seconds and fry other side until golden (about 20 seconds total)",
+        "Remove with slotted spoon and drain on paper towels",
+        "Serve hot with nihari or other curries"
+      ],
+      "notes": "Proper oil temperature is crucial - too cool and puris will be greasy, too hot and they'll brown before puffing",
+      "fun_fact": "Puri is served as an accompaniment to soak up delicious gravy of Nihari or other curries. The deep frying creates characteristic puffy texture that makes puris satisfying",
+      "alternatives": [
+        "Make luchi (smaller, sweeter version)",
+        "Stuff with spiced potatoes",
+        "Make with whole wheat flour",
+        "Serve with chole (chickpeas)"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 10,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 5,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 1,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-break-nihari",
+      "name": "Nihari (Pakistani Beef Stew)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 120,
+      "description": "A slow-cooked, deeply flavorful beef stew from Pakistan traditionally eaten for breakfast, made with bone-in beef and a complex spice blend including rare long pepper",
+      "seasonings": [
+        "red chili powder",
+        "coriander powder",
+        "turmeric",
+        "peepli (long pepper)"
+      ],
+      "ingredients": [
+        "1kg bone-in beef shank",
+        "4 tbsp ghee",
+        "6 onions, sliced thin",
+        "3 tbsp ginger-garlic paste",
+        "2 tbsp atta (whole wheat flour)",
+        "1.5 tbsp red chili powder",
+        "1 tbsp coriander powder",
+        "1/2 tsp turmeric",
+        "1 tsp peepli (long pepper, essential)",
+        "Seeds from 1 black cardamom",
+        "4-5 cloves",
+        "1 tsp cumin seeds",
+        "8 cups water",
+        "Salt to taste",
+        "Boiled eggs for serving",
+        "Fresh ginger for garnish"
+      ],
+      "instructions": [
+        "Boil beef shank with water and salt until tender (45-60 minutes)",
+        "Heat ghee in large pot, add sliced onions",
+        "Cook covered over low heat for 45 minutes, stirring occasionally, until onions are very soft and golden",
+        "Add ginger-garlic paste and cook covered for 20 minutes over low heat",
+        "Mix all spices together and add to onions, stir well",
+        "Add cooked beef and its broth to spice mixture",
+        "Mix atta with small amount of water to make paste, add to curry to thicken",
+        "Simmer for 10 minutes until flavors meld",
+        "Serve hot with halved boiled eggs, topped with fried onions and fresh ginger",
+        "Accompany with puri bread"
+      ],
+      "notes": "The slow cooking of onions for 45 minutes is crucial to developing the rich, complex flavor. Long pepper (peepli) is essential and irreplaceable",
+      "fun_fact": "Nihari is traditionally eaten as special weekend breakfast in Pakistani households. The essential spice peepli gives nihari its unique flavor profile",
+      "alternatives": [
+        "Use chicken instead of beef",
+        "Add potatoes",
+        "Make with lamb",
+        "Serve with naan instead of puri"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 120,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 72,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 36,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-break-aloo-gobi-paratha",
+      "name": "Aloo Gobi Paratha (Potato-Cauliflower Flatbread)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "A North Indian stuffed flatbread combining potato and cauliflower filling with warm spices, cooked on griddle with ghee until crispy and golden",
+      "seasonings": [
+        "cumin seeds",
+        "coriander powder",
+        "turmeric powder",
+        "chaat masala"
+      ],
+      "ingredients": [
+        "2 cups whole wheat flour",
+        "1 tsp salt",
+        "2 tbsp ghee",
+        "3/4 cup warm water",
+        "3 medium potatoes, boiled and mashed",
+        "1 small head cauliflower, finely grated",
+        "2 tbsp oil",
+        "1/2 tsp cumin seeds",
+        "1 tbsp ginger-green chili paste",
+        "1 tsp coriander powder",
+        "1/2 tsp turmeric powder",
+        "1 tsp chaat masala",
+        "Salt and pepper to taste",
+        "Ghee for cooking"
+      ],
+      "instructions": [
+        "Make dough: Mix flour and salt, add ghee and rub in, gradually add warm water, knead into soft dough",
+        "Cover dough and let rest 20-30 minutes",
+        "Make filling: Heat oil, add cumin seeds and let crackle (30 seconds)",
+        "Add ginger-chili paste and cook for 1 minute",
+        "Add grated cauliflower and fry for 2-3 minutes",
+        "Add coriander, turmeric, chaat masala, salt and pepper",
+        "Add mashed potatoes and cook until combined (2-3 minutes), cool filling",
+        "Divide dough into 4 balls, roll one into 4-inch circle",
+        "Place 3 tbsp filling in center, bring edges up and seal",
+        "Gently flatten into 1/4-inch thick disc and roll to 7-8 inches",
+        "Heat tava (griddle) over medium flame",
+        "Place paratha on tava and cook until golden spots appear (1-2 minutes)",
+        "Flip and cook other side, applying ghee with brush",
+        "Flip again and press with spatula so paratha cooks evenly and becomes crispy",
+        "Serve hot with green chutney and chai"
+      ],
+      "notes": "The combination of two parathas (aloo and gobi) creates a more interesting and nutritious filling than either alone",
+      "fun_fact": "Aloo Gobi Paratha is a North Indian breakfast dish that is filling, satisfying, and comforting, combining two popular parathas with equal proportions of potato and cauliflower",
+      "alternatives": [
+        "Use spinach instead of cauliflower",
+        "Add paneer cheese to filling",
+        "Make with mung dal flour",
+        "Top with raw onion and lemon"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "ingredientGroups": [
+        {
+          "title": "For the Dough",
+          "items": [
+            {
+              "amount": 2,
+              "unit": "cups",
+              "name": "Whole wheat flour",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "tsp",
+              "name": "Salt",
+              "note": ""
+            },
+            {
+              "amount": 2,
+              "unit": "tbsp",
+              "name": "Ghee",
+              "note": ""
+            },
+            {
+              "amount": 0.75,
+              "unit": "cup",
+              "name": "Warm water",
+              "note": ""
+            }
+          ]
+        },
+        {
+          "title": "For the Filling",
+          "items": [
+            {
+              "amount": 3,
+              "unit": "",
+              "name": "Potatoes, boiled and mashed",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "small head",
+              "name": "Cauliflower, finely grated",
+              "note": ""
+            },
+            {
+              "amount": 2,
+              "unit": "tbsp",
+              "name": "Oil",
+              "note": ""
+            },
+            {
+              "amount": 0.5,
+              "unit": "tsp",
+              "name": "Cumin seeds",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "tbsp",
+              "name": "Ginger-green chili paste",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "tsp",
+              "name": "Coriander powder",
+              "note": ""
+            },
+            {
+              "amount": 0.5,
+              "unit": "tsp",
+              "name": "Turmeric powder",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "tsp",
+              "name": "Chaat masala",
+              "note": ""
+            },
+            {
+              "amount": 1,
+              "unit": "pinch",
+              "name": "Salt and pepper",
+              "note": "To taste"
+            },
+            {
+              "amount": 1,
+              "unit": "splash",
+              "name": "Ghee",
+              "note": "For cooking"
+            }
+          ]
+        }
+      ],
+      "equipment": [
+        "Rolling pin",
+        "Tava (flat griddle)",
+        "Mixing bowls"
+      ],
+      "stepHelp": [
+        "Rubbing the ghee into the flour first (like making pie dough) coats the flour and gives the finished paratha a softer texture.",
+        null,
+        "This is called 'tempering' — the seeds should sizzle and pop, releasing their fragrance, but watch closely so they don't burn.",
+        null,
+        "Fry off the raw smell and excess moisture from the cauliflower before adding the potatoes — a wet filling will make the paratha soggy and hard to seal.",
+        null,
+        "Cooling the filling is important — hot filling will make the dough too soft and sticky to work with when you stuff it.",
+        "Keep the rest of the dough covered with a damp cloth so it doesn't dry out while you work.",
+        "Gather the edges up like a small pouch and pinch them together firmly at the top, then flatten that seam down — a poorly sealed paratha will burst open when you roll it.",
+        "Roll gently and evenly, using extra flour to prevent sticking — if filling starts to poke through, dust the spot with flour and keep rolling.",
+        null,
+        "You'll see it start to puff slightly and darken in spots — that's your cue to flip.",
+        "Brush ghee generously over the cooked side — this is what gives the finished paratha its rich flavor and golden color.",
+        "Gently pressing with the back of a spatula helps the paratha puff and cook evenly all the way through, especially at the edges.",
+        null
+      ],
+      "variations": [
+        {
+          "title": "Spinach Swap",
+          "text": "Replace the cauliflower with finely chopped, well-squeezed spinach for a palak aloo paratha."
+        },
+        {
+          "title": "Paneer Addition",
+          "text": "Crumble paneer into the filling for extra protein and a creamier bite."
+        },
+        {
+          "title": "Onion Paratha",
+          "text": "Add finely chopped raw onion to the filling for extra crunch and sharpness."
+        },
+        {
+          "title": "Radish Filling",
+          "text": "Swap in grated and well-squeezed mooli (radish) for a completely different, peppery classic paratha."
+        },
+        {
+          "title": "Extra Spicy",
+          "text": "Add finely chopped green chili directly to the filling in addition to the ginger-chili paste for more heat."
+        }
+      ],
+      "serveWith": {
+        "intro": "A North Indian breakfast plate is built around the paratha, with a few punchy, cooling sides.",
+        "items": [
+          {
+            "title": "Green Chutney",
+            "text": "A bright cilantro-mint chutney is the classic dip for paratha."
+          },
+          {
+            "title": "Plain Yogurt or Raita",
+            "text": "Cool and tangy, it balances the warm spices in the filling."
+          },
+          {
+            "title": "Pickle (Achaar)",
+            "text": "A spoonful of Indian pickle adds a punchy, tangy contrast."
+          },
+          {
+            "title": "Chai",
+            "text": "Hot, spiced tea is the traditional companion to a paratha breakfast."
+          },
+          {
+            "title": "Extra Butter or Ghee",
+            "text": "A pat melting on top right before serving never hurts."
+          }
+        ]
+      },
+      "expertTips": [
+        {
+          "title": "Dry the Filling Well",
+          "text": "A watery filling is the most common cause of torn or soggy parathas — fry off moisture from the cauliflower thoroughly before adding potatoes."
+        },
+        {
+          "title": "Cool the Filling Fully",
+          "text": "Warm filling softens the dough too much to roll cleanly — let it cool to room temperature first."
+        },
+        {
+          "title": "Seal Firmly, Roll Gently",
+          "text": "A well-pinched seal keeps filling from bursting through, but roll with a light, even touch so you don't force it out anyway."
+        },
+        {
+          "title": "Ghee on Both Sides",
+          "text": "Don't skimp on the ghee while cooking — it's what gives paratha its signature richness and golden, slightly crisp crust."
+        }
+      ],
+      "storage": [
+        {
+          "title": "Fridge",
+          "text": "Cooked parathas keep in an airtight container or wrapped in foil in the fridge for up to 2 days."
+        },
+        {
+          "title": "Freezer",
+          "text": "Freeze cooked, cooled parathas with parchment between each one for up to 1 month."
+        },
+        {
+          "title": "Reheating",
+          "text": "Reheat on a hot tava or skillet with a little ghee on each side until warmed through and crisp again — a microwave will leave them chewy instead of crisp."
+        }
+      ],
+      "makeAhead": "Make the dough and the filling separately up to a day ahead and store them covered in the fridge. Let the filling come closer to room temperature before assembling so it's easy to work with, then roll and cook parathas fresh for the best texture.",
+      "faqs": [
+        {
+          "q": "Why does my filling burst out while rolling?",
+          "a": "The filling wasn't sealed tightly enough, or there's too much of it. Pinch the dough firmly closed at the top and use a moderate amount of filling — you can always make a second batch."
+        },
+        {
+          "q": "Can I make the dough ahead of time?",
+          "a": "Yes — cover it tightly and refrigerate for up to a day; let it come to room temperature before rolling for easier handling."
+        },
+        {
+          "q": "What if I don't have chaat masala?",
+          "a": "A mix of ground cumin, a pinch of amchur (dried mango powder) or lemon juice, and a little black salt approximates its tangy flavor, or you can simply leave it out."
+        },
+        {
+          "q": "Can I make these gluten-free?",
+          "a": "Whole wheat flour is central to the texture here, but a gluten-free flatbread flour blend can work as a substitute, though the texture will differ."
+        }
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "ind-lunch-samosa",
+      "name": "Samosa (Fried Pastry with Potato Filling)",
+      "difficulty": "Medium",
+      "servings": 10,
+      "prepTime": 45,
+      "cookTime": 25,
+      "description": "Popular Indian lunch snack - crispy fried pastry triangles filled with spiced potatoes and peas. Every region has its own variation",
+      "seasonings": [
+        "cumin seeds",
+        "garam masala",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1/2 cup ghee",
+        "1/2 tsp salt",
+        "Water for dough",
+        "400g potatoes",
+        "100g peas",
+        "2 onions, diced",
+        "3 green chilies",
+        "1 tsp ginger, minced",
+        "1 tsp cumin seeds",
+        "1 tsp garam masala",
+        "Salt and pepper to taste",
+        "Oil for deep frying"
+      ],
+      "instructions": [
+        "Make dough: Mix flour, ghee, salt, add water gradually. Knead until soft. Rest 30 min",
+        "Make filling: Boil potatoes, peel, dice",
+        "Heat ghee, temper cumin seeds, add onions/chilies/ginger, cook 3 min",
+        "Add potatoes and peas, cook 5 min, cool",
+        "Roll dough thin, cut triangles, fill and fold sealing edges",
+        "Deep fry at 350°F until golden",
+        "Serve with chutney"
+      ],
+      "notes": "Proper sealing prevents oil from entering pastry during frying. Filling must be cool before sealing",
+      "fun_fact": "Samosa is popular lunch and snack throughout India, eaten at tea time and festivals everywhere",
+      "alternatives": [
+        "Meat filling instead of vegetable",
+        "Baked instead of fried",
+        "Cheese filling",
+        "Mix of different fillings"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 45,
+          "cook_time": 25,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 22,
+          "cook_time": 15,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 8,
+          "cook_time": 7,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-lunch-thali",
+      "name": "Thali (Complete Indian Meal)",
+      "difficulty": "Hard",
+      "servings": 1,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Balanced complete meal with rice, dal, vegetable curries, flatbread, pickle, yogurt and papad. Represents balanced Indian nutrition",
+      "seasonings": [
+        "Varies by recipe"
+      ],
+      "ingredients": [
+        "Rice (cooked)",
+        "Dal (lentils - cooked)",
+        "2-3 vegetable curries (varying types)",
+        "Flatbread (roti or naan)",
+        "Pickle or chutney",
+        "Yogurt",
+        "Papad (fried lentil crisps)",
+        "Dessert (halwa or kheer)"
+      ],
+      "instructions": [
+        "Prepare rice, dal, and vegetable curries according to separate recipes",
+        "Make or buy papad",
+        "Cook flatbread on hot griddle",
+        "Arrange all items in metal or brass plate with small bowls",
+        "Serve with fresh yogurt and pickle condiments",
+        "Thali is eaten with all items together, mixing as desired"
+      ],
+      "notes": "Thali composition varies by region and season. Balance of proteins, vegetables, grains essential",
+      "fun_fact": "Thali represents complete balanced meal of Indian cuisine. Every region has own unique thali with local specialties",
+      "alternatives": [
+        "Vegetarian thali",
+        "Non-vegetarian thali with meat curry",
+        "Regional variations",
+        "Festival specials"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 60,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 36,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 18,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "ind-dinner-chicken-tikka-masala",
+      "name": "Chicken Tikka Masala (Creamy Tomato-Based Chicken Curry)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Creamy tomato-based chicken curry - perfected in British Indian restaurants",
+      "seasonings": [
+        "garam masala",
+        "cumin",
+        "coriander",
+        "turmeric",
+        "red chili"
+      ],
+      "ingredients": [
+        "800g boneless chicken, cubed",
+        "300ml plain yogurt",
+        "400g canned crushed tomatoes",
+        "200ml heavy cream",
+        "100g cashew paste",
+        "3 tablespoons ghee or butter",
+        "2 large onions, finely chopped",
+        "4 cloves garlic, minced",
+        "1 tablespoon ginger paste",
+        "2 bay leaves",
+        "1 cinnamon stick",
+        "4 green cardamom pods",
+        "4 cloves",
+        "1 teaspoon garam masala",
+        "1 teaspoon cumin powder",
+        "1 teaspoon coriander powder",
+        "1 teaspoon turmeric powder",
+        "1 teaspoon red chili powder",
+        "Salt and pepper to taste",
+        "Fresh cilantro for garnish"
+      ],
+      "instructions": [
+        "Mix chicken with 150ml yogurt, half the ginger-garlic paste, 1/2 tsp garam masala, salt; marinate 20 minutes",
+        "Heat 1 tbsp ghee in skillet; grill or pan-fry chicken 10-12 minutes per side until lightly charred; set aside",
+        "Heat 2 tbsp ghee in large pan, add bay leaf, cinnamon, cardamom, cloves; toast 1 minute",
+        "Add onions, cook until golden brown (7-8 minutes)",
+        "Add remaining ginger-garlic paste, cook 2 minutes",
+        "Add cumin, coriander, turmeric, chili powder; cook 1 minute until fragrant",
+        "Add crushed tomatoes; simmer 10 minutes",
+        "Add cream and cashew paste; stir well",
+        "Return chicken to pan with remaining yogurt, garam masala",
+        "Simmer 10 minutes; garnish with cilantro"
+      ],
+      "notes": "Cashew paste creates creamy texture and adds richness",
+      "fun_fact": "Perfected in British Indian restaurants in 1960s",
+      "alternatives": [
+        "Use paneer instead of chicken",
+        "Make vegetarian with cauliflower",
+        "Use coconut cream"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 45,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 27,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 13,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    },
+    {
+      "id": "ind-dinner-lamb-rogan-josh",
+      "name": "Lamb Rogan Josh (Aromatic Lamb Curry)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 90,
+      "description": "Fragrant Kashmiri lamb curry - aromatic and deeply flavorful dinner",
+      "seasonings": [
+        "garam masala",
+        "cardamom",
+        "cloves",
+        "cinnamon",
+        "bay leaves"
+      ],
+      "ingredients": [
+        "800g lamb shoulder, cut into chunks",
+        "400ml plain yogurt",
+        "3 tablespoons ghee or oil",
+        "2 large onions, thinly sliced",
+        "4 cloves garlic, minced",
+        "1 tablespoon ginger paste",
+        "400g crushed tomatoes",
+        "2 bay leaves",
+        "1 cinnamon stick",
+        "4 green cardamom pods",
+        "4 cloves",
+        "1 teaspoon cumin seeds",
+        "1 teaspoon garam masala",
+        "1 teaspoon ground coriander",
+        "1/2 teaspoon turmeric",
+        "1/4 teaspoon cayenne pepper",
+        "Salt to taste",
+        "2 tablespoons fresh cilantro",
+        "1 teaspoon kasuri methi (dried fenugreek leaves)"
+      ],
+      "instructions": [
+        "Heat ghee in large pot over medium heat",
+        "Add cumin seeds, let them splutter for 10 seconds",
+        "Add sliced onions, cook until golden brown (8-10 minutes)",
+        "Add ginger and garlic paste, cook 2 minutes",
+        "Add lamb pieces, brown on all sides (8 minutes)",
+        "Add bay leaves, cinnamon, cardamom, cloves",
+        "Cook spices for 1 minute until fragrant",
+        "Add ground coriander, turmeric, cayenne",
+        "Cook 1 minute",
+        "Add crushed tomatoes, cook 5 minutes",
+        "Add yogurt, stir well to combine",
+        "Reduce heat to low, cover and simmer 60-70 minutes",
+        "Lamb should be very tender and sauce should coat the meat",
+        "Taste and adjust salt",
+        "Stir in kasuri methi and fresh cilantro",
+        "Serve with basmati rice or naan bread"
+      ],
+      "notes": "Low and slow cooking develops the complex flavors. Don't rush the onions",
+      "fun_fact": "Rogan Josh originated in Kashmir but is beloved throughout India",
+      "alternatives": [
+        "Use chicken instead of lamb",
+        "Add potatoes for heartiness",
+        "Make vegetarian with paneer",
+        "Adjust heat level"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 90,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 54,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 27,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": [],
+  "nonAlcoholicDrinks": [],
+  "alcoholicDrinks": []
+}

@@ -1,0 +1,252 @@
+{
+  "country": "Serbia",
+  "region": "Balkans",
+  "breakfast": [
+    {
+      "id": "srb-break-kajmak",
+      "name": "Kajmak with Bread",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Serbian cream cheese served with fresh bread",
+      "seasonings": [],
+      "ingredients": [
+        "Kajmak (Serbian cream cheese)",
+        "Fresh bread",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Slice fresh bread",
+        "Spread kajmak generously",
+        "Add salt and pepper",
+        "Serve with tea or coffee"
+      ],
+      "notes": "Kajmak is essential",
+      "fun_fact": "Kajmak is Serbian national treasure",
+      "alternatives": [
+        "Different cheese",
+        "Whole grain bread",
+        "Add honey"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "srb-lunch-pljeskavica",
+      "name": "Pljeskavica (Serbian Burger)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 20,
+      "description": "Serbian spiced ground meat patty",
+      "seasonings": [
+        "paprika",
+        "garlic"
+      ],
+      "ingredients": [
+        "1.5 lbs ground meat",
+        "Onion",
+        "Garlic",
+        "Paprika",
+        "Bread crumbs",
+        "Egg",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Mix meat with onion, garlic, spices",
+        "Add bread crumbs and egg",
+        "Form large patties",
+        "Fry in oil at medium-high heat",
+        "Cook 10 minutes per side",
+        "Serve with ajvar and bread"
+      ],
+      "notes": "Thick and juicy",
+      "fun_fact": "Pljeskavica is Serbian street food favorite",
+      "alternatives": [
+        "Chicken instead of beef",
+        "Baked version",
+        "Different sauce"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "srb-dinner-ajvar",
+      "name": "Ajvar (Red Pepper Spread)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 45,
+      "description": "Serbian roasted red pepper sauce",
+      "seasonings": [
+        "garlic"
+      ],
+      "ingredients": [
+        "8 red peppers",
+        "4 cloves garlic",
+        "1/4 cup oil",
+        "Salt",
+        "Pepper",
+        "Vinegar"
+      ],
+      "instructions": [
+        "Roast peppers over flame",
+        "Peel off skin",
+        "Grind or blend peppers",
+        "Sauté garlic in oil",
+        "Add peppers",
+        "Cook down 20 minutes",
+        "Add salt, pepper, vinegar",
+        "Serve at room temperature"
+      ],
+      "notes": "Can be canned",
+      "fun_fact": "Ajvar is Serbian staple condiment",
+      "alternatives": [
+        "Add eggplant",
+        "Spicier version",
+        "Blended smooth"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "srb-snack-burek",
+      "name": "Burek (Meat Pastry)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 40,
+      "description": "Serbian phyllo pastry filled with meat",
+      "seasonings": [
+        "onion"
+      ],
+      "ingredients": [
+        "Phyllo dough",
+        "1 lb ground meat",
+        "1 onion",
+        "Egg",
+        "Butter",
+        "Oil"
+      ],
+      "instructions": [
+        "Brown meat with onion",
+        "Mix in egg",
+        "Layer phyllo with butter",
+        "Add meat filling",
+        "Roll or fold",
+        "Brush with butter",
+        "Bake at 375°F for 35-40 minutes"
+      ],
+      "notes": "Requires patience",
+      "fun_fact": "Burek is Balkan classic",
+      "alternatives": [
+        "Cheese filling",
+        "Vegetable filling",
+        "Different shape"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "srb-dessert-baklava",
+      "name": "Baklava",
+      "difficulty": "Hard",
+      "servings": 16,
+      "prepTime": 30,
+      "cookTime": 45,
+      "description": "Phyllo with walnuts and honey",
+      "seasonings": [
+        "cinnamon"
+      ],
+      "ingredients": [
+        "Phyllo dough",
+        "Walnuts",
+        "Butter",
+        "Honey",
+        "Sugar",
+        "Cinnamon",
+        "Water"
+      ],
+      "instructions": [
+        "Layer phyllo with butter",
+        "Sprinkle walnuts",
+        "Layer more phyllo",
+        "Cut into diamonds",
+        "Bake at 350°F for 40 minutes",
+        "Make honey syrup",
+        "Pour over hot baklava"
+      ],
+      "notes": "Must be hot",
+      "fun_fact": "Baklava is Balkan treasure",
+      "alternatives": [
+        "Pistachios instead of walnuts",
+        "Different spices",
+        "Lighter honey"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "srb-drink-tea",
+      "name": "Serbian Fruit Tea",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Hot fruit tea with honey",
+      "seasonings": [
+        "honey"
+      ],
+      "ingredients": [
+        "Water",
+        "Dried fruit",
+        "Honey",
+        "Lemon"
+      ],
+      "instructions": [
+        "Heat water",
+        "Add dried fruit",
+        "Steep 5-8 minutes",
+        "Add honey",
+        "Add lemon juice",
+        "Serve hot"
+      ],
+      "notes": "Very soothing",
+      "fun_fact": "Tea culture in Serbia is strong",
+      "alternatives": [
+        "Fresh fruit",
+        "Different fruits",
+        "Cold version"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "srb-drink-rakija",
+      "name": "Rakija (Fruit Brandy)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Serbian traditional brandy from plums",
+      "seasonings": [],
+      "ingredients": [
+        "Rakija"
+      ],
+      "instructions": [
+        "Serve in small glass",
+        "Drink slowly with food",
+        "Strong and warming"
+      ],
+      "notes": "Very strong spirit",
+      "fun_fact": "Rakija is Serbian national drink",
+      "alternatives": [
+        "Different fruit varieties",
+        "Homemade version",
+        "Different alcohol content"
+      ]
+    }
+  ]
+}

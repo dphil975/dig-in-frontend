@@ -1,0 +1,283 @@
+{
+  "country": "Pakistan",
+  "region": "Asia",
+  "breakfast": [
+    {
+      "id": "pak-break-halwa-puri",
+      "name": "Halwa Puri (Sweet Wheat with Bread)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 40,
+      "description": "Pakistani breakfast with semolina pudding and fried bread",
+      "seasonings": [
+        "cardamom",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "Halwa: 1 cup semolina, 1/2 cup butter, 1 cup sugar, 1 cup water, Cardamom, Cinnamon, Almonds",
+        "Puri: 2 cups flour, 1/2 tsp salt, 1/2 cup water, Oil for frying"
+      ],
+      "instructions": [
+        "Make puri dough first, let rest",
+        "Make halwa: toast semolina in ghee",
+        "Add sugar and water",
+        "Cook 15-20 minutes until thick and fragrant",
+        "Add cardamom and almonds",
+        "Fry puris: roll thin, fry until puffed",
+        "Serve halwa and puri together",
+        "Traditional breakfast pairing"
+      ],
+      "notes": "Both must be made fresh",
+      "fun_fact": "Halwa Puri is Pakistan's most popular breakfast and is eaten nationwide",
+      "alternatives": [
+        "Different nuts",
+        "Skip halwa for just puri",
+        "Chickpea curry with puri"
+      ]
+    }
+  ],
+  "lunch": [
+    {
+      "id": "pak-lunch-biryani",
+      "name": "Biryani (Layered Rice)",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Pakistani fragrant rice dish with marinated meat",
+      "seasonings": [
+        "saffron",
+        "cardamom",
+        "bay leaf",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "3 cups basmati rice",
+        "2 lbs meat (goat or lamb)",
+        "2 cups yogurt",
+        "4 cloves garlic",
+        "1-inch ginger",
+        "Onions",
+        "Saffron",
+        "Spices: cardamom, cinnamon, cloves",
+        "Ghee",
+        "Water"
+      ],
+      "instructions": [
+        "Marinate meat in yogurt with garlic, ginger, spices for 2 hours",
+        "Soak rice in water",
+        "Heat ghee in heavy pot",
+        "Layer rice and marinated meat alternately",
+        "Sprinkle saffron on top",
+        "Cover and cook on high heat 5 minutes",
+        "Reduce to low heat",
+        "Cook 45-50 minutes until rice is tender",
+        "Don't stir while cooking",
+        "Fluff with fork before serving"
+      ],
+      "notes": "Dum pukht cooking method seals pot",
+      "fun_fact": "Biryani is Pakistan's most celebrated dish and comes from royal Mughal heritage",
+      "alternatives": [
+        "Chicken biryani",
+        "Vegetarian biryani",
+        "Different spice blend"
+      ]
+    }
+  ],
+  "dinner": [
+    {
+      "id": "pak-dinner-karahi",
+      "name": "Karahi (Wok Curry)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Pakistani spiced meat curry cooked in wok",
+      "seasonings": [
+        "cumin",
+        "coriander",
+        "chili",
+        "ginger"
+      ],
+      "ingredients": [
+        "1.5 lbs meat (chicken or beef)",
+        "3 tbsp oil",
+        "2 onions, chunked",
+        "4 cloves garlic",
+        "2-inch ginger, julienned",
+        "2 tomatoes, chunked",
+        "2 tbsp tomato paste",
+        "3 green chilies",
+        "Cumin, coriander, red chili powder",
+        "Cilantro"
+      ],
+      "instructions": [
+        "Heat oil in wok",
+        "Add meat, cook until brown",
+        "Add onions, garlic, ginger",
+        "Add tomato paste, cook 2 minutes",
+        "Add spices, cook 1 minute",
+        "Add tomatoes and chilies",
+        "Simmer 20 minutes",
+        "Meat should be tender",
+        "Sauce should be thick",
+        "Garnish with cilantro"
+      ],
+      "notes": "Meat should be cut into chunks",
+      "fun_fact": "Karahi is a Pakistani favorite named after the wok it's cooked in",
+      "alternatives": [
+        "Chicken version",
+        "Seafood karahi",
+        "Add cream"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "pak-snack-samosa",
+      "name": "Samosa (Fried Pastry)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 30,
+      "description": "Pakistani fried pastry with spiced potato and meat filling",
+      "seasonings": [
+        "cumin",
+        "chaat masala"
+      ],
+      "ingredients": [
+        "Pastry: 2 cups flour, 1/2 cup butter, 1/2 tsp salt, Water",
+        "Filling: 3 potatoes, 1/2 lb minced meat, 1 onion, Spices, Peas",
+        "Oil for frying",
+        "Tamarind chutney"
+      ],
+      "instructions": [
+        "Make pastry: rub butter into flour, add water",
+        "Make filling: cook potatoes, add spiced meat",
+        "Roll pastry thin, cut triangles",
+        "Fill each triangle",
+        "Fold and seal edges",
+        "Heat oil to 350°F",
+        "Deep fry until golden and crispy",
+        "Drain on paper towels",
+        "Serve with tamarind and mint chutney"
+      ],
+      "notes": "Filling must be cooled",
+      "fun_fact": "Samosa is Pakistan's most popular street snack and is eaten nationwide",
+      "alternatives": [
+        "Vegetarian version",
+        "Different shape",
+        "Different filling"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "id": "pak-dessert-kheer",
+      "name": "Kheer (Rice Pudding)",
+      "difficulty": "Easy",
+      "servings": 6,
+      "prepTime": 10,
+      "cookTime": 45,
+      "description": "Pakistani creamy rice pudding with condensed milk",
+      "seasonings": [
+        "cardamom",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "1 liter milk",
+        "1/2 cup rice (short grain)",
+        "1 can condensed milk",
+        "Cardamom pods",
+        "Cinnamon stick",
+        "Almonds",
+        "Raisins",
+        "Ghee"
+      ],
+      "instructions": [
+        "Heat milk in pot",
+        "Add rice, cardamom, cinnamon",
+        "Simmer until rice is soft (30-40 minutes)",
+        "Stir occasionally to prevent sticking",
+        "Add condensed milk",
+        "Toast almonds and raisins in ghee",
+        "Add to kheer",
+        "Cook 5 more minutes",
+        "Serve warm or cold"
+      ],
+      "notes": "Stir often to prevent sticking",
+      "fun_fact": "Kheer is served at Pakistani celebrations and is comfort food",
+      "alternatives": [
+        "Add vermicelli instead of rice",
+        "Different nuts",
+        "Add rose water"
+      ]
+    }
+  ],
+  "nonAlcoholicDrinks": [
+    {
+      "id": "pak-drink-lassi",
+      "name": "Lassi (Yogurt Drink)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 0,
+      "description": "Pakistani yogurt-based cooling drink",
+      "seasonings": [
+        "cardamom",
+        "rose water"
+      ],
+      "ingredients": [
+        "1 cup plain yogurt",
+        "1 cup water or milk",
+        "Sugar to taste",
+        "Cardamom",
+        "Rose water",
+        "Ice"
+      ],
+      "instructions": [
+        "Combine yogurt and water",
+        "Add sugar",
+        "Add pinch of cardamom",
+        "Add drop of rose water",
+        "Blend until frothy",
+        "Serve over ice",
+        "Drink immediately"
+      ],
+      "notes": "Can be sweet or savory",
+      "fun_fact": "Lassi is Pakistan's national cooling drink and is served during summer",
+      "alternatives": [
+        "Mango lassi",
+        "Savory lassi with salt",
+        "Different fruit"
+      ]
+    }
+  ],
+  "alcoholicDrinks": [
+    {
+      "id": "pak-drink-beer",
+      "name": "Pakistani Beer",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Light lager beer",
+      "seasonings": [],
+      "ingredients": [
+        "Pakistani beer"
+      ],
+      "instructions": [
+        "Serve ice-cold",
+        "Pour into glass",
+        "Enjoy with food"
+      ],
+      "notes": "Consumed despite Islam",
+      "fun_fact": "Beer is produced and consumed in Pakistan despite Islamic influence",
+      "alternatives": [
+        "Different beer types",
+        "Mixed drinks"
+      ]
+    }
+  ]
+}
