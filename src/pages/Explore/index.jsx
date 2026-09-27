@@ -1,32 +1,24 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import Nav from '../../components/shell/Nav';
-import Explorer from './Explorer';
-import Discover from './Discover';
 import GlobalFood from './GlobalFood';
 import Deals from './Deals';
 import './Explore.css';
 
-/* Explore hub — merges Discover (recipe-discovery bento + feature showcase),
-   Global Food (country-by-country cuisine explorer), and Deals (NYC deals &
-   prices) behind one Nav and a tab bar. Deals was previously retired from the
-   router (2026-07-24, repointed to /recipe-cards?special=budget) — it's back
-   here as a real Explore tab per the founder's explicit call this session; the
-   budget-filter shortcut inside Recipes still works too. City Explorer MOVED
-   OUT to the Commute hub (2026-07-30, src/pages/Explore/Commute) — it answers the same
-   "where do I shop and how do I get there" question as the grocery-commute
-   planner, so they live together now. Canonical URL is /explore (also the Nav
-   "Explore" top-level target); /discover, /global-food, /deals stay as aliases
-   (see App.jsx + Nav). */
+/* Explore hub — now just the two big reference tabs: Global Food (the
+   country-by-country cuisine explorer) and Deals (prices and what things really
+   cost). Everything else that used to live here moved to the Discover page
+   (Discover → Categories links to both of these); the old Explorer masonry grid
+   and the Discover bento were retired.
+
+   /global-food and /deals are the canonical addresses. */
 
 const TABS = [
-  { id: 'explore', label: 'Explore' },
-  { id: 'discover', label: 'Discover' },
   { id: 'global', label: 'Global Food' },
   { id: 'deals', label: 'Deals' },
 ];
 
-export default function Explore({ defaultTab = 'explore' } = {}) {
+export default function Explore({ defaultTab = 'global' } = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
   const fromQuery = searchParams.get('tab');
   const valid = TABS.some(t => t.id === fromQuery);
@@ -34,7 +26,7 @@ export default function Explore({ defaultTab = 'explore' } = {}) {
 
   function pick(id) {
     setTab(id);
-    setSearchParams(id === 'explore' ? {} : { tab: id }, { replace: true });
+    setSearchParams(id === 'global' ? {} : { tab: id }, { replace: true });
   }
 
   return (
@@ -52,8 +44,6 @@ export default function Explore({ defaultTab = 'explore' } = {}) {
           </button>
         ))}
       </div>
-      {tab === 'explore' && <Explorer embedded />}
-      {tab === 'discover' && <Discover embedded onExploreTab={pick} />}
       {tab === 'global' && <GlobalFood embedded />}
       {tab === 'deals' && <Deals embedded />}
     </div>

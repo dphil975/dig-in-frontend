@@ -13,9 +13,9 @@ import './SocialFeed.css';
 // nothing (see ShoutoutCard) until src/data/sponsorships.js has a real entry
 // — same "ships empty" posture as everywhere else this app runs ads.
 const SPONSOR_PLACEMENT = 'social-feed';
-// How often a promoted card can appear among organic posts — the same 1-in-N
-// restraint PostTypes.jsx's reel preview holds itself to, so a sold slot
-// never starts to crowd the column even once a sponsor exists.
+// How often a promoted card can appear among organic posts — a 1-in-N
+// restraint, so a sold slot never starts to crowd the column even once a
+// sponsor exists.
 const PROMOTED_EVERY = 6;
 
 // A social-feed post, reshaped into the same object saveService/Archive/
@@ -64,7 +64,7 @@ const CURATED_POSTS = [
   },
   {
     id: 'p02',
-    platform: 'Reel',
+    platform: 'Video',
     emoji: 'BIRRIA',
     image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=480&q=80',
     title: 'Birria Tacos',
@@ -180,7 +180,7 @@ const CURATED_POSTS = [
   },
   {
     id: 'p06',
-    platform: 'Reel',
+    platform: 'Video',
     emoji: 'CHICKEN',
     image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=480&q=80',
     title: 'Chicken Tikka Masala',
@@ -238,7 +238,7 @@ const CURATED_POSTS = [
   },
   {
     id: 'p08',
-    platform: 'Reel',
+    platform: 'Video',
     emoji: 'SPICY',
     image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=480&q=80',
     title: 'Spicy Miso Ramen',
@@ -355,7 +355,7 @@ const CURATED_POSTS = [
   },
   {
     id: 'p12',
-    platform: 'Reel',
+    platform: 'Video',
     emoji: 'PAD',
     image: 'https://images.unsplash.com/photo-1559314045-47f5e2c78f55?auto=format&fit=crop&w=480&q=80',
     title: 'Pad Thai',
@@ -385,7 +385,7 @@ const CURATED_POSTS = [
   },
   {
     id: 'p13',
-    platform: 'Reel',
+    platform: 'Video',
     emoji: 'SMASH',
     image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=480&q=80',
     title: 'Smash Burgers',

@@ -1,0 +1,10 @@
+.inv-tab { max-width: 920px; margin: 0 auto; padding: 6px 4px 30px; }
+
+.inv-modes { display: flex; gap: 8px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+.inv-mode-btn {
+  font-size: 13px; font-weight: 700; padding: 9px 16px; border-radius: 999px; cursor: pointer;
+  background: #fff; border: 2px solid #F3EADA; color: #33302A;
+  transition: border-color .15s, background .15s;
+}
+.inv-mode-btn:hover { border-color: #6E8259; }
+.inv-mode-btn.active { background: #6E8259; color: #fff; border-color: #6E8259; }

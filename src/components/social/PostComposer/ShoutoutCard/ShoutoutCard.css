@@ -1,0 +1,42 @@
+/* ShoutoutCard — styled like a friend's aside, not an ad unit: real card
+   chrome (bark border, offset shadow), not a banner shape. Brought onto the
+   app's actual palette tokens (styles.css "THE PALETTE") — this used to run
+   its own off-brand purple/lavender gradient, disconnected from every page
+   it appears on (Nibblers, City Explorer, and now the Social Feed's
+   Promoted card). When nested inside a parent that already draws its own
+   frame (see .sfp-promoted in SocialFeed.css), the parent strips this
+   card's own border/shadow so the two don't double up. */
+
+.shoutout-wrap { display: flex; flex-direction: column; gap: 12px; margin: 18px 0; }
+
+.shoutout-card {
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 10px;
+  padding: 16px 18px;
+  background: #f7f2e9;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .14);
+}
+
+.shoutout-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.shoutout-logo { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; border: 1.5px solid var(--dig-bark, #33302A); }
+.shoutout-logo-ph {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--dig-matcha, #6E8259); color: #fff; font-weight: 800; font-size: 13px;
+  border: 1.5px solid var(--dig-bark, #33302A);
+}
+.shoutout-brand { font-family: var(--font-ui); font-weight: 800; color: var(--dig-bark, #33302A); font-size: 13px; }
+
+.shoutout-testimonial {
+  font-size: 14px; color: var(--dig-bark, #33302A); line-height: 1.5; font-style: italic;
+  margin: 0 0 10px;
+}
+
+.shoutout-cta {
+  padding: 9px 16px; border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  background: var(--dig-matcha, #6E8259); color: #fff; font-family: var(--font-ui);
+  font-weight: 800; font-size: 13px; cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(51, 48, 42, .2); transition: transform .1s ease, box-shadow .1s ease;
+}
+.shoutout-cta:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 rgba(51, 48, 42, .2); }
+
+.shoutout-disclosure { font-family: var(--font-ui); font-size: 10px; color: #8a7a68; margin: 8px 0 0; }

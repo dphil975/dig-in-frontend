@@ -1,0 +1,119 @@
+/* Discover — one calm column, five sections. */
+.dsc {
+  --dsc-nav-h: 46px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 20px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.dsc-title {
+  margin: 0; font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(24px, 4vw, 30px); font-weight: 500; color: var(--dig-bark, #33302A);
+}
+/* The one sticky piece: a single row that scrolls sideways on a narrow screen instead
+   of wrapping, so it is always the same height (--dsc-nav-h). */
+.dsc-jump {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; flex-wrap: nowrap; gap: 6px; align-items: center;
+  height: var(--dsc-nav-h); box-sizing: border-box;
+  margin: -14px -20px 0; padding: 0 20px;
+  background: var(--dig-cream, #F3EADA);
+  border-bottom: 1px solid var(--rule, #e6e0d3);
+  overflow-x: auto; scrollbar-width: none;
+}
+.dsc-jump::-webkit-scrollbar { display: none; }
+.dsc-jump-btn {
+  flex: 0 0 auto;
+  font-size: 12px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 999px;
+  padding: 5px 12px; cursor: pointer;
+}
+.dsc-jump-btn:hover { border-color: var(--dig-matcha, #6E8259); }
+
+.dsc-sec { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: calc(var(--dsc-nav-h) + 16px); }
+.dsc-sec-head { display: flex; flex-direction: column; gap: 3px; }
+.dsc-sec-title {
+  margin: 0; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--dig-matcha, #6E8259);
+}
+.dsc-sec-sub { margin: 0; font-size: 14px; line-height: 1.5; color: #4a463e; }
+.dsc-sec-body { display: flex; flex-direction: column; gap: 14px; }
+
+.dsc-card {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(51,48,42,.12); padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 8px; align-items: flex-start;
+}
+.dsc-card-title { margin: 0; font-size: 19px; color: var(--dig-bark, #33302A); font-family: var(--font-serif, Georgia, serif); font-weight: 500; }
+.dsc-kicker { margin: 0; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #8a8072; }
+.dsc-kicker-gap { margin-top: 6px; }
+.dsc-text { margin: 0; font-size: 13.5px; line-height: 1.55; color: #4a463e; }
+/* The flavor demo was designed to sit on a dark surface (its tagline and chips are light
+   text), so it gets its own dark panel instead of the white card around it. */
+.dsc-embed {
+  width: 100%; margin-top: 10px; overflow: hidden;
+  background: #17111f; border-radius: 14px; padding: 0 0 20px;
+}
+.dsc-embed .hero-recipe { padding: 16px 12px 0; }
+.dsc-embed .hero-card { box-shadow: none; }
+
+.dsc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.dsc-chip {
+  font-size: 12px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: var(--dig-cream, #F3EADA); border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 999px; padding: 5px 12px; cursor: pointer;
+}
+.dsc-chip:hover { border-color: var(--dig-matcha, #6E8259); }
+.dsc-chip.active { color: #fff; background: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); }
+.dsc-chip-dish { background: #fff; text-align: left; }
+.dsc-chip-skel {
+  display: inline-block; width: 104px; height: 30px; padding: 0; border-color: transparent; pointer-events: none;
+  background: linear-gradient(90deg, rgba(51,48,42,.06), rgba(51,48,42,.12), rgba(51,48,42,.06));
+  background-size: 200% 100%; animation: dsc-shimmer 1.3s ease-in-out infinite;
+}
+@keyframes dsc-shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+@media (prefers-reduced-motion: reduce) { .dsc-chip-skel { animation: none; } }
+
+.dsc-btn {
+  font-size: 12.5px; font-weight: 700; color: #fff; background: var(--dig-matcha, #6E8259);
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px; box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+  padding: 8px 14px; cursor: pointer;
+}
+.dsc-btn:active { transform: translate(2px, 2px); box-shadow: 0 0 0; }
+.dsc-btn-quiet { color: var(--dig-bark, #33302A); background: var(--dig-cream, #F3EADA); }
+.dsc-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.dsc-link {
+  align-self: flex-start; padding: 0; font-size: 12.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: none; border: none; cursor: pointer; text-decoration: underline; text-align: left;
+}
+
+.dsc-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+@media (max-width: 600px) { .dsc-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.dsc-tile {
+  display: flex; flex-direction: column; gap: 3px; text-align: left;
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); border-radius: 9px;
+  box-shadow: 2px 2px 0 rgba(51,48,42,.14); padding: 11px 13px; cursor: pointer;
+  transition: transform .1s, box-shadow .1s;
+}
+.dsc-tile:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--dig-bark, #33302A); }
+.dsc-tile-label { font-size: 14px; font-weight: 800; color: var(--dig-bark, #33302A); }
+.dsc-tile-sub { font-size: 12px; line-height: 1.4; color: #7a7060; }
+
+.dsc-list { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.dsc-question {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; text-align: left;
+  font-size: 14px; color: var(--dig-bark, #33302A); background: #fff;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 9px; box-shadow: 2px 2px 0 rgba(51,48,42,.14);
+  padding: 10px 13px; cursor: pointer;
+}
+.dsc-question:hover { transform: translate(-1px, -1px); }
+.dsc-question-go { flex: 0 0 auto; font-size: 12px; font-weight: 800; color: var(--dig-matcha, #6E8259); }
+
+@media (max-width: 860px) {
+  .dsc { padding-top: 12px; }
+  .dsc-jump { top: 52px; margin-top: -6px; }   /* below the fixed top bar */
+  .dsc-sec { scroll-margin-top: calc(52px + var(--dsc-nav-h) + 12px); }
+}

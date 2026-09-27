@@ -1,0 +1,217 @@
+/* Nova.css — The Nest. Dig In's plum/beige world, with a dawn accent for the
+   shadow-to-light payoff. On-brand with Nudges.css; shares the app tokens. */
+
+.nova-page { min-height: 100vh; background: var(--light-bg, #F3EADA); }
+.nova-wrap { max-width: 720px; margin: 0 auto; padding: 16px 16px 72px; }
+
+.nova-back {
+  background: none; border: none; cursor: pointer;
+  font-weight: 700; font-size: 12px; letter-spacing: 0.06em;
+  color: var(--primary, #6E8259); padding: 8px 0;
+}
+
+/* dawn accent (the "light" at the end of the arc) */
+:root { --dawn: #e68a4e; --dawn-soft: #fbe7d6; }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.nova-head { margin-bottom: 18px; }
+.nova-eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.22em;
+  color: var(--primary, #6E8259); margin: 0 0 6px;
+}
+.nova-title { font-size: 28px; font-weight: 900; margin: 0 0 8px; color: #33302A; line-height: 1.1; }
+.nova-sub { font-size: 14px; line-height: 1.55; color: #5b5470; margin: 0 0 16px; }
+
+.nova-stats { display: flex; flex-direction: column; gap: 12px; }
+.nova-light { background: #fff; border: 1px solid rgba(110, 130, 89,.14); border-radius: 14px; padding: 12px 14px; }
+.nova-light-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.nova-light-label { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #8b8194; }
+.nova-light-band { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; }
+.band-bright { color: #7a4a12; background: var(--dawn-soft); }
+.band-steady { color: #4a3f66; background: #efeaf6; }
+.band-tender { color: #5b5470; background: #eef0ea; }
+.nova-light-track { height: 8px; border-radius: 999px; background: #efeaf6; overflow: hidden; }
+.nova-light-fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary, #6E8259), var(--dawn));
+  transition: width .5s ease;
+}
+.nova-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.nova-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 12px; font-weight: 700; color: #5b5470;
+  background: #fff; border: 1px solid rgba(110, 130, 89,.14);
+  padding: 6px 11px; border-radius: 999px;
+}
+.nova-pill svg { color: var(--primary, #6E8259); }
+
+/* ── Cards ──────────────────────────────────────────────────── */
+.nova-card {
+  background: #fff; border: 1px solid rgba(110, 130, 89,.14); border-radius: 18px;
+  padding: 18px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(44,36,64,.06);
+}
+.nova-section-title {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 16px; font-weight: 800; color: #33302A; margin: 0 0 4px;
+}
+.nova-section-title svg { color: var(--primary, #6E8259); }
+.nova-section-sub { font-size: 13px; line-height: 1.5; color: #6b6480; margin: 0 0 16px; }
+
+/* ── Buttons / inputs (shared) ──────────────────────────────── */
+.nova-btn {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  border: 1.5px solid rgba(110, 130, 89,.28); background: #fff; color: #4a3f66;
+  font-weight: 800; font-size: 13.5px; padding: 10px 16px; border-radius: 999px;
+}
+.nova-btn:active { transform: scale(.98); }
+.nova-btn:disabled { opacity: .45; cursor: not-allowed; }
+.nova-btn-primary {
+  border: none; color: #fff;
+  background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259));
+  box-shadow: 0 8px 18px rgba(110, 130, 89,.32);
+}
+.nova-btn-ghost { border-color: transparent; color: #8b8194; }
+
+.nova-input, .nova-textarea {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 14px;
+  border: 1.5px solid rgba(110, 130, 89,.2); border-radius: 12px;
+  padding: 11px 13px; color: #33302A; background: #fdfcfe; resize: vertical;
+}
+.nova-input:focus, .nova-textarea:focus { outline: 2px solid rgba(110, 130, 89,.35); outline-offset: 1px; border-color: transparent; }
+.nova-label { display: block; font-size: 13px; font-weight: 800; color: #4a3f66; margin: 0 0 8px; }
+
+/* ── Player ─────────────────────────────────────────────────── */
+.nova-player-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.nova-as { font-size: 12px; color: #8b8194; }
+.nova-as b { color: var(--primary, #6E8259); }
+
+.nova-phase-rail { display: flex; gap: 7px; margin-bottom: 12px; }
+.nova-rail-dot { width: 26px; height: 5px; border-radius: 999px; background: #e7e1ef; transition: background .3s; }
+.nova-rail-dot.done { background: var(--primary, #6E8259); }
+.nova-rail-dot.now { background: var(--dawn); }
+.nova-phase-tag { font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: var(--dawn); margin: 0 0 8px; }
+.nova-phase-line { font-size: 17px; line-height: 1.5; color: #33302A; margin: 0; font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+
+.nova-mirror-quotes { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.nova-mirror-quotes li {
+  font-size: 13.5px; color: #5b5470; font-style: italic;
+  background: #f7f4fb; border-left: 3px solid var(--primary, #6E8259);
+  padding: 8px 12px; border-radius: 0 8px 8px 0;
+}
+
+.nova-grat-entry { display: flex; gap: 8px; margin-top: 12px; }
+.nova-grat-entry .nova-input { flex: 1; }
+
+.nova-detect-note { font-size: 12px; color: #9a90a6; margin: 14px 0 0; }
+.nova-detect-note b { color: #6b6480; }
+
+/* ── Crisis card ────────────────────────────────────────────── */
+.nova-crisis { border-left: 4px solid var(--dawn); padding-left: 16px; }
+.nova-crisis-tag { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800; letter-spacing: .1em; color: #a8541e; margin: 0 0 10px; }
+.nova-crisis-line { font-size: 16px; line-height: 1.55; color: #33302A; margin: 0 0 16px; font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+.nova-crisis-list { list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.nova-crisis-list li { display: flex; flex-direction: column; }
+.nova-crisis-list a { font-weight: 800; color: var(--primary, #6E8259); font-size: 14.5px; }
+.nova-crisis-list span { font-size: 12.5px; color: #6b6480; }
+
+/* ── Complete ───────────────────────────────────────────────── */
+.nova-complete-tag { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800; letter-spacing: .12em; color: var(--dawn); margin: 0 0 8px; }
+.nova-complete-line { font-size: 15.5px; line-height: 1.55; color: #33302A; margin: 0 0 14px; }
+
+/* ── Anchor ─────────────────────────────────────────────────── */
+.nova-anchor {
+  border-radius: 18px; padding: 18px; margin-bottom: 16px;
+  background: linear-gradient(135deg, #fff 0%, var(--dawn-soft) 130%);
+  border: 1px solid rgba(230,138,78,.4); box-shadow: 0 10px 30px rgba(44,36,64,.06);
+}
+.nova-anchor-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 800; letter-spacing: .12em; color: #a8541e; margin: 0 0 8px; }
+.nova-anchor-line { font-size: 16px; line-height: 1.5; color: #33302A; margin: 0 0 14px; font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+.nova-anchor-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── Settings ───────────────────────────────────────────────── */
+.nova-set-block { margin-bottom: 16px; }
+.nova-set-label { display: block; font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: #8b8194; margin-bottom: 8px; }
+.nova-tone-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.nova-tone-chip {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  font-size: 13px; font-weight: 700; color: #6b6480;
+  background: #fff; border: 1.5px solid #e7e1ef; padding: 7px 13px; border-radius: 999px;
+}
+.nova-tone-chip.is-on { background: #faf8fd; }
+.nova-tone-sw { width: 10px; height: 10px; border-radius: 3px; }
+.nova-tone-blurb { font-size: 12.5px; color: #8b8194; margin: 9px 0 0; font-style: italic; }
+
+.nova-seg { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.nova-seg-btn {
+  cursor: pointer; font-size: 12.5px; font-weight: 700; color: #6b6480;
+  background: #f4f1f8; border: 1.5px solid transparent; padding: 7px 12px; border-radius: 10px;
+}
+.nova-seg-btn.is-on { background: #fff; border-color: var(--primary, #6E8259); color: var(--primary, #6E8259); }
+.nova-sovereignty { font-size: 13px; font-style: italic; color: #6b6480; margin: 4px 0 0; line-height: 1.5; }
+
+/* ── Two-column (log + trophy) ──────────────────────────────── */
+.nova-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.nova-two-col .nova-card { margin-bottom: 0; }
+@media (max-width: 560px) { .nova-two-col { grid-template-columns: 1fr; } }
+
+.nova-grat-list { list-style: none; margin: 0 0 4px; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.nova-grat-list li { font-size: 13.5px; color: #4a3f66; padding: 8px 11px; background: #f7f4fb; border-radius: 8px; line-height: 1.4; }
+.nova-wins { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.nova-wins li { display: flex; align-items: center; gap: 9px; font-size: 13px; color: #4a3f66; padding: 8px 11px; background: var(--dawn-soft); border-radius: 8px; line-height: 1.35; }
+.nova-wins li svg { color: var(--dawn); flex: none; }
+.nova-empty { font-size: 13px; color: #9a90a6; line-height: 1.5; margin: 0; }
+
+/* ── Kindness protocol ──────────────────────────────────────── */
+.nova-mod-demo { display: flex; gap: 8px; margin-bottom: 12px; }
+.nova-mod-demo .nova-input { flex: 1; }
+.nova-mod-out { border-radius: 12px; padding: 12px 14px; margin-bottom: 16px; }
+.nova-mod-out.kind { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 700; color: #2e7d52; background: #ecf6ef; }
+.nova-mod-sev { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 6px; }
+.nova-mod-script { font-size: 14.5px; font-style: italic; color: #33302A; margin: 0 0 6px; font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+.nova-mod-outcome { font-size: 12.5px; color: #6b6480; margin: 0; }
+.nova-mod-out.rung-1 { background: #ecf6ef; } .nova-mod-out.rung-1 .nova-mod-sev { color: #2e7d52; }
+.nova-mod-out.rung-2 { background: #fdf3e4; } .nova-mod-out.rung-2 .nova-mod-sev { color: #b07a1e; }
+.nova-mod-out.rung-3, .nova-mod-out.rung-4 { background: #fbecee; } .nova-mod-out.rung-3 .nova-mod-sev, .nova-mod-out.rung-4 .nova-mod-sev { color: #b0414f; }
+
+.nova-ladder { display: flex; flex-direction: column; gap: 8px; }
+.nova-rung {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  border: 1px solid #eee6f0; border-left-width: 4px; border-radius: 10px; padding: 10px 14px;
+}
+.nova-rung.rung-1 { border-left-color: #4E9A6B; }
+.nova-rung.rung-2 { border-left-color: #C98A2E; }
+.nova-rung.rung-3 { border-left-color: #d17a4a; }
+.nova-rung.rung-4 { border-left-color: #BE5563; }
+.nova-rung-sev { font-size: 13.5px; font-weight: 800; color: #33302A; text-transform: capitalize; }
+.nova-rung-act { font-size: 11.5px; font-weight: 600; color: #8b8194; font-family: ui-monospace, Menlo, monospace; }
+.nova-repeat { font-size: 13px; font-style: italic; color: #6b6480; line-height: 1.55; margin: 14px 0 0; padding-left: 14px; border-left: 3px solid #eee6f0; }
+
+/* ── Honest note ────────────────────────────────────────────── */
+.nova-note {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: #efeaf6; border-radius: 14px; padding: 16px; margin-top: 4px;
+}
+.nova-note svg { color: var(--primary, #6E8259); flex: none; margin-top: 2px; }
+.nova-note p { font-size: 12.5px; line-height: 1.55; color: #5b5470; margin: 0; }
+.nova-note b { color: #4a3f66; }
+
+@media (prefers-reduced-motion: reduce) { .nova-light-fill, .nova-rail-dot { transition: none; } }
+
+/* ── "Nest settings & how Nova works" — the collapsed catch-all ─────────── */
+.nova-more { margin: 14px 0 6px; }
+.nova-more > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px dashed #D8CAB4;
+  color: #7a6a58;
+  font-weight: 700;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.nova-more > summary::-webkit-details-marker { display: none; }
+.nova-more > summary::before { content: '▸ '; }
+.nova-more[open] > summary::before { content: '▾ '; }
+.nova-more[open] > summary { margin-bottom: 14px; }

@@ -12,7 +12,7 @@ import { planGroceryRoute } from '../../../../lib/commutePlanner';
 import { groupByCategory } from '../../../../lib/groceryCategories';
 import { track } from '../../../../lib/analytics';
 import { fetchTransitRoutesNear, directionArrows } from '../../../../lib/transitAccess';
-import '../../../Home/Home.css';
+import '../../../../components/social/PostComposer/PostTypes/PostTypes.css';
 import './CommuteRoute.css';
 
 function esc(s) {

@@ -33,3 +33,10 @@
   border-color: #6E8259;
   color: #F3EADA;
 }
+
+/* Trailing slot (e.g. a "more" menu) — pinned to the right end of the tab row. */
+.phub-trailing {
+  margin-left: auto;
+  align-self: center;
+  position: relative;
+}

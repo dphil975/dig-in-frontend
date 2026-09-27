@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #33302A 0%, #16213e 100%);
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.barcode-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.barcode-page header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.barcode-page h1 {
+    font-family: var(--font-display);
+    font-size: 2em;
+    color: #6E8259;
+    margin-bottom: 10px;
+}
+
+.bc-sub { color: #aaa; font-size: 0.9em; }
+
+.scanner-section {
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid #D8CAB4;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.scanner-hint {
+    text-align: center;
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.barcode-page button {
+    padding: 12px;
+    background: #6E8259;
+    border: 2px solid #6E8259;
+    color: #fff;
+    border-radius: 8px;
+    font-family: var(--font-display);
+    font-size: 0.65em;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.barcode-page button:hover {
+    background: #6b7ce0;
+    box-shadow: 0 0 15px rgba(90, 103, 216, 0.5);
+}
+
+.barcode-page button:disabled {
+    opacity: 0.5;
+    cursor: default;
+    box-shadow: none;
+}
+
+.barcode-page input {
+    padding: 11px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #D8CAB4;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.95em;
+}
+.barcode-page input::placeholder { color: rgba(255, 255, 255, 0.45); }
+
+/* ── Barcode lookup ────────────────────────────────────────── */
+.bc-lookup-row { display: flex; gap: 10px; margin-bottom: 4px; }
+.bc-input-barcode { flex: 1; }
+.bc-lookup-msg { font-size: 0.85em; color: #ccc; margin-top: 10px; }
+.bc-lookup-found { color: #96B36B; }
+.bc-lookup-notfound { color: #ffb347; }
+
+/* ── Item details form ────────────────────────────────────── */
+.bc-form {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #D8CAB4;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.bc-form-title {
+    font-family: var(--font-display);
+    font-size: 0.75em;
+    color: #6E8259;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+.bc-form-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+.bc-form-row:last-child { margin-bottom: 0; }
+.bc-form-row .bc-input { flex: 1 1 200px; }
+.bc-input-narrow { flex: 0 1 140px !important; }
+
+.bc-zip-btn { flex: 0 0 auto; background: rgba(255, 255, 255, 0.06); border-color: #D8CAB4; }
+.bc-zip-btn:hover { background: rgba(255, 255, 255, 0.12); }
+
+.bc-form-meta { align-items: center; }
+.bc-loc { color: #aab; font-size: 0.8em; display: flex; align-items: center; gap: 8px; }
+.bc-select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #D8CAB4;
+    border-radius: 6px;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+.bc-chip {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #555;
+    color: #99a;
+    border-radius: 20px;
+    padding: 7px 14px;
+    font-size: 0.7em;
+    letter-spacing: 0.04em;
+}
+.bc-chip-snap.on { background: rgba(125, 174, 92, 0.22); border-color: #96B36B; color: #a6d989; }
+.bc-chip-wic.on  { background: rgba(91, 141, 239, 0.22); border-color: #5B8DEF; color: #9ec0ff; }
+.bc-submit { margin-left: auto; background: #96B36B; border-color: #96B36B; }
+.bc-submit:hover { background: #8fc26c; }
+
+/* ── Scanned this session ─────────────────────────────────── */
+.scanned-items {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #D8CAB4;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 0.9em;
+    color: #6E8259;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.item-card {
+    background: rgba(90, 103, 216, 0.1);
+    border-left: 4px solid #6E8259;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.item-info { flex: 1; }
+.item-name { font-weight: bold; color: #fff; margin-bottom: 5px; display: flex; align-items: center; gap: 8px; }
+.item-details { font-size: 0.85em; color: #aaa; }
+
+.badge-recall-inline {
+    background: rgba(200, 16, 46, 0.25);
+    color: #ff9a9a;
+    border: 1px solid #c8102e;
+    font-size: 0.65em;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+.bc-view-pantry { width: 100%; margin-top: 6px; background: #6E8259; border-color: #6E8259; color: #33302A; }
+.bc-view-pantry:hover { background: #ffe23d; }
+
+.bc-save-ref {
+    width: 100%; margin-top: 10px; background: transparent;
+    border: 1px dashed #D8CAB4; color: #ccc; font-size: 0.62em;
+}
+.bc-save-ref:hover { background: rgba(255, 255, 255, 0.06); }
+
+/* ── Recipes Using This ───────────────────────────────────── */
+.bc-recipes { margin-top: -10px; }
+.bc-recipe-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.bc-recipe-card {
+    display: block; width: 100%; text-align: left;
+    background: rgba(90, 103, 216, 0.08); border: 1px solid #444;
+    border-left: 4px solid #6E8259; border-radius: 8px; padding: 12px 14px;
+}
+.bc-recipe-card:hover { background: rgba(110, 130, 89, 0.18); box-shadow: none; }
+.bc-recipe-name { font-weight: bold; color: #fff; font-size: 0.95em; margin-bottom: 3px; }
+.bc-recipe-meta { font-size: 0.78em; color: #aaa; text-transform: capitalize; }
+
+/* ── Price Breakdown ──────────────────────────────────────── */
+.bc-pb-title {
+    font-family: var(--font-display); font-size: 0.75em; color: #6E8259;
+    margin-bottom: 10px; text-transform: uppercase;
+}
+.bc-price-breakdown {
+    background: rgba(0, 0, 0, 0.25); border: 1px solid #D8CAB4;
+    border-radius: 10px; padding: 16px; margin-bottom: 18px;
+}
+.bc-pb-item { font-size: 0.9em; color: #eee; margin-bottom: 10px; }
+.bc-pb-row {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px;
+    font-size: 0.82em; color: #ccc; padding: 7px 0; border-top: 1px dashed #444;
+}
+.bc-pb-recipe { color: #fff; font-weight: 600; flex: 0 1 auto; }
+.bc-pb-figures { color: #a6d989; flex: 0 1 auto; }
+.bc-pb-note { font-size: 0.7em; color: #888; margin-top: 10px; font-style: italic; }
+
+/* ── Make It a Fusion ─────────────────────────────────────── */
+.bc-fusion {
+    background: rgba(0, 0, 0, 0.25); border: 1px solid #D8CAB4;
+    border-radius: 10px; padding: 16px;
+}
+.bc-fusion-base { font-size: 0.85em; color: #ccc; margin-bottom: 12px; }
+.bc-fusion-base strong { color: #fff; }
+.bc-fusion-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.bc-fusion-chip {
+    background: rgba(255, 255, 255, 0.06); border: 1px solid #555;
+    color: #ccc; font-size: 0.68em; padding: 8px 12px; border-radius: 20px;
+}
+.bc-fusion-chip.on { background: rgba(125, 174, 92, 0.25); border-color: #96B36B; color: #fff; }
+.bc-fusion-result {
+    margin-top: 16px; padding-top: 14px; border-top: 1px dashed #444;
+}
+.bc-fusion-name { font-family: var(--font-display); font-size: 0.85em; color: #ffe23d; margin-bottom: 10px; }
+.bc-fusion-steps { padding-left: 20px; color: #ddd; font-size: 0.85em; line-height: 1.6; margin-bottom: 10px; }
+.bc-fusion-bridge { font-size: 0.8em; color: #a6c6ff; line-height: 1.5; margin-bottom: 10px; font-style: italic; }
+.bc-fusion-macros { font-size: 0.75em; color: #999; }
+
+/* ── Your Scan References ────────────────────────────────── */
+.bc-ref-card {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.bc-ref-actions { display: flex; gap: 8px; flex: 0 0 auto; }
+.bc-ref-reopen { padding: 8px 12px; font-size: 0.62em; }
+.bc-ref-delete {
+    padding: 8px 10px; background: transparent; border-color: #666; color: #999;
+}
+.bc-ref-delete:hover { background: rgba(200, 16, 46, 0.2); border-color: #c8102e; color: #ff9a9a; }
+
+.empty-state {
+    color: #999;
+    text-align: center;
+    padding: 30px;
+}
+
+.success-message {
+    background: #96B36B;
+    border: 2px solid #45a049;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .barcode-page h1 {
+        font-size: 1.3em;
+    }
+}

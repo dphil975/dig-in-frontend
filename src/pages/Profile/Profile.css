@@ -1,0 +1,83 @@
+/* Profile hub — header, sub-tab pills, the "⋯" menu, and the small lists in the
+   Collection / Check-ins / Gratitude tabs. The bigger section chrome
+   (profile-section, badge-grid, quest-card…) still comes from styles/styles.css. */
+
+/* ── Identity header ─────────────────────────────────────────────────── */
+.pfh { max-width: 1100px; margin: 0 auto; padding: 22px 20px 0; background: #F3EADA; }
+.pfh-name { margin: 0 0 4px; font-size: 22px; color: #33302A; word-break: break-word; }
+.pfh-stats { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: #7a7060; }
+.pfh-stats b { color: #33302A; }
+
+/* ── Sub-tab pills (Collection / Coins) ──────────────────────────────── */
+.psub { max-width: 1100px; margin: 0 auto; padding: 14px 20px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.psub-pill {
+  font-size: 12px; font-weight: 700; color: #33302A; background: #fff;
+  border: 1.5px solid #D8CAB4; border-radius: 999px; padding: 6px 13px; cursor: pointer;
+}
+.psub-pill:hover { border-color: #6E8259; }
+.psub-pill.active { background: #33302A; border-color: #33302A; color: #F3EADA; }
+
+/* ── "⋯" menu at the end of the tab row ──────────────────────────────── */
+.pmore-btn {
+  width: 34px; height: 34px; border-radius: 10px; cursor: pointer;
+  font-size: 18px; line-height: 1; font-weight: 800; color: #33302A;
+  background: #fff; border: 2px solid #D8CAB4;
+}
+.pmore-btn:hover, .pmore-btn[aria-expanded='true'] { background: #F3EADA; border-color: #6E8259; }
+.pmore-menu {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; min-width: 170px;
+  background: #fff; border: 2px solid #33302A; border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .18); padding: 6px; display: flex; flex-direction: column;
+}
+.pmore-menu button {
+  text-align: left; font-size: 13px; font-weight: 700; color: #33302A;
+  background: none; border: none; border-radius: 6px; padding: 8px 10px; cursor: pointer;
+}
+.pmore-menu button:hover { background: #F3EADA; }
+
+/* ── Collection ──────────────────────────────────────────────────────── */
+.pcol-wins { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.pcol-wins li {
+  display: flex; align-items: center; gap: 8px; font-size: 13px; color: #33302A;
+  background: #fff; border: 1.5px solid #D8CAB4; border-radius: 8px; padding: 8px 10px;
+}
+.pcol-wins svg { color: #6E8259; flex-shrink: 0; }
+
+/* ── Coins ───────────────────────────────────────────────────────────── */
+.pcoins-link { background: none; border: none; padding: 0; color: #6E8259; font-weight: 700; text-decoration: underline; cursor: pointer; font-size: inherit; }
+
+/* ── Check-ins ───────────────────────────────────────────────────────── */
+.pci-list { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.pci-list li {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  background: #fff; border: 1.5px solid #D8CAB4; border-radius: 8px; padding: 8px 10px; font-size: 13px;
+}
+.pci-mood { font-weight: 800; color: #33302A; }
+.pci-note { color: #4a463e; flex: 1; min-width: 0; }
+.pci-when { margin-left: auto; font-size: 11.5px; color: #7a7060; }
+
+/* ── Gratitude ───────────────────────────────────────────────────────── */
+.pgrat-list { list-style: none; margin: 10px 0 12px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.pgrat-list li {
+  display: flex; justify-content: space-between; gap: 12px;
+  background: #fff; border: 1.5px solid #D8CAB4; border-radius: 8px; padding: 8px 10px; font-size: 13px; color: #33302A;
+}
+.pgrat-when { font-size: 11.5px; color: #7a7060; flex-shrink: 0; }
+.pgrat-entry { display: flex; gap: 8px; margin-top: 8px; }
+.pgrat-input {
+  flex: 1; min-width: 0; font-size: 13px; padding: 9px 11px; color: #33302A;
+  background: #fff; border: 2px solid #D8CAB4; border-radius: 8px;
+}
+.pgrat-input:focus { outline: none; border-color: #6E8259; }
+
+/* Section headings inside the tab panes. `.section-title` is defined globally by
+   an unrelated Pantry stylesheet (BarcodeScanner.css) and other pages leak their
+   own overrides onto it, so pin the look here instead of depending on load order. */
+.profile-page .section-title {
+  font-family: var(--font-display, inherit);
+  font-size: 0.9em;
+  color: #33302A;
+  text-shadow: none;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}

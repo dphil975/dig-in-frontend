@@ -1,0 +1,113 @@
+/* NovaNudge.css — floating right-moment nudge card. */
+
+.nudge-card {
+  position: fixed;
+  right: 16px;
+  bottom: calc(74px + env(safe-area-inset-bottom, 0px)); /* sit above the persistent Ask Nova launcher */
+  z-index: 1200;
+  width: min(340px, calc(100vw - 32px));
+  padding: 15px 16px 14px;
+  border-radius: 18px;
+  background: #fff;
+  color: var(--text-dark, #333);
+  border: 1px solid rgba(124, 93, 175, 0.18);
+  box-shadow: 0 16px 40px rgba(44, 36, 64, 0.22);
+  animation: nudge-in 0.32s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+@keyframes nudge-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Dinner-rush "pay to not think" moments get a warmer, more urgent skin. */
+.nudge-card.is-convenience {
+  border-color: rgba(212, 165, 116, 0.5);
+  background: linear-gradient(180deg, #fff 0%, #fff7ee 100%);
+}
+
+.nudge-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nudge-x:hover { background: rgba(0, 0, 0, 0.1); }
+
+.nudge-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.nudge-icon { font-size: 22px; line-height: 1; }
+.nudge-heads { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.nudge-nova {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  color: var(--primary, #6E8259);
+}
+.nudge-tag {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #7a4a12;
+  background: var(--secondary, #D8CAB4);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+.nudge-tag-craving {
+  color: #fff;
+  background: var(--primary, #6E8259);
+}
+
+.nudge-title { margin: 0 0 4px; font-size: 15px; font-weight: 800; line-height: 1.2; padding-right: 18px; }
+.nudge-body { margin: 0 0 12px; font-size: 13px; line-height: 1.4; color: #555; }
+
+.nudge-actions { display: flex; align-items: center; gap: 8px; }
+.nudge-cta {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  font-size: 13px;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259));
+}
+.nudge-cta:active { transform: scale(0.98); }
+.nudge-settings {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #F3EADA;
+  color: #6E8259;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nudge-card { background: #1b1622; color: #f2eef8; border-color: rgba(124, 93, 175, 0.4); }
+  .nudge-card.is-convenience { background: linear-gradient(180deg, #1f1826 0%, #241a17 100%); }
+  .nudge-body { color: #c7bed6; }
+  .nudge-settings { background: #2a2233; border-color: rgba(255,255,255,0.12); color: #cbb6ef; }
+  .nudge-x { background: rgba(255,255,255,0.08); color: #cfc6da; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nudge-card { animation: none; }
+}

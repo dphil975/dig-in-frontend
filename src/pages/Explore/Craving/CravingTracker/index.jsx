@@ -362,8 +362,8 @@ export default function CravingTracker({ embedded = false } = {}) {
           <p className="ct-eyebrow">The Craving Tracker</p>
           <h1 className="ct-title">Keep the pantry ready before the craving is.</h1>
           <p className="ct-sub">
-            Log what you're reaching for. Once something keeps showing up, Nova remembers your
-            flavor palette and starts telling you what's worth keeping stocked — the way a
+            Log what you're reaching for. Once something keeps showing up, I remember your
+            flavor palette and start telling you what's worth keeping stocked — the way a
             well-kept kitchen anticipates what the household needs.
           </p>
         </header>

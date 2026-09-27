@@ -7,6 +7,12 @@ where to shop, how to host, and how not to get overcharged for it. This repo is
 the web app (React + Vite, pixel-art UI), which also ships as an installable
 PWA.
 
+The app opens on **Nova**, a cooking companion whose job is to learn what you
+like, pick the right recipe, and be there when you return. A new account signs
+up, answers a short fill-in-the-blank about what they're looking for, and Nova
+takes it from there. Everything else is four tabs away: Recipes, Discover,
+Profile, Settings.
+
 ## Run it locally
 
 Requires Node 20.6+ (tested on 22).
@@ -44,15 +50,16 @@ into the browser bundle, so never put secrets in them.
 
 ```
 src/            the app; see src/ARCHITECTURE.md for the full map
-  pages/        six routed realms: Home, Recess, Recipes, Explore, Community, You
+  pages/        routed realms; the sidebar is Nova, Recipes, Discover, Profile, Settings
   components/   eight groups: shell, nova, recipe, cook, health, pantry, social, you
   lib/          engines, storage, API clients
-  data/         static content (recipes, stores, seed reels)
-  prototypes/   unwired drafts (not bundled)
+  data/         static content (recipes, stores)
 api/            Vercel serverless functions (recipe AI, FDA recalls)
+backend/        Python (Flask) service sources
 data/           recipe and menu JSON, served at /data/ (public/data is a symlink here)
-public/         static assets: store data by state, OCR models, icons
-scripts/        build-recipes-full.py builds data/recipes_full.json
+public/         static assets: OCR models, icons, legacy deal scripts
+scripts/        build-recipes-full.py builds data/recipes_full.json;
+                frontend-map.mjs lists which src files are live vs unwired
 supabase/       database migrations
 docs/           product, design, business, legal, marketing docs; see docs/README.md
 _archive/       retired code and the old multi-page site; nothing here ships

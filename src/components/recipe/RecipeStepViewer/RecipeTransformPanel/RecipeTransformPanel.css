@@ -1,0 +1,90 @@
+/* Matches AllergyPanel/WellnessPanel/GutHealthPanel's light-card recipe-page feel. */
+.rtp {
+  background: #fff;
+  border: 2px solid #33302A;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.rtp-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: #33302A;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.rtp-sub { font-size: 12px; color: #777; margin: 0 0 14px; line-height: 1.5; }
+
+.rtp-modes { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.rtp-mode {
+  font-family: var(--font-ui);
+  font-size: 11px; letter-spacing: 0.03em;
+  padding: 10px 13px;
+  border: 2px solid #F3EADA;
+  border-radius: 20px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+.rtp-mode:hover { border-color: #6E8259; }
+.rtp-mode.active { background: #6E8259; border-color: #6E8259; color: #fff; }
+.rtp-mode-allergy.active { background: #d32f2f; border-color: #a52323; }
+
+.rtp-regions { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.rtp-region {
+  font-size: 11.5px;
+  padding: 6px 11px;
+  border: 1.5px solid #F3EADA;
+  border-radius: 14px;
+  background: #fafafa;
+  color: #333;
+  cursor: pointer;
+}
+.rtp-region:hover { border-color: #6E8259; }
+.rtp-region.active { background: #6E8259; border-color: #6E8259; color: #fff; }
+
+.rtp-hint { font-size: 12px; color: #999; font-style: italic; margin: 4px 0 0; }
+.rtp-none {
+  font-size: 12.5px; color: #3a6b45; line-height: 1.5;
+  background: #f0f7f1; border: 1px solid #bfe0c6; border-radius: 10px;
+  padding: 10px 12px; margin-top: 8px;
+}
+
+.rtp-result { border-top: 1px solid #eee; margin-top: 12px; padding-top: 12px; }
+.rtp-result-name { font-weight: 700; font-size: 14px; color: #33302A; margin-bottom: 10px; }
+
+.rtp-changes { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.rtp-change-row {
+  background: #f7f4fc;
+  border: 1px solid #e3d9f5;
+  border-left: 3px solid #6E8259;
+  border-radius: 0 10px 10px 0;
+  padding: 9px 12px;
+}
+.rtp-change-swap { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12.5px; margin-bottom: 4px; }
+.rtp-change-from { color: #a34a4a; text-decoration: line-through; }
+.rtp-change-arrow { color: #6E8259; font-weight: 700; }
+.rtp-change-to { color: #33302A; font-weight: 700; }
+.rtp-change-reason { font-size: 11.5px; color: #666; line-height: 1.5; }
+
+.rtp-added { margin-bottom: 10px; }
+.rtp-added-title { font-family: var(--font-ui); font-size: 11px; color: #555; margin-bottom: 6px; }
+.rtp-added-items { display: flex; flex-wrap: wrap; gap: 6px; }
+.rtp-added-item {
+  background: #f0f7f1; border: 1px solid #bfe0c6; color: #3a6b45;
+  font-size: 11.5px; padding: 4px 9px; border-radius: 10px;
+}
+
+.rtp-notes { margin: 0 0 12px; padding-left: 18px; font-size: 12px; color: #777; line-height: 1.6; }
+
+.rtp-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.rtp-cook {
+  background: #96B36B; color: #10231a; border: none; border-radius: 10px;
+  padding: 10px 16px; font-weight: 700; font-size: 12.5px; cursor: pointer;
+}
+.rtp-save {
+  background: #fff; border: 2px solid #6E8259; color: #6E8259; border-radius: 10px;
+  padding: 9px 15px; font-weight: 700; font-size: 12.5px; cursor: pointer;
+}
+.rtp-save:disabled { opacity: 0.6; cursor: default; }

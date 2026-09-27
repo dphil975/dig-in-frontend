@@ -8,7 +8,6 @@ import { loadUserPosts } from '../../../lib/userPosts';
 import { searchByTags } from '../../../lib/buildFeed';
 import Post from '../../../components/social/PostTypes/index';
 import { TIME_WINDOWS, DEFAULT_WINDOW, filterByWindow, relatedTags, tagStats } from '../../../lib/communityHub';
-import '../../Home/Home.css';   // the post-*/column-* styles Post relies on (same reuse FollowedTagsFeed uses)
 import './TagHub.css';
 
 /* TagHub — a tag's real address. Reached from every "tap a tag to enter its

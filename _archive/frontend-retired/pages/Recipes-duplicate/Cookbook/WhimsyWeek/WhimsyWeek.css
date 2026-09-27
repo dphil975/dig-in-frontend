@@ -1,0 +1,108 @@
+/* Whimsy Week — soft, warm, a little dreamy. Sits on the app's purple/beige
+   palette (#6E8259 / #F3EADA / #6E8259) but lighter and airier. */
+
+.ww-page { min-height: 100vh; background: linear-gradient(180deg, #f6f2ff 0%, #fff8ef 100%); }
+.ww-wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 70px; }
+
+/* ── Start screen ── */
+.ww-hero { text-align: center; padding: 18px 0 10px; }
+.ww-title { font-size: 30px; color: #4A3D80; margin: 10px 0 6px; letter-spacing: .5px; }
+.ww-title-sm { font-size: 22px; margin: 0; }
+.ww-sub { max-width: 520px; margin: 0 auto; color: #6b6580; font-size: 14px; line-height: 1.55; }
+
+.ww-prompt { text-align: center; font-weight: 800; color: #4A3D80; margin: 24px 0 12px; }
+.ww-mood-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px;
+}
+.ww-mood-chip {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 10px; border: 2px solid #d8cdf0; border-radius: 14px;
+  background: #fff; cursor: pointer; transition: transform .12s, border-color .12s;
+}
+.ww-mood-chip:hover:not(:disabled) { transform: translateY(-2px); border-color: #6E8259; }
+.ww-mood-chip:disabled { opacity: .6; cursor: default; }
+.ww-mood-swatch { width: 34px; height: 34px; border-radius: 50%; border: 2px solid rgba(0,0,0,.12); }
+.ww-mood-label { font-weight: 800; color: #4A3D80; font-size: 14px; }
+.ww-mood-emotion { font-size: 11px; color: #8a7fa8; text-align: center; }
+
+.ww-surprise {
+  display: block; margin: 18px auto 0; padding: 12px 20px;
+  border: none; border-radius: 12px; background: #6E8259; color: #fff;
+  font-weight: 800; font-size: 14px; cursor: pointer; box-shadow: 0 4px 14px rgba(110, 130, 89,.35);
+}
+.ww-surprise:disabled { opacity: .6; cursor: default; }
+
+/* ── Plan header ── */
+.ww-plan-head { display: flex; align-items: center; gap: 14px; padding: 10px 0 6px; }
+.ww-nova-intro { margin: 4px 0 0; color: #6b6580; font-size: 14px; font-style: italic; }
+
+.ww-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0 6px; }
+.ww-action-btn {
+  padding: 10px 16px; border: 2px solid #6E8259; border-radius: 10px;
+  background: #fff; color: #4A3D80; font-weight: 700; font-size: 13px; cursor: pointer;
+}
+.ww-action-btn.ww-primary { background: #6E8259; border-color: #6E8259; color: #33302A; }
+.ww-share-toast { color: #2f6b2f; font-size: 13px; font-weight: 700; margin: 6px 0 0; }
+
+/* ── Days ── */
+.ww-days { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+.ww-day {
+  border: 2px solid #e3daf5; border-radius: 16px; background: #fff;
+  padding: 14px 16px; box-shadow: 0 2px 10px rgba(110, 130, 89,.06);
+}
+.ww-day.today { border-color: #6E8259; box-shadow: 0 4px 18px rgba(110, 130, 89,.25); }
+
+.ww-day-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.ww-day-dow { font-family: var(--font-ui); font-size: 11px; color: #8a7fa8; }
+.ww-day-theme { font-weight: 800; color: #4A3D80; font-size: 16px; }
+.ww-today-tag {
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px;
+  background: #6E8259; color: #33302A; padding: 4px 8px; border-radius: 6px;
+}
+
+.ww-items { display: flex; flex-direction: column; gap: 8px; }
+.ww-item {
+  display: flex; flex-direction: column; gap: 4px; align-items: flex-start;
+  text-align: left; width: 100%; box-sizing: border-box;
+  padding: 10px 12px; border-radius: 10px; border: 1px solid #ece6f7; background: #faf8ff;
+}
+.ww-item-kicker { font-family: var(--font-ui); font-size: 11px; color: #6E8259; letter-spacing: .5px; }
+.ww-item-title { font-weight: 800; color: #33302A; font-size: 15px; }
+.ww-item-meta { font-size: 12px; color: #8a7fa8; }
+.ww-item-text { font-size: 13px; color: #4a4560; line-height: 1.45; }
+
+.ww-cook { cursor: pointer; transition: background .12s; }
+.ww-cook:hover { background: #f1ecff; }
+.ww-adventure { background: #fff6ea; border-color: #f7e4c4; }
+.ww-shareitem { background: #eef7f0; border-color: #cfe8d5; }
+
+.ww-mini-btn {
+  margin-top: 4px; padding: 7px 12px; border: none; border-radius: 8px;
+  background: #6E8259; color: #fff; font-weight: 700; font-size: 12px; cursor: pointer;
+}
+.ww-mini-btn:hover { filter: brightness(1.06); }
+
+/* ── Reflect ── */
+.ww-reflect-wrap { background: #f3f0ff; border-color: #ded4f5; }
+.ww-reflect { width: 100%; }
+.ww-mood-row { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+.ww-mood-dot { width: 24px; height: 24px; border-radius: 50%; border: 2px solid rgba(0,0,0,.12); cursor: pointer; padding: 0; }
+.ww-reflect-form { display: flex; gap: 6px; margin-top: 6px; width: 100%; }
+.ww-reflect-input {
+  flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #ded4f5; border-radius: 8px; font-size: 13px;
+}
+.ww-done { color: #2f6b2f; font-weight: 700; font-size: 13px; }
+
+/* ── Circle share popover ── */
+.ww-share-pop {
+  margin-top: 8px; width: 100%; background: #fff; border: 1px solid #cfe8d5;
+  border-radius: 10px; padding: 10px;
+}
+.ww-share-hint { font-size: 12px; color: #6b6580; margin: 0 0 6px; }
+.ww-share-list { list-style: none; padding: 0; margin: 0 0 6px; display: flex; flex-direction: column; gap: 6px; }
+.ww-share-list button {
+  width: 100%; text-align: left; padding: 8px 10px; border: 1px solid #cfe8d5;
+  border-radius: 8px; background: #f3faf5; cursor: pointer; font-size: 13px;
+}
+.ww-share-result { font-size: 12px; color: #2f6b2f; margin: 4px 0; }
+.ww-share-cancel { border: none; background: none; color: #6E8259; font-size: 12px; cursor: pointer; text-decoration: underline; }

@@ -128,7 +128,7 @@ export default function TikTokRecipeFeed({ recipes, ctx, hits, savedRecipes, onS
   // Swiping still fully works with learning off (queue advances, saves and
   // opens recipes normally) — this just decides whether it also writes to
   // the persisted flavor profile. See flavorProfile.js's isSwipeLearningEnabled
-  // (Profile page toggle) — a deliberate opt-out, on by default.
+  // (Settings → Account toggle) — a deliberate opt-out, on by default.
   function maybeRecord(recipe, signal, overrideFlavors) {
     return isSwipeLearningEnabled() ? recordFlavorSignal(recipe, signal, overrideFlavors) : profile;
   }

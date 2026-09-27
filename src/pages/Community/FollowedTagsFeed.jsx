@@ -6,7 +6,6 @@ import { getUserId } from '../../lib/syncService';
 import { loadUserPosts } from '../../lib/userPosts';
 import { buildFeed } from '../../lib/buildFeed';
 import Post from '../../components/social/PostTypes/index';
-import '../Home/Home.css';   // the post-* / column-* styles live here (Post doesn't self-import them)
 
 /* FollowedTagsFeed — Home's "Your Tags" tab, mirrored into the Community hub so
    your followed hashtags (your communities) can be read right where you'd look

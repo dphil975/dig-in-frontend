@@ -1,0 +1,88 @@
+/* HydrationPanel — sits with the other RecipeFull science panels
+   (WellnessPanel / GutHealthPanel / FoodSafetyPanel) and matches their
+   card language: cream-white card, Bark border, offset shadow.
+
+   Blue (#2E6F8E) is used ONLY for the water motif here — it is NOT a new
+   palette role. THE PALETTE reserves Honey for earned things and keeps
+   Crimson scarce for danger; hydration is neither. The app already uses a
+   single blue (#1565C0) for the WIC eligibility mark, so a blue accent has
+   precedent as an informational (not alarming, not earned) signal. */
+
+.hyd {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 18px 0;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .14);
+  font-family: var(--font-ui);
+  color: var(--dig-bark, #33302A);
+}
+/* The fiber/multi-driver case gets a touch more presence — it's the one with
+   a real mechanical "you need the water for this to work." */
+.hyd-notable { border-left: 6px solid #2E6F8E; }
+.hyd-mild { border-left: 6px solid var(--dig-cashmere, #D8CAB4); }
+
+.hyd-head { display: flex; align-items: flex-start; gap: 11px; margin-bottom: 13px; }
+.hyd-icon { font-size: 1.5em; line-height: 1.1; flex: 0 0 auto; }
+.hyd-title { margin: 0; font-size: 1.02em; line-height: 1.35; }
+.hyd-level {
+  margin: 3px 0 0; font-size: 0.72em; letter-spacing: 0.05em;
+  text-transform: uppercase; color: #8a7a68;
+}
+
+.hyd-drivers { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+.hyd-driver {
+  border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #faf8f3;
+}
+
+.hyd-driver-btn {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  width: 100%; background: none; border: none; padding: 0; cursor: pointer;
+  font-family: inherit; text-align: left; color: inherit;
+}
+.hyd-driver-label { font-weight: 800; font-size: 0.92em; }
+.hyd-driver-chev {
+  flex: 0 0 auto; width: 20px; height: 20px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: #2E6F8E; color: #fff; font-size: 0.8em; line-height: 1;
+}
+
+/* the real ingredient lines that triggered this driver */
+.hyd-matched {
+  margin: 5px 0 0; font-size: 0.76em; color: #8a7a68;
+  overflow-wrap: break-word;
+}
+
+.hyd-why {
+  margin-top: 9px; padding-top: 9px;
+  border-top: 1px dashed var(--dig-cashmere, #D8CAB4);
+}
+.hyd-why p { margin: 0 0 7px; font-size: 0.86em; line-height: 1.6; color: #4a453d; }
+.hyd-why p:last-child { margin-bottom: 0; }
+.hyd-advice strong { color: #2E6F8E; }
+
+/* DIY electrolytes — only rendered when the drivers genuinely warrant it */
+.hyd-diy { margin-top: 13px; }
+.hyd-diy-toggle {
+  width: 100%; text-align: left;
+  background: #eef4f7; border: 1.5px solid #b9d0dc; border-radius: 9px;
+  padding: 10px 12px; font-family: inherit; font-size: 0.84em; font-weight: 700;
+  color: #245a73; cursor: pointer;
+}
+.hyd-diy-toggle:hover { background: #e3eef3; }
+.hyd-diy-body { padding: 11px 2px 0; }
+.hyd-mechanism { margin: 0 0 10px; font-size: 0.82em; line-height: 1.6; color: #4a453d; }
+.hyd-diy-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.hyd-diy-list li { font-size: 0.82em; line-height: 1.5; }
+.hyd-diy-list strong { display: block; color: #245a73; }
+.hyd-diy-list span { color: #6b6157; }
+
+.hyd-disclaimer {
+  margin: 13px 0 0; padding-top: 10px;
+  border-top: 1px solid var(--dig-cashmere, #D8CAB4);
+  font-size: 0.74em; line-height: 1.55; color: #8a7a68;
+}

@@ -28,103 +28,23 @@
 }
 .srail-tagline { margin: 8px 0 0; font-size: 11.5px; font-weight: 700; color: var(--dig-matcha, #6E8259); }
 
-.srail-place { display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 700; color: #7a7060; }
-.srail-place-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dig-frog, #96B36B); box-shadow: 0 0 0 3px rgba(150,179,107,.25); }
-
-.srail-cta {
-  font-family: inherit; font-size: 13px; font-weight: 800; color: #fff;
-  background: var(--dig-crimson, #C8001E); border: 2px solid var(--dig-bark, #33302A);
-  border-radius: 6px; box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
-  padding: 10px 12px; cursor: pointer;
-}
-.srail-cta:hover  { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark, #33302A); }
-.srail-cta:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--dig-bark, #33302A); }
-
-/* ── Nav: flat entries + expandable hubs ──────────────────────────────────── */
+/* ── Nav: five flat entries ───────────────────────────────────────────────── */
 .srail-nav { display: flex; flex-direction: column; gap: 3px; }
-.srail-group { display: flex; flex-direction: column; }
-.srail-navrow { display: flex; align-items: center; gap: 4px; }
 .srail-nav-btn {
-  flex: 1; text-align: left; font-size: 13px; font-weight: 700; color: var(--dig-bark, #33302A);
-  background: none; border: none; border-radius: 8px; padding: 9px 10px; cursor: pointer;
+  text-align: left; font-size: 13px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: none; border: none; border-radius: 8px; padding: 10px 10px; cursor: pointer;
 }
 .srail-nav-btn:hover { background: rgba(110,130,89,.14); }
 .srail-nav-btn.active { background: var(--dig-matcha, #6E8259); color: #fff; }
-.srail-expand {
-  flex-shrink: 0; width: 30px; height: 34px; font-size: 11px; color: var(--dig-bark, #33302A);
-  background: none; border: none; border-radius: 8px; cursor: pointer;
-  transition: transform 0.15s ease;
+/* the entry you just tapped, while its page is still on the way */
+.srail-nav-btn { position: relative; }
+.srail-nav-btn.is-pending::after {
+  content: ''; position: absolute; right: 12px; top: 50%; width: 8px; height: 8px; margin-top: -4px;
+  border-radius: 50%; background: var(--dig-matcha, #6E8259); animation: srail-pulse 0.9s ease-in-out infinite;
 }
-.srail-expand:hover { background: rgba(110,130,89,.14); }
-.srail-expand.open { transform: rotate(180deg); }
-.srail-sublinks {
-  display: flex; flex-direction: column; gap: 1px;
-  margin: 2px 0 4px 12px; padding-left: 10px;
-  border-left: 2px solid var(--dig-cashmere, #D8CAB4);
-}
-.srail-sublink {
-  text-align: left; font-size: 12px; font-weight: 600; color: #5a5348;
-  background: none; border: none; border-radius: 6px; padding: 7px 9px; cursor: pointer;
-}
-.srail-sublink:hover { background: rgba(110,130,89,.12); color: var(--dig-bark, #33302A); }
-.srail-sublink.active { background: var(--dig-cashmere, #D8CAB4); color: var(--dig-matcha, #6E8259); font-weight: 800; }
-
-/* A sublink's own tabs, nested one level deeper (Virtual Pantry → Inventory /
-   Scan / Recipes). Tighter, dotted guide, so they read as "inside" the sublink. */
-.srail-subsublinks {
-  display: flex; flex-direction: column; gap: 1px;
-  margin: 2px 0 3px 8px; padding-left: 9px;
-  border-left: 2px dotted var(--dig-cashmere, #D8CAB4);
-}
-.srail-subsublink {
-  text-align: left; font-size: 11.5px; font-weight: 600; color: #6a6154;
-  background: none; border: none; border-radius: 6px; padding: 5px 8px; cursor: pointer;
-  display: flex; align-items: center; gap: 6px;
-}
-.srail-subsublink::before { content: '·'; color: var(--dig-matcha, #6E8259); font-weight: 900; }
-.srail-subsublink:hover { background: rgba(110,130,89,.1); color: var(--dig-bark, #33302A); }
-.srail-subsublink.active { color: var(--dig-matcha, #6E8259); font-weight: 800; background: rgba(110,130,89,.08); }
-
-/* Life mode */
-.srail-mode { position: relative; }
-.srail-mode-cur {
-  display: flex; align-items: center; gap: 7px; width: 100%;
-  font-size: 12px; font-weight: 800; color: var(--dig-bark, #33302A);
-  background: #fff; border: 2px dashed var(--dig-cashmere, #D8CAB4); border-radius: 8px;
-  padding: 8px 10px; cursor: pointer; text-align: left;
-}
-.srail-mode-cur.set { border-style: solid; border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
-.srail-mode-cur:hover { border-color: var(--dig-matcha, #6E8259); }
-.srail-mode-emoji { font-size: 14px; }
-.srail-mode-label { flex: 1; }
-.srail-mode-days { font-size: 9.5px; font-weight: 700; color: #8a7a68; background: var(--dig-cream, #F3EADA); border-radius: 999px; padding: 2px 6px; }
-.srail-mode-menu {
-  margin-top: 8px; background: #fff; border: 2px solid var(--dig-bark, #33302A);
-  border-radius: 10px; box-shadow: 4px 4px 0 var(--dig-bark, #33302A);
-  padding: 10px; display: flex; flex-direction: column; gap: 4px;
-}
-.srail-mode-hint { font-size: 10.5px; line-height: 1.5; color: #8a7a68; margin: 0 2px 6px; }
-.srail-mode-opt { display: flex; gap: 8px; align-items: flex-start; text-align: left; background: none; border: none; border-radius: 6px; padding: 7px 6px; cursor: pointer; }
-.srail-mode-opt:hover { background: rgba(110,130,89,.12); }
-.srail-mode-opt.active { background: rgba(110,130,89,.18); }
-.srail-mode-opt-emoji { font-size: 15px; line-height: 1.2; }
-.srail-mode-opt-txt { display: flex; flex-direction: column; gap: 2px; }
-.srail-mode-opt-txt b { font-size: 12px; color: var(--dig-bark, #33302A); }
-.srail-mode-opt-txt em { font-size: 10.5px; line-height: 1.45; color: #8a7a68; font-style: normal; }
-.srail-mode-clear { margin-top: 4px; font-size: 11px; font-weight: 700; color: var(--dig-crimson, #C8001E); background: none; border: none; cursor: pointer; text-align: left; padding: 6px; }
-.srail-mode-clear:hover { text-decoration: underline; }
-
-/* Tags you follow */
-.srail-tags { border-top: 2px dashed var(--dig-cashmere, #D8CAB4); padding-top: 14px; }
-.srail-tags-head { display: block; font-family: var(--font-ui); font-size: 11px; color: #9a8f7c; margin-bottom: 10px; letter-spacing: .05em; }
-.srail-tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.srail-tag {
-  font-size: 11.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
-  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 999px;
-  padding: 4px 10px; cursor: pointer;
-}
-.srail-tag:hover { border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
-.srail-tags-empty { font-size: 11px; line-height: 1.5; color: #9a8f7c; margin: 0; }
+.srail-nav-btn.active.is-pending::after { background: #fff; }
+@keyframes srail-pulse { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .srail-nav-btn.is-pending::after { animation: none; } }
 
 /* ── Mobile top bar + hamburger + drawer (Tumblr-style collapse) ──────────── */
 .srail-topbar {
@@ -159,8 +79,16 @@
   .srail {
     width: min(82vw, 300px);
     transform: translateX(-100%);
-    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    /* Closed, it must not leave its shadow on the screen edge or keep its links in the tab order. */
+    visibility: hidden;
+    box-shadow: none;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1), visibility 0s linear 0.25s;
     z-index: 130;
   }
-  .srail.open { transform: translateX(0); }
+  .srail.open {
+    transform: translateX(0);
+    visibility: visible;
+    box-shadow: 3px 0 0 rgba(51, 48, 42, 0.10);
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1), visibility 0s;
+  }
 }

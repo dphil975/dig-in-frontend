@@ -3,6 +3,7 @@ import {
   signUpEmail, loginEmail, signUpPhone, verifyPhoneOtp, signUpGoogle,
 } from '../../../../services/authService';
 import { validateUsername, validatePassword, getPasswordChecks, PASSWORD_RULES } from '../../../../lib/authValidation';
+import { flagNewSignup, clearSignupFlag } from '../../../../lib/personalization/onboarding';
 import './Auth.css';
 
 /* The app's home-screen login. Shown by AuthGate whenever no one is signed in,
@@ -55,6 +56,9 @@ export default function Auth() {
     }
 
     setBusy(true);
+    // A sign-up owes the welcome questions — mark it before the session lands so
+    // the OnboardingGate sees it; undone below if the sign-up fails.
+    if (isSignup) flagNewSignup();
     try {
       if (method === 'phone') {
         await signUpPhone(phone.trim(), isSignup ? username.trim() : undefined);
@@ -67,6 +71,7 @@ export default function Auth() {
         await loginEmail(email.trim(), password);
       }
     } catch (err) {
+      if (isSignup) clearSignupFlag();
       setError(err.message || 'Something went wrong. Try again.');
     } finally {
       setBusy(false);

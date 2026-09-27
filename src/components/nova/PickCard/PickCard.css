@@ -1,0 +1,65 @@
+/* Nova home → the pick card. */
+.npc {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(51,48,42,.12);
+  padding: 14px 16px 16px;
+}
+.npc-empty { background: none; border-style: dashed; box-shadow: none; }
+.npc-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.npc-label {
+  margin: 0; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--dig-matcha, #6E8259);
+}
+.npc-line { margin: 8px 0 0; font-size: 14px; line-height: 1.55; color: #4a463e; }
+
+.npc-save {
+  font-size: 12px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: none; border: 1.5px solid var(--dig-cashmere, #D8CAB4); border-radius: 999px;
+  padding: 4px 11px; cursor: pointer;
+}
+.npc-save:hover:not(:disabled) { border-color: var(--dig-matcha, #6E8259); }
+.npc-save.is-saved { color: var(--dig-matcha, #6E8259); border-color: var(--dig-matcha, #6E8259); cursor: default; }
+
+.npc-body { display: flex; gap: 16px; align-items: stretch; }
+.npc-img {
+  position: relative; flex: 0 0 132px; min-height: 132px;
+  border-radius: 8px; overflow: hidden;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0 8px, transparent 8px 16px), #33302A;
+  display: flex; align-items: center; justify-content: center;
+}
+.npc-ph {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  padding: 0 8px; text-align: center; font-size: 11px; letter-spacing: 1px; color: rgba(255,255,255,.4);
+}
+.npc-img img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.npc-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.npc-name {
+  margin: 0 0 4px; font-size: 22px; line-height: 1.2; font-weight: 500; color: var(--dig-bark, #33302A);
+  font-family: var(--font-serif, Georgia, serif);
+}
+.npc-meta { margin: 0 0 10px; font-size: 12.5px; color: #7a7060; }
+.npc-reason { margin: 0; font-size: 14px; line-height: 1.5; font-style: italic; color: #4a463e; }
+.npc-note { margin: 6px 0 0; font-size: 12.5px; color: var(--dig-matcha, #6E8259); font-weight: 700; }
+.npc-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.npc-btn {
+  font-size: 12.5px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: var(--dig-cream, #F3EADA); border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 8px; box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+  padding: 9px 15px; cursor: pointer;
+}
+.npc-btn:active { transform: translate(2px, 2px); box-shadow: 0 0 0; }
+.npc-btn-primary { color: #fff; background: var(--dig-matcha, #6E8259); }
+
+.npc-credit {
+  display: block; margin-top: 8px; font-size: 10.5px; color: #9a8f7c; text-decoration: none;
+}
+.npc-credit:hover { text-decoration: underline; }
+.npc .recallbar { margin: 12px 0 0; }
+
+@media (max-width: 520px) {
+  .npc-body { flex-direction: column; }
+  .npc-img { flex: none; height: 170px; }
+}

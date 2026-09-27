@@ -1,0 +1,185 @@
+/* PantryRolodex.css — the flip-through recipe index. On-brand plum/beige, with
+   a physical index-card feel (punched holes + flip animation) for the rolodex. */
+
+.nr-page { min-height: 100vh; background: var(--light-bg, #F3EADA); }
+.nr-wrap { max-width: 940px; margin: 0 auto; padding: 16px 16px 72px; }
+
+.nr-back {
+  background: none; border: none; cursor: pointer;
+  font-weight: 700; font-size: 12px; letter-spacing: 0.06em;
+  color: var(--primary, #6E8259); padding: 8px 0;
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+.nr-head { margin: 6px 0 18px; max-width: 640px; }
+.nr-eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.18em;
+  color: var(--primary, #6E8259); margin: 0 0 6px;
+}
+.nr-title { font-size: 30px; font-weight: 900; line-height: 1.08; color: #33302A; margin: 0 0 10px; }
+.nr-sub { font-size: 15px; line-height: 1.55; color: #5b5470; margin: 0 0 12px; }
+.nr-sub em { font-style: normal; font-weight: 700; color: #33302A; }
+.nr-pantry-line { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #6b6480; font-weight: 600; }
+.nr-pantry-count {
+  display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 7px;
+  border-radius: 999px; background: var(--primary, #6E8259); color: #fff; font-weight: 800; font-size: 13px;
+}
+.nr-pantry-edit {
+  display: inline-flex; align-items: center; gap: 4px; cursor: pointer;
+  margin-left: 4px; padding: 4px 10px; border-radius: 999px;
+  font-size: 12px; font-weight: 800; color: var(--primary, #6E8259);
+  background: rgba(124, 93, 175, 0.1); border: 1px solid rgba(124, 93, 175, 0.2);
+}
+
+/* ── Empty states ───────────────────────────────────────────── */
+.nr-empty {
+  text-align: center; background: #fff; border: 1px dashed rgba(124, 93, 175, 0.28);
+  border-radius: 18px; padding: 40px 24px; color: #6b6480; font-size: 14px; line-height: 1.6;
+}
+.nr-empty-big { font-size: 18px; font-weight: 800; color: #33302A; margin: 0 0 4px; }
+.nr-empty-sm { padding: 26px; font-style: italic; }
+.nr-cta {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer; margin-top: 14px;
+  font-size: 14px; font-weight: 800; color: #fff; padding: 11px 20px; border: none; border-radius: 999px;
+  background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259));
+}
+
+/* ── Controls ───────────────────────────────────────────────── */
+.nr-controls { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+.nr-buckets { display: flex; gap: 8px; flex-wrap: wrap; }
+.nr-bucket {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  font-size: 13px; font-weight: 800; color: #5b5470;
+  background: #fff; border: 1px solid rgba(124, 93, 175, 0.2);
+  padding: 8px 13px; border-radius: 999px; transition: all 0.14s ease;
+}
+.nr-bucket-n {
+  font-size: 11px; font-weight: 800; min-width: 18px; text-align: center;
+  padding: 1px 6px; border-radius: 999px; background: rgba(124, 93, 175, 0.1); color: #6b6480;
+}
+.nr-bucket.is-on { color: #fff; background: var(--bk, #6E8259); border-color: transparent; }
+.nr-bucket.is-on .nr-bucket-n { background: rgba(255, 255, 255, 0.25); color: #fff; }
+
+.nr-tools { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.nr-search {
+  display: flex; align-items: center; gap: 7px; flex: 1; min-width: 200px;
+  background: #fff; border: 1px solid rgba(124, 93, 175, 0.2); border-radius: 999px; padding: 8px 14px;
+}
+.nr-search svg { color: #a49bb0; flex-shrink: 0; }
+.nr-search input { border: none; outline: none; background: none; font-size: 14px; color: #33302A; width: 100%; }
+.nr-meal {
+  font-size: 13px; font-weight: 700; color: #5b5470; cursor: pointer;
+  background: #fff; border: 1px solid rgba(124, 93, 175, 0.2); border-radius: 999px; padding: 9px 14px;
+}
+.nr-viewtoggle { display: inline-flex; background: #fff; border: 1px solid rgba(124, 93, 175, 0.2); border-radius: 999px; overflow: hidden; }
+.nr-viewtoggle button {
+  display: grid; place-items: center; width: 38px; height: 36px; cursor: pointer;
+  border: none; background: none; color: #a49bb0;
+}
+.nr-viewtoggle button.is-on { background: var(--primary, #6E8259); color: #fff; }
+
+/* ── Rolodex (single flip card) ─────────────────────────────── */
+.nr-rolodex { display: flex; align-items: center; gap: 8px; }
+.nr-flip {
+  flex-shrink: 0; display: grid; place-items: center; cursor: pointer;
+  width: 42px; height: 42px; border-radius: 999px; color: var(--primary, #6E8259);
+  background: #fff; border: 1px solid rgba(124, 93, 175, 0.22); transition: all 0.13s ease;
+}
+.nr-flip:hover { background: rgba(124, 93, 175, 0.1); transform: scale(1.05); }
+.nr-cardstage { flex: 1; min-width: 0; perspective: 1400px; }
+.nr-pager { text-align: center; font-size: 12px; font-weight: 700; color: #8b8194; margin-top: 12px; letter-spacing: 0.04em; }
+
+.nr-card {
+  position: relative; background: #fff;
+  border: 1px solid rgba(124, 93, 175, 0.16);
+  border-radius: 16px; padding: 20px 22px 18px;
+  box-shadow: 0 12px 30px rgba(44, 36, 64, 0.1);
+  transform-origin: top center;
+}
+/* the two "punched holes" of an index card / rolodex */
+.nr-card-punches { position: absolute; top: 7px; left: 0; right: 0; display: flex; justify-content: center; gap: 60px; pointer-events: none; }
+.nr-card-punches span { width: 12px; height: 12px; border-radius: 999px; background: var(--light-bg, #F3EADA); box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18); }
+
+@keyframes nr-flip-next { from { transform: rotateX(-42deg); opacity: 0.2; } to { transform: none; opacity: 1; } }
+@keyframes nr-flip-prev { from { transform: rotateX(42deg); opacity: 0.2; } to { transform: none; opacity: 1; } }
+.nr-card.flip-next { animation: nr-flip-next 0.26s ease-out; }
+.nr-card.flip-prev { animation: nr-flip-prev 0.26s ease-out; }
+
+.nr-card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 6px 0 14px; }
+.nr-badge {
+  font-size: 10px; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px; color: #fff; background: var(--bk, #6E8259);
+}
+.nr-badge-sm { font-size: 9px; padding: 3px 8px; }
+.nr-card-meta { font-size: 12px; font-weight: 700; color: #8b8194; text-align: right; }
+
+.nr-card-body { display: flex; gap: 18px; align-items: flex-start; }
+.nr-card-left { flex: 1; min-width: 0; }
+.nr-card-name { font-size: 22px; font-weight: 900; color: #33302A; margin: 0 0 6px; line-height: 1.12; }
+.nr-card-desc { font-size: 13.5px; line-height: 1.5; color: #6b6480; margin: 0 0 14px; }
+.nr-card-block { margin-bottom: 11px; }
+.nr-block-label { display: block; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.nr-have { color: #2b8175; }
+.nr-need { color: #c26a2f; }
+
+.nr-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.nr-chip {
+  font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+  background: #f2eef8; color: #5b5470; text-transform: capitalize;
+}
+.nr-chips-have .nr-chip { background: rgba(58, 157, 143, 0.12); color: #226b61; }
+.nr-chips-need .nr-chip { background: rgba(230, 138, 78, 0.14); color: #a85c22; }
+.nr-chip-more { background: rgba(124, 93, 175, 0.12) !important; color: #6E8259 !important; }
+
+.nr-card-right { display: flex; flex-direction: column; align-items: center; gap: 3px; flex-shrink: 0; }
+.nr-ring { transform: rotate(-90deg); }
+.nr-ring-track { fill: none; stroke: rgba(124, 93, 175, 0.14); stroke-width: 5; }
+.nr-ring-fill { fill: none; stroke-width: 5; stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; }
+.nr-ring-label { transform: rotate(90deg); transform-origin: center; font-size: 15px; font-weight: 900; fill: #33302A; }
+.nr-ring-cap { font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #a49bb0; }
+
+.nr-card-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+.nr-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px; cursor: pointer;
+  font-size: 13px; font-weight: 800; padding: 11px 18px; border-radius: 999px; border: none; transition: all 0.13s ease;
+}
+.nr-btn-primary { color: #fff; background: var(--gradient-primary, linear-gradient(135deg, #6E8259, #6E8259)); flex: 1; }
+.nr-btn-primary:hover { filter: brightness(1.06); }
+.nr-btn-ghost { color: var(--primary, #6E8259); background: rgba(124, 93, 175, 0.1); border: 1px solid rgba(124, 93, 175, 0.2); }
+.nr-btn-ghost:hover { background: rgba(124, 93, 175, 0.18); }
+.nr-btn-sm { padding: 8px 13px; font-size: 12px; }
+
+/* ── Index grid ─────────────────────────────────────────────── */
+.nr-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+.nr-mini {
+  background: #fff; border: 1px solid rgba(124, 93, 175, 0.14); border-radius: 14px; padding: 13px 14px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.nr-mini-top { display: flex; justify-content: space-between; align-items: center; }
+.nr-mini-cov { font-size: 13px; font-weight: 900; }
+.nr-mini-name { font-size: 15px; font-weight: 800; color: #33302A; margin: 0; line-height: 1.2; }
+.nr-mini-bar { height: 6px; border-radius: 999px; background: rgba(124, 93, 175, 0.12); overflow: hidden; }
+.nr-mini-bar span { display: block; height: 100%; border-radius: 999px; }
+.nr-mini-have { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #6b6480; margin: 0; flex: 1; }
+.nr-mini-have svg { color: #3a9d8f; flex-shrink: 0; }
+.nr-mini-actions { display: flex; gap: 7px; }
+.nr-mini-actions .nr-btn-primary { flex: 1; }
+
+/* ── Toast ──────────────────────────────────────────────────── */
+.nr-toast {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
+  background: #33302A; color: #f4f0fb; font-size: 13.5px; font-weight: 700;
+  padding: 11px 20px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  z-index: 50; animation: nr-toast-in 0.2s ease;
+}
+@keyframes nr-toast-in { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 620px) {
+  .nr-card-body { flex-direction: column-reverse; align-items: stretch; gap: 12px; }
+  .nr-card-right { flex-direction: row; align-self: flex-start; gap: 8px; align-items: center; }
+  .nr-flip { width: 36px; height: 36px; }
+  .nr-title { font-size: 25px; }
+  .nr-card-name { font-size: 19px; }
+}

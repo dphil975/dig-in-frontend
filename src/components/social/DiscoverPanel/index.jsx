@@ -93,7 +93,7 @@ export const SECTIONS = [
         type: 'POWER',
         title: 'Recipe Discovery',
         teaser: 'From craving to cooked.',
-        detail: 'Browse by mood with Craving Compass, swipe Recipe Reels, or remix a dish to match what\'s actually in your pantry.',
+        detail: 'Browse by mood with Craving Compass, swipe recipe cards, or remix a dish to match what\'s actually in your pantry.',
       },
     ],
   },

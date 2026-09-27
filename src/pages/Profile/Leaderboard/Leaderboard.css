@@ -1,0 +1,259 @@
+.leaderboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.leaderboard-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.leaderboard-header h1 {
+    font-size: 32px;
+    color: #6E8259;
+}
+
+.leaderboard-header p {
+    color: #888;
+}
+
+.leaderboard-tabs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.leaderboard-tab {
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #0f0f1a;
+    border: 1px solid #2a2a4a;
+    color: #888;
+}
+
+.leaderboard-tab:hover {
+    border-color: #6E8259;
+    color: #fff;
+}
+
+.leaderboard-tab.active {
+    background: #6E825920;
+    border-color: #6E8259;
+    color: #6E8259;
+}
+
+.leaderboard-card {
+    background: #0f0f1a;
+    border-radius: 16px;
+    border: 1px solid #2a2a4a;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #2a2a4a;
+    transition: all 0.2s;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-item:hover {
+    background: #33302A;
+}
+
+.leaderboard-item .rank {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 40px;
+    color: #888;
+}
+
+.leaderboard-item .rank.gold   { color: #6E8259; }
+.leaderboard-item .rank.silver { color: #c0c0c0; }
+.leaderboard-item .rank.bronze { color: #cd7f32; }
+
+.leaderboard-item .avatar {
+    width: 40px;
+    height: 40px;
+    background: #2a2a4a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #6E8259;
+    margin-right: 12px;
+}
+
+.leaderboard-item .info { flex: 1; }
+.leaderboard-item .username { font-weight: 600; }
+
+.leaderboard-item .badges {
+    display: flex;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.leaderboard-item .badge-icon {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #aab;
+    background: #2a2a4a;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+.leaderboard-item .score {
+    font-weight: bold;
+    color: #6E8259;
+    font-size: 18px;
+}
+
+.leaderboard-item .borough {
+    font-size: 11px;
+    color: #888;
+    margin-right: 16px;
+}
+
+.your-rank {
+    background: #6E825920;
+    border-left: 3px solid #6E8259;
+}
+
+.leaderboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.leaderboard-stat-card {
+    background: #0f0f1a;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #2a2a4a;
+}
+
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6E8259;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.weekly-podium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.podium-item {
+    background: #0f0f1a;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #2a2a4a;
+}
+
+.podium-item .position {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.podium-item .position.first  { color: #6E8259; }
+.podium-item .position.second { color: #c0c0c0; }
+.podium-item .position.third  { color: #cd7f32; }
+
+.podium-item .podium-avatar {
+    width: 64px;
+    height: 64px;
+    margin: 8px auto;
+    border-radius: 50%;
+    background: #2a2a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #6E8259;
+}
+
+.podium-item .podium-name  { font-weight: 600; }
+.podium-item .podium-score { color: #888; font-size: 13px; }
+
+.podium-item .podium-badges {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .weekly-podium {
+        grid-template-columns: 1fr;
+    }
+    .leaderboard-item {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .leaderboard-item .score {
+        margin-left: auto;
+    }
+}
+
+.dish-submissions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .leaderboard-container { padding: 16px; }
+
+    /* 2-column stats so each card is readable */
+    .leaderboard-stats { grid-template-columns: 1fr 1fr; }
+    .stat-number { font-size: 22px; }
+
+    /* Borough text crowds a 375 px row — hide it */
+    .leaderboard-item .borough { display: none; }
+    .leaderboard-item { padding: 12px 14px; }
+
+    /* Tabs: smaller padding so all 4 fit on one line */
+    .leaderboard-tabs { gap: 5px; }
+    .leaderboard-tab { padding: 8px 12px; font-size: 11px; }
+}
+
+/* ── Honest empty board ───────────────────────────────────────────────────
+   Shown instead of ranking a real person against invented competitors. */
+.leaderboard-empty { padding: 26px 22px; text-align: center; }
+.lb-empty-head {
+  font-size: 16px; font-weight: 800; color: var(--dig-bark, #33302A);
+  margin: 0 0 8px;
+}
+.lb-empty-body {
+  font-size: 13.5px; line-height: 1.65; color: #7a7267;
+  margin: 0 auto; max-width: 46ch;
+}
+.lb-empty-body b { color: var(--dig-matcha, #6E8259); }

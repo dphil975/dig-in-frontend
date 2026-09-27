@@ -1,0 +1,305 @@
+/* Welcome.css — onboarding flow in Dig In's pixel style.
+   Five questions → five real recipe cards → pick one → you're in. */
+
+.welcome { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ── Hero ─────────────────────────────────────────────────────────────── */
+.welcome-hero { text-align: center; margin-bottom: 36px; }
+.welcome-mark {
+  display: inline-block;
+  font-family: var(--font-display); font-size: 18px;
+  color: var(--dig-matcha); margin-bottom: 14px;
+  text-shadow: 2px 2px 0 var(--dig-bark);
+}
+.welcome-kicker {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .2em;
+  text-transform: uppercase; color: #a89e8c; margin: 0 0 10px;
+}
+.welcome-invite {
+  font-family: var(--font-serif); font-weight: 500;
+  font-size: clamp(24px, 5vw, 34px); line-height: 1.15; letter-spacing: -.015em;
+  color: var(--dig-bark); margin: 0;
+}
+.welcome-rule { display: block; width: 38px; height: 1px; background: var(--rule-strong); margin: 22px auto 0; }
+
+/* ── Progress dots ────────────────────────────────────────────────────── */
+.welcome-progress { display: flex; justify-content: center; gap: 8px; margin-bottom: 28px; }
+.welcome-dot {
+  width: 10px; height: 10px;
+  border: 2px solid var(--dig-bark); border-radius: 50%;
+  background: var(--dig-cream);
+  transition: background .25s, border-color .25s;
+}
+.welcome-dot.done { background: var(--dig-matcha); border-color: var(--dig-matcha); }
+.welcome-dot.active { background: var(--dig-honey); border-color: var(--dig-bark); }
+
+/* ── Question panel ───────────────────────────────────────────────────── */
+.welcome-panel {
+  background: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--dig-bark);
+  padding: 24px 22px;
+  animation: welcome-slide-up .35s cubic-bezier(.16,1,.3,1);
+}
+@keyframes welcome-slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.welcome-question {
+  font-family: var(--font-ui); font-size: 14px; font-weight: 800;
+  color: var(--dig-bark); margin: 0 0 18px;
+}
+.welcome-loading {
+  text-align: center; padding: 40px 0;
+  font-family: var(--font-ui); font-size: 14px; color: #8a7a68;
+}
+
+/* ── Option grid ──────────────────────────────────────────────────────── */
+.welcome-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.welcome-option {
+  display: flex; flex-direction: column; gap: 3px; text-align: left;
+  padding: 12px 14px;
+  background: var(--dig-cream); border: 2px solid var(--dig-cashmere); border-radius: 8px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, transform .1s, box-shadow .1s;
+}
+.welcome-option:hover {
+  border-color: var(--dig-matcha); background: #fbf7f0;
+  transform: translate(-1px, -1px); box-shadow: 2px 2px 0 var(--dig-bark);
+}
+.welcome-option:active {
+  transform: translate(1px, 1px); box-shadow: 0 0 0 var(--dig-bark);
+}
+.welcome-option-label { font-size: 13.5px; font-weight: 700; color: var(--dig-bark); }
+.welcome-option-hint  { font-size: 11px; color: #8a7a68; }
+
+/* ── Custom input ─────────────────────────────────────────────────────── */
+.welcome-custom { display: flex; gap: 8px; margin-top: 14px; }
+.welcome-custom-input {
+  flex: 1; padding: 10px 14px; font-size: 14px; font-family: var(--font-body);
+  color: var(--dig-bark); background: var(--dig-cream);
+  border: 2px solid var(--dig-cashmere); border-radius: 8px;
+}
+.welcome-custom-input:focus { outline: none; border-color: var(--dig-matcha); }
+.welcome-custom-submit {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 800;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px;
+  box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 10px 18px; cursor: pointer;
+  transition: transform .1s, box-shadow .1s;
+}
+.welcome-custom-submit:hover  { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--dig-bark); }
+.welcome-custom-submit:active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--dig-bark); }
+
+/* ── Card intro ───────────────────────────────────────────────────────── */
+.welcome-cards-intro { text-align: center; margin-bottom: 20px; }
+.welcome-cards-intro h2 {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 500;
+  color: var(--dig-bark); margin: 0 0 6px;
+}
+.welcome-cards-intro p {
+  font-family: var(--font-ui); font-size: 12px; color: #8a7a68; margin: 0;
+}
+
+/* ── Recipe cards ─────────────────────────────────────────────────────── */
+.welcome-cards {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;
+  animation: welcome-slide-up .45s cubic-bezier(.16,1,.3,1);
+}
+
+.welcome-card {
+  position: relative; text-align: left;
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 14px 12px 16px;
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+}
+.welcome-card:hover {
+  transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--dig-bark);
+}
+.welcome-card:active {
+  transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--dig-bark);
+}
+
+/* Role-based accent borders */
+.welcome-card[data-role="anchor"]   { border-color: var(--dig-matcha); }
+.welcome-card[data-role="bridge"]   { border-color: var(--dig-frog); }
+.welcome-card[data-role="stretch"]  { border-color: var(--dig-honey); }
+.welcome-card[data-role="wildcard"] { border-color: var(--dig-crimson); }
+.welcome-card[data-role="memory"]   { border-color: var(--dig-cashmere); }
+
+/* Role badge */
+.welcome-card-role {
+  display: inline-block;
+  font-family: var(--font-ui); font-size: 9px; font-weight: 800;
+  letter-spacing: 1px; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 999px;
+  background: var(--dig-cream); border: 1.5px solid currentColor;
+  margin-bottom: 10px; align-self: flex-start;
+}
+.welcome-card[data-role="anchor"]   .welcome-card-role { color: var(--dig-matcha); }
+.welcome-card[data-role="bridge"]   .welcome-card-role { color: var(--dig-frog); }
+.welcome-card[data-role="stretch"]  .welcome-card-role { color: var(--dig-honey); }
+.welcome-card[data-role="wildcard"] .welcome-card-role { color: var(--dig-crimson); }
+.welcome-card[data-role="memory"]   .welcome-card-role { color: #8a7a68; }
+
+/* Geometry SVG art */
+.welcome-card-art {
+  width: 100%; height: 72px; margin-bottom: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--dig-cream);
+  border: 2px solid var(--dig-cashmere); border-radius: 8px;
+  overflow: hidden;
+}
+.welcome-geo-svg { width: 60px; height: 60px; }
+
+.welcome-card-name {
+  font-size: 13px; font-weight: 800; color: var(--dig-bark);
+  margin: 0 0 4px; line-height: 1.3;
+}
+
+/* Meta: shape + country + time */
+.welcome-card-meta {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px;
+  font-family: var(--font-ui); font-size: 9.5px; color: #8a7a68;
+  text-transform: uppercase; letter-spacing: .3px; font-weight: 600;
+}
+.welcome-card-shape { color: var(--dig-matcha); }
+
+/* Flavor text — role description */
+.welcome-card-flavor-text {
+  font-size: 11px; line-height: 1.45; color: #6c6355;
+  font-style: italic; margin-bottom: 8px; min-height: 30px;
+}
+
+/* Flavor tags */
+.welcome-card-flavors {
+  display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 10px;
+}
+.welcome-flavor-tag {
+  font-family: var(--font-ui); font-size: 9px; font-weight: 700;
+  letter-spacing: .4px; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 999px;
+  background: var(--dig-cream); border: 1px solid var(--dig-cashmere);
+  color: var(--dig-bark);
+}
+
+/* Stats */
+.welcome-card-stats {
+  display: flex; flex-direction: column; gap: 5px;
+  padding-top: 8px; border-top: 2px dashed var(--dig-cashmere);
+  margin-top: auto;
+}
+.welcome-stat {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-ui); font-size: 9px; color: #8a7a68;
+}
+.welcome-stat-label {
+  min-width: 36px; text-transform: uppercase; letter-spacing: .3px; font-weight: 700;
+}
+.welcome-stat-bar {
+  flex: 1; height: 5px;
+  background: var(--dig-cream); border: 1.5px solid var(--dig-cashmere); border-radius: 999px;
+  overflow: hidden;
+}
+.welcome-stat-fill {
+  height: 100%; border-radius: 999px;
+  transition: width .6s cubic-bezier(.16,1,.3,1);
+}
+.welcome-stat-value {
+  min-width: 24px; text-align: right; font-weight: 700; color: var(--dig-bark);
+}
+
+/* ── Coin animation ───────────────────────────────────────────────────── */
+.welcome-coin {
+  position: fixed; z-index: 9999; pointer-events: none;
+  font-family: var(--font-display); font-size: 13px; color: var(--dig-honey);
+  animation: welcome-coin-fly .7s cubic-bezier(.16,1,.3,1) forwards;
+}
+@keyframes welcome-coin-fly {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0; transform: translateY(-50px) scale(1.3); }
+}
+
+/* ── Toast ─────────────────────────────────────────────────────────────── */
+.welcome-toast {
+  position: fixed; bottom: 32px; left: 50%; z-index: 9999;
+  transform: translateX(-50%) translateY(16px);
+  background: var(--dig-bark); color: var(--dig-cream);
+  border: 2px solid var(--dig-honey); border-radius: 10px;
+  box-shadow: 4px 4px 0 rgba(51,48,42,.25);
+  padding: 12px 20px;
+  display: flex; align-items: center; gap: 12px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s, transform .3s cubic-bezier(.34,1.56,.64,1);
+}
+.welcome-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.welcome-toast-icon { font-size: 18px; }
+.welcome-toast-text {
+  font-family: var(--font-ui); font-size: 12px; font-weight: 700;
+  letter-spacing: .03em;
+}
+.welcome-toast-text strong { color: var(--dig-honey); }
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+.welcome-footer { display: flex; justify-content: center; margin-top: 28px; }
+.welcome-skip {
+  font-family: var(--font-ui); font-size: 12px; font-weight: 700;
+  color: #a89e8c; background: none; border: none; cursor: pointer;
+  text-decoration: underline; padding: 8px;
+}
+.welcome-skip:hover { color: var(--dig-bark); }
+
+/* ── Responsive ───────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .welcome-cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .welcome { padding: 28px 16px 60px; }
+  .welcome-options { grid-template-columns: 1fr; }
+  .welcome-cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .welcome-invite { font-size: 22px; }
+  .welcome-card-name { font-size: 12px; }
+}
+@media (max-width: 400px) {
+  .welcome-cards { grid-template-columns: 1fr; }
+}
+
+/* ── The madlib sentence — fills in as each blank is answered ───────────── */
+.welcome-madlib {
+  max-width: 560px;
+  margin: 0 auto 22px;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #6b6152;
+}
+.welcome-blank { display: inline-block; min-width: 2.4em; color: #b9ad98; letter-spacing: .08em; }
+.welcome-blank.filled {
+  min-width: 0;
+  padding: 0 5px;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: var(--dig-bark);
+  background: rgba(150, 179, 107, .22);
+  border-radius: 4px;
+}
+
+/* ── Multi-pick blank (what you avoid) ──────────────────────────────────── */
+.welcome-option.selected {
+  border-color: var(--dig-matcha);
+  background: #eef3e6;
+  box-shadow: 2px 2px 0 var(--dig-bark);
+}
+.welcome-multi-actions { display: flex; align-items: center; gap: 14px; margin-top: 16px; }
+.welcome-custom-submit:disabled { opacity: .45; cursor: default; box-shadow: none; transform: none; }
+.welcome-multi-none {
+  font-size: 12.5px; font-weight: 700; color: var(--dig-matcha);
+  background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0;
+}

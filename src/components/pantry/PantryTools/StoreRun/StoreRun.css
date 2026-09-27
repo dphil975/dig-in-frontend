@@ -1,0 +1,256 @@
+/* StoreRun — the trip as a hunt, with a clock.
+
+   Color note, because it's a deliberate palette decision rather than a whim:
+   Honey (#E0A32E) carries the clock, the progress fill, and the badges.
+   THE PALETTE (styles.css) reserves Honey for EARNED things — verification
+   marks, saves, coins, badges — specified as a solid fill with Bark text and
+   explicitly never a page background. A timed run you either finish or don't
+   is the definition of an earned thing, so it gets the earned color, while
+   the ground underneath stays Cream like every other page. That's how this
+   reads as joyful without going off-system. */
+
+.srun {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 26px;
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .14);
+  font-family: var(--font-ui);
+  color: var(--dig-bark, #33302A);
+}
+
+.srun-title {
+  font-family: var(--font-display); font-size: 0.8em; line-height: 1.5;
+  color: var(--dig-matcha, #6E8259); margin: 0; letter-spacing: 0.04em;
+}
+.srun-sub { color: #6b6157; font-size: 0.9em; line-height: 1.55; margin: 10px 0 12px; }
+
+.srun-primary {
+  width: 100%; padding: 14px;
+  background: var(--dig-matcha, #6E8259); color: #fff;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 10px;
+  font-family: inherit; font-weight: 800; font-size: 0.92em; cursor: pointer;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+.srun-primary:hover:not(:disabled) { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--dig-bark, #33302A); }
+.srun-primary:active:not(:disabled) { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--dig-bark, #33302A); }
+.srun-primary:disabled { opacity: .45; cursor: default; box-shadow: 3px 3px 0 rgba(51,48,42,.3); }
+
+/* ── start ─────────────────────────────────────────────────────────── */
+.srun-start-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.srun-start-meta { font-size: 0.76em; color: #8a7a68; letter-spacing: 0.03em; }
+.srun-listbox {
+  width: 100%; box-sizing: border-box; resize: vertical;
+  border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 10px;
+  padding: 12px; font-family: inherit; font-size: 0.95em; line-height: 1.7;
+  color: var(--dig-bark, #33302A); margin-bottom: 12px; background: #fffdf7;
+}
+.srun-listbox:focus { outline: none; border-color: var(--dig-matcha, #6E8259); box-shadow: 0 0 0 3px rgba(110,130,89,.12); }
+
+/* ── the HUD: clock + count ────────────────────────────────────────── */
+.srun-hud { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+.srun-clock {
+  font-family: var(--font-display);
+  font-size: 1.5em; line-height: 1.2;
+  background: var(--dig-honey, #E0A32E);
+  color: var(--dig-bark, #33302A);          /* Bark on Honey — the palette's rule */
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 12px;
+  padding: 10px 16px;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
+  font-variant-numeric: tabular-nums;
+}
+.srun-hud-right { text-align: right; }
+.srun-hud-count { margin: 0; font-size: 0.95em; }
+.srun-hud-count strong { font-size: 1.25em; color: var(--dig-matcha, #6E8259); }
+.srun-hud-store { margin: 3px 0 0; font-size: 0.78em; color: #8a7a68; }
+
+.srun-bar {
+  height: 12px; border-radius: 999px; overflow: hidden;
+  background: var(--dig-cashmere, #D8CAB4);
+  border: 2px solid var(--dig-bark, #33302A);
+  margin-bottom: 16px;
+}
+.srun-bar span {
+  display: block; height: 100%;
+  background: var(--dig-honey, #E0A32E);
+  transition: width .3s ease;
+}
+
+/* ── hunt cards ────────────────────────────────────────────────────── */
+.srun-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+
+.srun-card {
+  display: flex; align-items: center; gap: 12px;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 12px;
+  padding: 10px; background: #fffdf7;
+  box-shadow: 2px 2px 0 rgba(51, 48, 42, .12);
+}
+.srun-card-found   { background: #f2f6ee; border-color: var(--dig-matcha, #6E8259); }
+.srun-card-missing { background: #f6f4f0; opacity: .72; }
+
+.srun-card-art {
+  position: relative; flex: 0 0 auto;
+  width: 60px; height: 60px;
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  overflow: hidden; background: var(--dig-cream, #F3EADA);
+}
+.srun-card-art img { width: 100%; height: 100%; display: block; }
+.srun-card-art img.is-pixel { image-rendering: pixelated; image-rendering: crisp-edges; }
+.srun-card-art img.is-photo { object-fit: cover; }
+
+.srun-stamp {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(110, 130, 89, .82); color: #fff;
+  font-size: 30px; font-weight: 900; line-height: 1;
+}
+.srun-stamp-missing { background: rgba(51, 48, 42, .58); }
+
+.srun-card-body { flex: 1 1 auto; min-width: 0; }
+.srun-card-name {
+  margin: 0; font-weight: 800; font-size: 0.98em; line-height: 1.3;
+  overflow-wrap: break-word;
+}
+.srun-card-where { margin: 3px 0 0; font-size: 0.76em; color: #8a7a68; }
+
+.srun-card-actions { display: flex; flex-direction: column; gap: 6px; flex: 0 0 auto; }
+.srun-btn {
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  padding: 8px 12px; font-family: inherit; font-size: 0.78em; font-weight: 800;
+  cursor: pointer; white-space: nowrap;
+}
+.srun-btn-found   { background: var(--dig-matcha, #6E8259); color: #fff; }
+.srun-btn-found:hover { filter: brightness(1.08); }
+/* Honey = the earned/attention beat, per THE PALETTE. The swap helper is the
+   moment the app actually rescues the trip, so it gets the warm one — and it
+   sits ABOVE "skip it" because giving up should be the least prominent
+   option on the card, not the default. */
+.srun-btn-help { background: var(--dig-honey, #E0A32E); color: var(--dig-bark, #33302A); }
+.srun-btn-help:hover { filter: brightness(1.06); }
+.srun-btn-missing {
+  background: none; color: #8a7a68; border: none;
+  text-decoration: underline; padding: 4px 12px; font-weight: 700;
+}
+.srun-btn-missing:hover { color: var(--dig-bark, #33302A); }
+
+.srun-card-swap { margin: 3px 0 0; font-size: 0.78em; color: var(--dig-matcha, #6E8259); font-weight: 700; }
+
+.srun-swaps {
+  margin: 16px 0 0; padding: 12px; text-align: left;
+  background: #faf7f0; border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 10px;
+}
+.srun-swaps-head {
+  margin: 0 0 7px; font-size: 0.68em; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--dig-matcha, #6E8259);
+}
+.srun-swaps ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.srun-swaps li { font-size: 0.86em; }
+.srun-swaps s { color: #a89a86; }
+
+.srun-undo {
+  flex: 0 0 auto; background: none; border: none;
+  color: #8a7a68; font-family: inherit; font-size: 0.78em;
+  text-decoration: underline; cursor: pointer; padding: 4px 6px;
+}
+.srun-undo:hover { color: var(--dig-bark, #33302A); }
+
+.srun-allclear {
+  text-align: center; padding: 20px 12px; margin: 0;
+  font-family: var(--font-display); font-size: 0.72em; line-height: 1.6;
+  color: var(--dig-matcha, #6E8259);
+}
+
+/* ── add mid-trip ──────────────────────────────────────────────────── */
+.srun-add { display: flex; gap: 8px; margin-top: 14px; }
+.srun-add-input {
+  flex: 1 1 auto; min-width: 0;
+  border: 2px solid var(--dig-cashmere, #D8CAB4); border-radius: 8px;
+  padding: 10px 12px; font-family: inherit; font-size: 0.9em; background: #fff;
+  color: var(--dig-bark, #33302A);
+}
+.srun-add-input:focus { outline: none; border-color: var(--dig-matcha, #6E8259); }
+.srun-add-btn {
+  flex: 0 0 auto; border: 2px solid var(--dig-bark, #33302A); border-radius: 8px;
+  background: #fff; color: var(--dig-bark, #33302A);
+  padding: 10px 16px; font-family: inherit; font-weight: 800; font-size: 0.82em; cursor: pointer;
+}
+.srun-add-btn:disabled { opacity: .4; cursor: default; }
+
+.srun-settled { margin-top: 14px; }
+.srun-settled summary {
+  cursor: pointer; font-size: 0.82em; color: #8a7a68;
+  padding: 6px 0; list-style-position: inside;
+}
+.srun-list-settled { margin-top: 10px; }
+
+.srun-foot { margin-top: 18px; }
+.srun-abandon {
+  display: block; width: 100%; margin-top: 10px;
+  background: none; border: none; color: #8a7a68;
+  font-family: inherit; font-size: 0.8em; text-decoration: underline; cursor: pointer;
+}
+.srun-abandon:hover { color: #d32f2f; }
+
+/* ── the finish ────────────────────────────────────────────────────── */
+.srun-done { text-align: center; }
+.srun-done-kicker {
+  margin: 0; font-family: var(--font-display); font-size: 0.62em; line-height: 1.6;
+  color: var(--dig-matcha, #6E8259); letter-spacing: 0.1em;
+}
+.srun-done-time {
+  margin: 10px 0 0; font-family: var(--font-display); font-size: 1.5em; line-height: 1.3;
+  color: var(--dig-bark, #33302A);
+}
+.srun-done-line { margin: 10px 0 0; font-size: 0.95em; color: #6b6157; }
+.srun-done-line strong { color: var(--dig-matcha, #6E8259); font-size: 1.1em; }
+.srun-done-stat { margin: 12px 0 0; font-size: 0.82em; color: #8a7a68; }
+
+.srun-badges {
+  list-style: none; margin: 16px 0 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+}
+.srun-badge {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--dig-honey, #E0A32E);
+  color: var(--dig-bark, #33302A);          /* earned = Honey fill, Bark text */
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 999px;
+  padding: 8px 14px;
+  box-shadow: 3px 3px 0 var(--dig-bark, #33302A);
+  animation: srun-pop .32s cubic-bezier(.2,.9,.3,1.2) both;
+}
+.srun-badge-icon { font-size: 1.15em; line-height: 1; }
+.srun-badge-label { font-weight: 800; font-size: 0.82em; }
+
+@keyframes srun-pop {
+  from { transform: scale(.6) rotate(-6deg); opacity: 0; }
+  to   { transform: scale(1) rotate(0); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .srun-badge { animation: none; }
+  .srun-bar span { transition: none; }
+}
+
+.srun-done .srun-primary { margin-top: 18px; }
+
+@media (max-width: 460px) {
+  .srun-card { flex-wrap: wrap; }
+  .srun-card-actions { flex-direction: row; width: 100%; }
+  .srun-btn { flex: 1; }
+  .srun-clock { font-size: 1.2em; padding: 8px 12px; }
+}
+
+/* The receipt prompt on the finish screen — the moment the money loop closes. */
+.srun-receipt-ask {
+  margin-top: 18px; padding: 14px;
+  background: #faf8f3;
+  border: 2px dashed var(--dig-honey, #E0A32E);
+  border-radius: 12px;
+}
+.srun-receipt-ask-head {
+  margin: 0 0 5px; font-family: var(--font-display);
+  font-size: 0.62em; line-height: 1.5; color: var(--dig-bark, #33302A);
+}
+.srun-receipt-ask-sub { margin: 0 0 11px; font-size: 0.84em; line-height: 1.5; color: #6b6157; }
+.srun-receipt-ask-sub strong { color: #b5872a; }

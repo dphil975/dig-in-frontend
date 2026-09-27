@@ -1,0 +1,20 @@
+/* Settings — the few styles the extracted tabs need beyond the global
+   profile-page / borough-btn chrome in styles/styles.css. */
+.pset-zip { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: center; }
+.pset-input {
+  width: 110px; font-size: 14px; letter-spacing: .08em; padding: 9px 11px; color: #33302A;
+  background: #fff; border: 2px solid #D8CAB4; border-radius: 8px;
+}
+.pset-input:focus { outline: none; border-color: #6E8259; }
+
+/* Section headings inside the tab panes. `.section-title` is defined globally by
+   an unrelated Pantry stylesheet (BarcodeScanner.css) and other pages leak their
+   own overrides onto it, so pin the look here instead of depending on load order. */
+.profile-page .section-title {
+  font-family: var(--font-display, inherit);
+  font-size: 0.9em;
+  color: #33302A;
+  text-shadow: none;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}

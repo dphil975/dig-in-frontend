@@ -1,0 +1,50 @@
+.recall-alert {
+  background: #fdecea;
+  border: 2px solid #c8102e;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 10px 0;
+}
+.recall-alert-head {
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #a3081e;
+  margin-bottom: 6px;
+}
+.recall-alert-note {
+  font-size: 12px;
+  color: #7a1a1a;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.recall-alert-note a { color: #a3081e; text-decoration: underline; }
+
+.recall-item {
+  background: #fff;
+  border: 1px solid #eec3c3;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+.recall-item:last-child { margin-bottom: 0; }
+.recall-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.recall-class {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: #c8102e;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+.recall-date { font-size: 11px; color: #8a5a5a; }
+.recall-desc { font-size: 13px; color: #2a1414; font-weight: 600; margin-bottom: 4px; }
+.recall-reason { font-size: 12px; color: #4a2a2a; line-height: 1.5; margin-bottom: 4px; }
+.recall-meta { font-size: 11px; color: #8a5a5a; }

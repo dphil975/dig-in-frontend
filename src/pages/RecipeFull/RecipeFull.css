@@ -1,0 +1,149 @@
+.rf-page {
+  min-height: 100vh;
+  background: #322a47;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 18px 120px;
+  font-family: 'DotGothic16', Arial, sans-serif;
+  color: #33302A;
+}
+
+.rf-back {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  background: rgba(255,255,255,.14);
+  color: #fff;
+  border: 2px solid rgba(255,255,255,.4);
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+.rf-back:hover { background: rgba(255,255,255,.26); }
+
+/* Full recipe: all titles centered (justify-content center, align-items flex-start) */
+.rf-header {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.rf-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 3px 3px 0 #1b1430;
+  line-height: 1.5;
+  margin: 0 0 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.rf-cuisine { font-size: 14px; font-style: italic; color: rgba(255,255,255,.8); margin-bottom: 12px; width: 100%; text-align: center; }
+.rf-facts { display: flex; flex-wrap: wrap; gap: 7px; width: 100%; justify-content: center; }
+
+/* Section titles centered on the full-recipe page */
+.rf-page .rd-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+.rf-fact {
+  font-family: 'DotGothic16', monospace;
+  font-size: 12px; color: #fff;
+  background: rgba(0,0,0,.26);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 7px; padding: 5px 11px;
+}
+
+.rf-image {
+  position: relative;
+  height: 200px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 16px 0;
+  background: #33302A;
+  border: 2px solid rgba(255,255,255,.12);
+}
+.rf-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Attribution for sourced dish photos (Wikimedia Commons etc.) — required by
+   their CC BY / CC BY-SA licenses, kept small and out of the way. */
+.rf-image-credit {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: .2px;
+  color: rgba(255,255,255,.85);
+  background: rgba(0,0,0,.45);
+  padding: 3px 7px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.rf-image-credit:hover { background: rgba(0,0,0,.65); }
+.rf-image-ph {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-ui);
+  font-size: 11px; letter-spacing: 1px;
+  color: rgba(255,255,255,.3);
+  text-transform: uppercase;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 9px, transparent 9px 18px), #33302A;
+}
+
+.rf-desc {
+  font-size: 14px; color: rgba(255,255,255,.88); line-height: 1.6;
+  background: rgba(0,0,0,.18); border-radius: 12px;
+  padding: 14px 16px; margin-bottom: 16px;
+}
+
+.rf-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.rf-step { display: flex; gap: 12px; align-items: flex-start; }
+.rf-step-num {
+  flex-shrink: 0; width: 28px; height: 28px;
+  background: #6E8259; color: #fff; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-ui); font-size: 11px;
+}
+.rf-step-text { font-size: 13.5px; line-height: 1.6; color: #33302A; padding-top: 4px; }
+.rf-no-steps { color: #888; font-size: 13px; }
+
+.rf-buildbar-launch {
+  display: block; width: 100%; margin: 4px 0 16px;
+  background: #96B36B; color: #10231a; border: none; border-radius: 10px;
+  padding: 12px 16px; font-weight: 700; font-size: 13px; cursor: pointer;
+}
+
+/* Sticky find-stores bar */
+.rf-actionbar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; gap: 12px;
+  background: #33302A; border-top: 2px solid #6E8259;
+  padding: 12px 16px; box-shadow: 0 -6px 24px rgba(0,0,0,.4);
+}
+.rf-list-count {
+  flex: 1;
+  font-family: var(--font-ui); font-size: 11px;
+  color: rgba(255,255,255,.85); line-height: 1.6;
+}
+.rf-actionbar .rd-btn { flex: 0 0 auto; min-width: 150px; margin: 0; }
+.rf-made-this { background: #6E8259; color: #33302A; border-bottom: 4px solid #c9871a; }
+.rf-made-this:hover { background: #e89e1f; }
+
+.rf-empty {
+  text-align: center; color: #fff; padding: 70px 20px;
+  font-family: var(--font-ui); font-size: 11px; line-height: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 22px;
+}
+
+@media (max-width: 500px) {
+  .rf-name { font-size: 16px; }
+  .rf-actionbar { flex-direction: column; align-items: stretch; }
+  .rf-actionbar .rd-btn { min-width: 0; width: 100%; }
+}

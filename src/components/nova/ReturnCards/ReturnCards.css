@@ -1,0 +1,21 @@
+/* Nova home → the cards for when you come back (follow-up, "How'd it go?"). */
+.nrc {
+  background: rgba(150, 179, 107, 0.10);
+  border: 2px solid var(--dig-matcha, #6E8259);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.nrc-context { margin: 0 0 2px; font-size: 12.5px; color: #7a7060; }
+.nrc-line { margin: 0; font-size: 15px; line-height: 1.5; font-weight: 700; color: var(--dig-bark, #33302A); }
+.nrc-opts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.nrc-opt {
+  font-size: 13px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: #fff; border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 999px; padding: 7px 14px; cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.nrc-opt:hover { border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
+.nrc-skip {
+  font-size: 12px; font-weight: 700; color: #7a7060;
+  background: none; border: none; padding: 7px 6px; cursor: pointer; text-decoration: underline;
+}

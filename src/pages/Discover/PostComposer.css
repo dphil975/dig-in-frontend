@@ -1,0 +1,60 @@
+/* ── Composer — the inline "write a post" box (Tumblr's text-post editor) ── */
+.composer {
+  background: #fff; border: 2px solid var(--dig-bark); border-radius: 12px;
+  box-shadow: 4px 4px 0 rgba(51,48,42,.16); padding: 16px; margin-bottom: 16px;
+}
+.composer-head { display: flex; align-items: center; margin-bottom: 4px; }
+.composer-title { font-family: var(--font-ui); font-size: 11px; color: var(--dig-matcha); }
+.composer-x {
+  margin-left: auto; font-size: 15px; font-weight: 800; color: #8a7a68;
+  background: none; border: none; cursor: pointer; line-height: 1;
+}
+.composer-hint { font-size: 12px; line-height: 1.5; color: #8a7a68; margin: 0 0 12px; }
+.composer-modes { display: flex; gap: 6px; margin-bottom: 10px; }
+.composer-mode {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 700; color: #8a7a68;
+  background: #fdfbf7; border: 2px solid var(--dig-cashmere); border-radius: 999px;
+  padding: 6px 13px; cursor: pointer;
+}
+.composer-mode.active { color: #fff; background: var(--dig-matcha); border-color: var(--dig-matcha); }
+.composer-quickfield { font-size: 15px; line-height: 1.5; }
+.composer-input {
+  width: 100%; font: inherit; color: var(--dig-bark);
+  border: 2px solid var(--dig-cashmere); border-radius: 8px; padding: 9px 11px;
+  background: #fdfbf7; resize: vertical;
+}
+.composer-input:focus { outline: none; border-color: var(--dig-matcha); }
+.composer-input + .composer-input,
+.composer-titlefield { margin-top: 0; }
+.composer-titlefield { font-size: 17px; font-weight: 800; margin-bottom: 10px; }
+.composer-bodyfield { font-size: 14px; line-height: 1.6; }
+.composer-stepsfield { font-size: 13.5px; line-height: 1.55; }
+.composer-count { display: block; text-align: right; font-size: 11px; color: #a89a86; margin: 3px 0 8px; }
+.composer-label {
+  display: block; font-size: 11px; font-weight: 800; letter-spacing: .3px; text-transform: uppercase;
+  color: var(--dig-matcha); margin: 4px 0 6px;
+}
+.composer-label span { color: #a89a86; font-weight: 600; text-transform: none; letter-spacing: 0; }
+.composer-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
+.composer-tagprev { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.composer-tagchip {
+  font-size: 11.5px; font-weight: 700; color: var(--dig-matcha);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere); border-radius: 999px; padding: 3px 10px;
+}
+.composer-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+.composer-cancel {
+  font-size: 12.5px; font-weight: 700; color: var(--dig-bark);
+  background: none; border: 2px solid var(--dig-cashmere); border-radius: 8px; padding: 8px 14px; cursor: pointer;
+}
+.composer-publish {
+  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 8px 16px; cursor: pointer;
+}
+.composer-publish:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+.composer-publish:not(:disabled):hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
+.composer-publish:not(:disabled):active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--dig-bark); }
+
+@media (max-width: 760px) {
+  .composer-row { grid-template-columns: 1fr; }
+}

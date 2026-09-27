@@ -2,18 +2,14 @@ import { useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import Nav from '../../components/shell/Nav';
 import SocialFeed from './SocialFeed';
-import ReelFeed from './ReelFeed';
-import Feed from './Feed';
 import FollowedTagsFeed from './FollowedTagsFeed';
 import HealthAdvisory from '../../components/health/HealthAdvisory';
 import { concerningTag } from '../../lib/wellnessAdvisory';
 import './Community.css';
 
-/* Community hub — merges SocialFeed (curated card carousel of dish posts),
-   ReelFeed (7-second looping recipe reels), and Feed (full-screen TikTok-
-   style recipe swipe) behind one Nav and a tab bar. "For You" replaces the
-   originally-suggested "Stories" label for the third tab since Feed's
-   content is recipes, not user-authored stories.
+/* Community hub — SocialFeed (curated card carousel of dish posts) and the
+   tags you follow, behind one tab bar. The Reels tab was cut (its code is in
+   _archive/frontend-retired); /reels now lands here.
 
    YOUR COMMUNITIES (2026-07-30): the hashtags you follow ARE your communities.
    Opening Community leads with them — tap one and it takes you to that tag's
@@ -21,12 +17,10 @@ import './Community.css';
    `/?tag=` trick that scrubbed itself off the URL on the next render. A
    community organized around disordered eating gets the supportive
    HealthAdvisory bar right here, before you enter it. Canonical URL is
-   /feed; /social and /reels stay as aliases. */
+   /feed; /social stays as an alias. */
 
 const TABS = [
   { id: 'posts', label: 'Posts' },
-  { id: 'reels', label: 'Reels' },
-  { id: 'foryou', label: 'For You' },
   { id: 'tags', label: 'Your Tags' },
 ];
 
@@ -91,8 +85,6 @@ export default function Community({ defaultTab = 'posts' } = {}) {
         ))}
       </div>
       {tab === 'posts' && <SocialFeed embedded />}
-      {tab === 'reels' && <ReelFeed embedded />}
-      {tab === 'foryou' && <Feed embedded />}
       {tab === 'tags' && <FollowedTagsFeed />}
     </div>
   );

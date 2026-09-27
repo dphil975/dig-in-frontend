@@ -1,0 +1,41 @@
+/* Nova home → the check-in. */
+.nci {
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(51,48,42,.12);
+  padding: 14px 16px;
+}
+.nci-quiet { background: none; border: none; box-shadow: none; padding: 0; }
+
+.nci-q { margin: 0; font-size: 15px; font-weight: 800; color: var(--dig-bark, #33302A); }
+.nci-moods { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.nci-moods-more { margin-top: 10px; }
+.nci-mood {
+  font-size: 13px; font-weight: 700; color: var(--dig-bark, #33302A);
+  background: var(--dig-cream, #F3EADA); border: 1.5px solid var(--dig-cashmere, #D8CAB4);
+  border-radius: 999px; padding: 7px 14px; cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.nci-mood:hover { border-color: var(--dig-matcha, #6E8259); background: #fbf7f0; }
+.nci-skip {
+  font-size: 12.5px; font-weight: 700; color: #7a7060;
+  background: none; border: none; padding: 7px 6px; cursor: pointer; text-decoration: underline;
+}
+.nci-more {
+  margin-top: 10px; font-size: 12px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: none; border: none; cursor: pointer; padding: 0; text-decoration: underline;
+}
+
+.nci-resp { margin: 0 0 8px; font-size: 13.5px; line-height: 1.55; color: #4a463e; }
+.nci-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.nci-door {
+  font-size: 12.5px; font-weight: 700; color: #fff; background: var(--dig-matcha, #6E8259);
+  border: 2px solid var(--dig-bark, #33302A); border-radius: 7px; box-shadow: 2px 2px 0 var(--dig-bark, #33302A);
+  padding: 7px 12px; cursor: pointer;
+}
+.nci-door:active { transform: translate(2px,2px); box-shadow: 0 0 0; }
+.nci-change {
+  font-size: 11.5px; font-weight: 700; color: var(--dig-matcha, #6E8259);
+  background: none; border: none; cursor: pointer; padding: 0; text-decoration: underline;
+}

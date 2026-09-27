@@ -1,0 +1,169 @@
+/* Shelf wall — evenly spaced polaroid squares.
+
+   The polaroid is doing real work here, not decoration: a square photo well
+   with a generous bottom margin is exactly the shape that lets a centred
+   caption sit under the picture without the tiles going ragged, and the fixed
+   1:1 photo + identical caption block is what keeps every tile the same
+   height no matter how long the shelf name is.
+
+   Palette is the app's own (styles.css "THE PALETTE"): cream ground, bark
+   borders/text, matcha for the selected state, honey for the count badge. */
+
+.pcat { margin: 8px 0 28px; }
+
+.pcat-header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap;
+}
+.pcat-title {
+  font-family: var(--font-display, 'Press Start 2P', monospace);
+  font-size: 0.8em; color: var(--dig-matcha, #6E8259);
+  margin: 0; letter-spacing: 0.04em; line-height: 1.5;
+}
+.pcat-header-right { display: flex; align-items: center; gap: 10px; }
+.pcat-meta {
+  font-size: 0.72em; color: #8a7a68; text-transform: uppercase; letter-spacing: 0.05em;
+}
+.pcat-toggle {
+  background: #fff; border: 2px solid var(--dig-bark, #33302A); color: var(--dig-bark, #33302A);
+  border-radius: 8px; padding: 6px 11px; font-size: 0.72em; cursor: pointer;
+  font-family: inherit; box-shadow: 2px 2px 0 rgba(51, 48, 42, .18);
+}
+.pcat-toggle:hover:not(:disabled) { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 rgba(51, 48, 42, .22); }
+.pcat-toggle.on { background: var(--dig-matcha, #6E8259); color: #fff; border-color: var(--dig-bark, #33302A); }
+.pcat-toggle:disabled { opacity: .45; cursor: default; }
+
+.pcat-sub { color: #6b6157; font-size: 0.86em; margin: 8px 0 14px; line-height: 1.5; }
+
+.pcat-none {
+  border: 2px dashed var(--dig-cashmere, #D8CAB4); border-radius: 12px;
+  padding: 18px; text-align: center; color: #8a7a68; font-size: 0.86em;
+}
+
+/* --- the grid: evenly spaced, equal-width columns --- */
+.pcat-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 16px;
+}
+.pcat-cell { display: block; }
+
+/* --- one polaroid --- */
+.pcat-card {
+  position: relative;
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 3px;                 /* polaroids are square-cornered */
+  padding: 9px 9px 12px;              /* even sides/top; caption fills the deep bottom */
+  box-shadow: 4px 4px 0 rgba(51, 48, 42, .18);
+  transition: transform .12s ease, box-shadow .12s ease;
+  height: 100%;
+  display: flex; flex-direction: column;
+}
+.pcat-card:hover {
+  transform: translate(-2px, -2px) rotate(-1deg);
+  box-shadow: 6px 6px 0 rgba(51, 48, 42, .24);
+}
+.pcat-card.is-selected {
+  border-color: var(--dig-matcha, #6E8259);
+  box-shadow: 4px 4px 0 var(--dig-matcha, #6E8259);
+  background: #fbfaf5;
+}
+.pcat-card.is-empty { background: #fdfcf8; }
+/* Empty shelves read as faded, not disabled — you still need to see the art to
+   use the grid as a reference for what belongs where. */
+.pcat-card.is-empty .pcat-photo img { opacity: .8; filter: saturate(.72); }
+
+/* the photo well — always a perfect square */
+.pcat-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid var(--dig-bark, #33302A);
+  background: var(--dig-cream, #F3EADA);
+  overflow: hidden;
+}
+.pcat-photo img {
+  width: 100%; height: 100%; display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  user-select: none;
+}
+.pcat-badge {
+  position: absolute; top: 3px; right: 3px;
+  background: var(--dig-honey, #E0A32E);
+  color: var(--dig-bark, #33302A);
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 999px;
+  min-width: 20px; height: 20px; padding: 0 4px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display, 'Press Start 2P', monospace);
+  font-size: 0.5em; line-height: 1;
+}
+
+/* the caption — centred, per the polaroid. Two lines are always reserved so a
+   long name ("Condiments & Sauces") doesn't shove its count line down and make
+   the row look ragged next to a short one ("Pasta"). */
+.pcat-name {
+  text-align: center;
+  font-family: var(--font-display, 'Press Start 2P', monospace);
+  font-size: 0.56em;
+  line-height: 1.6;
+  color: var(--dig-bark, #33302A);
+  margin: 11px 0 0;
+  letter-spacing: 0.02em;
+  hyphens: auto;
+  min-height: 3.2em;              /* 2 × line-height, in the caption's own em */
+  display: flex; align-items: center; justify-content: center;
+}
+.pcat-count {
+  text-align: center;
+  margin: 7px 0 0;
+  font-size: 0.72em;
+  color: #8a7a68;
+  letter-spacing: 0.03em;
+}
+.pcat-card.is-selected .pcat-count { color: var(--dig-matcha, #6E8259); font-weight: 700; }
+
+/* full-card hit target, kept out of the heading's content model */
+.pcat-hit {
+  position: absolute; inset: 0;
+  background: none; border: 0; padding: 0; margin: 0;
+  cursor: pointer; border-radius: 3px;
+}
+.pcat-hit:focus-visible { outline: 3px solid var(--dig-matcha, #6E8259); outline-offset: 3px; }
+
+/* --- the selected shelf's detail strip --- */
+.pcat-detail {
+  margin-top: 16px;
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 12px;
+  padding: 13px 15px;
+  box-shadow: 3px 3px 0 rgba(51, 48, 42, .14);
+}
+.pcat-detail-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.pcat-detail-head strong {
+  font-family: var(--font-display, 'Press Start 2P', monospace);
+  font-size: 0.66em; color: var(--dig-matcha, #6E8259); line-height: 1.5;
+}
+.pcat-clear {
+  background: none; border: none; color: #8a7a68; cursor: pointer;
+  font-family: inherit; font-size: 0.78em; text-decoration: underline;
+}
+.pcat-clear:hover { color: var(--dig-bark, #33302A); }
+.pcat-detail-blurb { margin: 8px 0 0; font-size: 0.86em; color: #6b6157; line-height: 1.5; }
+.pcat-detail-examples {
+  margin: 8px 0 0; font-size: 0.82em; color: #8a7a68; line-height: 1.6;
+  border-top: 1px dashed var(--dig-cashmere, #D8CAB4); padding-top: 8px;
+}
+.pcat-detail-examples span { color: var(--dig-bark, #33302A); font-weight: 700; }
+
+@media (max-width: 560px) {
+  .pcat-grid { grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); gap: 12px; }
+  .pcat-card { padding: 7px 7px 10px; }
+  .pcat-name { font-size: 0.5em; }
+}

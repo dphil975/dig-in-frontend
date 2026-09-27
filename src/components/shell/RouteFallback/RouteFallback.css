@@ -1,0 +1,19 @@
+.rfb {
+  min-height: 50vh;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; animation: rfb-in .2s ease .25s forwards;
+}
+.rfb-dots { display: inline-flex; gap: 6px; }
+.rfb-dots i {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--dig-matcha, #6E8259);
+  animation: rfb-pulse 1s ease-in-out infinite;
+}
+.rfb-dots i:nth-child(2) { animation-delay: .15s; }
+.rfb-dots i:nth-child(3) { animation-delay: .3s; }
+.rfb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@keyframes rfb-in { to { opacity: 1; } }
+@keyframes rfb-pulse { 0%, 80%, 100% { opacity: .25; transform: scale(.8); } 40% { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .rfb { animation: none; opacity: 1; }
+  .rfb-dots i { animation: none; opacity: .6; }
+}

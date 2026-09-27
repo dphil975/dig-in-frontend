@@ -1,0 +1,520 @@
+/* PostTypes.css — the look of a post in the column: the mixed-shape cards (dish,
+   write-up, place, ask, …) and the reading column they sit in. Pixel/retro style:
+   chunky bark borders, offset box-shadows, cream/bark/matcha/honey/cashmere/
+   crimson. Palette vars come from styles.css :root (--dig-*). It used to be the
+   old home feed's stylesheet; the home screen is now Nova, and this file is
+   only what the community pages and Discover still draw with. */
+
+/* ── The three-zone dashboard ─────────────────────────────────────────── */
+.dash {
+  display: grid;
+  grid-template-columns: minmax(0, 600px) 220px;
+  gap: 34px;
+  justify-content: center;
+  align-items: start;
+  padding: 6px 16px 72px;
+}
+
+/* ── Editorial hero — a calm, centered masthead. One thin mark, a quiet
+   contextual kicker, one confident serif invitation, one hairline. The whole
+   point is restraint: no card, no shadow, no second colour — the opposite of
+   the chrome that used to greet you here. ─────────────────────────────────── */
+/* No top bar anymore — the right rail sticks near the top of the viewport. */
+.rail { position: sticky; top: 20px; }
+
+/* "Write a post" — the Home-only composer trigger, moved off the (retired)
+   inline left rail into the top of the feed column. */
+
+/* ── Solution-aware search response ─────────────────────────────────────── */
+/* NOTE: the responsive overrides live at the END of this file on purpose —
+   media queries don't add specificity, so they must come after the base
+   .rail-left / .rail-right rules to win on source order. */
+
+/* ── LEFT RAIL — the brand lives here, at 100% opacity, above the fold ─── */
+.post-cta {
+  font-family: var(--font-ui);
+  font-size: 11px; line-height: 1.5;
+  color: #fff; background: var(--dig-crimson);
+  border: 2px solid var(--dig-bark); border-radius: 6px;
+  box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 12px 10px; cursor: pointer; text-align: center;
+  transition: transform .1s, box-shadow .1s;
+}
+.post-cta:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
+.post-cta:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--dig-bark); }
+/* Second CTA — write a text/"Substack" post. Matcha, sits under "Post a dish". */
+.post-cta-write { margin-top: 8px; background: var(--dig-matcha); }
+
+/* ── FEED COLUMN — 540px, single file ─────────────────────────────────── */
+.column { width: 100%; min-width: 0; }
+
+.column-empty { font-size: 13px; line-height: 1.6; color: #7a7060; padding: 6px 2px 16px; }
+.column-empty b { color: var(--dig-matcha); }
+
+.column-archive-link {
+  width: 100%; text-align: left; font-size: 12.5px; font-weight: 700;
+  color: var(--dig-bark); background: var(--dig-cream);
+  border: 1.5px dashed var(--dig-cashmere); border-radius: 8px;
+  padding: 9px 11px; margin-bottom: 12px; cursor: pointer;
+  transition: border-color .1s, background .1s;
+}
+.column-archive-link:hover { border-color: var(--dig-matcha); background: #fbf7f0; }
+
+/* ── Onboarding — one inline question, no modal chain ─────────────────── */
+
+/* ── POSTS — one shell, many shapes ───────────────────────────────────── */
+.column-feed { display: flex; flex-direction: column; gap: 22px; }
+
+.post {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: none;
+  padding: 20px 22px;
+}
+.post-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.post-avatar {
+  width: 34px; height: 34px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-ui); font-size: 12px; color: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 6px;
+}
+.post-head-txt { display: flex; flex-direction: column; line-height: 1.2; }
+.post-user { font-weight: 800; font-size: 14px; color: var(--dig-bark); }
+.post-verb { font-size: 11.5px; color: #8a7a68; }
+
+/* Tags — every post ends here. Tags ARE the navigation. */
+.post-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.post-tag {
+  font-size: 11.5px; font-weight: 700; color: var(--dig-matcha);
+  background: #f7f2e9; border: 1.5px solid var(--dig-cashmere); border-radius: 999px;
+  padding: 4px 10px; cursor: pointer;
+}
+.post-tag:hover { border-color: var(--dig-matcha); background: #fff; }
+.post-tag.followed { background: var(--dig-matcha); color: #fff; border-color: var(--dig-matcha); }
+
+/* Ask — solid honey text block, no image (Tumblr's text post). */
+.post-ask { background: var(--dig-honey); border-color: var(--dig-bark); }
+.post-ask-kicker {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
+  color: #7a5c1e; text-transform: uppercase;
+}
+.post-ask-q { font-size: 19px; font-weight: 800; line-height: 1.35; color: var(--dig-bark); margin: 10px 0 14px; }
+.post-ask-btn {
+  font-size: 12.5px; font-weight: 800; color: var(--dig-honey); background: var(--dig-bark);
+  border: none; border-radius: 6px; padding: 8px 14px; cursor: pointer;
+}
+.post-ask .post-tag { background: rgba(51,48,42,.08); border-color: rgba(51,48,42,.3); color: #5a451a; }
+
+/* Nova — white card, small thumbnail beside text (a person picking). */
+.post-nova-row { display: flex; gap: 12px; align-items: flex-start; }
+.post-nova-thumb {
+  width: 46px; height: 46px; flex-shrink: 0; font-size: 24px;
+  display: flex; align-items: center; justify-content: center;
+  background: #eef3e8; border: 2px solid var(--dig-matcha); border-radius: 8px;
+}
+.post-nova-txt { display: flex; flex-direction: column; min-width: 0; }
+.post-nova-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .5px; color: var(--dig-matcha); text-transform: uppercase; }
+.post-nova-name {
+  text-align: left; font-size: 16px; font-weight: 800; color: var(--dig-bark);
+  background: none; border: none; padding: 2px 0; cursor: pointer; text-decoration: underline;
+}
+.post-nova-reason { font-size: 12.5px; line-height: 1.5; color: #6c6355; margin: 4px 0 0; }
+
+/* Cooking-Now — dark bark block, live presence. */
+.post-cookingNow { background: var(--dig-bark); border-color: #000; color: var(--dig-cream); }
+.post-live {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px; color: var(--dig-honey);
+}
+.post-live-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--dig-crimson);
+  animation: home-pulse 1.3s ease-in-out infinite;
+}
+@keyframes home-pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+.post-cook-line { font-size: 15px; line-height: 1.5; margin: 12px 0 14px; color: var(--dig-cream); }
+.post-cook-line b { color: #fff; }
+.post-cook-btn {
+  font-size: 12.5px; font-weight: 800; color: var(--dig-bark); background: var(--dig-honey);
+  border: none; border-radius: 6px; padding: 8px 14px; cursor: pointer;
+}
+.post-cookingNow .post-tag { background: rgba(243,234,218,.12); border-color: rgba(243,234,218,.3); color: var(--dig-cream); }
+
+/* Place — card with a decorative pixel map tile. */
+.post-place-row { display: flex; gap: 14px; align-items: flex-start; }
+.post-place-tile {
+  position: relative; flex-shrink: 0;
+  width: 64px; height: 64px; border: 2px solid var(--dig-bark); border-radius: 6px;
+  overflow: hidden; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+  image-rendering: pixelated;
+}
+.post-place-tile > span { background: #cfe0c0; }
+.post-place-tile > span:nth-child(2n) { background: #b7d0a2; }
+.post-place-tile > span:nth-child(3n) { background: #e6ddc8; }
+.post-place-pin {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; background: none;
+}
+.post-place-txt { display: flex; flex-direction: column; min-width: 0; }
+.post-place-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .5px; color: var(--dig-honey); text-transform: uppercase; }
+.post-place-city { font-family: var(--font-display); font-size: 13px; color: var(--dig-bark); margin: 4px 0; }
+.post-place-blurb { font-size: 12.5px; line-height: 1.5; color: #6c6355; margin: 0 0 8px; }
+.post-place-dish { font-size: 13px; font-weight: 800; color: var(--dig-matcha); margin-bottom: 8px; }
+.post-place-btn {
+  align-self: flex-start; font-size: 12px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 6px; box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 7px 12px; cursor: pointer;
+}
+
+/* Viral — a dish spreading across the community. Honest count, real card. */
+.post-viral { border-color: var(--dig-honey); }
+.post-viral-banner {
+  display: flex; align-items: center; gap: 8px;
+  margin: -2px 0 12px; padding: 8px 11px;
+  background: #faf1dd; border: 1.5px solid var(--dig-honey); border-radius: 8px;
+}
+.post-viral-banner.is-viral { background: #fdeede; border-color: var(--dig-crimson); }
+.post-viral-flame { font-size: 16px; flex-shrink: 0; }
+.post-viral-line { font-size: 12.5px; font-weight: 800; color: var(--dig-bark); line-height: 1.35; }
+.post-viral-banner.is-viral .post-viral-line { color: var(--dig-crimson); }
+
+/* Chain — a dish nested on the original it came from (the reblog). */
+.post-chain { border-left: 6px solid var(--dig-honey); }
+.post-chain-mark {
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px;
+  color: var(--dig-honey); background: rgba(224,163,46,.14); padding: 4px 6px; border-radius: 4px;
+}
+.post-chain-origin {
+  display: flex; align-items: center; gap: 8px; margin-top: 12px;
+  padding: 10px 12px; background: #f7f2e9; border: 1.5px dashed var(--dig-cashmere); border-radius: 8px;
+}
+.post-chain-arrow { font-size: 11px; color: #8a7a68; }
+.post-chain-origin-name { font-size: 13px; font-weight: 800; color: var(--dig-bark); }
+
+/* Meal-time — contextual first post. */
+.post-mealtime { background: #eef3e8; border-color: var(--dig-matcha); }
+.post-mealtime-kicker {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
+  color: var(--dig-matcha); text-transform: uppercase;
+}
+.post-mealtime-line { font-size: 17px; font-weight: 800; color: var(--dig-bark); margin: 10px 0 14px; }
+.post-mealtime-btn {
+  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 6px; box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 8px 14px; cursor: pointer;
+}
+
+/* "Show me dinner" mood picker — 8 flavors + picky-eater → the swipe feed. */
+.post-mood { display: flex; flex-direction: column; gap: 10px; }
+.post-mood-q { font-size: 13px; font-weight: 800; color: var(--dig-bark); }
+.post-mood-flavors { display: flex; flex-wrap: wrap; gap: 6px; }
+.post-mood-flavor {
+  font-size: 12px; font-weight: 700; color: var(--dig-bark); background: #fff;
+  border: 1.5px solid var(--dig-cashmere); border-radius: 999px; padding: 6px 11px; cursor: pointer;
+}
+.post-mood-flavor:hover { border-color: var(--dig-matcha); }
+.post-mood-flavor.on { background: var(--dig-matcha); color: #fff; border-color: var(--dig-bark); }
+.post-mood-picky {
+  align-self: flex-start; font-size: 12px; font-weight: 700; color: var(--dig-bark);
+  background: #fff; border: 1.5px dashed var(--dig-cashmere); border-radius: 8px; padding: 7px 12px; cursor: pointer;
+}
+.post-mood-picky.on { background: #faf1dd; border-style: solid; border-color: var(--dig-honey); }
+.post-mood-picky-note { font-size: 12px; line-height: 1.5; color: #6c6355; margin: 0; }
+.post-mood-picky-note b { color: var(--dig-matcha); }
+.post-mood-go {
+  align-self: flex-start; font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 9px 15px; cursor: pointer;
+}
+.post-mood-go:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark); }
+
+/* Whimsy — a post, once a week, on Sunday. */
+.post-whimsy { background: var(--dig-cashmere); border-color: var(--dig-bark); }
+.post-whimsy-kicker { font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px; color: var(--dig-matcha); }
+.post-whimsy-line { font-size: 16px; font-weight: 800; color: var(--dig-bark); margin: 10px 0 14px; }
+.post-whimsy-btn {
+  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 6px; box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 8px 14px; cursor: pointer;
+}
+
+/* Editorial — the below-the-fold systems, now single cards in the column. */
+.post-editorial { padding: 12px; }
+.post-editorial-label {
+  display: block; font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
+  color: #9a8f7c; text-transform: uppercase; margin-bottom: 8px;
+}
+/* These three reused components predate the palette reskin — they still
+   carried the old dark-purple GBA theme and their own full-width marketing
+   headers. In the column they become compact cards: wraps go transparent,
+   their centered marketing headers/footers are dropped (my shell label is
+   the one label, no doubling), the purple surfaces are retoned to warm
+   bark/matcha, and the lavender body text is brought onto the palette. */
+.post-editorial-body { overflow-x: auto; }
+.post-editorial-body .hh-wrap,
+.post-editorial-body .cl-wrap,
+.post-editorial-body .hero-recipe { background: none; padding: 0; }
+.post-editorial-body .hh-inner,
+.post-editorial-body .cl-inner,
+.post-editorial-body .hero-inner { padding: 0; max-width: 100%; }
+
+/* No double labels — drop each component's own header/footer chrome. */
+.post-editorial-body .hh-eyebrow,
+.post-editorial-body .hh-title,
+.post-editorial-body .cl-head,
+.post-editorial-body .hero-tagline,
+.post-editorial-body .hero-formats { display: none; }
+.post-editorial-body .hh-head { margin-bottom: 10px; }
+
+/* HeroHighlights — bark tiles are fine on white; just fix the lavender sub. */
+.post-editorial-body .hh-card-sub { color: var(--dig-cashmere); }
+.post-editorial-body .hh-arrow { color: var(--dig-bark); border-color: var(--dig-cashmere); }
+
+/* CloserLook — dark-purple frame → warm bark; lavender text → cream. */
+.post-editorial-body .cl-frame,
+.post-editorial-body .cl-slide { background: var(--dig-bark); }
+.post-editorial-body .cl-slide-title { color: var(--dig-cream); }
+.post-editorial-body .cl-slide-count,
+.post-editorial-body .cl-slide-teaser,
+.post-editorial-body .cl-slide-detail { color: var(--dig-cashmere); }
+.post-editorial-body .cl-nav { color: var(--dig-matcha); border-color: var(--dig-cashmere); }
+
+/* InteractiveHeroRecipe — retone the whole purple card onto the palette. */
+.post-editorial-body .hero-card { background: var(--dig-bark); border-color: var(--dig-honey); box-shadow: none; color: var(--dig-cream); }
+.post-editorial-body .hero-image { background: linear-gradient(135deg, var(--dig-matcha) 0%, #4E5D3E 100%); }
+.post-editorial-body .hero-headline { color: var(--dig-cream); }
+.post-editorial-body .hero-dish { color: var(--dig-honey); }
+.post-editorial-body .hero-body { padding: 18px; }
+.post-editorial-body .hero-flavor-btn { background: #2b2824; border-color: #4a463f; }
+.post-editorial-body .hero-arrow { color: var(--dig-cream); border-color: var(--dig-cashmere); }
+.post-editorial-body .hero-swap { color: var(--dig-cream); }
+.post-editorial-body .hero-exp { color: var(--dig-cashmere); }
+.post-editorial-body .hero-transform-hint { color: var(--dig-cashmere); }
+
+/* Search results in the column. */
+
+/* The feed ends — the direct answer to aimless scrolling. */
+.post-end { text-align: center; padding: 40px 16px 10px; color: #9a8f7c; }
+.post-end-mark { font-size: 22px; color: var(--dig-honey); }
+.post-end p { font-family: var(--font-ui); font-size: 11px; line-height: 1.9; margin: 8px 0 0; color: var(--dig-bark); }
+.post-end-sub { color: #9a8f7c !important; }
+
+/* ── RIGHT RAIL — quiet, gets out of the way ──────────────────────────── */
+
+/* ── Voice tags (Layer 2) — personality, not filter: plain text, no chip ── */
+.post-tag.voice {
+  background: none; border-color: transparent; color: #a08a63;
+  font-style: italic; font-weight: 700; padding: 4px 4px;
+}
+.post-tag.voice:hover { color: var(--dig-crimson); background: none; text-decoration: underline; }
+.post-tag.voice.followed { background: none; color: var(--dig-crimson); border-color: transparent; }
+.post-ask .post-tag.voice, .post-cookingNow .post-tag.voice { color: inherit; opacity: .85; }
+
+/* ── Life-mode control — "where are you in life right now?" ─────────────── */
+
+/* ── The metric that matters — meals made, in the YOU card ──────────────── */
+
+/* ── "Why you're seeing this" — the honest slot label atop a post ───────── */
+.post-slot {
+  display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: .07em;
+  text-transform: uppercase; color: #9a8f7c; background: #f7f2e9;
+  border: 1.5px solid var(--dig-cashmere); border-radius: 999px;
+  padding: 2px 8px; margin-bottom: 10px;
+}
+.post-cookingNow .post-slot { background: rgba(243,234,218,.14); border-color: rgba(243,234,218,.35); color: var(--dig-cream); }
+.post-ask .post-slot { background: rgba(51,48,42,.06); border-color: rgba(51,48,42,.22); color: #5a451a; }
+
+/* The archetype band, sitting next to the slot label. "A change of pace" is
+   the app admitting out loud that it deliberately served you the opposite of
+   your habit — the counterweight is only honest if you can see it happening. */
+.post-slot-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.post-band {
+  display: inline-block; font-size: 9.5px; font-weight: 700; letter-spacing: .07em;
+  text-transform: uppercase; border-radius: 999px;
+  padding: 2px 8px; margin-bottom: 10px; cursor: help;
+}
+.post-band-aligned { color: #5c6b48; background: #eef2e4; border: 1.5px solid var(--dig-frog); }
+.post-band-counter { color: #7a3a10; background: #fbf0dc; border: 1.5px solid var(--dig-honey); }
+.post-band-neutral { color: #6b6357; background: #f3f0e9; border: 1.5px solid var(--dig-cashmere); }
+
+/* ── In-season pick — its own weather/calendar card ─────────────────────── */
+.post-season-row { display: flex; gap: 12px; align-items: flex-start; }
+.post-season-badge { font-size: 22px; line-height: 1; }
+.post-season-txt { display: flex; flex-direction: column; min-width: 0; }
+.post-season-kicker { font-size: 10.5px; font-weight: 800; letter-spacing: .5px; color: var(--dig-frog); text-transform: uppercase; }
+.post-season-name {
+  align-self: flex-start; font-family: inherit; font-size: 15px; font-weight: 800;
+  color: var(--dig-bark); background: none; border: none; padding: 4px 0 0; cursor: pointer; text-align: left;
+}
+.post-season-name:hover { color: var(--dig-matcha); text-decoration: underline; }
+.post-season-note { font-size: 12.5px; line-height: 1.5; color: #6c6355; margin: 4px 0 0; }
+
+/* ── Pantry pick — the honest coverage bar ──────────────────────────────── */
+.post-pantry-kicker { display: block; font-size: 10.5px; font-weight: 800; letter-spacing: .5px; color: var(--dig-matcha); text-transform: uppercase; }
+.post-pantry-name {
+  display: inline-block; font-family: inherit; font-size: 15px; font-weight: 800;
+  color: var(--dig-bark); background: none; border: none; padding: 6px 0 8px; cursor: pointer; text-align: left;
+}
+.post-pantry-name:hover { color: var(--dig-matcha); text-decoration: underline; }
+.post-pantry-bar { height: 10px; background: #efe7d7; border: 2px solid var(--dig-bark); border-radius: 999px; overflow: hidden; }
+.post-pantry-fill { display: block; height: 100%; background: var(--dig-frog); }
+.post-pantry-note { font-size: 12px; color: #6c6355; margin: 8px 0 0; }
+.post-pantry-note b { color: var(--dig-matcha); }
+
+/* ── Tag view — the union "tag page" header ─────────────────────────────── */
+
+/* ── Recipe card — a light result in the tag view ───────────────────────── */
+.post-recipecard { }
+.post-rc { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.post-rc-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.post-rc-name {
+  font-family: inherit; font-size: 15px; font-weight: 800; color: var(--dig-bark);
+  background: none; border: none; padding: 0; cursor: pointer; text-align: left;
+}
+.post-rc-name:hover { color: var(--dig-matcha); text-decoration: underline; }
+.post-rc-meta { font-size: 11.5px; color: #8a7a68; }
+.post-rc-btn {
+  flex-shrink: 0; font-size: 12px; font-weight: 700; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 2px 2px 0 var(--dig-bark);
+  padding: 6px 12px; cursor: pointer;
+}
+.post-rc-btn:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 var(--dig-bark); }
+.post-rc-btn:active { transform: translate(2px,2px); box-shadow: 0 0 0 var(--dig-bark); }
+
+/* ── Write-up — the long-form text / "Substack" post, the larger square ───
+   Deliberately bigger than the other cards: a cream page with an accent left
+   edge, a real headline, readable body, and the numbered method folded in. */
+.post-writeup {
+  background: var(--dig-cream);
+  border-left: 6px solid var(--dig-matcha);
+  padding: 18px 20px;
+}
+.post-writeup .post-head { margin-bottom: 10px; }
+.post-writeup-mark {
+  margin-left: auto; font-family: var(--font-ui); font-size: 11px;
+  color: var(--dig-matcha); background: rgba(110,130,89,.12); padding: 4px 6px; border-radius: 4px;
+}
+.post-writeup-origin {
+  font-size: 11.5px; color: #7a5c1e; background: #faf1dd; border: 1px solid var(--dig-honey);
+  border-radius: 6px; padding: 4px 9px; display: inline-block; margin-bottom: 8px;
+}
+.post-writeup-origin b { color: var(--dig-bark); }
+.post-writeup-title {
+  font-family: var(--font-serif); font-size: 25px; font-weight: 600;
+  letter-spacing: -.01em; line-height: 1.22; color: var(--dig-bark);
+  margin: 6px 0 12px;
+}
+.post-writeup-cook {
+  margin-top: 12px; font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 9px 14px; cursor: pointer;
+}
+.post-writeup-cook:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
+.post-writeup-body p {
+  font-size: 15px; line-height: 1.65; color: #4c463c; margin: 0 0 12px;
+}
+.post-writeup-body p:last-of-type { margin-bottom: 6px; }
+.post-writeup-more {
+  font-size: 12.5px; font-weight: 800; color: var(--dig-matcha);
+  background: none; border: none; padding: 2px 0; cursor: pointer;
+}
+.post-writeup-more:hover { text-decoration: underline; }
+/* Method — the numbered recipe steps, brought into the feed. */
+.post-writeup-method {
+  margin-top: 14px; padding: 14px; background: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 10px;
+}
+.post-writeup-method-head {
+  display: block; font-family: var(--font-ui); font-size: 11px; letter-spacing: 1px;
+  color: var(--dig-honey); text-transform: uppercase; margin-bottom: 10px;
+}
+.post-writeup-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.post-writeup-steps li { display: flex; gap: 10px; align-items: flex-start; }
+.post-writeup-step-n {
+  flex-shrink: 0; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-ui); font-size: 11px; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 6px;
+}
+.post-writeup-step-t { font-size: 14px; line-height: 1.55; color: #4c463c; padding-top: 1px; }
+.post-writeup-method .post-writeup-more { margin-top: 10px; }
+
+/* ── "I just moved" — the timeline card (gear + freezer recipes + store) ── */
+.post-moving {
+  background: var(--dig-cream);
+  border-left: 6px solid var(--dig-honey);
+  padding: 18px 20px;
+}
+.post-moving-kicker {
+  font-family: var(--font-ui); font-size: 11px; letter-spacing: .5px;
+  color: #7a5c1e; text-transform: uppercase;
+}
+.post-moving-headline { font-size: 19px; font-weight: 800; line-height: 1.3; color: var(--dig-bark); margin: 10px 0 4px; }
+.post-moving-sub { font-size: 13px; line-height: 1.5; color: #6c6355; margin: 0 0 12px; }
+.post-moving-simple {
+  font-size: 13px; line-height: 1.5; color: #5a451a; margin: 0 0 14px;
+  background: #faf1dd; border: 1.5px solid var(--dig-honey); border-radius: 8px; padding: 9px 12px;
+}
+.post-moving-sect {
+  display: block; font-size: 10px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase;
+  color: var(--dig-matcha); margin-bottom: 8px;
+}
+.post-moving-gear { margin-bottom: 14px; }
+.post-moving-gear-item {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 9px 11px; margin-bottom: 7px;
+  background: #fff; border: 1.5px solid var(--dig-cashmere); border-radius: 8px;
+}
+.post-moving-gear-cat { font-size: 13px; font-weight: 800; color: var(--dig-bark); }
+.post-moving-gear-tip { font-size: 12px; line-height: 1.45; color: #6c6355; }
+.post-moving-recipes { margin-bottom: 14px; }
+.post-moving-recipe {
+  display: flex; align-items: center; gap: 8px; width: 100%; text-align: left;
+  padding: 9px 11px; margin-bottom: 7px;
+  background: #fff; border: 2px solid var(--dig-bark); border-radius: 8px;
+  box-shadow: 2px 2px 0 rgba(51,48,42,.14); cursor: pointer;
+}
+.post-moving-recipe:hover { transform: translate(-1px,-1px); box-shadow: 3px 3px 0 rgba(51,48,42,.2); }
+.post-moving-recipe-name { font-size: 13.5px; font-weight: 800; color: var(--dig-bark); }
+.post-moving-recipe-meta { margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 11px; color: #8a7a68; white-space: nowrap; }
+.post-moving-tag-meatfree {
+  font-size: 9.5px; font-weight: 800; color: #3a6b2f; background: #eef7ea;
+  border: 1px solid var(--dig-frog); border-radius: 999px; padding: 2px 7px; text-transform: uppercase; letter-spacing: .03em;
+}
+/* Cheap non-meat protein education. */
+.post-moving-protein { margin-bottom: 14px; }
+.post-moving-protein-item {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 9px 11px; margin-bottom: 7px;
+  background: #fff; border: 1.5px solid var(--dig-cashmere); border-radius: 8px;
+}
+.post-moving-protein-emoji { font-size: 20px; line-height: 1.2; flex-shrink: 0; }
+.post-moving-protein-txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.post-moving-protein-name { font-size: 13px; font-weight: 800; color: var(--dig-bark); }
+.post-moving-protein-why { font-size: 12px; line-height: 1.45; color: #6c6355; }
+.post-moving-protein-use { font-size: 12px; line-height: 1.45; color: var(--dig-matcha); font-weight: 700; }
+.post-moving-storage {
+  font-size: 12.5px; line-height: 1.5; color: #5a451a;
+  background: rgba(224,163,46,.14); border-radius: 8px; padding: 9px 11px; margin: 0 0 14px;
+}
+.post-moving-store {
+  font-size: 12.5px; font-weight: 800; color: #fff; background: var(--dig-matcha);
+  border: 2px solid var(--dig-bark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dig-bark);
+  padding: 9px 14px; cursor: pointer;
+}
+.post-moving-store:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--dig-bark); }
+.post-moving-store:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--dig-bark); }
+/* The empty ShoutoutCard renders nothing; when a sponsor lands it sits here. */
+.post-moving .shoutout-wrap { margin-top: 4px; }
+
+/* ── Responsive — kept last so these overrides win on source order ─────── */
+@media (max-width: 1180px) {
+  .dash { grid-template-columns: minmax(0, 560px) 200px; gap: 16px; }
+}
+@media (max-width: 980px) {
+  .dash { grid-template-columns: minmax(0, 620px); justify-content: center; }
+}
+@media (max-width: 760px) {
+  .dash { grid-template-columns: minmax(0, 1fr); padding: 4px 10px 80px; }
+  .rail { position: static; }
+  .post-writeup-title { font-size: 20px; }
+}

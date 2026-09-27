@@ -1,0 +1,35 @@
+/* AreaPicker — matches FoodMap's own borough dropdown so it reads as one
+   consistent control wherever it shows up. */
+
+.area-picker { position: relative; display: inline-block; }
+
+.area-picker-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-ui); font-size: 11px;
+  padding: 9px 12px; border-radius: 20px;
+  border: 2px solid #33302A; background: #6E8259; color: #fff;
+  cursor: pointer;
+}
+.area-picker-label { opacity: .8; letter-spacing: .3px; }
+.area-picker-value { max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.area-picker-caret { font-size: 8px; }
+
+.area-picker-panel {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 30;
+  width: 240px; max-height: 280px; overflow-y: auto;
+  background: #fff; border: 2px solid #33302A; border-radius: 10px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.15); padding: 8px;
+}
+.area-picker-search {
+  width: 100%; box-sizing: border-box; font-size: 12px;
+  padding: 8px 9px; border: 2px solid #33302A; border-radius: 7px; margin-bottom: 6px;
+}
+.area-picker-list { display: flex; flex-direction: column; }
+.area-picker-option {
+  width: 100%; text-align: left; padding: 8px 9px;
+  border: none; border-radius: 6px; background: transparent;
+  font-size: 13px; font-weight: 700; color: #33302A; cursor: pointer;
+}
+.area-picker-option:hover { background: #F3EADA; }
+.area-picker-option.active { background: #6E8259; color: #fff; }
+.area-picker-empty { padding: 10px; text-align: center; color: #999; font-size: 12px; }

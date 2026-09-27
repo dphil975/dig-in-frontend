@@ -1,0 +1,94 @@
+.hh-wrap {
+  background: #0f0c1a;
+  padding: 40px 0 32px;
+}
+.hh-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.hh-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.hh-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #6E8259;
+  margin: 0 0 8px;
+}
+.hh-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: #ece8f7;
+  margin: 0;
+  line-height: 1.4;
+}
+.hh-title span { color: #6E8259; }
+
+.hh-ctrls { display: flex; gap: 8px; }
+.hh-arrow {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 2px solid rgba(236,232,247,0.3);
+  background: transparent;
+  color: #ece8f7;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.hh-arrow:hover { background: #6E8259; border-color: #6E8259; }
+
+.hh-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 8px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hh-track::-webkit-scrollbar { display: none; }
+
+.hh-card {
+  flex: 0 0 auto;
+  width: 220px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background: #33302A;
+  border: 2px solid rgba(236,232,247,0.14);
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: transform .18s, border-color .18s;
+}
+.hh-card:hover { transform: translateY(-3px); border-color: var(--tint, #6E8259); }
+
+.hh-card-visual {
+  height: 120px;
+  background: linear-gradient(135deg, var(--tint, #6E8259), #33302A 130%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hh-card-tag {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--tint-text, #fff);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.25);
+}
+
+.hh-card-body { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 6px; }
+.hh-card-label { font-weight: 800; font-size: 15px; color: #ece8f7; }
+.hh-card-sub { font-size: 12px; color: #a8a0c0; line-height: 1.4; }
+
+@media (max-width: 560px) {
+  .hh-card { width: 180px; }
+  .hh-card-visual { height: 100px; }
+}
