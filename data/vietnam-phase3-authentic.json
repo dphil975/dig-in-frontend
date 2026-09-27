@@ -9,7 +9,7 @@
       "servings": 1,
       "prepTime": 15,
       "cookTime": 0,
-      "description": "A beloved Vietnamese breakfast sandwich combining French colonial influences with Vietnamese ingredients - crusty bread filled with p\u00e2t\u00e9, pickled vegetables, fresh herbs, and cilantro",
+      "description": "A beloved Vietnamese breakfast sandwich combining French colonial influences with Vietnamese ingredients - crusty bread filled with pâté, pickled vegetables, fresh herbs, and cilantro",
       "seasonings": [
         "salt",
         "pepper"
@@ -17,7 +17,7 @@
       "ingredients": [
         "1 Vietnamese or French baguette",
         "2 tbsp mayonnaise",
-        "150g lemongrass pork (or p\u00e2t\u00e9)",
+        "150g lemongrass pork (or pâté)",
         "1 cup pickled daikon and carrots",
         "1 fresh cucumber, sliced",
         "Fresh cilantro",
@@ -27,7 +27,7 @@
       "instructions": [
         "Slice baguette lengthwise and lightly toast if desired",
         "Spread mayonnaise on both sides of bread",
-        "Layer: p\u00e2t\u00e9, sliced lemongrass pork, pickled vegetables, cucumber, chilies, and fresh herbs",
+        "Layer: pâté, sliced lemongrass pork, pickled vegetables, cucumber, chilies, and fresh herbs",
         "Maintain proper ratio of filling to vegetables (approximately 1:1)",
         "Do not overstuff",
         "Slice sandwich in half if desired and serve immediately",
@@ -120,13 +120,20 @@
           "cook_time": 0,
           "notes": "Use pre-made components, minimal prep"
         }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Special_Baguette_%28B%C3%A1nh_m%C3%AC%29_-_Banh_Mi_Ancient_Saigon_2024-12-20.jpg",
+      "imageCredit": {
+        "author": "Andy Li",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Special_Baguette_(Bánh_mì)_-_Banh_Mi_Ancient_Saigon_2024-12-20.jpg"
       }
     }
   ],
   "lunch": [
     {
       "id": "vtn-lunch-pho",
-      "name": "Ph\u1edf (Vietnamese Beef Noodle Soup)",
+      "name": "Phở (Vietnamese Beef Noodle Soup)",
       "difficulty": "Hard",
       "servings": 4,
       "prepTime": 30,
@@ -162,12 +169,12 @@
         "Serve with garnishes on side"
       ],
       "notes": "Long simmering time essential for rich broth flavor. Can prepare broth day ahead",
-      "fun_fact": "Ph\u1edf became iconic Vietnamese lunch, combination of Vietnamese and French influences from colonial era",
+      "fun_fact": "Phở became iconic Vietnamese lunch, combination of Vietnamese and French influences from colonial era",
       "alternatives": [
-        "Chicken ph\u1edf instead of beef",
-        "Seafood ph\u1edf with shrimp",
+        "Chicken phở instead of beef",
+        "Seafood phở with shrimp",
         "Vegetarian with mushroom broth",
-        "Quick ph\u1edf with store-bought broth"
+        "Quick phở with store-bought broth"
       ],
       "remix_formats": [
         "salad",
@@ -254,7 +261,7 @@
   "dinner": [
     {
       "id": "vnm-dinner-pho",
-      "name": "Vietnamese Ph\u1edf (Beef Noodle Soup with Aromatic Broth)",
+      "name": "Vietnamese Phở (Beef Noodle Soup with Aromatic Broth)",
       "difficulty": "Medium",
       "servings": 4,
       "prepTime": 30,
@@ -300,7 +307,7 @@
       "notes": "Long slow cooking is essential for depth of flavor",
       "fun_fact": "Influenced by French pot-au-feu but distinctly Vietnamese",
       "alternatives": [
-        "Make ph\u1edf g\u00e0 with chicken",
+        "Make phở gà with chicken",
         "Add tofu",
         "Vegetarian mushroom broth"
       ],
@@ -383,6 +390,13 @@
           "cook_time": 108,
           "notes": "Use pre-made components, minimal prep"
         }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/3_mushroom_curry_noodle_soup_with_ph%E1%BB%9F_-_Pho_2025-11-12.jpg",
+      "imageCredit": {
+        "author": "Andy Li",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:3_mushroom_curry_noodle_soup_with_phở_-_Pho_2025-11-12.jpg"
       }
     },
     {
@@ -515,6 +529,13 @@
           "cook_time": 9,
           "notes": "Use pre-made components, minimal prep"
         }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/C%C3%A1_kho_t%E1%BB%99.JPG",
+      "imageCredit": {
+        "author": "Binh Giang",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Cá_kho_tộ.JPG"
       }
     }
   ],

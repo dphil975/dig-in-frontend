@@ -164,6 +164,8 @@ def main():
                 "dietary_tags": r.get("dietary_tags") or r.get("diet_tags") or [],
                 "dietary_adaptations": r.get("dietary_adaptations") or r.get("dietary_options") or [],
                 "alternatives": r.get("alternatives") or [],
+                "image": r.get("image") or "",
+                "imageCredit": r.get("imageCredit"),
                 "source_file": fname,
             })
 
