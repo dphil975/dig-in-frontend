@@ -129,47 +129,7 @@
       ]
     }
   ],
-  "snacks": [
-    {
-      "id": "vtn-snack-che-ba-mau",
-      "name": "Che Ba Mau (Three-Color Dessert Drink)",
-      "difficulty": "Medium",
-      "servings": 4,
-      "prepTime": 20,
-      "cookTime": 0,
-      "description": "Vietnamese colorful layered sweet drink",
-      "seasonings": [
-        "sugar"
-      ],
-      "ingredients": [
-        "1/2 cup cooked black beans",
-        "1/2 cup cooked split peas",
-        "1/2 cup cooked corn",
-        "1 cup sugar",
-        "1 cup water",
-        "1 can coconut milk",
-        "Ice",
-        "Tapioca pearls (optional)"
-      ],
-      "instructions": [
-        "Make syrup from sugar and water",
-        "Cool syrup",
-        "Layer black beans, split peas, corn in glass",
-        "Add tapioca pearls if desired",
-        "Pour syrup over",
-        "Add ice",
-        "Top with coconut milk",
-        "Stir before drinking"
-      ],
-      "notes": "Beautiful layering",
-      "fun_fact": "Che Ba Mau is popular Vietnamese summer drink",
-      "alternatives": [
-        "Different ingredients",
-        "Different layers",
-        "With crushed ice"
-      ]
-    }
-  ],
+  "snacks": [],
   "desserts": [
     {
       "id": "vtn-dessert-banh-cam",
@@ -208,7 +168,7 @@
       ]
     }
   ],
-  "nonAlcoholicDrinks": [
+  "drinks": [
     {
       "id": "vtn-drink-egg-coffee",
       "name": "Vietnamese Egg Coffee",
@@ -241,9 +201,7 @@
         "Different coffee",
         "Iced version"
       ]
-    }
-  ],
-  "alcoholicDrinks": [
+    },
     {
       "id": "vtn-drink-saigon-beer",
       "name": "Saigon Beer",
@@ -267,6 +225,45 @@
       "alternatives": [
         "Different Vietnamese beers",
         "Room temperature"
+      ]
+    },
+    {
+      "id": "vtn-snack-che-ba-mau",
+      "name": "Che Ba Mau (Three-Color Dessert Drink)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 0,
+      "description": "Vietnamese colorful layered sweet drink",
+      "seasonings": [
+        "sugar"
+      ],
+      "ingredients": [
+        "1/2 cup cooked black beans",
+        "1/2 cup cooked split peas",
+        "1/2 cup cooked corn",
+        "1 cup sugar",
+        "1 cup water",
+        "1 can coconut milk",
+        "Ice",
+        "Tapioca pearls (optional)"
+      ],
+      "instructions": [
+        "Make syrup from sugar and water",
+        "Cool syrup",
+        "Layer black beans, split peas, corn in glass",
+        "Add tapioca pearls if desired",
+        "Pour syrup over",
+        "Add ice",
+        "Top with coconut milk",
+        "Stir before drinking"
+      ],
+      "notes": "Beautiful layering",
+      "fun_fact": "Che Ba Mau is popular Vietnamese summer drink",
+      "alternatives": [
+        "Different ingredients",
+        "Different layers",
+        "With crushed ice"
       ]
     }
   ]

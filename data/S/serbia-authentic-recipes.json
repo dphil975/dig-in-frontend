@@ -1,0 +1,820 @@
+{
+  "serbiaRecipes": {
+    "country": "Serbia",
+    "region": "Balkans",
+    "breakfast": [
+      {
+        "id": "srb-bf-1",
+        "name": "Burek (Flaky Pastry with Meat)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Yufka dough (phyllo-type -- very thin sheets)",
+          "Filling: minced beef/pork with onion",
+          "Sunflower oil (for brushing)",
+          "Egg wash",
+          "Yoghurt or ayran (to serve)"
+        ],
+        "instructions": [
+          "Burek is the Serbian breakfast institution -- Balkan flaky pastry with meat",
+          "Technically from Ottoman cuisine -- burek spread across the Balkans under the Ottoman Empire",
+          "Serbian burek is specifically with minced meat -- not cheese, not spinach (those are different)",
+          "The Serbian distinction: burek = meat; with cheese it is gibanica; with spinach, zeljanica",
+          "Made with yufka (phyllo-type) sheets brushed with oil",
+          "The sheets are filled and rolled, coiled into a round pan (spiral form)",
+          "Baked until golden and crispy on the outside",
+          "The outside should shatter; the inside should be juicy with meat filling",
+          "Pekara (bakery) culture: Serbian pekare open at 4-5am for the morning burek rush",
+          "The ritual: burek + yoghurt for breakfast at the pekara counter",
+          "Eaten standing up -- the pekara is fast food, not a sit-down place",
+          "The yoghurt cuts through the oil of the burek -- essential accompaniment"
+        ],
+        "description": "Serbian flaky pastry breakfast -- yufka (phyllo-type) sheets coiled with spiced minced meat filling, baked until the outside shatters and the filling stays juicy. Serbian burek specifically means meat; cheese is gibanica; spinach is zeljanica. Pekare (bakeries) open at 4-5am for the morning rush. Eaten standing at the counter with a cup of yoghurt. Ottoman inheritance, completely Serbianized.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png"
+        }
+      },
+      {
+        "id": "srb-bf-2",
+        "name": "Gibanica (Serbian Cheese Pastry)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Yufka dough (phyllo sheets)",
+          "White cheese (feta-type or fresh Serbian sir)",
+          "Eggs",
+          "Sour cream or kajmak",
+          "Sunflower oil"
+        ],
+        "instructions": [
+          "Gibanica is the Serbian cheese pastry -- the most beloved Serbian pastry alongside burek",
+          "The distinction: gibanica is the cheese version; burek is the meat version",
+          "The filling: crumbled white cheese, eggs, and sour cream -- simple and rich",
+          "Kajmak (Serbian clotted cream) can be used instead of sour cream -- richer",
+          "The yufka sheets are crumpled (not folded neatly) -- this creates the irregular texture",
+          "The crumpling technique: unique to gibanica -- the sheets are not carefully layered",
+          "The crumpled sheets create pockets that hold the cheese filling",
+          "Baked until golden -- the eggs set and bind the cheese",
+          "Gibanica is at every Serbian celebration: Easter, Slava (the Serbian patron saint feast)",
+          "Slavska pogaca: the special bread at Slava; gibanica: the savory pastry alongside"
+        ],
+        "description": "Serbian cheese pastry -- yufka (phyllo) sheets crumpled (not neatly layered) and mixed with white cheese, eggs, and sour cream or kajmak (Serbian clotted cream), baked until golden. The crumpling technique creates irregular pockets that hold the filling. At every Serbian celebration: Easter, Slava (patron saint feast). The cheese counterpart to meat burek.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gibanica_single_slice_with_full_pie_in_background.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Gibanica_single_slice_with_full_pie_in_background.jpg"
+        }
+      },
+      {
+        "id": "srb-bf-3",
+        "name": "Kajmak on Toast",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Kajmak (Serbian clotted cream -- fresh or aged)",
+          "Bread (Serbian white bread or pita)",
+          "Ajvar (roasted red pepper spread -- optional)"
+        ],
+        "instructions": [
+          "Kajmak is the Serbian dairy product -- clotted cream made from raw milk",
+          "The making of kajmak: raw milk slowly heated, the cream layer skimmed off and salted",
+          "The cream is layered in a wooden barrel and aged",
+          "Fresh kajmak: white, soft, creamy, milky, slightly salty",
+          "Aged kajmak: yellow, firmer, more pungent, intense",
+          "Spread on fresh white bread: the simplest Serbian breakfast",
+          "Also paired with ajvar (roasted red pepper and eggplant spread)",
+          "Kajmak + ajvar on bread: the Balkan combination",
+          "Kajmak is made in mountain regions: Zlatibor, Zlatar, Sjenica in southwestern Serbia",
+          "The milk of mountain-grazing cattle gives superior kajmak"
+        ],
+        "description": "Serbian clotted cream on bread -- kajmak made by skimming the cream layer from slowly heated raw milk, salting, and layering in a wooden barrel. Fresh kajmak is white and milky; aged is yellow and pungent. Spread on white bread with optional ajvar (roasted red pepper spread). Made in the mountain regions of southwestern Serbia from the milk of mountain-grazing cattle.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DulceDeLeche.jpg",
+        "imageCredit": {
+          "author": "audinou from Paris, France",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ADulceDeLeche.jpg"
+        }
+      },
+      {
+        "id": "srb-bf-4",
+        "name": "White Coffee (Bela Kafa)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 2,
+        "cookTime": 5,
+        "ingredients": [
+          "Instant coffee (Nes kafa -- Nescafe, the Serbian norm)",
+          "Hot milk (not water -- the Serbian way)",
+          "Sugar"
+        ],
+        "instructions": [
+          "Bela kafa (white coffee) is the Serbian morning coffee tradition",
+          "Serbian coffee culture is split: turska kafa (Turkish coffee -- espresso-strength) and bela kafa",
+          "Bela kafa: instant coffee prepared with HOT MILK, not water",
+          "The milk-based coffee is lighter, more dairy, less intense",
+          "Nescafe (instant coffee) is the standard in Serbian homes for bela kafa",
+          "Turkish coffee (turska kafa) is prepared in a dzezva (copper long-handled pot)",
+          "The dzezva is placed on the stove, coffee and sugar added, brought to a boil twice",
+          "Served with foam in the top -- the foam is the quality indicator of turska kafa",
+          "Bela kafa for breakfast; turska kafa after meals and for guests"
+        ],
+        "description": "Serbian white coffee -- instant coffee (Nescafe) prepared with hot milk instead of water, lighter and more dairy than Turkish coffee. Serbian coffee culture is split: bela kafa (white coffee) for breakfast; turska kafa (Turkish coffee brewed in a dzezva) after meals and for guests. The foam on the Turkish coffee is the quality indicator.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Coffee_cup.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Coffee_cup.JPG"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "srb-ln-1",
+        "name": "Cevapi (Grilled Minced Meat)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Minced beef (or beef/lamb mix)",
+          "Garlic, salt, black pepper, baking soda",
+          "Lepinja (flatbread -- the specific Serbian bread for cevapi)",
+          "Onion (raw, diced)",
+          "Kajmak or sour cream",
+          "Ajvar (roasted red pepper spread)"
+        ],
+        "instructions": [
+          "Cevapi are the grilled minced meat sausages -- the symbol of Balkan food",
+          "Shared across the former Yugoslavia: Serbia, Bosnia, Croatia, Montenegro all have cevapi",
+          "But the Bosnian cevapi (from Sarajevo) are considered the original reference",
+          "The Sarajevo cevapi: small, thin, served in somun (pita) with cream cheese and onion",
+          "The Serbian cevapi: slightly larger, served in lepinja (flatbread) with kajmak and ajvar",
+          "The meat mix: pure beef, or beef + lamb -- the ratios vary by cook",
+          "Baking soda: the Serbian secret ingredient that keeps the cevapi light and tender",
+          "Grilled over charcoal or wood fire -- the char is essential",
+          "Served on a platter: 5-10 cevapi inside the lepinja with toppings arranged around",
+          "The combination: cevapi + kajmak + ajvar + raw onion = the Balkan flavor profile"
+        ],
+        "description": "Serbian-Balkan grilled minced meat sausages -- beef (or beef/lamb) with garlic and baking soda (keeps them tender), grilled over charcoal, served in lepinja flatbread with kajmak, ajvar (roasted red pepper spread), and raw diced onion. Shared across former Yugoslavia but each republic has its variation; Sarajevo cevapi are the regional reference. The Balkan flavor profile in one dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg"
+        }
+      },
+      {
+        "id": "srb-ln-2",
+        "name": "Sarma (Stuffed Cabbage Rolls)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 120,
+        "ingredients": [
+          "Sauerkraut (whole fermented cabbage leaves -- or fresh cabbage for summer version)",
+          "Minced pork and beef mix",
+          "Rice (short grain)",
+          "Onion, garlic",
+          "Smoked pork ribs or tocino (to layer in the pot)",
+          "Paprika (sweet and hot)",
+          "Tomato paste"
+        ],
+        "instructions": [
+          "Sarma is the Serbian national dish -- stuffed fermented cabbage rolls",
+          "The sauerkraut cabbage leaves are the essential element: the fermentation adds sourness",
+          "Summer sarma uses fresh cabbage leaves; winter sarma uses sauerkraut leaves",
+          "The filling: minced pork and beef with rice, onion, and paprika",
+          "The rice expands as it cooks -- do not overfill",
+          "The rolls are placed in a large pot with smoked pork ribs for flavor",
+          "The smoking and the sourness of the sauerkraut are the dominant flavors",
+          "Cooked for 2-3 hours over low heat -- the longer the better",
+          "Sarma improves the next day: the flavors deepen overnight",
+          "At every Serbian celebration: Christmas (Bozic), New Year, Slava, weddings",
+          "The whole pig is used: the pork in the filling, the ribs in the pot"
+        ],
+        "description": "Serbian national celebration dish -- minced pork-beef-rice stuffed into fermented sauerkraut leaves (the fermentation sourness is essential) and slow-cooked for 2-3 hours with smoked pork ribs. The smoky-sour combination is the dish. Improves overnight. At every Serbian celebration: Christmas, Slava, weddings, New Year. Summer version uses fresh cabbage leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Yaprak_sarma%2C_Kayseri_style.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Yaprak_sarma%2C_Kayseri_style.jpg"
+        }
+      },
+      {
+        "id": "srb-ln-3",
+        "name": "Srpska Corba (Serbian Soup)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Beef bones (for the broth)",
+          "Vegetables: carrot, parsnip, celery, leek, onion",
+          "Vermicelli or egg noodles",
+          "Salt, black pepper, parsley",
+          "Sour cream (for serving)"
+        ],
+        "instructions": [
+          "Srpska corba (Serbian soup) is the everyday soup tradition",
+          "Corba: the Balkan word for soup (from Turkish corbasi)",
+          "Beef corba: a clear beef broth with vegetables and noodles",
+          "The broth is fundamental in Serbian cuisine -- long-simmered with bones",
+          "The vegetables: the classic corba aromatic base",
+          "Vermicelli added near the end -- fine noodles that cook quickly",
+          "Finished with fresh parsley and served with sour cream",
+          "The sour cream stirred into the hot soup thickens and enriches it",
+          "Other Serbian soups: pileca corba (chicken), telecan paprikas (veal with paprika)",
+          "Sunday lunch in Serbia traditionally begins with corba"
+        ],
+        "description": "Serbian clear beef broth soup -- beef bones simmered with carrot, parsnip, celery, and leek into a clear golden broth, with vermicelli added near the end, served with fresh parsley and a spoon of sour cream. Sunday lunch in Serbia traditionally begins with corba. The broth is long-simmered; the clarity and depth mark the quality."
+      },
+      {
+        "id": "srb-ln-4",
+        "name": "Pecenje (Serbian Spit-Roast)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 60,
+        "cookTime": 240,
+        "ingredients": [
+          "Whole pig or lamb (suckling pig is the most festive)",
+          "Salt, garlic",
+          "Paprika (sweet)",
+          "Lard (for basting)"
+        ],
+        "instructions": [
+          "Pecenje is the Serbian spit-roast -- the most important celebration food",
+          "Whole pig (prasice -- suckling pig) or lamb roasted on a wooden spit over open fire",
+          "The suckling pig: the classic for Serbian birthdays, Slava, and celebrations",
+          "The skin: the most prized element -- it must be crackled, golden, shattering",
+          "The technique: the fire must be at the right distance -- not too close (burns the skin), not too far",
+          "The turning: the spit is turned continuously (by hand traditionally, motor-assisted today)",
+          "Basting with lard: the pig is basted with melted lard for the crispy skin",
+          "Cooking time: 3-6 hours depending on size",
+          "The whole pig arrives at the table -- carving is a ceremony",
+          "The crackling skin first, distributed to everyone -- the most anticipated moment"
+        ],
+        "description": "The Serbian celebration spit-roast -- whole suckling pig or lamb roasted on a wooden spit over open fire for 3-6 hours, basted with lard until the skin crackles golden and shattering. The crackling skin distributed first is the most anticipated moment. Required for Slava (patron saint feast), major birthdays, and weddings. The turning and basting rhythm is a skill passed through families."
+      },
+      {
+        "id": "srb-ln-5",
+        "name": "Prebranac (Baked Beans)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Large white beans (soaked overnight)",
+          "Onion (a lot)",
+          "Sunflower oil or lard",
+          "Sweet paprika",
+          "Bay leaf, salt",
+          "Optional: smoked pork"
+        ],
+        "instructions": [
+          "Prebranac is the Serbian baked bean dish -- slow-baked in the oven",
+          "Different from pasulj (bean soup): prebranac has almost no liquid, it is baked dry",
+          "The beans are boiled first, then transferred to a clay or ceramic baking dish",
+          "Fried onions and paprika oil are added",
+          "Baked in the oven for 1-2 hours until the top caramelizes",
+          "The top should develop a golden, slightly crispy layer",
+          "The interior: soft, creamy beans with the caramelized onion through",
+          "Prebranac is Lenten food in Serbia -- served during Orthodox fasting periods",
+          "Also served as a side dish with roasted meat",
+          "The Orthodox fasting calendar: Wednesdays and Fridays are meatless in traditional Serbian Orthodox practice"
+        ],
+        "description": "Serbian baked beans -- boiled white beans with caramelized onions and sweet paprika oil, baked in a clay dish until the top develops a golden, slightly crispy layer while the interior remains soft and creamy. Lenten food during Orthodox fasting periods (Wednesdays and Fridays in traditional practice). Also a side dish with roasted meat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "srb-dn-1",
+        "name": "Pasulj (Bean Soup)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Large white beans (soaked overnight)",
+          "Smoked pork ribs or hocks",
+          "Onion, garlic",
+          "Sweet paprika, hot paprika",
+          "Sunflower oil",
+          "Pinch of soda (for softening)"
+        ],
+        "instructions": [
+          "Pasulj is Serbian bean soup -- possibly the most beloved Serbian everyday food",
+          "The Serbian saying: cesto pasulj, retko meso (often beans, rarely meat) -- the old peasant reality",
+          "Now: pasulj is eaten by choice, not necessity -- it is deeply loved",
+          "The beans: soaked overnight, then cooked in fresh water with smoked pork",
+          "The smoked pork ribs give the soup its distinctive smoky depth",
+          "The paprika paste is made separately -- onion fried in oil with sweet paprika",
+          "The paprika paste is added to the soup -- the redness, sweetness, and oil float on top",
+          "Pasulj is a one-pot meal -- the beans and smoked meat together",
+          "Served with rakija (plum brandy) and fresh bread",
+          "The Bosnian version (grah) and the Serbian version (pasulj) are essentially the same"
+        ],
+        "description": "Serbian bean soup -- large white beans simmered with smoked pork ribs and a paprika paste (onion fried in oil with sweet paprika, added to the soup). The smoked pork gives distinctive depth. The Serbian saying: often beans, rarely meat. Now eaten by choice, not necessity; deeply loved. Served with fresh bread. Nearly identical to Bosnian grah across the border.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg"
+        }
+      },
+      {
+        "id": "srb-dn-2",
+        "name": "Musaka (Serbian Moussaka)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Minced pork (the Serbian version uses pork, not lamb)",
+          "Potatoes (sliced, NOT eggplant -- the Serbian version)",
+          "Onion, garlic",
+          "Sweet paprika, salt, pepper",
+          "Egg custard topping (eggs + sour cream)"
+        ],
+        "instructions": [
+          "Serbian musaka is different from Greek moussaka in two ways",
+          "First: Serbian musaka uses POTATOES, not eggplant -- completely different vegetable",
+          "Second: Serbian musaka uses PORK, not lamb -- different meat",
+          "The layers: sliced potatoes alternating with spiced minced pork",
+          "Baked in a large pan with layers building up",
+          "The top: a simple egg and sour cream custard is poured over",
+          "Baked until the custard sets and turns golden",
+          "Serbian musaka is homestyle cooking -- at every Serbian family table",
+          "The Greek musaka is known internationally; the Serbian version is just as good"
+        ],
+        "description": "Serbian potato musaka -- layers of sliced potatoes alternating with spiced minced pork (NOT eggplant and NOT lamb: two Serbian distinctions from the Greek version), topped with egg and sour cream custard, baked until the custard sets golden. Homestyle family cooking, present at every Serbian table. The Greek version is internationally known; the Serbian version is equally satisfying.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/MussakasMeMelitsanesKePatates01.JPG",
+        "imageCredit": {
+          "author": "Robert Kindermann aka RobertK",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMussakasMeMelitsanesKePatates01.JPG"
+        }
+      },
+      {
+        "id": "srb-dn-3",
+        "name": "Leskovacki Rostilj (Leskovac Mixed Grill)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Cevapi (minced meat sausages)",
+          "Pljeskavica (burger patty)",
+          "Rolovana pljeskavica (rolled burger with kajmak inside)",
+          "Kobasice (pork sausage)",
+          "Onion, ajvar, lepinja",
+          "Kajmak"
+        ],
+        "instructions": [
+          "Leskovacki rostilj is the grilled meat tradition of Leskovac (southern Serbia)",
+          "Leskovac: the Serbian city that claims the title of grilled meat capital",
+          "The Leskovac grill festival: an annual celebration of Serbian grill culture",
+          "The pljeskavica: the Serbian burger -- flat minced meat patty, larger than a regular burger",
+          "The rolovana pljeskavica: a rolled pljeskavica with kajmak stuffed inside -- melts while grilling",
+          "Kobasice: the Serbian pork sausage",
+          "Combined: the Leskovacki plate with cevapi, pljeskavica, and kobasice",
+          "Served with lepinja bread, raw onion, ajvar, and kajmak",
+          "The charcoal is essential -- gas-grilled Leskovac food is not the same",
+          "Leskovac locals say: their cevapi are the real ones, the Bosnian version is imitation"
+        ],
+        "description": "Leskovac (southern Serbia) mixed grill -- cevapi, pljeskavica (flat minced meat burger), rolovana pljeskavica (rolled with kajmak inside), and kobasice (pork sausage) all grilled over charcoal, served with lepinja flatbread, raw onion, ajvar, and kajmak. Leskovac claims the title of Serbian grilled meat capital and hosts an annual grill festival. The charcoal is essential.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg"
+        }
+      },
+      {
+        "id": "srb-dn-4",
+        "name": "Karadjordjeva Snicla (Rolled Veal Schnitzel)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Veal or pork escalope (thin, pounded flat)",
+          "Kajmak (the filling inside the roll)",
+          "Flour, egg, breadcrumbs (for breading)",
+          "Sunflower oil or lard (for frying)",
+          "Tartar sauce, lemon"
+        ],
+        "instructions": [
+          "Karadjordjeva snicla (Karadjordje schnitzel) is named after the Serbian revolutionary",
+          "Karadjordje (Black George): the leader of the First Serbian Uprising against the Ottomans (1804)",
+          "The schnitzel is rolled (not flat) -- the kajmak is stuffed inside",
+          "The veal (or pork) is pounded thin, kajmak placed in the center, rolled tightly",
+          "Breaded: flour, then egg, then breadcrumbs",
+          "Fried in hot oil until golden on all sides",
+          "When cut, the kajmak melts out from the center",
+          "The melting kajmak is the reveal moment",
+          "Served with tartar sauce and lemon",
+          "The dish was created in the 1950s at the Dva Jelena restaurant in Belgrade"
+        ],
+        "description": "Serbian stuffed schnitzel named after the revolutionary Karadjordje -- pounded veal or pork stuffed with kajmak (Serbian clotted cream), rolled, breaded, and fried until golden. When cut, the kajmak melts from the center. Created in the 1950s at the Dva Jelena restaurant in Belgrade. Served with tartar sauce and lemon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kara%C4%91or%C4%91eva_%C5%A1nicla.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kara%C4%91or%C4%91eva_%C5%A1nicla.jpg"
+        }
+      },
+      {
+        "id": "srb-dn-5",
+        "name": "Podvarak (Roast Meat with Sauerkraut)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 90,
+        "ingredients": [
+          "Pork or chicken (roasting pieces)",
+          "Sauerkraut (rinsed -- less sour than for sarma)",
+          "Onion, garlic",
+          "Lard or sunflower oil",
+          "Sweet paprika"
+        ],
+        "instructions": [
+          "Podvarak is the Serbian method of roasting meat on a bed of sauerkraut",
+          "The sauerkraut serves as both the cooking medium and the side dish",
+          "The sauerkraut is placed in the roasting pan first",
+          "The meat goes on top of the sauerkraut",
+          "As the meat roasts, the fat renders down into the sauerkraut",
+          "The sauerkraut absorbs the rendered fat and meat juices",
+          "The result: the sauerkraut becomes soft, slightly fatty, and savory -- not sour",
+          "The sourness of the sauerkraut is tamed by the roasting",
+          "Podvarak is Christmas and winter food -- the sauerkraut and pork combination",
+          "A simple but deeply satisfying Serbian home dinner"
+        ],
+        "description": "Serbian roasted meat on sauerkraut -- pork or chicken placed on a bed of sauerkraut in the roasting pan; the fat renders into the sauerkraut as the meat roasts, making it soft, savory, and slightly fatty. The sourness is tamed by the roasting. Christmas and winter food. The sauerkraut serves as both cooking medium and side dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Doma%C4%87i_podvarak_02.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Doma%C4%87i_podvarak_02.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "srb-sn-1",
+        "name": "Ajvar (Roasted Red Pepper Spread)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Red peppers (horn peppers -- long red peppers, roasted over fire)",
+          "Eggplant (optional -- adds smokiness)",
+          "Garlic, salt",
+          "Sunflower oil",
+          "Vinegar (just a splash)"
+        ],
+        "instructions": [
+          "Ajvar is the Serbian roasted red pepper spread -- one of the great condiments",
+          "The name comes from the Turkish word for caviar -- the comparison was to the caviar of the poor",
+          "Made in autumn when red peppers are at their peak ripeness",
+          "The peppers roasted over an open flame or in the oven until blackened",
+          "Peeled of their charred skin -- the black skin lifts off easily after cooling",
+          "Ground or chopped -- the texture is a choice: chunky or smooth",
+          "Cooked down slowly in oil until the moisture evaporates and it thickens",
+          "The ajvar-making season: families make large quantities for the winter",
+          "Glass jars filled with ajvar: the Serbian pantry staple",
+          "Served with cevapi, bread, cheese, eggs -- everything in Serbian cuisine"
+        ],
+        "description": "Serbian roasted red pepper spread -- long red peppers charred over open flame, peeled, chopped or ground, and cooked down in oil until thick. The autumn pepper harvest season is ajvar-making time: families process large quantities into glass jars for winter. Served with cevapi, bread, eggs, cheese -- the universal Serbian condiment. The word comes from Turkish for caviar: the caviar of the poor.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ajvar1_bright.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ajvar1_bright.jpg"
+        }
+      },
+      {
+        "id": "srb-sn-2",
+        "name": "Proja (Cornbread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Cornmeal (coarse yellow)",
+          "Flour (a little)",
+          "Eggs",
+          "Oil",
+          "Sour cream or yoghurt",
+          "Salt, baking powder",
+          "Optional additions: white cheese, ham, sunflower seeds"
+        ],
+        "instructions": [
+          "Proja is Serbian cornbread -- a legacy of the Ottoman corn trade",
+          "Corn arrived in the Balkans from the Americas via Ottoman trade routes",
+          "Proja: a quick, dense, savory cornbread that requires no yeast",
+          "The sour cream or yoghurt gives moisture and slight tang",
+          "Cheese or ham can be mixed in -- making it more substantial",
+          "Baked in a round or square pan -- cut into pieces when warm",
+          "Proja is the bread of the Serbian countryside -- cheaper and faster than wheat bread",
+          "Served warm with kajmak -- the cornbread + kajmak is a snack combination",
+          "Also eaten with beans (pasulj) -- corn and beans, the old Balkan peasant combination"
+        ],
+        "description": "Serbian cornbread -- coarse cornmeal with eggs, oil, and sour cream, baked into a dense, slightly tangy savory bread. Corn arrived in the Balkans via Ottoman trade routes from the Americas. The bread of the Serbian countryside: cheaper and faster than wheat bread. Served warm with kajmak, or alongside pasulj (bean soup).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Proja.jpg",
+        "imageCredit": {
+          "author": "Mira & Neša",
+          "source": "Wikimedia Commons",
+          "license": "Copyrighted free use",
+          "url": "https://commons.wikimedia.org/wiki/File%3AProja.jpg"
+        }
+      },
+      {
+        "id": "srb-sn-3",
+        "name": "Rakija (Plum Brandy)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Rakija (Serbian fruit brandy -- most commonly slivovitz: plum brandy)"
+        ],
+        "instructions": [
+          "Rakija is the Serbian national drink -- fruit brandy, most commonly plum (slivovitz)",
+          "Slivovica (slivovitz): from sliva = plum in Serbian",
+          "Serbia is the world largest producer of plums -- much of the plum crop becomes rakija",
+          "Home distillation of rakija is a Serbian tradition -- almost every village family makes it",
+          "The rakija still (alembic): a family heirloom in Serbian villages",
+          "The first pressing (prepechenica) has higher alcohol -- the strong version",
+          "The second pressing: more refined, more balanced",
+          "Rakija is drunk at every Serbian occasion: breakfast, welcome drink, toast, after meals",
+          "The Serbian greeting: dobrodo slo (welcome) and a glass of rakija",
+          "Loza (grape), kajsija (apricot), kruska (pear): other rakija varieties"
+        ],
+        "description": "Serbia national spirit -- fruit brandy, most commonly slivovitz (plum brandy: Serbia is the world largest plum producer). Home distillation is a Serbian tradition; almost every village family has a rakija still. Drunk at every Serbian occasion from breakfast to bedtime. The Serbian welcome drink. First pressing (prepechenica) is stronger; second pressing more refined. Loza (grape), kajsija (apricot), and kruska (pear) are other varieties.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg",
+        "imageCredit": {
+          "author": "The original uploader was Blue at Bulgarian Wikipedia.",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg"
+        }
+      },
+      {
+        "id": "srb-sn-4",
+        "name": "Pita (Serbian Phyllo Roll)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Yufka dough (phyllo sheets)",
+          "Filling: white cheese, eggs, and cream",
+          "OR spinach and cheese",
+          "Sunflower oil",
+          "Sour cream (to brush on top)"
+        ],
+        "instructions": [
+          "Serbian pita is the rolled phyllo pastry -- different from burek (coiled) in shape",
+          "Pita = rolled in a log shape; burek = coiled in a spiral",
+          "The cheese pita: crumbled white cheese, eggs, cream",
+          "The zeljanica (spinach pita): spinach and cheese",
+          "Rolled into a log and baked until golden",
+          "Cut into slices for serving",
+          "The pekara (bakery) in Serbia sells all varieties side by side",
+          "Each filling has its name: sirnica (cheese), zeljanica (spinach), krompirusa (potato)"
+        ],
+        "description": "Serbian rolled phyllo pastry -- yufka (phyllo) sheets filled with white cheese and eggs (or spinach and cheese), rolled into a log and baked until golden, cut into slices. Different from burek which is coiled in a spiral. Each filling has its name: sirnica (cheese), zeljanica (spinach), krompirusa (potato). The pekara sells all varieties side by side.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Pita_Bread.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Pita_Bread.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "srb-ds-1",
+        "name": "Krofna (Serbian Doughnut)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Dough: flour, milk, butter, sugar, egg yolks, yeast",
+          "Oil for deep frying",
+          "Jam filling (rose hip, apricot, or plum)",
+          "Icing sugar (for dusting)"
+        ],
+        "instructions": [
+          "Krofna are Serbian doughnuts -- the Balkan version of the Central European Krapfen",
+          "The name from German Krapfen -- the Austro-Hungarian influence on Serbian cuisine",
+          "Vojvodina (northern Serbia): the most Austro-Hungarian influenced Serbian region",
+          "The dough is enriched -- egg yolks make it rich and golden",
+          "Fried until deep golden -- the interior should be pillow-soft",
+          "Filled with jam after frying -- a piping bag injects the jam into the center",
+          "Rose hip jam (sipurak): the traditional Serbian filling",
+          "Apricot or plum jam: also common Serbian fillings",
+          "Dusted with icing sugar -- the white snow on the golden krofna",
+          "Krofna season: winter and carnival (poklade/fasnik)"
+        ],
+        "description": "Serbian doughnuts -- enriched yeast dough (egg yolks make them golden and rich), deep-fried until pillow-soft, filled with rose hip jam (sipurak) or apricot jam via piping bag, dusted with icing sugar. From the Austro-Hungarian Krapfen tradition: Vojvodina (northern Serbia) is the most Austro-Hungarian influenced region. Winter and carnival season.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pokladnice_Kri%C5%BEevci_2008.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pokladnice_Kri%C5%BEevci_2008.JPG"
+        }
+      },
+      {
+        "id": "srb-ds-2",
+        "name": "Tufahije (Poached Apple with Walnut Cream)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Whole apples (peeled, cored from the bottom -- kept whole)",
+          "Sugar syrup (water + sugar + lemon)",
+          "Walnut filling: ground walnuts, sugar, vanilla, rum",
+          "Whipped cream (to serve)"
+        ],
+        "instructions": [
+          "Tufahije are the Bosnian-Serbian poached apple dessert -- Ottoman-heritage",
+          "The name from Arabic tuffaha (apple)",
+          "Ottoman-era dessert: the walnut-stuffed poached apple was a classic Ottoman sweet",
+          "The apples are cored from the bottom -- the top stays intact",
+          "Poached in sweet syrup until just tender but still holding their shape",
+          "The walnuts: ground and mixed with sugar, vanilla, and a little rum",
+          "The walnut paste fills the apple cavity",
+          "Served with whipped cream poured over",
+          "The apple should be tender but not falling apart -- the timing is everything",
+          "Tufahije is shared across the former Yugoslavia -- each country claims it"
+        ],
+        "description": "Serbian-Bosnian Ottoman poached apple dessert -- whole apples cored from the bottom, poached in sugar syrup until just tender (still holding shape), filled with ground walnut-sugar-vanilla paste, served with whipped cream. From Arabic tuffaha (apple); an Ottoman court dessert that survived across the Balkans. Shared across former Yugoslavia: each country claims it as their own.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tufahiija_in_Mori%C4%87a_Han_2.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Tufahiija_in_Mori%C4%87a_Han_2.JPG"
+        }
+      },
+      {
+        "id": "srb-ds-3",
+        "name": "Vanilice (Crescent Cookies)",
+        "difficulty": "Medium",
+        "servings": 40,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, butter, lard",
+          "Icing sugar (generous)",
+          "Walnuts or hazelnuts (finely ground)",
+          "Vanilla sugar",
+          "Raspberry or apricot jam (for the filling)"
+        ],
+        "instructions": [
+          "Vanilice are Serbian crescent cookies -- the Christmas cookie",
+          "The name: vanil = vanilla -- the vanilla flavor is the identity",
+          "Made with a mix of butter and lard -- the lard makes them more crumbly",
+          "Ground walnuts mixed into the dough -- the walnut-vanilla combination",
+          "Shaped into crescents (the typical shape) or rounds",
+          "Baked gently -- they should not brown, just dry out slightly",
+          "Sandwiched with jam between two cookies (or left single)",
+          "Rolled in vanilla icing sugar immediately after baking while still warm",
+          "Every Serbian grandmother makes vanilice for Christmas",
+          "The Christmas cookie table: vanilice alongside cevapcici cookies and others"
+        ],
+        "description": "Serbian Christmas crescent cookies -- butter and lard dough (lard makes them crumbly) mixed with finely ground walnuts and vanilla sugar, shaped into crescents, baked until just dried (not browned), optionally sandwiched with jam, and rolled in vanilla icing sugar while still warm. Every Serbian grandmother makes vanilice for Christmas."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "srb-dr-1",
+        "name": "Turska Kafa (Serbian Turkish Coffee)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 2,
+        "cookTime": 5,
+        "ingredients": [
+          "Finely ground coffee (very fine -- Turkish grind)",
+          "Water",
+          "Sugar (optional)",
+          "Small cup (fildzanka)"
+        ],
+        "instructions": [
+          "Turska kafa (Turkish coffee) is the Serbian coffee tradition",
+          "Called Turkish coffee everywhere in the Balkans -- a source of tension since the Kosovo war",
+          "Made in a dzezva (copper or stainless long-handled pot)",
+          "Cold water and coffee measured into the dzezva -- then placed on heat",
+          "The coffee is brought to a near-boil -- the foam rises",
+          "The key: remove before it boils over, let the foam subside, heat again",
+          "Served in a small fildzanka (demitasse-style cup)",
+          "The foam on top is the quality indicator -- a good kafa has good foam",
+          "Sugar: put in during cooking (slah = very sweet, srednje = medium, bez = no sugar)",
+          "The coffee grounds settle -- you drink until the grounds, not through them",
+          "Drunk slowly, with conversation -- the kafana (coffee shop) culture"
+        ],
+        "description": "Serbian Turkish coffee -- finely ground coffee brewed in a dzezva (copper long-handled pot), brought to a near-boil twice to build foam, served in small fildzanke cups. The foam quality indicates the brew quality. Sugar is put in during cooking (slah: very sweet, srednje: medium, bez: none). Drunk slowly in kafana (coffee shops). The coffee grounds settle; drink until you reach them.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg"
+        }
+      },
+      {
+        "id": "srb-dr-2",
+        "name": "Sljivovica (Plum Brandy)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Sljivovica (rakija from plums -- Serbia national spirit)"
+        ],
+        "instructions": [
+          "Sljivovica is the specific plum rakija -- the Serbian national identity spirit",
+          "Serbia produces approximately 2 million tons of plums annually -- many become sljivovica",
+          "The plums: Pozegaca (Stanley-type) or Crvena ranka -- local Serbian plum varieties",
+          "Double-distilled sljivovica (prepechenica): the stronger, more refined version",
+          "Aged sljivovica: gold-colored from time in oak barrels -- more complex",
+          "The Serbian toast: ziveli! (to life)",
+          "Served in small shot glasses or little tulip glasses",
+          "Room temperature (NOT cold) -- the aroma opens at room temperature",
+          "The Sremska Mitrovica sljivovica festival: the celebration of plum brandy culture",
+          "Sljivovica is also used medicinally in Serbia: for a cold, for a stomachache, for a wound"
+        ],
+        "description": "Serbia national plum spirit -- the double-distilled version (prepechenica) is stronger and more refined; aged in oak is gold-colored and complex. Served at room temperature (not cold: the aroma opens). Serbian toast: ziveli! (to life). Serbia produces approximately 2 million tons of plums annually, many becoming sljivovica. Also used medicinally: for a cold, a stomachache, or a wound.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Various_Bottles_of_Slivovitz.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Various_Bottles_of_Slivovitz.jpg"
+        }
+      },
+      {
+        "id": "srb-dr-3",
+        "name": "Sok od Zove (Elderflower Juice)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Fresh elderflowers (Sambucus nigra -- white flowers, late May to June)",
+          "Water",
+          "Sugar",
+          "Lemon (sliced)",
+          "Citric acid (a pinch -- for preservation)"
+        ],
+        "instructions": [
+          "Sok od zove (elderflower juice) is the Serbian summer drink",
+          "Elderflower season: late May to early June -- when the white flowers appear",
+          "The flowers are collected and steeped with lemon and sugar in cold water",
+          "Left to infuse for 24-48 hours -- the color turns pale yellow-green",
+          "Strained, sweetened further, and bottled",
+          "The flavor: floral, slightly musky, summery -- unlike anything else",
+          "Every Serbian family has an elderflower juice tradition",
+          "The homemade juice keeps for weeks in the refrigerator",
+          "Elderflower syrup for diluting with water throughout the summer"
+        ],
+        "description": "Serbian elderflower juice -- fresh white elderflowers steeped with lemon and sugar in cold water for 24-48 hours until pale yellow-green, strained and bottled. The flavor is floral, slightly musky, and distinctly summery. Every Serbian family makes it in late May to June. Homemade elderflower syrup diluted with water throughout the summer."
+      }
+    ]
+  }
+}

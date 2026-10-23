@@ -1,0 +1,708 @@
+{
+  "nauruRecipes": {
+    "country": "Nauru",
+    "region": "Oceania",
+    "breakfast": [
+      {
+        "id": "nru-bf-1",
+        "name": "Fried Fish and Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Fish fillets",
+          "Rice",
+          "Soy sauce",
+          "Lime",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Fry fish with lime and salt",
+          "Serve together with soy sauce"
+        ],
+        "description": "Simple fried fish with rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg"
+        }
+      },
+      {
+        "id": "nru-bf-2",
+        "name": "Coconut Bread",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups flour",
+          "1 cup coconut cream",
+          "Sugar",
+          "Baking powder",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix flour with coconut cream, sugar",
+          "Add baking powder",
+          "Bake at 180°C 30 min"
+        ],
+        "description": "Sweet coconut bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Coco_bread_wrapped_beef_patty.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Coco_bread_wrapped_beef_patty.jpg"
+        }
+      },
+      {
+        "id": "nru-bf-3",
+        "name": "Spam and Eggs (Nauruan Breakfast)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 3,
+        "cookTime": 10,
+        "ingredients": [
+          "Spam (canned luncheon meat — a Pacific staple since WWII)",
+          "Eggs",
+          "Rice (cooked)",
+          "Oil"
+        ],
+        "instructions": [
+          "Spam arrived in the Pacific during WWII as American military rations",
+          "It became culturally embedded across Pacific island nations including Nauru",
+          "Fry Spam slices in oil — they brown quickly from the sugar in the cure",
+          "Fry eggs alongside",
+          "Serve with rice — not toast, not potatoes: rice is the starch throughout the Pacific",
+          "The Spam-egg-rice breakfast is Pacific island culture",
+          "Nauru is one of the world's highest Spam-consuming nations per capita",
+          "Spam is not considered a poor person's food — it is simply food",
+          "The salty, processed pork flavor has become nostalgic and comforting",
+          "Nauru's food culture is deeply influenced by WWII and Australian administration",
+          "Other Pacific options: taro, pandanus — but Spam is the modern reality"
+        ],
+        "description": "Nauru's modern breakfast reality — Spam (canned luncheon meat, embedded in Pacific culture since WWII American military rations) fried until browned, with eggs and rice. Nauru is among the world's highest per-capita Spam consumers. Spam is not a poverty food in the Pacific — it is culturally integrated, nostalgic, and genuinely enjoyed. The WWII military ration that became a tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Spam_wall_-_Flickr_-_freezelight.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Spam_wall_-_Flickr_-_freezelight.jpg"
+        }
+      },
+      {
+        "id": "nru-bf-4",
+        "name": "Pandanus Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Pandanus (screw pine) fruit (the pith/paste from the pandanus fruit",
+          "Coconut milk",
+          "Water",
+          "Sugar"
+        ],
+        "instructions": [
+          "Pandanus (Pandanus tectorius) is one of Nauru's most important traditional plants",
+          "The fruit has a fibrous, edible pith — orange-yellow in color",
+          "The flavor: tropical, sweet, slightly floral, earthy",
+          "Boil pandanus pith/paste with coconut milk and water",
+          "Stir into a thick porridge consistency",
+          "Sweeten with sugar",
+          "Pandanus provides carbohydrates, vitamins, and flavor",
+          "Every part of the pandanus is used: fruit for food, leaves for weaving",
+          "Traditional Nauruan diet was built on pandanus, fish, and coconut before phosphate era",
+          "The phosphate era (1906-present) brought imported food — traditional foods declined",
+          "Pandanus porridge represents the pre-import Nauruan diet — now culturally important to preserve"
+        ],
+        "description": "Nauru's traditional pandanus fruit porridge — the fibrous, orange-yellow pith of the screw pine (Pandanus tectorius) boiled with coconut milk into a sweet, tropical porridge. Traditional Nauruan diet before the phosphate era was built on pandanus, fish, and coconut. The phosphate mining wealth (and subsequent decline) shifted Nauru to imported food — pandanus porridge is a cultural memory food now being revived.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Noix_de_coco_3.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Noix_de_coco_3.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "nru-ln-1",
+        "name": "Coconut Fish",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Fish fillets",
+          "Coconut cream",
+          "Onion",
+          "Lime",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion",
+          "Add coconut cream",
+          "Add fish, simmer 15 min",
+          "Squeeze lime"
+        ],
+        "description": "Fish in coconut cream — Pacific island classic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg"
+        }
+      },
+      {
+        "id": "nru-ln-2",
+        "name": "Fried Chicken Nauruan",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Chicken pieces",
+          "Soy sauce",
+          "Garlic",
+          "Ginger",
+          "Flour",
+          "Oil"
+        ],
+        "instructions": [
+          "Marinate chicken in soy, garlic, ginger",
+          "Coat in flour",
+          "Fry until golden"
+        ],
+        "description": "Soy-ginger fried chicken.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg"
+        }
+      },
+      {
+        "id": "nru-ln-3",
+        "name": "Coconut Fish Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Tuna or mackerel (fresh or canned)",
+          "Coconut milk",
+          "Onion, garlic",
+          "Ginger (small amount)",
+          "Lemon or lime juice",
+          "Salt, chili (optional)",
+          "Rice for serving"
+        ],
+        "instructions": [
+          "Fish with coconut milk is the universal Pacific island dish",
+          "Nauru is a small island — fishing is central to traditional food culture",
+          "The Pacific tuna (yellowfin, skipjack) is abundant in Nauruan waters",
+          "Fry onion and garlic in oil",
+          "Add fish (if fresh), cook until opaque",
+          "Add coconut milk — the sauce should be rich and creamy",
+          "Add ginger, lime juice",
+          "Season with salt, chili if desired",
+          "Serve with rice",
+          "The coconut milk from mature Nauruan coconuts is rich and flavorful",
+          "This simple stew reflects Pacific island cooking: local fish + coconut = the foundation",
+          "Nauru's waters are part of the Western and Central Pacific Ocean — tuna-rich"
+        ],
+        "description": "Nauru's foundational fish preparation — tuna or mackerel simmered in coconut milk with ginger and lime. Pacific island cooking has two pillars: fish and coconut. Nauruan waters lie in the Western and Central Pacific, among the world's most productive tuna fisheries. The coconut milk from mature Nauruan coconuts is rich and creamy. Rice completes the plate.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Lamb-stew.jpg",
+        "imageCredit": {
+          "author": "FiveRings (talk)",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALamb-stew.jpg"
+        }
+      },
+      {
+        "id": "nru-ln-4",
+        "name": "Breadfruit and Fish",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Breadfruit (uto — starchy, round, green-yellow)",
+          "Fish (fresh tuna, mackerel, or reef fish)",
+          "Coconut milk",
+          "Salt, lime"
+        ],
+        "instructions": [
+          "Breadfruit (Artocarpus altilis) came from Southeast Asia to the Pacific via Polynesian navigation",
+          "It is one of the Pacific's most important starch crops — a single tree can feed a family for months",
+          "Breadfruit has multiple stages: green (starchy, like potato), ripe (sweet), very ripe (almost fermented)",
+          "Use at the starchy stage for this preparation",
+          "Peel and cube the breadfruit, boil until tender",
+          "Cook fish separately — grill or steam",
+          "Serve together with coconut milk poured over",
+          "The breadfruit absorbs the coconut milk — becomes soft and creamy",
+          "Breadfruit was the food that motivated Captain Bligh's voyage (Bounty, 1789) — he was transporting breadfruit seedlings",
+          "Nauru's breadfruit is a subsistence crop — grown in local gardens",
+          "The combination: breadfruit + fish + coconut = Pacific island subsistence meal"
+        ],
+        "description": "Nauru's Pacific subsistence combination — boiled starchy breadfruit with fish and coconut milk. Breadfruit (brought to the Pacific by Polynesian navigators from Southeast Asia) was the food that motivated Captain Bligh's voyage on the Bounty (1789) — he was transporting breadfruit seedlings from Tahiti. A single tree feeds a family for months. The breadfruit-fish-coconut trio is the foundation of Pacific island food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "nru-dn-1",
+        "name": "Pandanus and Fish",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Fish fillets",
+          "Pandanus paste",
+          "Coconut cream",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook fish in coconut cream",
+          "Add pandanus paste",
+          "Simmer until thick"
+        ],
+        "description": "Fish cooked with pandanus and coconut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pandanus_utilis_fruit.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pandanus_utilis_fruit.JPG"
+        }
+      },
+      {
+        "id": "nru-dn-2",
+        "name": "Pork with Taro",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Pork (cubed)",
+          "Taro (cubed)",
+          "Coconut milk",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown pork",
+          "Add taro and coconut milk",
+          "Simmer 30 min"
+        ],
+        "description": "Pork and taro in coconut milk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Songe-R%C3%A9union.JPG",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Thierry Caro assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASonge-R%C3%A9union.JPG"
+        }
+      },
+      {
+        "id": "nru-dn-3",
+        "name": "Baked Fish in Banana Leaf",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Whole reef fish (or tuna steak)",
+          "Banana leaves (for wrapping)",
+          "Coconut milk",
+          "Ginger, garlic",
+          "Lemon juice",
+          "Salt, turmeric (optional)"
+        ],
+        "instructions": [
+          "Banana leaf cooking is traditional across the Pacific — the leaf steams the fish",
+          "The leaf imparts a mild, vegetal flavor to the food inside",
+          "Lay banana leaves (wilt over flame first — makes them pliable)",
+          "Marinate fish with coconut milk, ginger, garlic, lemon juice, salt",
+          "Wrap the fish tightly in banana leaves — fold and secure with toothpicks or string",
+          "Bake at 180°C for 25-30 minutes, or cook over fire",
+          "The fish steams inside the leaf — stays moist",
+          "Unwrap at the table — the release of steam is part of the experience",
+          "The banana leaf cooking method predates all modern cooking vessels",
+          "It requires no pan, no pot — only the leaf",
+          "Traditional cooking at community feasts and celebrations"
+        ],
+        "description": "Nauru's traditional feast preparation — reef fish marinated in coconut milk, ginger, and lemon, wrapped tightly in banana leaves and baked or fire-cooked. The banana leaf steams the fish from within, keeping it moist and adding a subtle vegetal note. Unwrapping at the table releases a cloud of steam. Banana leaf cooking predates all cooking vessels — it requires nothing except the leaf and fire.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Banana-leaf-1.JPG",
+        "imageCredit": {
+          "author": "Ted Garvin",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABanana-leaf-1.JPG"
+        }
+      },
+      {
+        "id": "nru-dn-4",
+        "name": "Taro and Corned Beef",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 30,
+        "ingredients": [
+          "Taro (peeled, cubed)",
+          "Corned beef (canned — another Pacific WWII staple)",
+          "Onion, garlic",
+          "Coconut milk",
+          "Salt"
+        ],
+        "instructions": [
+          "Corned beef (canned) arrived in the Pacific alongside Spam as WWII rations",
+          "It became permanently embedded in Pacific island cooking",
+          "Taro is Nauru's pre-colonial traditional starch — grown in pits",
+          "Boil or steam taro until soft — taro takes longer than potato",
+          "Fry onion and garlic",
+          "Add corned beef — break it up, fry briefly",
+          "Add taro pieces",
+          "Add coconut milk — bring to a simmer",
+          "The corned beef and coconut milk create a rich, salty sauce around the taro",
+          "This dish is entirely Pacific: traditional taro + introduced corned beef + coconut milk",
+          "The synthesis of traditional and introduced foods is Pacific island food history in one dish"
+        ],
+        "description": "Nauru's synthesis dish — taro (the traditional Pacific starch, grown in pits) with canned corned beef (WWII American rations that became permanently embedded in Pacific island cooking) in coconut milk. This single dish tells Pacific food history: the pre-colonial root vegetable (taro) combined with the colonial-era introduction (corned beef) that became culturally integrated. Pacific island food identity in a pot.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "nru-sn-1",
+        "name": "Fried Breadfruit",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Breadfruit",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Slice breadfruit",
+          "Fry until golden",
+          "Salt"
+        ],
+        "description": "Crispy fried breadfruit slices.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg"
+        }
+      },
+      {
+        "id": "nru-sn-2",
+        "name": "Coconut Candy",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Grated fresh coconut",
+          "Sugar",
+          "Water",
+          "Optional: pandan leaf (for flavor and color)"
+        ],
+        "instructions": [
+          "Coconut candy is made throughout the Pacific — the most abundant ingredient transformed into a sweet",
+          "Grate fresh mature coconut",
+          "Cook sugar and water to a soft ball stage",
+          "Add grated coconut — stir vigorously",
+          "The mixture stiffens as it cooks — the sugar crystallizes around the coconut",
+          "Drop spoonfuls onto parchment — they set as they cool",
+          "The result: crunchy-chewy coconut candy with concentrated coconut flavor",
+          "Add pandan for green color and floral flavor",
+          "Nauru's traditional sweets before sugar was imported were based on pandanus and coconut",
+          "Now made with sugar but the coconut is still the star",
+          "Sold at Nauruan community events and church functions"
+        ],
+        "description": "Nauru's traditional Pacific sweet — fresh grated coconut coated in crystallized sugar, dropped into mounds that set chewy and crunchy. Coconut is Nauru's most abundant ingredient; this is its transformation into a confection. Pandan leaf adds green color and a floral note. Sold at community and church events across the Pacific.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/Keodua.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKeodua.jpg"
+        }
+      },
+      {
+        "id": "nru-sn-3",
+        "name": "Fresh Coconut (Niu)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Young green coconut (niu — the drinking coconut)",
+          "Machete or cleaver"
+        ],
+        "instructions": [
+          "Young green coconuts (niu) are Nauru's most natural refreshment",
+          "The coconut water inside a young coconut: isotonic, naturally sweet, electrolyte-rich",
+          "During WWII, coconut water was reportedly used as IV fluid for wounded soldiers when saline ran short",
+          "Cut the top off with a cleaver — one skilled strike",
+          "Drink through the opening",
+          "After drinking, split the coconut and eat the soft, jelly-like flesh",
+          "The young coconut flesh: delicate, slightly sweet, gelatinous — very different from mature coconut",
+          "Nauru's coconut palms are everywhere — a free, abundant food source",
+          "The coconut palm is called the 'tree of life' across the Pacific",
+          "Every part is used: water, flesh, shell, leaf, coir",
+          "On Nauru, as on all Pacific islands, the coconut is the fundamental survival plant"
+        ],
+        "description": "The Pacific's most fundamental food — young green coconut cracked open for its sweet, isotonic water and soft jelly flesh. During WWII, coconut water was reportedly used as IV fluid when saline was unavailable. On Nauru as across the Pacific, the coconut palm is called the 'tree of life' — every part is used. The young coconut water is perfectly balanced electrolytes, naturally.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg"
+        }
+      },
+      {
+        "id": "nru-sn-4",
+        "name": "Fried Banana (Nauru Style)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 8,
+        "ingredients": [
+          "Ripe bananas (yellow with brown spots — maximum sweetness)",
+          "Oil for frying",
+          "Sugar (optional, for rolling)"
+        ],
+        "instructions": [
+          "Fried banana is one of the Pacific's simplest pleasures",
+          "Halve bananas lengthwise",
+          "Fry in oil until golden — the sugars caramelize quickly",
+          "Roll in sugar while hot (optional — the banana is sweet enough)",
+          "The exterior: caramelized, slightly crispy",
+          "The interior: soft, sweet, warm — almost molten",
+          "Eaten as a snack, a dessert, or with savory foods",
+          "Banana varieties in Nauru include local Pacific varieties — more flavorful than Cavendish",
+          "The plantain variety (cooking banana) can also be used — less sweet, more starchy",
+          "Simple cooking that requires almost no preparation"
+        ],
+        "description": "The Pacific's simple banana snack — ripe bananas fried until the surface caramelizes and the interior becomes soft and almost molten. Optional sugar coating added while hot. Pacific banana varieties (not Cavendish) are more flavorful. Eaten as a snack, dessert, or alongside savory dishes. The simplest transformation of an abundant tropical ingredient.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "nru-ds-1",
+        "name": "Coconut Pudding",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Coconut cream",
+          "Sugar",
+          "Cornstarch",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Heat coconut cream with sugar",
+          "Thicken with cornstarch",
+          "Add vanilla",
+          "Chill until set"
+        ],
+        "description": "Simple coconut cream pudding.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Rew13c05-745a_Bread_Pudding.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Rew13c05-745a_Bread_Pudding.JPG"
+        }
+      },
+      {
+        "id": "nru-ds-2",
+        "name": "Coconut Rice Pudding",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 25,
+        "ingredients": [
+          "Short-grain rice",
+          "Coconut milk (full-fat)",
+          "Water",
+          "Sugar",
+          "Pandan leaf (for fragrance)",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Coconut rice pudding is a pan-Pacific dessert — every island has a version",
+          "Rinse rice",
+          "Simmer with coconut milk, water, and pandan leaf",
+          "Stir regularly — the coconut milk makes it slightly creamy",
+          "Add sugar as it thickens",
+          "Cook until the rice is soft and the pudding is creamy",
+          "Remove pandan leaf",
+          "The pandan fragrance is the signature — removed but its aroma remains in the rice",
+          "Serve warm or cold",
+          "The coconut milk adds richness and the pandan adds floral fragrance — distinctly Pacific",
+          "Simple, satisfying, and uses the island's most abundant resources",
+          "Variations: add banana, pandanus paste, or tropical fruit"
+        ],
+        "description": "The Pacific's universal dessert — short-grain rice simmered in coconut milk with pandan leaf until creamy. The pandan leaf is removed but its floral-vanilla-like fragrance remains in the pudding. Every Pacific island has a version of this coconut-rice combination. Nauru's version uses locally grown pandan and coconut. Serve warm or cold, plain or with sliced banana.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nasi_Liwet_Solo.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nasi_Liwet_Solo.jpg"
+        }
+      },
+      {
+        "id": "nru-ds-3",
+        "name": "Pandanus Jam",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Pandanus fruit (ripe — orange, fibrous pith extracted)",
+          "Sugar",
+          "Water",
+          "Lemon juice"
+        ],
+        "instructions": [
+          "Pandanus (Pandanus tectorius) fruit is a traditional Nauruan food source",
+          "The ripe fruit is orange-red, intensely aromatic",
+          "Extract the pith by pressing and straining — separating from the tough fibers",
+          "The pith is deeply aromatic — tropical, slightly fermented, complex",
+          "Simmer pith with sugar, water, and lemon juice",
+          "The jam thickens as the natural pectin activates",
+          "Bottle while hot",
+          "The flavor: unlike any other jam — tropical, earthy, sweet-sour-aromatic",
+          "Pandanus jam preserves the traditional flavor for use throughout the year",
+          "Spread on bread, crackers, or mixed into coconut milk drinks",
+          "Represents the effort to preserve pre-colonial Nauruan food culture"
+        ],
+        "description": "Nauru's traditional jam from the screw pine — pandanus fruit's aromatic orange pith extracted, cooked with sugar into a jam with no equivalent flavor in Western cooking. The pandanus taste is complex: tropical, earthy, slightly fermented, with a unique floral note. Making pandanus jam preserves pre-colonial Nauruan food culture, which was largely displaced by imported food during the phosphate mining era.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pandanus_utilis_fruit.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Pandanus_utilis_fruit.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "nru-dr-1",
+        "name": "Toddy (Palm Sap)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Coconut palm sap"
+        ],
+        "instructions": [
+          "Collect fresh sap from palm",
+          "Serve sweet and fresh"
+        ],
+        "description": "Fresh coconut palm toddy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg"
+        }
+      },
+      {
+        "id": "nru-dr-2",
+        "name": "Fresh Lime Juice",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Limes",
+          "Sugar",
+          "Water",
+          "Ice"
+        ],
+        "instructions": [
+          "Squeeze limes",
+          "Mix with water and sugar",
+          "Serve over ice"
+        ],
+        "description": "Simple limeade."
+      },
+      {
+        "id": "nru-dr-3",
+        "name": "Coconut Water (Bottled Niu)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh young coconut (green) OR bottled coconut water"
+        ],
+        "instructions": [
+          "Coconut water is Nauru's most natural hydration",
+          "Young green coconuts are abundant on Nauru",
+          "The water is drained and drunk — naturally isotonic, slightly sweet",
+          "Nauru's tropical climate makes hydration essential — the heat is constant",
+          "The coconut palm provides shade AND hydration",
+          "Commercial coconut water is now exported globally — Nauru's fresh version is superior",
+          "Cold is optional but preferred in the heat",
+          "The subtle sweetness is natural — no added sugar",
+          "Historically, coconut water sustained Nauruan sailors, fishermen, and workers",
+          "The health properties (electrolytes, no added sugar, hydration) are the reason for the global boom",
+          "But Nauruan coconut water is drunk because it's there, not because it's trendy"
+        ],
+        "description": "Nauru's primary hydration — fresh young coconut water, naturally isotonic with no added sugar. The coconut palm provides shade and water in Nauru's constant tropical heat. Historically sustained Nauruan sailors and fishermen. The global coconut water boom made this a premium export product; on Nauru it is simply drunk because the trees are everywhere.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg"
+        }
+      }
+    ]
+  }
+}

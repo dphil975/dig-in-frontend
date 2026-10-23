@@ -1,0 +1,906 @@
+{
+  "moroccoRecipes": {
+    "country": "Morocco",
+    "region": "North Africa",
+    "breakfast": [
+      {
+        "id": "mar-bf-1",
+        "name": "Msemen (Square Flatbread)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, semolina",
+          "Water, salt",
+          "Yeast (optional)",
+          "Olive oil or butter",
+          "Smen (aged Moroccan butter — optional)"
+        ],
+        "instructions": [
+          "Mix flour, semolina, water, salt into a smooth dough",
+          "Rest 30 minutes",
+          "Divide into balls, rest again",
+          "Stretch each ball thin on an oiled surface",
+          "Fold into a square by bringing all four sides to center",
+          "Fold again — this creates the multi-layer structure",
+          "Pan-fry in olive oil or butter — the square shape flattens in the pan",
+          "Each side should be golden and slightly crispy",
+          "The layered interior separates as you pull it apart — honeycomb structure inside",
+          "Msemen is Morocco's weekday breakfast — bought from street vendors or made at home",
+          "Dipped in olive oil and honey — the classic Moroccan combination"
+        ],
+        "description": "Morocco's square layered flatbread — dough stretched thin, folded into a square (creating layers), and pan-fried until golden, served with olive oil and honey. The interior separates into a honeycomb of layers. Msemen from a street vendor in the morning with a glass of atay (mint tea) is Morocco's most replicated breakfast moment.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "إيان",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D9%85%D8%B3%D9%85%D9%86.jpg"
+        }
+      },
+      {
+        "id": "mar-bf-2",
+        "name": "Baghrir (Thousand-Hole Pancakes)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "Semolina",
+          "Flour",
+          "Yeast",
+          "Baking powder",
+          "Water, salt"
+        ],
+        "instructions": [
+          "Mix semolina, flour, yeast, baking powder, water, salt into a thin batter",
+          "The batter should be very loose — much thinner than regular pancake batter",
+          "Let rest 20 minutes — the yeast activates slightly",
+          "Pour onto a cold, lightly oiled pan — then turn on the heat",
+          "The bubbles rise up through the batter as it cooks — each bubble becomes a hole",
+          "Cook ONLY on one side — never flip baghrir",
+          "The surface should be covered in holes — a thousand holes (the name)",
+          "Remove when the top is dry and set but the bottom is barely colored",
+          "Serve immediately with butter and honey or amlou",
+          "The spongy, hole-filled surface absorbs butter and honey directly",
+          "The 'thousand holes' absorbing warm butter is the baghrir experience"
+        ],
+        "description": "Morocco's thousand-hole pancake — a thin semolina-yeast batter cooked on one side only, the rising bubbles creating hundreds of holes that absorb warm butter and honey directly. Never flipped. The spongy, hole-riddled surface soaking up butter is the baghrir sensory hook. A uniquely Moroccan technique — the unflipped, hole-absorbing breakfast bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/%D8%A8%D8%BA%D8%B1%D9%8A%D8%B1.jpg",
+        "imageCredit": {
+          "author": "فاطمة الزهراء",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D8%A8%D8%BA%D8%B1%D9%8A%D8%B1.jpg"
+        }
+      },
+      {
+        "id": "mar-bf-3",
+        "name": "Harcha (Semolina Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Coarse semolina",
+          "Butter (cold)",
+          "Salt, baking powder",
+          "Milk or water",
+          "Sugar (small amount)"
+        ],
+        "instructions": [
+          "Mix semolina with cold butter — rubbing it in until sandy",
+          "Add salt, baking powder, sugar",
+          "Add milk or water gradually — forms a thick dough",
+          "Shape into a thick round disc",
+          "Score the top in a diamond pattern",
+          "Cook on a dry comal or griddle — no oil needed",
+          "The semolina browns directly on the griddle — it has enough fat from the butter",
+          "Both sides should be golden",
+          "The interior is dense but tender from the butter",
+          "Serve with cheese, olive oil, or amlou (argan butter dip)",
+          "Harcha is the robust Moroccan bread that doesn't need a tandoor or oven"
+        ],
+        "description": "Morocco's griddle semolina bread — coarse semolina rubbed with butter and pressed into a thick round, scored in diamonds, and cooked directly on a dry griddle. The semolina's natural texture and the butter fat make the exterior golden without added oil. Dense, tender, and served with olive oil or amlou at the breakfast table.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Ary-7ercha.JPG",
+        "imageCredit": {
+          "author": "Lucyin",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAry-7ercha.JPG"
+        }
+      },
+      {
+        "id": "mar-bf-4",
+        "name": "Amlou (Argan Almond Butter Dip)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Toasted almonds (freshly toasted)",
+          "Argan oil (the cold-pressed variety — unique to Morocco)",
+          "Honey (acacia or thyme)",
+          "Optional: cinnamon"
+        ],
+        "instructions": [
+          "Toast almonds in a dry pan until deep golden — the toasting is essential",
+          "Grind toasted almonds in a food processor until a coarse paste",
+          "Add argan oil gradually — the argan gives the unique, slightly roasted nut flavor",
+          "Add honey, stir to combine",
+          "The texture should be like a thick, slightly grainy dip",
+          "Cinnamon optional — some families add it",
+          "Serve with msemen or harcha for dipping",
+          "Argan oil comes only from Morocco — the argan tree grows primarily in the Souss Valley",
+          "The combination of argan-toasted almond-honey is uniquely Moroccan",
+          "Amlou is a Berber (Amazigh) specialty — it predates Arab arrival in Morocco"
+        ],
+        "description": "Morocco's Berber almond dip — freshly toasted almonds blended with argan oil (from Morocco's unique argan tree) and honey. Argan oil grows only in Morocco's Souss Valley; its slightly roasted, nutty flavor is unsubstitutable. Amlou is a Berber (Amazigh) food predating Arab Morocco. Dipped with msemen or harcha at breakfast, it's one of North Africa's most distinctive food flavors.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/ArganAmlou_Oil_Mill.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/ArganAmlou_Oil_Mill.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "mar-ln-1",
+        "name": "Harira (Tomato Lentil Soup)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "Lamb or beef (small pieces)",
+          "Tomatoes (fresh and canned)",
+          "Chickpeas, red lentils",
+          "Onion, celery",
+          "Fresh cilantro, parsley (generous)",
+          "Turmeric, ginger, cinnamon, black pepper, cumin",
+          "Smen (aged Moroccan butter — optional but traditional)",
+          "Lemon juice",
+          "Tfaya (caramelized onions with raisins — for garnish)",
+          "Dates, chebakia (honey cookies — for breaking fast alongside"
+        ],
+        "instructions": [
+          "Brown meat briefly in oil with onion",
+          "Add tomatoes, spices, lentils, chickpeas, celery",
+          "Add water — a generous amount",
+          "Simmer 30-40 minutes until lentils are soft and soup is thick",
+          "Add fresh cilantro and parsley — the fresh herb addition at the end is essential",
+          "Squeeze lemon juice — the brightness lifts the heavy spices",
+          "Harira is Morocco's Ramadan soup — the first food eaten at iftar (breaking fast)",
+          "The soup is made fresh every evening during Ramadan across Morocco",
+          "Served alongside dates, hard-boiled eggs, and chebakia cookies",
+          "Outside Ramadan, eaten any time — but the Ramadan context is inseparable"
+        ],
+        "description": "Morocco's sacred Ramadan soup — tomato, lentil, and chickpea soup with lamb, abundant fresh herbs, and warm spices. Harira is the first food of iftar (breaking fast at sunset) across Morocco every day of Ramadan. Served with dates, hard-boiled eggs, and chebakia honey cookies. Outside Ramadan it's a year-round dish — but the memory of Ramadan is in every bowl.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Harira.png",
+        "imageCredit": {
+          "author": "Kattusa24",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHarira.png"
+        }
+      },
+      {
+        "id": "mar-ln-2",
+        "name": "Taktouka (Roasted Pepper-Tomato Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Red bell peppers",
+          "Ripe tomatoes",
+          "Garlic",
+          "Cumin, paprika, cayenne",
+          "Olive oil (generous)",
+          "Parsley or cilantro",
+          "Salt"
+        ],
+        "instructions": [
+          "Roast peppers directly over flame or under broiler until charred",
+          "The charring gives smoky flavor and makes peeling easy",
+          "Peel while warm — the charred skin slides off",
+          "Roast tomatoes in a pan — they break down and concentrate",
+          "Combine peppers and tomatoes with garlic, cumin, paprika, olive oil",
+          "Cook down briefly — the components should meld",
+          "Cool to room temperature — taktouka is served at room temperature or warm",
+          "Drizzle extra olive oil before serving",
+          "Taktouka is Morocco's cooked salad — a meze component",
+          "The smoky roasted pepper and the bright tomato in olive oil is pure Moroccan summer"
+        ],
+        "description": "Morocco's cooked meze salad — charred, peeled peppers and roasted tomatoes combined with garlic, cumin, and olive oil. The charring is the key: the smoke absorbed during roasting transforms both vegetables. Served at room temperature as part of the Moroccan meze spread. The olive oil is generous — this is not a dressed salad but a cooked, oil-enriched dish."
+      },
+      {
+        "id": "mar-ln-3",
+        "name": "Zaalouk (Eggplant-Tomato Dip)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Eggplant",
+          "Ripe tomatoes",
+          "Garlic (generous)",
+          "Cumin, paprika, cayenne",
+          "Olive oil",
+          "Lemon juice",
+          "Cilantro, parsley",
+          "Salt"
+        ],
+        "instructions": [
+          "Peel and cube eggplant, salt briefly to draw out moisture",
+          "Fry in olive oil until very soft and golden",
+          "Add tomatoes, garlic, cumin, paprika, cayenne",
+          "Cook down until a thick, integrated sauce forms",
+          "The eggplant should be almost disappearing into the tomato sauce",
+          "Mash with a fork — not a blender, keep some texture",
+          "Finish with lemon juice and fresh herbs",
+          "More olive oil — always more olive oil in Moroccan cooking",
+          "Zaalouk is served at every Moroccan meal as a dip or salad",
+          "It's the North African cooked baba ganoush — without tahini, more garlic-forward"
+        ],
+        "description": "Morocco's cooked eggplant-tomato dip — eggplant fried until very soft, mixed into tomatoes and garlic with cumin and paprika, mashed and finished with lemon and herbs. The cooked-down, herb-fresh, olive-oil-generous result appears at every Moroccan meal. It's North Africa's answer to baba ganoush — but made without tahini, the tomato and garlic doing the work instead.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Zaalouk-01.JPG",
+        "imageCredit": {
+          "author": "Tamorlan",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AZaalouk-01.JPG"
+        }
+      },
+      {
+        "id": "mar-ln-4",
+        "name": "Pastilla (Pigeon Pie)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 60,
+        "ingredients": [
+          "Warka (paper-thin Moroccan pastry, similar to phyllo)",
+          "Pigeon or chicken (braised in spiced broth)",
+          "Onions (caramelized in spices)",
+          "Eggs (scrambled in the braising liquid)",
+          "Almonds (toasted, ground)",
+          "Sugar, cinnamon",
+          "Orange blossom water",
+          "Butter"
+        ],
+        "instructions": [
+          "Braise pigeon or chicken with onion, spices (cumin, ginger, turmeric, saffron, cinnamon)",
+          "Shred the meat",
+          "Scramble eggs in the remaining braising liquid",
+          "Make the almond-sugar-cinnamon filling separately",
+          "The pastilla has THREE distinct layers: meat, scrambled egg, almond-sugar",
+          "Build in warka pastry: butter the warka sheets, layer them in a pan (6-8 sheets)",
+          "Add the meat, then egg layer, then almond layer",
+          "Fold warka over, butter the top, bake until crispy and golden",
+          "Dust with powdered sugar and draw a pattern in cinnamon",
+          "Pastilla is Morocco's most sophisticated dish: savory + sweet in one pastry",
+          "The powdered sugar on a savory meat pie is the shock that becomes delight"
+        ],
+        "description": "Morocco's most sophisticated dish — pigeon (or chicken), scrambled egg, and spiced almonds enclosed in paper-thin warka pastry, baked until crispy, then dusted with powdered sugar and cinnamon. Savory meat pie with powdered sugar: the shock of the sweet-savory combination is the pastilla experience. The three distinct internal layers and the cinnamon-sugar pattern on top are the marks of mastery.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bisteeya.jpg",
+        "imageCredit": {
+          "author": "Krista",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABisteeya.jpg"
+        }
+      },
+      {
+        "id": "mar-ln-5",
+        "name": "Bissara (Fava Bean Soup)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 30,
+        "ingredients": [
+          "Dried split fava beans (or broad beans)",
+          "Garlic (generous — a whole head)",
+          "Cumin, paprika",
+          "Olive oil (very generous)",
+          "Lemon juice",
+          "Fresh cilantro",
+          "Harissa (optional)",
+          "Salt"
+        ],
+        "instructions": [
+          "Rinse split fava beans",
+          "Simmer in water with garlic until completely soft and falling apart",
+          "The fava beans collapse into a thick purée as they cook",
+          "Blend or mash — very smooth",
+          "Season with cumin, paprika, salt",
+          "The critical finishing: pour a very generous amount of olive oil over the top",
+          "Squeeze lemon juice — the acid brightens enormously",
+          "Garnish with cumin, paprika, and cilantro",
+          "Bissara is Morocco's working-class breakfast — sold from street carts for 5 dirham (less than $1)",
+          "The amount of olive oil is not restrained — it pools on top and runs down"
+        ],
+        "description": "Morocco's 5-dirham street bowl — split fava beans simmered with garlic until they collapse into a thick purée, poured into a bowl and finished with olive oil that pools on top, cumin, lemon, and paprika. Sold from street carts to early morning workers. The generous olive oil (not dressed but pooled) and the simple garlic-cumin flavor are the whole experience.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bissara_Moroccan_split_pea_and_fava_bean_soup.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bissara_Moroccan_split_pea_and_fava_bean_soup.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "mar-dn-1",
+        "name": "Tagine Djaj bil Zaytoun (Chicken Tagine with Olives)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Chicken (cut into pieces)",
+          "Preserved lemons (the salt-cured lemon is essential)",
+          "Green olives",
+          "Onion (grated)",
+          "Garlic",
+          "Preserved lemon paste or zest",
+          "Spices: cumin, ginger, turmeric, saffron, cinnamon",
+          "Olive oil",
+          "Fresh cilantro and parsley"
+        ],
+        "instructions": [
+          "Marinate chicken in grated onion, garlic, spices, olive oil — 30+ minutes",
+          "Saffron in warm water separately — add the golden liquid to the marinade",
+          "Place chicken in a tagine or heavy pot with the marinade",
+          "The tagine's conical lid returns the condensed steam continuously — the chicken braises in its own juices",
+          "Low heat, 45-55 minutes — patience",
+          "Add preserved lemons and olives in the last 15 minutes",
+          "Preserved lemon: salt-cured lemon peel with a unique, mellow, intensely lemony flavor unlike fresh",
+          "The briny olive and the preserved lemon create an immediate savory complexity",
+          "Finish with fresh cilantro and parsley",
+          "The tagine (the pot) and the tagine (the dish) share a name — the pot is the technique"
+        ],
+        "description": "Morocco's most iconic dish — chicken slowly braised in a conical clay tagine with saffron, ginger, and preserved lemons, the steam continuously recycled back by the conical lid. Preserved lemons (salt-cured for weeks) have a flavor fresh lemon cannot replicate: mellow, fermented, intensely lemony. The olives add brine and the saffron adds gold."
+      },
+      {
+        "id": "mar-dn-2",
+        "name": "Tagine Kefta bil Beid (Meatball Tagine with Eggs)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Ground beef or lamb",
+          "Kefta spices: cumin, coriander, paprika, cinnamon, fresh parsley",
+          "Tomato sauce: tomatoes, onion, cumin, paprika, harissa",
+          "Eggs (cracked in at the end)",
+          "Olive oil",
+          "Bread for serving"
+        ],
+        "instructions": [
+          "Season ground meat with kefta spices — mix by hand until uniform",
+          "Shape into small balls (walnut-size)",
+          "Fry kefta briefly in olive oil to brown the exterior",
+          "Make tomato sauce: fry onion, add blended tomatoes, cumin, paprika, harissa",
+          "Add kefta to the sauce, simmer 15-20 minutes",
+          "Crack eggs directly into the simmering sauce in the tagine",
+          "Cover the tagine — the trapped steam poaches the eggs",
+          "Eggs should be just set — the yolk slightly runny",
+          "Serve directly in the tagine at the table",
+          "The egg cracking is done at the table — it's theatrical",
+          "Kefta tagine is Morocco's most popular dinner — both home and restaurant"
+        ],
+        "description": "Morocco's tableside egg drama — spiced meatballs braised in tomato-harissa sauce, eggs cracked directly into the simmering tagine at the table and poached under the conical lid. The cracking of eggs at the table is theatrical. The spiced-meat-tomato-egg combination is Morocco's most ordered dinner, both at home and in restaurants."
+      },
+      {
+        "id": "mar-dn-3",
+        "name": "Couscous bil Khodra (Vegetable Couscous)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Couscous (medium-grain)",
+          "Seasonal vegetables: turnip, carrot, zucchini, sweet potato, chickpeas",
+          "Onion, tomato",
+          "Ras el hanout, turmeric, ginger, saffron",
+          "Butter",
+          "Vegetable stock",
+          "Raisins, almonds (for garnish — the sweet elements)",
+          "Harissa (on the side)"
+        ],
+        "instructions": [
+          "True couscous requires a couscoussier (double steamer)",
+          "The bottom pot holds the stew; the top pot steams the couscous over the stew's vapor",
+          "Steam couscous 3 times — each time fluffing with butter and salt",
+          "The 3-steam method is mandatory — single-steamed couscous is inferior",
+          "Simultaneously braise vegetables in spiced broth below",
+          "The couscous absorbs the stew's steam — infused with flavor",
+          "Final assembly: mound couscous, make a well in center",
+          "Place vegetables in the well, ladle broth over",
+          "Garnish with raisins and almonds — the sweet element is Moroccan",
+          "Couscous is Morocco's Friday dish — families gather every Friday for couscous",
+          "The Friday couscous is a social institution as important as the prayer"
+        ],
+        "description": "Morocco's Friday social institution — hand-rolled couscous steamed three times over bubbling vegetable stew in a couscoussier, fluffy, buttery, and infused with the stew's saffron-spice vapor. The triple-steam method is non-negotiable. The sweet raisins-and-almonds garnish on a savory stew couscous is the Moroccan flavor paradox. Every Friday, every family, everywhere."
+      },
+      {
+        "id": "mar-dn-4",
+        "name": "Mechoui (Whole Roasted Lamb)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "Whole lamb or lamb shoulder",
+          "Smen (aged Moroccan butter)",
+          "Cumin, coriander, garlic, paprika",
+          "Salt (generous)",
+          "Optional: Moroccan charcoal fire pit"
+        ],
+        "instructions": [
+          "Rub entire lamb cavity and exterior with smen, garlic, cumin, coriander, salt",
+          "Traditionally: slow-roast in a pit of embers underground",
+          "Modern: very low oven (160°C), 3+ hours",
+          "The lamb should pull from the bone with zero resistance",
+          "The crust should be crispy and spiced; the interior tender",
+          "The smen (aged Moroccan butter with a sharp, blue-cheese-like depth) is the flavor carrier",
+          "Serve by pulling pieces directly with your hands — no knife needed",
+          "Accompany with cumin salt and bread",
+          "Mechoui is served at weddings, Eid al-Adha, and special celebrations",
+          "The whole lamb is both food and ceremony — the ritual of sharing it is the event"
+        ],
+        "description": "Morocco's whole-lamb feast — rubbed with smen (aged Moroccan butter with a blue-cheese depth), cumin, and garlic, slow-roasted until the meat pulls away at the touch. Served at Eid al-Adha and weddings, the whole lamb is a ceremony: guests pull pieces by hand. No knife. The smen-crust and the pure fall-apart interior are the mechoui ideal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Mechoui.jpg",
+        "imageCredit": {
+          "author": "Andre Piquet",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMechoui.jpg"
+        }
+      },
+      {
+        "id": "mar-dn-5",
+        "name": "Tanjia (Clay Pot Slow Meat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 180,
+        "ingredients": [
+          "Lamb shank or beef (bone-in)",
+          "Preserved lemon",
+          "Garlic, saffron, smen",
+          "Cumin, paprika, coriander",
+          "Salt"
+        ],
+        "instructions": [
+          "The tanjia is a Marrakech-specific dish and clay pot — a narrow, urn-shaped vessel",
+          "Load the tanjia with lamb, spices, preserved lemon, garlic, smen — sealed with parchment and string",
+          "Take it to the hammam (public bath) — the furnace beneath the hammam keeps it at low heat all day",
+          "The hammam furnace is the traditional cooking source — 6-8 hours of gentle heat",
+          "Pick up after the hammam — the lamb is impossibly tender",
+          "Alternatively: slow oven at 140°C for 4-5 hours",
+          "The confined steam inside the sealed tanjia pot cooks the meat in its own vapors",
+          "Tanjia is bachelor food in Marrakech — men preparing their own food at the hammam",
+          "The tanjia pot is the cooking vessel, the transport, and the serving dish — it never changes containers",
+          "Marrakech's tanjia is as local as a dish can be"
+        ],
+        "description": "Marrakech's hammam-cooked lamb — lamb packed with preserved lemon, saffron, and smen in a narrow clay urn (tanjia), sealed, and left in the furnace beneath the public bath for hours. The hammam furnace provides perfectly low, sustained heat. Called Marrakech's bachelor food (men would prep it and leave it at the hammam). The sealed-clay-pot-slow-cook is impossibly tender lamb.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Tanjia-959.jpg",
+        "imageCredit": {
+          "author": "VraieMarocaine",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATanjia-959.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "mar-sn-1",
+        "name": "Briouats (Fried Filled Pastries)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "Warka or phyllo pastry",
+          "Filling options: kefta (spiced meat), almond-honey, chicken with vermicelli",
+          "Egg wash",
+          "Oil for frying or butter for baking",
+          "Powdered sugar (for sweet version)"
+        ],
+        "instructions": [
+          "Make kefta filling: ground lamb-beef, onion, cilantro, cumin, paprika — cooked and cooled",
+          "Or: almond-honey filling — toasted almonds blended with honey and orange blossom water",
+          "Cut pastry into strips",
+          "Place filling at one end of the strip",
+          "Fold into a triangle, envelope-fold all the way up",
+          "Seal with egg wash",
+          "Fry in oil until golden — crispy, not burned",
+          "Sweet version (almond): dust with powdered sugar after frying",
+          "Briouats are Morocco's party pastry — made for every celebration",
+          "The savory-sweet version served at the same table is very Moroccan"
+        ],
+        "description": "Morocco's party triangle — warka pastry folded around spiced meat or almond-honey filling, deep-fried to a crispy triangle. The same pastry technique serves both savory (meat) and sweet (almond-honey) versions, often served on the same plate. Briouats at celebrations represent Morocco's savory-sweet boundary — blurred, not avoided.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/%D8%A3%D9%83%D9%84%D8%A7%D8%AA_%D8%AA%D9%82%D9%84%D9%8A%D8%AF%D9%8A%D8%A9_%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D8%AF%D8%AC%D8%A7%D8%AC_%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9_%D9%81%D9%8A_%D9%85%D8%AA%D8%AC%D8%B1_%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D9%82%D8%A9_%D8%A8%D9%81%D8%A7%D8%B3.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/%D8%A3%D9%83%D9%84%D8%A7%D8%AA_%D8%AA%D9%82%D9%84%D9%8A%D8%AF%D9%8A%D8%A9_%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9_%D8%A8%D8%A7%D9%84%D8%AF%D8%AC%D8%A7%D8%AC_%D9%85%D8%B9%D8%B1%D9%88%D8%B6%D8%A9_%D9%81%D9%8A_%D9%85%D8%AA%D8%AC%D8%B1_%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D8%A7%D9%84%D8%B9%D8%AA%D9%8A%D9%82%D8%A9_%D8%A8%D9%81%D8%A7%D8%B3.jpg"
+        }
+      },
+      {
+        "id": "mar-sn-2",
+        "name": "Msemen with Honey",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "See breakfast section — same preparation",
+          "Honey and olive oil for serving",
+          "Optional: argan oil, amlou"
+        ],
+        "instructions": [
+          "Msemen (already described in breakfast) is the snack form too",
+          "The same square layered flatbread is pulled apart and dipped in honey",
+          "The snack distinction is context, not recipe",
+          "Moroccans eat msemen through the day — at tea time, as a snack, at breakfast",
+          "The pulling-apart of the layers and dipping in honey is a tactile pleasure",
+          "The flaky layers absorb honey between their folds",
+          "The olive oil and honey combination is Morocco's ancient sweetness"
+        ],
+        "description": "Morocco's all-day snack — the same msemen flatbread from breakfast, pulled apart at tea time and dipped in honey or amlou. The tactile pleasure of separating the layers and dipping in honey is Morocco's afternoon ritual. See breakfast section for full preparation.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "إيان",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D9%85%D8%B3%D9%85%D9%86.jpg"
+        }
+      },
+      {
+        "id": "mar-sn-3",
+        "name": "Khobz (Moroccan Round Bread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 70,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour (wheat)",
+          "Semolina (small amount)",
+          "Yeast",
+          "Water, salt",
+          "Sesame seeds (optional)"
+        ],
+        "instructions": [
+          "Mix flour, semolina, yeast, water, salt into a dough",
+          "Knead well, let rise 1 hour",
+          "Shape into a thick, flat round",
+          "Let rise 30 more minutes",
+          "Score the top — traditionally a cross or star pattern",
+          "Bake in a hot oven (220°C) or in a communal wood-fired oven (ferran)",
+          "The crust should be golden; the interior dense but soft",
+          "Every Moroccan neighborhood has a communal ferran (wood oven)",
+          "Families shape their bread at home, mark it (each family has a mark), walk it to the communal oven",
+          "The communal wood oven is one of Morocco's oldest surviving community institutions",
+          "Khobz is on every Moroccan table at every meal"
+        ],
+        "description": "Morocco's daily round bread — wheat and semolina loaf baked in the communal wood-fired neighborhood oven (ferran), which each family marks with their own symbol. The communal oven tradition is one of Morocco's oldest surviving community institutions. Khobz is on every Moroccan table at every meal, used to scoop up tagine and dip into olive oil."
+      },
+      {
+        "id": "mar-sn-4",
+        "name": "Kefta on Skewers",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Ground lamb (or beef-lamb mix)",
+          "Onion (grated)",
+          "Parsley, cilantro (fresh)",
+          "Cumin, paprika, cinnamon, coriander",
+          "Salt, black pepper",
+          "Cayenne (optional)",
+          "Metal skewers"
+        ],
+        "instructions": [
+          "Grate onion finely — the moisture helps the kefta stick",
+          "Mix ground meat with grated onion, herbs, all spices",
+          "The mixture should be very well seasoned — kefta needs bold spicing",
+          "Shape around wide, flat metal skewers — the flat skewer grips the meat better than round",
+          "Grill over charcoal — the fat should drip and cause flare-ups — this is correct",
+          "The flare-ups create char and smoke",
+          "Rotate regularly — 8-10 minutes total",
+          "The kefta should have a slight crust outside, juicy inside",
+          "Served with khobz, salads, harissa",
+          "The kefta smell at a Moroccan grill (mechoui) stall is impossible to resist"
+        ],
+        "description": "Morocco's spiced minced meat skewer — ground lamb mixed with onion, cilantro, cumin, paprika, and cinnamon, shaped on wide flat skewers and grilled over charcoal. The dripping fat causing flare-ups creates the char and smoke. Served with khobz, salads, and harissa. The smell of kefta grilling over charcoal is Morocco's most evocative street food signal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "mar-ds-1",
+        "name": "Chebakia (Honey Sesame Cookies)",
+        "difficulty": "Hard",
+        "servings": 30,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour, semolina",
+          "Butter (softened)",
+          "Eggs",
+          "Orange blossom water, anise, cinnamon",
+          "Sesame seeds (toasted)",
+          "Honey (warm — for dipping)",
+          "Vegetable oil (for frying)"
+        ],
+        "instructions": [
+          "Mix flour, semolina, butter, eggs, orange blossom water, anise, cinnamon into a dough",
+          "The dough should be smooth and not too stiff",
+          "Roll thin, cut into strips",
+          "Make a specific fold pattern — cut a parallel lines, weave them through each other",
+          "The folded shape is called a 'rose' — intricate and specific to Morocco",
+          "Each maker has their family fold pattern",
+          "Fry in oil until golden — they become crispy and fragrant",
+          "Immediately dip in warm honey — they absorb it completely",
+          "Scatter toasted sesame seeds over the honey-soaked pastries",
+          "Let cool — the honey crystallizes slightly on the exterior",
+          "Chebakia are the Ramadan dessert — made alongside harira for iftar"
+        ],
+        "description": "Morocco's Ramadan honey pastry — intricately folded dough fried and immediately dipped in warm honey until completely coated, scattered with sesame seeds. The rose-shaped fold pattern is each family's tradition; the specific weaving technique distinguishes Moroccan chebakia from all other pastries. Eaten alongside harira at iftar every Ramadan evening.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Chebakia.jpg",
+        "imageCredit": {
+          "author": "Indif",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChebakia.jpg"
+        }
+      },
+      {
+        "id": "mar-ds-2",
+        "name": "Cornes de Gazelle (Almond-Filled Crescents)",
+        "difficulty": "Hard",
+        "servings": 24,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "Pastry: flour, butter, orange blossom water",
+          "Almond filling: almonds (blanched, ground), sugar, cinnamon, orange blossom water, butter"
+        ],
+        "instructions": [
+          "Make almond filling: blend ground almonds, sugar, cinnamon, butter, orange blossom water",
+          "The filling should be moist and fragrant — taste for sweetness",
+          "Roll pastry very thin — as thin as manageable",
+          "Place small amounts of filling",
+          "Roll into a crescent shape — thin, elegant, tapered ends",
+          "The taper is important — real gazelle horns are very thin at the tips",
+          "Bake at 180°C until barely golden — they should be pale, not tan",
+          "Dust lightly with powdered sugar or leave plain",
+          "Cornes de gazelle are Morocco's most elegant pastry",
+          "The almond-orange blossom filling and the crispy, barely-sweet pastry are in perfect ratio",
+          "Served at weddings and celebrations — the beauty of the crescent shape is the gift"
+        ],
+        "description": "Morocco's elegant crescent pastry — paper-thin pastry wrapped around a fragrant almond-orange blossom filling, tapered to thin tips (the gazelle horns), baked until barely pale golden. The almond-orange blossom combination is Moroccan pastry's defining fragrance. Served at weddings, the elegant crescent shape is the gift and the beauty.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Amazon_Tower_I_topped_out%2C_June_2015.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Amazon_Tower_I_topped_out%2C_June_2015.jpg"
+        }
+      },
+      {
+        "id": "mar-ds-3",
+        "name": "Sellou (Roasted Flour Energy Balls)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour (toasted in dry pan)",
+          "Sesame seeds (toasted)",
+          "Almonds (toasted)",
+          "Honey",
+          "Smen (aged Moroccan butter)",
+          "Cinnamon, anise",
+          "Optional: fennel seeds"
+        ],
+        "instructions": [
+          "Toast flour in a dry pan over medium heat until golden and nutty — 15-20 minutes",
+          "The flour changes from raw to intensely nutty — this is the entire flavor",
+          "Toast sesame seeds, toast and grind almonds",
+          "Grind all the dry components together",
+          "Add smen, honey — work together by hand until it holds",
+          "The result is an extremely energy-dense paste",
+          "Roll into balls or press flat",
+          "Sellou (also called sfouf or zmita) is Morocco's energy food",
+          "Made for new mothers after childbirth — extremely caloric and nutritious",
+          "Also made for Ramadan — high energy in a concentrated form"
+        ],
+        "description": "Morocco's ancient energy paste — toasted flour, sesame, and almonds combined with honey and aged butter into an intensely caloric, shelf-stable food. Made for new mothers after childbirth and for Ramadan night energy. The deeply toasted flour is the central flavor — intensely nutty, completely transformed from raw. Shaped into balls and eaten by the handful.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Sfouf.jpg",
+        "imageCredit": {
+          "author": "DocteurCosmos",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASfouf.jpg"
+        }
+      },
+      {
+        "id": "mar-ds-4",
+        "name": "Fekkas (Twice-Baked Cookies)",
+        "difficulty": "Medium",
+        "servings": 24,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "Flour, eggs",
+          "Sugar, butter",
+          "Baking powder",
+          "Anise seeds, sesame seeds",
+          "Almonds (roughly chopped)",
+          "Orange zest"
+        ],
+        "instructions": [
+          "Mix dough — not too sweet, moderate sugar",
+          "Add anise, sesame, almonds, orange zest",
+          "Shape into a long log",
+          "Bake first time — 25 minutes until cooked through",
+          "Cool 10 minutes, slice diagonally into thick pieces",
+          "Lay cut side down, bake second time — 10-15 minutes",
+          "The second bake dries them out into crunchy, shelf-stable cookies",
+          "Fekkas are Morocco's biscotti — the twice-bake technique is the same principle",
+          "Hard, dry, shelf-stable — designed for dipping in tea or coffee",
+          "The anise-sesame-almond combination is Morocco's cookie flavor profile",
+          "Fekkas at Moroccan tea time — dunked in mint tea — is the afternoon ritual"
+        ],
+        "description": "Morocco's twice-baked tea cookie — dough with anise, sesame, and almonds baked once, sliced, and baked again until hard and dry (the same principle as Italian biscotti). The second bake creates a crunch perfect for dunking in mint tea. The anise-sesame fragrance and the tea-dunking ritual are Moroccan afternoon culture."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "mar-dr-1",
+        "name": "Atay (Moroccan Mint Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Gunpowder green tea",
+          "Fresh spearmint (a lot — the glass should be packed)",
+          "Sugar (very generous)",
+          "Boiling water",
+          "Optional: wormwood (chiba), verbena (louisa), orange blossom"
+        ],
+        "instructions": [
+          "Rinse the teapot with hot water to warm it",
+          "Add gunpowder green tea — a generous tablespoon",
+          "Pour small amount of boiling water, swirl, discard — this 'washes' the tea",
+          "Add boiling water, steep 3 minutes",
+          "Add enormous amount of fresh mint — the tea is a vehicle for mint, not the other way around",
+          "Add very generous sugar — Moroccan tea is very sweet, this is not adjustable",
+          "Pour into a glass from height — the pour aerates and cools slightly",
+          "Return to the pot, pour again — 2-3 times to mix",
+          "Serve in small glasses — never cups",
+          "The three-glass ceremony: the host serves, you drink three glasses minimum — leaving after one is rude",
+          "Mint tea refusal is the only social transgression worse than not greeting with it"
+        ],
+        "description": "Morocco's supreme hospitality ritual — gunpowder green tea brewed strong with enormous fresh mint and very sweet sugar, poured from height into small glasses. The three-glass minimum is not optional. Refusing mint tea is the only social transgression greater than not offering it. The pour-from-height froth and the mint-packed glass are the visual signature of Moroccan hospitality.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Barbecue_Street_Food_in_the_Philippines.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Barbecue_Street_Food_in_the_Philippines.png"
+        }
+      },
+      {
+        "id": "mar-dr-2",
+        "name": "Avocado Smoothie (Jus d'Avocat)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Ripe avocados",
+          "Milk",
+          "Honey",
+          "Optional: almonds, argan oil"
+        ],
+        "instructions": [
+          "Blend ripe avocado with cold milk and honey",
+          "The avocado becomes creamy and thick — a rich green shake",
+          "Optional: add a few almonds, a drizzle of argan oil for Moroccan signature",
+          "Serve immediately — it oxidizes and turns brown if left",
+          "The avocado smoothie is Morocco's most surprising juice bar item",
+          "Morocco is a major avocado producer — the Agadir region produces 80,000+ tonnes",
+          "The avocado-milk-honey combination sounds unexpected for North Africa",
+          "But Morocco's avocado culture is entirely real and deeply local",
+          "Found at every juice bar (jus maison) in Casablanca and Marrakech",
+          "The thick, green, creamy avocado shake is more filling than most meals"
+        ],
+        "description": "Morocco's unexpected juice bar staple — avocado blended with cold milk and honey into a thick, rich green shake. Morocco produces enormous quantities of avocados (Agadir region) and the avocado smoothie is a local institution, not a food trend import. Found at every jus maison (fresh juice bar) alongside orange juice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Avocado_lamaw_%28Avocado_in_milk_and_sugar%2C_chilled_or_with_ice%29%2C_Philippines_04.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Avocado_lamaw_%28Avocado_in_milk_and_sugar%2C_chilled_or_with_ice%29%2C_Philippines_04.jpg"
+        }
+      },
+      {
+        "id": "mar-dr-3",
+        "name": "Jus d'Orange Frais (Fresh Orange Juice)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 3,
+        "cookTime": 0,
+        "ingredients": [
+          "Moroccan oranges (Navel or Valencia — the sweet Moroccan variety)",
+          "No sugar needed — Moroccan oranges are naturally sweet"
+        ],
+        "instructions": [
+          "Morocco is the world's finest orange-growing region — Moroccan oranges have extraordinary sweetness",
+          "Juice immediately, serve immediately — no ice",
+          "The juice is the whole ingredient: fresh Moroccan orange, nothing else",
+          "Jus d'orange is sold on every Moroccan street corner from carts with manual presses",
+          "It costs 5-10 dirhams — less than $1 for a glass of the world's best orange juice",
+          "The orange is pressed in front of you — you watch it happen",
+          "Marrakech's Djemaa el-Fna square at dusk is filled with orange juice stalls",
+          "The smell of fresh-pressed Moroccan orange is one of North Africa's most beautiful scents",
+          "No additives, no ice, no sugar — the fruit is the product",
+          "The freshness from orchard to glass is sometimes less than 24 hours"
+        ],
+        "description": "Morocco's most beloved street drink — fresh Moroccan oranges pressed in front of you on every street corner for 5-10 dirhams. Moroccan oranges (especially from Souss Valley) have exceptional natural sweetness. No ice, no sugar — just fruit. Djemaa el-Fna square at dusk, surrounded by orange juice stalls, is one of Morocco's most vivid sensory memories."
+      },
+      {
+        "id": "mar-dr-4",
+        "name": "Smen Lben (Aged Butter Fermented Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Lben (Moroccan fermented buttermilk — thick, tangy, cold)",
+          "Smen (aged Moroccan butter — for eating alongside)",
+          "Khobz bread"
+        ],
+        "instructions": [
+          "Lben is made from churned sour milk — the liquid left after butter is extracted",
+          "It is Moroccan buttermilk but much thicker and more sour than Western buttermilk",
+          "Serve cold in a glass or bowl",
+          "Drink alongside breakfast or as a refreshment",
+          "Smen is the aged butter made from the same milk — complementary products",
+          "Smen is aged weeks to years — older smen has a blue-cheese-like intensity",
+          "Lben is Morocco's traditional thirst-quencher — more refreshing than water in hot weather",
+          "The sourness is cooling — a traditional hot-weather drink",
+          "Rural Moroccan food culture centers on dairy from sheep and goats",
+          "Lben and smen together represent the complete Moroccan dairy tradition"
+        ],
+        "description": "Morocco's fermented dairy drink — lben (thick, tangy buttermilk left after churning) drunk cold as Morocco's traditional thirst-quencher. More refreshing than water in summer heat. Paired with smen (the aged butter extracted from the same churning), together they represent Morocco's complete pastoral dairy tradition from the Atlas Mountain farming communities.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "إيان",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D9%85%D8%B3%D9%85%D9%86.jpg"
+        }
+      }
+    ]
+  }
+}

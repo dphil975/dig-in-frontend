@@ -1,0 +1,521 @@
+{
+  "cameroonRecipes": {
+    "country": "Cameroon",
+    "region": "Central Africa",
+    "breakfast": [
+      {
+        "id": "cmr-bf-1",
+        "name": "Puff-Puff (Fried Dough Balls)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1/2 cup sugar",
+          "1 tsp yeast",
+          "Warm water",
+          "Nutmeg",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix dough, let rise 1 hour",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden",
+          "Drain and serve"
+        ],
+        "description": "Sweet, airy fried dough balls.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg"
+        }
+      },
+      {
+        "id": "cmr-bf-2",
+        "name": "Accra Banana (Banana Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "4 ripe plantains",
+          "1/2 cup flour",
+          "Sugar",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mash plantains, mix with flour and sugar",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden brown",
+          "Serve warm"
+        ],
+        "description": "Sweet plantain fritters."
+      },
+      {
+        "id": "cmr-bf-3",
+        "name": "Beans and Puff-Puff",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Red beans (cooked, in tomato sauce)",
+          "Palm oil",
+          "Onion",
+          "Crayfish (ground)",
+          "Scotch bonnet pepper",
+          "Puff-puff (fried dough balls)",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion in palm oil",
+          "Add cooked beans, ground crayfish, pepper",
+          "Simmer until saucy",
+          "Serve alongside puff-puff for dipping"
+        ],
+        "description": "Beans in spicy palm oil sauce scooped up with puff-puff — a filling Cameroonian morning meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "cmr-ln-1",
+        "name": "Ndolé (Bitterleaf Stew)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "500g bitterleaf (washed thoroughly)",
+          "300g shrimp",
+          "200g beef",
+          "1 cup ground peanuts",
+          "1 onion",
+          "3 cloves garlic",
+          "Fresh ginger",
+          "Crayfish",
+          "Palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Wash bitterleaf multiple times to remove bitterness",
+          "Cook beef until tender",
+          "Add ground peanuts, palm oil, onion, garlic, ginger",
+          "Add bitterleaf, simmer 30 min",
+          "Add shrimp and crayfish, cook 10 more min",
+          "Serve with plantains or rice"
+        ],
+        "description": "Cameroon's national dish — bitterleaf stew with peanuts and shrimp.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ndol%C3%A8_%C3%A0_la_viande%2C_morue_et_crevettes.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ndol%C3%A8_%C3%A0_la_viande%2C_morue_et_crevettes.jpg"
+        }
+      },
+      {
+        "id": "cmr-ln-2",
+        "name": "Koki (Bean Pudding)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "3 cups black-eyed peas (soaked, skinned)",
+          "1 cup palm oil",
+          "1 onion",
+          "Crayfish",
+          "Spinach leaves (for wrapping)",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Blend beans to smooth paste",
+          "Mix with palm oil, onion, crayfish, seasoning",
+          "Wrap in spinach or banana leaves",
+          "Steam for 60 min",
+          "Unwrap and serve"
+        ],
+        "description": "Steamed bean pudding wrapped in leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg"
+        }
+      },
+      {
+        "id": "cmr-ln-3",
+        "name": "Achu Soup with Yellow Soup",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Cocoyam (taro, boiled and pounded)",
+          "Yellow soup: palm oil, limestone paste (kanwa), spices",
+          "Beef or tripe",
+          "Smoked fish",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil cocoyam, pound into smooth, stretchy paste (achu)",
+          "Make yellow soup: heat palm oil, add dissolved limestone paste, stir until yellow and emulsified",
+          "Add cooked meat, smoked fish, spices",
+          "Shape achu into a ball in the soup bowl",
+          "Ladle yellow soup around it",
+          "Eat by pinching pieces of achu and dipping in the soup"
+        ],
+        "description": "Pounded cocoyam in yellow palm oil soup — the iconic dish of Cameroon's Northwest region. The limestone gives the distinctive yellow color and slight alkaline taste.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taro_sauce_jaune_avec_peau_de_boeuf.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taro_sauce_jaune_avec_peau_de_boeuf.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "cmr-dn-1",
+        "name": "Eru Soup",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g eru leaves (shredded)",
+          "300g waterleaf (chopped)",
+          "200g smoked fish",
+          "200g cow skin",
+          "Palm oil",
+          "Crayfish",
+          "Salt"
+        ],
+        "instructions": [
+          "Wash and shred eru leaves finely",
+          "Cook waterleaf until wilted",
+          "Add eru, smoked fish, cow skin, crayfish",
+          "Add palm oil, simmer 30 min",
+          "Season with salt",
+          "Serve with garri or fufu"
+        ],
+        "description": "Thick, nutritious leaf soup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Gnetum_africanum_MS_3428.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Gnetum_africanum_MS_3428.jpg"
+        }
+      },
+      {
+        "id": "cmr-dn-2",
+        "name": "Poulet DG",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "3 plantains (ripe)",
+          "2 carrots",
+          "1 green pepper",
+          "2 onions",
+          "3 tomatoes",
+          "Garlic",
+          "Ginger",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Season and fry chicken until golden",
+          "Fry ripe plantain slices",
+          "Sauté onions, garlic, ginger, tomatoes, carrots, peppers",
+          "Add chicken back, simmer 15 min",
+          "Add fried plantains on top",
+          "Serve hot"
+        ],
+        "description": "Director General's chicken — a celebratory Cameroonian dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Chinwe_Uzoma_kitchen_%26_Lifestyle_-_How_to_make_gizdodo_-_This_is_so_GOOD%21%21%21_Chinwe_Uzoma_Kitchen_%26_Lifestyle.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Chinwe_Uzoma_kitchen_%26_Lifestyle_-_How_to_make_gizdodo_-_This_is_so_GOOD%21%21%21_Chinwe_Uzoma_Kitchen_%26_Lifestyle.png"
+        }
+      },
+      {
+        "id": "cmr-dn-3",
+        "name": "Sanga (Corn and Vegetable Medley)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Fresh corn (cut from cob)",
+          "Cocoyam leaves or spinach",
+          "Red palm oil",
+          "Crayfish (ground)",
+          "Scotch bonnet pepper",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook corn in water until tender",
+          "Add chopped greens",
+          "Add palm oil, crayfish, pepper",
+          "Simmer until thick and vegetables are cooked",
+          "Season with salt",
+          "Serve as main dish"
+        ],
+        "description": "Corn and greens cooked in palm oil — a one-pot farmer's meal from Cameroon's grasslands.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Watusi_Cattle1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Watusi_Cattle1.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "cmr-sn-1",
+        "name": "Beignets (Fried Dough)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1/4 cup sugar",
+          "1 tsp yeast",
+          "Water",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dough, rise 1 hour",
+          "Shape into balls, flatten slightly",
+          "Deep fry until golden",
+          "Serve with beans or on their own"
+        ],
+        "description": "Light, golden fried dough.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beignet_good_for_mouth.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beignet_good_for_mouth.jpg"
+        }
+      },
+      {
+        "id": "cmr-sn-2",
+        "name": "Soya (Grilled Suya-Style Meat)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "500g beef (cubed)",
+          "Suya spice: peanut powder, chili, ginger, onion powder, garlic, salt",
+          "Oil",
+          "Onion slices",
+          "Cabbage"
+        ],
+        "instructions": [
+          "Thread seasoned beef onto skewers",
+          "Grill over charcoal, basting with oil",
+          "Serve with onion slices, cabbage, and extra suya spice"
+        ],
+        "description": "Charcoal-grilled spiced beef skewers — Cameroon's beloved roadside snack, found wherever there's a grill and a crowd."
+      },
+      {
+        "id": "cmr-sn-4",
+        "name": "Puff-Puff (Fried Dough Balls)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1/2 cup sugar",
+          "1 tsp yeast",
+          "Warm water",
+          "Pinch of salt",
+          "Nutmeg",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Mix flour, sugar, salt, nutmeg, yeast",
+          "Add warm water gradually — batter should be thick but scoopable, not a dough",
+          "Cover and let rise 1-2 hours until doubled and bubbly",
+          "Heat oil to 170°C",
+          "Scoop batter with wet hands or spoon, drop into oil",
+          "Fry until deep golden brown, turning once — 3-4 min",
+          "Drain on paper",
+          "Dust with powdered sugar or eat plain",
+          "These must be eaten warm — the inside is fluffy, the outside crispy"
+        ],
+        "description": "West Africa's most famous street snack — fluffy fried dough balls that are the continent's answer to beignets. The hand-scooping technique and the perfect golden puff have made puff-puff one of the most viral African street food videos on social media.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "cmr-ds-1",
+        "name": "Banana Flambe",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "4 ripe bananas",
+          "3 tbsp butter",
+          "1/4 cup brown sugar",
+          "Rum",
+          "Cinnamon",
+          "Vanilla ice cream"
+        ],
+        "instructions": [
+          "Slice bananas lengthwise",
+          "Melt butter, add sugar",
+          "Cook bananas until caramelized",
+          "Add rum, ignite carefully",
+          "Spoon over ice cream"
+        ],
+        "description": "Caramelized bananas flambéed in rum.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Banana_flamb%C3%A9_-_by_Jenene.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Banana_flamb%C3%A9_-_by_Jenene.jpg"
+        }
+      },
+      {
+        "id": "cmr-ds-2",
+        "name": "Caramel Cake (Gâteau au Caramel)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "4 eggs",
+          "200g sugar (half for caramel)",
+          "200g flour",
+          "100g butter",
+          "200ml milk",
+          "Vanilla",
+          "Baking powder"
+        ],
+        "instructions": [
+          "Make caramel: cook sugar until amber, pour into cake mold",
+          "Make batter: cream butter and remaining sugar, add eggs, flour, milk, vanilla, baking powder",
+          "Pour batter over caramel",
+          "Bake at 175°C for 30-35 min",
+          "Invert while warm — caramel sauce cascades down",
+          "Cool before slicing"
+        ],
+        "description": "Caramel-topped sponge cake — French-Cameroonian patisserie tradition, served at celebrations and Sunday gatherings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Caramel-2.jpg",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Rainer Zenz assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACaramel-2.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "cmr-dr-1",
+        "name": "Folere (Hibiscus Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups dried hibiscus",
+          "1L water",
+          "Sugar",
+          "Ginger",
+          "Mint"
+        ],
+        "instructions": [
+          "Boil hibiscus and ginger 10 min",
+          "Strain, sweeten",
+          "Chill, serve with mint"
+        ],
+        "description": "Tart ruby hibiscus drink with ginger.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg"
+        }
+      },
+      {
+        "id": "cmr-dr-2",
+        "name": "Palm Wine",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh palm sap"
+        ],
+        "instructions": [
+          "Tap palm tree for sap",
+          "Collect in calabash",
+          "Let ferment naturally 4-8 hours",
+          "Serve same day while fresh"
+        ],
+        "description": "Fresh, mildly alcoholic palm sap.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Toddy_Bottle_and_Glass.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Toddy_Bottle_and_Glass.jpg"
+        }
+      },
+      {
+        "id": "cmr-dr-3",
+        "name": "Matango (Raphia Palm Wine)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh raphia palm sap"
+        ],
+        "instructions": [
+          "Tap the raphia palm trunk or flower stalk",
+          "Collect sap in a calabash — it's already mildly alcoholic",
+          "Drink fresh the same day for sweet, slightly fizzy taste",
+          "By evening it ferments stronger",
+          "By the next day it's vinegar — timing is everything"
+        ],
+        "description": "Fresh palm sap from the raphia palm — tapped daily and drunk the same day. Sweet in the morning, boozy by evening, vinegar by tomorrow."
+      }
+    ]
+  }
+}

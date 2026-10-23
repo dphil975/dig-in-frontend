@@ -1,0 +1,752 @@
+{
+  "nepalRecipes": {
+    "country": "Nepal",
+    "region": "South Asia",
+    "breakfast": [
+      {
+        "id": "npl-bf-1",
+        "name": "Dal Bhat (Lentils and Rice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups rice",
+          "1 cup yellow lentils",
+          "Turmeric",
+          "Cumin",
+          "Garlic",
+          "Ginger",
+          "Onion",
+          "Ghee",
+          "Salt",
+          "Vegetable tarkari on the side"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Cook lentils with turmeric, cumin",
+          "Make tadka: fry garlic, ginger, cumin in ghee",
+          "Pour tadka into dal",
+          "Serve with rice and tarkari"
+        ],
+        "description": "Nepal's national meal — eaten twice daily, at breakfast and dinner."
+      },
+      {
+        "id": "npl-bf-2",
+        "name": "Sel Roti (Rice Doughnuts)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Rice flour",
+          "Sugar",
+          "Banana",
+          "Cardamom",
+          "Ghee",
+          "Oil"
+        ],
+        "instructions": [
+          "Blend rice flour with banana, sugar, cardamom",
+          "Make thick batter",
+          "Pour ring shapes into hot oil",
+          "Fry until golden and crispy"
+        ],
+        "description": "Ring-shaped rice doughnuts — made during festivals.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sel_Roti.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sel_Roti.jpg"
+        }
+      },
+      {
+        "id": "npl-bf-3",
+        "name": "Sel Roti (Ring-Shaped Fried Rice Bread)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Rice flour (finely ground)",
+          "Banana (very ripe — for sweetness and binding)",
+          "Sugar",
+          "Ghee or oil",
+          "Cardamom, fennel seeds",
+          "Water (to adjust consistency)",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Sel roti is Nepal's traditional festive fried bread — a ring-shaped crispy sweet treat",
+          "Made especially for Tihar (Diwali equivalent) and Dashain (the most important Nepali festival)",
+          "Mix rice flour with mashed banana, sugar, cardamom, fennel",
+          "The banana acts as both sweetener and binder",
+          "Adjust with water to a thick, pourable batter",
+          "Deep fry: pour the batter through a hole in a plastic bag or funnel in a circle",
+          "The circle technique: pour in a ring shape in the hot oil",
+          "Fry until golden-brown — crispy outside, slightly chewy inside",
+          "The batter must be exactly right — too thin makes it fragile, too thick means dense",
+          "A good sel roti: golden, evenly crispy, not too oily",
+          "Made by women in the family before festivals — the smell of frying sel roti signals celebration"
+        ],
+        "description": "Nepal's festive ring bread — rice flour and ripe banana batter poured in circles into hot oil, forming crispy golden rings. Made before Dashain and Tihar (Nepal's two most important festivals); the smell of frying sel roti in the neighborhood signals the festival has begun. The banana provides natural sweetness and binding. The ring shape requires skill — the batter must be the right thickness.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sel_Roti.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sel_Roti.jpg"
+        }
+      },
+      {
+        "id": "npl-bf-4",
+        "name": "Yomari (Steamed Rice Dumpling)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Rice flour (fine)",
+          "Filling: chaku (molasses candy + sesame) OR khuwa (milk fudge)",
+          "Water"
+        ],
+        "instructions": [
+          "Yomari is the traditional Newar food of the Kathmandu Valley",
+          "Made specifically for the Yomari Punhi festival (December, full moon after rice harvest)",
+          "The shape: a fish or elongated teardrop — symbolic",
+          "Rice flour dough: hot water kneaded into a pliable, smooth dough",
+          "Fill each piece with chaku (raw sugar and sesame paste) or khuwa (reduced milk sweet)",
+          "Pinch the ends shut — the shape must hold during steaming",
+          "Steam 15-20 minutes",
+          "Yomari is only available at Yomari Punhi — makes it precious",
+          "The Newar (indigenous people of Kathmandu Valley) are the original inhabitants of the valley",
+          "Their food culture is distinct from hill Nepali — more ritualized, more Buddhist/Hindu intertwined",
+          "Children receive yomari as a reward during the festival — the number represents their age"
+        ],
+        "description": "The Newar people's festival dumpling — rice flour dough shaped into elongated teardrops, filled with chaku (raw sugar and sesame) or khuwa (milk fudge), and steamed. Made only for Yomari Punhi (the full moon festival after the rice harvest, December). The Newar are Kathmandu Valley's indigenous people; their food culture is distinct from hill Nepali. Children receive yomari equal to their age.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Yomari_double.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Yomari_double.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "npl-ln-1",
+        "name": "Momos (Nepali Dumplings)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 40,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, water, salt",
+          "Filling: minced buffalo or chicken, onion, cilantro, ginger, garlic, cumin, chili",
+          "Tomato achar for dipping"
+        ],
+        "instructions": [
+          "Make dough, rest",
+          "Mix filling",
+          "Roll wrappers, fill",
+          "Pleat and pinch closed",
+          "Steam 15 min",
+          "Serve with spicy tomato achar"
+        ],
+        "description": "Nepal's beloved dumplings — steamed and served with spicy tomato pickle.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Momo_nepal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Momo_nepal.jpg"
+        }
+      },
+      {
+        "id": "npl-ln-2",
+        "name": "Thukpa (Noodle Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Noodles",
+          "Chicken or vegetables",
+          "Garlic",
+          "Ginger",
+          "Tomato",
+          "Green onion",
+          "Chili",
+          "Soy sauce",
+          "Broth"
+        ],
+        "instructions": [
+          "Sauté garlic, ginger, tomato",
+          "Add broth, bring to boil",
+          "Add noodles and protein",
+          "Cook until done",
+          "Top with green onion and chili"
+        ],
+        "description": "Warming Tibetan-influenced noodle soup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg"
+        }
+      },
+      {
+        "id": "npl-ln-3",
+        "name": "Thukpa (Tibetan Noodle Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Hand-stretched or store-bought noodles (thick wheat)",
+          "Chicken or vegetables",
+          "Onion, garlic, ginger",
+          "Tomatoes (fresh)",
+          "Turmeric, cumin, coriander",
+          "Chili",
+          "Cilantro, spinach (or Chinese cabbage)",
+          "Salt"
+        ],
+        "instructions": [
+          "Thukpa comes from Tibet — brought to Nepal by the Tibetan diaspora and Himalayan communities",
+          "It's the warming soup of Nepal's high-altitude communities — the mountain food",
+          "Fry onion, garlic, ginger until fragrant",
+          "Add tomatoes — cook down until soft",
+          "Add spices: turmeric, cumin, coriander, chili",
+          "Add chicken or vegetables, stock or water",
+          "Add noodles — they cook in the soup (thick noodles work best)",
+          "Add spinach or cabbage in the last minutes",
+          "Top with cilantro",
+          "Thukpa is eaten across Nepal's mountain regions — Sherpa communities, Tibetan refugees, and Himalayan trekkers",
+          "The warming, filling, noodle-heavy soup is exactly what the altitude and cold demand",
+          "Trekkers on the Everest Base Camp trail eat thukpa as a warming staple"
+        ],
+        "description": "Nepal's mountain noodle soup — Tibetan in origin, brought to Nepal by Himalayan and Tibetan communities, now eaten across Nepal's high-altitude regions. Thick noodles in a spiced tomato-ginger broth with chicken or vegetables. Warming, filling, and exactly right for altitude. Sherpa communities, Tibetan refugees, and Everest trekkers all eat thukpa as the mountain warming dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg"
+        }
+      },
+      {
+        "id": "npl-ln-4",
+        "name": "Aloo Tama (Potato and Bamboo Shoot Curry)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Potatoes (cubed)",
+          "Tama (fermented bamboo shoots — the essential Nepali ingredient)",
+          "Black-eyed peas (or regular beans)",
+          "Mustard oil (the cooking oil of Nepal)",
+          "Turmeric, cumin, fenugreek, timur pepper (Nepali Sichuan pepper)",
+          "Dried chili, garlic, ginger",
+          "Salt"
+        ],
+        "instructions": [
+          "Tama (fermented bamboo shoots) is one of Nepal's most distinctive ingredients",
+          "The fermentation gives a unique sour, slightly funky flavor — no substitute",
+          "It's a traditional Newar dish — aloo tama ko jhol",
+          "Fry mustard oil with fenugreek and dried chili until the mustard oil loses its raw flavor",
+          "Add garlic, ginger, timur pepper — timur is the Nepali Sichuan pepper (related but different)",
+          "Add potato and fermented bamboo shoot — the bamboo shoot's sourness is the flavor base",
+          "Add black-eyed peas, water",
+          "Simmer until potato is cooked through",
+          "The mustard oil + fenugreek + timur combination is distinctly Nepali — found nowhere else",
+          "Aloo tama is a uniquely Nepali flavor profile — the fermented bamboo is irreplaceable",
+          "Eaten with rice — the sour stew with plain rice is the balance"
+        ],
+        "description": "Nepal's distinctively Nepali curry — fermented bamboo shoots (tama, sour and funky from fermentation) with potato and beans in a mustard oil base with fenugreek and timur (Nepali Sichuan pepper). The fermented bamboo shoot's sourness is irreplaceable — this is one of those dishes where a key ingredient is genuinely Nepali-specific. The mustard oil-fenugreek-timur base is found nowhere else.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Aalu_Bodi_Tama_3.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Aalu_Bodi_Tama_3.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "npl-dn-1",
+        "name": "Newari Khaja Set",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Beaten rice (chiura)",
+          "Choila (spiced grilled meat)",
+          "Black-eyed beans",
+          "Spinach",
+          "Achar (pickle)",
+          "Aloo (spiced potato)"
+        ],
+        "instructions": [
+          "Grill and spice meat for choila",
+          "Cook beans",
+          "Sauté spinach",
+          "Make potato dish",
+          "Make pickle",
+          "Arrange all on plate with beaten rice"
+        ],
+        "description": "Newar feast plate — an array of small dishes with beaten rice."
+      },
+      {
+        "id": "npl-dn-2",
+        "name": "Sukuti (Dried Meat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 720,
+        "cookTime": 10,
+        "ingredients": [
+          "500g buffalo meat",
+          "Salt",
+          "Turmeric",
+          "Chili",
+          "Fenugreek",
+          "Garlic",
+          "Ginger",
+          "Oil"
+        ],
+        "instructions": [
+          "Slice meat thin, rub with spices",
+          "Dry in sun 2-3 days",
+          "When ready, fry in oil until crispy",
+          "Serve as side dish"
+        ],
+        "description": "Dried and fried spiced buffalo meat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sukuti.jpg",
+        "imageCredit": {
+          "author": "Raunak Maskay",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASukuti.jpg"
+        }
+      },
+      {
+        "id": "npl-dn-3",
+        "name": "Gundruk (Fermented Greens) Soup",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Gundruk (dried fermented greens — mustard leaves, radish leaves, or cauliflower leaves)",
+          "Onion, garlic, ginger",
+          "Tomato",
+          "Mustard oil",
+          "Turmeric, chili",
+          "Salt, cilantro"
+        ],
+        "instructions": [
+          "Gundruk is Nepal's national fermented vegetable — UNESCO recently acknowledged its cultural importance",
+          "Made by allowing wilted vegetable leaves to ferment in a warm, dark place for 5-7 days",
+          "Then dried in the sun — can be stored for years",
+          "The fermentation is natural lactic acid — creates a sour, complex flavor",
+          "Reconstitute gundruk in water — it softens and releases flavor",
+          "Fry onion and garlic in mustard oil",
+          "Add tomato, turmeric, chili",
+          "Add reconstituted gundruk and its soaking liquid",
+          "The soaking liquid has flavor — use it all",
+          "Simmer 15 minutes",
+          "Gundruk ko jhol is eaten daily in rural Nepal",
+          "It's the village vegetable preservation — making leaves keep through winter",
+          "The sour-funky flavor of gundruk is the flavor of Nepali home cooking"
+        ],
+        "description": "Nepal's national fermented vegetable — mustard or radish leaves wilted, fermented naturally for a week, then sun-dried until they keep for years. Gundruk is simmered into a sour, savory soup in mustard oil with tomato and turmeric. The fermentation creates a complex sourness that defines Nepali village cooking. Gundruk was recently acknowledged by UNESCO for its cultural significance in Nepali food heritage.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Nepali_dal-bhat-tarkari.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Nepali_dal-bhat-tarkari.jpg"
+        }
+      },
+      {
+        "id": "npl-dn-4",
+        "name": "Kwati (Nine-Bean Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 12,
+        "cookTime": 60,
+        "ingredients": [
+          "Nine types of sprouted beans and lentils: green mung, black mung, soybean, black-eyed pea, chickpea, field pea, garden pea, broad bean, rice bean",
+          "Onion, garlic, ginger",
+          "Mustard oil, ghee",
+          "Turmeric, cumin, coriander, timur",
+          "Salt, cilantro"
+        ],
+        "instructions": [
+          "Kwati is a traditional Newari soup eaten during Janai Purnima (full moon of Shrawan — August)",
+          "The nine beans represent the nine planets (navagraha) in Hindu-Buddhist cosmology",
+          "All beans are sprouted first — this takes 2-3 days but improves nutrition and digestibility",
+          "Sprouting: soak overnight, drain, keep moist — the sprouts emerge in 1-2 days",
+          "Fry onion, garlic, ginger in mustard oil",
+          "Add spices — timur pepper is important",
+          "Add the sprouted beans with water",
+          "Cook 45-60 minutes until all beans are tender",
+          "The different beans give different textures and flavors in one bowl",
+          "Kwati is filling, nutritious, and complex",
+          "It's the festival soup — prepared by families on Janai Purnima"
+        ],
+        "description": "Nepal's nine-bean festival soup — nine types of beans and lentils sprouted for 2-3 days (sprouting improves nutrition and digestibility), then simmered together with mustard oil, timur pepper, and spices. The nine beans represent the nine planets in Hindu-Buddhist cosmology. Made on Janai Purnima (August full moon). The mix of textures (each bean cooks differently) in a single pot is the Kwati experience.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/A_bowl_of_Kwati.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/A_bowl_of_Kwati.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "npl-sn-1",
+        "name": "Chatamari (Nepali Pizza)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Rice flour batter",
+          "Minced meat or eggs",
+          "Onion",
+          "Chili",
+          "Cilantro",
+          "Oil"
+        ],
+        "instructions": [
+          "Pour thin rice batter on hot pan",
+          "Add meat or crack egg on top",
+          "Add onion and chili",
+          "Cook until crispy underneath"
+        ],
+        "description": "Thin rice-flour crepe topped with meat or egg — Newari 'pizza'.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Meat_Chatamari.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Meat_Chatamari.jpg"
+        }
+      },
+      {
+        "id": "npl-sn-2",
+        "name": "Chatamari (Newari Rice Crepe)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Rice flour",
+          "Water, salt",
+          "Toppings: minced meat with egg and spices, OR sweet: coconut and sugar",
+          "Mustard oil for the pan"
+        ],
+        "instructions": [
+          "Chatamari is the Newari pizza — rice flour crepe with toppings",
+          "One of the most important foods of the Newar people (Kathmandu Valley)",
+          "Mix rice flour with water and salt — a thin batter, thinner than pancake batter",
+          "Pour onto a hot, oiled flat pan",
+          "Add toppings immediately before the crepe sets",
+          "Savory: minced meat with egg, green onion, spices",
+          "Sweet: grated coconut, sugar, sometimes egg",
+          "Cook covered so the topping steams",
+          "The crepe is thin and slightly crispy at the edges",
+          "Chatamari is made at festivals and in Newari restaurants",
+          "The name 'Newari pizza' is a modern label — it predates pizza by centuries",
+          "Served at Indra Jatra and other Kathmandu Valley festivals"
+        ],
+        "description": "The Newar people's rice crepe — a thin rice flour batter poured onto a hot pan and immediately topped with minced meat and egg (savory) or coconut and sugar (sweet), cooked until the crepe is crispy at the edges and the topping is set. Called 'Newari pizza' (it predates pizza). Made for Indra Jatra and other Kathmandu Valley festivals — one of the most distinctive Newar foods.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Meat_Chatamari.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Meat_Chatamari.jpg"
+        }
+      },
+      {
+        "id": "npl-sn-3",
+        "name": "Sukuti (Dried Meat Jerky)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Buffalo meat (traditional) or chicken",
+          "Salt, turmeric, cumin, chili",
+          "Mustard oil",
+          "Ginger, garlic (optional)"
+        ],
+        "instructions": [
+          "Sukuti is Nepal's traditional dried meat — buffalo jerky",
+          "In Nepal, buffalo (not cow) is the traditional meat — Hindu communities don't eat beef",
+          "The meat is marinated with salt, spices, mustard oil",
+          "Hung and air-dried in the cold mountain air — or low oven",
+          "The drying preserves without refrigeration — important at altitude",
+          "The result: chewy, intensely flavored, spiced meat strips",
+          "Eaten as a snack, in curries, or as a side",
+          "The smoky, spiced, chewy buffalo sukuti is a Himalayan trekker snack",
+          "Newari festivals always include sukuti — it's a Newari celebration food",
+          "The mountain cold and dry air create the ideal sukuti conditions",
+          "Now made with chicken or goat — buffalo is traditional"
+        ],
+        "description": "Nepal's traditional dried buffalo jerky — buffalo meat (cows are sacred in Hindu Nepal; buffalo is the traditional red meat) marinated in mustard oil, salt, and spices, then air-dried in the mountain cold. The altitude and dry Himalayan air create ideal jerky conditions. Sukuti is a Newari festival staple and a Himalayan trekking snack. The chewy, intensely spiced strips are eaten alone or reconstituted in curries.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sukuti.jpg",
+        "imageCredit": {
+          "author": "Raunak Maskay",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASukuti.jpg"
+        }
+      },
+      {
+        "id": "npl-sn-4",
+        "name": "Tongba (Fermented Millet Hot Drink)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Fermented millet (the tongba — a jarful of fermented millet)",
+          "Hot water (near-boiling)",
+          "A bamboo straw (tongba straw — filters out the grain)"
+        ],
+        "instructions": [
+          "Tongba is the traditional fermented drink of the Limbu people of eastern Nepal",
+          "Also popular in Darjeeling, Sikkim, and among the Rai people",
+          "The preparation: fermented millet packed into a wooden or bamboo container (also called tongba)",
+          "Hot water is poured over the fermented millet",
+          "Drunk through a bamboo straw with a filter — the straw strains out the grains",
+          "The hot water extracts the flavor — like a hot infusion",
+          "More hot water is added as you drink — the same grains can be steeped 3-4 times",
+          "The alcohol level is mild — like a warm, slightly alcoholic grain tea",
+          "Warming on cold mountain nights — traditionally drunk at altitude",
+          "The tongba container and bamboo straw are the vessel — they're part of the ritual",
+          "Tongba is the Himalayan warming drink — drunk while watching the mountains"
+        ],
+        "description": "The Limbu people's fermented millet drink — a jar of fermented millet stuffed with hot water and drunk through a filtered bamboo straw (the same straw that gives the drink its name). The hot water extracts warmth and gentle alcohol from the grain; the same millet can be steeped 3-4 times. Drunk in the mountains of eastern Nepal while watching the Himalayas at night. The tongba vessel and bamboo straw are inseparable from the ritual.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Tongba.jpg",
+        "imageCredit": {
+          "author": "Jweatherley",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATongba.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "npl-ds-1",
+        "name": "Juju Dhau (King Yogurt)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 240,
+        "ingredients": [
+          "Whole buffalo milk",
+          "Sugar",
+          "Cardamom",
+          "Clay pot"
+        ],
+        "instructions": [
+          "Heat milk, add sugar and cardamom",
+          "Pour into clay pot",
+          "Let set in warm place 6-8 hours",
+          "Serve chilled from clay pot"
+        ],
+        "description": "Bhaktapur's legendary creamy yogurt — set in clay pots.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dhau.JPG",
+        "imageCredit": {
+          "author": "Eukesh at English Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ADhau.JPG"
+        }
+      },
+      {
+        "id": "npl-ds-2",
+        "name": "Kheer (Nepali Rice Pudding)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 40,
+        "ingredients": [
+          "Short-grain rice (washed)",
+          "Whole milk (full-fat)",
+          "Sugar",
+          "Cardamom",
+          "Saffron (optional — festival version)",
+          "Cashews, raisins, pistachio"
+        ],
+        "instructions": [
+          "Kheer is the universal South Asian milk rice pudding — but Nepal's version has its own character",
+          "Rice simmered in milk for 30-40 minutes — the milk thickens as the rice absorbs it",
+          "Long, slow cooking — stir regularly to prevent the bottom burning",
+          "Sugar added near the end",
+          "Cardamom is the principal spice",
+          "Saffron for the festival version — the yellow color is auspicious",
+          "The texture should be thick but pourable — not solid",
+          "Top with fried cashews, raisins, pistachios",
+          "Kheer is made for every Nepali festival — Dashain, Tihar, Teej, weddings",
+          "The smell of cardamom-kheer cooking means celebration in Nepal",
+          "Served on banana leaves at traditional feasts"
+        ],
+        "description": "Nepal's festival milk rice pudding — short-grain rice slowly simmered in full-fat milk until thick and creamy, with cardamom and saffron (the festival golden version). The long, slow cooking (30-40 minutes of stirring) develops the richness. Topped with fried cashews and pistachios. Made for every Nepali festival — Dashain, Tihar, weddings. The cardamom smell from the kitchen announces that something special is being prepared.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Kheer.jpg",
+        "imageCredit": {
+          "author": "stu spivack",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKheer.jpg"
+        }
+      },
+      {
+        "id": "npl-ds-3",
+        "name": "Juju Dhau (King Yoghurt)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 480,
+        "ingredients": [
+          "Full-fat buffalo milk (higher fat than cow milk — essential)",
+          "A small amount of active yoghurt culture (from previous batch)",
+          "Earthenware pots (the terra cotta absorbs excess moisture — essential for the texture)"
+        ],
+        "instructions": [
+          "Juju Dhau means 'king yoghurt' in Newari — and it lives up to the name",
+          "Made only in Bhaktapur (a city in Kathmandu Valley) — the terra cotta pots are specific to Bhaktapur",
+          "The earthenware pot absorbs excess moisture — creates a thicker, creamier yoghurt than metal or glass",
+          "Buffalo milk is essential — higher fat content than cow milk",
+          "Heat buffalo milk until hot, cool to 40-45°C",
+          "Add a small amount of active culture",
+          "Pour into the earthenware pot",
+          "Incubate 6-8 hours in a warm place (or overnight)",
+          "The yoghurt should be thick, creamy, slightly sweet — rich",
+          "Bhaktapur's Juju Dhau is famous across Nepal — people travel to Bhaktapur to buy it",
+          "Sold in the earthenware pot — the pot is part of the purchase",
+          "Served at weddings and festivals"
+        ],
+        "description": "Nepal's 'king yoghurt' — made exclusively in Bhaktapur (Kathmandu Valley) in specific earthenware pots that absorb moisture, creating a texture impossible to replicate in metal or glass. Buffalo milk (higher fat than cow) is essential. The result: thick, creamy, slightly sweet yoghurt that is Nepal's most prized dairy product. People travel to Bhaktapur specifically to buy Juju Dhau. Served at weddings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dhau.JPG",
+        "imageCredit": {
+          "author": "Eukesh at English Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ADhau.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "npl-dr-1",
+        "name": "Chiya (Nepali Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Black tea",
+          "Milk",
+          "Sugar",
+          "Cardamom",
+          "Ginger"
+        ],
+        "instructions": [
+          "Boil water with ginger and cardamom",
+          "Add tea and milk",
+          "Simmer 5 min",
+          "Strain, sweeten"
+        ],
+        "description": "Spiced milk tea — Nepal runs on this.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Nepali_dal-bhat-tarkari.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Nepali_dal-bhat-tarkari.jpg"
+        }
+      },
+      {
+        "id": "npl-dr-2",
+        "name": "Tongba (Millet Beer)",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Fermented millet",
+          "Hot water"
+        ],
+        "instructions": [
+          "Pack fermented millet in bamboo vessel",
+          "Pour hot water over",
+          "Wait 5 minutes",
+          "Sip through bamboo straw",
+          "Refill with hot water multiple times"
+        ],
+        "description": "Hot millet beer sipped through a straw — Himalayan mountain tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Tongba.jpg",
+        "imageCredit": {
+          "author": "Jweatherley",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATongba.jpg"
+        }
+      },
+      {
+        "id": "npl-dr-3",
+        "name": "Masala Tea / Nepali Chiya",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 8,
+        "ingredients": [
+          "Black tea (strong — loose leaf)",
+          "Whole milk",
+          "Water",
+          "Cardamom pods (cracked)",
+          "Ginger (fresh, crushed)",
+          "Cinnamon stick",
+          "Cloves (2-3)",
+          "Sugar"
+        ],
+        "instructions": [
+          "Nepali chiya (tea) is the foundation of Nepali social life",
+          "Made by boiling the spices first — ginger and cardamom in water",
+          "Add tea — a strong black tea (Ilam tea from eastern Nepal is prestigious)",
+          "Add milk — half and half with water is common",
+          "Simmer 5 minutes — the tea and milk merge",
+          "Add sugar to taste",
+          "The spices are Nepali: ginger is generous, cardamom is forward",
+          "Ilam district (eastern Nepal, near Darjeeling) produces excellent Nepali tea",
+          "Less well-known internationally than Darjeeling but from the same Himalayan tea belt",
+          "Chiya is drunk in the morning, after lunch, during rest, and as hospitality",
+          "Refusing tea in Nepal is impolite — it is offered at every home visit",
+          "The street chiya wallah (tea seller) is a fixture of every Nepali town"
+        ],
+        "description": "Nepal's foundational social drink — strong black tea (ideally Ilam tea from eastern Nepal's Himalayan tea belt, neighboring Darjeeling) boiled with ginger, cardamom, cinnamon, and milk. Refusing tea in Nepal is impolite: it is offered at every home, business, and rest stop. The street chiya wallah is a fixture of every Nepali town. Ilam tea is Nepal's prestige tea, less known internationally than Darjeeling but from the same mountain range.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ginger_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ginger_tea.jpg"
+        }
+      }
+    ]
+  }
+}

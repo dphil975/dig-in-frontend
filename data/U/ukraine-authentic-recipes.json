@@ -1,0 +1,722 @@
+{
+  "ukraineRecipes": {
+    "country": "Ukraine",
+    "region": "Eastern Europe",
+    "breakfast": [
+      {
+        "id": "ukr-bf-1",
+        "name": "Syrnyky (Curd Pancakes)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "500g tvorog/curd cheese",
+          "Egg",
+          "3 tbsp flour",
+          "Sugar",
+          "Vanilla",
+          "Butter",
+          "Sour cream",
+          "Berry jam"
+        ],
+        "instructions": [
+          "Mix curd with egg, flour, sugar",
+          "Shape into patties",
+          "Fry in butter until golden",
+          "Serve with sour cream and jam"
+        ],
+        "description": "Sweet curd cheese pancakes — a Ukrainian morning tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Syrniki6.jpg",
+        "imageCredit": {
+          "author": "Tatyana Morozyuk, color processing by Off-shell",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASyrniki6.jpg"
+        }
+      },
+      {
+        "id": "ukr-bf-2",
+        "name": "Deruny (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "6 potatoes (grated)",
+          "1 onion",
+          "Egg",
+          "Flour",
+          "Salt",
+          "Oil",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Grate potatoes and onion, squeeze dry",
+          "Mix with egg and flour",
+          "Fry until crispy",
+          "Serve with sour cream"
+        ],
+        "description": "Crispy potato pancakes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Latkas.jpg",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "GFDL 1.2",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALatkas.jpg"
+        }
+      },
+      {
+        "id": "ukr-bf-3",
+        "name": "Syrniki (Cottage Cheese Pancakes)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Tvorog/cottage cheese (farmer's cheese -- pressed dry)",
+          "Eggs, flour, sugar",
+          "Vanilla",
+          "Sour cream and jam (for serving)"
+        ],
+        "instructions": [
+          "Syrniki are Ukrainian (and broader Eastern European) cottage cheese pancakes",
+          "Tvorog (farmer's cheese) mixed with egg, flour, and sugar into small patties",
+          "Pan-fried in butter until golden on both sides",
+          "Served with sour cream (smetana) and jam or fresh berries",
+          "A beloved breakfast -- quick to make and deeply comforting",
+          "The tvorog must be pressed dry or the syrniki fall apart"
+        ],
+        "description": "Ukrainian cottage cheese pancakes -- syrniki, farmer's cheese (tvorog) mixed with egg and flour, pan-fried in butter until golden. Served with sour cream and jam. The tvorog must be pressed dry or they fall apart. Quick, comforting breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Syrniki6.jpg",
+        "imageCredit": {
+          "author": "Tatyana Morozyuk, color processing by Off-shell",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASyrniki6.jpg"
+        }
+      },
+      {
+        "id": "ukr-bf-4",
+        "name": "Mlyntsi (Ukrainian Crepes)",
+        "difficulty": "Easy",
+        "servings": 10,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour, eggs, milk, water",
+          "Butter",
+          "Salt, sugar",
+          "Filling: tvorog and raisins, or meat, or mushrooms"
+        ],
+        "instructions": [
+          "Mlyntsi (also called nalisniki when filled) are Ukrainian crepes",
+          "Thin, delicate crepes cooked on a hot pan",
+          "Filled with sweetened tvorog and raisins (sweet version) or ground meat (savory)",
+          "Rolled up and sometimes pan-fried again for crispiness",
+          "Part of the Eastern Slavic crepe tradition (blini/nalisniki/mlyntsi)",
+          "Eaten at breakfast, as a snack, or for Maslenitsa (Butter Week before Lent)"
+        ],
+        "description": "Ukrainian crepes -- mlyntsi, thin crepes filled with sweetened tvorog and raisins (sweet) or ground meat (savory), rolled and pan-fried again. Part of the Eastern Slavic crepe tradition. Eaten at breakfast and during Maslenitsa (Butter Week).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "ukr-ln-1",
+        "name": "Borscht",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Beets",
+          "Cabbage",
+          "Potatoes",
+          "Carrots",
+          "Onion",
+          "Garlic",
+          "Tomato paste",
+          "Pork or beef",
+          "Dill",
+          "Sour cream",
+          "Bread"
+        ],
+        "instructions": [
+          "Cook meat broth",
+          "Add potatoes, cook 10 min",
+          "Sauté grated beets with tomato paste",
+          "Add cabbage, beets, carrots, onion to broth",
+          "Simmer 20 min",
+          "Serve with sour cream, dill, and bread"
+        ],
+        "description": "Ukraine's national dish — beet soup with sour cream and pampushky.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Borscht_served.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Borscht_served.jpg"
+        }
+      },
+      {
+        "id": "ukr-ln-2",
+        "name": "Varenyky (Dumplings)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, egg, water",
+          "Filling: potato and onion, cherry, or cottage cheese",
+          "Butter",
+          "Sour cream",
+          "Dill"
+        ],
+        "instructions": [
+          "Make dough, roll thin",
+          "Cut circles, fill",
+          "Pinch closed, boil until they float",
+          "Toss with butter",
+          "Serve with sour cream and dill"
+        ],
+        "description": "Ukrainian dumplings — sweet or savory.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg"
+        }
+      },
+      {
+        "id": "ukr-ln-3",
+        "name": "Varenyky (Ukrainian Dumplings)",
+        "difficulty": "Medium",
+        "servings": 30,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, egg, water, salt",
+          "Filling: mashed potato and farmer's cheese, or sauerkraut, or cherries (sweet)",
+          "Sour cream (smetana) and fried onions (for serving)",
+          "Butter"
+        ],
+        "instructions": [
+          "Varenyky are the Ukrainian dumplings -- the national comfort food",
+          "Thin dough wrapped around a filling and boiled",
+          "The most classic filling: mashed potato mixed with farmer's cheese",
+          "Sauerkraut filling for a sour, tangy version",
+          "Cherry filling for sweet varenyky -- a summer treat",
+          "Served with sour cream and crispy fried onions",
+          "Every Ukrainian grandmother has her own varenyky recipe and technique",
+          "Varenyky are the Ukrainian identity food -- festivals, holidays, everyday meals",
+          "Similar to Polish pierogi but the name and some fillings differ"
+        ],
+        "description": "Ukrainian national dumplings -- varenyky, thin dough around potato-cheese, sauerkraut, or cherry filling, boiled and served with sour cream and fried onions. Every grandmother has her own recipe. The Ukrainian identity food: festivals, holidays, everyday. Similar to pierogi.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg"
+        }
+      },
+      {
+        "id": "ukr-ln-4",
+        "name": "Holubtsi (Stuffed Cabbage Rolls)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Cabbage leaves (blanched until pliable)",
+          "Filling: rice and ground pork/beef, onion, garlic",
+          "Tomato sauce",
+          "Sour cream (for serving)"
+        ],
+        "instructions": [
+          "Holubtsi are Ukrainian stuffed cabbage rolls -- a dish found across Eastern Europe",
+          "Cabbage leaves blanched, filled with seasoned meat and rice, rolled tight",
+          "Baked in tomato sauce until the cabbage is tender",
+          "Served with sour cream",
+          "A dish for Christmas Eve (Sviata Vecheria) -- the meatless version uses mushroom filling",
+          "The name comes from \"holub\" (dove) -- the rolls are shaped like small doves",
+          "A labor of love -- making holubtsi takes patience and skill in rolling"
+        ],
+        "description": "Ukrainian stuffed cabbage rolls -- holubtsi (from holub, dove -- shaped like small doves), cabbage leaves filled with seasoned meat and rice, baked in tomato sauce. Served with sour cream. A Christmas Eve dish (meatless mushroom version). A labor of love in rolling.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg"
+        }
+      },
+      {
+        "id": "ukr-ln-5",
+        "name": "Solyanka (Sour and Salty Soup)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "Smoked meats (variety: sausage, ham, beef)",
+          "Pickled cucumbers (chopped)",
+          "Olives, capers",
+          "Tomato paste",
+          "Onion, garlic",
+          "Lemon slice and sour cream (for serving)",
+          "Dill"
+        ],
+        "instructions": [
+          "Solyanka is the Ukrainian/Russian sour and salty soup",
+          "A rich, complex soup with multiple smoked meats and pickled ingredients",
+          "The sourness comes from pickled cucumbers, olives, and lemon",
+          "The saltiness from smoked meats and capers",
+          "Served with a lemon slice in the bowl and a spoonful of sour cream",
+          "A hangover cure -- the richness and sourness are restorative"
+        ],
+        "description": "Ukrainian sour-salty soup -- solyanka, multiple smoked meats simmered with pickled cucumbers, olives, capers, and tomato paste. Served with a lemon slice and sour cream. Rich and complex. A famous hangover cure.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Soljanka_food_05.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Soljanka_food_05.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "ukr-dn-1",
+        "name": "Chicken Kyiv",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "4 chicken breasts",
+          "Butter (herb-flavored)",
+          "Dill",
+          "Garlic",
+          "Flour",
+          "Egg",
+          "Breadcrumbs",
+          "Oil"
+        ],
+        "instructions": [
+          "Pound chicken, place herb butter inside",
+          "Roll chicken around butter, secure",
+          "Coat in flour, egg, breadcrumbs",
+          "Deep fry until golden",
+          "Rest 5 min — butter should gush when cut"
+        ],
+        "description": "The legendary butter-stuffed breaded chicken breast."
+      },
+      {
+        "id": "ukr-dn-2",
+        "name": "Holubtsi (Cabbage Rolls)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Cabbage leaves",
+          "Filling: rice, pork, onion",
+          "Tomato sauce",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Blanch cabbage leaves",
+          "Mix filling",
+          "Roll cabbage around filling",
+          "Pack in pot with tomato sauce",
+          "Bake or simmer 60 min",
+          "Serve with sour cream"
+        ],
+        "description": "Cabbage rolls filled with pork and rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg"
+        }
+      },
+      {
+        "id": "ukr-dn-3",
+        "name": "Chicken Kyiv",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "Chicken breast (pounded thin)",
+          "Butter (cold, seasoned with garlic, dill, parsley)",
+          "Flour, beaten egg, breadcrumbs",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Chicken Kyiv is the butter-stuffed breaded chicken -- a dish famous worldwide",
+          "A cold herb butter is placed inside a pounded chicken breast",
+          "The chicken is rolled around the butter, breaded, and fried",
+          "When cut open: a burst of melted herb butter flows out -- the spectacle",
+          "The origin is debated -- likely French-influenced (Kiev/Kyiv was very francophile)",
+          "Named after the Ukrainian capital",
+          "The key: the butter must be very cold before wrapping, and the seal must be tight"
+        ],
+        "description": "Famous butter-stuffed chicken -- Chicken Kyiv, cold herb butter (garlic, dill, parsley) sealed inside a pounded breast, breaded, and fried. When cut: melted butter bursts out. Named after the Ukrainian capital. French-influenced technique. The seal must be tight."
+      },
+      {
+        "id": "ukr-dn-4",
+        "name": "Deruny (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Potatoes (grated raw)",
+          "Onion (grated)",
+          "Egg, flour",
+          "Salt, pepper",
+          "Oil for frying",
+          "Sour cream (for serving)"
+        ],
+        "instructions": [
+          "Deruny are Ukrainian potato pancakes -- crispy, golden, and comforting",
+          "Raw potatoes grated and mixed with onion, egg, and a little flour",
+          "Pan-fried in oil until crispy on both sides",
+          "Served with sour cream",
+          "Similar to latkes (Jewish), Kartoffelpuffer (German), draniki (Belarusian)",
+          "A dish of the potato belt -- Ukraine is one of the world's largest potato producers",
+          "Quick, cheap, and satisfying -- peasant food elevated to comfort classic"
+        ],
+        "description": "Ukrainian potato pancakes -- deruny, raw grated potato and onion fried until crispy golden. Served with sour cream. Part of the Eastern European potato pancake family (latkes, draniki). Ukraine is one of the world's largest potato producers. Peasant food elevated to comfort classic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Latkas.jpg",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "GFDL 1.2",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALatkas.jpg"
+        }
+      },
+      {
+        "id": "ukr-dn-5",
+        "name": "Pampushky (Garlic Bread Rolls)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour, yeast, milk, egg, butter, sugar, salt",
+          "Garlic sauce: garlic crushed with oil, dill, and salt"
+        ],
+        "instructions": [
+          "Pampushky are Ukrainian soft garlic bread rolls -- the essential accompaniment to borscht",
+          "A soft, slightly sweet yeast dough baked into small round rolls",
+          "While hot from the oven, drenched in a garlic-dill-oil sauce",
+          "The garlic soaks into the warm bread",
+          "Borscht without pampushky is considered incomplete",
+          "The combination of beet soup and garlic bread is the Ukrainian comfort meal"
+        ],
+        "description": "Ukrainian soft garlic bread rolls -- pampushky, yeast dough baked into small rounds and drenched in garlic-dill-oil sauce while hot. The essential accompaniment to borscht. Borscht without pampushky is considered incomplete.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pampushky-plain.jpg",
+        "imageCredit": {
+          "author": "Kagor at Ukrainian Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APampushky-plain.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "ukr-sn-1",
+        "name": "Pampushky (Garlic Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, yeast, water, sugar, salt",
+          "Garlic sauce: garlic, dill, oil, salt"
+        ],
+        "instructions": [
+          "Make yeast dough, rise",
+          "Shape into small buns",
+          "Bake at 200°C 15 min",
+          "Toss hot buns in garlic-dill sauce"
+        ],
+        "description": "Soft garlic buns — the essential borscht companion.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pampushky-plain.jpg",
+        "imageCredit": {
+          "author": "Kagor at Ukrainian Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APampushky-plain.jpg"
+        }
+      },
+      {
+        "id": "ukr-sn-2",
+        "name": "Salo (Cured Pork Fat)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Pork fatback (with or without a thin meat layer)",
+          "Coarse salt",
+          "Garlic",
+          "Black pepper, paprika, bay leaf"
+        ],
+        "instructions": [
+          "Salo is the Ukrainian national delicacy -- cured pork fat",
+          "Pork fatback cured in salt and garlic for several days",
+          "Sliced thin and eaten on dark rye bread (chornyi khlib) with garlic",
+          "Sometimes smoked for extra flavor",
+          "Salo is a cultural icon -- there are festivals, songs, and jokes about salo",
+          "It is the most emblematic Ukrainian food -- more than even borscht",
+          "Eaten as a snack, appetizer, or with vodka (horilka)"
+        ],
+        "description": "Ukrainian cultural icon -- salo, cured pork fatback with salt and garlic, sliced thin on dark rye bread. More emblematic than borscht. There are festivals, songs, and jokes about salo. Eaten as a snack or with horilka (Ukrainian vodka).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Sa%C5%82o.JPG",
+        "imageCredit": {
+          "author": "Beiot",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASa%C5%82o.JPG"
+        }
+      },
+      {
+        "id": "ukr-sn-3",
+        "name": "Pirozhki (Fried Stuffed Buns)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 40,
+        "cookTime": 15,
+        "ingredients": [
+          "Yeast dough (flour, yeast, milk, butter)",
+          "Filling: mashed potato, or cabbage, or meat",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Pirozhki are small fried stuffed buns -- a street food across Ukraine and Russia",
+          "Soft yeast dough filled with potato, cabbage, or seasoned meat",
+          "Fried until golden brown",
+          "Sold by babushkas at train stations and markets",
+          "Eaten on the go -- the portable meal"
+        ],
+        "description": "Ukrainian fried stuffed buns -- pirozhki, soft yeast dough with potato, cabbage, or meat filling, fried golden. Sold by babushkas at train stations and markets. The portable meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Piroshki.JPG",
+        "imageCredit": {
+          "author": "Evilmonkey0013 at English Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APiroshki.JPG"
+        }
+      },
+      {
+        "id": "ukr-sn-4",
+        "name": "Kvasheni Ohirky (Pickled Cucumbers)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Small cucumbers (pickling variety)",
+          "Water, salt (brine)",
+          "Garlic, dill (generous)",
+          "Cherry leaves, horseradish leaves (for crunch)",
+          "Black peppercorns"
+        ],
+        "instructions": [
+          "Ukrainian pickled cucumbers are naturally fermented -- no vinegar",
+          "Cucumbers brined in salt water with garlic, dill, and leaves",
+          "The cherry and horseradish leaves keep the cucumbers crunchy",
+          "Fermented for several days to weeks",
+          "A staple of the Ukrainian table -- served alongside every meal",
+          "Essential with salo, borscht, and horilka"
+        ],
+        "description": "Ukrainian naturally fermented pickles -- kvasheni ohirky, cucumbers brined with garlic, dill, cherry leaves, and horseradish leaves (for crunch). No vinegar -- pure lactic fermentation. Served alongside every meal. Essential with salo and borscht."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "ukr-ds-1",
+        "name": "Medovik (Honey Cake)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Honey",
+          "Butter",
+          "Sugar",
+          "Eggs",
+          "Flour",
+          "Baking soda",
+          "Sour cream filling"
+        ],
+        "instructions": [
+          "Make honey dough, roll thin layers",
+          "Bake each layer",
+          "Stack with sour cream filling between",
+          "Refrigerate overnight to soften"
+        ],
+        "description": "Multi-layered honey cake with sour cream — worth the wait.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Honey_cake_Medovik.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Honey_cake_Medovik.jpg"
+        }
+      },
+      {
+        "id": "ukr-ds-2",
+        "name": "Medovik (Honey Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Honey (generous)",
+          "Butter, sugar, eggs",
+          "Flour, baking soda",
+          "Sour cream filling (sweetened sour cream between layers)"
+        ],
+        "instructions": [
+          "Medovik is the Ukrainian and Russian honey cake -- many thin layers with cream",
+          "Multiple thin honey-flavored cake layers baked one at a time",
+          "Stacked with sweetened sour cream between each layer",
+          "Refrigerated overnight -- the cream softens the layers into a tender, melting cake",
+          "The overnight rest is essential -- fresh medovik is not medovik",
+          "A celebration cake -- birthdays, holidays",
+          "The labor of baking each layer individually makes it a labor of love"
+        ],
+        "description": "Ukrainian many-layered honey cake -- medovik, thin honey-flavored cake layers stacked with sweetened sour cream, refrigerated overnight until the layers melt together. The overnight rest is essential. A labor of love -- each layer baked individually. Celebration cake.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Honey_cake_Medovik.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Honey_cake_Medovik.jpg"
+        }
+      },
+      {
+        "id": "ukr-ds-3",
+        "name": "Paska (Easter Bread)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 120,
+        "cookTime": 50,
+        "ingredients": [
+          "Flour, yeast, eggs (many), butter, sugar, milk",
+          "Raisins, candied orange peel",
+          "Vanilla",
+          "Icing and sprinkles (for decoration)"
+        ],
+        "instructions": [
+          "Paska is the Ukrainian Easter bread -- tall, domed, and richly decorated",
+          "An enriched yeast dough with many eggs and butter -- like a brioche",
+          "Studded with raisins and candied peel",
+          "Baked in tall cylindrical molds -- the dome rises above the rim",
+          "Topped with white icing and colorful sprinkles",
+          "Taken to church on Easter morning to be blessed by the priest",
+          "Part of the Easter basket (paskhalny koshyk) alongside eggs and salo",
+          "Baking paska is an Easter tradition -- the dough must be treated gently (no loud noises while it rises)"
+        ],
+        "description": "Ukrainian Easter bread -- paska, tall domed enriched bread with eggs, butter, raisins, topped with white icing and sprinkles. Taken to church on Easter morning to be blessed. Part of the Easter basket alongside eggs and salo. The dough must rise in silence.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Paskha2.jpg",
+        "imageCredit": {
+          "author": "Mitrius",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3APaskha2.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "ukr-dr-1",
+        "name": "Uzvar (Dried Fruit Compote)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Dried apples",
+          "Dried pears",
+          "Prunes",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Simmer dried fruits 15 min",
+          "Cool, serve cold with fruit"
+        ],
+        "description": "Christmas compote of dried fruits.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Peach_kompot.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Peach_kompot.JPG"
+        }
+      },
+      {
+        "id": "ukr-dr-2",
+        "name": "Horilka (Vodka)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Grain or potatoes"
+        ],
+        "instructions": [
+          "Distill grain or potato mash",
+          "Often infused with honey and chili (pertsivka)"
+        ],
+        "description": "Ukrainian vodka — sometimes honey-chili infused."
+      },
+      {
+        "id": "ukr-dr-3",
+        "name": "Uzvar (Dried Fruit Compote)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Dried fruits: apples, pears, prunes, cherries",
+          "Honey or sugar",
+          "Water",
+          "Spices: cinnamon (optional)"
+        ],
+        "instructions": [
+          "Uzvar is the Ukrainian dried fruit compote -- a traditional Christmas Eve drink",
+          "Dried fruits simmered in water until they release their sweetness",
+          "Sweetened with honey",
+          "Served cold or at room temperature",
+          "One of the 12 dishes of Sviata Vecheria (Christmas Eve dinner)",
+          "The 12 dishes represent the 12 apostles -- uzvar is the traditional drink among them"
+        ],
+        "description": "Ukrainian Christmas Eve dried fruit compote -- uzvar, dried apples, pears, prunes, and cherries simmered until sweet, finished with honey. Served cold. One of the 12 dishes of Sviata Vecheria (Christmas Eve). The 12 dishes represent the 12 apostles.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Peach_kompot.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Peach_kompot.JPG"
+        }
+      }
+    ]
+  }
+}

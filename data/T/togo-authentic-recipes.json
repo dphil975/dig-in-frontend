@@ -1,0 +1,627 @@
+{
+  "togoRecipes": {
+    "country": "Togo",
+    "region": "West Africa",
+    "breakfast": [
+      {
+        "id": "tgo-bf-1",
+        "name": "Fufu and Peanut Soup",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Yam or cassava fufu",
+          "Peanut paste",
+          "Chicken",
+          "Tomatoes",
+          "Onion",
+          "Chili",
+          "Salt"
+        ],
+        "instructions": [
+          "Make fufu: boil and pound yam",
+          "Cook peanut soup with chicken and vegetables",
+          "Serve fufu balls with soup"
+        ],
+        "description": "Pounded yam with peanut soup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Fufu.jpg",
+        "imageCredit": {
+          "author": "Londonsista",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFufu.jpg"
+        }
+      },
+      {
+        "id": "tgo-bf-2",
+        "name": "Akpan (Fermented Corn Yogurt)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Fermented corn dough",
+          "Water",
+          "Sugar"
+        ],
+        "instructions": [
+          "Mix corn dough with water",
+          "Strain",
+          "Sweeten and serve cold"
+        ],
+        "description": "Tangy fermented corn drink."
+      },
+      {
+        "id": "tgo-bf-3",
+        "name": "Akpan (Fermented Corn Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Fermented corn dough (akpan -- prepared in advance by fermenting cornmeal in water for 2 days)",
+          "Water",
+          "Sugar or honey (to serve)",
+          "Evaporated milk (optional)"
+        ],
+        "instructions": [
+          "Akpan is the Togolese fermented corn porridge -- a Fon and Ewe staple breakfast",
+          "The corn dough is fermented for 2-3 days until slightly sour",
+          "Cooked in boiling water until thickened",
+          "Eaten warm with sugar or condensed milk",
+          "The fermentation gives a slightly sour, tangy flavor",
+          "Sold at roadside stalls in the morning across Togo and Benin"
+        ],
+        "description": "Togolese fermented corn porridge -- akpan, cornmeal fermented for 2-3 days (slightly sour) cooked into a warm porridge. Eaten with sugar or condensed milk. Sold at roadside stalls in the morning across Togo and Benin."
+      },
+      {
+        "id": "tgo-bf-4",
+        "name": "Bread with Beans (Pain Haricot)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Baguette (French colonial legacy)",
+          "Spiced black-eyed peas or cowpeas (cooked soft with onion and palm oil)",
+          "Palm oil sauce",
+          "Optional: fried egg or sardines"
+        ],
+        "instructions": [
+          "Pain haricot is the West African French-colonial baguette with beans",
+          "French colonization of Togo (1914-1960 under French League of Nations mandate)",
+          "The baguette was adopted as the everyday bread",
+          "Split baguette filled with spiced beans cooked in palm oil",
+          "A quick, filling, cheap breakfast"
+        ],
+        "description": "Togolese baguette with beans -- French colonial baguette (Togo was under French mandate 1914-1960) split and filled with spiced black-eyed peas cooked in palm oil. A quick, filling street breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Beans_on_sourdough_toast.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Beans_on_sourdough_toast.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "tgo-ln-1",
+        "name": "Djenkoumé (Corn and Tomato Paste)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Cornmeal",
+          "Tomato paste",
+          "Crab or fish",
+          "Onion",
+          "Chili",
+          "Palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook tomato sauce with crab/fish",
+          "Add cornmeal, stir until thick paste forms",
+          "Cook 20 min"
+        ],
+        "description": "Thick corn-tomato paste — Togo's national dish."
+      },
+      {
+        "id": "tgo-ln-2",
+        "name": "Akoumé (Corn Paste) with Sauce",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Cornmeal",
+          "Water",
+          "Salt",
+          "Okra or peanut sauce"
+        ],
+        "instructions": [
+          "Boil water, stir in cornmeal",
+          "Cook until thick",
+          "Shape into balls",
+          "Serve with sauce"
+        ],
+        "description": "Corn paste with sauce."
+      },
+      {
+        "id": "tgo-ln-3",
+        "name": "Ablo (Steamed Corn Cakes)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Corn dough (fermented -- same base as akpan)",
+          "Palm oil sauce or stew (to serve alongside)"
+        ],
+        "instructions": [
+          "Ablo are the Togolese steamed corn cakes",
+          "Fermented corn dough steamed in small cups or molds",
+          "Soft, slightly sour, slightly sweet",
+          "Eaten alongside stews and soups",
+          "The texture: softer and spongier than fufu"
+        ],
+        "description": "Togolese steamed corn cakes -- fermented corn dough steamed in small molds until soft and slightly sour. Eaten alongside stews and soups. Softer and spongier than fufu."
+      },
+      {
+        "id": "tgo-ln-4",
+        "name": "Sauce Arachide (Peanut Sauce with Meat)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Peanut paste (ground roasted peanuts)",
+          "Chicken, beef, or goat",
+          "Tomatoes, onion, garlic",
+          "Palm oil",
+          "Chilli, salt"
+        ],
+        "instructions": [
+          "Sauce arachide is the West African peanut stew -- eaten from Senegal to Cameroon to Togo",
+          "The peanut paste is the base: rich, nutty, thick",
+          "Chicken or meat simmered in the peanut broth",
+          "Palm oil for richness and color",
+          "Eaten with fufu, rice, or attieke (cassava couscous)",
+          "The ubiquitous West African main course"
+        ],
+        "description": "Togolese peanut stew -- ground peanut paste cooked with chicken or meat, tomatoes, and palm oil into a rich, nutty stew. The West African peanut stew that spans from Senegal to Cameroon. Eaten with fufu, rice, or attieke."
+      },
+      {
+        "id": "tgo-ln-5",
+        "name": "Fufu (Yam or Cassava)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Yam (pounded) or cassava flour (with water)",
+          "Water"
+        ],
+        "instructions": [
+          "Fufu is the West African pounded starch -- the foundation of the meal",
+          "In Togo: yam fufu is preferred in the north; cassava fufu in the south",
+          "Yam is pounded in a large mortar with a heavy pestle -- two people traditionally, one pounding, one turning",
+          "The pounding motion is rhythmic and requires skill",
+          "The fufu becomes smooth, elastic, and slightly sticky",
+          "Eaten by pulling off a small piece, making an indentation, and using it to scoop stew"
+        ],
+        "description": "Togolese pounded yam or cassava -- fufu, yam pounded in a large mortar until smooth and elastic (two people traditionally: one pounding, one turning). In Togo, yam fufu is northern; cassava fufu is southern. Eaten by scooping stew.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "tgo-dn-1",
+        "name": "Gboma Dessi (Spinach Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Spinach",
+          "Palm oil",
+          "Smoked fish",
+          "Crayfish",
+          "Onion",
+          "Tomatoes",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion and tomatoes in palm oil",
+          "Add spinach and fish",
+          "Simmer until thick"
+        ],
+        "description": "Spinach stew with palm oil and smoked fish."
+      },
+      {
+        "id": "tgo-dn-2",
+        "name": "Grilled Tilapia",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "4 tilapia",
+          "Ginger",
+          "Garlic",
+          "Chili",
+          "Salt",
+          "Lime"
+        ],
+        "instructions": [
+          "Score fish, rub with spices",
+          "Grill over charcoal",
+          "Serve with banku or rice"
+        ],
+        "description": "Charcoal-grilled tilapia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Til%C3%A1pia_ou_Sarotherodon_niloticus_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Til%C3%A1pia_ou_Sarotherodon_niloticus_2.jpg"
+        }
+      },
+      {
+        "id": "tgo-dn-3",
+        "name": "Gari Foto (Cassava Flour with Eggs)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Gari (dried, toasted cassava flour)",
+          "Eggs (scrambled in)",
+          "Onion, tomato",
+          "Palm oil, chilli",
+          "Salt"
+        ],
+        "instructions": [
+          "Gari foto is the Togolese and Ghanaian cassava flour dish",
+          "Gari: dried grated cassava, toasted until it resembles a dry, coarse couscous",
+          "Cooked with eggs, tomato, and onion in palm oil",
+          "The gari absorbs the oil and egg -- becomes slightly moist and fragrant",
+          "A quick, cheap meal made from stored gari"
+        ],
+        "description": "Togolese cassava flour with eggs -- gari (dried toasted cassava couscous-like) cooked with scrambled eggs, tomato, and onion in palm oil. The gari absorbs the oil and becomes fragrant. A quick, pantry-staple meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Garri_flour.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Garri_flour.jpg"
+        }
+      },
+      {
+        "id": "tgo-dn-4",
+        "name": "Aloco (Fried Plantain)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe plantains (yellow-black -- very ripe)",
+          "Oil for frying",
+          "Chilli sauce or onion-tomato sauce (for serving)"
+        ],
+        "instructions": [
+          "Aloco are the West African fried ripe plantains",
+          "Very ripe plantains (the black-spotted ones): the sugars have developed",
+          "Fried in hot oil until caramelized and golden",
+          "Eaten with a tomato-onion-chilli sauce",
+          "A ubiquitous street food across Francophone West Africa"
+        ],
+        "description": "Togolese fried ripe plantain -- very ripe (black-spotted) plantains fried in hot oil until caramelized. Eaten with a tomato-onion-chilli sauce. Ubiquitous street food across Francophone West Africa.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg"
+        }
+      },
+      {
+        "id": "tgo-dn-5",
+        "name": "Tchakpalo (Sorghum Beer Chicken)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Chicken pieces",
+          "Tchakpalo (local sorghum beer -- used for marinating and braising)",
+          "Onion, garlic, ginger",
+          "Tomatoes",
+          "Spices: cumin, coriander"
+        ],
+        "instructions": [
+          "Tchakpalo is the Togolese sorghum beer -- and also a cooking medium",
+          "The beer is used to marinate and braise chicken",
+          "The fermented, slightly sour beer tenderizes the meat",
+          "Adds a complex, slightly tangy flavor",
+          "A ceremonial and celebratory dish"
+        ],
+        "description": "Togolese sorghum beer chicken -- chicken marinated and braised in tchakpalo (local sorghum beer), the fermented beer tenderizing the meat and adding a tangy, complex flavor. A ceremonial dish."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "tgo-sn-1",
+        "name": "Koklo Meme (Grilled Chicken)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Chicken pieces",
+          "Ginger",
+          "Garlic",
+          "Chili",
+          "Salt",
+          "Lime"
+        ],
+        "instructions": [
+          "Marinate chicken",
+          "Grill over charcoal",
+          "Serve with piment (chili sauce)"
+        ],
+        "description": "Grilled chicken with chili sauce — Lomé street food."
+      },
+      {
+        "id": "tgo-sn-2",
+        "name": "Beignets de Haricot (Bean Fritters)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Black-eyed peas (soaked, peeled, ground to a paste)",
+          "Onion, chilli",
+          "Salt",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Bean fritters (beignets de haricot) are the West African street snack",
+          "Black-eyed peas soaked, peeled, and ground to a smooth paste",
+          "Seasoned with onion and chilli",
+          "Dropped into hot oil and fried until golden",
+          "Eaten as a snack with pepper sauce",
+          "Called akara in Nigeria, kosai in Hausa, koose in Ghana -- the same fritter across West Africa"
+        ],
+        "description": "Togolese black-eyed pea fritters -- peeled, ground black-eyed pea paste seasoned with onion and chilli, fried until golden. The same fritter exists across West Africa as akara (Nigeria), koose (Ghana), kosai (Hausa). Eaten with pepper sauce."
+      },
+      {
+        "id": "tgo-sn-3",
+        "name": "Koki (Bean Cake)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Black-eyed peas (soaked and peeled)",
+          "Palm oil",
+          "Onion, chilli",
+          "Banana leaves (for wrapping and steaming)"
+        ],
+        "instructions": [
+          "Koki is the steamed bean cake wrapped in banana leaves",
+          "Ground black-eyed peas mixed with palm oil and onion",
+          "Wrapped tightly in banana leaves",
+          "Steamed until firm",
+          "Unwrapped to reveal an orange-red cake from the palm oil",
+          "Eaten as a snack or as part of a meal"
+        ],
+        "description": "Togolese steamed bean cake -- ground black-eyed peas mixed with palm oil and onion, wrapped in banana leaves and steamed until firm. Unwrapped: an orange-red cake from the palm oil. Eaten as a snack or meal component.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Koki_banane_poyo.jpg"
+        }
+      },
+      {
+        "id": "tgo-sn-4",
+        "name": "Roasted Corn (Mais Grille)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 0,
+        "cookTime": 10,
+        "ingredients": [
+          "Fresh corn on the cob",
+          "Salt, pepper (optional rub)"
+        ],
+        "instructions": [
+          "Roasted corn is the ubiquitous West African street snack",
+          "Whole corn cobs roasted over charcoal",
+          "The corn chars slightly on the outside",
+          "Eaten by the roadside everywhere across Togo and West Africa",
+          "The simplest and most common snack"
+        ],
+        "description": "Togolese roadside roasted corn -- whole corn cobs roasted over charcoal until slightly charred, eaten by the roadside. The simplest and most universal West African street snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/CookedCornOnTheCob.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACookedCornOnTheCob.JPG"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "tgo-ds-1",
+        "name": "Fried Plantains with Sugar",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe plantains",
+          "Oil",
+          "Sugar"
+        ],
+        "instructions": [
+          "Fry plantains until golden",
+          "Sprinkle with sugar"
+        ],
+        "description": "Simple sweet fried plantains.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg"
+        }
+      },
+      {
+        "id": "tgo-ds-2",
+        "name": "Beignets Souffles (Puff Puff)",
+        "difficulty": "Easy",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, yeast, sugar, salt, water, nutmeg",
+          "Oil for deep frying",
+          "Icing sugar (for dusting)"
+        ],
+        "instructions": [
+          "Puff puff (beignets souffles) are the West African sweet doughnut balls",
+          "A simple yeast batter -- more liquid than bread dough",
+          "Dropped by spoonfuls into hot oil -- they puff into balls",
+          "Lightly sweet and eggy",
+          "Eaten as a street dessert or snack -- sold by the bag",
+          "Called puff puff in English-speaking West Africa, beignets in Francophone West Africa"
+        ],
+        "description": "Togolese sweet puff puff fritters -- yeast batter dropped into hot oil, puffing into airy sweet balls. Called puff puff (English West Africa) or beignets souffles (Francophone West Africa). Sold by the bag at street stalls.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beignet_good_for_mouth.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beignet_good_for_mouth.jpg"
+        }
+      },
+      {
+        "id": "tgo-ds-3",
+        "name": "Pain de Sucre (Sugar Bread)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 60,
+        "cookTime": 30,
+        "ingredients": [
+          "Flour, yeast, sugar, eggs, butter, milk",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Pain de sucre is the sweet enriched bread -- a French-influenced Togolese sweet",
+          "An enriched dough with eggs and butter",
+          "More cake-like than bread -- slightly sweet",
+          "Eaten as a dessert or sweet snack",
+          "The French patisserie influence through colonization"
+        ],
+        "description": "Togolese sweet enriched bread -- pain de sucre, an egg-and-butter enriched dough, more cake-like than bread. The French colonial patisserie influence. Eaten as a dessert or afternoon snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/La_Banquise_Poutine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/La_Banquise_Poutine.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "tgo-dr-1",
+        "name": "Tchoukoutou (Millet Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Millet malt",
+          "Water"
+        ],
+        "instructions": [
+          "Cook millet mash",
+          "Ferment 3-5 days",
+          "Strain"
+        ],
+        "description": "Traditional millet beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Huacho_sin_Pescado_%281980%29%2C_chicha_preparation.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Huacho_sin_Pescado_%281980%29%2C_chicha_preparation.jpg"
+        }
+      },
+      {
+        "id": "tgo-dr-2",
+        "name": "Sodabi (Palm Spirit)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Palm wine"
+        ],
+        "instructions": [
+          "Distill palm wine in traditional still"
+        ],
+        "description": "Strong distilled palm wine spirit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Ab_food_06.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Ab_food_06.jpg"
+        }
+      },
+      {
+        "id": "tgo-dr-3",
+        "name": "Tchoukoutou (Sorghum Beer)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 240,
+        "ingredients": [
+          "Sorghum (malted and fermented)",
+          "Water"
+        ],
+        "instructions": [
+          "Tchoukoutou is the traditional Togolese sorghum beer",
+          "Malted sorghum fermented over several days",
+          "The result is a slightly cloudy, slightly sour, low-alcohol beer",
+          "Drunk from communal calabashes",
+          "A social and ceremonial drink -- important at funerals, festivals, and celebrations",
+          "Made by women in northern Togo",
+          "The calabash (gourd cup) is the traditional vessel"
+        ],
+        "description": "Togolese traditional sorghum beer -- tchoukoutou, malted sorghum fermented into a slightly cloudy, mildly sour beer. Drunk from communal calabashes. Made by women in northern Togo. A social and ceremonial drink at funerals, festivals, and celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Huacho_sin_Pescado_%281980%29%2C_chicha_preparation.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Huacho_sin_Pescado_%281980%29%2C_chicha_preparation.jpg"
+        }
+      }
+    ]
+  }
+}

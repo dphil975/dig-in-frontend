@@ -1,0 +1,705 @@
+{
+  "mongoliaRecipes": {
+    "country": "Mongolia",
+    "region": "East Asia",
+    "breakfast": [
+      {
+        "id": "mng-bf-1",
+        "name": "Suutei Tsai (Milk Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Green tea",
+          "Milk",
+          "Water",
+          "Butter",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil water, add tea",
+          "Add milk and salt",
+          "Simmer, add butter",
+          "Strain and serve"
+        ],
+        "description": "Salty butter milk tea — the Mongolian day starts with this.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tsai.JPG",
+        "imageCredit": {
+          "author": "user:takoradee",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATsai.JPG"
+        }
+      },
+      {
+        "id": "mng-bf-2",
+        "name": "Aaruul (Dried Curd)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Yogurt or buttermilk"
+        ],
+        "instructions": [
+          "Strain curd",
+          "Shape into small pieces",
+          "Dry in sun for several days",
+          "Store and eat as hard snack"
+        ],
+        "description": "Hard dried curd pieces — traditional nomad food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jameed.JPG",
+        "imageCredit": {
+          "author": "Syrinje",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJameed.JPG"
+        }
+      },
+      {
+        "id": "mng-bf-3",
+        "name": "Tsuivan (Fried Noodles with Meat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Homemade noodles (hand-stretched)",
+          "Mutton (thinly sliced)",
+          "Onion, carrot",
+          "Oil (or animal fat)",
+          "Salt, pepper"
+        ],
+        "instructions": [
+          "Tsuivan noodles are made by hand: mix flour, water, salt into a stiff dough",
+          "Roll very thin, cut into strips, steam briefly",
+          "The steaming pre-cooks the noodles",
+          "Fry mutton with onion and carrot in fat",
+          "Add steamed noodles — toss and fry together",
+          "The noodles absorb the mutton fat and brown slightly",
+          "Season with salt and pepper",
+          "No other spices — Mongolian food is genuinely minimally spiced",
+          "Tsuivan is Mongolia's most popular everyday dish",
+          "The hand-stretched noodles are central — the texture is specific to this technique",
+          "Mongolian cooking reflects the pastoral nomadic tradition: simple, hearty, meat-central"
+        ],
+        "description": "Mongolia's most popular everyday dish — hand-stretched noodles steamed then stir-fried with mutton, onion, and carrot. The minimal spicing (salt, pepper only) reflects the nomadic pastoral tradition: the mutton fat is the flavor. Hand-stretching gives a specific chewy texture that machine-cut noodles don't replicate.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Cujwan.JPG",
+        "imageCredit": {
+          "author": "Marcin Konsek",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACujwan.JPG"
+        }
+      },
+      {
+        "id": "mng-bf-4",
+        "name": "Süütei Tsai (Milk Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 10,
+        "ingredients": [
+          "Water",
+          "Whole milk (or fresh dairy milk)",
+          "Pu-erh or brick tea (the Mongolian tea)",
+          "Salt (small amount — Mongolian tea is salted, not sweetened)",
+          "Optional: animal fat (adds richness)",
+          "Optional: flour (for thicker tea-soup)"
+        ],
+        "instructions": [
+          "Boil water",
+          "Add brick tea — simmer 5 minutes",
+          "Add milk — roughly equal water and milk",
+          "Add salt — the salt is not optional; Mongolian tea is always salty",
+          "Simmer together briefly",
+          "Optional: add a small amount of animal fat (tallow or butter)",
+          "Optional: whisk in a spoon of flour for a thicker 'soup' version",
+          "Süütei tsai is not a drink so much as a food — it provides calories and hydration together",
+          "Drunk throughout the day — offered to every visitor as the first gesture",
+          "Refusing süütei tsai in a Mongolian ger (yurt) is impolite",
+          "The salty, milky tea is divisive for outsiders — deeply comforting for Mongolians",
+          "The salt in tea tradition is shared: Tibet (po cha), Kazakhstan, Central Asia"
+        ],
+        "description": "Mongolia's salted milk tea — brick tea simmered with milk and salt, drunk throughout the day and offered to every visitor. The first hospitality gesture in any Mongolian ger (yurt). Salty, not sweet — the salt is cultural identity, not accident. The salted-milk-tea tradition is shared across Central Asia and Tibet. It provides calories and hydration simultaneously: food and drink in one.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "mng-ln-1",
+        "name": "Buuz (Steamed Dumplings)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 45,
+        "cookTime": 20,
+        "ingredients": [
+          "Dough: flour, water, salt",
+          "Filling: minced mutton, onion, garlic, salt, pepper"
+        ],
+        "instructions": [
+          "Make dough, rest",
+          "Mix mutton filling",
+          "Roll wrappers, fill generously",
+          "Pleat and pinch closed leaving small hole",
+          "Steam 20 min"
+        ],
+        "description": "Mongolia's national dish — steamed mutton dumplings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Buuz.jpg",
+        "imageCredit": {
+          "author": "Mizu_Basyo",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABuuz.jpg"
+        }
+      },
+      {
+        "id": "mng-ln-2",
+        "name": "Khuushuur (Fried Dumplings)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, water, salt",
+          "Filling: minced mutton, onion, garlic"
+        ],
+        "instructions": [
+          "Make dough, roll circles",
+          "Fill with mutton mixture",
+          "Fold half-moon, seal",
+          "Deep fry until golden"
+        ],
+        "description": "Crispy fried meat pockets.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/MongoliaLastDay_153.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/MongoliaLastDay_153.JPG"
+        }
+      },
+      {
+        "id": "mng-ln-3",
+        "name": "Khorkhog (Stone Pressure Lamb)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb (bone-in pieces)",
+          "Potatoes, carrot, onion",
+          "River stones (smooth — heated in fire)",
+          "Salt, water"
+        ],
+        "instructions": [
+          "Khorkhog is Mongolia's most iconic cooking method — pressure cooking with hot stones",
+          "Heat smooth river stones in a fire until extremely hot — white-hot",
+          "Fill a sealed metal container (milk churn or dedicated pot) with lamb pieces, vegetables, salt, water",
+          "Add the red-hot stones among the meat — use tongs, they're dangerous",
+          "Seal the container immediately — the stones generate extreme steam pressure inside",
+          "The pressure cooks the lamb in 30-45 minutes",
+          "The lamb is cooked by the radiant heat from the stones and the steam pressure",
+          "The meat is extraordinarily tender and has a unique smoky mineral flavor from the stones",
+          "Khorkhog is served at celebrations and as a way to cook in the open steppe — no oven needed",
+          "The stones are sometimes passed around after cooking — the fat on the stone is considered lucky",
+          "One of the world's most distinctive cooking techniques"
+        ],
+        "description": "Mongolia's hot-stone pressure cooking — bone-in lamb packed in a sealed container with vegetables and incandescent river stones, the stones generating intense steam pressure that cooks the lamb in 30-45 minutes. The mineral heat from stones gives a unique smoky flavor. One of the world's most distinctive cooking techniques: no oven, no equipment except stones and fire.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Khorkhog.JPG",
+        "imageCredit": {
+          "author": "Vidor",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKhorkhog.JPG"
+        }
+      },
+      {
+        "id": "mng-ln-4",
+        "name": "Chanasan Makh (Boiled Meat)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 60,
+        "ingredients": [
+          "Mutton (with bone — back, shoulder, leg)",
+          "Water",
+          "Salt (minimal)",
+          "Optional: onion, bay leaf"
+        ],
+        "instructions": [
+          "Place mutton in cold water — start cold to extract maximum flavor",
+          "Bring to boil, skim foam carefully — this is important for clarity",
+          "After skimming, the broth should be relatively clear",
+          "Add minimal salt — the meat flavor is the point",
+          "Simmer until the meat is cooked through — 45-60 minutes",
+          "Serve meat by slicing at the table",
+          "Broth drunk separately from a bowl",
+          "Mongolian approach to meat: boiling is the most respectful method",
+          "The meat's natural flavor should not be overwhelmed by spice",
+          "This is food that reflects the nomadic philosophy: the animal gives everything; cooking should not interfere with its quality",
+          "The quality of the mutton is entirely the dish — Mongolian steppe mutton is lean and flavorful"
+        ],
+        "description": "Mongolia's respect-for-meat cooking — mutton boiled with minimal seasoning to let the animal's natural flavor speak. The nomadic philosophy: the steppe animal gives everything; cooking should not obscure its quality. Mongolian steppe mutton is lean and distinctively flavored from grazing wild plants. The broth is drunk from a bowl; the meat is sliced at the table."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "mng-dn-1",
+        "name": "Khorkhog (Stone-Cooked Meat)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb (bone-in, chunked)",
+          "Potatoes",
+          "Carrots",
+          "Onion",
+          "Hot stones",
+          "Salt and pepper",
+          "Water"
+        ],
+        "instructions": [
+          "Heat river stones in fire until very hot",
+          "Layer meat, vegetables, and hot stones in metal pot",
+          "Add water, seal tightly",
+          "Cook 45-60 min",
+          "Open carefully — eat with hands"
+        ],
+        "description": "Lamb and vegetables cooked by hot stones inside a sealed pot.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Khorkhog.JPG",
+        "imageCredit": {
+          "author": "Vidor",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKhorkhog.JPG"
+        }
+      },
+      {
+        "id": "mng-dn-2",
+        "name": "Tsuivan (Fried Noodles)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Noodle dough: flour, water, salt",
+          "Mutton (sliced)",
+          "Carrots",
+          "Cabbage",
+          "Potatoes",
+          "Onion",
+          "Oil"
+        ],
+        "instructions": [
+          "Make noodles, cut into strips",
+          "Stir-fry mutton, add vegetables",
+          "Steam noodles on top of meat and vegetables",
+          "Toss together"
+        ],
+        "description": "Stir-fried noodles steamed over meat and vegetables.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Cujwan.JPG",
+        "imageCredit": {
+          "author": "Marcin Konsek",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACujwan.JPG"
+        }
+      },
+      {
+        "id": "mng-dn-3",
+        "name": "Guriltai Shul (Noodle Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Homemade noodles (or tsuivan noodles)",
+          "Mutton (thinly sliced or ground)",
+          "Onion, carrot (optional)",
+          "Water or stock",
+          "Salt, pepper"
+        ],
+        "instructions": [
+          "The simplest Mongolian soup — noodles in mutton broth",
+          "Make or use pre-made noodles",
+          "Simmer mutton with water to make a simple stock",
+          "Add noodles — they cook in the broth",
+          "Add onion, carrot if using",
+          "Season with salt and pepper",
+          "Guriltai shul is the Mongolian school and home everyday soup",
+          "Every Mongolian child knows this soup",
+          "The broth from boiling mutton is the entire flavor — no other additions",
+          "The noodle-broth-mutton combination needs nothing else in the nomadic tradition",
+          "Eaten as a meal: the broth provides warmth and calories; the noodles provide starch; the meat provides protein"
+        ],
+        "description": "Mongolia's childhood soup — homemade noodles in mutton broth with minimal seasoning. Every Mongolian child grew up eating this. The mutton broth from simmered bones is the entire flavor foundation; no aromatics are required in the nomadic tradition. Noodles + mutton broth + meat: complete nutrition in its simplest form.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Rechta.png",
+        "imageCredit": {
+          "author": "Ms10vc",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARechta.png"
+        }
+      },
+      {
+        "id": "mng-dn-4",
+        "name": "Boodog (Whole Marmot or Goat)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Whole marmot (traditional, seasonal) or whole young goat",
+          "Hot stones (river stones heated in fire)",
+          "Salt",
+          "Minimal aromatics"
+        ],
+        "instructions": [
+          "Boodog is Mongolia's most dramatic cooking technique — cooking from the inside out",
+          "Remove the entrails from a marmot or young goat",
+          "Keep the skin intact — it becomes the cooking vessel",
+          "Fill the cavity with hot stones and salt",
+          "Seal the opening — the stones cook from inside while the exterior is blowtorched",
+          "Both inside (from stones) and outside (from blowtorch or fire) are cooked simultaneously",
+          "The marmot skin is burned off with a blowtorch — the meat inside is cooked by steam from the stones",
+          "The result: steam-pressure-cooked meat from within, charred exterior",
+          "This is one of the most ancient cooking techniques in existence — cave-cooking principle",
+          "Marmot boodog is a Mongolian summer tradition — seasonal hunting",
+          "The fat from the marmot is considered medicinal — applied to skin and drunk"
+        ],
+        "description": "Mongolia's whole-animal cooking from the inside out — a marmot or young goat packed with incandescent stones, sealed, and blowtorched externally while the internal stones cook from within. Both sides cook simultaneously. One of the world's most ancient cooking techniques. The marmot's fat is considered medicinal in Mongolian folk medicine.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Boodog_made_from_a_marmot.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Boodog_made_from_a_marmot.JPG"
+        }
+      },
+      {
+        "id": "mng-dn-5",
+        "name": "Aaruul (Dried Curd Snack)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Aaruul — dried curds of fermented milk (no recipe to make in-home: it's an extended fermentation-drying process)"
+        ],
+        "instructions": [
+          "Aaruul is Mongolia's preserved dairy food — the nomad's trail food",
+          "Made from the curds of fermented milk, dried in the sun for weeks",
+          "The result: hard, white or yellow lumps of dried fermented milk",
+          "Very hard — Mongolians chip off pieces with their teeth",
+          "Very sour from the fermentation",
+          "High in protein and calories — sustained nomads on long horseback journeys",
+          "Aaruul keeps for months without refrigeration — essential in the steppe",
+          "Each family makes aaruul from their own animals' milk",
+          "The milk source varies by season: cow, mare, yak, goat",
+          "The taste is intensely sour and funky — aged cheese meets dried yogurt",
+          "This entry is listed as a snack/food item — the actual production is a multi-week process"
+        ],
+        "description": "Mongolia's trail food — sun-dried fermented milk curds, intensely sour and very hard. Chipped off and eaten in pieces. High in protein and calories, shelf-stable for months: the nomad's sustenance on long horseback journeys across the steppe. Each family makes their own aaruul from their own animals. The taste is intensely sour and funky — aged dairy in solid, dried form.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jameed.JPG",
+        "imageCredit": {
+          "author": "Syrinje",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJameed.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "mng-sn-1",
+        "name": "Boortsog (Fried Dough)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "Butter",
+          "Milk",
+          "Sugar",
+          "Salt",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dough, rest",
+          "Shape into various forms",
+          "Deep fry until golden"
+        ],
+        "description": "Fried dough — served at every Mongolian celebration and meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Boortsog.JPG",
+        "imageCredit": {
+          "author": "Vidor",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABoortsog.JPG"
+        }
+      },
+      {
+        "id": "mng-sn-2",
+        "name": "Ul Boov (Shoe Sole Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Flour, eggs, butter, sugar",
+          "Oil for frying",
+          "Layers: dried curd, candy, sugar pieces"
+        ],
+        "instructions": [
+          "Ul boov is the Mongolian Tsagaan Sar (Lunar New Year) cake-tower",
+          "A stack of fried dough circles (resembling shoe soles — hence the name)",
+          "Each cake is fried in oil until puffed and crispy",
+          "The cakes are stacked in specific odd numbers (3, 5, 7, or 9) — odd numbers only",
+          "Between layers: dried curds (aaruul), candy, sugar pieces",
+          "The height of the stack signals family status and good wishes for the year",
+          "Ul boov is not eaten during the celebration — it's a centerpiece and symbol",
+          "It's only disassembled at the end of the festival period",
+          "The shoe-sole shape comes from the resemblance to the sole of a Mongolian boot (traditional footwear)",
+          "The ul boov tower is the visual centerpiece of every Mongolian Tsagaan Sar celebration"
+        ],
+        "description": "Mongolia's Lunar New Year tower — fried dough circles stacked in odd numbers (3, 5, 7, or 9, with layers of dried curd and candy between, the height signaling family status) placed as the visual and symbolic centerpiece of Tsagaan Sar celebrations. Not eaten during the festival — it's a symbol. The shoe-sole shape (ul boov) references the sole of a traditional Mongolian boot."
+      },
+      {
+        "id": "mng-sn-3",
+        "name": "Toirog (Deep Fried Dough)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, water, salt, baking powder (or yeast)",
+          "Animal fat or oil for frying"
+        ],
+        "instructions": [
+          "Mix flour, water, salt, baking powder into a soft dough",
+          "Rest briefly",
+          "Shape into round flat discs or strips",
+          "Fry in animal fat or oil — the animal fat gives more flavor than vegetable oil",
+          "They puff and brown — crispy outside, airy inside",
+          "Toirog is Mongolia's everyday fried bread — like the Navajo fry bread or Lakota fry bread in the Americas",
+          "The nomadic bread: no oven needed, just fat and fire",
+          "Made when camping on the steppe — a quick bread from minimal ingredients",
+          "Also made at home and sold at markets",
+          "The fried dough in animal fat is deeply satisfying in cold weather"
+        ],
+        "description": "Mongolia's nomadic fried bread — dough discs or strips fried in animal fat until puffed and golden. No oven required: fat and fire on the open steppe. Similar to Navajo fry bread (Americas) and Central Asian fried bread traditions — the convergent evolution of hot-fat-plus-dough-equals-bread across nomadic cultures worldwide."
+      },
+      {
+        "id": "mng-sn-4",
+        "name": "Airag (Fermented Mare's Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh mare's milk",
+          "Naturally occurring bacteria and yeast (traditional churning vessel)"
+        ],
+        "instructions": [
+          "Airag is Mongolia's national beverage — fermented mare's milk",
+          "The fermentation uses natural bacteria and yeast from the traditional leather container (khukhuur)",
+          "Fresh mare's milk is poured in and churned repeatedly for hours and days",
+          "The lactose ferments into lactic acid and a small amount of alcohol (1-3%)",
+          "The resulting airag is mildly alcoholic, fizzy, sour, slightly pungent",
+          "It is both food and drink — complete nutrition in liquid form",
+          "Mare's milk season: June-September when mares have foals",
+          "The milking of mares and the making of airag is a central Mongolian summer activity",
+          "Airag is offered at every ger — more immediately than süütei tsai in summer",
+          "UNESCO recognized airag-making as an Intangible Cultural Heritage of Mongolia"
+        ],
+        "description": "Mongolia's fermented mare's milk — lactose fermented by natural bacteria and yeast into a mildly alcoholic (1-3%), fizzy, sour drink. Made only June-September when mares lactate. Complete liquid nutrition. Offered at every ger in summer; UNESCO-recognized Intangible Cultural Heritage. The churning process (thousands of strokes) and the specific bacteria in the traditional leather vessel are irreplaceable.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "mng-ds-1",
+        "name": "Ul Boov (Shoe Sole Cake)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Butter",
+          "Sugar",
+          "Salt",
+          "Oil"
+        ],
+        "instructions": [
+          "Make firm dough",
+          "Shape into sole-like ovals with decorative stamps",
+          "Deep fry until golden",
+          "Stack in towers, fill with aaruul and sweets"
+        ],
+        "description": "Decorative fried cookies stacked into towers for celebrations."
+      },
+      {
+        "id": "mng-ds-2",
+        "name": "Boortsog (Deep Fried Cookie)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, eggs, sugar, butter (or fat)",
+          "Baking powder",
+          "Oil or fat for frying",
+          "Optional: sesame seeds"
+        ],
+        "instructions": [
+          "Mix flour, eggs, sugar, butter, baking powder into a stiff dough",
+          "Roll and cut into various shapes — diamond, oval, twisted strips",
+          "Fry in fat until golden",
+          "They puff slightly — crispy and rich",
+          "Boortsog is Mongolia's traditional celebration cookie — made for Tsagaan Sar and Naadam",
+          "They're made in large quantities and placed in bowls for guests to take",
+          "The deep frying in animal fat is the traditional method",
+          "Modern versions use vegetable oil",
+          "The dough is slightly sweet — these are not intensely sweet desserts",
+          "The crunch and the fried fat flavor is the pleasure",
+          "Stacked in a bowl as an offering to guests: take freely, eat freely"
+        ],
+        "description": "Mongolia's celebration cookie — stiff dough cut into shapes and deep-fried until golden and crunchy, piled in bowls for guests at Tsagaan Sar and Naadam festival. Not intensely sweet — a mildly sweet, deeply fried, satisfying crunch. Made in large quantities and offered freely. The traditional frying in animal fat (tallow) gives a specific flavor.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Boortsog.JPG",
+        "imageCredit": {
+          "author": "Vidor",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABoortsog.JPG"
+        }
+      },
+      {
+        "id": "mng-ds-3",
+        "name": "Tarag (Fermented Milk Yogurt)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Whole milk (cow or yak)",
+          "Tarag culture (previous batch of tarag — a spoonful starters a new batch)"
+        ],
+        "instructions": [
+          "Heat milk to 45°C — the correct temperature for yogurt fermentation",
+          "Add a spoonful of tarag (previous batch) — this contains the live culture",
+          "Stir gently, cover and keep warm 6-8 hours",
+          "The milk sets into a tangy, thick yogurt",
+          "The tarag culture passes from batch to batch — families maintain cultures for generations",
+          "Mongolian tarag is tangier than commercial yogurt — the wild culture is more complex",
+          "Eaten plain, as a condiment with meat, or used in cooking",
+          "Tarag is the daily Mongolian dairy — made from whatever milk is available (cow, yak, goat, camel)",
+          "The culture adaptation to each animal's milk creates slightly different flavors",
+          "Yak tarag is the richest and most complex"
+        ],
+        "description": "Mongolia's daily fermented milk — yogurt made from whole milk and an heirloom culture passed through generations, each batch started by a spoonful of the last. Mongolian tarag uses wild cultures more complex than commercial yogurt bacteria. The same culture adapts to cow, yak, goat, and camel milk — each producing a slightly different flavor. Yak tarag is the richest.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Latte_025.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Latte_025.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "mng-dr-1",
+        "name": "Airag (Fermented Mare's Milk)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh mare's milk",
+          "Starter culture"
+        ],
+        "instructions": [
+          "Add starter to mare's milk in leather bag",
+          "Churn or stir regularly",
+          "Ferment 2-3 days",
+          "Serve cold"
+        ],
+        "description": "Fermented mare's milk — Mongolia's ancient national drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg"
+        }
+      },
+      {
+        "id": "mng-dr-2",
+        "name": "Arkhi (Milk Vodka)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Fermented mare's or cow's milk"
+        ],
+        "instructions": [
+          "Distill fermented milk in copper still",
+          "Collect clear spirit",
+          "Serve at room temperature"
+        ],
+        "description": "Distilled milk spirit — uniquely Mongolian."
+      },
+      {
+        "id": "mng-dr-3",
+        "name": "Shimiin Arkhi (Milk Vodka)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Aaruul or tarag (fermented dairy as the base)",
+          "A traditional copper distillation setup"
+        ],
+        "instructions": [
+          "Shimiin arkhi is Mongolia's traditional distilled spirit — milk vodka",
+          "Made by distilling fermented dairy (airag or tarag) in a simple copper pot still",
+          "The process: heat the fermented milk, collect the steam in a coil, condense it",
+          "The resulting liquid is a clear spirit — 10-15% alcohol",
+          "Much lower alcohol than grain vodka — milder",
+          "The flavor is dairy-based: slightly sweet, milky, smooth",
+          "Shimiin arkhi is made at home across rural Mongolia — every ger that keeps animals makes it",
+          "The distillation equipment is simple and traditional",
+          "Offered to guests at celebrations alongside airag and süütei tsai",
+          "Milk vodka is produced commercially in Mongolian markets now",
+          "One of the world's most unusual spirits — distilled from fermented dairy rather than grain or fruit"
+        ],
+        "description": "Mongolia's milk vodka — fermented dairy (airag or tarag) distilled in a simple copper still into a mild (10-15% alcohol), slightly sweet, dairy-flavored clear spirit. One of the world's most unusual spirits: distilled from dairy, not grain or fruit. Made in every rural Mongolian ger. Offered at celebrations alongside airag. Now commercially produced.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Dishes_of_Mongolian_cuisine.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,884 @@
+{
+  "gambiaRecipes": {
+    "country": "Gambia",
+    "region": "West Africa",
+    "breakfast": [
+      {
+        "id": "gmb-bf-1",
+        "name": "Chereh",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "2 cups steamed couscous",
+          "2 cups sour milk or yogurt",
+          "3 tablespoons sugar",
+          "1/2 teaspoon ground cinnamon",
+          "1 tablespoon lemon juice"
+        ],
+        "instructions": [
+          "Steam couscous until fluffy and let it cool slightly.",
+          "Pour sour milk or yogurt over the couscous.",
+          "Add sugar, cinnamon, and lemon juice.",
+          "Mix well until evenly combined.",
+          "Serve at room temperature or chilled."
+        ],
+        "description": "Steamed couscous mixed with sour milk and sugar, a traditional Gambian breakfast staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Thiere_Senegalese_couscous_with_lamb.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Thiere_Senegalese_couscous_with_lamb.jpg"
+        }
+      },
+      {
+        "id": "gmb-bf-2",
+        "name": "Akara",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups black-eyed peas, soaked overnight",
+          "1 onion, roughly chopped",
+          "1 Scotch bonnet pepper, seeded",
+          "1 teaspoon salt",
+          "Vegetable oil for deep frying"
+        ],
+        "instructions": [
+          "Drain the soaked black-eyed peas and rub off the skins.",
+          "Blend the peas with onion, pepper, and salt into a thick paste.",
+          "Whip the paste with a spoon until light and airy.",
+          "Heat oil to 350°F in a deep pot.",
+          "Drop spoonfuls of the batter into the oil and fry until golden brown.",
+          "Drain on paper towels and serve hot."
+        ],
+        "description": "Crispy black-eyed pea fritters, a protein-rich Gambian breakfast eaten with bread or porridge.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg"
+        }
+      },
+      {
+        "id": "gmb-bf-3",
+        "name": "Akara (Black-Eyed Pea Fritters)",
+        "difficulty": "Easy",
+        "servings": 15,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "500g black-eyed peas (soaked, skinned)",
+          "Onion",
+          "Scotch bonnet pepper",
+          "Salt",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Soak black-eyed peas, rub off skins",
+          "Blend into a smooth, thick paste with onion and pepper",
+          "Season with salt",
+          "Beat the batter vigorously — incorporating air makes them fluffy",
+          "Drop spoonfuls into hot oil — they puff into golden balls",
+          "Fry until golden on all sides — 3-4 min",
+          "Drain on paper",
+          "Serve hot with porridge or bread — the Gambian breakfast standard",
+          "The puff and the crunch are the hooks"
+        ],
+        "description": "The Gambia's morning fritters — black-eyed pea batter fried into golden puffs. Found across West Africa but the Gambian version is distinctly seasoned. The puffing technique and the bean-to-fritter transformation are viral street food content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg"
+        }
+      },
+      {
+        "id": "gmb-bf-4",
+        "name": "Chereh (Couscous Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Finely rolled millet couscous (chereh)",
+          "Sour milk or yogurt",
+          "Sugar",
+          "Baobab fruit powder (optional)"
+        ],
+        "instructions": [
+          "Steam millet couscous until fluffy",
+          "Mix with cold sour milk or yogurt",
+          "Sweeten with sugar",
+          "Add baobab powder for tang and nutrition if available",
+          "Serve cold or at room temperature",
+          "This is a Gambian staple breakfast — tangy, filling, fast",
+          "The millet-and-sour-milk combination is ancient West African nutrition"
+        ],
+        "description": "Gambian millet couscous mixed with sour milk — an ancient, tangy, probiotic breakfast. Baobab powder adds superfood status. The fermented-milk-and-grain concept has gained viral attention in the health food community as Africa's original probiotic breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Thiere_Senegalese_couscous_with_lamb.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Thiere_Senegalese_couscous_with_lamb.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "gmb-ln-1",
+        "name": "Benachin",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "2 cups long-grain rice",
+          "500g fish or chicken pieces",
+          "1/4 cup tomato paste",
+          "3 tomatoes, blended",
+          "2 onions, chopped",
+          "1 carrot, sliced",
+          "1 eggplant, cubed",
+          "1 sweet potato, cubed",
+          "1/4 head cabbage, chopped",
+          "1/4 cup vegetable oil",
+          "3 cups water",
+          "1 Scotch bonnet pepper",
+          "2 bay leaves",
+          "Salt and black pepper to taste"
+        ],
+        "instructions": [
+          "Season fish or chicken with salt and pepper.",
+          "Heat oil in a large pot and fry the protein until browned, then set aside.",
+          "In the same oil, fry onions until golden, then add tomato paste and blended tomatoes.",
+          "Cook for 10 minutes until the sauce thickens and the oil separates.",
+          "Add water, bay leaves, and pepper, bring to a boil.",
+          "Add vegetables and cook for 10 minutes.",
+          "Add rice and the browned protein, stir gently.",
+          "Cover tightly and cook on low heat for 25 to 30 minutes until rice absorbs all the liquid.",
+          "Serve on a large platter."
+        ],
+        "description": "Gambia's famous jollof rice, a festive one-pot dish of rice cooked in a rich tomato sauce with vegetables and protein.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jollof_Rice_with_Stew.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jollof_Rice_with_Stew.jpg"
+        }
+      },
+      {
+        "id": "gmb-ln-2",
+        "name": "Domoda",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g beef or lamb, cubed",
+          "1 cup smooth peanut butter",
+          "3 tomatoes, chopped",
+          "2 tablespoons tomato paste",
+          "2 onions, chopped",
+          "3 tablespoons vegetable oil",
+          "1 sweet potato, cubed",
+          "1 cup pumpkin, cubed",
+          "2 cups water",
+          "1 Scotch bonnet pepper",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Heat oil and brown the meat on all sides.",
+          "Add onions and cook until softened.",
+          "Stir in tomato paste and chopped tomatoes, cook for 5 minutes.",
+          "Add peanut butter and water, stir until smooth.",
+          "Add sweet potato, pumpkin, and pepper.",
+          "Simmer for 35 to 40 minutes until meat is tender and sauce thickens.",
+          "Season with salt and serve over steamed rice."
+        ],
+        "description": "A rich peanut butter stew with meat and root vegetables, one of Gambia's most cherished traditional dishes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Domoda_Senegal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Domoda_Senegal.jpg"
+        }
+      },
+      {
+        "id": "gmb-ln-3",
+        "name": "Domoda (Peanut Butter Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g beef or chicken",
+          "Peanut butter (natural, unsweetened)",
+          "Tomato paste",
+          "Onion, garlic",
+          "Scotch bonnet",
+          "Pumpkin or sweet potato (cubed)",
+          "Bitter tomato (optional)",
+          "Rice for serving",
+          "Salt, Maggi cube"
+        ],
+        "instructions": [
+          "Brown meat, set aside",
+          "Sauté onion, garlic, add tomato paste — fry until dark",
+          "Add peanut butter, stir until dissolved",
+          "Add water for desired consistency",
+          "Return meat, add pumpkin or sweet potato",
+          "Simmer 30-40 min until meat is tender and sauce is thick",
+          "Season with Scotch bonnet, Maggi, salt",
+          "Serve over white rice — the peanut sauce should pool around the rice",
+          "Domoda is The Gambia's national dish — the most-eaten meal in the country"
+        ],
+        "description": "The Gambia's national dish — peanut butter stew with meat and vegetables over rice. Every Gambian family eats domoda regularly, and the rich, nutty sauce is the country's comfort food. The 'peanut butter in a stew?' reaction from outsiders always goes viral as they discover it's genius.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Domoda_Senegal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Domoda_Senegal.jpg"
+        }
+      },
+      {
+        "id": "gmb-ln-4",
+        "name": "Benachin (Gambian Jollof Rice)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "Rice",
+          "Tomato paste, fresh tomatoes",
+          "Scotch bonnet pepper",
+          "Fish or meat",
+          "Vegetables: cabbage, carrot, cassava, pumpkin",
+          "Palm oil",
+          "Onion, garlic",
+          "Maggi cube, salt"
+        ],
+        "instructions": [
+          "Make tomato base: fry onion in palm oil, add tomato paste and fresh tomatoes, cook until thick",
+          "Add fish or meat, cook in the sauce",
+          "Add vegetables — root vegetables first, cabbage last",
+          "Add rice and water — the rice cooks in the sauce, absorbing all flavors",
+          "Cover tightly, cook on low — do not stir or lift the lid",
+          "The bottom layer scorches slightly — this is the prize, called 'tahray'",
+          "The rice should be red-orange from the tomato and palm oil",
+          "Serve from the pot — everyone gathers around and eats from the same dish"
+        ],
+        "description": "The Gambia's version of jollof rice — called 'benachin' (meaning 'one pot'). The word 'jollof' actually comes from the Jolof people of the Senegambia region, making The Gambia the origin story of the most debated dish in Africa. The 'original jollof' claim is The Gambia's viral food card.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jollof_Rice_with_Stew.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Jollof_Rice_with_Stew.jpg"
+        }
+      },
+      {
+        "id": "gmb-ln-5",
+        "name": "Superkanja (Okra Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Fresh okra (sliced thin)",
+          "Palm oil",
+          "Smoked fish or dried fish",
+          "Fresh fish or meat",
+          "Onion, garlic",
+          "Scotch bonnet pepper",
+          "Locust beans (dawadawa)",
+          "Salt, Maggi",
+          "Rice or fufu for serving"
+        ],
+        "instructions": [
+          "Heat palm oil, sauté onion",
+          "Add smoked fish, fresh protein",
+          "Add sliced okra — the slimy texture is the point, not a flaw",
+          "Add dawadawa for funky depth",
+          "Add Scotch bonnet, garlic",
+          "Simmer until okra is soft and the soup is thick and slimy",
+          "Season with Maggi, salt",
+          "Serve with rice or fufu — scoop and swallow",
+          "The sliminess is the feature, not the bug — it helps the fufu slide down"
+        ],
+        "description": "The Gambia's okra soup — and yes, it's supposed to be slimy. The okra's mucilage is what makes it work with fufu (helping it slide down without chewing). Superkanja with dawadawa has a deeply savory, funky depth that converts skeptics. The 'it's supposed to be slimy' explanation goes viral every time.",
+        "image": "",
+        "imageCredit": {}
+      }
+    ],
+    "dinner": [
+      {
+        "id": "gmb-dn-1",
+        "name": "Yassa Poulet",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 50,
+        "ingredients": [
+          "1 whole chicken, cut into pieces",
+          "4 large onions, thinly sliced",
+          "1/4 cup lemon juice",
+          "3 tablespoons Dijon mustard",
+          "1/4 cup vegetable oil",
+          "1 Scotch bonnet pepper",
+          "3 cloves garlic, minced",
+          "1 tablespoon vinegar",
+          "Salt and black pepper to taste",
+          "Pitted green olives for garnish"
+        ],
+        "instructions": [
+          "Marinate chicken in lemon juice, mustard, garlic, salt, and pepper for at least 2 hours.",
+          "Grill or broil the chicken pieces until lightly charred.",
+          "Heat oil in a large pot and cook the sliced onions slowly until very soft and golden.",
+          "Add the marinated chicken and any remaining marinade to the onions.",
+          "Add vinegar and the Scotch bonnet pepper.",
+          "Cover and simmer for 30 minutes until chicken is cooked through.",
+          "Garnish with green olives and serve with rice."
+        ],
+        "description": "Lemon and onion marinated chicken, a tangy and savory dish celebrated across the Gambia and Senegambia region.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg"
+        }
+      },
+      {
+        "id": "gmb-dn-2",
+        "name": "Supakanja",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 25,
+        "cookTime": 45,
+        "ingredients": [
+          "500g fresh okra, sliced",
+          "300g smoked fish, flaked",
+          "200g palm oil",
+          "2 onions, chopped",
+          "2 tomatoes, chopped",
+          "1 cup dried shrimp",
+          "1 Scotch bonnet pepper",
+          "1 bunch spinach, chopped",
+          "4 cups water",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Heat palm oil in a pot and sauté onions until translucent.",
+          "Add tomatoes and cook until softened.",
+          "Add okra and stir continuously for 10 minutes.",
+          "Pour in water and add dried shrimp and smoked fish.",
+          "Add the Scotch bonnet pepper and simmer for 25 minutes.",
+          "Stir in spinach and cook for 5 more minutes.",
+          "Serve over steamed rice or fufu."
+        ],
+        "description": "A thick okra and seafood stew cooked with palm oil, a hearty Gambian dinner rich in flavor.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "gmb-dn-3",
+        "name": "Afra (Roadside Grilled Meat)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Beef, lamb, or goat (cubed or in large pieces)",
+          "Onion (diced)",
+          "Mustard (Dijon-style)",
+          "Salt, pepper, chili flakes",
+          "Bread or rolls"
+        ],
+        "instructions": [
+          "Grill meat over charcoal until charred on edges, juicy inside",
+          "Dice the grilled meat into small pieces on a wooden board — at the roadside stand",
+          "Mix with diced raw onion, mustard, salt, pepper, chili",
+          "Serve on paper or in bread",
+          "Afra stands appear at night — following the charcoal smoke leads you there",
+          "The roadside board-chopping and mixing is the show — done right in front of you",
+          "Every Gambian neighborhood has an afra spot — it's the night food"
+        ],
+        "description": "The Gambia's night food — charcoal-grilled meat chopped on a wooden board and mixed with raw onion and mustard right in front of you. The roadside performance and the smoky-mustardy combination have made afra viral as West Africa's most interactive street food experience.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Heilige_Afra.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Heilige_Afra.jpg"
+        }
+      },
+      {
+        "id": "gmb-dn-4",
+        "name": "Yassa Poulet (Lemon-Onion Chicken)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "1 whole chicken (cut into pieces)",
+          "6 large onions (very thinly sliced — this is the star ingredient)",
+          "Juice of 6 lemons",
+          "Dijon mustard",
+          "Scotch bonnet pepper",
+          "Garlic",
+          "Olives (optional)",
+          "Oil",
+          "Rice for serving"
+        ],
+        "instructions": [
+          "Marinate chicken in lemon juice, sliced onion, garlic, mustard, Scotch bonnet — overnight is best",
+          "Remove chicken, reserve marinade with all those onions",
+          "Grill or brown chicken pieces until golden",
+          "In a pot, cook the massive amount of marinated onions in oil until soft and golden",
+          "Add the mustard from the marinade, olives if using",
+          "Return chicken to the onion sauce, simmer 30 min until tender",
+          "The onion sauce should be thick and tangy — the lemon-onion combination is the soul",
+          "Serve over rice with the onion sauce ladled generously",
+          "The amount of onions is not a mistake — it IS the dish"
+        ],
+        "description": "Senegambian lemon-onion chicken — the staggering amount of onions (they ARE the sauce) slow-cooked with lemon juice and mustard creates something magical. Originally from Senegal but deeply beloved in The Gambia. The 'that's too many onions' reaction followed by 'oh my God this is incredible' is a viral food moment.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg"
+        }
+      },
+      {
+        "id": "gmb-dn-5",
+        "name": "Ebbeh (Dried Fish Stew with Greens)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 35,
+        "ingredients": [
+          "Dried or smoked catfish",
+          "Pumpkin or sweet potato leaves (or spinach)",
+          "Palm oil",
+          "Onion, garlic",
+          "Tomatoes",
+          "Scotch bonnet",
+          "Locust beans (dawadawa)",
+          "Salt",
+          "Rice or fufu for serving"
+        ],
+        "instructions": [
+          "Soak dried fish, clean and break into pieces",
+          "Sauté onion in palm oil, add tomatoes, garlic",
+          "Add dried fish and dawadawa",
+          "Add greens — pumpkin leaves, sweet potato leaves, or spinach",
+          "Simmer until greens are soft and sauce is thick",
+          "Season with Scotch bonnet, salt",
+          "Serve with rice or fufu",
+          "The dried fish provides intense umami, the dawadawa adds funky depth",
+          "This is everyday Gambian home cooking — not fancy, just deeply flavored"
+        ],
+        "description": "The Gambia's home-cooking staple — dried fish and leafy greens simmered in palm oil with dawadawa. Not glamorous, just deeply flavored everyday food that represents what most Gambians actually eat. The umami-bomb from dried fish and fermented locust beans is what makes Gambian food quietly exceptional.",
+        "image": "",
+        "imageCredit": {}
+      }
+    ],
+    "snacks": [
+      {
+        "id": "gmb-sn-1",
+        "name": "Tapalapa Bread with Butter",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups all-purpose flour",
+          "1 cup millet flour",
+          "1 packet active dry yeast",
+          "1 teaspoon sugar",
+          "1 teaspoon salt",
+          "1 cup warm water",
+          "Butter for serving"
+        ],
+        "instructions": [
+          "Dissolve yeast and sugar in warm water, let sit for 10 minutes until frothy.",
+          "Mix the flours and salt in a large bowl.",
+          "Add the yeast mixture and knead into a smooth dough.",
+          "Let rise for 1 hour until doubled in size.",
+          "Shape into an oblong loaf and place on a baking sheet.",
+          "Bake at 400°F for 25 to 30 minutes until golden and hollow-sounding.",
+          "Slice and serve warm with butter."
+        ],
+        "description": "Crusty Gambian bread made with a blend of wheat and millet flour, perfect for snacking.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "gmb-sn-2",
+        "name": "Tapalapa Bread",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 25,
+        "ingredients": [
+          "Flour (mix of wheat, millet, and/or corn flour — the Gambian blend)",
+          "Yeast",
+          "Water, salt, sugar",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix flours — the multi-grain blend is what makes tapalapa different from French bread",
+          "Add yeast, water, salt, sugar — knead into soft dough",
+          "Let rise 45 min",
+          "Shape into baguette-like loaves",
+          "Bake in a wood-fired oven at high heat until crusty outside, soft inside",
+          "The crust shatters, the inside is airy but denser than a French baguette due to the millet/corn",
+          "Sold fresh at every corner bakery — the smell of baking tapalapa fills Gambian streets",
+          "Used for sandwiches (filled with beans, egg, or afra meat) or eaten with stew"
+        ],
+        "description": "The Gambia's multi-grain baguette — a mix of wheat, millet, and corn flour baked in wood-fired ovens. Crustier and denser than a French baguette, with a distinctive grain flavor. Tapalapa bakeries are on every corner, and the morning smell of fresh bread is the Gambian street soundtrack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Baguettes_stall%2C_Dschang%2C_Cameroon.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Baguettes_stall%2C_Dschang%2C_Cameroon.jpg"
+        }
+      },
+      {
+        "id": "gmb-sn-3",
+        "name": "Chakery (Sweet Couscous Dessert-Snack)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Couscous (steamed)",
+          "Sweetened condensed milk or yogurt",
+          "Vanilla",
+          "Nutmeg",
+          "Evaporated milk",
+          "Pineapple chunks (optional)",
+          "Raisins"
+        ],
+        "instructions": [
+          "Steam couscous until fluffy",
+          "Let cool completely",
+          "Mix with condensed milk, evaporated milk, vanilla, nutmeg",
+          "Add pineapple and raisins if desired",
+          "Chill thoroughly — serve cold",
+          "The sweet, creamy, grain-based dessert is refreshing and satisfying",
+          "Sold in bags at markets — Gambian street dessert",
+          "The cold, creamy texture on a hot day is pure relief"
+        ],
+        "description": "The Gambia's sweet couscous dessert — fluffy grains mixed with condensed milk, vanilla, and nutmeg, served ice-cold. Sold in plastic bags at every market. The concept of 'cold sweet couscous' and the refreshing effect in West African heat have made chakery viral in African dessert content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg"
+        }
+      },
+      {
+        "id": "gmb-sn-3",
+        "name": "Tapalapa Bread Sandwich",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Tapalapa bread (Gambian French bread — long, crusty, soft interior)",
+          "Filling: bean stew, or egg, or sardines with onion and pepper",
+          "Onion, Scotch bonnet, Maggi",
+          "Mayonnaise (optional)"
+        ],
+        "instructions": [
+          "Tapalapa is The Gambia's daily bread — baked in wood-fired ovens across the country",
+          "Split the long crusty loaf",
+          "Fill with bean stew (the most traditional filling), or fried egg, or sardines with spicy onion",
+          "Add raw onion and Scotch bonnet for heat",
+          "The crusty bread against the soft, spicy filling is breakfast, lunch, and snack",
+          "Tapalapa bakeries are in every neighborhood — the smell of baking bread at dawn",
+          "This is The Gambia's most-eaten food — more than any single dish"
+        ],
+        "description": "The Gambia's tapalapa bread sandwich — the country's most-eaten food by far. Crusty wood-fired bread stuffed with bean stew, egg, or spicy sardines. Every neighborhood has a tapalapa bakery, and the dawn baking smell is The Gambia's alarm clock.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/African_Dishes.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/African_Dishes.jpg"
+        }
+      },
+      {
+        "id": "gmb-sn-4",
+        "name": "Chura Gerteh (Peanut-Couscous Energy Balls)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Roasted peanuts (ground)",
+          "Couscous (fine — steamed)",
+          "Sugar or honey",
+          "Butter or peanut oil"
+        ],
+        "instructions": [
+          "Roast peanuts, grind coarsely",
+          "Steam couscous until fluffy",
+          "Mix ground peanuts, couscous, sugar, butter",
+          "Shape into balls — press firmly so they hold together",
+          "These are Gambian energy balls — pre-workout fuel before the term existed",
+          "Eaten as snacks, breakfast, or sustenance for travel",
+          "The peanut-couscous combo is protein + carb in perfect balance",
+          "No cooking required — this is portable Gambian food"
+        ],
+        "description": "Gambian peanut-couscous energy balls — roasted ground peanuts mixed with steamed couscous and shaped into portable balls. Pre-workout fuel before the concept existed. The ancient Gambian energy food has gone viral as the original 'protein ball.'"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "gmb-ds-1",
+        "name": "Chakery",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups couscous",
+          "2 cups sweetened condensed milk",
+          "1 cup plain yogurt",
+          "1/2 cup heavy cream",
+          "1/2 cup sugar",
+          "1 teaspoon vanilla extract",
+          "1/4 teaspoon ground nutmeg",
+          "Diced pineapple and raisins for topping"
+        ],
+        "instructions": [
+          "Steam couscous until fluffy, then spread on a tray to cool.",
+          "In a large bowl, whisk together condensed milk, yogurt, cream, sugar, vanilla, and nutmeg.",
+          "Fold the cooled couscous into the cream mixture.",
+          "Refrigerate for at least 2 hours until well chilled.",
+          "Top with diced pineapple and raisins before serving.",
+          "Serve cold in individual cups or bowls."
+        ],
+        "description": "A creamy chilled couscous pudding mixed with sweetened milk, a popular Gambian party dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg"
+        }
+      },
+      {
+        "id": "gmb-ds-2",
+        "name": "Wonjo (Hibiscus-Mint Ice Pops)",
+        "difficulty": "Easy",
+        "servings": 10,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Dried hibiscus flowers",
+          "Fresh mint",
+          "Sugar",
+          "Water",
+          "Popsicle molds or bags"
+        ],
+        "instructions": [
+          "Brew strong hibiscus tea with mint",
+          "Sweeten with sugar",
+          "Let cool, pour into molds or bags",
+          "Freeze until solid",
+          "The deep red color makes stunning popsicles",
+          "Sold as 'ice wonjo' at schools and markets — the cheapest frozen treat in The Gambia",
+          "The hibiscus tang and the mint freshness make these addictive"
+        ],
+        "description": "Frozen hibiscus-mint popsicles — ruby-red, tangy, and refreshing. The Gambia's cheapest frozen treat, sold at every school gate and market. The stunning red color and the natural-ingredient simplicity have made ice wonjo viral in the homemade-popsicle trend.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg"
+        }
+      },
+      {
+        "id": "gmb-ds-3",
+        "name": "Chakery (Yogurt Couscous Pudding)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Couscous (fine grain)",
+          "Yogurt or sour cream",
+          "Condensed milk",
+          "Evaporated milk",
+          "Sugar",
+          "Nutmeg",
+          "Vanilla",
+          "Pineapple chunks or raisins"
+        ],
+        "instructions": [
+          "Cook couscous, let cool completely",
+          "Mix yogurt, condensed milk, evaporated milk, sugar, vanilla, nutmeg",
+          "Add cooled couscous to the cream mixture — stir gently",
+          "Add pineapple or raisins",
+          "Chill — serve cold",
+          "The texture is unique — tiny couscous grains in sweet, creamy, tangy yogurt",
+          "Chakery is The Gambia's celebration dessert — weddings, naming ceremonies, Ramadan",
+          "The cold, creamy, tangy combination is addictive",
+          "This has become viral as 'African yogurt pudding' — and it deserves the attention"
+        ],
+        "description": "The Gambia's celebration dessert — couscous folded into sweetened yogurt with condensed milk and fruit. Served at every wedding, naming ceremony, and Iftar during Ramadan. Chakery has gone viral as 'African yogurt pudding' and earned every bit of attention.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gambia_Chakery_0001.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "gmb-dr-1",
+        "name": "Wonjo (Hibiscus Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "1 cup dried hibiscus flowers",
+          "6 cups water",
+          "1/2 cup sugar",
+          "1 teaspoon fresh ginger, grated",
+          "2 tablespoons lime juice",
+          "Fresh mint for garnish"
+        ],
+        "instructions": [
+          "Bring water to a boil and add hibiscus flowers and ginger.",
+          "Boil for 10 minutes, then remove from heat.",
+          "Strain into a pitcher and discard the flowers.",
+          "Stir in sugar and lime juice until dissolved.",
+          "Let cool, then refrigerate until chilled.",
+          "Serve over ice with fresh mint."
+        ],
+        "description": "A vibrant ruby-red hibiscus drink flavored with ginger and lime, beloved across the Gambia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg"
+        }
+      },
+      {
+        "id": "gmb-dr-2",
+        "name": "Palm Wine",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "1 liter fresh palm sap",
+          "Ice for serving"
+        ],
+        "instructions": [
+          "Collect fresh sap from the tapped palm tree in a clean calabash.",
+          "Strain through a clean cloth to remove any debris or insects.",
+          "Let sit for 4 to 8 hours to undergo natural fermentation.",
+          "Serve chilled or over ice.",
+          "Best consumed fresh the same day for a sweet, mildly fizzy taste."
+        ],
+        "description": "Naturally fermented palm sap with a sweet and tangy flavor, a traditional alcoholic drink in the Gambia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Toddy_Bottle_and_Glass.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Toddy_Bottle_and_Glass.jpg"
+        }
+      },
+      {
+        "id": "gmb-dr-1",
+        "name": "Wonjo (Hibiscus Drink)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Dried hibiscus flowers",
+          "Sugar",
+          "Water",
+          "Mint",
+          "Pineapple or vanilla (optional)"
+        ],
+        "instructions": [
+          "Boil hibiscus in water until the liquid is deep ruby red",
+          "Strain, add sugar generously — it's a sweet drink",
+          "Add mint for freshness",
+          "Add pineapple juice or vanilla for variation",
+          "Chill — must be served ice cold",
+          "Wonjo is The Gambia's name for the West African hibiscus drink (bissap/zobo)",
+          "The color is photogenic — deep jewel red",
+          "Essential during Ramadan — every Iftar table has a jug of wonjo",
+          "The tartness quenches thirst like nothing else in the Sahel heat"
+        ],
+        "description": "The Gambia's wonjo — hibiscus flowers steeped into a deep ruby drink, sweetened and served freezing cold. Essential at every Ramadan Iftar and every celebration. The jewel-red color and the thirst-quenching tartness in Sahel heat make wonjo viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Hibiscus_tea.jpg"
+        }
+      },
+      {
+        "id": "gmb-dr-2",
+        "name": "Baobab Juice (Bouye)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Baobab fruit pulp (the chalky white powder from inside the fruit)",
+          "Sugar",
+          "Water",
+          "Vanilla or coconut milk (optional)"
+        ],
+        "instructions": [
+          "Soak baobab fruit pulp in water — it dissolves into a milky white liquid",
+          "Strain to remove seeds and fiber",
+          "Add sugar, vanilla or coconut milk",
+          "Chill — serve cold",
+          "Baobab has 6 times the vitamin C of oranges and more calcium than milk",
+          "The flavor is tangy, citrusy, slightly chalky — unique and refreshing",
+          "The baobab tree is Africa's 'tree of life' — the fruit is just one of its gifts",
+          "Bouye is The Gambia's health drink — long before 'superfood' was a word"
+        ],
+        "description": "Baobab juice — the chalky white pulp of Africa's 'tree of life' dissolved into a milky, tangy, citrus drink. Contains 6x the vitamin C of oranges. The Gambia's health drink for centuries before 'superfood' became a word. The origin story and nutrition facts are perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Baobab_Adansonia_digitata.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Baobab_Adansonia_digitata.jpg"
+        }
+      }
+    ]
+  }
+}

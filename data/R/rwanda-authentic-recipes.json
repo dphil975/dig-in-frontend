@@ -1,0 +1,279 @@
+{
+  "rwandaRecipes": {
+    "country": "Rwanda",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "rwa-bf-1",
+        "name": "Igisafuria (Mixed Vegetable Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Plantains",
+          "Sweet potatoes",
+          "Beans",
+          "Cassava",
+          "Spinach",
+          "Onion",
+          "Palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Peel and chop all vegetables",
+          "Boil beans until almost tender",
+          "Add all vegetables, cook in palm oil until soft"
+        ],
+        "description": "One-pot vegetable stew — Rwanda's everyday meal."
+      },
+      {
+        "id": "rwa-bf-2",
+        "name": "Umutsima (Cassava-Corn Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "1 cup cassava flour",
+          "1 cup corn flour",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil water",
+          "Stir in flours gradually",
+          "Cook until thick and smooth"
+        ],
+        "description": "Thick porridge of cassava and corn."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "rwa-ln-1",
+        "name": "Isombe (Cassava Leaf Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g cassava leaves (pounded)",
+          "Peanut paste",
+          "Onion",
+          "Palm oil",
+          "Dried fish",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil pounded cassava leaves 30 min",
+          "Add peanut paste and palm oil",
+          "Add onion and fish",
+          "Simmer until thick"
+        ],
+        "description": "Cassava leaves in peanut sauce — Rwanda's favorite.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/ISOMBE.jpg",
+        "imageCredit": {
+          "author": "Mutiganda",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AISOMBE.jpg"
+        }
+      },
+      {
+        "id": "rwa-ln-2",
+        "name": "Ibihaza (Pumpkin)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Pumpkin (cubed)",
+          "Salt",
+          "Butter"
+        ],
+        "instructions": [
+          "Boil pumpkin until tender",
+          "Mash slightly with butter and salt"
+        ],
+        "description": "Simple mashed pumpkin.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "rwa-dn-1",
+        "name": "Brochettes (Goat Skewers)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "500g goat meat (cubed)",
+          "Onion",
+          "Oil",
+          "Salt and pepper",
+          "Lime"
+        ],
+        "instructions": [
+          "Marinate goat in lime, salt, pepper",
+          "Thread onto skewers with onion",
+          "Grill over charcoal until done",
+          "Serve with fried plantains"
+        ],
+        "description": "Charcoal-grilled goat skewers — Rwanda's most popular street food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Wooden_skewers.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Wooden_skewers.jpg"
+        }
+      },
+      {
+        "id": "rwa-dn-2",
+        "name": "Tilapia and Ugali",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "4 tilapia fillets",
+          "Cornmeal",
+          "Onion",
+          "Tomatoes",
+          "Oil",
+          "Lemon",
+          "Salt"
+        ],
+        "instructions": [
+          "Fry tilapia with lemon and salt",
+          "Make ugali from cornmeal",
+          "Make tomato-onion sauce",
+          "Serve together"
+        ],
+        "description": "Fried tilapia with cornmeal and sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "rwa-sn-1",
+        "name": "Fried Plantains",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "4 plantains",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Slice plantains",
+          "Fry until golden",
+          "Season with salt"
+        ],
+        "description": "Simple fried plantain slices.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Vendeuses_de_bananes_plantain.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "rwa-ds-1",
+        "name": "Ikivuguto with Honey",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Ikivuguto (fermented milk)",
+          "Honey"
+        ],
+        "instructions": [
+          "Pour fermented milk into bowl",
+          "Drizzle with honey"
+        ],
+        "description": "Tangy fermented milk with honey.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "rwa-dr-1",
+        "name": "Urwagwa (Banana Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Ripe bananas",
+          "Sorghum flour",
+          "Water"
+        ],
+        "instructions": [
+          "Mash ripe bananas, extract juice",
+          "Add sorghum flour",
+          "Ferment 3-5 days",
+          "Strain and serve"
+        ],
+        "description": "Traditional banana beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Belgian_banana_beer.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Belgian_banana_beer.jpg"
+        }
+      },
+      {
+        "id": "rwa-dr-2",
+        "name": "Ikivuguto (Fermented Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh milk",
+          "Starter culture"
+        ],
+        "instructions": [
+          "Add starter to milk",
+          "Let ferment 1-2 days at room temp",
+          "Shake before serving"
+        ],
+        "description": "Tangy cultured milk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      }
+    ]
+  }
+}

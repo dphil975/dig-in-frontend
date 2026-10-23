@@ -1,0 +1,707 @@
+{
+  "panamaRecipes": {
+    "country": "Panama",
+    "region": "Central America",
+    "breakfast": [
+      {
+        "id": "pan-bf-1",
+        "name": "Hojaldras (Fried Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups flour",
+          "Baking powder",
+          "Sugar",
+          "Salt",
+          "Water",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dough, rest",
+          "Flatten pieces",
+          "Deep fry until golden and puffy"
+        ],
+        "description": "Puffy fried bread — Panamanian morning essential.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Hojuelas.JPG",
+        "imageCredit": {
+          "author": "User:Malejotm",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHojuelas.JPG"
+        }
+      },
+      {
+        "id": "pan-bf-2",
+        "name": "Tortilla Panameña (Corn Cake)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups ground corn",
+          "Salt",
+          "Butter",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix corn with salt and butter",
+          "Shape thick flat cakes",
+          "Fry until golden on both sides"
+        ],
+        "description": "Thick fried corn cakes — not tortillas in the Mexican sense."
+      },
+      {
+        "id": "pan-bf-3",
+        "name": "Tortilla Panameña (Thick Corn Cake)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Ground corn (pre-cooked corn flour — masarepa style)",
+          "Salt, water",
+          "Oil or butter for frying"
+        ],
+        "instructions": [
+          "The Panamanian tortilla is NOT the thin Mexican tortilla — it's a thick, fried corn cake",
+          "More like an arepa: thick, golden-crusted, soft inside",
+          "Shape the dough into thick rounds — about 1cm thick",
+          "Fry in oil or butter until golden on both sides — a crispy crust forms",
+          "The inside stays soft and corn-flavored — the outside is crunchy",
+          "Eaten for breakfast with cheese, eggs, or alongside soups",
+          "This thick corn cake is the base carb of Panamanian rural breakfast",
+          "The distinction from Mexican tortillas confuses visitors but is important — different food, same word"
+        ],
+        "description": "Panama's thick corn cake (NOT a thin Mexican tortilla) — more like an arepa: ground corn formed into thick rounds, fried until golden-crusted outside and soft inside. The base carb of rural Panamanian breakfast, eaten with cheese or eggs. Same word, different food — the distinction matters."
+      },
+      {
+        "id": "pan-bf-4",
+        "name": "Carimañola (Yuca Fritter)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Yuca (cassava — boiled, mashed)",
+          "Ground beef (seasoned with onion, garlic, cumin, tomato)",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Carimañolas are Panama's yuca fritters — torpedo-shaped, meat-filled, fried golden",
+          "Boil yuca until very soft, mash until smooth — this becomes the outer shell",
+          "Season ground beef with onion, garlic, cumin, tomato — the filling",
+          "Shape the yuca dough around the meat filling — torpedo/football shape",
+          "Deep-fry until golden brown — the yuca crust becomes crispy",
+          "Inside: savory seasoned beef wrapped in smooth, starchy yuca",
+          "Carimañolas are breakfast food and street food — sold at fondas (street stalls)",
+          "The yuca must be perfectly mashed — lumps ruin the texture",
+          "Carimañolas are a gift from Afro-Panamanian cuisine — the Caribbean coast tradition"
+        ],
+        "description": "Panama's torpedo-shaped fritter — boiled yuca mashed and shaped around seasoned ground beef, deep-fried until golden-crispy. Afro-Panamanian Caribbean coast tradition. The yuca must be perfectly smooth — lumps ruin the texture. Sold at fondas (street stalls) for breakfast. Crispy starchy outside, savory beef inside.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Barranquilla_-_Carima%C3%B1olas.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Barranquilla_-_Carima%C3%B1olas.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "pan-ln-1",
+        "name": "Sancocho Panameño (Chicken Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "1 chicken",
+          "Yuca",
+          "Ñame",
+          "Corn on cob",
+          "Culantro (not cilantro)",
+          "Onion",
+          "Garlic",
+          "Oregano",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil chicken with onion, garlic",
+          "Add root vegetables and corn",
+          "Simmer 30 min",
+          "Add lots of culantro",
+          "Serve with white rice"
+        ],
+        "description": "Panama's national dish — herby chicken soup with root vegetables.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sancocho_de_espinazo_de_cerdo.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sancocho_de_espinazo_de_cerdo.jpg"
+        }
+      },
+      {
+        "id": "pan-ln-2",
+        "name": "Arroz con Pollo",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups rice",
+          "Chicken",
+          "Sofrito",
+          "Tomatoes",
+          "Peas",
+          "Carrots",
+          "Olives",
+          "Achiote",
+          "Chicken broth"
+        ],
+        "instructions": [
+          "Brown chicken with sofrito and achiote",
+          "Add rice and broth",
+          "Add vegetables and olives",
+          "Cook covered until done"
+        ],
+        "description": "Panamanian chicken rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Arroz-con-Pollo.jpg",
+        "imageCredit": {
+          "author": "Kobako",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AArroz-con-Pollo.jpg"
+        }
+      },
+      {
+        "id": "pan-ln-3",
+        "name": "Arroz con Pollo Panameño",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Chicken (bone-in pieces)",
+          "Rice",
+          "Sofrito: onion, garlic, bell pepper, tomato, culantro (recao)",
+          "Achiote (annatto — for orange color)",
+          "Olives, capers",
+          "Peas, carrots",
+          "Chicken stock"
+        ],
+        "instructions": [
+          "Panamanian arroz con pollo uses achiote (annatto) for its distinctive orange-golden color",
+          "The sofrito base: onion, garlic, bell pepper, tomato, and culantro (recao — wide-leaf cilantro)",
+          "Culantro is NOT cilantro — it's a different plant with broader leaves and stronger flavor",
+          "Olives and capers are the Spanish colonial influence — they add brininess",
+          "Brown chicken, build sofrito, add rice and stock with achiote",
+          "The rice turns golden-orange from the achiote — the color is the identity",
+          "Arroz con pollo is the Panamanian Sunday lunch — families gather around the pot",
+          "Served with plátano maduro (fried sweet plantain) on the side — always",
+          "This is Latin American comfort food with Panama's specific flavoring: culantro + achiote"
+        ],
+        "description": "Panama's Sunday family rice — chicken with golden-orange rice (colored by achiote/annatto), flavored with culantro (recao — stronger than cilantro), olives, and capers (Spanish colonial legacy). Always served with plátano maduro (fried sweet plantain). The culantro + achiote combination is Panama's flavor identity. Families gather around this pot on Sundays."
+      },
+      {
+        "id": "pan-ln-4",
+        "name": "Ropa Vieja Panameña (Shredded Beef Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 120,
+        "ingredients": [
+          "Flank steak (boiled until tender, then shredded)",
+          "Bell peppers (red and green — sliced)",
+          "Tomato sauce, onion, garlic",
+          "Cumin, oregano",
+          "Capers, olives",
+          "Worcestershire sauce (salsa inglesa — the Panamanian touch)"
+        ],
+        "instructions": [
+          "Ropa vieja means 'old clothes' — the shredded beef resembles tattered fabric",
+          "The beef is boiled for 1-2 hours until tender, then shredded along the grain",
+          "The shredded beef is sautéed with peppers, tomato, onion, garlic, and spices",
+          "Worcestershire sauce (salsa inglesa) is a distinctly Panamanian addition — Canal Zone influence",
+          "The American presence during the Canal construction brought Worcestershire sauce to Panama",
+          "Capers and olives: the Spanish layer in the dish",
+          "Ropa vieja is served over white rice with plátano maduro — the complete plate",
+          "This dish is shared across the Caribbean and Latin America — Cuban ropa vieja is the most famous",
+          "Panama's version is gentler, less tomato-heavy than Cuban, with the Worcestershire distinction"
+        ],
+        "description": "Panama's 'old clothes' — flank steak boiled tender, shredded, and sautéed with bell peppers, tomato, olives, capers, and Worcestershire sauce (salsa inglesa — a distinctly Panamanian addition from Canal Zone American influence). Served over rice with plátano maduro. Shared across the Caribbean; Panama's version is gentler, less tomato-heavy than Cuban, with the Worcestershire distinction."
+      },
+      {
+        "id": "pan-ln-5",
+        "name": "Ceviche Panameño",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "Corvina (sea bass — very fresh, diced small)",
+          "Lime juice (abundant)",
+          "Red onion (diced)",
+          "Celery (diced — the Panamanian addition)",
+          "Cilantro",
+          "Hot sauce (ají chombo — Scotch bonnet)",
+          "Salt"
+        ],
+        "instructions": [
+          "Panamanian ceviche is distinct from Peruvian — different proportions, different style",
+          "The fish (corvina is the classic) is marinated LONGER than Peruvian ceviche — 30+ minutes",
+          "This longer cure makes the fish more opaque — a different texture than Peruvian raw-style",
+          "The Panamanian addition: CELERY — diced celery adds crunch and freshness",
+          "Ají chombo (Scotch bonnet pepper) provides the heat — Caribbean-style hot",
+          "Panamanian ceviche is street food — sold in small plastic cups on the street",
+          "The Casco Viejo (Old Town) in Panama City is ceviche territory — vendors everywhere",
+          "Served with saltine crackers (galletas de soda) — not tostones, not chips",
+          "Panama's position (connecting Central and South America) gives its ceviche a unique identity"
+        ],
+        "description": "Panama's street ceviche — corvina (sea bass) diced small, cured in lime juice longer than Peruvian style (more opaque texture), with the distinctly Panamanian addition of diced celery for crunch, red onion, cilantro, and ají chombo (Scotch bonnet heat). Served in small plastic cups with saltine crackers. Casco Viejo vendors everywhere. Panama's geographic bridge position gives its ceviche a unique identity."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "pan-dn-1",
+        "name": "Corvina al Ajillo (Garlic Sea Bass)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "4 corvina fillets",
+          "8 cloves garlic",
+          "White wine",
+          "Butter",
+          "Parsley",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté lots of garlic in butter",
+          "Add fish, cook 3 min per side",
+          "Deglaze with wine",
+          "Garnish with parsley"
+        ],
+        "description": "Pan-seared sea bass in garlic butter."
+      },
+      {
+        "id": "pan-dn-2",
+        "name": "Tamales Panameños",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 90,
+        "ingredients": [
+          "Masa dough (seasoned)",
+          "Chicken",
+          "Olives",
+          "Capers",
+          "Raisins",
+          "Tomato sauce",
+          "Bijao leaves"
+        ],
+        "instructions": [
+          "Make seasoned masa",
+          "Fill with chicken, olives, capers, raisins",
+          "Wrap in bijao leaves",
+          "Boil 90 min"
+        ],
+        "description": "Large tamales wrapped in bijao leaves."
+      },
+      {
+        "id": "pan-dn-3",
+        "name": "Tamales Panameños",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 120,
+        "cookTime": 120,
+        "ingredients": [
+          "Corn dough (masa — from dried corn)",
+          "Filling: chicken or pork, onion, bell pepper, tomato, olives, capers, raisins",
+          "Achiote (annatto)",
+          "Bijao leaves (or banana leaves — for wrapping)"
+        ],
+        "instructions": [
+          "Panamanian tamales are wrapped in bijao leaves — a specific tropical plant leaf",
+          "The bijao leaf gives a distinctive flavor different from banana leaf or corn husk",
+          "The masa is enriched with achiote — giving it an orange-golden color",
+          "The filling: chicken or pork with the Panamanian flavor profile (olives, capers, raisins)",
+          "The raisin is the sweet surprise inside — the sweet-savory balance",
+          "Shape the masa on the leaf, add filling, fold and tie with string",
+          "Steam for 2 hours — the tamale sets inside the leaf",
+          "Tamales in Panama are Christmas food — made in December, communally, in large batches",
+          "The tamalada: the family gathers to make 50-100+ tamales for Christmas",
+          "Everyone has a role: masa maker, filler, wrapper, tier — communal production",
+          "Panamanian tamales are large — substantial, a meal in themselves",
+          "The bijao leaf wrapping is environmentally specific — bijao grows in Panama's tropical forests"
+        ],
+        "description": "Panama's Christmas tamale — golden-orange masa (colored with achiote) filled with chicken or pork, olives, capers, and raisins (the sweet surprise), wrapped in bijao leaves (a specific tropical leaf with a distinctive flavor), steamed 2 hours. Made communally in December: the tamalada, 50-100+ tamales, everyone with a role. Large, substantial — a meal in themselves."
+      },
+      {
+        "id": "pan-dn-4",
+        "name": "Guacho (Soupy Rice Stew)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Rice",
+          "Protein: seafood, chicken, or sausage",
+          "Tomato, onion, garlic, bell pepper, culantro",
+          "Coconut milk (Caribbean coast version)",
+          "Achiote",
+          "Chicken or seafood stock"
+        ],
+        "instructions": [
+          "Guacho is Panama's soupy rice — wetter than arroz con pollo, thicker than soup",
+          "The name may come from 'guachada' — a mix, a stew-soup hybrid",
+          "The rice cooks IN the stew — absorbing all the flavor, releasing starch",
+          "The starch makes the liquid slightly thick — not a clear soup, not a dry rice",
+          "On the Caribbean coast (Bocas del Toro, Colón), guacho includes coconut milk",
+          "The coconut milk version is Afro-Panamanian — the Caribbean culinary identity",
+          "Guacho can be seafood (shrimp, octopus), chicken, or sausage — flexible",
+          "Culantro (recao) is the essential herb — more pungent than cilantro",
+          "Guacho is comfort food — a one-pot meal that feeds a crowd",
+          "It represents Panama's cultural synthesis: Indigenous, Spanish, African, Caribbean"
+        ],
+        "description": "Panama's soupy rice stew — rice cooked in a tomato-culantro broth with seafood, chicken, or sausage, releasing starch until neither soup nor dry rice. The Caribbean coast version (Bocas del Toro, Colón) adds coconut milk — Afro-Panamanian culinary identity. One-pot comfort that feeds a crowd. Panama's cultural synthesis: Indigenous, Spanish, African, Caribbean in one dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Mikaniaglomerata-d.JPG",
+        "imageCredit": {
+          "author": "Eugenio Hansen, OFS",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMikaniaglomerata-d.JPG"
+        }
+      },
+      {
+        "id": "pan-dn-5",
+        "name": "Patacones con Todo (Tostones)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Green plantains (peeled, sliced thick)",
+          "Oil for frying",
+          "Salt",
+          "Toppings: shredded beef, ceviche, cheese, hogao (tomato-onion sauce)"
+        ],
+        "instructions": [
+          "Patacones are twice-fried green plantain discs — tostones — Panama's essential side and snack",
+          "Slice green plantain into thick rounds — fry once until soft (not golden)",
+          "Remove, smash flat with a tostonera (plantain press) or the bottom of a glass",
+          "Fry AGAIN until golden and crispy — the double-frying is essential",
+          "The result: crispy, starchy, slightly salty discs",
+          "In Panama, patacones are 'con todo' — topped with everything",
+          "Shredded beef (carne desmechada), ceviche, cheese, hogao (tomato-onion sauce)",
+          "Patacones replace bread, replace chips, replace tortillas — they ARE the vessel",
+          "Every Panamanian meal can include patacones — the universal accompaniment",
+          "The tostonera (press) is in every Panamanian kitchen — a dedicated single-purpose tool"
+        ],
+        "description": "Panama's universal vessel — green plantain sliced, fried once, SMASHED flat with a tostonera, fried AGAIN until golden-crispy. Topped with everything: shredded beef, ceviche, cheese, hogao (tomato-onion sauce). Patacones replace bread, chips, and tortillas. Every Panamanian kitchen has a tostonera. The double-frying technique makes them crispy-starchy and addictive."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "pan-sn-1",
+        "name": "Carimañolas",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Yuca (boiled, mashed)",
+          "Filling: ground beef, onion, tomato",
+          "Oil"
+        ],
+        "instructions": [
+          "Mash yuca, shape around meat filling",
+          "Seal into oval shapes",
+          "Deep fry until golden"
+        ],
+        "description": "Yuca fritters stuffed with seasoned beef.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Barranquilla_-_Carima%C3%B1olas.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Barranquilla_-_Carima%C3%B1olas.jpg"
+        }
+      },
+      {
+        "id": "pan-sn-2",
+        "name": "Empanadas Panameñas",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Corn dough (masa)",
+          "Filling: ground beef, onion, bell pepper, garlic, cumin, tomato",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Panamanian empanadas use corn dough — not wheat flour dough",
+          "The corn dough gives a grainier, slightly sweet, distinctive texture",
+          "The filling: ground beef seasoned with onion, pepper, garlic, cumin, tomato",
+          "Shape into half-moons — press edges to seal with a fork",
+          "Deep-fry until golden — the corn crust puffs slightly",
+          "Panamanian empanadas are smaller than Argentine — snack-sized, eaten on the go",
+          "Sold at fondas, markets, bus stops — the everywhere street food",
+          "The corn empanada tradition connects to pre-colonial Mesoamerican corn culture",
+          "Simple, cheap, satisfying — the after-school snack, the bus-ride food"
+        ],
+        "description": "Panama's corn-dough empanada — ground beef in corn masa (grainier, sweeter than wheat flour dough), fried golden until the crust puffs slightly. Smaller and snack-sized — eaten on the go. Sold at fondas, markets, and bus stops. The corn empanada tradition connects to pre-colonial Mesoamerican culture. Simple, cheap, the after-school snack."
+      },
+      {
+        "id": "pan-sn-3",
+        "name": "Hojaldras (Fried Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, baking powder, salt, sugar",
+          "Butter, milk, egg",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Hojaldras are Panama's fried bread — puffy, golden, slightly sweet",
+          "The dough: enriched with butter, milk, egg — rolled and cut into rounds or rectangles",
+          "Deep-fried until puffed and golden — the dough balloons from the heat",
+          "The result: light, airy, slightly sweet fried bread",
+          "Hojaldras are breakfast food — eaten with cheese, eggs, or dipped in coffee",
+          "They're also sold at fondas alongside empanadas and carimañolas",
+          "The puffiness is the mark of well-made hojaldras — flat ones are wrong",
+          "Hojaldras represent the Spanish fried-dough tradition adapted in Panama",
+          "Every Panamanian child remembers hojaldras at grandma's breakfast table"
+        ],
+        "description": "Panama's puffy fried bread — enriched dough (butter, milk, egg) deep-fried until it balloons golden and airy. Slightly sweet. Eaten for breakfast with cheese or eggs, or dipped in coffee. Sold at fondas alongside empanadas. The puffiness is the quality mark — flat ones are wrong. Every Panamanian child's grandma-breakfast memory.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Hojuelas.JPG",
+        "imageCredit": {
+          "author": "User:Malejotm",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHojuelas.JPG"
+        }
+      },
+      {
+        "id": "pan-sn-4",
+        "name": "Raspao (Shaved Ice)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Shaved ice (finely shaved — snow-like)",
+          "Fruit syrups: tamarind, passion fruit, guanábana, cherry",
+          "Condensed milk (drizzled on top)"
+        ],
+        "instructions": [
+          "Raspao is Panama's shaved ice — the street drink that survives the tropical heat",
+          "Vendors push carts through neighborhoods — the sound of ice being shaved signals them",
+          "Finely shave a block of ice — snow-fine texture",
+          "Drizzle with fruit syrups — the choice of syrup is personal",
+          "Top with condensed milk — the sweetness is deliberate",
+          "Raspao vendors are a fixture of Panamanian street life — they appear in the heat of the day",
+          "The tamarind syrup version is the most traditionally Panamanian",
+          "Raspao is democratic — costs almost nothing, accessible to everyone",
+          "The neon-colored syrup dripping down the cup is visually striking"
+        ],
+        "description": "Panama's heat survival — finely shaved ice drenched in fruit syrups (tamarind is most traditional; also passion fruit, guanábana) and drizzled with condensed milk. Vendors push carts through neighborhoods — the sound of ice being shaved signals them. Costs almost nothing. Democratic refreshment in Panama's tropical heat. The neon-colored syrup dripping down the cup is visually striking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Shavedice.jpg",
+        "imageCredit": {
+          "author": "Sean Loyless from Austin, USA",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AShavedice.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "pan-ds-1",
+        "name": "Tres Leches Cake",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Sponge cake",
+          "Condensed milk",
+          "Evaporated milk",
+          "Cream",
+          "Whipped cream",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Bake sponge cake",
+          "Poke holes, pour three-milk mixture over",
+          "Refrigerate overnight",
+          "Top with whipped cream and cinnamon"
+        ],
+        "description": "Three-milk soaked cake.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg"
+        }
+      },
+      {
+        "id": "pan-ds-2",
+        "name": "Tres Leches Cake (Panamanian Style)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Sponge cake: flour, eggs, sugar, vanilla",
+          "Three milks: evaporated milk, condensed milk, heavy cream",
+          "Whipped cream topping",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Tres leches (three milks cake) is beloved across Latin America — Panama claims a version",
+          "The sponge cake is baked plain, then SOAKED in a mixture of three milks",
+          "The three milks: evaporated milk + condensed milk + heavy cream — poured over the warm cake",
+          "The cake absorbs the milks — becoming incredibly moist, almost pudding-like",
+          "A properly soaked tres leches should be wet but still hold its shape",
+          "Top with whipped cream — the lightness contrasts with the dense, milky cake",
+          "Panamanian tres leches is often served at birthdays and celebrations",
+          "The cake must rest overnight — the soaking time allows full absorption",
+          "Tres leches is the Latin American dessert that surprises outsiders: wet cake is intentional",
+          "The cinnamon dusting on top is the final touch"
+        ],
+        "description": "Panama's celebration cake — sponge cake soaked in three milks (evaporated, condensed, heavy cream) until impossibly moist, topped with whipped cream and cinnamon. The wetness is intentional — a properly soaked tres leches is almost pudding-like. Must rest overnight for full absorption. Beloved across Latin America; Panama serves it at birthdays and celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg"
+        }
+      },
+      {
+        "id": "pan-ds-3",
+        "name": "Dulce de Coco (Coconut Sweet)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Fresh coconut (grated)",
+          "Sugar (a lot)",
+          "Water",
+          "Cinnamon, vanilla"
+        ],
+        "instructions": [
+          "Dulce de coco is Panama's simple coconut candy — grated coconut cooked in sugar syrup",
+          "Grate fresh coconut — the freshness matters enormously",
+          "Cook grated coconut with sugar, water, cinnamon, and vanilla",
+          "Stir continuously as the sugar caramelizes and the coconut absorbs it",
+          "The mixture thickens into a sticky, caramelized coconut mass",
+          "Shape into small balls or patties — they set as they cool",
+          "The flavor: intense coconut, caramel, cinnamon — deeply sweet",
+          "Dulce de coco is sold at markets, fairs, and by home cooks",
+          "The simple ingredients belie the skill: knowing when to stop cooking is the art",
+          "Afro-Panamanian coconut traditions from the Caribbean coast influence this dessert"
+        ],
+        "description": "Panama's coconut candy — freshly grated coconut cooked with sugar, cinnamon, and vanilla until the sugar caramelizes and the coconut absorbs it into a sticky, intense confection. Shaped into balls or patties. The art: knowing when to stop cooking. Afro-Panamanian Caribbean coast tradition. Sold at markets and fairs. Simple ingredients, skilled execution.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DulceDeLeche.jpg",
+        "imageCredit": {
+          "author": "audinou from Paris, France",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ADulceDeLeche.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "pan-dr-1",
+        "name": "Chicha de Maracuyá (Passion Fruit Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Passion fruit pulp",
+          "Sugar",
+          "Water",
+          "Ice"
+        ],
+        "instructions": [
+          "Blend passion fruit pulp with water and sugar",
+          "Strain",
+          "Serve over ice"
+        ],
+        "description": "Fresh passion fruit drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Canelazo.jpg",
+        "imageCredit": {
+          "author": "momentcaptured1 from NYC, USA",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACanelazo.jpg"
+        }
+      },
+      {
+        "id": "pan-dr-2",
+        "name": "Seco Herrerano",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Seco (sugarcane spirit)",
+          "Milk",
+          "Ice"
+        ],
+        "instructions": [
+          "Pour seco over ice",
+          "Add milk, stir"
+        ],
+        "description": "Panama's national spirit mixed with milk — yes, really."
+      },
+      {
+        "id": "pan-dr-3",
+        "name": "Chicha de Piña (Pineapple Drink)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Pineapple (rind and flesh — the rind has more flavor)",
+          "Sugar",
+          "Water",
+          "Cinnamon, cloves (optional)",
+          "Ice"
+        ],
+        "instructions": [
+          "Chicha de piña is Panama's pineapple drink — the most popular chicha",
+          "The pineapple RIND is used — it has more concentrated flavor than the flesh",
+          "Boil pineapple rind (and some flesh) with sugar and optional spices",
+          "Let cool, strain, serve over ice — the drink is golden and intensely tropical",
+          "Chicha de piña is at every fonda, restaurant, and home table",
+          "The fermented version exists too — left to ferment, it becomes mildly alcoholic",
+          "But the non-alcoholic fresh version is the everyday drink",
+          "Chicha (fermented corn drink) is pre-colonial — chicha de piña adapted the concept",
+          "The pineapple rind waste reduction is practical and flavorful — zero-waste cooking"
+        ],
+        "description": "Panama's everyday refreshment — pineapple drink made from boiled pineapple RIND (more concentrated flavor than flesh), sugar, and optional cinnamon. Golden, intensely tropical, served ice-cold. At every fonda, restaurant, and home table. The fermented version becomes mildly alcoholic. Zero-waste cooking: the rind that would be discarded becomes the best part.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/A_pitcher_of_chicha_de_pi%C3%B1a.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/A_pitcher_of_chicha_de_pi%C3%B1a.jpg"
+        }
+      }
+    ]
+  }
+}

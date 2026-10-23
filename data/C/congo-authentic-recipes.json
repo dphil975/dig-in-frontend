@@ -1,0 +1,469 @@
+{
+  "congoRecipes": {
+    "country": "Republic of the Congo",
+    "region": "Central Africa",
+    "breakfast": [
+      {
+        "id": "cog-bf-1",
+        "name": "Chikwangue (Cassava Bread)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "2 cups cassava paste (fermented)",
+          "Banana leaves"
+        ],
+        "instructions": [
+          "Wrap cassava paste in banana leaves",
+          "Boil 60 min until firm",
+          "Unwrap and slice",
+          "Serve with fish or stew"
+        ],
+        "description": "Fermented cassava wrapped and boiled in banana leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg"
+        }
+      },
+      {
+        "id": "cog-bf-2",
+        "name": "Beignets de Banane",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "4 ripe bananas",
+          "1/2 cup flour",
+          "Sugar",
+          "Oil"
+        ],
+        "instructions": [
+          "Mash bananas, mix with flour and sugar",
+          "Drop spoonfuls in hot oil",
+          "Fry until golden"
+        ],
+        "description": "Sweet banana fritters.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Rougail_Saucisse_04-07-07.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Rougail_Saucisse_04-07-07.jpg"
+        }
+      },
+      {
+        "id": "cog-bf-3",
+        "name": "Madesu (Bean Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Red beans (cooked until very soft)",
+          "Palm oil",
+          "Onion",
+          "Salt",
+          "Bread or chikwangue to serve"
+        ],
+        "instructions": [
+          "Cook beans until they start to break down",
+          "Mash slightly for creamy texture",
+          "Sauté onion in palm oil, add to beans",
+          "Season with salt",
+          "Serve with bread or chikwangue"
+        ],
+        "description": "Creamy bean porridge — protein-rich breakfast across Brazzaville."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "cog-ln-1",
+        "name": "Saka-Saka (Cassava Leaf Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "500g cassava leaves (pounded)",
+          "Palm oil",
+          "Onion",
+          "Garlic",
+          "Smoked fish",
+          "Peanut butter",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil pounded cassava leaves 45 min",
+          "Add palm oil, peanut butter",
+          "Add onion, garlic, fish",
+          "Simmer until thick"
+        ],
+        "description": "The national dish — cassava leaves in palm oil with peanuts."
+      },
+      {
+        "id": "cog-ln-2",
+        "name": "Poulet Moambé (Chicken in Palm Butter)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "400ml palm butter sauce",
+          "2 onions",
+          "Garlic",
+          "Tomatoes",
+          "Okra",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Sauté onions, garlic, tomatoes",
+          "Add palm butter and water",
+          "Return chicken, simmer 30 min",
+          "Add okra, cook 10 min"
+        ],
+        "description": "Chicken braised in rich palm butter.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Poulet_%C3%A0_la_moambe.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Poulet_%C3%A0_la_moambe.JPG"
+        }
+      },
+      {
+        "id": "cog-ln-3",
+        "name": "Liboke (Fish in Banana Leaf)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "4 whole tilapia or catfish",
+          "Banana leaves",
+          "Tomato",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Hot pepper",
+          "Salt",
+          "Lemon"
+        ],
+        "instructions": [
+          "Clean fish, season with lemon, salt, garlic, ginger",
+          "Layer banana leaves, place fish on top",
+          "Add sliced tomato, onion, pepper",
+          "Wrap tightly in banana leaves, tie with string",
+          "Grill or steam 25-30 min",
+          "Unwrap at the table",
+          "Serve with fufu or cassava"
+        ],
+        "description": "Fish steamed in banana leaves — the leaf imparts a subtle green flavor and keeps everything moist. A classic Congo River preparation."
+      },
+      {
+        "id": "cog-ln-4",
+        "name": "Poulet Moambé (Chicken in Palm Butter Sauce)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "1 whole chicken (cut into pieces)",
+          "1 can palm butter (moambé sauce) or 300ml palm cream",
+          "Tomato paste",
+          "Onion, garlic",
+          "Palm oil",
+          "Okra (optional)",
+          "Spinach or cassava leaves",
+          "Chili pepper",
+          "Salt, Maggi cube"
+        ],
+        "instructions": [
+          "Brown chicken pieces in palm oil",
+          "Sauté onion and garlic, add tomato paste",
+          "Add palm butter/moambé — this is the soul of the dish, a thick, orange, nutty sauce",
+          "Add water to thin slightly, add Maggi cube, chili",
+          "Simmer chicken in sauce 30-40 min until tender and sauce is thick and rich",
+          "Add okra or greens in last 10 min",
+          "The sauce should coat the back of a spoon — thick, orange-red, aromatic",
+          "Serve with fufu (cassava) or rice",
+          "This is Congo's number one dish — every family has their version"
+        ],
+        "description": "The dish that both Congos claim as their own — chicken simmered in palm butter sauce until the rich, orange moambé coats everything. Considered one of Africa's greatest dishes, poulet moambé videos consistently go viral for the dramatic color and the communal fufu-dipping style of eating.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Poulet_%C3%A0_la_moambe.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Poulet_%C3%A0_la_moambe.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "cog-dn-1",
+        "name": "Makayabu (Salted Fish Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "400g salt cod (soaked)",
+          "3 tomatoes",
+          "2 onions",
+          "Palm oil",
+          "Chili",
+          "Garlic"
+        ],
+        "instructions": [
+          "Soak fish overnight, drain, flake",
+          "Sauté onions, garlic, tomatoes in palm oil",
+          "Add fish, simmer 30 min",
+          "Season with chili"
+        ],
+        "description": "Salt cod stewed in tomato-palm oil sauce."
+      },
+      {
+        "id": "cog-dn-2",
+        "name": "Mwambe (Peanut Chicken)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "1 cup peanut paste",
+          "Tomatoes",
+          "Onion",
+          "Palm oil",
+          "Chili",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown chicken in palm oil",
+          "Blend tomatoes with peanut paste",
+          "Add sauce to chicken",
+          "Simmer 35 min",
+          "Serve with chikwangue or rice"
+        ],
+        "description": "Chicken in smooth peanut sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Elaeis_guineensis_fruits_on_tree.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Elaeis_guineensis_fruits_on_tree.jpg"
+        }
+      },
+      {
+        "id": "cog-dn-3",
+        "name": "Moyo (Tomato-Chili Sauce with Meat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "500g goat or beef (cubed)",
+          "4 tomatoes",
+          "2 onions",
+          "Garlic",
+          "Hot chili pepper",
+          "Palm oil",
+          "Maggi cube",
+          "Salt",
+          "Rice or fufu to serve"
+        ],
+        "instructions": [
+          "Brown meat in palm oil",
+          "Add onion and garlic, cook until soft",
+          "Add chopped tomatoes and chili",
+          "Add water, simmer 25 min until meat is tender and sauce is thick",
+          "Season with Maggi and salt",
+          "Serve over rice or with fufu"
+        ],
+        "description": "Spicy tomato-meat sauce — the everyday dinner across the Congo.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Dambisa_Moyo_in_2024.jpeg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Dambisa_Moyo_in_2024.jpeg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "cog-sn-1",
+        "name": "Mikate (Fried Doughnuts)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "Sugar",
+          "Yeast",
+          "Water",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dough, rise 1 hour",
+          "Shape into rings",
+          "Deep fry until golden"
+        ],
+        "description": "Ring-shaped fried doughnuts."
+      },
+      {
+        "id": "cog-sn-2",
+        "name": "Kwanga (Cassava Sticks)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Cassava (fermented, pounded)",
+          "Banana leaves for wrapping"
+        ],
+        "instructions": [
+          "Ferment cassava in water 3-4 days",
+          "Pound into smooth paste",
+          "Shape into cylinder sticks",
+          "Wrap tightly in banana leaves",
+          "Steam 20 min until firm",
+          "Slice and serve with stews"
+        ],
+        "description": "Fermented cassava sticks wrapped in banana leaves — the slightly sour taste from fermentation is characteristic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "cog-ds-1",
+        "name": "Baked Plantain with Coconut",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "4 ripe plantains",
+          "Coconut cream",
+          "Sugar",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Split plantains, place in baking dish",
+          "Pour coconut cream over",
+          "Sprinkle sugar and cinnamon",
+          "Bake at 180°C 20 min"
+        ],
+        "description": "Baked plantains in coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mega_racimos_de_guineos.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mega_racimos_de_guineos.jpg"
+        }
+      },
+      {
+        "id": "cog-ds-2",
+        "name": "Beignets au Sucre (Sugar Doughnuts)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "3 tbsp sugar",
+          "1 egg",
+          "7g yeast",
+          "Warm milk",
+          "Oil for frying",
+          "Granulated sugar for coating"
+        ],
+        "instructions": [
+          "Mix flour, sugar, yeast, egg, warm milk into soft dough",
+          "Rise 1 hour",
+          "Shape into balls or rings",
+          "Deep fry until golden",
+          "Roll in sugar while warm"
+        ],
+        "description": "Sugar-coated fried dough — French beignet tradition embedded in Congolese daily life.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/La_Banquise_Poutine.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/La_Banquise_Poutine.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "cog-dr-1",
+        "name": "Ginger Beer",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "200g ginger",
+          "1L water",
+          "Sugar",
+          "Lemon"
+        ],
+        "instructions": [
+          "Grate ginger, boil 10 min",
+          "Strain, add sugar and lemon",
+          "Chill, serve"
+        ],
+        "description": "Spicy-sweet ginger beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg"
+        }
+      },
+      {
+        "id": "cog-dr-2",
+        "name": "Lotoko (Corn Liquor)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Corn",
+          "Water",
+          "Yeast"
+        ],
+        "instructions": [
+          "Cook corn, mash",
+          "Ferment 5-7 days",
+          "Distill over fire"
+        ],
+        "description": "Potent corn-based spirit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Lotoko_still_by_Francis_Hannaway.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Lotoko_still_by_Francis_Hannaway.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "argentinaRecipes": {
+    "country": "Argentina",
+    "region": "South America",
+    "breakfast": [
+      {
+        "id": "arg-bf-1",
+        "name": "Medialunas (Argentine Croissants)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 90,
+        "cookTime": 20,
+        "ingredients": [
+          "500g flour",
+          "200g butter",
+          "7g yeast",
+          "100ml warm milk",
+          "2 eggs",
+          "80g sugar",
+          "1 tsp salt",
+          "Egg wash",
+          "Sugar syrup: 100g sugar, 100ml water, vanilla"
+        ],
+        "instructions": [
+          "Dissolve yeast in warm milk with a pinch of sugar",
+          "Mix flour, sugar, salt; add yeast mixture and eggs",
+          "Knead until smooth, refrigerate 30 min",
+          "Roll out, layer cold butter, fold in thirds three times, chilling between folds",
+          "Roll final dough, cut triangles, roll into crescent shapes",
+          "Rise 1 hour until puffy",
+          "Brush with egg wash",
+          "Bake at 200°C for 15-18 min until deeply golden",
+          "Brush immediately with warm sugar syrup for glaze"
+        ],
+        "description": "Argentina's answer to the croissant — smaller, sweeter, and glazed. Eaten by the dozen at every bakery.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Croissant-Petr_Kratochvil.jpg"
+        }
+      },
+      {
+        "id": "arg-bf-2",
+        "name": "Mate con Tostadas",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "Yerba mate",
+          "Hot water (75-80°C, not boiling)",
+          "4 slices bread",
+          "Butter",
+          "Dulce de leche or jam"
+        ],
+        "instructions": [
+          "Fill mate gourd two-thirds with yerba",
+          "Tilt gourd so yerba sits on one side",
+          "Insert bombilla into the lower part",
+          "Pour warm water over the lower side, let absorb",
+          "Continue pouring water to drink through bombilla",
+          "Toast bread, spread with butter and dulce de leche"
+        ],
+        "description": "The true Argentine breakfast — bitter mate sipped through a metal straw alongside toast with dulce de leche.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG"
+        }
+      },
+      {
+        "id": "arg-bf-3",
+        "name": "Tortilla de Papa (Potato Omelette)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "6 eggs",
+          "4 large potatoes (peeled, thinly sliced)",
+          "1 onion (sliced)",
+          "100ml olive oil",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Fry potato slices in olive oil until tender, not crispy",
+          "Add onion slices, cook until soft",
+          "Beat eggs with salt and pepper",
+          "Drain potatoes, mix into eggs",
+          "Pour into oiled skillet, cook on medium-low until edges set",
+          "Flip using a plate, cook other side 3 min",
+          "Slide onto plate, cut into wedges"
+        ],
+        "description": "Argentine-style Spanish tortilla — thick, golden, eaten at any hour.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Tortilla_de_patata_-_San_Sebasti%C3%A1n.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "arg-ln-1",
+        "name": "Empanadas Salteñas",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 45,
+        "cookTime": 20,
+        "ingredients": [
+          "Dough: 500g flour, 100g beef fat, 1 tsp salt, warm water",
+          "Filling: 500g beef (diced small), 2 onions, 2 hard-boiled eggs, green olives, cumin, paprika, chili flakes, green onion"
+        ],
+        "instructions": [
+          "Make dough: mix flour, salt, melted beef fat, add water until pliable, rest 30 min",
+          "Sauté onions in beef fat, add paprika, cumin, chili",
+          "Add diced beef, cook until just done — filling should be juicy, not dry",
+          "Cool filling, add chopped egg and olives",
+          "Roll dough circles, fill each generously",
+          "Fold in half, crimp edges with repulgue (decorative rope fold)",
+          "Bake at 220°C for 15-18 min until golden"
+        ],
+        "description": "Salta-style baked empanadas — the juiciest in Argentina, with beef fat dough and a signature crimped edge.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Salte%C3%B1as_de_Bolivia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Salte%C3%B1as_de_Bolivia.jpg"
+        }
+      },
+      {
+        "id": "arg-ln-2",
+        "name": "Milanesa a la Napolitana",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "4 thin beef cutlets",
+          "2 eggs (beaten)",
+          "Breadcrumbs",
+          "200g ham",
+          "200g mozzarella",
+          "Tomato sauce",
+          "Oregano",
+          "Oil for frying",
+          "Salt"
+        ],
+        "instructions": [
+          "Pound beef thin, season with salt",
+          "Dip in egg, then breadcrumbs",
+          "Fry until golden on both sides",
+          "Place on baking sheet",
+          "Top each with tomato sauce, ham, mozzarella, oregano",
+          "Broil until cheese melts and bubbles",
+          "Serve with fries or salad"
+        ],
+        "description": "Breaded beef topped with ham, tomato, and melted cheese — invented in Buenos Aires, not Naples.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Milanesa_con_fritas.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Milanesa_con_fritas.png"
+        }
+      },
+      {
+        "id": "arg-ln-3",
+        "name": "Locro (Northwest Stew)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "500g white corn (hominy, soaked overnight)",
+          "300g white beans (soaked overnight)",
+          "500g beef flank",
+          "200g pork ribs",
+          "200g chorizo colorado",
+          "200g butternut squash (cubed)",
+          "2 onions",
+          "Cumin",
+          "Paprika",
+          "Bay leaf",
+          "Salt",
+          "Quiquirimichi: red pepper flakes, cumin, oil, green onion"
+        ],
+        "instructions": [
+          "Cook soaked corn and beans in large pot with plenty of water, 1 hour",
+          "Add beef and pork ribs, cook 1 more hour",
+          "Add squash, chorizo, onions, bay leaf",
+          "Simmer 30 min — squash should dissolve into the broth, thickening it",
+          "Season with cumin, paprika, salt",
+          "Make quiquirimichi: fry green onion in oil, add pepper flakes and cumin",
+          "Serve in deep bowls with quiquirimichi spooned on top"
+        ],
+        "description": "Argentina's national stew — served on May 25th (Revolution Day) and through winter. Thick, ancient, and warming.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "arg-dn-1",
+        "name": "Asado Completo (Full Argentine BBQ)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "2kg beef short ribs (tira de asado)",
+          "1kg vacío (flank steak)",
+          "4 chorizos",
+          "4 morcillas (blood sausage)",
+          "Chimichurri: parsley, oregano, garlic, red pepper flakes, olive oil, red wine vinegar",
+          "Coarse salt",
+          "Wood or charcoal"
+        ],
+        "instructions": [
+          "Build fire to one side of the grill, let burn down to white coals",
+          "Salt meat generously with coarse salt only",
+          "Place ribs bone-side down far from coals for slow cooking",
+          "Add vacío fat-side down",
+          "Grill chorizos and morcillas closer to heat, 15 min",
+          "Ribs take 90 min+ over low heat — never rush",
+          "Flip vacío once after 40 min, cook 20 more min",
+          "Rest all meats 10 min before cutting",
+          "Slice against the grain, serve with chimichurri"
+        ],
+        "description": "The sacred Argentine ritual — hours of slow-grilling over wood coals. The asador tends the fire; guests wait patiently."
+      },
+      {
+        "id": "arg-dn-2",
+        "name": "Carbonada Criolla",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "500g beef (cubed)",
+          "2 ears corn (cut into rounds)",
+          "2 potatoes (cubed)",
+          "1 sweet potato (cubed)",
+          "2 peaches (halved)",
+          "1 onion",
+          "2 tomatoes",
+          "200ml beef broth",
+          "1 tbsp paprika",
+          "Bay leaf",
+          "Salt and pepper",
+          "Oil"
+        ],
+        "instructions": [
+          "Brown beef in oil",
+          "Sauté onion and tomatoes",
+          "Add paprika, bay leaf, broth",
+          "Add potatoes and sweet potato",
+          "Simmer 30 min",
+          "Add corn rounds and peach halves",
+          "Cook 15 more min until everything is tender",
+          "The peaches should be soft but hold their shape"
+        ],
+        "description": "Sweet-savory beef stew with peaches and corn — a colonial-era dish from the Pampas."
+      },
+      {
+        "id": "arg-dn-3",
+        "name": "Matambre Arrollado (Stuffed Rolled Flank)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 45,
+        "cookTime": 90,
+        "ingredients": [
+          "1 matambre (thin flank steak, ~1.5kg)",
+          "4 hard-boiled eggs",
+          "1 red pepper (roasted)",
+          "200g spinach (blanched)",
+          "2 carrots (blanched)",
+          "Garlic",
+          "Oregano",
+          "Red wine vinegar",
+          "Salt and pepper",
+          "Kitchen twine"
+        ],
+        "instructions": [
+          "Butterfly matambre if needed, pound thin",
+          "Marinate in vinegar, garlic, oregano, salt, pepper overnight",
+          "Lay flat, layer spinach, roasted pepper strips, carrot sticks",
+          "Place whole hard-boiled eggs in a line down the center",
+          "Roll tightly, tie with twine at 3cm intervals",
+          "Wrap in foil, simmer in salted water 90 min",
+          "Cool under weight in fridge overnight",
+          "Slice into pinwheel rounds, serve cold"
+        ],
+        "description": "Rolled stuffed flank steak — sliced cold to reveal a colorful spiral. A celebration centerpiece."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "arg-sn-1",
+        "name": "Choripán",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "4 chorizos (fresh Argentine pork-beef sausage)",
+          "4 crusty bread rolls (split)",
+          "Chimichurri: flat-leaf parsley, garlic, oregano, red pepper flakes, olive oil, red wine vinegar, salt"
+        ],
+        "instructions": [
+          "Butterfly chorizos lengthwise (don't cut through)",
+          "Grill cut-side down first until charred, then flip",
+          "Make chimichurri: finely chop parsley, garlic; mix with oregano, pepper flakes, oil, vinegar, salt",
+          "Split rolls, place chorizo inside",
+          "Spoon chimichurri generously over"
+        ],
+        "description": "Grilled chorizo sandwich with chimichurri — Argentina's king of street food, sold at every fútbol match.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Choripan.jpg",
+        "imageCredit": {
+          "author": "SimpleFoodie",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChoripan.jpg"
+        }
+      },
+      {
+        "id": "arg-sn-2",
+        "name": "Provoleta",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "400g provolone cheese (cut into 2cm rounds)",
+          "Oregano",
+          "Red pepper flakes",
+          "Olive oil"
+        ],
+        "instructions": [
+          "Place cheese rounds on hot grill or cast iron",
+          "Cook without moving until bottom is golden and crispy, 4-5 min",
+          "Flip carefully, cook 2 more min until melty inside",
+          "Sprinkle with oregano and pepper flakes",
+          "Drizzle with olive oil, eat immediately with bread"
+        ],
+        "description": "Grilled provolone — bubbly and golden, the opening act of every asado.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Asado_argentino_en_parrilla_a_carb%C3%B3n.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Asado_argentino_en_parrilla_a_carb%C3%B3n.jpg"
+        }
+      },
+      {
+        "id": "arg-sn-3",
+        "name": "Fugazzeta (Cheese-Stuffed Onion Pizza)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "Dough: 500g flour, 7g yeast, 300ml warm water, 2 tbsp olive oil, salt",
+          "Filling: 400g mozzarella",
+          "Topping: 3 large onions (sliced thin into rings), oregano, olive oil"
+        ],
+        "instructions": [
+          "Make dough, rise 1 hour",
+          "Divide in half — roll bottom crust into greased round pan",
+          "Cover with mozzarella cheese",
+          "Roll second crust on top, press edges to seal",
+          "Pile sliced onions thick on top — they should completely cover the surface",
+          "Drizzle olive oil, sprinkle oregano",
+          "Bake at 220°C for 20-25 min until golden and onions are soft",
+          "The cheese melts inside, creating a stretchy hidden layer"
+        ],
+        "description": "Buenos Aires' signature pizza — cheese hidden between two crusts, buried under a mountain of onions. Went viral when food creators discovered you can't see the cheese until you cut it. A BA pizzería classic since the 1930s.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Banchero03.jpg",
+        "imageCredit": {
+          "author": "Neo139",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABanchero03.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "arg-ds-1",
+        "name": "Alfajores de Maicena",
+        "difficulty": "Medium",
+        "servings": 18,
+        "prepTime": 30,
+        "cookTime": 12,
+        "ingredients": [
+          "200g cornstarch (maicena)",
+          "100g flour",
+          "100g butter (softened)",
+          "80g powdered sugar",
+          "3 egg yolks",
+          "1 tsp vanilla",
+          "1 tsp baking powder",
+          "Zest of 1 lemon",
+          "400g dulce de leche",
+          "Shredded coconut"
+        ],
+        "instructions": [
+          "Cream butter with powdered sugar",
+          "Add egg yolks, vanilla, lemon zest",
+          "Sift cornstarch, flour, baking powder; fold in",
+          "Roll dough 5mm thick, cut rounds",
+          "Bake at 160°C for 10-12 min — they should NOT brown, stay pale",
+          "Cool completely",
+          "Sandwich with generous dulce de leche",
+          "Roll edges in shredded coconut"
+        ],
+        "description": "Argentina's most beloved cookie — delicate cornstarch shortbread sandwiching dulce de leche, rolled in coconut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/AlfajoresP1115215_02.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/AlfajoresP1115215_02.jpg"
+        }
+      },
+      {
+        "id": "arg-ds-2",
+        "name": "Dulce de Leche Flan",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Caramel: 200g sugar",
+          "Custard: 6 eggs, 500ml whole milk, 200g dulce de leche, 1 tsp vanilla"
+        ],
+        "instructions": [
+          "Melt sugar in flan mold until amber caramel, swirl to coat",
+          "Warm milk, whisk in dulce de leche until dissolved",
+          "Beat eggs, temper with warm milk mixture",
+          "Strain into caramelized mold",
+          "Place in water bath, bake at 160°C for 55-60 min",
+          "Jiggle test: center should wobble like jelly, not liquid",
+          "Cool, refrigerate overnight",
+          "Unmold by running knife around edge, invert onto plate — caramel cascades down"
+        ],
+        "description": "Flan with dulce de leche stirred into the custard and more pooled on top. Sunday lunch dessert across Argentina.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/DulceDeLeche.jpg",
+        "imageCredit": {
+          "author": "audinou from Paris, France",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ADulceDeLeche.jpg"
+        }
+      },
+      {
+        "id": "arg-ds-3",
+        "name": "Chocotorta (No-Bake Chocolate Biscuit Cake)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "2 packs chocolinas cookies (chocolate biscuits)",
+          "500g dulce de leche",
+          "300g cream cheese",
+          "Strong coffee (cooled)",
+          "Cocoa powder"
+        ],
+        "instructions": [
+          "Mix cream cheese with dulce de leche until smooth",
+          "Briefly dip chocolinas in coffee — just a second, don't soak them",
+          "Layer in a rectangular dish: coffee-dipped cookies, dulce de leche cream, repeat",
+          "Top layer should be cream",
+          "Refrigerate overnight — the cookies soften and meld together",
+          "Dust with cocoa powder before serving",
+          "Cut into squares"
+        ],
+        "description": "Argentina's viral birthday cake — no oven needed, no baking skill required. Chocolinas cookies layered with dulce de leche and cream cheese. Went globally viral on TikTok. Every Argentine child grows up eating this at birthday parties.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Chocotorta_recipe.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Chocotorta_recipe.png"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "arg-dr-1",
+        "name": "Mate",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Yerba mate",
+          "Hot water (75-80°C)",
+          "Mate gourd",
+          "Bombilla (metal straw with filter)"
+        ],
+        "instructions": [
+          "Fill gourd two-thirds full with yerba mate",
+          "Cover opening, flip upside down and shake gently to bring fine dust to top",
+          "Tilt so yerba sits at an angle",
+          "Pour a small amount of cool water on the lower side, let absorb",
+          "Insert bombilla into the wet side",
+          "Pour hot water (never boiling) over the lower side",
+          "Drink through bombilla until you hear slurping",
+          "Refill with hot water, pass to next person in the circle"
+        ],
+        "description": "More than a drink — a social ritual. The cebador (server) prepares and refills; everyone shares one gourd. Argentina's national beverage.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Ilex_paraguariensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-074.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Ilex_paraguariensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-074.jpg"
+        }
+      },
+      {
+        "id": "arg-dr-2",
+        "name": "Fernet con Coca",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "70ml Fernet Branca",
+          "200ml Coca-Cola",
+          "Ice"
+        ],
+        "instructions": [
+          "Fill tall glass with ice",
+          "Pour Fernet Branca over ice",
+          "Top slowly with Coca-Cola",
+          "Stir gently once — don't kill the fizz",
+          "Drink ratio is personal: Córdoba pours it stronger"
+        ],
+        "description": "The bittersweet drink of Argentine nightlife — practically the national cocktail, especially in Córdoba.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fernet_and_Coke_%28Fernet_con_Coca%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Fernet_and_Coke_%28Fernet_con_Coca%29.jpg"
+        }
+      }
+    ]
+  }
+}

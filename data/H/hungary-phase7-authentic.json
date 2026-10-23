@@ -1,0 +1,289 @@
+{
+  "country": "Hungary",
+  "region": "Eastern Europe",
+  "breakfast": [
+    {
+      "id": "hun-break-langos",
+      "name": "Lángos (Fried Bread)",
+      "difficulty": "Medium",
+      "servings": 8,
+      "prepTime": 30,
+      "cookTime": 15,
+      "description": "Hungarian fried bread with garlic",
+      "seasonings": [
+        "garlic"
+      ],
+      "ingredients": [
+        "Dough: flour, yeast, milk, salt",
+        "Oil for frying",
+        "Garlic",
+        "Sour cream"
+      ],
+      "instructions": [
+        "Make yeast dough",
+        "Let rise 1 hour",
+        "Divide into pieces",
+        "Deep fry until golden",
+        "Rub with garlic",
+        "Serve with sour cream"
+      ],
+      "notes": "Serve hot",
+      "fun_fact": "Lángos is Hungarian favorite",
+      "alternatives": [
+        "Savory version",
+        "Sweet version",
+        "With cheese"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Fried_Dough_Toppings.jpg",
+      "imageCredit": {
+        "author": "Arge300exx",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Fried_Dough_Toppings.jpg"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "hun-lunch-goulash",
+      "name": "Hungarian Goulash",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 90,
+      "description": "Hungarian beef stew with paprika",
+      "seasonings": [
+        "paprika"
+      ],
+      "ingredients": [
+        "2 lbs beef",
+        "Onions",
+        "Paprika (Hungarian)",
+        "Caraway",
+        "Potato",
+        "Pepper",
+        "Oil",
+        "Broth"
+      ],
+      "instructions": [
+        "Brown meat",
+        "Sauté onions",
+        "Add paprika",
+        "Add beef",
+        "Add broth",
+        "Slow cook 60 minutes",
+        "Add potatoes",
+        "Cook 30 more minutes"
+      ],
+      "notes": "True paprika essential",
+      "fun_fact": "Goulash is Hungarian national dish",
+      "alternatives": [
+        "Pork instead of beef",
+        "With sour cream",
+        "Extra vegetables"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Goulash_hungarian.jpg",
+      "imageCredit": {
+        "author": "RitaE",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Goulash_hungarian.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "hun-dinner-paprikash",
+      "name": "Paprikash (Chicken Stew)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "Hungarian chicken in paprika sauce",
+      "seasonings": [
+        "paprika"
+      ],
+      "ingredients": [
+        "1.5 lbs chicken",
+        "Onion",
+        "Paprika",
+        "Sour cream",
+        "Broth",
+        "Oil"
+      ],
+      "instructions": [
+        "Brown chicken",
+        "Sauté onions",
+        "Add paprika",
+        "Add broth",
+        "Simmer 30 minutes",
+        "Stir in sour cream",
+        "Serve with egg noodles"
+      ],
+      "notes": "Creamy and comforting",
+      "fun_fact": "Paprikash is everyday meal",
+      "alternatives": [
+        "Beef instead of chicken",
+        "More sour cream",
+        "Extra vegetables"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Paprik%C3%A1s_Csirke_Galusk%C3%A1val.jpg",
+      "imageCredit": {
+        "author": "Bencemathias",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Paprik%C3%A1s_Csirke_Galusk%C3%A1val.jpg"
+      }
+    }
+  ],
+  "snacks": [
+    {
+      "id": "hun-snack-flódni",
+      "name": "Flódni (Jam Pastry)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 40,
+      "cookTime": 40,
+      "description": "Hungarian pastry with jams and nuts",
+      "seasonings": [],
+      "ingredients": [
+        "Pastry dough",
+        "Apple jam",
+        "Plum jam",
+        "Walnut paste",
+        "Raisins",
+        "Butter"
+      ],
+      "instructions": [
+        "Make pastry",
+        "Divide into layers",
+        "Layer with different fillings",
+        "Roll into spiral",
+        "Bake at 375°F for 40 minutes",
+        "Cool and slice"
+      ],
+      "notes": "Complex pastry",
+      "fun_fact": "Flódni is traditional Hungarian",
+      "alternatives": [
+        "Different jams",
+        "Without nuts",
+        "Different shape"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Fl%C3%B3dni_at_Caf%C3%A9_Eskeles_in_Vienna.jpg",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Fl%C3%B3dni_at_Caf%C3%A9_Eskeles_in_Vienna.jpg"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "id": "hun-dessert-dobos",
+      "name": "Dobos Torte",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 45,
+      "cookTime": 30,
+      "description": "Hungarian caramel layer cake",
+      "seasonings": [
+        "vanilla"
+      ],
+      "ingredients": [
+        "Eggs",
+        "Sugar",
+        "Flour",
+        "Chocolate",
+        "Butter",
+        "Caramel"
+      ],
+      "instructions": [
+        "Make thin sponge layers",
+        "Bake each layer",
+        "Make chocolate cream",
+        "Layer with cream",
+        "Make caramel",
+        "Top with caramel and chocolate"
+      ],
+      "notes": "Impressive presentation",
+      "fun_fact": "Dobos is Hungarian classic",
+      "alternatives": [
+        "Without caramel",
+        "Different cream",
+        "Fewer layers"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Dobos_cake_(Gerbeaud_Confectionery_Budapest_Hungary).jpg",
+      "imageCredit": {
+        "author": "Miklos Voros",
+        "source": "Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Dobos_cake_(Gerbeaud_Confectionery_Budapest_Hungary).jpg"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "hun-drink-chocolate",
+      "name": "Hungarian Hot Chocolate",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Rich hot chocolate",
+      "seasonings": [],
+      "ingredients": [
+        "Whole milk",
+        "Dark chocolate",
+        "Sugar",
+        "Whipped cream"
+      ],
+      "instructions": [
+        "Heat milk",
+        "Add chopped chocolate",
+        "Whisk until smooth",
+        "Pour into cup",
+        "Top with whipped cream"
+      ],
+      "notes": "Very rich",
+      "fun_fact": "Hungarian chocolate tradition",
+      "alternatives": [
+        "With cinnamon",
+        "Less chocolate",
+        "With cognac"
+      ]
+    },
+    {
+      "id": "hun-drink-pálinka",
+      "name": "Pálinka (Fruit Brandy)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Hungarian fruit brandy",
+      "seasonings": [],
+      "ingredients": [
+        "Pálinka"
+      ],
+      "instructions": [
+        "Serve in small glass",
+        "Room temperature",
+        "Drink slowly"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Pálinka is Hungarian spirit",
+      "alternatives": [
+        "Different fruits",
+        "Homemade",
+        "Different strength"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sopron_barack_07.JPG",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sopron_barack_07.JPG"
+      }
+    }
+  ]
+}

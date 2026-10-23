@@ -1,0 +1,314 @@
+{
+  "country": "Norway",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "nor-break-porridge",
+      "name": "Norwegian Porridge (Grøt)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 30,
+      "description": "Norwegian oat porridge served with butter and sugar",
+      "seasonings": [
+        "salt",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "1 cup steel-cut oats",
+        "4 cups milk or water",
+        "Pinch salt",
+        "Butter",
+        "Brown sugar",
+        "Cinnamon",
+        "Berries"
+      ],
+      "instructions": [
+        "Heat liquid",
+        "Add oats and salt",
+        "Stir frequently",
+        "Simmer 25-30 minutes until creamy",
+        "Stir in butter",
+        "Serve in bowl",
+        "Top with brown sugar and cinnamon",
+        "Add berries if available"
+      ],
+      "notes": "Constant stirring prevents lumps",
+      "fun_fact": "Porridge is traditional Norwegian winter breakfast",
+      "alternatives": [
+        "Different grains",
+        "Add honey",
+        "Savory version"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oatmeal_%281%29.jpg",
+      "imageCredit": {
+        "author": "Renee Comet (Photographer)",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Oatmeal_(1).jpg"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "nor-lunch-salmon",
+      "name": "Gravlax (Cured Salmon)",
+      "difficulty": "Hard",
+      "servings": 8,
+      "prepTime": 20,
+      "cookTime": 0,
+      "description": "Norwegian salt-cured salmon with dill",
+      "seasonings": [
+        "dill",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "2 lbs salmon fillet",
+        "3 tbsp salt",
+        "2 tbsp sugar",
+        "1 tbsp white pepper",
+        "1 tbsp coriander seeds",
+        "Large bunch dill",
+        "Lemon juice"
+      ],
+      "instructions": [
+        "Mix salt, sugar, pepper, coriander",
+        "Place dill in dish",
+        "Rub salmon with salt mixture",
+        "Layer more dill over salmon",
+        "Cover and refrigerate",
+        "Turn daily for 5-7 days",
+        "Slice thin at angle",
+        "Serve on bread with mustard sauce"
+      ],
+      "notes": "Requires proper curing time",
+      "fun_fact": "Gravlax is Norwegian cured salmon tradition dating back centuries",
+      "alternatives": [
+        "Different fish",
+        "Quicker cure with heat",
+        "Different flavoring"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Gravlax_cut.jpg",
+      "imageCredit": {
+        "author": "Jonathunder",
+        "source": "Wikimedia Commons",
+        "license": "GFDL 1.2",
+        "url": "https://commons.wikimedia.org/wiki/File:Gravlax_cut.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "nor-dinner-fish-stew",
+      "name": "Norwegian Fish Stew",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 40,
+      "description": "Norwegian seafood stew with white fish and potatoes",
+      "seasonings": [
+        "bay leaf",
+        "thyme"
+      ],
+      "ingredients": [
+        "2 lbs white fish",
+        "8 oz shrimp",
+        "6 potatoes, diced",
+        "2 onions",
+        "4 carrots",
+        "6 cups fish broth",
+        "1 cup cream",
+        "Butter",
+        "Bay leaf",
+        "Thyme",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Sauté onions and carrots",
+        "Add potatoes and broth",
+        "Simmer 20 minutes",
+        "Add fish pieces",
+        "Simmer 10 minutes",
+        "Add shrimp",
+        "Simmer 5 more minutes",
+        "Stir in cream",
+        "Season with salt and pepper",
+        "Serve hot"
+      ],
+      "notes": "Don't overcook fish",
+      "fun_fact": "Norwegian fish stew reflects country's fishing heritage",
+      "alternatives": [
+        "Different fish type",
+        "Add mussels",
+        "Less cream"
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "nor-snack-brunost",
+      "name": "Brunost (Brown Cheese)",
+      "difficulty": "Easy",
+      "servings": 8,
+      "prepTime": 5,
+      "cookTime": 0,
+      "description": "Norwegian sweet brown cheese served on bread",
+      "seasonings": [],
+      "ingredients": [
+        "Brunost (brown cheese)",
+        "Bread",
+        "Butter"
+      ],
+      "instructions": [
+        "Slice brunost thin",
+        "Toast bread",
+        "Butter toast",
+        "Layer brunost on toast",
+        "Eat while warm",
+        "Often paired with jam"
+      ],
+      "notes": "Unique sweet cheese flavor",
+      "fun_fact": "Brunost is uniquely Norwegian and is served for breakfast or snack",
+      "alternatives": [
+        "Different bread type",
+        "With jam",
+        "On crackers"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Messmor.jpg",
+      "imageCredit": {
+        "author": "JonasB",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Messmor.jpg"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "id": "nor-dessert-cake",
+      "name": "Norwegian Almond Cake",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 45,
+      "description": "Norwegian almond and fruit cake",
+      "seasonings": [
+        "almond",
+        "lemon zest"
+      ],
+      "ingredients": [
+        "1.5 cups butter",
+        "1.5 cups sugar",
+        "6 eggs",
+        "2 cups flour",
+        "1 cup ground almonds",
+        "1 tbsp lemon zest",
+        "2 tsp baking powder",
+        "Candied fruit",
+        "Powdered sugar"
+      ],
+      "instructions": [
+        "Cream butter and sugar",
+        "Add eggs one at a time",
+        "Fold in flour, almonds, lemon zest, baking powder",
+        "Pour into greased pan",
+        "Top with candied fruit",
+        "Bake at 350°F for 40-45 minutes",
+        "Cool completely",
+        "Dust with powdered sugar"
+      ],
+      "notes": "Should be moist inside",
+      "fun_fact": "Almond cake is popular at Norwegian celebrations",
+      "alternatives": [
+        "Different nuts",
+        "Without candied fruit",
+        "Chocolate version"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg",
+      "imageCredit": {
+        "author": "Daria YakovlevaMinor edits made by Subsidiary account",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "nor-drink-berry-compote",
+      "name": "Norwegian Berry Compote",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 20,
+      "description": "Norwegian berry drink served hot or cold",
+      "seasonings": [
+        "sugar"
+      ],
+      "ingredients": [
+        "2 cups mixed berries",
+        "1 cup water",
+        "1/4 cup sugar",
+        "Cinnamon stick"
+      ],
+      "instructions": [
+        "Combine berries and water",
+        "Heat to simmer",
+        "Add sugar and cinnamon",
+        "Simmer 15 minutes",
+        "Strain if desired",
+        "Serve hot or cold",
+        "Can add more water for lighter drink"
+      ],
+      "notes": "Can use fresh or frozen berries",
+      "fun_fact": "Berry compote is traditional Norwegian drink",
+      "alternatives": [
+        "Just one berry type",
+        "With cream",
+        "As dessert topping"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vaccinium_vitis-idaea_20060824_003.jpg",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vaccinium_vitis-idaea_20060824_003.jpg"
+      }
+    },
+    {
+      "id": "nor-drink-aquavit",
+      "name": "Aquavit (Caraway Spirit)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Norwegian spirit with caraway and spices",
+      "seasonings": [],
+      "ingredients": [
+        "Aquavit"
+      ],
+      "instructions": [
+        "Chill aquavit in freezer",
+        "Serve as ice-cold shot",
+        "Often followed by beer",
+        "Traditional with heavy foods"
+      ],
+      "notes": "Very strong spirit",
+      "fun_fact": "Aquavit is traditional Norwegian spirit and is served at celebrations",
+      "alternatives": [
+        "Room temperature",
+        "Mixed with beer",
+        "Different brands"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Lysholm_LINIE_Aquavit_Label_detail.jpg",
+      "imageCredit": {
+        "author": "Mojmir Churavy",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Lysholm_LINIE_Aquavit_Label_detail.jpg"
+      }
+    }
+  ]
+}

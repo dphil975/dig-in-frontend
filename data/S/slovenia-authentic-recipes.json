@@ -1,0 +1,634 @@
+{
+  "sloveniaRecipes": {
+    "country": "Slovenia",
+    "region": "Central Europe",
+    "breakfast": [
+      {
+        "id": "svn-bf-1",
+        "name": "Potica (Nut Roll)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 120,
+        "cookTime": 60,
+        "ingredients": [
+          "Dough: flour, yeast, milk, butter, eggs",
+          "Filling: ground walnuts, sugar, honey, cream, rum, cinnamon"
+        ],
+        "instructions": [
+          "Make rich yeast dough, rise",
+          "Roll very thin on tablecloth",
+          "Spread walnut filling",
+          "Roll up tightly using the cloth",
+          "Coil into round pan",
+          "Bake at 175°C 60 min"
+        ],
+        "description": "Slovenia's iconic rolled sweet bread — walnut-filled, coiled, and baked.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/MintpoticabySara.jpg",
+        "imageCredit": {
+          "author": "SaraKHintz",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMintpoticabySara.jpg"
+        }
+      },
+      {
+        "id": "svn-bf-2",
+        "name": "Žganci (Buckwheat Spoonbread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Buckwheat flour",
+          "Water",
+          "Salt",
+          "Pork cracklings"
+        ],
+        "instructions": [
+          "Boil water with salt",
+          "Add buckwheat flour, do not stir",
+          "When cooked, break into chunks with fork",
+          "Toss with cracklings"
+        ],
+        "description": "Rustic buckwheat porridge with cracklings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG"
+        }
+      },
+      {
+        "id": "svn-bf-3",
+        "name": "Zganci (Buckwheat Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Buckwheat flour (coarsely ground)",
+          "Water, salt",
+          "Lard or oil",
+          "Optional: sour cream, milk"
+        ],
+        "instructions": [
+          "Zganci are the Slovenian buckwheat groats -- an ancient breakfast food",
+          "Buckwheat flour cooked in boiling salted water until it forms crumbly clumps",
+          "Stirred with a wooden spoon -- the clumps are deliberately formed",
+          "Finished with hot lard or oil drizzled over",
+          "The lard sizzles on the buckwheat -- the sound and smell are the experience",
+          "Eaten with sour cream or milk poured over",
+          "Buckwheat is indigenous to Central Asia but found its home in Slovenia"
+        ],
+        "description": "Slovenian buckwheat porridge -- buckwheat flour cooked in salted water into crumbly clumps (deliberately, not smooth), finished with hot drizzled lard that sizzles on contact, served with sour cream or milk. An ancient Slovenian breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG"
+        }
+      },
+      {
+        "id": "svn-bf-4",
+        "name": "Potica (Walnut Roll) -- Morning Slice",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Potica (leftover from the holiday loaf -- eaten cold for breakfast)"
+        ],
+        "instructions": [
+          "Potica is the Slovenian rolled pastry -- the symbol of Slovenian food",
+          "Made for Easter, Christmas, and every celebration",
+          "Leftover potica is eaten cold for breakfast the next day",
+          "The morning-after slice: cold, dense, walnut-sweet",
+          "Slovenians abroad consider potica the taste of home"
+        ],
+        "description": "Slovenian morning potica slice -- cold leftover walnut roll (the Slovenian celebration pastry) eaten for breakfast. Potica is the symbol of Slovenian food: made for Easter, Christmas, and celebrations. Cold the next morning, it is the taste of home for Slovenians abroad."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "svn-ln-1",
+        "name": "Jota (Bean and Sauerkraut Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Beans (soaked)",
+          "Sauerkraut",
+          "Potatoes",
+          "Smoked pork rib",
+          "Bay leaf",
+          "Garlic",
+          "Olive oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook beans until nearly tender",
+          "Add sauerkraut, potatoes, smoked meat",
+          "Simmer 45 min",
+          "Add garlic",
+          "Drizzle with olive oil to serve"
+        ],
+        "description": "Hearty bean and sauerkraut soup — Slovenian soul food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jota_02.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jota_02.JPG"
+        }
+      },
+      {
+        "id": "svn-ln-2",
+        "name": "Štruklji (Rolled Dumplings)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Dough: flour, egg, oil, water",
+          "Filling: cottage cheese, tarragon (or walnut, apple)",
+          "Butter",
+          "Breadcrumbs"
+        ],
+        "instructions": [
+          "Stretch dough thin on cloth",
+          "Spread filling",
+          "Roll up, wrap in cloth",
+          "Boil or steam 30 min",
+          "Slice, top with buttered breadcrumbs"
+        ],
+        "description": "Rolled stuffed dumplings — savory or sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Struklji_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Struklji_2.jpg"
+        }
+      },
+      {
+        "id": "svn-ln-3",
+        "name": "Idrijski Zlikrofi (Idrija Ravioli)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Pasta dough (flour, egg, water)",
+          "Potato filling: boiled potato, lard, onion, marjoram, chives",
+          "Butter and breadcrumbs (to serve)"
+        ],
+        "instructions": [
+          "Idrijski zlikrofi are the Slovenian ravioli -- EU-protected designation",
+          "Named after Idrija, a town in western Slovenia (historically famous for mercury mining)",
+          "The pocket shape: a distinctive square with a pinched top -- like a little hat",
+          "The filling: potato with lard, onion, and marjoram",
+          "Boiled and served with butter and breadcrumbs",
+          "Idrija is also famous for bobbin lace -- and for zlikrofi"
+        ],
+        "description": "Slovenian Idrija ravioli -- EU-protected designation, from the mercury-mining town of Idrija. Distinctive square pasta pockets with a pinched top, filled with potato, lard, onion, and marjoram, boiled and served with butter and breadcrumbs.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Zlikrofi_with_gulasch.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Zlikrofi_with_gulasch.jpg"
+        }
+      },
+      {
+        "id": "svn-ln-4",
+        "name": "Bograch (Prekmurje Goulash)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 90,
+        "ingredients": [
+          "Beef, pork, and game (the Prekmurje three-meat version)",
+          "Onion, garlic, lard",
+          "Paprika (sweet, hot, smoked)",
+          "Potato, tomatoes, pepper",
+          "Red wine"
+        ],
+        "instructions": [
+          "Bograch is the Slovenian Prekmurje goulash -- a variation of Hungarian goulash",
+          "Prekmurje is the easternmost Slovenian region -- heavily Hungarian-influenced",
+          "Three meats: beef, pork, and traditionally also game",
+          "Three paprikas: sweet, hot, and smoked -- the Prekmurje signature",
+          "Cooked in a bograch (a specific copper pot) over open fire",
+          "The bograch pot gives the dish its name"
+        ],
+        "description": "Slovenian Prekmurje three-meat goulash -- beef, pork, and game braised with three types of paprika (sweet, hot, smoked), potato, and red wine in a copper bograch pot over open fire. Prekmurje borders Hungary and the dish reflects that cultural overlap."
+      },
+      {
+        "id": "svn-ln-5",
+        "name": "Rika (Slovenian Bean Soup)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Borlotti or cranberry beans",
+          "Smoked pork",
+          "Onion, garlic, carrot, celery",
+          "Marjoram, bay leaf, savory"
+        ],
+        "instructions": [
+          "Rika is the Slovenian bean soup",
+          "Similar to Friulian and Italian bean soups -- the border region influence",
+          "Beans cooked with smoked pork",
+          "Marjoram: the essential Slovenian herb",
+          "Savory (cajeput): another Slovenian herb"
+        ],
+        "description": "Slovenian bean soup -- borlotti beans with smoked pork, carrot, and celery, seasoned with marjoram and savory (the essential Slovenian herbs). Reflects the influence of neighboring Friuli and Austria. Thick and comforting."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "svn-dn-1",
+        "name": "Kraški Pršut with Teran",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Karst prosciutto (thin-sliced)",
+          "Teran red wine",
+          "Bread",
+          "Olives"
+        ],
+        "instructions": [
+          "Slice prosciutto thin",
+          "Serve with bread and olives",
+          "Pair with a glass of Teran"
+        ],
+        "description": "Karst-region dry-cured ham — a Slovenian treasure."
+      },
+      {
+        "id": "svn-dn-2",
+        "name": "Ričet (Barley Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Pearl barley",
+          "Smoked pork",
+          "Beans",
+          "Potatoes",
+          "Carrots",
+          "Celery",
+          "Bay leaf",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook barley and beans",
+          "Add smoked pork, vegetables",
+          "Simmer 45 min until thick"
+        ],
+        "description": "Thick barley and bean stew with smoked pork.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kaerntner_Ritschert.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kaerntner_Ritschert.jpg"
+        }
+      },
+      {
+        "id": "svn-dn-3",
+        "name": "Truklji (Sweet Cottage Cheese Rolls)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Pasta or strudel dough",
+          "Sweet cottage cheese (tvaroh + sugar + eggs + vanilla + raisins)",
+          "Butter, sour cream"
+        ],
+        "instructions": [
+          "Strukli are the Slovenian sweet filled pasta rolls",
+          "The name: structure (to roll) -- the dough is rolled around the filling",
+          "The filling: sweet cottage cheese with raisins and vanilla",
+          "Boiled or baked",
+          "Served with sour cream or melted butter",
+          "Shared with Croatia -- the Croatian variant is served as a side dish too"
+        ],
+        "description": "Slovenian sweet cottage cheese pasta rolls -- strudel dough filled with sweet tvaroh (cottage cheese, raisins, vanilla), rolled, boiled or baked, served with sour cream. The name means rolled. Shared with Croatia."
+      },
+      {
+        "id": "svn-dn-4",
+        "name": "Ribja Postna Jed (Lenten Fish Dish)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Freshwater fish: trout, carp, pike (from Slovenian rivers and lakes)",
+          "Onion, carrot",
+          "White wine, bay leaf, peppercorns",
+          "Parsley"
+        ],
+        "instructions": [
+          "Slovenian freshwater fish: the rivers and lakes of Slovenia are clean and full of trout",
+          "The Soca River: famous for marble trout (Salmo marmoratus) -- a native Slovenian fish",
+          "Poached in white wine court-bouillon",
+          "Served with parsley and the cooking liquid",
+          "The Lenten fish dish: Catholic tradition of fish on Fridays"
+        ],
+        "description": "Slovenian freshwater fish -- trout or carp from clean Slovenian rivers (the Soca is famous for marble trout, a native species) poached in white wine court-bouillon with vegetables and herbs. Catholic Lenten tradition of Friday fish dishes."
+      },
+      {
+        "id": "svn-dn-5",
+        "name": "Prekmurska Gibanica (Prekmurje Layered Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 45,
+        "ingredients": [
+          "Pastry layers",
+          "Four fillings: poppy seed, cottage cheese, walnut, apple",
+          "Cream or butter between layers"
+        ],
+        "instructions": [
+          "Prekmurska gibanica is the Slovenian multi-layer pastry -- EU-protected",
+          "Four fillings in repeating layers: poppy seed, cottage cheese, walnut, apple",
+          "Each layer is distinct -- the cross-section shows four colors",
+          "The word gibanica means to move or fold -- referring to the layering",
+          "Prekmurje: the easternmost Slovenian region where this originated",
+          "Now considered a national Slovenian treasure"
+        ],
+        "description": "Slovenian EU-protected layered pastry -- four alternating fillings (poppy seed, cottage cheese, walnut, apple) in repeated layers of pastry, revealing four-color cross-section when cut. Gibanica means to fold. From Prekmurje, now a national Slovenian symbol.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/PrekmurskaGibanica1.JPG",
+        "imageCredit": {
+          "author": "Sl-Ziga",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3APrekmurskaGibanica1.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "svn-sn-1",
+        "name": "Ajdovi Žganci (Buckwheat)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Buckwheat flour",
+          "Water",
+          "Salt",
+          "Cracklings or butter"
+        ],
+        "instructions": [
+          "Pour flour into boiling water",
+          "Cook without stirring",
+          "Break into chunks with fork",
+          "Serve with cracklings"
+        ],
+        "description": "Chunky buckwheat — eaten as snack or side.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ajdovi_zganci.JPG"
+        }
+      },
+      {
+        "id": "svn-sn-2",
+        "name": "Slovenian Honey (Med)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Slovenian honey (any variety: acacia, linden, chestnut, forest honey)"
+        ],
+        "instructions": [
+          "Slovenia has one of the highest densities of beehives in the world",
+          "The Carniolan bee (Apis mellifera carnica) is the native Slovenian bee -- exported worldwide",
+          "Slovenian honey is among the most prized in Europe",
+          "Varieties: acacia (light, mild), linden (aromatic), chestnut (bitter, dark), forest (complex)",
+          "Eaten on bread, in tea, or directly from the spoon"
+        ],
+        "description": "Slovenian single-origin honey -- from the Carniolan bee (native Slovenian bee, exported worldwide). Slovenia has among the highest beehive densities in Europe. Varieties: acacia (light), linden (aromatic), chestnut (dark, bitter), forest (complex). Eaten on bread or in tea.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velika_no%C4%8D_-_jedila_hren_%C5%A1unka_pirhi_potica.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velika_no%C4%8D_-_jedila_hren_%C5%A1unka_pirhi_potica.jpg"
+        }
+      },
+      {
+        "id": "svn-sn-3",
+        "name": "Bujta Repa (Turnip and Millet)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Turnips (fermented -- similar to sauerkraut but turnip)",
+          "Millet or buckwheat",
+          "Smoked pork ribs"
+        ],
+        "instructions": [
+          "Bujta repa is the Prekmurje fermented turnip dish",
+          "Turnips are fermented in the same way as sauerkraut",
+          "Cooked with millet and smoked pork",
+          "A thick, porridge-like stew",
+          "Deeply traditional Slovenian peasant food from the Prekmurje region"
+        ],
+        "description": "Slovenian fermented turnip porridge -- fermented turnips (prepared like sauerkraut) cooked with millet and smoked pork ribs into a thick stew. Prekmurje traditional peasant food."
+      },
+      {
+        "id": "svn-sn-4",
+        "name": "Popcorn Strudel Chips",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Leftover strudel dough (thin scraps)",
+          "Butter",
+          "Sugar, cinnamon"
+        ],
+        "instructions": [
+          "Leftover strudel dough scraps are brushed with butter and baked or fried",
+          "Dusted with cinnamon sugar",
+          "A resourceful use of strudel dough trimmings"
+        ],
+        "description": "Slovenian strudel dough scraps -- thin leftover strudel dough brushed with butter, baked until crispy, dusted with cinnamon sugar. A resourceful use of trimmings."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "svn-ds-1",
+        "name": "Prekmurska Gibanica (Layered Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 45,
+        "cookTime": 60,
+        "ingredients": [
+          "Filo pastry",
+          "Fillings: cottage cheese, walnuts, apples, poppy seeds",
+          "Eggs",
+          "Cream",
+          "Butter"
+        ],
+        "instructions": [
+          "Layer filo with each filling alternately",
+          "Top with cream mixture",
+          "Bake at 180°C 60 min",
+          "Cool, dust with sugar"
+        ],
+        "description": "Prekmurje layered pastry — four fillings, nine layers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/PrekmurskaGibanica1.JPG",
+        "imageCredit": {
+          "author": "Sl-Ziga",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3APrekmurskaGibanica1.JPG"
+        }
+      },
+      {
+        "id": "svn-ds-2",
+        "name": "Potica (Walnut Roll)",
+        "difficulty": "Hard",
+        "servings": 16,
+        "prepTime": 90,
+        "cookTime": 45,
+        "ingredients": [
+          "Yeast dough (rich -- egg, butter, milk, sugar)",
+          "Walnut filling: ground walnuts, honey, warm milk, cinnamon, rum"
+        ],
+        "instructions": [
+          "Potica is the Slovenian national pastry -- the most important Slovenian sweet",
+          "A rolled yeast dough pastry with walnut filling",
+          "The word potica: from potice (to roll) -- the dough is rolled very thin",
+          "The walnut filling: ground walnuts, honey, warm milk, cinnamon, and rum",
+          "The dough is rolled out, filled, and rolled up into a log",
+          "Baked in a round mold or straight as a log",
+          "Made for Easter, Christmas, and every celebration",
+          "Dozens of regional variations: walnut, poppy seed, tarragon, cottage cheese"
+        ],
+        "description": "Slovenian national celebration pastry -- rich yeast dough rolled very thin and filled with ground walnut-honey-cinnamon-rum filling, rolled into a log and baked. Dozens of regional variations (poppy seed, tarragon, cottage cheese). Made for Easter and Christmas. The Slovenian taste of home.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/MintpoticabySara.jpg",
+        "imageCredit": {
+          "author": "SaraKHintz",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMintpoticabySara.jpg"
+        }
+      },
+      {
+        "id": "svn-ds-3",
+        "name": "Krofe (Slovenian Doughnuts)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Yeast dough (enriched with eggs and butter)",
+          "Oil for frying",
+          "Plum jam (slivka jam) for filling",
+          "Icing sugar"
+        ],
+        "instructions": [
+          "Krofe are the Slovenian doughnuts -- filled with plum jam",
+          "The plum jam: from Slovenian plum orchards",
+          "The dough is enriched and light",
+          "Fried until golden and hollow",
+          "Filled with plum jam via piping bag",
+          "Dusted with icing sugar",
+          "Eaten at carnival time (pustovanje -- the Slovenian carnival season)"
+        ],
+        "description": "Slovenian plum jam doughnuts -- enriched yeast dough fried until golden and hollow, filled with plum jam (from Slovenian plum orchards), dusted with icing sugar. Eaten at pustovanje (Slovenian carnival season)."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "svn-dr-1",
+        "name": "Teran Wine",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Teran wine from Karst region"
+        ],
+        "instructions": [
+          "Serve at room temperature",
+          "Pair with pršut and cheese"
+        ],
+        "description": "Deep red wine from Slovenia's iron-rich Karst soil.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Istria3.JPG",
+        "imageCredit": {
+          "author": "Ivana",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AIstria3.JPG"
+        }
+      },
+      {
+        "id": "svn-dr-2",
+        "name": "Borovničke (Blueberry Schnapps)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Blueberry schnapps"
+        ],
+        "instructions": [
+          "Serve chilled as digestif"
+        ],
+        "description": "Slovenian blueberry schnapps.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velika_no%C4%8D_-_jedila_hren_%C5%A1unka_pirhi_potica.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Velika_no%C4%8D_-_jedila_hren_%C5%A1unka_pirhi_potica.jpg"
+        }
+      },
+      {
+        "id": "svn-dr-3",
+        "name": "Vipava Wine (Orange Wine)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Ribolla Gialla or Pinot Grigio (white grapes -- Vipava Valley)"
+        ],
+        "instructions": [
+          "Vipava Valley is one of the oldest wine regions in Europe",
+          "The orange wine movement: Slovenia is one of its global centers",
+          "Orange wine: white grapes fermented with the skins on -- like a red wine but white grapes",
+          "The skin contact gives tannin, color (orange-amber), and complexity",
+          "Stanko Radikon and Josko Gravner (Friulian side): the pioneers of modern orange wine",
+          "Slovenian Vipava and Karst: the traditional home of skin-contact white wine"
+        ],
+        "description": "Slovenian Vipava Valley orange wine -- white grapes (Ribolla Gialla, Pinot Grigio) fermented with skin contact for amber color and tannin. Slovenia is a global center of the orange wine movement. The Karst and Vipava regions have made skin-contact whites for generations before the trend.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Welschriesling_grape_cluster.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Welschriesling_grape_cluster.jpg"
+        }
+      }
+    ]
+  }
+}

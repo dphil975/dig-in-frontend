@@ -1,0 +1,778 @@
+{
+  "srilankaRecipes": {
+    "country": "Sri Lanka",
+    "region": "South Asia",
+    "breakfast": [
+      {
+        "id": "lka-bf-1",
+        "name": "Hoppers (Appa)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups rice flour",
+          "1 cup coconut milk",
+          "1/2 cup warm water",
+          "1 tsp sugar",
+          "1 tsp dry yeast",
+          "1/2 tsp salt",
+          "4 eggs",
+          "Coconut oil for greasing"
+        ],
+        "instructions": [
+          "Dissolve yeast and sugar in warm water and let it froth for 10 minutes.",
+          "Mix rice flour with coconut milk and the yeast mixture to form a smooth batter.",
+          "Add salt and let the batter ferment for at least 8 hours or overnight.",
+          "Heat a small hopper pan and grease lightly with coconut oil.",
+          "Pour a ladleful of batter and swirl the pan to coat the sides thinly.",
+          "Crack an egg into the center, cover and cook on low heat until the edges are crispy and the egg is set.",
+          "Serve hot with coconut sambol or lunu miris."
+        ],
+        "description": "Bowl-shaped rice flour crepes with crispy lacy edges and a soft center, often served with an egg nestled inside. A beloved Sri Lankan breakfast staple."
+      },
+      {
+        "id": "lka-bf-2",
+        "name": "Kiribath (Milk Rice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups short-grain rice",
+          "3 cups water",
+          "1 cup thick coconut milk",
+          "1 tsp salt",
+          "Lunu miris for serving"
+        ],
+        "instructions": [
+          "Wash rice thoroughly and cook with water in a heavy-bottomed pot until almost done.",
+          "Pour in the thick coconut milk and salt, stir gently.",
+          "Cook on low heat, stirring occasionally, until the milk is fully absorbed and the rice is creamy.",
+          "Flatten the rice into a square or rectangular shape on a flat plate.",
+          "Allow to cool slightly, then cut into diamond shapes.",
+          "Serve with lunu miris (chili onion relish) or jaggery."
+        ],
+        "description": "Creamy coconut milk rice traditionally prepared for Sinhala New Year and auspicious occasions. Cut into diamond shapes and served with spicy sambol.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Kiribath.jpg",
+        "imageCredit": {
+          "author": "AntanO",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKiribath.jpg"
+        }
+      },
+      {
+        "id": "lka-bf-3",
+        "name": "String Hoppers (Idiyappam) with Coconut Milk",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "Rice flour (finely ground)",
+          "Water, salt",
+          "Coconut milk (to serve)",
+          "Sambal or curry (to serve alongside)"
+        ],
+        "instructions": [
+          "String hoppers are the Sri Lankan breakfast -- delicate rice noodle nests",
+          "Made by pressing rice flour dough through a special mold with small holes",
+          "The dough is pressed out in a circular pattern onto a hopper mat",
+          "Steamed for a few minutes",
+          "The result: a delicate, lacy noodle nest",
+          "Served with fresh coconut milk poured over -- the morning version",
+          "Or with coconut sambal, dhal, or curry",
+          "String hoppers (idiyappam) are also eaten in Tamil Nadu, India",
+          "The Sri Lankan and South Indian food connection across the Palk Strait"
+        ],
+        "description": "Sri Lankan steamed rice noodle nests -- rice flour dough pressed through a special mold into circular noodle nests, steamed until delicate, served with fresh coconut milk or coconut sambal. Called idiyappam in Tamil. The lacy, delicate texture is the craft. Eaten across the Palk Strait into Tamil Nadu.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG"
+        }
+      },
+      {
+        "id": "lka-bf-4",
+        "name": "Milk Rice (Kiribath)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Short-grain rice",
+          "Thick coconut milk",
+          "Salt"
+        ],
+        "instructions": [
+          "Kiribath (milk rice) is the Sri Lankan celebration and auspicious food",
+          "Rice cooked in thick coconut milk until very soft and cohesive",
+          "Pressed into a square tray and cut into diamond shapes",
+          "Eaten on auspicious occasions: New Year (Sinhala and Tamil New Year), first day of school, weddings",
+          "On the Sinhala New Year (April 13-14), kiribath is the first food eaten after the auspicious time",
+          "The white color: auspicious and pure",
+          "Eaten with lunu miris (spicy onion-chilli paste) -- the contrast of white rice and red paste"
+        ],
+        "description": "Sri Lankan ceremonial coconut milk rice -- short-grain rice cooked in thick coconut milk until cohesive, pressed and cut into diamonds. The auspicious food for Sinhala and Tamil New Year (April 13-14), first day of school, and weddings. The white color is auspicious; eaten with spicy lunu miris paste for contrast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Rice_milk.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Rice_milk.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "lka-ln-1",
+        "name": "Rice and Curry",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "3 cups basmati rice",
+          "500g chicken thighs, cut into pieces",
+          "2 cups coconut milk",
+          "2 tbsp Sri Lankan curry powder",
+          "1 tsp turmeric",
+          "1 sprig curry leaves",
+          "2 green chilies, slit",
+          "1 onion, sliced",
+          "3 cloves garlic, minced",
+          "1 inch ginger, minced",
+          "1 cinnamon stick",
+          "2 cardamom pods",
+          "1 tbsp tamarind paste",
+          "Salt to taste",
+          "2 tbsp coconut oil"
+        ],
+        "instructions": [
+          "Cook rice until fluffy and set aside.",
+          "Heat coconut oil in a clay pot or heavy saucepan. Add cinnamon, cardamom, and curry leaves.",
+          "Sauté onion until golden, then add garlic, ginger, and green chilies.",
+          "Add curry powder and turmeric, stir for 30 seconds.",
+          "Add chicken pieces and coat well with the spice mixture.",
+          "Pour in coconut milk and tamarind paste. Season with salt.",
+          "Simmer on low heat for 35-40 minutes until chicken is tender and the curry has thickened.",
+          "Serve the curry over steamed rice with accompaniments like dhal, gotukola sambol, and papadum."
+        ],
+        "description": "The quintessential Sri Lankan meal featuring fragrant rice surrounded by an array of curries, sambols, and accompaniments, each with distinct flavors.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Beef_curry_rice_003.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Beef_curry_rice_003.jpg"
+        }
+      },
+      {
+        "id": "lka-ln-2",
+        "name": "Kottu Roti",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "4 godamba roti or flatbreads, torn into pieces",
+          "200g chicken breast, cooked and shredded",
+          "2 eggs, beaten",
+          "1 leek, sliced",
+          "1 carrot, julienned",
+          "1 cup cabbage, shredded",
+          "2 tbsp Sri Lankan curry powder",
+          "1 tsp chili flakes",
+          "1 sprig curry leaves",
+          "2 tbsp soy sauce",
+          "Salt and pepper to taste",
+          "3 tbsp vegetable oil"
+        ],
+        "instructions": [
+          "Heat oil on a flat griddle or large pan over high heat.",
+          "Add curry leaves and sauté leeks, carrots, and cabbage until slightly softened.",
+          "Add shredded chicken and stir-fry for 2 minutes.",
+          "Toss in the torn roti pieces and mix well.",
+          "Season with curry powder, chili flakes, soy sauce, salt, and pepper.",
+          "Push mixture to one side, pour beaten eggs on the griddle and scramble.",
+          "Chop and mix everything together using two metal spatulas, creating the signature rhythmic chopping sound.",
+          "Serve hot with a side of curry sauce."
+        ],
+        "description": "Chopped godamba roti stir-fried with vegetables, egg, and spices on a hot griddle. The rhythmic chopping sound of kottu being made is iconic in Sri Lankan street food culture.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chicken_Kottu.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chicken_Kottu.jpg"
+        }
+      },
+      {
+        "id": "lka-ln-3",
+        "name": "Kottu Roti (Chopped Roti Stir-Fry)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Godamba roti (thin, flaky flatbread -- Sri Lankan paratha-style)",
+          "Eggs",
+          "Vegetables: carrot, leek, onion",
+          "Chicken, beef, or vegetable",
+          "Curry powder, soy sauce",
+          "Oil"
+        ],
+        "instructions": [
+          "Kottu roti is the Sri Lankan street food sound -- the rhythmic metal-on-metal chopping",
+          "The gotcha roti is chopped on a hot griddle with two metal blades",
+          "The rhythmic chopping: you hear the kottu restaurant before you see it",
+          "Mixed with egg, vegetables, and meat while chopping",
+          "The roti strips absorb the curry flavors",
+          "A cheap, filling, and deeply satisfying street food",
+          "Every Sri Lankan street has a kottu vendor at night"
+        ],
+        "description": "Sri Lankan chopped flatbread stir-fry -- godamba roti chopped on a hot griddle with two metal blades in a rhythmic clatter (you hear the kottu vendor before you see it), mixed with egg, vegetables, and curry powder. The street sound of Sri Lanka. Every Sri Lankan street has a kottu vendor at night.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chicken_Kottu.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chicken_Kottu.jpg"
+        }
+      },
+      {
+        "id": "lka-ln-4",
+        "name": "Pol Sambol (Coconut Sambal)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh grated coconut",
+          "Red onion (finely chopped)",
+          "Dried red chilli",
+          "Lime juice",
+          "Salt",
+          "Maldive fish (dried tuna flakes -- optional but traditional)"
+        ],
+        "instructions": [
+          "Pol sambol is the Sri Lankan coconut sambal -- eaten at every meal",
+          "Fresh grated coconut mixed with spicy, acidic ingredients",
+          "The Maldive fish: dried, cured tuna from the Maldives -- the umami element",
+          "Trade route history: Sri Lanka and the Maldives traded dried fish for centuries",
+          "The combination: coconut + onion + chilli + lime + Maldive fish",
+          "Eaten with rice, hoppers, string hoppers, bread -- everything",
+          "No Sri Lankan meal is complete without pol sambol"
+        ],
+        "description": "Sri Lankan coconut sambal -- fresh grated coconut mixed with red onion, dried chilli, lime juice, and Maldive fish (dried cured tuna from the Maldives: centuries of island trade). The essential Sri Lankan condiment. No Sri Lankan meal is complete without pol sambol.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pol_Sambol.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pol_Sambol.jpg"
+        }
+      },
+      {
+        "id": "lka-ln-5",
+        "name": "Fish Ambulthiyal (Sour Fish Curry)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Tuna (goraka-cured pieces)",
+          "Goraka (gamboge -- a dried sour fruit, Garcinia cambogia relative)",
+          "Black pepper, garlic, ginger, turmeric",
+          "Pandan leaf, lemon grass"
+        ],
+        "instructions": [
+          "Ambulthiyal is the Sri Lankan sour fish curry -- preserved fish using goraka",
+          "Goraka: a dried sour fruit (Garcinia cambogia relative) -- the souring and preserving agent",
+          "The fish is coated in a goraka paste and slow-cooked very dry",
+          "The very low moisture content means it keeps for days without refrigeration",
+          "A traveling food: sailors took it on long voyages",
+          "The black pepper and goraka combination gives an intense, sour-spicy coating",
+          "The smell of goraka: intensely sour, almost unpleasant raw -- beautiful when cooked"
+        ],
+        "description": "Sri Lankan sour-dried fish curry -- tuna coated in a goraka paste (dried Garcinia relative, intensely sour), black pepper, and turmeric, cooked very dry until almost no moisture remains. Preserved without refrigeration for days. A sailor food: taken on long Indian Ocean voyages. The goraka sourness is the dish identity."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "lka-dn-1",
+        "name": "Lamprais",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 90,
+        "ingredients": [
+          "3 cups basmati rice",
+          "4 cups meat stock",
+          "500g mixed meat (beef, chicken, lamb), cubed",
+          "2 cups coconut milk",
+          "3 tbsp lamprais curry powder",
+          "2 onions, sliced",
+          "4 hard-boiled eggs",
+          "1 cup ash plantain, cubed",
+          "2 tbsp blachan (shrimp paste)",
+          "Banana leaves for wrapping",
+          "4 cardamom pods",
+          "6 cloves",
+          "2 cinnamon sticks",
+          "Salt to taste",
+          "3 tbsp ghee"
+        ],
+        "instructions": [
+          "Cook rice in meat stock with cardamom, cloves, and cinnamon until fluffy.",
+          "Prepare the mixed meat curry by browning meat in ghee, adding lamprais curry powder, coconut milk, and simmering until tender.",
+          "Make the ash plantain curry with coconut milk and spices.",
+          "Prepare the blachan sambol by roasting shrimp paste with onions, chili, and Maldive fish.",
+          "Soften banana leaves over a flame until pliable.",
+          "Place a portion of rice in each banana leaf, top with meat curry, ash plantain, blachan sambol, and a hard-boiled egg.",
+          "Wrap into tight parcels and bake at 180°C for 20 minutes.",
+          "Serve the parcels whole, unwrapping at the table."
+        ],
+        "description": "A Dutch-Burgher heritage dish of rice and curries wrapped in banana leaf and baked. Each parcel contains a complete meal of fragrant rice, rich meat curry, and accompaniments.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lamprais_%282%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Lamprais_%282%29.jpg"
+        }
+      },
+      {
+        "id": "lka-dn-2",
+        "name": "Fish Ambul Thiyal (Sour Fish Curry)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "500g tuna steaks, cut into cubes",
+          "3 tbsp goraka (garcinia cambogia) paste",
+          "2 tsp black pepper, coarsely ground",
+          "1 tsp turmeric",
+          "1 sprig curry leaves",
+          "3 cloves garlic, sliced",
+          "1 inch pandan leaf",
+          "1 tsp fenugreek seeds",
+          "1 cinnamon stick",
+          "1 tsp salt",
+          "2 tbsp coconut oil"
+        ],
+        "instructions": [
+          "Rub tuna cubes with goraka paste, turmeric, black pepper, and salt. Marinate for 15 minutes.",
+          "Place marinated fish in a clay pot. Add curry leaves, garlic, pandan leaf, fenugreek, and cinnamon.",
+          "Add just enough water to barely cover the fish.",
+          "Cook on medium heat without stirring, gently shaking the pot occasionally.",
+          "Reduce heat and simmer until all the liquid evaporates and the fish is coated in a dark, thick glaze.",
+          "The fish should be dry-cooked and deeply flavored.",
+          "Serve with steamed rice and coconut sambol."
+        ],
+        "description": "A signature Southern Sri Lankan dry fish curry with an intensely sour and spicy flavor from goraka. This preserved dish can last for days without refrigeration.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ambalangoda-.jpg",
+        "imageCredit": {
+          "author": "Xandrium\n\n(With Some uploads made by: Dan Arndt, Torbenbrinker",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAmbalangoda-.jpg"
+        }
+      },
+      {
+        "id": "lka-dn-3",
+        "name": "Hoppers (Appa) with Egg",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Rice flour (fermented overnight with coconut milk and yeast)",
+          "Coconut milk, coconut cream",
+          "Salt, palm sugar (a tiny amount)",
+          "Egg (for egg hopper version)"
+        ],
+        "instructions": [
+          "Hoppers (appa) are the Sri Lankan bowl-shaped rice crêpes",
+          "Made from a fermented rice flour batter",
+          "Cooked in a small wok (the hopper pan) -- the round shape forms the bowl",
+          "The edge is crispy and lacy; the center is soft and thick",
+          "Egg hopper: an egg is cracked into the hopper before it sets",
+          "The egg white sets but the yolk stays runny",
+          "The combination of crispy edge, soft center, and runny yolk",
+          "Eaten with coconut sambal and curry"
+        ],
+        "description": "Sri Lankan bowl-shaped rice crêpe -- fermented rice flour batter swirled in a small round wok, creating a crispy-lacy edge and soft center. Egg hopper: an egg cracked in before the batter sets, the yolk staying runny. Eaten with coconut sambal and curry. The hopper pan shape is the technique.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sri_Lankan_Rice_and_Curry.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sri_Lankan_Rice_and_Curry.jpg"
+        }
+      },
+      {
+        "id": "lka-dn-4",
+        "name": "Dhal (Red Lentil Curry)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Red lentils",
+          "Coconut milk",
+          "Onion, garlic, ginger",
+          "Curry leaves",
+          "Mustard seeds",
+          "Turmeric, chilli powder",
+          "Dried chilli, tomato"
+        ],
+        "instructions": [
+          "Sri Lankan dhal is made with red lentils and coconut milk",
+          "The tempering: mustard seeds crackled in oil with curry leaves and dried chilli",
+          "The tempering is poured over the cooked lentils -- the sizzle, the fragrance",
+          "Curry leaves: the essential Sri Lankan aromatic herb",
+          "Coconut milk stirs in at the end for richness",
+          "Eaten with every Sri Lankan rice meal -- the essential side dish"
+        ],
+        "description": "Sri Lankan coconut milk dhal -- red lentils simmered with turmeric and chilli, finished with a tempering (mustard seeds crackled in oil with curry leaves and dried chilli poured sizzling over), and coconut milk stirred in. Curry leaves are the essential Sri Lankan aromatic. Eaten with every Sri Lankan rice meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/3_types_of_lentil.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/3_types_of_lentil.png"
+        }
+      },
+      {
+        "id": "lka-dn-5",
+        "name": "Wambatu Moju (Pickled Eggplant)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Eggplant (cut into batons, deep-fried)",
+          "Onion, green chilli (also fried separately)",
+          "Vinegar, sugar",
+          "Turmeric, mustard seeds"
+        ],
+        "instructions": [
+          "Wambatu moju is the Sri Lankan pickled eggplant -- sweet, sour, and spicy",
+          "The eggplant is deep-fried first -- until golden and slightly crispy",
+          "Then combined with vinegar, sugar, and spices",
+          "The sweet-sour-spicy balance is the Sri Lankan flavor profile",
+          "Moju means pickle in Sinhala",
+          "A condiment alongside rice and curries"
+        ],
+        "description": "Sri Lankan sweet-sour pickled eggplant -- eggplant fried until golden, combined with vinegar, sugar, and mustard seeds, tossed with fried onion and chilli. Sweet, sour, and spicy: the Sri Lankan flavor balance. Moju means pickle in Sinhala."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "lka-sn-1",
+        "name": "Isso Vadei (Prawn Fritters)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "1 cup urad dhal, soaked 4 hours",
+          "12 medium prawns, shell on",
+          "2 green chilies, chopped",
+          "1 small onion, finely chopped",
+          "1 sprig curry leaves, chopped",
+          "1/2 tsp cumin seeds",
+          "Salt to taste",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Drain and grind soaked urad dhal into a thick, smooth paste.",
+          "Mix in chopped onion, green chilies, curry leaves, cumin, and salt.",
+          "Shape small portions of the dhal paste into flat rounds.",
+          "Press a prawn into the top of each fritter with the tail sticking out.",
+          "Deep fry in hot oil until golden and crispy on both sides.",
+          "Drain on paper towels.",
+          "Serve hot with chili sauce or lunu miris."
+        ],
+        "description": "Crispy lentil fritters topped with whole prawns, a beloved Sri Lankan street snack. The contrast of crunchy dhal and succulent prawn makes them irresistible."
+      },
+      {
+        "id": "lka-sn-2",
+        "name": "Isso Wade (Prawn Lentil Patties)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Chana dhal (split chickpeas -- soaked)",
+          "Prawn (one per patty, placed on top)",
+          "Onion, garlic, curry leaves, chilli, ginger"
+        ],
+        "instructions": [
+          "Isso wade are the Sri Lankan prawn-topped lentil fritters",
+          "A seasoned lentil paste formed into discs",
+          "A prawn is pressed onto the top of each patty",
+          "Fried until golden -- the prawn curls and turns orange on top",
+          "A crunchy outer shell from the lentil",
+          "Sold in Colombo as street food -- especially at the Galle Face Green"
+        ],
+        "description": "Sri Lankan prawn lentil fritters -- seasoned chana dhal paste formed into discs with a prawn pressed on top, fried until golden and crunchy (the prawn curls and turns orange). Sold at Galle Face Green in Colombo. The lentil crust is the container for the prawn.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Medu_Vada.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Medu_Vada.JPG"
+        }
+      },
+      {
+        "id": "lka-sn-3",
+        "name": "Coconut Roti (Pol Roti)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour",
+          "Fresh grated coconut",
+          "Onion (chopped)",
+          "Green chilli, curry leaves",
+          "Salt, water"
+        ],
+        "instructions": [
+          "Pol roti is the Sri Lankan coconut flatbread",
+          "A simple dough with fresh grated coconut mixed in",
+          "Cooked on a flat pan until slightly charred",
+          "The coconut creates an irregular texture and slight sweetness",
+          "Eaten for breakfast or as a snack with sambal",
+          "Thicker and heavier than Indian roti -- the coconut adds bulk"
+        ],
+        "description": "Sri Lankan coconut flatbread -- flour dough with fresh grated coconut, onion, and green chilli mixed in, cooked on a flat pan until slightly charred. Thicker and heavier than Indian roti; the coconut adds texture and slight sweetness. Eaten for breakfast or as a snack with sambal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+        }
+      },
+      {
+        "id": "lka-sn-4",
+        "name": "Kavum (Oil Cake)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Rice flour",
+          "Treacle (or kithul palm treacle -- the Sri Lankan version)",
+          "Coconut milk",
+          "Sesame seeds",
+          "Turmeric (a pinch)",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Kavum are the Sri Lankan oil cakes eaten at New Year (April)",
+          "Made from rice flour with kithul treacle (the Sri Lankan palm sugar)",
+          "Fried in hot oil -- they puff slightly",
+          "The kithul treacle gives a deep caramel flavor",
+          "Made specifically for the Sinhala and Tamil New Year -- the auspicious sweet",
+          "The oil cakes symbolize prosperity"
+        ],
+        "description": "Sri Lankan New Year oil cakes -- rice flour with kithul palm treacle (deeply caramel) and coconut milk, fried in hot oil. Made for the Sinhala and Tamil New Year (April). The oil cake symbolizes prosperity. Kithul treacle is a uniquely Sri Lankan palm sugar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Konda_Kavum_01.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Konda_Kavum_01.JPG"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "lka-ds-1",
+        "name": "Watalappam",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "4 eggs",
+          "1 cup jaggery, grated",
+          "1 cup thick coconut milk",
+          "1/2 tsp cardamom powder",
+          "1/4 tsp nutmeg, grated",
+          "1/4 cup cashew nuts, chopped",
+          "1 tbsp rose water"
+        ],
+        "instructions": [
+          "Melt jaggery with a little water over low heat, strain to remove impurities, and cool.",
+          "Beat eggs well and mix with coconut milk.",
+          "Add the cooled jaggery syrup, cardamom, nutmeg, and rose water. Mix until smooth.",
+          "Pour the mixture into a greased steaming dish. Sprinkle cashews on top.",
+          "Cover tightly with foil and steam for 40-45 minutes until set.",
+          "Allow to cool completely before serving.",
+          "Serve chilled, cut into wedges."
+        ],
+        "description": "A rich Malay-influenced coconut custard pudding made with jaggery, spiced with cardamom and nutmeg. A festive dessert especially popular during Ramadan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Watalappan-Sri_Lanka.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Watalappan-Sri_Lanka.jpg"
+        }
+      },
+      {
+        "id": "lka-ds-2",
+        "name": "Watalappan (Coconut Custard)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Coconut milk (thick)",
+          "Jaggery or kithul treacle (the Sri Lankan palm sugar)",
+          "Eggs (6)",
+          "Cardamom, cloves, nutmeg",
+          "Cashew nuts (for topping)"
+        ],
+        "instructions": [
+          "Watalappan is the Sri Lankan steamed coconut custard",
+          "A Malay-influenced dessert brought by the Malay community to Sri Lanka",
+          "The Malay community: brought as soldiers and servants to Sri Lanka under Dutch and British colonization",
+          "Kithul treacle: the dark palm sugar that gives watalappan its deep caramel flavor",
+          "The custard is steamed (not baked) -- the gentle heat of steam prevents curdling",
+          "The texture: silky, firm, slightly jiggly -- like a very good flan",
+          "Topped with cashew nuts"
+        ],
+        "description": "Sri Lankan Malay-heritage steamed coconut custard -- coconut milk, kithul palm treacle (dark caramel palm sugar), eggs, cardamom, and cloves steamed (not baked) until silky and firm. Brought by the Malay community (Dutch and British colonial soldiers). Kithul treacle is uniquely Sri Lankan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Watalappan-Sri_Lanka.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Watalappan-Sri_Lanka.jpg"
+        }
+      },
+      {
+        "id": "lka-ds-3",
+        "name": "Kiri Pani (Coconut Cream with Treacle)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Thick coconut cream (kiri: the top layer of pressed coconut)",
+          "Kithul treacle (dark palm syrup)"
+        ],
+        "instructions": [
+          "Kiri pani is the simplest Sri Lankan dessert -- but deeply satisfying",
+          "Kiri: the first press of coconut milk -- thick, almost solid",
+          "Poured into a bowl",
+          "Kithul treacle poured over -- the dark amber palm syrup",
+          "The coconut cream swirls with the dark treacle",
+          "Eaten by dipping with bread or just eaten with a spoon"
+        ],
+        "description": "Sri Lankan coconut cream with palm treacle -- thick first-press coconut cream in a bowl with dark kithul palm treacle poured over. The simplest and most satisfying Sri Lankan sweet: two ingredients, remarkable together. Eaten by spoon or with bread."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "lka-dr-1",
+        "name": "King Coconut Water (Thambili)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "1 fresh king coconut (orange variety)",
+          "Ice cubes (optional)",
+          "Pinch of salt (optional)"
+        ],
+        "instructions": [
+          "Select a fresh king coconut, identifiable by its bright orange exterior.",
+          "Using a sharp cleaver, cut the top off the coconut at an angle.",
+          "Insert a straw or pour the water into a glass.",
+          "Add ice cubes if desired and a pinch of salt to enhance the natural sweetness.",
+          "Scoop out the soft, jelly-like flesh from inside to eat as well.",
+          "Drink fresh for maximum hydration and nutrition."
+        ],
+        "description": "Sri Lanka's iconic roadside refreshment. King coconut water is naturally sweeter than regular coconut water and is packed with electrolytes.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "lka-dr-2",
+        "name": "Arrack Sour",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "60ml Ceylon arrack",
+          "30ml fresh lime juice",
+          "20ml simple syrup",
+          "1 egg white",
+          "Ice cubes",
+          "Angostura bitters for garnish",
+          "Lime wheel for garnish"
+        ],
+        "instructions": [
+          "Add arrack, lime juice, simple syrup, and egg white to a cocktail shaker.",
+          "Dry shake without ice for 15 seconds to emulsify the egg white.",
+          "Add ice and shake vigorously for another 15 seconds.",
+          "Double strain into a chilled coupe glass.",
+          "Dash angostura bitters on top of the foam in a decorative pattern.",
+          "Garnish with a lime wheel."
+        ],
+        "description": "A tropical twist on the classic sour cocktail using Ceylon arrack, a spirit distilled from the sap of coconut flowers. Smooth, citrusy, and uniquely Sri Lankan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bottlesofarrack.jpg",
+        "imageCredit": {
+          "author": "SilentBobxy2",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABottlesofarrack.jpg"
+        }
+      },
+      {
+        "id": "lka-dr-3",
+        "name": "Ceylon Tea",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 5,
+        "ingredients": [
+          "Ceylon tea (Uva, Dimbula, or Nuwara Eliya estate)",
+          "Hot water",
+          "Optional: milk, sugar"
+        ],
+        "instructions": [
+          "Ceylon tea is one of the world great teas -- Sri Lanka is the third-largest producer",
+          "Tea estates cover the Hill Country: Nuwara Eliya, Kandy, Dimbula, Uva",
+          "The British introduced tea cultivation to Ceylon in the 1860s",
+          "The original crop was coffee -- the 1869 coffee rust fungus destroyed all the coffee",
+          "James Taylor planted the first commercial tea in Loolecondera Estate (1867)",
+          "Uva: the east side of the mountains -- slightly astringent, malty",
+          "Nuwara Eliya: the highest elevation -- delicate, floral",
+          "Dimbula: the west side -- bright, brisk",
+          "Ceylon high-grown tea is the most prized"
+        ],
+        "description": "Sri Lankan estate tea -- Ceylon tea from the Hill Country estates (Uva: astringent, malty; Nuwara Eliya: high-grown, delicate; Dimbula: bright, brisk). Britain introduced tea in the 1860s to replace coffee (destroyed by 1869 fungus). James Taylor planted the first estate. Third-largest world tea producer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ceylon_Pettiagalla_Tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ceylon_Pettiagalla_Tea.jpg"
+        }
+      }
+    ]
+  }
+}

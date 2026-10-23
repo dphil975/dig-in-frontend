@@ -1,0 +1,762 @@
+{
+  "maltaRecipes": {
+    "country": "Malta",
+    "region": "Southern Europe",
+    "breakfast": [
+      {
+        "id": "mlt-bf-1",
+        "name": "Ħobż biż-Żejt (Bread with Tomato and Oil)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Maltese ftira bread",
+          "Tomato paste (kunserva)",
+          "Olive oil",
+          "Capers",
+          "Olives",
+          "Tuna",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Slice open ftira bread",
+          "Spread with kunserva",
+          "Drizzle olive oil generously",
+          "Top with capers, olives, tuna, onion"
+        ],
+        "description": "Maltese bread rubbed with tomato paste and olive oil — the quintessential snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/%C4%A6ob%C5%BC_Malti.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%C4%A6ob%C5%BC_Malti.jpg"
+        }
+      },
+      {
+        "id": "mlt-bf-2",
+        "name": "Pastizzi",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 45,
+        "cookTime": 25,
+        "ingredients": [
+          "Puff pastry (layered)",
+          "Filling: ricotta OR mushy peas",
+          "Egg wash"
+        ],
+        "instructions": [
+          "Make flaky pastry dough",
+          "Fill with ricotta or pea mixture",
+          "Shape into diamond pastizzi",
+          "Brush with egg",
+          "Bake at 200°C 25 min"
+        ],
+        "description": "Flaky diamond-shaped pastries — ricotta or pea filled — Malta's icon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Malta_Pastizzi.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Malta_Pastizzi.JPG"
+        }
+      },
+      {
+        "id": "mlt-bf-3",
+        "name": "Ftira (Maltese Ring Bread)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour",
+          "Water",
+          "Yeast",
+          "Salt",
+          "Olive oil",
+          "Optional: sesame seeds on top"
+        ],
+        "instructions": [
+          "Mix flour, yeast, water, salt, olive oil into a dough",
+          "Knead until smooth and elastic — the olive oil enriches the crumb",
+          "Let rise 1 hour",
+          "Shape into a ring — the ring shape is the signature of Maltese ftira",
+          "The ring allows even baking — no dense center",
+          "Let rise again 30 minutes",
+          "Bake at 220°C until golden with a hollow-sounding crust",
+          "The crust should be firm; the crumb airy and slightly chewy",
+          "Ftira is Malta's ancient bread — distinct from regular round loaves",
+          "The ring shape is specific to Malta and related to the ancient Mediterranean bread tradition",
+          "Used for sandwiches (ftira tal-bahar — tuna sandwich) or eaten with oil"
+        ],
+        "description": "Malta's ring-shaped bread — yeasted dough enriched with olive oil, shaped into a ring (which allows even baking), baked until golden. The ring shape is specifically Maltese, connected to ancient Mediterranean bread traditions. Used for Malta's famous tuna sandwiches (ftira tal-bahar) or eaten simply with olive oil.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ftira_with_Tuna_in_Marsaxlokk_02.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ftira_with_Tuna_in_Marsaxlokk_02.jpg"
+        }
+      },
+      {
+        "id": "mlt-bf-4",
+        "name": "Kunserva (Tomato Paste) on Bread",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Maltese bread (ftira or hobz)",
+          "Kunserva (concentrated sun-dried tomato paste — thick, sweet, intense)",
+          "Olive oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Kunserva is Malta's sun-dried tomato paste — concentrated by sun-drying over days",
+          "The result is much thicker and sweeter than Italian tomato paste",
+          "Spread kunserva generously on fresh bread",
+          "Drizzle with olive oil",
+          "Salt",
+          "That's it — no additions needed",
+          "Kunserva on bread (hobz biz-zejt) is Malta's simplest and most beloved breakfast",
+          "The concentrated tomato sweetness against good olive oil on fresh bread",
+          "The kunserva's sweetness comes from the concentrated sun-drying, not added sugar",
+          "Malta's summer sun does the work — the concentrated tomato is solar energy made edible"
+        ],
+        "description": "Malta's simplest breakfast — thickly spread kunserva (Malta's sun-dried concentrated tomato paste, much sweeter and thicker than Italian equivalent) on fresh bread with olive oil. The tomato's natural sugars concentrate through sun-drying into an intensely sweet paste. Kunserva on bread is Malta's most iconic food moment: sun, tomatoes, oil, bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Making_candied_fruit_in_Tianjin_China.JPG"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "mlt-ln-1",
+        "name": "Stuffat tal-Fenek (Rabbit Stew)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "1 rabbit (jointed)",
+          "Red wine",
+          "Tomatoes",
+          "Onions",
+          "Garlic",
+          "Carrots",
+          "Potatoes",
+          "Bay leaf",
+          "Rosemary",
+          "Cloves"
+        ],
+        "instructions": [
+          "Marinate rabbit in wine overnight",
+          "Brown rabbit pieces",
+          "Sauté onions, garlic",
+          "Add wine, tomatoes, herbs",
+          "Simmer 2 hours until tender",
+          "Serve with spaghetti"
+        ],
+        "description": "Malta's national dish — slow-braised rabbit in red wine.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Malta_Rabbit_fried_with_wine_and_garlic.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Malta_Rabbit_fried_with_wine_and_garlic.JPG"
+        }
+      },
+      {
+        "id": "mlt-ln-2",
+        "name": "Bragioli (Beef Olives)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Thin beef slices",
+          "Filling: breadcrumbs, bacon, egg, parsley, garlic",
+          "Tomato sauce",
+          "Red wine",
+          "Peas"
+        ],
+        "instructions": [
+          "Pound beef thin, fill and roll, tie",
+          "Brown the rolls",
+          "Make tomato-wine sauce",
+          "Braise rolls in sauce 90 min",
+          "Add peas near end"
+        ],
+        "description": "Stuffed rolled beef in tomato-wine sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg"
+        }
+      },
+      {
+        "id": "mlt-ln-3",
+        "name": "Imqarrun il-Forn (Baked Macaroni)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "Macaroni (large tubular)",
+          "Minced pork and beef mix",
+          "Tomato sauce (rich, Maltese-style with wine)",
+          "Eggs (beaten — to bind)",
+          "Parmesan or pecorino",
+          "Onion, garlic",
+          "Bay leaf, mixed herbs"
+        ],
+        "instructions": [
+          "Boil macaroni until just underdone — it finishes in the oven",
+          "Make meat sauce: fry onion, garlic, add minced pork-beef, brown well",
+          "Add tomato, wine, bay leaf, herbs — simmer 20 minutes",
+          "Mix cooked macaroni with meat sauce",
+          "The distinguishing Maltese step: beat eggs, mix into the pasta before baking",
+          "The eggs bind the pasta into a layered cake-like structure when baked",
+          "Transfer to a baking dish, top with cheese",
+          "Bake until the top is golden and the egg has set",
+          "The result slices like a cake — firm enough to cut into squares",
+          "Imqarrun il-forn (baked macaroni) is Malta's Sunday dish",
+          "The Italian pasta influence transformed through the Maltese baked-egg technique"
+        ],
+        "description": "Malta's Sunday pasta cake — macaroni mixed with pork-beef meat sauce and beaten eggs, baked until the egg sets into a firm, sliceable cake topped with golden cheese. The egg-binding technique (transforming pasta into a cuttable cake) is distinctly Maltese. Italian pasta arrived via Sicily and Arab traders; the Maltese baked it with eggs and made it their own.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG"
+        }
+      },
+      {
+        "id": "mlt-ln-4",
+        "name": "Gbejniet (Maltese Cheeselets)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Gbejniet (small Maltese fresh sheep or goat cheeses — the fresh white variety)",
+          "Olive oil",
+          "Black pepper (cracked)",
+          "Optional: dried herbs (thyme, marjoram)",
+          "Maltese bread for serving"
+        ],
+        "instructions": [
+          "Gbejniet are Malta's unique small round cheeses — made from sheep or goat milk",
+          "The fresh variety is mild, slightly tangy, and soft — similar to fresh ricotta in texture but firmer",
+          "The peppered/dried variety (imsaħħna) is air-dried with black pepper coating",
+          "Serve fresh gbejniet with drizzled olive oil and cracked black pepper",
+          "Accompanied by bread and kunserva",
+          "Gbejniet are Malta's contribution to Mediterranean cheese culture",
+          "The small, round shape is specific — each one is palm-sized",
+          "GI-protected: authentic gbejniet must come from Malta or Gozo",
+          "The dried, peppered gbejniet has a sharp, concentrated sheep milk flavor",
+          "Both varieties are eaten at every Maltese meal"
+        ],
+        "description": "Malta's unique cheese — small round fresh sheep or goat milk cheeses (gbejniet), eaten fresh with olive oil and black pepper or dried with a black pepper coating (imsaħħna). GI-protected to Malta and Gozo. The fresh version is mild and soft; the dried version is sharp and concentrated. Gbejniet appear at every Maltese table.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Malta_Gbejniet.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Malta_Gbejniet.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "mlt-dn-1",
+        "name": "Lampuki Pie (Fish Pie)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Lampuki fillets (dolphinfish)",
+          "Pastry dough",
+          "Cauliflower",
+          "Spinach",
+          "Olives",
+          "Capers",
+          "Tomato",
+          "Onion"
+        ],
+        "instructions": [
+          "Line dish with pastry",
+          "Layer fish with vegetables, olives, capers",
+          "Cover with pastry, seal",
+          "Bake at 180°C 40 min"
+        ],
+        "description": "Traditional fish pie with dolphinfish, vegetables, and capers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Torta_Cence%C3%B1a_%28Roda%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Torta_Cence%C3%B1a_%28Roda%29.jpg"
+        }
+      },
+      {
+        "id": "mlt-dn-2",
+        "name": "Aljotta (Fish Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Mixed fish",
+          "Tomatoes",
+          "Garlic",
+          "Onion",
+          "Marjoram",
+          "Mint",
+          "Lemon",
+          "Rice",
+          "Olive oil"
+        ],
+        "instructions": [
+          "Sauté garlic and onion",
+          "Add tomatoes, fish, herbs, water",
+          "Simmer 20 min",
+          "Remove fish, flake, return",
+          "Add rice, cook until done",
+          "Finish with lemon and mint"
+        ],
+        "description": "Garlicky Maltese fish soup with marjoram and mint."
+      },
+      {
+        "id": "mlt-dn-3",
+        "name": "Kapunata (Maltese Caponata)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Eggplant, zucchini, peppers",
+          "Tomatoes (ripe)",
+          "Olives, capers",
+          "Onion, garlic",
+          "Olive oil (generous)",
+          "Vinegar (for the sweet-sour)",
+          "Sugar",
+          "Fresh basil"
+        ],
+        "instructions": [
+          "Cube all vegetables, salt eggplant briefly to draw moisture",
+          "Fry each vegetable separately in olive oil — then combine",
+          "The Maltese version differs from Sicilian caponata in being less sweet",
+          "Add tomato, olives, capers",
+          "Add vinegar and a small amount of sugar — the agrodolce balance",
+          "Simmer until combined and saucy",
+          "Finish with fresh basil",
+          "Kapunata is Malta's summer vegetable preserve — the olive oil protects it",
+          "Kept in a jar with oil, it lasts weeks and improves",
+          "The Maltese influence from Sicily is clear but the Maltese have their own balance",
+          "Served as a side, a spread on bread, or alongside fish and meat"
+        ],
+        "description": "Malta's sweet-sour vegetable preserve — eggplant, zucchini, and peppers fried separately then combined with tomato, olives, capers, and vinegar-sugar (less sweet than Sicilian caponata). Cooked in generous olive oil and kept submerged under oil, kapunata lasts weeks and improves. Malta's most important summer preserve.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG"
+        }
+      },
+      {
+        "id": "mlt-dn-4",
+        "name": "Qarnit (Octopus in Red Wine)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Octopus (whole, cleaned)",
+          "Red wine (generous — enough to almost submerge)",
+          "Onion, garlic",
+          "Bay leaf, cloves, black pepper",
+          "Olive oil",
+          "Optional: tomato, capers"
+        ],
+        "instructions": [
+          "The Maltese octopus technique: no added water",
+          "Octopus releases its own liquid as it cooks",
+          "Brown onion and garlic in olive oil in a heavy pot",
+          "Add octopus pieces",
+          "Pour wine generously — the wine braising liquid is the sauce",
+          "Add bay leaf, cloves, black pepper",
+          "Low heat, covered, 50-60 minutes — the octopus tenderizes in the wine",
+          "The wine and octopus liquid reduce into a rich, deep purple-red braising sauce",
+          "The octopus should be fork-tender with no rubbery resistance",
+          "Qarnit (octopus) is Malta's most celebrated seafood dish",
+          "The Mediterranean octopus, dried on lines in the sun (traditional) before cooking, is considered superior"
+        ],
+        "description": "Malta's octopus in red wine — whole octopus braised in generous red wine with no added water (the octopus provides its own liquid), cooked until fork-tender in a purple-red sauce. Traditional dried octopus (hung on lines in the sun first) is considered superior in flavor. The no-water technique concentrates the wine and octopus flavors.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG"
+        }
+      },
+      {
+        "id": "mlt-dn-5",
+        "name": "Bragioli (Beef Olives)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Thin beef slices (topside or silverside)",
+          "Breadcrumb stuffing: stale bread, egg, garlic, parsley, bacon, Parmesan",
+          "Tomato sauce (rich, wine-based)",
+          "Red wine",
+          "Olive oil"
+        ],
+        "instructions": [
+          "Pound beef slices thin",
+          "Make stuffing: soak stale bread in water, squeeze dry, mix with egg, garlic, parsley, chopped bacon, Parmesan",
+          "Place stuffing on each beef slice",
+          "Roll tightly, secure with toothpick or kitchen string",
+          "Brown rolled beef olives in olive oil on all sides",
+          "Add tomato sauce, red wine — enough to half-submerge",
+          "Braise on low heat 45-55 minutes",
+          "The beef becomes tender; the sauce reduces and concentrates",
+          "Bragioli (beef olives — no actual olives) is Malta's celebration dinner",
+          "The stuffed rolled beef in wine sauce is Maltese but clearly shows the Italian-Sicilian influence",
+          "A Sunday and Christmas dish — time-consuming to prepare"
+        ],
+        "description": "Malta's stuffed beef roll — thin beef slices wrapped around a breadcrumb, bacon, and Parmesan stuffing, braised in tomato-wine sauce. The Sicilian influence is unmistakable (the same technique as involtini) but the Maltese stuffing version is their own. Called 'beef olives' despite containing no olives — a British naming convention that somehow crossed to Malta.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "mlt-sn-1",
+        "name": "Bigilla (Bean Dip)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "2 cups dried broad beans (soaked)",
+          "Garlic",
+          "Olive oil",
+          "Chili",
+          "Mint",
+          "Parsley",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil beans until very soft",
+          "Mash with garlic, olive oil, chili",
+          "Add mint and parsley",
+          "Serve with bread or crackers"
+        ],
+        "description": "Savory mashed broad bean dip.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Homemade_Bigilla_from_Malta.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Homemade_Bigilla_from_Malta.jpg"
+        }
+      },
+      {
+        "id": "mlt-sn-2",
+        "name": "Ħobż biż-Żejt (Bread with Oil and Tomato)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Crusty Maltese bread (ftira or hobz)",
+          "Kunserva (tomato paste)",
+          "Olive oil",
+          "Capers, olives",
+          "Tuna (optional)",
+          "Gbejniet (optional)"
+        ],
+        "instructions": [
+          "This is Malta's national sandwich — and it's barely a recipe",
+          "Tear or slice bread",
+          "Rub with kunserva — or spread generously",
+          "Pour olive oil",
+          "Add whatever you have: capers, olives, tuna, gbejniet, fresh tomato",
+          "The combinations are personal and regional",
+          "Ħobż biż-żejt is what every Maltese child grew up eating",
+          "It's eaten at the beach, on fishing boats, at work",
+          "The quality of the bread and the kunserva makes it",
+          "Nothing else in Maltese food culture is as universally beloved",
+          "The simplicity IS the recipe — good ingredients, no fuss"
+        ],
+        "description": "Malta's national snack — bread rubbed or spread with kunserva (concentrated tomato paste), drizzled with olive oil, and topped with whatever is at hand: capers, olives, tuna, or gbejniet. Every Maltese person grew up with this. The simplicity is the point. Beach food, boat food, childhood food. The quality of the bread and the kunserva intensity is everything.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/%C4%A6ob%C5%BC_Malti.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%C4%A6ob%C5%BC_Malti.jpg"
+        }
+      },
+      {
+        "id": "mlt-sn-3",
+        "name": "Ftira Sandwich (Tuna Ftira)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Ftira (ring bread — split open)",
+          "Tuna (canned in olive oil)",
+          "Tomato, onion, olives, capers",
+          "Kunserva (tomato paste base)",
+          "Olive oil",
+          "Optional: gbejniet, anchovies"
+        ],
+        "instructions": [
+          "Split the ftira ring horizontally",
+          "Spread kunserva on the inside",
+          "Fill with tuna, sliced tomato, onion rings, olives, capers",
+          "Drizzle with the olive oil from the tuna tin",
+          "Optional: add gbejniet (cheese), anchovies",
+          "The ftira sandwich is Malta's street food lunch",
+          "The ring shape creates a thick sandwich that holds generous fillings",
+          "The tuna-kunserva-caper combination is the classic filling",
+          "Every Maltese knows their preferred combination — there are passionate opinions",
+          "The ftira sandwich is also called 'Maltese pizza' outside Malta (incorrectly — it's a sandwich)"
+        ],
+        "description": "Malta's tuna ring sandwich — ftira bread split and filled with tuna, tomato, olives, capers, and kunserva. The ring shape creates a robust, holdable sandwich for beach days, boat trips, and work lunches. The tuna-kunserva-caper combination is the classic. Every Maltese has a precise opinion on the correct filling ratio.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ftira_with_Tuna_in_Marsaxlokk_02.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Ftira_with_Tuna_in_Marsaxlokk_02.jpg"
+        }
+      },
+      {
+        "id": "mlt-sn-4",
+        "name": "Prinjolata (Pine Nut Carnival Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Sponge cake layers",
+          "Cream (whipped)",
+          "Pine nuts (toasted)",
+          "Cherries (glace)",
+          "Chocolate (for decoration)",
+          "Lemon zest, vanilla"
+        ],
+        "instructions": [
+          "Make a light sponge cake and crumble it",
+          "Mix crumbled sponge with whipped cream, pine nuts, lemon zest, vanilla",
+          "Mold into a dome shape — pressing firmly",
+          "The dome shape is the prinjolata's signature",
+          "Refrigerate until firm",
+          "Decorate exterior with chocolate drizzle, halved cherries, pine nuts",
+          "The prinjolata is Malta's carnival dessert — made for Carnival season (pre-Lent)",
+          "The dome shape mirrors the Maltese baroque architectural domes",
+          "Pine nuts and cherries are the Maltese pastry signature from Arab influence",
+          "The prinjolata appears only during Carnival — its seasonal rarity makes it precious"
+        ],
+        "description": "Malta's carnival dome cake — crumbled sponge mixed with whipped cream, pine nuts, and lemon zest, molded into a dome, and decorated with chocolate, cherries, and pine nuts. Served only during Carnival season (pre-Lent). The dome shape mirrors Malta's famous baroque church domes. The pine nut and cherry combination traces to Arab-Sicilian pastry influence on the islands."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "mlt-ds-1",
+        "name": "Imqaret (Date Diamonds)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Pastry dough",
+          "Filling: dates, orange peel, anise, cloves",
+          "Oil",
+          "Honey"
+        ],
+        "instructions": [
+          "Cook date filling with spices",
+          "Make pastry, fill, cut diamonds",
+          "Deep fry until golden",
+          "Drizzle with honey"
+        ],
+        "description": "Fried date-filled pastry diamonds drizzled with honey.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Homemade_Imqaret.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Homemade_Imqaret.jpg"
+        }
+      },
+      {
+        "id": "mlt-ds-2",
+        "name": "Qaghaq tal-Għasel (Honey Rings)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Pastry dough (flour, lard, water — traditional short pastry)",
+          "Honey filling: honey, candied peel, anise, cocoa, carob syrup, sesame"
+        ],
+        "instructions": [
+          "Make short pastry with flour and lard — traditional Maltese pastry uses lard",
+          "Prepare honey filling: mix honey with candied citrus peel, anise, cocoa, carob syrup, sesame seeds",
+          "The filling is very complex — many components",
+          "Pipe filling into a pastry tube, seal the edges",
+          "Shape into a ring",
+          "Bake until lightly golden",
+          "The ring shape means the honey filling is inside the complete pastry loop",
+          "Qaghaq tal-għasel is Malta's ancient Christmas pastry",
+          "The Arabic-influenced filling (honey, anise, sesame) reflects Arab rule of Malta 870-1091 CE",
+          "The rings are exchanged as gifts at Christmas",
+          "Every Maltese family has their specific honey ring recipe — closely guarded"
+        ],
+        "description": "Malta's Christmas honey ring — short pastry filled with a complex honey-anise-cocoa-carob-sesame filling, baked into a ring. The filling reflects Arab rule of Malta (870-1091 CE): honey, anise, sesame, and citrus are all Arab pastry elements. Exchanged as Christmas gifts. Every family's specific honey filling recipe is a closely guarded secret.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG"
+        }
+      },
+      {
+        "id": "mlt-ds-3",
+        "name": "Kannoli tal-Irkotta (Ricotta Pastry)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Pastry shell: flour, lard, Marsala wine",
+          "Ricotta filling: sheep's milk ricotta, sugar, dark chocolate chips, candied orange peel",
+          "Powdered sugar for dusting"
+        ],
+        "instructions": [
+          "Make the pastry dough with flour, lard, Marsala wine — the wine adds complexity",
+          "Roll and cut into circles",
+          "Roll around metal forms (or improvise with dowels)",
+          "Fry the rolled pastry until golden and crispy — they puff and blister",
+          "Cool on the forms, then slide off",
+          "Maltese kannoli come directly from Sicily — the Arab-influenced fried pastry",
+          "But the Maltese filling uses sheep's ricotta (not cow's) — milder, creamier",
+          "Fill just before serving — the pastry softens quickly in contact with the ricotta",
+          "The chocolate chip and candied orange peel are traditional additions",
+          "The Sicilian-Maltese cultural exchange in pastry: which came first, Malta or Sicily?"
+        ],
+        "description": "Malta's sicilian-inherited fried pastry — fried pastry tubes filled with sweetened sheep's milk ricotta, chocolate chips, and candied orange peel. Malta's shared history with Sicily is written in pastry: both make kannoli, but Malta's uses sheep's milk ricotta (milder, creamier). Fill only at serving — the crispy shell softens within minutes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vegetables_Malta.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "mlt-dr-1",
+        "name": "Kinnie",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Kinnie soda (bitter orange and herbs)",
+          "Ice",
+          "Orange slice"
+        ],
+        "instructions": [
+          "Pour over ice",
+          "Garnish with orange"
+        ],
+        "description": "Malta's signature bitter orange soft drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kinnie_bottle_and_glass.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kinnie_bottle_and_glass.jpg"
+        }
+      },
+      {
+        "id": "mlt-dr-2",
+        "name": "Ġellewża Wine",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Maltese Ġellewża grape wine"
+        ],
+        "instructions": [
+          "Serve at room temperature",
+          "Pair with rabbit stew"
+        ],
+        "description": "Indigenous Maltese red wine grape — fruity and earthy."
+      },
+      {
+        "id": "mlt-dr-3",
+        "name": "Kinnie (Bittersweet Orange Soda)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Kinnie (Malta's national soft drink — commercially produced)",
+          "Ice",
+          "Slice of orange",
+          "Optional: gin (the Kinnie G&T is popular)"
+        ],
+        "instructions": [
+          "Kinnie is Malta's national non-alcoholic beverage — produced since 1952",
+          "Made with bitter oranges and aromatic herbs — the recipe is a closely guarded secret",
+          "The flavor: bittersweet orange with herbal undertones — between Aperol and bitter lemon",
+          "Serve over ice with an orange slice",
+          "The Kinnie G&T: mix with gin — a very popular Maltese sundowner",
+          "It was created to give Malta a national drink identity",
+          "Now it defines Maltese refreshment — ordered everywhere in summer",
+          "The bittersweet flavor is polarizing for visitors but deeply nostalgic for Maltese people",
+          "Kinnie is also used in desserts and cocktails",
+          "Malta without Kinnie is like France without Pastis"
+        ],
+        "description": "Malta's national soda — a bittersweet orange-and-herb drink produced since 1952, Malta's answer to having its own national soft drink identity. The exact formula is secret; the flavor sits between bitter lemon and Aperol. Polarizing for visitors, deeply nostalgic for Maltese people. Also paired with gin as the Maltese G&T.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kinnie_bottle_and_glass.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Kinnie_bottle_and_glass.jpg"
+        }
+      }
+    ]
+  }
+}

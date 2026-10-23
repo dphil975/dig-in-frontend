@@ -1,0 +1,525 @@
+{
+  "botswanaRecipes": {
+    "country": "Botswana",
+    "region": "Southern Africa",
+    "breakfast": [
+      {
+        "id": "bwa-bf-1",
+        "name": "Bogobe (Sorghum Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups sorghum flour",
+          "4 cups water",
+          "1 tsp salt",
+          "Milk",
+          "Sugar or honey"
+        ],
+        "instructions": [
+          "Boil water with salt",
+          "Slowly stir in sorghum flour",
+          "Reduce heat, stir 15 min",
+          "Cook until thick and smooth",
+          "Serve with milk and sugar or honey"
+        ],
+        "description": "Traditional sorghum porridge — Botswana's daily breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg"
+        }
+      },
+      {
+        "id": "bwa-bf-2",
+        "name": "Fat Cakes (Magwinya)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1 tsp yeast",
+          "2 tbsp sugar",
+          "1/2 tsp salt",
+          "Warm water",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Mix flour, yeast, sugar, salt",
+          "Add warm water to form soft dough",
+          "Rise 1 hour until doubled",
+          "Shape into balls",
+          "Deep fry until golden brown",
+          "Serve warm with butter or jam"
+        ],
+        "description": "Puffy fried dough balls — beloved across Botswana.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg"
+        }
+      },
+      {
+        "id": "bwa-bf-3",
+        "name": "Magwinya (Fat Cakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "2 tsp baking powder",
+          "2 tbsp sugar",
+          "Pinch salt",
+          "Warm water",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Mix flour, baking powder, sugar, salt",
+          "Add warm water to form soft, slightly sticky dough",
+          "Cover, rest 30 min",
+          "Shape into balls",
+          "Deep fry in hot oil until golden and puffy",
+          "Drain on paper — they should be light inside"
+        ],
+        "description": "Puffy golden fried dough — sold at every bus stop and market in Botswana. Eaten plain, with butter, or filled with mince.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "bwa-ln-1",
+        "name": "Seswaa (Shredded Beef)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 180,
+        "ingredients": [
+          "1kg beef (bone-in)",
+          "1 onion",
+          "Salt and pepper",
+          "Water"
+        ],
+        "instructions": [
+          "Place beef in pot with onion",
+          "Cover with water",
+          "Simmer on low heat 3 hours until very tender",
+          "Remove bones",
+          "Pound and shred meat with fork",
+          "Season with salt and pepper",
+          "Serve with bogobe or pap"
+        ],
+        "description": "Botswana's national dish — slow-cooked, pounded beef.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Seswaa.jpg",
+        "imageCredit": {
+          "author": "Kalanga",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASeswaa.jpg"
+        }
+      },
+      {
+        "id": "bwa-ln-2",
+        "name": "Morogo (Wild Greens)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "500g wild spinach or amaranth greens",
+          "1 onion (chopped)",
+          "2 tomatoes (chopped)",
+          "1 tbsp oil",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Wash greens thoroughly",
+          "Sauté onion in oil",
+          "Add tomatoes, cook 5 min",
+          "Add greens, cover and cook 10 min",
+          "Season with salt and pepper",
+          "Serve alongside seswaa and pap"
+        ],
+        "description": "Cooked wild greens — an essential side dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amaranthus_thunbergii_1DS-II_1-5841.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amaranthus_thunbergii_1DS-II_1-5841.jpg"
+        }
+      },
+      {
+        "id": "bwa-ln-3",
+        "name": "Dikgobe (Bean and Corn Stew)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "2 cups samp (dried corn kernels, soaked)",
+          "1 cup sugar beans or cowpeas (soaked)",
+          "Salt",
+          "Water"
+        ],
+        "instructions": [
+          "Cook soaked samp in plenty of water, 45 min until almost tender",
+          "Add soaked beans",
+          "Continue cooking until both are soft and creamy",
+          "Season with salt",
+          "The starch makes the broth thick and silky",
+          "Serve as main dish or side"
+        ],
+        "description": "Beans and samp simmered together — Botswana's everyday comfort food. Simple, filling, nourishing."
+      },
+      {
+        "id": "bwa-ln-4",
+        "name": "Seswaa (Pounded Beef)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 240,
+        "ingredients": [
+          "1kg beef (bone-in, fatty cuts preferred — brisket, shin)",
+          "Water",
+          "Salt",
+          "Bones for extra flavor"
+        ],
+        "instructions": [
+          "Place beef and bones in large pot",
+          "Cover with water — just enough, not too much",
+          "Bring to boil, then reduce to low simmer",
+          "Cook 3-4 hours until meat falls off the bone",
+          "Remove bones",
+          "Shred and pound meat with a wooden spoon or fork until it's a soft, fibrous mass",
+          "Season with salt only — no other spices, this is about pure beef flavor",
+          "Serve with pap (stiff maize porridge) and a side of morogo (wild greens)",
+          "This is Botswana's celebration dish — weddings, funerals, national holidays all center on seswaa"
+        ],
+        "description": "Botswana's national dish — slow-boiled beef pounded into tender shreds, served with pap. The simplicity is the point: just meat, water, salt, and time. Went viral when food explorers showed the communal cooking and pounding tradition at Batswana celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Seswaa.jpg",
+        "imageCredit": {
+          "author": "Kalanga",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASeswaa.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "bwa-dn-1",
+        "name": "Dikgobe (Bean and Corn Stew)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "2 cups dried beans (soaked)",
+          "2 cups samp (dried corn kernels, soaked)",
+          "1 onion",
+          "2 tbsp oil",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Cook samp and beans together until tender, about 60 min",
+          "Sauté onion in oil",
+          "Add to beans and corn",
+          "Season with salt and pepper",
+          "Cook until thick and creamy"
+        ],
+        "description": "Hearty stew of beans and corn, eaten with every meal."
+      },
+      {
+        "id": "bwa-dn-2",
+        "name": "Grilled T-Bone with Chakalaka",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "4 T-bone steaks",
+          "Salt and pepper",
+          "For chakalaka: 1 can baked beans, 2 carrots (grated), 1 onion, 1 pepper, 2 tomatoes, curry powder, chili"
+        ],
+        "instructions": [
+          "Season steaks with salt and pepper",
+          "Grill over hot coals to desired doneness",
+          "Make chakalaka: sauté onion, carrots, pepper",
+          "Add tomatoes, curry powder, chili",
+          "Add baked beans, simmer 10 min",
+          "Serve steak with chakalaka and pap"
+        ],
+        "description": "Grilled steak with spicy vegetable-bean relish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Boerewors_raw.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Boerewors_raw.jpg"
+        }
+      },
+      {
+        "id": "bwa-dn-3",
+        "name": "Serobe (Tripe and Intestines Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "1kg tripe (cleaned, chopped)",
+          "Intestines (cleaned)",
+          "1 onion",
+          "Salt",
+          "Water"
+        ],
+        "instructions": [
+          "Clean tripe and intestines very thoroughly",
+          "Boil in salted water for 60-90 min until very tender",
+          "Add onion",
+          "Continue simmering until the broth is rich",
+          "Season well",
+          "Serve with pap — the broth is the best part"
+        ],
+        "description": "Slow-cooked offal stew — traditional Tswana dish served at celebrations and weddings. Nothing is wasted.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Mala_Mogodu01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Mala_Mogodu01.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "bwa-sn-1",
+        "name": "Vetkoek (Fried Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1 tsp yeast",
+          "1 tbsp sugar",
+          "Salt",
+          "Warm water",
+          "Oil for frying",
+          "Mince or jam for filling"
+        ],
+        "instructions": [
+          "Mix dough ingredients, knead",
+          "Rise 1 hour",
+          "Shape into balls, flatten slightly",
+          "Deep fry until golden on both sides",
+          "Split open and fill with mince or jam"
+        ],
+        "description": "Golden fried bread filled with savory mince or sweet jam.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg"
+        }
+      },
+      {
+        "id": "bwa-sn-2",
+        "name": "Biltong (Dried Meat)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "1kg beef (silverside or topside)",
+          "Coarse salt",
+          "Cracked black pepper",
+          "Coriander seeds (toasted, crushed)",
+          "Brown sugar",
+          "Vinegar"
+        ],
+        "instructions": [
+          "Slice beef into thick strips along the grain",
+          "Mix salt, pepper, coriander, sugar",
+          "Dip strips in vinegar briefly",
+          "Coat with spice mixture",
+          "Hang in cool, dry, ventilated area",
+          "Dry 3-5 days until firm but still slightly soft inside",
+          "Slice thin to serve"
+        ],
+        "description": "Air-dried spiced beef — a Southern African tradition. Botswana's version uses plenty of coriander and cracked pepper.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "bwa-ds-1",
+        "name": "Malva Pudding",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "1 cup flour",
+          "1 cup sugar",
+          "1 egg",
+          "1 tbsp apricot jam",
+          "1 tsp baking soda",
+          "1 cup milk",
+          "1 tbsp vinegar",
+          "1 tbsp butter",
+          "Sauce: 1 cup cream, 1/2 cup butter, 1/2 cup sugar, vanilla"
+        ],
+        "instructions": [
+          "Mix flour, sugar, egg, jam",
+          "Dissolve baking soda in milk with vinegar",
+          "Combine, add melted butter",
+          "Bake at 180°C 45 min",
+          "Make sauce: heat cream, butter, sugar",
+          "Pour hot sauce over hot pudding"
+        ],
+        "description": "Warm, spongy pudding drenched in creamy sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Malva_Pudding.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Malva_Pudding.jpg"
+        }
+      },
+      {
+        "id": "bwa-ds-2",
+        "name": "Mosutlhwane (Wild Melon Dessert)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Lerotse/wild melon (peeled, cubed)",
+          "Sugar",
+          "Cinnamon",
+          "Water"
+        ],
+        "instructions": [
+          "Simmer melon cubes in water until very soft",
+          "Mash lightly",
+          "Sweeten with sugar, add cinnamon",
+          "Cook until thick and jammy",
+          "Serve warm or cold"
+        ],
+        "description": "Wild melon cooked into a sweet, thick preserve — harvested from the Kalahari, a taste of Botswana's desert landscape."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "bwa-dr-1",
+        "name": "Ginger Beer (Gemere)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "100g fresh ginger (grated)",
+          "2L water",
+          "1 cup sugar",
+          "2 tbsp cream of tartar",
+          "Yeast"
+        ],
+        "instructions": [
+          "Grate ginger, steep in hot water",
+          "Add sugar and cream of tartar",
+          "Cool, add pinch of yeast",
+          "Bottle and ferment 2 days",
+          "Strain and serve cold"
+        ],
+        "description": "Spicy, fizzy homemade ginger beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg"
+        }
+      },
+      {
+        "id": "bwa-dr-2",
+        "name": "Chibuku (Sorghum Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "2 cups sorghum malt",
+          "1 cup sorghum flour",
+          "Water"
+        ],
+        "instructions": [
+          "Mix sorghum flour with water, cook to porridge",
+          "Cool, add malt",
+          "Let ferment 2-3 days in warm place",
+          "Stir daily",
+          "Strain and serve when mildly alcoholic"
+        ],
+        "description": "Traditional sorghum beer with a thick, porridge-like texture.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Nshima_and_Beef_Relish_from_Proteas_Hotel%2C_Chingola%2C_Zambia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Nshima_and_Beef_Relish_from_Proteas_Hotel%2C_Chingola%2C_Zambia.jpg"
+        }
+      },
+      {
+        "id": "bwa-dr-3",
+        "name": "Ginger Beer (Homemade)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "200g fresh ginger (grated)",
+          "1 cup sugar",
+          "Juice of 2 lemons",
+          "Water",
+          "Pinch of yeast (optional, for fizz)"
+        ],
+        "instructions": [
+          "Grate ginger, steep in hot water 30 min",
+          "Strain, pressing out all liquid",
+          "Add sugar and lemon juice, stir until dissolved",
+          "Top up with cold water",
+          "Add pinch of yeast if you want natural fizz",
+          "Refrigerate overnight, strain again",
+          "Serve ice cold"
+        ],
+        "description": "Fiery homemade ginger beer — refreshing in Botswana's heat. Every family has their own balance of ginger to sugar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Ginger_beer_bottle_assortment.jpg"
+        }
+      }
+    ]
+  }
+}

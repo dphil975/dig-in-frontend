@@ -1,0 +1,736 @@
+{
+  "syriaRecipes": {
+    "country": "Syria",
+    "region": "Middle East",
+    "breakfast": [
+      {
+        "id": "syr-bf-1",
+        "name": "Fatteh (Bread in Yogurt)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Pita bread (toasted)",
+          "Chickpeas (cooked)",
+          "Yogurt",
+          "Tahini",
+          "Garlic",
+          "Lemon",
+          "Pine nuts",
+          "Butter",
+          "Cumin"
+        ],
+        "instructions": [
+          "Toast pita, break into pieces",
+          "Layer bread, chickpeas",
+          "Top with garlicky yogurt-tahini",
+          "Brown pine nuts in butter",
+          "Pour over, dust with cumin"
+        ],
+        "description": "Layered bread, chickpeas, and yogurt — a Damascus classic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg"
+        }
+      },
+      {
+        "id": "syr-bf-2",
+        "name": "Labneh with Olive Oil",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Labneh",
+          "Olive oil",
+          "Za'atar",
+          "Mint",
+          "Bread"
+        ],
+        "instructions": [
+          "Spread labneh on plate",
+          "Drizzle olive oil",
+          "Sprinkle za'atar and mint"
+        ],
+        "description": "Thick strained yogurt with olive oil and za'atar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Labneh01.jpg",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Omernos~commonswiki assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALabneh01.jpg"
+        }
+      },
+      {
+        "id": "syr-bf-3",
+        "name": "Fatteh (Chickpeas with Bread and Yoghurt)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Canned or cooked chickpeas",
+          "Toasted or fried pita bread (broken into pieces)",
+          "Plain yoghurt (thick)",
+          "Tahini sauce (tahini + lemon + garlic)",
+          "Toasted pine nuts",
+          "Cumin, paprika, parsley"
+        ],
+        "instructions": [
+          "Fatteh is the Syrian morning dish of layered chickpeas, bread, and yoghurt",
+          "The bread is toasted or fried -- it provides the crunch",
+          "Chickpeas are placed on the bread",
+          "Yoghurt poured over",
+          "Tahini sauce drizzled over",
+          "Toasted pine nuts on top -- the garnish",
+          "Cumin and paprika as the spice finish",
+          "Eaten warm -- the bread softens as the toppings are added",
+          "Fatteh is a Damascus specialty"
+        ],
+        "description": "Syrian Damascus layered breakfast -- toasted pita pieces topped with chickpeas, thick yoghurt, tahini-lemon-garlic sauce, toasted pine nuts, and cumin. Eaten warm; the bread softens as the toppings are added. A Damascus specialty; each layer adds texture and flavor.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg"
+        }
+      },
+      {
+        "id": "syr-bf-4",
+        "name": "Fuul with Za'atar",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Dried fava beans (cooked soft)",
+          "Olive oil, lemon, garlic",
+          "Za'atar (Syrian herb blend: thyme, sumac, sesame)",
+          "Pita bread"
+        ],
+        "instructions": [
+          "Syrian fuul (fava beans) with za'atar is the Levantine breakfast",
+          "Za'atar: the Syrian herb blend -- dried thyme, sumac, sesame, and salt",
+          "The beans are dressed simply with olive oil and lemon",
+          "Za'atar is sprinkled on or eaten separately with olive oil and bread",
+          "Za'atar dipped bread alongside fuul: the Syrian morning combination"
+        ],
+        "description": "Syrian fava beans with za'atar -- cooked fava beans dressed with olive oil, lemon, and garlic, served alongside za'atar (Syrian herb blend: thyme, sumac, sesame) for dipping bread. The Levantine morning combination."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "syr-ln-1",
+        "name": "Kibbeh (Stuffed Meat Croquettes)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 45,
+        "cookTime": 20,
+        "ingredients": [
+          "Shell: bulgur, lean lamb, onion",
+          "Filling: ground lamb, pine nuts, onion, allspice, cinnamon",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Process shell mixture until smooth",
+          "Make spiced meat-pine nut filling",
+          "Shape shell around filling into oval torpedoes",
+          "Deep fry until dark golden"
+        ],
+        "description": "Syria's culinary masterpiece — crispy bulgur shell, spiced meat within.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kibbeh3.jpg",
+        "imageCredit": {
+          "author": "Bazel",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKibbeh3.jpg"
+        }
+      },
+      {
+        "id": "syr-ln-2",
+        "name": "Mahshi (Stuffed Vegetables)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 60,
+        "cookTime": 60,
+        "ingredients": [
+          "Zucchini, eggplant, peppers, vine leaves",
+          "Filling: rice, lamb, tomato paste, allspice, cinnamon, mint",
+          "Yogurt or tomato sauce"
+        ],
+        "instructions": [
+          "Hollow vegetables",
+          "Make filling",
+          "Stuff tightly",
+          "Pack in pot with sauce",
+          "Simmer 60 min"
+        ],
+        "description": "Assorted stuffed vegetables.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Speca_te_mbushura_me_mish.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Speca_te_mbushura_me_mish.JPG"
+        }
+      },
+      {
+        "id": "syr-ln-3",
+        "name": "Mulukhiyah (Jute Leaf Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Mulukhiyah leaves (jute mallow -- dried or fresh)",
+          "Chicken or lamb broth",
+          "Garlic, coriander (fresh, fried in ghee)",
+          "Lemon, rice"
+        ],
+        "instructions": [
+          "Mulukhiyah is one of the oldest dishes in the world",
+          "Eaten in ancient Egypt and across the Levant for millennia",
+          "The jute mallow leaves (Corchorus olitorius) -- intensely green",
+          "The distinctive texture: mucilaginous, thick, silky",
+          "The garlic-coriander fry (takliya) is added to the soup at the end",
+          "The takliya sizzles in the soup -- the sound and fragrance are the signature",
+          "Served over rice with the chicken that was used for the broth"
+        ],
+        "description": "Syrian ancient jute leaf soup -- mulukhiyah (Corchorus olitorius: eaten since ancient Egypt), jute leaves cooked in chicken broth until thick and silky, finished with a sizzling garlic-coriander takliya. The takliya sound and fragrance are the signature. Served over rice with the boiled chicken.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Molokheya_Egypt%2C_2012.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Molokheya_Egypt%2C_2012.JPG"
+        }
+      },
+      {
+        "id": "syr-ln-4",
+        "name": "Shawarma",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Lamb or chicken (marinated with shawarma spices: cumin, coriander, turmeric, cinnamon, allspice)",
+          "Arabic flatbread",
+          "Tomato, parsley, onion (pickled)",
+          "Garlic sauce (toum) or tahini",
+          "French fries (optional)"
+        ],
+        "instructions": [
+          "Shawarma is the Levantine roasted meat wrap -- the ancestor of the Turkish doner kebab",
+          "Meat marinated in warm spices, stacked onto a vertical spit and slow-roasted",
+          "The spit rotates continuously -- the outside cooks while the inside stays raw",
+          "Sliced thin from the outside as it cooks",
+          "Wrapped in flatbread with vegetables and sauces",
+          "Syria is one of the birthplaces of shawarma culture"
+        ],
+        "description": "Syrian Levantine spit-roasted meat wrap -- lamb or chicken marinated in shawarma spices (cumin, coriander, cinnamon, allspice), stacked on a vertical rotating spit, outer layer sliced and wrapped in flatbread with tomato, parsley, and toum (garlic sauce). Syria is a birthplace of shawarma culture.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Shawarma_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Shawarma_2.jpg"
+        }
+      },
+      {
+        "id": "syr-ln-5",
+        "name": "Kibbeh (Bulgur and Lamb)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Bulgur wheat (fine)",
+          "Minced lamb",
+          "Onion, allspice, cinnamon, black pepper",
+          "Pine nuts, raisins (for the filling)",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Kibbeh is the quintessential Levantine dish -- Syria, Lebanon, Jordan all claim it",
+          "Outer shell: bulgur wheat mixed with minced lamb and spices",
+          "Inner filling: cooked minced lamb with pine nuts and raisins",
+          "The technique: a hollow shell of the bulgur-lamb mixture, filled, sealed, and fried",
+          "The raw kibbeh (kibbeh nayyeh): eaten raw like steak tartare -- a Syrian delicacy",
+          "Baked kibbeh in a tray (kibbeh bel sanieh): the large baked version",
+          "Each Syrian family has its kibbeh technique"
+        ],
+        "description": "Syrian bulgur-lamb croquette -- outer shell of bulgur wheat and minced lamb encasing an inner filling of spiced lamb, pine nuts, and raisins, fried crispy. The raw version (kibbeh nayyeh) is eaten like steak tartare. Syria, Lebanon, and Jordan all claim kibbeh; each Syrian family has its own technique.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kibbeh3.jpg",
+        "imageCredit": {
+          "author": "Bazel",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKibbeh3.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "syr-dn-1",
+        "name": "Fattoush (Bread Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Pita bread (fried)",
+          "Romaine lettuce",
+          "Tomatoes",
+          "Cucumber",
+          "Radishes",
+          "Mint",
+          "Parsley",
+          "Sumac",
+          "Pomegranate molasses",
+          "Olive oil",
+          "Lemon"
+        ],
+        "instructions": [
+          "Fry pita pieces until crispy",
+          "Chop all vegetables and herbs",
+          "Make sumac-pomegranate dressing",
+          "Toss everything together"
+        ],
+        "description": "Tangy bread salad with sumac and pomegranate.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Fattoush_mixed-salad.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Fattoush_mixed-salad.jpg"
+        }
+      },
+      {
+        "id": "syr-dn-2",
+        "name": "Shawarma",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "500g lamb or chicken (thin sliced)",
+          "Yogurt marinade: garlic, cumin, coriander, paprika, turmeric, lemon",
+          "Pita bread",
+          "Tahini sauce",
+          "Pickles",
+          "Tomatoes"
+        ],
+        "instructions": [
+          "Marinate meat in spiced yogurt",
+          "Stack on vertical spit or layer in pan",
+          "Roast, shave thin slices",
+          "Serve in pita with tahini, pickles, tomatoes"
+        ],
+        "description": "Spiced, spit-roasted meat in pita with tahini.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Shawarma_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Shawarma_2.jpg"
+        }
+      },
+      {
+        "id": "syr-dn-3",
+        "name": "Mansaf (Lamb in Yoghurt Sauce)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Whole lamb pieces (bone-in)",
+          "Jameed (dried fermented goat milk -- reconstituted)",
+          "Flatbread (for the base)",
+          "Rice, pine nuts",
+          "Fresh parsley"
+        ],
+        "instructions": [
+          "Mansaf is the Jordanian and southern Syrian national dish",
+          "The defining element: jameed -- dried, fermented goat milk reconstituted into a sauce",
+          "The jameed gives a pungent, tangy, deeply savory flavor",
+          "The lamb is poached in the jameed broth",
+          "Served on a bed of flatbread layered with rice",
+          "Eaten communally from a large platter -- with the right hand only",
+          "Mansaf is the dish of celebration, hospitality, and Bedouin heritage"
+        ],
+        "description": "Syrian-Jordanian Bedouin feast dish -- whole lamb poached in jameed (dried fermented goat milk reconstituted into a pungent, tangy sauce), served on a platter of flatbread and rice with pine nuts. Eaten communally with the right hand. The dish of celebration, hospitality, and Bedouin heritage.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mansaf%2C_the_traditional_dish_of_Jordan.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mansaf%2C_the_traditional_dish_of_Jordan.jpg"
+        }
+      },
+      {
+        "id": "syr-dn-4",
+        "name": "Samke Harra (Spiced Baked Fish)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "Whole fish (sea bass or snapper)",
+          "Tahini sauce",
+          "Walnuts, pine nuts",
+          "Chilli, coriander, lemon",
+          "Onion (caramelized)"
+        ],
+        "instructions": [
+          "Samke harra is the Syrian and Lebanese spiced fish dish",
+          "The fish is baked or grilled",
+          "Covered with a tahini-walnut-chilli sauce",
+          "The sauce: tahini, lemon, garlic, coriander, chilli, walnuts",
+          "A complex, rich, spiced sauce over the delicate fish",
+          "Aleppo pepper (the Syrian mild, fruity chilli) is traditional"
+        ],
+        "description": "Syrian spiced baked fish -- whole fish baked or grilled, covered with a sauce of tahini, walnuts, coriander, Aleppo pepper (the Syrian mild fruity chilli), and lemon. Complex, rich, spiced against the delicate fish."
+      },
+      {
+        "id": "syr-dn-5",
+        "name": "Maqluba (Upside-Down Rice)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Rice",
+          "Chicken or lamb",
+          "Eggplant, cauliflower, potato (fried)",
+          "Onion, garlic",
+          "Allspice, cinnamon, turmeric, coriander",
+          "Fried pine nuts (for topping)"
+        ],
+        "instructions": [
+          "Maqluba means upside-down in Arabic",
+          "The dish is cooked in a pot with the rice on top",
+          "Then dramatically flipped onto a platter -- the reveal",
+          "The reveal: the layered vegetables and meat appear on top",
+          "The rice is on the bottom of the pot but the top of the platter",
+          "Eaten in Palestine, Jordan, Syria, and Lebanon",
+          "The dramatic flip is the ceremony of maqluba"
+        ],
+        "description": "Syrian Palestinian upside-down rice -- fried eggplant, cauliflower, and potato layered with meat and spiced rice in a pot, then flipped dramatically onto a platter (the reveal). Maqluba means upside-down. The layers appear reversed: vegetables and meat on top, rice below. Shared across the Levant.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Makluba.JPG",
+        "imageCredit": {
+          "author": "Arafataslan",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMakluba.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "syr-sn-1",
+        "name": "Muhammara (Pepper-Walnut Dip)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Roasted red peppers",
+          "Walnuts",
+          "Breadcrumbs",
+          "Pomegranate molasses",
+          "Cumin",
+          "Chili",
+          "Olive oil",
+          "Lemon"
+        ],
+        "instructions": [
+          "Blend all ingredients to thick paste",
+          "Drizzle with olive oil",
+          "Serve with bread"
+        ],
+        "description": "Aleppo's famous roasted pepper and walnut dip.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg"
+        }
+      },
+      {
+        "id": "syr-sn-2",
+        "name": "Muhammara (Red Pepper Walnut Paste)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Roasted red peppers",
+          "Walnuts (ground)",
+          "Pomegranate molasses",
+          "Breadcrumbs",
+          "Cumin, Aleppo pepper",
+          "Olive oil, lemon"
+        ],
+        "instructions": [
+          "Muhammara is the Syrian red pepper and walnut paste",
+          "An Aleppo specialty -- from the great Syrian city of Aleppo",
+          "Roasted red peppers ground with walnuts",
+          "Pomegranate molasses: the Syrian sour-sweet accent",
+          "Aleppo pepper: the mild, fruity, slightly hot Syrian chilli",
+          "Eaten as a dip or condiment"
+        ],
+        "description": "Syrian Aleppo red pepper and walnut paste -- roasted peppers blended with ground walnuts, pomegranate molasses (the Syrian sour-sweet), Aleppo pepper (mild, fruity, the Syrian chilli), and cumin. An Aleppo specialty. Eaten as a dip with bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg"
+        }
+      },
+      {
+        "id": "syr-sn-3",
+        "name": "Labneh (Strained Yoghurt)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Full-fat plain yoghurt (strained through cheesecloth overnight)",
+          "Olive oil (to serve)",
+          "Za'atar, fresh mint (to garnish)",
+          "Olives"
+        ],
+        "instructions": [
+          "Labneh is the Levantine strained yoghurt -- a cheese made by draining yoghurt",
+          "Left to drain for 24-48 hours -- the whey drips out, the solids remain",
+          "The result: thick, slightly sour, creamy -- like cream cheese but tangier",
+          "Drizzled with olive oil and za'atar",
+          "Eaten as a mezze dish or for breakfast",
+          "Rolled into balls and stored in olive oil for longer preservation"
+        ],
+        "description": "Syrian strained yoghurt -- full-fat yoghurt drained through cheesecloth for 24-48 hours until thick and creamy, drizzled with olive oil and za'atar. Tangier than cream cheese. Eaten as a mezze or breakfast spread. Rolled in balls and stored in olive oil for preservation.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Labneh01.jpg",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Omernos~commonswiki assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALabneh01.jpg"
+        }
+      },
+      {
+        "id": "syr-sn-4",
+        "name": "Baba Ghanoush",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Eggplant (whole, roasted over fire)",
+          "Tahini",
+          "Lemon juice, garlic",
+          "Olive oil",
+          "Parsley, pomegranate seeds"
+        ],
+        "instructions": [
+          "Baba ghanoush is the Levantine fire-roasted eggplant dip",
+          "The eggplant is charred over an open flame",
+          "The skin chars and the interior becomes soft and smoky",
+          "Peeled, blended with tahini, lemon, and garlic",
+          "The smoky flavor from the charring is the defining element",
+          "Served with bread as a mezze"
+        ],
+        "description": "Syrian fire-roasted eggplant dip -- whole eggplant charred over open flame until the skin is black and the interior is soft and smoky, blended with tahini, lemon, and garlic. The char is the defining element. Served as mezze with bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "syr-ds-1",
+        "name": "Baklava (Syrian Style)",
+        "difficulty": "Hard",
+        "servings": 24,
+        "prepTime": 45,
+        "cookTime": 40,
+        "ingredients": [
+          "Filo pastry",
+          "Pistachios",
+          "Butter",
+          "Sugar syrup with rose water and orange blossom"
+        ],
+        "instructions": [
+          "Layer buttered filo in pan",
+          "Add ground pistachios between layers",
+          "Cut diamond shapes",
+          "Bake at 175°C until golden",
+          "Pour cold syrup over hot baklava"
+        ],
+        "description": "Syrian pistachio baklava — the Levantine original.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png",
+        "imageCredit": {
+          "author": "Sakaman",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABaklava%281%29.png"
+        }
+      },
+      {
+        "id": "syr-ds-2",
+        "name": "Baklawa (Syrian Baklava)",
+        "difficulty": "Hard",
+        "servings": 24,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Filo pastry sheets",
+          "Clarified butter (for brushing)",
+          "Pistachio or walnut filling",
+          "Sugar syrup with rosewater and orange blossom water"
+        ],
+        "instructions": [
+          "Syrian baklawa is the original baklava -- from Damascus, one of the oldest baklava traditions",
+          "The Syrian version uses rosewater and orange blossom water in the syrup",
+          "The flowers are the Syrian flavor",
+          "Filled with pistachios (the Aleppo and Damascus variety)",
+          "Paper-thin filo with generous nut filling",
+          "The syrup: cool syrup poured over hot baklawa -- or hot over cold"
+        ],
+        "description": "Syrian flower-water baklawa -- paper-thin filo brushed with clarified butter, filled with pistachios, baked, and drenched in rosewater-orange blossom syrup. Damascus is one of the oldest baklava traditions. The rosewater and orange blossom are the Syrian distinction.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png",
+        "imageCredit": {
+          "author": "Sakaman",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABaklava%281%29.png"
+        }
+      },
+      {
+        "id": "syr-ds-3",
+        "name": "Maamoul (Date or Nut Cookies)",
+        "difficulty": "Hard",
+        "servings": 30,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Semolina and flour dough (with butter, rose water)",
+          "Filling: dates (medjool), OR walnuts with sugar and cinnamon, OR pistachios",
+          "Icing sugar (for dusting)"
+        ],
+        "instructions": [
+          "Maamoul are the Syrian and Levantine Easter and Eid cookies",
+          "Semolina-based dough that is buttery and crumbly",
+          "Filled with dates, walnuts, or pistachios",
+          "Pressed into wooden molds (talibs) that imprint the pattern",
+          "The pattern identifies the filling: different mold = different filling",
+          "Made in huge batches before Easter (Syrian Christians) and Eid (Syrian Muslims)",
+          "Shared across religious communities -- a unifying Syrian food"
+        ],
+        "description": "Syrian celebration stuffed cookies -- semolina-butter dough pressed into carved wooden molds (talibs that imprint patterns), filled with dates, walnuts, or pistachios, dusted with icing sugar. Made for both Easter (Syrian Christians) and Eid (Syrian Muslims): a unifying Syrian food. The mold pattern identifies the filling.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mamoul_biscotti_libanesi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mamoul_biscotti_libanesi.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "syr-dr-1",
+        "name": "Jallab",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Jallab syrup (date, grape molasses, rose water)",
+          "Water",
+          "Pine nuts",
+          "Raisins",
+          "Ice"
+        ],
+        "instructions": [
+          "Mix jallab syrup with cold water",
+          "Pour over ice",
+          "Float pine nuts and raisins on top"
+        ],
+        "description": "Sweet, smoky date-and-rose drink — a Damascus Ramadan staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Jallab.jpg",
+        "imageCredit": {
+          "author": "Adam Jung",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJallab.jpg"
+        }
+      },
+      {
+        "id": "syr-dr-2",
+        "name": "Ayran",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Yogurt",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Whisk yogurt with cold water and salt",
+          "Serve chilled"
+        ],
+        "description": "Salty yogurt drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Fresh_ayran.jpg"
+        }
+      },
+      {
+        "id": "syr-dr-3",
+        "name": "Arak (Anise Spirit)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Arak (Syrian anise spirit -- distilled from grapes and anise seeds)",
+          "Water (to dilute -- essential)",
+          "Ice"
+        ],
+        "instructions": [
+          "Arak is the Levantine anise spirit -- the ancestor of pastis, ouzo, and raki",
+          "Distilled from grapes with anise seeds",
+          "Clear in the bottle -- turns white when water is added (the louche effect)",
+          "The louche: the oils in the anise become suspended as the alcohol dilutes",
+          "Always drunk diluted with water (1:1 to 1:3 arak-to-water)",
+          "Syrian arak from the Bekaa Valley grapes",
+          "Drunk slowly at the mezze table -- arak accompanies the meal, not just the pre-meal"
+        ],
+        "description": "Syrian anise spirit -- arak, distilled from grapes and anise seeds, turns milky white when water is added (the louche effect: anise oils suspended in dilution). Always diluted 1:1 or 1:3 with water. The Levantine ancestor of ouzo, pastis, and raki. Drunk slowly at the mezze table.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Arak_with_water_and_ice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Arak_with_water_and_ice.jpg"
+        }
+      }
+    ]
+  }
+}

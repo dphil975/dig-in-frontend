@@ -1,0 +1,830 @@
+{
+  "lithuaniaRecipes": {
+    "country": "Lithuania",
+    "region": "Northern Europe",
+    "breakfast": [
+      {
+        "id": "ltu-bf-1",
+        "name": "Šaltibarščiai (Cold Beet Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Beets (cooked, grated)",
+          "Kefir",
+          "Cucumbers",
+          "Dill",
+          "Hard-boiled eggs",
+          "Green onion",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Mix grated beets with kefir",
+          "Add diced cucumbers, eggs, dill, onion",
+          "Chill well, serve with sour cream",
+          "Eat with hot boiled potatoes on the side"
+        ],
+        "description": "Vivid pink cold beet soup — Lithuania's summer dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lurid_borscht.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lurid_borscht.jpg"
+        }
+      },
+      {
+        "id": "ltu-bf-2",
+        "name": "Varškėčiai (Curd Pancakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "500g curd/farmer's cheese",
+          "1 egg",
+          "3 tbsp flour",
+          "Sugar",
+          "Vanilla",
+          "Butter",
+          "Sour cream",
+          "Berry jam"
+        ],
+        "instructions": [
+          "Mix curd with egg, flour, sugar",
+          "Shape into patties",
+          "Fry in butter until golden",
+          "Serve with sour cream and jam"
+        ],
+        "description": "Sweet curd cheese pancakes — a Lithuanian breakfast tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Syrniki6.jpg",
+        "imageCredit": {
+          "author": "Tatyana Morozyuk, color processing by Off-shell",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASyrniki6.jpg"
+        }
+      },
+      {
+        "id": "ltu-bf-3",
+        "name": "Keptiniai (Fried Curd Fritters)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Farmer's curd or dry cottage cheese",
+          "Flour",
+          "Eggs",
+          "Sugar, vanilla",
+          "Salt",
+          "Butter for frying",
+          "Sour cream or jam"
+        ],
+        "instructions": [
+          "Mix curd with egg, flour, sugar, vanilla, salt",
+          "Form into small thick rounds or ovals",
+          "Fry in butter over medium heat — low enough to cook through",
+          "The exterior should be golden, the interior soft and slightly tangy",
+          "Serve with sour cream and jam",
+          "Keptiniai are Lithuania's curd fritters — similar to Russian syrniki",
+          "The Baltic dairy culture: fermented dairy, curd, sour cream are the foundation",
+          "Lithuanian curd fritters are tangier and denser than Russian versions",
+          "The sour cream accompaniment is non-negotiable",
+          "A simple, deeply satisfying breakfast from Baltic dairy tradition"
+        ],
+        "description": "Lithuania's curd fritters — farmer's curd mixed with egg, flour, and vanilla, fried in butter until golden. Similar to Russian syrniki but tangier from Baltic-style curd. The sour cream accompaniment is non-negotiable. Baltic dairy culture (fermented dairy at every meal) is expressed in its simplest form."
+      },
+      {
+        "id": "ltu-bf-4",
+        "name": "Blynai (Lithuanian Buckwheat Pancakes)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Buckwheat flour (some versions use kefir or buttermilk)",
+          "Kefir or buttermilk",
+          "Eggs",
+          "Salt, sugar",
+          "Baking soda",
+          "Butter for frying",
+          "Sour cream, jam, or honey"
+        ],
+        "instructions": [
+          "Mix buckwheat flour with kefir — let rest 10 minutes",
+          "The kefir reacts with baking soda — slight fizz",
+          "Add eggs, salt, sugar",
+          "Thin to pancake consistency",
+          "Fry in butter — thin, like crepes or slightly thicker",
+          "Buckwheat gives a nutty, earthy flavor different from wheat pancakes",
+          "The kefir tang adds to the buckwheat depth",
+          "The combination of buckwheat and sour cream is distinctly Baltic-Slavic",
+          "Lithuanian blynai are used for savory and sweet fillings",
+          "The buckwheat-kefir combination is specifically Lithuanian"
+        ],
+        "description": "Lithuania's buckwheat pancakes — thin crêpe-like pancakes made from buckwheat flour and kefir (both fermented elements giving depth), fried in butter. The buckwheat gives earthy, nutty flavor; the kefir adds tang. Served sweet with jam and sour cream or savory with cheese or mushrooms. The double fermentation (buckwheat, kefir) is the Baltic flavor approach.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "ltu-ln-1",
+        "name": "Cepelinai (Potato Dumplings)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 45,
+        "cookTime": 30,
+        "ingredients": [
+          "Potatoes (grated and boiled, mixed)",
+          "Filling: meat, curd, or mushroom",
+          "Potato starch",
+          "Bacon bits",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Grate raw potatoes, drain starch",
+          "Mix with mashed potatoes and starch",
+          "Shape around meat filling",
+          "Boil 20-25 min in salted water",
+          "Top with bacon bits and sour cream"
+        ],
+        "description": "Lithuania's national dish — giant potato dumplings shaped like zeppelins.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg"
+        }
+      },
+      {
+        "id": "ltu-ln-2",
+        "name": "Bulviniai Blynai (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "6 potatoes (grated)",
+          "1 onion",
+          "Egg",
+          "Salt",
+          "Bacon",
+          "Sour cream",
+          "Oil"
+        ],
+        "instructions": [
+          "Grate potatoes and onion, drain",
+          "Mix with egg and salt",
+          "Fry spoonfuls until crispy",
+          "Top with crumbled bacon and sour cream"
+        ],
+        "description": "Crispy potato pancakes with bacon and sour cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg"
+        }
+      },
+      {
+        "id": "ltu-ln-3",
+        "name": "Šaltiena (Head Cheese)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "Pig's head (or trotters, ears)",
+          "Onion, carrot",
+          "Bay leaves, black pepper, allspice",
+          "Garlic",
+          "Salt",
+          "Parsley, dill"
+        ],
+        "instructions": [
+          "Simmer pig's head or trotters for 2-3 hours until meat falls off the bone",
+          "The long cooking extracts the collagen — which sets the terrine",
+          "Remove meat, strain broth",
+          "Pick all meat from the bones — mix with diced carrot, garlic, herbs",
+          "Pour into molds with the strained broth",
+          "Refrigerate overnight — the collagen sets into a firm terrine",
+          "Slice and serve cold with horseradish, mustard, or pickles",
+          "Šaltiena is Lithuania's head cheese — the most traditional charcuterie",
+          "It represents the Baltic philosophy: use the whole animal, waste nothing",
+          "The wobbling, translucent aspic terrine is old Baltic cooking aesthetics"
+        ],
+        "description": "Lithuania's head cheese terrine — pig's head simmered until the collagen releases, meat picked and set in the fragrant broth that gels overnight. The wobbling, translucent aspic terrine is old Baltic cooking. Served cold with horseradish and pickles, šaltiena represents the use-every-part philosophy of Baltic peasant cooking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Regel_Krusha_from_Bney_Brak.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Regel_Krusha_from_Bney_Brak.jpg"
+        }
+      },
+      {
+        "id": "ltu-ln-4",
+        "name": "Rūkytos Dešros (Smoked Sausages)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Ground pork (70/30 fat ratio)",
+          "Garlic, marjoram",
+          "Black pepper, allspice",
+          "Salt, sugar (for smoking)",
+          "Pork casing",
+          "Oak or alder wood for smoking"
+        ],
+        "instructions": [
+          "Mix ground pork with garlic, marjoram, allspice, salt, sugar",
+          "Stuff into pork casing — firm but not tight",
+          "Tie into loops",
+          "Cold smoke over oak or alder for 2-3 hours — temperature matters",
+          "Then hot smoke or boil to finish cooking",
+          "The smoke gives color, flavor, and preservation",
+          "Cool and dry — they firm up after smoking",
+          "Lithuanian smoked sausages are among the most prized in Baltic charcuterie",
+          "The marjoram-garlic combination is Lithuanian sausage's signature spice profile",
+          "Smoking over specific wood types is a generational knowledge"
+        ],
+        "description": "Lithuania's smoked sausages — pork seasoned with marjoram and garlic, cold-smoked over oak until deep mahogany, then finished. The marjoram-garlic spice profile is distinctly Lithuanian; the cold-smoke technique over specific wood is generational knowledge. Baltic smoked meats are among Central Europe's finest charcuterie."
+      },
+      {
+        "id": "ltu-ln-5",
+        "name": "Žemaitiška Balta Rūpytinė (Žemaitija Sour Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Barley flour or coarse barley",
+          "Sour milk or kefir",
+          "Water",
+          "Salt",
+          "Butter",
+          "Optional: smoked pork"
+        ],
+        "instructions": [
+          "Bring water to a boil",
+          "Add barley flour or groats gradually while stirring",
+          "Add sour milk or kefir — the sourness is the flavor point",
+          "Cook until very thick and porridge-like",
+          "Season with salt, finish with butter",
+          "The sour milk makes this distinctly Baltic — not like sweet porridges",
+          "Serve with additional sour cream or smoked pork",
+          "Žemaitija is a region in western Lithuania known for preserving the oldest food traditions",
+          "Rūpytinė is the oldest porridge — eaten before rye bread was widespread",
+          "The sour-grain-butter combination is the foundation of Lithuanian rural eating"
+        ],
+        "description": "Lithuania's oldest porridge — barley cooked with sour milk until thick and tangy. From Žemaitija region, which preserves Lithuania's oldest food traditions. Pre-dates rye bread as the primary caloric staple. The sour milk tang and the grain-butter warmth are the foundation of Baltic rural food culture."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "ltu-dn-1",
+        "name": "Kibinai (Meat Pastries)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "Dough: flour, butter, sour cream, egg",
+          "Filling: mutton, onion, salt, pepper, water"
+        ],
+        "instructions": [
+          "Make rich pastry dough",
+          "Make juicy mutton filling",
+          "Fill half-circles, crimp edges decoratively",
+          "Bake at 200°C 25 min"
+        ],
+        "description": "Karaim-origin mutton pastries — a Lithuanian delicacy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/02017_0065_Litauische_Kibinai_in_Schlesien.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/02017_0065_Litauische_Kibinai_in_Schlesien.jpg"
+        }
+      },
+      {
+        "id": "ltu-dn-2",
+        "name": "Kugelis (Potato Pudding)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "8 potatoes (grated)",
+          "200g bacon",
+          "1 onion",
+          "Eggs",
+          "Milk",
+          "Salt",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Grate potatoes, squeeze moisture",
+          "Fry bacon with onion",
+          "Mix all ingredients",
+          "Bake in greased dish at 190°C 60 min",
+          "Serve with sour cream"
+        ],
+        "description": "Baked potato pudding — Lithuanian comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kugelis_2012.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kugelis_2012.jpg"
+        }
+      },
+      {
+        "id": "ltu-dn-3",
+        "name": "Bigosy (Lithuanian Bigos)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 90,
+        "ingredients": [
+          "Sauerkraut",
+          "Fresh cabbage",
+          "Mixed meats: pork, smoked pork, sausage, optional venison or mushrooms",
+          "Tomato paste",
+          "Bay leaves, allspice, black pepper",
+          "Wine (optional)"
+        ],
+        "instructions": [
+          "Dice all meats — they should be varied in texture and smokiness",
+          "Saute onion, add meats and brown slightly",
+          "Add sauerkraut and fresh cabbage",
+          "Add tomato paste, bay, allspice",
+          "Add wine or water, simmer low and slow — 60-90 minutes",
+          "Bigos improves with time — made the day before it's best",
+          "The flavors meld: sweet fresh cabbage, tart sauerkraut, smoky meat",
+          "Season — needs more salt than you expect",
+          "Bigos is shared across Lithuania, Poland, and Belarus — each claims it",
+          "Lithuanian bigos tends to be drier and smokier than Polish versions"
+        ],
+        "description": "Lithuania's hunter's stew — sauerkraut and fresh cabbage slow-braised with mixed smoked meats for hours until unified. Shared across Lithuania, Poland, and Belarus (each claims it). Lithuanian bigos runs drier and smokier than Polish versions. Improves over 2-3 days of reheating — the intended way to eat it."
+      },
+      {
+        "id": "ltu-dn-4",
+        "name": "Vėdarai (Stuffed Potato Sausage)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 45,
+        "cookTime": 60,
+        "ingredients": [
+          "Pig intestines (casing)",
+          "Grated raw potato",
+          "Onion, pork fat",
+          "Salt, pepper, marjoram",
+          "Garlic"
+        ],
+        "instructions": [
+          "Clean pig intestines thoroughly",
+          "Mix grated raw potato with diced onion, pork fat, garlic, marjoram, salt, pepper",
+          "Stuff intestines loosely — the potato expands when cooked",
+          "Tie into sausage links",
+          "Boil gently for 30 minutes — then roast in oven until the outside crisps",
+          "The boiling sets them, the roasting crisps them",
+          "The interior becomes a dense, savory potato-onion sausage",
+          "Vėdarai are Lithuania's most distinctive dish — a potato sausage",
+          "No other national cuisine has a potato sausage quite like this",
+          "The crisped exterior and the soft potato interior are the textural appeal"
+        ],
+        "description": "Lithuania's unique potato sausage — grated raw potato seasoned with marjoram and onion, stuffed into intestine casing, boiled then roasted until the exterior crisps. No other national cuisine has a potato sausage. The crispy casing against the soft, savory potato interior makes vėdarai Lithuania's most distinctive contribution to world food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kishke.jpg",
+        "imageCredit": {
+          "author": "stu_spivack",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKishke.jpg"
+        }
+      },
+      {
+        "id": "ltu-dn-5",
+        "name": "Virtiniai (Dumplings)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 40,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, eggs, water, salt for dough",
+          "Fillings: ground pork and beef (or farmer's curd, or mushroom-sauerkraut)",
+          "Onion, salt, black pepper, marjoram",
+          "Butter, sour cream for serving"
+        ],
+        "instructions": [
+          "Make a stiff pasta-like dough",
+          "Roll thin, cut circles",
+          "Fill with meat mixture (pork-beef, onion, marjoram) or curd or mushroom",
+          "Fold and seal with a decorative crimp — the crimp style varies by family",
+          "Boil in salted water — 5-7 minutes until they float and cook through",
+          "Drain, toss in butter",
+          "Serve with sour cream",
+          "Virtiniai are Lithuania's dumplings — related to Russian pelmeni but more varied fillings",
+          "The curd filling is the most distinctly Lithuanian option",
+          "The marjoram in the meat filling is the Lithuanian spice signature"
+        ],
+        "description": "Lithuania's filled dumplings — thin dough crimped around ground pork, farmer's curd, or sauerkraut-mushroom fillings, boiled and served with butter and sour cream. Related to Russian pelmeni but with the curd filling being distinctly Lithuanian. The marjoram in the meat filling and the sour cream finish are the Baltic signatures.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Skimmed_milk_quark_on_spoon.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Skimmed_milk_quark_on_spoon.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "ltu-sn-1",
+        "name": "Kepta Duona (Fried Rye Bread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Dark rye bread",
+          "Garlic",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cut rye bread into sticks",
+          "Fry in oil until crispy",
+          "Rub with garlic while hot",
+          "Season with salt"
+        ],
+        "description": "Garlic-rubbed fried rye bread sticks — the essential Lithuanian beer snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Azerbaijan_Light_snack.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Azerbaijan_Light_snack.jpg"
+        }
+      },
+      {
+        "id": "ltu-sn-2",
+        "name": "Skilandis (Lithuanian Dry Sausage)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 2880,
+        "ingredients": [
+          "Lean pork (shoulder)",
+          "Pork fat",
+          "Garlic, black pepper",
+          "Marjoram, caraway seeds",
+          "Salt, sugar",
+          "Pork stomach or large casing",
+          "Cold smoke — 2-4 weeks"
+        ],
+        "instructions": [
+          "Coarsely grind or cube lean pork and fat — this is not emulsified like salami",
+          "Mix with garlic, marjoram, caraway, salt, pepper, sugar",
+          "Stuff tightly into pork stomach or large casing",
+          "Hang in cool, smoky conditions",
+          "Cold smoke on-and-off for weeks — slow smoke",
+          "The sausage dries and cures simultaneously",
+          "The final product is firm, dense, deeply smoky",
+          "Slice thin — it's intensely flavored",
+          "Skilandis is Lithuania's most prestigious meat product — months of aging",
+          "The slow cold-smoke process is artisanal knowledge passed between generations",
+          "EU-protected designation — Skilandis is Lithuania's national meat treasure"
+        ],
+        "description": "Lithuania's national meat treasure — coarsely ground pork and fat cold-smoked for weeks until firm, dense, and deeply smoky. EU-protected designation. Skilandis requires months of careful cold-smoking — a generational craft. Sliced thin, it's one of the most intensely flavored cured meats in the Baltic region.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Skilandis2.jpg",
+        "imageCredit": {
+          "author": "AndreasStrasbourg",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASkilandis2.jpg"
+        }
+      },
+      {
+        "id": "ltu-sn-3",
+        "name": "Gardu (Fried Cheese Curds)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Fresh cheese curds or small curd cottage cheese",
+          "Oil for frying",
+          "Salt",
+          "Dipping sauce: sour cream, herbs"
+        ],
+        "instructions": [
+          "Heat oil — not too hot",
+          "Add cheese curds",
+          "Fry briefly until they begin to melt and brown on the outside",
+          "The crust should form while the inside remains gooey",
+          "The fried cheese should be slightly crispy outside and melty inside",
+          "Serve immediately — they firm up quickly as they cool",
+          "Dip in herbed sour cream",
+          "Fried cheese curds are Lithuania's bar food and street snack",
+          "The squeaky-crunchy-melty texture combination is addictive",
+          "Found at kiosks and local bars — not high cuisine but beloved"
+        ],
+        "description": "Lithuania's bar snack — fresh cheese curds fried briefly until the exterior browns and the interior stays gooey, served with herbed sour cream. The squeaky-crunchy-melty texture combination is what makes fried cheese curds addictive. Found at Lithuanian kiosks and local bars, not fancy restaurants.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Jakarta_Indonesia_Hawkers-in-_Glodok-01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Jakarta_Indonesia_Hawkers-in-_Glodok-01.jpg"
+        }
+      },
+      {
+        "id": "ltu-sn-4",
+        "name": "Duona su Sviestu (Rye Bread and Butter)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Lithuanian black rye bread",
+          "Butter (good quality)",
+          "Sea salt",
+          "Optional: smoked fish, radishes, dill"
+        ],
+        "instructions": [
+          "Slice Lithuanian rye bread — dark, dense, slightly sour",
+          "Spread cold butter generously",
+          "Salt flakes on top",
+          "The bread itself is the star — Lithuania's rye bread is some of the finest in the world",
+          "The long fermentation (24+ hours) gives a complex, slightly sour crumb",
+          "The dense, dark slice with cold butter is the Lithuanian daily staple",
+          "Lithuanian rye bread has EU-protected designation as a heritage product",
+          "Top with smoked fish for a more complete snack",
+          "The radish-dill-butter combination on rye is the Lithuanian garnish combination",
+          "Simple but the ingredient quality makes it extraordinary"
+        ],
+        "description": "Lithuania's daily bread ritual — dense, long-fermented black rye bread with cold butter. Lithuanian rye bread (EU-protected heritage) undergoes 24+ hour fermentation, giving a complex, sour, dark crumb that is among Europe's finest breads. No technique required — just exceptional bread and good butter."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "ltu-ds-1",
+        "name": "Šakotis (Tree Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Flour",
+          "Butter",
+          "Eggs (many)",
+          "Sugar",
+          "Cream",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Make thin batter",
+          "Drizzle batter layer by layer over rotating spit",
+          "Each layer creates spiky branches",
+          "Bake until golden tower forms"
+        ],
+        "description": "Spectacular spit-roasted tree cake with branch-like spikes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%C5%A0akotis_3799.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/%C5%A0akotis_3799.jpg"
+        }
+      },
+      {
+        "id": "ltu-ds-2",
+        "name": "Varškės Pyragas (Curd Cake)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 50,
+        "ingredients": [
+          "Farmer's curd (dry, stiff)",
+          "Eggs, sugar",
+          "Sour cream",
+          "Semolina (binds the curd)",
+          "Vanilla, lemon zest",
+          "Shortcrust pastry base"
+        ],
+        "instructions": [
+          "Line a springform with shortcrust pastry",
+          "Beat curd with eggs, sugar, sour cream, semolina, vanilla, lemon zest",
+          "The semolina absorbs excess moisture from the curd",
+          "Pour over pastry base",
+          "Bake at 165°C — low heat, slow bake",
+          "The curd cake should set without cracks",
+          "It should be creamy, slightly dense, and tangy from the curd",
+          "Cool completely — even refrigerate — before cutting",
+          "Varškės pyragas is Lithuania's cheesecake equivalent",
+          "The farmer's curd rather than cream cheese gives a distinctly tangy, less rich result"
+        ],
+        "description": "Lithuania's curd cake — dry farmer's curd mixed with eggs, sour cream, and semolina, baked over shortcrust until creamy-set. The farmer's curd (not cream cheese) gives a tangier, denser result than American cheesecake. The semolina-curd-sour cream combination is distinctly Baltic dairy baking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Cepelinai_Kaunas_2023.jpg"
+        }
+      },
+      {
+        "id": "ltu-ds-3",
+        "name": "Tinginys (Lazy Chocolate Cake)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Butter",
+          "Sugar",
+          "Cocoa powder",
+          "Eggs",
+          "Biscuits (plain tea biscuits — crushed roughly)",
+          "Walnuts (optional)",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Melt butter with sugar and cocoa — make a chocolate paste",
+          "Cool slightly, beat in eggs",
+          "Add crushed biscuits — the pieces should remain chunky",
+          "Optional: walnuts",
+          "Shape into a log using cling film or foil",
+          "Refrigerate 2-4 hours until firm",
+          "Slice into rounds — the cross-section shows biscuit and walnut pieces in chocolate",
+          "Tinginys means 'lazy cake' — no baking required",
+          "It's Lithuania's 'refrigerator cake' — the most beloved family dessert",
+          "The biscuit pieces in chocolate are the textural charm — no-bake, always right"
+        ],
+        "description": "Lithuania's lazy chocolate cake — crushed biscuits and walnuts bound in a cocoa-butter-egg mixture, rolled into a log and chilled until firm. No baking. 'Tinginys' means lazy, and the ease of making it has made it the most beloved Lithuanian family dessert. The biscuit chunks in chocolate and the refrigerator-cold slices are the joy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tinginys_Anglijoje.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tinginys_Anglijoje.JPG"
+        }
+      },
+      {
+        "id": "ltu-ds-4",
+        "name": "Uogų Kisielius (Berry Kissel)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Mixed berries (lingonberry, cranberry, blueberry)",
+          "Water",
+          "Sugar",
+          "Potato starch (cornstarch works)",
+          "Vanilla (optional)"
+        ],
+        "instructions": [
+          "Simmer berries with water and sugar until soft",
+          "Blend and strain to a clear fruit juice",
+          "Bring to a near boil",
+          "Dissolve potato starch in cold water — add to the hot fruit juice while stirring",
+          "It thickens instantly — the starch transforms it from juice to gel",
+          "Pour into bowls",
+          "Serve warm or cold — the texture changes between the two",
+          "Warm: thin, slightly gel-like, sauce-adjacent",
+          "Cold: firm jelly",
+          "Kisielius is Lithuania's ancient berry dessert — pre-dates modern desserts",
+          "The potato starch-fruit gel is Baltic cooking's most elegant transformation"
+        ],
+        "description": "Lithuania's ancient berry dessert — berry juice thickened with potato starch into a semi-gel that's silky warm and firmer cold. The potato starch transformation (clear juice becoming translucent gel) is Baltic cooking's elegant trick. Baltic lingonberries and cranberries give a tartness that makes the sweet gel complex."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "ltu-dr-1",
+        "name": "Gira (Lithuanian Kvass)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Dark rye bread",
+          "Water",
+          "Sugar",
+          "Yeast",
+          "Raisins"
+        ],
+        "instructions": [
+          "Toast bread, soak in hot water",
+          "Strain, add sugar and yeast",
+          "Ferment 1-2 days",
+          "Strain, add raisins, chill"
+        ],
+        "description": "Fermented dark rye bread drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Mint_bread_kvas.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Mint_bread_kvas.jpg"
+        }
+      },
+      {
+        "id": "ltu-dr-2",
+        "name": "Midus (Mead)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Honey",
+          "Water",
+          "Berry juice",
+          "Hops",
+          "Spices"
+        ],
+        "instructions": [
+          "Dissolve honey in water",
+          "Add berry juice and spices",
+          "Boil with hops",
+          "Ferment several weeks",
+          "Age and serve"
+        ],
+        "description": "Lithuanian mead — one of Europe's oldest drink traditions."
+      },
+      {
+        "id": "ltu-dr-3",
+        "name": "Kisielius Drink (Oat Fermented Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 24,
+        "ingredients": [
+          "Oats",
+          "Water",
+          "Honey or sugar",
+          "Optional: lemon, ginger"
+        ],
+        "instructions": [
+          "Soak oats in warm water for 12-24 hours — natural fermentation begins",
+          "The water becomes slightly sour from lactic acid bacteria",
+          "Strain the oat liquid",
+          "Sweeten with honey",
+          "Serve cold — it's a fermented, slightly sour oat water",
+          "The fermentation makes it gently probiotic",
+          "The sourness and the oat flavor are mild but distinctive",
+          "Different from the berry kissel — this is the fermented grain version",
+          "Lithuania's fermentation tradition extends to oat water drinks",
+          "Ancient Baltic health drink, pre-dating commercial beverages"
+        ],
+        "description": "Lithuania's fermented oat water — oats soaked for 24 hours until lactic bacteria begin to sour the water, strained and sweetened with honey. Gently probiotic, slightly sour, mild oat flavor. Ancient Baltic fermentation culture applied to the simplest grain. Pre-dates all commercial beverages as a daily Lithuanian health drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Red_Currant_Kissel.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Red_Currant_Kissel.jpg"
+        }
+      },
+      {
+        "id": "ltu-dr-4",
+        "name": "Taranka (Dried Fish Snack Beer)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Beer (Lithuanian lager or dark beer)",
+          "Dried salted fish (taranka — bream or roach)",
+          "Optional: bread"
+        ],
+        "instructions": [
+          "Taranka is dried, salted, pressed fish — sold whole at Lithuanian markets",
+          "Pull the skin off in strips — the salted, chewy fish flesh beneath is the snack",
+          "The saltiness of the dried fish demands cold beer",
+          "Pull bite-sized pieces with your hands",
+          "Alternate fish and beer — the salt intensifies the beer craving",
+          "Taranka with beer is Lithuania's most specific food-drink pairing",
+          "Found at markets, sports bars, and lakeside stalls",
+          "The dried fish and beer combination is Baltic and Slavic — very regional",
+          "The chewy, salty dried fish is an acquired taste",
+          "One fish and one beer can last an hour — the slow combination is the experience"
+        ],
+        "description": "Lithuania's most specific pairing — dried, salted whole fish (taranka) torn apart by hand, eaten slowly with cold beer. The fish's saltiness drives the beer craving; the beer drives the next bite of fish. A Baltic lake country tradition: dried bream or roach and cold beer, lasting an hour, generating conversation."
+      }
+    ]
+  }
+}

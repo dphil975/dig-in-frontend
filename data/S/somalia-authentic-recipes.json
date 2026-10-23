@@ -1,0 +1,659 @@
+{
+  "somaliaRecipes": {
+    "country": "Somalia",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "som-bf-1",
+        "name": "Canjeero (Sourdough Pancake)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "Water",
+          "Sugar",
+          "Yeast"
+        ],
+        "instructions": [
+          "Mix batter, ferment 1 hour",
+          "Pour thin circle on hot griddle",
+          "Cook until holes form",
+          "Serve with butter, sugar, or stew"
+        ],
+        "description": "Spongy sourdough pancake — Somalia's daily bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/LahohS.jpg",
+        "imageCredit": {
+          "author": "Gilabrand (talk)",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALahohS.jpg"
+        }
+      },
+      {
+        "id": "som-bf-2",
+        "name": "Sabaayad (Flatbread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups flour",
+          "Oil",
+          "Sugar",
+          "Salt",
+          "Water"
+        ],
+        "instructions": [
+          "Make dough, rest",
+          "Roll, spread oil, fold layers",
+          "Roll again, cook on griddle",
+          "Brush with butter"
+        ],
+        "description": "Flaky layered flatbread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Djiboutian_rice_%28bariis%29_and_fish_%28kalluun%29%2C_Liver_%28beerka%29_with_vegetable_also_%28Sabaayad%29_pancakes.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Djiboutian_rice_%28bariis%29_and_fish_%28kalluun%29%2C_Liver_%28beerka%29_with_vegetable_also_%28Sabaayad%29_pancakes.jpg"
+        }
+      },
+      {
+        "id": "som-bf-3",
+        "name": "Canjeero with Maraq",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Canjeero (Somali sour flatbread -- fermented teff or sorghum batter)",
+          "Maraq (Somali spiced broth -- lamb or goat with cardamom, cloves, cinnamon)"
+        ],
+        "instructions": [
+          "Canjeero is the Somali fermented flatbread -- similar to the Ethiopian injera but smaller and crispier",
+          "Made from fermented teff or sorghum batter",
+          "Cooked on a flat pan until the holes form on the surface",
+          "Maraq: the Somali broth -- lamb or goat simmered with warm spices",
+          "The canjeero is dipped into the hot maraq",
+          "The combination of the sour bread and the spiced broth is the Somali breakfast"
+        ],
+        "description": "Somali fermented flatbread with spiced broth -- canjeero (smaller and crispier than Ethiopian injera, made from fermented teff or sorghum) dipped into maraq (lamb or goat broth spiced with cardamom, cloves, and cinnamon). The Somali breakfast combination.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-bf-4",
+        "name": "Xawaash Spiced Tea",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Black tea",
+          "Xawaash spice mix (cardamom, cinnamon, cloves, ginger, black pepper)",
+          "Milk or condensed milk",
+          "Sugar"
+        ],
+        "instructions": [
+          "Xawaash is the Somali spice blend -- used in tea and cooking",
+          "The same warm spices as the Indian chai blend -- via Arab trade routes",
+          "Brewed strong with the spices",
+          "Milk and sugar added",
+          "The Somali tea culture: hospitality expressed through offering tea",
+          "Cardamom is the dominant spice in Somali tea"
+        ],
+        "description": "Somali spiced tea -- black tea brewed with xawaash (cardamom, cinnamon, cloves, ginger, black pepper), sweetened, served with milk. Cardamom is the dominant spice. The Somali tea is the hospitality gesture: offering tea to a guest.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Maraq.jpg",
+        "imageCredit": {
+          "author": "Abu Isa",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMaraq.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "som-ln-1",
+        "name": "Bariis Iskukaris (Spiced Rice)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups basmati rice",
+          "Goat or chicken",
+          "Onion",
+          "Garlic",
+          "Raisins",
+          "Xawaash spice (cumin, coriander, turmeric, cardamom, cinnamon, cloves)",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown meat with onion and garlic",
+          "Add xawaash spice",
+          "Add rice and water",
+          "Cook covered until done",
+          "Top with raisins"
+        ],
+        "description": "Fragrant Somali spiced rice with meat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Somalicamelmeat.jpg",
+        "imageCredit": {
+          "author": "Richard Faulder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASomalicamelmeat.jpg"
+        }
+      },
+      {
+        "id": "som-ln-2",
+        "name": "Suqaar (Diced Meat)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "500g beef or goat (diced small)",
+          "Onion",
+          "Green pepper",
+          "Tomato",
+          "Garlic",
+          "Cumin",
+          "Coriander",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion and garlic",
+          "Add meat, brown",
+          "Add peppers and tomatoes",
+          "Cook until done",
+          "Serve with canjeero or rice"
+        ],
+        "description": "Quick-fried diced meat with vegetables."
+      },
+      {
+        "id": "som-ln-3",
+        "name": "Cambuulo (Adzuki Beans with Sesame)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 60,
+        "ingredients": [
+          "Adzuki beans (or vigna beans)",
+          "Sesame oil",
+          "Sugar (or dates for natural sweetness)",
+          "Optional: butter"
+        ],
+        "instructions": [
+          "Cambuulo is the Somali bean dish -- adzuki beans with sesame",
+          "The adzuki beans are a Somali and East African staple",
+          "Cooked until soft and then dressed with sesame oil",
+          "Sweetened slightly -- the sweet-savory combination",
+          "A distinctive Somali flavor: legumes with sesame oil and a touch of sweetness"
+        ],
+        "description": "Somali adzuki beans with sesame -- small red adzuki beans cooked until soft, dressed with sesame oil and a touch of sugar or dates. The sesame oil and slight sweetness with legumes is a distinctive Somali flavor combination.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-ln-4",
+        "name": "Hilib Ari (Goat Stew)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 90,
+        "ingredients": [
+          "Goat meat (on the bone)",
+          "Onion, garlic, tomatoes",
+          "Xawaash spice mix",
+          "Green chillis",
+          "Oil"
+        ],
+        "instructions": [
+          "Hilib ari (goat stew) is the everyday Somali protein dish",
+          "Goat is the most common meat in Somali cuisine",
+          "Braised with onion, tomatoes, and xawaash spices",
+          "The green chillis add fresh heat",
+          "Served with rice or canjeero"
+        ],
+        "description": "Somali goat stew -- goat on the bone braised with onion, tomatoes, xawaash spice mix (cardamom, cinnamon, cloves), and green chillis. Goat is the dominant Somali meat. Served with rice or canjeero.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-ln-5",
+        "name": "Bariis Iskukaris (Somali Spiced Rice)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Basmati rice",
+          "Xawaash (Somali spice blend: cardamom, cumin, coriander, cinnamon, black pepper)",
+          "Onion",
+          "Butter or ghee",
+          "Chicken stock or water"
+        ],
+        "instructions": [
+          "Bariis iskukaris is the Somali spiced rice -- the equivalent of biryani",
+          "The Arabic influence on Somali food: spiced rice is an Arab contribution",
+          "Somalia has centuries of Arab trade and cultural exchange",
+          "The rice is cooked in the spiced stock",
+          "Xawaash is the Somali equivalent of the Indian garam masala",
+          "Served alongside goat, chicken, or fish"
+        ],
+        "description": "Somali aromatic spiced rice -- basmati cooked in xawaash-spiced stock (cardamom, cumin, coriander, cinnamon) with ghee. The Arab trade influence on Somali food: Somalia had centuries of Arab cultural exchange that shaped its spice use. Served with goat, chicken, or fish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Somalicamelmeat.jpg",
+        "imageCredit": {
+          "author": "Richard Faulder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASomalicamelmeat.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "som-dn-1",
+        "name": "Hilib Ari (Goat Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Goat meat (bone-in)",
+          "Potatoes",
+          "Onion",
+          "Tomatoes",
+          "Garlic",
+          "Xawaash spice",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown goat meat",
+          "Add onion, garlic, tomatoes, xawaash",
+          "Add water, simmer 45 min",
+          "Add potatoes, cook until tender"
+        ],
+        "description": "Slow-simmered goat stew with Somali spices.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-dn-2",
+        "name": "Muufo (Corn Flatbread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Cornmeal",
+          "Flour",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix cornmeal with flour and water",
+          "Shape thick rounds",
+          "Cook on griddle until browned",
+          "Serve with stew"
+        ],
+        "description": "Thick cornmeal flatbread.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-dn-3",
+        "name": "Nafaqo (Banana Fritters)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe bananas (mashed)",
+          "Flour, egg",
+          "Sugar, cardamom",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Nafaqo are Somali banana fritters -- spiced with cardamom",
+          "The ripe bananas are mashed into a batter",
+          "Cardamom is the essential spice -- the Somali flavor",
+          "Fried until golden",
+          "Eaten as a snack or dessert"
+        ],
+        "description": "Somali banana fritters -- ripe bananas mashed into a cardamom-spiced batter and fried golden. Cardamom is the essential Somali flavor in sweet preparations."
+      },
+      {
+        "id": "som-dn-4",
+        "name": "Muufo (Cornbread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Cornmeal (ground maize)",
+          "Water, salt",
+          "Sesame seeds (optional)",
+          "Ghee or oil"
+        ],
+        "instructions": [
+          "Muufo is the Somali cornbread -- cooked on a flat griddle",
+          "Thin, flat cornbread with a slightly crispy exterior",
+          "Sesame seeds sometimes pressed onto the surface",
+          "Eaten with butter, ghee, or tea",
+          "A simple and ancient Somali bread"
+        ],
+        "description": "Somali cornbread -- thin flat cornmeal bread cooked on a griddle with sesame seeds, eaten with ghee or tea. A simple ancient Somali staple.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "som-dn-5",
+        "name": "Camel Meat (Hilibka Geel)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 120,
+        "ingredients": [
+          "Camel meat (slow-cooking cuts)",
+          "Onion, garlic, tomatoes",
+          "Xawaash, chilli",
+          "Water"
+        ],
+        "instructions": [
+          "Camel meat is eaten in Somalia -- one of the few countries where it is a regular food",
+          "The camel is a central animal in Somali pastoralist culture",
+          "Camel milk is also drunk daily -- very nutritious",
+          "The meat is tougher and gamier than beef -- needs long cooking",
+          "Braised for 2+ hours with xawaash spices",
+          "A mark of celebration and generosity"
+        ],
+        "description": "Somali camel meat stew -- one of the few cuisines where camel meat is regularly eaten. Braised for 2+ hours with xawaash spices, onion, and tomatoes. The camel is central to Somali pastoralist culture (milk drunk daily; meat at celebrations). Tougher and gamier than beef, needing long cooking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "som-sn-1",
+        "name": "Sambusa",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, water, oil",
+          "Filling: spiced ground beef, onion, chili",
+          "Oil"
+        ],
+        "instructions": [
+          "Make dough strips, fold triangles with filling",
+          "Fry until golden"
+        ],
+        "description": "Somali meat samosas.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg"
+        }
+      },
+      {
+        "id": "som-sn-2",
+        "name": "Halwa (Somali Sweet)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Starch (cornstarch or arrowroot)",
+          "Sugar, ghee",
+          "Cardamom, saffron (or food coloring)",
+          "Rosewater",
+          "Optional: sesame seeds, pistachios"
+        ],
+        "instructions": [
+          "Somali halwa is different from Turkish or Arab halwa -- it is a dense, gelatinous sweet",
+          "The starch is cooked with sugar and ghee until it forms a translucent, rubbery candy",
+          "Cardamom and rosewater flavor it",
+          "Saffron gives the yellow color",
+          "Halwa is made and sold at celebrations: weddings, Eid",
+          "Every Somali city has its halwa vendors"
+        ],
+        "description": "Somali gelatinous sweet -- cornstarch cooked with sugar and ghee until translucent and rubbery (not the Middle Eastern sesame type), flavored with cardamom, rosewater, and saffron. Made for weddings and Eid; sold by vendors in every Somali city.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg"
+        }
+      },
+      {
+        "id": "som-sn-3",
+        "name": "Dates with Tea",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Dried dates (Ajwa or Mejool)",
+          "Somali spiced tea"
+        ],
+        "instructions": [
+          "Dates are the Islamic world food of hospitality",
+          "Somalia: an overwhelmingly Muslim country -- dates are eaten daily",
+          "The Prophet Muhammad broke his fast with dates",
+          "Dates with tea: the Somali everyday snack",
+          "The sweetness of dates pairs with the spiced tea"
+        ],
+        "description": "Somali dates with spiced tea -- dried dates (the Islamic world food of hospitality) eaten alongside cardamom-spiced tea. Somalia is overwhelmingly Muslim; dates are eaten daily and at every gathering.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Tibetan_butter_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Tibetan_butter_tea.jpg"
+        }
+      },
+      {
+        "id": "som-sn-4",
+        "name": "Roasted Corn (Galees)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Corn on the cob",
+          "Salt"
+        ],
+        "instructions": [
+          "Roasted corn is a Somali street snack",
+          "Cooked over charcoal",
+          "The kernels slightly char",
+          "Salted and eaten hot"
+        ],
+        "description": "Somali roasted corn -- corn on the cob charcoal-grilled until slightly charred, salted. Street snack sold throughout Somalia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/CookedCornOnTheCob.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACookedCornOnTheCob.JPG"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "som-ds-1",
+        "name": "Halwo (Halva)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 5,
+        "cookTime": 30,
+        "ingredients": [
+          "1 cup cornstarch",
+          "1 cup sugar",
+          "Butter",
+          "Cardamom",
+          "Nutmeg",
+          "Water"
+        ],
+        "instructions": [
+          "Make sugar syrup",
+          "Cook cornstarch with butter",
+          "Gradually add syrup, stirring constantly",
+          "Add spices",
+          "Pour into mold, let set"
+        ],
+        "description": "Somali halva — jewel-toned and aromatic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg"
+        }
+      },
+      {
+        "id": "som-ds-2",
+        "name": "Xalwa (Sweet Sesame Candy)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Sesame seeds (roasted)",
+          "Sugar, water",
+          "Optional: cardamom"
+        ],
+        "instructions": [
+          "Sesame candy is a Somali sweet -- sesame cooked in caramelized sugar",
+          "The sesame seeds are coated in caramelized sugar",
+          "Set into bars or clusters",
+          "Cardamom adds the warm Somali spice note"
+        ],
+        "description": "Somali sesame candy -- roasted sesame seeds cooked in caramelized sugar, set into bars. Cardamom optional. A simple, nutty Somali sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg"
+        }
+      },
+      {
+        "id": "som-ds-3",
+        "name": "Bur (Fried Dough with Honey)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, yeast, sugar",
+          "Water, salt",
+          "Oil for frying",
+          "Honey or date syrup"
+        ],
+        "instructions": [
+          "Bur is the Somali fried dough -- drizzled with honey or date syrup",
+          "A simple yeast dough fried until golden",
+          "Drizzled with date syrup or honey when warm",
+          "A sweet conclusion to a meal or celebration"
+        ],
+        "description": "Somali fried honey dough -- yeast dough fried until golden and drizzled with honey or date syrup while warm. A simple Somali sweet eaten after meals or at celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bur_Macro_BlackBg.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bur_Macro_BlackBg.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "som-dr-1",
+        "name": "Shaah Cadeys (Somali Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Black tea",
+          "Cardamom",
+          "Cinnamon",
+          "Cloves",
+          "Ginger",
+          "Sugar",
+          "Milk"
+        ],
+        "instructions": [
+          "Boil tea with spices",
+          "Add milk and sugar",
+          "Strain"
+        ],
+        "description": "Aromatic Somali spiced milk tea."
+      },
+      {
+        "id": "som-dr-2",
+        "name": "Shaah Bun (Coffee-Spice Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Coffee beans (roasted)",
+          "Cardamom",
+          "Ginger",
+          "Cinnamon",
+          "Sugar"
+        ],
+        "instructions": [
+          "Brew coffee with spices",
+          "Strain, sweeten"
+        ],
+        "description": "Unique coffee-spice brew — halfway between tea and coffee."
+      },
+      {
+        "id": "som-dr-3",
+        "name": "Camel Milk",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh camel milk"
+        ],
+        "instructions": [
+          "Camel milk is drunk daily in Somali pastoralist culture",
+          "Nutritionally superior to cow milk: more vitamin C, iron, and lower lactose",
+          "The camel is the central animal of Somali nomadic life",
+          "Fresh camel milk: slightly salty, thin, with a slightly unusual flavor compared to cow milk",
+          "Also fermented into a sour camel milk (suusac)",
+          "Nomadic Somalis survive on camel milk alone during dry seasons"
+        ],
+        "description": "Somali fresh camel milk -- drunk daily in Somali pastoralist culture. Nutritionally superior to cow milk: more vitamin C, lower lactose. Slightly salty and thin. Nomadic Somalis survive on camel milk during dry seasons. Also fermented into suusac (sour camel milk).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg"
+        }
+      }
+    ]
+  }
+}

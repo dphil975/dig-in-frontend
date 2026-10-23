@@ -1,0 +1,769 @@
+{
+  "lesothoRecipes": {
+    "country": "Lesotho",
+    "region": "Southern Africa",
+    "breakfast": [
+      {
+        "id": "lso-bf-1",
+        "name": "Papa (Maize Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups mealie meal",
+          "Water",
+          "Salt",
+          "Milk",
+          "Sugar"
+        ],
+        "instructions": [
+          "Boil water with salt",
+          "Stir in mealie meal",
+          "Cook until thick",
+          "Serve with milk and sugar"
+        ],
+        "description": "Thick maize porridge — Basotho daily staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Papa_Johns_New_HQ_in_Atlanta%2C_Georgia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Papa_Johns_New_HQ_in_Atlanta%2C_Georgia.jpg"
+        }
+      },
+      {
+        "id": "lso-bf-2",
+        "name": "Makoenya (Fat Cakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "Sugar",
+          "Yeast",
+          "Water",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix dough, rise 30 min",
+          "Shape into balls",
+          "Deep fry until golden"
+        ],
+        "description": "Puffy fried dough balls."
+      },
+      {
+        "id": "lso-bf-3",
+        "name": "Bohobe ba Mokhosi (Sorghum Flatbread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Sorghum flour",
+          "Water, salt",
+          "Optional: millet flour blend",
+          "Oil or butter"
+        ],
+        "instructions": [
+          "Mix sorghum flour with water and salt to form a stiff dough",
+          "Shape into flat rounds",
+          "Cook on a dry griddle or pan — no oil",
+          "The sorghum gives a reddish-brown color and an earthy, nutty flavor",
+          "The flatbread should be dense and slightly dry — it's a staple, not a delicacy",
+          "Eat with butter, vegetables, or stew",
+          "Sorghum is Lesotho's primary grain — it thrives at altitude where maize struggles",
+          "The high altitude of Lesotho (average 1,800m) shapes the food — heat-loving crops don't grow",
+          "Bohobe ba mokhosi is ancient Basotho bread",
+          "The nutty sorghum flavor and the density are signatures of highland African bread"
+        ],
+        "description": "Lesotho's ancient highland flatbread — sorghum flour griddled into a dense, nutty round. Sorghum thrives at altitude (Lesotho averages 1,800m elevation — the highest average of any country) where maize struggles, making it the country's primary grain. Dense, earthy, built for cold mountain mornings."
+      },
+      {
+        "id": "lso-bf-4",
+        "name": "Likhobe (Whole Grain Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Whole sorghum or maize kernels",
+          "Water",
+          "Salt",
+          "Sugar (optional)",
+          "Milk or cream"
+        ],
+        "instructions": [
+          "Soak whole kernels overnight",
+          "Simmer in water 15-20 minutes until softened but still with chew",
+          "Season with salt",
+          "Serve sweet with sugar and milk, or savory with salt",
+          "The whole kernel texture is different from ground porridge — chewier, nuttier",
+          "Likhobe is Lesotho's whole-grain porridge — the less-refined version of papa",
+          "The chew of whole grains against soft cooked texture is satisfying",
+          "It provides sustained energy for mountain farmers",
+          "Lesotho's agricultural calendar is built around sorghum and maize harvest",
+          "The whole kernel porridge connects Basotho food to the land"
+        ],
+        "description": "Lesotho's whole-grain porridge — unground sorghum or maize kernels soaked overnight and simmered until tender but still chewy. The whole-grain texture is more satisfying and nutritious than the ground version. Built for sustained energy in a mountain farming life.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "lso-ln-1",
+        "name": "Motoho (Fermented Sorghum Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups sorghum flour",
+          "Water",
+          "Fermented sorghum starter"
+        ],
+        "instructions": [
+          "Mix sorghum with water and starter",
+          "Let ferment overnight",
+          "Cook until thick porridge",
+          "Serve warm"
+        ],
+        "description": "Tangy fermented sorghum porridge — unique to Lesotho.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg"
+        }
+      },
+      {
+        "id": "lso-ln-2",
+        "name": "Chakalaka with Pap",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Pap: mealie meal, water",
+          "Chakalaka: baked beans, tomatoes, carrots, peppers, onion, curry, chili"
+        ],
+        "instructions": [
+          "Make thick pap",
+          "Sauté onion, carrots, peppers",
+          "Add tomatoes, beans, curry, chili",
+          "Simmer 15 min",
+          "Serve chakalaka over pap"
+        ],
+        "description": "Spicy vegetable relish over maize porridge.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Chakalaka.jpg",
+        "imageCredit": {
+          "author": "philipp from cape town, south africa",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChakalaka.jpg"
+        }
+      },
+      {
+        "id": "lso-ln-3",
+        "name": "Mokoenya wa Chicken (Peanut Chicken Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Chicken pieces (bone-in)",
+          "Peanut butter or ground peanuts",
+          "Tomatoes, onion, garlic",
+          "Green chilies",
+          "Salt, cumin",
+          "Leafy greens (optional)",
+          "Pap or papa for serving"
+        ],
+        "instructions": [
+          "Brown chicken pieces in oil — skin side first",
+          "Remove, saute onion, garlic, tomato",
+          "Add peanut butter or ground peanuts dissolved in warm water",
+          "The peanut thickens the sauce and adds richness",
+          "Return chicken, add chili, cumin",
+          "Simmer 30-35 min until chicken is tender and sauce thickens",
+          "Adjust seasoning — peanut stews need more salt than you think",
+          "Serve over papa or pap",
+          "Peanut stews are common across southern Africa — this is Lesotho's version",
+          "The peanut-tomato combination is deep, rich, and mildly spicy"
+        ],
+        "description": "Lesotho's peanut chicken stew — chicken braised in a peanut butter and tomato sauce until richly thick. Peanut stews appear across southern Africa; the Lesotho version is mild, earthy, and deeply savory. Served over papa, it's the mountain highlands' most satisfying lunch."
+      },
+      {
+        "id": "lso-ln-4",
+        "name": "Lepu la Joala (Sorghum Beer Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 50,
+        "ingredients": [
+          "Sorghum flour",
+          "Joala (sorghum beer) or sorghum starter",
+          "Salt",
+          "Water"
+        ],
+        "instructions": [
+          "Use joala (traditional sorghum beer) as the leavening agent",
+          "Mix sorghum flour with joala and water — the beer ferment activates",
+          "Let rest 30 minutes — the natural yeasts continue working",
+          "Bake in a covered clay pot or wrapped in leaves over a fire",
+          "Or bake in a conventional oven — the clay pot gives a different crust",
+          "The beer gives a slight tang and depth to the bread",
+          "The sorghum gives a dense, filling loaf",
+          "Sorghum beer bread is both bread and ferment combined — dual-purpose grain culture",
+          "Joala (sorghum beer) is brewed by women in Lesotho — it's a female craft",
+          "The beer-bread connection represents Lesotho's grain fermentation culture"
+        ],
+        "description": "Lesotho's fermented sorghum bread — leavened with joala (traditional sorghum beer) and baked in a clay pot. The sorghum beer provides both the yeast and a tangy depth. Joala brewing is a female craft in Lesotho; this bread uses the brewing culture as its leavening. The clay pot bake gives a thick, smoky crust."
+      },
+      {
+        "id": "lso-ln-5",
+        "name": "Moroho (Wild Spinach)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Wild spinach or mustard greens or amaranth leaves",
+          "Onion",
+          "Tomatoes",
+          "Oil, salt",
+          "Piri piri chili (optional)"
+        ],
+        "instructions": [
+          "Gather or buy wild leafy greens — moroho is any dark leafy green used broadly",
+          "Chop roughly",
+          "Saute onion and tomato in oil",
+          "Add greens, toss with the aromatics",
+          "Steam/cook briefly — greens should keep some texture, not collapse",
+          "Season with salt, optional chili",
+          "Serve alongside papa or mieliepap",
+          "Moroho is Lesotho's most eaten vegetable — greens are central to Basotho nutrition",
+          "Wild greens gathered from fields are the traditional version",
+          "The simple onion-tomato-green combination is southern Africa's core vegetable method"
+        ],
+        "description": "Lesotho's most eaten vegetable — wild greens (spinach, amaranth, mustard) cooked simply with onion and tomato. Moroho is the general term for dark leafy greens in Sesotho. Wild-gathered field greens were the traditional source; now market greens are common. The simple preparation lets the greens speak.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amaranthus_thunbergii_1DS-II_1-5841.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Amaranthus_thunbergii_1DS-II_1-5841.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "lso-dn-1",
+        "name": "Oxtail Stew",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 120,
+        "ingredients": [
+          "1kg oxtail",
+          "Onions",
+          "Carrots",
+          "Potatoes",
+          "Tomatoes",
+          "Garlic",
+          "Thyme",
+          "Bay leaf",
+          "Red wine (optional)",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown oxtail",
+          "Sauté onions, garlic",
+          "Add tomatoes, wine, herbs, water",
+          "Simmer 2 hours",
+          "Add carrots and potatoes last 30 min"
+        ],
+        "description": "Rich, slow-braised oxtail stew.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Coda_alla_vaccinara-01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Coda_alla_vaccinara-01.jpg"
+        }
+      },
+      {
+        "id": "lso-dn-2",
+        "name": "Nama Liya Setšo (Traditional Meat Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "500g mutton",
+          "Onion",
+          "Tomatoes",
+          "Potatoes",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown mutton pieces",
+          "Add onion and tomatoes",
+          "Add water, simmer 45 min",
+          "Add potatoes, cook until tender",
+          "Serve with papa"
+        ],
+        "description": "Simple mutton stew — Basotho home cooking."
+      },
+      {
+        "id": "lso-dn-3",
+        "name": "Mefiri (Sheep's Head)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "Sheep's head (cleaned and prepared)",
+          "Onion, garlic, ginger",
+          "Salt, black pepper",
+          "Bay leaves, thyme",
+          "Water for braising"
+        ],
+        "instructions": [
+          "Prepare the sheep's head — cleaned, split if necessary",
+          "Blanch briefly to remove impurities",
+          "Braise in water with onion, garlic, bay leaves — low heat, long time",
+          "2-3 hours until the meat on the skull is tender and falling off",
+          "The cheeks, tongue, and brain are the prized parts",
+          "Season simply — salt, pepper, fresh herbs",
+          "Serve with papa or pap and moroho greens",
+          "Mefiri is a celebratory dish in Lesotho — sheep are prized highland animals",
+          "The head-to-tail philosophy — waste nothing — is Basotho tradition",
+          "The gelatinous braised skull meat has a unique, rich texture"
+        ],
+        "description": "Lesotho's celebratory slow braise — a whole sheep's head braised for 2-3 hours until the cheek meat, tongue, and brain are tender. Sheep are Lesotho's most prized livestock (the Basotho pony is famous, but sheep define the economy). The head-to-tail philosophy and the gelatinous richness of long-braised skull meat are traditional markers of a feast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Trigmatic.jpg",
+        "imageCredit": {
+          "author": "Ydiaka",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATrigmatic.jpg"
+        }
+      },
+      {
+        "id": "lso-dn-4",
+        "name": "Ntjoane (Dried Meat)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 240,
+        "ingredients": [
+          "Beef or mutton (lean cuts)",
+          "Salt, cayenne or peri peri",
+          "Vinegar",
+          "Coriander seeds (optional)"
+        ],
+        "instructions": [
+          "Slice meat into thin strips against the grain",
+          "Marinate in salt, vinegar, cayenne, optional coriander",
+          "Hang to dry in a dry, breezy spot — sun-drying preferred",
+          "Dry 3-5 days until hard and jerky-like",
+          "The high altitude and dry air of Lesotho's highlands are perfect for drying meat",
+          "The result is intensely savory, hard, chewy",
+          "Chew slowly — the flavor develops with each bite",
+          "Ntjoane is Lesotho's biltong equivalent — highland dried meat",
+          "Dried meat was essential for highland communities where refrigeration was impossible",
+          "The intense concentration of flavor and protein in each strip is the value"
+        ],
+        "description": "Lesotho's highland dried meat — salted, spiced beef or mutton hung to dry in the mountain air for days. The high altitude and dry Lesotho air make perfect meat-drying conditions. The intense flavor concentration and the hard chew are the mountain equivalent of biltong. Historically essential for highland winter survival."
+      },
+      {
+        "id": "lso-dn-5",
+        "name": "Phuthu (Dry Sorghum Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Sorghum flour (or maize meal)",
+          "Hot water",
+          "Salt",
+          "Butter or fat"
+        ],
+        "instructions": [
+          "Bring water to a boil with salt",
+          "Add flour gradually while stirring vigorously — avoid lumps",
+          "This version is drier and more crumbly than papa",
+          "Continue stirring until it separates into fluffy, dry crumbles",
+          "The crumble texture is the difference — less water, more stirring",
+          "Finish with a little butter or fat",
+          "The crumbly texture absorbs stews and gravies differently from smooth papa",
+          "Phuthu is eaten by hand — rolled into balls and dipped",
+          "The hand-rolling and dipping is the Lesotho eating method",
+          "Drier and more textured than pap — Basotho prefer this version"
+        ],
+        "description": "Lesotho's crumbly porridge — drier and more textured than pap, sorghum meal cooked with vigorous stirring until it separates into fluffy crumbles. Eaten by hand, rolled into balls and dipped into stew or moroho. The hand-roll-and-dip method is the traditional Basotho eating ritual.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "lso-sn-1",
+        "name": "Roasted Mealies (Corn)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "4 ears corn",
+          "Salt"
+        ],
+        "instructions": [
+          "Roast corn over open fire",
+          "Turn until charred in spots",
+          "Season with salt"
+        ],
+        "description": "Fire-roasted corn on the cob."
+      },
+      {
+        "id": "lso-sn-2",
+        "name": "Mapakiwa (Fried Fat Bread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour",
+          "Baking powder, salt",
+          "Water",
+          "Oil for deep frying",
+          "Sugar (optional — for sweet version)"
+        ],
+        "instructions": [
+          "Mix flour, baking powder, salt, and water into a soft dough",
+          "Pull off small pieces, stretch or press into rough rounds",
+          "Deep fry in hot oil until puffed and golden",
+          "The baking powder gives them a slight puff",
+          "The inside should be chewy and soft, the outside crispy",
+          "Eat immediately while hot — they deflate slightly as they cool",
+          "Dust with sugar for a sweet version",
+          "Mapakiwa are found across southern Africa under different names",
+          "In Zimbabwe they're mandazi; in South Africa vetkoek; in Lesotho mapakiwa",
+          "The fried dough ball is southern Africa's universal snack format"
+        ],
+        "description": "Lesotho's fried dough snack — simple flour-and-baking-powder dough deep-fried into puffy rounds, soft inside and crispy outside. Known across southern Africa by different names (vetkoek, mandazi, mapakiwa). The universal southern African fried bread in its Basotho mountain form."
+      },
+      {
+        "id": "lso-sn-3",
+        "name": "Roasted Chicken Feet (Maoto)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Chicken feet (cleaned, nails clipped)",
+          "Salt, peri peri or cayenne",
+          "Garlic",
+          "Oil",
+          "Lemon"
+        ],
+        "instructions": [
+          "Clean chicken feet — clip the nails",
+          "Marinate in garlic, salt, peri peri",
+          "Grill over charcoal or roast until crispy",
+          "The skin should char slightly, the gelatin-rich joints soften",
+          "Eat the skin and suck the gelatinous joints — there's no other way",
+          "The gelatin gives a rich, almost buttery satisfaction",
+          "Maoto (chicken feet) are a street food staple across southern Africa",
+          "They're cheap, flavorful, and texturally unique",
+          "The charcoal-grilled version is more flavorful than oven-roasted",
+          "Every market in Lesotho sells them — the smell of grilling maoto is a market signal"
+        ],
+        "description": "Lesotho's street market protein — chicken feet marinated in peri peri and garlic, grilled over charcoal until the skin crisps and the gelatin-rich joints soften. The suction technique for the gelatinous joints is non-negotiable. A cheap, deeply satisfying protein that appears at every southern African market.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Max%27s_Roasted_Chicken_-_Evan_Swigart.jpg"
+        }
+      },
+      {
+        "id": "lso-sn-4",
+        "name": "Bohobe ba Joala (Beer-Steamed Bread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 60,
+        "cookTime": 30,
+        "ingredients": [
+          "Sorghum flour",
+          "Joala (sorghum beer)",
+          "Water, salt",
+          "Leaves or cloth for steaming"
+        ],
+        "instructions": [
+          "Mix sorghum flour with joala and water",
+          "Let ferment 1 hour",
+          "Wrap in cabbage leaves or cloth",
+          "Steam over boiling water 25-30 minutes",
+          "The steam makes it soft inside",
+          "The joala leavening gives a gentle tang",
+          "Serve with butter or stew",
+          "Steam cooking is an ancient Basotho technique — no oven required",
+          "The joala ferment and steam method is specifically highland Lesotho",
+          "The soft interior and the joala tang are the results of patience"
+        ],
+        "description": "Lesotho's steam-cooked beer bread — sorghum dough leavened with sorghum beer (joala) and steamed in leaves over a fire. No oven required. The steam gives a soft, moist interior while the joala provides lactic tang. Ancient cooking technology adapted to highland life where fuel is precious."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "lso-ds-1",
+        "name": "Sweet Pumpkin",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "500g pumpkin (cubed)",
+          "Sugar",
+          "Cinnamon",
+          "Butter"
+        ],
+        "instructions": [
+          "Boil pumpkin until tender",
+          "Mash with sugar, cinnamon, butter"
+        ],
+        "description": "Sweet mashed pumpkin — a simple Basotho dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pumpkin-Pie-Whole-Slice.jpg",
+        "imageCredit": {
+          "author": "Evan-Amos",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APumpkin-Pie-Whole-Slice.jpg"
+        }
+      },
+      {
+        "id": "lso-ds-2",
+        "name": "Joala (Sorghum Beer)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 48,
+        "ingredients": [
+          "Sorghum malt (sprouted, dried sorghum)",
+          "Sorghum flour",
+          "Water"
+        ],
+        "instructions": [
+          "Malt sorghum: sprout, then dry and grind — this develops the enzymes",
+          "Cook sorghum flour in water to a thin porridge",
+          "Cool to 60°C, add malt — the enzymes convert starch to sugar",
+          "Ferment at room temperature 24-48 hours",
+          "The result is a slightly sour, fizzy, opaque beer at about 2-3% ABV",
+          "Filter through a basket strainer — traditional method",
+          "The cloudy, pink-brown liquid is drunk fresh — it ferments further quickly",
+          "Joala is Lesotho's traditional beer — brewed by women",
+          "Brewing joala is a female-held skill and a community responsibility",
+          "The slightly sour, fizzy, grain-sweet flavor is unlike commercial beer"
+        ],
+        "description": "Lesotho's traditional sorghum beer — brewed by women through a two-day fermentation process, slightly sour, fizzy, and opaque at 2-3% ABV. Joala brewing is a female craft and community responsibility. The cloudy pink-brown beer must be drunk fresh. Its grain-sweet, lactic-sour character is nothing like commercial beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jaak_Joala_94.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Jaak_Joala_94.jpg"
+        }
+      },
+      {
+        "id": "lso-ds-3",
+        "name": "Steamed Sweet Bread (Bohobe bo Monate)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "Flour",
+          "Sugar",
+          "Yeast or baking powder",
+          "Water or milk",
+          "Optional: dried fruit, cinnamon"
+        ],
+        "instructions": [
+          "Mix flour, sugar, leavening, water into a soft dough",
+          "If using yeast, let rise 1 hour",
+          "Steam in a covered pot over boiling water",
+          "The steam gives a soft, moist crumb — different from oven bread",
+          "The steam also prevents the top from drying — it stays tender",
+          "Slice and serve with butter, jam, or tea",
+          "Steamed sweet bread is Lesotho's treat bread — made for celebrations",
+          "The steam-cooked method requires only a pot and fire — no oven",
+          "The soft, slightly sweet crumb with butter and tea is a Lesotho afternoon tradition",
+          "Often made with dried fruit for special occasions"
+        ],
+        "description": "Lesotho's celebration bread — sweet yeast or baking powder dough steamed over a fire in a covered pot, producing a soft, moist crumb that oven baking cannot achieve. Steam-cooking requires only a pot and fire, no oven — adapted to highland resource constraints. Served with butter and tea as a treat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Steaming_bread_in_Xi%27an%27s_Muslim_Quarter.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Steaming_bread_in_Xi%27an%27s_Muslim_Quarter.jpg"
+        }
+      },
+      {
+        "id": "lso-ds-4",
+        "name": "Lephokoang (Pumpkin Sweet)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 25,
+        "ingredients": [
+          "Pumpkin or butternut squash",
+          "Sugar",
+          "Cinnamon, ginger",
+          "Water",
+          "Optional: butter"
+        ],
+        "instructions": [
+          "Peel and cube pumpkin",
+          "Simmer with sugar, cinnamon, ginger, and a little water",
+          "The pumpkin breaks down into a soft, spiced sweet",
+          "Add butter for richness",
+          "The result is a warm, sweet, spiced pumpkin pudding",
+          "Serve as a dessert or sweet side",
+          "Pumpkin grows well at altitude in Lesotho — a highland crop",
+          "Lephokoang is simple, warming, and suited to mountain evenings",
+          "The cinnamon and ginger are trade spice influence on traditional Basotho cooking",
+          "Simple sweetened pumpkin is a southern African tradition carried into Lesotho"
+        ],
+        "description": "Lesotho's highland pumpkin sweet — pumpkin braised with sugar, cinnamon, and ginger until soft and spiced. Pumpkin thrives at altitude, making it Lesotho's most accessible dessert ingredient. The warming cinnamon-ginger spicing and the soft pumpkin texture are a mountain evening's simple comfort."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "lso-dr-1",
+        "name": "Motoho (Fermented Sorghum Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Sorghum flour",
+          "Water",
+          "Malt"
+        ],
+        "instructions": [
+          "Make thin sorghum porridge",
+          "Add malt when cool",
+          "Ferment 1-2 days",
+          "Serve cold"
+        ],
+        "description": "Tangy fermented sorghum drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/The_National_Archives_UK_-_CO_1069-209-68.jpg"
+        }
+      },
+      {
+        "id": "lso-dr-2",
+        "name": "Joala ba Sesotho (Sorghum Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Sorghum malt",
+          "Mealie meal",
+          "Water"
+        ],
+        "instructions": [
+          "Cook mealie meal, cool",
+          "Add sorghum malt",
+          "Ferment 3-4 days",
+          "Strain and serve"
+        ],
+        "description": "Traditional Basotho sorghum beer."
+      },
+      {
+        "id": "lso-dr-3",
+        "name": "Maheu (Maize Fermented Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 24,
+        "ingredients": [
+          "Maize meal (coarse)",
+          "Water",
+          "Sugar or honey",
+          "Optional: sorghum for complexity"
+        ],
+        "instructions": [
+          "Cook a thin maize porridge",
+          "Cool to room temperature",
+          "Leave to ferment naturally 12-24 hours — the natural lactic bacteria sour it",
+          "The mixture becomes slightly fizzy and sour",
+          "Sweeten with sugar or honey to balance",
+          "Strain if desired or leave with texture",
+          "Serve cold",
+          "Maheu is Lesotho's non-alcoholic fermented drink",
+          "The lactic fermentation makes it probiotic",
+          "Drunk as a refreshing, nutritious beverage across southern Africa",
+          "The sour-sweet balance and the slight fizz are the character"
+        ],
+        "description": "Lesotho's probiotic maize drink — thin maize porridge fermented naturally for 12-24 hours by lactic bacteria, becoming sour, slightly fizzy, and probiotic. Sweetened to balance the lactic sourness. Maheu is found across southern Africa as both nutrition and refreshment. The natural fermentation and the sour-sweet balance are the character.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sam_Giancana.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sam_Giancana.jpg"
+        }
+      },
+      {
+        "id": "lso-dr-4",
+        "name": "Basotho Herbal Tea",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Dried wild herbs (buchu, rooibos-type plants)",
+          "Water",
+          "Honey",
+          "Lemon rind"
+        ],
+        "instructions": [
+          "Gather or buy dried highland herbs",
+          "Steep in boiling water 5-10 minutes",
+          "The mountain herbs of Lesotho have unique aromatic profiles",
+          "Sweeten with honey",
+          "Serve hot — essential in the cold highland evenings",
+          "Lesotho's high altitude means cold nights year-round",
+          "Highland herbal teas are drunk for warmth and health",
+          "The wild herb diversity of Lesotho's mountains is significant",
+          "Each herb is believed to have medicinal properties",
+          "The simple hot herbal drink against mountain cold is the ultimate comfort"
+        ],
+        "description": "Lesotho's highland warmth — mountain herbs steeped in hot water with honey, drunk against the cold of high altitude evenings. Lesotho averages the highest elevation of any country; cold nights are year-round. The wild herb diversity of the Maluti mountains and the hot-drink-against-cold ritual are distinctly Basotho."
+      }
+    ]
+  }
+}

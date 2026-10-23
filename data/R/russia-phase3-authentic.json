@@ -1,0 +1,585 @@
+{
+  "country": "Russia",
+  "region": "Europe/Asia",
+  "breakfast": [
+    {
+      "id": "rus-break-blini",
+      "name": "Blini (Russian Pancakes)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Thin Russian pancakes served with sour cream and caviar",
+      "seasonings": [],
+      "ingredients": [
+        "1 cup flour",
+        "2 eggs",
+        "1 cup milk",
+        "1/4 tsp salt",
+        "2 tbsp melted butter",
+        "Oil for cooking",
+        "Sour cream",
+        "Caviar or smoked salmon"
+      ],
+      "instructions": [
+        "Mix flour and salt",
+        "Whisk eggs with milk",
+        "Combine wet and dry",
+        "Add melted butter",
+        "Heat crepe pan or skillet",
+        "Lightly oil",
+        "Pour thin batter",
+        "Cook 1 minute per side until light brown",
+        "Stack on plate",
+        "Serve warm with sour cream and caviar"
+      ],
+      "notes": "Batter should be thin for proper texture",
+      "fun_fact": "Blini are a traditional Russian dish with roots in pre-Christian celebrations of spring",
+      "alternatives": [
+        "Jam instead of caviar",
+        "Mushrooms and onions",
+        "Savory with cheese"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg",
+      "imageCredit": {
+        "author": "Mae Mu",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Foodiesfeed.com_pouring-honey-on-pancakes-with-walnuts.jpg"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "rus-lunch-borscht",
+      "name": "Borscht (Beet Soup)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 50,
+      "description": "Deep red beet soup with beef and vegetables",
+      "seasonings": [
+        "caraway",
+        "bay leaf"
+      ],
+      "ingredients": [
+        "2 large beets",
+        "1.5 lbs beef",
+        "3 carrots",
+        "2 potatoes",
+        "1/2 head cabbage",
+        "1 onion",
+        "6 cloves garlic",
+        "6 cups broth",
+        "3 tbsp tomato paste",
+        "2 tbsp vinegar",
+        "Bay leaf",
+        "Caraway seeds",
+        "Salt",
+        "Pepper"
+      ],
+      "instructions": [
+        "Brown beef in pot",
+        "Add broth and bay leaf",
+        "Simmer 20 minutes",
+        "Add diced vegetables except beets",
+        "Simmer 20 minutes",
+        "Add grated beets and tomato paste",
+        "Add vinegar and caraway",
+        "Simmer 10 minutes",
+        "Season with salt and pepper",
+        "Serve hot with sour cream dollop"
+      ],
+      "notes": "Vinegar brightens the flavors",
+      "fun_fact": "Borscht is the most iconic Russian soup and is served throughout Eastern Europe",
+      "alternatives": [
+        "Vegetarian version",
+        "With beans",
+        "Add potatoes earlier for softer texture"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 50,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 30,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 15,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Bowl_of_Ukrainian_Borscht.jpg",
+      "imageCredit": {
+        "author": "Borshch at English Wikibooks",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Bowl_of_Ukrainian_Borscht.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "rus-dinner-stroganoff",
+      "name": "Russian Beef Stroganoff (Creamy Beef and Mushroom Sauce)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Creamy beef and mushroom sauce - Russian noble cuisine",
+      "seasonings": [
+        "paprika",
+        "Dijon mustard"
+      ],
+      "ingredients": [
+        "600g filet mignon or beef tenderloin, thinly sliced",
+        "300g baby bella mushrooms, sliced",
+        "2 medium white onions, thinly sliced",
+        "300ml sour cream, room temperature",
+        "250ml beef broth",
+        "3 tablespoons butter or vegetable oil",
+        "1 tablespoon Dijon mustard",
+        "2 cloves garlic, minced",
+        "2 tablespoons fresh dill, chopped",
+        "1 tablespoon paprika",
+        "Salt and white pepper to taste",
+        "500g egg noodles for serving"
+      ],
+      "instructions": [
+        "Heat 1 tablespoon butter in large skillet over medium-high heat",
+        "Cook mushrooms 5 minutes until softened and moisture evaporates; set aside",
+        "Add remaining butter to same skillet",
+        "Cook onions until soft and golden (7-8 minutes); set aside",
+        "Season beef strips with salt and white pepper",
+        "Increase heat to high; working in batches, sear beef 2-3 minutes per side until just cooked but still rare inside; remove all beef",
+        "Reduce heat to medium; add garlic, cook 1 minute",
+        "Add paprika; cook 30 seconds",
+        "Add beef broth; scrape up browned bits",
+        "Return mushrooms and onions to pan",
+        "Reduce heat to low",
+        "In small bowl, whisk sour cream with mustard",
+        "Slowly stir sour cream mixture into beef broth (do not boil or cream will curdle)",
+        "Return beef to pan; stir gently to combine",
+        "Simmer 5 minutes to warm through; do not boil",
+        "Stir in fresh dill",
+        "Taste and adjust salt and pepper",
+        "Serve immediately over buttered egg noodles"
+      ],
+      "notes": "Do not boil sour cream or it will curdle",
+      "fun_fact": "Named after wealthy Stroganov family of 19th century Russia",
+      "alternatives": [
+        "Use chicken",
+        "Add peas",
+        "Make vegetarian with mushrooms"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Beef_Stroganoff_1884.png",
+      "imageCredit": {
+        "author": "Ян Гурвич и Елена Ретц",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff_1884.png"
+      }
+    }
+  ],
+  "snacks": [
+    {
+      "id": "rus-snack-piroshki",
+      "name": "Piroshki (Filled Pastry)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 30,
+      "cookTime": 30,
+      "description": "Russian fried pastries filled with meat or potato",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "Dough: 3 cups flour, 1 tsp salt, 1 egg, 1 cup sour cream",
+        "Filling: 1 lb ground meat, 1 onion, salt, pepper",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Make dough: mix flour, salt, egg, sour cream",
+        "Knead until smooth",
+        "Rest 30 minutes",
+        "Brown meat with onion, season",
+        "Cool filling",
+        "Roll dough thin",
+        "Cut circles",
+        "Fill each with meat",
+        "Fold and seal edges",
+        "Heat oil to 350°F",
+        "Fry until golden on both sides",
+        "Drain on paper towels"
+      ],
+      "notes": "Filling must be cool before sealing",
+      "fun_fact": "Piroshki are Russian street food and are served at celebrations",
+      "alternatives": [
+        "Potato and cheese filling",
+        "Cabbage filling",
+        "Baked instead of fried"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Pirozhki_in_the_shape_of_flowers.jpg",
+      "imageCredit": {
+        "author": "Roozitaa",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Pirozhki_in_the_shape_of_flowers.jpg"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "id": "rus-dessert-medovik",
+      "name": "Medovik (Honey Cake)",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 45,
+      "cookTime": 60,
+      "description": "Russian layered honey cake with sour cream frosting",
+      "seasonings": [
+        "cinnamon"
+      ],
+      "ingredients": [
+        "Layers: 1 cup honey, 1/2 cup butter, 2 eggs, 2 cups flour, 1 tsp baking soda",
+        "Filling: 2 cups sour cream, 1 cup sugar, 1 tbsp gelatin",
+        "Cinnamon"
+      ],
+      "instructions": [
+        "Make dough: heat honey and butter, cool",
+        "Mix with eggs, flour, baking soda",
+        "Form into dough, chill",
+        "Roll between parchment, cut circles",
+        "Bake at 350°F for 8-10 minutes each",
+        "Cool layers",
+        "Make filling: dissolve gelatin, fold into sour cream and sugar",
+        "Layer cakes with filling",
+        "Frost entire cake with remaining filling",
+        "Dust with cinnamon",
+        "Refrigerate overnight"
+      ],
+      "notes": "Requires multiple baking stages",
+      "fun_fact": "Medovik is a beloved Russian dessert often made for celebrations",
+      "alternatives": [
+        "Condensed milk filling",
+        "Different spices",
+        "Chocolate coating"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg",
+      "imageCredit": {
+        "author": "Daria YakovlevaMinor edits made by Subsidiary account",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "rus-drink-kvass",
+      "name": "Kvass (Fermented Rye Drink)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 10,
+      "description": "Traditional Russian fermented drink made from rye bread",
+      "seasonings": [],
+      "ingredients": [
+        "1 lb dark rye bread",
+        "3 tbsp sugar",
+        "1/2 tsp dry yeast",
+        "Water",
+        "Raisins",
+        "Mint"
+      ],
+      "instructions": [
+        "Cube rye bread",
+        "Toast in oven at 350°F until crisp",
+        "Boil water, pour over bread",
+        "Let cool to room temperature",
+        "Add sugar and yeast",
+        "Cover loosely",
+        "Ferment 1-3 days until sour",
+        "Strain",
+        "Add raisins and mint",
+        "Chill before serving"
+      ],
+      "notes": "Fermentation time varies by temperature",
+      "fun_fact": "Kvass is a staple Russian drink with roots dating back over 1000 years",
+      "alternatives": [
+        "Store-bought kvass",
+        "Add honey",
+        "Different herbs"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Armenian_kvass_wagon.jpg",
+      "imageCredit": {
+        "author": "Flyachx",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Armenian_kvass_wagon.jpg"
+      }
+    },
+    {
+      "id": "rus-drink-vodka",
+      "name": "Russian Vodka",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "Pure vodka served ice-cold",
+      "seasonings": [],
+      "ingredients": [
+        "Vodka"
+      ],
+      "instructions": [
+        "Chill vodka in freezer until -20°C",
+        "Serve in small shot glass",
+        "Drink quickly",
+        "Followed by pickle juice chaser"
+      ],
+      "notes": "Temperature is essential",
+      "fun_fact": "Vodka is central to Russian culture and history",
+      "alternatives": [
+        "Flavored vodka",
+        "Room temperature",
+        "Mixed drinks"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Moskovskaya_vodka.jpg",
+      "imageCredit": {
+        "author": "Cunikm",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Moskovskaya_vodka.jpg"
+      }
+    }
+  ]
+}

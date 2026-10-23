@@ -1,0 +1,760 @@
+{
+  "mauritiusRecipes": {
+    "country": "Mauritius",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "mus-bf-1",
+        "name": "Dholl Puri",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, water, oil, turmeric",
+          "Filling: ground yellow split peas, cumin, turmeric"
+        ],
+        "instructions": [
+          "Boil and grind split peas",
+          "Mix into dough",
+          "Roll thin and cook on tawa",
+          "Serve with curry and chutneys"
+        ],
+        "description": "Thin flatbread stuffed with spiced split peas — Mauritius's street food icon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/A_flicker_of_Bengali_tradition.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/A_flicker_of_Bengali_tradition.jpg"
+        }
+      },
+      {
+        "id": "mus-bf-2",
+        "name": "Roti Chaud (Hot Flatbread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "Water",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Make dough, rest",
+          "Roll thin, cook on tawa",
+          "Brush with oil, fold",
+          "Serve with curry"
+        ],
+        "description": "Hot flaky flatbread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pate_Chaud.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pate_Chaud.jpg"
+        }
+      },
+      {
+        "id": "mus-bf-3",
+        "name": "Mine Frit (Fried Noodles)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Egg noodles (thin wheat)",
+          "Bean sprouts, carrot (julienned)",
+          "Eggs",
+          "Soy sauce, oyster sauce",
+          "Garlic, ginger",
+          "Scallions",
+          "Oil"
+        ],
+        "instructions": [
+          "Boil noodles briefly — rinse under cold water to stop cooking",
+          "Fry garlic, ginger in hot oil",
+          "Add noodles — fry over very high heat",
+          "Add soy sauce, oyster sauce — the heat must be high or noodles become soggy",
+          "Toss with vegetables — quick, high-heat",
+          "Push to side, scramble eggs in the same wok",
+          "Mix through",
+          "Scallions at the end",
+          "Mine frit is Mauritius' Chinese-influenced fried noodle — the Chinese community (Hakka) brought it",
+          "One of the most popular breakfast and lunch dishes in Mauritius",
+          "The Chinese-Creole fusion character of Mauritius shows in every mine frit stall",
+          "Found at 'dholl puri' street vendors alongside the Indian flatbreads"
+        ],
+        "description": "Mauritius' Chinese-Hakka fried noodle — egg noodles with vegetables and eggs tossed in a screaming hot wok with soy and oyster sauce. The Hakka Chinese community (one of Mauritius' five major ethnic groups) contributed mine frit to the national food culture. Found at street stalls alongside Indian dholl puri — the Mauritius multi-ethnic street food tableau.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg"
+        }
+      },
+      {
+        "id": "mus-bf-4",
+        "name": "Roti Chapati with Achard",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Whole wheat flour (atta)",
+          "Water, salt",
+          "Oil or ghee",
+          "Achard (Mauritius pickled vegetable relish: green mango or mixed vegetables)"
+        ],
+        "instructions": [
+          "Chapati: mix atta, water, salt into soft dough",
+          "Rest 20 minutes",
+          "Roll thin circles",
+          "Dry fry on a hot tava until both sides have brown spots and puff",
+          "Brush with ghee",
+          "Serve with achard — the sharp, mustard-seed pickle is the Mauritian accompaniment",
+          "Achard is Mauritius' pickle — sliced green mango or mixed vegetables pickled with mustard seeds, turmeric, and vinegar",
+          "The Indian flatbread-pickle breakfast is the Indian-Mauritius morning",
+          "The word 'achard' comes from French 'achards' (pickles) brought by the French colonizers from Indian trade",
+          "So achard is: an Indian-origin pickle, carried by French colonizers, grown Mauritian"
+        ],
+        "description": "Mauritius' chapati-and-pickle breakfast — Indian-style whole wheat flatbread served with achard, Mauritius' signature pickled vegetable relish. Achard's etymology reveals Mauritius' layered history: an Indian-origin pickle method (mustard seed, turmeric) that traveled with French colonial trade, then became irreversibly Mauritian. The Indian morning in a French-named pickle.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Chilli_pickle_in_a_plate_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Chilli_pickle_in_a_plate_2.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "mus-ln-1",
+        "name": "Octopus Curry",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "500g octopus (tenderized)",
+          "Coconut milk",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Turmeric",
+          "Cumin",
+          "Curry leaves",
+          "Tomatoes",
+          "Chili"
+        ],
+        "instructions": [
+          "Tenderize and clean octopus",
+          "Sauté onion, garlic, ginger, spices",
+          "Add tomatoes and coconut milk",
+          "Add octopus, simmer 25 min"
+        ],
+        "description": "Tender octopus in spiced coconut curry.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Octopuses_in_Tsukiji.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Octopuses_in_Tsukiji.JPG"
+        }
+      },
+      {
+        "id": "mus-ln-2",
+        "name": "Mine Frit (Fried Noodles)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Egg noodles",
+          "Chicken or shrimp",
+          "Cabbage",
+          "Carrots",
+          "Soy sauce",
+          "Garlic",
+          "Ginger",
+          "Oyster sauce",
+          "Oil"
+        ],
+        "instructions": [
+          "Cook noodles, drain",
+          "Stir-fry protein with garlic, ginger",
+          "Add vegetables, noodles, sauces",
+          "Toss until well coated"
+        ],
+        "description": "Mauritian fried noodles — Chinese-Creole fusion.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg"
+        }
+      },
+      {
+        "id": "mus-ln-3",
+        "name": "Biryani Mauricien",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Basmati rice",
+          "Chicken or goat (bone-in)",
+          "Onion, tomato, garlic, ginger",
+          "Biryani masala (cumin, coriander, cloves, cardamom, cinnamon, bay)",
+          "Saffron",
+          "Yogurt",
+          "Potato (a Mauritius addition — not standard Indian biryani)",
+          "Fried onion, fresh mint, cilantro for garnish"
+        ],
+        "instructions": [
+          "Marinate meat in yogurt and spices — at least 2 hours",
+          "Par-boil rice until 70% cooked — rinse",
+          "Layer: fried onion on bottom, then spiced meat, then par-cooked rice, then saffron water",
+          "The Mauritius addition: par-cooked potato cubes between the meat and rice layers",
+          "Cover tightly, cook on very low heat (dum) — the steam cooks everything through",
+          "The potato absorbs the meat juices and the biryani spice aroma",
+          "This is the biryani identifier: potato in biryani is a Mauritius/Kolkata regional addition",
+          "Open at the table — the fragrance of steam escaping is part of the ritual",
+          "Biryani mauricien is served at every Mauritian celebration — weddings, Eid, family gatherings",
+          "The potato layer is the Mauritian signature — Indian biryani masters from outside often argue about it"
+        ],
+        "description": "Mauritius' celebration rice — basmati biryani cooked dum-style with a layer of potato between the meat and rice (a Mauritius/Kolkata regional signature that other biryani traditions argue about). The potato absorbs all the meat juices and spice fragrance. Every Mauritian wedding has biryani. The potato is the identity marker.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-ln-4",
+        "name": "Boulettes (Street Dumplings)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Minced meat or fish paste",
+          "Spring onion, garlic, ginger, soy",
+          "Flour or egg white binder",
+          "Broth (clear, for serving)",
+          "Rice noodles (optional)",
+          "Soy sauce, chili sauce at table"
+        ],
+        "instructions": [
+          "Boulettes are Mauritius' street dumplings — small balls of minced meat or fish",
+          "Mix filling with spring onion, garlic, ginger, soy sauce, egg white to bind",
+          "Form into small balls — walnut-sized",
+          "Poach in clear broth — they cook through in the broth",
+          "Serve in the broth with rice noodles",
+          "The clear broth is always present",
+          "The Chinese origin is obvious — this is the Hakka meatball soup adapted for Mauritius",
+          "Served from street carts — the boulette lady with a steaming pot is a Mauritius street food image",
+          "Soy sauce, chili sauce at the table — each person seasons their own bowl",
+          "The boulettes concept adapted to every ingredient available in Mauritius — fish, chicken, beef, tofu"
+        ],
+        "description": "Mauritius' street dumpling soup — small minced meat or fish balls poached in clear broth, served with rice noodles and chili sauce. Directly from the Hakka Chinese community's culinary tradition. Boulette vendors with steaming pots are one of the most recognizable Mauritius street food images. The clear broth + chewy dumpling + chili sauce is the Mauritian street bowl.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "mus-dn-1",
+        "name": "Rougaille (Tomato Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Sausages or fish",
+          "Tomatoes",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Thyme",
+          "Chili",
+          "Oil"
+        ],
+        "instructions": [
+          "Sauté onion, garlic, ginger, thyme",
+          "Add tomatoes, cook to sauce",
+          "Add sausages or fish",
+          "Simmer 15 min",
+          "Serve with rice"
+        ],
+        "description": "Creole tomato stew — the backbone of Mauritian cooking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg"
+        }
+      },
+      {
+        "id": "mus-dn-2",
+        "name": "Biryani Mauricien",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "500g chicken",
+          "Basmati rice",
+          "Yogurt",
+          "Onion (fried)",
+          "Saffron",
+          "Cardamom",
+          "Cinnamon",
+          "Mint",
+          "Potatoes",
+          "Ghee"
+        ],
+        "instructions": [
+          "Marinate chicken in yogurt and spices",
+          "Parboil rice",
+          "Layer chicken, rice, fried onion, saffron milk",
+          "Cover, cook on low 30 min",
+          "Serve with chutney"
+        ],
+        "description": "Mauritian-style layered biryani.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-dn-3",
+        "name": "Rougaille (Creole Tomato Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Ripe tomatoes (fresh, roughly chopped)",
+          "Onion",
+          "Garlic, ginger (generous)",
+          "Thyme, bay leaf",
+          "Chili (whole dried)",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Fry onion in oil until golden",
+          "Add garlic, ginger — the Mauritian rougaille always has ginger, which distinguishes it",
+          "Add tomatoes — fresh and roughly chopped",
+          "The tomatoes break down into a sauce — 15 minutes on medium heat",
+          "Add thyme, bay leaf, whole dried chili (for heat but not intense)",
+          "The rougaille should be saucy but not too liquid — it reduces",
+          "Season with salt",
+          "Rougaille is Mauritius' Creole sauce — the base for everything",
+          "Rougaille de saucisses (smoked sausage rougaille) is the most popular version",
+          "But fish, chicken, or served plain with rice — rougaille is always appropriate",
+          "The ginger is the Mauritian signature — it appears in no other 'rougaille' in the world"
+        ],
+        "description": "Mauritius' Creole base sauce — tomatoes broken down with onion, garlic, ginger, and thyme into a lightly spiced sauce that goes over everything: smoked sausages, fish, chicken, or rice. The fresh ginger is the Mauritian signature in rougaille — it appears in no equivalent sauce elsewhere in the French Creole world. Rougaille de saucisses (with smoked sausages) is the most beloved version.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg"
+        }
+      },
+      {
+        "id": "mus-dn-4",
+        "name": "Riz Frit Mauricien (Mauritius Fried Rice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Day-old rice (essential — fresh rice becomes soggy)",
+          "Egg",
+          "Spring onion, carrot",
+          "Soy sauce, sesame oil",
+          "Garlic, ginger",
+          "Optional: shrimp, chicken, Chinese sausage"
+        ],
+        "instructions": [
+          "The key: day-old refrigerated rice — the rice dries out and fries properly",
+          "Fry garlic and ginger in hot oil",
+          "Add optional protein (shrimp, chicken, lap cheong sausage)",
+          "Add rice — fry over very high heat, pressing and tossing",
+          "Add soy sauce — it should smoke slightly and create a caramelized coating on the rice",
+          "Push rice aside, scramble eggs, mix through",
+          "Add spring onion, sesame oil",
+          "Mauritius fried rice is the Chinese-Creole hybrid — it has the Chinese fried rice technique",
+          "But rougaille spice or local flavors often creep in",
+          "It's served at Chinese restaurants, Chinese-Creole homes, and everywhere in between"
+        ],
+        "description": "Mauritius' fried rice — day-old rice fried over high heat with egg, soy sauce, and sesame oil in the Hakka Chinese technique. The Chinese community's most important contribution to Mauritian daily food. Often Chinese sausage (lap cheong) as the protein. The Chinese technique with occasional rougaille-influenced spicing is the Mauritius hybrid nature made edible."
+      },
+      {
+        "id": "mus-dn-5",
+        "name": "Gateaux Piment (Chili Fritters)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Yellow split peas (soaked overnight, drained)",
+          "Fresh chili (generous — they should be spicy)",
+          "Garlic, fresh turmeric",
+          "Cumin",
+          "Spring onion",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Grind soaked split peas coarsely — some whole, some broken",
+          "Add finely minced chili, garlic, fresh turmeric (not powder), cumin, spring onion",
+          "Season with salt",
+          "The mixture should be thick enough to hold a shape",
+          "Fry small flat cakes or rounds in hot oil",
+          "They should crisp on the outside — the pea starch forms a crust",
+          "Inside should be soft and spicy",
+          "Gateaux piment (chili cakes) are Mauritius' most iconic street food",
+          "Eaten at breakfast alongside dholl puri, or as snacks throughout the day",
+          "They're the Mauritian chili fritter — spicier than similar Indian preparations",
+          "The fresh turmeric (not powder) gives a floral, slightly bitter note"
+        ],
+        "description": "Mauritius' most iconic street snack — split pea fritters made spicy with generous fresh chili and fresh turmeric (the floral-bitter fresh note distinguishes them from dried-turmeric Indian versions). Eaten at breakfast alongside dholl puri or as snacks throughout the day. The gateaux piment seller at the bus stop is a Mauritius national image.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "mus-sn-1",
+        "name": "Gâteaux Piment (Chili Cakes)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups split peas (soaked)",
+          "Onion",
+          "Chili",
+          "Cumin",
+          "Cilantro",
+          "Salt",
+          "Oil"
+        ],
+        "instructions": [
+          "Grind soaked peas coarsely",
+          "Mix with onion, chili, cumin, cilantro",
+          "Fry spoonfuls until golden"
+        ],
+        "description": "Crispy chili-spiked split pea fritters.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-sn-2",
+        "name": "Gato Napolitaine (Jam Sandwich Cookie)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, butter, sugar, eggs (shortbread-style dough)",
+          "Jam (usually strawberry or pineapple)",
+          "Icing sugar"
+        ],
+        "instructions": [
+          "Make a sweet shortbread-type dough",
+          "Roll and cut into rounds (or rectangles)",
+          "Bake until lightly golden",
+          "Sandwich two together with jam filling",
+          "Dust with icing sugar",
+          "Gato napolitaine is Mauritius' colonial-era French pastry",
+          "The name suggests Neapolitan influence (French colonial connections to Italy through Europe)",
+          "It's become irreversibly Mauritian — found at every bakery and celebration",
+          "The simple jam sandwich cookie seems ordinary but has enormous cultural weight",
+          "It's the school snack, the Sunday treat, the family cookie tin item",
+          "The shortbread-jam combination is mild and sweet — comfort food for all communities"
+        ],
+        "description": "Mauritius' colonial-era jam sandwich cookie — shortbread rounds sandwiched with strawberry or pineapple jam, dusted with icing sugar. The French colonial legacy in biscuit form, now irreversibly Mauritian. The gato napolitaine is the cross-community food: Indian, Chinese, Creole, and Franco-Mauritian families all eat it. The school lunchbox cookie.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-sn-3",
+        "name": "Ti Puri (Small Fried Bread)",
+        "difficulty": "Easy",
+        "servings": 16,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, water, oil",
+          "Salt, a pinch of baking powder"
+        ],
+        "instructions": [
+          "Mix flour, water, salt, baking powder into a soft dough",
+          "Shape into very small balls",
+          "Deep fry in oil until puffed and golden",
+          "Ti puri means 'small puri' in Mauritian Creole",
+          "The miniature fried bread is served with chutney and pickle",
+          "It's the snack version of dholl puri",
+          "Eaten at street stalls and home gatherings",
+          "Ti puri served with green chutney (coriander-chili) is a tea-time snack",
+          "The puffed, hollow interior collapses as you bite — steam escapes",
+          "The Indian puri adapted and miniaturized for Mauritian snacking contexts"
+        ],
+        "description": "Mauritius' miniature fried bread — tiny puri-sized dough balls deep-fried until puffed hollow, eaten with green chutney and pickle. The Indian puri adapted for snacking format. Ti puri with coriander-chili chutney is a Mauritius tea-time standard, crossing ethnic community lines completely.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+        }
+      },
+      {
+        "id": "mus-sn-4",
+        "name": "Gato Arouille (Taro Cake)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Taro (peeled, boiled, mashed)",
+          "Flour (small amount — for binding)",
+          "Garlic, spring onion, chili",
+          "Salt",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Boil taro until very soft — drain well and mash",
+          "The taro must be dry — moisture makes it greasy when fried",
+          "Mix with garlic, spring onion, chili, salt, small amount of flour to bind",
+          "Shape into small flat cakes — the mixture is sticky",
+          "Fry until golden and crispy on the outside",
+          "The taro inside should be smooth and slightly earthy",
+          "Gato arouille is the Mauritius taro fritter — another Chinese-influenced adaptation",
+          "The Chinese brought taro preparation techniques; Mauritians added local spicing",
+          "Found at street stalls alongside gateaux piment",
+          "The taro's slightly sticky, earthy interior against the crispy exterior"
+        ],
+        "description": "Mauritius' taro fritter — boiled and mashed taro shaped into small cakes with garlic and chili, fried until crispy outside and smooth-earthy inside. Chinese taro preparation techniques adapted with Mauritian spicing. Taro has been a Pacific and Asian staple for thousands of years; in Mauritius it becomes a street fritter."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "mus-ds-1",
+        "name": "Napolitaine (Coconut Biscuit)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Shortbread base",
+          "Jam layer",
+          "Pink coconut icing"
+        ],
+        "instructions": [
+          "Make shortbread rounds",
+          "Top with jam",
+          "Cover with pink coconut icing",
+          "Let set"
+        ],
+        "description": "Iconic Mauritian layered biscuit — shortbread, jam, and pink coconut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-ds-2",
+        "name": "Napolitaine (Full Size)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour, butter, sugar, eggs",
+          "Strawberry jam",
+          "Pink royal icing (icing sugar, water, pink food coloring)"
+        ],
+        "instructions": [
+          "Make shortbread base",
+          "Bake until just firm",
+          "Sandwich with thick strawberry jam",
+          "Top with pink royal icing — this is the full Napolitaine",
+          "The pink icing is the visual signature of the full-size version",
+          "Let the icing set — it hardens over the jam",
+          "The combination: crumbly shortbread, sweet jam, hard pink icing",
+          "The Napolitaine is Mauritius' most sold cake — every bakery, every supermarket",
+          "It's the birthday cake layer option and the individually sold cake",
+          "The pink color is non-negotiable — white or other colors are not Napolitaine"
+        ],
+        "description": "Mauritius' most sold cake — shortbread sandwiched with strawberry jam and topped with pink royal icing, the icing's hardness creating a textural layer against the crumbly base. The pink color is non-negotiable and identity-defining: a Napolitaine without pink icing is not a Napolitaine. Found in every Mauritius bakery and supermarket. The national cake.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-ds-3",
+        "name": "Ladoo (Indian Sweet Ball)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Chickpea flour (besan)",
+          "Ghee",
+          "Sugar (powdered)",
+          "Cardamom",
+          "Optional: raisins, cashews, coconut"
+        ],
+        "instructions": [
+          "Toast chickpea flour in ghee over medium heat — stir constantly",
+          "Toast until the flour changes from raw to nutty — like toasted nut aroma",
+          "The toasting is the critical step — determines the flavor entirely",
+          "Remove from heat, cool slightly",
+          "Add powdered sugar, cardamom, optional raisins or cashews",
+          "While still warm, roll quickly into balls — the mixture holds together when warm",
+          "If it won't hold: add a little more ghee",
+          "Ladoo is Mauritius' Indian community celebration sweet — found at Diwali, weddings, Holi",
+          "The besan-ghee combination is ancient Indian sweet-making",
+          "In Mauritius, the Indian population (68%) has made ladoo part of the national celebration food",
+          "Ladoo is now eaten across all Mauritian communities at celebrations"
+        ],
+        "description": "Mauritius' Indian celebration sweet — chickpea flour toasted in ghee until nutty, mixed with sugar and cardamom while warm, rolled into balls. The toasting transforms raw flour into something deeply caramelized and nutty. Ladoo is the Diwali sweet, the wedding distribution, the Holi gift. India's 68% Mauritian community has made ladoo part of all Mauritian celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Laddu_Sweet.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Laddu_Sweet.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "mus-dr-1",
+        "name": "Alouda",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Milk",
+          "Sugar",
+          "Agar agar jelly",
+          "Basil seeds",
+          "Vanilla",
+          "Rose syrup",
+          "Ice"
+        ],
+        "instructions": [
+          "Soak basil seeds, set agar jelly",
+          "Mix cold milk with sugar, vanilla, rose syrup",
+          "Add basil seeds and jelly cubes",
+          "Serve over ice"
+        ],
+        "description": "Mauritian milkshake with basil seeds and agar jelly.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      },
+      {
+        "id": "mus-dr-2",
+        "name": "Phoenix Beer",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Phoenix lager"
+        ],
+        "instructions": [
+          "Serve cold in glass"
+        ],
+        "description": "Mauritius's beloved national beer."
+      },
+      {
+        "id": "mus-dr-3",
+        "name": "Alouda (Milk and Basil Seed Drink)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Whole milk (cold)",
+          "Basil seeds (sabja — soaked, they swell to 20x their size)",
+          "Rose syrup or vanilla syrup",
+          "Crushed ice",
+          "Agar agar jelly (optional)",
+          "Vermicelli (optional)"
+        ],
+        "instructions": [
+          "Soak basil seeds in cold water for 10 minutes — they swell dramatically into translucent gel spheres",
+          "The basil seeds look like tiny frog eggs — this is the visual signature",
+          "Mix cold milk with rose syrup (or vanilla syrup) — turns pink or vanilla-cream",
+          "Add basil seeds — they float and sink through the milk",
+          "Add crushed ice",
+          "Optional: agar jelly and vermicelli for additional texture",
+          "Alouda is Mauritius' most iconic drink — found at every street stall",
+          "The basil seed gel texture in cold sweet milk is unlike any other drink",
+          "Brought by the Indian community — similar drinks exist in India and South Asia",
+          "But alouda as sold in Mauritius (with the dramatic basil seed gel spheres) is distinctly Mauritian"
+        ],
+        "description": "Mauritius' most iconic drink — cold sweet milk with rose syrup and basil seeds (sabja) that have swollen into dramatic translucent gel spheres. The visual of gel spheres floating in pink milk is the Mauritius alouda image. A South Asian import adapted by the Indian community into something distinctly Mauritius: every street stall sells it, all communities drink it.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Mauritian_Dalpuri.jpg"
+        }
+      }
+    ]
+  }
+}

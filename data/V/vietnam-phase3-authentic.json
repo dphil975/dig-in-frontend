@@ -1,0 +1,551 @@
+{
+  "country": "Vietnam",
+  "region": "Southeast Asia",
+  "breakfast": [
+    {
+      "id": "vtn-break-banh-mi",
+      "name": "Banh Mi (Vietnamese Breakfast Sandwich)",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 15,
+      "cookTime": 0,
+      "description": "A beloved Vietnamese breakfast sandwich combining French colonial influences with Vietnamese ingredients - crusty bread filled with pâté, pickled vegetables, fresh herbs, and cilantro",
+      "seasonings": [
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "1 Vietnamese or French baguette",
+        "2 tbsp mayonnaise",
+        "150g lemongrass pork (or pâté)",
+        "1 cup pickled daikon and carrots",
+        "1 fresh cucumber, sliced",
+        "Fresh cilantro",
+        "Fresh Thai basil or mint",
+        "1-2 fresh chilies"
+      ],
+      "instructions": [
+        "Slice baguette lengthwise and lightly toast if desired",
+        "Spread mayonnaise on both sides of bread",
+        "Layer: pâté, sliced lemongrass pork, pickled vegetables, cucumber, chilies, and fresh herbs",
+        "Maintain proper ratio of filling to vegetables (approximately 1:1)",
+        "Do not overstuff",
+        "Slice sandwich in half if desired and serve immediately",
+        "Wrap in paper for easy eating"
+      ],
+      "notes": "Balance of ingredients is crucial - too much filling makes it difficult to eat. The pickled vegetables provide essential tang and crunch",
+      "fun_fact": "Banh mi reflects Vietnam's colonial history through use of French baguettes and ingredients. It was eaten for breakfast more mornings than can be counted in Vietnam's Nha Trang",
+      "alternatives": [
+        "Use grilled chicken instead of pork",
+        "Add fried eggs",
+        "Include Vietnamese ham",
+        "Make vegetarian with fried tofu"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 15,
+          "cook_time": 0,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 7,
+          "cook_time": 0,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 2,
+          "cook_time": 0,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Special_Baguette_%28B%C3%A1nh_m%C3%AC%29_-_Banh_Mi_Ancient_Saigon_2024-12-20.jpg",
+      "imageCredit": {
+        "author": "Andy Li",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Special_Baguette_(Bánh_mì)_-_Banh_Mi_Ancient_Saigon_2024-12-20.jpg"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "vtn-lunch-pho",
+      "name": "Phở (Vietnamese Beef Noodle Soup)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 180,
+      "description": "Iconic Vietnamese lunch - fragrant beef broth with rice noodles and tender beef. Combination of Vietnamese and French influences",
+      "seasonings": [
+        "star anise",
+        "cinnamon",
+        "fish sauce",
+        "salt"
+      ],
+      "ingredients": [
+        "1kg beef bones",
+        "2-inch piece ginger",
+        "1 large onion",
+        "3 star anise",
+        "1 cinnamon stick",
+        "2 tbsp fish sauce",
+        "Salt to taste",
+        "300g rice noodles",
+        "200g thinly sliced beef",
+        "Fresh basil, cilantro, lime, chili for garnish",
+        "Beef broth"
+      ],
+      "instructions": [
+        "Char ginger and onion over open flame",
+        "In large pot, combine bones, charred ginger/onion, spices, fish sauce and water",
+        "Bring to boil, reduce heat, simmer 2-3 hours for deep flavor",
+        "Strain broth, season with fish sauce and salt",
+        "Cook rice noodles according to package",
+        "Arrange noodles in bowl, top with raw beef",
+        "Pour boiling broth over, beef will cook from heat",
+        "Serve with garnishes on side"
+      ],
+      "notes": "Long simmering time essential for rich broth flavor. Can prepare broth day ahead",
+      "fun_fact": "Phở became iconic Vietnamese lunch, combination of Vietnamese and French influences from colonial era",
+      "alternatives": [
+        "Chicken phở instead of beef",
+        "Seafood phở with shrimp",
+        "Vegetarian with mushroom broth",
+        "Quick phở with store-bought broth"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 180,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 108,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 54,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Pho-Beef-Noodles-2008.jpg",
+      "imageCredit": {
+        "author": "Vietnamnet",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Pho-Beef-Noodles-2008.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "vnm-dinner-pho",
+      "name": "Vietnamese Phở (Beef Noodle Soup with Aromatic Broth)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 360,
+      "description": "Beef noodle soup with fragrant aromatic broth - Vietnam's national dinner",
+      "seasonings": [
+        "star anise",
+        "cinnamon",
+        "cloves",
+        "coriander seeds"
+      ],
+      "ingredients": [
+        "1.5kg beef bones (knuckle, leg, marrow bones)",
+        "400g beef brisket",
+        "1 onion, halved",
+        "1 piece ginger (5cm), halved",
+        "2 shallots, halved",
+        "4-5 star anise",
+        "1 cinnamon stick",
+        "4-5 cloves",
+        "1 tablespoon coriander seeds",
+        "2 tablespoons rock sugar",
+        "2 tablespoons fish sauce",
+        "Salt to taste",
+        "Water",
+        "300g dried pho noodles",
+        "Garnishes: fresh basil, mint, cilantro, lime wedges, sliced chilies, thinly sliced white onion, scallions, bean sprouts, hoisin and sriracha sauce"
+      ],
+      "instructions": [
+        "Parboil bones 5-10 minutes; rinse and scrub under cold water",
+        "Char onion, ginger, shallots directly over flame 3-4 minutes per side",
+        "Add bones to large pot with 3.5 liters water; bring to boil",
+        "Reduce to gentle simmer; skim foam for first 30 minutes",
+        "Add charred vegetables and spices; maintain gentle simmer",
+        "Cook 6-8 hours for rich flavor (minimum 3 hours)",
+        "Add beef brisket after 2 hours; cook until tender",
+        "Strain broth through fine sieve; season with fish sauce and rock sugar",
+        "Cook pho noodles according to package directions; drain",
+        "Slice beef brisket thinly",
+        "Arrange noodles in bowls; top with beef; ladle hot broth over",
+        "Serve with garnish platter on the side"
+      ],
+      "notes": "Long slow cooking is essential for depth of flavor",
+      "fun_fact": "Influenced by French pot-au-feu but distinctly Vietnamese",
+      "alternatives": [
+        "Make phở gà with chicken",
+        "Add tofu",
+        "Vegetarian mushroom broth"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 360,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 216,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 108,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/3_mushroom_curry_noodle_soup_with_ph%E1%BB%9F_-_Pho_2025-11-12.jpg",
+      "imageCredit": {
+        "author": "Andy Li",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:3_mushroom_curry_noodle_soup_with_phở_-_Pho_2025-11-12.jpg"
+      }
+    },
+    {
+      "id": "vnm-dinner-ca-kho-to",
+      "name": "Ca Kho To (Braised Fish in Clay Pot)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 30,
+      "description": "Vietnamese braised fish in caramelized sauce - simple and delicious",
+      "seasonings": [
+        "fish sauce",
+        "sugar",
+        "black pepper"
+      ],
+      "ingredients": [
+        "500g catfish or snakehead fish, cut into thick chunks",
+        "4 tablespoons fish sauce",
+        "2 tablespoons sugar",
+        "6 cloves garlic, sliced",
+        "1 tablespoon ginger, sliced",
+        "2-3 Thai bird's eye chilies, whole",
+        "2 tablespoons caramel sauce (or make from sugar and water)",
+        "1 cup water or fish stock",
+        "2 tablespoons oil",
+        "Black pepper to taste",
+        "Fresh dill for garnish"
+      ],
+      "instructions": [
+        "Make caramel: heat 2 tablespoons sugar in pot until melted and golden (don't stir, just watch)",
+        "Carefully add 1 tablespoon water (caramel will sizzle)",
+        "Or use pre-made caramel sauce",
+        "Heat oil in clay pot or heavy skillet over medium heat",
+        "Add garlic slices and ginger slices, cook until fragrant (1 minute)",
+        "Add fish chunks, arrange in single layer",
+        "Pour caramel sauce, fish sauce, water over fish",
+        "Add whole chilies",
+        "Bring to gentle simmer (don't boil - fish will become tough)",
+        "Cover and simmer 20-25 minutes until fish is cooked through",
+        "The sauce should reduce slightly and become silky",
+        "Season with black pepper",
+        "Transfer to serving dishes, pour sauce over",
+        "Garnish with fresh dill",
+        "Serve with steamed rice"
+      ],
+      "notes": "Fish must simmer gently - not boil. Traditional cooking in clay pot adds flavor",
+      "fun_fact": "Ca Kho To is a beloved Vietnam comfort food, often made at home rather than in restaurants",
+      "alternatives": [
+        "Use different fish varieties",
+        "Add hard-boiled eggs",
+        "Make with tofu",
+        "Add mushrooms"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 15,
+          "cook_time": 30,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 7,
+          "cook_time": 18,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 2,
+          "cook_time": 9,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/C%C3%A1_kho_t%E1%BB%99.JPG",
+      "imageCredit": {
+        "author": "Binh Giang",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Cá_kho_tộ.JPG"
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": []
+}

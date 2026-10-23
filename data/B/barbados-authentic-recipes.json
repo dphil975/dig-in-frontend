@@ -1,0 +1,542 @@
+{
+  "barbadosRecipes": {
+    "country": "Barbados",
+    "region": "Caribbean",
+    "breakfast": [
+      {
+        "id": "brb-bf-1",
+        "name": "Bajan Saltfish and Bakes",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 25,
+        "ingredients": [
+          "300g salt cod (soaked)",
+          "2 tomatoes",
+          "1 onion",
+          "1 green pepper",
+          "Fresh thyme",
+          "Scotch bonnet",
+          "For bakes: 2 cups flour, baking powder, butter, water, oil for frying"
+        ],
+        "instructions": [
+          "Boil and flake saltfish",
+          "Sauté onion, tomatoes, pepper, thyme, scotch bonnet",
+          "Add fish, toss together",
+          "Make bakes: mix dough, shape rounds, fry until golden",
+          "Serve saltfish with bakes"
+        ],
+        "description": "Flaked saltfish with vegetables alongside fried bread."
+      },
+      {
+        "id": "brb-bf-2",
+        "name": "Breadfruit Cou-Cou",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "1 breadfruit (peeled, cubed)",
+          "6 okra (sliced)",
+          "2 tbsp butter",
+          "Salt and pepper",
+          "Water"
+        ],
+        "instructions": [
+          "Boil breadfruit and okra until very soft",
+          "Drain, reserving liquid",
+          "Mash together, adding cooking liquid to reach smooth consistency",
+          "Stir in butter, season",
+          "Serve with flying fish or saltfish"
+        ],
+        "description": "Mashed breadfruit and okra — a Barbadian comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/COO_COOO.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/COO_COOO.jpg"
+        }
+      },
+      {
+        "id": "brb-bf-3",
+        "name": "Bajan Bakes",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "1 tbsp baking powder",
+          "1 tbsp sugar",
+          "1/2 tsp salt",
+          "2 tbsp butter",
+          "Water or coconut milk",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix dry ingredients, cut in butter",
+          "Add liquid to form soft dough",
+          "Shape into rounds, fry until puffy and golden",
+          "Serve with saltfish, cheese, or jam"
+        ],
+        "description": "Puffy fried dough — the Bajan version of Caribbean bakes. Eaten at breakfast with saltfish or as a snack."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "brb-ln-1",
+        "name": "Cou-Cou and Flying Fish",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "400g flying fish fillets",
+          "2 cups cornmeal",
+          "8 okra (sliced)",
+          "For sauce: tomatoes, onion, garlic, thyme, scotch bonnet, lime juice",
+          "Butter",
+          "Salt"
+        ],
+        "instructions": [
+          "Make cou-cou: boil okra, stir in cornmeal slowly, cook smooth, add butter",
+          "Season fish with lime and herbs",
+          "Make tomato sauce with onion, garlic, thyme",
+          "Steam fish in sauce until cooked",
+          "Mold cou-cou, top with fish and sauce"
+        ],
+        "description": "Barbados's national dish — cornmeal with okra and steamed flying fish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/COO_COOO.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/COO_COOO.jpg"
+        }
+      },
+      {
+        "id": "brb-ln-2",
+        "name": "Macaroni Pie",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "500g elbow macaroni",
+          "300g cheddar cheese (grated)",
+          "2 eggs",
+          "1 cup evaporated milk",
+          "2 tbsp butter",
+          "1 tbsp mustard",
+          "Ketchup",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Cook macaroni until just tender",
+          "Mix with most of the cheese, eggs, milk, mustard, ketchup",
+          "Pour into baking dish",
+          "Top with remaining cheese and butter",
+          "Bake at 180°C 40 min until golden"
+        ],
+        "description": "Barbados's beloved baked macaroni and cheese pie.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Macaroni_pie_1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Macaroni_pie_1.jpg"
+        }
+      },
+      {
+        "id": "brb-ln-3",
+        "name": "Pudding and Souse",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Souse: 2 pig feet, 2 pig ears, 1 pig snout, lime juice, cucumber, onion, parsley, Scotch bonnet, salt",
+          "Pudding: grated sweet potato, seasoning (thyme, marjoram, onion, Scotch bonnet), suet or butter, pig intestine casing or foil"
+        ],
+        "instructions": [
+          "Boil pork pieces until very tender, 1+ hours",
+          "Cool in lime juice with sliced cucumber, onion, parsley, hot pepper — this is the souse",
+          "For pudding: mix grated sweet potato with seasoning and suet",
+          "Stuff into cleaned casings or wrap in foil",
+          "Steam 30 min until firm",
+          "Slice pudding, serve alongside souse"
+        ],
+        "description": "Saturday afternoon tradition in Barbados — sweet potato pudding stuffed in casing, alongside pickled pork in lime. Sold from roadside vendors across the island.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Headcheese_Elizabeths.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Headcheese_Elizabeths.jpg"
+        }
+      },
+      {
+        "id": "brb-ln-4",
+        "name": "Macaroni Pie (Bajan Baked Mac)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "500g elbow macaroni",
+          "300g sharp cheddar (grated)",
+          "3 eggs",
+          "350ml evaporated milk",
+          "1 tsp mustard powder",
+          "Ketchup (yes, ketchup — this is Bajan tradition)",
+          "2 tbsp butter",
+          "Salt and pepper",
+          "Hot pepper sauce"
+        ],
+        "instructions": [
+          "Cook macaroni until just al dente",
+          "Mix eggs, evaporated milk, mustard, ketchup, hot sauce",
+          "Combine with macaroni and most of the cheese",
+          "Pour into buttered baking dish",
+          "Top with remaining cheese and dots of butter",
+          "Bake at 175°C for 35-40 min until golden and firm — it must be sliceable, not scoopable",
+          "Cool 10 min before cutting into squares",
+          "It's mac and cheese but denser — more like a savory cake"
+        ],
+        "description": "Bajan mac pie — not saucy American mac and cheese, but a dense, sliceable, baked casserole with ketchup in the mix. Went viral when Rihanna talked about it. Every Sunday table in Barbados has a pan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Macaroni_pie_1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Macaroni_pie_1.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "brb-dn-1",
+        "name": "Pepper Pot (Bajan Style)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 90,
+        "ingredients": [
+          "500g beef",
+          "300g pork",
+          "1 pig tail (optional)",
+          "2 cups spinach",
+          "Fresh herbs",
+          "Cassareep or molasses",
+          "Scotch bonnet",
+          "Cinnamon stick",
+          "Cloves",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown meats in large pot",
+          "Add cassareep, cinnamon, cloves, scotch bonnet",
+          "Cover with water, simmer 60 min",
+          "Add spinach, cook 30 more min",
+          "Adjust seasoning",
+          "Serve with rice or bread"
+        ],
+        "description": "A deep, dark, spiced meat stew.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/John_Lewis_Krimmel_-_A_Scene_in_the_Philadelphia_Market_%281811%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/John_Lewis_Krimmel_-_A_Scene_in_the_Philadelphia_Market_%281811%29.jpg"
+        }
+      },
+      {
+        "id": "brb-dn-2",
+        "name": "Fried Fish with Bajan Seasoning",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "4 fish fillets (snapper or dolphinfish)",
+          "For Bajan seasoning: green onions, thyme, marjoram, parsley, garlic, scotch bonnet, lime juice",
+          "Flour",
+          "Oil for frying",
+          "Salt"
+        ],
+        "instructions": [
+          "Blend all seasoning ingredients into paste",
+          "Score fish, rub with seasoning, marinate 1 hour",
+          "Dredge in flour",
+          "Fry in hot oil until golden and crispy",
+          "Serve with coleslaw and macaroni pie"
+        ],
+        "description": "Crispy fried fish marinated in iconic Bajan green seasoning.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Whisking_sauce-01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Whisking_sauce-01.jpg"
+        }
+      },
+      {
+        "id": "brb-dn-3",
+        "name": "Jug Jug",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "500g pigeon peas",
+          "250g salt beef (soaked, cubed)",
+          "Guinea corn flour (or cornmeal)",
+          "Thyme",
+          "Green onion",
+          "Parsley",
+          "Butter",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Cook pigeon peas and salt beef together until tender",
+          "Mash peas slightly — keep some texture",
+          "Add guinea corn flour gradually, stirring",
+          "Cook until thick, like stiff porridge",
+          "Season with thyme, green onion, parsley, butter",
+          "Serve alongside baked ham — this is Barbados' Christmas dish"
+        ],
+        "description": "A Scottish-African fusion from enslaved Scots and Africans — pigeon peas and salt meat cooked into thick porridge. Traditional Christmas dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Square_milk_jug_side.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Square_milk_jug_side.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "brb-sn-1",
+        "name": "Fish Cakes",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "300g salt cod (soaked, flaked)",
+          "1 cup flour",
+          "1 egg",
+          "Green onions",
+          "Fresh herbs",
+          "Scotch bonnet",
+          "Baking powder",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix flour, baking powder, egg to batter",
+          "Fold in flaked fish, herbs, onions, pepper",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden brown",
+          "Drain and serve with hot sauce"
+        ],
+        "description": "Crispy saltfish fritters — a Bajan street food staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Fish_cakes_food_dinner.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Fish_cakes_food_dinner.jpg"
+        }
+      },
+      {
+        "id": "brb-sn-2",
+        "name": "Cutters (Fish or Ham Sandwiches)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "Salt bread rolls",
+          "Fried flying fish or baked ham",
+          "Mustard",
+          "Hot pepper sauce",
+          "Pickles"
+        ],
+        "instructions": [
+          "Split salt bread rolls",
+          "Fill with fried flying fish or sliced ham",
+          "Add mustard, pepper sauce, pickles",
+          "Press together"
+        ],
+        "description": "Bajan bar food — small salt bread sandwiches stuffed with fish or ham. The name means 'something that goes with rum.'"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "brb-ds-1",
+        "name": "Coconut Bread",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 50,
+        "ingredients": [
+          "3 cups flour",
+          "1 cup grated coconut",
+          "1 cup sugar",
+          "1/2 cup butter",
+          "2 eggs",
+          "1 cup milk",
+          "1 tsp vanilla",
+          "Dried cherries",
+          "Mixed spice",
+          "Baking powder"
+        ],
+        "instructions": [
+          "Cream butter and sugar, add eggs",
+          "Mix in flour, baking powder, spice",
+          "Add coconut, milk, vanilla, cherries",
+          "Pour into loaf pan",
+          "Bake at 170°C 50 min"
+        ],
+        "description": "Sweet coconut-studded bread, a Barbadian bakery favorite.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Coco_bread_wrapped_beef_patty.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Coco_bread_wrapped_beef_patty.jpg"
+        }
+      },
+      {
+        "id": "brb-ds-2",
+        "name": "Conkies",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "Grated pumpkin",
+          "Grated sweet potato",
+          "Grated coconut",
+          "Cornmeal",
+          "Sugar",
+          "Raisins",
+          "Almond essence",
+          "Spices (nutmeg, cinnamon)",
+          "Butter",
+          "Banana leaves"
+        ],
+        "instructions": [
+          "Mix all ingredients together",
+          "Wrap portions in banana leaves, tie with string",
+          "Steam 40-45 min",
+          "Unwrap and serve warm"
+        ],
+        "description": "Steamed banana-leaf parcels of pumpkin, sweet potato, and coconut — made for Independence Day (November 30th) but eaten year-round.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Conkie.jpg",
+        "imageCredit": {
+          "author": "Foodista",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AConkie.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "brb-dr-1",
+        "name": "Mauby (Bark Drink)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "50g mauby bark",
+          "1L water",
+          "1 cup sugar",
+          "Orange peel",
+          "Cinnamon stick",
+          "Cloves",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Boil bark with spices 15 min",
+          "Strain, add sugar while warm",
+          "Cool completely",
+          "Serve over ice"
+        ],
+        "description": "A bittersweet bark drink unique to the Caribbean.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Botellas_de_Mav%C3%AD_%28izq._-_llena%2C_der._-_vac%C3%ADa%29%2C_en_Ponce%2C_Puerto_Rico_%28DSC02261%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Botellas_de_Mav%C3%AD_%28izq._-_llena%2C_der._-_vac%C3%ADa%29%2C_en_Ponce%2C_Puerto_Rico_%28DSC02261%29.jpg"
+        }
+      },
+      {
+        "id": "brb-dr-2",
+        "name": "Rum Punch Bajan Style",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "120ml Barbados rum",
+          "60ml lime juice",
+          "120ml simple syrup",
+          "Dash Angostura bitters",
+          "Nutmeg",
+          "Ice"
+        ],
+        "instructions": [
+          "Combine rum, lime juice, syrup",
+          "Add bitters, stir well",
+          "Pour over ice",
+          "Grate fresh nutmeg on top"
+        ],
+        "description": "Barbadian rum punch — simple and strong.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bowle_Steinhude_2009_20090822_3.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Bowle_Steinhude_2009_20090822_3.JPG"
+        }
+      },
+      {
+        "id": "brb-dr-3",
+        "name": "Falernum",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "Lime zest",
+          "Whole cloves",
+          "Ginger (grated)",
+          "Almond extract",
+          "White rum",
+          "Simple syrup"
+        ],
+        "instructions": [
+          "Muddle lime zest, cloves, ginger together",
+          "Add rum, steep 24 hours",
+          "Strain, add simple syrup and almond extract",
+          "Bottle and refrigerate",
+          "Use as mixer in rum cocktails"
+        ],
+        "description": "Bajan-born syrup liqueur — lime, almond, clove, and ginger. An essential ingredient in Caribbean rum cocktails worldwide.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Falernum.jpg",
+        "imageCredit": {
+          "author": "Craig Hermann",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFalernum.jpg"
+        }
+      }
+    ]
+  }
+}

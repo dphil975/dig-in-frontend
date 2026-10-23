@@ -1,0 +1,431 @@
+{
+  "country": "China",
+  "region": "East Asia",
+  "breakfast": [],
+  "lunch": [
+    {
+      "id": "chn-lunch-mapo-tofu",
+      "name": "Mapo Tofu (Spicy Tofu in Sauce)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 15,
+      "description": "Sichuan classic - soft tofu in spicy sauce with ground pork. Name means pockmarked old woman who invented it",
+      "seasonings": [
+        "doubanjiang (spicy bean paste)",
+        "soy sauce",
+        "Sichuan peppercorns",
+        "white pepper"
+      ],
+      "ingredients": [
+        "400g soft tofu",
+        "200g ground pork (or beef)",
+        "3 tbsp oil",
+        "4 cloves garlic (minced)",
+        "1 tbsp ginger (minced)",
+        "2 tbsp doubanjiang (spicy bean paste)",
+        "1 tbsp soy sauce",
+        "1 tsp sugar",
+        "1/2 tsp white pepper",
+        "1/4 tsp Sichuan peppercorns",
+        "1/2 cup broth",
+        "1 tbsp cornstarch mixed with 2 tbsp water"
+      ],
+      "instructions": [
+        "Cut tofu into cubes, set aside",
+        "Heat oil, add garlic and ginger, cook 1 minute",
+        "Add pork, break up and cook until no pink",
+        "Stir in doubanjiang, cook 1 minute",
+        "Add soy sauce, sugar, white pepper, Sichuan peppercorns and broth",
+        "Bring to simmer, add tofu gently",
+        "Simmer 5 minutes",
+        "Add cornstarch slurry to thicken",
+        "Serve immediately with rice"
+      ],
+      "notes": "Handle tofu gently to avoid breaking. Sichuan peppercorns create numbing sensation",
+      "fun_fact": "Mapo Tofu is Sichuan classic, name means pockmarked old woman who invented it. One of Eight Great Traditions of Chinese cuisine",
+      "alternatives": [
+        "Use chicken instead of pork",
+        "Make vegetarian without meat",
+        "Add black mushrooms",
+        "Increase heat level"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 15,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 7,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 2,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Cuisine_of_China_0106.JPG",
+      "imageCredit": {
+        "author": "Brücke-Osteuropa",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Cuisine_of_China_0106.JPG"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "chn-dinner-mapo-tofu",
+      "name": "Mapo Tofu (Spicy Soft Tofu in Numbing Meat Sauce)",
+      "difficulty": "Easy",
+      "servings": 2,
+      "prepTime": 15,
+      "cookTime": 15,
+      "description": "Soft tofu in numbing and spicy meat sauce - Sichuan dinner classic",
+      "seasonings": [
+        "Sichuan peppercorns",
+        "doubanjiang",
+        "chili oil"
+      ],
+      "ingredients": [
+        "400g silken or soft tofu, cut into cubes",
+        "150g ground pork",
+        "2 tablespoons doubanjiang (spicy fermented bean paste)",
+        "1 tablespoon chili oil with sediment",
+        "1 tablespoon fermented black beans (douchi)",
+        "3 cloves garlic, minced",
+        "1 tablespoon ginger, minced",
+        "1/2 tablespoon soy sauce",
+        "1 teaspoon sugar",
+        "1/2 teaspoon Sichuan peppercorns, ground",
+        "200ml chicken stock",
+        "1/2 tablespoon cornstarch mixed with 2 tablespoons water",
+        "1 scallion, chopped",
+        "1/2 teaspoon sesame oil",
+        "Oil for cooking"
+      ],
+      "instructions": [
+        "Heat 1 tablespoon oil in wok or large skillet over medium-high heat",
+        "Add ground pork; stir-fry until no longer pink (3-4 minutes); remove",
+        "Add doubanjiang and chili oil; fry 1-2 minutes until fragrant and oil turns red",
+        "Add fermented black beans, garlic, ginger; stir-fry 1 minute",
+        "Return pork to wok",
+        "Add soy sauce, sugar, stock; bring to boil",
+        "Gently add tofu cubes; simmer 3-4 minutes",
+        "Add ground Sichuan peppercorns",
+        "Stir cornstarch mixture; pour into wok",
+        "Stir gently until sauce thickens (1-2 minutes)",
+        "Drizzle sesame oil; garnish with scallion",
+        "Serve immediately with white rice"
+      ],
+      "notes": "Numbing sensation from peppercorns is essential",
+      "fun_fact": "Name possibly means 'pockmarked grandma'",
+      "alternatives": [
+        "Use chicken",
+        "Add cashews",
+        "Vegetarian with mushrooms"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 15,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 7,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 2,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Cuisine_of_China_0106.JPG",
+      "imageCredit": {
+        "author": "Brücke-Osteuropa",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Cuisine_of_China_0106.JPG"
+      }
+    },
+    {
+      "id": "chn-dinner-kung-pao",
+      "name": "Kung Pao Chicken (Spicy Stir-Fry with Peanuts)",
+      "difficulty": "Easy",
+      "servings": 3,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Sichuan stir-fry with chicken, peanuts, and chilies - balanced heat",
+      "seasonings": [
+        "soy sauce",
+        "chili oil",
+        "Sichuan peppercorns",
+        "ginger"
+      ],
+      "ingredients": [
+        "500g chicken thigh, cubed (about 1 inch)",
+        "150g roasted peanuts (unsalted)",
+        "1 onion, cubed",
+        "1 red bell pepper, cubed",
+        "4 dried red chilies, whole",
+        "3 cloves garlic, minced",
+        "1 tablespoon ginger, minced",
+        "3 tablespoons soy sauce",
+        "1 tablespoon rice vinegar",
+        "1 tablespoon sugar",
+        "1 tablespoon sesame oil",
+        "2 tablespoons chili oil",
+        "1/2 teaspoon Sichuan peppercorns, ground",
+        "2 tablespoons oil for cooking",
+        "1 tablespoon cornstarch mixed with 2 tablespoons water",
+        "2 scallions, chopped",
+        "Salt and pepper to taste"
+      ],
+      "instructions": [
+        "Combine soy sauce, rice vinegar, sugar, sesame oil in small bowl (sauce)",
+        "Heat 2 tablespoons oil in wok or large skillet over high heat",
+        "Add chicken cubes, stir-fry until cooked through (5-7 minutes), remove",
+        "Add chili oil to wok",
+        "Add dried chilies, cook 1 minute until fragrant",
+        "Add minced garlic and ginger, cook 30 seconds",
+        "Add onion and red pepper, stir-fry 2 minutes",
+        "Return chicken to wok",
+        "Pour sauce over chicken and vegetables",
+        "Add peanuts and ground Sichuan peppercorns",
+        "Stir cornstarch mixture into ingredients",
+        "Stir constantly until sauce thickens (1-2 minutes)",
+        "Season with salt and pepper",
+        "Garnish with scallions",
+        "Serve immediately over steamed rice"
+      ],
+      "notes": "The Sichuan peppercorns create unique numbing sensation - essential for authentic flavor",
+      "fun_fact": "Kung Pao Chicken was reportedly created for Ding Baozhen, a Chinese official in the Qing Dynasty",
+      "alternatives": [
+        "Use prawns instead of chicken",
+        "Make vegetarian with cashews",
+        "Adjust heat with different chili amounts",
+        "Add broccoli"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 15,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 9,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 4,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kung_pao_chicken_food_dinner.jpg",
+      "imageCredit": {
+        "author": "Jon Sullivan",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Kung_pao_chicken_food_dinner.jpg"
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": []
+}

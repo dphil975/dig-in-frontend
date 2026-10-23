@@ -1,0 +1,425 @@
+{
+  "country": "Brazil",
+  "region": "Latin America",
+  "breakfast": [],
+  "lunch": [
+    {
+      "id": "bra-lunch-feijoada",
+      "name": "Feijoada (Brazilian Black Bean Stew)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 200,
+      "description": "Brazilian national lunch - hearty black bean stew with pork and sausage. Evolved from plantation cuisine",
+      "seasonings": [
+        "bay leaf",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "500g black beans (dried)",
+        "400g pork shoulder",
+        "200g pork ribs",
+        "100g smoked sausage",
+        "1 onion",
+        "4 cloves garlic",
+        "2 bay leaves",
+        "4 tbsp oil",
+        "Orange slices",
+        "Collard greens",
+        "White rice"
+      ],
+      "instructions": [
+        "Soak beans overnight",
+        "In large pot, heat oil, sauté onion and garlic",
+        "Add pork, brown on all sides",
+        "Add beans, bay leaves and water to cover by 2 inches",
+        "Bring to boil, reduce heat, simmer 3 hours",
+        "Add sausage in last 30 minutes",
+        "Serve with rice, sautéed collard greens and orange slices on side"
+      ],
+      "notes": "Long cooking time essential for tender meat and creamy beans. Tastes better the next day",
+      "fun_fact": "Feijoada is Brazilian national lunch, evolved from plantation cuisine as slave food. Now beloved dish across all social classes",
+      "alternatives": [
+        "Use different sausages",
+        "Add more spices",
+        "Make vegetarian with extra beans",
+        "Include bacon"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "wrap",
+        "soup",
+        "pasta"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 200,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 120,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 60,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Feijoada_à_brasileira_1.jpg",
+      "imageCredit": {
+        "author": "Tetraktys",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Feijoada_%C3%A0_brasileira_1.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "bra-dinner-feijoada",
+      "name": "Brazilian Feijoada (Black Bean and Meat Stew)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 300,
+      "description": "Black bean and meat stew - Brazil's national dinner dish",
+      "seasonings": [
+        "bay leaves",
+        "salt",
+        "pepper"
+      ],
+      "ingredients": [
+        "500g dried black beans, soaked overnight",
+        "300g beef brisket or chuck, cubed",
+        "200g pork shoulder or butt, cubed",
+        "150g carne seca (dried salted beef), soaked and shredded",
+        "100g Brazilian sausage (linguica or chourico), sliced",
+        "2 pig feet (optional, very traditional)",
+        "1 pig ear (optional, very traditional)",
+        "3 onions, diced",
+        "6 cloves garlic, minced",
+        "3 bay leaves",
+        "2 teaspoons salt",
+        "1 teaspoon black pepper",
+        "Water",
+        "3 cups cooked white rice",
+        "300g collard greens, sliced",
+        "200g fresh orange slices or orange juice",
+        "Farofa (toasted manioc flour)",
+        "Hot sauce"
+      ],
+      "instructions": [
+        "Drain soaked beans; rinse",
+        "In large heavy pot or clay pot, combine soaked beans with 3 liters fresh water",
+        "Bring to boil; reduce heat to low simmer",
+        "In separate skillet, heat oil; sauté onion and garlic until soft",
+        "Add beef brisket, pork, sausage, carne seca; brown on all sides",
+        "Add cooked meat mixture to simmering beans",
+        "Add bay leaves, salt, pepper",
+        "Simmer gently uncovered for 4-5 hours, stirring occasionally",
+        "Add water if needed to maintain stew consistency",
+        "Beans should be very tender and broth dark and thick",
+        "Meanwhile, sauté collard greens in oil with garlic until wilted",
+        "Serve feijoada in bowls with rice on side, collard greens, farofa, orange slices, hot sauce"
+      ],
+      "notes": "Improves each time it's reheated",
+      "fun_fact": "Believed to originate in slave quarters, transformed into national dish",
+      "alternatives": [
+        "Add more vegetables",
+        "Make vegetarian version",
+        "Use different meats"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 300,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 180,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 90,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Brazilian_food_Feijoada_2.jpg",
+      "imageCredit": {
+        "author": "Wilfredor",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Brazilian_food_Feijoada_2.jpg"
+      }
+    },
+    {
+      "id": "bra-dinner-moqueca",
+      "name": "Moqueca (Brazilian Seafood Stew)",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 25,
+      "description": "Brazilian coconut seafood stew - coastal flavors in a pot",
+      "seasonings": [
+        "cilantro",
+        "palm oil",
+        "coconut milk"
+      ],
+      "ingredients": [
+        "400g white fish fillets, cut into chunks",
+        "200g shrimp, peeled",
+        "100g crab meat (optional)",
+        "1 red onion, sliced",
+        "1 red bell pepper, sliced",
+        "1 yellow bell pepper, sliced",
+        "3 tomatoes, diced",
+        "3 cloves garlic, minced",
+        "1 tablespoon palm oil (dendê) or vegetable oil",
+        "400ml coconut milk",
+        "200ml fish stock",
+        "1/4 cup fresh cilantro, chopped",
+        "3 tablespoons lime juice",
+        "Salt and pepper to taste",
+        "Malagueta peppers (optional, for heat)"
+      ],
+      "instructions": [
+        "Heat palm oil in large pot over medium heat",
+        "Add sliced red onion and bell peppers, cook 3 minutes until slightly softened",
+        "Add minced garlic and diced tomatoes, cook 2 minutes",
+        "Add fish stock and bring to simmer",
+        "Add fish chunks, simmer gently 5 minutes",
+        "Add shrimp and crab meat if using, simmer 3 minutes",
+        "Pour in coconut milk, stir gently",
+        "Simmer 5 more minutes (do not boil or seafood will toughen)",
+        "Season with salt, pepper, and lime juice",
+        "Fold in fresh cilantro",
+        "Add malagueta peppers for heat if desired",
+        "Serve hot in wide bowls over white rice",
+        "Serve with hot sauce and lime wedges"
+      ],
+      "notes": "Palm oil (dendê) is essential for authentic flavor and color",
+      "fun_fact": "Moqueca is Brazil's national seafood dish, with regional variations from different states",
+      "alternatives": [
+        "Use different fish",
+        "Add pumpkin/squash",
+        "Make vegetarian with tofu",
+        "Use coconut cream for richer version"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 25,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 15,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 7,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/VitorJubini_Gastronomia_Anchieta_ES_%2839080737410%29.jpg",
+      "imageCredit": {
+        "author": "MTur Destinos",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:VitorJubini_Gastronomia_Anchieta_ES_(39080737410).jpg"
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": []
+}

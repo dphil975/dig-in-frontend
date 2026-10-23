@@ -1,0 +1,840 @@
+{
+  "guatemalaRecipes": {
+    "country": "Guatemala",
+    "region": "Central America",
+    "breakfast": [
+      {
+        "id": "gtm-bf-1",
+        "name": "Desayuno Chapín",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Refried black beans",
+          "Eggs",
+          "Plantain",
+          "Queso fresco",
+          "Tortillas",
+          "Salsa"
+        ],
+        "instructions": [
+          "Fry eggs, fry plantain slices",
+          "Warm refried beans and tortillas",
+          "Plate together with cheese and salsa"
+        ],
+        "description": "The Guatemalan breakfast — beans, eggs, plantain, cheese, and tortillas."
+      },
+      {
+        "id": "gtm-bf-2",
+        "name": "Champurradas (Sugar-Topped Cookies)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1 cup sugar",
+          "Butter",
+          "Eggs",
+          "Vanilla",
+          "Sesame seeds"
+        ],
+        "instructions": [
+          "Cream butter and sugar, add eggs",
+          "Mix in flour",
+          "Shape cookies, press sesame seeds on top",
+          "Bake at 175°C 15 min"
+        ],
+        "description": "Crunchy sugar cookies with sesame — served with coffee."
+      },
+      {
+        "id": "gtm-bf-3",
+        "name": "Desayuno Chapín (Full Guatemalan Breakfast)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Black beans (refried — frijoles volteados)",
+          "Eggs (fried or scrambled)",
+          "Fried plantain (plátanos fritos)",
+          "Fresh cream (crema)",
+          "Queso fresco",
+          "Tortillas (handmade corn)",
+          "Coffee"
+        ],
+        "instructions": [
+          "Fry or scramble eggs",
+          "Warm refried black beans — they should be creamy and smooth",
+          "Fry ripe plantain slices until golden and caramelized",
+          "Warm tortillas on a comal",
+          "Arrange on plate: eggs, beans, plantain, cheese, cream",
+          "Roll beans and egg in a tortilla for a quick taco, or eat each component separately",
+          "Black coffee on the side — Guatemala grows excellent coffee",
+          "This is the standard Guatemalan morning — every component is essential"
+        ],
+        "description": "Guatemala's complete breakfast — refried black beans, eggs, fried plantain, fresh cream, cheese, and handmade tortillas. Every element is simple but together they're perfect. The morning tortilla-making ritual and the Guatemalan coffee (from one of the world's best coffee regions) make this a viral Central American breakfast."
+      },
+      {
+        "id": "gtm-bf-4",
+        "name": "Rellenitos (Stuffed Plantain Balls)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "6 ripe plantains (very ripe — black skin)",
+          "1 cup refried black beans (sweet version, with sugar and cinnamon)",
+          "Chocolate (grated, mixed into beans)",
+          "Oil for frying",
+          "Cinnamon sugar for rolling"
+        ],
+        "instructions": [
+          "Boil ripe plantains until very tender, mash smooth",
+          "Form into balls with a hollow center",
+          "Fill each with a spoonful of sweetened, chocolate-spiked black beans",
+          "Close the plantain around the filling, reshape into an oval",
+          "Fry until golden and crispy outside — 3-4 min",
+          "Roll in cinnamon sugar while warm",
+          "The contrast: sweet crispy plantain shell, chocolate-bean filling inside",
+          "These are Guatemala's unique sweet — nothing else in the world is quite like them"
+        ],
+        "description": "Guatemala's most unique sweet — fried plantain balls stuffed with chocolate-spiked sweetened black beans, rolled in cinnamon sugar. The concept of 'chocolate beans inside fried plantain' blows people's minds. Rellenitos are uniquely Guatemalan and the cross-section reveal is always viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rellenitos-de-platano-01.jpg",
+        "imageCredit": {
+          "author": "David Amsler",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARellenitos-de-platano-01.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "gtm-ln-1",
+        "name": "Pepián (Meat Stew)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "500g chicken",
+          "300g pork",
+          "Guajillo chiles",
+          "Tomatoes",
+          "Tomatillos",
+          "Sesame seeds",
+          "Pepitoria (pumpkin seeds)",
+          "Onion",
+          "Garlic",
+          "Cinnamon",
+          "Cloves",
+          "Corn tortillas"
+        ],
+        "instructions": [
+          "Toast seeds, chiles, spices, tomatoes, tomatillos",
+          "Blend into thick sauce",
+          "Brown meats",
+          "Add sauce, simmer 45 min",
+          "Thicken with toasted tortilla",
+          "Serve with rice"
+        ],
+        "description": "Guatemala's national dish — a rich, ancient Mayan meat stew.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cocinando_El_Pepian.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cocinando_El_Pepian.jpg"
+        }
+      },
+      {
+        "id": "gtm-ln-2",
+        "name": "Kak'ik (Turkey Soup)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "500g turkey pieces",
+          "Tomatoes",
+          "Tomatillos",
+          "Chiles",
+          "Cilantro",
+          "Mint",
+          "Garlic",
+          "Onion",
+          "Achiote",
+          "Salt"
+        ],
+        "instructions": [
+          "Toast chiles, tomatoes, tomatillos",
+          "Blend sauce",
+          "Simmer turkey in sauce 45 min",
+          "Add cilantro and mint",
+          "Serve with rice and tamales"
+        ],
+        "description": "Ancient Q'eqchi' Mayan turkey soup — red and aromatic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg"
+        }
+      },
+      {
+        "id": "gtm-ln-3",
+        "name": "Pepián (Guatemala's National Stew)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Chicken or pork (bone-in, cut into pieces)",
+          "Pepián paste: dried guajillo and pasilla chilies, tomatoes, tomatillos, pepitoria (roasted pumpkin seeds), sesame seeds, cinnamon, cloves, black pepper",
+          "Corn tortillas (toasted, for thickening)",
+          "Vegetables: chayote, green beans, potatoes, carrots",
+          "Cilantro"
+        ],
+        "instructions": [
+          "Toast dried chilies on a dry comal until fragrant — do not burn",
+          "Roast tomatoes, tomatillos on the comal",
+          "Toast pumpkin seeds and sesame seeds",
+          "Toast corn tortillas until crispy",
+          "Blend everything: chilies, tomatoes, tomatillos, seeds, tortillas, spices into a thick paste",
+          "Brown meat, add pepián paste, dilute with stock",
+          "Add vegetables — root vegetables first",
+          "Simmer 45-60 min until meat is tender and sauce is thick",
+          "The sauce should coat the back of a spoon — rich, dark, nutty",
+          "Serve with rice and tortillas"
+        ],
+        "description": "Guatemala's national dish — a thick, seed-and-chili stew with pre-Columbian Mayan roots. The toasted pumpkin seed and sesame base creates a rich, nutty sauce unlike any other in Central America. Pepián connects modern Guatemala directly to its Mayan culinary heritage. The ancient-technique story and the complex seed paste are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cocinando_El_Pepian.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Cocinando_El_Pepian.jpg"
+        }
+      },
+      {
+        "id": "gtm-ln-4",
+        "name": "Kak'ik (Turkey Soup — Mayan Ceremonial)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Whole turkey (cut into pieces) or turkey legs",
+          "Achiote paste (annatto)",
+          "Dried chilies: guaque, pasa, zambo",
+          "Tomatoes, tomatillos",
+          "Mint, cilantro, oregano",
+          "Toasted pumpkin seeds",
+          "Corn masa (for thickening)",
+          "Tortillas, rice for serving"
+        ],
+        "instructions": [
+          "Toast dried chilies on comal",
+          "Blend chilies with tomatoes, tomatillos, achiote paste, toasted pumpkin seeds, herbs",
+          "Cook turkey in water until tender — reserve the broth",
+          "Add the blended chili-seed paste to the broth",
+          "Simmer until sauce is thick and deeply red from the achiote",
+          "The color should be a vibrant red-orange — the achiote is both color and flavor",
+          "Add masa to thicken further if needed",
+          "Return turkey to the soup",
+          "Serve in deep bowls with rice and tortillas",
+          "This is a Mayan ceremonial dish — still served at important gatherings and holidays",
+          "UNESCO recognized Kak'ik as Intangible Cultural Heritage of Guatemala"
+        ],
+        "description": "Guatemala's Mayan ceremonial turkey soup — red from achiote, thickened with pumpkin seeds, and recognized by UNESCO as Intangible Cultural Heritage. This recipe connects directly to pre-Columbian Mayan feasts. The UNESCO status and the living Mayan tradition make Kak'ik one of Central America's most culturally significant and viral dishes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg"
+        }
+      },
+      {
+        "id": "gtm-ln-5",
+        "name": "Hilachas (Shredded Beef in Tomato-Tomatillo Sauce)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 90,
+        "ingredients": [
+          "1kg flank steak or skirt steak",
+          "Sauce: tomatoes, tomatillos, guaque chilies, garlic",
+          "Potatoes (cubed)",
+          "Carrots (sliced)",
+          "Rice and tortillas for serving"
+        ],
+        "instructions": [
+          "Boil beef until tender enough to shred — 1+ hours",
+          "Shred beef finely — 'hilachas' means 'threads' or 'rags'",
+          "Toast and blend chilies, tomatoes, tomatillos, garlic into a smooth sauce",
+          "Fry the sauce until thick and dark",
+          "Add shredded beef, potatoes, carrots",
+          "Simmer until vegetables are tender and sauce clings to the meat",
+          "The shredded meat should be so fine it looks like threads",
+          "Serve with rice and tortillas"
+        ],
+        "description": "Guatemala's 'rags' — beef shredded so finely it looks like threads, simmered in a tomato-tomatillo-chili sauce. The name 'hilachas' (rags/threads) comes from the ultra-fine shredding technique. The thread-like meat texture and the rich sauce have made this a viral Guatemalan comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Hilacha.jpg",
+        "imageCredit": {
+          "author": "Joshua Heller",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHilacha.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "gtm-dn-1",
+        "name": "Hilachas (Shredded Beef in Sauce)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "500g flank steak",
+          "Tomatoes",
+          "Tomatillos",
+          "Guajillo chile",
+          "Onion",
+          "Garlic",
+          "Potatoes",
+          "Carrots"
+        ],
+        "instructions": [
+          "Boil beef until tender, shred",
+          "Blend tomatoes, tomatillos, chile, onion, garlic",
+          "Cook sauce, add beef, potatoes, carrots",
+          "Simmer 20 min",
+          "Serve with rice and tortillas"
+        ],
+        "description": "Shredded beef in smooth tomato-chile sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Hilacha.jpg",
+        "imageCredit": {
+          "author": "Joshua Heller",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHilacha.jpg"
+        }
+      },
+      {
+        "id": "gtm-dn-2",
+        "name": "Chiles Rellenos (Stuffed Peppers)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "4 bell peppers",
+          "Filling: ground pork, raisins, capers, olives",
+          "Egg batter",
+          "Tomato recado sauce"
+        ],
+        "instructions": [
+          "Roast and peel peppers",
+          "Fill with pork mixture",
+          "Dip in egg batter, fry",
+          "Serve in tomato recado sauce"
+        ],
+        "description": "Stuffed peppers in egg batter with tomato sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Chile_Rellenos.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Chile_Rellenos.jpg"
+        }
+      },
+      {
+        "id": "gtm-dn-3",
+        "name": "Tamales Colorados (Red Tamales)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 120,
+        "cookTime": 90,
+        "ingredients": [
+          "Masa: corn masa harina, lard or butter, tomato-chili recado (for the red color)",
+          "Filling: chicken or pork, recado rojo (achiote-tomato paste), olives, capers, prunes, red pepper",
+          "Wrapping: banana leaves (not corn husks — Central American style)",
+          "Recado: tomatoes, achiote, pepitoria, sesame seeds, dried chilies"
+        ],
+        "instructions": [
+          "Make recado: toast and blend chilies, tomatoes, achiote, pumpkin seeds, sesame — a thick, red paste",
+          "Cook meat in recado until tender, shred",
+          "Mix recado into masa with lard — the masa turns red",
+          "Soften banana leaves over flame — they become pliable",
+          "Spread red masa on banana leaf, add meat filling, olives, capers, prune",
+          "Fold banana leaf into a neat rectangle, tie with string",
+          "Steam for 1.5 hours until masa is firm and pulls away from the leaf",
+          "The red color from the recado is the signature — not like Mexican green or plain tamales",
+          "These are Saturday and Christmas food — making tamales is a family event that takes all day",
+          "A proper Guatemalan tamale is the size of a brick — much bigger than Mexican tamales"
+        ],
+        "description": "Guatemala's red tamales — masa dyed red with a toasted chili-seed paste, filled with chicken, olives, capers, and prunes, wrapped in banana leaves. Brick-sized and labor-intensive, making tamales is a family-wide Saturday or Christmas event. The red color, the banana-leaf unwrap, and the sweet-savory olive-prune filling are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg"
+        }
+      },
+      {
+        "id": "gtm-dn-4",
+        "name": "Chiles Rellenos (Stuffed Peppers Guatemalan Style)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "8 pimiento peppers or bell peppers",
+          "Filling: pork picadillo (ground pork with tomato, onion, raisins, olives, capers)",
+          "Egg batter: eggs separated, whites whipped stiff",
+          "Flour for dusting",
+          "Oil for frying",
+          "Tomato sauce for serving"
+        ],
+        "instructions": [
+          "Roast peppers, peel, remove seeds — keep whole",
+          "Make picadillo: cook ground pork with tomato, onion, raisins, olives, capers — the sweet-savory mix is the point",
+          "Stuff peppers with picadillo",
+          "Dust stuffed peppers in flour",
+          "Make egg batter: beat whites stiff, fold in yolks",
+          "Dip floured, stuffed peppers in batter — coat completely",
+          "Fry until golden on all sides — the egg batter puffs into a golden cloud",
+          "Serve in tomato sauce",
+          "The puffy egg coating is the Guatemalan signature — different from Mexican dried chili versions"
+        ],
+        "description": "Guatemalan stuffed peppers — filled with sweet-savory picadillo (pork, raisins, olives, capers) and coated in a puffy whipped egg batter that fries into a golden cloud. The egg-cloud technique distinguishes Guatemala's version from Mexican chiles rellenos and the puff-and-slice moment is viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Chile_Rellenos.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Chile_Rellenos.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "gtm-sn-1",
+        "name": "Rellenitos de Plátano",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "4 ripe plantains",
+          "Refried black beans",
+          "Cinnamon",
+          "Sugar",
+          "Oil"
+        ],
+        "instructions": [
+          "Boil plantains, mash",
+          "Fill with refried beans and cinnamon",
+          "Shape into ovals",
+          "Fry until golden",
+          "Dust with sugar"
+        ],
+        "description": "Sweet plantain ovals stuffed with black beans.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rellenitos-de-platano-01.jpg",
+        "imageCredit": {
+          "author": "David Amsler",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARellenitos-de-platano-01.jpg"
+        }
+      },
+      {
+        "id": "gtm-sn-2",
+        "name": "Chuchitos (Small Tamales)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Corn masa, lard",
+          "Filling: tomato-based chicken or pork recado",
+          "Corn husks (unlike big tamales, chuchitos use corn husks)",
+          "Salsa and curtido for serving"
+        ],
+        "instructions": [
+          "Mix masa with lard and salt until light and fluffy",
+          "Spread on softened corn husks",
+          "Add a spoonful of tomato-chicken filling",
+          "Fold corn husk around, tie",
+          "Steam 35-40 min until firm",
+          "The difference from regular tamales: chuchitos are small, use corn husks, and are simpler",
+          "Serve with tomato salsa or curtido (cabbage slaw)",
+          "Chuchitos are street food — sold from carts at any hour"
+        ],
+        "description": "Guatemala's street tamale — smaller and simpler than the grand tamal colorado, wrapped in corn husks instead of banana leaves. Sold from carts at every corner. The grab-and-go format and the tomato salsa drizzle make chuchitos Guatemala's most accessible and viral street snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg"
+        }
+      },
+      {
+        "id": "gtm-sn-3",
+        "name": "Tostadas Guatemaltecas",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "Corn tortillas (fried flat until crispy)",
+          "Guacamole",
+          "Refried black beans",
+          "Salsa",
+          "Queso fresco",
+          "Curtido (cabbage slaw)",
+          "Shredded chicken (optional)"
+        ],
+        "instructions": [
+          "Fry corn tortillas flat until crispy and golden — they must shatter slightly when bitten",
+          "Spread with refried black beans",
+          "Top with guacamole",
+          "Add salsa and shredded chicken if desired",
+          "Sprinkle queso fresco and curtido on top",
+          "The architecture matters — each layer should be visible",
+          "Eat with both hands, biting from the edge — some breakage is expected and acceptable"
+        ],
+        "description": "Guatemalan tostadas — crispy fried tortillas stacked with beans, guacamole, salsa, and cheese. The satisfying crunch and the layered architecture make tostadas viral street food content. The inevitable messy collapse when you bite in is part of the charm.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Enchilada_Rice_Beans.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Enchilada_Rice_Beans.jpg"
+        }
+      },
+      {
+        "id": "gtm-sn-4",
+        "name": "Tostadas Guatemaltecas",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "Tostadas (flat fried tortillas)",
+          "Black bean paste (refried)",
+          "Guacamole",
+          "Salsa",
+          "Queso fresco",
+          "Curtido (pickled cabbage)",
+          "Radish slices"
+        ],
+        "instructions": [
+          "Spread black bean paste on tostada",
+          "Top with guacamole",
+          "Add salsa, crumbled queso fresco, curtido",
+          "Garnish with radish slices",
+          "The contrast of textures: crispy tostada, creamy bean, crunchy curtido",
+          "Eat in 3-4 bites — it's a one-hand snack",
+          "Tostadas are Guatemala's answer to the open-faced sandwich — every market has them",
+          "The stack of toppings on the flat tortilla is a perfect flavor delivery system"
+        ],
+        "description": "Guatemalan tostadas — crispy flat tortillas stacked with black bean paste, guacamole, salsa, and pickled cabbage. Every market has a tostada vendor. The one-handed, multi-textured, flavor-stacked concept makes tostadas a perpetually viral Latin American street food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Enchilada_Rice_Beans.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Enchilada_Rice_Beans.jpg"
+        }
+      },
+      {
+        "id": "gtm-sn-5",
+        "name": "Chuchitos (Guatemalan Tamales)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Masa (corn dough)",
+          "Tomato-based salsa",
+          "Chicken or pork",
+          "Recado (spice paste — achiote, tomato, tomatillo)",
+          "Corn husks"
+        ],
+        "instructions": [
+          "Make masa dough — slightly wetter than tortilla masa",
+          "Make filling: chicken or pork cooked in tomato-recado salsa",
+          "Spread masa on corn husk — not banana leaf (that's for the larger tamales)",
+          "Add filling, fold corn husk to enclose",
+          "Steam 25-30 min until masa is firm",
+          "Chuchitos are smaller than ceremonial tamales — everyday tamales",
+          "The corn husk wrapper is the distinction — banana leaf wrapping is for special occasions",
+          "Serve with additional salsa on top",
+          "The name 'chuchitos' is a Guatemalan diminutive — 'little dogs' — affectionate naming for food"
+        ],
+        "description": "Guatemala's everyday tamale — smaller than the ceremonial version, wrapped in corn husk instead of banana leaf, filled with chicken in tomato-recado salsa. Called chuchitos ('little dogs') with typical Guatemalan affection for food naming.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "gtm-ds-1",
+        "name": "Buñuelos de Viento",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "1 cup flour",
+          "3 eggs",
+          "Butter",
+          "Water",
+          "Salt",
+          "Honey syrup",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Make choux-style dough",
+          "Drop into hot oil, fry until puffed and golden",
+          "Drizzle with honey syrup and cinnamon"
+        ],
+        "description": "Airy fried dough puffs in cinnamon-honey syrup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bunyol_de_carabassa.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Bunyol_de_carabassa.jpg"
+        }
+      },
+      {
+        "id": "gtm-ds-2",
+        "name": "Buñuelos con Miel (Fried Dough with Honey Syrup)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, eggs, butter, anise, baking powder",
+          "Miel: panela (raw sugar), cinnamon, water",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Make dough with flour, eggs, butter, anise — rest 20 min",
+          "Roll thin, cut into rounds",
+          "Deep fry until golden and puffy — 2-3 min",
+          "Make miel: dissolve panela in water with cinnamon — simmer until thick syrup",
+          "Drizzle hot syrup over fried buñuelos",
+          "The crispy exterior soaks up the sweet, cinnamon-infused panela syrup",
+          "Served at Christmas and Semana Santa (Holy Week) — Guatemala's holiday sweet",
+          "The syrup-pouring moment over the stack of buñuelos is the show"
+        ],
+        "description": "Guatemala's holiday fried dough — thin, crispy rounds drenched in dark panela-cinnamon syrup. Essential at Christmas and Semana Santa. The dramatic syrup-pour over a pyramid of buñuelos and the sticky, sweet result are peak Guatemalan holiday food content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Cocido%2C_o_caldo_de_res.jpg"
+        }
+      },
+      {
+        "id": "gtm-ds-3",
+        "name": "Champurradas (Guatemalan Sugar Cookies)",
+        "difficulty": "Easy",
+        "servings": 24,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Butter or lard",
+          "Sugar",
+          "Eggs",
+          "Sesame seeds",
+          "Vanilla",
+          "Baking powder"
+        ],
+        "instructions": [
+          "Cream butter and sugar",
+          "Add eggs, vanilla",
+          "Mix in flour, baking powder",
+          "Shape into thick, round cookies",
+          "Top generously with sesame seeds — pressed into the surface",
+          "Bake at 175°C for 12-15 min until firm and lightly golden",
+          "Not soft and chewy — champurradas are meant to be crunchy and dunkable",
+          "Serve with coffee or hot chocolate — dunking is the ritual",
+          "Every Guatemalan bakery has a jar of champurradas by the register"
+        ],
+        "description": "Guatemala's crunchy sesame-topped cookies — designed for dunking into coffee or hot chocolate. Found in every bakery, bought by the bag. The sesame coating and the dunking ritual connect champurradas to Guatemala's exceptional coffee culture."
+      },
+      {
+        "id": "gtm-ds-3",
+        "name": "Rellenitos de Plátano (Stuffed Plantain)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Ripe plantains (very ripe — black skin)",
+          "Black bean paste (sweetened)",
+          "Cinnamon",
+          "Sugar",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Boil ripe plantains until very soft, mash",
+          "Make sweetened black bean paste — cook black beans with sugar and cinnamon until thick",
+          "Take a portion of mashed plantain, flatten in palm",
+          "Add a spoonful of sweet bean paste in the center",
+          "Close the plantain around the filling — shape into an oval",
+          "Fry in oil until golden on all sides",
+          "The sweet plantain shell and the sweet-spiced bean filling are both sweet — double sweet",
+          "Dust with sugar if desired",
+          "These are Guatemala's most beloved sweet — the bean-and-plantain pairing is genius"
+        ],
+        "description": "Guatemalan rellenitos — mashed ripe plantain stuffed with sweetened cinnamon black beans and fried. The double-sweet pairing of sweet plantain and sweet beans sounds unusual but is genius. Rellenitos are Guatemala's most beloved homemade sweet and a viral discovery for first-timers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rellenitos-de-platano-01.jpg",
+        "imageCredit": {
+          "author": "David Amsler",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARellenitos-de-platano-01.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "gtm-dr-1",
+        "name": "Rosa de Jamaica (Hibiscus Tea)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups dried hibiscus",
+          "1L water",
+          "Sugar",
+          "Lime"
+        ],
+        "instructions": [
+          "Boil hibiscus 10 min",
+          "Strain, sweeten",
+          "Add lime, serve cold"
+        ],
+        "description": "Tart ruby-red hibiscus drink."
+      },
+      {
+        "id": "gtm-dr-2",
+        "name": "Atol de Elote",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "6 ears fresh corn",
+          "Milk",
+          "Sugar",
+          "Cinnamon",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Cut corn from cob, blend with milk",
+          "Strain through sieve",
+          "Cook with sugar and cinnamon until thick",
+          "Serve warm"
+        ],
+        "description": "Thick, sweet fresh corn drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Atole.jpg",
+        "imageCredit": {
+          "author": "ottmarliebert.com",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAtole.jpg"
+        }
+      },
+      {
+        "id": "gtm-dr-3",
+        "name": "Atol de Elote (Sweet Corn Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "6 ears fresh sweet corn (kernels cut off)",
+          "Milk",
+          "Sugar",
+          "Cinnamon",
+          "Vanilla",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Blend corn kernels with milk until smooth",
+          "Strain through a fine sieve — or leave unstrained for thicker version",
+          "Cook in a pot with sugar, cinnamon, vanilla, stirring constantly",
+          "Simmer until thick and creamy — 15-20 min",
+          "The fresh corn flavor should be prominent — not just sweetness, but corniness",
+          "Serve hot or warm in mugs",
+          "This is a seasonal drink — made when fresh corn is in season",
+          "The natural sweetness and creaminess from the corn need minimal added sugar"
+        ],
+        "description": "Guatemala's fresh corn drink — sweet corn kernels blended with milk and cinnamon into a thick, warm, creamy beverage. Seasonal and irreplaceable (you need fresh corn). The natural corn sweetness and the hot-drink comfort factor make atol de elote viral during corn season across Central America.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Atole.jpg",
+        "imageCredit": {
+          "author": "ottmarliebert.com",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAtole.jpg"
+        }
+      },
+      {
+        "id": "gtm-dr-1",
+        "name": "Atol de Elote (Fresh Corn Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Fresh sweet corn (cut from cob)",
+          "Milk",
+          "Sugar",
+          "Cinnamon",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Cut corn from cobs — must be fresh, not canned",
+          "Blend corn with milk until smooth",
+          "Strain through a sieve — push through as much as possible",
+          "Heat the strained mixture with sugar, cinnamon, vanilla",
+          "Stir constantly — it thickens as it heats",
+          "Cook 15-20 min until the consistency of thick hot chocolate",
+          "The corn flavor should be sweet, milky, and warm",
+          "Serve hot — this is Guatemala's comfort drink for cold highland evenings",
+          "The fresh corn taste in a warm drink is unlike anything else"
+        ],
+        "description": "Guatemalan atol de elote — fresh sweet corn blended with milk and cinnamon into a thick, warm drink. A highland Guatemala comfort on cold evenings. The 'corn as a warm drink' concept surprises and delights first-time tasters and goes viral every time.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Atole.jpg",
+        "imageCredit": {
+          "author": "ottmarliebert.com",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAtole.jpg"
+        }
+      }
+    ]
+  }
+}

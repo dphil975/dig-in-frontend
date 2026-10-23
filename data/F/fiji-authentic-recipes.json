@@ -1,0 +1,606 @@
+{
+  "fijiRecipes": {
+    "country": "Fiji",
+    "region": "Oceania",
+    "breakfast": [
+      {
+        "id": "fji-bf-1",
+        "name": "Roti and Curry",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups flour",
+          "Water",
+          "Oil",
+          "Salt",
+          "Leftover curry"
+        ],
+        "instructions": [
+          "Make roti dough, rest",
+          "Roll thin circles",
+          "Cook on tawa, brush with oil",
+          "Serve with curry"
+        ],
+        "description": "Fijian-Indian breakfast — fresh roti with curry.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+        }
+      },
+      {
+        "id": "fji-bf-2",
+        "name": "Cassava with Coconut Cream",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "2 cassava roots",
+          "Coconut cream",
+          "Sugar",
+          "Salt"
+        ],
+        "instructions": [
+          "Peel and boil cassava until tender",
+          "Drizzle with warm coconut cream",
+          "Sprinkle salt and sugar"
+        ],
+        "description": "Boiled cassava in coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Cassava_cake_%28Philippines%29_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Cassava_cake_%28Philippines%29_2.jpg"
+        }
+      },
+      {
+        "id": "fji-bf-3",
+        "name": "Roti Paratha with Dhal (Indo-Fijian Breakfast)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Roti: 2 cups flour, water, salt, ghee or oil",
+          "Dhal: red lentils, turmeric, cumin, garlic, onion, tomato, chili",
+          "Ghee for frying"
+        ],
+        "instructions": [
+          "Make roti dough with flour, water, salt — rest 20 min",
+          "Roll out, brush with ghee, fold into layers, roll again — this creates flaky layers",
+          "Cook on hot tava/griddle until golden and flaky on both sides",
+          "For dhal: cook red lentils with turmeric until soft and breaking down",
+          "Temper with ghee, cumin seeds, garlic, onion, tomato, chili — pour over dhal",
+          "Serve flaky roti with dhal for dipping",
+          "Indo-Fijians brought this tradition from India in the 1800s — it's now as Fijian as kokoda",
+          "The layered roti technique is an art — grandmother hands vs. beginner hands, there's a difference"
+        ],
+        "description": "Indo-Fijian flaky roti with spiced lentil dhal — brought to Fiji by Indian laborers in the 1800s and now an integral part of Fijian food culture. The roti-flipping technique and the fusion of Indian and Pacific cultures on one plate have made Indo-Fijian breakfast a viral food-heritage story.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "fji-ln-1",
+        "name": "Kokoda (Fijian Ceviche)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "500g fresh fish (diced)",
+          "3 limes (juiced)",
+          "1 cup coconut cream",
+          "1 tomato",
+          "1 onion",
+          "1 chili",
+          "Cilantro",
+          "Salt"
+        ],
+        "instructions": [
+          "Marinate fish in lime juice 20 min",
+          "Drain excess juice",
+          "Add coconut cream, tomato, onion, chili",
+          "Toss gently, garnish with cilantro",
+          "Serve cold in coconut shell"
+        ],
+        "description": "Fiji's signature dish — raw fish 'cooked' in lime and coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg"
+        }
+      },
+      {
+        "id": "fji-ln-2",
+        "name": "Palusami (Taro Leaves in Coconut)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "Taro leaves",
+          "Coconut cream",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Layer taro leaves, fill with coconut cream and onion",
+          "Wrap in foil or banana leaves",
+          "Bake or steam in lovo (earth oven) 2 hours"
+        ],
+        "description": "Taro leaves slow-cooked in rich coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      },
+      {
+        "id": "fji-ln-3",
+        "name": "Kokoda (Fijian Raw Fish Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "500g fresh mahi-mahi or walu (Spanish mackerel) — sushi-grade fresh",
+          "Juice of 6-8 limes",
+          "1 can coconut cream",
+          "1 tomato (diced)",
+          "1 red onion (finely diced)",
+          "1 red chili (minced)",
+          "1 cucumber (diced)",
+          "Salt",
+          "Coconut shell (for serving — traditional)"
+        ],
+        "instructions": [
+          "Cut fish into small cubes",
+          "Marinate in lime juice for 2-3 hours in the fridge — the acid 'cooks' the fish until opaque",
+          "Drain off most of the lime juice",
+          "Mix in coconut cream — the fish turns creamy and rich",
+          "Add tomato, onion, chili, cucumber",
+          "Season with salt",
+          "Serve in a halved coconut shell — this is the traditional and viral presentation",
+          "The fish should be 'cooked' through from the lime but silky from the coconut cream",
+          "This is Fiji's national dish — every resort, every village, every celebration has kokoda"
+        ],
+        "description": "Fiji's national dish — raw fish 'cooked' in lime juice and dressed in coconut cream, served in a halved coconut shell. The Pacific islands' answer to ceviche. The coconut-shell presentation and the lime-to-cream transformation have made kokoda one of the most viral Pacific Island dishes worldwide.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg"
+        }
+      },
+      {
+        "id": "fji-ln-4",
+        "name": "Fiji Chop Suey (Indo-Chinese-Fijian Fusion)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Egg noodles or chow mein noodles",
+          "Mixed vegetables: cabbage, carrot, bell pepper, bean sprouts",
+          "Protein: chicken, shrimp, or char siu pork",
+          "Garlic, ginger",
+          "Soy sauce",
+          "Oyster sauce",
+          "Sesame oil",
+          "Green onion"
+        ],
+        "instructions": [
+          "Cook noodles, drain",
+          "Stir-fry protein with garlic and ginger in hot wok",
+          "Add vegetables — keep them crispy",
+          "Add cooked noodles, toss with soy sauce, oyster sauce",
+          "Finish with sesame oil and green onion",
+          "Fiji's chop suey is a unique fusion — Chinese technique, Indian spicing, Pacific ingredients",
+          "Every Fijian-Chinese restaurant has their version — it's comfort food that unites all of Fiji's communities",
+          "Often includes a side of chili sauce unique to Fijian-Chinese cooking"
+        ],
+        "description": "Fiji's unique contribution to chop suey — a Chinese-Indian-Pacific fusion born from the multicultural melting pot of the islands. Every Fijian-Chinese restaurant has their version. The three-culture fusion story (Indian laborers, Chinese merchants, Pacific Islanders) makes Fijian chop suey a viral food-history moment.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Chopsueywithrice.jpg",
+        "imageCredit": {
+          "author": "Eli Hodapp from Naperville, United States",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChopsueywithrice.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "fji-dn-1",
+        "name": "Lovo Feast (Earth Oven)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 180,
+        "ingredients": [
+          "Chicken or pork",
+          "Taro",
+          "Cassava",
+          "Sweet potato",
+          "Palusami",
+          "Banana leaves"
+        ],
+        "instructions": [
+          "Dig pit, heat rocks",
+          "Wrap meats and vegetables in banana leaves",
+          "Layer over hot rocks",
+          "Cover with earth",
+          "Cook 3 hours",
+          "Unwrap and serve communally"
+        ],
+        "description": "Traditional Fijian earth oven feast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kokodafood.jpg",
+        "imageCredit": {
+          "author": "yuko_ppp2501",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKokodafood.jpg"
+        }
+      },
+      {
+        "id": "fji-dn-2",
+        "name": "Fish Suruwa (Fish Curry)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "500g fish fillets",
+          "Coconut milk",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Turmeric",
+          "Chili",
+          "Tomato",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion, garlic, ginger",
+          "Add turmeric, chili, tomato",
+          "Add coconut milk, simmer",
+          "Add fish, cook gently 15 min"
+        ],
+        "description": "Fijian fish curry in coconut milk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kokodafood.jpg",
+        "imageCredit": {
+          "author": "yuko_ppp2501",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKokodafood.jpg"
+        }
+      },
+      {
+        "id": "fji-dn-3",
+        "name": "Lovo (Underground Earth Oven Feast)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 120,
+        "cookTime": 240,
+        "ingredients": [
+          "Whole pig or large cuts of pork",
+          "Chicken pieces",
+          "Root vegetables: taro, cassava, sweet potato, breadfruit",
+          "Palusami: taro leaves wrapped around coconut cream",
+          "Banana leaves (for wrapping)",
+          "Hot volcanic stones",
+          "Firewood"
+        ],
+        "instructions": [
+          "Dig a pit, build a fire, heat volcanic stones until white-hot",
+          "Line the pit with hot stones",
+          "Wrap meats and vegetables individually in banana leaves",
+          "Layer wrapped parcels on the hot stones — heaviest items closest to the heat",
+          "Cover everything with more banana leaves, then burlap sacks, then earth",
+          "Seal completely — no steam should escape",
+          "Cook underground for 3-4 hours — the earth oven steams and smokes everything simultaneously",
+          "Unearth the feast — the dramatic reveal is the communal moment",
+          "Everything comes out smoky, tender, and infused with the earthy, herbal aroma of banana leaves",
+          "This is Fiji's ultimate celebration cooking — weddings, holidays, village gatherings all center on lovo"
+        ],
+        "description": "Fiji's underground earth oven feast — an entire meal of pork, chicken, root vegetables, and coconut-cream-stuffed taro leaves cooked on hot volcanic stones buried under earth for hours. The dramatic unearthing moment, when the banana-leaf parcels are revealed steaming and tender, is the most spectacular food video from the Pacific Islands.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Samoa_umu.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Samoa_umu.JPG"
+        }
+      },
+      {
+        "id": "fji-dn-4",
+        "name": "Palusami (Taro Leaves in Coconut Cream)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Young taro leaves (1 large bunch)",
+          "400ml coconut cream",
+          "1 onion (diced)",
+          "Salt",
+          "Tinned corned beef (optional — the Pacific Island pantry staple)",
+          "Banana leaves (for wrapping)"
+        ],
+        "instructions": [
+          "Layer taro leaves, removing thick stems",
+          "Place onion and optional corned beef in the center",
+          "Pour coconut cream over the leaves",
+          "Wrap tightly in banana leaves — multiple layers to seal",
+          "Bake in oven at 175°C for 1 hour, or in an underground lovo",
+          "The taro leaves soften and become silky, absorbing the coconut cream",
+          "The result is like the Pacific Island version of creamed spinach — but richer",
+          "Unwrap at the table — the steaming coconut-leaf parcel is the moment"
+        ],
+        "description": "Taro leaves slow-baked in coconut cream until silky and rich — Fiji's essential side dish, often cooked in the underground lovo oven. The banana-leaf parcel unwrapping and the coconut-cream-saturated leaves are viral Pacific Island food content. Sometimes includes corned beef — a beloved Pacific pantry staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "fji-sn-1",
+        "name": "Kora (Coconut Bread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups flour",
+          "1 cup grated coconut",
+          "Sugar",
+          "Baking powder",
+          "Coconut milk",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix flour, coconut, sugar, baking powder",
+          "Add coconut milk",
+          "Pour into pan, bake at 180°C 30 min"
+        ],
+        "description": "Sweet coconut bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kora_khai_Bhubaneswar_Odisha.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Kora_khai_Bhubaneswar_Odisha.jpg"
+        }
+      },
+      {
+        "id": "fji-sn-2",
+        "name": "Cassava Chips (Fijian-Style)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "2 large cassava roots (peeled)",
+          "Oil for deep frying",
+          "Salt",
+          "Chili flakes (optional)",
+          "Lemon juice"
+        ],
+        "instructions": [
+          "Peel cassava, slice very thin — mandoline-thin if possible",
+          "Soak in cold water 30 min to remove excess starch",
+          "Dry thoroughly — wet cassava splatters dangerously in oil",
+          "Deep fry in batches at 170°C until golden and crispy — 3-4 min",
+          "Drain, season immediately with salt, chili, lemon juice",
+          "These are crunchier and more satisfying than potato chips",
+          "Cassava is Fiji's staple root — it grows everywhere and feeds everyone",
+          "Street vendors sell these in paper cones at every market"
+        ],
+        "description": "Fijian cassava chips — crunchier and more satisfying than potato chips, fried thin and seasoned with salt, chili, and lemon. Cassava is the Pacific Islands' staple root, and these chips at every market stall are the snack that travelers remember most. The crunch-comparison to potato chips always goes viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Tapioca_Chips.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Tapioca_Chips.jpg"
+        }
+      },
+      {
+        "id": "fji-sn-3",
+        "name": "Roti Wrap (Fijian Street Food)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "Roti (Indo-Fijian flatbread)",
+          "Curry filling: chicken, lamb, or vegetable curry",
+          "Chutneys: tamarind, mint, chili",
+          "Pickled vegetables"
+        ],
+        "instructions": [
+          "Warm the roti",
+          "Spoon curry filling down the center",
+          "Add chutneys and pickled vegetables",
+          "Roll up tight — eat like a burrito",
+          "This is Fiji's most popular street food — every town has roti wrap vendors",
+          "The Indo-Fijian community brought this tradition and it became universal Fijian fast food",
+          "Often sold from roadside stands and small shops called 'roti houses'"
+        ],
+        "description": "Fiji's most popular street food — warm roti wrapped around curry with chutneys, eaten like a burrito. Born from the Indo-Fijian community and adopted by everyone on the islands. Roti house culture is a viral part of Fiji's food story — proof that the islands' food is as Indian as it is Pacific.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Roti_wrap_made_with_curry_goat_and_potatoes_01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Roti_wrap_made_with_curry_goat_and_potatoes_01.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "fji-ds-1",
+        "name": "Vakalolo (Cassava Coconut Pudding)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "2 cups grated cassava",
+          "1 cup grated coconut",
+          "1 cup coconut cream",
+          "Brown sugar",
+          "Banana leaves"
+        ],
+        "instructions": [
+          "Mix cassava, coconut, sugar",
+          "Add coconut cream",
+          "Wrap in banana leaves",
+          "Steam or bake 60 min"
+        ],
+        "description": "Dense, sweet cassava and coconut pudding steamed in banana leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kokodafood.jpg",
+        "imageCredit": {
+          "author": "yuko_ppp2501",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKokodafood.jpg"
+        }
+      },
+      {
+        "id": "fji-ds-2",
+        "name": "Vakalolo (Cassava and Coconut Pudding)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "500g cassava (grated)",
+          "400ml coconut cream",
+          "1/2 cup brown sugar or grated palm sugar",
+          "Banana leaves (for wrapping)",
+          "Vanilla (optional)"
+        ],
+        "instructions": [
+          "Grate fresh cassava",
+          "Mix with coconut cream and sugar",
+          "Wrap portions in banana leaf parcels",
+          "Steam for 25-30 min until set and sticky",
+          "Unwrap — the pudding should be dense, sweet, and coconut-rich",
+          "The banana leaf infuses a subtle grassy, herbal aroma",
+          "Can also be baked in a pan if banana leaves aren't available",
+          "This is Fiji's traditional sweet — every village kitchen knows vakalolo"
+        ],
+        "description": "Fiji's traditional coconut-cassava pudding — grated cassava mixed with coconut cream and palm sugar, wrapped in banana leaves and steamed. Dense, sweet, and deeply coconutty. The banana-leaf wrapping and the Pacific Island ingredient simplicity make vakalolo a viral representation of Oceanian dessert tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kokodafood.jpg",
+        "imageCredit": {
+          "author": "yuko_ppp2501",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKokodafood.jpg"
+        }
+      },
+      {
+        "id": "fji-ds-3",
+        "name": "Kovu (Coconut Caramel)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups freshly grated coconut",
+          "1 cup sugar",
+          "1/2 cup water",
+          "Vanilla",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Cook sugar and water until it becomes a golden caramel",
+          "Add grated coconut — stir constantly as it toasts in the caramel",
+          "Cook until the coconut is golden and coated in caramel — 10-15 min",
+          "Add vanilla and salt",
+          "Drop spoonfuls onto parchment or banana leaf to set",
+          "The coconut gets chewy and crunchy in the caramel — like tropical brittle",
+          "These are sold at every market in Fiji — the simplest sweet on the islands",
+          "The fresh coconut makes all the difference — dried coconut won't give the same texture"
+        ],
+        "description": "Fiji's simplest sweet — freshly grated coconut toasted in caramel until golden and crunchy. Sold at every market in the islands. The two-ingredient simplicity (coconut + sugar) and the tropical-brittle texture make kovu a viral example of how Pacific Island desserts need nothing but what the palm trees provide."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "fji-dr-1",
+        "name": "Kava (Yaqona)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Kava root (pounded)",
+          "Water"
+        ],
+        "instructions": [
+          "Mix pounded kava with water in tanoa (bowl)",
+          "Strain through cloth",
+          "Serve in coconut shell cups",
+          "Clap once before drinking, three times after"
+        ],
+        "description": "Earthy, ceremonial kava drink — Fiji's social ritual.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg"
+        }
+      },
+      {
+        "id": "fji-dr-2",
+        "name": "Fresh Coconut Water",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "1 young coconut"
+        ],
+        "instructions": [
+          "Crack open young coconut",
+          "Pour water into glass",
+          "Serve chilled"
+        ],
+        "description": "Nature's isotonic drink, straight from the coconut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg"
+        }
+      }
+    ]
+  }
+}

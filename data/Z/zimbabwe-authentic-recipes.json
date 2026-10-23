@@ -1,0 +1,875 @@
+{
+  "zimbabweRecipes": {
+    "country": "Zimbabwe",
+    "region": "Southern Africa",
+    "breakfast": [
+      {
+        "id": "zwe-bf-1",
+        "name": "Sadza (Maize Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Mealie meal",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil water",
+          "Stir in mealie meal gradually",
+          "Cook until very thick and pulls from pot"
+        ],
+        "description": "Thick maize porridge — Zimbabwe's staple, eaten three times daily.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg"
+        }
+      },
+      {
+        "id": "zwe-bf-2",
+        "name": "Maputi (Popcorn)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Dried corn kernels",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Pop corn in hot oil",
+          "Season with salt"
+        ],
+        "description": "Popcorn — a common Zimbabwean breakfast or snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/ParroquiaDeMorong.jpg",
+        "imageCredit": {
+          "author": "Anißäb",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AParroquiaDeMorong.jpg"
+        }
+      },
+      {
+        "id": "zwe-bf-3",
+        "name": "Bota (Thin Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Maize meal (fine ground)",
+          "Water",
+          "Sugar or peanut butter",
+          "Milk (optional)"
+        ],
+        "instructions": [
+          "Bota is the thin Zimbabwean porridge -- the lighter breakfast version of sadza",
+          "Maize meal cooked to a thin, drinkable consistency (unlike thick sadza)",
+          "Sweetened with sugar or enriched with peanut butter",
+          "The morning version: thin and sweet. The main meal version (sadza): thick and unsweetened",
+          "Given to children and the elderly -- easy to eat and nutritious",
+          "Drunk from a cup or eaten with a spoon"
+        ],
+        "description": "Zimbabwean thin porridge -- bota, maize meal cooked to a drinkable consistency (unlike thick sadza). Sweetened with sugar or enriched with peanut butter. Given to children and the elderly. The lighter breakfast version of the national staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bota_de_vino.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bota_de_vino.jpg"
+        }
+      },
+      {
+        "id": "zwe-bf-4",
+        "name": "Dovi with Bread (Peanut Butter Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Peanut butter (dovi -- homemade or commercial)",
+          "Maize meal or bread",
+          "Sugar",
+          "Milk or water"
+        ],
+        "instructions": [
+          "Dovi (peanut butter) porridge is a Zimbabwean breakfast -- peanut butter cooked into a creamy porridge",
+          "Peanut butter dissolved in hot water or milk to create a thick, nutty porridge",
+          "Or simply: peanut butter on bread with tea",
+          "Dovi (peanut butter) is central to Zimbabwean cuisine -- used in cooking and as a spread",
+          "Zimbabwe produces excellent groundnuts -- the peanut butter is often homemade",
+          "The simplest Zimbabwean breakfast: thick bread with peanut butter and sweet tea"
+        ],
+        "description": "Zimbabwean peanut butter breakfast -- dovi, peanut butter dissolved into hot porridge or spread thick on bread with sweet tea. Zimbabwe produces excellent groundnuts. Dovi is central to the cuisine -- used in cooking and as a spread. Often homemade."
+      },
+      {
+        "id": "zwe-bf-5",
+        "name": "Fried Eggs with Tomato and Onion",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Eggs",
+          "Tomato (diced)",
+          "Onion (diced)",
+          "Cooking oil",
+          "Salt",
+          "Bread (for serving)"
+        ],
+        "instructions": [
+          "Fried eggs with tomato and onion -- the Zimbabwean quick breakfast",
+          "Eggs fried in oil with a simple tomato-onion sauce",
+          "Served with bread or sadza",
+          "A protein-rich breakfast for those who can afford eggs",
+          "The tomato-onion combination is the base of most Zimbabwean cooking",
+          "Quick and simple -- made in every Zimbabwean kitchen"
+        ],
+        "description": "Zimbabwean quick breakfast -- fried eggs with tomato and onion sauce. Served with bread. The tomato-onion combination is the base of most Zimbabwean cooking. Quick, simple, protein-rich.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "zwe-ln-1",
+        "name": "Sadza ne Nyama (Porridge with Meat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Sadza",
+          "Beef stew: beef, tomatoes, onion, garlic, salt"
+        ],
+        "instructions": [
+          "Make thick sadza",
+          "Make beef stew",
+          "Serve sadza with stew on the side",
+          "Eat by hand — pinch sadza, dip in stew"
+        ],
+        "description": "Sadza with beef stew — the Zimbabwean national meal."
+      },
+      {
+        "id": "zwe-ln-2",
+        "name": "Muriwo une Dovi (Greens in Peanut Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Leafy greens (collard, pumpkin leaves)",
+          "Peanut butter",
+          "Tomatoes",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook greens until tender",
+          "Make peanut sauce with tomatoes and onion",
+          "Combine",
+          "Serve with sadza"
+        ],
+        "description": "Greens in peanut butter sauce — the essential sadza relish."
+      },
+      {
+        "id": "zwe-ln-3",
+        "name": "Sadza ne Muriwo (Porridge with Greens)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "White maize meal",
+          "Water, salt",
+          "Muriwo: collard greens, rape (canola leaves), or pumpkin leaves",
+          "Tomato, onion",
+          "Cooking oil",
+          "Groundnut powder (optional)"
+        ],
+        "instructions": [
+          "Sadza ne muriwo is the most basic and most common Zimbabwean meal",
+          "Sadza: the thick maize porridge that is the heart of every Zimbabwean meal",
+          "Muriwo: cooked leafy greens (the vegetable relish)",
+          "The greens are cooked with tomato and onion -- sometimes with groundnut powder for richness",
+          "Eaten with the right hand: a ball of sadza is formed, an indentation pressed with the thumb, used to scoop muriwo",
+          "This meal is eaten daily by the majority of Zimbabweans -- it IS the national diet",
+          "Sadza without muriwo is considered incomplete -- the relish provides the nutrition and flavor"
+        ],
+        "description": "The most common Zimbabwean meal -- sadza ne muriwo, thick maize porridge with cooked leafy greens in tomato-onion sauce. Eaten with the right hand: sadza ball formed, thumb pressed, used to scoop muriwo. Eaten daily by the majority. Sadza without muriwo is incomplete."
+      },
+      {
+        "id": "zwe-ln-4",
+        "name": "Road Runner Chicken",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Free-range chicken (road runner -- indigenous breed, small and lean)",
+          "Tomato, onion, garlic",
+          "Curry powder",
+          "Cooking oil",
+          "Salt",
+          "Sadza (for serving)"
+        ],
+        "instructions": [
+          "Road runner chicken is the Zimbabwean free-range chicken -- smaller, leaner, and tastier than broilers",
+          "Called \"road runner\" because indigenous chickens roam freely -- running across roads",
+          "Tougher than commercial chicken but much more flavorful",
+          "Cooked slowly in a tomato-curry sauce until tender",
+          "Curry powder: introduced during the colonial era, now a Zimbabwean pantry staple",
+          "Road runner chicken is prized -- it costs more than commercial chicken at the market",
+          "Served with sadza -- the chicken sauce is the relish"
+        ],
+        "description": "Zimbabwean free-range chicken -- road runner, indigenous breed that roams freely (running across roads). Smaller, leaner, tougher, but much more flavorful than broilers. Slow-cooked in tomato-curry sauce. Prized and costs more than commercial chicken. Served with sadza."
+      },
+      {
+        "id": "zwe-ln-5",
+        "name": "Matemba (Dried Kapenta)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Dried kapenta (matemba -- small dried fish from Lake Kariba)",
+          "Tomato, onion",
+          "Groundnut powder",
+          "Salt",
+          "Cooking oil"
+        ],
+        "instructions": [
+          "Matemba is the Zimbabwean name for dried kapenta fish -- the same fish as in Zambia",
+          "Lake Kariba straddles the Zimbabwe-Zambia border -- both countries harvest kapenta",
+          "Sun-dried and sold in markets across Zimbabwe",
+          "Cooked with tomato, onion, and sometimes groundnut powder",
+          "An affordable protein source for millions of Zimbabweans",
+          "The tiny fish are eaten whole -- bones, heads, and all"
+        ],
+        "description": "Zimbabwean dried fish -- matemba (kapenta from Lake Kariba, shared with Zambia). Sun-dried tiny fish cooked with tomato, onion, and groundnut powder. Eaten whole. An affordable protein source for millions. Lake Kariba straddles the Zimbabwe-Zambia border."
+      },
+      {
+        "id": "zwe-ln-6",
+        "name": "Nyama Choma (Grilled Meat)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Beef or goat meat (bone-in pieces)",
+          "Salt",
+          "Chili sauce",
+          "Sadza (for serving)",
+          "Coleslaw or green salad"
+        ],
+        "instructions": [
+          "Nyama choma is grilled meat -- the East and Southern African braai/barbecue tradition",
+          "Meat grilled over charcoal -- simply seasoned with salt",
+          "Beef is most common in Zimbabwe (cattle are culturally and economically important)",
+          "Served with sadza, coleslaw, and chili sauce",
+          "A social event -- nyama choma is eaten at gatherings, beer halls, and celebrations",
+          "The Shona and Ndebele cattle traditions: cattle are wealth, status, and food"
+        ],
+        "description": "Zimbabwean grilled meat -- nyama choma, beef or goat on charcoal with salt. A social event at gatherings, beer halls, and celebrations. Served with sadza and coleslaw. Shona and Ndebele cattle traditions: cattle are wealth, status, and food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Goat_meat_being_roasted.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Goat_meat_being_roasted.jpg"
+        }
+      },
+      {
+        "id": "zwe-ln-7",
+        "name": "Derere (Okra Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Okra (derere -- sliced)",
+          "Tomato, onion",
+          "Peanut butter (optional)",
+          "Salt",
+          "Sadza (for serving)"
+        ],
+        "instructions": [
+          "Derere is the Zimbabwean okra stew -- okra cooked until it releases its characteristic slime",
+          "The mucilaginous texture of okra is appreciated in Zimbabwean cooking -- not avoided",
+          "In Western cooking, okra slime is often seen as undesirable; in Zimbabwe, it provides a silky sauce",
+          "Cooked with tomato and onion, sometimes with peanut butter for richness",
+          "A common vegetable relish (ndiwo) served with sadza",
+          "Okra is widely grown in Zimbabwean home gardens"
+        ],
+        "description": "Zimbabwean okra stew -- derere, okra cooked until it releases its characteristic slime (appreciated as a silky sauce, not avoided). With tomato, onion, and sometimes peanut butter. A common vegetable ndiwo with sadza. Widely grown in home gardens."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "zwe-dn-1",
+        "name": "Madora (Mopane Worms)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Dried mopane worms",
+          "Onion",
+          "Tomatoes",
+          "Peanut butter",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Soak and wash dried worms",
+          "Fry with onion and tomatoes",
+          "Add peanut butter for richness",
+          "Serve with sadza"
+        ],
+        "description": "Fried mopane worms in peanut sauce — high-protein traditional food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Colophospermum_mopane_50D_0486.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Colophospermum_mopane_50D_0486.jpg"
+        }
+      },
+      {
+        "id": "zwe-dn-2",
+        "name": "Mazondo (Cow Trotters)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 180,
+        "ingredients": [
+          "Cow trotters (cleaned)",
+          "Onion",
+          "Garlic",
+          "Tomatoes",
+          "Chili",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil trotters 3 hours until gelatinous and tender",
+          "Season with onion, garlic, tomatoes, chili",
+          "Serve with sadza"
+        ],
+        "description": "Slow-cooked cow trotters — rich and gelatinous.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg"
+        }
+      },
+      {
+        "id": "zwe-dn-3",
+        "name": "Dovi (Peanut Butter Chicken Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Chicken pieces",
+          "Peanut butter (dovi -- smooth, homemade or commercial)",
+          "Tomato, onion, garlic",
+          "Greens (optional -- spinach or rape)",
+          "Salt",
+          "Sadza (for serving)"
+        ],
+        "instructions": [
+          "Dovi is the Zimbabwean peanut butter stew -- the signature flavor of Shona cuisine",
+          "Chicken cooked in a rich peanut butter sauce with tomato and onion",
+          "The peanut butter dissolves into the sauce creating a thick, creamy, nutty gravy",
+          "Sometimes greens are added for nutrition and color",
+          "Dovi (peanut butter) is the most important flavoring in Zimbabwean cooking",
+          "The dish is named after the ingredient: dovi IS peanut butter in Shona",
+          "Served over sadza -- the peanut sauce soaks into the porridge",
+          "Comfort food -- the taste of home for every Zimbabwean abroad"
+        ],
+        "description": "Zimbabwean signature dish -- dovi, chicken stewed in rich peanut butter sauce with tomato and onion. Dovi means peanut butter in Shona. The most important flavoring in Zimbabwean cooking. The peanut butter creates a thick, creamy, nutty gravy. The taste of home for every Zimbabwean abroad."
+      },
+      {
+        "id": "zwe-dn-4",
+        "name": "Muboora (Pumpkin Leaf Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Pumpkin leaves (young, tender)",
+          "Peanut butter",
+          "Tomato, onion",
+          "Salt",
+          "Sadza (for serving)"
+        ],
+        "instructions": [
+          "Muboora is the Zimbabwean pumpkin leaf stew -- cooking the leaves of the pumpkin plant",
+          "Young pumpkin leaves cooked with peanut butter, tomato, and onion",
+          "The peanut butter creates the rich sauce that coats the leaves",
+          "In Zimbabwe, pumpkin leaves are a more common vegetable than the pumpkin itself",
+          "Grown in home gardens and communal plots -- free and abundant in season",
+          "A nutritious, affordable relish -- green vegetables with protein from peanut butter"
+        ],
+        "description": "Zimbabwean pumpkin leaf stew -- muboora, young leaves cooked in peanut butter sauce. In Zimbabwe, pumpkin LEAVES are more commonly eaten than the pumpkin itself. Grown in home gardens and communal plots. Nutritious and affordable -- greens with peanut butter protein.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg"
+        }
+      },
+      {
+        "id": "zwe-dn-5",
+        "name": "Huku ne Sadza (Chicken Stew with Sadza)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Chicken pieces (bone-in)",
+          "Tomato, onion, garlic",
+          "Cooking oil",
+          "Curry powder",
+          "Salt, black pepper",
+          "Sadza (for serving)"
+        ],
+        "instructions": [
+          "Huku ne sadza is Zimbabwean chicken stew with sadza -- the celebration meal",
+          "Chicken cooked in a tomato-curry sauce",
+          "When a guest arrives at a Zimbabwean home, a chicken is often slaughtered for them -- the highest honor",
+          "The Shona saying: \"You don't cook a chicken when you hear the visitor approaching -- you do it when they arrive\"",
+          "Curry powder is widely used in Zimbabwean cooking -- a colonial-era addition that became essential",
+          "Served with sadza -- the chicken sauce is the main relish"
+        ],
+        "description": "Zimbabwean celebration meal -- huku ne sadza, chicken in tomato-curry sauce. When a guest arrives, a chicken is slaughtered -- the highest honor. Shona saying: you don't cook it when you hear the visitor -- you do it when they arrive. Curry powder: colonial-era addition, now essential."
+      },
+      {
+        "id": "zwe-dn-6",
+        "name": "Biltong Stew",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Biltong (air-dried cured beef -- Zimbabwean/South African)",
+          "Tomato, onion",
+          "Sadza (for serving)",
+          "Salt"
+        ],
+        "instructions": [
+          "Biltong stew uses dried cured beef (biltong) rehydrated and cooked into a stew",
+          "Biltong: beef cured with salt, vinegar, and coriander, then air-dried -- Southern African tradition",
+          "Different from jerky: biltong is air-dried (not smoked or dehydrated), thicker, and more flavorful",
+          "The biltong rehydrates in the tomato sauce as it cooks",
+          "A way to use biltong that has hardened too much to eat as a snack",
+          "Biltong-making is a Zimbabwean tradition -- many families make their own"
+        ],
+        "description": "Zimbabwean dried meat stew -- biltong (air-dried cured beef, Southern African tradition -- NOT jerky) rehydrated in tomato-onion sauce. Different from jerky: air-dried, thicker, more flavorful. A way to use biltong too hard for snacking. Many families make their own biltong.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "zwe-sn-1",
+        "name": "Chimodho (Corn Bread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Mealie meal",
+          "Peanut butter",
+          "Sugar",
+          "Baking powder",
+          "Water"
+        ],
+        "instructions": [
+          "Mix all ingredients",
+          "Pour into pan",
+          "Bake at 175°C 30 min"
+        ],
+        "description": "Sweet corn bread with peanut butter."
+      },
+      {
+        "id": "zwe-sn-2",
+        "name": "Magwinya (Fat Cakes)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, yeast, sugar, salt",
+          "Warm water",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Magwinya are Zimbabwean fat cakes -- deep-fried dough balls",
+          "A yeast dough shaped into balls and deep-fried until golden and puffed",
+          "The same concept as South African vetkoek or Zambian vitumbuwa",
+          "Sold at markets, schools, and roadside stands -- a cheap snack",
+          "Eaten plain, with jam, or with mince (ground beef filling)",
+          "The school-gate snack: children buy magwinya after school",
+          "A filling, affordable snack when times are tight"
+        ],
+        "description": "Zimbabwean fat cakes -- magwinya, yeast dough deep-fried into golden puffed balls. Like South African vetkoek. Sold at markets, schools, and roadside stands. The school-gate snack. Affordable and filling. Eaten plain, with jam, or with mince.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vetkoek_with_mince-001.jpg"
+        }
+      },
+      {
+        "id": "zwe-sn-3",
+        "name": "Boiled Groundnuts",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 30,
+        "ingredients": [
+          "Raw groundnuts (peanuts, in shell)",
+          "Water, salt"
+        ],
+        "instructions": [
+          "Boiled groundnuts -- peanuts boiled in salted water until soft",
+          "Different from roasted groundnuts: boiled peanuts are soft, starchy, and savory",
+          "Sold in small bags at markets and bus stations",
+          "The peanut shell softens enough to open easily",
+          "A cheap, protein-rich snack",
+          "Boiled groundnuts are a Southern African tradition (also popular in the American South)"
+        ],
+        "description": "Zimbabwean boiled peanuts -- groundnuts boiled in salted water until soft and starchy (different from crunchy roasted). Sold at markets and bus stations. Also a tradition in the American South. Cheap, protein-rich snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Boiled_peanut.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Boiled_peanut.jpg"
+        }
+      },
+      {
+        "id": "zwe-sn-4",
+        "name": "Roasted Maize (Chibage)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Fresh maize cobs",
+          "Charcoal",
+          "Salt"
+        ],
+        "instructions": [
+          "Chibage is Zimbabwean roasted maize on the cob -- the seasonal street food",
+          "Fresh green maize roasted on charcoal until the kernels char and caramelize",
+          "Available during the maize harvest season (February-May)",
+          "Sold at roadsides and markets by women with small charcoal braziers",
+          "The smell of roasting maize signals the harvest season has arrived",
+          "Eaten off the cob, with salt if desired"
+        ],
+        "description": "Zimbabwean seasonal street food -- chibage, fresh green maize cobs roasted on charcoal until kernels char and caramelize. Available during harvest (February-May). Sold by women with charcoal braziers. The smell signals harvest season has arrived.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Cocolo%C5%9Fi.JPG",
+        "imageCredit": {
+          "author": "El bes",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACocolo%C5%9Fi.JPG"
+        }
+      },
+      {
+        "id": "zwe-sn-5",
+        "name": "Biltong",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Beef (silverside or topside -- lean cuts)",
+          "Coarse salt",
+          "Coriander seeds (crushed)",
+          "Black pepper",
+          "Brown vinegar"
+        ],
+        "instructions": [
+          "Biltong is the Zimbabwean and Southern African air-dried cured beef -- the national snack",
+          "Lean beef cured in salt, vinegar, and coriander, then hung to air-dry for 3-7 days",
+          "Different from jerky: biltong is air-dried (not heat-dried), thicker, and retains more flavor",
+          "The coriander seeds are the defining spice -- crushed and pressed into the meat surface",
+          "Sliced thin or torn into strips and eaten as a high-protein snack",
+          "Every butchery and supermarket in Zimbabwe sells biltong",
+          "Making biltong at home is a Zimbabwean tradition -- families have their own recipes and biltong boxes",
+          "Droewors: the dried sausage version -- thin sausage air-dried like biltong"
+        ],
+        "description": "Southern African air-dried cured beef -- biltong, lean beef cured in salt, vinegar, and crushed coriander, hung to air-dry 3-7 days. NOT jerky (air-dried, not heat-dried, thicker, more flavorful). Every butchery sells it. Families have their own recipes and biltong boxes. The national snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Sliced_Biltong.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "zwe-ds-1",
+        "name": "Nhopi (Pumpkin Mash)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Pumpkin",
+          "Peanut butter",
+          "Sugar",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil pumpkin until tender",
+          "Mash with peanut butter and sugar"
+        ],
+        "description": "Sweet pumpkin mash with peanut butter."
+      },
+      {
+        "id": "zwe-ds-2",
+        "name": "Maheu Ice Lollies",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 120,
+        "ingredients": [
+          "Maheu (fermented maize drink)",
+          "Sugar",
+          "Freezer bags or molds"
+        ],
+        "instructions": [
+          "Maheu ice lollies -- frozen maheu sold as popsicles",
+          "Maheu (the fermented maize drink) frozen in small plastic bags",
+          "Sold by vendors from cooler boxes -- a cheap frozen treat",
+          "Slightly sour and sweet -- the fermented flavor is unique",
+          "A creative way to sell maheu in hot weather",
+          "The Zimbabwean equivalent of freeze pops"
+        ],
+        "description": "Zimbabwean frozen treat -- maheu ice lollies, fermented maize drink frozen in plastic bags. Sold from cooler boxes. Slightly sour and sweet. The Zimbabwean equivalent of freeze pops. Creative way to sell maheu in hot weather."
+      },
+      {
+        "id": "zwe-ds-3",
+        "name": "Sweet Potato Balls",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Sweet potatoes (boiled and mashed)",
+          "Sugar",
+          "Cinnamon",
+          "Flour (just enough to bind)",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Sweet potato balls -- mashed sweet potato shaped into balls, rolled in sugar, and fried",
+          "A simple dessert using abundant sweet potatoes",
+          "The natural sweetness of the potato with added sugar and cinnamon",
+          "Fried until golden and slightly crispy on the outside",
+          "Made at home as a treat -- simple ingredients, simple technique"
+        ],
+        "description": "Zimbabwean sweet potato balls -- boiled sweet potato mashed, shaped, and fried with sugar and cinnamon. Simple home dessert using abundant sweet potatoes. Golden and slightly crispy outside, soft inside.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ipomoea_batatas_006.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ipomoea_batatas_006.JPG"
+        }
+      },
+      {
+        "id": "zwe-ds-4",
+        "name": "Doughnut (Zimbabwean Style)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, yeast, sugar, salt",
+          "Milk, butter, eggs",
+          "Oil for deep frying",
+          "Sugar-cinnamon coating"
+        ],
+        "instructions": [
+          "Zimbabwean doughnuts -- yeast-raised, deep-fried, and rolled in sugar-cinnamon",
+          "Sold at bakeries and by street vendors",
+          "Not ring-shaped -- usually round balls or oblongs",
+          "The bakery tradition in Zimbabwe reflects British colonial influence",
+          "A treat and a celebration food -- bought for birthdays and gatherings",
+          "Hot from the fryer, coated in sugar -- simple and beloved"
+        ],
+        "description": "Zimbabwean yeast doughnuts -- round balls deep-fried and rolled in sugar-cinnamon. Sold at bakeries and by street vendors. British colonial baking influence. A celebration food bought for birthdays and gatherings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glazed-Donut.jpg",
+        "imageCredit": {
+          "author": "Evan-Amos",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGlazed-Donut.jpg"
+        }
+      },
+      {
+        "id": "zwe-ds-5",
+        "name": "Chikenduza (Fried Dough Twists)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, sugar, salt",
+          "Baking powder",
+          "Butter",
+          "Milk or water",
+          "Oil for deep frying",
+          "Sugar (for coating)"
+        ],
+        "instructions": [
+          "Chikenduza are Zimbabwean twisted fried dough -- twisted strips of sweet dough deep-fried",
+          "Dough twisted into rope-like shapes and fried until golden",
+          "Coated in sugar after frying",
+          "Similar to South African koeksisters but without the syrup dip",
+          "A market sweet and home treat",
+          "The twist shape gives maximum crispy surface area"
+        ],
+        "description": "Zimbabwean fried dough twists -- chikenduza, sweet dough twisted into rope shapes and deep-fried golden, coated in sugar. Similar to South African koeksisters but without the syrup dip. Maximum crispy surface area from the twist shape."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "zwe-dr-1",
+        "name": "Maheu (Fermented Maize Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Mealie meal",
+          "Malt",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Cook thin porridge",
+          "Cool, add malt",
+          "Ferment 1-2 days",
+          "Serve cold"
+        ],
+        "description": "Tangy fermented maize drink — Zimbabwe's refreshment.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sam_Giancana.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sam_Giancana.jpg"
+        }
+      },
+      {
+        "id": "zwe-dr-2",
+        "name": "Seven Days (Traditional Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Rapoko (finger millet)",
+          "Maize meal",
+          "Water"
+        ],
+        "instructions": [
+          "Cook maize porridge",
+          "Add sprouted rapoko",
+          "Ferment 7 days",
+          "Strain and serve"
+        ],
+        "description": "Traditional millet beer — fermented for seven days.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/McClellan%2BLee.jpg",
+        "imageCredit": {
+          "author": "Hlj",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMcClellan%2BLee.jpg"
+        }
+      },
+      {
+        "id": "zwe-dr-3",
+        "name": "Mazoe Orange Crush",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Mazoe Orange Crush concentrate (Zimbabwean brand since 1906)",
+          "Water",
+          "Ice"
+        ],
+        "instructions": [
+          "Mazoe Orange Crush is Zimbabwe's national drink -- a concentrated orange squash",
+          "Produced in Mazoe, Mashonaland Central -- since 1906",
+          "A concentrated syrup diluted with water -- not juice, not soda",
+          "Every Zimbabwean household has a bottle of Mazoe",
+          "Mazoe IS Zimbabwe -- it is the national drink the way Coca-Cola is American",
+          "Multiple flavors now: orange, blackberry, lemon, peach -- but the original orange is iconic",
+          "Served at every Zimbabwean gathering, party, and funeral",
+          "For Zimbabweans abroad, Mazoe is the taste of home -- it's shipped internationally to the diaspora"
+        ],
+        "description": "Zimbabwe's national drink since 1906 -- Mazoe Orange Crush, concentrated orange squash diluted with water. Every household has a bottle. Mazoe IS Zimbabwe. Multiple flavors but original orange is iconic. For the diaspora, Mazoe is the taste of home -- shipped internationally."
+      },
+      {
+        "id": "zwe-dr-4",
+        "name": "Rock Shandy",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Lemonade (sparkling)",
+          "Soda water",
+          "Angostura bitters (a few dashes)",
+          "Ice",
+          "Lemon slice"
+        ],
+        "instructions": [
+          "Rock Shandy is the Zimbabwean and Southern African non-alcoholic mixed drink",
+          "Lemonade and soda water mixed with a few dashes of Angostura bitters",
+          "The bitters give it a slightly herbal, aromatic complexity",
+          "A \"fancy\" non-alcoholic drink -- served at braais and social gatherings",
+          "Popular across Southern Africa: Zimbabwe, South Africa, Botswana",
+          "The British colonial legacy: bitters and lemonade drinks"
+        ],
+        "description": "Southern African non-alcoholic drink -- Rock Shandy, sparkling lemonade and soda water with dashes of Angostura bitters. The bitters add herbal, aromatic complexity. Served at braais and social gatherings. British colonial legacy across Zimbabwe, South Africa, and Botswana.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Radler_Pils_Unterschied_01_%28RaBoe%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Radler_Pils_Unterschied_01_%28RaBoe%29.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "bahamasRecipes": {
+    "country": "The Bahamas",
+    "region": "Caribbean",
+    "breakfast": [
+      {
+        "id": "bhs-bf-1",
+        "name": "Boiled Fish and Grits",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "500g grouper or snapper",
+          "2 cups grits",
+          "2 limes",
+          "1 onion",
+          "2 potatoes",
+          "1 green pepper",
+          "2 tomatoes",
+          "Scotch bonnet",
+          "Thyme",
+          "Salt"
+        ],
+        "instructions": [
+          "Season fish with lime, salt",
+          "Boil potatoes, onion, pepper, tomatoes, thyme, scotch bonnet",
+          "Add fish, cook until flaky",
+          "Cook grits separately with butter",
+          "Serve fish and broth over grits"
+        ],
+        "description": "The Bahamian breakfast staple — tender fish in broth over creamy grits.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Grits1.jpg",
+        "imageCredit": {
+          "author": "sashafatcat",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGrits1.jpg"
+        }
+      },
+      {
+        "id": "bhs-bf-2",
+        "name": "Johnny Cake",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups flour",
+          "3 tsp baking powder",
+          "2 tbsp sugar",
+          "1/4 cup butter",
+          "1/2 cup milk",
+          "1 egg",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix dry ingredients",
+          "Cut in butter, add milk and egg",
+          "Knead lightly",
+          "Shape into flat round",
+          "Bake at 180°C 20 min until golden",
+          "Slice and serve with butter"
+        ],
+        "description": "A slightly sweet quick bread baked golden.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Johnnycakes.jpg",
+        "imageCredit": {
+          "author": "Douglas Perkins",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJohnnycakes.jpg"
+        }
+      },
+      {
+        "id": "bhs-bf-3",
+        "name": "Tuna and Grits",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups hominy grits",
+          "1 can tuna (or fresh seared tuna)",
+          "Onion",
+          "Tomato",
+          "Green pepper",
+          "Butter",
+          "Hot pepper sauce",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook grits with butter until creamy",
+          "Sauté onion, pepper, tomato",
+          "Add tuna, heat through",
+          "Serve tuna mixture over grits with hot sauce"
+        ],
+        "description": "Quick Bahamian breakfast — sometimes made with fresh tuna seared rare, sometimes humble canned tuna. Both are good.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Soul_Food_at_Powell%27s_Place.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Soul_Food_at_Powell%27s_Place.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "bhs-ln-1",
+        "name": "Conch Salad",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "500g fresh conch (diced)",
+          "2 tomatoes (diced)",
+          "1 onion (diced)",
+          "1 green pepper (diced)",
+          "1 cucumber (diced)",
+          "3 limes (juiced)",
+          "2 oranges (juiced)",
+          "Scotch bonnet (minced)",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Score and tenderize conch, dice small",
+          "Combine with all diced vegetables",
+          "Add citrus juices and scotch bonnet",
+          "Toss well, let marinate 15 min",
+          "Season with salt and pepper"
+        ],
+        "description": "Fresh, citrus-cured conch with crunchy vegetables — Bahamian ceviche.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg"
+        }
+      },
+      {
+        "id": "bhs-ln-2",
+        "name": "Cracked Conch",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "500g conch (pounded thin)",
+          "1 cup flour",
+          "2 eggs",
+          "1 cup breadcrumbs",
+          "Oil for frying",
+          "Lemon wedges",
+          "Hot sauce"
+        ],
+        "instructions": [
+          "Pound conch very thin",
+          "Dredge in flour, dip in beaten eggs, coat in breadcrumbs",
+          "Deep fry until golden and crispy",
+          "Drain on paper towels",
+          "Serve with lemon and hot sauce"
+        ],
+        "description": "Battered and fried conch — the quintessential Bahamian dish."
+      },
+      {
+        "id": "bhs-ln-3",
+        "name": "Bahamian Mac and Cheese",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "500g elbow macaroni",
+          "300g sharp cheddar (grated)",
+          "200g Gouda (grated)",
+          "3 eggs",
+          "350ml evaporated milk",
+          "1 onion (diced)",
+          "1 green pepper (diced)",
+          "Thyme",
+          "Mustard",
+          "Salt and pepper",
+          "Paprika",
+          "Butter"
+        ],
+        "instructions": [
+          "Cook macaroni until just al dente",
+          "Mix eggs, evaporated milk, mustard, seasonings",
+          "Layer in buttered baking dish: pasta, cheese, pasta, cheese",
+          "Pour egg-milk mixture over",
+          "Top with remaining cheese and paprika",
+          "Bake at 175°C for 35-40 min until golden and set — it should be firm enough to slice, not scoopable"
+        ],
+        "description": "Bahamian mac and cheese is baked dense and sliceable — more casserole than sauce. A mandatory side at every cookout and holiday.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cooked_corned_beef.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "bhs-dn-1",
+        "name": "Bahamian Stew Fish",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "600g grouper steaks",
+          "2 limes",
+          "2 onions (sliced)",
+          "2 tomatoes",
+          "1 green pepper",
+          "2 tbsp tomato paste",
+          "Thyme",
+          "Scotch bonnet",
+          "2 tbsp butter",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Season fish with lime and salt",
+          "Brown fish in butter, set aside",
+          "Sauté onions, peppers, tomatoes",
+          "Add tomato paste, thyme, scotch bonnet",
+          "Return fish, add water to cover",
+          "Simmer 20 min until sauce thickens"
+        ],
+        "description": "Grouper steaks simmered in a rich tomato-onion sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mang%C3%BA_with_Veggie_Meat.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mang%C3%BA_with_Veggie_Meat.JPG"
+        }
+      },
+      {
+        "id": "bhs-dn-2",
+        "name": "Peas and Rice with Baked Chicken",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "2 cups rice",
+          "1 can pigeon peas",
+          "1 can coconut milk",
+          "1 onion",
+          "2 cloves garlic",
+          "Thyme",
+          "Tomato paste",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Season chicken, bake at 190°C 45 min",
+          "Cook rice with pigeon peas, coconut milk, onion, garlic, thyme, tomato paste",
+          "Simmer until rice is fluffy and liquid absorbed",
+          "Serve chicken over peas and rice"
+        ],
+        "description": "Coconut peas and rice with crispy baked chicken.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg"
+        }
+      },
+      {
+        "id": "bhs-dn-3",
+        "name": "Steamed Souse (Chicken or Pig Feet)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "1kg chicken wings or pig feet",
+          "3 limes",
+          "2 onions (sliced)",
+          "2 celery stalks",
+          "1 green pepper",
+          "Allspice berries",
+          "Bay leaf",
+          "Hot pepper",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil meat until very tender (45 min for chicken, longer for pig feet)",
+          "Add sliced onion, celery, pepper, allspice, bay leaf",
+          "Squeeze in lime juice generously",
+          "Season with salt and hot pepper",
+          "Simmer 15 more min — the broth should be clear and limey",
+          "Serve in bowls with the broth and a side of grits or Johnny cake"
+        ],
+        "description": "Saturday morning souse — a lime-and-allspice broth with tender meat. Every fish fry shack sells it alongside boiled fish.",
+        "image": "",
+        "imageCredit": {}
+      }
+    ],
+    "snacks": [
+      {
+        "id": "bhs-sn-1",
+        "name": "Conch Fritters",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "300g conch (minced)",
+          "1 cup flour",
+          "1 egg",
+          "1/2 cup milk",
+          "1 onion (minced)",
+          "1 green pepper (minced)",
+          "1 celery stalk (minced)",
+          "Hot pepper sauce",
+          "Baking powder",
+          "Salt",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix flour, baking powder, salt",
+          "Add egg, milk, stir to batter",
+          "Fold in conch, onion, pepper, celery, hot sauce",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden brown",
+          "Drain and serve with dipping sauce"
+        ],
+        "description": "Crispy, spicy conch fritters — a Bahamian must-have.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg"
+        }
+      },
+      {
+        "id": "bhs-sn-2",
+        "name": "Scorched Conch",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "4 pieces fresh conch (tenderized)",
+          "Lime juice",
+          "Salt",
+          "Bird pepper (Bahamian hot pepper)",
+          "Onion (diced)"
+        ],
+        "instructions": [
+          "Score and tenderize fresh conch",
+          "Toss with lime juice, salt, diced onion, bird pepper",
+          "Eat raw immediately — no cooking"
+        ],
+        "description": "Raw conch with lime and fiery bird pepper — as fresh as Bahamian food gets. Eaten right at the dock.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Siege-of-Busanjin-1592.jpg",
+        "imageCredit": {
+          "author": "Unknown authorUnknown author",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASiege-of-Busanjin-1592.jpg"
+        }
+      },
+      {
+        "id": "bhs-sn-4",
+        "name": "Conch Salad (Raw Conch Ceviche)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "500g fresh conch (scored and diced small)",
+          "1 green bell pepper (diced)",
+          "1 red onion (diced)",
+          "2 tomatoes (diced)",
+          "1 Scotch bonnet pepper (minced)",
+          "Juice of 6 Sour oranges (or 3 oranges + 3 limes)",
+          "Salt",
+          "Goat pepper (optional, hotter)"
+        ],
+        "instructions": [
+          "Tenderize conch by scoring in a crosshatch pattern, then dice small",
+          "Dice all vegetables",
+          "Toss conch with vegetables in a bowl",
+          "Squeeze citrus juice over everything — the acid 'cooks' the conch",
+          "Add Scotch bonnet to taste",
+          "Season with salt",
+          "Let marinate 5-10 minutes (not too long or conch gets tough)",
+          "Serve in a cup on the beach — this is eaten standing up at fish fry shacks",
+          "The roadside conch salad makers are Nassau's most viral street food stars"
+        ],
+        "description": "The Bahamas' most famous street food — raw conch tossed with citrus and Scotch bonnet, made right in front of you at the fish fry. Went viral when tourists filmed the speed and knife skills of the roadside conch salad makers at Arawak Cay.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "bhs-ds-1",
+        "name": "Guava Duff",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "4 ripe guavas (peeled, seeded)",
+          "2 cups flour",
+          "1/2 cup butter",
+          "1/2 cup sugar",
+          "2 eggs",
+          "Baking powder",
+          "Sauce: 1/2 cup butter, 1 cup sugar, 2 eggs, rum"
+        ],
+        "instructions": [
+          "Mix dough: flour, butter, sugar, eggs, baking powder",
+          "Roll out, spread guava over dough",
+          "Roll up, wrap in cloth",
+          "Steam for 45 minutes",
+          "Make sauce: cream butter and sugar, add eggs and rum",
+          "Slice duff, pour warm sauce over"
+        ],
+        "description": "A steamed guava pudding with buttery rum sauce — the Bahamian dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Guava_duff.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Guava_duff.jpg"
+        }
+      },
+      {
+        "id": "bhs-ds-2",
+        "name": "Benny Cake (Sesame Candy)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups sesame seeds",
+          "1 cup sugar",
+          "1/2 cup water",
+          "Lime juice"
+        ],
+        "instructions": [
+          "Toast sesame seeds until golden",
+          "Make sugar syrup to hard crack stage",
+          "Add sesame seeds and lime juice",
+          "Pour onto greased tray",
+          "Score into squares while warm, snap when cooled"
+        ],
+        "description": "Crunchy sesame candy — sold wrapped in wax paper at every Bahamian straw market."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "bhs-dr-1",
+        "name": "Switcha (Limeade)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "8 key limes (juiced)",
+          "1L water",
+          "Sugar to taste",
+          "Ice"
+        ],
+        "instructions": [
+          "Juice limes",
+          "Mix with water and sugar",
+          "Stir until sugar dissolves",
+          "Serve over plenty of ice"
+        ],
+        "description": "Tart, refreshing Bahamian limeade.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Limeade.jpg",
+        "imageCredit": {
+          "author": "Michael Fludkov",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALimeade.jpg"
+        }
+      },
+      {
+        "id": "bhs-dr-2",
+        "name": "Sky Juice (Gin and Coconut Water)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh coconut water",
+          "Gin",
+          "Condensed milk",
+          "Nutmeg",
+          "Ice"
+        ],
+        "instructions": [
+          "Crack fresh coconut, pour out water",
+          "Mix coconut water with gin to taste",
+          "Add splash of condensed milk",
+          "Grate nutmeg on top",
+          "Serve over ice"
+        ],
+        "description": "The unofficial drink of the Bahamas — gin in fresh coconut water."
+      },
+      {
+        "id": "bhs-dr-3",
+        "name": "Goombay Smash",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "60ml dark rum",
+          "30ml coconut rum",
+          "120ml pineapple juice",
+          "Splash of orange juice",
+          "Dash of grenadine",
+          "Ice"
+        ],
+        "instructions": [
+          "Combine rums and juices over ice",
+          "Add grenadine",
+          "Shake or stir",
+          "Serve in tall glass with pineapple wedge"
+        ],
+        "description": "The Bahamas' signature cocktail — invented at Miss Emily's Blue Bee Bar in Green Turtle Cay. Sweet, strong, and dangerous in the sun.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Goombay_Smash_upon_arrival_%285435890609%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Goombay_Smash_upon_arrival_%285435890609%29.jpg"
+        }
+      }
+    ]
+  }
+}

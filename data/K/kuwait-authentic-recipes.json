@@ -1,0 +1,872 @@
+{
+  "kuwaitRecipes": {
+    "country": "Kuwait",
+    "region": "Middle East",
+    "breakfast": [
+      {
+        "id": "kwt-bf-1",
+        "name": "Balaleet (Sweet Vermicelli with Eggs)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "200g vermicelli",
+          "Eggs",
+          "Sugar",
+          "Cardamom",
+          "Saffron",
+          "Rose water",
+          "Butter",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Toast vermicelli in butter",
+          "Cook with water, sugar, cardamom, saffron",
+          "Make thin omelette separately",
+          "Serve vermicelli topped with omelette"
+        ],
+        "description": "Sweet spiced noodles topped with egg — a Kuwaiti breakfast tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Homemade_Balaleet%2C_2023.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Homemade_Balaleet%2C_2023.jpg"
+        }
+      },
+      {
+        "id": "kwt-bf-2",
+        "name": "Chebab (Kuwaiti Pancakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "1 cup flour",
+          "1/2 cup sugar",
+          "Eggs",
+          "Yeast",
+          "Saffron",
+          "Cardamom",
+          "Turmeric",
+          "Date syrup and cheese for serving"
+        ],
+        "instructions": [
+          "Mix batter with spices, rest 30 min",
+          "Pour small circles on griddle",
+          "Cook until bubbly, flip",
+          "Serve with date syrup and cream cheese"
+        ],
+        "description": "Saffron-turmeric pancakes with date syrup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Luqaimat.jpg",
+        "imageCredit": {
+          "author": "Wikiemirati",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuqaimat.jpg"
+        }
+      },
+      {
+        "id": "kwt-bf-3",
+        "name": "Khabeesa (Date and Cardamom Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Fine semolina or flour",
+          "Dates (pitted, chopped)",
+          "Clarified butter (samneh)",
+          "Cardamom, saffron",
+          "Sugar",
+          "Water or milk",
+          "Rosewater"
+        ],
+        "instructions": [
+          "Melt samneh in a pan, add semolina — toast until golden and nutty",
+          "Add water or milk, stir constantly to prevent lumps",
+          "Add sugar, cardamom, saffron, chopped dates",
+          "Cook until thick — like a porridge",
+          "Finish with a splash of rosewater",
+          "The saffron gives a golden hue and floral aroma",
+          "Khabeesa is Kuwait's traditional sweet breakfast — served at celebrations and Ramadan",
+          "The semolina, date, and saffron trio is quintessentially Gulf",
+          "The clarified butter base gives richness unlike regular butter"
+        ],
+        "description": "Kuwait's golden breakfast porridge — semolina toasted in samneh with dates, saffron, and cardamom, finished with rosewater. The saffron turns it gold and the date sweetness makes it a celebration in a bowl. Essential at Ramadan and family gatherings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Luqaimat.jpg",
+        "imageCredit": {
+          "author": "Wikiemirati",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuqaimat.jpg"
+        }
+      },
+      {
+        "id": "kwt-bf-4",
+        "name": "Chebab (Saffron Pancakes)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Eggs",
+          "Milk",
+          "Saffron (steeped in warm water)",
+          "Cardamom",
+          "Sugar",
+          "Yeast",
+          "Date syrup (dibs) for serving"
+        ],
+        "instructions": [
+          "Steep saffron threads in warm water — the water turns golden",
+          "Make batter with flour, eggs, milk, yeast, cardamom, sugar",
+          "Add the golden saffron water — the batter turns a beautiful yellow",
+          "Let batter rest 30 min — yeast makes them slightly airy",
+          "Cook on a flat pan until bubbles form and set on top — flip once",
+          "The pancakes are thinner than American pancakes, slightly bubbly",
+          "Serve drizzled with date syrup (dibs) — the Gulf's natural sweetener",
+          "The golden saffron color and the sweet date syrup drizzle are the visual",
+          "Chebab are sold at weekend breakfast spots all over Kuwait City",
+          "The saffron-date combination is uniquely Gulf and deeply fragrant"
+        ],
+        "description": "Kuwait's saffron-golden pancakes — yeast-leavened, lightly spiced, served with date syrup. The saffron turns the batter golden and the date syrup drizzle is the Gulf's natural sweetener pairing. Sold at weekend breakfast spots across Kuwait City.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Luqaimat.jpg",
+        "imageCredit": {
+          "author": "Wikiemirati",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuqaimat.jpg"
+        }
+      },
+      {
+        "id": "kwt-bf-5",
+        "name": "Fatteh (Bread and Chickpea Breakfast)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Crispy pita bread (torn or cubed, toasted)",
+          "Chickpeas (cooked, warm)",
+          "Yogurt (thick)",
+          "Tahini",
+          "Lemon juice",
+          "Garlic",
+          "Toasted pine nuts",
+          "Paprika, cumin",
+          "Parsley"
+        ],
+        "instructions": [
+          "Toast or fry torn pita until crispy — it must hold up to the wet toppings",
+          "Warm chickpeas through",
+          "Mix yogurt with tahini, lemon, garlic — tangy and creamy",
+          "Layer in a bowl: crispy pita first, then chickpeas, then yogurt-tahini sauce",
+          "Top with toasted pine nuts, paprika, cumin, parsley",
+          "Eat immediately — the pita softens as it soaks, then the crunch disappears",
+          "Fatteh is a layered experience: the crunch at the top, the soft layers below",
+          "Popular across the Levant and Gulf — Kuwait's version emphasizes the yogurt-tahini sauce",
+          "The race against the softening pita is part of the eating experience"
+        ],
+        "description": "Kuwait's layered breakfast — crispy pita, warm chickpeas, and tangy yogurt-tahini sauce, topped with pine nuts. A race against time: the pita softens progressively as you eat. The contrast of crunch, creaminess, and chickpea substance makes fatteh one of the most satisfying breakfasts in Gulf cooking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "kwt-ln-1",
+        "name": "Machboos (Spiced Rice with Meat)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "500g lamb or chicken",
+          "2 cups basmati rice",
+          "2 onions",
+          "Tomatoes",
+          "Dried limes (loomi)",
+          "Baharat",
+          "Turmeric",
+          "Cinnamon",
+          "Cardamom",
+          "Rose water",
+          "Ghee",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown meat with onions and spices",
+          "Add tomatoes, dried limes, water",
+          "Cook meat until tender",
+          "Remove meat, add rice to broth",
+          "Cook rice, return meat on top"
+        ],
+        "description": "Kuwait's national dish — fragrant spiced rice with meat and dried limes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Machboos_%28cropped%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Machboos_%28cropped%29.JPG"
+        }
+      },
+      {
+        "id": "kwt-ln-2",
+        "name": "Jireesh (Crushed Wheat)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "1 cup jareesh (crushed wheat)",
+          "500g chicken",
+          "Onion",
+          "Tomato",
+          "Butter",
+          "Baharat",
+          "Turmeric",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook chicken, shred",
+          "Cook crushed wheat in chicken broth until porridge-like",
+          "Add spices and butter",
+          "Top with shredded chicken"
+        ],
+        "description": "Savory crushed wheat porridge — a Gulf comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Dattes_Lagou.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Dattes_Lagou.JPG"
+        }
+      },
+      {
+        "id": "kwt-ln-3",
+        "name": "Machboos Samak (Spiced Fish Rice)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "Whole fish or firm fish fillets (hamour, kingfish)",
+          "Basmati rice",
+          "Onion, garlic, tomato",
+          "Loomi (dried lime — the defining Gulf spice)",
+          "Saffron, turmeric, cardamom, cinnamon, cumin",
+          "Ghee (clarified butter)",
+          "Rosewater",
+          "Fried onions for garnish"
+        ],
+        "instructions": [
+          "Fry onion until deep golden — almost caramelized",
+          "Add spices including crushed loomi — the dried lime is essential and unique",
+          "Add tomato, cook down to a sauce",
+          "Add fish — cook briefly then remove (fish cooks fast, rice needs longer)",
+          "Use the spiced broth to cook soaked basmati rice",
+          "The rice absorbs all the spiced broth — each grain infused with loomi and saffron",
+          "Finish rice in a low oven — the bottom crisps into tahdig",
+          "Return fish to the platter, pile rice over it",
+          "The loomi (dried lime) is what makes Gulf machboos unmistakable — sour, earthy, unique",
+          "Serve with tomato-chili sauce and yogurt"
+        ],
+        "description": "Kuwait's national fish rice — basmati infused with loomi (dried lime), saffron, and warm spices, with whole fish or fillets. The dried lime is the flavor that defines Gulf cuisine — earthy, sour, irreplaceable. The crispy rice bottom and the spiced-broth-soaked rice are the two textures that make machboos special.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Machboos.JPG",
+        "imageCredit": {
+          "author": "Miansari66",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMachboos.JPG"
+        }
+      },
+      {
+        "id": "kwt-ln-4",
+        "name": "Jireesh (Cracked Wheat Porridge)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 40,
+        "ingredients": [
+          "Jireesh (cracked wheat or freekeh)",
+          "Chicken or lamb (cooked, shredded)",
+          "Onion",
+          "Cinnamon, cumin, black pepper",
+          "Ghee",
+          "Yogurt (for serving)"
+        ],
+        "instructions": [
+          "Soak jireesh for 30 min",
+          "Saute onion in ghee until golden",
+          "Add spices — cinnamon, cumin, pepper",
+          "Add jireesh and enough water to cover generously",
+          "Simmer until the grain breaks down into a thick, porridge-like consistency — 30-40 min",
+          "Stir in shredded chicken or lamb",
+          "The texture should be viscous — like thick polenta",
+          "Top with a drizzle of ghee — it pools on the surface",
+          "Serve with yogurt on the side for contrast",
+          "Jireesh is comfort food across Saudi Arabia and Kuwait — the Gulf's equivalent of congee"
+        ],
+        "description": "The Gulf's congee — cracked wheat simmered until silky, mixed with shredded chicken or lamb and spiced with cinnamon and cumin. The ghee drizzle on top and the yogurt on the side are the required accompaniments. Deep, warming, and deeply satisfying comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Dattes_Lagou.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Dattes_Lagou.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "kwt-dn-1",
+        "name": "Samak Mashwi (Grilled Fish)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "1 whole zubaidi (silver pomfret)",
+          "Baharat",
+          "Turmeric",
+          "Lime",
+          "Garlic",
+          "Fresh dill",
+          "Salt",
+          "Rice for serving"
+        ],
+        "instructions": [
+          "Score fish, marinate with spices and lime",
+          "Grill over charcoal",
+          "Baste with marinade while cooking",
+          "Serve on bed of saffron rice"
+        ],
+        "description": "Grilled zubaidi fish — Kuwait's favorite seafood.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Machboos.JPG",
+        "imageCredit": {
+          "author": "Miansari66",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMachboos.JPG"
+        }
+      },
+      {
+        "id": "kwt-dn-2",
+        "name": "Harees (Wheat and Meat Porridge)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "1 cup wheat (soaked)",
+          "500g lamb",
+          "Cinnamon",
+          "Salt",
+          "Ghee"
+        ],
+        "instructions": [
+          "Soak wheat overnight",
+          "Cook wheat and lamb together 2 hours",
+          "Beat until smooth porridge",
+          "Top with ghee and cinnamon"
+        ],
+        "description": "Silky wheat and meat porridge — a Ramadan essential.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Armenian_Harisa.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Armenian_Harisa.JPG"
+        }
+      },
+      {
+        "id": "kwt-dn-3",
+        "name": "Gabout (Kuwaiti Dumplings in Broth)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Dumplings: flour, ghee, water, salt",
+          "Meat broth (lamb or chicken)",
+          "Tomato paste",
+          "Onion, garlic",
+          "Loomi (dried lime)",
+          "Cumin, cinnamon, cardamom"
+        ],
+        "instructions": [
+          "Make a simple dough with flour, water, ghee, salt",
+          "Roll and cut into small pieces — not uniform, rustic is fine",
+          "Bring meat broth to a boil with tomato paste, onion, garlic, loomi, spices",
+          "Drop raw dumplings into the simmering broth",
+          "Cook until dumplings float and are cooked through — 10 min",
+          "The broth infuses into each dumpling as it cooks",
+          "The loomi (dried lime) in the broth gives its characteristic sour tang",
+          "Gabout is humble Kuwaiti home cooking — simple but soul-warming",
+          "The dumpling-broth combination is universally comforting",
+          "This is the kind of dish grandmothers make"
+        ],
+        "description": "Kuwait's home-cooking dumplings — simple dough cooked in a loomi-spiced lamb or chicken broth. The dried lime broth soaks into each dumpling. Simple, humble, soul-warming. This is grandmothers' food across Kuwait.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Machboos.JPG",
+        "imageCredit": {
+          "author": "Miansari66",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMachboos.JPG"
+        }
+      },
+      {
+        "id": "kwt-dn-4",
+        "name": "Margoog (Lamb and Vegetable Stew with Flatbread)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb (bone-in, cubed)",
+          "Potato, tomato, onion, carrot",
+          "Loomi (dried lime)",
+          "Baharat spice blend",
+          "Thin flatbread (raqaq — very thin)",
+          "Saffron",
+          "Ghee"
+        ],
+        "instructions": [
+          "Brown lamb pieces in ghee",
+          "Add onion, tomato, baharat, loomi, saffron",
+          "Add water and simmer until lamb is nearly tender — 40 min",
+          "Add potato, carrot — cook 20 more min",
+          "Line a deep serving dish with thin raqaq flatbread",
+          "Pour the stew over the bread — the bread absorbs the sauce and softens",
+          "The bread layer at the bottom becomes the most flavor-saturated part",
+          "Margoog is Kuwait's equivalent of a one-pot complete meal",
+          "The raqaq bread softened by the stew is the most prized part",
+          "Traditionally cooked in a clay pot — the clay gives a subtle earthen flavor"
+        ],
+        "description": "Kuwait's one-pot feast — lamb and vegetable stew poured over thin raqaq flatbread that soaks up the loomi-spiced sauce. The bread at the bottom, saturated with broth and spice, is the most prized part. Traditionally cooked in a clay pot for its earthen flavor.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Syrian_meal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Syrian_meal.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "kwt-sn-1",
+        "name": "Sambousek (Filled Pastry)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, oil, water",
+          "Filling: cheese and herbs OR meat and pine nuts",
+          "Oil"
+        ],
+        "instructions": [
+          "Make dough, cut circles",
+          "Fill with cheese or meat mixture",
+          "Fold into half-moons, seal edges",
+          "Fry until golden"
+        ],
+        "description": "Crispy filled half-moon pastries.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg"
+        }
+      },
+      {
+        "id": "kwt-sn-2",
+        "name": "Balaleet (Sweet Vermicelli)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Vermicelli noodles",
+          "Ghee",
+          "Sugar",
+          "Cardamom",
+          "Saffron",
+          "Rosewater",
+          "Eggs (for omelet on top)"
+        ],
+        "instructions": [
+          "Toast vermicelli in ghee until deep golden",
+          "Add sugar, cardamom, saffron, rosewater",
+          "Add water, cook until vermicelli is tender and fragrant — 10 min",
+          "Make a simple egg omelet separately",
+          "Serve the sweet vermicelli with the savory omelet on top or alongside",
+          "The sweet-savory combination is unexpected and wonderful",
+          "Balaleet is a Gulf breakfast-snack — can be eaten morning or as a snack",
+          "The golden saffron color and the rosewater fragrance are the signature",
+          "Cardamom in sweet dishes is the Gulf's flavor fingerprint",
+          "The contrast of sweet vermicelli with savory egg has no Western equivalent"
+        ],
+        "description": "The Gulf's sweet-savory breakfast — saffron and rosewater vermicelli noodles served with a savory egg omelet on top. The sweet-savory combination has no Western equivalent. The golden color, the rosewater fragrance, and the pairing with egg make balaleet distinctly Gulf.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Homemade_Balaleet%2C_2023.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Homemade_Balaleet%2C_2023.jpg"
+        }
+      },
+      {
+        "id": "kwt-sn-3",
+        "name": "Luqaimat (Honey Dumplings)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Yeast",
+          "Sugar",
+          "Salt",
+          "Water",
+          "Oil for frying",
+          "Date syrup or honey",
+          "Sesame seeds"
+        ],
+        "instructions": [
+          "Mix flour, yeast, sugar, salt, water into a thin batter",
+          "Let rest 1 hour until bubbly",
+          "Drop spoonfuls into hot oil — they puff up immediately",
+          "Fry until deep golden and crispy — 2-3 min",
+          "Drain and drizzle generously with date syrup or honey",
+          "Sprinkle sesame seeds",
+          "Luqaimat should be eaten hot — as soon as they are made",
+          "The crispy exterior, airy interior, and dripping honey are the experience",
+          "Luqaimat are Ramadan's signature sweet — made every night during iftar",
+          "The honey-dripping, sesame-sprinkled golden balls are deeply photogenic"
+        ],
+        "description": "Kuwait's Ramadan sweet — crispy fried dough balls drizzled with date syrup and sesame seeds, eaten hot from the fryer. A nightly iftar tradition. The honey-dripping golden balls and the 'eat immediately' urgency make luqaimat irresistible.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg"
+        }
+      },
+      {
+        "id": "kwt-sn-4",
+        "name": "Dates with Cardamom Coffee",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Medjool or Khalas dates (soft, rich)",
+          "Qahwa (Gulf coffee: cardamom-spiced, light roast)",
+          "Cardamom pods",
+          "Saffron threads"
+        ],
+        "instructions": [
+          "Brew qahwa: light roast coffee beans with cardamom pods and saffron",
+          "The coffee is pale golden, not dark — lightly roasted, heavily spiced",
+          "Pour into small handleless cups (finjan)",
+          "Serve with dates — the sweetness of the date pairs with the bitter cardamom coffee",
+          "This pairing is the foundation of Gulf hospitality",
+          "Refusing the date-and-coffee offering is considered rude",
+          "The cup is refilled until you wiggle it to indicate you are done",
+          "Qahwa is not espresso or filter coffee — it is something entirely its own",
+          "The cardamom and saffron make it aromatic and warm, not bitter",
+          "This ritual happens whenever guests arrive — it is the first gesture of welcome"
+        ],
+        "description": "Gulf hospitality in two ingredients — Khalas dates alongside cardamom-saffron qahwa (Gulf coffee). This pairing is the first gesture whenever guests arrive in Kuwait. Refusing it is considered impolite. The pale golden coffee, the sweet date, and the ritual refilling until you wiggle the cup are the living expression of Gulf culture.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "kwt-ds-1",
+        "name": "Lugaimat (Fried Dumplings)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "Yeast",
+          "Sugar",
+          "Cardamom",
+          "Saffron",
+          "Water",
+          "Oil",
+          "Date syrup"
+        ],
+        "instructions": [
+          "Mix batter, rest 30 min",
+          "Drop spoonfuls in oil",
+          "Fry until golden",
+          "Drizzle with date syrup"
+        ],
+        "description": "Golden fried dumplings drizzled with date syrup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg"
+        }
+      },
+      {
+        "id": "kwt-ds-2",
+        "name": "Muhallabia (Milk Pudding)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Whole milk",
+          "Cornstarch or ground rice",
+          "Sugar",
+          "Rosewater",
+          "Orange blossom water",
+          "Pistachios (crushed)",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Heat milk with sugar",
+          "Dissolve cornstarch in cold milk, add to hot milk stirring constantly",
+          "The milk thickens into a silky, smooth pudding",
+          "Add rosewater and orange blossom water — floral and fragrant",
+          "Pour into individual cups or molds",
+          "Refrigerate until set — at least 2 hours",
+          "Top with crushed pistachios and a dusting of cinnamon",
+          "Muhallabia is served across the Gulf and Levant — simple and universally loved",
+          "The floral fragrance from rosewater and orange blossom is the signature",
+          "The pistachio-cinnamon top against the white pudding is the visual"
+        ],
+        "description": "The Gulf's milk pudding — silky, floral, set with rosewater and orange blossom. Found across the Gulf and Levant, universally loved. The pistachio and cinnamon topping against the white pudding is clean, elegant, and beautifully aromatic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Mhallabiyyeh_%28Arabic_milk_pudding%29.jpg"
+        }
+      },
+      {
+        "id": "kwt-ds-3",
+        "name": "Zalabia (Fried Dough in Syrup)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Yeast",
+          "Water",
+          "Oil for frying",
+          "Sugar syrup (with rosewater)",
+          "Pistachios"
+        ],
+        "instructions": [
+          "Make a thin yeast batter — let rest 30 min",
+          "Pipe or drizzle into hot oil in spiral or lattice shapes",
+          "Fry until golden and crispy",
+          "Immediately dip into cold sugar syrup — the contrast soaks the dough",
+          "The syrup hardens slightly on the surface while the interior stays soft",
+          "Drain and top with crushed pistachios",
+          "Zalabia is Gulf and Levantine — a cousin of the Indian jalebi (via Persian influence)",
+          "The spiral or lattice shape is the traditional form",
+          "The syrup-soaking creates a crispy-sticky exterior with a soft center",
+          "A Ramadan and Eid staple across the Gulf region"
+        ],
+        "description": "Gulf fried dough spirals — piped into hot oil, immediately soaked in rosewater syrup, topped with pistachios. A cousin of Indian jalebi via Persian influence. The crispy-sticky exterior and soft center from the syrup-soak make zalabia Ramadan's most addictive sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Jalebi_Colors.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Jalebi_Colors.JPG"
+        }
+      },
+      {
+        "id": "kwt-ds-4",
+        "name": "Umm Ali (Bread Pudding)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Puff pastry or croissants (torn, crispy)",
+          "Milk and cream",
+          "Sugar",
+          "Vanilla",
+          "Nuts: pistachios, almonds, walnuts",
+          "Raisins",
+          "Coconut flakes",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Tear croissants or puff pastry into rough pieces — they should be crispy",
+          "Layer in a baking dish with nuts, raisins, coconut",
+          "Mix milk, cream, sugar, vanilla — pour over the layers",
+          "Bake at 180C until golden and bubbling — 20-25 min",
+          "The pastry absorbs the cream and puffs slightly",
+          "The top should be golden and slightly caramelized",
+          "Serve warm — directly from the oven",
+          "Umm Ali means 'mother of Ali' — named after a legendary figure in Egyptian history",
+          "It is the Gulf and Egypt's warm dessert answer to bread pudding",
+          "The cream-soaked puff pastry is extraordinarily rich"
+        ],
+        "description": "The Gulf's bread pudding — torn croissants or puff pastry soaked in sweetened cream with nuts and raisins, baked golden. Named 'mother of Ali' after a legendary Egyptian figure. The cream-soaked, nut-studded, golden-topped result is the Gulf's most indulgent warm dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Umm_Ali.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Umm_Ali.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "kwt-dr-1",
+        "name": "Kuwaiti Chai (Tea with Cardamom)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Black tea",
+          "Cardamom",
+          "Saffron",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Boil water, add tea and cardamom",
+          "Add saffron",
+          "Steep 5 min, sweeten",
+          "Pour into istikan glasses"
+        ],
+        "description": "Saffron-cardamom tea.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/UN_Emblem_%22Oil-for-Food%22.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/UN_Emblem_%22Oil-for-Food%22.jpg"
+        }
+      },
+      {
+        "id": "kwt-dr-2",
+        "name": "Laban (Buttermilk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Yogurt",
+          "Water",
+          "Salt",
+          "Dried mint"
+        ],
+        "instructions": [
+          "Whisk yogurt with cold water",
+          "Add salt and dried mint",
+          "Serve chilled"
+        ],
+        "description": "Salty yogurt drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Labanotation1.jpg",
+        "imageCredit": {
+          "author": "AnonymousUnknown author",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALabanotation1.jpg"
+        }
+      },
+      {
+        "id": "kwt-dr-3",
+        "name": "Tamarind Drink (Tamar Hindi)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "Dried tamarind block",
+          "Sugar",
+          "Water",
+          "Rosewater (optional)",
+          "Ice"
+        ],
+        "instructions": [
+          "Dissolve tamarind in hot water — soak for 30 min, press and strain",
+          "Add sugar to taste — the balance of sweet and tart is key",
+          "Optional: add a splash of rosewater",
+          "Serve ice cold — over ice",
+          "The deep amber color is beautiful",
+          "Tamar Hindi means 'Indian date' — Arabic name for tamarind",
+          "Very popular in Gulf countries during Ramadan — tangy and refreshing after fasting",
+          "The sweet-sour combination is specifically refreshing after a day of fasting"
+        ],
+        "description": "The Gulf's sweet-sour Ramadan drink — tamarind dissolved and sweetened, served ice cold. Tamar Hindi ('Indian date') is the Arabic word for tamarind. Its sweet-sour tang is specifically designed for refreshment after a day of fasting.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tamarindus_indica_pods.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Tamarindus_indica_pods.JPG"
+        }
+      },
+      {
+        "id": "kwt-dr-4",
+        "name": "Laban (Salted Yogurt Drink)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 3,
+        "cookTime": 0,
+        "ingredients": [
+          "Full-fat yogurt",
+          "Cold water",
+          "Salt",
+          "Dried mint"
+        ],
+        "instructions": [
+          "Whisk yogurt with cold water until smooth and frothy",
+          "Season with salt — savory, not sweet",
+          "Add dried mint — it gives a cooling fragrance",
+          "Serve very cold — sometimes with ice",
+          "Laban is a savory drink — salty and refreshing, not sweet",
+          "It is a staple alongside all Gulf meals, especially during hot months",
+          "The tanginess of the yogurt is cooling in the desert heat",
+          "A glass of laban cleanses the palate between rich dishes",
+          "Available pre-bottled across the Gulf — but fresh-made is far superior"
+        ],
+        "description": "The Gulf's savory yogurt drink — full-fat yogurt whisked with cold water, salt, and dried mint. Salty and refreshing, not sweet. Laban cleanses the palate and cools the body in desert heat. A staple alongside every Gulf meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Labanotation1.jpg",
+        "imageCredit": {
+          "author": "AnonymousUnknown author",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALabanotation1.jpg"
+        }
+      }
+    ]
+  }
+}

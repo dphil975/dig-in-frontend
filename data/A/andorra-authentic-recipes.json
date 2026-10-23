@@ -1,0 +1,514 @@
+{
+  "andorraRecipes": {
+    "country": "Andorra",
+    "region": "Southern Europe",
+    "breakfast": [
+      {
+        "id": "and-bf-1",
+        "name": "Trinxat (Potato and Cabbage Cake)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "4 large potatoes",
+          "1/2 head cabbage (shredded)",
+          "4 slices bacon",
+          "2 cloves garlic",
+          "2 tbsp olive oil",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Boil potatoes and cabbage until tender",
+          "Drain and mash together roughly",
+          "Fry bacon until crisp, set aside",
+          "Sauté garlic in bacon fat, add potato-cabbage mix",
+          "Press into cake, cook until golden on both sides",
+          "Top with bacon"
+        ],
+        "description": "Hearty Andorran mountain dish of mashed potatoes and cabbage fried until crispy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Trinxat_1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Trinxat_1.jpg"
+        }
+      },
+      {
+        "id": "and-bf-2",
+        "name": "Coca de Recapte (Vegetable Flatbread)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "500g bread dough",
+          "2 red peppers (roasted)",
+          "1 eggplant (sliced)",
+          "2 tomatoes",
+          "1 onion",
+          "3 tbsp olive oil",
+          "Salt",
+          "Fresh thyme"
+        ],
+        "instructions": [
+          "Roll out bread dough into rectangle",
+          "Roast peppers and grill eggplant",
+          "Arrange vegetables over dough",
+          "Drizzle with olive oil, add thyme and salt",
+          "Bake at 200°C for 25 minutes"
+        ],
+        "description": "Catalan-influenced flatbread topped with roasted vegetables.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Coques.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACoques.JPG"
+        }
+      },
+      {
+        "id": "and-bf-3",
+        "name": "Coques de Sucre (Sugar Flatbread)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Sweet bread dough",
+          "Sugar",
+          "Anise seeds",
+          "Olive oil",
+          "Pine nuts"
+        ],
+        "instructions": [
+          "Roll dough into flat oval shapes",
+          "Dimple with fingers, drizzle with oil",
+          "Sprinkle generously with sugar, anise, and pine nuts",
+          "Bake at 200°C for 18-20 min until edges are golden"
+        ],
+        "description": "Sweet festival flatbread — baked for Sant Joan and village festes across the Pyrenees.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Coques.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACoques.JPG"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "and-ln-1",
+        "name": "Escudella i Carn d'Olla",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 120,
+        "ingredients": [
+          "300g pork ribs",
+          "200g veal",
+          "200g chickpeas (soaked overnight)",
+          "2 potatoes",
+          "2 carrots",
+          "1/4 cabbage",
+          "1 turnip",
+          "100g pasta shells",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil meats in large pot 90 minutes",
+          "Add chickpeas, potatoes, carrots, turnip, cabbage",
+          "Cook 30 more minutes",
+          "Remove meats, slice on platter",
+          "Cook pasta in broth",
+          "Serve broth with pasta first, then meats and vegetables"
+        ],
+        "description": "Andorra's national dish — a rich two-course stew.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Escudella_Catalana_-_Barcelona_%282011%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Escudella_Catalana_-_Barcelona_%282011%29.JPG"
+        }
+      },
+      {
+        "id": "and-ln-2",
+        "name": "Truita de Carreroles (Wild Mushroom Omelette)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "6 eggs",
+          "200g wild mushrooms",
+          "1 clove garlic",
+          "2 tbsp olive oil",
+          "Parsley",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Slice mushrooms, sauté with garlic in olive oil",
+          "Beat eggs with salt and pepper",
+          "Pour over mushrooms",
+          "Cook until set, fold in half",
+          "Garnish with parsley"
+        ],
+        "description": "Simple Pyrenean omelette with prized wild mushrooms."
+      },
+      {
+        "id": "and-ln-3",
+        "name": "Embotits amb Mongetes (Sausage with White Beans)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "4 botifarra sausages (fresh Catalan sausage)",
+          "400g white beans (cooked)",
+          "4 cloves garlic",
+          "Olive oil",
+          "Parsley",
+          "Salt"
+        ],
+        "instructions": [
+          "Fry sausages whole until browned all over",
+          "In same pan, sauté garlic in oil",
+          "Add beans, warm through, season",
+          "Serve sausages on a bed of beans with parsley"
+        ],
+        "description": "Pyrenean comfort food — pork sausage with white beans, eaten on cold mountain evenings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Pa_amb_tom%C3%A0quet_-_001.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Pa_amb_tom%C3%A0quet_-_001.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "and-dn-1",
+        "name": "Cunillo (Braised Rabbit)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "1 rabbit (jointed)",
+          "2 tomatoes (grated)",
+          "1 onion",
+          "4 cloves garlic",
+          "100ml white wine",
+          "2 tbsp olive oil",
+          "Bay leaf",
+          "Rosemary",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown rabbit in olive oil",
+          "Sauté onion and garlic",
+          "Add grated tomato, cook 10 min",
+          "Return rabbit, add wine and herbs",
+          "Braise covered on low 45 minutes"
+        ],
+        "description": "Traditional Andorran braised rabbit in tomato and wine."
+      },
+      {
+        "id": "and-dn-2",
+        "name": "Xai al Forn (Roast Lamb)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 90,
+        "ingredients": [
+          "1.5kg lamb shoulder",
+          "6 potatoes",
+          "1 head garlic",
+          "200ml white wine",
+          "3 tbsp olive oil",
+          "Rosemary",
+          "Thyme",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Season lamb with herbs",
+          "Place with potatoes and garlic in roasting pan",
+          "Add wine, drizzle oil",
+          "Roast at 180°C for 90 min, basting",
+          "Rest 10 min, serve with pan juices"
+        ],
+        "description": "Slow-roasted lamb shoulder with potatoes."
+      },
+      {
+        "id": "and-dn-3",
+        "name": "Civet de Senglar (Wild Boar Stew)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 150,
+        "ingredients": [
+          "1kg wild boar (cubed)",
+          "750ml red wine",
+          "2 onions",
+          "3 carrots",
+          "4 cloves garlic",
+          "Bouquet garni (thyme, bay, rosemary)",
+          "2 tbsp flour",
+          "Dark chocolate (20g)",
+          "Juniper berries",
+          "Salt and pepper",
+          "Oil"
+        ],
+        "instructions": [
+          "Marinate boar in red wine with herbs and juniper overnight",
+          "Remove meat, pat dry, brown in oil",
+          "Sauté onion and carrot",
+          "Add flour, cook 2 min",
+          "Add marinade wine and bouquet garni",
+          "Return meat, bring to simmer",
+          "Cook low for 2-2.5 hours until meat falls apart",
+          "Stir in dark chocolate at the end — it deepens the sauce",
+          "Season and serve with mashed potatoes"
+        ],
+        "description": "Wild boar braised in red wine with dark chocolate — a Pyrenean hunter's stew made during autumn boar season."
+      },
+      {
+        "id": "and-dn-4",
+        "name": "Trinxat (Pyrenean Cabbage and Potato Cake)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "1 small Savoy cabbage (shredded)",
+          "4 large potatoes (peeled and cubed)",
+          "200g salt pork belly or bacon (thick sliced)",
+          "2 cloves garlic",
+          "Olive oil or lard",
+          "Salt, pepper"
+        ],
+        "instructions": [
+          "Boil cabbage and potatoes together until very tender",
+          "Drain well and mash together — keep it rough, not smooth",
+          "Fry salt pork or bacon until crispy, set aside",
+          "In the pork fat, fry garlic briefly",
+          "Add the cabbage-potato mash to the pan",
+          "Press flat into a cake, fry until a crispy golden crust forms on the bottom",
+          "Flip (or finish under broiler) to crisp the other side",
+          "Top with the crispy pork",
+          "This is mountain survival food — Pyrenean shepherds' fuel for cold days"
+        ],
+        "description": "Andorra's mountain comfort food — mashed potato and cabbage fried into a crispy cake in pork fat, topped with crispy bacon. A Pyrenean shepherd's dish that went viral as 'the European bubble and squeak' — simple ingredients transformed by the crispy-crust technique.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Trinxat_1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Trinxat_1.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "and-sn-1",
+        "name": "Pa amb Tomàquet (Bread with Tomato)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "4 slices rustic bread",
+          "2 ripe tomatoes",
+          "2 cloves garlic",
+          "Extra virgin olive oil",
+          "Flaky salt"
+        ],
+        "instructions": [
+          "Toast bread",
+          "Rub garlic over surface",
+          "Rub tomato pulp onto bread",
+          "Drizzle olive oil, add salt"
+        ],
+        "description": "The simplest and most beloved Pyrenean snack.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Pa_amb_tomaquet.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Pa_amb_tomaquet.jpg"
+        }
+      },
+      {
+        "id": "and-sn-2",
+        "name": "Embotits (Cured Meats Board)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Fuet (thin cured sausage)",
+          "Bull blanc (white sausage)",
+          "Secallona (dried sausage)",
+          "Pa de Pagès (country bread)",
+          "Tomato for rubbing",
+          "Olive oil",
+          "Olives"
+        ],
+        "instructions": [
+          "Slice cured meats thinly",
+          "Rub bread with tomato and drizzle olive oil",
+          "Arrange meats, bread, and olives on board"
+        ],
+        "description": "An Andorran charcuterie board — small-production mountain-cured meats are a point of national pride."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "and-ds-1",
+        "name": "Crema Andorrana",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "500ml milk",
+          "4 egg yolks",
+          "100g sugar",
+          "2 tbsp cornstarch",
+          "1 cinnamon stick",
+          "Lemon zest",
+          "Brown sugar"
+        ],
+        "instructions": [
+          "Heat milk with cinnamon and lemon zest",
+          "Whisk yolks with sugar and cornstarch",
+          "Temper with hot milk, return to heat",
+          "Stir until thickened, pour into ramekins",
+          "Chill, top with brown sugar and caramelize"
+        ],
+        "description": "Rich custard dessert similar to crema catalana."
+      },
+      {
+        "id": "and-ds-2",
+        "name": "Coca de Vidre (Glass Cake)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "250g flour",
+          "150g sugar",
+          "100g lard",
+          "2 eggs",
+          "Anise seeds",
+          "Lemon zest",
+          "Powdered sugar"
+        ],
+        "instructions": [
+          "Mix flour with lard, eggs, sugar, anise, lemon zest",
+          "Roll very thin — it should be almost translucent (hence 'glass')",
+          "Bake at 180°C for 12-15 min until crispy",
+          "Dust with powdered sugar",
+          "Break into shards to serve"
+        ],
+        "description": "Paper-thin crispy cake so delicate it looks like stained glass — made for festivals.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Coques.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ACoques.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "and-dr-1",
+        "name": "Hot Chocolate",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "200g dark chocolate",
+          "500ml milk",
+          "2 tbsp sugar",
+          "1 tbsp cornstarch",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Chop chocolate",
+          "Heat milk with sugar",
+          "Dissolve cornstarch in cold milk, add",
+          "Add chocolate, stir until thick"
+        ],
+        "description": "Thick, rich mountain hot chocolate.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_Hot_Chocolate.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_Hot_Chocolate.jpg"
+        }
+      },
+      {
+        "id": "and-dr-2",
+        "name": "Ratafia (Herbal Liqueur)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "1L anise spirit",
+          "40 green walnuts",
+          "Mixed herbs (mint, rosemary, thyme)",
+          "Cinnamon sticks",
+          "Cloves",
+          "500g sugar",
+          "Lemon zest"
+        ],
+        "instructions": [
+          "Quarter green walnuts, place in jar with herbs and spices",
+          "Pour spirit over, seal",
+          "Macerate 40 days, shaking weekly",
+          "Strain, dissolve sugar in warm water, add",
+          "Bottle and age 1 month"
+        ],
+        "description": "Traditional Pyrenean herbal liqueur.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Ratafi%C3%A0_di_andorno.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Ratafi%C3%A0_di_andorno.jpg"
+        }
+      },
+      {
+        "id": "and-dr-3",
+        "name": "Vi Calent (Hot Wine)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "1 bottle red wine",
+          "1 orange (sliced)",
+          "Cinnamon stick",
+          "Sugar",
+          "Cloves"
+        ],
+        "instructions": [
+          "Heat wine with spices and orange",
+          "Do not boil",
+          "Sweeten to taste",
+          "Serve in thick mugs"
+        ],
+        "description": "Andorra's version of mulled wine — drunk after skiing and during winter festivals."
+      }
+    ]
+  }
+}

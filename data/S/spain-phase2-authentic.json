@@ -1,0 +1,344 @@
+{
+  "country": "Spain",
+  "region": "Europe",
+  "breakfast": [
+    {
+      "id": "esp-break-churros",
+      "name": "Churros con Chocolate",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 20,
+      "description": "Fried pastry served with thick hot chocolate for dipping",
+      "seasonings": [
+        "salt",
+        "cinnamon",
+        "sugar"
+      ],
+      "ingredients": [
+        "1 cup water",
+        "1/4 cup sugar",
+        "1/4 cup oil",
+        "1.25 cups flour",
+        "Oil for frying",
+        "Thick hot chocolate"
+      ],
+      "instructions": [
+        "Bring water, sugar, oil to boil",
+        "Remove from heat, stir in flour until dough forms",
+        "Heat oil to 375°F",
+        "Transfer dough to piping bag",
+        "Pipe 6-inch strips into hot oil",
+        "Fry until golden on both sides",
+        "Drain on paper towels",
+        "Roll in cinnamon sugar",
+        "Serve hot with thick chocolate"
+      ],
+      "notes": "Churros must be served immediately while still warm",
+      "fun_fact": "Churros are typically eaten for breakfast with thick hot chocolate for dipping",
+      "alternatives": [
+        "Bake instead of fry",
+        "Chocolate-filled churros",
+        "Dulce de leche for dipping"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Chocolate-con-churros.jpg",
+      "imageCredit": {
+        "author": "No machine-readable author provided. Thierry Caro assumed (based on copyright...",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Chocolate-con-churros.jpg"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "esp-lunch-paella",
+      "name": "Paella Valenciana",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 40,
+      "description": "Saffron-infused rice with seafood, beans, and peppers cooked in wide shallow pan",
+      "seasonings": [
+        "saffron",
+        "paprika",
+        "garlic",
+        "bay leaf"
+      ],
+      "ingredients": [
+        "3 tbsp olive oil",
+        "1 lb chicken or rabbit, cubed",
+        "4 oz green beans",
+        "1 cup navy beans",
+        "1 onion, diced",
+        "4 cloves garlic",
+        "1/2 tsp saffron",
+        "1 cup tomato sauce",
+        "3 cups chicken broth",
+        "2 cups short-grain paella rice",
+        "Salt and pepper",
+        "Lemon wedges",
+        "Fresh parsley"
+      ],
+      "instructions": [
+        "Heat oil in wide paella pan",
+        "Brown chicken until golden",
+        "Add onion and garlic, cook until soft",
+        "Steep saffron in 1/4 cup warm broth",
+        "Add beans, tomato sauce, broth to pan",
+        "Bring to simmer",
+        "Add rice and saffron liquid",
+        "Don't stir (this develops the crispy bottom)",
+        "Simmer 20-25 minutes until rice is tender",
+        "Let rest 5 minutes",
+        "Serve with lemon and parsley"
+      ],
+      "notes": "The crispy bottom layer (socarrat) is highly prized",
+      "fun_fact": "Paella originated in Valencia, Spain and is THE national dish",
+      "alternatives": [
+        "Seafood paella instead of meat",
+        "Vegetable paella for meatless",
+        "Bomba rice essential for authentic texture"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Paella_Valenciana_tradicional.jpg",
+      "imageCredit": {
+        "author": "Eruperti",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Paella_Valenciana_tradicional.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "esp-dinner-gazpacho",
+      "name": "Gazpacho (Cold Tomato Soup)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 15,
+      "cookTime": 0,
+      "description": "Refreshing cold tomato soup served as dinner starter in hot Spanish summers",
+      "seasonings": [
+        "vinegar",
+        "cumin",
+        "garlic"
+      ],
+      "ingredients": [
+        "2 lbs ripe tomatoes",
+        "1 cucumber",
+        "1 bell pepper",
+        "1/2 red onion",
+        "2 cloves garlic",
+        "1/4 cup olive oil",
+        "2 tbsp red wine vinegar",
+        "1 cup tomato juice",
+        "1/4 tsp cumin",
+        "Salt and pepper",
+        "Croutons",
+        "Hard-boiled eggs"
+      ],
+      "instructions": [
+        "Roughly chop tomatoes, cucumber, pepper, onion",
+        "Add garlic, olive oil, vinegar",
+        "Blend until mostly smooth (some texture preferred)",
+        "Add tomato juice and cumin",
+        "Season with salt and pepper",
+        "Chill at least 2 hours",
+        "Serve in chilled bowls",
+        "Top with croutons, egg, diced vegetables"
+      ],
+      "notes": "Can use food processor instead of blender",
+      "fun_fact": "Gazpacho dates back to medieval Spain and Roman times",
+      "alternatives": [
+        "Use canned tomatoes in winter",
+        "Add spicy hot sauce",
+        "Strain for silky texture"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Gazpacho_andaluz.jpg",
+      "imageCredit": {
+        "author": "Tamorlan",
+        "source": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Gazpacho_andaluz.jpg"
+      }
+    }
+  ],
+  "snacks": [
+    {
+      "id": "esp-snack-tapas",
+      "name": "Tapas Spread",
+      "difficulty": "Easy",
+      "servings": 6,
+      "prepTime": 20,
+      "cookTime": 0,
+      "description": "Small plates of Spanish appetizers including jamón, olives, cheese, and seafood",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "olive oil"
+      ],
+      "ingredients": [
+        "Jamón ibérico",
+        "Manchego cheese",
+        "Olives",
+        "Marinated mushrooms",
+        "Marinated anchovies",
+        "Spanish chorizo",
+        "Pan con tomate fixings"
+      ],
+      "instructions": [
+        "Arrange jamón on board",
+        "Cut cheese into cubes",
+        "Place olives in small bowls",
+        "Arrange preserved items",
+        "Slice chorizo",
+        "Make pan con tomate (bread rubbed with tomato and olive oil)",
+        "Serve at room temperature with wine"
+      ],
+      "notes": "Tapas are meant for sharing and grazing",
+      "fun_fact": "The word tapas comes from 'tapa' meaning to cover or top",
+      "alternatives": [
+        "Seafood tapas with shrimp",
+        "Vegetarian tapas with roasted peppers",
+        "Hot tapas like meatballs"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Alcachofa-Tomate_Cherry_0876.jpg",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Alcachofa-Tomate_Cherry_0876.jpg"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "id": "esp-dessert-flan",
+      "name": "Flan (Crème Caramel)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 15,
+      "cookTime": 45,
+      "description": "Silky custard with caramel sauce, Spanish version of flan",
+      "seasonings": [
+        "vanilla",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "1 cup sugar",
+        "1/2 cup water",
+        "6 eggs",
+        "1 can condensed milk",
+        "1 can evaporated milk",
+        "1 tbsp vanilla",
+        "Pinch cinnamon"
+      ],
+      "instructions": [
+        "Make caramel with sugar and water",
+        "Pour into flan mold",
+        "Blend eggs, both milks, vanilla, cinnamon",
+        "Pour into mold",
+        "Bake in water bath at 350°F for 40-45 min",
+        "Cool completely then invert",
+        "Caramel coats custard"
+      ],
+      "notes": "Same as Latin American flan",
+      "fun_fact": "Flan is eaten throughout Spanish-speaking world",
+      "alternatives": [
+        "Use orange juice in custard",
+        "Add coconut milk",
+        "Individual ramekins"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/CremeCaramelPrd.jpg",
+      "imageCredit": {
+        "author": "Isabelle Hurbain-Palatin",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:CremeCaramelPrd.jpg"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "esp-drink-horchata",
+      "name": "Horchata de Chufa",
+      "difficulty": "Medium",
+      "servings": 4,
+      "prepTime": 30,
+      "cookTime": 0,
+      "description": "Sweet drink made from tiger nuts, traditional Valencia beverage",
+      "seasonings": [
+        "sugar",
+        "cinnamon"
+      ],
+      "ingredients": [
+        "2 cups tiger nut milk (chufa)",
+        "1/4 cup sugar",
+        "1/2 tsp cinnamon",
+        "Ice"
+      ],
+      "instructions": [
+        "Blend soaked tiger nuts with water",
+        "Strain through fine mesh",
+        "Add sugar and cinnamon",
+        "Chill thoroughly",
+        "Serve over ice"
+      ],
+      "notes": "Tiger nut milk difficult to find outside Spain",
+      "fun_fact": "Horchata and churros is iconic Spanish snack pairing",
+      "alternatives": [
+        "Almond milk as substitute",
+        "Rice milk horchata"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/ManekiNeko_horchata_jar.jpg",
+      "imageCredit": {
+        "author": "Original uploader was ManekiNeko at en.wikipedia",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:ManekiNeko_horchata_jar.jpg"
+      }
+    },
+    {
+      "id": "esp-drink-sangria",
+      "name": "Sangria",
+      "difficulty": "Easy",
+      "servings": 6,
+      "prepTime": 15,
+      "cookTime": 0,
+      "description": "Wine punch with fresh fruit and brandy, perfect summer drink",
+      "seasonings": [
+        "brandy",
+        "honey"
+      ],
+      "ingredients": [
+        "1 bottle red wine",
+        "1/4 cup brandy",
+        "2 tbsp honey",
+        "2 oranges, sliced",
+        "2 apples, sliced",
+        "Ice"
+      ],
+      "instructions": [
+        "Combine wine, brandy, honey",
+        "Add sliced fruit",
+        "Chill 2+ hours",
+        "Serve over ice",
+        "Add more fruit when serving"
+      ],
+      "notes": "Better when made ahead for flavors to blend",
+      "fun_fact": "Sangria is served throughout Spain especially in summer",
+      "alternatives": [
+        "White wine sangria",
+        "Add sparkling water",
+        "Different fruits in season"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Glass_of_Sangria_-_Tinto_Taperia_2026-05-17.jpg",
+      "imageCredit": {
+        "author": "Andy Li",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Glass_of_Sangria_-_Tinto_Taperia_2026-05-17.jpg"
+      }
+    }
+  ]
+}

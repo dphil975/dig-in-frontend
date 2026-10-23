@@ -1,0 +1,281 @@
+{
+  "country": "Tunisia",
+  "region": "North Africa",
+  "breakfast": [
+    {
+      "id": "tun-break-makroudh",
+      "name": "Makroudh (Semolina Cookie)",
+      "difficulty": "Medium",
+      "servings": 16,
+      "prepTime": 20,
+      "cookTime": 30,
+      "description": "Tunisian semolina date cookie",
+      "seasonings": [],
+      "ingredients": [
+        "Semolina",
+        "Butter",
+        "Dates",
+        "Honey",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Mix semolina and butter",
+        "Form dough",
+        "Stuff with dates",
+        "Roll out",
+        "Cut into pieces",
+        "Fry until golden",
+        "Soak in honey"
+      ],
+      "notes": "Sweet and sticky",
+      "fun_fact": "Makroudh is Tunisian classic",
+      "alternatives": [
+        "Without honey",
+        "Different filling",
+        "Baked version"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Makrouds.JPG",
+      "imageCredit": {
+        "author": "Credits to Mourad Ben Abdallah / Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Makrouds.JPG"
+      }
+    }
+  ],
+  "lunch": [
+    {
+      "id": "tun-lunch-couscous",
+      "name": "Couscous Tunisien",
+      "difficulty": "Hard",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 60,
+      "description": "Tunisian couscous with vegetables",
+      "seasonings": [
+        "harissa"
+      ],
+      "ingredients": [
+        "Couscous",
+        "Chickpeas",
+        "Vegetables",
+        "Meat (optional)",
+        "Harissa",
+        "Broth",
+        "Oil"
+      ],
+      "instructions": [
+        "Steam couscous separately",
+        "Make harissa broth with meat/vegetables",
+        "Simmer 45 minutes",
+        "Fluff couscous",
+        "Layer couscous and stew",
+        "Serve with harissa on side"
+      ],
+      "notes": "Complex dish",
+      "fun_fact": "Couscous is Tunisian staple",
+      "alternatives": [
+        "Without meat",
+        "Different vegetables",
+        "Different spices"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Couscous-01.jpg",
+      "imageCredit": {
+        "author": "Wikimedia",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Couscous-01.jpg"
+      }
+    }
+  ],
+  "dinner": [
+    {
+      "id": "tun-dinner-brik",
+      "name": "Brik (Phyllo Pastry)",
+      "difficulty": "Hard",
+      "servings": 4,
+      "prepTime": 20,
+      "cookTime": 15,
+      "description": "Tunisian fried pastry with egg",
+      "seasonings": [],
+      "ingredients": [
+        "Phyllo dough",
+        "Egg",
+        "Tuna (optional)",
+        "Harissa",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "Place phyllo on cloth",
+        "Add filling in corner",
+        "Fold into triangle",
+        "Seal edges",
+        "Fry until golden",
+        "Drain on paper towels"
+      ],
+      "notes": "Egg should be runny",
+      "fun_fact": "Brik is Tunisian classic",
+      "alternatives": [
+        "Meat filling",
+        "Without harissa",
+        "Cheese filling"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Lilya_Brik_1929.jpg",
+      "imageCredit": {
+        "author": "Osip Brik",
+        "source": "Wikimedia Commons",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Lilya_Brik_1929.jpg"
+      }
+    }
+  ],
+  "snacks": [
+    {
+      "id": "tun-snack-donut",
+      "name": "Tunisian Donut (Loukouma)",
+      "difficulty": "Medium",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Fried dough puffs with honey",
+      "seasonings": [],
+      "ingredients": [
+        "Dough: flour, yeast",
+        "Oil for frying",
+        "Honey",
+        "Orange blossom water"
+      ],
+      "instructions": [
+        "Make yeast dough",
+        "Let rise",
+        "Fry spoonfuls until golden",
+        "Soak in honey",
+        "Drizzle with orange blossom water"
+      ],
+      "notes": "Very sweet",
+      "fun_fact": "Loukouma is Tunisian treat",
+      "alternatives": [
+        "Without orange blossom",
+        "Different honey",
+        "Smaller size"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "id": "tun-dessert-halva",
+      "name": "Halva Tunisienne",
+      "difficulty": "Hard",
+      "servings": 12,
+      "prepTime": 20,
+      "cookTime": 60,
+      "description": "Tunisian sesame halva",
+      "seasonings": [],
+      "ingredients": [
+        "Sesame seeds",
+        "Honey",
+        "Oil",
+        "Almonds",
+        "Pistachio"
+      ],
+      "instructions": [
+        "Toast sesame seeds",
+        "Grind finely",
+        "Heat honey",
+        "Mix sesame with honey",
+        "Press into pan",
+        "Cut into pieces",
+        "Top with nuts"
+      ],
+      "notes": "Requires patience",
+      "fun_fact": "Halva is ancient confection",
+      "alternatives": [
+        "Different nuts",
+        "More or less honey",
+        "Different shape"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Halva.jpg",
+      "imageCredit": {
+        "author": "Wikimedia",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Halva.jpg"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "tun-drink-coffee",
+      "name": "Tunisian Coffee",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Strong Turkish-style coffee",
+      "seasonings": [
+        "cardamom"
+      ],
+      "ingredients": [
+        "Coffee grounds",
+        "Water",
+        "Sugar",
+        "Cardamom"
+      ],
+      "instructions": [
+        "Heat water",
+        "Add coffee and cardamom",
+        "Simmer 5 minutes",
+        "Pour into cup",
+        "Serve strong"
+      ],
+      "notes": "Very strong",
+      "fun_fact": "Coffee culture in Tunisia",
+      "alternatives": [
+        "Without cardamom",
+        "Different spices",
+        "Less strong"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jacobs_Geschmacksrichtungen.tif",
+      "imageCredit": {
+        "author": "Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Jacobs_Geschmacksrichtungen.tif"
+      }
+    },
+    {
+      "id": "tun-drink-wine",
+      "name": "Tunisian Wine",
+      "difficulty": "Easy",
+      "servings": 1,
+      "prepTime": 0,
+      "cookTime": 0,
+      "description": "North African wine",
+      "seasonings": [],
+      "ingredients": [
+        "Tunisian wine"
+      ],
+      "instructions": [
+        "Serve chilled",
+        "Pair with food",
+        "Enjoy Mediterranean flavors"
+      ],
+      "notes": "Growing wine region",
+      "fun_fact": "Tunisia has ancient wine tradition",
+      "alternatives": [
+        "Different varieties",
+        "Red or white",
+        "Different regions"
+      ],
+      "image": "",
+      "imageCredit": {}
+    }
+  ]
+}

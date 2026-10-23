@@ -1,0 +1,889 @@
+{
+  "indonesiaRecipes": {
+    "country": "Indonesia",
+    "region": "Southeast Asia",
+    "breakfast": [
+      {
+        "id": "idn-bf-1",
+        "name": "Nasi Goreng (Indonesian Fried Rice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Cooked rice (day-old, cold — essential)",
+          "Kecap manis (sweet soy sauce — the defining ingredient)",
+          "Shallots, garlic, chili",
+          "Egg",
+          "Shrimp paste (terasi)",
+          "Chicken, shrimp, or tofu",
+          "Fried shallots, kerupuk (prawn crackers)"
+        ],
+        "instructions": [
+          "Day-old rice is essential — fresh rice is too moist and steams instead of frying",
+          "Grind shallots, garlic, chili, terasi into a paste (bumbu)",
+          "Fry bumbu until fragrant — the terasi gives a deep umami funk",
+          "Add protein, cook through",
+          "Add rice, toss on high heat — the wok should be screaming hot",
+          "Add kecap manis — this is what makes it Indonesian and not just fried rice",
+          "Fry an egg — the runny yolk becomes the sauce when broken on top",
+          "Garnish with fried shallots and kerupuk (prawn crackers)",
+          "The kecap manis caramelizes slightly, creating sweet-savory-smoky flavor",
+          "Nasi goreng is Indonesia's national dish — voted the world's best street food"
+        ],
+        "description": "Indonesia's national dish — fried rice with sweet soy sauce, shrimp paste, and a fried egg on top. Voted the world's #2 most delicious food by CNN. The kecap manis (sweet soy) and terasi (shrimp paste) create a flavor profile that's uniquely Indonesian and instantly addictive.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Nasi_Goreng_Kampung_%2811967588375%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Nasi_Goreng_Kampung_%2811967588375%29.jpg"
+        }
+      },
+      {
+        "id": "idn-bf-2",
+        "name": "Bubur Ayam (Chicken Rice Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Rice",
+          "Chicken broth",
+          "Chicken (shredded)",
+          "Kecap manis",
+          "Fried shallots",
+          "Celery leaves",
+          "Kerupuk (crackers)",
+          "Sambal",
+          "Cakwe (fried dough sticks — optional)"
+        ],
+        "instructions": [
+          "Cook rice in chicken broth until very soft and porridge-like — 25-30 min",
+          "Shred poached chicken",
+          "Serve porridge in a bowl, top with shredded chicken",
+          "Add kecap manis, fried shallots, celery leaves",
+          "Add kerupuk (crackers) for crunch",
+          "Add sambal (chili paste) for heat",
+          "Add cakwe (fried dough sticks) for dunking — the Chinese-Indonesian contribution",
+          "The toppings are everything — the porridge is a blank canvas",
+          "Every bubur ayam cart in Jakarta has their own topping combination",
+          "This is Jakarta morning — the bubur ayam vendor's call at dawn"
+        ],
+        "description": "Jakarta's morning porridge — soft rice in chicken broth loaded with toppings: shredded chicken, fried shallots, crackers, sweet soy, and sambal. The 'blank canvas plus infinite toppings' concept and the dawn vendor culture make bubur ayam essential Indonesian comfort.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bubur_ayam_chicken_porridge.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Bubur_ayam_chicken_porridge.JPG"
+        }
+      },
+      {
+        "id": "idn-bf-3",
+        "name": "Lontong Sayur (Rice Cake in Coconut Curry)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Lontong (compressed rice cakes — rice cooked in banana leaf packets)",
+          "Sayur lodeh: coconut milk, chayote, long beans, tofu, tempeh",
+          "Turmeric, galangal, lemongrass",
+          "Sambal",
+          "Kerupuk",
+          "Hard-boiled egg"
+        ],
+        "instructions": [
+          "Make lontong: wrap rice in banana leaves, boil until compressed into dense cakes",
+          "Make sayur lodeh: simmer coconut milk with turmeric, galangal, lemongrass",
+          "Add vegetables: chayote, long beans, tofu, tempeh",
+          "The curry should be rich and golden from the turmeric",
+          "Cut lontong into cubes, place in a bowl",
+          "Ladle the coconut vegetable curry over the rice cakes",
+          "Add sambal, kerupuk, sliced hard-boiled egg",
+          "The dense rice cakes soak up the coconut curry beautifully",
+          "This is Eid al-Fitr breakfast — the Lebaran (post-Ramadan) tradition"
+        ],
+        "description": "Indonesia's Eid morning breakfast — compressed rice cakes in a golden coconut-vegetable curry. Lontong sayur is the taste of Lebaran (the end of Ramadan fast). The banana-leaf-compressed rice and the golden coconut curry represent Indonesia's Islamic food traditions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Lontong_sayur_without_spoon.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Lontong_sayur_without_spoon.JPG"
+        }
+      },
+      {
+        "id": "idn-bf-4",
+        "name": "Martabak Manis (Sweet Thick Pancake)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, sugar, eggs, yeast",
+          "Butter (lots — melted)",
+          "Fillings: chocolate, peanuts, cheese, condensed milk",
+          "Sesame seeds"
+        ],
+        "instructions": [
+          "Make yeasted batter — thicker than crêpe, thinner than cake",
+          "Let rise until bubbly — 30 min",
+          "Pour into a round pan on medium heat — cook covered until top is set and cratered",
+          "The surface should be full of tiny holes (the yeast creates them)",
+          "Slather with butter while hot — generous, obscene amounts of butter",
+          "Add fillings: chocolate sprinkles, ground peanuts, grated cheese, condensed milk",
+          "Fold in half — the butter and chocolate melt together inside",
+          "Cut into portions — the cross-section shows the filling layers",
+          "Martabak manis is Indonesia's #1 street dessert — the night-market king",
+          "The butter-flooding step is the viral moment"
+        ],
+        "description": "Indonesia's legendary night-market pancake — a thick, yeasted pancake slathered in obscene amounts of butter and filled with chocolate, peanuts, cheese, and condensed milk. The butter-flooding step and the 'cheese AND chocolate together?!' combination make martabak the most viral Indonesian street food after nasi goreng.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Giant_Apam_Balik.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Giant_Apam_Balik.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "idn-ln-1",
+        "name": "Rendang (Beef Slow-Cooked in Coconut)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "Beef (cubed — chuck or brisket)",
+          "Coconut milk (lots — it cooks down completely)",
+          "Bumbu: shallots, garlic, ginger, galangal, lemongrass, turmeric, chili",
+          "Turmeric leaves, kaffir lime leaves",
+          "Toasted coconut (kerisik)"
+        ],
+        "instructions": [
+          "Grind bumbu into a paste: shallots, garlic, ginger, galangal, turmeric, chili",
+          "Sauté bumbu until fragrant — the kitchen should smell incredible",
+          "Add beef, cook until sealed on all sides",
+          "Add coconut milk — it should cover the meat completely",
+          "Simmer on LOW heat for 3+ hours — the coconut milk slowly reduces",
+          "Do NOT cover — the evaporation is the cooking technique",
+          "Add toasted coconut (kerisik) for texture and flavor",
+          "The coconut milk reduces completely — the meat essentially fries in coconut oil at the end",
+          "The final rendang should be dry, dark brown, intensely flavored",
+          "Each piece of meat is coated in a thick, dark, spice-coconut crust",
+          "CNN voted rendang the world's #1 most delicious food — and it earned it"
+        ],
+        "description": "The world's most delicious food (CNN poll) — Minangkabau beef slow-cooked for hours as coconut milk reduces completely, essentially frying the meat in spiced coconut oil. Rendang is a preservation technique, a philosophy, and a flavor bomb. The 3-hour coconut reduction and the '#1 food on earth' title make rendang the most viral Indonesian dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Rendang_daging_sapi_asli_Padang.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Rendang_daging_sapi_asli_Padang.JPG"
+        }
+      },
+      {
+        "id": "idn-ln-2",
+        "name": "Soto Ayam (Chicken Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Chicken (bone-in, for broth)",
+          "Turmeric, galangal, lemongrass, kaffir lime leaves",
+          "Vermicelli noodles",
+          "Hard-boiled egg",
+          "Bean sprouts",
+          "Fried shallots",
+          "Sambal, kecap manis, lime",
+          "Kerupuk"
+        ],
+        "instructions": [
+          "Boil chicken with turmeric, galangal, lemongrass — make a golden broth",
+          "Shred the chicken",
+          "The broth should be bright turmeric-yellow and fragrant",
+          "Cook vermicelli noodles separately",
+          "Assemble in bowls: noodles, shredded chicken, hard-boiled egg, bean sprouts",
+          "Ladle hot golden broth over everything",
+          "Top with fried shallots, sambal, kecap manis, lime squeeze",
+          "Each region has a different soto: Soto Betawi (Jakarta, coconut milk), Soto Lamongan (Javanese, turmeric)",
+          "The golden color from turmeric is the signature — soto is Indonesia's chicken soup",
+          "This is Indonesia's universal comfort — like pho for Vietnam, ramen for Japan"
+        ],
+        "description": "Indonesia's chicken soup — golden turmeric broth with shredded chicken, noodles, and an array of toppings. Every region has its own soto variation. The golden broth, the topping-laden bowl, and the 'Indonesia's pho' status make soto ayam essential Southeast Asian comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Soto_ayam.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Soto_ayam.JPG"
+        }
+      },
+      {
+        "id": "idn-ln-3",
+        "name": "Nasi Padang (Rice with Dishes)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Steamed rice",
+          "Rendang (beef coconut stew)",
+          "Gulai ayam (chicken curry)",
+          "Sambal balado (chili fried paste)",
+          "Kangkung (water spinach)",
+          "Dendeng (dried spiced beef)",
+          "Telur balado (egg in chili)",
+          "Sambal hijau (green chili)"
+        ],
+        "instructions": [
+          "Nasi Padang is not one recipe — it's a meal system from Padang, West Sumatra",
+          "Cook rice",
+          "Prepare multiple dishes: rendang, chicken curry, sambal-coated vegetables, eggs, fish",
+          "At a Padang restaurant: the server brings 10-15 small plates to your table at once",
+          "They balance the plates on their arm — the arm-stacking is legendary",
+          "You eat what you want, pay only for what you open/touch",
+          "The flavors are intense: spicy, coconut-rich, deeply spiced — Minangkabau cuisine is bold",
+          "Layer rice on your plate, add dishes on top — mix and match",
+          "Eat with your right hand — Padang food is traditionally eaten by hand",
+          "The arm-balancing servers are the most photographed food moment in Indonesia"
+        ],
+        "description": "Indonesia's most dramatic dining experience — Padang servers balance 10-15 small dishes on one arm, delivering them to your table simultaneously. You eat what you want, pay for what you touch. Minangkabau cuisine (Padang's origin) is Indonesia's most intensely flavored. The arm-stacking and the 'all at once' delivery are the most viral dining visuals in Southeast Asia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Padang_Pak_Nurdin.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Padang_Pak_Nurdin.jpg"
+        }
+      },
+      {
+        "id": "idn-ln-4",
+        "name": "Gado-Gado (Peanut Sauce Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Vegetables: blanched cabbage, bean sprouts, green beans, spinach",
+          "Tofu (fried), tempeh (fried)",
+          "Hard-boiled egg",
+          "Lontong (compressed rice cake) or boiled potato",
+          "Peanut sauce: ground roasted peanuts, kecap manis, chili, lime, garlic, palm sugar",
+          "Kerupuk, fried shallots"
+        ],
+        "instructions": [
+          "Blanch vegetables — they should be cooked but still crisp",
+          "Fry tofu and tempeh until golden",
+          "Boil eggs, peel, halve",
+          "Make peanut sauce: grind roasted peanuts with garlic, chili, kecap manis, palm sugar, lime, water",
+          "The sauce should be thick, pourable, sweet-savory-spicy",
+          "Arrange vegetables, tofu, tempeh, egg, lontong on a plate",
+          "Pour generous peanut sauce over everything",
+          "Top with kerupuk and fried shallots",
+          "Mix everything together before eating — the sauce coats all elements",
+          "Gado-gado means 'mix-mix' — the name is the instruction"
+        ],
+        "description": "Indonesia's peanut sauce salad — blanched vegetables, fried tofu, tempeh, and egg drenched in a thick, sweet-savory peanut sauce. 'Gado-gado' literally means 'mix-mix.' The rich peanut sauce elevates simple vegetables into a complete, satisfying meal, and the 'mix everything' concept is viral vegetarian content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gado_gado_jakarta.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gado_gado_jakarta.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "idn-dn-1",
+        "name": "Satay (Sate Ayam with Peanut Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "Chicken (cubed, threaded on bamboo skewers)",
+          "Marinade: kecap manis, garlic, coriander, cumin, turmeric",
+          "Peanut sauce: roasted peanuts, kecap manis, chili, garlic, lime",
+          "Lontong (rice cakes)",
+          "Pickled cucumber and shallot"
+        ],
+        "instructions": [
+          "Marinate chicken in kecap manis and spices — 30 min minimum",
+          "Thread onto bamboo skewers — 3-4 pieces per stick",
+          "Grill over charcoal — the charcoal is non-negotiable for flavor",
+          "Turn frequently, baste with kecap manis — the sugar caramelizes and chars",
+          "The chicken should be charred, sweet, and smoky",
+          "Make peanut sauce: grind peanuts, add kecap manis, chili, garlic, lime, water",
+          "Serve skewers with peanut sauce for dipping",
+          "Accompany with lontong and pickled cucumber-shallot",
+          "The charcoal smoke infusing kecap-manis-glazed chicken is the flavor",
+          "Indonesian satay is the original — it spread across all of Southeast Asia from here"
+        ],
+        "description": "Indonesia's original satay — chicken skewers glazed with sweet soy and charcoal-grilled, served with peanut sauce. Satay originated in Java and spread across all of Southeast Asia. The charcoal-smoke-and-kecap-manis caramelization and the peanut-dipping ritual are the most viral street-food visuals in the region.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sate_Udang.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Sate_Udang.JPG"
+        }
+      },
+      {
+        "id": "idn-dn-2",
+        "name": "Bakso (Meatball Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Beef meatballs: ground beef, tapioca starch (for the signature bounce), garlic, salt",
+          "Beef broth (rich)",
+          "Noodles (yellow egg noodles and/or rice vermicelli)",
+          "Bok choy or greens",
+          "Fried shallots, celery",
+          "Sambal, kecap manis, vinegar",
+          "Kerupuk"
+        ],
+        "instructions": [
+          "Make meatballs: mix ground beef with tapioca starch, garlic, salt — the tapioca gives the bouncy texture",
+          "Shape into balls, boil in water until they float — they're cooked",
+          "Make rich beef broth with bones",
+          "Assemble: noodles in bowl, meatballs on top, ladle hot broth",
+          "Add bok choy, fried shallots, celery",
+          "Add sambal, kecap manis, vinegar at the table — everyone customizes",
+          "The tapioca-starch meatballs have a unique bouncy-springy texture — not soft",
+          "Bakso carts are EVERYWHERE in Indonesia — the 'tuk tuk tuk' sound of the vendor's knock",
+          "Indonesian president Jokowi is a famous bakso fan — political bakso moments are national news"
+        ],
+        "description": "Indonesia's bouncy meatball soup — beef-and-tapioca balls with a uniquely springy texture in rich broth with noodles. Bakso carts are on every Indonesian street corner. Former president Jokowi's bakso fandom made it political news. The bouncy texture and the ubiquitous vendor culture are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Bakso_mi_bihun.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Bakso_mi_bihun.jpg"
+        }
+      },
+      {
+        "id": "idn-dn-3",
+        "name": "Ayam Goreng (Indonesian Fried Chicken)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Chicken pieces (bone-in)",
+          "Bumbu: turmeric, galangal, garlic, coriander, lemongrass",
+          "Coconut milk (for braising)",
+          "Oil for frying",
+          "Sambal",
+          "Lalapan (fresh vegetables: cucumber, basil, cabbage)"
+        ],
+        "instructions": [
+          "Marinate chicken in ground bumbu — turmeric, galangal, garlic, coriander",
+          "Braise chicken in coconut milk and lemongrass until tender and liquid reduces",
+          "Let chicken cool — the coconut-braised chicken is already flavorful",
+          "Deep fry the braised chicken until deeply golden and crispy",
+          "The double-cooking (braise then fry) gives flavor AND crunch",
+          "The skin should be shatteringly crispy, the meat coconut-infused and tender",
+          "Serve with sambal and lalapan (fresh raw vegetables)",
+          "Indonesian fried chicken is BRAISED IN COCONUT MILK first — this is the key difference",
+          "It's not battered — the crunch comes from the coconut-braised skin frying up",
+          "This technique produces the most flavorful fried chicken on earth"
+        ],
+        "description": "Indonesian fried chicken — braised in coconut milk and spices first, THEN fried until the skin shatters. The braise-then-fry technique creates chicken that's flavored all the way through, not just on the surface. The 'braised in coconut before frying?!' revelation makes ayam goreng one of the most viral fried chicken revelations globally.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Ayam_goreng_in_Jakarta.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Ayam_goreng_in_Jakarta.JPG"
+        }
+      },
+      {
+        "id": "idn-dn-4",
+        "name": "Rawon (Black Beef Soup)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Beef (cubed, bone-in)",
+          "Kluwek (black nut — the ingredient that turns the soup jet black)",
+          "Bumbu: shallots, garlic, turmeric, galangal, lemongrass",
+          "Bean sprouts",
+          "Salted egg",
+          "Sambal"
+        ],
+        "instructions": [
+          "Crack open kluwek nuts — the flesh inside is black and paste-like",
+          "Grind kluwek with shallots, garlic, turmeric, galangal into a bumbu paste",
+          "Sauté bumbu until very fragrant — the kluwek darkens everything",
+          "Add beef, brown in the bumbu",
+          "Add water, simmer 2+ hours until beef is very tender",
+          "The soup turns jet black from the kluwek — dramatic and stunning",
+          "The flavor is earthy, nutty, deeply savory — unlike any other soup",
+          "Serve with bean sprouts, salted egg, sambal",
+          "Rawon is East Javanese — Surabaya is the capital of rawon",
+          "The black color shocks first-timers — but the flavor converts them"
+        ],
+        "description": "East Java's black beef soup — colored jet-black by kluwek (kepayang) nuts, giving an earthy, nutty depth found nowhere else. The dramatic black color shocks first-timers, but the flavor converts them. Rawon is Surabaya's pride and one of the most visually striking soups on earth.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Rawon_Setan_II.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Rawon_Setan_II.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "idn-sn-1",
+        "name": "Tahu Goreng (Fried Tofu with Peanut Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Firm tofu (cubed)",
+          "Oil for frying",
+          "Peanut sauce: roasted peanuts, kecap manis, chili, garlic",
+          "Bean sprouts",
+          "Kecap manis"
+        ],
+        "instructions": [
+          "Cut tofu into cubes or triangles",
+          "Deep fry until golden and crispy on all sides",
+          "The tofu should be crispy outside, soft inside — the texture contrast",
+          "Make peanut sauce: same family as gado-gado sauce",
+          "Place fried tofu on a plate with bean sprouts",
+          "Drizzle peanut sauce over everything",
+          "Add kecap manis for extra sweetness",
+          "The crispy tofu soaking up the peanut sauce is the hook",
+          "This is Indonesia's universal snack — cheap, protein-rich, delicious"
+        ],
+        "description": "Indonesia's everyday fried tofu — golden-crispy cubes drenched in sweet-spicy peanut sauce. Cheap, satisfying, and available on every street corner. The crispy-tofu-meets-thick-peanut-sauce combination is Indonesian snacking at its most fundamental.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Indonesia_Tahu_goreng.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Indonesia_Tahu_goreng.JPG"
+        }
+      },
+      {
+        "id": "idn-sn-2",
+        "name": "Pisang Goreng (Fried Banana)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe bananas (Indonesian cooking bananas — shorter, firmer)",
+          "Batter: flour, rice flour, sugar, baking powder, water",
+          "Oil for frying",
+          "Cheese (grated — modern viral topping)",
+          "Chocolate sauce, condensed milk (modern toppings)"
+        ],
+        "instructions": [
+          "Make batter: mix flours, sugar, baking powder, water — slightly thick",
+          "Peel bananas, dip in batter — coat completely",
+          "Deep fry until golden and crispy — 4-5 min",
+          "The batter puffs up crispy, the banana inside goes soft and sweet",
+          "Traditional: eat as-is, the natural banana sweetness is enough",
+          "Modern viral version: top with grated cheese, chocolate sauce, condensed milk",
+          "The cheese-on-fried-banana combination sounds strange but went massively viral in Indonesia",
+          "Pisang goreng is to Indonesia what french fries are to America — the universal fried thing",
+          "Every warung (food stall) has pisang goreng — morning to night"
+        ],
+        "description": "Indonesia's universal fried snack — battered bananas fried golden and crispy. The modern viral version tops them with cheese, chocolate, and condensed milk (the 'cheese on banana?!' reaction drove massive virality). Pisang goreng is Indonesia's french fries — everywhere, always, for everyone.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg"
+        }
+      },
+      {
+        "id": "idn-sn-3",
+        "name": "Kerupuk (Prawn/Fish Crackers)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Kerupuk (dried prawn or fish crackers — bought as hard dried chips)",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Heat oil to very hot — 190°C",
+          "Drop a dried kerupuk chip into the oil",
+          "Watch it EXPLODE in size — from a small flat chip to a huge puffy cracker in seconds",
+          "The dramatic expansion is one of cooking's most satisfying visuals",
+          "Fry 5-10 seconds only — they go from nothing to enormous instantly",
+          "Drain briefly",
+          "The cracker should be light, airy, crunchy, and savory-prawn-flavored",
+          "Kerupuk accompanies almost every Indonesian meal — it's not optional",
+          "The frying-expansion moment is so viral it has its own ASMR genre",
+          "Making kerupuk from scratch (mixing tapioca starch with shrimp) is an art — most people buy them dried"
+        ],
+        "description": "Indonesia's explosive prawn crackers — a small dried chip dropped into hot oil expands to 3-4x its size in seconds. The dramatic expansion is one of cooking's most satisfying ASMR moments. Kerupuk accompanies virtually every Indonesian meal and the frying reveal is endlessly viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kerupuk_dalam_kaleng.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Kerupuk_dalam_kaleng.jpg"
+        }
+      },
+      {
+        "id": "idn-sn-4",
+        "name": "Klepon (Pandan Rice Balls with Palm Sugar)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Glutinous rice flour",
+          "Pandan juice (from pandan leaves — gives green color and aroma)",
+          "Palm sugar (gula jawa — grated, for filling)",
+          "Freshly grated coconut",
+          "Salt",
+          "Water"
+        ],
+        "instructions": [
+          "Make pandan juice: blend pandan leaves with water, strain — bright green",
+          "Mix glutinous rice flour with pandan juice — the dough turns vibrant green",
+          "Take a small ball of dough, flatten, add a piece of palm sugar in the center",
+          "Seal the dough around the sugar — must be completely sealed or it leaks",
+          "Boil the balls until they float — the sign they're cooked",
+          "Roll immediately in freshly grated coconut",
+          "The magic: when you bite, the melted palm sugar BURSTS out like liquid caramel",
+          "The green shell, white coconut, and brown liquid sugar center — three layers in one bite",
+          "The 'palm sugar explosion' when bitten is the viral moment",
+          "Klepon are Indonesia's most magical sweet snack"
+        ],
+        "description": "Indonesia's exploding sweet — bright green pandan-scented rice balls that burst with melted palm sugar when bitten, rolled in fresh coconut. The three-layer color surprise and the 'liquid caramel explosion' bite make klepon the most magical and viral Indonesian sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Klepon_Khas_Tulungagung.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Klepon_Khas_Tulungagung.jpg"
+        }
+      },
+      {
+        "id": "idn-sn-5",
+        "name": "Indomie Goreng (Instant Noodle Stir-Fry)",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 2,
+        "cookTime": 5,
+        "ingredients": [
+          "Indomie instant noodles (Indonesia's most iconic brand — exported to 100+ countries)",
+          "Seasoning packets (included — sweet soy, chili, oil, fried shallots)",
+          "Egg (fried — always add an egg)",
+          "Vegetables (optional)"
+        ],
+        "instructions": [
+          "Boil noodles 3 min — drain",
+          "Toss drained noodles with the seasoning packets — sweet soy, chili oil, fried shallots",
+          "Fry an egg — the runny yolk becomes the sauce",
+          "Top noodles with the fried egg",
+          "Add fried shallots from the packet",
+          "Optional: add vegetables, cheese, corned beef — Indomie hacks are their own genre",
+          "The 'goreng' (fried/dry) version is more popular than the soup version",
+          "Indomie is not just food in Indonesia — it's a cultural institution",
+          "The Indomie goreng hack community is massive — millions of creative variations",
+          "Some countries worship Indomie: Nigeria adopted it as a staple, not just a snack"
+        ],
+        "description": "Indonesia's most consumed food — Indomie instant noodles, a cultural institution exported to 100+ countries. The goreng (stir-fried) version with a runny fried egg is the baseline; the Indomie hack community (millions of creative variations) is its own viral genre. Nigeria adopted Indomie as a national staple."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "idn-ds-1",
+        "name": "Es Cendol (Iced Pandan Jelly Drink)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Cendol: rice flour jelly worms (green from pandan)",
+          "Coconut milk",
+          "Palm sugar syrup (gula jawa — melted into a dark caramel)",
+          "Shaved ice",
+          "Jackfruit (optional)"
+        ],
+        "instructions": [
+          "Make cendol: cook rice flour with pandan juice, press through a colander into ice water — the drops form green worm-shaped jelly",
+          "Make palm sugar syrup: melt gula jawa with water — dark, caramelly",
+          "Fill a glass with shaved ice",
+          "Add cendol (green jelly worms)",
+          "Pour coconut milk over — rich and white",
+          "Drizzle palm sugar syrup — it sinks in dark ribbons through the white coconut milk",
+          "The three-layer visual: green jelly, white coconut, brown sugar — stunning",
+          "Stir slightly before drinking — or leave layered for the visual",
+          "Es cendol is Southeast Asia's most refreshing drink — Indonesia, Malaysia, Singapore all claim it",
+          "The green-worm-jelly-in-coconut concept shocks and delights first-timers"
+        ],
+        "description": "Indonesia's most refreshing dessert drink — green pandan jelly worms swimming in coconut milk and dark palm sugar syrup over shaved ice. The three-color layering and the 'what are the green worms?!' reaction make es cendol one of Southeast Asia's most viral and photogenic drinks.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Kampung_Paya_Jaras_Tengah%2C_Selangor_20250112_111330.jpg"
+        }
+      },
+      {
+        "id": "idn-ds-2",
+        "name": "Dadar Gulung (Pandan Coconut Crêpes)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Crêpe: flour, eggs, pandan juice (green), coconut milk",
+          "Filling: grated coconut cooked with palm sugar",
+          "Salt"
+        ],
+        "instructions": [
+          "Make pandan crêpe batter: flour, eggs, coconut milk, pandan juice — bright green",
+          "Cook thin crêpes — they should be soft, not crispy",
+          "Make filling: cook grated coconut with palm sugar until sticky-sweet and dark",
+          "Place filling on one end of the crêpe, roll up tightly",
+          "The cross-section shows: green exterior, dark coconut-sugar interior",
+          "The flavor is pandan-floral, coconut-sweet, palm-sugar-caramelly",
+          "Dadar gulung is a Javanese kueh (cake/sweet)",
+          "The green-and-brown color contrast is beautiful",
+          "These are festive food — served at celebrations and as afternoon snacks"
+        ],
+        "description": "Javanese pandan crêpes — bright green coconut-milk crêpes rolled around dark palm-sugar-sweetened coconut. The green-exterior, brown-interior cross-section is beautiful. The pandan-coconut-palm-sugar flavor trio is the foundation of Indonesian sweets.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Kue_dadar_gulung.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Kue_dadar_gulung.JPG"
+        }
+      },
+      {
+        "id": "idn-ds-3",
+        "name": "Es Teler (Mixed Fruit Ice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Avocado (cubed)",
+          "Young coconut meat",
+          "Jackfruit",
+          "Condensed milk",
+          "Coconut milk",
+          "Shaved ice",
+          "Palm sugar syrup",
+          "Grass jelly or other jellies"
+        ],
+        "instructions": [
+          "Cube avocado, scoop young coconut meat, cut jackfruit",
+          "Layer fruits in a tall glass",
+          "Add shaved ice",
+          "Pour condensed milk and coconut milk over",
+          "Drizzle palm sugar syrup",
+          "Add grass jelly if desired",
+          "The combination of textures: creamy avocado, chewy coconut, fibrous jackfruit",
+          "The condensed milk ties everything together in creamy sweetness",
+          "Es teler means 'drunk ice' — the combination makes you feel giddy",
+          "This is Indonesia's ice cream sundae — the fruit equivalent"
+        ],
+        "description": "Indonesia's 'drunk ice' — avocado, young coconut, and jackfruit in condensed milk, coconut milk, and palm sugar over shaved ice. The avocado-as-dessert concept shocks Westerners but is pure genius. Es teler's textural variety and the 'wait, avocado is a DESSERT fruit here?!' reaction are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Es_Teller_77.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Es_Teller_77.jpg"
+        }
+      },
+      {
+        "id": "idn-ds-4",
+        "name": "Kue Lapis (Layer Cake)",
+        "difficulty": "Hard",
+        "servings": 16,
+        "prepTime": 45,
+        "cookTime": 60,
+        "ingredients": [
+          "Butter (lots)",
+          "Sugar",
+          "Eggs (lots — 20+ for a full cake)",
+          "Flour",
+          "Spice mix: cinnamon, cardamom, cloves, nutmeg",
+          "Condensed milk"
+        ],
+        "instructions": [
+          "Beat butter and sugar until very fluffy",
+          "Add eggs one at a time — this uses 20+ eggs for a full kue lapis",
+          "Add flour and spice mix",
+          "The batter should be rich, spiced, and aromatic",
+          "Pour a thin layer into a cake pan, broil until set and golden",
+          "Add another thin layer, broil again — REPEAT 15-20 TIMES",
+          "Each layer must be broiled individually — this is the most patient cake on earth",
+          "The process takes 1-2 hours of layer-by-layer broiling",
+          "The finished cake reveals 15-20 distinct spiced layers when sliced",
+          "The cross-section — alternating golden layers — is stunning",
+          "Kue lapis is Dutch colonial heritage adapted with Indonesian spices"
+        ],
+        "description": "Indonesia's legendary layer cake — 15-20 individual layers, each broiled separately, creating a spiced, buttery cake with a stunning striped cross-section. The 1-2 hour layer-by-layer process (the most patient cake on earth) is Dutch colonial heritage perfected with Indonesian spices. The stripe reveal is perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "idn-dr-1",
+        "name": "Kopi Tubruk (Indonesian Mud Coffee)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Finely ground Indonesian coffee (Javanese or Sumatran)",
+          "Sugar (often lots)",
+          "Boiling water"
+        ],
+        "instructions": [
+          "Place finely ground coffee directly in the cup — no filter",
+          "Add sugar directly — generous",
+          "Pour boiling water over",
+          "Stir once and wait — the grounds settle to the bottom",
+          "Do NOT filter — the grounds stay in the cup",
+          "Drink carefully — stop before the 'mud' at the bottom",
+          "The name 'tubruk' means 'collision' — water collides with coffee",
+          "The flavor is bold, thick, and unfiltered — the oils stay in the cup",
+          "This is Indonesia's original coffee method — no equipment needed",
+          "Java coffee (from the island of Java) gave English the word 'java' for coffee"
+        ],
+        "description": "Indonesia's unfiltered 'mud coffee' — grounds placed directly in the cup with boiling water, no filter. The name means 'collision.' Java (the island) gave the English language the word 'java' for coffee. The no-equipment simplicity and the 'drink until you hit mud' technique are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Javanese_Kopi_Tubruk.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Javanese_Kopi_Tubruk.jpg"
+        }
+      },
+      {
+        "id": "idn-dr-2",
+        "name": "Es Jeruk (Iced Orange Juice)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh oranges or limes (jeruk)",
+          "Sugar or simple syrup",
+          "Ice",
+          "Salt (tiny pinch — the Indonesian secret)"
+        ],
+        "instructions": [
+          "Squeeze fresh citrus — any local citrus variety",
+          "Add sugar or simple syrup",
+          "Add a TINY pinch of salt — this is the Indonesian trick that enhances sweetness",
+          "Add lots of ice",
+          "Stir well",
+          "The salt-in-sweet-drinks principle is Indonesian food wisdom",
+          "Es jeruk is Indonesia's everyday refreshment — sold everywhere",
+          "The salt transforms the juice — it tastes sweeter and more complex",
+          "Simple, cheap, refreshing — tropical hydration"
+        ],
+        "description": "Indonesia's everyday citrus refresher — fresh orange or lime juice with a tiny pinch of salt (the Indonesian trick that enhances sweetness and complexity). Simple, sold everywhere, and the salt-in-juice technique is one of Indonesian food's most underrated viral tips."
+      },
+      {
+        "id": "idn-dr-3",
+        "name": "Jamu (Herbal Tonic)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Turmeric (fresh, lots)",
+          "Ginger",
+          "Tamarind",
+          "Palm sugar or honey",
+          "Lime juice",
+          "Water"
+        ],
+        "instructions": [
+          "Peel and grate fresh turmeric and ginger",
+          "Boil in water for 10 min — the liquid turns deep golden-orange",
+          "Add tamarind for sourness, palm sugar for sweetness",
+          "Strain",
+          "Add lime juice",
+          "Serve warm or cold — both are traditional",
+          "Jamu is Indonesia's ancient herbal medicine tradition — 1000+ years old",
+          "Jamu sellers (jamu gendong) carry bottles on their backs and walk neighborhoods",
+          "The turmeric-ginger combination is now globally trendy as a 'wellness shot'",
+          "Indonesia has been drinking turmeric shots for a millennium — the world is catching up"
+        ],
+        "description": "Indonesia's ancient herbal tonic — turmeric, ginger, and tamarind brewed into a golden-orange health drink. Jamu is 1000+ years old. The global 'turmeric wellness shot' trend is Indonesia's jamu tradition repackaged. Jamu gendong sellers walking neighborhoods with bottles on their backs are an iconic Indonesian image.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jamu.jpg",
+        "imageCredit": {
+          "author": "dpinpin",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJamu.jpg"
+        }
+      },
+      {
+        "id": "idn-dr-4",
+        "name": "Bajigur (Palm Sugar Coconut Coffee)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Coconut milk",
+          "Palm sugar (gula jawa)",
+          "Coffee (optional — Sundanese version)",
+          "Ginger",
+          "Pandan leaf",
+          "Salt (pinch)"
+        ],
+        "instructions": [
+          "Heat coconut milk with palm sugar, ginger, pandan leaf",
+          "Stir until palm sugar dissolves — the drink turns caramel-brown",
+          "Add a pinch of salt to enhance the sweetness",
+          "Add coffee for the Sundanese (West Java) version",
+          "Strain, serve warm",
+          "Bajigur is a Sundanese (West Java) warm drink for rainy evenings and cool mountain nights",
+          "The palm sugar and coconut milk create a naturally caramelly, creamy drink",
+          "It's like a tropical hot chocolate alternative — warm, sweet, comforting",
+          "The Sundanese highlands are cool enough to need warming drinks"
+        ],
+        "description": "West Java's warming coconut drink — coconut milk heated with palm sugar, ginger, and pandan into a caramel-sweet, creamy drink for cool highland evenings. Bajigur is the Sundanese alternative to hot chocolate. The natural caramel from palm sugar and the mountain-evening context are the hooks.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bajigur_DSC_1981.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bajigur_DSC_1981.jpg"
+        }
+      }
+    ]
+  }
+}

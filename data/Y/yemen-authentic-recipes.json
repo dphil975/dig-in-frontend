@@ -1,0 +1,989 @@
+{
+  "yemenRecipes": {
+    "country": "Yemen",
+    "region": "Middle East",
+    "breakfast": [
+      {
+        "id": "yem-bf-1",
+        "name": "Fattah (Bread and Egg)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Flatbread",
+          "Eggs",
+          "Honey",
+          "Black seed (nigella)",
+          "Butter"
+        ],
+        "instructions": [
+          "Tear flatbread into bowl",
+          "Scramble eggs with butter",
+          "Pour over bread",
+          "Drizzle with honey, sprinkle black seed"
+        ],
+        "description": "Bread soaked with scrambled egg and honey.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/AbdelFattah_Elsisi_%28cropped%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/AbdelFattah_Elsisi_%28cropped%29.jpg"
+        }
+      },
+      {
+        "id": "yem-bf-2",
+        "name": "Malawach (Fried Flatbread)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour",
+          "Butter",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Make dough, rest",
+          "Layer with butter, fold repeatedly",
+          "Roll thin, fry in pan until golden",
+          "Serve with eggs and zhug"
+        ],
+        "description": "Flaky, buttery fried flatbread — Yemeni-Jewish origin.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Malawach.jpg",
+        "imageCredit": {
+          "author": "Ayala Sender",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMalawach.jpg"
+        }
+      },
+      {
+        "id": "yem-bf-3",
+        "name": "Jachnun (Slow-Baked Rolled Dough)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 720,
+        "ingredients": [
+          "Flour, butter or margarine (generous)",
+          "Sugar, salt",
+          "Water",
+          "Hard-boiled eggs (cooked alongside overnight)",
+          "Tomato relish (schug and crushed tomato)"
+        ],
+        "instructions": [
+          "Jachnun is the Yemeni-Jewish Shabbat breakfast -- dough rolled thin and baked overnight",
+          "Thin sheets of dough brushed with butter or margarine, rolled tightly",
+          "Placed in a pot and baked on very low heat for 10-12 hours (overnight)",
+          "The result: a dark, caramelized, flaky pastry -- deeply sweet from the long slow baking",
+          "The Maillard reaction over 12 hours transforms the simple dough",
+          "Eggs placed in the pot alongside turn brown from the long cooking -- \"haminados\" eggs",
+          "Brought to Israel by Yemeni Jews (the Teimanim) during mass immigration in the 1940s-50s",
+          "Now one of Israel's most popular Shabbat morning foods -- but its origin is Yemeni",
+          "Served with grated tomato relish and schug (spicy green chili paste)"
+        ],
+        "description": "Yemeni-Jewish Shabbat pastry -- jachnun, thin buttered dough rolled tight and baked on low heat for 10-12 hours overnight. The slow Maillard reaction turns it dark, caramelized, and deeply sweet. Eggs cooked alongside turn brown (haminados). Brought to Israel by Yemeni Jews in the 1940s-50s. Served with tomato relish and schug.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Jachnun.jpg",
+        "imageCredit": {
+          "author": "Joshua Herzig-Marx",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AJachnun.jpg"
+        }
+      },
+      {
+        "id": "yem-bf-4",
+        "name": "Lahoh (Yemeni Pancake)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, yeast",
+          "Water",
+          "Salt, sugar",
+          "Honey or scrambled eggs (for serving)"
+        ],
+        "instructions": [
+          "Lahoh is the Yemeni spongy pancake -- similar to Ethiopian injera but smaller and thicker",
+          "A yeast-fermented batter cooked on one side only until the top is covered in bubbles",
+          "Spongy and porous -- designed to absorb sauces and stews",
+          "Eaten for breakfast with honey or with savory dishes (beans, eggs)",
+          "The Yemeni connection to the Horn of Africa: lahoh is also made in Djibouti and Somalia",
+          "Yemen and the Horn of Africa are separated by the narrow Bab al-Mandab strait -- cuisines intertwine"
+        ],
+        "description": "Yemeni spongy pancake -- lahoh, fermented batter cooked on one side until bubbly and porous. Similar to Ethiopian injera but smaller and thicker. Eaten with honey or savory stews. Yemen and the Horn of Africa (Djibouti, Somalia) share this bread across the narrow Bab al-Mandab strait.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/LahohS.jpg",
+        "imageCredit": {
+          "author": "Gilabrand (talk)",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALahohS.jpg"
+        }
+      },
+      {
+        "id": "yem-bf-5",
+        "name": "Ful Medames (Fava Beans)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Fava beans (dried, soaked overnight, or canned)",
+          "Olive oil",
+          "Lemon juice",
+          "Garlic",
+          "Cumin",
+          "Chili, salt",
+          "Hard-boiled egg (on the side)",
+          "Bread (for scooping)"
+        ],
+        "instructions": [
+          "Ful medames is the fava bean dish eaten across the Arab world and the Horn of Africa",
+          "Slow-cooked fava beans mashed and seasoned with olive oil, lemon, garlic, and cumin",
+          "A protein-rich breakfast -- the working person's morning fuel",
+          "Variations across the region: Egyptian ful uses tahini, Yemeni ful uses more cumin and chili",
+          "Eaten with bread for scooping -- no utensils needed",
+          "One of the oldest prepared foods in the world -- fava beans have been cultivated for 8,000+ years"
+        ],
+        "description": "Ancient Arab breakfast -- ful medames, slow-cooked fava beans mashed with olive oil, lemon, garlic, and cumin. A protein-rich morning fuel eaten with bread. Fava beans have been cultivated for 8,000+ years. Variations across the Arab world: Yemeni ful uses more cumin and chili.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Ful_medames_%28arabic_meal%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Ful_medames_%28arabic_meal%29.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "yem-ln-1",
+        "name": "Saltah",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Lamb or chicken broth",
+          "Hilbeh (fenugreek foam)",
+          "Sahawiq (chili-tomato sauce)",
+          "Vegetables",
+          "Rice or bread"
+        ],
+        "instructions": [
+          "Make meat broth with vegetables",
+          "Make sahawiq paste",
+          "Whip hilbeh foam from fenugreek",
+          "Serve in stone bowl: broth, sahawiq, hilbeh on top",
+          "Eat with flatbread"
+        ],
+        "description": "Yemen's national dish — hot stone pot of broth, chili, and fenugreek foam.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Saltah.jpg",
+        "imageCredit": {
+          "author": "Rania al-Bahara",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASaltah.jpg"
+        }
+      },
+      {
+        "id": "yem-ln-2",
+        "name": "Mandi (Meat and Rice)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "1kg lamb",
+          "2 cups basmati rice",
+          "Hawaij spice mix",
+          "Onion",
+          "Garlic",
+          "Ghee",
+          "Dried lime"
+        ],
+        "instructions": [
+          "Season lamb with hawaij",
+          "Slow-roast or smoke in tandoor 2 hours",
+          "Cook rice in meat drippings with spices",
+          "Serve rice topped with tender meat"
+        ],
+        "description": "Slow-smoked meat over fragrant rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mandi_pit_from_inside.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mandi_pit_from_inside.jpg"
+        }
+      },
+      {
+        "id": "yem-ln-3",
+        "name": "Zorbian (Yemeni Biryani)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Basmati rice",
+          "Chicken or lamb",
+          "Onion (fried golden)",
+          "Tomato, potato",
+          "Hawaij spice (Yemeni spice blend: cumin, cardamom, turmeric, black pepper, coriander)",
+          "Saffron",
+          "Raisins, almonds (optional garnish)"
+        ],
+        "instructions": [
+          "Zorbian is the Yemeni biryani -- a layered rice dish with Indian Ocean trade influence",
+          "The Yemeni version of biryani: rice layered with spiced meat and baked",
+          "Hawaij: the Yemeni spice blend that distinguishes this from Indian biryani",
+          "The Indian Ocean spice trade connected Yemen to India for millennia",
+          "Aden (Yemen's port city) was a major trading hub -- Indian, African, and Arab cuisines mixed",
+          "The rice is partially cooked, layered with the meat, and steamed until the flavors meld",
+          "Served with a tomato-chili sauce on the side"
+        ],
+        "description": "Yemeni layered rice -- zorbian, basmati rice layered with spiced chicken or lamb, fried onions, and hawaij (Yemeni spice blend). Indian Ocean trade connected Yemen to India for millennia. Aden was a major trading hub where Indian, African, and Arab cuisines mixed. Served with tomato-chili sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Zurbian_Image.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Zurbian_Image.jpg"
+        }
+      },
+      {
+        "id": "yem-ln-4",
+        "name": "Haneeth (Slow-Roasted Lamb)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 240,
+        "ingredients": [
+          "Whole lamb leg or shoulder",
+          "Hawaij spice blend",
+          "Salt, garlic",
+          "Rice (for serving)"
+        ],
+        "instructions": [
+          "Haneeth is the Yemeni slow-roasted lamb -- cooked in a tandoor (taboun) oven",
+          "Lamb rubbed with hawaij spice and salt, slow-roasted for 4-6 hours",
+          "The tandoor (taboun): a clay oven heated by burning wood at the bottom",
+          "The lamb emerges fall-apart tender, deeply spiced, and smoky",
+          "Similar to mandi but with a different spice profile and cooking technique",
+          "Served on a bed of spiced rice",
+          "A celebration dish -- weddings, Eid, and large gatherings",
+          "Yemeni lamb traditions are among the oldest in the Arabian Peninsula"
+        ],
+        "description": "Yemeni slow-roasted lamb -- haneeth, whole lamb rubbed with hawaij spice and roasted 4-6 hours in a taboun (clay oven). Fall-apart tender, deeply spiced, and smoky. Served on spiced rice. For weddings and Eid celebrations. Among the oldest Arabian Peninsula lamb traditions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view%2C_haneeth%2C_Marib_restaurant%2C_Springfield%2C_Virginia.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Overhead_view%2C_haneeth%2C_Marib_restaurant%2C_Springfield%2C_Virginia.jpg"
+        }
+      },
+      {
+        "id": "yem-ln-5",
+        "name": "Shafout (Flatbread in Yoghurt)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Lahoh or malawach (Yemeni flatbread)",
+          "Yoghurt (thick, tangy)",
+          "Garlic, cumin",
+          "Green chili",
+          "Fresh herbs (cilantro, mint)"
+        ],
+        "instructions": [
+          "Shafout is the Yemeni flatbread soaked in seasoned yoghurt -- a cooling summer dish",
+          "Flatbread torn and soaked in garlicky, spiced yoghurt",
+          "The bread softens and absorbs the tangy yoghurt",
+          "A refreshing dish for hot Yemeni summers",
+          "Simple and quick -- uses leftover bread",
+          "The yoghurt-and-bread combination is ancient -- found across the Middle East and Central Asia"
+        ],
+        "description": "Yemeni flatbread in yoghurt -- shafout, torn lahoh or malawach soaked in garlicky, cumin-spiced yoghurt. A cooling summer dish. Simple and ancient -- the yoghurt-and-bread combination exists across the Middle East and Central Asia. Uses leftover bread."
+      },
+      {
+        "id": "yem-ln-6",
+        "name": "Kabsa (Spiced Rice with Chicken)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Basmati rice",
+          "Chicken (whole or pieces)",
+          "Tomatoes, onion, garlic",
+          "Hawaij spice, baharat, loomi (dried lime)",
+          "Saffron",
+          "Raisins, almonds"
+        ],
+        "instructions": [
+          "Kabsa is the Arabian spiced rice dish -- shared across Yemen, Saudi Arabia, and the Gulf",
+          "Chicken or lamb cooked with spices and tomato, the rice cooked in the flavored broth",
+          "Hawaij and loomi (dried black lime) give the Yemeni accent",
+          "Loomi: the same sour dried lime used across the Gulf -- boiled and sun-dried until black",
+          "A one-pot rice dish: the meat broth flavors the rice as they cook together",
+          "Kabsa is everyday lunch food across the Arabian Peninsula"
+        ],
+        "description": "Arabian spiced rice -- kabsa, chicken cooked with hawaij spice and loomi (dried black lime), rice cooked in the flavored broth. Shared across Yemen, Saudi Arabia, and the Gulf. Hawaij and loomi give the Yemeni accent. Everyday lunch across the Arabian Peninsula.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Machboos_%28cropped%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Machboos_%28cropped%29.JPG"
+        }
+      },
+      {
+        "id": "yem-ln-7",
+        "name": "Fatteh (Bread, Chickpeas, and Yoghurt)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Flatbread (torn and toasted or fried)",
+          "Chickpeas (cooked)",
+          "Yoghurt (thick, garlicky)",
+          "Tahini",
+          "Pine nuts (toasted)",
+          "Cumin, paprika, olive oil"
+        ],
+        "instructions": [
+          "Fatteh is the Yemeni and Levantine layered dish -- bread, chickpeas, and yoghurt",
+          "Toasted bread at the bottom soaks up the garlicky yoghurt and chickpea cooking liquid",
+          "Topped with yoghurt, tahini, and toasted pine nuts",
+          "An ancient dish -- using stale bread as a base is the resourceful cooking of the Arab world",
+          "The layers: bread absorbs, chickpeas provide protein, yoghurt provides tang and richness",
+          "A hearty lunch or brunch dish"
+        ],
+        "description": "Yemeni and Levantine layered dish -- fatteh, toasted flatbread soaked in chickpea broth, topped with garlicky yoghurt, tahini, and toasted pine nuts. Resourceful cooking: stale bread becomes the base. The layers provide texture, protein, and tang.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "yem-dn-1",
+        "name": "Fahsa (Meat Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Lamb (cubed)",
+          "Onion",
+          "Tomatoes",
+          "Fenugreek",
+          "Garlic",
+          "Hawaij spice",
+          "Ghee",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown lamb in ghee",
+          "Add onion, garlic, tomatoes",
+          "Add hawaij and water, simmer 35 min",
+          "Top with fenugreek foam",
+          "Serve in stone pot with bread"
+        ],
+        "description": "Lamb stew with fenugreek — served in a hot stone bowl.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/%D8%AE%D8%A8%D8%B2_%D9%85%D9%84%D9%88%D8%AD.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/%D8%AE%D8%A8%D8%B2_%D9%85%D9%84%D9%88%D8%AD.jpg"
+        }
+      },
+      {
+        "id": "yem-dn-2",
+        "name": "Aseed (Flour Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Wheat flour",
+          "Water",
+          "Salt",
+          "Lamb broth",
+          "Honey or meat stew"
+        ],
+        "instructions": [
+          "Cook flour with water into thick, smooth paste",
+          "Shape into mound",
+          "Pour lamb broth or honey over"
+        ],
+        "description": "Dense flour porridge — sweet or savory.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg",
+        "imageCredit": {
+          "author": "Mustafa Al-Elq",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg"
+        }
+      },
+      {
+        "id": "yem-dn-3",
+        "name": "Shakshouka (Eggs in Tomato Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Eggs",
+          "Tomato sauce (tomatoes, onion, garlic, bell pepper)",
+          "Cumin, paprika, chili",
+          "Feta cheese (optional)",
+          "Bread (for dipping)"
+        ],
+        "instructions": [
+          "Shakshouka is the eggs poached in spiced tomato sauce -- a dish shared across the Arab world and North Africa",
+          "The Yemeni version is spicier than the Tunisian or Israeli versions",
+          "Eggs cracked directly into a simmering tomato-pepper sauce in a skillet",
+          "The eggs cook in the sauce -- the whites set while the yolks stay runny",
+          "Eaten directly from the skillet with bread for dipping into the sauce and breaking the yolks",
+          "The name may come from the Arabic word for \"mixture\"",
+          "A dinner or breakfast dish -- versatile and quick"
+        ],
+        "description": "Eggs poached in spiced tomato sauce -- shakshouka, eggs cracked into a simmering skillet of tomato-pepper sauce with cumin and chili. Yolks stay runny. Eaten from the skillet with bread. The Yemeni version is spicier than Tunisian or Israeli versions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Shakshuka_by_Calliopejen1.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Shakshuka_by_Calliopejen1.jpg"
+        }
+      },
+      {
+        "id": "yem-dn-4",
+        "name": "Ogda (Meat and Vegetable Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb or beef (cubed)",
+          "Potato, carrot, zucchini, tomato",
+          "Onion, garlic",
+          "Hawaij spice",
+          "Fenugreek (hulba -- ground, whipped)",
+          "Bread (for serving)"
+        ],
+        "instructions": [
+          "Ogda is the Yemeni meat and vegetable stew -- a rustic one-pot dinner",
+          "Chunks of meat simmered with vegetables in a spiced broth",
+          "Topped with hulba: whipped fenugreek foam -- the essential Yemeni condiment",
+          "Hulba: fenugreek seeds soaked, then whipped into a frothy, slightly bitter foam",
+          "Fenugreek is central to Yemeni cuisine -- more than any other Arab cuisine",
+          "A home-cooked dinner -- everyday Yemeni food"
+        ],
+        "description": "Yemeni rustic stew -- ogda, lamb and vegetables simmered in a hawaij-spiced broth, topped with hulba (whipped fenugreek foam -- the essential Yemeni condiment). Fenugreek is more central to Yemeni cuisine than any other Arab cuisine. Everyday home cooking."
+      },
+      {
+        "id": "yem-dn-5",
+        "name": "Zurbiyan (Festive Rice with Meat)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Basmati rice",
+          "Lamb (large pieces)",
+          "Onions (caramelized)",
+          "Hawaij, saffron, cardamom, cinnamon",
+          "Potatoes (fried, layered at the bottom)",
+          "Raisins, cashews"
+        ],
+        "instructions": [
+          "Zurbiyan is the Yemeni festive layered rice -- made for celebrations and large gatherings",
+          "Lamb cooked in a spiced broth, rice partially cooked, both layered in a pot",
+          "Fried potato slices line the bottom -- they become crispy and caramelized (the tahdig equivalent)",
+          "The pot is sealed and steamed so the flavors meld",
+          "Flipped upside down to serve -- the crispy potatoes are on top",
+          "A maqluba-like presentation -- dramatic and generous",
+          "Served at weddings, Eid al-Adha, and major celebrations"
+        ],
+        "description": "Yemeni festive layered rice -- zurbiyan, lamb and rice layered over fried potato slices, sealed and steamed, then flipped upside down (crispy potatoes on top). Dramatic maqluba-like presentation. For weddings and Eid al-Adha celebrations. Saffron, hawaij, and caramelized onions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rras_2013-07-06_09-35.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rras_2013-07-06_09-35.jpg"
+        }
+      },
+      {
+        "id": "yem-dn-6",
+        "name": "Maraq (Yemeni Bone Broth Soup)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 120,
+        "ingredients": [
+          "Lamb or beef bones (marrow bones)",
+          "Onion, garlic",
+          "Hawaij spice",
+          "Tomato",
+          "Potato, carrot (optional)",
+          "Bread (for dipping)",
+          "Hulba (whipped fenugreek -- on top)"
+        ],
+        "instructions": [
+          "Maraq is the Yemeni bone broth soup -- clear, spiced, and deeply nourishing",
+          "Bones simmered for 2+ hours until the marrow dissolves into the broth",
+          "Seasoned with hawaij -- the ever-present Yemeni spice blend",
+          "Topped with hulba (whipped fenugreek foam)",
+          "Drunk from a bowl or eaten with bread",
+          "Considered restorative -- given to the sick and to new mothers",
+          "The Yemeni grandmother's remedy for everything"
+        ],
+        "description": "Yemeni bone broth -- maraq, lamb or beef bones simmered 2+ hours until marrow dissolves, seasoned with hawaij, topped with hulba (whipped fenugreek foam). Considered restorative -- given to the sick and new mothers. The Yemeni grandmother's remedy for everything.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Maraq.jpg",
+        "imageCredit": {
+          "author": "Abu Isa",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMaraq.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "yem-sn-1",
+        "name": "Bint al-Sahn (Honey Cake)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour",
+          "Eggs",
+          "Yeast",
+          "Butter (lots)",
+          "Honey"
+        ],
+        "instructions": [
+          "Make soft dough with lots of butter",
+          "Layer thin sheets in pan",
+          "Bake at 175°C 20 min",
+          "Drizzle generously with honey",
+          "Eat by tearing with hands"
+        ],
+        "description": "Buttery layered pastry drowned in honey — served before the meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Bint_al_Sahn.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Bint_al_Sahn.png"
+        }
+      },
+      {
+        "id": "yem-sn-2",
+        "name": "Sambousek (Fried Pastries)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Thin pastry dough",
+          "Filling: spiced ground meat with onion, or cheese and herb",
+          "Cumin, coriander, chili",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Yemeni sambousek are fried pastries -- part of the pan-Islamic samosa family",
+          "Thin pastry folded around spiced meat or cheese",
+          "Deep-fried until crispy and golden",
+          "A Ramadan iftar staple -- eaten when breaking the fast",
+          "The samosa family stretches from India (samosa) through Central Asia (samsa) to the Arab world (sambousek)",
+          "Small, portable, and satisfying"
+        ],
+        "description": "Yemeni fried pastries -- sambousek, thin dough around spiced meat or cheese, deep-fried golden. A Ramadan iftar staple. Part of the samosa family stretching from India through Central Asia to the Arab world.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg"
+        }
+      },
+      {
+        "id": "yem-sn-3",
+        "name": "Schug (Spicy Chili Paste)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Green chili peppers (fresh, hot)",
+          "Cilantro (generous)",
+          "Garlic",
+          "Cumin, cardamom",
+          "Salt",
+          "Olive oil"
+        ],
+        "instructions": [
+          "Schug (also zhug or sahawiq) is the Yemeni green chili paste -- fiery and herbal",
+          "Fresh green chilies blended with cilantro, garlic, and spices",
+          "Intensely spicy -- Yemeni food is among the spiciest in the Arab world",
+          "Used as a condiment with everything: bread, rice, meat, eggs",
+          "Brought to Israel by Yemeni Jews -- now ubiquitous in Israeli cuisine",
+          "Green schug (most common) and red schug (with red peppers, less cilantro)",
+          "The cilantro is as important as the chili -- it provides the herbal freshness"
+        ],
+        "description": "Yemeni fiery green chili paste -- schug (zhug), fresh green chilies blended with cilantro, garlic, cumin, and cardamom. Intensely spicy -- Yemeni food is among the spiciest in the Arab world. Brought to Israel by Yemeni Jews. The cilantro provides herbal freshness alongside the heat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Zkhoug_vert.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Zkhoug_vert.jpg"
+        }
+      },
+      {
+        "id": "yem-sn-4",
+        "name": "Kubaneh (Overnight Bread)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 480,
+        "ingredients": [
+          "Flour, yeast",
+          "Butter (generous -- brushed on each layer)",
+          "Sugar, salt",
+          "Water"
+        ],
+        "instructions": [
+          "Kubaneh is the Yemeni-Jewish Shabbat bread -- baked overnight like jachnun",
+          "A pull-apart bread: dough divided into balls, each brushed with butter, arranged in a pot",
+          "Baked on very low heat overnight -- 8+ hours",
+          "The result: soft, rich, buttery bread with a slightly caramelized bottom",
+          "Eaten on Shabbat morning with hard-boiled eggs (haminados), grated tomato, and schug",
+          "The Yemeni-Jewish culinary tradition is one of the oldest Jewish food traditions in the world",
+          "Yemeni Jews (Teimanim) lived in Yemen for over 2,000 years before their mass emigration to Israel"
+        ],
+        "description": "Yemeni-Jewish Shabbat bread -- kubaneh, butter-brushed dough balls baked overnight (8+ hours) on low heat until soft, rich, and caramelized. Eaten Shabbat morning with haminados eggs, tomato, and schug. The Teimanim (Yemeni Jews) lived in Yemen for 2,000+ years. One of the oldest Jewish food traditions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Yemenite_Kubaneh.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Yemenite_Kubaneh.jpg"
+        }
+      },
+      {
+        "id": "yem-sn-5",
+        "name": "Basbousa (Semolina Sweet)",
+        "difficulty": "Easy",
+        "servings": 16,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Semolina",
+          "Sugar, butter",
+          "Yoghurt",
+          "Baking powder",
+          "Sugar syrup (orange blossom scented)",
+          "Almonds (on top)"
+        ],
+        "instructions": [
+          "Basbousa is the semolina sweet cake found across the Arab world",
+          "A dense semolina batter baked and soaked in orange blossom syrup",
+          "Cut into diamond or square pieces, each topped with an almond",
+          "Sweet, syrupy, and fragrant",
+          "An everyday sweet bought from bakeries",
+          "The same dessert family as rawani -- semolina-syrup cakes span the Arab and Ottoman worlds"
+        ],
+        "description": "Arab semolina sweet -- basbousa, dense semolina cake baked and soaked in orange blossom syrup, topped with almonds and cut into diamonds. An everyday bakery sweet across the Arab world.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Basboosa.jpg",
+        "imageCredit": {
+          "author": "stu_spivack",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABasboosa.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "yem-ds-1",
+        "name": "Masoub (Banana Bread Pudding)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Flatbread",
+          "Ripe bananas",
+          "Cream",
+          "Honey",
+          "Black seed"
+        ],
+        "instructions": [
+          "Crumble bread",
+          "Mash bananas, mix with bread",
+          "Add cream and honey",
+          "Top with black seed"
+        ],
+        "description": "Mashed banana and bread with cream and honey.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Yemeni_Masoob.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Yemeni_Masoob.jpg"
+        }
+      },
+      {
+        "id": "yem-ds-2",
+        "name": "Rawani (Semolina Cake)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Semolina",
+          "Sugar, eggs, butter",
+          "Yoghurt",
+          "Baking powder",
+          "Sugar syrup (scented with rosewater or orange blossom)",
+          "Almonds (for topping)"
+        ],
+        "instructions": [
+          "Rawani is the Yemeni semolina cake soaked in scented syrup",
+          "A dense semolina batter baked until golden",
+          "Hot sugar syrup (rosewater or orange blossom scented) poured over the warm cake",
+          "The cake absorbs the syrup and becomes moist and fragrant",
+          "Similar to basbousa (Egyptian) and revani (Turkish) -- the semolina-syrup cake tradition spans the Middle East and Ottoman world",
+          "Topped with almonds and cut into diamond shapes"
+        ],
+        "description": "Yemeni semolina cake -- rawani, dense semolina batter baked golden and soaked in rosewater-scented sugar syrup. Similar to basbousa and revani across the Middle East. The semolina-syrup cake tradition spans the Ottoman world. Topped with almonds, cut into diamonds.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rras_2013-07-06_09-35.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rras_2013-07-06_09-35.jpg"
+        }
+      },
+      {
+        "id": "yem-ds-3",
+        "name": "Sabia (Yemeni Custard)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Milk",
+          "Cornstarch",
+          "Sugar",
+          "Cardamom, saffron",
+          "Rosewater",
+          "Pistachios, almonds (for garnish)"
+        ],
+        "instructions": [
+          "Sabia is the Yemeni milk custard -- set with cornstarch and flavored with cardamom and saffron",
+          "Milk thickened with cornstarch and sweetened, flavored with Arabian aromatics",
+          "Poured into bowls to set",
+          "Garnished with crushed pistachios and almonds",
+          "Similar to muhallabia across the Arab world",
+          "A light, fragrant dessert served after heavy meals"
+        ],
+        "description": "Yemeni milk custard -- sabia, milk thickened with cornstarch, flavored with cardamom, saffron, and rosewater. Garnished with pistachios and almonds. Similar to muhallabia across the Arab world. A light, fragrant dessert after heavy meals."
+      },
+      {
+        "id": "yem-ds-4",
+        "name": "Luqmat al-Qadi (Yemeni Doughnuts)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour, yeast, sugar",
+          "Saffron, cardamom",
+          "Oil for deep frying",
+          "Sugar syrup or honey (for soaking)",
+          "Sesame seeds (optional topping)"
+        ],
+        "instructions": [
+          "Luqmat al-qadi are Yemeni fried doughnut balls -- \"the judge's morsels\"",
+          "Yeast batter dropped into hot oil and fried until golden",
+          "Immediately soaked in sugar syrup or honey",
+          "Crispy outside, soft and airy inside, syrupy throughout",
+          "Similar to luqaimat (UAE/Gulf), loukoumades (Greek), and zalabia across the Arab world",
+          "The name \"judge's morsels\" -- perhaps because they were sweet enough to bribe a judge",
+          "A Ramadan sweet -- eaten at iftar"
+        ],
+        "description": "Yemeni fried doughnut balls -- luqmat al-qadi (the judge's morsels -- sweet enough to bribe a judge), yeast batter fried golden and soaked in honey or sugar syrup. Crispy outside, airy inside. A Ramadan iftar sweet. Part of the pan-Arab luqaimat/loukoumades family.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg"
+        }
+      },
+      {
+        "id": "yem-ds-5",
+        "name": "Halwa (Yemeni Sweet Confection)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Semolina or flour",
+          "Ghee or butter (generous)",
+          "Sugar",
+          "Cardamom, saffron",
+          "Rosewater",
+          "Nuts: almonds, pistachios"
+        ],
+        "instructions": [
+          "Yemeni halwa is the dense, aromatic sweet confection -- different from Indian or Turkish halva",
+          "Flour or semolina cooked in generous ghee with sugar and aromatics",
+          "Flavored with cardamom, saffron, and rosewater -- the Arabian sweet spice trinity",
+          "Rich, dense, and served in small portions because of the intensity",
+          "A Ramadan sweet and celebration confection",
+          "Yemeni halwa is especially rich in ghee -- almost candy-like in its density"
+        ],
+        "description": "Yemeni aromatic confection -- halwa, flour or semolina cooked in generous ghee with sugar, cardamom, saffron, and rosewater. Dense and intensely rich. Served in small portions. A Ramadan and celebration sweet. The Arabian sweet spice trinity: cardamom, saffron, rosewater.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "yem-dr-1",
+        "name": "Qishr (Coffee Husk Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Coffee husks",
+          "Ginger",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Boil husks with ginger 10 min",
+          "Strain, sweeten",
+          "Serve hot"
+        ],
+        "description": "Tea brewed from coffee cherry husks — older than coffee itself.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Syrian_meal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Syrian_meal.jpg"
+        }
+      },
+      {
+        "id": "yem-dr-2",
+        "name": "Yemeni Coffee",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Yemeni coffee beans (ground)",
+          "Cardamom",
+          "Ginger",
+          "Sugar"
+        ],
+        "instructions": [
+          "Brew coffee with cardamom and ginger",
+          "Add sugar",
+          "Serve in small cups"
+        ],
+        "description": "Spiced Yemeni coffee — from the birthplace of coffee.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg"
+        }
+      },
+      {
+        "id": "yem-dr-3",
+        "name": "Chai Aden (Aden-Style Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Black tea (strong -- CTC or dust grade for full extraction)",
+          "Sugar (generous)",
+          "Evaporated milk or condensed milk",
+          "Cardamom, cloves, cinnamon",
+          "Ginger (optional)"
+        ],
+        "instructions": [
+          "Chai Aden is the sweet, spiced, milky tea of Aden -- Yemen's port city",
+          "Strong black tea brewed with spices and sweetened heavily",
+          "Evaporated or condensed milk gives it a creamy richness",
+          "The spice blend: cardamom, cloves, cinnamon -- the Indian Ocean chai connection",
+          "Aden's position on the Indian Ocean trade routes brought Indian chai traditions to Yemen",
+          "Drunk throughout the day -- at home, at cafes, at work",
+          "The tea culture: Yemeni men chew qat (khat) in the afternoon while drinking chai"
+        ],
+        "description": "Aden port city tea -- chai Aden, strong black tea with cardamom, cloves, cinnamon, and evaporated milk, heavily sweetened. Indian Ocean trade brought chai traditions to Yemen's port. Drunk throughout the day. Yemeni men chew qat in the afternoon while drinking chai.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
+        }
+      },
+      {
+        "id": "yem-dr-4",
+        "name": "Shahi Haleeb (Royal Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Milk (whole)",
+          "Sugar",
+          "Cardamom",
+          "Saffron",
+          "Almonds or pistachios (crushed)"
+        ],
+        "instructions": [
+          "Shahi haleeb is the Yemeni spiced milk drink -- \"royal milk\"",
+          "Warm milk infused with cardamom and saffron, sweetened with sugar",
+          "Garnished with crushed nuts",
+          "Drunk warm as an evening or after-dinner drink",
+          "The saffron and cardamom: the Arabian luxury flavors",
+          "A comforting, soothing nighttime drink"
+        ],
+        "description": "Yemeni spiced milk -- shahi haleeb (royal milk), warm milk infused with cardamom and saffron, sweetened and garnished with crushed almonds or pistachios. A comforting evening drink. Saffron and cardamom are the Arabian luxury flavors."
+      }
+    ]
+  }
+}

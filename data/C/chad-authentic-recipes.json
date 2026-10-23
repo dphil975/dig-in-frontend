@@ -1,0 +1,500 @@
+{
+  "chadRecipes": {
+    "country": "Chad",
+    "region": "Central Africa",
+    "breakfast": [
+      {
+        "id": "tcd-bf-1",
+        "name": "Boule (Millet Ball)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups millet flour",
+          "4 cups water",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil water",
+          "Stir in millet flour",
+          "Cook until thick",
+          "Form into balls",
+          "Serve with sauce"
+        ],
+        "description": "Millet ball — Chad's daily staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pierre_Georges_Jeanniot_-_Boule_de_Suif_%28Ollendorff%2C_1902%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Pierre_Georges_Jeanniot_-_Boule_de_Suif_%28Ollendorff%2C_1902%29.jpg"
+        }
+      },
+      {
+        "id": "tcd-bf-2",
+        "name": "Beignets with Coffee",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups flour",
+          "Sugar",
+          "Yeast",
+          "Water",
+          "Oil for frying",
+          "Strong coffee"
+        ],
+        "instructions": [
+          "Mix dough, rise 30 min",
+          "Fry until golden",
+          "Serve with sweetened coffee"
+        ],
+        "description": "Fried dough with strong Chadian coffee.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Morning_Call_NOLA_Interior_WPA.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Morning_Call_NOLA_Interior_WPA.jpg"
+        }
+      },
+      {
+        "id": "tcd-bf-3",
+        "name": "Kawal Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Millet flour",
+          "Kawal (fermented dried leaves, powdered)",
+          "Water",
+          "Salt",
+          "Peanut oil"
+        ],
+        "instructions": [
+          "Cook millet porridge with water",
+          "Stir in kawal powder — it adds intense umami",
+          "Season with salt and a drizzle of peanut oil"
+        ],
+        "description": "Millet porridge flavored with kawal — fermented leaves that give a powerful savory taste, unique to Chad and Sudan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Kawal_being_pounded.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Kawal_being_pounded.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "tcd-ln-1",
+        "name": "Daraba (Okra and Peanut Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups okra (sliced)",
+          "1 cup peanut paste",
+          "Dried fish",
+          "Tomatoes",
+          "Onion",
+          "Palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion and tomatoes",
+          "Add okra and water",
+          "Add peanut paste",
+          "Add dried fish, simmer 20 min"
+        ],
+        "description": "Thick okra stew with peanuts and dried fish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Leucinodes_orbonalis.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Leucinodes_orbonalis.jpg"
+        }
+      },
+      {
+        "id": "tcd-ln-2",
+        "name": "Kisra (Sorghum Flatbread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups sorghum flour",
+          "Water",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix flour with water to thin batter",
+          "Let ferment 12 hours",
+          "Pour thin layer on hot griddle",
+          "Cook until set, peel off",
+          "Serve with stew"
+        ],
+        "description": "Thin fermented sorghum crepe.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Kisra_maker.jpeg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Kisra_maker.jpeg"
+        }
+      },
+      {
+        "id": "tcd-ln-3",
+        "name": "Sauce Gombo (Okra Sauce)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Fresh okra (sliced thin)",
+          "Beef or dried fish",
+          "Tomato",
+          "Onion",
+          "Garlic",
+          "Palm oil or peanut oil",
+          "Maggi cube",
+          "Salt",
+          "Boule (millet paste) to serve"
+        ],
+        "instructions": [
+          "Sauté onion and garlic in oil",
+          "Add tomato, cook until broken down",
+          "Add sliced okra",
+          "Add meat or dried fish with water",
+          "Simmer 20 min until okra is slimy and sauce is thick",
+          "Season",
+          "Serve over boule"
+        ],
+        "description": "Slimy okra sauce over millet paste — the sliminess is the point, a valued texture across the Sahel.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Okro_soup_with_beef_and_Seafoods.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Okro_soup_with_beef_and_Seafoods.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "tcd-dn-1",
+        "name": "La Bouillie (Meat and Vegetable Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "500g beef or goat",
+          "3 tomatoes",
+          "2 onions",
+          "Okra",
+          "Dried peppers",
+          "Peanut paste",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown meat, add onions and tomatoes",
+          "Add water, simmer 40 min",
+          "Add okra and peanut paste",
+          "Cook 20 more min",
+          "Serve with boule"
+        ],
+        "description": "Rich meat stew with okra and peanuts.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Femme_servant_de_la_bouillie_lors_d%27un_evenement_%C3%A0_N%27Djam%C3%A9na.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Femme_servant_de_la_bouillie_lors_d%27un_evenement_%C3%A0_N%27Djam%C3%A9na.png"
+        }
+      },
+      {
+        "id": "tcd-dn-2",
+        "name": "Grilled Fish (Banda)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "4 whole fish (tilapia)",
+          "Lemon",
+          "Garlic",
+          "Dried chili",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Score fish, rub with garlic, chili, lemon, salt",
+          "Grill slowly over wood fire",
+          "Turn once, cook until charred and flaky",
+          "Serve with cassava"
+        ],
+        "description": "Wood-fire grilled whole fish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fish_stuffed_with_Thai_herbs.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fish_stuffed_with_Thai_herbs.jpg"
+        }
+      },
+      {
+        "id": "tcd-dn-3",
+        "name": "Jarret de Boeuf (Braised Beef Shank)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 90,
+        "ingredients": [
+          "Beef shank (cross-cut)",
+          "Onion",
+          "Garlic",
+          "Tomato paste",
+          "Maggi cube",
+          "Bay leaf",
+          "Chili pepper",
+          "Oil",
+          "Salt",
+          "Rice to serve"
+        ],
+        "instructions": [
+          "Brown beef shanks in oil",
+          "Add onion, garlic, cook until soft",
+          "Add tomato paste, bay leaf, chili, Maggi",
+          "Add water to cover",
+          "Simmer 90 min until meat falls off bone",
+          "The marrow melts into the sauce",
+          "Serve over rice"
+        ],
+        "description": "Slow-braised beef shank — the bone marrow enriches the sauce as it cooks. A Chadian celebration dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kissar_%C3%A0_base_du_mil.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kissar_%C3%A0_base_du_mil.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "tcd-sn-1",
+        "name": "Fried Sweet Potato Chips",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "4 sweet potatoes",
+          "Oil",
+          "Salt",
+          "Chili powder"
+        ],
+        "instructions": [
+          "Slice sweet potatoes thin",
+          "Deep fry until crispy",
+          "Season with salt and chili"
+        ],
+        "description": "Crispy, spicy sweet potato chips.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Potato-Chips.jpg",
+        "imageCredit": {
+          "author": "Evan-Amos",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3APotato-Chips.jpg"
+        }
+      },
+      {
+        "id": "tcd-sn-2",
+        "name": "Beignets au Niébé (Cowpea Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups cowpeas (black-eyed peas, soaked, skinned)",
+          "Onion",
+          "Scotch bonnet pepper",
+          "Salt",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Blend soaked cowpeas with onion, pepper to thick paste",
+          "Whip paste until airy",
+          "Season with salt",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden",
+          "Serve hot with pepper sauce"
+        ],
+        "description": "Cowpea fritters — airy inside, crispy outside, sold at markets across N'Djamena."
+      },
+      {
+        "id": "tcd-sn-4",
+        "name": "Brochettes de Mouton (Grilled Lamb Skewers)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "500g lamb (cubed)",
+          "Yaji spice: ground peanuts, cayenne, ginger, garlic powder, onion powder, salt",
+          "Onion (sliced rings)",
+          "Lemon wedges",
+          "Wooden skewers"
+        ],
+        "instructions": [
+          "Cube lamb into bite-sized pieces",
+          "Make yaji spice mix: grind peanuts and mix with all spices",
+          "Coat lamb generously in yaji",
+          "Thread onto skewers",
+          "Grill over charcoal until charred edges but pink inside — 8 min",
+          "Serve with raw onion rings and lemon",
+          "These are the heartbeat of N'Djamena's night markets — charcoal grills line every street after sunset"
+        ],
+        "description": "Chad's night market staple — lamb skewers coated in yaji peanut spice and grilled over charcoal. N'Djamena's evening grilling scene, with smoke-filled streets and the sizzle of meat on charcoal, has become viral content for Sahel food tourism."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "tcd-ds-1",
+        "name": "Honey-Roasted Peanuts",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "2 cups peanuts",
+          "3 tbsp honey",
+          "Salt"
+        ],
+        "instructions": [
+          "Toast peanuts in dry pan",
+          "Drizzle with honey, toss",
+          "Cook until caramelized",
+          "Sprinkle salt, cool"
+        ],
+        "description": "Caramelized honey peanuts.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Honey_roasted_peanuts.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Honey_roasted_peanuts.JPG"
+        }
+      },
+      {
+        "id": "tcd-ds-2",
+        "name": "Bouillie Sucrée (Sweet Millet Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Millet flour",
+          "Milk",
+          "Sugar",
+          "Peanut butter",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Mix millet flour with cold milk to avoid lumps",
+          "Heat, stirring constantly",
+          "Cook until thick and creamy",
+          "Sweeten with sugar",
+          "Swirl in peanut butter",
+          "Serve warm"
+        ],
+        "description": "Sweet millet porridge enriched with peanut butter and milk — served as dessert or a nourishing snack."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "tcd-dr-1",
+        "name": "Jus de Tamarin (Tamarind Juice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "200g tamarind",
+          "1L water",
+          "Sugar"
+        ],
+        "instructions": [
+          "Soak tamarind in water 30 min",
+          "Squeeze and strain",
+          "Sweeten, serve cold"
+        ],
+        "description": "Tangy tamarind juice."
+      },
+      {
+        "id": "tcd-dr-2",
+        "name": "Bili-Bili (Millet Beer)",
+        "difficulty": "Medium",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "2kg millet",
+          "Water",
+          "Malt"
+        ],
+        "instructions": [
+          "Soak and sprout millet",
+          "Grind, cook into mash",
+          "Ferment 2-3 days",
+          "Strain and serve"
+        ],
+        "description": "Traditional millet beer.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Acciugaio_in_Valle_Maira.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Acciugaio_in_Valle_Maira.jpg"
+        }
+      },
+      {
+        "id": "tcd-dr-3",
+        "name": "Karkanji (Hibiscus and Ginger Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Dried hibiscus flowers",
+          "Fresh ginger (grated)",
+          "Sugar",
+          "Mint",
+          "Water"
+        ],
+        "instructions": [
+          "Boil hibiscus and ginger together 10 min",
+          "Strain, pressing out all flavor",
+          "Sweeten with sugar",
+          "Add mint leaves",
+          "Chill thoroughly"
+        ],
+        "description": "Hibiscus drink with a strong ginger kick — Chad's version is more gingery than other West African bissap.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Fufu.jpg",
+        "imageCredit": {
+          "author": "Londonsista",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFufu.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "austriaRecipes": {
+    "country": "Austria",
+    "region": "Central Europe",
+    "breakfast": [
+      {
+        "id": "aut-bf-1",
+        "name": "Kaiserschmarrn (Emperor's Shredded Pancake)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "3 eggs (separated)",
+          "150g flour",
+          "200ml milk",
+          "30g sugar",
+          "30g butter",
+          "Pinch of salt",
+          "Raisins (optional)",
+          "Powdered sugar",
+          "Plum compote (Zwetschgenröster)"
+        ],
+        "instructions": [
+          "Beat yolks with milk, sugar, salt; stir in flour",
+          "Beat whites to stiff peaks, fold in gently — this is what makes it fluffy",
+          "Melt butter in skillet, pour in batter",
+          "Add raisins if using",
+          "Cook until bottom sets, tear into pieces with two forks",
+          "Keep tossing and turning pieces until golden and caramelized",
+          "Dust generously with powdered sugar",
+          "Serve with warm plum compote"
+        ],
+        "description": "Legend says Emperor Franz Joseph loved this torn-up pancake. Every ski hut and mountain restaurant in Austria serves it.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg"
+        }
+      },
+      {
+        "id": "aut-bf-2",
+        "name": "Semmel mit Butter und Marmelade",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "2 Semmeln (Austrian bread rolls)",
+          "Butter",
+          "Apricot jam (Marillenmarmelade)"
+        ],
+        "instructions": [
+          "Slice Semmeln in half",
+          "Spread generously with butter",
+          "Top with apricot jam"
+        ],
+        "description": "The Austrian breakfast standard — a crusty roll, butter, and Wachau apricot jam. Eaten at every hotel breakfast table.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bread_rolls_at_a_bakery.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bread_rolls_at_a_bakery.jpg"
+        }
+      },
+      {
+        "id": "aut-bf-3",
+        "name": "Topfenpalatschinken (Curd-Filled Crêpes)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Crêpes: 150g flour, 2 eggs, 250ml milk, pinch salt, butter",
+          "Filling: 500g Topfen (quark/curd cheese), 2 egg yolks, 60g sugar, lemon zest, vanilla, raisins",
+          "Topping: sour cream, powdered sugar"
+        ],
+        "instructions": [
+          "Make thin crêpes",
+          "Mix Topfen with yolks, sugar, lemon zest, vanilla, raisins",
+          "Fill each crêpe, roll up",
+          "Place in buttered baking dish, pour sour cream over",
+          "Bake at 180°C for 20 min",
+          "Dust with powdered sugar"
+        ],
+        "description": "Delicate crêpes stuffed with sweetened curd cheese and baked until golden."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "aut-ln-1",
+        "name": "Wiener Schnitzel",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "4 veal cutlets (pounded very thin, 4-5mm)",
+          "Flour",
+          "2 eggs (beaten with splash of cream)",
+          "Fine breadcrumbs (from day-old Semmeln)",
+          "Clarified butter or lard for frying",
+          "Lemon wedges",
+          "Lingonberry jam",
+          "Potato salad"
+        ],
+        "instructions": [
+          "Pound veal between plastic wrap until very thin and even",
+          "Season with salt only — never pepper on a Schnitzel",
+          "Dredge in flour, shake off excess",
+          "Dip in egg wash, let excess drip",
+          "Press into breadcrumbs — don't pack, keep it loose",
+          "Fry in plenty of hot fat — the Schnitzel must swim, not sit",
+          "Shake the pan constantly — this creates the signature wrinkly, puffy coating",
+          "Fry 2-3 min per side until deep golden",
+          "Drain briefly, serve immediately with lemon wedge",
+          "Parsley, lingonberry jam, and potato salad on the side"
+        ],
+        "description": "Vienna's gift to the world. Real Wiener Schnitzel is VEAL, never pork (that's Schnitzel Wiener Art). The coating must puff away from the meat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Wiener-Schnitzel02.jpg",
+        "imageCredit": {
+          "author": "Kobako",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AWiener-Schnitzel02.jpg"
+        }
+      },
+      {
+        "id": "aut-ln-2",
+        "name": "Tafelspitz (Boiled Beef)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 150,
+        "ingredients": [
+          "1.5kg Tafelspitz (beef top sirloin cap)",
+          "Beef bones",
+          "1 onion (halved, charred)",
+          "Carrots",
+          "Celery root",
+          "Leek",
+          "Parsley root",
+          "Peppercorns",
+          "Bay leaf",
+          "Salt",
+          "Accompaniments: apple-horseradish sauce, chive sauce, roasted potatoes"
+        ],
+        "instructions": [
+          "Place bones in cold water, bring to boil, skim thoroughly",
+          "Add charred onion, peppercorns, bay leaf",
+          "After 1 hour, add the beef in one piece",
+          "Simmer very gently — never boil — for 2 hours",
+          "Add root vegetables in the last 45 min",
+          "Meat is done when a fork slides in and out easily",
+          "Slice against the grain, arrange on warm platter with vegetables",
+          "Serve in broth, with apple-horseradish and chive sauce alongside",
+          "Ladle some broth over the meat at the table"
+        ],
+        "description": "Emperor Franz Joseph's favorite meal, served daily at the Habsburg court. The test of a great Viennese cook.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Tafelspitz.jpg",
+        "imageCredit": {
+          "author": "RobertK",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATafelspitz.jpg"
+        }
+      },
+      {
+        "id": "aut-ln-3",
+        "name": "Frittatensuppe (Pancake Strip Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Clear beef broth (500ml per person)",
+          "Crêpes: 2 eggs, 100g flour, 150ml milk, salt, butter",
+          "Chives (finely cut)"
+        ],
+        "instructions": [
+          "Make thin crêpes, let cool",
+          "Roll each crêpe up tightly",
+          "Slice into thin strips (Frittaten)",
+          "Heat beef broth until piping hot",
+          "Place a nest of crêpe strips in each bowl",
+          "Ladle hot broth over",
+          "Scatter with chives"
+        ],
+        "description": "The classic first course of any Austrian Sunday lunch — delicate crêpe strips floating in crystal-clear beef broth.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "aut-dn-1",
+        "name": "Backhendl (Fried Chicken, Viennese-Style)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "1 whole chicken (cut into 8 pieces)",
+          "Flour",
+          "2 eggs (beaten)",
+          "Fine breadcrumbs",
+          "Clarified butter or lard",
+          "Lemon wedges",
+          "Parsley (deep-fried)",
+          "Salt"
+        ],
+        "instructions": [
+          "Season chicken with salt, rest 10 min",
+          "Coat in flour, egg, breadcrumbs — same technique as Schnitzel",
+          "Fry in plenty of hot fat, turning occasionally",
+          "Cook 12-15 min until deep golden and cooked through",
+          "Fry parsley sprigs briefly until crispy",
+          "Drain chicken on wire rack",
+          "Serve with lemon and fried parsley"
+        ],
+        "description": "Fried chicken, Austrian-style — crumbed like a Schnitzel. Predates American fried chicken by centuries.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Backhendl_Cuisine_of_Austria_IMG_0061.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Backhendl_Cuisine_of_Austria_IMG_0061.JPG"
+        }
+      },
+      {
+        "id": "aut-dn-2",
+        "name": "Schweinsbraten (Roast Pork)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "1.5kg pork shoulder (skin on, scored)",
+          "Caraway seeds",
+          "Garlic (sliced)",
+          "Salt",
+          "1 onion",
+          "500ml dark beer",
+          "Sauerkraut",
+          "Bread dumplings (Semmelknödel)"
+        ],
+        "instructions": [
+          "Score the skin in a diamond pattern",
+          "Rub salt and caraway into the cuts, stud with garlic",
+          "Place on rack in roasting pan with onion and beer",
+          "Roast at 180°C for 2 hours, basting with pan juices",
+          "Last 20 min, increase to 220°C for crackling",
+          "The skin should be shattering-crisp, the meat tender",
+          "Let rest 15 min",
+          "Serve with sauerkraut and bread dumplings, ladle pan juices over"
+        ],
+        "description": "Austrian-style pork roast with caraway and crackling — the Sunday dinner across Gasthaus kitchens.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Chicken_Noodle_Soup_US.jpg"
+        }
+      },
+      {
+        "id": "aut-dn-3",
+        "name": "Kaspressknödel (Cheese Dumplings)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "200g stale bread (cubed)",
+          "150ml warm milk",
+          "2 eggs",
+          "150g Bergkäse or Gruyère (grated)",
+          "1 onion (diced, sautéed)",
+          "Parsley",
+          "Salt, pepper, nutmeg",
+          "Butter for frying",
+          "Clear broth or green salad"
+        ],
+        "instructions": [
+          "Soak bread in milk until soft",
+          "Mix with eggs, cheese, sautéed onion, parsley, seasoning",
+          "Shape into thick patties (not balls)",
+          "Fry in butter until golden on both sides, 4 min per side",
+          "Serve floating in clear broth, or on a green salad with vinaigrette"
+        ],
+        "description": "Tyrolean cheese dumplings — pressed flat and fried golden, served in broth or on salad in every mountain hut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "aut-sn-1",
+        "name": "Leberkäse-Semmel",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Thick slice Leberkäse (baked meatloaf)",
+          "1 Semmel (bread roll)",
+          "Mustard (sweet Senf or sharp)"
+        ],
+        "instructions": [
+          "Slice Leberkäse thick from the loaf — ideally fresh from the oven with a crispy top",
+          "Split Semmel",
+          "Place Leberkäse inside",
+          "Add mustard — the sweet Bavarian type is traditional"
+        ],
+        "description": "Austria's ubiquitous snack — a thick slab of warm meatloaf in a crusty roll with mustard. Bought from every Fleischerei and market stand.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Leberk%C3%A4se-1.jpg",
+        "imageCredit": {
+          "author": "Rainer Z ...",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALeberk%C3%A4se-1.jpg"
+        }
+      },
+      {
+        "id": "aut-sn-2",
+        "name": "Brezn (Pretzel)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "500g flour",
+          "300ml warm water",
+          "7g yeast",
+          "1 tbsp sugar",
+          "2 tsp salt",
+          "50g butter",
+          "Lye bath: 1L water, 40g food-grade lye (or 60g baking soda)",
+          "Coarse salt"
+        ],
+        "instructions": [
+          "Dissolve yeast in warm water with sugar",
+          "Mix with flour, salt, butter; knead until smooth and elastic",
+          "Rise 1 hour",
+          "Divide into 8 pieces, roll into long ropes",
+          "Shape into pretzels",
+          "Dip briefly in lye bath",
+          "Place on lined tray, sprinkle coarse salt",
+          "Bake at 220°C for 12-15 min until deep mahogany"
+        ],
+        "description": "Soft, chewy, lye-dipped pretzels with coarse salt — the Bäckerei staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/BrezelnSalz02_%28cropped%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/BrezelnSalz02_%28cropped%29.JPG"
+        }
+      },
+      {
+        "id": "aut-sn-3",
+        "name": "Käsekrainer (Cheese-Filled Sausage)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "2 Käsekrainer sausages (pork sausages with pockets of melted cheese inside)",
+          "Semmel roll or bread",
+          "Senf (Austrian sweet mustard)",
+          "Kren (freshly grated horseradish)"
+        ],
+        "instructions": [
+          "Grill or pan-fry Käsekrainer until the skin is crispy and the cheese inside is molten",
+          "Be careful — the cheese explodes when you bite in",
+          "Serve in a Semmel roll with sweet mustard and horseradish",
+          "Or eat standalone at a Würstelstand (sausage stand)"
+        ],
+        "description": "Sausage with pockets of molten cheese inside — the Würstelstand (sausage stand) classic. Went viral when food tourists discovered the cheese explosion on the first bite. Available at 3am outside every Viennese nightclub.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/K%C3%A4sekrainer.jpg",
+        "imageCredit": {
+          "author": "Kobako",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AK%C3%A4sekrainer.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "aut-ds-1",
+        "name": "Sachertorte",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 45,
+        "cookTime": 45,
+        "ingredients": [
+          "Cake: 130g dark chocolate, 130g butter, 100g powdered sugar, 6 eggs (separated), 130g sugar, 130g flour",
+          "Filling: apricot jam",
+          "Glaze: 200g dark chocolate, 200g sugar, 125ml water"
+        ],
+        "instructions": [
+          "Melt chocolate, cool slightly",
+          "Cream butter and powdered sugar until fluffy",
+          "Add yolks one at a time, fold in melted chocolate",
+          "Beat whites with sugar to stiff peaks",
+          "Fold whites and flour alternately into chocolate mixture — gently",
+          "Bake at 175°C for 45 min, test with skewer",
+          "Cool, slice horizontally into two layers",
+          "Warm apricot jam, brush over top and sides, let set",
+          "Make glaze: boil sugar and water to thread stage (106°C), stir in chopped chocolate until smooth",
+          "Pour glaze over cake, spread evenly with palette knife — one smooth coat, no re-touching",
+          "Let set at room temperature",
+          "Serve with unsweetened whipped cream (Schlagobers) — never with the cake, always on the side"
+        ],
+        "description": "Hotel Sacher's legendary chocolate cake, the subject of a 7-year legal battle with Demel. The 'Original Sachertorte' stamp on top is a trademark.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sachertorte_DSC03027.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Sachertorte_DSC03027.JPG"
+        }
+      },
+      {
+        "id": "aut-ds-2",
+        "name": "Apfelstrudel (Apple Strudel)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 40,
+        "ingredients": [
+          "Strudel dough: 250g flour, 1 egg, 2 tbsp oil, warm water, pinch salt",
+          "Filling: 1kg tart apples (peeled, thin-sliced), 80g sugar, cinnamon, 80g raisins (rum-soaked), 80g breadcrumbs (toasted in butter), lemon zest",
+          "Melted butter",
+          "Powdered sugar",
+          "Vanilla sauce (Vanillesauce)"
+        ],
+        "instructions": [
+          "Make dough: mix flour, egg, oil, salt, water; knead until silky",
+          "Rest covered 30 min",
+          "Stretch dough on floured cloth by hand — pull from underneath with backs of hands until you can read a newspaper through it",
+          "Brush with melted butter",
+          "Spread toasted breadcrumbs, then apple slices, raisins, sugar, cinnamon, lemon zest",
+          "Roll up using the cloth, tuck ends under",
+          "Transfer to lined tray, brush with butter",
+          "Bake at 180°C for 35-40 min, brushing with butter twice more",
+          "Dust with powdered sugar while warm",
+          "Serve with warm vanilla sauce"
+        ],
+        "description": "Real Viennese strudel is hand-stretched paper-thin — bakery students must prove they can read through the dough. The breadcrumb layer keeps it crispy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Strudel.jpg",
+        "imageCredit": {
+          "author": "che",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AStrudel.jpg"
+        }
+      },
+      {
+        "id": "aut-ds-3",
+        "name": "Buchteln (Jam-Filled Buns)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "Dough: 500g flour, 250ml warm milk, 7g yeast, 80g sugar, 80g butter, 2 egg yolks, lemon zest, vanilla, pinch salt",
+          "Filling: plum jam (Powidl)",
+          "Butter for the pan",
+          "Vanilla sauce (Vanillesoße): milk, vanilla, egg yolks, sugar, cornstarch"
+        ],
+        "instructions": [
+          "Make enriched dough, knead until silky, rise 1 hour",
+          "Divide into portions, flatten each, place a spoonful of plum jam in center",
+          "Close dough around jam, pinch shut, place seam-down in buttered pan — pack tightly together",
+          "Let rise 20 min",
+          "Bake at 180°C for 22-25 min until golden on top",
+          "Make vanilla sauce while they bake: heat milk with vanilla, whisk yolks with sugar and cornstarch, temper, cook until thick",
+          "Serve warm Buchteln — pull apart from each other — and drown in vanilla sauce",
+          "The jam inside should be molten"
+        ],
+        "description": "Soft yeast buns filled with plum jam, pulled apart at the table and drowned in hot vanilla sauce — Viennese grandmother food that went viral for the ASMR of pulling the connected buns apart. The vanilla sauce pooling around the warm buns is everything.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Buchteln.jpg",
+        "imageCredit": {
+          "author": "Gerhard Juengling at de.wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABuchteln.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "aut-dr-1",
+        "name": "Wiener Melange",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Espresso or strong filter coffee",
+          "Steamed milk",
+          "Milk foam"
+        ],
+        "instructions": [
+          "Brew strong coffee",
+          "Steam milk and create light foam",
+          "Pour coffee into cup, leaving room",
+          "Add steamed milk until cup is three-quarters full",
+          "Top with a cap of light foam",
+          "Serve with a glass of water on the side — always"
+        ],
+        "description": "Vienna's signature coffee — similar to a cappuccino but gentler. The glass of tap water served alongside is non-negotiable Viennese tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Wiener_Melange_0363wien_img_9691.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Wiener_Melange_0363wien_img_9691.jpg"
+        }
+      },
+      {
+        "id": "aut-dr-2",
+        "name": "Almdudler",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Almdudler herbal soda"
+        ],
+        "instructions": [
+          "Serve chilled",
+          "Austria's national soft drink — herbal and lightly sweet",
+          "Often mixed with white wine as a Spritzer (Almspritzer)"
+        ],
+        "description": "The Austrian answer to Coca-Cola — a herbal lemonade since 1957, outselling all other soft drinks in the country.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Almdudlerflaschen.jpg",
+        "imageCredit": {
+          "author": "Loimo",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AAlmdudlerflaschen.jpg"
+        }
+      },
+      {
+        "id": "aut-dr-3",
+        "name": "Glühwein (Mulled Wine)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "1 bottle red wine",
+          "2 cinnamon sticks",
+          "4 cloves",
+          "2 star anise",
+          "Orange peel",
+          "80g sugar",
+          "Splash of rum (optional)"
+        ],
+        "instructions": [
+          "Pour wine into pot, add all spices and orange peel",
+          "Heat gently — never boil, or the alcohol evaporates",
+          "Add sugar, stir until dissolved",
+          "Steep 15 min on low heat",
+          "Strain into mugs",
+          "Add a splash of rum if it's very cold outside"
+        ],
+        "description": "The smell of Christmas markets — warm spiced wine from November through December at every Christkindlmarkt stall in Austria.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Gl%C3%BChwein_Weinnachtsmarkt_OS.JPG"
+        }
+      }
+    ]
+  }
+}

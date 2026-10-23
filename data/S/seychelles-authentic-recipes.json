@@ -1,0 +1,612 @@
+{
+  "seychellesRecipes": {
+    "country": "Seychelles",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "syc-bf-1",
+        "name": "Ladob Salé (Savory Breadfruit)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Breadfruit",
+          "Salted fish",
+          "Coconut milk",
+          "Onion",
+          "Ginger",
+          "Garlic",
+          "Chili"
+        ],
+        "instructions": [
+          "Boil breadfruit in coconut milk",
+          "Add salted fish, onion, ginger, garlic, chili",
+          "Simmer until thick"
+        ],
+        "description": "Savory breadfruit in coconut milk with fish."
+      },
+      {
+        "id": "syc-bf-2",
+        "name": "Rougaille Oeuf (Egg Rougaille)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Eggs",
+          "Tomatoes",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Thyme",
+          "Chili",
+          "Oil"
+        ],
+        "instructions": [
+          "Make tomato sauce with onion, garlic, ginger, thyme",
+          "Crack eggs into sauce",
+          "Cook until set"
+        ],
+        "description": "Eggs in spicy Creole tomato sauce."
+      },
+      {
+        "id": "syc-bf-3",
+        "name": "Ladob (Sweet Ripe Plantain)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Ripe plantains",
+          "Coconut milk",
+          "Sugar",
+          "Cinnamon, nutmeg, vanilla"
+        ],
+        "instructions": [
+          "Ladob is the Seychellois sweet dish of ripe plantain cooked in coconut milk",
+          "The ripe plantain: very yellow, almost black -- maximum sweetness",
+          "Cooked in sweetened coconut milk with warm spices",
+          "Can be breakfast or dessert -- sweet but substantial",
+          "The Seychellois Creole cuisine blends African, French, Indian, and Chinese influences"
+        ],
+        "description": "Seychellois sweet plantain in coconut milk -- very ripe plantains simmered in sweetened coconut milk with cinnamon, nutmeg, and vanilla. Can be breakfast or dessert. Seychellois Creole cuisine blends African, French, Indian, and Chinese traditions."
+      },
+      {
+        "id": "syc-bf-4",
+        "name": "French Bread with Butter and Jam",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "French baguette (baked daily in Seychelles -- French colonial heritage)",
+          "Butter",
+          "Local jam: papaya, mango, or guava"
+        ],
+        "instructions": [
+          "French baguette is baked fresh daily throughout Seychelles",
+          "A legacy of French colonization (1742-1810)",
+          "Even after British colonization and independence, the French bread tradition persists",
+          "Local tropical jams: papaya, mango, guava -- made from island fruit",
+          "The combination of French technique and tropical fruit is distinctly Seychellois"
+        ],
+        "description": "Seychellois French baguette with tropical jam -- fresh daily baguette (French colonial legacy from 1742-1810) with butter and local papaya, mango, or guava jam. Even after British colonization, the French bread tradition persisted. French technique, tropical flavors.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/FrenchToast.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFrenchToast.JPG"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "syc-ln-1",
+        "name": "Kat-Kat Banane (Fish and Banana Curry)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Fish fillets",
+          "Green bananas",
+          "Coconut milk",
+          "Curry spices",
+          "Onion",
+          "Garlic",
+          "Ginger"
+        ],
+        "instructions": [
+          "Cook fish in coconut curry",
+          "Boil green bananas separately",
+          "Add bananas to curry",
+          "Simmer until thick"
+        ],
+        "description": "Fish curry with green bananas in coconut milk.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "syc-ln-2",
+        "name": "Octopus Curry Seychellois",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Octopus (tenderized)",
+          "Coconut milk",
+          "Curry powder",
+          "Masala",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Tomatoes"
+        ],
+        "instructions": [
+          "Tenderize octopus, dice",
+          "Sauté aromatics with curry and masala",
+          "Add coconut milk and tomatoes",
+          "Add octopus, simmer 25 min"
+        ],
+        "description": "Tender octopus in rich coconut curry.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "syc-ln-3",
+        "name": "Rougaille de Saucisses (Sausage Creole Sauce)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Smoked sausages or bratwurst-type",
+          "Rougaille sauce: tomatoes, onion, garlic, ginger, chilli, thyme",
+          "Oil"
+        ],
+        "instructions": [
+          "Rougaille is the Seychellois Creole tomato sauce -- the base sauce of the cuisine",
+          "From the Reunionnais Creole tradition: rougail/rougaille (tomato-chilli sauce)",
+          "The sauce: tomatoes, onion, garlic, ginger, and chilli",
+          "Can be made with fish, meat, sausages, or prawns",
+          "Sausage rougaille: smoked sausages braised in the rougaille sauce",
+          "Served with rice -- the standard accompaniment"
+        ],
+        "description": "Seychellois smoked sausage in Creole tomato sauce -- sausages braised in rougaille (tomatoes, onion, garlic, ginger, and chilli). Rougaille is the mother sauce of Seychellois Creole cooking, shared with Reunion island. Served with white rice."
+      },
+      {
+        "id": "syc-ln-4",
+        "name": "Grilled Tuna Steak",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Fresh yellowfin tuna steak",
+          "Garlic, lemon juice",
+          "Chilli, fresh herbs",
+          "Oil, salt, pepper"
+        ],
+        "instructions": [
+          "Seychelles sits in the Indian Ocean -- tuna is caught in local waters",
+          "The yellowfin tuna: the most prized tuna species",
+          "Grilled fresh tuna steak: the simplest and best preparation",
+          "Marinated briefly with garlic, lemon, and chilli",
+          "Seared quickly on high heat -- the inside stays rare to medium",
+          "Freshness is everything with tuna"
+        ],
+        "description": "Seychellois grilled yellowfin tuna -- fresh tuna steak from Indian Ocean waters, marinated with garlic, lemon, and chilli, seared on high heat to rare-to-medium. The Seychelles Indian Ocean location provides exceptional fresh tuna.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Steak_with_shitaki_mushrooms.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Steak_with_shitaki_mushrooms.jpg"
+        }
+      },
+      {
+        "id": "syc-ln-5",
+        "name": "Satini Requiem (Shark Chutney)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Cooked shark meat (smoked or boiled)",
+          "Bilimbi or lime juice",
+          "Onion, chilli, turmeric",
+          "Salt"
+        ],
+        "instructions": [
+          "Satini requiem is the Seychellois shark chutney -- a specialty",
+          "Requiem: the name for shark in Seychellois Creole",
+          "The shark meat is cooked (smoked or boiled) then flaked",
+          "Mixed with bilimbi (a very sour fruit related to carambola) or lime",
+          "The sourness and the shredded shark: the distinctive combination",
+          "Eaten as a condiment alongside the main meal"
+        ],
+        "description": "Seychellois shark chutney -- cooked, flaked shark meat (requiem: the Creole word for shark) mixed with bilimbi (very sour fruit) or lime juice, onion, and chilli. Eaten as a condiment alongside the main dish. A Seychellois specialty."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "syc-dn-1",
+        "name": "Grilled Fish with Satini",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "4 fish fillets",
+          "Lime",
+          "Salt",
+          "Satini: green papaya, chili, lime, onion"
+        ],
+        "instructions": [
+          "Grate green papaya, mix with chili, lime, onion for satini",
+          "Season fish, grill until flaky",
+          "Serve with satini and rice"
+        ],
+        "description": "Grilled fish with green papaya chutney.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Averrhoa_bilimbi_dsc03692.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Averrhoa_bilimbi_dsc03692.jpg"
+        }
+      },
+      {
+        "id": "syc-dn-2",
+        "name": "Bat Curry",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "2 fruit bats",
+          "Coconut milk",
+          "Curry paste",
+          "Onion",
+          "Garlic",
+          "Ginger",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Clean and joint bats",
+          "Make curry with aromatics",
+          "Add bats and coconut milk",
+          "Simmer 40 min"
+        ],
+        "description": "Traditional Seychellois fruit bat curry.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Paniki_manado.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Paniki_manado.jpg"
+        }
+      },
+      {
+        "id": "syc-dn-3",
+        "name": "Pwason Griye (Grilled Fish Creole)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Whole fish (red snapper or grouper)",
+          "Rougaille sauce",
+          "Garlic, lime",
+          "Chilli",
+          "Oil"
+        ],
+        "instructions": [
+          "Grilled whole fish with rougaille sauce is the Seychellois fish dinner",
+          "The fish is scored and marinated",
+          "Grilled over coals",
+          "Served with rougaille sauce poured over or alongside",
+          "The combination of grilled fish and tomato-chilli rougaille"
+        ],
+        "description": "Seychellois grilled whole fish -- red snapper or grouper scored, marinated with garlic and lime, grilled over coals, served with rougaille sauce (Creole tomato-chilli). The standard Seychellois fish dinner."
+      },
+      {
+        "id": "syc-dn-4",
+        "name": "Cari Zourit (Octopus Curry)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "Octopus (cleaned, tenderized)",
+          "Coconut milk",
+          "Onion, garlic, ginger",
+          "Curry powder, turmeric",
+          "Tomatoes, chilli"
+        ],
+        "instructions": [
+          "Octopus curry is a Seychellois specialty -- Indian Ocean octopus",
+          "The octopus must be tenderized first -- boiled or beaten",
+          "Braised in a coconut milk curry",
+          "The Indian influence in the curry spices: the Seychellois Indian community (from Bombay)",
+          "The result: tender octopus in an aromatic coconut curry"
+        ],
+        "description": "Seychellois octopus curry -- Indian Ocean octopus tenderized then braised in coconut milk with curry powder, ginger, and turmeric. The Indian community (from Bombay, arriving in the 19th century) introduced curry spices to Seychellois cooking."
+      },
+      {
+        "id": "syc-dn-5",
+        "name": "Riz Creole (Creole Rice)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Long-grain rice",
+          "Coconut milk (a small amount)",
+          "Salt",
+          "Optional: bay leaf, lemon grass"
+        ],
+        "instructions": [
+          "Riz Creole is the Seychellois rice preparation -- not plain white, not completely coconut",
+          "A small amount of coconut milk is added to the cooking water",
+          "The rice absorbs a gentle coconut fragrance",
+          "The grains are separate -- not sticky",
+          "Served alongside every Seychellois meal"
+        ],
+        "description": "Seychellois Creole rice -- long-grain rice cooked with a small amount of coconut milk for gentle coconut fragrance, grain-separate, fluffy. The standard accompaniment to every Seychellois meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Riz_Casimir_%284247740294%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Riz_Casimir_%284247740294%29.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "syc-sn-1",
+        "name": "Gato Piman (Chili Cakes)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Split peas (soaked)",
+          "Chili",
+          "Onion",
+          "Cumin",
+          "Salt",
+          "Oil"
+        ],
+        "instructions": [
+          "Grind peas coarsely",
+          "Mix with chili, onion, cumin",
+          "Fry spoonfuls until golden"
+        ],
+        "description": "Spicy split pea fritters — Seychelles' favorite snack."
+      },
+      {
+        "id": "syc-sn-2",
+        "name": "Kari Bred (Leaf Curry Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Leafy greens (moringa, sweet potato leaves, or spinach)",
+          "Chickpea flour (besan)",
+          "Onion, garlic, ginger, curry powder",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Leaf fritters are a common snack across the Indian Ocean world",
+          "Seychelles: moringa leaves (the drumstick tree) are native and used",
+          "The leaves dipped in a spiced chickpea batter",
+          "Fried until crispy",
+          "The Indian-influenced chickpea batter reflects the Seychellois Indian community"
+        ],
+        "description": "Seychellois leaf fritters -- moringa or sweet potato leaves dipped in spiced chickpea batter (Indian-influenced: the besan batter) and fried crispy. Moringa is native to the islands. Quick street snack.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "syc-sn-3",
+        "name": "Coconut Nougat",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Grated fresh coconut",
+          "Brown sugar",
+          "Vanilla",
+          "Cinnamon"
+        ],
+        "instructions": [
+          "Coconut nougat is the Seychellois sweet -- made from the abundant local coconut",
+          "Grated coconut cooked with brown sugar until thick and caramelized",
+          "Set into bars or dropped onto paper to set",
+          "Sold at local markets -- a traditional confection"
+        ],
+        "description": "Seychellois coconut candy -- fresh grated coconut cooked with brown sugar until caramelized, set into bars. Made from the abundant island coconut. Sold at local markets.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Turr%C3%B3n_de_Alicante_%28Casa_Mira%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Turr%C3%B3n_de_Alicante_%28Casa_Mira%29.jpg"
+        }
+      },
+      {
+        "id": "syc-sn-4",
+        "name": "Samoossa (Indian-Seychellois Samosa)",
+        "difficulty": "Medium",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Pastry triangles",
+          "Filling: spiced meat or vegetables (potato, peas)",
+          "Onion, garlic, ginger, curry powder",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Samoosa is the Seychellois version of the Indian samosa",
+          "The Indian community brought samosas to Seychelles",
+          "Adapted over generations to the Seychellois pantry",
+          "The triangular fried pastry is the same",
+          "Fillings adapted: local vegetables, local spice blends"
+        ],
+        "description": "Seychellois Indian-influenced samosa -- triangular fried pastry filled with spiced meat or vegetables. The Indian community brought samosas to Seychelles; they were adapted over generations to local spices and vegetables."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "syc-ds-1",
+        "name": "Ladob (Sweet)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "Plantains or breadfruit",
+          "Coconut milk",
+          "Sugar",
+          "Vanilla",
+          "Nutmeg"
+        ],
+        "instructions": [
+          "Cook plantains in coconut milk with sugar and vanilla",
+          "Simmer until thick and syrupy",
+          "Grate nutmeg on top"
+        ],
+        "description": "Plantains in sweet vanilla-coconut sauce."
+      },
+      {
+        "id": "syc-ds-2",
+        "name": "Gato Banane (Banana Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe bananas (mashed)",
+          "Flour, egg",
+          "Sugar, cinnamon",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Banana fritters are eaten throughout the tropical world",
+          "Seychelles: bananas grow on every island",
+          "The overripe bananas are mashed into a batter",
+          "Fried until golden -- crispy outside, banana-sweet inside"
+        ],
+        "description": "Seychellois banana fritters -- overripe bananas mashed into a batter with flour and egg, fried until golden and crispy. Bananas grow on every Seychellois island.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Tapai_pulut_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Tapai_pulut_2.jpg"
+        }
+      },
+      {
+        "id": "syc-ds-3",
+        "name": "Gato Patate (Sweet Potato Cake)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Sweet potato (cooked and mashed)",
+          "Coconut milk",
+          "Sugar, cinnamon, nutmeg, vanilla"
+        ],
+        "instructions": [
+          "Sweet potato cake cooked in coconut milk",
+          "A simple, naturally sweet cake from island sweet potato",
+          "The coconut milk and warm spices are the Seychellois flavors"
+        ],
+        "description": "Seychellois sweet potato cake -- cooked sweet potato mashed with coconut milk, sugar, and warm spices, baked until set. Island sweet potato, local coconut milk. Simple and naturally sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Spaghetti_vongole_2.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "syc-dr-1",
+        "name": "Dite Citronelle (Lemongrass Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Fresh lemongrass",
+          "Water",
+          "Sugar"
+        ],
+        "instructions": [
+          "Boil lemongrass in water 10 min",
+          "Strain, sweeten",
+          "Serve hot or cold"
+        ],
+        "description": "Refreshing lemongrass tea."
+      },
+      {
+        "id": "syc-dr-2",
+        "name": "Calou (Palm Wine)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Coconut palm sap"
+        ],
+        "instructions": [
+          "Collect sap from coconut palm",
+          "Drink fresh same day"
+        ],
+        "description": "Fresh coconut palm wine.",
+        "image": "",
+        "imageCredit": {}
+      },
+      {
+        "id": "syc-dr-3",
+        "name": "Coco Fanny (Coconut Liqueur)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Coconut water and cream",
+          "Rum or locally-distilled spirit",
+          "Sugar",
+          "Vanilla"
+        ],
+        "instructions": [
+          "Coco Fanny is the Seychellois coconut cream liqueur",
+          "Made from local coconut with rum or locally-distilled spirit",
+          "Served cold over ice",
+          "The tropical coconut liqueur of the Seychelles"
+        ],
+        "description": "Seychellois coconut cream liqueur -- local coconut water and cream with rum and vanilla. The tropical island spirit of the Seychelles.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Cocoa_butter_p1410148.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Cocoa_butter_p1410148.JPG"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "country": "Uruguay",
+  "region": "Various",
+  "breakfast": [],
+  "lunch": [],
+  "dinner": [
+    {
+      "id": "uru-dinner-chivito",
+      "name": "Chivito (Uruguayan Grilled Steak Sandwich)",
+      "difficulty": "Medium",
+      "servings": 2,
+      "prepTime": 20,
+      "cookTime": 20,
+      "description": "Uruguayan grilled steak sandwich with toppings - hearty sandwich dinner",
+      "seasonings": [
+        "salt",
+        "pepper",
+        "garlic"
+      ],
+      "ingredients": [
+        "400g beef steak (sirloin or rib eye), thinly sliced",
+        "2 crusty bread rolls or sandwich rolls",
+        "100g ham, sliced",
+        "100g mozzarella cheese, sliced",
+        "2 eggs",
+        "4 strips bacon",
+        "2 tomatoes, sliced",
+        "Lettuce leaves",
+        "2 cloves garlic, minced",
+        "2 tablespoons butter",
+        "Salt and pepper to taste",
+        "Mayonnaise (optional)",
+        "Fried onions (optional)"
+      ],
+      "instructions": [
+        "Cook bacon in skillet until crispy, remove and chop",
+        "In same skillet, fry eggs sunny-side up, set aside",
+        "Season beef slices with salt, pepper, minced garlic",
+        "Heat skillet over high heat, quickly sear beef until cooked (total 2-3 minutes)",
+        "Slice rolls in half",
+        "Spread mayonnaise on rolls if desired",
+        "Layer bottom of roll: lettuce, tomato slices, cooked beef",
+        "Top with ham, mozzarella cheese, bacon pieces, fried egg",
+        "Cover with top of roll",
+        "Serve hot with french fries"
+      ],
+      "notes": "All components should be hot when assembled. Chivito is eaten for lunch or dinner",
+      "fun_fact": "Chivito is Uruguay's national sandwich, created in Montevideo in 1960s",
+      "alternatives": [
+        "Use different meats",
+        "Add avocado",
+        "Make with grilled chicken",
+        "Skip eggs"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 20,
+          "cook_time": 20,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 10,
+          "cook_time": 12,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 3,
+          "cook_time": 6,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Chivito_al_pan_uruguayo.jpg",
+      "imageCredit": {
+        "author": "Psjulien",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Chivito_al_pan_uruguayo.jpg"
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": []
+}

@@ -1,0 +1,690 @@
+{
+  "slovakiaRecipes": {
+    "country": "Slovakia",
+    "region": "Central Europe",
+    "breakfast": [
+      {
+        "id": "svk-bf-1",
+        "name": "Bryndzové Halušky",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Potatoes (grated)",
+          "Flour",
+          "Salt",
+          "Egg",
+          "Bryndza cheese",
+          "Bacon",
+          "Chives"
+        ],
+        "instructions": [
+          "Mix grated potato with flour, egg, salt",
+          "Press dough through spaetzle maker into boiling water",
+          "Drain, toss with bryndza cheese",
+          "Top with crispy bacon and chives"
+        ],
+        "description": "Slovakia's national dish — potato dumplings with sheep cheese and bacon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg"
+        }
+      },
+      {
+        "id": "svk-bf-2",
+        "name": "Lokše (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Potatoes (boiled, mashed)",
+          "Flour",
+          "Salt",
+          "Goose fat or butter"
+        ],
+        "instructions": [
+          "Mix mashed potatoes with flour and salt",
+          "Roll thin",
+          "Cook on dry griddle",
+          "Spread with goose fat"
+        ],
+        "description": "Thin potato pancakes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Lokse.JPG",
+        "imageCredit": {
+          "author": "Maciarka",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALokse.JPG"
+        }
+      },
+      {
+        "id": "svk-bf-3",
+        "name": "Pagac (Savory Dough Pastries)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 20,
+        "ingredients": [
+          "Yeast dough",
+          "Lard or butter",
+          "Cottage cheese or potato filling",
+          "Caraway seeds, paprika, salt"
+        ],
+        "instructions": [
+          "Pagac are Slovak savory pastries -- made from yeast dough",
+          "Filled with cottage cheese or mashed potato",
+          "Brushed with egg and sprinkled with caraway seeds",
+          "Baked until golden",
+          "A Slovak bakery staple -- sold alongside bread"
+        ],
+        "description": "Slovak savory yeast-dough pastries -- filled with cottage cheese or mashed potato, brushed with egg, sprinkled with caraway seeds, baked golden. A Slovak bakery staple sold alongside bread.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Pagac.jpg",
+        "imageCredit": {
+          "author": "Maciarka",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APagac.jpg"
+        }
+      },
+      {
+        "id": "svk-bf-4",
+        "name": "Ovsena Kasa (Oatmeal Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 10,
+        "ingredients": [
+          "Rolled oats",
+          "Milk or water",
+          "Salt or sugar",
+          "Butter",
+          "Optional: honey, dried fruit"
+        ],
+        "instructions": [
+          "Oatmeal porridge is the Slovak winter breakfast",
+          "Cooked in milk for richness",
+          "Can be sweet (with honey and dried fruit) or savory (with butter and salt)",
+          "The savory version with butter: the traditional Slovak way"
+        ],
+        "description": "Slovak oatmeal porridge -- rolled oats cooked in milk, served savory with butter and salt (the traditional Slovak way) or sweet with honey. The winter breakfast."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "svk-ln-1",
+        "name": "Kapustnica (Sauerkraut Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Sauerkraut",
+          "Smoked sausage",
+          "Smoked pork",
+          "Dried mushrooms",
+          "Onion",
+          "Paprika",
+          "Cream",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion with paprika",
+          "Add sauerkraut and water",
+          "Add smoked meat and mushrooms",
+          "Simmer 45 min",
+          "Add cream before serving"
+        ],
+        "description": "Rich sauerkraut soup with smoked meats — a Christmas tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/%D0%9A%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+        "imageCredit": {
+          "author": "Nicolai Fechin",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D0%9A%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B0.jpg"
+        }
+      },
+      {
+        "id": "svk-ln-2",
+        "name": "Vyprážaný Syr (Fried Cheese)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Thick slices of Edam-style cheese",
+          "Flour",
+          "Egg",
+          "Breadcrumbs",
+          "Oil",
+          "Tartare sauce",
+          "Fries"
+        ],
+        "instructions": [
+          "Coat cheese in flour, egg, breadcrumbs",
+          "Deep fry until golden",
+          "Serve with tartare sauce and fries"
+        ],
+        "description": "Breaded fried cheese with fries — Slovak comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/SMAZENY_SYR_2020.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/SMAZENY_SYR_2020.jpg"
+        }
+      },
+      {
+        "id": "svk-ln-3",
+        "name": "Kapustnica (Sauerkraut Soup)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Sauerkraut (fermented cabbage)",
+          "Smoked pork (ribs or hocks)",
+          "Dried mushrooms (porcini)",
+          "Onion, garlic",
+          "Paprika, caraway seeds",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Kapustnica is the Slovak national soup -- served at Christmas Eve dinner",
+          "The Christmas Eve kapustnica: a tradition that no Slovak family skips",
+          "Sauerkraut gives the sourness",
+          "Smoked pork ribs give the smokiness",
+          "Dried mushrooms give the earthy depth",
+          "A complex, rich, deeply satisfying soup"
+        ],
+        "description": "Slovak Christmas Eve sauerkraut soup -- sauerkraut, smoked pork ribs, and dried mushrooms simmered with paprika and caraway seeds into a complex, rich, sour-smoky-earthy soup. Served at Christmas Eve dinner across Slovakia without exception.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/%D0%9A%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+        "imageCredit": {
+          "author": "Nicolai Fechin",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D0%9A%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%BD%D0%B8%D1%86%D0%B0.jpg"
+        }
+      },
+      {
+        "id": "svk-ln-4",
+        "name": "Fazulova Polievka (Bean Soup)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "White or borlotti beans",
+          "Smoked pork",
+          "Onion, garlic",
+          "Paprika (sweet)",
+          "Flour (for roux thickening)",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Bean soup is the everyday Slovak soup",
+          "The beans are cooked with smoked pork",
+          "A flour-and-fat roux is used to thicken",
+          "Paprika gives the characteristic Slovak color and flavor",
+          "Sour cream stirred in at the end -- the Slovak finishing touch"
+        ],
+        "description": "Slovak bean soup -- white beans cooked with smoked pork, thickened with a roux, finished with sweet paprika and sour cream. The everyday Slovak soup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg"
+        }
+      },
+      {
+        "id": "svk-ln-5",
+        "name": "Bryndzove Halusky (Sheep Cheese Dumplings)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Potato dough (grated raw potato + flour)",
+          "Bryndza (Slovak sheep cheese -- pungent, crumbly)",
+          "Smoked bacon (fried until crispy)",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Bryndzove halusky is the Slovak national dish",
+          "Halusky: small potato dumplings, made by pressing potato dough through a colander",
+          "The dumplings fall directly into boiling water",
+          "Bryndza: the Slovak sheep cheese -- aged, pungent, crumbly, slightly salty",
+          "The bryndza is tossed with the hot halusky",
+          "Smoked bacon fried until crispy is scattered over the top",
+          "The combination of the soft dumplings and the pungent cheese and crispy bacon"
+        ],
+        "description": "Slovak national dish -- small potato dumplings (halusky) pressed through a colander directly into boiling water, tossed with bryndza (pungent aged sheep cheese), topped with crispy smoked bacon. Bryndza is the Slovak cheese identity.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bryndzov%C3%A9_halu%C5%A1ky_so_slaninou.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "svk-dn-1",
+        "name": "Segedin Goulash",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Pork (cubed)",
+          "Sauerkraut",
+          "Onion",
+          "Paprika",
+          "Caraway",
+          "Cream",
+          "Flour"
+        ],
+        "instructions": [
+          "Sauté onion, add paprika and caraway",
+          "Brown pork, add water",
+          "Simmer 40 min",
+          "Add sauerkraut, simmer 15 more min",
+          "Stir in cream"
+        ],
+        "description": "Pork goulash with sauerkraut and cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gulyas080.jpg",
+        "imageCredit": {
+          "author": "Lily15",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGulyas080.jpg"
+        }
+      },
+      {
+        "id": "svk-dn-2",
+        "name": "Pirohy (Pierogi)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 45,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, potato, egg, water",
+          "Filling: bryndza cheese, potato, or sauerkraut",
+          "Butter",
+          "Bacon",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Make dough, roll thin",
+          "Cut circles, fill",
+          "Pinch closed, boil until they float",
+          "Toss with butter",
+          "Top with bacon and sour cream"
+        ],
+        "description": "Slovak pierogi with bryndza or potato filling.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pierogi_z_mas%C5%82em_-_2023.03.31.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pierogi_z_mas%C5%82em_-_2023.03.31.jpg"
+        }
+      },
+      {
+        "id": "svk-dn-3",
+        "name": "Segedinsky Gulas (Segedin Goulash)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Pork shoulder",
+          "Sauerkraut",
+          "Onion, garlic",
+          "Paprika (sweet and hot)",
+          "Caraway seeds",
+          "Sour cream"
+        ],
+        "instructions": [
+          "Segedinsky gulas is the Slovak-Hungarian goulash with sauerkraut",
+          "Different from regular goulash: the sauerkraut is added",
+          "The sourness of the sauerkraut cuts through the richness of the paprika stew",
+          "Named after Jozef Segedinsky -- a Hungarian writer who allegedly requested it",
+          "The Slovak version differs slightly from the Hungarian original"
+        ],
+        "description": "Slovak-Hungarian sauerkraut goulash -- pork shoulder braised in paprika sauce with sauerkraut and caraway seeds, finished with sour cream. The sauerkraut sourness cuts the paprika richness. Named after Hungarian writer Jozef Segedinsky.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gulyas080.jpg",
+        "imageCredit": {
+          "author": "Lily15",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGulyas080.jpg"
+        }
+      },
+      {
+        "id": "svk-dn-4",
+        "name": "Svickova na Smetane (Beef in Cream Sauce)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 150,
+        "ingredients": [
+          "Beef sirloin or rump",
+          "Root vegetables: carrot, parsley root, celery, onion",
+          "Cream sauce: heavy cream, butter, lemon juice",
+          "Baked dumplings (knedliky) or bread",
+          "Cranberry jam, lemon slice"
+        ],
+        "instructions": [
+          "Svickova na smetane is a Slovak-Czech beef sirloin dish in cream sauce",
+          "The beef is marinated in vegetables and vinegar, then slow-braised",
+          "The vegetables and braising liquid are blended into the cream sauce",
+          "The cream sauce is characteristic: sweet, slightly acidic, aromatic",
+          "Served with bread dumplings and a spoonful of cranberry jam",
+          "The cranberry jam and lemon: the fruit accents against the rich sauce"
+        ],
+        "description": "Slovak beef in cream sauce -- beef sirloin slow-braised with root vegetables and vinegar, the braising liquid blended with cream into a sweet-acidic-aromatic sauce. Served with bread dumplings and cranberry jam. Shared with Czech cuisine."
+      },
+      {
+        "id": "svk-dn-5",
+        "name": "Struklji (Strudel-Like Rolls)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Thin strudel dough (or phyllo)",
+          "Cottage cheese filling (tvaroh + sugar + vanilla + raisins)",
+          "Butter, sour cream"
+        ],
+        "instructions": [
+          "Struklji are the Slovak sweet cottage cheese rolls",
+          "Thin dough rolled with sweetened cottage cheese filling",
+          "Baked or boiled",
+          "Served with sour cream or melted butter"
+        ],
+        "description": "Slovak sweet cottage cheese rolls -- thin dough filled with sweetened tvaroh (cottage cheese), raisins, and vanilla, baked or boiled, served with sour cream or melted butter.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Struklji_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Struklji_2.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "svk-sn-1",
+        "name": "Pagáčiky (Cheese Biscuits)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour",
+          "Butter",
+          "Sour cream",
+          "Cheese",
+          "Yeast",
+          "Salt",
+          "Caraway"
+        ],
+        "instructions": [
+          "Make dough with cheese and sour cream",
+          "Roll, fold layers",
+          "Cut rounds",
+          "Bake at 200°C 20 min"
+        ],
+        "description": "Flaky layered cheese biscuits."
+      },
+      {
+        "id": "svk-sn-2",
+        "name": "Ostiepok (Smoked Sheep Cheese)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Ostiepok (traditional Slovak smoked sheep cheese -- the oval decorated form)"
+        ],
+        "instructions": [
+          "Ostiepok is the traditional Slovak smoked sheep cheese",
+          "Made in a distinctive oval or round shape, often with decorative patterns",
+          "EU protected designation: Ostiepok from Slovakia only",
+          "The cheese is made in the mountain sheep farming regions: Orava, Liptov",
+          "Smoked over beech wood -- the golden-brown exterior",
+          "The interior: elastic, semi-firm, slightly salty, smoky"
+        ],
+        "description": "Slovak protected smoked sheep cheese -- Ostiepok, made in distinctive decorative shapes in the mountain regions (Orava, Liptov), smoked over beech wood. EU-protected designation. Elastic, semi-firm, slightly salty, smoky interior.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/O%C5%A1tiepok.JPG",
+        "imageCredit": {
+          "author": "Maciarka",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AO%C5%A1tiepok.JPG"
+        }
+      },
+      {
+        "id": "svk-sn-3",
+        "name": "Liptovsky Syr (Liptov Cheese Spread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Liptauer cheese (bryndza base)",
+          "Butter",
+          "Onion, caraway seeds, paprika",
+          "Salt, pepper, mustard"
+        ],
+        "instructions": [
+          "Liptauer is the Slovak cheese spread -- famous throughout Central Europe",
+          "Named after the Liptov region of Slovakia -- the sheep farming center",
+          "A spreadable seasoned cheese: bryndza or tvaroh base",
+          "Mixed with butter, onion, caraway, and paprika",
+          "A beloved spread on bread or crackers"
+        ],
+        "description": "Slovak Liptauer cheese spread -- bryndza (sheep cheese) base mixed with butter, onion, caraway seeds, and paprika into a spreadable condiment. Named after the Liptov region. Famous across Central Europe as a bread spread."
+      },
+      {
+        "id": "svk-sn-4",
+        "name": "Zemiakove Placky (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Grated raw potato (squeezed dry)",
+          "Egg, flour",
+          "Garlic, onion, caraway seeds",
+          "Salt",
+          "Oil or lard for frying"
+        ],
+        "instructions": [
+          "Zemiakove placky are Slovak potato pancakes -- similar to but distinct from German Reibekuchen",
+          "Grated raw potato squeezed of moisture",
+          "Mixed with egg, a little flour, and aromatics",
+          "Fried in lard or oil until golden and crispy",
+          "The caraway seeds: the Slovak flavor"
+        ],
+        "description": "Slovak potato pancakes -- raw grated potato (squeezed dry) with egg, flour, garlic, and caraway seeds, fried in lard until golden and crispy. The caraway seeds distinguish the Slovak from the German version.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Latkas.jpg",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "GFDL 1.2",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALatkas.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "svk-ds-1",
+        "name": "Šúľance (Sweet Dumplings)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Potato dough: potatoes, flour, egg",
+          "Poppy seeds",
+          "Butter",
+          "Sugar"
+        ],
+        "instructions": [
+          "Make potato dough, roll into ropes",
+          "Cut into pieces, boil until they float",
+          "Toss with butter, poppy seeds, sugar"
+        ],
+        "description": "Sweet potato dumplings rolled in poppy seeds and sugar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/%C5%A0%C3%BA%C4%BEance_z_makiem.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/%C5%A0%C3%BA%C4%BEance_z_makiem.jpg"
+        }
+      },
+      {
+        "id": "svk-ds-2",
+        "name": "Veternik (Cream Puff)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Choux pastry",
+          "Pastry cream (vanilla)",
+          "Caramel glaze"
+        ],
+        "instructions": [
+          "Veternik is the Slovak cream puff -- filled with vanilla cream and glazed with caramel",
+          "The classic Slovak pastry shop item",
+          "Choux pastry baked until hollow",
+          "Filled with smooth vanilla pastry cream",
+          "Topped with caramel glaze"
+        ],
+        "description": "Slovak cream puff -- choux pastry baked hollow, filled with vanilla pastry cream, topped with caramel glaze. The classic Slovak pastry shop item.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Crkva_u_Veterniku.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Crkva_u_Veterniku.JPG"
+        }
+      },
+      {
+        "id": "svk-ds-3",
+        "name": "Trdelnik (Spiral Chimney Cake)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "Yeast dough (sweet, enriched)",
+          "Sugar, cinnamon",
+          "Walnuts (ground, for coating)"
+        ],
+        "instructions": [
+          "Trdelnik is the spiral pastry cooked over an open fire",
+          "The dough is wrapped around a wooden spit",
+          "Cooked over fire while rotating",
+          "The caramelized sugar and cinnamon crust forms on the outside",
+          "A Czech-Slovak street food -- now a Prague tourist icon",
+          "The Slovakian version predates the Prague tourist version"
+        ],
+        "description": "Slovak spiral chimney cake -- sweet yeast dough wrapped around a wooden spit, cooked over fire while rotating, the outside caramelizing with sugar and cinnamon. Rolled in ground walnuts. A traditional Slovak street food, the origin of the now-touristy Prague trdelnik.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Trdeln%C3%ADk-Basket-20101.JPG",
+        "imageCredit": {
+          "author": "Tamorlan",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATrdeln%C3%ADk-Basket-20101.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "svk-dr-1",
+        "name": "Slivovica (Plum Brandy)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Plums"
+        ],
+        "instructions": [
+          "Ferment ripe plums",
+          "Distill twice in copper pot",
+          "Age at least 1 year"
+        ],
+        "description": "Strong plum brandy — Central European heritage spirit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Various_Bottles_of_Slivovitz.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Various_Bottles_of_Slivovitz.jpg"
+        }
+      },
+      {
+        "id": "svk-dr-2",
+        "name": "Kofola",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Kofola soda"
+        ],
+        "instructions": [
+          "Serve chilled",
+          "Slovakia's beloved cola alternative — herbal and less sweet"
+        ],
+        "description": "Slovak herbal cola — a national soft drink icon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sklenice_Kofola.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sklenice_Kofola.jpg"
+        }
+      },
+      {
+        "id": "svk-dr-3",
+        "name": "Kofola (Slovak Cola)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 0,
+        "ingredients": [
+          "Kofola (Slovak herbal cola -- with chicory, dandelion, malt, and herb extracts)"
+        ],
+        "instructions": [
+          "Kofola is the Slovak and Czech cola -- created in 1960 under communism",
+          "Invented to substitute for Western Coca-Cola which was unavailable",
+          "The recipe: chicory, dandelion, malt extract, and a proprietary herb blend",
+          "Deeply loved in Slovakia and Czech Republic -- outsells Coca-Cola in some regions",
+          "Served on tap (from the keg) -- the draught version is the authentic experience",
+          "Slightly less sweet than Coca-Cola, with a herbal complexity"
+        ],
+        "description": "Slovak communist-era herbal cola -- created in 1960 to substitute for Western Coca-Cola, using chicory, dandelion, malt, and a secret herb blend. Deeply loved in Slovakia and Czech Republic; outsells Coca-Cola in some regions. Best served on draught from the tap.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sklenice_Kofola.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sklenice_Kofola.jpg"
+        }
+      }
+    ]
+  }
+}

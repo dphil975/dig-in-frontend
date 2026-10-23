@@ -1,0 +1,989 @@
+{
+  "indiaRecipes": {
+    "country": "India",
+    "region": "South Asia",
+    "breakfast": [
+      {
+        "id": "ind-bf-1",
+        "name": "Masala Dosa",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Rice batter (fermented overnight with urad dal)",
+          "Potato filling: potatoes, mustard seeds, curry leaves, turmeric, onion, green chili",
+          "Ghee or oil",
+          "Coconut chutney",
+          "Sambar (lentil-vegetable soup)"
+        ],
+        "instructions": [
+          "The batter ferments overnight — rice and urad dal ground together, the fermentation creates the sour tang and crispiness",
+          "Heat a flat tawa or griddle until very hot",
+          "Pour a ladle of batter, spread in a thin circle from center outward",
+          "Drizzle ghee around the edges — the dosa should sizzle and turn golden",
+          "Spoon the spiced potato filling in a line down the center",
+          "Fold the dosa over the filling — crispy, golden, stuffed",
+          "Serve with coconut chutney and sambar",
+          "The crispiness of the dosa against the soft potato filling is the contrast",
+          "South Indian breakfast perfection — the fermentation technique is ancient food science"
+        ],
+        "description": "South India's iconic fermented rice crêpe — batter fermented overnight for tang, spread paper-thin on a hot griddle until crispy, stuffed with spiced potato. The fermentation science and the dramatic griddle technique make masala dosa one of the most viral Indian foods globally.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Masala_Dosa_2023.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Masala_Dosa_2023.jpg"
+        }
+      },
+      {
+        "id": "ind-bf-2",
+        "name": "Chole Bhature",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 20,
+        "ingredients": [
+          "Chickpeas (cooked)",
+          "Onion, tomato, ginger, garlic",
+          "Chole masala: coriander, cumin, garam masala, amchur, chili powder",
+          "Tea bag or pomegranate seeds (for dark color)",
+          "Bhature dough: flour, yogurt, oil, baking powder",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Make chole: sauté onion until dark brown, add ginger-garlic paste",
+          "Add tomato, cook until oil separates — the patient onion-tomato base is key",
+          "Add all spices, fry until fragrant",
+          "Add chickpeas with liquid, simmer until thick and dark",
+          "Make bhature dough: flour, yogurt, oil, baking powder — rest 2 hours",
+          "Roll into circles, deep fry until puffed and golden — they balloon dramatically",
+          "The bhature puffing in oil is one of cooking's most satisfying visuals",
+          "Serve chole in a bowl with bhatura on the side, pickled onion, and green chutney",
+          "This is North India's (especially Delhi/Punjab) most beloved breakfast"
+        ],
+        "description": "Delhi-Punjab's iconic breakfast — spicy dark chickpea curry with dramatically puffed fried bread. The bhatura ballooning in hot oil is one of the most satisfying cooking visuals on earth. Chole bhature is North India's most craved breakfast and a global viral food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Chole_Bhature_from_Nagpur.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Chole_Bhature_from_Nagpur.JPG"
+        }
+      },
+      {
+        "id": "ind-bf-3",
+        "name": "Poha (Flattened Rice)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Poha (flattened/beaten rice — rinsed)",
+          "Onion, green chili, curry leaves",
+          "Mustard seeds, turmeric",
+          "Peanuts",
+          "Lemon juice",
+          "Fresh cilantro",
+          "Sugar (pinch)"
+        ],
+        "instructions": [
+          "Rinse poha briefly — it softens in seconds, don't over-soak",
+          "Heat oil, add mustard seeds — let them pop and crackle",
+          "Add curry leaves, peanuts, fry until peanuts are golden",
+          "Add onion, green chili, turmeric, sauté",
+          "Add the softened poha, toss gently — it breaks if you're rough",
+          "Add salt, sugar (the tiny bit of sugar is key), lemon juice",
+          "Garnish with cilantro and serve with a wedge of lemon",
+          "This is Maharashtra's (Mumbai) everyday breakfast — fast, light, satisfying"
+        ],
+        "description": "Maharashtra's everyday breakfast — flattened rice tossed with mustard seeds, peanuts, and turmeric in minutes. The mustard-seed crackle, the lemon squeeze, and the speed (10 minutes start to finish) make poha one of India's most practical and beloved morning dishes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Indori_Poha%2C_New_Delhi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Indori_Poha%2C_New_Delhi.jpg"
+        }
+      },
+      {
+        "id": "ind-bf-4",
+        "name": "Idli with Sambar",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Idli batter (fermented rice and urad dal — same family as dosa)",
+          "Sambar: toor dal, tamarind, sambar powder, vegetables (drumstick, carrot, onion)",
+          "Coconut chutney: fresh coconut, green chili, ginger",
+          "Mustard seeds, curry leaves",
+          "Ghee"
+        ],
+        "instructions": [
+          "Pour fermented batter into idli molds — the fermentation makes them fluffy",
+          "Steam for 10-12 min until a toothpick comes out clean",
+          "They should be white, fluffy, and slightly sour from the fermentation",
+          "Make sambar: cook toor dal, add tamarind water, sambar powder, vegetables",
+          "Temper with mustard seeds, curry leaves, dried chilies in hot oil",
+          "Make coconut chutney: grind coconut with green chili, temper with mustard seeds",
+          "Serve idlis on a plate, sambar and chutney in bowls for dipping",
+          "Tear idli, dip in sambar — the soft idli soaks up the tangy lentil soup",
+          "South India's purest breakfast — steamed, fermented, probiotic, vegan"
+        ],
+        "description": "South India's steamed rice cakes — soft, white, sour-fermented pillows served with tangy lentil-vegetable sambar and coconut chutney. Idli is arguably the healthiest breakfast on earth: steamed, fermented (probiotic), and naturally vegan. The simplicity is the genius.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG"
+        }
+      },
+      {
+        "id": "ind-bf-5",
+        "name": "Paratha (Stuffed Flatbread)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "Whole wheat dough",
+          "Filling options: spiced potato (aloo), cauliflower (gobi), paneer, radish (mooli)",
+          "Ghee or butter",
+          "Yogurt (for serving)",
+          "Pickle (achar)",
+          "Salt, spices per filling"
+        ],
+        "instructions": [
+          "Make whole wheat dough — soft and pliable, rest 15 min",
+          "Prepare filling: mashed potato with green chili, cumin, cilantro (for aloo paratha)",
+          "Take a dough ball, flatten, add filling in center, seal, roll out carefully",
+          "Cook on hot tawa with ghee — both sides golden and slightly charred",
+          "Press with a cloth while cooking — this ensures even cooking and puffing",
+          "The paratha should be flaky, golden, with visible layers",
+          "Serve with yogurt, pickle, and butter on top",
+          "Each region has signature fillings — Punjab does aloo, Rajasthan does pyaaz (onion)",
+          "This is North India's heartiest breakfast — carbs, fat, protein all in one"
+        ],
+        "description": "North India's stuffed flatbread — whole wheat dough wrapped around spiced potato, cauliflower, or paneer, cooked with ghee on a griddle. Every North Indian home makes parathas differently, and the 'whose paratha is best' debate is eternal. The flaky layers and the ghee-sheen are the hooks.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Triangle_paratha_%28cropped%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Triangle_paratha_%28cropped%29.JPG"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "ind-ln-1",
+        "name": "Biryani (Hyderabadi Dum)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 45,
+        "cookTime": 60,
+        "ingredients": [
+          "Basmati rice (soaked, parboiled)",
+          "Lamb or chicken (marinated in yogurt, spices)",
+          "Onion (sliced, fried to golden — birista)",
+          "Saffron milk",
+          "Whole spices: cardamom, cinnamon, cloves, bay leaf",
+          "Ginger-garlic paste",
+          "Green chilies, mint, cilantro",
+          "Ghee",
+          "Dough (to seal the pot — dum technique)"
+        ],
+        "instructions": [
+          "Marinate meat in yogurt, ginger-garlic, chili, garam masala — 2+ hours",
+          "Fry sliced onions until deep golden-brown — birista, the soul of biryani",
+          "Parboil rice with whole spices — drain at 70% done",
+          "Layer in a heavy pot: meat on bottom, rice on top",
+          "Scatter fried onions, mint, cilantro, saffron milk between layers",
+          "Seal the pot with dough — this is the dum (steam-trapping) technique",
+          "Cook on very low heat for 45-60 min — the steam cooks everything together",
+          "Break the dough seal at the table — the fragrant steam that escapes is the moment",
+          "Each grain of rice should be separate, the meat tender, and the layers distinct",
+          "The bottom layer (the tah) should be slightly crispy from the ghee"
+        ],
+        "description": "Hyderabadi dum biryani — the most contested dish in India. Layers of marinated meat and saffron rice sealed with dough and slow-steamed. The dough-seal-breaking moment, the 'whose biryani is best' city wars, and the saffron-steamed fragrance make biryani India's most viral dish and one of the world's great rice preparations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg"
+        }
+      },
+      {
+        "id": "ind-ln-2",
+        "name": "Butter Chicken (Murgh Makhani)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Chicken (marinated in yogurt, ginger, garlic, chili, garam masala)",
+          "Tomato sauce: tomatoes, butter (lots), cream, cashews",
+          "Kasuri methi (dried fenugreek leaves — the secret ingredient)",
+          "Ginger, garlic, green cardamom",
+          "Sugar, salt",
+          "Butter, cream"
+        ],
+        "instructions": [
+          "Marinate chicken in yogurt and spices — minimum 2 hours, overnight is better",
+          "Grill or tandoor the chicken until charred — the char is essential",
+          "Make sauce: cook tomatoes until broken down, blend smooth with cashews",
+          "Add butter — generous, this is 'butter' chicken — cream, sugar, salt",
+          "Simmer sauce until rich, orange-red, and velvety",
+          "Add the charred chicken to the sauce",
+          "Finish with kasuri methi (crumble dried fenugreek over the top) and more cream",
+          "The kasuri methi is what makes butter chicken taste like butter chicken — don't skip",
+          "Serve with naan or rice — the sauce demands bread for scooping",
+          "Invented at Moti Mahal restaurant in Delhi in the 1950s"
+        ],
+        "description": "Delhi's gift to the world — charcoal-grilled chicken in a rich, buttery, creamy tomato sauce finished with dried fenugreek. Invented at Moti Mahal in 1950s Delhi, butter chicken is now the world's most ordered Indian dish. The orange sauce, the cream swirl, and the naan-scooping technique are eternally viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Butter_Chicken_%26_Butter_Naan_-_Home_-_Chandigarh_-_India_-_0006.jpg"
+        }
+      },
+      {
+        "id": "ind-ln-3",
+        "name": "Dal Makhani (Black Lentil Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 480,
+        "ingredients": [
+          "Whole black urad dal (soaked overnight)",
+          "Rajma (kidney beans — small amount)",
+          "Tomato purée",
+          "Butter, cream (generous amounts of both)",
+          "Ginger, garlic",
+          "Kasuri methi",
+          "Garam masala",
+          "Red chili powder"
+        ],
+        "instructions": [
+          "Soak black dal overnight — minimum 8 hours",
+          "Pressure cook or slow-cook dal until completely soft — this takes HOURS",
+          "The slow cooking is what makes restaurant-style dal makhani: 8-12 hours on low heat",
+          "Mash some dal against the pot — creates a creamy texture with some whole lentils",
+          "Make the tempering: butter, tomato, ginger, garlic, spices",
+          "Add the tempering to the dal, simmer together",
+          "Add cream and more butter — keep adding butter, this is makhani (buttery)",
+          "Finish with kasuri methi — the same fenugreek that defines butter chicken",
+          "The dal should be dark, creamy, thick, and impossibly rich",
+          "The slow-cooking-equals-flavor principle is fully proven by dal makhani"
+        ],
+        "description": "India's slow-cooked black lentil stew — urad dal simmered for 8+ hours with butter and cream until impossibly rich and creamy. Dal makhani proves that lentils + patience + butter = luxury. The 8-hour cooking time and the 'lentils can be THIS good?' revelation make it a viral vegetarian showcase.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Punjabi_style_Dal_Makhani.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Punjabi_style_Dal_Makhani.jpg"
+        }
+      },
+      {
+        "id": "ind-ln-4",
+        "name": "Pav Bhaji (Mumbai Street Food)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Bhaji: potatoes, cauliflower, peas, tomato, onion, capsicum",
+          "Pav bhaji masala (the special spice blend)",
+          "Butter (obscene amount)",
+          "Pav (soft bread rolls)",
+          "Lime, cilantro, raw onion for serving"
+        ],
+        "instructions": [
+          "Boil potatoes, cauliflower, peas until very soft — mash roughly",
+          "Sauté onion, tomato, capsicum in butter until soft",
+          "Add pav bhaji masala — fry until fragrant",
+          "Add mashed vegetables, mix well, add water for consistency",
+          "Mash everything together on the griddle with a flat spatula — the theatrical mashing",
+          "Add more butter — the butter should pool on top",
+          "Toast pav rolls on the same butter-covered griddle — both sides golden",
+          "Serve bhaji in a bowl, pav on the side, raw onion, lime, cilantro on top",
+          "The amount of butter used is genuinely alarming — and essential",
+          "This is Mumbai beach-street food — Juhu Beach at sunset with pav bhaji"
+        ],
+        "description": "Mumbai's most iconic street food — mixed vegetable mash cooked with an alarming amount of butter, served with buttered toasted bread rolls. The theatrical griddle-mashing and the butter-pooling-on-top visual are classic Mumbai street-food theater. Pav bhaji at Juhu Beach is a bucket-list food experience.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Bambayya_Pav_bhaji.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Bambayya_Pav_bhaji.jpg"
+        }
+      },
+      {
+        "id": "ind-ln-5",
+        "name": "Fish Curry (Goan/Kerala)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Fish (pomfret, kingfish, or any firm white fish)",
+          "Coconut milk",
+          "Kokum or tamarind (for sourness)",
+          "Onion, garlic, ginger",
+          "Red chili, turmeric, coriander",
+          "Curry leaves, mustard seeds",
+          "Coconut oil"
+        ],
+        "instructions": [
+          "Make masala paste: grind coconut, red chili, coriander, turmeric",
+          "Heat coconut oil, add mustard seeds — let crackle, add curry leaves",
+          "Sauté onion, ginger, garlic until golden",
+          "Add masala paste, fry until oil separates",
+          "Add coconut milk and water, bring to simmer",
+          "Add kokum or tamarind for sourness — the sour note is essential to coastal curry",
+          "Add fish pieces gently — do not stir, the fish breaks",
+          "Simmer 10-12 min until fish is just cooked through",
+          "The curry should be coconut-rich, sour, and bright orange-red",
+          "Serve with steamed rice — the curry-rice ratio matters"
+        ],
+        "description": "India's coastal fish curry — fresh fish simmered in coconut milk with kokum and spices. Goa and Kerala both claim the best version. The coconut-sour-spice balance and the 'don't stir or the fish breaks' technique are the hallmarks of India's coastal cooking tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Fishball.jpg",
+        "imageCredit": {
+          "author": "Wing11803",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFishball.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "ind-dn-1",
+        "name": "Tandoori Chicken",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 25,
+        "ingredients": [
+          "Chicken (whole or pieces — leg quarters are best)",
+          "Yogurt marinade: yogurt, ginger, garlic, Kashmiri red chili, garam masala",
+          "Lemon juice",
+          "Mustard oil (or regular oil)",
+          "Kashmiri red chili (for color — less heat, more color)",
+          "Chaat masala",
+          "Butter for basting"
+        ],
+        "instructions": [
+          "Make marinade: yogurt, ginger-garlic paste, Kashmiri chili, garam masala, lemon, mustard oil",
+          "Score the chicken deeply — the marinade must penetrate",
+          "Marinate overnight — minimum 4 hours but overnight is transformative",
+          "Cook in a tandoor (clay oven) at extreme heat — 300°C+",
+          "If no tandoor: oven at maximum heat on a wire rack, or charcoal grill",
+          "The extreme heat chars the outside while keeping the inside juicy",
+          "Baste with butter in the last few minutes",
+          "The chicken should be charred red-black outside, juicy and tender inside",
+          "Finish with a squeeze of lemon and chaat masala",
+          "Invented at Moti Mahal, Delhi — same restaurant that created butter chicken"
+        ],
+        "description": "India's most famous grilled chicken — yogurt-marinated, red from Kashmiri chili, charred in a tandoor clay oven at extreme heat. Invented at Moti Mahal in 1940s Delhi, tandoori chicken changed global food culture. The red char, the yogurt-tenderized juiciness, and the tandoor technique are perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Chickentandoori.jpg",
+        "imageCredit": {
+          "author": "kspoddar",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChickentandoori.jpg"
+        }
+      },
+      {
+        "id": "ind-dn-2",
+        "name": "Rogan Josh (Kashmiri Lamb)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 90,
+        "ingredients": [
+          "Lamb (bone-in shoulder or leg, cubed)",
+          "Yogurt",
+          "Kashmiri red chili (for the signature red color)",
+          "Fennel powder, ginger powder, asafoetida",
+          "Whole spices: cinnamon, cardamom, cloves",
+          "Onion (optional — some Kashmiri versions skip onion)",
+          "Mustard oil",
+          "Saffron"
+        ],
+        "instructions": [
+          "Bloom Kashmiri red chili in warm water — this creates the brilliant red color",
+          "Heat mustard oil until it smokes, then cool slightly",
+          "Brown lamb on all sides — build deep color",
+          "Add yogurt slowly, stirring constantly to prevent curdling",
+          "Add Kashmiri chili paste, fennel, ginger powder, whole spices",
+          "Simmer on very low heat for 90 min — Kashmiri cooking is patient",
+          "The oil should rise to the top and turn a brilliant red — rogan means oil, josh means heat",
+          "The sauce should be red, thick, and fragrant with fennel and cardamom",
+          "Finish with saffron — the Kashmir-Iran spice connection",
+          "This is Kashmir's royal dish — Mughal-era heritage"
+        ],
+        "description": "Kashmir's royal lamb stew — brilliant red from Kashmiri chili (color, not just heat), slow-cooked until the oil rises crimson. 'Rogan josh' means 'red oil heat.' The color, the Mughal-era heritage, and the patience required make rogan josh one of Indian cuisine's most prestigious and viral dishes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Rogan_Josh_Kashmiri.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Rogan_Josh_Kashmiri.jpg"
+        }
+      },
+      {
+        "id": "ind-dn-3",
+        "name": "Palak Paneer",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Paneer (Indian cottage cheese — cubed)",
+          "Spinach (lots — blanched)",
+          "Onion, garlic, ginger, green chili",
+          "Tomato",
+          "Cumin seeds",
+          "Garam masala, turmeric",
+          "Cream",
+          "Butter or ghee"
+        ],
+        "instructions": [
+          "Blanch spinach in boiling water 2 min, shock in ice water — keeps it bright green",
+          "Blend spinach smooth — the vibrant green purée is the base",
+          "Sauté cumin seeds in ghee until they crackle",
+          "Add onion, ginger-garlic, cook until golden",
+          "Add tomato, spices, cook until thick",
+          "Add the spinach purée, simmer 10 min",
+          "Add paneer cubes — the soft cheese in the green sauce is the visual",
+          "Finish with cream and butter",
+          "The green should be vibrant — overcooking turns it dull",
+          "Serve with naan — scoop the green sauce with bread"
+        ],
+        "description": "India's most famous vegetarian dish — cubes of soft paneer cheese in a vibrant green spinach sauce. Palak paneer proves that vegetarian food can be rich, satisfying, and beautiful. The bright green color and the 'cheese in spinach' concept have made it one of the most ordered Indian dishes worldwide.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Palakpaneer_Rayagada_Odisha_0009.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Palakpaneer_Rayagada_Odisha_0009.jpg"
+        }
+      },
+      {
+        "id": "ind-dn-4",
+        "name": "Rajma Chawal (Kidney Bean Curry with Rice)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Rajma (red kidney beans — soaked overnight, pressure cooked)",
+          "Tomato, onion, ginger, garlic",
+          "Rajma masala or garam masala, cumin, coriander",
+          "Red chili powder, turmeric",
+          "Oil or ghee",
+          "Basmati rice",
+          "Cilantro, lime"
+        ],
+        "instructions": [
+          "Soak rajma overnight — pressure cook until completely soft",
+          "Sauté onion until golden, add ginger-garlic paste",
+          "Add tomato, cook until oil separates",
+          "Add spices, fry until fragrant",
+          "Add cooked rajma with their liquid — the starchy liquid is the gravy base",
+          "Simmer 30 min until thick and creamy — the beans break down slightly, thickening the gravy",
+          "The gravy should coat the back of a spoon",
+          "Serve over steamed basmati rice with a squeeze of lime and cilantro",
+          "Rajma chawal is North India's Sunday lunch — every family makes it weekly",
+          "The comfort factor rivals any stew in the world"
+        ],
+        "description": "North India's Sunday lunch — red kidney beans simmered in spiced tomato gravy until thick and creamy, served over steamed rice. Rajma chawal is India's ultimate comfort food and the weekly ritual of millions of North Indian families. The simplicity and the 'beans over rice' concept resonate universally.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Rajma_Masala_%2832081557778%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Rajma_Masala_%2832081557778%29.jpg"
+        }
+      },
+      {
+        "id": "ind-dn-5",
+        "name": "Thali (The Indian Meal Plate)",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 60,
+        "ingredients": [
+          "Rice",
+          "Dal (lentils)",
+          "Sabzi (vegetable dish)",
+          "Roti or naan",
+          "Raita (yogurt)",
+          "Pickle (achar)",
+          "Papad",
+          "Sweet (kheer or gulab jamun)"
+        ],
+        "instructions": [
+          "A thali is not a recipe — it's a concept: a complete, balanced meal on one plate",
+          "Cook a dal: toor dal with tempering (mustard seeds, curry leaves, chili)",
+          "Cook a dry sabzi: seasonal vegetables with spices",
+          "Cook a gravy dish: paneer or meat in a sauce",
+          "Make rice, make roti or naan",
+          "Arrange on a round plate or tray: rice in center, bowls of dal, sabzi, gravy around it",
+          "Add raita, pickle, papad, and a small sweet",
+          "Every region's thali is different: Gujarati is sweeter, Rajasthani is spicier, South Indian has sambar",
+          "The thali represents Indian food philosophy: balance of all six tastes in one meal",
+          "Unlimited thali restaurants let you eat as much as you want — they keep refilling"
+        ],
+        "description": "The Indian thali — a complete balanced meal on one plate: rice, dal, vegetables, bread, yogurt, pickle, and sweet. Every region's thali is different, and the concept of balancing all six tastes (sweet, sour, salty, bitter, pungent, astringent) in one meal is India's greatest food philosophy contribution.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Vegetarian_Curry.jpeg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Vegetarian_Curry.jpeg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "ind-sn-1",
+        "name": "Samosa",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, oil, carom seeds (ajwain), salt, water",
+          "Filling: potatoes (boiled, mashed), peas, cumin, coriander, garam masala, green chili, amchur",
+          "Oil for deep frying",
+          "Green chutney (mint-cilantro)",
+          "Tamarind chutney"
+        ],
+        "instructions": [
+          "Make dough with oil and ajwain — rest 30 min",
+          "The dough should be flaky, not soft — the oil creates layers",
+          "Prepare filling: mash potatoes with peas and spices — let cool",
+          "Roll dough into ovals, cut in half — each half becomes a cone",
+          "Fill the cone with potato filling, seal edges with water",
+          "Deep fry in medium-hot oil — too hot and the outside burns before the dough cooks through",
+          "The oil temperature is the secret: start at 150°C, finish at 175°C",
+          "Fry until deep golden and crispy — 6-8 min",
+          "Serve with green chutney and tamarind chutney — the sweet-sour contrast",
+          "Samosas are India's universal snack — every state, every city, every corner"
+        ],
+        "description": "India's universal snack — crispy pastry triangles filled with spiced potato and peas, served with mint and tamarind chutneys. The double-fry temperature technique (low to cook through, high to crisp) and the worldwide spread of the samosa make it one of the most viral snacks on earth.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg"
+        }
+      },
+      {
+        "id": "ind-sn-2",
+        "name": "Pani Puri (Golgappa)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Puris (crispy hollow balls — semolina and flour, fried)",
+          "Pani (flavored water): mint, cilantro, green chili, cumin, chaat masala, tamarind, lime",
+          "Potato and chickpea filling",
+          "Tamarind chutney (sweet)",
+          "Sev (crispy noodles)"
+        ],
+        "instructions": [
+          "Make or buy crispy puris — they must be hollow inside",
+          "Make mint pani: blend mint, cilantro, green chili, cumin, chaat masala with water — ice cold",
+          "Make sweet tamarind water: tamarind paste, sugar, chaat masala, water",
+          "Crack a hole in the top of each puri with your thumb",
+          "Add a spoonful of potato-chickpea filling",
+          "Fill with mint pani — the cold spicy water floods the puri",
+          "EAT IMMEDIATELY — in one bite, the whole thing at once",
+          "The explosion of cold, spicy, tangy, crunchy in your mouth is the experience",
+          "Pani puri is eaten standing at street stalls — the vendor hands them one at a time",
+          "You don't stop until you can't eat one more"
+        ],
+        "description": "India's most exhilarating street food — hollow crispy balls filled with spicy mint water, tamarind, and potato, eaten whole in one explosive bite. The cold-spicy-tangy-crunchy sensory overload and the 'one at a time from the vendor' ritual make pani puri the most viral Indian street food and the most fun you can have eating.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Pani_Puri1.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Pani_Puri1.JPG"
+        }
+      },
+      {
+        "id": "ind-sn-3",
+        "name": "Vada Pav (Mumbai's Burger)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Vada: potato ball coated in gram flour batter, deep fried",
+          "Pav: soft bread roll",
+          "Green chutney (cilantro-mint-chili)",
+          "Dry garlic chutney (red, spicy — the secret weapon)",
+          "Fried green chili"
+        ],
+        "instructions": [
+          "Make vada: mash potato with green chili, turmeric, mustard seeds, curry leaves",
+          "Shape into balls, dip in gram flour batter",
+          "Deep fry until golden and crispy",
+          "Toast pav with butter on a griddle",
+          "Spread green chutney on one side, dry garlic chutney on the other",
+          "Place hot vada inside, add fried green chili",
+          "Press together — eat with both hands",
+          "This is Mumbai's burger — invented in the 1960s-70s as worker food",
+          "Costs less than a dollar — feeds a person for hours",
+          "Mumbai runs on vada pav — it's not an exaggeration"
+        ],
+        "description": "Mumbai's burger — a spicy potato fritter in a buttered bread roll with three chutneys. Invented as worker food in 1960s Mumbai, vada pav costs less than a dollar and fuels the entire city. The simplicity, the price, and the 'Mumbai's answer to the burger' narrative make vada pav perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Vada_Pav-Indian_street_food.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Vada_Pav-Indian_street_food.JPG"
+        }
+      },
+      {
+        "id": "ind-sn-4",
+        "name": "Chaat (Street Snack Platter)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 5,
+        "ingredients": [
+          "Papdi (crispy wafers) or samosa pieces",
+          "Boiled potato, chickpeas",
+          "Yogurt (whisked smooth)",
+          "Tamarind chutney (sweet)",
+          "Green chutney (spicy)",
+          "Chaat masala, cumin powder, red chili",
+          "Sev (crispy noodles)",
+          "Cilantro, pomegranate seeds"
+        ],
+        "instructions": [
+          "Arrange papdi or crushed samosa on a plate",
+          "Top with potato and chickpeas",
+          "Drizzle yogurt over everything — generous",
+          "Add tamarind chutney (sweet, dark) and green chutney (spicy)",
+          "Sprinkle chaat masala, cumin, red chili",
+          "Top with sev (crispy noodles) and pomegranate seeds",
+          "The key is eating it immediately — before the crispy elements get soggy",
+          "Every bite should have all elements: crispy, creamy, sweet, sour, spicy",
+          "Chaat represents Indian flavor philosophy: all tastes in every bite",
+          "Delhi's chaat culture is legendary — entire streets dedicated to chaat vendors"
+        ],
+        "description": "India's street snack philosophy — crispy, creamy, sweet, sour, spicy all in every bite. Chaat is less a recipe and more a flavor principle: layer textures and tastes until every bite is a sensory explosion. Delhi's chaat streets and the eat-it-before-it-gets-soggy urgency are perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dahi_puri%2C_Doi_phuchka.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Dahi_puri%2C_Doi_phuchka.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "ind-ds-1",
+        "name": "Gulab Jamun",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Khoya (reduced milk solids) or milk powder",
+          "Flour (small amount)",
+          "Baking soda (tiny pinch)",
+          "Cardamom",
+          "Ghee for frying",
+          "Sugar syrup: sugar, water, cardamom, rose water, saffron"
+        ],
+        "instructions": [
+          "Make sugar syrup: boil sugar and water, add cardamom, rose water, saffron — keep warm",
+          "Mix khoya (or milk powder) with flour, baking soda, cardamom",
+          "Knead gently into a soft dough — do NOT overwork or they'll be hard",
+          "Shape into smooth balls — any cracks will cause them to break while frying",
+          "Fry in ghee on LOW heat — very low, very slow, very patient",
+          "They must be deep brown, evenly colored — rush it and they're raw inside",
+          "Immediately drop hot fried balls into warm sugar syrup",
+          "Let soak minimum 2 hours — overnight is better",
+          "They should be spongy, soaked through, and weep syrup when bitten",
+          "Gulab jamun is India's most popular dessert — at every wedding, every celebration"
+        ],
+        "description": "India's most beloved sweet — fried milk-dough balls soaked in rose-cardamom-saffron syrup until they become spongy, syrup-weeping orbs. Served at every wedding, every celebration, every festival. The syrup-weeping cross-section and the 'how are these so soft?' texture make gulab jamun the most viral Indian dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Gulab-jamun-wallpaper-1.jpg",
+        "imageCredit": {
+          "author": "Sapra5379",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AGulab-jamun-wallpaper-1.jpg"
+        }
+      },
+      {
+        "id": "ind-ds-2",
+        "name": "Jalebi",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Batter: flour (maida), yogurt, saffron, water — fermented",
+          "Sugar syrup: sugar, water, cardamom, saffron, lime juice",
+          "Ghee or oil for frying"
+        ],
+        "instructions": [
+          "Make batter: flour, yogurt, water — ferment 12-24 hours for the sour tang",
+          "The fermentation is optional but traditional — it adds complexity",
+          "Make sugar syrup with saffron, cardamom, lime juice — keep warm",
+          "Pour batter into a squeeze bottle or cloth with a hole",
+          "Squeeze batter into hot oil in spiral/pretzel shapes — the shape is the art",
+          "Fry until golden and crispy — 2-3 min",
+          "Immediately dip in sugar syrup — the hot jalebi absorbs the cold syrup",
+          "The temperature contrast is important: hot jalebi, room-temp syrup",
+          "The outside should be crispy, the inside should be syrup-filled and hollow",
+          "Every bite should crunch then flood with saffron syrup"
+        ],
+        "description": "India's crispy-syrupy spiral — fermented batter piped into hot oil in spirals, fried crispy, then soaked in saffron syrup. The crunch-then-syrup-flood sensation and the mesmerizing spiral-piping technique make jalebi one of the most viral Indian sweets and an ASMR favorite.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Basavanagudi_Kadalekai_Parishe_%282025%29_Bangalore_%2886%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Basavanagudi_Kadalekai_Parishe_%282025%29_Bangalore_%2886%29.jpg"
+        }
+      },
+      {
+        "id": "ind-ds-3",
+        "name": "Rasmalai",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "Chenna (fresh paneer — made from curdled milk)",
+          "Milk (full-fat, lots — for the ras/sauce)",
+          "Sugar",
+          "Cardamom, saffron",
+          "Pistachios, almonds (slivered)",
+          "Rose water"
+        ],
+        "instructions": [
+          "Make chenna: boil milk, add lemon juice to curdle, strain, squeeze dry",
+          "Knead chenna until completely smooth — no graininess, this takes effort",
+          "Shape into flat discs",
+          "Poach discs in sugar syrup — they expand, so make them smaller than final size",
+          "Make the ras (sauce): reduce full-fat milk by half — stirring constantly to prevent scorching",
+          "Add cardamom, saffron, sugar, rose water to the reduced milk",
+          "Place the poached chenna discs in the saffron-pistachio milk",
+          "Chill — serve cold, garnished with pistachios and saffron strands",
+          "The chenna should be spongy, the milk sauce should be thick and golden",
+          "Rasmalai is Bengali in origin — Bengal's dessert tradition is India's finest"
+        ],
+        "description": "Bengali India's most elegant sweet — soft fresh-cheese discs floating in reduced saffron-pistachio-cardamom milk. Rasmalai is Indian dessert at its most refined: the silky chenna, the golden milk, the pistachio garnish. The 'cheese floating in flavored milk' concept surprises and enchants first-timers.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ras_Malai_2.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Ras_Malai_2.JPG"
+        }
+      },
+      {
+        "id": "ind-ds-4",
+        "name": "Kheer (Rice Pudding)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 45,
+        "ingredients": [
+          "Basmati rice",
+          "Full-fat milk (lots)",
+          "Sugar",
+          "Cardamom",
+          "Saffron",
+          "Almonds, cashews, raisins",
+          "Rose water"
+        ],
+        "instructions": [
+          "Wash rice, soak 30 min",
+          "Boil milk in a heavy-bottomed pot — stir frequently to prevent scorching",
+          "Add rice, cook on low heat, stirring often",
+          "The rice slowly breaks down and the milk reduces — 35-45 min",
+          "The mixture thickens as the starch releases and milk concentrates",
+          "Add sugar, cardamom, saffron, nuts, raisins",
+          "Add rose water at the end — off heat",
+          "The consistency should be thick, creamy, with visible rice grains",
+          "Serve warm or cold — both are traditional",
+          "Kheer is India's oldest dessert — mentioned in ancient texts"
+        ],
+        "description": "India's ancient rice pudding — rice slowly cooked in reducing milk until thick and creamy, perfumed with cardamom, saffron, and rose water. Mentioned in texts thousands of years old, kheer is India's oldest sweet and the template for rice puddings worldwide.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Kheer.jpg",
+        "imageCredit": {
+          "author": "stu spivack",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKheer.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "ind-dr-1",
+        "name": "Masala Chai",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Black tea (CTC or Assam — strong)",
+          "Whole milk",
+          "Sugar",
+          "Spices: ginger (fresh, crushed), cardamom, cinnamon, cloves, black pepper"
+        ],
+        "instructions": [
+          "Crush ginger and cardamom — release the oils",
+          "Boil water with ginger and spices — let the spices infuse 3-5 min",
+          "Add tea leaves — boil together (yes, boil — this is not steeping)",
+          "Add milk — bring to a rolling boil again",
+          "The chai should rise in the pot — watch for the dramatic rise",
+          "Strain into cups, add sugar",
+          "The color should be a rich caramel-brown",
+          "The ginger and cardamom should be prominent — not subtle",
+          "Masala chai is India's universal drink — 3+ billion cups consumed daily",
+          "The chai wallah (tea vendor) is India's most ubiquitous entrepreneur"
+        ],
+        "description": "India's spiced milk tea — black tea boiled (not steeped) with ginger, cardamom, and milk. Over 3 billion cups consumed daily across India. The dramatic pot-rise, the chai wallah street vendors, and the 'this is not a chai latte' distinction from Western versions make masala chai perpetually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Chai_In_Sakora.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Chai_In_Sakora.jpg"
+        }
+      },
+      {
+        "id": "ind-dr-2",
+        "name": "Mango Lassi",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Ripe mango (Alphonso for the best flavor)",
+          "Yogurt (full-fat)",
+          "Sugar or honey",
+          "Cardamom",
+          "Ice",
+          "Saffron strands (optional garnish)"
+        ],
+        "instructions": [
+          "Blend ripe mango with yogurt — the ratio should favor the mango",
+          "Add sugar, cardamom, ice",
+          "Blend until thick and frothy",
+          "The color should be a beautiful sunset orange-gold",
+          "Garnish with saffron strands if desired",
+          "Serve cold — this is India's answer to the milkshake",
+          "Alphonso mangoes (available April-June) make the best lassi",
+          "The yogurt adds tang that balances the mango sweetness",
+          "Mango lassi is the gateway Indian drink — everyone loves it"
+        ],
+        "description": "India's mango-yogurt smoothie — ripe mango blended with yogurt and cardamom into a thick, sunset-colored drink. The gateway to Indian drinks for the entire world. Alphonso mango season (April-June) produces the finest lassi, and the yogurt-tang-against-mango-sweet balance is perfection.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Salt_lassi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Salt_lassi.jpg"
+        }
+      },
+      {
+        "id": "ind-dr-3",
+        "name": "Thandai (Festival Milk Drink)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "Almonds, cashews, pistachios",
+          "Fennel seeds, poppy seeds",
+          "Melon seeds (magaz)",
+          "Saffron",
+          "Cardamom, black pepper, rose petals",
+          "Sugar",
+          "Cold milk"
+        ],
+        "instructions": [
+          "Soak all nuts and seeds in water for 2+ hours",
+          "Grind into a smooth paste with saffron, cardamom, rose petals",
+          "Mix the paste into cold milk — the milk turns a pale gold-pink",
+          "Add sugar, stir until dissolved",
+          "Strain if desired — traditional thandai is smooth",
+          "Serve very cold — this is a festive drink for Holi and Shivratri",
+          "The nut-milk combination is incredibly rich and fragrant",
+          "The saffron-rose-cardamom flavor profile is quintessentially Indian",
+          "Some versions include bhang (cannabis) for Holi — the legal, traditional version",
+          "Without bhang, it's a magnificent spiced nut milk"
+        ],
+        "description": "India's festival milk drink — almonds, pistachios, saffron, and rose petals ground into cold milk for a pale gold, fragrant, rich drink. Served at Holi and Shivratri. The nut-milk richness and the festival connection (some versions traditionally include bhang/cannabis for Holi) make thandai annually viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thandai_%28Spiced_Indian_Milk_Drink%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Thandai_%28Spiced_Indian_Milk_Drink%29.JPG"
+        }
+      },
+      {
+        "id": "ind-dr-4",
+        "name": "Filter Coffee (South Indian)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "Filter coffee powder (Arabica-Robusta blend, chicory added — South Indian style)",
+          "Milk (boiled)",
+          "Sugar",
+          "South Indian coffee filter (brass or stainless steel)"
+        ],
+        "instructions": [
+          "Add coffee powder to the upper chamber of the South Indian filter",
+          "Pour boiling water on top, close the lid — let it drip through slowly",
+          "The decoction drips for 10-15 min — strong, concentrated coffee",
+          "Boil milk separately — it must be hot and frothy",
+          "In a tumbler (dabarah), mix decoction with hot milk and sugar",
+          "Pour from one vessel to another at arm's height — the 'pulling' technique",
+          "The pulling aerates the coffee and creates a frothy top",
+          "The height of the pour shows skill — the longer the stream, the better",
+          "South Indian filter coffee is a ritual — the brass filter, the pulling, the tumbler",
+          "This is the coffee tradition that predates espresso culture in India"
+        ],
+        "description": "South India's filter coffee — strong decoction from a brass filter mixed with hot milk and 'pulled' from height to create froth. The dramatic arm's-length pour, the brass filter, and the tumbler-and-dabarah vessels make South Indian filter coffee one of the most theatrical and viral coffee preparations in the world.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/TEDxAMS2011_044.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/TEDxAMS2011_044.JPG"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "belgiumRecipes": {
+    "country": "Belgium",
+    "region": "Western Europe",
+    "breakfast": [
+      {
+        "id": "bel-bf-1",
+        "name": "Gaufre de Liège (Liège Waffle)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 90,
+        "cookTime": 5,
+        "ingredients": [
+          "350g flour",
+          "7g yeast",
+          "3 eggs",
+          "200g butter (softened)",
+          "1 tsp vanilla",
+          "Pinch salt",
+          "100ml warm milk",
+          "200g pearl sugar (Belgian sugar nibs)"
+        ],
+        "instructions": [
+          "Dissolve yeast in warm milk",
+          "Mix flour, eggs, salt, vanilla; add yeast mixture",
+          "Knead, then incorporate softened butter gradually — dough should be sticky and rich",
+          "Rise 1 hour",
+          "Fold in pearl sugar — do not dissolve it, the chunks are essential",
+          "Divide into balls, rise 15 more min",
+          "Press each into hot waffle iron",
+          "Cook until caramelized and golden — the pearl sugar melts into crunchy pockets",
+          "Eat plain, by hand, still warm"
+        ],
+        "description": "The real Belgian waffle — dense, buttery, with pockets of caramelized pearl sugar. Nothing like the fluffy rectangular 'Belgian waffles' abroad.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg"
+        }
+      },
+      {
+        "id": "bel-bf-2",
+        "name": "Pistolet with Cheese and Charcuterie",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "2 pistolets (small, round, crusty Belgian rolls)",
+          "Butter",
+          "Aged Gouda or Herve cheese",
+          "Filet d'Anvers (cured meat)",
+          "Sirop de Liège (fruit spread)"
+        ],
+        "instructions": [
+          "Split pistolets",
+          "Butter generously",
+          "Fill with cheese and charcuterie",
+          "Add a spread of sirop de Liège for the sweet-savory combination"
+        ],
+        "description": "The Belgian Sunday breakfast — crusty pistolet rolls with aged cheese and cured meats. Sirop de Liège (apple-pear spread) on the side is essential."
+      },
+      {
+        "id": "bel-bf-3",
+        "name": "Cramique (Raisin Bread)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 90,
+        "cookTime": 35,
+        "ingredients": [
+          "500g flour",
+          "7g yeast",
+          "75g sugar",
+          "100g butter",
+          "2 eggs",
+          "200ml milk",
+          "150g raisins",
+          "1 tsp salt",
+          "Pearl sugar for topping"
+        ],
+        "instructions": [
+          "Mix dough with flour, yeast, sugar, eggs, milk, salt",
+          "Knead in butter until smooth and elastic",
+          "Fold in raisins",
+          "Rise 1 hour",
+          "Shape into loaves",
+          "Top with pearl sugar",
+          "Bake at 180°C for 30-35 min"
+        ],
+        "description": "Sweet raisin bread topped with crunchy pearl sugar — sliced thick and eaten with butter for breakfast."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "bel-ln-1",
+        "name": "Moules-Frites (Mussels and Fries)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "2kg fresh mussels (cleaned, debearded)",
+          "2 shallots (diced)",
+          "3 cloves garlic",
+          "200ml dry white wine",
+          "50g butter",
+          "Celery",
+          "Parsley",
+          "Cream (optional)",
+          "Frites: 1.5kg Bintje potatoes, beef tallow or oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cut potatoes into thick batons (1cm+), rinse, soak in cold water 30 min",
+          "Dry thoroughly — water is the enemy of good frites",
+          "First fry at 140°C until cooked but pale, 6-7 min",
+          "Drain and cool — this is the secret of Belgian frites",
+          "Sauté shallots and celery in butter",
+          "Add mussels and wine, cover",
+          "Steam 4-5 min until all mussels open — discard any that don't",
+          "Add cream if desired, scatter parsley",
+          "Second fry potatoes at 190°C until deep golden and crispy, 2-3 min",
+          "Serve mussels in the pot, frites in a paper cone with mayonnaise — never ketchup"
+        ],
+        "description": "Belgium's national dish. The double-fried frites are non-negotiable, and they're served with mayonnaise — asking for ketchup marks you as a tourist.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Moules-frites_at_Chez_Leon_in_Brussels.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Moules-frites_at_Chez_Leon_in_Brussels.jpg"
+        }
+      },
+      {
+        "id": "bel-ln-2",
+        "name": "Waterzooi de Poulet (Chicken Waterzooi)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "1 whole chicken (jointed)",
+          "3 leeks (sliced)",
+          "4 carrots (sliced)",
+          "3 celery stalks",
+          "2 potatoes (cubed)",
+          "500ml chicken broth",
+          "200ml cream",
+          "2 egg yolks",
+          "Butter",
+          "Parsley",
+          "Thyme",
+          "Bay leaf",
+          "Salt and white pepper"
+        ],
+        "instructions": [
+          "Melt butter, gently sweat leeks, celery, carrots — don't brown",
+          "Add chicken pieces, broth, thyme, bay leaf",
+          "Simmer 25 min until chicken is cooked through",
+          "Add potatoes, cook 15 more min",
+          "Remove from heat",
+          "Temper egg yolks with cream, stir into broth — this enriches without boiling",
+          "Season with white pepper",
+          "Scatter with parsley",
+          "Serve in deep bowls with crusty bread"
+        ],
+        "description": "Ghent's famous creamy chicken stew — originally made with fish from the rivers. The egg yolk-cream liaison at the end makes it silky.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/%28waterzooi%29_%2879743868%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/%28waterzooi%29_%2879743868%29.jpg"
+        }
+      },
+      {
+        "id": "bel-ln-3",
+        "name": "Stoemp (Mashed Potatoes with Vegetables)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "1kg potatoes",
+          "300g carrots, leeks, or Brussels sprouts",
+          "100g butter",
+          "100ml cream",
+          "Nutmeg",
+          "Salt and pepper",
+          "Bratwurst or boudin to serve"
+        ],
+        "instructions": [
+          "Boil potatoes until tender",
+          "Cook chosen vegetable separately until soft",
+          "Mash potatoes with butter and cream",
+          "Fold in cooked vegetable — keep it chunky, not smooth",
+          "Season with nutmeg, salt, pepper",
+          "Serve as a bed for sausage, bratwurst, or boudin"
+        ],
+        "description": "Hearty mashed potato with vegetables — Brussels' everyday comfort food. Every grandmother has a favorite stoemp.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cod_and_stoemp.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Cod_and_stoemp.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "bel-dn-1",
+        "name": "Carbonnade Flamande (Flemish Beef Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 150,
+        "ingredients": [
+          "1.5kg beef chuck (cubed)",
+          "3 large onions (sliced)",
+          "500ml Belgian brown ale (dubbel)",
+          "2 tbsp brown sugar",
+          "2 tbsp Dijon mustard",
+          "2 tbsp red wine vinegar",
+          "2 slices bread",
+          "Thyme",
+          "Bay leaves",
+          "Butter",
+          "Flour",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown beef in batches in butter, set aside",
+          "Caramelize onions slowly in same pot, 15 min",
+          "Return beef, sprinkle flour, stir",
+          "Pour in Belgian brown ale — it must be Belgian",
+          "Add sugar, thyme, bay leaves",
+          "Spread mustard on bread slices, press them mustard-side down into the stew",
+          "Cover and simmer 2.5 hours — the bread dissolves and thickens the sauce",
+          "Add vinegar in the last 10 min — it brightens the richness",
+          "Serve with frites or boiled potatoes"
+        ],
+        "description": "Flemish beef braised in Belgian brown ale — the mustard-bread thickener is the traditional technique. Arguably better than French boeuf bourguignon.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Jielbeaumadier_carbonade_flamande_2010.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Jielbeaumadier_carbonade_flamande_2010.jpg"
+        }
+      },
+      {
+        "id": "bel-dn-2",
+        "name": "Gentse Stoverij (Ghent-Style Beef)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 120,
+        "ingredients": [
+          "1kg beef (cubed)",
+          "3 onions (sliced)",
+          "330ml Gruut or abbey beer",
+          "Sirop de Liège (apple-pear spread)",
+          "Dijon mustard",
+          "Bread",
+          "Thyme",
+          "Bay leaf",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown beef, sauté onions until deep gold",
+          "Add beer, thyme, bay leaf",
+          "Spread bread with mustard and sirop de Liège, push into stew",
+          "Simmer 2 hours until meat is fork-tender",
+          "Serve over frites"
+        ],
+        "description": "Ghent's variation of carbonnade — uses sirop de Liège for a sweet-sour depth unique to the city.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gent%2C_de_Graslei_vanaf_de_Korenlei_met_oeg24758tm61%2B25159_IMG_0447_2021-08-13_18.37.jpg"
+        }
+      },
+      {
+        "id": "bel-dn-3",
+        "name": "Vol-au-Vent (Chicken in Puff Pastry)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Large puff pastry cases (vol-au-vent shells)",
+          "500g chicken breast (cubed)",
+          "200g mushrooms (quartered)",
+          "200g veal meatballs (small)",
+          "Roux: 50g butter, 50g flour",
+          "500ml chicken broth",
+          "100ml cream",
+          "Lemon juice",
+          "Nutmeg",
+          "Salt and white pepper"
+        ],
+        "instructions": [
+          "Bake vol-au-vent shells until golden and hollow",
+          "Make roux with butter and flour",
+          "Add broth gradually, whisk to smooth sauce",
+          "Poach chicken and meatballs in the sauce",
+          "Add mushrooms, cook 5 min",
+          "Stir in cream, lemon juice, nutmeg",
+          "Fill puff pastry shells",
+          "Replace pastry lids at an angle",
+          "Serve with frites — always frites"
+        ],
+        "description": "Puff pastry filled with chicken, meatballs, and mushrooms in creamy sauce — a Belgian brasserie classic.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Vol-au-vent_20_cm.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Vol-au-vent_20_cm.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "bel-sn-1",
+        "name": "Frites (Belgian Fries)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 15,
+        "ingredients": [
+          "1.5kg Bintje potatoes (or other floury variety)",
+          "Beef tallow (traditional) or peanut oil",
+          "Fine salt",
+          "Mayonnaise, andalouse, or stoofvleessaus for dipping"
+        ],
+        "instructions": [
+          "Cut potatoes into thick batons, at least 1cm wide — thin fries are not Belgian",
+          "Rinse in cold water, dry completely",
+          "First fry at 140°C for 6-7 min — potatoes should be cooked but still pale",
+          "Drain on wire rack, cool completely — this resting step is critical",
+          "Second fry at 190°C for 2-3 min until deep golden and crunchy outside",
+          "Shake in paper cone, salt immediately",
+          "Serve with your choice of sauce — mayonnaise is the default"
+        ],
+        "description": "Double-fried in beef tallow, thick-cut, served in a paper cone with mayo. Belgium invented frites — not France. The country has 5,000+ frituren (fry shops).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG"
+        }
+      },
+      {
+        "id": "bel-sn-2",
+        "name": "Croquettes aux Crevettes (Shrimp Croquettes)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 10,
+        "ingredients": [
+          "250g North Sea grey shrimp (peeled)",
+          "Béchamel: 50g butter, 50g flour, 300ml milk, 50ml cream",
+          "Parsley",
+          "Nutmeg",
+          "Cayenne",
+          "Egg wash",
+          "Fine breadcrumbs",
+          "Oil for deep frying",
+          "Lemon wedges",
+          "Fried parsley"
+        ],
+        "instructions": [
+          "Make thick béchamel, season with nutmeg and cayenne",
+          "Fold in shrimp and parsley — the mixture should be very thick",
+          "Spread on tray, refrigerate until completely firm (4 hours or overnight)",
+          "Shape into cylinders or ovals",
+          "Coat in flour, egg wash, fine breadcrumbs — repeat for double coating",
+          "Deep fry at 180°C for 3-4 min until deep golden",
+          "Serve immediately with lemon and fried parsley"
+        ],
+        "description": "Crispy outside, molten shrimp cream inside — the crown jewel of Belgian snacking. Made with tiny North Sea grey shrimp that have more flavor than their size suggests.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Croquetas_Caseras_%287068664101%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Croquetas_Caseras_%287068664101%29.jpg"
+        }
+      },
+      {
+        "id": "bel-sn-3",
+        "name": "Mitraillette (Machine Gun Sandwich)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 5,
+        "ingredients": [
+          "1 demi-baguette (split)",
+          "Frites (Belgian fries)",
+          "Meat: frikandel, boulette, or viandelle (fried meat)",
+          "Sauce: andalouse, samurai, or mammoet (Belgian sauces)",
+          "Lettuce",
+          "Tomato",
+          "Onion"
+        ],
+        "instructions": [
+          "Fry thick-cut frites",
+          "Split baguette",
+          "Layer: lettuce, tomato, fried meat of choice",
+          "Pile frites directly into the sandwich — generously",
+          "Drown in sauce — andalouse is the classic (tomato-mayo-pepper)",
+          "Close the baguette (it barely closes)",
+          "Eat with both hands over the wrapper — this is not elegant food"
+        ],
+        "description": "A baguette stuffed with fries, fried meat, and sauce — Belgium's ultimate drunk food. Named 'machine gun' for its shape. Went viral when food tourists discovered Belgium puts fries INSIDE sandwiches. Every friterie makes them.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mitraillette_%28fast_food%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mitraillette_%28fast_food%29.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "bel-ds-1",
+        "name": "Chocolate Pralines",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "500g Belgian couverture chocolate (dark, milk, or white)",
+          "Ganache filling: 200ml cream, 200g chocolate, flavorings (coffee, hazelnut, raspberry, caramel)",
+          "Cocoa butter for molds"
+        ],
+        "instructions": [
+          "Temper chocolate: melt to 55°C, cool to 27°C, reheat to 31°C — this gives the signature snap",
+          "Polish molds, coat with thin layer of tempered chocolate, let set",
+          "Make ganache: heat cream, pour over chopped chocolate, stir until smooth",
+          "Add flavoring of choice, cool until pipeable",
+          "Pipe ganache into chocolate shells",
+          "Seal with another layer of tempered chocolate",
+          "Unmold once fully set — they should release with a gentle tap",
+          "Store at 15-18°C — never in the fridge"
+        ],
+        "description": "Belgium's most famous export after beer. Belgian pralines were invented in 1912 by Jean Neuhaus in Brussels. The country has over 2,000 chocolate shops.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Belgian_chocolates.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Belgian_chocolates.jpg"
+        }
+      },
+      {
+        "id": "bel-ds-2",
+        "name": "Tarte au Riz (Rice Tart)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 50,
+        "ingredients": [
+          "Sweet shortcrust pastry",
+          "Filling: 150g pudding rice, 1L milk, 3 eggs, 150g sugar, vanilla, lemon zest, nutmeg"
+        ],
+        "instructions": [
+          "Blind-bake pastry shell",
+          "Simmer rice in milk until tender and creamy, 30 min",
+          "Cool slightly, beat in eggs, sugar, vanilla, lemon zest, nutmeg",
+          "Pour into pastry shell",
+          "Bake at 160°C for 40-45 min until set with golden spots on top",
+          "Cool to room temperature — it firms as it cools"
+        ],
+        "description": "Liège's beloved rice custard tart — found in every boulangerie in Wallonia. Creamy, eggy, and comforting.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Tarte_au_riz.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Tarte_au_riz.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "bel-dr-1",
+        "name": "Belgian Trappist Beer",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "One Trappist beer: Chimay, Orval, Westmalle, Rochefort, Westvleteren, or Achel"
+        ],
+        "instructions": [
+          "Pour slowly into the correct branded glass — each abbey has its own",
+          "Tilt glass at 45°, pour steadily",
+          "Leave the yeast sediment in the bottle (or pour it in if you prefer)",
+          "Serve at 8-12°C, not fridge-cold",
+          "Savor — these beers are brewed by monks in six recognized Belgian abbeys"
+        ],
+        "description": "Belgium has 6 of the world's 14 Trappist breweries. Westvleteren 12 is regularly voted the world's best beer. Each is brewed by Cistercian monks.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Trappist_Beer_2015-08-15.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Trappist_Beer_2015-08-15.jpg"
+        }
+      },
+      {
+        "id": "bel-dr-2",
+        "name": "Jenever (Belgian Gin)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Jenever (Belgian grain spirit, old-style or young-style)",
+          "Traditional stone crock",
+          "Small tulip glass"
+        ],
+        "instructions": [
+          "Pour jenever into small tulip glass, filled to the brim",
+          "The first sip is taken by bending down to the glass on the bar — no hands — called a kopstoot",
+          "Then lift and sip normally",
+          "Traditionally accompanied by beer as a 'kopstoot' (headbutt) pairing"
+        ],
+        "description": "Belgium's native spirit — older than gin, distilled from malted grain. The hands-free first sip from a brimming glass is a sacred pub ritual.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hollandse_Graanjenever_0495.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Hollandse_Graanjenever_0495.JPG"
+        }
+      },
+      {
+        "id": "bel-dr-3",
+        "name": "Chocolat Chaud (Belgian Hot Chocolate)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "200g Belgian dark chocolate (chopped)",
+          "500ml whole milk",
+          "100ml cream",
+          "Sugar to taste",
+          "Whipped cream",
+          "Chocolate shavings"
+        ],
+        "instructions": [
+          "Heat milk and cream until steaming",
+          "Add chopped chocolate, whisk until fully melted and smooth",
+          "Simmer gently 2 min — it should be thick and glossy",
+          "Pour into mugs",
+          "Top with whipped cream and chocolate shavings"
+        ],
+        "description": "Made with real melted Belgian chocolate — thick enough to coat a spoon. A world apart from powdered cocoa.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pain_au_chocolat_Luc_Viatour.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pain_au_chocolat_Luc_Viatour.jpg"
+        }
+      }
+    ]
+  }
+}

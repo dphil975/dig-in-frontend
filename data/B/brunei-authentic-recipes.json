@@ -1,0 +1,577 @@
+{
+  "bruneiRecipes": {
+    "country": "Brunei",
+    "region": "Southeast Asia",
+    "breakfast": [
+      {
+        "id": "brn-bf-1",
+        "name": "Nasi Katok",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "2 cups jasmine rice",
+          "4 chicken drumsticks",
+          "1 cup all-purpose flour",
+          "1 tsp turmeric powder",
+          "1 tsp chili powder",
+          "2 tbsp sambal belacan",
+          "Vegetable oil for frying",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Cook jasmine rice in a rice cooker with a pinch of salt.",
+          "Season chicken drumsticks with turmeric, chili powder, and salt.",
+          "Coat chicken in flour and deep-fry in hot oil until golden brown and cooked through, about 12 minutes.",
+          "Serve a mound of rice topped with fried chicken and sambal belacan on the side."
+        ],
+        "description": "Brunei's beloved everyday meal of fragrant rice paired with crispy fried chicken and fiery sambal, wrapped in brown paper for a quick and satisfying bite.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Katok.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Katok.jpg"
+        }
+      },
+      {
+        "id": "brn-bf-2",
+        "name": "Kuih Mor",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups glutinous rice flour",
+          "1 cup coconut milk",
+          "1/2 cup palm sugar (gula melaka)",
+          "1/4 cup grated coconut",
+          "1/4 tsp salt",
+          "Banana leaves for wrapping",
+          "Water as needed"
+        ],
+        "instructions": [
+          "Mix glutinous rice flour with coconut milk and a pinch of salt to form a smooth dough.",
+          "Melt palm sugar with a little water to make a thick syrup, then let it cool.",
+          "Take small portions of dough, flatten, and fill with palm sugar syrup. Seal into balls.",
+          "Wrap each ball in a piece of banana leaf and steam for 25 minutes until cooked through.",
+          "Serve warm, rolled in freshly grated coconut."
+        ],
+        "description": "Traditional Bruneian glutinous rice cakes filled with molten palm sugar and coated in grated coconut, a sweet morning treat enjoyed with tea.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Makmur.png",
+        "imageCredit": {
+          "author": "Night Lantern",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMakmur.png"
+        }
+      },
+      {
+        "id": "brn-bf-3",
+        "name": "Kuih Malaya (Rolled Coconut Pancake)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Batter: 1 cup flour, 1 egg, 200ml coconut milk, pandan extract, pinch salt, green food coloring (optional)",
+          "Filling: grated coconut, palm sugar (gula melaka), pandan leaf"
+        ],
+        "instructions": [
+          "Make thin pancake batter with coconut milk, egg, flour, pandan",
+          "Cook filling: toast grated coconut with palm sugar and pandan until sticky",
+          "Make thin crepes from batter",
+          "Spread coconut filling on each crepe",
+          "Roll up tightly",
+          "Slice into rounds to serve"
+        ],
+        "description": "Pandan-green crepes filled with sweet coconut — a beloved Malay kuih found at every Brunei morning market.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Gadong_Night_Market_4_October_2024_21.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Gadong_Night_Market_4_October_2024_21.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "brn-ln-1",
+        "name": "Ambuyat",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "1 cup sago starch (ambulong)",
+          "2 cups boiling water",
+          "1 cup shrimp paste dipping sauce (cacah)",
+          "2 tbsp tamarind paste",
+          "1 tbsp sugar",
+          "2 red chilies, sliced",
+          "Assorted side dishes: grilled fish, steamed vegetables"
+        ],
+        "instructions": [
+          "Bring water to a rolling boil in a pot.",
+          "Gradually add sago starch while stirring vigorously with a fork or chopsticks until the mixture forms a translucent, sticky mass.",
+          "Prepare the cacah dipping sauce by mixing shrimp paste with tamarind, sugar, and chilies.",
+          "Serve ambuyat in the pot with the cacah sauce and side dishes arranged around it.",
+          "Use a bamboo fork (candas) to twirl the ambuyat and dip into the sauce."
+        ],
+        "description": "The national dish of Brunei, a starchy sago-based preparation twirled on bamboo forks and dipped into tangy, savory shrimp paste sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg"
+        }
+      },
+      {
+        "id": "brn-ln-2",
+        "name": "Soto Brunei",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g chicken thighs",
+          "2 stalks lemongrass, bruised",
+          "3 cm galangal, sliced",
+          "4 shallots, sliced",
+          "3 cloves garlic, minced",
+          "1 tsp turmeric powder",
+          "6 cups chicken stock",
+          "200g rice vermicelli",
+          "Bean sprouts, fried shallots, lime wedges for garnish",
+          "Salt and white pepper to taste"
+        ],
+        "instructions": [
+          "Simmer chicken thighs in chicken stock with lemongrass, galangal, and turmeric for 35 minutes until tender.",
+          "Remove chicken, shred the meat, and return broth to a simmer.",
+          "Saute shallots and garlic until fragrant, then add to the broth. Season with salt and pepper.",
+          "Cook rice vermicelli according to package directions and divide among bowls.",
+          "Ladle hot broth over noodles, top with shredded chicken, bean sprouts, fried shallots, and lime wedges."
+        ],
+        "description": "A comforting Bruneian-style chicken soup with aromatic spices, rice vermicelli, and fresh garnishes, often enjoyed as a midday meal.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sarawak_Kolo_Mee_Noodle_Dish.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Sarawak_Kolo_Mee_Noodle_Dish.jpg"
+        }
+      },
+      {
+        "id": "brn-ln-3",
+        "name": "Nasi Katok",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Steamed rice",
+          "Fried chicken (1 piece)",
+          "Sambal belacan (shrimp paste chili)"
+        ],
+        "instructions": [
+          "Steam rice",
+          "Fry chicken piece until golden and cooked through",
+          "Make sambal: pound chili, shrimp paste, lime juice",
+          "Serve rice with chicken and sambal"
+        ],
+        "description": "Brunei's national cheap meal — rice, fried chicken, sambal. Sold wrapped in paper for 1 BND at stalls across the country.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Katok.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Nasi_Katok.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "brn-dn-1",
+        "name": "Rendang Daging",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "700g beef chuck, cubed",
+          "400ml coconut milk",
+          "200ml coconut cream",
+          "4 shallots, blended",
+          "4 cloves garlic, blended",
+          "3 cm ginger, blended",
+          "3 cm galangal, blended",
+          "2 stalks lemongrass, bruised",
+          "6 dried chilies, soaked and blended",
+          "1 tbsp ground coriander",
+          "1 tsp ground cumin",
+          "1 cup kerisik (toasted coconut paste)",
+          "3 kaffir lime leaves",
+          "1 turmeric leaf",
+          "Salt and sugar to taste"
+        ],
+        "instructions": [
+          "Combine all blended ingredients in a large pot and cook over medium heat until fragrant, about 5 minutes.",
+          "Add beef cubes and stir to coat with the spice paste.",
+          "Pour in coconut milk and bring to a gentle boil. Add lemongrass, kaffir lime leaves, and turmeric leaf.",
+          "Reduce heat to low and simmer uncovered, stirring occasionally, for about 90 minutes.",
+          "Add coconut cream and kerisik, continue cooking until the sauce is thick and dark, coating the meat.",
+          "Season with salt and sugar. Serve with steamed rice."
+        ],
+        "description": "A rich, slow-cooked beef rendang with layers of spice and toasted coconut, deeply flavored and dry in the Bruneian style.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Rendang_daging_sapi_asli_Padang.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Rendang_daging_sapi_asli_Padang.JPG"
+        }
+      },
+      {
+        "id": "brn-dn-2",
+        "name": "Udang Sambal Serai",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "500g large prawns, shell on",
+          "3 stalks lemongrass, finely sliced",
+          "6 shallots, sliced",
+          "4 cloves garlic, minced",
+          "8 dried chilies, soaked and blended",
+          "2 tbsp tamarind juice",
+          "1 tbsp sugar",
+          "3 tbsp vegetable oil",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Heat oil in a wok and saute shallots, garlic, and lemongrass until fragrant.",
+          "Add the blended chili paste and cook until the oil separates from the paste.",
+          "Toss in the prawns and stir-fry until they turn pink, about 4 minutes.",
+          "Add tamarind juice, sugar, and salt. Toss to coat evenly.",
+          "Serve immediately with steamed rice."
+        ],
+        "description": "Succulent prawns wok-fried in a spicy lemongrass and chili sambal, a beloved Bruneian seafood dish with bold, aromatic flavors.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sambal_cobek.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sambal_cobek.JPG"
+        }
+      },
+      {
+        "id": "brn-dn-3",
+        "name": "Soto Brunei (Spiced Chicken Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "1 whole chicken (jointed)",
+          "2L water",
+          "Lemongrass",
+          "Galangal",
+          "Turmeric",
+          "Garlic",
+          "Shallots",
+          "Rice vermicelli",
+          "Bean sprouts",
+          "Hard-boiled eggs",
+          "Fried shallots",
+          "Lime",
+          "Sambal"
+        ],
+        "instructions": [
+          "Simmer chicken with lemongrass, galangal, turmeric until tender",
+          "Remove chicken, shred meat",
+          "Strain broth, return to pot",
+          "Add shredded chicken back",
+          "To serve: place vermicelli and bean sprouts in bowl",
+          "Ladle hot broth and chicken over",
+          "Top with egg halves, fried shallots, lime, sambal"
+        ],
+        "description": "Brunei's soul-warming chicken soup — fragrant with galangal and turmeric, loaded with toppings. A Ramadan staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Penjual_Jajanan_Tradisional_Banjar_di_Halong.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Penjual_Jajanan_Tradisional_Banjar_di_Halong.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "brn-sn-1",
+        "name": "Cucur Udang",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "1 cup all-purpose flour",
+          "1/2 cup rice flour",
+          "200g small shrimp, peeled",
+          "1/2 cup bean sprouts",
+          "3 spring onions, sliced",
+          "1 tsp chili flakes",
+          "1/2 tsp turmeric powder",
+          "3/4 cup water",
+          "Vegetable oil for deep-frying",
+          "Salt to taste"
+        ],
+        "instructions": [
+          "Mix both flours with turmeric, chili flakes, and salt. Add water to make a thick batter.",
+          "Fold in shrimp, bean sprouts, and spring onions.",
+          "Heat oil in a deep pan. Drop spoonfuls of batter into the hot oil.",
+          "Fry until golden and crispy on all sides, about 3 minutes per batch.",
+          "Drain on paper towels and serve with sweet chili sauce."
+        ],
+        "description": "Crispy Bruneian shrimp fritters packed with bean sprouts and spring onions, a popular teatime snack sold at roadside stalls.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kue_Cucur.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kue_Cucur.jpg"
+        }
+      },
+      {
+        "id": "brn-sn-2",
+        "name": "Cucur Udang (Prawn Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "200g small prawns",
+          "1 cup flour",
+          "1/2 cup rice flour",
+          "Chili (sliced)",
+          "Bean sprouts",
+          "Spring onion",
+          "Turmeric",
+          "Salt",
+          "Water",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix flours with turmeric, salt, and water to thick batter",
+          "Fold in prawns, chili, bean sprouts, spring onion",
+          "Drop spoonfuls into hot oil",
+          "Fry until golden and crispy",
+          "Serve with sweet chili sauce"
+        ],
+        "description": "Crispy prawn fritters — a teatime favorite across Brunei, always served with dipping sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kue_Cucur.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kue_Cucur.jpg"
+        }
+      },
+      {
+        "id": "brn-sn-4",
+        "name": "Ambuyat (Sago Starch Hot Pot)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "200g sago starch (ambuyat flour)",
+          "Boiling water",
+          "Dipping sauces: cacah (fermented durian/shrimp paste), tempoyak, sambal",
+          "Side dishes: grilled fish, vegetables, fried tofu"
+        ],
+        "instructions": [
+          "Bring water to boil",
+          "Pour boiling water into sago starch gradually, stirring with chopstick or fork",
+          "Keep stirring — it transforms into a translucent, stretchy, gluey mass",
+          "It's ready when it's completely translucent and sticky",
+          "Use a bamboo fork (candas) — twirl a ball of ambuyat around the prongs",
+          "Dip the ball into cacah sauce and eat in one go — don't chew, swallow",
+          "The texture is the challenge — it's sticky, stretchy, and unfamiliar to outsiders",
+          "This is Brunei's national dish, eaten communally from a shared pot"
+        ],
+        "description": "Brunei's national dish — a translucent, stretchy sago starch eaten communally with a special bamboo fork and dipped in pungent cacah sauce. The bizarre texture and twirling technique have made it viral, and the fermented durian dipping sauce divides every food creator who tries it.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "brn-ds-1",
+        "name": "Kuih Lapis",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "250g rice flour",
+          "100g tapioca starch",
+          "400ml coconut milk",
+          "300g sugar",
+          "500ml water",
+          "1/2 tsp salt",
+          "Food coloring (red, green, or pandan extract)"
+        ],
+        "instructions": [
+          "Dissolve sugar in water over low heat, then let cool. Mix in coconut milk and salt.",
+          "Combine rice flour and tapioca starch. Gradually add the coconut sugar mixture, stirring until smooth.",
+          "Divide batter into portions and color each differently.",
+          "Grease a square tray and steam the first colored layer for 5 minutes until set.",
+          "Add the next colored layer on top and steam again. Repeat until all layers are used.",
+          "Let cool completely, then cut into diamond shapes to serve."
+        ],
+        "description": "A beautiful multicolored steamed layer cake with a soft, chewy texture, a staple at Bruneian celebrations and festive gatherings.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg"
+        }
+      },
+      {
+        "id": "brn-ds-2",
+        "name": "Kuih Lapis (Layered Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 45,
+        "cookTime": 60,
+        "ingredients": [
+          "500g butter",
+          "500g sugar",
+          "20 egg yolks",
+          "200g flour",
+          "200g tapioca starch",
+          "400ml coconut milk",
+          "Pandan extract",
+          "Vanilla",
+          "Spice mix: cinnamon, cardamom, clove, nutmeg"
+        ],
+        "instructions": [
+          "Cream butter and sugar",
+          "Add egg yolks one at a time",
+          "Fold in flour and tapioca starch alternately with coconut milk",
+          "Divide batter: leave half plain (vanilla), color half with pandan",
+          "Grease a pan, pour thin layer of one batter",
+          "Grill/broil until set and lightly browned",
+          "Add layer of other batter, grill again",
+          "Repeat for 18-20 alternating layers",
+          "Cool completely before cutting — it should slice into distinct striped layers"
+        ],
+        "description": "Layer cake of Malay royalty — 20 thin grilled layers alternating pandan and vanilla. A labor of love served at Hari Raya.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Kue_Lapis.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "brn-dr-1",
+        "name": "Teh Tarik",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "4 tbsp loose black tea leaves",
+          "4 cups water",
+          "6 tbsp condensed milk",
+          "2 tbsp evaporated milk"
+        ],
+        "instructions": [
+          "Brew black tea in boiling water for 5 minutes, then strain.",
+          "Add condensed milk and evaporated milk to the hot tea.",
+          "Pour the tea back and forth between two cups from a height to create a frothy top.",
+          "Repeat the pulling motion several times until well mixed and frothy.",
+          "Serve hot in glasses."
+        ],
+        "description": "Pulled tea made by pouring sweetened black tea between cups to create a creamy froth, a beloved daily drink throughout Brunei.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg"
+        }
+      },
+      {
+        "id": "brn-dr-2",
+        "name": "Tuak",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "2 liters fresh coconut palm sap (nira)",
+          "Bark strips from the raru tree (or substitute with a cinnamon stick for flavor)"
+        ],
+        "instructions": [
+          "Collect fresh coconut palm sap from the cut flower stalks of the coconut palm.",
+          "Add raru bark strips to the sap in a jar for a subtle woody flavor.",
+          "Allow the sap to naturally ferment for 1 to 3 days at room temperature.",
+          "Strain and serve at room temperature or slightly chilled.",
+          "Consume within a few days as it continues to ferment and will become more sour."
+        ],
+        "description": "Traditional palm wine made from naturally fermented coconut sap, historically enjoyed by Brunei's indigenous communities during celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tuak_tasting_flight.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Tuak_tasting_flight.jpg"
+        }
+      },
+      {
+        "id": "brn-dr-3",
+        "name": "Teh Tarik (Pulled Tea)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Strong black tea (2 tea bags or loose)",
+          "Condensed milk",
+          "Evaporated milk (optional)",
+          "Sugar (optional)"
+        ],
+        "instructions": [
+          "Brew very strong tea",
+          "Mix with condensed milk in a mug",
+          "'Pull' the tea: pour from one vessel to another at arm's length, repeatedly",
+          "This creates a thick foam and cools the tea",
+          "Serve immediately — the foam should sit on top"
+        ],
+        "description": "Tea pulled between two vessels to create thick froth — the art is in the pour. Every kopitiam in Brunei makes it.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Teh_Tarik_at_the_Iskandar_Curry_House_at_One_Riverside_%28DSCF0286%29.jpg"
+        }
+      }
+    ]
+  }
+}

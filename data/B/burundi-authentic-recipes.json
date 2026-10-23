@@ -1,0 +1,476 @@
+{
+  "burundiRecipes": {
+    "country": "Burundi",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "bdi-bf-1",
+        "name": "Igisafuriya (Mixed Vegetable Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "2 plantains",
+          "2 sweet potatoes",
+          "1 cup beans",
+          "2 tomatoes",
+          "1 onion",
+          "Palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Peel and chop plantains and sweet potatoes",
+          "Boil beans until almost tender",
+          "Add vegetables, onion, tomatoes",
+          "Cook in palm oil until soft",
+          "Season with salt"
+        ],
+        "description": "Hearty one-pot vegetable stew."
+      },
+      {
+        "id": "bdi-bf-2",
+        "name": "Umutsima (Cassava Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "2 cups cassava flour",
+          "4 cups water",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil water with salt",
+          "Gradually stir in cassava flour",
+          "Stir constantly for 15 min until thick",
+          "Serve warm with beans or greens"
+        ],
+        "description": "Thick cassava porridge, Burundi's staple starch."
+      },
+      {
+        "id": "bdi-bf-3",
+        "name": "Igisafuriya (Bean and Banana Stew)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "2 cups red beans (cooked)",
+          "2 green bananas (plantains, sliced)",
+          "Palm oil",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion in palm oil",
+          "Add cooked beans and plantain slices",
+          "Add water to just cover",
+          "Simmer until plantains are tender and beans are creamy",
+          "Mash slightly to thicken",
+          "Season with salt"
+        ],
+        "description": "Beans and green bananas cooked together — an everyday Burundian breakfast that keeps you full until midday."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "bdi-ln-1",
+        "name": "Beans with Plantains",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 40,
+        "ingredients": [
+          "2 cups red kidney beans",
+          "3 ripe plantains",
+          "1 onion",
+          "2 tbsp palm oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook beans until tender",
+          "Peel and slice plantains",
+          "Sauté onion in palm oil",
+          "Add plantains and beans, simmer 15 min",
+          "Season with salt"
+        ],
+        "description": "The national dish — red beans with sweet plantains.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg"
+        }
+      },
+      {
+        "id": "bdi-ln-2",
+        "name": "Isombe (Cassava Leaf Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g cassava leaves (pounded)",
+          "1 cup peanut paste",
+          "1 onion",
+          "2 tomatoes",
+          "Palm oil",
+          "Salt",
+          "Dried fish (optional)"
+        ],
+        "instructions": [
+          "Pound cassava leaves, boil 30 min",
+          "Add peanut paste and palm oil",
+          "Add diced onion and tomatoes",
+          "Simmer until thick",
+          "Add dried fish if using",
+          "Serve with umutsima"
+        ],
+        "description": "Creamy cassava leaf stew enriched with peanut paste.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/ISOMBE.jpg",
+        "imageCredit": {
+          "author": "Mutiganda",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AISOMBE.jpg"
+        }
+      },
+      {
+        "id": "bdi-ln-3",
+        "name": "Isombe (Cassava Leaf Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 45,
+        "ingredients": [
+          "500g cassava leaves (pounded)",
+          "Peanut paste",
+          "Palm oil",
+          "Onion",
+          "Tomato",
+          "Dried fish (optional)",
+          "Eggplant",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil pounded cassava leaves for 30 min to remove bitterness",
+          "Drain, add fresh water",
+          "Add peanut paste, stir until dissolved",
+          "Add palm oil, onion, tomato, eggplant",
+          "Simmer until thick and creamy",
+          "Serve over rice, ugali, or boiled plantains"
+        ],
+        "description": "Cassava leaves pounded and cooked with peanut paste — Burundi's signature green stew, rich in protein and deeply savory.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/ISOMBE.jpg",
+        "imageCredit": {
+          "author": "Mutiganda",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AISOMBE.jpg"
+        }
+      },
+      {
+        "id": "bdi-ln-4",
+        "name": "Mukeke (Grilled Lake Tanganyika Fish)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "4 whole mukeke fish (or tilapia/perch — freshwater fish)",
+          "Marinade: lemon juice, garlic, salt, chili flakes",
+          "Palm oil (for basting)",
+          "Banana leaves (for wrapping, optional)",
+          "Cassava flour (for serving as ubugari)"
+        ],
+        "instructions": [
+          "Clean and score fish on both sides",
+          "Marinate in lemon juice, garlic, salt, and chili — 30 min",
+          "Baste with palm oil",
+          "Grill over charcoal — the skin should blister and char",
+          "Alternatively, wrap in banana leaves and grill for a smokier, steamed effect",
+          "Serve with ubugari (stiff cassava porridge) and a fresh tomato-onion salad",
+          "Lake Tanganyika's fish are some of the freshest in Africa — the lake is 20 minutes from Bujumbura's grills"
+        ],
+        "description": "Freshwater fish from Lake Tanganyika — one of the deepest, oldest lakes on Earth — grilled over charcoal and served with ubugari. Burundi's lakeside fish restaurants have become viral destinations for African food tourism content."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "bdi-dn-1",
+        "name": "Brochettes (Grilled Meat Skewers)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "500g goat or beef (cubed)",
+          "2 onions (chunked)",
+          "2 tomatoes (chunked)",
+          "Vegetable oil",
+          "Salt and pepper",
+          "Lime juice"
+        ],
+        "instructions": [
+          "Marinate meat with oil, lime, salt, pepper",
+          "Thread meat and vegetables onto skewers",
+          "Grill over charcoal until done",
+          "Serve with fries and salad"
+        ],
+        "description": "Charcoal-grilled meat skewers — Burundi's street food staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Wooden_skewers.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Wooden_skewers.jpg"
+        }
+      },
+      {
+        "id": "bdi-dn-2",
+        "name": "Tilapia with Ugali",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "4 tilapia fillets",
+          "2 cups cornmeal",
+          "4 cups water",
+          "Lemon",
+          "Onion",
+          "Tomatoes",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Season fish with lemon and salt",
+          "Fry until golden",
+          "Make ugali: boil water, stir in cornmeal until thick",
+          "Make tomato-onion sauce",
+          "Serve fish on ugali with sauce"
+        ],
+        "description": "Fried tilapia with thick cornmeal and fresh tomato sauce.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      },
+      {
+        "id": "bdi-dn-3",
+        "name": "Mukeke (Lake Tanganyika Fish)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "4 fresh mukeke fish (or tilapia)",
+          "Lime juice",
+          "Palm oil",
+          "Onion",
+          "Tomato",
+          "Garlic",
+          "Chili pepper",
+          "Salt"
+        ],
+        "instructions": [
+          "Clean fish, score sides, marinate in lime and salt",
+          "Heat palm oil, sauté onion, garlic, tomato, chili",
+          "Place fish in sauce",
+          "Cook covered 10-15 min, turning once",
+          "The sauce should be thick and coat the fish",
+          "Serve with rice or ugali"
+        ],
+        "description": "Fresh fish from Lake Tanganyika in palm oil tomato sauce — Bujumbura's waterfront specialty."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "bdi-sn-1",
+        "name": "Mandazi (Fried Doughnuts)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "3 cups flour",
+          "1/4 cup sugar",
+          "1 tsp yeast",
+          "1/2 cup coconut milk",
+          "1 egg",
+          "Cardamom",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix dough, let rise 1 hour",
+          "Roll out, cut triangles",
+          "Deep fry until golden",
+          "Drain and serve"
+        ],
+        "description": "Sweet, cardamom-scented fried dough triangles.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bowl_of_mandazi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bowl_of_mandazi.jpg"
+        }
+      },
+      {
+        "id": "bdi-sn-2",
+        "name": "Agatoke (Fried Plantains)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "4 ripe plantains",
+          "Palm oil or vegetable oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Peel plantains, slice diagonally",
+          "Fry in hot oil until golden brown on both sides",
+          "Drain, sprinkle with salt",
+          "Serve hot"
+        ],
+        "description": "Fried ripe plantains — sweet, caramelized, served with every meal or as a snack. The riper the plantain, the sweeter."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "bdi-ds-1",
+        "name": "Boiled Sweet Potatoes with Honey",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 25,
+        "ingredients": [
+          "4 sweet potatoes",
+          "Honey",
+          "Cinnamon",
+          "Butter"
+        ],
+        "instructions": [
+          "Boil sweet potatoes until tender",
+          "Peel and slice",
+          "Drizzle with honey and melted butter",
+          "Dust with cinnamon"
+        ],
+        "description": "Simple, naturally sweet dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ipomoea_batatas_006.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ipomoea_batatas_006.JPG"
+        }
+      },
+      {
+        "id": "bdi-ds-2",
+        "name": "Ikivuguto (Fermented Milk Dessert)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "1L whole milk",
+          "Fermented milk culture (or existing ikivuguto)",
+          "Honey",
+          "Banana (mashed, optional)"
+        ],
+        "instructions": [
+          "Heat milk to warm (not boiling)",
+          "Add culture, stir",
+          "Cover, ferment at room temperature 24-48 hours",
+          "The milk thickens into tangy yogurt-like consistency",
+          "Sweeten with honey, mix with mashed banana if desired",
+          "Serve cold"
+        ],
+        "description": "Fermented milk — Burundi's traditional dairy product, similar to thick yogurt. Sweetened with honey, it becomes a dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "bdi-dr-1",
+        "name": "Urwarwa (Banana Wine)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "5kg ripe bananas",
+          "Water",
+          "Sorghum flour"
+        ],
+        "instructions": [
+          "Mash ripe bananas, extract juice",
+          "Mix with small amount of sorghum flour",
+          "Let ferment 3-5 days",
+          "Strain and serve"
+        ],
+        "description": "Traditional fermented banana wine."
+      },
+      {
+        "id": "bdi-dr-2",
+        "name": "Ikivuguto (Fermented Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "1L fresh milk",
+          "Starter culture from previous batch"
+        ],
+        "instructions": [
+          "Warm milk slightly",
+          "Add starter culture",
+          "Let sit at room temp 1-2 days",
+          "Shake well before serving"
+        ],
+        "description": "Cultured milk drink, tangy like buttermilk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Rwanda_fruits.jpg"
+        }
+      },
+      {
+        "id": "bdi-dr-3",
+        "name": "Urwarwa (Banana Beer)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "10kg ripe bananas",
+          "Sorghum flour",
+          "Water"
+        ],
+        "instructions": [
+          "Ripen bananas in a pit covered with leaves for days until very soft",
+          "Extract juice by squeezing through grass filter",
+          "Mix juice with roasted sorghum flour",
+          "Let ferment 1-3 days in a gourd",
+          "Strain — the beer is thick, slightly sour, mildly alcoholic",
+          "Serve communally from a shared gourd, sipped through long straws"
+        ],
+        "description": "Banana beer — brewed for centuries in Burundi, drunk communally through long reed straws from a single gourd. A social ceremony as much as a drink."
+      }
+    ]
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "tuvaluRecipes": {
+    "country": "Tuvalu",
+    "region": "Oceania",
+    "breakfast": [
+      {
+        "id": "tuv-bf-1",
+        "name": "Pulaka (Giant Taro)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Pulaka (swamp taro)",
+          "Coconut cream",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil pulaka until tender",
+          "Serve with coconut cream"
+        ],
+        "description": "Boiled giant taro with coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pulaka_pit_%282570411598%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pulaka_pit_%282570411598%29.jpg"
+        }
+      },
+      {
+        "id": "tuv-bf-2",
+        "name": "Fried Fish and Rice",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Fish",
+          "Rice",
+          "Soy sauce",
+          "Oil"
+        ],
+        "instructions": [
+          "Cook rice",
+          "Fry fish",
+          "Serve together"
+        ],
+        "description": "Simple fried fish with rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg"
+        }
+      },
+      {
+        "id": "tuv-bf-3",
+        "name": "Pawpaw (Papaya) with Lime",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Ripe papaya",
+          "Fresh lime juice"
+        ],
+        "instructions": [
+          "Ripe papaya with lime juice is the Pacific island breakfast",
+          "The papaya is sweet and perfumed",
+          "The lime cuts the sweetness and adds brightness",
+          "Simple, fresh, and tropical",
+          "Papaya grows readily on Pacific islands"
+        ],
+        "description": "Tuvaluan tropical fruit breakfast -- ripe papaya with fresh lime juice. The papaya is sweet and perfumed; lime cuts the sweetness. Papaya grows readily on Pacific atolls. Simple and fresh."
+      },
+      {
+        "id": "tuv-bf-4",
+        "name": "Coconut Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Rolled oats or tapioca",
+          "Coconut milk",
+          "Sugar"
+        ],
+        "instructions": [
+          "Coconut milk porridge is the Tuvaluan breakfast",
+          "Oats or tapioca cooked in coconut milk",
+          "The coconut milk replaces the water -- richness and flavor",
+          "Sweetened simply"
+        ],
+        "description": "Tuvaluan coconut milk porridge -- oats or tapioca cooked in coconut milk instead of water, sweetened simply. Coconut milk enriches everything in Pacific island cooking.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oatmeal_%281%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oatmeal_%281%29.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "tuv-ln-1",
+        "name": "Fish and Coconut",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Fresh fish",
+          "Coconut cream",
+          "Lime",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Simmer coconut cream",
+          "Add fish, cook 15 min",
+          "Add lime and onion"
+        ],
+        "description": "Fish in coconut cream."
+      },
+      {
+        "id": "tuv-ln-2",
+        "name": "Pork and Breadfruit",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Pork",
+          "Breadfruit",
+          "Coconut milk",
+          "Onion"
+        ],
+        "instructions": [
+          "Brown pork",
+          "Add breadfruit and coconut milk",
+          "Simmer until tender"
+        ],
+        "description": "Pork and breadfruit in coconut milk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Bowl_of_poi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Bowl_of_poi.jpg"
+        }
+      },
+      {
+        "id": "tuv-ln-3",
+        "name": "Pulaka (Giant Taro)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Pulaka (Cyrtosperma merkusii -- the large swamp taro grown in Tuvalu)",
+          "Coconut milk",
+          "Salt"
+        ],
+        "instructions": [
+          "Pulaka is the Tuvaluan staple crop -- a giant swamp taro grown in pits",
+          "Cyrtosperma merkusii: the swamp taro -- larger, starchier, and more calorie-dense than regular taro",
+          "Grown in babai pits: excavated coral pits filled with compost and freshwater",
+          "Tuvalu's fresh water is extremely scarce -- the babai pit system conserves it",
+          "Boiled or baked with coconut milk",
+          "Climate change threatens pulaka cultivation -- saltwater intrusion from rising seas contaminates the freshwater pits"
+        ],
+        "description": "Tuvaluan giant swamp taro -- pulaka (Cyrtosperma merkusii), grown in babai pits (excavated coral pits with freshwater and compost). Tuvalu's freshwater is scarce; the babai system conserves it. Boiled or baked with coconut milk. Climate change and rising seas contaminate the freshwater pits with salt.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pulaka_pit_%282570411598%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Pulaka_pit_%282570411598%29.jpg"
+        }
+      },
+      {
+        "id": "tuv-ln-4",
+        "name": "Palusami (Taro Leaves in Coconut Cream)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Taro leaves (young)",
+          "Thick coconut cream",
+          "Onion",
+          "Salt",
+          "Banana leaves (for wrapping)"
+        ],
+        "instructions": [
+          "Palusami is the pan-Pacific taro leaf and coconut cream dish",
+          "Young taro leaves folded around thick coconut cream and onion",
+          "Wrapped in banana leaves",
+          "Cooked in an umu or steamed",
+          "The taro leaves soften completely -- they become silky",
+          "The coconut cream absorbs into the leaves",
+          "Eaten across Samoa, Tonga, Tuvalu, and Fiji"
+        ],
+        "description": "Tuvaluan taro leaf parcels -- young taro leaves wrapped around thick coconut cream and onion, enclosed in banana leaves and cooked in an umu or steamed. The leaves become silky as they absorb the coconut cream. Palusami is eaten across Samoa, Tonga, Tuvalu, and Fiji.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      },
+      {
+        "id": "tuv-ln-5",
+        "name": "Fish with Coconut Sauce",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Fresh fish (tuna, snapper, or flying fish)",
+          "Coconut cream",
+          "Lime",
+          "Onion, garlic",
+          "Salt"
+        ],
+        "instructions": [
+          "Fish is the primary protein in Tuvalu",
+          "Tuvalu sits in the middle of the Pacific -- surrounded by ocean",
+          "The Exclusive Economic Zone (EEZ) is much larger than the land area",
+          "Fish cooked in coconut cream is the simplest and most common dinner",
+          "The cream softens and enriches the fish",
+          "Tuna is the main commercial fish species in the Tuvaluan EEZ"
+        ],
+        "description": "Tuvaluan coconut cream fish -- fresh tuna or snapper gently cooked in coconut cream with lime and onion. Fish is the primary protein: Tuvalu's ocean EEZ is far larger than its land. Tuna dominates the Tuvaluan commercial fishery.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sauce_de_poisson.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sauce_de_poisson.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "tuv-dn-1",
+        "name": "Laulau (Wrapped Fish)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Fish fillets",
+          "Taro or banana leaves",
+          "Coconut cream",
+          "Onion"
+        ],
+        "instructions": [
+          "Wrap fish with coconut cream in leaves",
+          "Bake or steam 30 min"
+        ],
+        "description": "Fish steamed in taro leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      },
+      {
+        "id": "tuv-dn-2",
+        "name": "Coconut Crab",
+        "difficulty": "Medium",
+        "servings": 2,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "1 coconut crab",
+          "Coconut cream",
+          "Lime"
+        ],
+        "instructions": [
+          "Cook crab in coconut cream",
+          "Serve with lime"
+        ],
+        "description": "Coconut crab — a Pacific delicacy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Coconut_Crab_Birgus_latro.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Coconut_Crab_Birgus_latro.jpg"
+        }
+      },
+      {
+        "id": "tuv-dn-3",
+        "name": "Umu Feast",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 60,
+        "cookTime": 240,
+        "ingredients": [
+          "Pork, chicken, or fish",
+          "Taro, breadfruit, sweet potato, banana",
+          "Banana leaves, taro leaves (for wrapping)",
+          "Coconut cream"
+        ],
+        "instructions": [
+          "The umu (earth oven) is the Tuvaluan and wider Polynesian cooking method for feasts",
+          "Volcanic stones heated in a fire",
+          "Food wrapped in leaves placed on the stones, covered and steamed",
+          "The umu is opened for celebrations: Sunday meals, weddings, funerals",
+          "In Tuvalu (a coral atoll): the umu uses coral rubble stones -- volcanic stones are imported or improvised",
+          "The opening is an event: the smell of the leaves and steam is part of the ceremony"
+        ],
+        "description": "Tuvaluan earth oven feast -- coral stones heated by fire (volcanic stones are scarce on atolls), food wrapped in taro and banana leaves placed on the stones, covered and steamed 2-4 hours. Opened for Sunday meals and celebrations. The opening is a ceremony."
+      },
+      {
+        "id": "tuv-dn-4",
+        "name": "Baked Breadfruit",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 60,
+        "ingredients": [
+          "Breadfruit (whole)",
+          "Coconut cream",
+          "Salt"
+        ],
+        "instructions": [
+          "Breadfruit is a staple food across the Pacific islands",
+          "A whole breadfruit is baked directly over coals or in the umu",
+          "The skin chars and the inside becomes soft, starchy, and slightly sweet",
+          "Eaten with coconut cream",
+          "Captain Bligh of the Bounty was transporting breadfruit plants when the mutiny occurred (1789) -- he was trying to bring breadfruit from Tahiti to the Caribbean as a cheap food for enslaved people"
+        ],
+        "description": "Tuvaluan baked breadfruit -- whole breadfruit baked over coals until the skin chars and the starchy interior is soft and slightly sweet, eaten with coconut cream. Captain Bligh was transporting breadfruit plants from Tahiti to the Caribbean (for enslaved people's food) when the Bounty mutiny occurred (1789).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg"
+        }
+      },
+      {
+        "id": "tuv-dn-5",
+        "name": "Octopus in Coconut Milk",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Fresh octopus (cleaned and cut)",
+          "Coconut milk",
+          "Garlic, ginger",
+          "Lime",
+          "Chilli (optional)"
+        ],
+        "instructions": [
+          "Octopus is a regular Pacific island seafood",
+          "In Tuvalu, caught in the shallow reef areas",
+          "Cooked simply in coconut milk",
+          "The octopus becomes tender from the gentle braise",
+          "Served with rice or taro"
+        ],
+        "description": "Tuvaluan reef octopus in coconut milk -- octopus caught in shallow reef waters, braised in coconut milk with garlic and ginger until tender. Served with rice or taro.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "tuv-sn-1",
+        "name": "Baked Breadfruit",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 45,
+        "ingredients": [
+          "Breadfruit"
+        ],
+        "instructions": [
+          "Roast over coals 45 min",
+          "Peel and serve"
+        ],
+        "description": "Fire-roasted breadfruit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Artocarpus_altilis_%28fruit%29.jpg"
+        }
+      },
+      {
+        "id": "tuv-sn-2",
+        "name": "Coconut Cream Drink (Koko)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh coconut (young -- for the water)",
+          "Mature coconut (grated and pressed for the cream)",
+          "Sugar (optional)"
+        ],
+        "instructions": [
+          "Fresh coconut water and cream are the Tuvaluan drinks",
+          "Young coconut: the water is drunk fresh",
+          "Mature coconut: grated and squeezed for thick cream -- drunk as a rich snack",
+          "The coconut is the Tuvaluan pantry: drink, food, fat, vessel, and fiber"
+        ],
+        "description": "Tuvaluan fresh coconut -- young coconut water drunk fresh; mature coconut grated and pressed for thick cream. The coconut is the Tuvaluan pantry: drink, food, cooking fat, and vessel. Everything comes from the coconut.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cononut_milk.JPG"
+        }
+      },
+      {
+        "id": "tuv-sn-3",
+        "name": "Banana (Various Preparations)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Bananas (various types -- plantain, cooking banana, sweet banana)"
+        ],
+        "instructions": [
+          "Bananas and plantains grow on Pacific atolls",
+          "Eaten raw when ripe",
+          "Cooked when green: boiled, baked, or fried",
+          "A reliable calorie source on atolls with limited agricultural land",
+          "Multiple varieties: some are starchy (cooking), some are sweet (eating)"
+        ],
+        "description": "Tuvaluan everyday banana -- multiple types grown on atolls: sweet bananas eaten raw, starchy plantains boiled or baked. A reliable calorie source on land-scarce Pacific atolls.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg",
+        "imageCredit": {
+          "author": "TimothyPilgrim",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABananavarieties.jpg"
+        }
+      },
+      {
+        "id": "tuv-sn-4",
+        "name": "Crab (Coconut Crab or Land Crab)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Coconut crab or land crab (freshly caught)",
+          "Coconut milk or salt water",
+          "Lime"
+        ],
+        "instructions": [
+          "Coconut crabs are native to the Pacific islands -- Tuvalu has them",
+          "The world's largest land arthropod: Birgus latro",
+          "Climbs coconut trees to eat coconuts -- hence the name",
+          "Caught at night (they are nocturnal)",
+          "Boiled or steamed -- the meat is sweet and coconut-flavored",
+          "Their numbers have declined from over-hunting on many islands"
+        ],
+        "description": "Tuvaluan coconut crab -- Birgus latro, the world's largest land arthropod, native to the Pacific. Climbs coconut trees; nocturnal. Caught at night and boiled or steamed. The meat is sweet with a coconut flavor. Numbers have declined from overharvesting on many islands.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Cancer_pagurus.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Cancer_pagurus.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "tuv-ds-1",
+        "name": "Coconut Candy",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "Grated coconut",
+          "Sugar"
+        ],
+        "instructions": [
+          "Cook coconut and sugar until thick",
+          "Drop onto tray",
+          "Let harden"
+        ],
+        "description": "Simple coconut candy.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/Keodua.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKeodua.jpg"
+        }
+      },
+      {
+        "id": "tuv-ds-2",
+        "name": "Sweetened Taro (Taro Pudding)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Taro (cooked and mashed)",
+          "Coconut cream",
+          "Sugar or honey"
+        ],
+        "instructions": [
+          "Sweetened taro mashed with coconut cream is the simple Tuvaluan dessert",
+          "Cooked taro mashed until smooth",
+          "Coconut cream and sugar stirred in",
+          "Warm or chilled",
+          "A nourishing, simple sweet"
+        ],
+        "description": "Tuvaluan sweetened taro pudding -- cooked taro mashed smooth with coconut cream and sugar. Warm or chilled. A simple, nourishing dessert from the island's staple starch.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Songe-R%C3%A9union.JPG",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Thierry Caro assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASonge-R%C3%A9union.JPG"
+        }
+      },
+      {
+        "id": "tuv-ds-3",
+        "name": "Coconut Candy",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Fresh grated coconut",
+          "Sugar (caramelized)",
+          "Optional: vanilla or lime zest"
+        ],
+        "instructions": [
+          "Coconut candy is the simple Pacific island sweet",
+          "Grated coconut mixed into caramelized sugar",
+          "Set into bars or pressed into shapes",
+          "A simple confection from the most available ingredient"
+        ],
+        "description": "Tuvaluan coconut candy -- fresh grated coconut mixed into caramelized sugar, set into bars. A simple confection from the most abundant Pacific atoll ingredient.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/4c/Keodua.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AKeodua.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "tuv-dr-1",
+        "name": "Toddy",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Coconut palm sap"
+        ],
+        "instructions": [
+          "Collect sap from palm",
+          "Drink fresh or let ferment"
+        ],
+        "description": "Coconut palm toddy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg"
+        }
+      },
+      {
+        "id": "tuv-dr-2",
+        "name": "Coconut Water",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Young coconut"
+        ],
+        "instructions": [
+          "Crack open, drink"
+        ],
+        "description": "Fresh coconut water.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Young_Coconut_Drink.jpg"
+        }
+      },
+      {
+        "id": "tuv-dr-3",
+        "name": "Toddy (Coconut Sap)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Coconut flower sap (tapped from unopened coconut flower spathes)",
+          "Optional: ferment for several days for alcoholic toddy"
+        ],
+        "instructions": [
+          "Coconut toddy is the tapped sap from coconut flower spathes",
+          "Fresh toddy: sweet, slightly fizzy -- drunk within hours of tapping",
+          "Fermented toddy: left 2-3 days -- becomes alcoholic",
+          "The tapping: a skilled Tuvaluan will climb the palm and carefully incise the flower spathe",
+          "The sap drips into a container over hours",
+          "Toddy tapping is a traditional Tuvaluan skill",
+          "Used to make sweet drinks, vinegar, or alcoholic beverages"
+        ],
+        "description": "Tuvaluan coconut palm toddy -- sap tapped from unopened coconut flower spathes. Fresh: sweet and slightly fizzy (drink within hours). Fermented: 2-3 days, mildly alcoholic. Tapping requires climbing the palm and incising the spathe: a traditional Tuvaluan skill. Also used as vinegar.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Toddy_Shop_%282699390021%29.jpg"
+        }
+      }
+    ]
+  }
+}

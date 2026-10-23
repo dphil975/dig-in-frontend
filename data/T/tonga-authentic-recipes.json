@@ -1,0 +1,663 @@
+{
+  "tongaRecipes": {
+    "country": "Tonga",
+    "region": "Oceania",
+    "breakfast": [
+      {
+        "id": "ton-bf-1",
+        "name": "Lu Sipi (Lamb in Taro Leaves)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 120,
+        "ingredients": [
+          "Lamb (cubed)",
+          "Taro leaves",
+          "Coconut cream",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Layer taro leaves, lamb, onion, coconut cream",
+          "Wrap in banana leaves or foil",
+          "Bake 2 hours until tender"
+        ],
+        "description": "Lamb slow-cooked in taro leaves with coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      },
+      {
+        "id": "ton-bf-2",
+        "name": "Manioke (Boiled Cassava)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 25,
+        "ingredients": [
+          "Cassava",
+          "Coconut cream",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil cassava until tender",
+          "Serve with coconut cream"
+        ],
+        "description": "Boiled cassava with coconut cream."
+      },
+      {
+        "id": "ton-bf-3",
+        "name": "Taro Porridge",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Taro (cooked and mashed)",
+          "Coconut milk",
+          "Sugar or honey"
+        ],
+        "instructions": [
+          "Taro is the staple starch of Tonga -- eaten at every meal",
+          "As a breakfast: taro cooked and mashed with coconut milk",
+          "Sweetened with honey or sugar",
+          "A warm, nourishing start to the day"
+        ],
+        "description": "Tongan taro breakfast porridge -- taro mashed with warm coconut milk and sweetened with honey. Taro is the fundamental Tongan starch. A warm, nourishing breakfast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oatmeal_%281%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Oatmeal_%281%29.jpg"
+        }
+      },
+      {
+        "id": "ton-bf-4",
+        "name": "Faiai Eleni (Spinach in Coconut Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Taro leaves or spinach (or island greens)",
+          "Coconut milk (thick)",
+          "Onion, garlic",
+          "Salt"
+        ],
+        "instructions": [
+          "Faiai eleni is the Tongan coconut cream spinach -- a simple, common dish",
+          "Greens cooked in thick coconut milk",
+          "The coconut milk makes the greens rich and silky",
+          "A standard side dish or breakfast component",
+          "Taro leaves are traditional but spinach is used as a substitute"
+        ],
+        "description": "Tongan coconut cream greens -- taro leaves or spinach cooked in thick coconut milk until silky. Faiai eleni is a standard side dish or breakfast component. Coconut cream transforms the greens."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "ton-ln-1",
+        "name": "Ota Ika (Raw Fish Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh tuna (diced)",
+          "Coconut cream",
+          "Lime juice",
+          "Tomato",
+          "Onion",
+          "Cucumber",
+          "Chili"
+        ],
+        "instructions": [
+          "Marinate tuna in lime 15 min",
+          "Add coconut cream",
+          "Toss with vegetables"
+        ],
+        "description": "Tongan raw fish in coconut and lime.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg"
+        }
+      },
+      {
+        "id": "ton-ln-2",
+        "name": "Umu (Earth Oven) Meats",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 180,
+        "ingredients": [
+          "Pork",
+          "Chicken",
+          "Root vegetables",
+          "Banana leaves",
+          "Hot stones"
+        ],
+        "instructions": [
+          "Heat stones",
+          "Wrap food in banana leaves",
+          "Layer over hot stones",
+          "Cover with earth, cook 3 hours"
+        ],
+        "description": "Traditional earth oven feast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Samoa_umu.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Samoa_umu.JPG"
+        }
+      },
+      {
+        "id": "ton-ln-3",
+        "name": "Lu Pulu (Taro Leaf with Corned Beef)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 90,
+        "ingredients": [
+          "Taro leaves (large)",
+          "Corned beef (canned -- introduced by European traders)",
+          "Onion",
+          "Coconut milk"
+        ],
+        "instructions": [
+          "Lu pulu is one of Tonga's most popular dishes",
+          "Taro leaves stuffed with corned beef and onion",
+          "Wrapped in more taro leaves",
+          "Cooked in coconut milk until everything is silky",
+          "Or cooked in an umu (underground oven)",
+          "Corned beef: introduced by European traders -- became embedded in Polynesian cooking",
+          "The combination of taro leaf and canned corned beef is distinctly Pacific"
+        ],
+        "description": "Tongan taro leaf parcel with corned beef -- taro leaves wrapped around corned beef (introduced by European traders) and onion, cooked in coconut milk until silky. Corned beef became embedded in Polynesian cooking after European contact. The taro leaf and canned beef combination is distinctly Pacific.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      },
+      {
+        "id": "ton-ln-4",
+        "name": "Ota Ika (Raw Fish Salad)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh fish (snapper, tuna, or similar -- very fresh)",
+          "Lime juice (generous -- to cure the fish)",
+          "Coconut milk (thick)",
+          "Tomato, cucumber, spring onion, chilli"
+        ],
+        "instructions": [
+          "Ota ika is the Tongan and wider Pacific raw fish salad",
+          "The fish is cut into pieces and marinated in lime juice until the flesh turns opaque",
+          "The acid \"cooks\" the fish -- the protein denatures from the lime acid",
+          "Then coconut milk is added -- it turns the dish creamy and mild",
+          "Tomato, cucumber, and spring onion complete the salad",
+          "Closely related to Fijian kokoda and other Pacific raw fish dishes"
+        ],
+        "description": "Tongan raw fish salad -- fresh fish cured in lime juice (the acid denatures the protein), then coconut milk added to make it creamy, with tomato, cucumber, and spring onion. Related to Fijian kokoda and Pacific raw fish traditions across Polynesia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Poisson_cru_au_lait_de_coco.jpg"
+        }
+      },
+      {
+        "id": "ton-ln-5",
+        "name": "Kapisi Pulu (Cabbage in Coconut Cream)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Cabbage (shredded)",
+          "Corned beef (or tuna)",
+          "Coconut cream (thick)",
+          "Onion, garlic"
+        ],
+        "instructions": [
+          "Kapisi pulu is the Tongan cabbage cooked in coconut cream",
+          "Similar to lu pulu but with cabbage instead of taro leaves",
+          "Cabbage was introduced through European contact",
+          "Now part of the Tongan staple diet",
+          "Cooked until very soft in thick coconut cream"
+        ],
+        "description": "Tongan cabbage in coconut cream -- shredded cabbage (European introduction) with corned beef or tuna cooked in thick coconut cream until soft. Part of the post-contact Tongan diet that blended indigenous ingredients with introduced foods.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Luaulau.png",
+        "imageCredit": {
+          "author": "Chedlund808",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALuaulau.png"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "ton-dn-1",
+        "name": "Lupulu (Corned Beef in Taro Leaves)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Corned beef",
+          "Taro leaves",
+          "Coconut cream",
+          "Onion"
+        ],
+        "instructions": [
+          "Layer taro leaves with corned beef, onion, coconut cream",
+          "Wrap and bake 1 hour"
+        ],
+        "description": "Corned beef wrapped in taro leaves.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Hopfen1.jpg",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Hagen Graebner assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHopfen1.jpg"
+        }
+      },
+      {
+        "id": "ton-dn-2",
+        "name": "Grilled Fish",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Fresh fish",
+          "Lime",
+          "Salt",
+          "Coconut cream"
+        ],
+        "instructions": [
+          "Season fish, grill over coals",
+          "Serve with coconut cream and root vegetables"
+        ],
+        "description": "Simply grilled fresh fish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fish_stuffed_with_Thai_herbs.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fish_stuffed_with_Thai_herbs.jpg"
+        }
+      },
+      {
+        "id": "ton-dn-3",
+        "name": "Umu (Underground Oven Feast)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 60,
+        "cookTime": 240,
+        "ingredients": [
+          "Whole pig (or chicken)",
+          "Taro, kumara (sweet potato), breadfruit, banana",
+          "Taro leaves, banana leaves (for wrapping and layering)",
+          "Coconut milk",
+          "Vegetables"
+        ],
+        "instructions": [
+          "Umu is the Polynesian earth oven -- the method for the traditional feast",
+          "A pit is dug and lined with volcanic stones",
+          "A fire is lit to heat the stones until they are very hot",
+          "The food is wrapped in banana and taro leaves",
+          "Placed on the hot stones, covered with more leaves and earth",
+          "Cooked for 2-4 hours in the steam and heat",
+          "The umu is for celebrations: weddings, funerals, first birthdays, and national events",
+          "Opening the umu is a ceremony -- the smell that escapes is part of the event"
+        ],
+        "description": "Tongan earth oven feast -- a pit lined with volcanic stones heated by fire, food wrapped in banana and taro leaves placed on the hot stones, covered and steamed for 2-4 hours. The umu is used for celebrations: weddings, funerals, and national events. Opening the umu is a ceremony.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangi_prepare.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hangi_prepare.jpg"
+        }
+      },
+      {
+        "id": "ton-dn-4",
+        "name": "Faikakai Topai (Sweet Dumplings in Coconut Syrup)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Flour, water (simple dumplings)",
+          "Coconut milk, sugar, vanilla (for the syrup)"
+        ],
+        "instructions": [
+          "Faikakai topai are the Tongan sweet dumplings in coconut syrup",
+          "Simple flour dumplings boiled until cooked",
+          "Served in a warm coconut-sugar syrup",
+          "A popular Tongan dessert or sweet snack"
+        ],
+        "description": "Tongan sweet dumplings -- simple flour dumplings boiled, served in warm coconut milk and sugar syrup. A popular dessert across Tonga."
+      },
+      {
+        "id": "ton-dn-5",
+        "name": "Roasted Pig (Puaka Tunu)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 30,
+        "cookTime": 180,
+        "ingredients": [
+          "Whole small pig or large pork pieces",
+          "Salt",
+          "Banana leaves (for wrapping, optional)"
+        ],
+        "instructions": [
+          "Roasted pig is central to Tongan feasts and celebrations",
+          "The whole pig is the symbol of feast and generosity",
+          "Roasted over coals or in the umu",
+          "The crackling: the prized part",
+          "Presented whole at celebrations -- the host's offering to guests"
+        ],
+        "description": "Tongan feast roast pig -- whole pig roasted over coals or in the umu. The whole pig is the symbol of Tongan feast and generosity. The crackling is the prized part. Presented whole as the host's offering to guests at celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cochinillo_asado-Madrid.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cochinillo_asado-Madrid.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "ton-sn-1",
+        "name": "Faikakai Topai (Dumplings in Coconut)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Flour",
+          "Coconut cream",
+          "Sugar"
+        ],
+        "instructions": [
+          "Make small dough balls",
+          "Boil until cooked",
+          "Toss in sweetened coconut cream"
+        ],
+        "description": "Sweet dumplings in coconut cream."
+      },
+      {
+        "id": "ton-sn-2",
+        "name": "Fekei (Taro Cake)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Taro (cooked and grated or mashed)",
+          "Coconut milk",
+          "Sugar"
+        ],
+        "instructions": [
+          "Fekei is the Tongan steamed taro cake",
+          "Grated or mashed taro mixed with coconut milk and sugar",
+          "Steamed until set into a cake",
+          "Slightly sweet and dense",
+          "Eaten as a snack or dessert"
+        ],
+        "description": "Tongan steamed taro cake -- grated taro mixed with coconut milk and sugar, steamed until set into a dense, slightly sweet cake. Eaten as a snack or dessert.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Tuvalu_Inaba-14.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Tuvalu_Inaba-14.jpg"
+        }
+      },
+      {
+        "id": "ton-sn-3",
+        "name": "Dried Fish",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Dried salted fish (various types -- sun-dried)"
+        ],
+        "instructions": [
+          "Dried fish is a traditional Tongan preservation method",
+          "Fish sun-dried and salted",
+          "Keeps without refrigeration",
+          "Eaten as a snack or added to other dishes for flavor",
+          "The preservation tradition of island life without refrigeration"
+        ],
+        "description": "Tongan sun-dried salted fish -- fish dried and salted for preservation. The traditional island preservation method before refrigeration. Eaten as a snack or added to dishes for flavor.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Fish-Drying_Barn.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Fish-Drying_Barn.jpg"
+        }
+      },
+      {
+        "id": "ton-sn-4",
+        "name": "Coconut Cream (Served Fresh)",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "Fresh coconut (cracked)",
+          "Coconut water, coconut meat (scraped and pressed)"
+        ],
+        "instructions": [
+          "Fresh coconut cream is the Tongan flavor base -- pressed fresh and drunk or used in cooking",
+          "A young green coconut is drunk for the water",
+          "A mature brown coconut is scraped and pressed for cream",
+          "Drinking fresh coconut water from a green coconut is the Tongan refresher",
+          "The cream pressed from the mature coconut is the cooking fat and flavor of all Tongan food"
+        ],
+        "description": "Tongan fresh coconut cream -- pressed from mature coconut, the base of all Tongan cooking. Young coconut water drunk fresh. The coconut provides both the drink (young) and the cooking fat (mature). Central to Tongan food at every level.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Coconut_cream_%28cropped%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Coconut_cream_%28cropped%29.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "ton-ds-1",
+        "name": "Faikakai (Sweet Coconut Pudding)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Cassava or taro (grated)",
+          "Coconut cream",
+          "Sugar"
+        ],
+        "instructions": [
+          "Mix grated starch with coconut cream and sugar",
+          "Cook until thick"
+        ],
+        "description": "Sweet starchy pudding in coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cassava_on_the_Sawla_market.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cassava_on_the_Sawla_market.jpg"
+        }
+      },
+      {
+        "id": "ton-ds-2",
+        "name": "Banana Cake (Tongan Style)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Ripe bananas (mashed)",
+          "Flour, eggs, sugar, butter",
+          "Coconut milk (in place of regular milk)",
+          "Baking powder"
+        ],
+        "instructions": [
+          "Banana cake with coconut milk is the Tongan home baking style",
+          "Ripe bananas mashed into a simple cake batter",
+          "Coconut milk gives the Pacific flavor",
+          "Baked until golden",
+          "A simple, home-baked treat"
+        ],
+        "description": "Tongan banana cake -- mashed ripe bananas in a simple cake with coconut milk for Pacific flavor. Home-baked and eaten as a sweet treat. Bananas and coconut are the Tongan pantry.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Vegan_Banana_Celebration_Cake_%285061766386%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Vegan_Banana_Celebration_Cake_%285061766386%29.jpg"
+        }
+      },
+      {
+        "id": "ton-ds-3",
+        "name": "Haupia (Coconut Pudding)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Coconut milk (thick)",
+          "Cornstarch",
+          "Sugar"
+        ],
+        "instructions": [
+          "Haupia is the Hawaiian and broader Polynesian coconut pudding",
+          "Coconut milk thickened with cornstarch into a firm, sliceable pudding",
+          "Eaten cold",
+          "Clean, pure coconut flavor",
+          "Served at celebrations in Tonga and across Polynesia"
+        ],
+        "description": "Tongan Polynesian coconut pudding -- haupia, coconut milk thickened with cornstarch until firm enough to slice, served cold. Pure, clean coconut flavor. Served at celebrations across Polynesia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Haupia.jpg",
+        "imageCredit": {
+          "author": "Arnold Gatilao from Fremont, CA, USA",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AHaupia.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "ton-dr-1",
+        "name": "Kava (Tongan Style)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Kava root (pounded)",
+          "Water"
+        ],
+        "instructions": [
+          "Mix pounded kava with water",
+          "Strain through cloth",
+          "Serve in coconut shells",
+          "Clap before and after drinking"
+        ],
+        "description": "Ceremonial kava — Tonga's social and ritual drink.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg"
+        }
+      },
+      {
+        "id": "ton-dr-2",
+        "name": "Otai (Fruit Drink)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Watermelon",
+          "Coconut cream",
+          "Pineapple",
+          "Mango",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Grate or chop fruit finely",
+          "Mix with coconut cream and water",
+          "Add sugar",
+          "Serve cold"
+        ],
+        "description": "Chunky tropical fruit drink with coconut cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Otai.jpg",
+        "imageCredit": {
+          "author": "Paulscf at English Wikipedia",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AOtai.jpg"
+        }
+      },
+      {
+        "id": "ton-dr-3",
+        "name": "Kava (Tongan Ceremony)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 20,
+        "cookTime": 0,
+        "ingredients": [
+          "Kava root (Piper methysticum -- dried and ground or fresh and pounded)",
+          "Cold water (used to strain the kava through a cloth)"
+        ],
+        "instructions": [
+          "Kava is the Pacific ceremonial drink -- and it is most deeply embedded in Tonga",
+          "Made from the root of Piper methysticum (a pepper plant)",
+          "Pounded or ground, mixed with cold water, and strained through a cloth",
+          "The active compound: kavalactones -- mildly anxiolytic and muscle-relaxing",
+          "In Tonga, kava ceremony (faikava) is the central social ritual",
+          "Drunk from a coconut shell cup (ipu)",
+          "The kava circle: the king drinks first, then by rank",
+          "The ceremony is integral to Tongan politics, diplomacy, and daily social life",
+          "Tonga has the most elaborate and formal kava ceremony in the Pacific"
+        ],
+        "description": "Tongan ceremonial drink -- kava (Piper methysticum root), pounded and strained through cloth with cold water. Kavalactones: mildly anxiolytic and muscle-relaxing. In Tonga, kava ceremony (faikava) is the central social ritual. Drunk by rank from a coconut shell (ipu). The king drinks first. Integral to Tongan politics and diplomacy.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Starr_070515-7054_Piper_methysticum.jpg"
+        }
+      }
+    ]
+  }
+}

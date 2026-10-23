@@ -1,0 +1,285 @@
+{
+  "country": "Poland",
+  "region": "Eastern Europe",
+  "breakfast": [
+    {
+      "id": "pol-break-zurek",
+      "name": "Żurek (Polish Sour Rye Soup)",
+      "difficulty": "Easy",
+      "servings": 4,
+      "prepTime": 5,
+      "cookTime": 10,
+      "description": "Traditional Polish sour rye soup made from fermented rye flour starter, served with sausage and hard-boiled eggs. A distinctive soup with tangy flavor from fermentation",
+      "seasonings": [
+        "marjoram",
+        "black pepper",
+        "salt"
+      ],
+      "ingredients": [
+        "2 cups fermented rye flour starter (żur zakwas)",
+        "1 liter beef or vegetable stock",
+        "4 large sausages (Polish or kielbasa)",
+        "3 cloves garlic, minced",
+        "1 tbsp marjoram (dried, crumbled)",
+        "1/2 tsp black pepper",
+        "4 eggs, hard-boiled and halved",
+        "Horseradish to taste",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "Strain fermented rye starter through fine mesh to remove solids",
+        "Heat stock in large pot and bring to boil",
+        "Reduce heat and add strained rye starter, stirring well",
+        "Add sausages (whole or sliced), garlic, marjoram, and black pepper",
+        "Simmer on low heat for 5 minutes, stirring often",
+        "Season with salt and pepper to taste",
+        "Serve hot in bowls",
+        "Place 2 egg halves in each bowl",
+        "Top with sausage pieces and ladle soup over eggs",
+        "Add horseradish to taste",
+        "Serve with rye bread on the side"
+      ],
+      "notes": "Żur zakwas (fermented rye starter) can be purchased at Polish delis or made at home by fermenting rye flour for 5 days. Without it, authentic żurek cannot be made",
+      "fun_fact": "Żurek is traditionally eaten at Easter but is enjoyed year-round in Poland. The fermentation creates the soup's hallmark sour flavor that defines authentic żurek",
+      "alternatives": [
+        "Add mushrooms",
+        "Use chicken stock",
+        "Include potatoes",
+        "Make vegetarian with beans instead of sausage"
+      ],
+      "remix_formats": [
+        "smoothie_bowl",
+        "overnight_oats",
+        "sandwich",
+        "wrap",
+        "parfait"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 5,
+          "cook_time": 10,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 2,
+          "cook_time": 6,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 0,
+          "cook_time": 3,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Żurek.jpg",
+      "imageCredit": {
+        "author": "Szymon Mucha",
+        "source": "Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:%C5%BBurek.jpg"
+      }
+    }
+  ],
+  "lunch": [],
+  "dinner": [
+    {
+      "id": "pol-dinner-bigos",
+      "name": "Polish Bigos (Hunter's Stew with Mixed Meats and Sauerkraut)",
+      "difficulty": "Medium",
+      "servings": 6,
+      "prepTime": 30,
+      "cookTime": 180,
+      "description": "Hunter's stew with mixed meats and sauerkraut - Eastern European comfort",
+      "seasonings": [
+        "caraway seeds",
+        "juniper berries"
+      ],
+      "ingredients": [
+        "300g pork shoulder, diced",
+        "200g kielbasa or smoked sausage, sliced",
+        "150g beef chuck, diced",
+        "600g sauerkraut (unpasteurized preferred), drained",
+        "400g fresh white cabbage, chopped",
+        "100g dried mushrooms, rehydrated",
+        "100g prunes, pitted and halved",
+        "1 large onion, diced",
+        "3 cloves garlic, minced",
+        "2 tablespoons tomato paste",
+        "500ml beef stock",
+        "2 bay leaves",
+        "1 teaspoon caraway seeds",
+        "1 teaspoon juniper berries, crushed",
+        "Salt and pepper to taste",
+        "2 tablespoons vegetable oil"
+      ],
+      "instructions": [
+        "Heat oil in large heavy pot over medium-high heat",
+        "Brown all meats (pork, kielbasa, beef) in batches; set aside",
+        "Add onion to pot; sauté until soft (5 minutes)",
+        "Add garlic; cook 1 minute",
+        "Add tomato paste; cook 2 minutes",
+        "Add sauerkraut, fresh cabbage, mushrooms, prunes",
+        "Return meat to pot",
+        "Add beef stock, bay leaves, caraway seeds, juniper berries",
+        "Bring to simmer; reduce heat to low, cover (leave lid slightly ajar)",
+        "Cook gently 2-3 hours, stirring occasionally",
+        "The longer it cooks, the better flavors meld",
+        "Taste and adjust salt and pepper (sauerkraut adds salt)",
+        "Serve with mashed potatoes or dark bread",
+        "Tastes even better next day or day after"
+      ],
+      "notes": "Improves each time it's reheated",
+      "fun_fact": "Historically made in massive pot simmering all winter",
+      "alternatives": [
+        "Add potatoes",
+        "Use less sauerkraut",
+        "Make vegetarian"
+      ],
+      "remix_formats": [
+        "salad",
+        "sandwich",
+        "soup",
+        "pasta",
+        "one_pot"
+      ],
+      "dietary_adaptations": [
+        "vegan",
+        "vegetarian",
+        "gluten_free",
+        "pescatarian",
+        "low_sodium"
+      ],
+      "dietary_options": {
+        "vegan": {
+          "label": "Vegan",
+          "description": "No animal products",
+          "common_swaps": {
+            "egg": "flax egg (1 tbsp ground flax + 3 tbsp water)",
+            "dairy": "coconut milk / almond milk / oat milk",
+            "butter": "coconut oil / olive oil / vegan butter",
+            "meat": "tofu / tempeh / seitan / legumes",
+            "fish": "hearts of palm / tofu / seaweed",
+            "cheese": "nutritional yeast / cashew cream / vegan cheese"
+          }
+        },
+        "vegetarian": {
+          "label": "Vegetarian",
+          "description": "No meat or fish",
+          "common_swaps": {
+            "meat": "chickpeas / lentils / beans / tofu / tempeh",
+            "fish": "mushrooms / eggplant / chickpeas / cauliflower"
+          }
+        },
+        "gluten_free": {
+          "label": "Gluten-Free",
+          "description": "No wheat, barley, rye",
+          "common_swaps": {
+            "flour": "almond flour / coconut flour / rice flour / GF flour blend",
+            "pasta": "rice pasta / chickpea pasta / zucchini noodles / GF pasta",
+            "bread": "GF bread / lettuce wraps / rice cakes"
+          }
+        },
+        "pescatarian": {
+          "label": "Pescatarian",
+          "description": "Fish and seafood, no meat",
+          "common_swaps": {
+            "meat": "fish / shrimp / scallops / octopus"
+          }
+        },
+        "low_sodium": {
+          "label": "Low Sodium",
+          "description": "Reduced salt",
+          "common_swaps": {
+            "salt": "reduce by 50%",
+            "soy_sauce": "low-sodium soy sauce"
+          }
+        }
+      },
+      "time_variants": {
+        "full": {
+          "label": "Full Recipe",
+          "prep_time": 30,
+          "cook_time": 180,
+          "notes": "Traditional recipe as written"
+        },
+        "quick": {
+          "label": "Quick Version (20-30 min)",
+          "prep_time": 15,
+          "cook_time": 108,
+          "notes": "Use pre-cut ingredients, shortcuts"
+        },
+        "express": {
+          "label": "Express Version (5-15 min)",
+          "prep_time": 5,
+          "cook_time": 54,
+          "notes": "Use pre-made components, minimal prep"
+        }
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bigos_in_bread.jpg",
+      "imageCredit": {
+        "author": "Ratoncito Perez",
+        "source": "Wikimedia Commons",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bigos_in_bread.jpg"
+      }
+    }
+  ],
+  "snacks": [],
+  "desserts": []
+}

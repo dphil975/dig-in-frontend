@@ -1,0 +1,708 @@
+{
+  "madagascarRecipes": {
+    "country": "Madagascar",
+    "region": "East Africa",
+    "breakfast": [
+      {
+        "id": "mdg-bf-1",
+        "name": "Mofo Gasy (Malagasy Bread)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "2 cups rice flour",
+          "Sugar",
+          "Coconut milk",
+          "Yeast",
+          "Salt"
+        ],
+        "instructions": [
+          "Mix batter, let rise 30 min",
+          "Pour into greased molds",
+          "Cook on flat griddle",
+          "Flip when golden"
+        ],
+        "description": "Sweet rice flour griddle cakes — sold on every Madagascar street corner."
+      },
+      {
+        "id": "mdg-bf-2",
+        "name": "Vary Amin'anana (Rice and Greens Soup)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Rice",
+          "Mixed greens",
+          "Onion",
+          "Ginger",
+          "Salt"
+        ],
+        "instructions": [
+          "Cook rice in extra water",
+          "Add greens, onion, ginger",
+          "Simmer until soupy porridge"
+        ],
+        "description": "Rice soup with leafy greens — Malagasy everyday comfort.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      },
+      {
+        "id": "mdg-bf-3",
+        "name": "Mofo Akondro (Banana Fritters)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Ripe bananas (overripe is better)",
+          "Rice flour",
+          "Coconut milk",
+          "Sugar, cinnamon",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mash ripe bananas into a paste",
+          "Mix with rice flour, coconut milk, sugar, cinnamon to form a thick batter",
+          "The riper the banana, the sweeter — no added sugar needed if using overripe",
+          "Fry spoonfuls in hot oil until golden",
+          "The outside should be crispy, the inside soft and banana-dense",
+          "Dust with cinnamon or powdered sugar if desired",
+          "Mofo akondro are Madagascar's breakfast banana fritters",
+          "Found at morning markets across the island",
+          "The rice flour (not wheat) gives a distinct texture — slightly grainy outside",
+          "Madagascar grows hundreds of banana varieties — the sweetness varies by region"
+        ],
+        "description": "Madagascar's morning banana fritters — overripe bananas mashed into a rice flour batter and fried until crispy outside, soft and banana-intense inside. Rice flour instead of wheat flour gives a slightly grainy exterior that complements the dense banana center. Found at every morning market across the island.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Banana_Fritters_and_tea.jpg"
+        }
+      },
+      {
+        "id": "mdg-bf-4",
+        "name": "Vary Amin'anana (Rice with Greens)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 20,
+        "ingredients": [
+          "White rice",
+          "Mixed greens (cassava leaves, sweet potato leaves, or spinach)",
+          "Garlic, onion",
+          "Salt, pepper",
+          "Optional: dried shrimp or small fish for depth"
+        ],
+        "instructions": [
+          "Cook rice in a generous amount of water — Malagasy rice is cooked slightly wetter than East Asian rice",
+          "Wilt greens briefly in a pan with garlic and onion",
+          "Season simply: salt, pepper",
+          "In Madagascar, the dish is about the rice — the greens are the accompaniment, not the star",
+          "Optional: add dried shrimp or small fried fish for protein depth",
+          "The 'vary' (rice) is always the center of any Malagasy meal",
+          "Vary amin'anana means 'rice with greens' — the simplest version of the Malagasy meal",
+          "Eaten morning, noon, and night in rural Madagascar",
+          "The cassava leaves give an earthy, slight bitterness the spinach version lacks",
+          "Rice consumption in Madagascar is among the highest per capita in the world"
+        ],
+        "description": "Madagascar's foundational rice-and-greens breakfast — rice cooked slightly wet alongside wilted cassava or sweet potato leaves with garlic. 'Vary' (rice) is the center of every Malagasy meal; the greens are the accompaniment. Eaten three times daily in rural areas. Madagascar has one of the world's highest per-capita rice consumption rates.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "mdg-ln-1",
+        "name": "Romazava (Meat and Greens Stew)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "500g zebu beef (or beef)",
+          "Mixed greens (paracress, watercress, spinach)",
+          "Tomatoes",
+          "Onion",
+          "Ginger",
+          "Garlic",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown beef with onion and garlic",
+          "Add tomatoes and ginger",
+          "Add mixed greens",
+          "Simmer 30 min",
+          "Serve over rice"
+        ],
+        "description": "Madagascar's national dish — beef and mixed greens stew over rice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Madagaskar_stew_2019-10-01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Madagaskar_stew_2019-10-01.jpg"
+        }
+      },
+      {
+        "id": "mdg-ln-2",
+        "name": "Ravitoto (Cassava Leaf with Pork)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Cassava leaves (pounded)",
+          "500g pork",
+          "Garlic",
+          "Ginger",
+          "Onion",
+          "Coconut milk",
+          "Salt"
+        ],
+        "instructions": [
+          "Pound and boil cassava leaves 30 min",
+          "Brown pork with garlic, ginger, onion",
+          "Combine with leaves and coconut milk",
+          "Simmer 20 min",
+          "Serve over rice"
+        ],
+        "description": "Pounded cassava leaves with pork in coconut milk.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ravitoto.jpg",
+        "imageCredit": {
+          "author": "lovarakotomalala",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ARavitoto.jpg"
+        }
+      },
+      {
+        "id": "mdg-ln-3",
+        "name": "Ravitoto sy Henakisoa (Cassava Leaves with Pork)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Cassava leaves (pounded — this breaks the cell structure, releasing toxins safely)",
+          "Pork (fatty — pork belly or shoulder)",
+          "Garlic, onion",
+          "Salt, pepper",
+          "Coconut milk (optional)",
+          "Oil"
+        ],
+        "instructions": [
+          "CRITICAL: cassava leaves must be pounded and then cooked long to eliminate hydrogen cyanide",
+          "Pound leaves in a mortar — the pounding begins the cyanide breakdown",
+          "Cook pounded leaves in water for 30+ minutes — the long cooking eliminates toxins",
+          "Drain and rinse the cooked leaves",
+          "Fry pork with onion, garlic until cooked and slightly crispy at the edges",
+          "Add the cooked cassava leaves to the pork",
+          "Braise together 20-30 more minutes — the leaves absorb the pork fat",
+          "Season with salt and pepper",
+          "Optional: add coconut milk for richness",
+          "Ravitoto is Madagascar's beloved comfort dish — the leaves become dark green and silky",
+          "The pork fat absorbed into the cassava leaves is the flavor mechanism"
+        ],
+        "description": "Madagascar's comfort dish — pounded cassava leaves (the pounding is food-safety critical for cyanide breakdown) long-braised with pork belly until the leaves become dark, silky, and saturated with rendered pork fat. Ravitoto is Madagascar's most beloved dish: every region has it; every cook has their ratio. The dark green leaves and pork fat combination is the flavor of home.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      },
+      {
+        "id": "mdg-ln-4",
+        "name": "Ro Mazava (Clear Vegetable Beef Broth)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "Beef (bone-in — for marrow depth)",
+          "Water spinach or morning glory (or local greens)",
+          "Tomatoes",
+          "Garlic, onion",
+          "Ginger (small amount)",
+          "Salt"
+        ],
+        "instructions": [
+          "Simmer beef bones and meat in water with garlic, onion, ginger — 30 minutes minimum",
+          "The broth should be clear and golden — not cloudy",
+          "Remove the meat, shred it back in",
+          "Add greens — water spinach, morning glory, or local Malagasy vegetables",
+          "Add tomatoes — they break down and add brightness",
+          "Season with salt — no soy or fish sauce — the flavor is pure and clean",
+          "Ro mazava (literally 'clear broth') is Madagascar's simple everyday soup",
+          "It is deliberately mild and clear — meant to be eaten with lots of rice",
+          "The rice goes in the bowl and the clear broth pours over",
+          "The clarity of the broth is the aesthetic ideal"
+        ],
+        "description": "Madagascar's clear everyday soup — bone-in beef simmered until the broth is golden and clear, with greens, tomato, and ginger. 'Ro mazava' translates to 'clear broth' — the clarity is intentional. Eaten poured over rice: the rice absorbs the mild, clean-tasting broth. Madagascar's deliberate restraint from heavy spicing makes the natural meat-vegetable flavor the focus.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Hiragasy_in_Ambositra_01.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Hiragasy_in_Ambositra_01.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "mdg-dn-1",
+        "name": "Hen'omby sy Sakamalao (Beef with Ginger)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "500g beef (cubed)",
+          "Fresh ginger (lots)",
+          "Garlic",
+          "Onion",
+          "Tomatoes",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown beef",
+          "Add ginger, garlic, onion, tomatoes",
+          "Simmer 35 min",
+          "Serve over rice"
+        ],
+        "description": "Ginger-loaded beef stew."
+      },
+      {
+        "id": "mdg-dn-2",
+        "name": "Akoho sy Voanio (Chicken with Coconut)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "Coconut milk",
+          "Tomatoes",
+          "Ginger",
+          "Garlic",
+          "Onion",
+          "Salt"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Add onion, garlic, ginger, tomatoes",
+          "Add coconut milk",
+          "Simmer 30 min",
+          "Serve over rice"
+        ],
+        "description": "Chicken simmered in coconut milk and ginger."
+      },
+      {
+        "id": "mdg-dn-3",
+        "name": "Henakisoa amin'ny Sakamalao (Pork with Ginger)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 30,
+        "ingredients": [
+          "Pork (thin slices or small pieces)",
+          "Fresh ginger (generous — sliced and pounded)",
+          "Garlic",
+          "Soy sauce (introduced via Chinese traders)",
+          "Oil",
+          "Spring onions"
+        ],
+        "instructions": [
+          "Pound ginger to release the oils — the intensity is important",
+          "Fry garlic in oil until fragrant",
+          "Add pork, stir-fry over high heat",
+          "Add pounded ginger — the fresh ginger fragrance fills the kitchen",
+          "Season with soy sauce — the Chinese influence on coastal Madagascar cuisine",
+          "The soy sauce and ginger combination reflects the Chinese trading community presence",
+          "Add spring onions at the end",
+          "The dish should have a fresh ginger bite — not a mild background note",
+          "Henakisoa amin'ny sakamalao is weeknight pork — quick, fragrant, satisfying",
+          "Served always with vary (rice) — the pork is the flavoring, rice is the meal"
+        ],
+        "description": "Madagascar's ginger pork — thin pork pieces stir-fried with pounded fresh ginger and soy sauce. The soy sauce reflects Chinese trading community influence on Madagascar's coastal cuisine (Chinese traders arrived in the 18th century). The fresh ginger is not a background note — it's the dish's identity, fragrant and sharp."
+      },
+      {
+        "id": "mdg-dn-4",
+        "name": "Akoho sy Voanio (Chicken in Coconut Milk)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Chicken (cut in pieces)",
+          "Coconut milk (fresh — Madagascar's coconut is excellent)",
+          "Garlic, onion",
+          "Turmeric",
+          "Chili (optional)",
+          "Lime leaf or lemongrass (optional)",
+          "Salt"
+        ],
+        "instructions": [
+          "Marinate chicken briefly in garlic, turmeric, salt",
+          "Fry chicken in oil until the skin is golden",
+          "Add coconut milk — it should almost submerge the chicken",
+          "Add onion, optional lemongrass or lime leaf",
+          "Braise on medium heat 30-35 minutes — the coconut milk reduces slightly",
+          "The sauce should coat the chicken without being thick curry",
+          "Season with salt, optional chili",
+          "The coconut milk from Madagascar's east coast coconuts is rich and naturally sweet",
+          "Akoho sy voanio is coastal Madagascar's chicken dish",
+          "The simplicity — coconut milk, chicken, garlic, turmeric — lets the coconut quality show",
+          "The east coast of Madagascar has extensive coconut groves along the ocean"
+        ],
+        "description": "Madagascar's coconut chicken — chicken braised gently in coconut milk with turmeric and garlic. Madagascar's east coast coconuts are notably rich and sweet; the simplicity of this dish lets their quality show. No heavy spicing — the coconut is the sauce, not a background ingredient. Coastal Madagascar's definitive chicken preparation."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "mdg-sn-1",
+        "name": "Sambos (Samosas)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, water, oil",
+          "Filling: ground beef, onion, ginger, garlic",
+          "Oil"
+        ],
+        "instructions": [
+          "Make dough, cut strips",
+          "Fill with spiced beef",
+          "Fold triangles, seal",
+          "Fry until golden"
+        ],
+        "description": "Malagasy samosas with ginger-spiced beef.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Sambo%27s.png",
+        "imageCredit": {
+          "author": "Sambo's Restaurants, Inc.",
+          "source": "Wikimedia Commons",
+          "license": "Public domain",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASambo%27s.png"
+        }
+      },
+      {
+        "id": "mdg-sn-2",
+        "name": "Koba (Peanut-Banana Rice Cake)",
+        "difficulty": "Hard",
+        "servings": 16,
+        "prepTime": 30,
+        "cookTime": 60,
+        "ingredients": [
+          "Glutinous rice flour",
+          "Ripe bananas (mashed)",
+          "Roasted peanuts (roughly ground)",
+          "Palm sugar or brown sugar",
+          "Banana leaves (for wrapping)"
+        ],
+        "instructions": [
+          "Toast rice flour lightly in a dry pan",
+          "Mix toasted rice flour with mashed banana, ground peanuts, palm sugar",
+          "The mixture should be a thick, sticky dough",
+          "Lay banana leaves flat — soften them briefly over flame to make them pliable",
+          "Place portions of dough on the banana leaf",
+          "Wrap tightly — the banana leaf is the cooking vessel",
+          "Steam the wrapped koba for 45-60 minutes",
+          "The koba firms up inside the leaf — it's dense and chewy",
+          "Cool before unwrapping — the banana leaf imparts a subtle vegetal fragrance",
+          "Koba is sold by street vendors — triangular or cylindrical banana leaf packets",
+          "The peanut-banana combination is Madagascar's sweetness signature"
+        ],
+        "description": "Madagascar's peanut-banana rice cake — glutinous rice flour mixed with mashed banana, ground peanuts, and palm sugar, wrapped in banana leaves and steamed. The banana leaf imparts a subtle vegetal fragrance. Dense, chewy, and sweet: koba is Madagascar's most iconic street snack, sold in neat banana leaf packets by vendors across the island.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Kobandravina_dessert_snack_food_Antananarivo_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Kobandravina_dessert_snack_food_Antananarivo_Madagascar.jpg"
+        }
+      },
+      {
+        "id": "mdg-sn-3",
+        "name": "Mofo Gasy Frit (Fried Rice Cakes)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Rice flour",
+          "Coconut milk",
+          "Yeast",
+          "Sugar",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Same batter as mofo gasy (see breakfast) — but fried rather than griddle-cooked",
+          "The frying gives a different texture: crispy outside, airy inside",
+          "The yeast creates bubbles in the batter as it fries",
+          "They puff slightly in the oil",
+          "Drain on paper — serve immediately while crispy",
+          "The fried version is the snack form; the griddle version is breakfast",
+          "Mofo gasy frit vendors often set up near schools and markets",
+          "The coconut-rice smell of frying mofo is Madagascar's most recognizable street food fragrance",
+          "The same batter transforms dramatically between the griddle and the fryer"
+        ],
+        "description": "Madagascar's fried rice cake — the same rice flour-coconut milk-yeast batter as mofo gasy, but deep-fried instead of griddle-cooked. The frying creates a crispy exterior and puffed interior entirely different from the griddle version. The same batter, two different textures. Found near schools and markets as an afternoon snack."
+      },
+      {
+        "id": "mdg-sn-4",
+        "name": "Fried Cassava (Manioc Frit)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Cassava (peeled, cubed or sliced)",
+          "Oil for frying",
+          "Salt",
+          "Optional: chili, garlic powder"
+        ],
+        "instructions": [
+          "Peel cassava carefully — the outer skin contains cyanide compounds",
+          "Cube or slice into thick pieces",
+          "Boil first until just barely cooked through — 10 minutes",
+          "Drain and dry completely — the drying is essential for crispy frying",
+          "Fry in hot oil until golden and crispy on the outside",
+          "The inside should be floury and soft",
+          "Season with salt immediately from the oil",
+          "Cassava is Madagascar's backup staple when rice is scarce",
+          "The crispy fried cassava is a common roadside snack",
+          "The texture is between potato and yuca (same plant, different names)",
+          "Cassava frit is also a side dish alongside fish or chicken"
+        ],
+        "description": "Madagascar's roadside cassava snack — parboiled cassava cubes fried until crispy outside and floury-soft inside. Cassava is Madagascar's insurance crop: when rice (the primary staple) is scarce or expensive, cassava feeds the island. Fried cassava is the immediate, accessible snack version, sold from roadside stalls.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cassava_on_the_Sawla_market.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cassava_on_the_Sawla_market.jpg"
+        }
+      },
+      {
+        "id": "mdg-sn-5",
+        "name": "Sakamalao Candy (Crystallized Ginger)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Fresh ginger (young, less fibrous)",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Slice young ginger thinly or into small pieces",
+          "Boil in sugar syrup until the ginger becomes translucent",
+          "Remove from syrup, roll in dry sugar",
+          "Allow to dry and crystallize — the sugar coating hardens",
+          "The ginger heat is somewhat mellowed by the sugar but still present",
+          "Madagascar grows significant amounts of ginger — it's an export crop",
+          "Crystallized ginger is a traditional Malagasy sweet and digestive aid",
+          "Children eat it as candy; adults take it as a remedy for stomach upset",
+          "The sweet-hot combination is addictive — the lingering ginger warmth after the sugar"
+        ],
+        "description": "Madagascar's crystallized ginger sweet — sliced young ginger cooked in sugar syrup, rolled in dry sugar, and dried into candy. Madagascar is a significant ginger producer; the candy version is both a traditional sweet and a folk remedy for nausea. The sweet exterior and lingering ginger heat is the combination that makes it compelling as both candy and cure."
+      }
+    ],
+    "desserts": [
+      {
+        "id": "mdg-ds-1",
+        "name": "Godro-Godro (Coconut Flan)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 30,
+        "ingredients": [
+          "Rice flour",
+          "Coconut milk",
+          "Sugar",
+          "Vanilla",
+          "Eggs"
+        ],
+        "instructions": [
+          "Mix rice flour with coconut milk, sugar, vanilla, eggs",
+          "Pour into mold",
+          "Steam or bake 30 min",
+          "Serve at room temperature"
+        ],
+        "description": "Wobbly coconut-vanilla flan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      },
+      {
+        "id": "mdg-ds-2",
+        "name": "Bonbon Coco (Coconut Candy)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Freshly grated coconut",
+          "Sugar",
+          "Water",
+          "Optional: food coloring, vanilla"
+        ],
+        "instructions": [
+          "Combine grated coconut, sugar, small amount of water in a pan",
+          "Cook over medium heat, stirring constantly",
+          "As water evaporates, the mixture becomes thick and sticky",
+          "Continue cooking until it masses together and pulls from the sides of the pan",
+          "Shape quickly while hot — roll into balls or press into shapes",
+          "They cool and firm into a sweet, coconut-dense candy",
+          "Bonbon coco is Madagascar's most beloved sweet — homemade and sold by vendors",
+          "Often made in colored varieties — the food coloring distinguishes flavors (pink=rose, green=pandan)",
+          "The grated coconut holds its texture even when candied",
+          "Sold in small bags or individual pieces wrapped in paper"
+        ],
+        "description": "Madagascar's coconut candy — freshly grated coconut cooked with sugar until the mixture masses together, shaped into balls or pieces while hot. The grated coconut texture survives the candy-making process: each piece is dense with actual coconut strands. Made in colors (pink, green) that signal flavor additions. Madagascar's most ubiquitous sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ferrero_-_panoramio_%282%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ferrero_-_panoramio_%282%29.jpg"
+        }
+      },
+      {
+        "id": "mdg-ds-3",
+        "name": "Vary Amin'ny Ronono (Sweet Rice Pudding)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 25,
+        "ingredients": [
+          "White rice",
+          "Coconut milk (or regular milk)",
+          "Sugar",
+          "Vanilla bean (Madagascar vanilla — among the world's best)",
+          "Optional: cinnamon"
+        ],
+        "instructions": [
+          "Cook rice in coconut milk — the coconut milk replaces water",
+          "As it cooks, the rice absorbs the coconut richness",
+          "Add sugar, scraped vanilla bean — Madagascar vanilla is complex and deeply fragrant",
+          "The vanilla fragrance intensifies as the rice cooks",
+          "Stir frequently as it thickens — like risotto",
+          "Optional: finish with cinnamon",
+          "Serve warm or cold — both are correct",
+          "Madagascar produces 80%+ of the world's vanilla — the vanilla in this rice pudding is one of the finest available anywhere",
+          "The irony: vanilla-rich Madagascar uses vanilla primarily in local sweet rice pudding and exported globally",
+          "The coconut-vanilla-rice combination is Madagascar's quintessential dessert"
+        ],
+        "description": "Madagascar's vanilla rice pudding — rice cooked in coconut milk with sugar and Madagascar vanilla bean. Madagascar produces over 80% of the world's vanilla supply, making this the home of the finest vanilla rice pudding on earth. The fragrant, deep vanilla paired with rich coconut milk and tender rice is Madagascar's definitive sweet.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Idioma_malgache.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Idioma_malgache.png"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "mdg-dr-1",
+        "name": "Ranonapango (Burned Rice Water)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "Burned rice from pot bottom",
+          "Water"
+        ],
+        "instructions": [
+          "Add water to the burned rice crust in the pot",
+          "Boil 5 min",
+          "Strain and serve"
+        ],
+        "description": "Tea made from the burned rice crust — uniquely Malagasy."
+      },
+      {
+        "id": "mdg-dr-2",
+        "name": "Toaka Gasy (Rice Rum)",
+        "difficulty": "Hard",
+        "servings": 10,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Rice",
+          "Sugarcane",
+          "Water"
+        ],
+        "instructions": [
+          "Cook rice, mix with sugarcane",
+          "Ferment 5-7 days",
+          "Distill"
+        ],
+        "description": "Traditional Malagasy rice spirit.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      },
+      {
+        "id": "mdg-dr-3",
+        "name": "Ranon'ampango (Rice Water Tea)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 10,
+        "ingredients": [
+          "Rice (the scorched rice left in the pot after cooking — called 'ampango')",
+          "Water"
+        ],
+        "instructions": [
+          "After rice is cooked, a thin layer is often scorched to the bottom of the pot in Madagascar — this is intentional",
+          "Pour boiling water over the scorched rice in the pot",
+          "Let steep 5-10 minutes",
+          "Pour off the liquid — it's lightly golden and slightly smoky from the scorched rice",
+          "This is ranon'ampango — the Malagasy rice water tea",
+          "It's not wasted — it's the drink that accompanies the meal",
+          "Mild, slightly sweet from the starches, with a toasty note from the caramelized rice",
+          "Ranon'ampango is consumed by most Malagasy households daily",
+          "It's both a drink and a pot-cleaning technique",
+          "Zero waste: the pot's residue becomes the family beverage"
+        ],
+        "description": "Madagascar's daily rice tea — boiling water poured over intentionally scorched rice left in the cooking pot, steeped until the water turns golden and faintly smoky. Zero waste: the pot cleans itself, and the family gets a mild, slightly sweet, toasty drink. Most Malagasy households drink ranon'ampango at every meal. A deliberate scorching technique, not an accident.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Achards_de_mangue_et_citron_lemon_mango_achar_Madagascar.jpg"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,646 @@
+{
+  "albaniaRecipes": {
+    "country": "Albania",
+    "region": "Southeast Europe",
+    "breakfast": [
+      {
+        "id": "alb-break-1",
+        "name": "Burek",
+        "difficulty": "Hard",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "Phyllo",
+          "Feta cheese",
+          "Eggs",
+          "Milk",
+          "Butter"
+        ],
+        "instructions": [
+          "Mix filling",
+          "Layer phyllo",
+          "Bake until golden"
+        ],
+        "notes": "Cheese pastry",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png"
+        }
+      },
+      {
+        "id": "alb-break-2",
+        "name": "Cornbread with Yogurt",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 40,
+        "ingredients": [
+          "Cornmeal",
+          "Flour",
+          "Sugar",
+          "Eggs",
+          "Yogurt",
+          "Oil"
+        ],
+        "instructions": [
+          "Mix dry ingredients",
+          "Combine wet",
+          "Bake until done"
+        ],
+        "notes": "Traditional breakfast"
+      },
+      {
+        "id": "alb-bf-3",
+        "name": "Flija (Layered Crêpes)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Batter: 4 cups flour, 4 eggs, milk, salt, water",
+          "Cream: kajmak (clotted cream) or sour cream",
+          "Butter"
+        ],
+        "instructions": [
+          "Make thin crêpe batter",
+          "In a large round pan (saç), pour thin layer of batter",
+          "Bake under heat until set",
+          "Spread cream over, pour another layer of batter",
+          "Repeat 15-20 layers, baking each under heat",
+          "Cut into wedges — the cross section shows dozens of thin layers",
+          "Serve warm with yogurt or honey"
+        ],
+        "description": "Albania's most labor-intensive dish — dozens of crêpe layers baked one at a time under a saç. Made for weddings and celebrations.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Flia%CC%A0.jpg",
+        "imageCredit": {
+          "author": "Arbenllapashtica",
+          "source": "Wikimedia Commons",
+          "license": "CC0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFlia%CC%A0.jpg"
+        }
+      },
+      {
+        "id": "alb-bf-4",
+        "name": "Petulla (Albanian Fried Dough)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "500g flour",
+          "7g yeast",
+          "300ml warm water",
+          "1 tsp salt",
+          "1 tbsp sugar",
+          "Oil for frying",
+          "Feta cheese or honey to serve"
+        ],
+        "instructions": [
+          "Mix dough, let rise 1 hour",
+          "Pull pieces of dough, stretch thin",
+          "Fry in hot oil until puffed and golden",
+          "Drain and serve with feta cheese or drizzled with honey"
+        ],
+        "description": "Puffy fried dough — the Albanian doughnut, eaten with salty feta cheese or sweet honey."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "alb-lunch-1",
+        "name": "Meat Pie",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 40,
+        "cookTime": 50,
+        "ingredients": [
+          "Phyllo",
+          "Ground lamb",
+          "Onions",
+          "Eggs",
+          "Milk"
+        ],
+        "instructions": [
+          "Prepare filling",
+          "Layer phyllo",
+          "Add egg mixture",
+          "Bake"
+        ],
+        "notes": "National dish",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/MeatPie.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMeatPie.JPG"
+        }
+      },
+      {
+        "id": "alb-lunch-2",
+        "name": "Tavë Kosi",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb",
+          "Yogurt",
+          "Eggs",
+          "Onions",
+          "Oregano"
+        ],
+        "instructions": [
+          "Brown meat",
+          "Add yogurt mixture",
+          "Bake until set"
+        ],
+        "notes": "Lamb and yogurt",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Tav%C3%AB_kosi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Tav%C3%AB_kosi.jpg"
+        }
+      },
+      {
+        "id": "alb-ln-3",
+        "name": "Byrek me Mish (Meat Byrek)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 45,
+        "cookTime": 45,
+        "ingredients": [
+          "Filo pastry (homemade or store-bought)",
+          "500g ground lamb or beef",
+          "2 onions (diced)",
+          "2 tomatoes",
+          "1 egg",
+          "Oil",
+          "Paprika",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Brown meat with onions",
+          "Add diced tomatoes, paprika, salt, pepper",
+          "Cool filling, mix in egg",
+          "Layer filo sheets in oiled pan, brushing oil between layers",
+          "Spread filling over middle layers",
+          "Top with more filo layers",
+          "Score top into squares",
+          "Bake at 180°C for 40-45 min until golden and crispy"
+        ],
+        "description": "The meat version of byrek — Albania's most ubiquitous food. Every bakery sells it from early morning.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png"
+        }
+      },
+      {
+        "id": "alb-ln-4",
+        "name": "Tavë Dheu (Baked Liver)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 45,
+        "ingredients": [
+          "500g lamb liver (cubed)",
+          "2 onions",
+          "4 tomatoes (grated)",
+          "1 cup rice",
+          "Butter",
+          "Paprika",
+          "Chili flakes",
+          "Oregano",
+          "Salt"
+        ],
+        "instructions": [
+          "Sauté onion and liver in butter",
+          "Add grated tomato, paprika, chili, oregano",
+          "Transfer to baking dish",
+          "Add rice and water",
+          "Bake at 180°C for 40 min until rice absorbs liquid"
+        ],
+        "description": "Baked liver with rice — a specialty of Elbasan, often made for honored guests.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Childe_Harold%27s_pilgrimage_-_a_romaunt_%281869%29_%2814756251426%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Childe_Harold%27s_pilgrimage_-_a_romaunt_%281869%29_%2814756251426%29.jpg"
+        }
+      },
+      {
+        "id": "alb-ln-4",
+        "name": "Byrek me Spinaq (Spinach Spiral Pie)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "500g filo pastry (or homemade)",
+          "Filling: 500g spinach (fresh, wilted and squeezed dry), 200g feta cheese, 2 eggs, onion",
+          "100g butter (melted)",
+          "Olive oil",
+          "Salt, pepper"
+        ],
+        "instructions": [
+          "Wilt spinach, squeeze out all water — this is critical, wet spinach ruins byrek",
+          "Crumble feta into spinach, add eggs, sautéed onion, salt, pepper",
+          "Brush each filo sheet with melted butter",
+          "Spread spinach filling along one edge",
+          "Roll into a log, then coil into a spiral in a round pan",
+          "Continue adding logs to the spiral until pan is full",
+          "Brush top generously with butter",
+          "Bake at 190°C for 35-40 min until deeply golden and flaky",
+          "The spiral pattern when cut is the viral visual — layers of crispy filo and green filling"
+        ],
+        "description": "Albania's flaky spiral pie — layers of buttered filo wrapped around spinach and salty feta. The coiled spiral technique and the cross-section reveal went viral. Every Albanian bakery (byrekore) sells these fresh from morning — the smell of butter and filo is the national perfume."
+      }
+    ],
+    "dinner": [
+      {
+        "id": "alb-din-1",
+        "name": "Frikase",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "Chicken",
+          "Butter",
+          "Carrots",
+          "Potatoes",
+          "White wine"
+        ],
+        "instructions": [
+          "Brown chicken",
+          "Add vegetables",
+          "Simmer"
+        ],
+        "notes": "Comfort food"
+      },
+      {
+        "id": "alb-dn-2",
+        "name": "Tavë Elbasani (Lamb and Yogurt Bake)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 60,
+        "ingredients": [
+          "1kg lamb (cubed)",
+          "500g yogurt",
+          "4 eggs",
+          "3 tbsp flour",
+          "100g butter",
+          "Oregano",
+          "Salt and pepper"
+        ],
+        "instructions": [
+          "Season lamb, brown in butter",
+          "Place in deep baking dish",
+          "Beat yogurt with eggs, flour, salt, pepper, oregano",
+          "Pour yogurt mixture over lamb",
+          "Bake at 175°C for 50-60 min until set and golden on top",
+          "Center should be custardy, edges slightly puffed"
+        ],
+        "description": "Albania's most famous baked dish — lamb under a golden yogurt custard. Named for the city of Elbasan.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Tav%C3%AB_kosi.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Tav%C3%AB_kosi.jpg"
+        }
+      },
+      {
+        "id": "alb-dn-3",
+        "name": "Speca të Mbushur (Stuffed Peppers)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 25,
+        "cookTime": 45,
+        "ingredients": [
+          "6 bell peppers",
+          "Filling: 400g ground beef, 1 cup rice, 1 onion, tomato paste, parsley, mint, salt, pepper",
+          "Tomato sauce",
+          "Feta cheese"
+        ],
+        "instructions": [
+          "Hollow peppers, keep tops",
+          "Cook rice halfway, mix with browned meat, onion, herbs, tomato paste",
+          "Stuff peppers, replace tops",
+          "Stand in baking dish, pour tomato sauce around",
+          "Bake at 180°C for 40-45 min",
+          "Serve with crumbled feta on top"
+        ],
+        "description": "Stuffed peppers — made across Albania, each family with their own filling recipe.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Quinoa_stuffed_peppers.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Quinoa_stuffed_peppers.jpg"
+        }
+      },
+      {
+        "id": "alb-dn-4",
+        "name": "Fergese Tirane (Baked Pepper and Cheese)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "4 green peppers (roasted, peeled)",
+          "4 tomatoes",
+          "200g fresh cheese (or feta)",
+          "3 eggs",
+          "Butter",
+          "Flour",
+          "Salt"
+        ],
+        "instructions": [
+          "Roast peppers, peel and chop",
+          "Make roux with butter and flour",
+          "Add chopped tomatoes, cook 10 min",
+          "Add peppers and crumbled cheese",
+          "Pour into baking dish, crack eggs on top",
+          "Bake at 200°C until eggs set and top is golden"
+        ],
+        "description": "Tirana's signature dish — roasted peppers, tomato, and cheese baked with eggs. Simple and rich.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/F%C3%ABrges%C3%AB_me_speca_dhe_gjiz%C3%AB.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/F%C3%ABrges%C3%AB_me_speca_dhe_gjiz%C3%AB.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "alb-sn-1",
+        "name": "Spinach Pie",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Phyllo",
+          "Spinach",
+          "Feta",
+          "Eggs",
+          "Butter"
+        ],
+        "instructions": [
+          "Sauté spinach",
+          "Mix with cheese",
+          "Layer phyllo",
+          "Bake"
+        ],
+        "notes": "Spinach snack",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Spanakopita.jpg",
+        "imageCredit": {
+          "author": "Alpha",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASpanakopita.jpg"
+        }
+      },
+      {
+        "id": "alb-sn-2",
+        "name": "Qofte të Fërguara (Fried Meatballs)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "500g ground beef or lamb",
+          "1 onion (grated)",
+          "2 slices bread (soaked in milk)",
+          "1 egg",
+          "Parsley",
+          "Mint",
+          "Cumin",
+          "Salt, pepper",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Mix meat with grated onion, squeezed bread, egg, herbs, spices",
+          "Shape into flat oval patties",
+          "Fry in oil until browned on both sides",
+          "Serve with yogurt and fresh bread"
+        ],
+        "description": "Spiced meat patties — found at every Albanian restaurant and family table.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Soup_with_meatballs-01.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Soup_with_meatballs-01.jpg"
+        }
+      },
+      {
+        "id": "alb-sn-3",
+        "name": "Trilece (Three Milks Cake)",
+        "difficulty": "Easy",
+        "servings": 12,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Sponge: 6 eggs, 1 cup sugar, 1 cup flour",
+          "Milk soak: evaporated milk, condensed milk, cream",
+          "Caramel topping: sugar"
+        ],
+        "instructions": [
+          "Beat eggs and sugar until very thick and pale",
+          "Fold in flour gently",
+          "Bake sponge at 175°C for 25 min",
+          "Poke holes all over warm cake",
+          "Mix the three milks, pour over",
+          "Refrigerate overnight — the cake absorbs everything",
+          "Make dark caramel, pour over top before serving"
+        ],
+        "description": "Albania's beloved tres leches — soaked in three milks, topped with dark caramel. Found in every pastry shop.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Turkish_version_of_tres_leches.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Turkish_version_of_tres_leches.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "alb-des-1",
+        "name": "Baklava",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 45,
+        "cookTime": 40,
+        "ingredients": [
+          "Phyllo",
+          "Walnuts",
+          "Sugar",
+          "Cinnamon",
+          "Butter",
+          "Honey"
+        ],
+        "instructions": [
+          "Layer phyllo",
+          "Add nut mixture",
+          "Bake",
+          "Add honey syrup"
+        ],
+        "notes": "Sweet pastry",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png",
+        "imageCredit": {
+          "author": "Sakaman",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABaklava%281%29.png"
+        }
+      },
+      {
+        "id": "alb-ds-2",
+        "name": "Kabuni (Sweet Rice with Raisins)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 25,
+        "ingredients": [
+          "2 cups rice",
+          "Lamb broth",
+          "100g butter",
+          "100g sugar",
+          "100g raisins",
+          "Cinnamon",
+          "Cloves"
+        ],
+        "instructions": [
+          "Melt sugar in butter until caramelized",
+          "Add lamb broth, bring to boil",
+          "Add rice, raisins, spices",
+          "Cook covered until rice absorbs liquid",
+          "Mold into dome shape, invert onto plate",
+          "Serve warm — often alongside roast lamb"
+        ],
+        "description": "Sweet spiced rice from Elbasan — traditionally molded into a dome and served at celebrations."
+      },
+      {
+        "id": "alb-ds-3",
+        "name": "Sheqerpare (Syrup Cookies)",
+        "difficulty": "Medium",
+        "servings": 20,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Cookies: 250g butter, 2 cups flour, 1 cup semolina, 1/2 cup sugar, 2 eggs, baking powder",
+          "Syrup: 2 cups sugar, 2 cups water, lemon juice"
+        ],
+        "instructions": [
+          "Cream butter and sugar, add eggs",
+          "Mix in flour, semolina, baking powder",
+          "Shape into small balls, press an almond into each",
+          "Bake at 170°C for 18-20 min — should stay pale",
+          "Make syrup: boil sugar and water with lemon juice",
+          "Pour hot syrup over warm cookies",
+          "Let soak for several hours — cookies become moist and glossy"
+        ],
+        "description": "Syrup-soaked butter cookies — Ottoman heritage found across Albanian pastry shops."
+      }
+    ],
+    "drinks": [
+      {
+        "id": "alb-drink-1",
+        "name": "Turkish Coffee",
+        "difficulty": "Easy",
+        "servings": 1,
+        "prepTime": 5,
+        "cookTime": 5,
+        "ingredients": [
+          "Water",
+          "Ground coffee",
+          "Sugar",
+          "Cardamom"
+        ],
+        "instructions": [
+          "Heat water",
+          "Add coffee and sugar",
+          "Simmer",
+          "Serve"
+        ],
+        "notes": "Traditional",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg"
+        }
+      },
+      {
+        "id": "alb-dr-2",
+        "name": "Raki (Albanian Grape Spirit)",
+        "difficulty": "Hard",
+        "servings": 20,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Grape pomace (or grapes)",
+          "Water"
+        ],
+        "instructions": [
+          "Ferment grape pomace or crushed grapes",
+          "Distill in copper alembic",
+          "Often distill twice for smoother spirit",
+          "The clear spirit should be 40-50% ABV",
+          "Serve in small glasses at room temperature"
+        ],
+        "description": "Albania's national spirit — homemade by nearly every family with a vineyard. Offered to every guest who walks through the door.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg",
+        "imageCredit": {
+          "author": "The original uploader was Blue at Bulgarian Wikipedia.",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3A%D0%95%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D0%A1%D0%BB%D0%B8%D0%B2%D0%BE%D0%B2%D0%B0.jpg"
+        }
+      },
+      {
+        "id": "alb-dr-3",
+        "name": "Boza (Fermented Grain Drink)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Corn flour or millet",
+          "Water",
+          "Sugar"
+        ],
+        "instructions": [
+          "Cook corn flour or millet into a thin porridge",
+          "Cool to room temperature",
+          "Let ferment 2-3 days until slightly tangy and thick",
+          "Sweeten with sugar",
+          "Serve cold, sprinkled with cinnamon"
+        ],
+        "description": "Thick, sweet, slightly fermented grain drink — Ottoman heritage, drunk during winter months.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Boza.jpg",
+        "imageCredit": {
+          "author": "FoPen",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABoza.jpg"
+        }
+      }
+    ]
+  }
+}

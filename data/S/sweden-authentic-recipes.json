@@ -1,0 +1,828 @@
+{
+  "swedenRecipes": {
+    "country": "Sweden",
+    "region": "Scandinavia",
+    "breakfast": [
+      {
+        "id": "swe-bf-1",
+        "name": "Filmjolk with Musli and Knackebrod",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 3,
+        "cookTime": 0,
+        "ingredients": [
+          "Filmjolk (Swedish cultured milk -- thicker and more sour than yoghurt)",
+          "Musli (Swedish style -- oats, nuts, dried fruit)",
+          "Knackebrod (hard rye crispbread)",
+          "Butter and cheese (for the knackebrod)",
+          "Lingonberry jam (or marmalade)"
+        ],
+        "instructions": [
+          "The Swedish weekday breakfast is simple and efficient",
+          "Filmjolk: the cultured Swedish milk -- slightly sour, pourable but thick",
+          "Different from yoghurt: filmjolk has a specific bacterial culture (lactobacillus bulgaricus) producing its tangy flavor",
+          "Poured over musli -- the Swedish musli tradition is lighter than German Bircher",
+          "Knackebrod (hard rye crispbread): the Swedish bread tradition",
+          "Knackebrod with butter and hard cheese is the other component",
+          "The combination: cold sour milk + crunchy oats + crispy rye + butter + cheese",
+          "Swedes eat knackebrod daily -- it keeps for months, a practical northern tradition",
+          "Lingonberry jam: the Swedish condiment -- tart, dark red, with everything"
+        ],
+        "description": "The Swedish weekday breakfast -- filmjolk (sour, pourable cultured milk) poured over musli, paired with hard rye knackebrod spread with butter and cheese. Filmjolk has a specific bacterial culture that makes it distinctly tangier than yoghurt. Knackebrod keeps for months: the practical northern bread. Lingonberry jam on the side."
+      },
+      {
+        "id": "swe-bf-2",
+        "name": "Kanelbullar (Cinnamon Buns)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 90,
+        "cookTime": 20,
+        "ingredients": [
+          "Dough: flour, milk, butter, sugar, egg, yeast, cardamom (the essential Swedish spice)",
+          "Filling: butter, sugar, ground cinnamon (generous)",
+          "Pearl sugar (for topping -- the Swedish pearl sugar is specific)",
+          "Egg wash"
+        ],
+        "instructions": [
+          "Kanelbullar are the Swedish cinnamon buns -- different from American cinnamon rolls",
+          "The key differences: the Swedish version is smaller, less sweet, and has cardamom in the dough",
+          "Cardamom in the dough: the Scandinavian spice -- it perfumes the entire bun",
+          "The dough is enriched with butter and milk -- soft and slightly sweet",
+          "The filling: butter, cinnamon, sugar -- spread generously on the rolled-out dough",
+          "Rolled up, cut into portions, shaped into the Swedish knot (not a roll but a twist)",
+          "The Swedish knot: cut the roll, then each slice is twisted and pressed to form a spiral knot",
+          "Pearl sugar on top: the specific Swedish coarse sugar that does not melt in the oven",
+          "Sweden has a Kanelbullens dag (Cinnamon Bun Day) on October 4th",
+          "Kanelbullar with coffee (fika) is the fundamental Swedish social institution",
+          "The fika: the Swedish coffee break -- a cultural necessity, not optional"
+        ],
+        "description": "Swedish cinnamon bun -- enriched cardamom dough spread with cinnamon-butter filling, twisted into the Swedish knot shape, topped with pearl sugar. Smaller, less sweet, and more spiced than American cinnamon rolls; cardamom in the dough is the Swedish distinction. Sweden has a national Cinnamon Bun Day (October 4). Kanelbullar with coffee is the fika -- the Swedish social coffee break.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cinnamon_roll_in_Stockholm.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cinnamon_roll_in_Stockholm.jpg"
+        }
+      },
+      {
+        "id": "swe-bf-3",
+        "name": "Smorgasbord Breakfast (Swedish Morning Spread)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 0,
+        "ingredients": [
+          "Knackebrod (hard rye crispbread -- several varieties)",
+          "Smorgasbord bread (Swedish white soft bread -- limpa or white sandwich)",
+          "Cold cuts: skinka (ham), roast beef, leverpostej (liver pate)",
+          "Cheese: Vasterbottensost (aged, sharp), Svecia, Hushallsost",
+          "Filmjolk or yoghurt",
+          "Boiled eggs",
+          "Tomatoes, cucumber slices"
+        ],
+        "instructions": [
+          "The Swedish breakfast spread (frukost bordet) is the smorgasbord principle applied to morning",
+          "Everything laid out on the table -- each person assembles their own plate",
+          "Knackebrod is the Swedish daily bread -- many varieties (tunnbrod, hard knacke)",
+          "Vasterbottensost: the aged Swedish cheese from Vasterbotten county -- sharp, crystalline, nutty",
+          "Leverpostej (liver pate): the Scandinavian liver pate spread for bread",
+          "The assembly: knackebrod with butter, then one or several toppings",
+          "Open-faced sandwich (smorgas): the Swedish eating format -- not closed sandwiches",
+          "Boiled eggs with filmjolk and knackebrod: the complete Swedish frukost",
+          "Hotel breakfasts in Sweden follow this format -- abundant, efficient, cold"
+        ],
+        "description": "Swedish morning spread -- everything laid out on the table: knackebrod (rye crispbread), cold cuts, Vasterbottensost (aged sharp Swedish cheese), leverpostej (liver pate), boiled eggs, and filmjolk. Each person assembles open-faced sandwiches (smorgas). The smorgasbord principle applied to breakfast. Hotel frukost across Sweden follows this cold spread format."
+      },
+      {
+        "id": "swe-bf-4",
+        "name": "Havregrynsgrot (Oat Porridge)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 2,
+        "cookTime": 10,
+        "ingredients": [
+          "Oats (Swedish rolled oats -- often fine-cut)",
+          "Water or milk (or half-half)",
+          "Salt",
+          "Butter (cold pat on top)",
+          "Filmjolk (poured over)",
+          "Lingonberry jam or fresh berries"
+        ],
+        "instructions": [
+          "Havregrynsgrot is the Swedish oat porridge -- the cold-weather breakfast",
+          "Swedish oats are often finely cut -- the porridge is smoother than with large rolled oats",
+          "Cook the oats with water and a pinch of salt -- the salt is essential for savory depth",
+          "A cold pat of butter placed in the center -- it melts across the porridge",
+          "Filmjolk poured alongside or over -- the cold sour milk against the hot porridge",
+          "The filmjolk pools in the bowl -- you drag the hot porridge through the cold filmjolk",
+          "The temperature contrast: hot porridge, cold filmjolk",
+          "Lingonberry jam or fresh berries on the side or stirred in",
+          "Swedish school lunches traditionally included havregrynsgrot",
+          "The porridge has been the Swedish winter morning staple for centuries"
+        ],
+        "description": "Swedish oat porridge -- finely cut oats cooked in water with salt, served with a cold pat of butter melting in the center, filmjolk poured alongside (the cold sour milk against the hot porridge is the combination), and lingonberry jam. The temperature contrast between hot porridge and cold filmjolk is the experience. The Swedish winter morning staple for centuries.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Oatmeal.jpg",
+        "imageCredit": {
+          "author": "Bill Ebbesen",
+          "source": "Wikimedia Commons",
+          "license": "Copyrighted free use",
+          "url": "https://commons.wikimedia.org/wiki/File%3AOatmeal.jpg"
+        }
+      }
+    ],
+    "lunch": [
+      {
+        "id": "swe-ln-1",
+        "name": "Kottbullar med Lingon (Swedish Meatballs)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 20,
+        "ingredients": [
+          "Mince: beef + pork (50/50 -- the Swedish classic)",
+          "Onion (grated fine)",
+          "Egg, breadcrumbs soaked in cream",
+          "Allspice and white pepper (the Swedish spice blend)",
+          "Salt",
+          "Butter (for frying)",
+          "Gravy: beef stock, cream, dark soy sauce",
+          "Lingonberry jam (non-negotiable)",
+          "Mashed potatoes and pickled cucumber (for serving)"
+        ],
+        "instructions": [
+          "Swedish meatballs (kottbullar) are the world most famous Swedish dish -- partly due to IKEA",
+          "But the Swedish meatball is different from Italian: smaller, allspice-spiced, served with cream gravy",
+          "The beef-pork mix: the fat from the pork keeps the meatball moist",
+          "Allspice: the defining Swedish spice in kottbullar -- a warm, clove-like background",
+          "White pepper: another Swedish meatball distinction -- not black pepper",
+          "Breadcrumbs soaked in cream give the meatball a softer, more delicate texture",
+          "Fry in butter until all sides are golden -- the butter smell is the kitchen signal",
+          "The cream gravy: deglaze the meatball pan, add cream, season with dark soy sauce",
+          "The dark soy sauce darkens and deepens the cream gravy -- the Swedish secret",
+          "Lingonberries alongside: mandatory -- the tartness cuts through the cream",
+          "Served with mashed potato and pickled cucumber: the classic kottbullar plate"
+        ],
+        "description": "Sweden most famous dish -- small beef-pork meatballs seasoned with allspice and white pepper (not Italian), fried in butter until golden all over, served in cream gravy (deglazed pan + cream + dark soy sauce) with lingonberry jam, mashed potato, and pickled cucumber. The lingonberry is non-negotiable. Served in IKEA restaurants worldwide; the authentic version is far better."
+      },
+      {
+        "id": "swe-ln-2",
+        "name": "Artsoppa med Pannkakor (Pea Soup with Pancakes)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 60,
+        "ingredients": [
+          "Yellow split peas (soaked overnight)",
+          "Pork (salted pork belly or ham hock)",
+          "Onion, thyme",
+          "Mustard (to serve with the soup)",
+          "Pancake batter: flour, eggs, milk, butter",
+          "Lingonberry jam (for the pancakes)"
+        ],
+        "instructions": [
+          "Artsoppa med pannkakor: the Swedish Thursday meal -- pea soup followed by pancakes",
+          "This tradition dates to Catholic medieval Sweden -- Thursday was semi-fasting day",
+          "The pea soup prepared on Thursday to sustain before the Friday fast",
+          "The tradition survived the Protestant Reformation: 500 years and still Thursday",
+          "Yellow split peas: the Swedish pea, not green (different from French green pea soup)",
+          "The pork: salted pork belly gives depth and saltiness to the soup",
+          "The soup is served with sharp Swedish mustard on the side -- essential",
+          "After the soup: Swedish pancakes (tunnare than French crepes, thicker than English pancakes)",
+          "The pancakes served with lingonberry jam",
+          "Swedish military tradition: soldiers always ate artsoppa on Thursdays",
+          "School cafeterias, restaurants, and home kitchens: Thursday in Sweden means pea soup"
+        ],
+        "description": "The Swedish Thursday meal -- a Catholic medieval tradition that survived the Reformation. Yellow split pea soup with salted pork (served with sharp Swedish mustard), followed by Swedish pancakes with lingonberry jam. School cafeterias, restaurants, and Swedish homes all serve this on Thursday. 500+ years of unbroken Thursday tradition.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg"
+        }
+      },
+      {
+        "id": "swe-ln-3",
+        "name": "Gravlax (Cured Salmon)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 4320,
+        "ingredients": [
+          "Salmon fillet (fresh, skin on, very fresh)",
+          "Salt (coarse sea salt -- generous)",
+          "Sugar (white)",
+          "Dill (fresh -- abundant, the essential flavor)",
+          "White pepper (cracked)",
+          "Aquavit (optional splash -- intensifies the Scandinavian note)"
+        ],
+        "instructions": [
+          "Gravlax is the cured-in-salt-and-dill salmon -- Scandinavia most elegant simple preparation",
+          "The name: grav = grave, lax = salmon -- the Vikings buried the fish in the ground to ferment",
+          "Modern gravlax is salt-cured, not buried-fermented -- but the name persists",
+          "The salt and sugar cure: salt draws moisture from the fish, the sugar balances",
+          "The dill: abundant -- the entire fillet covered in fresh dill",
+          "The curing time: 24-48 hours in the refrigerator under weight",
+          "The weight presses out the brine and ensures even curing",
+          "Serve sliced paper-thin across the grain (like smoked salmon)",
+          "Accompanied by hovmaster sauce: dill mustard mayonnaise -- the classic accompaniment",
+          "Gravlax on knackebrod or blinis with dill mustard sauce: the festive starter",
+          "The gravlax color: bright orange-pink, translucent -- beautiful on a platter"
+        ],
+        "description": "Scandinavian salt-and-dill cured salmon -- fresh salmon fillet packed in coarse salt, sugar, cracked white pepper, and abundant fresh dill, weighted and refrigerated for 24-48 hours. Sliced paper-thin across the grain. Served with hovmaster (dill mustard mayonnaise). The name: grav (grave) + lax (salmon) -- Vikings buried fish to ferment; this is the civilized evolution.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Laxr%C3%A4tter.jpg",
+        "imageCredit": {
+          "author": "Esquilo",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALaxr%C3%A4tter.jpg"
+        }
+      },
+      {
+        "id": "swe-ln-4",
+        "name": "Janssons Frestelse (Janssons Temptation)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "Swedish sprats (ansjovis -- pickled herring/sprat fillets in a specific Swedish brine)",
+          "Potatoes (julienned)",
+          "Onion (sliced)",
+          "Cream (heavy -- abundant)",
+          "Breadcrumbs (for the topping)"
+        ],
+        "instructions": [
+          "Janssons Frestelse (Janssons Temptation) is a Swedish festive oven dish",
+          "The name refers to a Swedish opera singer, Pelle Janzon, or alternatively to a temperance preacher",
+          "The ansjovis (Swedish sprats): these are NOT Italian anchovies",
+          "Swedish ansjovis are sprats pickled in a specific sweet-spicy brine -- different flavor entirely",
+          "If you use Italian anchovies you get a different (salter, less sweet) dish",
+          "The dish: alternating layers of julienned potatoes, onion, and ansjovis in cream",
+          "Cream is poured over the top -- generous",
+          "Topped with breadcrumbs -- they brown and form a crust",
+          "Baked until the potatoes are soft and the cream reduces and thickens",
+          "The smell while baking: the ansjovis-cream-potato scent is unmistakably Swedish festive",
+          "Janssons frestelse is the julbord (Christmas table) dish -- every Swedish Christmas"
+        ],
+        "description": "Swedish festive cream-potato gratin with sprats -- julienned potatoes and onion layered with Swedish ansjovis (sprats in sweet-spicy brine, NOT Italian anchovies), flooded with cream, topped with breadcrumbs, baked until golden. The ansjovis-cream-potato scent while baking is unmistakably Swedish Christmas. A julbord (Christmas table) essential.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Janssons_frestelse.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Janssons_frestelse.jpg"
+        }
+      },
+      {
+        "id": "swe-ln-5",
+        "name": "Raggmunk (Potato Pancakes)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Potatoes (grated raw)",
+          "Flour, egg, milk",
+          "Salt, pepper",
+          "Butter (generous for frying)",
+          "Bacon (streaky -- fried alongside)",
+          "Lingonberry jam (to serve)"
+        ],
+        "instructions": [
+          "Raggmunk are Swedish potato pancakes -- a simple husmanskost (home cooking) dish",
+          "The raw potatoes are grated and mixed into a simple batter",
+          "The key technique: enough batter to bind but potato is the dominant element",
+          "Fried in generous butter -- the butter browns the potato edges",
+          "The pancake should be thin-ish, with a golden, crispy exterior",
+          "The inside: soft, potato-rich, slightly dense",
+          "Fried bacon alongside: a Swedish tradition -- the bacon fat and the pancake",
+          "Lingonberry jam: the constant Swedish accompaniment -- also mandatory here",
+          "Raggmunk is the everyday Swedish potato dish -- the husmanskost home cooking",
+          "Different from Swiss rosti: raggmunk has batter binding; rosti is pure potato"
+        ],
+        "description": "Swedish potato pancakes -- raw grated potato mixed into a simple batter, fried in generous butter until golden-crispy outside and soft-potato inside, served with fried bacon and lingonberry jam. A husmanskost (home cooking) staple. Different from Swiss rosti: raggmunk has batter; rosti is pure potato.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Latkas.jpg",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "GFDL 1.2",
+          "url": "https://commons.wikimedia.org/wiki/File%3ALatkas.jpg"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "swe-dn-1",
+        "name": "Inkokt Lax (Poached Salmon)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Salmon fillet (fresh, skin on)",
+          "Court bouillon: water, white wine vinegar, onion, carrot, dill, white pepper, bay leaf",
+          "Fresh dill (for serving)",
+          "Hovmaster sauce: dill, mustard, mayonnaise"
+        ],
+        "instructions": [
+          "Inkokt lax is the Swedish cold poached salmon -- elegant, delicate, traditional",
+          "Court bouillon: the aromatic poaching liquid that flavors the fish as it cooks",
+          "White wine vinegar in the court bouillon: it firms the salmon flesh slightly",
+          "The salmon is placed in simmering court bouillon then the heat turned off",
+          "The salmon finishes cooking in the cooling liquid -- this prevents overcooking",
+          "Cooled completely in the liquid -- the flavor seeps into the flesh",
+          "Served cold with fresh dill fronds and hovmaster sauce",
+          "Inkokt lax is the Swedish midsommar (Midsummer) feast dish -- served in summer",
+          "Swedish Midsommar is the most important celebration after Christmas",
+          "The cold salmon alongside new potatoes with dill: the Midsommar plate"
+        ],
+        "description": "Swedish cold poached salmon -- placed in simmering court bouillon then the heat turned off, cooling in the aromatic liquid until the fish sets gently without overcooking. Served cold with fresh dill and hovmaster (dill mustard mayonnaise). The Midsommar (Midsummer) feast dish -- alongside new dill potatoes, the quintessential Swedish summer plate.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg"
+        }
+      },
+      {
+        "id": "swe-dn-2",
+        "name": "Pyttipanna (Swedish Hash)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "Potatoes (boiled, leftover -- diced small)",
+          "Beef or pork (leftover -- diced)",
+          "Onion (diced)",
+          "Pickled beetroot (to serve alongside)",
+          "Fried egg (to serve on top)",
+          "Butter or oil for frying"
+        ],
+        "instructions": [
+          "Pyttipanna means small pieces in the pan -- Swedish use-up-the-leftovers dish",
+          "The dish was designed for leftover boiled potatoes and meat from the previous day",
+          "Dice everything small: potatoes, meat, onion -- the small size is the point (pyttipanna)",
+          "Fry in butter in a single pan -- everything together",
+          "The potatoes should develop a golden crust -- the crust carries the flavor",
+          "Topped with a fried egg -- the runny yolk becomes the sauce",
+          "Served alongside pickled beetroot -- the cold, sharp beet against the warm hash",
+          "Pyttipanna is Swedish comfort food -- the efficient Monday dish from Sunday leftovers",
+          "Every Swede has a version: some add pickled herring, some use sausage"
+        ],
+        "description": "Swedish leftover hash -- diced potatoes, meat, and onion fried in butter until the potato develops a golden crust, topped with a fried egg (the yolk is the sauce), served alongside pickled beetroot. Pyttipanna = small pieces in the pan. Designed for Sunday leftovers, eaten Monday. Every Swede has their version.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pyttipanna.JPG",
+        "imageCredit": {
+          "author": "Skivsamlare",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APyttipanna.JPG"
+        }
+      },
+      {
+        "id": "swe-dn-3",
+        "name": "Stekt Stromming (Fried Baltic Herring)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Baltic herring (stromming -- small, filleted, butterflied)",
+          "Rye flour (for coating)",
+          "Butter (generous)",
+          "Dill (fresh -- the finish)",
+          "Lingonberry jam",
+          "Mashed potatoes"
+        ],
+        "instructions": [
+          "Stekt stromming is the fried Baltic herring -- the Stockholm working-class staple",
+          "Stromming: the small herring from the Baltic Sea -- different from Atlantic herring",
+          "The Baltic herring is smaller, leaner, and has a distinct flavor from the cold Baltic water",
+          "Filleted and butterflied -- two fillets sandwiched together with dill",
+          "Coated in rye flour: the rye gives a slightly nutty, earthy coating that suits the herring",
+          "Fried in butter until golden on both sides -- the butter browns, the flour crisps",
+          "Fresh dill scattered over the hot fish",
+          "Stekt stromming was the Stockholm street food for centuries -- sold from boats in the harbor",
+          "The stekt strommingskiosk (herring kiosk): an institution in Stockholm markets",
+          "Served with mashed potato and lingonberry jam -- the classic plate",
+          "Surströmming (fermented herring) is the infamous version -- deliberately fermented to extreme"
+        ],
+        "description": "Stockholm working-class fried herring -- Baltic herring (stromming: small, lean, distinct from Atlantic herring) butterflied and sandwiched with dill, coated in rye flour and fried in butter until golden. Served with mashed potato and lingonberry jam. Sold from harbor boats for centuries. Surströmming (the deliberately fermented version) is the infamous extreme cousin.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg"
+        }
+      },
+      {
+        "id": "swe-dn-4",
+        "name": "Dillkott av Lamm (Lamb Dill Stew)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 60,
+        "ingredients": [
+          "Lamb (shoulder or shank -- bone-in)",
+          "Dill (lots -- both in cooking and for serving)",
+          "Bay leaf, white pepper, allspice, salt",
+          "Onion, carrot, leek",
+          "Cream and egg yolk (for the sauce)",
+          "Lemon juice",
+          "New potatoes (to serve alongside)"
+        ],
+        "instructions": [
+          "Dillkott is the Swedish dill-cream lamb stew -- the classic Swedish pale stew",
+          "Swedish cuisine has a tradition of pale, cream-enriched stews -- kokt (boiled/poached)",
+          "The lamb is simmered in water with vegetables until tender",
+          "The broth enriched with cream and egg yolk -- the Swedish liaised sauce",
+          "Dill: generous quantities in the broth during cooking AND fresh at serving",
+          "Lemon juice: a squeeze brightens the cream sauce",
+          "The stew should be pale and creamy -- not brown, not sauced with tomato",
+          "Dillkott is Swedish Easter food -- associated with the spring lamb",
+          "The combination of dill, cream, and lamb is distinctly Swedish",
+          "New potatoes alongside: the spring plate"
+        ],
+        "description": "Swedish pale dill-cream lamb stew -- lamb simmered in broth until tender, the broth enriched with cream and egg yolk into a smooth pale sauce, flavored with abundant dill (cooked and fresh), finished with lemon juice. Pale and creamy, not brown: the Swedish stew aesthetic. Easter food; associated with the spring lamb and new potatoes."
+      },
+      {
+        "id": "swe-dn-5",
+        "name": "Husmanskost Plank (Swedish Home Cooking Plate)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Any combination: meatballs, potato, root vegetable gratin",
+          "Pickled beetroot",
+          "Pickled cucumber",
+          "Dark bread (limpa or rye)",
+          "Butter"
+        ],
+        "instructions": [
+          "Husmanskost means home cooking of the common man -- the everyday Swedish food tradition",
+          "The concept: simple, nourishing, using local ingredients, no pretension",
+          "The Swedish husmanskost ingredients: potatoes, root vegetables, herring, pork, dairy",
+          "Always served with pickled vegetables -- pickled cucumber, beetroot, red cabbage",
+          "The pickling tradition: Scandinavia preserved vegetables through the long winter",
+          "Dark bread (limpa -- the Swedish dark rye-molasses bread) always present",
+          "The Swedish relationship with pickled accompaniments is central to the cuisine",
+          "Husmanskost is the base that Swedish fine dining returns to -- the reference point"
+        ],
+        "description": "Swedish home cooking philosophy -- potatoes, root vegetables, herring, pork, and dairy, always served with pickled accompaniments (cucumber, beetroot, red cabbage) and dark limpa rye-molasses bread. The pickling tradition preserved vegetables through the long northern winter. Husmanskost is the reference point that Swedish fine dining returns to."
+      }
+    ],
+    "snacks": [
+      {
+        "id": "swe-sn-1",
+        "name": "Sill (Pickled Herring)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Herring fillets (salt-packed -- desalted in water 24-48 hours)",
+          "Pickling brine: vinegar, sugar, water (Swedish 1-2-3 pickling: 1 part vinegar, 2 parts sugar, 3 parts water)",
+          "Spices: allspice, bay leaf, white pepper",
+          "Onion (raw, in the brine)"
+        ],
+        "instructions": [
+          "Sill (pickled herring) is the foundation of Swedish cuisine",
+          "The julbord (Christmas table), Midsommar, crayfish parties -- sill at every celebration",
+          "Many varieties: mustard sill, dill sill, onion sill, tomato sill, glassblower sill",
+          "The base: salt-packed herring desalted then placed in the sweet-sour Swedish brine",
+          "The Swedish 1-2-3 pickling ratio: 1 part vinegar, 2 parts sugar, 3 parts water",
+          "Spices in the brine: allspice, bay leaf, white pepper",
+          "The sill rests in the brine for at least 24 hours",
+          "Eaten on knackebrod or on new potatoes",
+          "The sill-competition at Midsommar: everyone has their grandmother sill recipe",
+          "Swedish sill is considered different from the matjes, rollmops of other nations"
+        ],
+        "description": "The foundation of Swedish cuisine -- salt herring desalted and packed in the sweet-sour Swedish brine (1 part vinegar : 2 parts sugar : 3 parts water) with allspice, bay leaf, and onion. Many varieties (mustard sill, dill sill, glassblower sill). Present at every Swedish celebration: julbord, Midsommar, crayfish parties. Eaten on knackebrod or new potatoes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Judee_Sill_c._1973_%28retouched%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Judee_Sill_c._1973_%28retouched%29.jpg"
+        }
+      },
+      {
+        "id": "swe-sn-2",
+        "name": "Semla (Cardamom Cream Bun)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 90,
+        "cookTime": 15,
+        "ingredients": [
+          "Enriched dough: flour, butter, sugar, milk, egg, yeast, cardamom (generous)",
+          "Almond paste (mandelmassa)",
+          "Whipped cream (lots)",
+          "Icing sugar (for dusting)"
+        ],
+        "instructions": [
+          "Semla is the Swedish Lenten cream bun -- eaten on Fat Tuesday (Fettisdagen)",
+          "Sweden also eats semla throughout the Lenten season (the tradition has expanded)",
+          "The bun: cardamom-enriched dough -- the cardamom is the defining flavor",
+          "The top of the bun is cut off -- the lid is saved",
+          "The interior of the bun is hollowed out and mixed with the crumbs",
+          "Almond paste (mandelmassa) is mixed with the crumbs and some cream",
+          "The filling goes back into the hollow bun",
+          "Whipped cream mounded extravagantly on top of the filling",
+          "The lid placed on at an angle",
+          "Semla must be eaten immediately -- cream deflates, the lid gets soggy",
+          "Sweden consumes 40+ million semla during the Lenten season",
+          "Semla date (Fettisdagen) approaches, every Swedish bakery fills with semla"
+        ],
+        "description": "Swedish Lenten cream bun -- cardamom-enriched dough bun hollowed out and filled with almond paste mixed with breadcrumbs, mounded with whipped cream, the lid placed at an angle. Must be eaten immediately: cream deflates, the lid gets soggy. Sweden consumes 40+ million during the Lenten season. Every Swedish bakery fills with semla as Fettisdagen (Fat Tuesday) approaches.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/SemlaFlickr.jpg",
+        "imageCredit": {
+          "author": "Frugan",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ASemlaFlickr.jpg"
+        }
+      },
+      {
+        "id": "swe-sn-3",
+        "name": "Knackebrod with Various Toppings",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 3,
+        "cookTime": 0,
+        "ingredients": [
+          "Knackebrod (hard rye crispbread -- several varieties: Wasa, Rattviksknacke, thin cracker)",
+          "Toppings: smoked salmon + cream cheese + dill; liver pate + pickled cucumber; cheese + jam"
+        ],
+        "instructions": [
+          "Knackebrod is the bread of Sweden -- eaten daily by most Swedes",
+          "Different varieties: thin crispy sheets, thicker seeded knacke, sourdough rye",
+          "Wasa is the internationally known brand but artisan versions are superior",
+          "Knackebrod keeps for 6+ months -- the practical northern bread for long winters",
+          "Versatile: supports any topping from savory to sweet",
+          "Smoked salmon + cream cheese + dill: the festive knackebrod",
+          "Leverpostej + pickled cucumber: the everyday working lunch",
+          "Cheese + jam: the Swedish combination the rest of the world finds surprising but correct"
+        ],
+        "description": "Swedish daily bread -- hard rye crispbread that keeps for months, eaten with everything: smoked salmon + cream cheese + dill for festive; liver pate + pickled cucumber for weekday lunch; cheese + jam for the snack. Wasa is the international brand; the artisan variety is superior. The practical northern bread for long winters.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg"
+        }
+      },
+      {
+        "id": "swe-sn-4",
+        "name": "Pepparkakor (Ginger Snaps)",
+        "difficulty": "Medium",
+        "servings": 40,
+        "prepTime": 60,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour, sugar, butter",
+          "Treacle (mork sirap -- Swedish dark treacle, not molasses)",
+          "Ground ginger, cinnamon, cloves, white pepper, cardamom",
+          "Baking soda",
+          "Egg"
+        ],
+        "instructions": [
+          "Pepparkakor (pepper cakes) are Swedish ginger snaps -- the Christmas cookie",
+          "The name: pepparkaka = pepper cake -- the pepper was historically the most prized spice",
+          "The Swedish spice blend: ginger, cinnamon, cloves, cardamom, and white pepper",
+          "The treacle: Swedish dark treacle (mork sirap) gives the deep brown color and caramel flavor",
+          "The dough is rolled paper-thin -- the thinness produces the snap",
+          "Cut into shapes: hearts, stars, pigs, Christmas trees -- the Swedish shapes",
+          "Baked until just done -- they crisp as they cool",
+          "Pepparkakor are at every Swedish Christmas -- hanging on Christmas trees, in advent calendars",
+          "Sweden tradition: the pepparkaka heart is hung on the Christmas tree",
+          "The Swedish proverb: if you snap a pepparkaka into 3 pieces with your thumb, your wish comes true"
+        ],
+        "description": "Swedish Christmas ginger snaps -- thin dough of flour, butter, dark treacle, and the Swedish spice blend (ginger, cinnamon, cloves, cardamom, white pepper), rolled paper-thin and baked until they shatter. The treacle gives deep color and caramel flavor. At every Swedish Christmas: hanging on trees, in advent calendars, snapping one into three pieces for a wish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Arnott%27s_Ginger_Nut_04.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Arnott%27s_Ginger_Nut_04.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "swe-ds-1",
+        "name": "Prinsesstarta (Princess Cake)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 90,
+        "cookTime": 30,
+        "ingredients": [
+          "Genoise sponge cake (3 layers)",
+          "Vanilla custard cream (pastry cream)",
+          "Strawberry jam",
+          "Whipped cream (lots -- the dome is whipped cream)",
+          "Marzipan (green-colored -- domed over the whole cake)",
+          "Pink marzipan rose (for the top)"
+        ],
+        "instructions": [
+          "Prinsesstarta is the Swedish celebration cake -- green marzipan dome, pink rose on top",
+          "Created in the 1930s for the Swedish princesses by a Swedish home economics teacher",
+          "The three layers of genoise sponge are the foundation",
+          "Layer 1: sponge with vanilla custard",
+          "Layer 2: sponge with strawberry jam and more custard",
+          "Layer 3: sponge -- the top of the cake",
+          "Then whipped cream is mounded over the top into a dome shape",
+          "The green marzipan sheet is carefully draped over the whipped cream dome",
+          "A pink marzipan rose placed on top -- the signature decoration",
+          "The challenge: draping the marzipan smoothly over the cream without tearing",
+          "Prinsesstarta is Sweden most iconic cake -- at every Swedish birthday and celebration",
+          "Prinsesstarta Week: a national event in Sweden -- bakeries compete"
+        ],
+        "description": "Sweden most iconic celebration cake -- three genoise sponge layers with vanilla custard and strawberry jam, mounded with whipped cream into a dome, draped in green marzipan and topped with a pink marzipan rose. Created in the 1930s for the Swedish princesses. Smooth marzipan draping over the cream dome is the challenge. Present at every Swedish birthday and celebration.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Princess_Cake_2025-Oct-02_%28cropped%29.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Princess_Cake_2025-Oct-02_%28cropped%29.jpg"
+        }
+      },
+      {
+        "id": "swe-ds-2",
+        "name": "Chokladboll (Chocolate Oat Ball)",
+        "difficulty": "Easy",
+        "servings": 20,
+        "prepTime": 15,
+        "cookTime": 0,
+        "ingredients": [
+          "Rolled oats",
+          "Butter (soft)",
+          "Sugar",
+          "Cocoa powder (generous)",
+          "Strong coffee (1-2 tablespoons)",
+          "Coconut flakes or pearl sugar (for rolling)"
+        ],
+        "instructions": [
+          "Chokladboll (Swedish chocolate oat ball) is the simplest and most universally beloved Swedish treat",
+          "No baking required: mixed by hand and shaped into balls",
+          "The rolled oats give the main structure and bulk",
+          "The coffee: a Swedish secret -- the coffee deepens the chocolate without adding obvious coffee flavor",
+          "Mixed until the dough comes together, then shaped into balls",
+          "Rolled in coconut flakes (traditional) or pearl sugar (Swedish school canteen version)",
+          "Chokladbollar are at every Swedish fika table",
+          "Swedish school canteens serve chokladbollar -- nostalgic for all Swedes",
+          "The combination of oats, cocoa, coffee, and coconut: simple, perfect"
+        ],
+        "description": "Sweden most universally beloved simple treat -- rolled oats, butter, sugar, cocoa, and a spoon of strong coffee (the secret: deepens the chocolate without coffee flavor), mixed by hand and shaped into balls, rolled in coconut flakes or pearl sugar. No baking required. At every Swedish fika table; Swedish school canteen nostalgia.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Chokladbollar.jpg",
+        "imageCredit": {
+          "author": "No machine-readable author provided. Stefan w~commonswiki assumed (based on copyright claims).",
+          "source": "Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "url": "https://commons.wikimedia.org/wiki/File%3AChokladbollar.jpg"
+        }
+      },
+      {
+        "id": "swe-ds-3",
+        "name": "Risgrynsgrot (Christmas Rice Pudding)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 5,
+        "cookTime": 45,
+        "ingredients": [
+          "Short-grain rice (round, not long grain)",
+          "Whole milk (generous quantity)",
+          "Butter",
+          "Salt",
+          "Cinnamon sugar and butter (for serving)",
+          "Lingonberry jam (alongside)",
+          "One whole almond (hidden inside -- the tradition)"
+        ],
+        "instructions": [
+          "Risgrynsgrot is the Swedish Christmas Eve rice pudding -- the julgrynsgrot",
+          "Served on Christmas Eve as the starter before the Christmas food",
+          "The rice is cooked slowly in milk -- stirred frequently to prevent sticking",
+          "The result: thick, creamy, white rice pudding",
+          "Served hot with a pat of butter, cinnamon sugar, and lingonberry jam",
+          "The tradition: one whole almond is hidden somewhere in the pot",
+          "The person who finds the almond in their bowl will marry the next year",
+          "Or in modern times: the person who finds the almond gets a gift",
+          "The hidden almond creates the anticipation -- every mouthful is a potential winner",
+          "Swedish children stir their porridge with exaggerated care hoping to find the almond"
+        ],
+        "description": "Swedish Christmas Eve rice pudding -- short-grain rice cooked slowly in milk until thick and creamy, served hot with butter, cinnamon sugar, and lingonberry jam. One whole almond is hidden inside the pot: the finder gets a gift (or will marry the next year). Swedish children stir with exaggerated care. Served on Christmas Eve before the julbord.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Marzipanschwein.jpg",
+        "imageCredit": {
+          "author": "Alice Wiegand",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AMarzipanschwein.jpg"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "swe-dr-1",
+        "name": "Glogg (Mulled Wine)",
+        "difficulty": "Easy",
+        "servings": 8,
+        "prepTime": 10,
+        "cookTime": 20,
+        "ingredients": [
+          "Red wine (full-bodied Swedish or other)",
+          "Aquavit or brandy (for fortifying)",
+          "Spices: cardamom pods, cinnamon stick, cloves, ginger, orange peel",
+          "Sugar",
+          "Raisins and blanched almonds (in the serving cup)"
+        ],
+        "instructions": [
+          "Glogg is the Swedish mulled wine -- the Advent and Christmas drink",
+          "The spice blend: cardamom + cinnamon + cloves + ginger + orange -- the Christmas smell",
+          "The aquavit or brandy fortifies the wine -- Swedish glogg is stronger than German Gluhwein",
+          "Heat the wine gently with spices and sugar -- never boil (destroys the alcohol and flavor)",
+          "Strain and serve hot in small cups",
+          "Raisins and blanched almonds placed in each cup before pouring -- they bob in the glogg",
+          "Eating the raisins and almonds with a small spoon: the Swedish glogg tradition",
+          "Glogg season: Advent (first Sunday of December) through Christmas",
+          "Swedish Christmas markets serve glogg -- the outdoor heat",
+          "Non-alcoholic glogg (with grape or blackcurrant juice) for children and drivers"
+        ],
+        "description": "Swedish mulled wine -- red wine fortified with aquavit or brandy, heated with cardamom, cinnamon, cloves, ginger, and orange peel, served hot in small cups with raisins and blanched almonds placed inside. The spice smell IS the Swedish Advent season. Stronger than German Gluhwein due to the aquavit. Served at Christmas markets and home gatherings throughout December.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Gl%C3%B6gi_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Gl%C3%B6gi_2.jpg"
+        }
+      },
+      {
+        "id": "swe-dr-2",
+        "name": "Filmjolk (Cultured Milk)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Filmjolk (Swedish fermented milk -- a specific Lactobacillus culture)"
+        ],
+        "instructions": [
+          "Filmjolk is the Swedish everyday fermented milk drink and food",
+          "Different from yoghurt: filmjolk uses Lactobacillus bulgaricus producing a thinner, more pourable product",
+          "The texture: thick enough to coat a spoon but thin enough to pour",
+          "The flavor: sour, clean, dairy -- refreshing not heavy",
+          "Swedes consume filmjolk daily -- with breakfast cereals, on porridge, drunk straight",
+          "It is also poured over mashed potatoes (a Swedish combination)",
+          "Filmjolk has probiotic cultures beneficial for gut health",
+          "The Swedish dairy tradition: filmjolk, sour cream (groddfil), butter, hard cheese"
+        ],
+        "description": "The Swedish everyday fermented milk -- a specific Lactobacillus culture producing a pourable, clean-sour product thinner than yoghurt. Swedes consume it daily: poured over porridge, on cereals, drunk straight, even on mashed potatoes. The Swedish dairy tradition centers on cultured milk products.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Filmjolk.jpg",
+        "imageCredit": {
+          "author": "Kristofer2",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFilmjolk.jpg"
+        }
+      },
+      {
+        "id": "swe-dr-3",
+        "name": "Aquavit (Snaps)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 0,
+        "cookTime": 0,
+        "ingredients": [
+          "Aquavit (Swedish -- caraway or dill-flavored grain or potato spirit)",
+          "Herring (for pairing)",
+          "Song to accompany (the Swedish snaps song tradition)"
+        ],
+        "instructions": [
+          "Aquavit is the Scandinavian spirit -- the Swedish national liquor for festive occasions",
+          "Made from grain or potato spirit infused with caraway or dill",
+          "Caraway: the main Swedish aquavit flavor -- slightly bitter, aromatic",
+          "Dill aquavit (dillsnaps): for the summer Midsommar and crayfish parties",
+          "Served ice cold in small glasses (snapsglasogon)",
+          "The Swedish tradition: a snaps song is sung before each aquavit is drunk",
+          "Everyone at the table sings together -- then the aquavit is drunk in one shot",
+          "Midsommar: the most important aquavit occasion -- many rounds and many songs",
+          "The snaps glass is small: 4cl -- the songs keep pace with the consumption",
+          "Aquavit pairs with pickled herring, gravlax, and strong cheese"
+        ],
+        "description": "The Swedish national festive spirit -- grain or potato spirit infused with caraway or dill, served ice cold in small glasses with a snaps song sung by everyone at the table before each shot. Midsommar is the most important aquavit occasion: many rounds, many songs. Dill aquavit for summer; caraway for winter. Pairs with pickled herring, gravlax, and strong cheese.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Aquavit_NYC.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Aquavit_NYC.jpg"
+        }
+      }
+    ]
+  }
+}

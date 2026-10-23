@@ -1,0 +1,862 @@
+{
+  "hondurasRecipes": {
+    "country": "Honduras",
+    "region": "Central America",
+    "breakfast": [
+      {
+        "id": "hnd-bf-1",
+        "name": "Baleadas",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "4 flour tortillas",
+          "Refried beans",
+          "Mantequilla (Honduran cream)",
+          "Crumbled cheese",
+          "Scrambled eggs",
+          "Avocado"
+        ],
+        "instructions": [
+          "Warm thick flour tortillas on griddle",
+          "Spread with refried beans",
+          "Add cream, cheese, eggs, avocado",
+          "Fold in half"
+        ],
+        "description": "Honduras's most beloved food — thick tortillas with beans and cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Baleada.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABaleada.jpg"
+        }
+      },
+      {
+        "id": "hnd-bf-2",
+        "name": "Plátanos con Frijoles",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 10,
+        "ingredients": [
+          "2 ripe plantains",
+          "Refried beans",
+          "Crema",
+          "Oil"
+        ],
+        "instructions": [
+          "Slice and fry plantains",
+          "Serve with refried beans and cream"
+        ],
+        "description": "Fried plantains with beans and cream.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/T%C3%ADpica_cocina_mexicana.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/T%C3%ADpica_cocina_mexicana.jpg"
+        }
+      },
+      {
+        "id": "hnd-bf-3",
+        "name": "Baleadas (Honduras's National Breakfast)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Flour tortillas (large, thick, soft — baleada-style)",
+          "Refried beans (red beans)",
+          "Crema (Honduran sour cream — thicker than Mexican)",
+          "Queso seco (dry crumbled cheese)",
+          "Scrambled eggs (optional)",
+          "Avocado (optional)",
+          "Chorizo (optional)"
+        ],
+        "instructions": [
+          "Make thick, soft flour tortillas — larger than Mexican tortillas, softer",
+          "Spread generous refried beans on one half",
+          "Add thick Honduran crema — it's richer and thicker than Mexican crema",
+          "Crumble queso seco on top — the salty-dry cheese is key",
+          "Add scrambled eggs, chorizo, or avocado for the 'especial' version",
+          "Fold in half — do not roll like a burrito",
+          "Eat immediately while warm — the tortilla must be soft",
+          "Baleadas are Honduras's #1 food — eaten for breakfast, lunch, dinner, snack",
+          "Every Honduran has a baleada opinion — the best vendor, the right fillings",
+          "Simple baleada (beans, crema, cheese) vs. especial (add everything)"
+        ],
+        "description": "Honduras's national food — a large soft flour tortilla folded over refried beans, thick crema, and crumbled dry cheese. Every Honduran eats baleadas. Every Honduran has a baleada opinion. The simple-vs-especial debate and the perfect-fold technique are viral Honduran food content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Baleada.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ABaleada.jpg"
+        }
+      },
+      {
+        "id": "hnd-bf-4",
+        "name": "Plato Típico (Honduran Typical Plate)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Refried red beans",
+          "White rice",
+          "Fried plantain (ripe — sweet)",
+          "Scrambled eggs or fried eggs",
+          "Honduran crema",
+          "Queso seco",
+          "Tortillas (corn or flour)",
+          "Avocado"
+        ],
+        "instructions": [
+          "Cook refried beans — red beans mashed and fried with onion",
+          "Make white rice",
+          "Fry ripe plantain slices until golden and caramelized",
+          "Fry or scramble eggs",
+          "Arrange everything on one plate: beans, rice, plantain, egg",
+          "Add crema, crumbled cheese, avocado",
+          "Serve with warm tortillas on the side",
+          "Every element is simple; together they are complete",
+          "This is how Honduras starts the day — everything on one plate",
+          "The plato típico is the base layer of Honduran food identity"
+        ],
+        "description": "Honduras's typical breakfast plate — refried beans, rice, fried sweet plantain, eggs, crema, cheese, and tortillas all on one plate. Simple individually, complete together. This is the foundational plate of Honduran food identity.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sancocho_de_espinazo_de_cerdo.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Sancocho_de_espinazo_de_cerdo.jpg"
+        }
+      },
+      {
+        "id": "hnd-bf-5",
+        "name": "Catrachas (Fried Tortilla with Beans and Cheese)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 10,
+        "cookTime": 10,
+        "ingredients": [
+          "Corn tortillas",
+          "Refried beans",
+          "Queso seco (crumbled)",
+          "Honduran crema",
+          "Curtido (pickled cabbage — optional)",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Fry corn tortillas in oil until crispy — like a flat tostada",
+          "Spread refried beans on the crispy tortilla",
+          "Top with crumbled queso seco",
+          "Add crema",
+          "Add curtido (pickled cabbage) if desired",
+          "The name 'catrachas' is also the nickname for Hondurans — 'catracho/catracha'",
+          "This is Honduras's simplest and most identity-defining snack",
+          "The crispy-bean-cheese combination is the same in every Honduran home"
+        ],
+        "description": "Catrachas — fried tortillas topped with beans and cheese, named after the word Hondurans call themselves (catrachos). Honduras's identity on a crispy tortilla. The simplest expression of Honduran food and the most culturally loaded."
+      }
+    ],
+    "lunch": [
+      {
+        "id": "hnd-ln-1",
+        "name": "Sopa de Caracol (Conch Soup)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 20,
+        "cookTime": 40,
+        "ingredients": [
+          "500g conch meat",
+          "Coconut milk",
+          "Plantain",
+          "Yuca",
+          "Green banana",
+          "Cilantro",
+          "Garlic",
+          "Onion",
+          "Chili",
+          "Lime"
+        ],
+        "instructions": [
+          "Tenderize and dice conch",
+          "Sauté garlic, onion, chili",
+          "Add coconut milk and water",
+          "Add conch, plantain, yuca, green banana",
+          "Simmer 30 min",
+          "Add cilantro and lime"
+        ],
+        "description": "Coconut-based conch soup — Garífuna heritage dish.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/PinchosAmericanos.jpg",
+        "imageCredit": {
+          "author": "Elisart from Caracas, Venezuela",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APinchosAmericanos.jpg"
+        }
+      },
+      {
+        "id": "hnd-ln-2",
+        "name": "Tapado (Seafood Soup)",
+        "difficulty": "Medium",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 30,
+        "ingredients": [
+          "Crab",
+          "Shrimp",
+          "Fish",
+          "Coconut milk",
+          "Plantain",
+          "Yuca",
+          "Tomatoes",
+          "Cilantro",
+          "Garlic",
+          "Chili"
+        ],
+        "instructions": [
+          "Sauté garlic, tomatoes, chili",
+          "Add coconut milk and water",
+          "Add seafood and root vegetables",
+          "Simmer 20 min",
+          "Garnish with cilantro"
+        ],
+        "description": "Rich coconut seafood soup.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tapado.jpg",
+        "imageCredit": {
+          "author": "Keryy13",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATapado.jpg"
+        }
+      },
+      {
+        "id": "hnd-ln-3",
+        "name": "Sopa de Caracol (Conch Soup)",
+        "difficulty": "Hard",
+        "servings": 6,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Conch (caracol — cleaned and tenderized)",
+          "Coconut milk",
+          "Yuca (cassava)",
+          "Green plantain",
+          "Onion, garlic, bell pepper",
+          "Cilantro",
+          "Scotch bonnet",
+          "Lime juice"
+        ],
+        "instructions": [
+          "Tenderize conch by pounding — it's tough if not properly prepared",
+          "Cut conch into pieces, boil until tender — 30-40 min with lime juice",
+          "Make broth: sauté onion, garlic, bell pepper, add coconut milk and water",
+          "Add yuca and green plantain — cook until tender",
+          "Add the tender conch to the coconut broth",
+          "Season with Scotch bonnet, cilantro, lime juice",
+          "The soup should be creamy-white from the coconut milk",
+          "The Garífuna people of Honduras's north coast created this soup",
+          "There's a famous Honduran song called 'Sopa de Caracol' — it went viral globally in the 90s",
+          "The song made the soup famous worldwide — and the soup deserves every bit of the fame"
+        ],
+        "description": "Honduras's legendary conch soup — conch simmered in coconut milk with yuca and plantain, created by the Garífuna people of the north coast. Made world-famous by the 1991 hit song 'Sopa de Caracol' that went viral across Latin America. The song-food connection makes this one of the most culturally storied dishes in the Americas.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/PinchosAmericanos.jpg",
+        "imageCredit": {
+          "author": "Elisart from Caracas, Venezuela",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APinchosAmericanos.jpg"
+        }
+      },
+      {
+        "id": "hnd-ln-4",
+        "name": "Tapado (Garífuna Seafood Coconut Stew)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 45,
+        "ingredients": [
+          "Mixed seafood: fish, shrimp, crab, conch",
+          "Coconut milk (fresh — lots)",
+          "Green plantain, ripe plantain",
+          "Yuca (cassava)",
+          "Cilantro, garlic",
+          "Scotch bonnet",
+          "Lime juice",
+          "Fish stock"
+        ],
+        "instructions": [
+          "Make rich fish stock from fish bones",
+          "Add coconut milk — generous, this is a coconut-based stew",
+          "Add green and ripe plantain, yuca — cook until tender",
+          "Add seafood in stages: fish first, then shrimp and crab (they cook faster)",
+          "Add Scotch bonnet, cilantro, lime juice",
+          "The stew should be creamy-white, thick with coconut and loaded with seafood",
+          "This is Garífuna celebration food — the Afro-Caribbean people of Honduras's coast",
+          "The Garífuna are UNESCO-recognized — their food is living heritage",
+          "Tapado showcases the entire sea — every seafood in one pot",
+          "Serve in large bowls with extra coconut broth for soaking"
+        ],
+        "description": "Garífuna tapado — a coconut milk seafood stew loaded with fish, shrimp, crab, and conch alongside plantain and yuca. Created by the Garífuna people (UNESCO-recognized living heritage) of Honduras's Caribbean coast. The 'entire ocean in coconut milk' concept is viral Caribbean food storytelling.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tapado.jpg",
+        "imageCredit": {
+          "author": "Keryy13",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3ATapado.jpg"
+        }
+      },
+      {
+        "id": "hnd-ln-5",
+        "name": "Pollo con Tajadas (Fried Chicken with Fried Plantain)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 25,
+        "ingredients": [
+          "Chicken pieces",
+          "Lime juice, garlic, cumin, salt, pepper",
+          "Oil for frying",
+          "Green plantain (sliced thin lengthwise — tajadas, not rounds)",
+          "Curtido (pickled cabbage)",
+          "Ketchup, mustard"
+        ],
+        "instructions": [
+          "Season chicken with lime, garlic, cumin, salt — marinate 30 min",
+          "Fry chicken until golden and cooked through — 12-15 min",
+          "Slice green plantain lengthwise into thin strips — tajadas",
+          "Fry tajadas until golden and crispy",
+          "Make curtido: pickled cabbage with vinegar, onion, oregano",
+          "Plate: fried chicken on a bed of tajadas, topped with curtido",
+          "Add ketchup and mustard — this is how Honduras does it",
+          "Tajadas are the long thin plantain chips — not the round ones",
+          "This is Honduras's fried chicken — and it's a lifestyle, not just food"
+        ],
+        "description": "Honduras's fried chicken and tajadas — crispy chicken served on a bed of long, thin fried green plantain strips topped with pickled cabbage. The tajadas (thin plantain strips, not rounds) are uniquely Honduran and the ketchup-mustard condiment combo is non-negotiable.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Asado_uruguayo.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Asado_uruguayo.JPG"
+        }
+      }
+    ],
+    "dinner": [
+      {
+        "id": "hnd-dn-1",
+        "name": "Carne Asada Hondureña",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 60,
+        "cookTime": 15,
+        "ingredients": [
+          "500g beef (skirt or flank)",
+          "Lime juice",
+          "Garlic",
+          "Cumin",
+          "Salt and pepper",
+          "Chimol (pico de gallo)",
+          "Tortillas",
+          "Refried beans"
+        ],
+        "instructions": [
+          "Marinate beef in lime, garlic, cumin",
+          "Grill over charcoal until medium",
+          "Slice thin",
+          "Serve with chimol, tortillas, and beans"
+        ],
+        "description": "Grilled, marinated beef — Honduran cookout staple.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/PinchosAmericanos.jpg",
+        "imageCredit": {
+          "author": "Elisart from Caracas, Venezuela",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APinchosAmericanos.jpg"
+        }
+      },
+      {
+        "id": "hnd-dn-2",
+        "name": "Pollo con Tajadas (Chicken with Fried Plantain)",
+        "difficulty": "Medium",
+        "servings": 4,
+        "prepTime": 30,
+        "cookTime": 30,
+        "ingredients": [
+          "1 chicken (cut up)",
+          "Achiote paste",
+          "Garlic",
+          "Lime",
+          "Green plantains",
+          "Curtido (pickled slaw)",
+          "Oil",
+          "Salt"
+        ],
+        "instructions": [
+          "Marinate chicken in achiote, garlic, lime",
+          "Fry or roast chicken until golden",
+          "Slice and fry green plantains",
+          "Serve together with curtido"
+        ],
+        "description": "Achiote chicken with crispy green plantain chips.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Asado_uruguayo.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Asado_uruguayo.JPG"
+        }
+      },
+      {
+        "id": "hnd-dn-3",
+        "name": "Nacatamales (Honduran Giant Tamales)",
+        "difficulty": "Hard",
+        "servings": 12,
+        "prepTime": 60,
+        "cookTime": 120,
+        "ingredients": [
+          "Masa (corn dough — enriched with lard)",
+          "Pork or chicken",
+          "Rice",
+          "Potatoes (cubed)",
+          "Olives, capers",
+          "Onion, garlic, sweet pepper",
+          "Tomato sauce",
+          "Banana leaves (for wrapping)",
+          "String (for tying)"
+        ],
+        "instructions": [
+          "Make enriched masa dough — softer and richer than regular masa",
+          "Cook filling: meat in tomato sauce with garlic, onion, sweet pepper",
+          "Prepare banana leaves: pass over flame to soften",
+          "Spread generous amount of masa on banana leaf — much more than a regular tamale",
+          "Layer: masa, meat, rice, potato, olives, capers",
+          "The filling is elaborate — this is not a simple tamale",
+          "Wrap tightly in banana leaf, tie with string — they're large parcels",
+          "Boil for 2+ hours until masa is firm and cooked through",
+          "These are LARGE — meal-sized, not snack-sized",
+          "Nacatamales are Saturday-Sunday food — the whole family helps assemble",
+          "Traditionally eaten for breakfast with coffee — yes, this giant tamale for breakfast"
+        ],
+        "description": "Honduras's giant tamales — massive banana-leaf-wrapped parcels of enriched masa filled with meat, rice, potatoes, olives, and capers, boiled for 2+ hours. Nacatamales are a family-assembly-line weekend tradition. The size (meal-sized, not snack-sized), the elaborate filling, and the weekend-ritual aspect are viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nicaraguan_Nacatamal.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nicaraguan_Nacatamal.jpg"
+        }
+      },
+      {
+        "id": "hnd-dn-4",
+        "name": "Enchiladas Hondureñas (Honduran Enchiladas)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 20,
+        "cookTime": 10,
+        "ingredients": [
+          "Corn tortillas (fried flat — not rolled)",
+          "Ground beef (seasoned)",
+          "Hard-boiled egg (sliced)",
+          "Curtido (pickled cabbage)",
+          "Tomato sauce",
+          "Queso seco (crumbled)",
+          "Avocado"
+        ],
+        "instructions": [
+          "Fry corn tortillas flat until crispy — these are NOT rolled like Mexican enchiladas",
+          "Spread tomato sauce on the crispy tortilla",
+          "Top with seasoned ground beef",
+          "Add sliced hard-boiled egg",
+          "Top with curtido (pickled cabbage), crumbled cheese, avocado",
+          "The Honduran enchilada is essentially a loaded tostada — flat and open-faced",
+          "Every ingredient is layered on top — nothing is rolled or folded",
+          "The hard-boiled egg on top is the Honduran signature — don't skip it",
+          "These are Honduras's loaded crispy tortillas — sharing only the name with Mexican enchiladas"
+        ],
+        "description": "Honduran enchiladas — nothing like the Mexican version. These are flat fried tortillas stacked high with ground beef, boiled egg, pickled cabbage, and cheese. The name confusion between Honduran and Mexican enchiladas is a perpetual food-internet debate and viral content.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/PinchosAmericanos.jpg",
+        "imageCredit": {
+          "author": "Elisart from Caracas, Venezuela",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APinchosAmericanos.jpg"
+        }
+      },
+      {
+        "id": "hnd-dn-5",
+        "name": "Sopa de Mondongo (Tripe Soup)",
+        "difficulty": "Hard",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 120,
+        "ingredients": [
+          "Beef tripe (cleaned thoroughly)",
+          "Cow's foot (optional — adds body)",
+          "Yuca, potato, carrots",
+          "Green plantain",
+          "Cabbage",
+          "Onion, garlic, oregano, cumin",
+          "Lime juice, cilantro",
+          "Scotch bonnet"
+        ],
+        "instructions": [
+          "Clean tripe thoroughly — soak in lime juice, scrub, rinse multiple times",
+          "Boil tripe (and cow's foot if using) for 2+ hours until tender",
+          "The broth becomes rich and gelatinous from the collagen",
+          "Add root vegetables: yuca, potato, carrots — cook until tender",
+          "Add green plantain, cabbage in the last 15 min",
+          "Season with oregano, cumin, Scotch bonnet",
+          "Finish with lime juice and fresh cilantro",
+          "The soup should be thick, rich, deeply flavored from the long cooking",
+          "Mondongo is Honduras's hangover cure and Sunday tradition",
+          "The preparation is long but the result is worth every hour"
+        ],
+        "description": "Honduras's tripe soup — beef tripe slow-cooked for hours into a rich, gelatinous, deeply flavored broth loaded with root vegetables and plantain. The Sunday tradition, the hangover-cure reputation, and the 'it takes 3 hours but it's worth it' dedication make mondongo viral comfort food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Modongo_soup.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Modongo_soup.jpg"
+        }
+      }
+    ],
+    "snacks": [
+      {
+        "id": "hnd-sn-1",
+        "name": "Pastelitos de Carne",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Masa dough",
+          "Filling: ground beef, potatoes, rice, peas",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Make masa dough",
+          "Fill with meat mixture",
+          "Shape, seal edges",
+          "Deep fry until golden"
+        ],
+        "description": "Fried corn dough turnovers with meat and potatoes.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Picadillo_and_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Picadillo_and_rice.jpg"
+        }
+      },
+      {
+        "id": "hnd-sn-2",
+        "name": "Pastelitos de Carne (Fried Meat Turnovers)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 15,
+        "ingredients": [
+          "Dough: flour, butter, egg, water, salt",
+          "Filling: seasoned ground beef or rice with chicken",
+          "Onion, garlic, cumin, tomato sauce",
+          "Oil for frying"
+        ],
+        "instructions": [
+          "Make dough: flour, butter, egg, water — work until smooth, rest",
+          "Make filling: brown ground beef with onion, garlic, cumin, tomato sauce",
+          "Roll out dough, cut into circles",
+          "Fill with meat mixture, fold into half-moons, seal edges with fork",
+          "Deep fry until golden — 3-4 min",
+          "Drain briefly, serve hot",
+          "The crust should be flaky and slightly blistered",
+          "These are Honduras's party food — no celebration without pastelitos",
+          "The rice-and-chicken version is equally popular as the beef",
+          "Serve with ketchup — yes, ketchup"
+        ],
+        "description": "Honduran meat turnovers — flaky fried pockets filled with spiced ground beef or rice-and-chicken. Essential at every Honduran party, birthday, and celebration. The ketchup dip and the flaky crust make pastelitos Honduras's favorite hand-held party food.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Picadillo_and_rice.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Picadillo_and_rice.jpg"
+        }
+      },
+      {
+        "id": "hnd-sn-3",
+        "name": "Yuca con Chicharrón (Yuca with Fried Pork)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 15,
+        "cookTime": 20,
+        "ingredients": [
+          "Yuca (cassava — peeled and boiled)",
+          "Chicharrón (fried pork skin or fried pork belly)",
+          "Curtido (pickled cabbage)",
+          "Lime juice",
+          "Salt"
+        ],
+        "instructions": [
+          "Boil yuca until fork-tender — 15-20 min",
+          "Fry chicharrón until crispy and golden — or buy it pre-made",
+          "The yuca should be soft and starchy inside",
+          "Serve yuca topped with crispy chicharrón",
+          "Add curtido (pickled cabbage) on top",
+          "Squeeze lime over everything",
+          "The soft, starchy yuca against the crispy, salty pork is the contrast",
+          "This is Honduras's most satisfying snack — carb and protein in perfect balance",
+          "Sold at every street stall and market in Honduras"
+        ],
+        "description": "Yuca with chicharrón — soft boiled cassava topped with crispy fried pork and pickled cabbage. Starchy-soft meets salty-crispy in Honduras's most satisfying street snack. The texture contrast and the lime-curtido finish are street food perfection.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/El_Coyote_Market_%26_Deli_-_February_2023_-_Sarah_Stierch_02.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/El_Coyote_Market_%26_Deli_-_February_2023_-_Sarah_Stierch_02.jpg"
+        }
+      }
+    ],
+    "desserts": [
+      {
+        "id": "hnd-ds-1",
+        "name": "Torrejas (Honduran French Toast)",
+        "difficulty": "Easy",
+        "servings": 4,
+        "prepTime": 10,
+        "cookTime": 15,
+        "ingredients": [
+          "4 slices bread",
+          "Eggs",
+          "Rapadura (panela) syrup",
+          "Cinnamon",
+          "Cloves",
+          "Oil"
+        ],
+        "instructions": [
+          "Make panela syrup with cinnamon and cloves",
+          "Dip bread in beaten eggs",
+          "Fry until golden",
+          "Drench in panela syrup"
+        ],
+        "description": "Fried bread soaked in panela syrup — a Holy Week treat.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/FrenchToast.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFrenchToast.JPG"
+        }
+      },
+      {
+        "id": "hnd-ds-2",
+        "name": "Tres Leches Cake (Honduran Style)",
+        "difficulty": "Medium",
+        "servings": 12,
+        "prepTime": 30,
+        "cookTime": 40,
+        "ingredients": [
+          "Sponge cake: flour, eggs, sugar, vanilla",
+          "Three milks: condensed milk, evaporated milk, heavy cream",
+          "Whipped cream topping",
+          "Cinnamon",
+          "Maraschino cherries (optional)"
+        ],
+        "instructions": [
+          "Make light sponge cake: beat eggs with sugar until tripled in volume, fold in flour",
+          "Bake at 175°C until golden and springy — 25-30 min",
+          "Let cool, poke holes all over with a fork — the holes are essential",
+          "Mix the three milks: condensed, evaporated, heavy cream, add cinnamon",
+          "Pour the milk mixture over the cake — slowly, letting it absorb",
+          "Refrigerate overnight — the cake soaks up all the milk",
+          "The next day: the cake is impossibly moist, almost pudding-like",
+          "Top with whipped cream, dust with cinnamon",
+          "Add cherries if desired",
+          "Tres leches is Central America's shared dessert — Honduras claims it proudly"
+        ],
+        "description": "Tres leches cake — sponge cake soaked in three milks until impossibly moist, topped with whipped cream. The overnight soaking transforms a light cake into a milk-drenched, pudding-like dessert. Central America's most famous sweet, and Honduras makes one of the best versions.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pastel_de_Tres_Leches.jpg"
+        }
+      },
+      {
+        "id": "hnd-ds-3",
+        "name": "Torrejas (Honduran French Toast)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 15,
+        "ingredients": [
+          "Day-old bread (sliced thick)",
+          "Eggs",
+          "Milk",
+          "Cinnamon",
+          "Dulce de panela (raw cane sugar syrup)",
+          "Cloves",
+          "Oil or butter for frying"
+        ],
+        "instructions": [
+          "Make panela syrup: dissolve raw cane sugar in water with cinnamon, cloves — boil until syrupy",
+          "Soak bread in milk, then dip in beaten egg",
+          "Fry in oil or butter until golden on both sides",
+          "Drench the fried bread in warm panela syrup — soak it",
+          "The syrup should be thick, dark, and spiced",
+          "The bread should be custardy inside, crispy outside, swimming in syrup",
+          "Torrejas are Holy Week food — eaten during Semana Santa across Honduras",
+          "The panela syrup (not maple syrup) is what makes this Central American",
+          "Every grandmother's torrejas are 'the best'"
+        ],
+        "description": "Honduran torrejas — fried egg-dipped bread drenched in warm spiced raw-cane-sugar syrup. Honduras's Holy Week tradition. The dark panela syrup (not maple) and the custardy-inside, syrup-soaked result make torrejas Central America's most indulgent version of French toast.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/FrenchToast.JPG",
+        "imageCredit": {
+          "author": "Jonathunder",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3AFrenchToast.JPG"
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "hnd-dr-1",
+        "name": "Horchata de Morro",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 15,
+        "cookTime": 10,
+        "ingredients": [
+          "Morro seeds",
+          "Sesame seeds",
+          "Cocoa",
+          "Cinnamon",
+          "Vanilla",
+          "Rice",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Toast and grind seeds and rice",
+          "Boil with cocoa and spices",
+          "Strain, sweeten",
+          "Serve cold"
+        ],
+        "description": "Nutty seed-based drink with cocoa.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Horchata_de_chufa_2.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Horchata_de_chufa_2.jpg"
+        }
+      },
+      {
+        "id": "hnd-dr-2",
+        "name": "Licuado de Banana",
+        "difficulty": "Easy",
+        "servings": 2,
+        "prepTime": 5,
+        "cookTime": 0,
+        "ingredients": [
+          "2 bananas",
+          "Milk",
+          "Sugar",
+          "Vanilla",
+          "Cinnamon",
+          "Ice"
+        ],
+        "instructions": [
+          "Blend all ingredients until smooth",
+          "Serve cold"
+        ],
+        "description": "Creamy banana milkshake.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Barbacoa_%28en_Hidalgo%29.JPG",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Barbacoa_%28en_Hidalgo%29.JPG"
+        }
+      },
+      {
+        "id": "hnd-dr-1",
+        "name": "Horchata Hondureña (Morro Seed Drink)",
+        "difficulty": "Medium",
+        "servings": 8,
+        "prepTime": 30,
+        "cookTime": 0,
+        "ingredients": [
+          "Jícaro (morro) seeds — toasted and ground",
+          "Rice (toasted and ground)",
+          "Cocoa (optional)",
+          "Cinnamon",
+          "Vanilla",
+          "Sugar",
+          "Water"
+        ],
+        "instructions": [
+          "Toast morro seeds and rice until fragrant — this step is essential",
+          "Grind together into a fine powder — traditionally in a grinding stone",
+          "Mix the powder with water — stir until dissolved",
+          "Add cinnamon, vanilla, sugar",
+          "Strain through a fine cloth",
+          "Serve ice cold",
+          "Honduran horchata is NOT the same as Mexican horchata (which is rice-only)",
+          "The morro (jícaro) seeds give a unique, nuttier flavor",
+          "The jícaro tree is Central America's 'gourd tree' — the fruit is iconic"
+        ],
+        "description": "Honduran horchata — NOT the Mexican version. Made from toasted jícaro (morro) seeds and rice, creating a nuttier, more complex drink. The jícaro tree is iconic to Central America and this drink is Honduras's refreshment of choice.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/PinchosAmericanos.jpg",
+        "imageCredit": {
+          "author": "Elisart from Caracas, Venezuela",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "url": "https://commons.wikimedia.org/wiki/File%3APinchosAmericanos.jpg"
+        }
+      },
+      {
+        "id": "hnd-dr-2",
+        "name": "Café de Olla (Clay Pot Coffee)",
+        "difficulty": "Easy",
+        "servings": 6,
+        "prepTime": 5,
+        "cookTime": 15,
+        "ingredients": [
+          "Honduran coffee (Honduras is a top-10 global coffee producer)",
+          "Panela (raw cane sugar)",
+          "Cinnamon stick",
+          "Cloves",
+          "Water"
+        ],
+        "instructions": [
+          "Heat water in a clay pot (olla de barro) — the clay adds flavor",
+          "Add panela, cinnamon stick, cloves — let dissolve",
+          "Add ground coffee directly to the pot",
+          "Bring to a simmer — do not boil",
+          "Let steep 5 min, strain",
+          "The clay pot adds a mineral, earthy flavor that metal can't replicate",
+          "Honduras produces some of the world's finest coffee — this is the traditional way to drink it",
+          "The sweetness from panela (not refined sugar) and the spices transform plain coffee",
+          "This is how coffee is drunk in the Honduran campo (countryside)"
+        ],
+        "description": "Honduran clay-pot coffee — fresh-ground Honduran coffee brewed with raw cane sugar and cinnamon in a clay pot. Honduras is a top-10 global coffee producer, and café de olla is how the countryside has drunk it for centuries. The clay-pot technique and the 'coffee country' origin make this viral.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Puerto_Vallarta_%28November_2022%29_-_254.jpg",
+        "imageCredit": {
+          "author": "Wikimedia Commons",
+          "source": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Puerto_Vallarta_%28November_2022%29_-_254.jpg"
+        }
+      }
+    ]
+  }
+}
