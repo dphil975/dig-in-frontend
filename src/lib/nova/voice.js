@@ -18,6 +18,11 @@ export const NOVA_SAYS = {
   afterSkip: "That's okay. I'll learn another way.",
   afterSave: "I'll remember this one.",
   swap: 'How about this one?',
+  handHeader: "Here's your hand",
+  handSub: 'Five dishes, five flavors. Pick the one that calls you.',
+  handShuffle: 'Deal again',
+  handEmpty: "I couldn't deal a hand just now. Try the search below.",
+  handLoading: 'Shuffling the deck…',
 };
 
 const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];

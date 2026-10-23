@@ -6,3 +6,8 @@ dist/
 # Local-only safety copies (not for history)
 _archive/*.tgz
 _archive/copyright-removed/
+
+# Test runner artifacts
+test-results/
+playwright-report/
+.playwright/

@@ -43,6 +43,14 @@ const FLAVOR_LIBRARY = {
   'matcha':         { addins: ['1 tbsp matcha green tea powder'], note: 'earthy and smooth', sweet: true },
   'red velvet':     { addins: ['1 tbsp cocoa powder', 'a few drops of red food coloring'], note: 'soft and lightly chocolatey', sweet: true },
 
+  // fusion sweet themes
+  'tiramisu':       { addins: ['2 tbsp brewed espresso', '4 oz mascarpone cheese', '1 tbsp cocoa powder'], note: 'coffee-rich and creamy', sweet: true },
+  'salted caramel': { addins: ['1/4 cup salted caramel sauce', '1/2 tsp flaky sea salt'], note: 'sweet, salty, and buttery', sweet: true },
+  'caramel apple':  { addins: ['2 tbsp apple butter', '2 tbsp caramel sauce', '1 tsp cinnamon'], note: 'autumn-sweet and warm', sweet: true },
+  'thai tea':       { addins: ['2 tbsp Thai tea mix', '2 tbsp sweetened condensed milk'], note: 'sweet, spiced, and creamy', sweet: true },
+  'chai':           { addins: ['1 tsp cinnamon', '1/2 tsp cardamom', '1/4 tsp ginger', '1/4 tsp cloves'], note: 'warm-spiced and cozy', sweet: true },
+  'dark chocolate': { addins: ['4 oz dark chocolate (70% cacao), chopped', '1/2 tsp flaky sea salt'], note: 'bittersweet and rich', sweet: true },
+
   // savory themes
   'tomato':         { addins: ['2 cups crushed tomatoes', '1 tsp dried basil'], note: 'tangy and savory', sweet: false },
   'mushroom':       { addins: ['1 cup chopped mushrooms'], note: 'deep and earthy', sweet: false },
@@ -53,6 +61,7 @@ const FLAVOR_LIBRARY = {
   'broccoli':       { addins: ['1 cup chopped broccoli'], note: 'fresh and hearty', sweet: false },
   'chicken':        { addins: ['1 cup cooked chopped chicken'], note: 'hearty and filling', sweet: false },
   'bacon':          { addins: ['4 strips cooked bacon, crumbled'], note: 'smoky and salty', sweet: false },
+  'dumpling':       { addins: ['2 tbsp soy sauce', '1 tsp sesame oil', '2 cloves garlic, minced', '1 tsp grated ginger'], note: 'savory and umami-rich', sweet: false },
 };
 
 /* ── Format base recipes ──────────────────────────────────────────
@@ -245,6 +254,84 @@ const FORMATS = {
         'Ladle into bowls and serve hot.',
       ],
     }) },
+  cheesecake: { label: 'Cheesecake', emoji: 'CHEESECAKE', kind: 'sweet', time: 30, servings: 8,
+    summaryLead: 'Press a crumb crust, whip a cream cheese filling, swirl in the flavor, and chill until set — no oven needed.',
+    build: (star, f) => ({
+      ingredients: ['2 cups graham cracker crumbs', '6 tbsp melted butter', '16 oz cream cheese, softened', '1 cup powdered sugar', '1 tsp vanilla', '1 cup heavy whipping cream', ...f.addins],
+      steps: [
+        'Mix the graham cracker crumbs with melted butter and press firmly into a 9-inch springform pan.',
+        'Chill the crust in the fridge while you make the filling.',
+        'Beat the cream cheese until completely smooth with no lumps.',
+        'Add the powdered sugar and vanilla, beating until combined.',
+        'In a separate bowl, whip the heavy cream to stiff peaks.',
+        'Fold the whipped cream into the cream cheese mixture gently.',
+        `Swirl in the ${addLine(f)} so every bite is ${tasteNote(f)}.`,
+        'Pour the filling over the crust and smooth the top.',
+        'Refrigerate at least 4 hours, or overnight for the best set.',
+        'Slice and serve chilled.',
+      ],
+    }) },
+  focaccia: { label: 'Focaccia', emoji: 'FOCACCIA', kind: 'both', time: 120, servings: 12,
+    summaryLead: 'Let the dough rise, press it into a pan, dimple it with your fingers, fill the wells with flavor, and bake until golden.',
+    build: (star, f) => (f.sweet ? {
+      ingredients: ['3 1/2 cups flour', '1 packet instant yeast', '1 1/4 cups warm water', '3 tbsp sugar', '1/4 cup olive oil', '1 tsp salt', 'GLAZE: 1 cup powdered sugar + 2 tbsp milk + 1/2 tsp vanilla', ...f.addins],
+      steps: [
+        'Stir the warm water, yeast, and 1 tbsp of sugar together. Wait 5 minutes until foamy.',
+        'Add the flour, remaining sugar, olive oil, and salt. Mix and knead 5 minutes until smooth.',
+        'Cover and let rise 1 hour until doubled.',
+        'Oil a 9x13 pan and press the dough into it.',
+        `Mix ${addLine(f)} into a paste and drop spoonfuls across the top.`,
+        'Dimple the dough deeply in the classic focaccia style, pressing the filling into the wells.',
+        'Let rest 20 minutes while the oven heats to 375°F.',
+        `Bake 22-25 minutes until golden — it will smell ${tasteNote(f)}.`,
+        'Whisk the glaze and drizzle over the warm focaccia.',
+      ],
+    } : {
+      ingredients: ['3 1/2 cups flour', '1 packet instant yeast', '1 1/4 cups warm water', '1 tbsp sugar', '1/4 cup olive oil', '1 tsp salt', ...f.addins],
+      steps: [
+        'Stir the warm water, yeast, and sugar together. Wait 5 minutes until foamy.',
+        'Add the flour, olive oil, and salt. Mix and knead 5 minutes until smooth.',
+        'Cover and let rise 1 hour until doubled.',
+        'Oil a 9x13 pan and press the dough into it.',
+        `Press ${addLine(f)} into the top of the dough.`,
+        'Dimple the dough deeply with your fingertips, drizzle with olive oil.',
+        'Let rest 20 minutes while the oven heats to 425°F.',
+        `Bake 20-25 minutes until golden and ${tasteNote(f)}.`,
+        'Let cool slightly, then tear into pieces and serve.',
+      ],
+    }) },
+  shortbread: { label: 'Shortbread', emoji: 'SHORTBREAD', kind: 'sweet', time: 35, servings: 24,
+    summaryLead: 'Cream butter and sugar, work in the flour, press or cut into shapes, and bake low and slow until just set.',
+    build: (star, f) => ({
+      ingredients: ['1 cup softened butter', '1/2 cup brown sugar', '1/2 tsp vanilla', '2 1/2 cups flour', ...f.addins],
+      steps: [
+        'Preheat the oven to 325°F and line a baking sheet with parchment.',
+        'Cream the butter, brown sugar, and vanilla until light and fluffy.',
+        'Add the flour half a cup at a time until the dough forms a ball.',
+        'Chill the dough for 10 minutes.',
+        'Roll out to about 1 cm thick on a floured surface.',
+        'Cut into rectangles or use cookie cutters.',
+        `Top each piece with ${addLine(f)} for a ${tasteNote(f)} finish.`,
+        'Bake 12-15 minutes until the edges just begin to turn golden.',
+        'Cool completely on the baking sheet before handling — they firm up as they cool.',
+      ],
+    }) },
+  croissant: { label: 'Croissant', emoji: 'CROISSANT', kind: 'sweet', time: 35, servings: 8,
+    summaryLead: 'Roll puff pastry with the filling, slice into rounds, brush with egg wash, and bake until flaky and golden.',
+    build: (star, f) => ({
+      ingredients: ['1 sheet puff pastry, thawed', '3 tbsp softened butter', '1 egg, beaten (for egg wash)', 'GLAZE: 4 oz cream cheese + 1 cup powdered sugar + 2 tbsp milk + 1/2 tsp vanilla', ...f.addins],
+      steps: [
+        'Preheat the oven to 400°F and line a baking sheet with parchment.',
+        'Roll the puff pastry out on a floured surface into a large rectangle.',
+        'Spread the softened butter evenly across the pastry.',
+        `Sprinkle ${addLine(f)} over the butter so it is ${tasteNote(f)}.`,
+        'Roll up tightly from the long edge into a log.',
+        'Slice into 8 even rounds and place cut-side up on the baking sheet.',
+        'Brush the tops with beaten egg wash.',
+        'Bake 20-25 minutes until golden, puffed, and flaky.',
+        'Beat the cream cheese glaze ingredients until smooth and drizzle over the warm pastries.',
+      ],
+    }) },
 };
 
 export const FORMAT_LIST = Object.entries(FORMATS).map(([key, f]) => ({ key, ...f }));
@@ -258,6 +345,13 @@ const FORMAT_ALIASES = {
   'blonde bars':  'brownie',
   'blonde bar':   'brownie',
   'blond brownie':'brownie',
+  'no-bake':      'cheesecake',
+  'no bake':      'cheesecake',
+  'biscuit':      'shortbread',
+  'biscuits':     'shortbread',
+  'pastry roll':  'croissant',
+  'flaky roll':   'croissant',
+  'flaky rolls':  'croissant',
 };
 
 function detectFormat(text) {
@@ -364,6 +458,23 @@ const DISH_LIBRARY = [
     summaryLead: 'Toss crisp greens with toppings and a simple dressing.',
     ingredients: ['1 head romaine, chopped', '1/4 cup dressing', '1/2 cup croutons', '1/4 cup parmesan', '1 cup protein (optional)', 'black pepper'],
     steps: ['Wash and dry the lettuce, then chop it into a big bowl.', 'Add the protein if you are using it.', 'Pour the dressing over the top.', 'Toss until every leaf is lightly coated.', 'Add the croutons and parmesan.', 'Finish with black pepper and serve.'] },
+  // ── Fusion mashup dishes ──
+  { keys: ['dumpling lasagna', 'dumpling pasta', 'dumpling layers'], label: 'Dumpling Lasagna', emoji: 'DUMPLING', kind: 'savory', cuisine: 'asian', time: 40, servings: 2,
+    summaryLead: 'Layer dumpling wrappers with seasoned lamb filling like a lasagna, then steam until the wrappers go silky.',
+    ingredients: ['500g lamb mince', '3 green onions, sliced', '3 cloves garlic, minced', '3 tbsp soy sauce', '2 tsp sesame oil', '2 tsp chili oil', '1 tsp white pepper', '2 tbsp chicken stock', '1 package round dumpling wrappers'],
+    steps: ['Mix the lamb with green onions, garlic, soy sauce, sesame oil, chili oil, white pepper, and chicken stock.', 'Layer dumpling wrappers in a heatproof dish, overlapping slightly like lasagna sheets.', 'Spread a thin layer of filling, then more wrappers, then more filling — 3 to 4 layers.', 'End with a layer of wrappers on top.', 'Steam for 20-25 minutes until the wrappers are silky and the lamb is cooked.', 'Finish with extra chili oil, sesame seeds, and sliced green onions.'] },
+  { keys: ['coffee jelly', 'jelly coffee', 'japanese coffee'], label: 'Japanese Coffee Jelly', emoji: 'JELLY', kind: 'sweet', cuisine: 'asian', time: 20, servings: 4,
+    summaryLead: 'Set strong coffee into wobbly jelly cubes with gelatin, then serve them in glasses with sweetened cream.',
+    ingredients: ['2 cups strong brewed coffee', '2 tbsp sugar', '1 tbsp gelatin powder', '3 tbsp cold water', 'sweetened cream or condensed milk for serving'],
+    steps: ['Sprinkle the gelatin over the cold water and let it bloom 5 minutes.', 'Microwave the bloomed gelatin 30 seconds until dissolved.', 'Stir the sugar into the hot coffee until dissolved.', 'Add the dissolved gelatin to the coffee and stir well.', 'Pour into a shallow dish and refrigerate 4-5 hours until fully set.', 'Cut the jelly into cubes, divide among glasses, and pour sweetened cream over the top.'] },
+  { keys: ['creme brulee', 'crème brûlée', 'brulee', 'thai tea creme'], label: 'Thai Tea Crème Brûlée', emoji: 'BRULEE', kind: 'sweet', cuisine: 'asian', time: 60, servings: 4,
+    summaryLead: 'Steep Thai tea in cream, strain, temper with egg yolks, bake in a water bath, then torch the sugar top.',
+    ingredients: ['1 1/4 cups heavy cream', '3/4 cup whole milk', '1/4 cup Thai tea mix', '5 egg yolks', '1/4 cup sugar', '1 tsp vanilla', 'extra sugar for torching'],
+    steps: ['Heat the cream and milk until just simmering, then steep the Thai tea mix for 15 minutes.', 'Strain out the tea leaves and reheat the cream gently.', 'Whisk the egg yolks with sugar and vanilla.', 'Slowly drizzle the hot cream into the eggs while whisking constantly.', 'Strain into ramekins and place them in a water bath.', 'Bake at 300°F for 35-40 minutes until set with a slight wobble.', 'Chill at least 2 hours, then sprinkle sugar on top and torch until amber.'] },
+  { keys: ['caramel apple chai', 'apple chai', 'chai latte', 'chai tea'], label: 'Caramel Apple Chai', emoji: 'CHAI', kind: 'sweet', cuisine: 'world', time: 15, servings: 1,
+    summaryLead: 'Steep a strong chai concentrate, stir in apple butter and caramel, pour over ice, and crown with cinnamon maple cold foam.',
+    ingredients: ['3 bags chai tea', '1/2 cup hot water', '2 tbsp apple butter', 'caramel sauce for the glass', 'milk or cream', 'ice', 'cinnamon maple cold foam (cold milk frothed with maple syrup and cinnamon)'],
+    steps: ['Steep 3 chai bags in 1/2 cup hot water for 5 minutes, then remove.', 'Drizzle caramel sauce around the inside walls of your glass.', 'Stir the apple butter into the warm chai until dissolved.', 'Fill the glass with ice and pour the chai over it.', 'Add milk or cream to fill three-quarters.', 'Top with cinnamon maple cold foam and sip through the foam layer.'] },
 ];
 
 function detectDish(name) {
@@ -446,7 +557,7 @@ const DRINKS = {
   american: ['a classic lemonade', 'an iced tea'],
   world:    ['sparkling water with lime', 'an iced tea'],
 };
-const SWEET_FORMATS = ['Cookie', 'Brownie', 'Cake', 'Cupcake', 'Pie', 'Cinnamon Roll'];
+const SWEET_FORMATS = ['Cookie', 'Brownie', 'Cake', 'Cupcake', 'Pie', 'Cinnamon Roll', 'Cheesecake', 'Shortbread', 'Croissant'];
 
 export function pairMeal(recipe) {
   const cuisine = recipe.cuisine && SIDES[recipe.cuisine] ? recipe.cuisine : 'world';

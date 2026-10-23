@@ -67,6 +67,8 @@ export default defineConfig(({ mode }) => {
             '**/*-3d*.js',           // 3D chunks if named that way
             '**/voxel*.js',          // Voxel Chef chunks
             '**/three*.js',          // three.js chunks
+            'js/**',                 // public/js scripts loaded on demand, not precached
+            'data/**',               // recipe JSON data loaded on demand
           ],
 
           // Don't cache Vercel API routes via navigateFallback
@@ -127,6 +129,10 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias: { '@': '/src' },
+    },
+
+    optimizeDeps: {
+      exclude: ['gif.js', 'html2canvas'],
     },
 
     // ── FIX 4: Split large dependencies into their own chunks ─────

@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchRecentRecalls, cachedRecentRecalls, cachedPantryRecalls, activeRecallHits } from '../../../lib/health/recalls';
+import { fetchRecentRecalls, cachedRecentRecalls, cachedPantryRecalls, activeRecallHits, enableAutoRefresh, onNewRecalls } from '../../../lib/health/recalls';
 import { fmtRecallDate } from '../../../lib/pantry/barcodeLookup';
 import { growPicks, SPACE_GUIDE } from '../../../lib/flavor/growGuide';
 import { loadUserPosts } from '../../../lib/social/userPosts';
@@ -116,8 +116,9 @@ export function RecallWatch() {
 
   useEffect(() => {
     let alive = true;
+    enableAutoRefresh();
     const id = whenIdle(() => {
-      fetchRecentRecalls({ limit: 12 })
+      fetchRecentRecalls({ limit: 15 })
         .then((list) => {
           if (!alive) return;
           if (list.length) setRecalls(list);
@@ -125,7 +126,15 @@ export function RecallWatch() {
         })
         .catch(() => { if (alive) setState('empty'); });
     });
-    return () => { alive = false; cancelIdle(id); };
+    const unsub = onNewRecalls((fresh) => {
+      if (!alive) return;
+      setRecalls((prev) => {
+        const ids = new Set(prev.map(r => r.id || r.description));
+        const novel = fresh.filter(r => !ids.has(r.id || r.description));
+        return novel.length ? [...novel, ...prev] : prev;
+      });
+    });
+    return () => { alive = false; cancelIdle(id); unsub(); };
   }, []);
 
   const serious = recalls.filter(isSerious).length;

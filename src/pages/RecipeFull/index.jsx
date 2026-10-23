@@ -38,6 +38,7 @@ import { detectEquipment } from '../../lib/equipmentDetector';
 import { recipeFlavors, recordFlavorSignal } from '../../lib/flavorProfile';
 import { suggestVariations, suggestServeWith, suggestExpertTips } from '../../lib/flavorPairing';
 import RecallBar from '../../components/health/RecallBar';
+import DishPixelPreview from '../../components/recipe/DishPixelPreview';
 
 function loadRecipe() {
   try { return JSON.parse(sessionStorage.getItem('dig_in_full_recipe') || 'null'); } catch { return null; }
@@ -60,6 +61,7 @@ export default function RecipeFull() {
   // Gate the method steps behind the "gear up" equipment screen — the user
   // sees the equipment they'll need before getting into the recipe steps.
   const [enteredSteps, setEnteredSteps] = useState(false);
+  const [showRealImage, setShowRealImage] = useState(false);
 
   // "I made this" → cook log + Nova celebration moment.
   const { add: addCoins } = useCoins();
@@ -201,17 +203,24 @@ export default function RecipeFull() {
           </div>
         </div>
 
-        {/* Image area */}
-        <div className="rf-image">
-          {recipe.image
+        {/* Image area — pixel art by default; tap to reveal the real photo */}
+        <div
+          className="rf-image"
+          onClick={() => recipe.image && setShowRealImage(s => !s)}
+          style={recipe.image ? { cursor: 'pointer' } : undefined}
+        >
+          {showRealImage
             ? <img src={recipe.image} alt={recipe.name} />
-            : <div className="rf-image-ph">{cuisine || 'DIG IN'}</div>}
-          {recipe.image && recipe.imageCredit && (
+            : recipe.image
+              ? <DishPixelPreview recipe={recipe} />
+              : <div className="rf-image-ph">{cuisine || 'DIG IN'}</div>}
+          {recipe.image && recipe.imageCredit && showRealImage && (
             <a
               className="rf-image-credit"
               href={recipe.imageCredit.url}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
             >
               Photo: {recipe.imageCredit.author} / {recipe.imageCredit.source}
             </a>

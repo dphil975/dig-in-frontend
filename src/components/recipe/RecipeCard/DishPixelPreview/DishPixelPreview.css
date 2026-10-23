@@ -15,6 +15,12 @@
   image-rendering: pixelated;
   display: block;
 }
+.dpp-placeholder {
+  image-rendering: pixelated;
+  filter: contrast(1.15) saturate(1.2) brightness(1.05);
+  opacity: .6;
+  animation: dpp-pulse 1.2s ease-in-out infinite;
+}
 .dpp-loading, .dpp-empty {
   font-family: var(--font-ui);
   font-size: 11px;

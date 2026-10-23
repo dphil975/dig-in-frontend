@@ -1,62 +1,56 @@
 import { useState, useEffect } from 'react';
 import { convertPhoto } from '../../../../lib/pixelArt';
+import { getCachedPixel, setCachedPixel } from '../../../../lib/visual/pixelCache';
 import './DishPixelPreview.css';
 
-/* DishPixelPreview — auto-pixelates a recipe's photo into "what the finished
-   dish looks like" pixel art. Shares the same localStorage entry
-   (`dig_in_finished_dish_pixel_<id>`) as FinishedDishPixelator on the full
-   recipe page, so whichever surface renders first "wins" and the other
-   reuses it instead of re-converting. */
+/* DishPixelPreview — shows a pixel-art version of the recipe photo on the
+   recipe card. Checks IndexedDB first for an instant hit; on a miss, shows
+   the original photo with CSS pixelation as a placeholder while the real
+   conversion runs in the background, then caches the result for future loads. */
 
-const STORAGE_PREFIX = 'dig_in_finished_dish_pixel_';
+const CACHE_PREFIX = 'dpp_v2_';
 
-export default function DishPixelPreview({ recipe, bitDepth = 64, paletteMode = 'natural' }) {
-  const storageKey = recipe?.id ? `${STORAGE_PREFIX}${recipe.id}` : null;
+export default function DishPixelPreview({ recipe, bitDepth = 32, paletteMode = 'natural' }) {
+  const cacheKey = recipe?.id ? `${CACHE_PREFIX}${recipe.id}_${bitDepth}_${paletteMode}` : null;
 
-  const [pixelUrl, setPixelUrl] = useState(() => {
-    if (!storageKey) return null;
-    try {
-      const stored = JSON.parse(localStorage.getItem(storageKey) || 'null');
-      if (stored?.palette === paletteMode && stored?.bitDepth === bitDepth) return stored.dataUrl || null;
-      return null;
-    } catch { return null; }
-  });
+  const [pixelUrl, setPixelUrl] = useState(null);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    if (pixelUrl || !recipe?.image) return;
+    if (!recipe?.image || !cacheKey) return;
     let cancelled = false;
-    const img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = () => {
-      if (cancelled) return;
-      try {
-        const canvas = convertPhoto(img, bitDepth, paletteMode, true, false);
-        const dataUrl = canvas.toDataURL('image/png');
-        setPixelUrl(dataUrl);
-        if (storageKey) {
-          try {
-            localStorage.setItem(storageKey, JSON.stringify({
-              dataUrl, bitDepth, palette: paletteMode, createdAt: new Date().toISOString(),
-            }));
-          } catch {}
-        }
-      } catch {
-        setFailed(true);
-      }
-    };
-    img.onerror = () => { if (!cancelled) setFailed(true); };
-    img.src = recipe.image;
+
+    (async () => {
+      const cached = await getCachedPixel(cacheKey);
+      if (cached && !cancelled) { setPixelUrl(cached); return; }
+
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.onload = () => {
+        if (cancelled) return;
+        try {
+          const canvas = convertPhoto(img, bitDepth, paletteMode, true, false);
+          const dataUrl = canvas.toDataURL('image/png');
+          setPixelUrl(dataUrl);
+          setCachedPixel(cacheKey, dataUrl);
+        } catch { setFailed(true); }
+      };
+      img.onerror = () => { if (!cancelled) setFailed(true); };
+      img.src = recipe.image;
+    })();
+
     return () => { cancelled = true; };
-  }, [recipe?.image, recipe?.id, storageKey, pixelUrl, bitDepth, paletteMode]);
+  }, [recipe?.image, recipe?.id, cacheKey, bitDepth, paletteMode]);
+
+  if (!recipe?.image) return <div className="dish-pixel-preview"><div className="dpp-empty">NO PHOTO YET</div></div>;
 
   return (
     <div className="dish-pixel-preview">
       {pixelUrl
         ? <img src={pixelUrl} alt={`Pixel art of ${recipe?.name || 'the finished dish'}`} className="dpp-img" />
-        : (failed || !recipe?.image)
+        : failed
           ? <div className="dpp-empty">NO PHOTO YET</div>
-          : <div className="dpp-loading">PIXELATING…</div>}
+          : <img src={recipe.image} alt={recipe?.name || 'dish'} className="dpp-img dpp-placeholder" crossOrigin="anonymous" />}
     </div>
   );
 }

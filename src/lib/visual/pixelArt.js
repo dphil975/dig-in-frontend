@@ -26,7 +26,7 @@ export const PALETTES = {
   rpg: {
     label: 'RPG Warm',
     bg:      '#f5edd0',
-    outline: '#2c1810',
+    outline: '#3a2010',
     hi:      '#fafafa',
     shades: ['#f4c77a','#e8a84a','#c47a2a','#8a4820',
              '#6aaa4a','#4a8a30','#f4d44a','#e84a3a',
@@ -36,7 +36,7 @@ export const PALETTES = {
   neon: {
     label: 'Neon Arcade',
     bg:      '#0a0a1a',
-    outline: '#000000',
+    outline: '#1a1040',
     hi:      '#ffffff',
     shades: ['#ff00ff','#00ffff','#ff6600','#ffff00',
              '#00ff00','#ff0066','#6600ff','#ff6699',
@@ -46,7 +46,7 @@ export const PALETTES = {
   pastel: {
     label: 'Soft Pastel',
     bg:      '#fff9f0',
-    outline: '#5c4840',
+    outline: '#4a3830',
     hi:      '#ffffff',
     shades: ['#ffb3ba','#ffdfba','#ffffba','#baffc9',
              '#bae1ff','#e8b4f8','#ffd9b3','#b3ffe0',
@@ -56,45 +56,37 @@ export const PALETTES = {
   monochrome: {
     label: 'Monochrome',
     bg:      '#f8f8f8',
-    outline: '#000000',
+    outline: '#282828',
     hi:      '#ffffff',
     shades: ['#ffffff','#e0e0e0','#c0c0c0','#a0a0a0',
-             '#808080','#606060','#404040','#202020',
-             '#000000','#d8d8d8','#b8b8b8','#989898',
-             '#787878','#585858','#383838','#181818'],
+             '#808080','#606060','#404040','#303030',
+             '#181818','#d8d8d8','#b8b8b8','#989898',
+             '#787878','#585858','#484848','#383838'],
   },
-  // Harvest — Dig In's own warm gold/green kitchen palette, and the default
-  // across the app. Reads like ripe produce and a farmhouse table.
   harvest: {
     label: 'Harvest',
     bg:      '#ede8c8',
-    outline: '#1c1008',
+    outline: '#30200c',
     hi:      '#fff8e8',
     shades: ['#f8d870','#e8b040','#c87820','#904810',
              '#88c848','#508828','#f8f0c0','#e85030',
              '#f09050','#703010','#d0a848','#a06028',
              '#d8e8a0','#88a840','#f8c880','#c89850'],
   },
-  // Natural — no color tinting at all: uses the photo's own median-cut palette
-  // as-is. Best for previews where recognizing the actual food matters more
-  // than a stylized look.
   natural: {
     label: 'Natural',
     bg:      '#f0ede6',
-    outline: '#1a1510',
+    outline: '#28201a',
     hi:      '#ffffff',
     shades: [],
   },
-  // Blocks — a bright, high-chroma toy-brick palette. Pairs with `brick: true`
-  // below, which renders each cell as a raised, studded block instead of a
-  // flat square — the studded look is the shape as much as the color.
   blocks: {
     label: 'Building Blocks',
     bg:      '#dcd8ce',
-    outline: '#05131d',
+    outline: '#1a2838',
     hi:      '#ffffff',
     shades: ['#d42718','#f4cf42','#1060c4','#2a7d46',
-             '#0a1a26','#f4f4f4','#ff8c1a','#a0a5a9',
+             '#1a2838','#f4f4f4','#ff8c1a','#a0a5a9',
              '#5c2e14','#4b9f4b','#923978','#e4cd9e',
              '#78dbd8','#fc97ac','#e4adc8','#6c6e68'],
   },
@@ -176,30 +168,58 @@ export function posterize(v, levels) {
 }
 
 export const BIT_CELL = { 8: 20, 16: 12, 32: 8, 64: 5, 128: 2 };
-const PALETTE_COLOR_COUNT = { 8: 8, 16: 16, 32: 24, 64: 32, 128: 48 };
+const PALETTE_COLOR_COUNT = { 8: 5, 16: 8, 32: 10, 64: 16, 128: 24 };
 
 /** Applies the same warm/neon/pastel/monochrome style shift used across the
  *  app, but to a single extracted palette swatch rather than every raw pixel —
  *  that's what keeps regions flat and clean instead of grainy. */
+function liftShadows(r, g, b, floor = 45) {
+  const lum = r * 0.299 + g * 0.587 + b * 0.114;
+  if (lum < floor) {
+    const lift = (floor - lum) * 0.7;
+    r = Math.min(255, r + Math.round(lift * 1.1));
+    g = Math.min(255, g + Math.round(lift));
+    b = Math.min(255, b + Math.round(lift * 0.9));
+  }
+  return { r, g, b };
+}
+
+function boostSaturation(r, g, b, factor) {
+  const lum = r * 0.299 + g * 0.587 + b * 0.114;
+  r = Math.min(255, Math.max(0, Math.round(lum + (r - lum) * factor)));
+  g = Math.min(255, Math.max(0, Math.round(lum + (g - lum) * factor)));
+  b = Math.min(255, Math.max(0, Math.round(lum + (b - lum) * factor)));
+  return { r, g, b };
+}
+
 function tintSwatch({ r, g, b }, paletteMode) {
   if (paletteMode === 'natural') {
+    ({ r, g, b } = liftShadows(r, g, b, 70));
+    ({ r, g, b } = boostSaturation(r, g, b, 1.6));
     return { r, g, b };
   } else if (paletteMode === 'rpg' || paletteMode === 'harvest') {
-    r = Math.min(255, r + 18);
-    g = Math.min(255, g + 8);
-    b = Math.max(0,   b - 15);
+    ({ r, g, b } = liftShadows(r, g, b, 65));
+    ({ r, g, b } = boostSaturation(r, g, b, 1.5));
+    r = Math.min(255, r + 22);
+    g = Math.min(255, g + 12);
+    b = Math.max(0,   b - 10);
   } else if (paletteMode === 'neon') {
+    ({ r, g, b } = liftShadows(r, g, b, 40));
     const mx = Math.max(r, g, b);
     if (mx === r)      { r = Math.min(255, r + 60); g = Math.max(0, g - 30); b = Math.max(0, b - 30); }
     else if (mx === g) { g = Math.min(255, g + 60); r = Math.max(0, r - 30); b = Math.max(0, b - 30); }
     else                { b = Math.min(255, b + 60); r = Math.max(0, r - 30); g = Math.max(0, g - 30); }
   } else if (paletteMode === 'monochrome') {
     const lum = Math.round(r * 0.299 + g * 0.587 + b * 0.114);
-    r = g = b = lum;
+    const lifted = Math.max(lum, 45);
+    r = g = b = lifted;
   } else if (paletteMode === 'pastel') {
-    r = Math.min(255, Math.round(r * 0.6 + 100));
-    g = Math.min(255, Math.round(g * 0.6 + 100));
-    b = Math.min(255, Math.round(b * 0.6 + 100));
+    r = Math.min(255, Math.round(r * 0.45 + 140));
+    g = Math.min(255, Math.round(g * 0.45 + 140));
+    b = Math.min(255, Math.round(b * 0.45 + 140));
+  } else if (paletteMode === 'blocks') {
+    ({ r, g, b } = liftShadows(r, g, b, 55));
+    ({ r, g, b } = boostSaturation(r, g, b, 1.6));
   }
   return { r, g, b };
 }
@@ -303,13 +323,13 @@ function floydSteinbergDither(imageData, palette) {
 }
 
 function downsample(imgEl, cols, rows) {
-  // Downsample with smoothing — sampling, not the final look; quantization
-  // below is what produces the pixel-art edges.
+  // Nearest-neighbor downsample — each cell picks ONE source pixel instead of
+  // blending neighbors, giving decisive color choices that quantize cleanly
+  // into flat, crisp GBA-style blocks.
   const src = document.createElement('canvas');
   src.width = cols; src.height = rows;
   const sctx = src.getContext('2d');
-  sctx.imageSmoothingEnabled = true;
-  sctx.imageSmoothingQuality = 'high';
+  sctx.imageSmoothingEnabled = false;
   sctx.drawImage(imgEl, 0, 0, cols, rows);
   return sctx.getImageData(0, 0, cols, rows);
 }
@@ -357,10 +377,10 @@ function drawBrickCell(ctx, x, y, s, color) {
   if (s < 6) return; // too small for a visible bevel/stud — flat cell above is the honest result
 
   const bevel = Math.max(1, Math.round(s * 0.16));
-  ctx.fillStyle = shadeColor(color, 55);
+  ctx.fillStyle = shadeColor(color, 65);
   ctx.fillRect(px, py, s, bevel);              // top highlight
   ctx.fillRect(px, py, bevel, s);              // left highlight
-  ctx.fillStyle = shadeColor(color, -55);
+  ctx.fillStyle = shadeColor(color, -35);
   ctx.fillRect(px, py + s - bevel, s, bevel);   // bottom shadow
   ctx.fillRect(px + s - bevel, py, bevel, s);   // right shadow
 
@@ -368,14 +388,14 @@ function drawBrickCell(ctx, x, y, s, color) {
   const cx = px + s / 2, cy = py + s / 2;
   ctx.beginPath();
   ctx.arc(cx, cy, r, 0, Math.PI * 2);
-  ctx.fillStyle = shadeColor(color, 20);
+  ctx.fillStyle = shadeColor(color, 30);
   ctx.fill();
   ctx.beginPath();
   ctx.arc(cx - r * 0.3, cy - r * 0.3, r * 0.4, 0, Math.PI * 2);
-  ctx.fillStyle = shadeColor(color, 65);
+  ctx.fillStyle = shadeColor(color, 75);
   ctx.fill();
   ctx.lineWidth = Math.max(1, s * 0.05);
-  ctx.strokeStyle = shadeColor(color, -40);
+  ctx.strokeStyle = shadeColor(color, -25);
   ctx.beginPath();
   ctx.arc(cx, cy, r, 0, Math.PI * 2);
   ctx.stroke();
@@ -398,6 +418,37 @@ export function quantizeToGrid(imgEl, paletteInfo, paletteMode) {
   const imageData = downsample(imgEl, cols, rows);
   const flatData = nearestColorMapping(imageData, palette).data;
 
+  // Mode filter: replace isolated cells (whose color matches zero of their 4
+  // neighbors) with the most popular neighbor color. Two passes clean up the
+  // single-cell speckle that makes photo-converted pixel art look noisy.
+  for (let pass = 0; pass < 2; pass++) {
+    const snap = new Uint8ClampedArray(flatData);
+    for (let y = 1; y < rows - 1; y++) {
+      for (let x = 1; x < cols - 1; x++) {
+        const i = (y * cols + x) * 4;
+        const me = (snap[i] << 16) | (snap[i + 1] << 8) | snap[i + 2];
+        const nIdxs = [
+          ((y - 1) * cols + x) * 4, ((y + 1) * cols + x) * 4,
+          (y * cols + x - 1) * 4,   (y * cols + x + 1) * 4,
+        ];
+        let match = 0;
+        const votes = new Map();
+        for (const ni of nIdxs) {
+          const nk = (snap[ni] << 16) | (snap[ni + 1] << 8) | snap[ni + 2];
+          if (nk === me) match++;
+          votes.set(nk, (votes.get(nk) || 0) + 1);
+        }
+        if (match === 0) {
+          let best = me, bestC = 0;
+          for (const [k, c] of votes) if (c > bestC) { bestC = c; best = k; }
+          flatData[i]     = (best >> 16) & 0xff;
+          flatData[i + 1] = (best >> 8) & 0xff;
+          flatData[i + 2] = best & 0xff;
+        }
+      }
+    }
+  }
+
   const at = (x, y) => {
     const i = (y * cols + x) * 4;
     return { r: flatData[i], g: flatData[i + 1], b: flatData[i + 2] };
@@ -413,9 +464,14 @@ export function quantizeToGrid(imgEl, paletteInfo, paletteMode) {
         x > 0        ? at(x - 1, y) : c,
         x < cols - 1 ? at(x + 1, y) : c,
       ];
-      const diff = neighbors.reduce((acc, n) =>
-        acc + Math.abs(c.r - n.r) + Math.abs(c.g - n.g) + Math.abs(c.b - n.b), 0);
-      cells[y][x] = { r: c.r, g: c.g, b: c.b, edge: diff > 90 };
+      const diffs = neighbors.map(n =>
+        Math.abs(c.r - n.r) + Math.abs(c.g - n.g) + Math.abs(c.b - n.b));
+      const lum = c.r * 0.299 + c.g * 0.587 + c.b * 0.114;
+      const edgeThreshold = 200;
+      cells[y][x] = {
+        r: c.r, g: c.g, b: c.b, lum,
+        edge: diffs.some(d => d > edgeThreshold),
+      };
     }
   }
   return { cellSize, cols, rows, cells };
@@ -446,21 +502,47 @@ export function renderPixelFrame(imgEl, paletteInfo, paletteMode, addOutline, sh
   const ctx = out.getContext('2d');
   const pal = PALETTES[paletteMode];
 
+  // Fill background before drawing cells — prevents the few-pixel gap between
+  // the last cell row/col and the canvas edge from showing as black/transparent.
+  ctx.fillStyle = pal?.bg || '#f5edd0';
+  ctx.fillRect(0, 0, outputSize, outputSize);
+
+  // Pass 1 — fill every cell with its real color (never the outline color).
   for (let y = 0; y < rows; y++) {
     for (let x = 0; x < cols; x++) {
       const cell = grid.cells[y][x];
       const i = (y * cols + x) * 4;
-      const isOutlineEdge = addOutline && cell.edge;
-      const color = isOutlineEdge
-        ? (pal?.outline || '#2c1810')
-        : (mData ? `rgb(${mData[i]},${mData[i + 1]},${mData[i + 2]})` : `rgb(${cell.r},${cell.g},${cell.b})`);
-      // Outline pixels stay flat (a raised bevel on a 1-cell-wide silhouette
-      // line would just look like noise) — brick mode only applies to the
-      // dish's actual color cells.
-      if (brick && !isOutlineEdge) drawBrickCell(ctx, x, y, cellSize, color);
+      const color = mData ? `rgb(${mData[i]},${mData[i + 1]},${mData[i + 2]})` : `rgb(${cell.r},${cell.g},${cell.b})`;
+      if (brick) drawBrickCell(ctx, x, y, cellSize, color);
       else { ctx.fillStyle = color; ctx.fillRect(x * cellSize, y * cellSize, cellSize, cellSize); }
     }
   }
+
+  // Pass 2 — 1px outline between cells that differ significantly. Each
+  // boundary is checked exactly once (right-of and below-of each cell) so
+  // lines are always exactly 1px, never doubled.
+  if (addOutline) {
+    const outColor = pal?.outline || '#3a2010';
+    ctx.fillStyle = outColor;
+    const thresh = 200;
+    const c = grid.cells;
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < cols; x++) {
+        const a = c[y][x];
+        if (x < cols - 1) {
+          const b = c[y][x + 1];
+          if (Math.abs(a.r - b.r) + Math.abs(a.g - b.g) + Math.abs(a.b - b.b) > thresh)
+            ctx.fillRect((x + 1) * cellSize, y * cellSize, 1, cellSize);
+        }
+        if (y < rows - 1) {
+          const b = c[y + 1][x];
+          if (Math.abs(a.r - b.r) + Math.abs(a.g - b.g) + Math.abs(a.b - b.b) > thresh)
+            ctx.fillRect(x * cellSize, (y + 1) * cellSize, cellSize, 1);
+        }
+      }
+    }
+  }
+
 
   if (showGridLines) drawGrid(ctx, outputSize, cellSize);
 

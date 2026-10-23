@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { capturePhoto } from '../../../../lib/native';
 import { convertPhoto, PALETTES } from '../../../../lib/pixelArt';
+import { getCachedPixel, setCachedPixel } from '../../../../lib/visual/pixelCache';
 import { shareOrDownload } from '../../../../utils/shareImage';
 import { track } from '../../../../lib/analytics';
 import './FinishedDishPixelator.css';
@@ -31,10 +32,39 @@ export default function FinishedDishPixelator({ recipeId, recipeImage, dishName 
   const [brick, setBrick]       = useState(false);
   const [busy, setBusy]         = useState(false);
   const [notif, setNotif]       = useState(null);
-  const [dishPixel, setDishPixel] = useState(() => {
-    if (!storageKey) return null;
-    try { return JSON.parse(localStorage.getItem(storageKey) || 'null'); } catch { return null; }
-  });
+  const [dishPixel, setDishPixel] = useState(null);
+
+  // On mount, check IndexedDB for a cached pixel art, then fall back to
+  // localStorage, and finally auto-convert if nothing is cached.
+  useEffect(() => {
+    if (!recipeId) return;
+    let cancelled = false;
+    const idbKey = `fdp_v2_${recipeId}_${bitDepth}_${palette}`;
+    (async () => {
+      const cached = await getCachedPixel(idbKey);
+      if (cached && !cancelled) {
+        setDishPixel({ dataUrl: cached, bitDepth, palette, brick: false, createdAt: '' });
+        return;
+      }
+      if (storageKey) {
+        try {
+          const ls = JSON.parse(localStorage.getItem(storageKey) || 'null');
+          if (ls?.dataUrl && !cancelled) { setDishPixel(ls); return; }
+        } catch {}
+      }
+      if (!recipeImage || cancelled) return;
+      try {
+        const resp = await fetch(recipeImage);
+        if (!resp.ok || cancelled) return;
+        const blob = await resp.blob();
+        const objUrl = URL.createObjectURL(blob);
+        try { if (!cancelled) await runPixelate(objUrl); }
+        finally { URL.revokeObjectURL(objUrl); }
+      } catch {}
+    })();
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [recipeId]);
 
   function showNotif(text) {
     setNotif(text);
@@ -46,11 +76,12 @@ export default function FinishedDishPixelator({ recipeId, recipeImage, dishName 
     setBusy(true);
     try {
       const img = await loadImage(src, crossOrigin);
-      const canvas = convertPhoto(img, bitDepth, palette, true, false, false, brick);
+      const canvas = convertPhoto(img, bitDepth, palette, false, false, false, brick);
       const dataUrl = canvas.toDataURL('image/png');
       const entry = { dataUrl, bitDepth, palette, brick, createdAt: new Date().toISOString() };
       setDishPixel(entry);
-      if (storageKey) { try { localStorage.setItem(storageKey, JSON.stringify(entry)); } catch {} }
+      const idbKey = `fdp_v2_${recipeId}_${bitDepth}_${palette}`;
+      setCachedPixel(idbKey, dataUrl);
       track('finished_dish_pixelated', {
         recipe_id: recipeId, bit_depth: bitDepth, palette, brick,
         source: crossOrigin ? 'recipe_photo' : 'upload',

@@ -26,7 +26,7 @@ import { checkFoodRecalls } from '../pantry/barcodeLookup';
    the Home feed's info bar (reads the same cache read-only). */
 
 const CACHE_KEY = 'dig_in_recall_cache'; // { [nameKey]: { recalls, checkedAt } }
-const RECHECK_MS = 24 * 3600 * 1000;     // don't re-hit openFDA for the same item more than once/day
+const RECHECK_MS = 4 * 3600 * 1000;      // recheck every 4 hours for near-real-time coverage
 const MAX_CHECKS_PER_PASS = 12;          // keep one pass bounded even for a big pantry
 
 function nameKey(name) {
@@ -81,34 +81,40 @@ export async function refreshPantryRecalls(pantryItems, { maxChecks = MAX_CHECKS
 
 /* ── The general feed (not tied to your pantry) ───────────────────────────────
    The Fresh tab's Recall Watch shows what's being recalled RIGHT NOW even when
-   your pantry is empty or nothing you own matches — so someone can find out
-   about the Taylor Farms situation before they've scanned a single thing. Same
-   real openFDA food-enforcement feed, just queried broadly (most recent first)
-   and cached once a day so opening Fresh doesn't hammer the API. */
+   your pantry is empty or nothing you own matches -- so someone can find out
+   about the Taylor Farms situation before they've scanned a single thing.
+
+   The server-side endpoint (api/recalls.js) now merges the FDA press-release
+   RSS (freshest, within hours) with the openFDA enforcement DB (classified,
+   lags by days). We fetch from it first; if it's down, fall back to openFDA
+   directly from the browser. Cached for 2 hours so the app stays near
+   real-time without hammering the API. Auto-refetches when the user returns
+   to the tab (visibilitychange) if the cache is stale. */
 const FEED_CACHE_KEY = 'dig_in_recall_feed';   // { recalls, fetchedAt }
+const FEED_STALE_MS = 2 * 3600 * 1000;         // 2 hours
 const FEED_BASE = 'https://api.fda.gov/food/enforcement.json';
+const NOTIFY_KEY = 'dig_in_recall_notified';    // Set of recall ids already shown
 
 function loadFeedCache() {
   try { const v = JSON.parse(localStorage.getItem(FEED_CACHE_KEY)); return v && typeof v === 'object' ? v : null; }
   catch { return null; }
 }
 
-/** Read-only snapshot of the last fetched general feed — no network. */
+function isFeedStale() {
+  const cached = loadFeedCache();
+  return !cached || (Date.now() - (cached.fetchedAt || 0)) >= FEED_STALE_MS;
+}
+
+/** Read-only snapshot of the last fetched general feed -- no network. */
 export function cachedRecentRecalls() {
   return loadFeedCache()?.recalls || [];
 }
 
-/**
- * Fetch the most recent U.S. food recalls generally (default: the more serious
- * Class I / II, newest first). Cached for a day; returns the cached list
- * untouched if it's still fresh. Always resolves to an array — [] on any error,
- * same honest-empty rule as the rest of the app.
- */
-let feedInFlight = null;   // one network fetch at a time, however many places ask
+let feedInFlight = null;
 
-export function fetchRecentRecalls({ limit = 12, force = false } = {}) {
+export function fetchRecentRecalls({ limit = 15, force = false } = {}) {
   const cached = loadFeedCache();
-  if (!force && cached && (Date.now() - (cached.fetchedAt || 0)) < RECHECK_MS) {
+  if (!force && cached && (Date.now() - (cached.fetchedAt || 0)) < FEED_STALE_MS) {
     return Promise.resolve(cached.recalls || []);
   }
   if (!feedInFlight) {
@@ -119,32 +125,31 @@ export function fetchRecentRecalls({ limit = 12, force = false } = {}) {
 
 async function loadRecentFeed(limit, cached) {
 
-  // 1) Preferred source: our own server-side scraper of the FDA's CURRENT
-  //    recall press-release feed (api/recalls.js). It's weeks fresher than
-  //    openFDA, but has to run server-side because fda.gov sends no CORS header.
-  //    In local dev this only answers when `npm run dev:ai` is up; otherwise the
-  //    request fails and we fall through to openFDA.
+  // 1) Preferred: server-side merged feed (RSS + openFDA). The server merges
+  //    both sources, deduplicates, and scores by urgency. Edge-cached for 15
+  //    minutes so most requests never hit the FDA at all.
   try {
-    const res = await fetch(`/api/recalls?limit=${limit}`);
+    const res = await fetch(`/api/recalls?limit=${limit}&sources=all`);
     if (res.ok) {
       const json = await res.json();
       if (Array.isArray(json.recalls) && json.recalls.length) {
-        try { localStorage.setItem(FEED_CACHE_KEY, JSON.stringify({ recalls: json.recalls, fetchedAt: Date.now() })); } catch { /* quota */ }
+        const now = Date.now();
+        try { localStorage.setItem(FEED_CACHE_KEY, JSON.stringify({ recalls: json.recalls, fetchedAt: now })); } catch { /* quota */ }
+        notifyNewRecalls(json.recalls, cached?.recalls);
         return json.recalls;
       }
     }
-  } catch { /* scraper unreachable — fall through to the openFDA fallback */ }
+  } catch { /* scraper unreachable -- fall through to openFDA */ }
 
-  // 2) Fallback: the openFDA enforcement DB, straight from the browser (CORS is
-  //    fine here). It lags by weeks because it only lists recalls AFTER they're
-  //    classified — but it's better than nothing when the scraper is down.
+  // 2) Fallback: openFDA enforcement DB directly from the browser (CORS OK).
   try {
-    const search = 'status:"Ongoing"+AND+(classification:"Class+I"+classification:"Class+II")';
+    const search = 'status:"Ongoing"+AND+(classification:"Class+I"+OR+classification:"Class+II")';
     const url = `${FEED_BASE}?search=${search}&sort=recall_initiation_date:desc&limit=${limit}`;
     const res = await fetch(url);
-    if (!res.ok) return cached?.recalls || [];  // 404 = no matches; keep last good list
+    if (!res.ok) return cached?.recalls || [];
     const json = await res.json();
     const recalls = (json.results || []).map((r) => ({
+      id: r.recall_number || null,
       description: r.product_description,
       reason: r.reason_for_recall,
       classification: r.classification,
@@ -153,12 +158,72 @@ async function loadRecentFeed(limit, cached) {
       state: r.state,
       firm: r.recalling_firm,
       link: null,
+      category: null,
+      allergens: null,
       source: 'openfda',
     }));
     try { localStorage.setItem(FEED_CACHE_KEY, JSON.stringify({ recalls, fetchedAt: Date.now() })); } catch { /* quota */ }
+    notifyNewRecalls(recalls, cached?.recalls);
     return recalls;
   } catch {
     return cached?.recalls || [];
+  }
+}
+
+// ── Real-time: refetch when the user returns to the tab ──────────────────────
+let visListenerAttached = false;
+export function enableAutoRefresh() {
+  if (visListenerAttached) return;
+  visListenerAttached = true;
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && isFeedStale()) {
+      fetchRecentRecalls({ force: true });
+    }
+  });
+}
+
+// ── Real-time: background polling ────────────────────────────────────────────
+let pollTimer = null;
+export function startRecallPolling(intervalMs) {
+  stopRecallPolling();
+  const ms = intervalMs || FEED_STALE_MS;
+  pollTimer = setInterval(() => {
+    fetchRecentRecalls({ force: true });
+  }, ms);
+}
+export function stopRecallPolling() {
+  if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+}
+
+// ── Notification for new high-severity recalls ───────────────────────────────
+const recallListeners = new Set();
+
+export function onNewRecalls(fn) {
+  recallListeners.add(fn);
+  return () => recallListeners.delete(fn);
+}
+
+function loadNotifiedIds() {
+  try { return new Set(JSON.parse(localStorage.getItem(NOTIFY_KEY) || '[]')); }
+  catch { return new Set(); }
+}
+
+function notifyNewRecalls(current, previous) {
+  if (!previous || !previous.length) return;
+  const prevIds = new Set((previous || []).map(r => r.id || r.description).filter(Boolean));
+  const notified = loadNotifiedIds();
+  const fresh = current.filter(r => {
+    const key = r.id || r.description;
+    return key && !prevIds.has(key) && !notified.has(key) && r.severity === 'high';
+  });
+  if (!fresh.length) return;
+  fresh.forEach(r => notified.add(r.id || r.description));
+  try {
+    const arr = [...notified].slice(-200);
+    localStorage.setItem(NOTIFY_KEY, JSON.stringify(arr));
+  } catch { /* quota */ }
+  for (const fn of recallListeners) {
+    try { fn(fresh); } catch { /* listener error */ }
   }
 }
 

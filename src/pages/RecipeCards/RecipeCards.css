@@ -579,10 +579,15 @@ body { background: #0d0d0d; color: #eee; }
 
 .rcp-hub-tabs {
   display: flex;
-  gap: 8px;
-  padding: 0 0 0 2px;
-  margin: 0 0 4px;
-  flex-wrap: wrap;
+  gap: 0;
+  padding: 0;
+  margin: 0 0 22px;
+  width: fit-content;
+  background: #fff;
+  border: 2px solid var(--dig-bark, #33302A);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 rgba(51,48,42,.14);
+  overflow: hidden;
 }
 
 @media (max-width: 860px) {
@@ -590,26 +595,32 @@ body { background: #0d0d0d; color: #eee; }
 }
 
 .rcp-hub-tab {
-  padding: 10px 18px;
-  border: 2px solid #D8CAB4;
-  background: #fff;
-  color: #33302A;
-  font-weight: 700;
-  font-size: 0.85rem;
-  border-radius: 10px 10px 0 0;
+  padding: 9px 26px;
+  border: none;
+  border-right: 2px solid var(--dig-bark, #33302A);
+  background: transparent;
+  color: #8a7a68;
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: background .15s, color .15s;
 }
 
-.rcp-hub-tab:hover {
-  background: #F3EADA;
-  color: #33302A;
+.rcp-hub-tab:last-child {
+  border-right: none;
+}
+
+.rcp-hub-tab:hover:not(.active) {
+  background: var(--dig-cream, #F3EADA);
+  color: var(--dig-bark, #33302A);
 }
 
 .rcp-hub-tab.active {
-  background: #6E8259;
-  border-color: #6E8259;
-  color: #F3EADA;
+  background: var(--dig-bark, #33302A);
+  color: var(--dig-cream, #F3EADA);
 }
 
 /* ── The four quadrants + Nova's quick picks ───────────────────────────── */
@@ -643,6 +654,23 @@ body { background: #0d0d0d; color: #eee; }
 .rcq-quick-card:hover { transform: translate(-1px, -1px); }
 .rcq-quick-name { font-size: 14px; font-weight: 800; color: var(--dig-bark, #33302A); }
 .rcq-quick-meta { font-size: 12px; color: #7a7060; }
+.rcq-quick-tag {
+  display: inline-block; margin-top: 5px;
+  font-family: var(--font-ui); font-size: 10px; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase;
+  color: var(--dig-matcha, #6E8259);
+  background: rgba(110,130,89,.12); border-radius: 4px;
+  padding: 2px 7px;
+}
+.rcq-kicker-line {
+  display: flex; align-items: center; gap: 10px; margin: 0 0 8px;
+}
+.rcq-kicker { margin: 0; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--dig-matcha, #6E8259); }
+.rcq-kicker-badge {
+  font-family: var(--font-ui); font-size: 10px; font-weight: 700;
+  color: #fff; background: var(--dig-matcha, #6E8259);
+  border-radius: 4px; padding: 2px 8px; letter-spacing: .04em;
+}
 
 /* Browse: the collapsed Filters toggle. */
 .rc-more { margin: 4px 0 16px; }

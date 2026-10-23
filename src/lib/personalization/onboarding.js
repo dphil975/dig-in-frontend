@@ -17,6 +17,8 @@
    All localStorage; nothing here calls a server. */
 
 import { LIFE_MODES, setLifeMode } from './lifeMode';
+import { guessLocation, guessSnap, guessWic } from '../pantry/pantryTools';
+import { seedFlavorProfile } from '../flavor/flavorProfile';
 
 const K_NEEDS = 'dig_in_needs_onboarding';   // '1' once a sign-up was submitted here
 const K_DONE = 'dig_in_onboarded';           // legacy boolean Home / Welcome already use
@@ -90,6 +92,18 @@ export function getAnswers() {
 /** Write the answers into the stores Settings reads. Every field is optional —
     a skipped question simply leaves that setting alone. */
 export async function applyAnswersToProfile(a = {}) {
+  // Flavor palette → seed the 8-flavor profile so Nova's first picks feel
+  // personal instead of random. Uses the same seedFlavorProfile() the flavor
+  // quiz in Settings uses, so this answer merges cleanly with later signals.
+  const flavorPicks = Array.isArray(a.flavor) ? a.flavor : [];
+  if (flavorPicks.length) {
+    try { seedFlavorProfile(flavorPicks); } catch { /* quota */ }
+  }
+
+  // Cuisine preferences → saved to answers for the pick algorithm to read.
+  // The cuisines are stored in the answers object (already written by saveAnswers)
+  // and read by loadNovaContext → getAnswers() in pick.js.
+
   // Dietary → Settings → Dietary preferences (the allergy profile). Loaded on
   // demand: this file is imported by the always-mounted OnboardingGate, and the
   // allergy engine isn't needed until someone actually has answers to apply.
@@ -115,5 +129,56 @@ export async function applyAnswersToProfile(a = {}) {
       if (/^\d{5}$/.test(a.place)) localStorage.setItem('dig_in_zip', a.place);
       else localStorage.setItem('dig_in_home_borough', a.place);
     } catch { /* quota */ }
+  }
+
+  // Receipt → Virtual Pantry seed.
+  // Items from a scanned/pasted receipt are written straight into the pantry
+  // (not the "deciding" tray) so the user's first session has real data. The
+  // trip record goes into dig_in_receipts so the store appears in store history.
+  const receiptItems = Array.isArray(a.receiptItems) ? a.receiptItems : [];
+  if (receiptItems.length) {
+    try {
+      const now = Date.now();
+      const boughtAt = a.receiptDate
+        ? new Date(`${a.receiptDate}T12:00:00`).toISOString()
+        : new Date().toISOString();
+      const tripId = now;
+      const pantryItems = receiptItems.map((it, idx) => ({
+        id: now + idx,
+        name: it.name,
+        price: it.price ?? null,
+        location: guessLocation(it.name),
+        snap: guessSnap(it.name),
+        wic: guessWic(it.name),
+        at: new Date().toISOString(),
+        boughtAt,
+        fromReceipt: true,
+        store: a.receiptStore || null,
+        tripId,
+      }));
+
+      const existingPantry = (() => {
+        try { return JSON.parse(localStorage.getItem('dig_in_pantry') || '[]'); } catch { return []; }
+      })();
+      localStorage.setItem('dig_in_pantry', JSON.stringify([...pantryItems, ...existingPantry]));
+
+      const trip = {
+        id: tripId,
+        store: a.receiptStore || 'Unknown store',
+        address: null,
+        date: a.receiptDate || null,
+        time: null,
+        total: a.receiptTotal ?? (receiptItems.reduce((s, i) => s + (i.price || 0), 0) || null),
+        itemCount: receiptItems.length,
+        items: receiptItems.map(i => i.name),
+        attachment: a.receiptPhoto ? { dataUrl: a.receiptPhoto } : null,
+        importedAt: new Date().toISOString(),
+        fromOnboarding: true,
+      };
+      const existingReceipts = (() => {
+        try { return JSON.parse(localStorage.getItem('dig_in_receipts') || '[]'); } catch { return []; }
+      })();
+      localStorage.setItem('dig_in_receipts', JSON.stringify([trip, ...existingReceipts]));
+    } catch { /* quota — pantry write is best-effort during onboarding */ }
   }
 }

@@ -1,0 +1,254 @@
+/* DealerHand.css — the dealer's table.
+
+   The fan uses CSS custom properties: each card is rendered with --i (its
+   index) and the container passes --n (total count). From that the card
+   computes its own rotation and arc offset — no per-card inline overrides
+   needed, which keeps the markup clean and the keyframes shared across all
+   five cards.
+
+   Two state classes drive motion:
+     .is-dealing    — cards fly from the deck to their fan slots, staggered
+     .is-shuffling  — cards collapse back to the deck in reverse order
+
+   Hover and :focus-visible lift the hovered card out of the fan to full
+   straight-on at a slight scale. */
+
+/* ── Layout ──────────────────────────────────────────────── */
+.dh { margin: 22px 0 8px; }
+
+.dh-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; margin: 0 0 4px;
+}
+.dh-label {
+  font-family: var(--font-ui);
+  font-size: 11px; font-weight: 800;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: #8a7a68; margin: 0;
+}
+.dh-sub {
+  font-family: var(--font-serif);
+  font-size: 14px; font-style: italic;
+  color: var(--dig-bark); margin: 0 0 10px;
+}
+.dh-line { font-family: var(--font-ui); font-size: 13px; color: var(--dig-bark); margin: 6px 0 0; }
+.dh-empty { padding: 20px 4px; }
+
+/* ── Shuffle button ──────────────────────────────────────── */
+.dh-shuffle {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px;
+  background: var(--dig-cream);
+  border: 2px solid var(--dig-bark); border-radius: 999px;
+  box-shadow: 2px 2px 0 var(--dig-bark);
+  font-family: var(--font-ui);
+  font-size: 11px; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--dig-bark);
+  cursor: pointer;
+  transition: transform .1s, box-shadow .1s;
+}
+.dh-shuffle:hover  { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--dig-bark); }
+.dh-shuffle:active { transform: translate(2px, 2px);  box-shadow: 0 0 0 var(--dig-bark); }
+.dh-shuffle:disabled { opacity: .5; cursor: default; transform: none; box-shadow: 2px 2px 0 var(--dig-bark); }
+.dh-shuffle-icon {
+  display: inline-block; font-size: 15px; line-height: 1;
+  transition: transform .5s cubic-bezier(.2,.9,.3,1);
+}
+.dh-shuffle:hover .dh-shuffle-icon { transform: rotate(180deg); }
+.dh-table.is-shuffling .dh-shuffle-icon { animation: dh-spin .5s linear infinite; }
+@keyframes dh-spin { to { transform: rotate(360deg); } }
+
+/* ── The table ───────────────────────────────────────────── */
+.dh-table {
+  position: relative;
+  min-height: 240px;
+  padding: 24px 0 28px;
+  perspective: 1200px;
+  overflow: visible;
+}
+
+/* The virtual deck in the top-right corner — cards appear to come from here */
+.dh-deck {
+  position: absolute;
+  top: 0; right: 10px;
+  width: 60px; height: 80px;
+  pointer-events: none;
+}
+.dh-deck-card {
+  position: absolute; inset: 0;
+  background: #fff;
+  border: 2px solid var(--dig-bark);
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 var(--dig-bark);
+}
+.dh-deck-card:nth-child(1) { transform: translate(-4px, -3px) rotate(-3deg); }
+.dh-deck-card:nth-child(2) { transform: translate(-2px, -1px) rotate( 1deg); }
+.dh-deck-card:nth-child(3) { transform: translate( 0,    0  ) rotate( 2deg); }
+
+/* ── Fan ─────────────────────────────────────────────────── */
+.dh-fan {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 220px;
+  padding-top: 20px;
+}
+
+/* Each card knows its slot via --i and the fan passes --n. The derived
+   --offset is distance from the center (negative on left, positive on right)
+   and powers both the arc translation and the rotation. */
+.dh-card {
+  position: relative;
+  width: 150px; min-height: 200px;
+  padding: 12px 12px 10px;
+  margin: 0 -18px;
+  background: #fff;
+  border: 2px solid var(--dig-bark); border-radius: 10px;
+  box-shadow: 3px 3px 0 var(--dig-bark);
+  display: flex; flex-direction: column; justify-content: space-between;
+  cursor: pointer;
+  transform-origin: center bottom;
+
+  --center: calc((var(--n, 5) - 1) / 2);
+  --offset: calc(var(--i) - var(--center));
+
+  transform:
+    rotate(calc(var(--offset) * 6deg))
+    translateY(calc(var(--offset) * var(--offset) * 3px));
+
+  transition:
+    transform 350ms cubic-bezier(.2, .9, .3, 1),
+    box-shadow 180ms,
+    z-index 0s linear 180ms;
+  z-index: calc(10 + var(--i));
+}
+
+/* Hover: card lifts, straightens, and comes forward. z-index flips
+   immediately so a lifted card doesn't slide under its neighbors. */
+.dh-card:hover,
+.dh-card:focus-visible {
+  transform: rotate(0deg) translateY(-18px) scale(1.05);
+  box-shadow: 6px 6px 0 var(--dig-bark);
+  z-index: 100;
+  outline: none;
+  transition:
+    transform 220ms cubic-bezier(.2, .9, .3, 1),
+    box-shadow 220ms,
+    z-index 0s;
+}
+
+/* Deal: start at the deck's position (upper-right, rotated), fly to slot.
+   `backwards` holds frame 0 before the delay kicks in so cards don't flash
+   at their final position before their turn. */
+.dh-table.is-dealing .dh-card {
+  animation: dh-deal 450ms cubic-bezier(.2, .9, .3, 1) backwards;
+  animation-delay: calc(var(--i) * 80ms);
+}
+@keyframes dh-deal {
+  0% {
+    transform: translate(140px, -140px) rotate(28deg) scale(.9);
+    opacity: 0;
+  }
+  40% { opacity: 1; }
+  100% {
+    transform:
+      rotate(calc(var(--offset) * 6deg))
+      translateY(calc(var(--offset) * var(--offset) * 3px));
+    opacity: 1;
+  }
+}
+
+/* Shuffle: collect cards back to the deck in reverse order */
+.dh-table.is-shuffling .dh-card {
+  animation: dh-collect 400ms cubic-bezier(.4, 0, .6, 1) forwards;
+  animation-delay: calc((var(--n, 5) - var(--i) - 1) * 55ms);
+  pointer-events: none;
+}
+@keyframes dh-collect {
+  to {
+    transform: translate(140px, -140px) rotate(28deg) scale(.9);
+    opacity: 0;
+  }
+}
+
+/* ── Card content ────────────────────────────────────────── */
+.dh-card-top {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 8px;
+}
+.dh-card-flavor {
+  display: inline-block;
+  padding: 3px 8px;
+  background: var(--dig-bark); color: var(--dig-cream);
+  border-radius: 4px;
+  font-family: var(--font-ui);
+  font-size: 9.5px; font-weight: 800;
+  letter-spacing: .12em;
+}
+.dh-card-save {
+  background: none; border: none;
+  font-size: 20px; line-height: 1;
+  color: #c9b89a;
+  cursor: pointer; padding: 2px 6px;
+  transition: transform .1s, color .2s;
+}
+.dh-card-save:hover { transform: scale(1.2); }
+.dh-card-save.is-saved { color: var(--dig-matcha); }
+
+.dh-card-body {
+  flex: 1; display: flex; flex-direction: column; justify-content: center;
+  padding: 10px 0;
+}
+.dh-card-name {
+  font-family: var(--font-serif);
+  font-size: 14.5px; line-height: 1.2; font-weight: 500;
+  color: var(--dig-bark); margin: 0 0 6px;
+}
+.dh-card-meta {
+  font-family: var(--font-ui);
+  font-size: 10.5px; letter-spacing: .02em;
+  color: #8a7a68; margin: 0;
+  text-transform: capitalize;
+}
+.dh-card-foot { padding-top: 6px; }
+.dh-card-flavor-hint {
+  font-family: var(--font-serif);
+  font-size: 11px; font-style: italic;
+  color: #a89e8c;
+}
+
+/* ── Flavor identities — each card wears its flavor's badge color ── */
+.dh-card-spicy  .dh-card-flavor { background: #c04b2f; }
+.dh-card-sweet  .dh-card-flavor { background: #c86ba3; }
+.dh-card-savory .dh-card-flavor { background: #6d7c3f; }
+.dh-card-rich   .dh-card-flavor { background: #6a4423; }
+.dh-card-light  .dh-card-flavor { background: #9fb880; color: #33302a; }
+.dh-card-earthy .dh-card-flavor { background: #8a6a3c; }
+.dh-card-smoky  .dh-card-flavor { background: #434041; }
+.dh-card-tangy  .dh-card-flavor { background: #c69823; color: #33302a; }
+
+/* ── Responsive — tighter fan on phones so 5 cards still fit on-screen ── */
+@media (max-width: 720px) {
+  .dh-card { width: 130px; min-height: 180px; margin: 0 -24px; padding: 10px; }
+  .dh-card-name { font-size: 13.5px; }
+  .dh-table { padding: 20px 0 24px; }
+}
+@media (max-width: 480px) {
+  .dh-card { width: 108px; min-height: 170px; margin: 0 -32px; padding: 9px; }
+  .dh-card-name { font-size: 12.5px; line-height: 1.15; }
+  .dh-card-meta { font-size: 10px; }
+  .dh-card-flavor-hint { font-size: 10px; }
+  .dh-deck { right: 2px; width: 48px; height: 64px; }
+  .dh-fan { min-height: 190px; }
+}
+
+/* Respect reduced-motion: no deal/shuffle animations, just a fade */
+@media (prefers-reduced-motion: reduce) {
+  .dh-card { transition: opacity .2s; }
+  .dh-table.is-dealing .dh-card,
+  .dh-table.is-shuffling .dh-card { animation: none; }
+  .dh-table.is-dealing .dh-card { animation: dh-fade 250ms both; animation-delay: calc(var(--i) * 40ms); }
+  @keyframes dh-fade { from { opacity: 0; } to { opacity: 1; } }
+}

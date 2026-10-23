@@ -9,6 +9,7 @@ import { getAnswers } from '../../lib/personalization/onboarding';
 import { quickPicks } from '../../lib/nova/pick';
 import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
 import { cleanTitle } from '../../lib/platform/native';
+import { loadFlavorProfile, recipeFlavors } from '../../lib/flavor/flavorProfile';
 import './RecipeCards.css';
 
 /* Recipes — the second of the five tabs. It opens on the four quadrants (solo or
@@ -28,14 +29,41 @@ const TABS = [
   { id: 'invent', label: 'Invent' },
 ];
 
+// Top flavor matching a recipe against the stored taste profile.
+function topFlavorMatch(recipe, profile) {
+  if (!profile || !Object.keys(profile).length) return null;
+  const flavors = recipeFlavors(recipe);
+  if (!flavors.length) return null;
+  return flavors
+    .map((f) => [f, profile[f] || 0])
+    .filter(([, v]) => v > 0)
+    .sort((a, b) => b[1] - a[1])[0]?.[0] || null;
+}
+
+// Cuisine affinity tag from onboarding answers.
+function cuisineTag(recipe, answers) {
+  const liked = Array.isArray(answers?.cuisine) ? answers.cuisine : [];
+  if (!liked.length) return null;
+  const rc = (recipe.cuisine || recipe.country || '').toLowerCase();
+  return rc && liked.includes(rc) ? rc : null;
+}
+
 function QuickPicks() {
   const navigate = useNavigate();
   const [recipes, setRecipes] = useState(null);
+
   useEffect(() => {
     let alive = true;
     loadRecipeBooks().then((l) => { if (alive) setRecipes(Array.isArray(l) ? l : []); }).catch(() => { if (alive) setRecipes([]); });
     return () => { alive = false; };
   }, []);
+
+  const profile  = useMemo(() => loadFlavorProfile(), []);
+  const answers  = useMemo(() => getAnswers(), []);
+  const hasProfile = Object.keys(profile).some((k) => (profile[k] || 0) > 0);
+  const hasCuisine = Array.isArray(answers?.cuisine) && answers.cuisine.length > 0;
+  const isPersonalized = hasProfile || hasCuisine;
+
   const picks = useMemo(() => (recipes ? quickPicks(recipes, { count: 3 }) : []), [recipes]);
   if (!picks.length) return null;
 
@@ -49,16 +77,25 @@ function QuickPicks() {
 
   return (
     <section className="rcq-quick" aria-label="Nova's quick picks">
-      <p className="rcq-kicker">Nova's quick picks</p>
+      <div className="rcq-kicker-line">
+        <p className="rcq-kicker">Nova's quick picks</p>
+        {isPersonalized && <span className="rcq-kicker-badge">For your taste</span>}
+      </div>
       <div className="rcq-quick-row">
-        {picks.map((r) => (
-          <button key={r.id || r.name} type="button" className="rcq-quick-card" onClick={() => open(r)}>
-            <span className="rcq-quick-name">{cleanTitle(r.name) || r.name}</span>
-            <span className="rcq-quick-meta">
-              {[`${r.total_time || r.time} min`, String(r.difficulty || '').toLowerCase(), r.cuisine].filter(Boolean).join(' · ')}
-            </span>
-          </button>
-        ))}
+        {picks.map((r) => {
+          const flavor  = topFlavorMatch(r, profile);
+          const cuisine = cuisineTag(r, answers);
+          const tag     = cuisine || flavor;
+          return (
+            <button key={r.id || r.name} type="button" className="rcq-quick-card" onClick={() => open(r)}>
+              <span className="rcq-quick-name">{cleanTitle(r.name) || r.name}</span>
+              <span className="rcq-quick-meta">
+                {[`${r.total_time || r.time} min`, String(r.difficulty || '').toLowerCase(), r.cuisine].filter(Boolean).join(' · ')}
+              </span>
+              {tag && <span className="rcq-quick-tag">{tag}</span>}
+            </button>
+          );
+        })}
       </div>
     </section>
   );

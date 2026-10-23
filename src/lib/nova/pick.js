@@ -144,6 +144,7 @@ export function loadNovaContext(now = new Date()) {
   const answers = getAnswers();
   const biofield = answers ? MorphogeneticField.fromAnswers(answers) : null;
   const pantry = loadPantry();
+  const likedCuisines = Array.isArray(answers?.cuisine) ? new Set(answers.cuisine.map((c) => c.toLowerCase())) : new Set();
   return {
     answers,
     biofield,
@@ -151,6 +152,7 @@ export function loadNovaContext(now = new Date()) {
     social: biofield ? SOCIAL_LABEL[biofield.social] || '' : '',
     lifeMode: activeLifeMode(now),
     profile: loadFlavorProfile(),
+    likedCuisines,
     signals: recentSignals(now.getTime()),
     pantry,
     expiring: expiringItems(pantry, { now, withinDays: 3 }).filter((e) => e.daysLeft >= -1),
@@ -206,6 +208,12 @@ function scoreOne(r, ctx, { window, mood, pickMeUp, today }) {
     .sort((a, b) => b[1] - a[1])[0];
   if (topFlavor && topFlavor[1] >= 12) why.taste = topFlavor[0];
 
+  // Cuisine affinity: lift dishes from cuisines the user said they love.
+  if (ctx.likedCuisines?.size) {
+    const rc = (r.cuisine || r.country || '').toLowerCase();
+    if (rc && ctx.likedCuisines.has(rc)) { score += 2.5; why.cuisine = rc; }
+  }
+
   // Pick-me-up: after a rough day, lean on the ingredients that help.
   const helpers = pickMeUpMatches(r, pickMeUp || mood);
   if (pickMeUp && helpers.length) { score += Math.min(3, helpers.length) * 2; why.helpers = helpers; }
@@ -255,13 +263,15 @@ export function pickForNow(recipes, { now = new Date(), mood = null, pickMeUp = 
   const moodLabel = MOOD_BY_ID[mood]?.label;
   const followLabel = MOOD_BY_ID[pickMeUp]?.label;
   // She has your welcome answers, but hasn't learned anything from what you do yet.
-  const knowsLittle = !Object.keys(context.profile).length && context.signals.cooked.size === 0;
+  const knowsLittle = !Object.keys(context.profile).length && context.signals.cooked.size === 0
+    && !context.likedCuisines?.size;
 
   let reason; let tone;
   if (pickMeUp && best.why.helpers) { reason = pickMeUpReason(followLabel, best.why.helpers); tone = 'pickmeup'; }
   else if (mood) { reason = becauseMood(mood, moodLabel); tone = 'mood'; }
   else if (best.why.usesUp) { reason = useItUpReason(best.why.usesUp); tone = 'pantry'; }
   else if (best.why.taste) { reason = tasteReason(best.why.taste); tone = 'taste'; }
+  else if (best.why.cuisine) { reason = windowReason(window.id); tone = 'window'; }
   else if (knowsLittle) { reason = NOVA_SAYS.pickIntro; tone = 'intro'; }
   else { reason = windowReason(window.id); tone = 'window'; }
 
@@ -281,10 +291,15 @@ export function quickPicks(recipes, { count = 3, now = new Date() } = {}) {
     const type = (r.recipe_type || '').toLowerCase();
     if (type === 'drink' || type === 'dessert') continue;
     const minutes = minutesOf(r);
-    if (!minutes || minutes > 30 || !isEasy(r)) continue;
+    // Allow up to 45 min so the pool is large enough for taste-scoring to matter;
+    // medium-difficulty recipes also qualify so cuisine/flavor signals can surface.
+    if (!minutes || minutes > 45) continue;
+    if (!/easy|medium/i.test(r.difficulty || 'easy')) continue;
     const key = keyOf(r);
     const fit = TYPE_FIT[window.id]?.[type] || 0;
-    let score = fit + (10 - minutes / 5) * 0.3 + tasteScore(recipeFlavors(r), ctx.profile) + jitter(`${today}:q:${key}`);
+    const rc = (r.cuisine || r.country || '').toLowerCase();
+    const cuisineBoost = ctx.likedCuisines?.size && rc && ctx.likedCuisines.has(rc) ? 1.5 : 0;
+    let score = fit + (10 - minutes / 5) * 0.3 + tasteScore(recipeFlavors(r), ctx.profile) + cuisineBoost + jitter(`${today}:q:${key}`);
     if (ctx.signals.cooked.has(key)) score -= 10;
     out.push({ recipe: r, score });
   }

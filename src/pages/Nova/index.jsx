@@ -1,20 +1,20 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import CheckIn from '../../components/nova/CheckIn';
-import PickCard from '../../components/nova/PickCard';
+import DealerHand from '../../components/nova/DealerHand';
 import HomeSearch from '../../components/nova/HomeSearch';
 import { FollowUpCard, ReflectCard } from '../../components/nova/ReturnCards';
 import RecallBar from '../../components/health/RecallBar';
 import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
-import { pickForNow, minutesAvailable } from '../../lib/nova/pick';
+import { minutesAvailable } from '../../lib/nova/pick';
 import { MOOD_BY_ID } from '../../lib/nova/kindnessProtocol';
 import { NOVA_SAYS, timeGreeting, checkedInLine, welcomeBack } from '../../lib/nova/voice';
 import {
   logCheckIn, logCheckInSkip, todaysCheckIn, skippedCheckInToday,
   pendingFollowUp, logFollowUp, pendingCookReflection, logReflection,
-  logPick, logSwap, logSave, markShown, lastCook, peekReturn, commitReturn,
+  logPick, logSave, markShown, lastCook, peekReturn, commitReturn,
 } from '../../lib/nova/thread';
-import { saveRecipe, isSaved } from '../../services/saveService';
+import { saveRecipe, getSavedRecipes } from '../../services/saveService';
 import { recordFlavorSignal } from '../../lib/flavor/flavorProfile';
 import { activeLifeMode } from '../../lib/personalization/lifeMode';
 import { prefetchRoute } from '../../app/routeLoaders';
@@ -29,9 +29,13 @@ import './NovaHome.css';
      a follow-up       (if you had a rough day last time) how are you now?
      "How'd it go?"    (if you cooked) how the last dish turned out
      the check-in      how are you feeling — calm, stressed, tired, happy, or skip
-     Nova's pick       one dish, and why she chose it
+     Nova's hand       five dishes dealt like a poker hand, one per flavor
      search            a dish, an ingredient, a cuisine — or a feeling
      the closing line  that's today
+
+   The hand replaced the single hero PickCard — the 8-flavor profile reads
+   more interestingly as a dealt hand than as one scored winner, and shuffling
+   is a fast feedback loop for the recommender.
 
    Everything she does is written to the thread (lib/nova/thread.js), which is
    also what makes the ♥ count of days you've come back. Everything else in the
@@ -57,10 +61,7 @@ function NovaHome() {
   const [reflect] = useState(() => pendingCookReflection());
   const [checkIn, setCheckIn] = useState(() => todaysCheckIn());
   const [skipped, setSkipped] = useState(() => skippedCheckInToday());
-  const [pickMeUp, setPickMeUp] = useState(null);
-  const [skipIds, setSkipIds] = useState([]);
-  const [note, setNote] = useState('');
-  const [, bump] = useState(0);
+  const [savedTick, setSavedTick] = useState(0);
 
   const [recipes, setRecipes] = useState(null);      // null while loading
   useEffect(() => {
@@ -79,11 +80,14 @@ function NovaHome() {
   }, []);
 
   const mood = checkIn?.mood || null;
-  const pick = useMemo(
-    () => (recipes ? pickForNow(recipes, { now, mood, pickMeUp, skipIds }) : null),
-    [recipes, now, mood, pickMeUp, skipIds],
+
+  // Each card's saved state comes from a Set rebuilt whenever savedTick bumps —
+  // same force-rerender pattern the old PickCard used, just surfaced to all
+  // five cards instead of one.
+  const savedKeys = useMemo(
+    () => new Set(getSavedRecipes().map(keyOf)),
+    [savedTick],
   );
-  useEffect(() => { if (pick) markShown(pick.recipe); }, [pick]);
 
   const findRecipe = useCallback((e) => (
     recipes?.find((r) => keyOf(r) === String(e.recipeId ?? e.name)) || recipes?.find((r) => r.name === e.name) || null
@@ -94,18 +98,15 @@ function NovaHome() {
   function handleCheckIn(id) {
     setCheckIn(logCheckIn(id));
     setSkipped(false);
-    setNote('');
   }
   function handleSkip() {
     logCheckInSkip();
     setCheckIn(null);
     setSkipped(true);
-    setNote('');
   }
   function handleFollowUp(answer) {
     logFollowUp(followUp.id, answer);
     setFollowUpDone(true);
-    if (answer === 'same' || answer === 'rough') setPickMeUp(followUp.mood);
   }
   function handleReflect(verdict) {
     const recipe = findRecipe(reflect);
@@ -114,31 +115,26 @@ function NovaHome() {
     if (verdict === 'loved') recordFlavorSignal(recipe, 'superlike');
     else if (verdict === 'no') { for (let i = 0; i < 3; i++) recordFlavorSignal(recipe, 'skip'); }
   }
-  function handleCook() {
-    if (!pick) return;
-    logPick(pick.recipe, pick.reason);
-    recordFlavorSignal(pick.recipe, 'view');
+
+  // Dealer hand — one of five dealt cards is picked.
+  function handleCardCook(recipe) {
+    if (!recipe) return;
+    logPick(recipe, 'dealt-hand');
+    recordFlavorSignal(recipe, 'view');
+    markShown(recipe);
     try {
-      sessionStorage.setItem('dig_in_full_recipe', JSON.stringify(pick.recipe));
+      sessionStorage.setItem('dig_in_full_recipe', JSON.stringify(recipe));
       sessionStorage.setItem('dig_in_full_recipe_adapt', 'null');
     } catch { /* ignore */ }
     navigate('/recipe');
   }
-  function handleSwap() {
-    if (!pick) return;
-    logSwap(pick.recipe);
-    recordFlavorSignal(pick.recipe, 'skip');
-    setSkipIds((ids) => [...ids, keyOf(pick.recipe)]);
-    setNote(NOVA_SAYS.swap);
-  }
-  function handleSave() {
-    if (!pick) return;
-    if (saveRecipe(pick.recipe)) {
-      logSave(pick.recipe);
-      recordFlavorSignal(pick.recipe, 'save');
+  function handleCardSave(recipe) {
+    if (!recipe) return;
+    if (saveRecipe(recipe)) {
+      logSave(recipe);
+      recordFlavorSignal(recipe, 'save');
     }
-    setNote(NOVA_SAYS.afterSave);
-    bump((n) => n + 1);
+    setSavedTick((n) => n + 1);
   }
 
   /* ── What she says ───────────────────────────────────────────────────── */
@@ -151,7 +147,6 @@ function NovaHome() {
   const novaLine = ret.isFirst ? NOVA_SAYS.firstVisit : ret.isNewDay ? welcomeBack(cook?.at) : '';
 
   const quiet = !!(lifeMode?.shape?.quiet || lifeMode?.shape?.noGamification);
-  const settled = !!mood || skipped;
 
   return (
     <div className="nh">
@@ -181,16 +176,12 @@ function NovaHome() {
         />
       )}
 
-      <PickCard
-        pick={pick}
+      <DealerHand
+        recipes={recipes}
         loading={recipes === null}
-        canSwap={settled}
-        saved={pick ? isSaved(pick.recipe) : false}
-        note={note}
-        onCook={handleCook}
-        onCookIntent={() => prefetchRoute('recipe')}
-        onSwap={handleSwap}
-        onSave={handleSave}
+        savedKeys={savedKeys}
+        onCook={(r) => { prefetchRoute('recipe'); handleCardCook(r); }}
+        onSave={handleCardSave}
       />
 
       <HomeSearch />

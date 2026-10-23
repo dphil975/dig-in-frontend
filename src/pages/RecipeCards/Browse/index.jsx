@@ -32,6 +32,8 @@ import { priceRecipe } from '../../../lib/tierBudget';
 import { getRecentlyShown, markShown } from '../../../lib/recentlyShown';
 import { cleanTitle, seoDescription } from '../../../lib/seo';
 import { pairingReason } from '../../../lib/flavorPairing';
+import { loadRecipeBooks } from '../../../lib/recipe/recipeBooks';
+import DishPixelPreview from '../../../components/recipe/DishPixelPreview';
 
 /* ── Constants & Helpers ─────────────────────────────────────── */
 const MEAL_KEYS = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts'];
@@ -481,13 +483,11 @@ export function RegionCard({ recipe, hits, savedRecipes, drinksData, onHit, onSa
         </div>
       </div>
 
-      {/* Image area — reserved space, shows a photo when available */}
+      {/* Image area — pixel art of the finished dish */}
       <div className="rcard-image">
-        {recipe.image && <img src={recipe.image} alt={recipe.name} loading="lazy"
-          onError={(e) => { e.target.style.display = 'none'; }} />}
-        <div className="rcard-image-ph" style={recipe.image ? { position: 'absolute', inset: 0 , zIndex: -1 } : undefined}>
-          {cuisine || 'DIG IN'}
-        </div>
+        {recipe.image
+          ? <DishPixelPreview recipe={recipe} />
+          : <div className="rcard-image-ph">{cuisine || 'DIG IN'}</div>}
       </div>
 
       {/* Body */}
@@ -911,6 +911,24 @@ export default function RecipeCards({ embedded = false, quadrant = null, filterE
         (data[bucket] = data[bucket] || []).push({ ...r, _region: resolveRegion(r.country, r.region) });
       }
     }
+
+    // Fold in recipes_full.json — a separate dataset that Nova home uses.
+    // Any recipe not already in the country files gets added to its correct
+    // meal bucket based on recipe_type.
+    const TYPE_BUCKET = { breakfast: 'breakfast', lunch: 'lunch', dinner: 'dinner', snack: 'snacks', dessert: 'desserts', drink: 'snacks', bread: 'snacks' };
+    try {
+      const full = await loadRecipeBooks();
+      if (data && full.length) {
+        const seen = new Set(MEALS.flatMap(m => (data[m.key] || []).map(r => (r.name || '').toLowerCase())));
+        for (const r of full) {
+          const key = (r.name || '').toLowerCase();
+          if (!key || seen.has(key)) continue;
+          seen.add(key);
+          const bucket = TYPE_BUCKET[r.recipe_type] || 'dinner';
+          (data[bucket] = data[bucket] || []).push({ ...r, _region: resolveRegion(r.country || r.cuisine, r.region) });
+        }
+      }
+    } catch { /* non-fatal — country files already loaded */ }
 
     setAllData(data);
 
