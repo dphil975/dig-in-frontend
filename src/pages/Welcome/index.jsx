@@ -7,9 +7,9 @@ import { LIFE_MODES } from '../../lib/personalization/lifeMode';
 import { useAuth } from '../../hooks/useAuth';
 import { markOnboarded, saveAnswers, applyAnswersToProfile } from '../../lib/personalization/onboarding';
 import { capturePhoto } from '../../lib/native';
-import { parseReceiptFull, guessLocation, guessSnap, guessWic } from '../../lib/pantry/pantryTools';
-import { FLAVORS, recordFlavorSignal } from '../../lib/flavor/flavorProfile';
-import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
+import { parseReceiptFull, guessLocation, guessSnap, guessWic } from '../../lib/pantryTools';
+import { FLAVORS, recordFlavorSignal } from '../../lib/flavorProfile';
+import { loadRecipeBooks } from '../../lib/recipeBooks';
 import './Welcome.css';
 
 /* Welcome — the signup "madlib". Each answer fills a blank in one sentence

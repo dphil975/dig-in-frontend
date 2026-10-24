@@ -29,7 +29,7 @@ const HIGH_RX = /listeria|salmonella|\be\.?\s?coli\b|botulism|botulinum|clostrid
 const MED_RX = /mislabel|mold|spoil|temperature|packaging|leak|quality|processed|inspect|unfit|decompos|off.?odor|discolor|swollen|bloat|misbranded/i;
 
 // Non-food filter: drop pharma/device/cosmetic recalls
-const NONFOOD_RX = /injection|infusion|\bUSP\b|\btablets?\b|\bcapsules?\b|\bmg\s*\/\s*ml\b|sterile|ophthalmic|nasal spray|dextrose|catheter|syringe|implant|\bdevice\b|pharmaceutical(?!.*food)|\beye drops?\b|insulin|vaccine|antibiotic|ointment|suppository|inhal(?:er|ation)|transdermal|topical cream/i;
+const NONFOOD_RX = /injection|infusion|\bUSP\b|\btablets?\b|\bcapsules?\b|\bmg\s*\/\s*ml\b|sterile|ophthalmic|nasal spray|dextrose|catheter|syringe|implant|\bdevice\b|pharmaceutical(?!.*food)|\beye drops?\b|insulin|vaccine|antibiotic|ointment|suppository|go(?:er|ation)|transdermal|topical cream/i;
 
 // ── Food categories ──────────────────────────────────────────────────────────
 const CATEGORY_MAP = [

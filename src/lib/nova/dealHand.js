@@ -9,7 +9,7 @@
    per flavor, no duplicates, and a deterministic seed so React re-renders
    don't re-deal mid-animation. */
 
-import { FLAVORS, recipeFlavors, loadFlavorProfile } from '../flavor/flavorProfile';
+import { FLAVORS, recipeFlavors, loadFlavorProfile } from '../flavorProfile';
 import { getAnswers } from '../personalization/onboarding';
 import { currentMealWindow } from '../recipe/mealWindows';
 

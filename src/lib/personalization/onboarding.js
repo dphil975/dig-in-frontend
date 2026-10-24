@@ -17,8 +17,8 @@
    All localStorage; nothing here calls a server. */
 
 import { LIFE_MODES, setLifeMode } from './lifeMode';
-import { guessLocation, guessSnap, guessWic } from '../pantry/pantryTools';
-import { seedFlavorProfile } from '../flavor/flavorProfile';
+import { guessLocation, guessSnap, guessWic } from '../pantryTools';
+import { seedFlavorProfile } from '../flavorProfile';
 
 const K_NEEDS = 'dig_in_needs_onboarding';   // '1' once a sign-up was submitted here
 const K_DONE = 'dig_in_onboarded';           // legacy boolean Home / Welcome already use

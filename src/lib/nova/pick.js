@@ -14,7 +14,7 @@
    eventually; the home screen only calls pickForNow() and renders the answer. */
 
 import { currentMealWindow } from '../recipe/mealWindows';
-import { recipeFlavors, loadFlavorProfile } from '../flavor/flavorProfile';
+import { recipeFlavors, loadFlavorProfile } from '../flavorProfile';
 import { MorphogeneticField, checkRecipeRecalls } from '../recipe/starterEngine';
 import { flaggedAllergensInRecipe } from '../health/allergyProfile';
 import { activeLifeMode } from '../personalization/lifeMode';

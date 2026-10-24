@@ -7,7 +7,7 @@
    is trying to spark joy around what the user is capable of, not sell them
    something. */
 
-import { recipeFlavors, FLAVORS } from '../flavor/flavorProfile';
+import { recipeFlavors, FLAVORS } from '../flavorProfile';
 
 // ── Geometry Engine ────────────────────────────────────────────
 // Each recipe gets a geometric signature based on its properties.

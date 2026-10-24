@@ -7,9 +7,9 @@ import SpendPlanner from '../../components/pantry/SpendPlanner';
 import { QUADRANTS } from '../../lib/recipe/quadrants';
 import { getAnswers } from '../../lib/personalization/onboarding';
 import { quickPicks } from '../../lib/nova/pick';
-import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
+import { loadRecipeBooks } from '../../lib/recipeBooks';
 import { cleanTitle } from '../../lib/platform/native';
-import { loadFlavorProfile, recipeFlavors } from '../../lib/flavor/flavorProfile';
+import { loadFlavorProfile, recipeFlavors } from '../../lib/flavorProfile';
 import './RecipeCards.css';
 
 /* Recipes — the second of the five tabs. It opens on the four quadrants (solo or

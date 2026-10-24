@@ -12,7 +12,7 @@
    now just re-export from here so existing imports keep working.
    ════════════════════════════════════════════════════════════ */
 
-import { flavorsInText, recipeFlavors, recordFlavorSignal } from './flavorProfile';
+import { flavorsInText, recipeFlavors, recordFlavorSignal } from '../flavorProfile';
 import { cravingInsight } from '../pregnancyGuide';
 import { placeMealSlot } from '../mealPlanEngine';
 

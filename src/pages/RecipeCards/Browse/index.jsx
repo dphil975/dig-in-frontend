@@ -32,7 +32,7 @@ import { priceRecipe } from '../../../lib/tierBudget';
 import { getRecentlyShown, markShown } from '../../../lib/recentlyShown';
 import { cleanTitle, seoDescription } from '../../../lib/seo';
 import { pairingReason } from '../../../lib/flavorPairing';
-import { loadRecipeBooks } from '../../../lib/recipe/recipeBooks';
+import { loadRecipeBooks } from '../../../lib/recipeBooks';
 import DishPixelPreview from '../../../components/recipe/DishPixelPreview';
 
 /* ── Constants & Helpers ─────────────────────────────────────── */

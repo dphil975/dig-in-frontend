@@ -11,7 +11,7 @@
    re-export from here so existing imports keep working.
    ════════════════════════════════════════════════════════════ */
 
-import { loadFlavorProfile } from './flavorProfile';
+import { loadFlavorProfile } from '../flavorProfile';
 
 /* ────────────────────────────────────────────────────────────
    From mealMood.js

@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Section from './Section';
 import { DENSE_METROS, metroForZip } from '../../lib/maps/metros';
-import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
+import { loadRecipeBooks } from '../../lib/recipeBooks';
 
 /* Discover → Places — get out of your area (and back into it). One featured
    city at a time (a different one each day, or whichever you tap), what it eats,

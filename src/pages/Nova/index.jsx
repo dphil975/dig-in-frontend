@@ -5,7 +5,7 @@ import DealerHand from '../../components/nova/DealerHand';
 import HomeSearch from '../../components/nova/HomeSearch';
 import { FollowUpCard, ReflectCard } from '../../components/nova/ReturnCards';
 import RecallBar from '../../components/health/RecallBar';
-import { loadRecipeBooks } from '../../lib/recipe/recipeBooks';
+import { loadRecipeBooks } from '../../lib/recipeBooks';
 import { minutesAvailable } from '../../lib/nova/pick';
 import { MOOD_BY_ID } from '../../lib/nova/kindnessProtocol';
 import { NOVA_SAYS, timeGreeting, checkedInLine, welcomeBack } from '../../lib/nova/voice';
@@ -15,7 +15,7 @@ import {
   logPick, logSave, markShown, lastCook, peekReturn, commitReturn,
 } from '../../lib/nova/thread';
 import { saveRecipe, getSavedRecipes } from '../../services/saveService';
-import { recordFlavorSignal } from '../../lib/flavor/flavorProfile';
+import { recordFlavorSignal } from '../../lib/flavorProfile';
 import { activeLifeMode } from '../../lib/personalization/lifeMode';
 import { prefetchRoute } from '../../app/routeLoaders';
 import './NovaHome.css';
