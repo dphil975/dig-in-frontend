@@ -130,8 +130,9 @@ export function preprocessForOcr(canvas, contrast = 1.5) {
 // and works offline. If they're ever missing we retry against the default CDN.
 export const OCR_LOCAL = {
   workerPath: '/tesseract/worker.min.js',
-  // Directory (not a specific file) so Tesseract's own SIMD/relaxed-SIMD feature
-  // detection picks the matching core — all three LSTM variants are vendored.
-  corePath: '/tesseract/core',
+  // Pinned to the WebAssembly-SIMD core (broadly supported since 2021) so we
+  // only ship one 3.7 MB variant instead of all three LSTM builds. Older
+  // browsers without SIMD fall through to the default CDN retry below.
+  corePath: '/tesseract/core/tesseract-core-simd-lstm.wasm.js',
   langPath: '/tesseract/lang',
 };
