@@ -35,125 +35,12 @@ import { pairingReason } from '../../../lib/flavorPairing';
 import { loadRecipeBooks } from '../../../lib/recipeBooks';
 import DishPixelPreview from '../../../components/recipe/DishPixelPreview';
 
-/* ── Constants & Helpers ─────────────────────────────────────── */
-const MEAL_KEYS = ['breakfast', 'lunch', 'dinner', 'snacks', 'desserts'];
-
-const MEALS = [
-  { key: 'breakfast', label: 'Breakfast', emoji: 'BREAKFAST' },
-  { key: 'lunch',     label: 'Lunch',     emoji: 'LUNCH' },
-  { key: 'snacks',    label: 'Snacks',    emoji: 'SNACKS' },
-  { key: 'dinner',    label: 'Dinner',    emoji: 'DINNER' },
-  { key: 'desserts',  label: 'Dessert',   emoji: 'DESSERT' },
-];
-
-function normalizeRecipeFile(raw) {
-  const nested = Object.values(raw)[0];
-  return (nested && typeof nested === 'object' && !Array.isArray(nested) && MEAL_KEYS.some(k => k in nested))
-    ? nested
-    : raw;
-}
-
-const EMOJI_MAP = {
-  pasta: 'PASTA', soup: 'SOUP', stew: 'STEW', rice: 'RICE', bread: 'BREAD',
-  cake: 'CAKE', cookie: 'COOKIE', pie: 'PIE', salad: 'SALAD',
-  chicken: 'CHICKEN', beef: 'BEEF', fish: 'FISH', shrimp: 'SHRIMP',
-  curry: 'CURRY', noodle: 'NOODLE', ramen: 'RAMEN', taco: 'TACO',
-  burger: 'BURGER', sandwich: 'SANDWICH', default: 'DEFAULT'
-};
-
-const FLAVOR_DRINK = {
-  spicy:  ['cooling','refreshing','milk-based','fruity','sweet'],
-  sweet:  ['bitter','coffee','tea','light','floral'],
-  savory: ['acidic','sparkling','light','citrus'],
-  rich:   ['acidic','sparkling','bitter','coffee'],
-  light:  ['floral','tea','citrus','sparkling'],
-  earthy: ['coffee','roasted','tea','spiced'],
-  smoky:  ['bold','roasted','malty'],
-  tangy:  ['sweet','fruity','sparkling'],
-};
-
-const STAGE_LABELS = ['PREP', 'BUILDING', 'COOKING', 'FINISHING', 'PLATING'];
-
-// Tag every recipe with its file's country + region, and keep meal buckets
-// separate (snacks ≠ desserts). Region is resolved to one of 8 canonical ids.
-function tagAndMerge(fileObjects) {
-  const merged = { breakfast: [], lunch: [], dinner: [], snacks: [], desserts: [] };
-  for (const top of fileObjects) {
-    if (!top) continue;
-    const country = top.country || '';
-    const region  = top.region  || '';
-    const _region = resolveRegion(country, region);
-    const tag = (arr, bucket) =>
-      (arr || []).forEach(r => merged[bucket].push({ ...r, country, region, _region }));
-    tag(top.breakfast, 'breakfast');
-    tag(top.lunch,     'lunch');
-    tag(top.dinner,    'dinner');
-    tag(top.snacks,    'snacks');
-    tag(top.desserts,  'desserts');
-  }
-  return merged;
-}
-
-function hasRecipes(d) {
-  return d && MEAL_KEYS.some(k => (d[k] || []).length > 0);
-}
-
-function getEmoji(recipe) {
-  const text = ((recipe.name || '') + ' ' + (recipe.cuisine || '')).toLowerCase();
-  for (const [k, v] of Object.entries(EMOJI_MAP)) {
-    if (k !== 'default' && text.includes(k)) return v;
-  }
-  return EMOJI_MAP.default;
-}
-
-// Scores a drink against a recipe using every signal the menu data actually
-// carries — not just a flavor-tag/description keyword match. `pairsWith`
-// (cuisines/mealTypes/flavorContrast/mood) sits on every drink in
-// cafe-menu.json and `pairingRules.cuisineTodrinkStyle` sits at the
-// top of that same file; both used to be dead data. Wiring them in is what
-// makes this "know what flavors pair well together" instead of "know one
-// coffee shop's tag list."
-function scoreDrink(drink, recipe, flavors, seed, pairingRules) {
-  const tags = (drink.pairingTags || drink.flavorProfile || []).map(t => t.toLowerCase());
-  const desc = (drink.description || '').toLowerCase();
-  const pairsWith = drink.pairsWith || {};
-  const cuisine = (recipe?.country || recipe?.cuisine || '').toLowerCase();
-  let score = 0;
-
-  // Broad flavor-category match (spicy → cooling/refreshing drinks, etc.)
-  flavors.forEach(f => {
-    (FLAVOR_DRINK[f] || []).forEach(t => { if (tags.includes(t) || desc.includes(t)) score += 2; });
-  });
-
-  // This drink explicitly lists the recipe's cuisine as a pairing
-  if (cuisine && (pairsWith.cuisines || []).map(c => c.toLowerCase()).includes(cuisine)) score += 4;
-
-  // The recipe's cuisine calls for this drink's style (coffee/tea/matcha/...)
-  const styleMatches = pairingRules?.cuisineTodrinkStyle?.[cuisine] || [];
-  if (styleMatches.some(s => (drink.categories || []).includes(s))) score += 3;
-
-  // This drink is designed to cut through a flavor quality the recipe has
-  (pairsWith.flavorContrast || []).forEach(c => { if (flavors.includes(c)) score += 2; });
-
-  score += (seed * 7 + (drink.name.charCodeAt(0) || 0)) % 5 * 0.1;
-  return score;
-}
-
-function generateDrinkSteps(drink) {
-  const name = drink.name.toLowerCase();
-  const isIced = drink.temperature === 'cold' || name.includes('iced') || name.includes('cold');
-  const isEspresso = name.includes('espresso') || name.includes('americano') || name.includes('latte') || name.includes('cappuccino');
-  const isTea = name.includes('tea') || name.includes('matcha') || name.includes('chai');
-  const isJuice = name.includes('juice') || name.includes('smoothie');
-  const isChocolate = name.includes('chocolate') || name.includes('mocha') || name.includes('cocoa');
-  if (isEspresso && !isIced) return ['Pull a fresh espresso shot, about 25–30 seconds.', 'Steam milk to 65°C with silky microfoam.', `Combine in the correct ratio for a ${drink.name}.`, 'Serve immediately while hot.'];
-  if (isEspresso && isIced) return ['Pull 1–2 espresso shots and cool for 1 minute.', 'Fill a glass with ice.', 'Pour espresso over ice.', name.includes('latte') ? 'Add cold milk to taste.' : 'Add cold water or milk and serve.'];
-  if (isTea) return ['Heat water to the correct temperature.', `Steep ${drink.name} for 2–4 minutes.`, isIced ? 'Pour over ice and sweeten if desired.' : 'Remove tea and serve hot.'];
-  if (isJuice) return ['Gather and wash ingredients.', 'Juice or blend until smooth.', 'Strain if desired, pour over ice.', 'Serve immediately.'];
-  if (isChocolate) return ['Heat milk until steaming.', 'Whisk in cocoa powder or melted chocolate.', 'Sweeten to taste.', 'Top with whipped cream and serve.'];
-  return [`Prepare all ingredients for ${drink.name}.`, 'Combine in the correct proportions.', 'Stir or shake gently.', 'Serve at the appropriate temperature.'];
-}
-
+/* ── Constants & Helpers ─ moved to ./helpers.js ───────────── */
+import {
+  MEAL_KEYS, MEALS, EMOJI_MAP, FLAVOR_DRINK, STAGE_LABELS,
+  normalizeRecipeFile, tagAndMerge, hasRecipes, getEmoji,
+  scoreDrink, generateDrinkSteps,
+} from './helpers';
 /* ── StepItem ───────────────────────────────────────────────── */
 function StepItem({ step, index }) {
   const [done, setDone] = useState(false);
@@ -616,126 +503,13 @@ function Reel({ meal, recipes, total = 0, onShuffle, onExpandAll, cardProps }) {
   );
 }
 
-/* ── Filtering (time / craving / soup / cuisine / dietary) ───── */
-const TIME_OPTIONS = [
-  { key: '15', label: '≤15 MIN' },
-  { key: '30', label: '≤30 MIN' },
-  { key: '60', label: '60+ MIN' },
-];
-const CRAVING_OPTIONS = FLAVORS; // the shared 8-flavor vocabulary (see lib/flavorProfile)
-const DIET_OPTIONS = ['vegan', 'vegetarian', 'gluten-free', 'dairy-free', 'nut-free'];
-const DIFFICULTY_OPTIONS = ['easy', 'medium', 'hard'];
-const PREP_OPTIONS = [
-  { key: 'quick',  label: 'QUICK ≤20' },
-  { key: 'normal', label: 'NORMAL 20–45' },
-  { key: 'long',   label: 'LONG 45+' },
-];
-// Prep-time bucket — uses prepTime when available, else falls back to total time.
-function prepBucket(r) {
-  const p = r.prepTime || totalTimeOf(r);
-  if (!p) return null;
-  if (p <= 20) return 'quick';
-  if (p <= 45) return 'normal';
-  return 'long';
-}
-
-// Ingredients that disqualify a recipe from each diet/allergy tag.
-const DIET_EXCLUDE = {
-  'vegan':       ['butter','milk','cream','cheese','egg','honey','gelatin','pork','chicken','beef','fish','lamb','turkey','lard','meat','tuna','salmon','shrimp','bacon','ham','yogurt','dashi','bonito','mayo'],
-  'vegetarian':  ['pork','chicken','beef','fish','lamb','turkey','gelatin','lard','meat','tuna','salmon','shrimp','anchovy','bacon','ham','dashi','bonito'],
-  'gluten-free': ['flour','spaghetti','pasta','wheat','barley','rye','breadcrumb','panko','couscous','noodle','udon','ramen','orzo','bread','soy sauce'],
-  'dairy-free':  ['butter','milk','cream','cheese','yogurt','mayo'],
-  'nut-free':    ['almond','peanut','cashew','walnut','pecan','hazelnut','pistachio'],
-};
-// "Budget Friendly" (Home's Discover Highlights carousel) — a real cost
-// filter, not a vibe: under $2/serving at the budget tier's store/brand
-// routing (tierBudget.js's priceRecipe). Validated against the real
-// 575-recipe corpus before picking $2 — 59.5% qualify, a real filter, not
-// "everything is budget friendly."
-const BUDGET_THRESHOLD = 2.00;
-function isBudgetFriendly(recipe) {
-  const lines = (recipe.ingredients || []).map(i => (typeof i === 'object' ? (i.text || i.name || '') : i)).filter(Boolean);
-  if (!lines.length) return false;
-  return priceRecipe(lines, recipe, 'budget').perServing <= BUDGET_THRESHOLD;
-}
-
-/* "What can you spend?" — the single, merged budget interface. It used to
-   live on Home twice (a preset widget AND SmartFinder's second ZIP slider);
-   in the Tumblr rebuild it moved here to Cook, where money is the actual
-   question, as ONE control. Costed per serving at budget-tier stores/brands
-   via the same priceRecipe engine, memoized because the grid re-filters on
-   every keystroke and priceRecipe walks the whole ingredient list. */
-const SPEND_PRESETS = [3, 5, 8, 12];
-const _spendCache = new Map();
-function perServingCost(recipe) {
-  const key = recipe?.id || recipe?.name;
-  if (key && _spendCache.has(key)) return _spendCache.get(key);
-  const lines = (recipe?.ingredients || []).map(i => (typeof i === 'object' ? (i.text || i.name || '') : i)).filter(Boolean);
-  // No ingredients means we can't honestly price it — never claim it fits.
-  const cost = lines.length ? priceRecipe(lines, recipe, 'budget').perServing : Infinity;
-  if (key) _spendCache.set(key, cost);
-  return cost;
-}
-
-// "Boy Dinner" — dinner-type, easy, high-protein (reuses wellnessGoals.js's
-// existing nutrient-tag rule rather than a second protein keyword list).
-function isBoyDinner(recipe) {
-  const type = (recipe.recipe_type || '').toLowerCase();
-  if (type !== 'dinner' && type !== 'lunch') return false;
-  if ((recipe.difficulty || '').toLowerCase() === 'hard') return false;
-  return nutrientTags(recipe.ingredients).some(t => t.id === 'high-protein');
-}
-
-// "Bread" — not one of RecipeCards' 5 meal buckets (breakfast/lunch/dinner/
-// snacks/desserts derive from each country file's own top-level arrays, and
-// none of them is "bread"), so this is a keyword/recipe_type match over the
-// full flattened pool instead of a 6th permanent tab — see activeMeal
-// handling in fullList below.
-const BREAD_KEYWORDS = /\bbread\b|\bbun\b|\bbaguette\b|\bfocaccia\b|\bbiscuit\b|\bbagel\b|\bchallah\b|\bbrioche\b|\bnaan\b|flatbread|\bpita\b|\broll\b/i;
-function isBreadRecipe(recipe) {
-  if ((recipe.recipe_type || '').toLowerCase() === 'bread') return true;
-  return BREAD_KEYWORDS.test(recipe.name || '');
-}
-
-function getDietTags(recipe) {
-  const text = (recipe.ingredients || [])
-    .map(i => (typeof i === 'object' ? (i.text || i.name || '') : i)).join(' ').toLowerCase();
-  if (!text.trim()) return [];   // unknown ingredients → make no diet claims
-  return Object.entries(DIET_EXCLUDE)
-    .filter(([, excl]) => !excl.some(k => text.includes(k)))
-    .map(([tag]) => tag);
-}
-
-function matchesFilters(r, f) {
-  if (f.time) {
-    const t = totalTimeOf(r);
-    if (f.time === '15' && !(t > 0 && t <= 15)) return false;
-    if (f.time === '30' && !(t > 0 && t <= 30)) return false;
-    if (f.time === '60' && !(t >= 60)) return false;
-  }
-  if (f.soup) {
-    const txt = ((r.name || '') + ' ' + (r.recipe_type || '') + ' ' + (r.mealType || '')).toLowerCase();
-    if (!/soup|stew|broth|chowder|bisque/.test(txt)) return false;
-  }
-  if (f.craving.size) {
-    const flavors = recipeFlavors(r);
-    if (![...f.craving].some(c => flavors.includes(c))) return false;
-  }
-  if (f.cuisine.size && !f.cuisine.has((r.country || r.cuisine || '').toLowerCase())) return false;
-  if (f.source && f.source.size && !f.source.has((r.source || '').toLowerCase())) return false;
-  if (f.difficulty && f.difficulty.size && !f.difficulty.has((r.difficulty || '').toLowerCase())) return false;
-  if (f.prep && prepBucket(r) !== f.prep) return false;
-  if (f.diet.size) {
-    const tags = getDietTags(r);
-    if (![...f.diet].every(d => tags.includes(d))) return false;
-  }
-  if (f.gutFriendly && !gutProfile(r.ingredients)?.isGutFriendly) return false;
-  if (f.budgetOnly && !isBudgetFriendly(r)) return false;
-  if (f.maxSpend != null && perServingCost(r) > f.maxSpend) return false;
-  if (f.highProteinEasy && !isBoyDinner(r)) return false;
-  return true;
-}
-
+/* ── Filtering ─ moved to ./filters.js ─────────────────────── */
+import {
+  TIME_OPTIONS, CRAVING_OPTIONS, DIET_OPTIONS, DIFFICULTY_OPTIONS,
+  PREP_OPTIONS, DIET_EXCLUDE, BUDGET_THRESHOLD, SPEND_PRESETS,
+  BREAD_KEYWORDS, prepBucket, isBudgetFriendly, perServingCost,
+  isBoyDinner, isBreadRecipe, getDietTags, matchesFilters,
+} from './filters';
 /* ── Main RecipeCards page ──────────────────────────────────── */
 export default function RecipeCards({ embedded = false, quadrant = null, filterExtras = null } = {}) {
   const [allData, setAllData]           = useState(null);
