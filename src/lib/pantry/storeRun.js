@@ -12,7 +12,7 @@
    ever referenced either one directly (both were private). */
 
 import { awardBadge } from '../cookAchievements';
-import { categorizeShelf } from '../pantryTools';
+import { categorizeShelf } from '../pantryCategories';
 
 // ════════════════════════════════════════════════════════════════════════
 // From groceryCategories.js
