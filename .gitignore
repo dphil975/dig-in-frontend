@@ -3,9 +3,11 @@ dist/
 .env
 .DS_Store
 
-# Local-only safety copies (not for history)
-_archive/**/*.tgz
-_archive/retired/copyright-removed/
+# Local-only backup of retired / "come back later" code.
+# Keep the folder on your disk, but don't ship it to GitHub.
+# Past archived content is still reachable via `git log`/`git show` from
+# before this directory was untracked.
+_archive/
 
 # Test runner artifacts
 test-results/
