@@ -8,13 +8,13 @@
      - ingredientText now comes from '../../components/recipe/RecipeBoostSections'
      - priceRecipe now comes from './budgetTarget' (tierBudget.js, which used
        to hold priceRecipe, was merged into src/lib/pantry/budgetTarget.js)
-     - BASE_ITEMS/REGIONS/buildFusion now come from '../fusionEngine'
+     - BASE_ITEMS/REGIONS/buildFusion now come from '../recipeAlchemist'
        (fusionEngine.js itself was not part of this consolidation and stays
        in the flat src/lib/ directory). */
 
 import { ingredientText } from '../../components/recipe/RecipeBoostSections';
 import { priceRecipe } from './budgetTarget';
-import { BASE_ITEMS, REGIONS, buildFusion } from '../fusionEngine';
+import { BASE_ITEMS, REGIONS, buildFusion } from '../recipeAlchemist';
 
 // ════════════════════════════════════════════════════════════════════════
 // From freshness.js

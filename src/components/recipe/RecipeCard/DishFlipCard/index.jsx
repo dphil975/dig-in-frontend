@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { rateJournalEntry } from '../../../../lib/journalApi';
-import { diffIngredientList, toolSwapList, diffSummary } from '../../../../lib/recipeDiff';
+import { diffIngredientList, toolSwapList, diffSummary } from '../../../../lib/recipeTransform';
 import { classifyLift } from '../../../../lib/liftSignal';
 import { recordHelp, tagKindness } from '../../../../lib/happinessEngine';
 import './DishFlipCard.css';

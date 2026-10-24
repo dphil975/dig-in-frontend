@@ -18,7 +18,7 @@ import { RECIPES_STATIC, RECIPE_INGREDIENTS } from '../../data/recipesStatic';
 import { priceRecipe, getUserTier } from '../tierBudget';
 import { REGIONS, REGION_BY_ID, resolveRegion } from '../regions';
 import { bonusRecipesFromList } from '../pantryTools';
-import { scaleIngredientsToServings } from '../recipeScale';
+import { scaleIngredientsToServings } from '../recipeTransform';
 import { getCookHistory } from '../../services/saveService';
 
 // Cuisine label for a recipe — prefers the real region system (via country/

@@ -55,7 +55,7 @@ export function clearTimer(recipeId) {
    components own rendering" split) — the page component is responsible for
    actually firing a Notification when a timer completes, reusing the same
    Notification.requestPermission() / new Notification() pattern already
-   used by the retired Nudges page (_archive/frontend-retired/pages/Nudges).
+   used by the retired Nudges page (_archive/retired/frontend-retired/pages/Nudges).
    ════════════════════════════════════════════════════════════════════════ */
 
 const PREP_KEY = 'dig_in_prep_timers';

@@ -3,7 +3,7 @@ import { capturePhoto } from '../../../../lib/native';
 import { loadRecipeBooks } from '../../../../lib/recipeBooks';
 import { createJournalEntry } from '../../../../lib/journalApi';
 import { useAuth } from '../../../../hooks/useAuth';
-import { makeChange, isCompleteChange, computeDiff, describeChange } from '../../../../lib/recipeDiff';
+import { makeChange, isCompleteChange, computeDiff, describeChange } from '../../../../lib/recipeTransform';
 import './DishSubmissionModal.css';
 
 /* The "put this dish in front of the community" moment. Shared by both entry

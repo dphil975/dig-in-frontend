@@ -9,7 +9,7 @@ import './Community.css';
 
 /* Community hub — SocialFeed (curated card carousel of dish posts) and the
    tags you follow, behind one tab bar. The Reels tab was cut (its code is in
-   _archive/frontend-retired); /reels now lands here.
+   _archive/retired/frontend-retired); /reels now lands here.
 
    YOUR COMMUNITIES (2026-07-30): the hashtags you follow ARE your communities.
    Opening Community leads with them — tap one and it takes you to that tag's

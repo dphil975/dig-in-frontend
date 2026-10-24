@@ -21,7 +21,7 @@ export default function SmartPrepping() {
 
   // Fire a real Notification for any timer that's newly done — same
   // Notification.requestPermission()/new Notification() pattern already used
-  // by the retired Nudges page (_archive/frontend-retired/pages/Nudges).
+  // by the retired Nudges page (_archive/retired/frontend-retired/pages/Nudges).
   // Needs the tab open; no background push.
   // No dependency array on purpose: isDone() is computed against Date.now()
   // each call, not stored in state, so this needs to re-check on every render

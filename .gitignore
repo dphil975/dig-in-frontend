@@ -4,8 +4,8 @@ dist/
 .DS_Store
 
 # Local-only safety copies (not for history)
-_archive/*.tgz
-_archive/copyright-removed/
+_archive/**/*.tgz
+_archive/retired/copyright-removed/
 
 # Test runner artifacts
 test-results/
