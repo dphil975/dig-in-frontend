@@ -10,8 +10,8 @@ PWA.
 The app opens on **Nova**, a cooking companion whose job is to learn what you
 like, pick the right recipe, and be there when you return. A new account signs
 up, answers a short fill-in-the-blank about what they're looking for, and Nova
-takes it from there. Everything else is four tabs away: Recipes, Discover,
-Profile, Settings.
+takes it from there. Everything else is four tabs away' Recipes, Discover,
+Profile, Settings.'
 
 ## Run it locally
 
