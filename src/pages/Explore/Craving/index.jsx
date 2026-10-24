@@ -12,8 +12,8 @@ import './Craving.css';
    learned flavor profile) behind one Nav and a tab bar. Chaos Night (pantry-
    only, time-boxed picks) was absorbed in as a 4th tab in a prior pass, then
    cut entirely — it was answering the same indecision question as the other
-   three with nothing distinct of its own; /chaos-night now redirects to this
-   hub instead (see App.jsx). Tracker moved here from HealthProfile — it's
+   three with nothing distinct of its own (the old /chaos-night URL used to
+   land here; retired now). Tracker moved here from HealthProfile — it's
    about flavor personalization, not an allergy/wellness concern. All
    children keep 100% of their own logic; `embedded` just tells them to skip
    their own Nav/back-button chrome. Canonical URL is /cravings; /craving and

@@ -40,11 +40,10 @@ export default function AppRouter() {
       <Route path="/welcome"        element={<Welcome />} />
 
       {/* Nova — the home screen. /nova is the same place; /nest is the quiet
-          "sit with Nova" space; /recess is the retired daily ritual. */}
+          "sit with Nova" space. */}
       <Route path="/"               element={<Nova />} />
       <Route path="/nova"           element={<Navigate to="/" replace />} />
       <Route path="/nest"           element={<Nest />} />
-      <Route path="/recess"         element={<Navigate to="/" replace />} />
 
       {/* Recipes */}
       <Route path="/recipes"        element={<RecipeCards />} />
@@ -70,7 +69,6 @@ export default function AppRouter() {
       <Route path="/craving"         element={<Craving />} />
       <Route path="/craving-compass" element={<Craving defaultTab="compass" />} />
       <Route path="/cravings"        element={<Craving defaultTab="tracker" />} />
-      <Route path="/chaos-night"     element={<Navigate to="/cravings" replace />} />
       <Route path="/kitchen-skills"  element={<KitchenSkills />} />
       <Route path="/kitchen-skills/hydration"  element={<KitchenSkills defaultTab="hydration" />} />
       <Route path="/kitchen-skills/condiments" element={<KitchenSkills defaultTab="condiments" />} />
@@ -78,7 +76,6 @@ export default function AppRouter() {
       <Route path="/copycat"         element={<Navigate to="/kitchen-skills" replace />} />
       <Route path="/drink-scan"      element={<Navigate to="/zero-proof" replace />} />
       <Route path="/nibblers"        element={<Nibblers />} />
-      <Route path="/girl-dinner"     element={<Navigate to="/nibblers" replace />} />
       <Route path="/out-there"       element={<OutThere />} />
       <Route path="/occasions"       element={<OutThere defaultTab="occasions" />} />
       <Route path="/checkin"         element={<OutThere defaultTab="checkin" />} />
@@ -101,7 +98,6 @@ export default function AppRouter() {
       <Route path="/feed"            element={<Community />} />
       <Route path="/social"          element={<Community defaultTab="posts" />} />
       <Route path="/reels"           element={<Navigate to="/feed" replace />} />
-      <Route path="/reels/create"    element={<Navigate to="/feed" replace />} />
       <Route path="/tag/:name"       element={<TagHub />} />
 
       {/* Profile hub — Thread · Collection · Coins · Pantry · Trophies (+ hidden Gratitude) */}

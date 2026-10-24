@@ -23,8 +23,8 @@ export const RECIPE_PATHS = [
 
 export const DISCOVER_PATHS = [
   '/explore', '/discover', '/global-food', '/deals',
-  '/craving', '/craving-compass', '/cravings', '/chaos-night',
-  '/nibblers', '/girl-dinner',
+  '/craving', '/craving-compass', '/cravings',
+  '/nibblers',
   '/out-there', '/occasions', '/checkin', '/circles', '/table',
   '/commute', '/grocery-commute', '/city-explorer', '/stores/chicago', '/stores/texas',
   '/kitchen-skills', '/kitchen-skills/hydration', '/kitchen-skills/condiments',
