@@ -55,13 +55,12 @@ src/            the app; see src/ARCHITECTURE.md for the full map
   lib/          engines, storage, API clients
   data/         static content (recipes, stores)
 api/            Vercel serverless functions (recipe AI, FDA recalls)
-backend/        Python (Flask) service sources
-data/           recipe and menu JSON, served at /data/ (public/data is a symlink here)
-public/         static assets: OCR models, icons, legacy deal scripts
-scripts/        build-recipes-full.py builds data/recipes_full.json;
+public/         static assets served at the site root: data/ (recipe and
+                menu JSON by country, served at /data/), OCR models, icons,
+                legacy deal scripts, fonts
+scripts/        build-recipes-full.py builds public/data/recipes_full.json;
                 frontend-map.mjs lists which src files are live vs unwired
 supabase/       database migrations
-docs/           product, design, business, legal, marketing docs; see docs/README.md
 _archive/       retired code and the old multi-page site; nothing here ships
 ```
 
