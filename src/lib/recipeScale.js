@@ -3,4 +3,4 @@
    pre-existing recipeTransform.js). This file is kept as a barrel so any
    existing `from './recipeScale'` / `from '../lib/recipeScale'` import
    keeps working unchanged. */
-export * from './recipe/recipeTransform';
+export * from './recipeTransform';
